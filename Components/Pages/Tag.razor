@@ -1,0 +1,29 @@
+@page "/tags/{tag}"
+@inject PostStore PostStore
+
+<PageTitle>#@CurrentTag — @I18n.SiteTitle</PageTitle>
+<header class="db-tag-header">
+    <h1>@I18n.TagPageTitle: #@CurrentTag</h1>
+    <div class="db-tag-header__chips">
+        @foreach (var tag in AllTags)
+        {
+            <a href="/tags/@tag" class="db-chip"
+               hx-get="/tags?tag=@tag"
+               hx-target="#tag-list"
+               hx-push-url="false">#@tag</a>
+        }
+    </div>
+</header>
+<TagList Tag="@CurrentTag" />
+
+@code {
+    [Parameter] public string? tag { get; set; }
+
+    private string CurrentTag => tag ?? "";
+
+    private IReadOnlyList<string> AllTags =>
+        PostStore.All.SelectMany(p => p.Tags)
+                     .Distinct(StringComparer.OrdinalIgnoreCase)
+                     .OrderBy(t => t, StringComparer.OrdinalIgnoreCase)
+                     .ToList();
+}

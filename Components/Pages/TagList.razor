@@ -1,0 +1,24 @@
+@inject PostStore PostStore
+
+<div id="tag-list">
+    @if (Posts.Count == 0)
+    {
+        <p>@I18n.NoPosts</p>
+    }
+    else
+    {
+        @foreach (var post in Posts)
+        {
+            <PostCard Post="post" />
+        }
+    }
+</div>
+
+@code {
+    [Parameter] public string? Tag { get; set; }
+
+    private IReadOnlyList<PostMeta> Posts =>
+        PostStore.All
+            .Where(p => p.Tags.Contains(Tag ?? "", StringComparer.OrdinalIgnoreCase))
+            .ToList();
+}

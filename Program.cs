@@ -54,6 +54,20 @@ app.MapGet("/posts", async ([FromServices] HtmlRenderer renderer, int? page) =>
     return Results.Content(html, "text/html; charset=utf-8");
 });
 
+app.MapGet("/tags", async ([FromServices] HtmlRenderer renderer, string? tag) =>
+{
+    var html = await renderer.Dispatcher.InvokeAsync(async () =>
+    {
+        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.TagList>(
+            ParameterView.FromDictionary(new Dictionary<string, object?>
+            {
+                [nameof(LatexBlog.Components.Pages.TagList.Tag)] = tag ?? "",
+            }));
+        return root.ToHtmlString().ToString();
+    });
+    return Results.Content(html, "text/html; charset=utf-8");
+});
+
 app.MapRazorComponents<App>();
 
 app.Run();

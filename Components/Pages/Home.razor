@@ -1,6 +1,36 @@
-﻿@page "/"
+@page "/"
+@inject PostStore PostStore
 
-<PageTitle>LatexBlog</PageTitle>
+<PageTitle>@I18n.SiteTitle</PageTitle>
 
-<h1>LatexBlog</h1>
-<p>Posts will render here (Task 9).</p>
+<section class="db-hero">
+    <h1>@I18n.SiteTitle</h1>
+    <p class="db-hero__subtitle">@I18n.HeroSubtitle</p>
+</section>
+
+<section id="post-list" class="db-post-list">
+    @foreach (var post in PagePosts)
+    {
+        <PostCard Post="post" />
+    }
+</section>
+
+@if (HasMore)
+{
+    <div id="load-more">
+        <button type="button" class="db-button"
+                hx-get="/posts?page=2"
+                hx-target="#load-more"
+                hx-swap="outerHTML"
+                hx-push-url="false">@I18n.LoadMore</button>
+    </div>
+}
+
+@code {
+    private const int PageSize = 3;
+
+    private IReadOnlyList<PostMeta> PagePosts =>
+        PostStore.All.Take(PageSize).ToList();
+
+    private bool HasMore => PostStore.All.Count > PageSize;
+}

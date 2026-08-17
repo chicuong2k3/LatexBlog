@@ -40,6 +40,20 @@ app.MapGet("/probe", async ([FromServices] HtmlRenderer renderer) =>
     return Results.Content(html, "text/html; charset=utf-8");
 });
 
+app.MapGet("/posts", async ([FromServices] HtmlRenderer renderer, int? page) =>
+{
+    var html = await renderer.Dispatcher.InvokeAsync(async () =>
+    {
+        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.PostList>(
+            ParameterView.FromDictionary(new Dictionary<string, object?>
+            {
+                [nameof(LatexBlog.Components.Pages.PostList.Page)] = Math.Max(1, page ?? 1),
+            }));
+        return root.ToHtmlString().ToString();
+    });
+    return Results.Content(html, "text/html; charset=utf-8");
+});
+
 app.MapRazorComponents<App>();
 
 app.Run();

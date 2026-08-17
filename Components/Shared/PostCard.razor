@@ -1,0 +1,20 @@
+@using LatexBlog.Services
+@using LatexBlog.I18n
+
+<article class="db-card db-post-card">
+    <a href="/posts/@Post.Slug" class="db-post-card__link">
+        <h2 class="db-post-card__title">@Post.Title</h2>
+    </a>
+    <p class="db-post-card__meta">@I18n.PostedOn @Post.Date</p>
+    <p class="db-post-card__summary">@Post.Summary</p>
+    <div class="db-post-card__tags">
+        @foreach (var tag in Post.Tags)
+        {
+            <a href="/tags/@tag" class="db-chip">#@tag</a>
+        }
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired] public PostMeta Post { get; set; } = default!;
+}

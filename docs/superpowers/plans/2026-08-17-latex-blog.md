@@ -651,7 +651,7 @@ class BuildAllTest(unittest.TestCase):
         items = build_all(self.posts, self.out, self.index, self.pandoc)
         self.assertEqual([i["slug"] for i in items], ["b", "a"])  # date desc
         html = (self.out / "b.html").read_text(encoding="utf-8")
-        self.assertIn("katex", html)  # KaTeX markup emitted by --katex
+        self.assertIn('class="math inline"', html)  # --katex keeps raw TeX; client-side KaTeX renders it
         self.assertIn("<pre", html)   # verbatim -> code block
         data = json.loads(self.index.read_text(encoding="utf-8"))
         self.assertEqual(len(data), 2)
@@ -1169,7 +1169,7 @@ git commit -m "feat: PostStore singleton reading generated index and fragments"
 - Create: `wwwroot/css/site.css` (overwrite template), `wwwroot/js/site.js`, `I18n/I18n.cs`
 
 **Interfaces:**
-- Consumes: DAUB 3.19.12 CDN files, Alpine 3.14.1, KaTeX 0.16.11 CSS, Task 2's `HtmxHeadOutlet`.
+- Consumes: DAUB 3.19.12 CDN files, Alpine 3.14.1, KaTeX 0.16.11 (CSS + JS), htmx 1.9.12 CDN (already in App.razor head from Task 2).
 - Produces:
   - `I18n` static class — every UI string used by Tasks 8–12 (constants listed in Step 3; components must reference these names).
   - `data-theme` on `<html>` (default `default`; no-flash script restores `localStorage["db-theme"]` or `prefers-color-scheme` before first paint).
@@ -1237,6 +1237,8 @@ public static class I18n
     <link rel="icon" type="image/png" href="favicon.png" />
     <HeadOutlet />
     <HtmxHeadOutlet />
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
     <script>
         // no-flash theme restore - runs before first paint
@@ -1382,7 +1384,9 @@ function initProse(root) {
         pre.classList.add("db-post__codeblock");
         pre.appendChild(btn);
     });
-    // Re-render any math pandoc left as raw LaTeX (defensive; --katex pre-renders)
+    // Re-render math pandoc left as raw LaTeX (verified: `pandoc --katex` in
+    // fragment mode emits `<span class="math inline">` with raw TeX and NO
+    // pre-rendered KaTeX — client-side rendering via auto-render is REQUIRED)
     if (window.renderMathInElement) {
         renderMathInElement(root, {
             delimiters: [
@@ -1823,7 +1827,7 @@ dotnet run --urls http://localhost:5080
 curl.exe -s http://localhost:5080/posts/dao-ham-va-y-nghia-hinh-hoc
 ```
 
-Expected: page contains the title, "Mục lục" TOC (3 sections), `class="katex"` math markup, a `<pre>` with pygments spans and a "Sao chép" button in the served HTML (static SSR — the button is injected by `initProse` at runtime, so it will NOT appear in curl output; instead assert the `db-prose` container and `<pre>` exist).
+Expected: page contains the title, "Mục lục" TOC (3 sections), `<span class="math inline">` raw-math markup (KaTeX renders client-side via auto-render), a `<pre>` with pygments spans, and the `db-prose` container. (The "Sao chép" button is injected by `initProse` at runtime, so it will NOT appear in curl output.)
 
 ```powershell
 curl.exe -s -o NUL -w "%{http_code}" http://localhost:5080/posts/khong-ton-tai
@@ -2131,7 +2135,7 @@ DAUB CSS.
 - DAUB CSS 3.19.12 (jsDelivr) + daub-classless for prose
 - htmx 1.9.12 (jsDelivr CDN) — fragment endpoints via HtmlRenderer: search, tag filter, load-more (Htmxor gate failed on .NET 10; see docs/Htmxor-verdict.md)
 - Alpine.js 3.14.1 — dark mode, TOC scrollspy, mobile menu, copy-code
-- KaTeX 0.16.11 (CSS only; `pandoc --katex` pre-renders math server-side)
+- KaTeX 0.16.11 (CSS + JS via CDN; `pandoc --katex` keeps raw TeX in `math inline` spans — client-side auto-render required)
 - Python 3 (stdlib only) build script + Pandoc (dev/CI only)
 
 ## Prerequisites
@@ -2201,7 +2205,7 @@ Start the app (`dotnet run --urls http://localhost:5080`) and verify each row, r
 |---|-------|------------------|----------|
 | 1 | Home list | `curl http://localhost:5080/` | 3 newest cards + "Xem thêm" |
 | 2 | Load-more | `curl -H "HX-Request: true" "http://localhost:5080/posts?page=2"` | 1 card, no button (fragment) |
-| 3 | Post renders | `curl http://localhost:5080/posts/dao-ham-va-y-nghia-hinh-hoc` | title, TOC, `katex` markup, `<pre>` |
+| 3 | Post renders | `curl http://localhost:5080/posts/dao-ham-va-y-nghia-hinh-hoc` | title, TOC, `math inline` span, `<pre>` |
 | 4 | 404 | `curl -o NUL -w "%{http_code}" http://localhost:5080/posts/xyz` | `404` + "Không tìm thấy trang" |
 | 5 | Tag page | `curl http://localhost:5080/tags/toan` | 2 cards, chips present |
 | 6 | Tag htmx | `curl -H "HX-Request: true" "http://localhost:5080/tags?tag=python"` | fragment with 1 card |

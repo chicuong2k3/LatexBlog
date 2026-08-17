@@ -1,7 +1,11 @@
+import json
+import os
+import shutil
+import tempfile
 import unittest
 from pathlib import Path
 
-from build_posts import parse_frontmatter, slugify_title, validate_meta
+from build_posts import build_all, find_pandoc, parse_frontmatter, slugify_title, validate_meta, write_pygments_css
 
 SAMPLE = """%---
 % title: "Đạo hàm và ý nghĩa hình học"
@@ -14,6 +18,26 @@ SAMPLE = """%---
 f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}
 \\end{equation}
 """
+
+SAMPLE_TEX = """%---
+% title: "Bài viết A"
+% date: 2026-08-17
+% tags: [toan]
+% summary: "Tóm tắt A."
+%---
+\\section{Mở đầu}
+Text $x^2$ here.
+\\begin{verbatim}
+def hi():
+    return 1
+\\end{verbatim}
+"""
+
+pandoc = os.environ.get("PANDOC") or shutil.which("pandoc")
+if not pandoc:
+    for _cand in Path("tools/pandoc").rglob("pandoc.exe" if os.name == "nt" else "pandoc"):
+        pandoc = str(_cand)
+        break
 
 
 class ParseFrontmatterTest(unittest.TestCase):
@@ -81,6 +105,65 @@ class ValidateMetaTest(unittest.TestCase):
     def test_empty_tags_raises(self):
         with self.assertRaises(ValueError):
             validate_meta(self._meta(tags=[]), "x", Path("x.tex"))
+
+
+class FindPandocTest(unittest.TestCase):
+    def test_returns_path(self):
+        p = find_pandoc()
+        self.assertTrue(p)
+        self.assertTrue(Path(p).exists())
+
+
+class BuildAllTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.posts = self.tmp / "posts"
+        self.out = self.tmp / "out"
+        self.index = self.tmp / "index.json"
+        self.posts.mkdir()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def _write_post(self, name, content):
+        (self.posts / name).write_text(content, encoding="utf-8")
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_renders_html_and_writes_index_sorted_desc(self):
+        self._write_post("b.tex", SAMPLE_TEX)
+        self._write_post(
+            "a.tex",
+            SAMPLE_TEX.replace("2026-08-17", "2026-08-01").replace("Bài viết A", "Bài viết B"),
+        )
+        items = build_all(self.posts, self.out, self.index, pandoc)
+        self.assertEqual([i["slug"] for i in items], ["b", "a"])
+        html = (self.out / "b.html").read_text(encoding="utf-8")
+        self.assertIn('class="math inline"', html)
+        self.assertIn("<pre", html)
+        data = json.loads(self.index.read_text(encoding="utf-8"))
+        self.assertEqual(len(data), 2)
+        self.assertEqual(data[0]["title"], "Bài viết A")
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_slug_collision_raises(self):
+        self._write_post("a.tex", SAMPLE_TEX)
+        self._write_post(
+            "b.tex",
+            SAMPLE_TEX.replace("Bài viết A", "Bài viết B")
+                      .replace('tags: [toan]', 'tags: [toan]\n% slug: "a"'),
+        )
+        with self.assertRaises(ValueError) as ctx:
+            build_all(self.posts, self.out, self.index, pandoc)
+        self.assertIn("slug collision", str(ctx.exception))
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_pygments_css_extracted(self):
+        css_path = self.tmp / "pygments.css"
+        write_pygments_css(pandoc, css_path)
+        css = css_path.read_text(encoding="utf-8")
+        self.assertGreater(len(css), 100)
+        self.assertIn("color", css)
+        self.assertNotIn("<style>", css)
 
 
 if __name__ == "__main__":

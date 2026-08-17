@@ -2,11 +2,11 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** A static-SSR Blazor blog whose posts are authored as LaTeX files and rendered to HTML fragments at build time by Pandoc, served with DAUB CSS, htmx partials (via Htmxor), and Alpine.js micro-interactions.
+**Goal:** A static-SSR Blazor blog whose posts are authored as LaTeX files and rendered to HTML fragments at build time by Pandoc, served with DAUB CSS, htmx partials, and Alpine.js micro-interactions.
 
-**Architecture:** `posts/*.tex` (source of truth, YAML frontmatter in a `%---` comment block) → an MSBuild `BeforeBuild` target runs a Python stdlib-only script (`tools/build_posts.py`) that parses frontmatter, invokes Pandoc (`--katex`, `--highlight-style=pygments`) to write `wwwroot/generated/posts/{slug}.html`, extracts the Pygments CSS once into `wwwroot/generated/pygments.css`, and writes `wwwroot/generated/index.json` sorted by date desc. At runtime a Blazor Web App in **Static SSR** mode (no SignalR, no WASM, no enhanced navigation) reads those files via a singleton `PostStore`; htmx fragment endpoints (search, tag filter, load-more) are served by Htmxor-mapped Razor components returning body-only fragments; Alpine.js + a no-flash inline script handle dark mode, TOC scrollspy, mobile menu, and copy-code buttons.
+**Architecture:** `posts/*.tex` (source of truth, YAML frontmatter in a `%---` comment block) → an MSBuild `BeforeBuild` target runs a Python stdlib-only script (`tools/build_posts.py`) that parses frontmatter, invokes Pandoc (`--katex`, `--highlight-style=pygments`) to write `wwwroot/generated/posts/{slug}.html`, extracts the Pygments CSS once into `wwwroot/generated/pygments.css`, and writes `wwwroot/generated/index.json` sorted by date desc. At runtime a Blazor Web App in **Static SSR** mode (no SignalR, no WASM, no enhanced navigation) reads those files via a singleton `PostStore`; htmx fragment endpoints (search, tag filter, load-more) are served by minimal API endpoints that render plain Razor components to HTML fragments via `HtmlRenderer` (Htmxor failed its gate on .NET 10 — see `docs/Htmxor-verdict.md`); Alpine.js + a no-flash inline script handle dark mode, TOC scrollspy, mobile menu, and copy-code buttons.
 
-**Tech Stack:** .NET 10 Blazor Web App (Static SSR) · DAUB CSS 3.19.12 via jsDelivr (`daub.css` + `daub-classless.css`) · Htmxor 1.0.0-beta.1.24 (bundles htmx 1.9.12) · Alpine.js 3.14.1 · KaTeX 0.16.11 (CSS only — `--katex` renders math server-side) · Pandoc 3.6.4 (dev/CI only, installed under `tools/pandoc/`) · Python 3.11 (stdlib only) · "Be Vietnam Pro" (Google Fonts) · git 2.54
+**Tech Stack:** .NET 10 Blazor Web App (Static SSR) · DAUB CSS 3.19.12 via jsDelivr (`daub.css` + `daub-classless.css`) · htmx 1.9.12 via jsDelivr (Htmxor gate FAILED on .NET 10 → `HtmlRenderer` fragment endpoints) · Alpine.js 3.14.1 · KaTeX 0.16.11 (CSS only — `--katex` renders math server-side) · Pandoc 3.6.4 (dev/CI only, installed under `tools/pandoc/`) · Python 3.11 (stdlib only) · "Be Vietnam Pro" (Google Fonts) · git 2.54
 
 ---
 
@@ -14,7 +14,7 @@
 
 - **Static SSR only** — never add `AddInteractiveServerComponents()`, `AddInteractiveServerRenderMode()`, `@rendermode`, `.client.cs`, `blazor.web.js`, or enhanced navigation. htmx/Alpine provide all interactivity.
 - **DAUB pinned to `daub-ui@3.19.12`** on jsDelivr (verified live: `daub.css` and `daub-classless.css` both exist at that version). Dark mode = `data-theme="dark"` attribute on `<html>`; light = `data-theme="default"`. Never bump versions silently.
-- **Htmxor beta.** If the exact Htmxor API names in this plan fail to compile, adapt to the installed package's API (see Task 2 — it is the gate that pins the real API). Do NOT silently fall back to full-page responses.
+- **Htmxor FAILED on .NET 10 (gate Task 2).** Fallback mode active: htmx 1.9.12 from CDN + minimal API fragment endpoints using `HtmlRenderer` (`[FromServices]` + `renderer.RenderComponentAsync<T>()` → `Results.Content(html, "text/html")`). Fragment components are plain components (no `@page`, no layout, no Htmxor base). All fragment requests are **GET**. See `docs/Htmxor-verdict.md` for the full evidence.
 - **Pandoc is a dev/CI-only dependency.** Production never needs it. It must be discoverable via (1) `PANDOC` env var, (2) `tools/pandoc/**/pandoc.exe` under the repo, (3) PATH.
 - **`tools/build_posts.py` is Python stdlib only** — no third-party packages (no PyYAML, no requests). Must run on any machine with Python 3.
 - **`wwwroot/generated/` and `tools/pandoc/` are git-ignored** — regeneration is deterministic at every build.
@@ -1271,7 +1271,6 @@ Ensure `Components/_Imports.razor` contains at least:
 @using LatexBlog.Components.Shared
 @using LatexBlog.Services
 @using LatexBlog.I18n
-@using Htmxor
 ```
 
 (Keep whatever else the template had — duplicates are harmless.)
@@ -1545,14 +1544,14 @@ git commit -m "feat: app shell with DAUB, dark mode, i18n, layout and site asset
 
 **Files:**
 - Modify: `Components/Pages/Home.razor` (real implementation)
-- Create: `Components/Shared/PostCard.razor`, `Components/Pages/PostList.razor` (htmx fragment for `/posts?page=N`)
+- Create: `Components/Shared/PostCard.razor`, `Components/Pages/PostList.razor` (plain fragment component for `/posts?page=N`), modify `Program.cs` (add `/posts` fragment endpoint)
 
 **Interfaces:**
-- Consumes: `PostStore.All`, `PostMeta`, `I18n.*`; Task 2's htmx fragment pattern.
+- Consumes: `PostStore.All`, `PostMeta`, `I18n.*`; Task 2's fallback fragment pattern (HtmlRenderer endpoint + plain fragment component).
 - Produces:
   - `PostCard` — `[Parameter, EditorRequired] public PostMeta Post { get; set; }` — renders one card (title → `/posts/{slug}`, date, summary, tag chips → `/tags/{tag}`). Reused by Tag (Task 11) and Search (Task 12).
-  - `PostList` — `[HtmxRoute("/posts")]`, htmx branch renders `PagePosts` cards + a next-page "Xem thêm" button inside a `#load-more` container; full branch renders a heading + same list. The button targets `#load-more` with `hx-swap="outerHTML"` so each response replaces the button with cards + the next button (no duplicate buttons).
-  - Home — hero + page-1 cards + "Xem thêm" button in a `#load-more` container (same htmx attrs as PostList).
+  - `PostList` — plain fragment component (NO `@page`, NO layout) with `[Parameter] public int Page` — renders `PagePosts` cards + a next-page "Xem thêm" button inside a `#load-more` container (or nothing on the last page).
+  - Home — hero + page-1 cards + "Xem thêm" button in a `#load-more` container. The button targets `#load-more` with `hx-swap="outerHTML"` so each response replaces the button with cards + the next button (no duplicate buttons).
 
 - [ ] **Step 1: Write PostCard**
 
@@ -1581,68 +1580,58 @@ git commit -m "feat: app shell with DAUB, dark mode, i18n, layout and site asset
 }
 ```
 
-- [ ] **Step 2: Write PostList (htmx fragment)**
+- [ ] **Step 2: Write PostList (plain fragment component)**
 
-`Components/Pages/PostList.razor`:
+`Components/Pages/PostList.razor` — NO `@page`, NO layout, NO Htmxor:
 
 ```razor
-@attribute [HtmxRoute("/posts")]
-@inherits ConditionalComponentBase
 @inject PostStore PostStore
 
-@if (HtmxContext.Request.IsHtmx)
+@foreach (var post in PagePosts)
 {
-    <HtmxFragment RenderDuringStandardRequest="false">
-        @foreach (var post in PagePosts)
-        {
-            <PostCard Post="post" />
-        }
-        @if (HasMore)
-        {
-            <div id="load-more">
-                <button type="button" class="db-button"
-                        hx-get="/posts?page=@(PageNumber + 1)"
-                        hx-target="#load-more"
-                        hx-swap="outerHTML"
-                        hx-push-url="false">@I18n.LoadMore</button>
-            </div>
-        }
-    </HtmxFragment>
+    <PostCard Post="post" />
 }
-else
+@if (HasMore)
 {
-    <PageTitle>@I18n.SiteTitle</PageTitle>
-    <h1>@I18n.SiteTitle</h1>
-    <div id="post-list">
-        @foreach (var post in PagePosts)
-        {
-            <PostCard Post="post" />
-        }
+    <div id="load-more">
+        <button type="button" class="db-button"
+                hx-get="/posts?page=@(Page + 1)"
+                hx-target="#load-more"
+                hx-swap="outerHTML"
+                hx-push-url="false">@I18n.LoadMore</button>
     </div>
-    @if (HasMore)
-    {
-        <div id="load-more">
-            <button type="button" class="db-button"
-                    hx-get="/posts?page=2"
-                    hx-target="#load-more"
-                    hx-swap="outerHTML"
-                    hx-push-url="false">@I18n.LoadMore</button>
-        </div>
-    }
 }
 
 @code {
     private const int PageSize = 3;
 
-    [SupplyParameterFromQuery] public int? page { get; set; }
-
-    private int PageNumber => Math.Max(1, page ?? 1);
+    [Parameter] public int Page { get; set; } = 1;
 
     private IReadOnlyList<PostMeta> PagePosts =>
-        PostStore.All.Skip((PageNumber - 1) * PageSize).Take(PageSize).ToList();
+        PostStore.All.Skip((Page - 1) * PageSize).Take(PageSize).ToList();
 
-    private bool HasMore => PageNumber * PageSize < PostStore.All.Count;
+    private bool HasMore => Page * PageSize < PostStore.All.Count;
 }
+```
+
+- [ ] **Step 2b: Add the /posts fragment endpoint in Program.cs**
+
+In `Program.cs`, after the `/probe` endpoint, add:
+
+```csharp
+app.MapGet("/posts", async ([FromServices] HtmlRenderer renderer, int? page) =>
+{
+    var html = await renderer.Dispatcher.InvokeAsync(async () =>
+    {
+        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.PostList>(
+            ParameterView.FromDictionary(new Dictionary<string, object?>
+            {
+                [nameof(LatexBlog.Components.Pages.PostList.Page)] = Math.Max(1, page ?? 1),
+            }));
+        return root.ToHtmlString().ToString();
+    });
+    return Results.Content(html, "text/html; charset=utf-8");
+});
 ```
 
 - [ ] **Step 3: Rewrite Home.razor**
@@ -1854,79 +1843,88 @@ git commit -m "feat: post page with TOC scrollspy, prose and 404 handling"
 ### Task 11: Tag page + htmx tag switching
 
 **Files:**
-- Create: `Components/Pages/Tag.razor`
+- Create: `Components/Pages/Tag.razor` (full page) + `Components/Pages/TagList.razor` (plain fragment component), modify `Program.cs` (add `/tags` fragment endpoint)
 
 **Interfaces:**
-- Consumes: `PostStore.All`, `PostCard`, `I18n.*`, Task 2's htmx fragment pattern.
-- Produces: `/tags/{tag}` full page (heading + filtered cards) AND an htmx fragment at `/tags` (`?tag=`) returning just the `#tag-list` content so chips can switch tags without a full reload. Chip links carry `hx-get="/tags?tag=X"` + `hx-target="#tag-list"` + `hx-push-url="false"`.
+- Consumes: `PostStore.All`, `PostCard`, `I18n.*`, Task 2's fallback fragment pattern.
+- Produces: `/tags/{tag}` full page (heading + filtered cards) AND a `/tags?tag=X` fragment endpoint returning just the `#tag-list` content so chips can switch tags without a full reload. Chip links carry `hx-get="/tags?tag=X"` + `hx-target="#tag-list"` + `hx-push-url="false"`.
 
-- [ ] **Step 1: Write Tag.razor**
+- [ ] **Step 1: Write TagList (plain fragment component)**
+
+`Components/Pages/TagList.razor` — NO `@page`, NO layout:
+
+```razor
+@inject PostStore PostStore
+
+<div id="tag-list">
+    @if (Posts.Count == 0)
+    {
+        <p>@I18n.NoPosts</p>
+    }
+    else
+    {
+        @foreach (var post in Posts)
+        {
+            <PostCard Post="post" />
+        }
+    }
+</div>
+
+@code {
+    [Parameter] public string? Tag { get; set; }
+
+    private IReadOnlyList<PostMeta> Posts =>
+        PostStore.All
+            .Where(p => p.Tags.Contains(Tag ?? "", StringComparer.OrdinalIgnoreCase))
+            .ToList();
+}
+```
+
+- [ ] **Step 1b: Add the /tags fragment endpoint in Program.cs**
+
+```csharp
+app.MapGet("/tags", async ([FromServices] HtmlRenderer renderer, string? tag) =>
+{
+    var html = await renderer.Dispatcher.InvokeAsync(async () =>
+    {
+        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.TagList>(
+            ParameterView.FromDictionary(new Dictionary<string, object?>
+            {
+                [nameof(LatexBlog.Components.Pages.TagList.Tag)] = tag ?? "",
+            }));
+        return root.ToHtmlString().ToString();
+    });
+    return Results.Content(html, "text/html; charset=utf-8");
+});
+```
+
+- [ ] **Step 2: Write Tag.razor (full page)**
 
 `Components/Pages/Tag.razor`:
 
 ```razor
 @page "/tags/{tag}"
-@attribute [HtmxRoute("/tags")]
-@inherits ConditionalComponentBase
 @inject PostStore PostStore
 
-@if (HtmxContext.Request.IsHtmx)
-{
-    <HtmxFragment RenderDuringStandardRequest="false">
-        <div id="tag-list">
-            @if (Posts.Count == 0)
-            {
-                <p>@I18n.NoPosts</p>
-            }
-            else
-            {
-                @foreach (var post in Posts)
-                {
-                    <PostCard Post="post" />
-                }
-            }
-        </div>
-    </HtmxFragment>
-}
-else
-{
-    <PageTitle>#@CurrentTag — @I18n.SiteTitle</PageTitle>
-    <header class="db-tag-header">
-        <h1>@I18n.TagPageTitle: #@CurrentTag</h1>
-        <div class="db-tag-header__chips">
-            @foreach (var tag in AllTags)
-            {
-                <a href="/tags/@tag" class="db-chip"
-                   hx-get="/tags?tag=@tag"
-                   hx-target="#tag-list"
-                   hx-push-url="false">#@tag</a>
-            }
-        </div>
-    </header>
-    <div id="tag-list">
-        @if (Posts.Count == 0)
+<PageTitle>#@CurrentTag — @I18n.SiteTitle</PageTitle>
+<header class="db-tag-header">
+    <h1>@I18n.TagPageTitle: #@CurrentTag</h1>
+    <div class="db-tag-header__chips">
+        @foreach (var tag in AllTags)
         {
-            <p>@I18n.NoPosts</p>
-        }
-        else
-        {
-            @foreach (var post in Posts)
-            {
-                <PostCard Post="post" />
-            }
+            <a href="/tags/@tag" class="db-chip"
+               hx-get="/tags?tag=@tag"
+               hx-target="#tag-list"
+               hx-push-url="false">#@tag</a>
         }
     </div>
-}
+</header>
+<TagList Tag="CurrentTag" />
 
 @code {
     [Parameter] public string? Tag { get; set; }
-    [SupplyParameterFromQuery] public string? tag { get; set; }
 
-    private string CurrentTag => string.IsNullOrWhiteSpace(tag) ? Tag ?? "" : tag!;
-
-    private IReadOnlyList<PostMeta> Posts =>
-        PostStore.All.Where(p => p.Tags.Contains(CurrentTag, StringComparer.OrdinalIgnoreCase))
-                     .ToList();
+    private string CurrentTag => Tag ?? "";
 
     private IReadOnlyList<string> AllTags =>
         PostStore.All.SelectMany(p => p.Tags)
@@ -1936,7 +1934,9 @@ else
 }
 ```
 
-- [ ] **Step 2: Build and verify**
+Note: the htmx chips target `#tag-list` (inside TagList). Since TagList renders `<div id="tag-list">`, `hx-target="#tag-list"` with default `hx-swap=innerHTML` swaps the list content in place.
+
+- [ ] **Step 3: Build and verify**
 
 ```powershell
 dotnet build
@@ -1967,68 +1967,88 @@ git commit -m "feat: tag page with htmx tag switching"
 ### Task 12: Search page + htmx partial
 
 **Files:**
-- Create: `Components/Pages/Search.razor`
+- Create: `Components/Pages/Search.razor` (full page) + `Components/Pages/SearchResults.razor` (plain fragment component), modify `Program.cs` (add `/search` fragment endpoint)
 
 **Interfaces:**
-- Consumes: `PostStore.Search(q)`, `PostCard`, `I18n.*`, Task 2's htmx fragment pattern.
-- Produces: `/search` full page (input + empty results container) AND an htmx POST fragment at `/search` (`q` from form) returning `#search-results` content: cards, or a "no results" message for empty/zero matches. Input triggers `hx-post="/search"` on `input changed delay:300ms`.
+- Consumes: `PostStore.Search(q)`, `PostCard`, `I18n.*`, Task 2's fallback fragment pattern (GET).
+- Produces: `/search` full page (input + empty results container) AND a `/search?q=` GET fragment endpoint returning `#search-results` content: cards, or a "no results" message for empty/zero matches. Input triggers `hx-get` on `input changed delay:300ms`.
 
-- [ ] **Step 1: Write Search.razor**
+- [ ] **Step 1: Write SearchResults (plain fragment component)**
+
+`Components/Pages/SearchResults.razor` — NO `@page`, NO layout:
+
+```razor
+@inject PostStore PostStore
+
+<div id="search-results">
+    @if (Results.Count == 0)
+    {
+        <p class="db-search__empty">@I18n.NoResults</p>
+    }
+    else
+    {
+        @foreach (var post in Results)
+        {
+            <PostCard Post="post" />
+        }
+    }
+</div>
+
+@code {
+    [Parameter] public string? Q { get; set; }
+
+    private IReadOnlyList<PostMeta> Results =>
+        string.IsNullOrWhiteSpace(Q) ? Array.Empty<PostMeta>() : PostStore.Search(Q);
+}
+```
+
+- [ ] **Step 1b: Add the /search fragment endpoint in Program.cs**
+
+```csharp
+app.MapGet("/search", async ([FromServices] HtmlRenderer renderer, string? q) =>
+{
+    var html = await renderer.Dispatcher.InvokeAsync(async () =>
+    {
+        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.SearchResults>(
+            ParameterView.FromDictionary(new Dictionary<string, object?>
+            {
+                [nameof(LatexBlog.Components.Pages.SearchResults.Q)] = q ?? "",
+            }));
+        return root.ToHtmlString().ToString();
+    });
+    return Results.Content(html, "text/html; charset=utf-8");
+});
+```
+
+- [ ] **Step 2: Write Search.razor (full page)**
 
 `Components/Pages/Search.razor`:
 
 ```razor
 @page "/search"
-@attribute [HtmxRoute("/search")]
-@inherits ConditionalComponentBase
 @inject PostStore PostStore
 
-@if (HtmxContext.Request.IsHtmx)
-{
-    <HtmxFragment RenderDuringStandardRequest="false">
-        <div id="search-results">
-            @if (Results.Count == 0)
-            {
-                <p class="db-search__empty">@I18n.NoResults</p>
-            }
-            else
-            {
-                @foreach (var post in Results)
-                {
-                    <PostCard Post="post" />
-                }
-            }
-        </div>
-    </HtmxFragment>
-}
-else
-{
-    <PageTitle>@I18n.SearchTitle — @I18n.SiteTitle</PageTitle>
-    <header class="db-search-header">
-        <h1>@I18n.SearchTitle</h1>
-        <p>@I18n.SearchHint</p>
-    </header>
-    <input type="search"
-           name="q"
-           class="db-field"
-           placeholder="@I18n.SearchPlaceholder"
-           autocomplete="off"
-           hx-post="/search"
-           hx-target="#search-results"
-           hx-swap="innerHTML"
-           hx-trigger="input changed delay:300ms" />
-    <div id="search-results" class="db-search-results"></div>
-}
-
-@code {
-    [SupplyParameterFromForm] public string? q { get; set; }
-
-    private IReadOnlyList<PostMeta> Results =>
-        string.IsNullOrWhiteSpace(q) ? Array.Empty<PostMeta>() : PostStore.Search(q);
-}
+<PageTitle>@I18n.SearchTitle — @I18n.SiteTitle</PageTitle>
+<header class="db-search-header">
+    <h1>@I18n.SearchTitle</h1>
+    <p>@I18n.SearchHint</p>
+</header>
+<input type="search"
+       name="q"
+       class="db-field"
+       placeholder="@I18n.SearchPlaceholder"
+       autocomplete="off"
+       hx-get="/search"
+       hx-target="#search-results"
+       hx-swap="innerHTML"
+       hx-trigger="input changed delay:300ms"
+       hx-params="q" />
+<div id="search-results" class="db-search-results"></div>
 ```
 
-- [ ] **Step 2: Build and verify**
+Note: `hx-params="q"` restricts the request to the input's own `q` value (no enclosing form needed).
+
+- [ ] **Step 3: Build and verify**
 
 ```powershell
 dotnet build
@@ -2039,11 +2059,23 @@ dotnet run --urls http://localhost:5080
 curl.exe -s http://localhost:5080/search
 ```
 
-Expected: full page with the search input (carrying `hx-post="/search"` and the 300ms trigger) and an empty `#search-results` div.
+Expected: full page with the search input (carrying `hx-get="/search"` and the 300ms trigger) and an empty `#search-results` div.
 
-The htmx POST carries an antiforgery header injected by htmxor.js in a real browser, so verify the fragment via a browser smoke check: open `http://localhost:5080/search`, type `đạo`, expect cards for "Đạo hàm và ý nghĩa hình học" to appear in `#search-results` without a page reload; type `zzzz`, expect "Không tìm thấy bài viết phù hợp."; clear the field, expect the no-results message. Stop the app.
+```powershell
+curl.exe -s "http://localhost:5080/search?q=%C4%91%E1%BA%A1o"
+```
 
-- [ ] **Step 3: Commit**
+Expected: bare fragment (no `<html>`) with `id="search-results"` containing 1 card (Đạo hàm và ý nghĩa hình học).
+
+```powershell
+curl.exe -s "http://localhost:5080/search?q=zzzz"
+```
+
+Expected: bare fragment with `<p class="db-search__empty">Không tìm thấy bài viết phù hợp.</p>`.
+
+Browser smoke: open `http://localhost:5080/search`, type `đạo`, expect cards to appear in `#search-results` without a page reload; clear the field, expect the no-results message. Stop the app.
+
+- [ ] **Step 4: Commit**
 
 ```powershell
 git add Components/Pages/Search.razor
@@ -2090,14 +2122,14 @@ If it does not exist, update the `NotFound` block in `Components/Routes.razor` t
 
 Personal blog: posts written as LaTeX (`.tex`), rendered to static HTML at
 build time with Pandoc, served by a .NET 10 Blazor Web App in **Static SSR**
-mode. Interactivity via htmx (Htmxor) partials and Alpine.js. Styling via
+mode. Interactivity via htmx (1.9.12 CDN) partials and Alpine.js. Styling via
 DAUB CSS.
 
 ## Stack
 
 - .NET 10 Blazor Web App (Static SSR — no SignalR, no WASM, no enhanced nav)
 - DAUB CSS 3.19.12 (jsDelivr) + daub-classless for prose
-- Htmxor (htmx) — fragment endpoints: search, tag filter, load-more
+- htmx 1.9.12 (jsDelivr CDN) — fragment endpoints via HtmlRenderer: search, tag filter, load-more (Htmxor gate failed on .NET 10; see docs/Htmxor-verdict.md)
 - Alpine.js 3.14.1 — dark mode, TOC scrollspy, mobile menu, copy-code
 - KaTeX 0.16.11 (CSS only; `pandoc --katex` pre-renders math server-side)
 - Python 3 (stdlib only) build script + Pandoc (dev/CI only)
@@ -2174,8 +2206,8 @@ Start the app (`dotnet run --urls http://localhost:5080`) and verify each row, r
 | 5 | Tag page | `curl http://localhost:5080/tags/toan` | 2 cards, chips present |
 | 6 | Tag htmx | `curl -H "HX-Request: true" "http://localhost:5080/tags?tag=python"` | fragment with 1 card |
 | 7 | Search page | `curl http://localhost:5080/search` | input + empty `#search-results` |
-| 8 | Search partial | browser: type "đạo" on /search | "Đạo hàm" card appears, no reload |
-| 9 | Empty search | browser: clear field | "Không tìm thấy bài viết phù hợp." |
+| 8 | Search partial | `curl "http://localhost:5080/search?q=%C4%91%E1%BA%A1o"` | fragment with "Đạo hàm" card |
+| 9 | Empty search | `curl "http://localhost:5080/search?q=zzzz"` | "Không tìm thấy bài viết phù hợp." |
 | 10 | Dark mode | browser: click Tối/Sáng, reload | theme persists; `data-theme="dark"` on `<html>` |
 | 11 | TOC scrollspy | browser: scroll a post | active heading highlighted |
 | 12 | Copy-code | browser: click "Sao chép" on a code block | clipboard gets code; button shows "Đã chép!" |
@@ -2197,6 +2229,6 @@ git commit -m "docs: README and smoke checklist; polish 404"
 
 **Spec coverage:** §4 frontmatter → Task 4; §5 pandoc flags → Task 5; §6 pipeline/MSBuild/gitignore → Tasks 5–6; §7 structure/PostStore/404 → Tasks 7, 9–10, 13; §8 htmx (search/tag/load-more fragments) → Tasks 2, 9, 11, 12; §9 DAUB/dark mode/TOC/micro-interactions/fonts → Task 8 + 10; §10 i18n/`lang="vi"`/diacritics → Tasks 4, 8, 10; §12 edge cases (fail-fast, collision, 404, empty search, CDN-offline) → Tasks 5, 6, 10, 12, README; §13 tests → Tasks 4–5 (Python) + Task 13 smoke; §14 setup (winget unavailable → Task 3 alternate install + README).
 
-**Placeholder scan:** no TBD/TODO; every code step shows exact code; the only adaptive step is Task 2 Step 3/6, which is the deliberate API-pinning gate with a concrete fallback, not a placeholder.
+**Placeholder scan:** no TBD/TODO; every code step shows exact code; the only adaptive step is Task 2's gate, which FAILED and was resolved via the documented HtmlRenderer fallback (recorded in `docs/Htmxor-verdict.md`; Tasks 9/11/12 updated to the fallback pattern).
 
 **Type consistency:** `PostMeta(Slug, Title, Date, Tags, Summary)` everywhere (Task 7 ↔ 9–12); `PostStore.{All, GetMeta, GetHtml, Search}` names stable; `I18n` constants referenced by components match Task 8 Step 1; `tocSpy`/`initProse` names match `site.js` and Post.razor; `PostCard` param `Post` consistent across Home/PostList/Tag/Search.

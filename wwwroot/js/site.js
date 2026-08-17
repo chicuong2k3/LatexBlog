@@ -56,15 +56,17 @@ function initProse(root) {
         pre.classList.add("db-post__codeblock");
         pre.appendChild(btn);
     });
-    // Render math: pandoc --katex keeps raw TeX in `math inline` spans,
-    // so client-side auto-render is required (verified in Task 5).
-    if (window.renderMathInElement) {
-        renderMathInElement(root, {
-            delimiters: [
-                { left: "$$", right: "$$", display: true },
-                { left: "\\[", right: "\\]", display: true },
-                { left: "\\(", right: "\\)", display: false },
-            ],
+    // Render math: pandoc --katex keeps raw TeX in `math inline`/`math display`
+    // spans WITHOUT \( \) delimiters, so auto-render's delimiter scanner can't
+    // see it. Replicate pandoc's own standalone bootstrap: katex.render() on
+    // every .math element.
+    if (window.katex) {
+        root.querySelectorAll(".math").forEach((el) => {
+            if (el.tagName !== "SPAN" || !el.firstChild) return;
+            katex.render(el.firstChild.data, el, {
+                displayMode: el.classList.contains("display"),
+                throwOnError: false,
+            });
         });
     }
 }

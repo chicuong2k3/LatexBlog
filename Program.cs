@@ -30,16 +30,6 @@ app.MapStaticAssets();
 // ---- htmx fragment endpoints (fallback mode; see docs/Htmxor-verdict.md) ----
 // HtmlRenderer renders a component to an HTML string; the endpoint returns the
 // body-only fragment for htmx to swap in. All fragment requests are GET.
-app.MapGet("/probe", async ([FromServices] HtmlRenderer renderer) =>
-{
-    var html = await renderer.Dispatcher.InvokeAsync(async () =>
-    {
-        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.HtmxProbe>();
-        return root.ToHtmlString().ToString();
-    });
-    return Results.Content(html, "text/html; charset=utf-8");
-});
-
 app.MapGet("/posts", async ([FromServices] HtmlRenderer renderer, int? page) =>
 {
     var html = await renderer.Dispatcher.InvokeAsync(async () =>

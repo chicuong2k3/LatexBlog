@@ -1,0 +1,22 @@
+@inject PostStore PostStore
+
+<div id="search-results">
+    @if (Results.Count == 0)
+    {
+        <p class="db-search__empty">@I18n.NoResults</p>
+    }
+    else
+    {
+        @foreach (var post in Results)
+        {
+            <PostCard Post="post" />
+        }
+    }
+</div>
+
+@code {
+    [Parameter] public string? Q { get; set; }
+
+    private IReadOnlyList<PostMeta> Results =>
+        string.IsNullOrWhiteSpace(Q) ? Array.Empty<PostMeta>() : PostStore.Search(Q);
+}

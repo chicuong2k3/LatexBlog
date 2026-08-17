@@ -68,6 +68,20 @@ app.MapGet("/tags", async ([FromServices] HtmlRenderer renderer, string? tag) =>
     return Results.Content(html, "text/html; charset=utf-8");
 });
 
+app.MapGet("/search/results", async ([FromServices] HtmlRenderer renderer, string? q) =>
+{
+    var html = await renderer.Dispatcher.InvokeAsync(async () =>
+    {
+        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.SearchResults>(
+            ParameterView.FromDictionary(new Dictionary<string, object?>
+            {
+                [nameof(LatexBlog.Components.Pages.SearchResults.Q)] = q ?? "",
+            }));
+        return root.ToHtmlString().ToString();
+    });
+    return Results.Content(html, "text/html; charset=utf-8");
+});
+
 app.MapRazorComponents<App>();
 
 app.Run();

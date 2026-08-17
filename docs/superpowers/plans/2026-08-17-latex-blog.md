@@ -15,6 +15,7 @@
 - **Static SSR only** — never add `AddInteractiveServerComponents()`, `AddInteractiveServerRenderMode()`, `@rendermode`, `.client.cs`, `blazor.web.js`, or enhanced navigation. htmx/Alpine provide all interactivity.
 - **DAUB pinned to `daub-ui@3.19.12`** on jsDelivr (verified live: `daub.css` and `daub-classless.css` both exist at that version). Dark mode = `data-theme="dark"` attribute on `<html>`; light = `data-theme="default"`. Never bump versions silently.
 - **Htmxor FAILED on .NET 10 (gate Task 2).** Fallback mode active: htmx 1.9.12 from CDN + minimal API fragment endpoints using `HtmlRenderer` (`[FromServices]` + `renderer.RenderComponentAsync<T>()` → `Results.Content(html, "text/html")`). Fragment components are plain components (no `@page`, no layout, no Htmxor base). All fragment requests are **GET**. See `docs/Htmxor-verdict.md` for the full evidence.
+- **Fragment endpoints must NOT collide with page routes.** The `/search` page route conflicts with a `/search` fragment endpoint (AmbiguousMatchException). Search fragment lives at **`/search/results`**; the page stays at `/search` and htmx targets `/search/results`.
 - **Pandoc is a dev/CI-only dependency.** Production never needs it. It must be discoverable via (1) `PANDOC` env var, (2) `tools/pandoc/**/pandoc.exe` under the repo, (3) PATH.
 - **`tools/build_posts.py` is Python stdlib only** — no third-party packages (no PyYAML, no requests). Must run on any machine with Python 3.
 - **`wwwroot/generated/` and `tools/pandoc/` are git-ignored** — regeneration is deterministic at every build.
@@ -1975,7 +1976,7 @@ git commit -m "feat: tag page with htmx tag switching"
 
 **Interfaces:**
 - Consumes: `PostStore.Search(q)`, `PostCard`, `I18n.*`, Task 2's fallback fragment pattern (GET).
-- Produces: `/search` full page (input + empty results container) AND a `/search?q=` GET fragment endpoint returning `#search-results` content: cards, or a "no results" message for empty/zero matches. Input triggers `hx-get` on `input changed delay:300ms`.
+- Produces: `/search` full page (input + empty results container) AND a `/search/results?q=` GET fragment endpoint returning `#search-results` content: cards, or a "no results" message for empty/zero matches. Input triggers `hx-get` on `input changed delay:300ms`. (Endpoint renamed to `/search/results` — a `/search` endpoint collides with the `/search` page route → AmbiguousMatchException.)
 
 - [ ] **Step 1: Write SearchResults (plain fragment component)**
 
@@ -2009,7 +2010,7 @@ git commit -m "feat: tag page with htmx tag switching"
 - [ ] **Step 1b: Add the /search fragment endpoint in Program.cs**
 
 ```csharp
-app.MapGet("/search", async ([FromServices] HtmlRenderer renderer, string? q) =>
+app.MapGet("/search/results", async ([FromServices] HtmlRenderer renderer, string? q) =>
 {
     var html = await renderer.Dispatcher.InvokeAsync(async () =>
     {
@@ -2066,13 +2067,13 @@ curl.exe -s http://localhost:5080/search
 Expected: full page with the search input (carrying `hx-get="/search"` and the 300ms trigger) and an empty `#search-results` div.
 
 ```powershell
-curl.exe -s "http://localhost:5080/search?q=%C4%91%E1%BA%A1o"
+curl.exe -s "http://localhost:5080/search/results?q=%C4%91%E1%BA%A1o"
 ```
 
 Expected: bare fragment (no `<html>`) with `id="search-results"` containing 1 card (Đạo hàm và ý nghĩa hình học).
 
 ```powershell
-curl.exe -s "http://localhost:5080/search?q=zzzz"
+curl.exe -s "http://localhost:5080/search/results?q=zzzz"
 ```
 
 Expected: bare fragment with `<p class="db-search__empty">Không tìm thấy bài viết phù hợp.</p>`.
@@ -2210,8 +2211,8 @@ Start the app (`dotnet run --urls http://localhost:5080`) and verify each row, r
 | 5 | Tag page | `curl http://localhost:5080/tags/toan` | 2 cards, chips present |
 | 6 | Tag htmx | `curl -H "HX-Request: true" "http://localhost:5080/tags?tag=python"` | fragment with 1 card |
 | 7 | Search page | `curl http://localhost:5080/search` | input + empty `#search-results` |
-| 8 | Search partial | `curl "http://localhost:5080/search?q=%C4%91%E1%BA%A1o"` | fragment with "Đạo hàm" card |
-| 9 | Empty search | `curl "http://localhost:5080/search?q=zzzz"` | "Không tìm thấy bài viết phù hợp." |
+| 8 | Search partial | `curl "http://localhost:5080/search/results?q=%C4%91%E1%BA%A1o"` | fragment with "Đạo hàm" card |
+| 9 | Empty search | `curl "http://localhost:5080/search/results?q=zzzz"` | "Không tìm thấy bài viết phù hợp." |
 | 10 | Dark mode | browser: click Tối/Sáng, reload | theme persists; `data-theme="dark"` on `<html>` |
 | 11 | TOC scrollspy | browser: scroll a post | active heading highlighted |
 | 12 | Copy-code | browser: click "Sao chép" on a code block | clipboard gets code; button shows "Đã chép!" |

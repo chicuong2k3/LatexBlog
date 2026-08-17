@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents();
 builder.Services.AddScoped<HtmlRenderer>();
+builder.Services.AddSingleton<LatexBlog.Services.PostStore>();
 builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();

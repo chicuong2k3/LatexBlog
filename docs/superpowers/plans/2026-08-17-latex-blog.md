@@ -462,7 +462,7 @@ if __name__ == "__main__":
 - [ ] **Step 2: Run tests to verify they fail**
 
 ```powershell
-py -3 tools\test_build_posts.py
+python tools\test_build_posts.py
 ```
 
 Expected: FAIL with `ModuleNotFoundError: No module named 'build_posts'` (module doesn't exist yet).
@@ -549,7 +549,7 @@ def validate_meta(meta, slug, path):
 - [ ] **Step 4: Run tests to verify they pass**
 
 ```powershell
-py -3 tools\test_build_posts.py
+python tools\test_build_posts.py
 ```
 
 Expected: `OK` (all tests pass). Run from the project root so `import build_posts` resolves (`tools` is on `sys.path` only when running the file directly — the `if __name__ == "__main__"` runner adds it; if `import build_posts` still fails, run with `cd tools; py -3 test_build_posts.py` instead).
@@ -695,7 +695,7 @@ def hi():
 - [ ] **Step 2: Run tests to verify they fail**
 
 ```powershell
-py -3 tools\test_build_posts.py
+python tools\test_build_posts.py
 ```
 
 Expected: FAIL — `ImportError: cannot import name 'build_all' from 'build_posts'`.
@@ -834,7 +834,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: Run tests to verify they pass**
 
 ```powershell
-py -3 tools\test_build_posts.py
+python tools\test_build_posts.py
 ```
 
 Expected: `OK` (13 tests). Note: tests run from the project root; `find_pandoc` finds the Task 3 install under `tools/pandoc/`.
@@ -864,7 +864,7 @@ In `LatexBlog.csproj`, inside the top-level `<Project>` element, add:
 
 ```xml
   <Target Name="BuildPosts" BeforeTargets="BeforeBuild">
-    <Exec Command="py -3 tools/build_posts.py" WorkingDirectory="$(MSBuildProjectDirectory)" />
+    <Exec Command="python tools/build_posts.py" WorkingDirectory="$(MSBuildProjectDirectory)" />
   </Target>
 ```
 
@@ -2176,7 +2176,7 @@ or slug collisions.
 ```
 posts/*.tex                  source of truth
 tools/build_posts.py         frontmatter parse + pandoc + index.json (stdlib)
-tools/test_build_posts.py    Python unit tests (py -3 tools\test_build_posts.py)
+tools/test_build_posts.py    Python unit tests (python tools\test_build_posts.py)
 wwwroot/generated/           build output (git-ignored; deterministic)
 Components/Pages/            Home, Post, Tag, Search, NotFound
 Components/Shared/PostCard   reusable card

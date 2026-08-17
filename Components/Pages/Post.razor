@@ -1,0 +1,88 @@
+@page "/posts/{slug}"
+@using System.Text.RegularExpressions
+@inject PostStore PostStore
+@inject IHttpContextAccessor HttpContextAccessor
+
+@if (PostMeta is null || Html is null)
+{
+    <PageTitle>@I18n.NotFoundTitle</PageTitle>
+    <section class="db-not-found">
+        <h1>@I18n.NotFoundTitle</h1>
+        <p>@I18n.NotFoundMessage</p>
+        <a href="/" class="db-button">@I18n.BackHome</a>
+    </section>
+}
+else
+{
+    <PageTitle>@PostMeta.Title — @I18n.SiteTitle</PageTitle>
+
+    <article class="db-post">
+        <header class="db-post__header">
+            <h1>@PostMeta.Title</h1>
+            <p class="db-post__meta">@I18n.PostedOn @PostMeta.Date</p>
+            <div class="db-post__tags">
+                @foreach (var tag in PostMeta.Tags)
+                {
+                    <a href="/tags/@tag" class="db-chip">#@tag</a>
+                }
+            </div>
+        </header>
+
+        @if (Toc.Count > 0)
+        {
+            <nav class="db-toc" x-data="tocSpy" x-init="init($el)" aria-label="@I18n.Toc">
+                <strong>@I18n.Toc</strong>
+                <ul>
+                    @foreach (var entry in Toc)
+                    {
+                        <li>
+                            <a href="#@entry.Id"
+                               x-bind:class="activeId === '@entry.Id' ? 'is-active' : ''">@entry.Text</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+
+        <div class="db-prose" x-data x-init="initProse($el)">
+            @((MarkupString)Html)
+        </div>
+    </article>
+}
+
+@code {
+    private static readonly Regex HeadingRegex = new(
+        @"<h([1-3])\s+id=""([^""]+)""[^>]*>(.*?)</h\1>",
+        RegexOptions.IgnoreCase | RegexOptions.Singleline);
+
+    [Parameter] public string? Slug { get; set; }
+
+    private PostMeta? PostMeta;
+    private string? Html;
+    private List<TocEntry> Toc { get; } = new();
+
+    protected override void OnParametersSet()
+    {
+        PostMeta = Slug is null ? null : PostStore.GetMeta(Slug);
+        Html = PostMeta is null ? null : PostStore.GetHtml(PostMeta.Slug);
+        Toc.Clear();
+        if (Html is not null)
+            Toc.AddRange(ExtractToc(Html));
+        if (PostMeta is null && HttpContextAccessor.HttpContext is { } ctx)
+            ctx.Response.StatusCode = StatusCodes.Status404NotFound;
+    }
+
+    private static IEnumerable<TocEntry> ExtractToc(string html)
+    {
+        foreach (Match m in HeadingRegex.Matches(html))
+        {
+            var text = Regex.Replace(m.Groups[3].Value, "<[^>]+>", "");
+            text = System.Net.WebUtility.HtmlDecode(text).Trim();
+            if (text.Length == 0)
+                continue;
+            yield return new TocEntry(m.Groups[2].Value, text);
+        }
+    }
+
+    private sealed record TocEntry(string Id, string Text);
+}

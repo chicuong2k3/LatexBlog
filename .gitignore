@@ -484,3 +484,6 @@ $RECYCLE.BIN/
 # SDD progress ledger and task scratch (subagent-driven-development)
 .superpowers/
 
+# local pandoc install (dev/CI only)
+tools/pandoc/
+

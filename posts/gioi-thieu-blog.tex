@@ -1,0 +1,23 @@
+%---
+% title: "Chào mừng đến với LatexBlog"
+% date: 2026-08-10
+% tags: [blog]
+% summary: "Giới thiệu về blog và quy trình xuất bản bài viết từ LaTeX."
+%---
+\section{Tại sao LaTeX?}
+
+LaTeX cho phép viết toán học đẹp, quản lý tài liệu dài và xuất bản
+nhất quán. Blog này nhận bài viết dạng \texttt{.tex} và chuyển thành
+HTML ngay lúc build bằng Pandoc.
+
+\section{Quy trình xuất bản}
+
+\begin{enumerate}
+\item Viết bài dưới dạng \texttt{posts/*.tex}.
+\item Commit và build --- MSBuild gọi \texttt{tools/build\_posts.py}.
+\item Pandoc tạo HTML tĩnh; Blazor phục vụ chúng.
+\end{enumerate}
+
+\section{Kết luận}
+
+Hy vọng bạn thấy những bài viết sắp tới hữu ích.

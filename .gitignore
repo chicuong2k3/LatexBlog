@@ -487,3 +487,6 @@ $RECYCLE.BIN/
 # local pandoc install (dev/CI only)
 tools/pandoc/
 
+# deterministic build output
+wwwroot/generated/
+

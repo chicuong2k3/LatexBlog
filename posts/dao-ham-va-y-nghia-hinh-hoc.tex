@@ -1,0 +1,32 @@
+%---
+% title: "Đạo hàm và ý nghĩa hình học"
+% date: 2026-08-17
+% tags: [toan, latex]
+% summary: "Tìm hiểu đạo hàm qua góc nhìn hình học: định nghĩa, quy tắc tính và ứng dụng."
+%---
+\section{Giới thiệu}
+
+Đạo hàm là một trong những khái niệm nền tảng nhất của giải tích.
+Nó mô tả tốc độ thay đổi tức thời của một hàm số.
+
+\section{Định nghĩa}
+
+Đạo hàm của hàm số \(f\) tại điểm \(x\) được định nghĩa bởi giới hạn:
+
+\begin{equation}
+f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+\end{equation}
+
+\section{Ví dụ bằng mã}
+
+Dưới đây là một hàm Python tính đạo hàm số:
+
+\begin{verbatim}
+def dao_ham(f, x, h=1e-6):
+    return (f(x + h) - f(x - h)) / (2 * h)
+\end{verbatim}
+
+\section{Kết luận}
+
+Đạo hàm giúp ta hiểu độ dốc của đồ thị tại từng điểm, và là công cụ
+trung tâm trong tối ưu hóa, vật lý và học máy.

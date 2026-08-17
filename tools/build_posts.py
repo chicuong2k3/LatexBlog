@@ -111,7 +111,10 @@ def render_pandoc(pandoc, tex_path, out_html):
         "--standalone=false",
         "--wrap=none",
     ]
-    proc = subprocess.run(cmd, capture_output=True, text=True)
+    proc = subprocess.run(
+        cmd, capture_output=True, text=True,
+        encoding="utf-8", errors="replace",
+    )
     if proc.returncode != 0:
         raise RuntimeError(
             f"pandoc failed for {tex_path.name}:\n{proc.stderr[:2000]}"
@@ -126,6 +129,7 @@ def write_pygments_css(pandoc, out_css):
         [pandoc, "--from", "markdown", "--to", "html5", "--standalone",
          "--highlight-style=pygments"],
         input=probe, capture_output=True, text=True,
+        encoding="utf-8", errors="replace",
     )
     if proc.returncode != 0:
         raise RuntimeError(f"pandoc css generation failed:\n{proc.stderr[:2000]}")

@@ -7,4 +7,8 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <Target Name="BuildPosts" BeforeTargets="BeforeBuild">
+    <Exec Command="python tools/build_posts.py" WorkingDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+
 </Project>

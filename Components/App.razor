@@ -1,18 +1,42 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+@using LatexBlog.I18n
+
+<!DOCTYPE html>
+<html lang="vi" data-theme="default">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="@I18n.SiteTitle" />
     <base href="/" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daub-ui@3.19.12/daub.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daub-ui@3.19.12/daub-classless.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+    <link rel="stylesheet" href="/generated/pygments.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/site.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <HeadOutlet />
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.9.12/dist/htmx.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+    <script>
+        // no-flash theme restore - runs before first paint
+        (function () {
+            var saved = localStorage.getItem("db-theme");
+            if (saved === null) {
+                saved = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default";
+            }
+            document.documentElement.setAttribute("data-theme", saved);
+        })();
+    </script>
 </head>
 
 <body>
     <Routes />
+    <script src="js/site.js"></script>
 </body>
 
 </html>

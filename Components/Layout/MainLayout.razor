@@ -1,23 +1,38 @@
-﻿@inherits LayoutComponentBase
+@inherits LayoutComponentBase
+@using LatexBlog.I18n
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<div class="db-nav" x-data="{ menuOpen: false }">
+    <nav class="db-container db-nav__inner">
+        <a href="/" class="db-nav__brand">@I18n.SiteTitle</a>
+        <button type="button" class="db-nav__toggle"
+                x-on:click="menuOpen = !menuOpen"
+                :aria-expanded="menuOpen"
+                aria-label="@I18n.ToggleMenu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+        </button>
+        <ul class="db-nav__links" :class="{ 'open': menuOpen }">
+            <li><a href="/">@I18n.MenuHome</a></li>
+            <li><a href="/tags/toan">@I18n.MenuTags</a></li>
+            <li><a href="/search">@I18n.MenuSearch</a></li>
+        </ul>
+        <button type="button" class="db-button db-button--ghost db-button--sm"
+                x-data="themeToggle" x-on:click="toggle"
+                :aria-label="dark ? '@I18n.ThemeToLight' : '@I18n.ThemeToDark'">
+            <span x-text="dark ? 'Sáng' : 'Tối'"></span>
+        </button>
+    </nav>
+</div>
+
+<main class="db-container db-main">
+    @Body
+</main>
+
+<footer class="db-footer">
+    <div class="db-container">
+        <p>@I18n.Footer</p>
     </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
-
-<div id="blazor-error-ui" data-nosnippet>
-    An unhandled error has occurred.
-    <a href="." class="reload">Reload</a>
-    <span class="dismiss">🗙</span>
-</div>
+</footer>

@@ -1,0 +1,116 @@
+:root {
+    font-family: "Be Vietnam Pro", var(--db-font-ui);
+}
+body {
+    font-family: "Be Vietnam Pro", var(--db-font-ui);
+    background: var(--db-color-bg);
+    color: var(--db-color-text);
+}
+.db-main {
+    padding-block: var(--db-space-7);
+    min-height: 60vh;
+}
+/* nav */
+.db-nav__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--db-space-5);
+    height: var(--db-navbar-height);
+}
+.db-nav__brand {
+    font-weight: var(--db-weight-bold);
+    font-size: var(--db-text-lg);
+    text-decoration: none;
+    color: var(--db-color-text);
+    margin-right: auto;
+}
+.db-nav__links {
+    display: flex;
+    gap: var(--db-space-4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.db-nav__links a {
+    text-decoration: none;
+    color: var(--db-color-text-secondary);
+}
+.db-nav__toggle {
+    display: none;
+    background: none;
+    border: 0;
+    color: var(--db-color-text);
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .db-nav__toggle { display: inline-flex; }
+    .db-nav__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var(--db-navbar-height);
+        left: 0;
+        right: 0;
+        background: var(--db-color-surface);
+        border-bottom: 1px solid var(--db-color-border);
+        padding: var(--db-space-4);
+        gap: var(--db-space-3);
+    }
+    .db-nav__links.open { display: flex; }
+}
+/* footer */
+.db-footer {
+    border-top: 1px solid var(--db-color-border);
+    padding-block: var(--db-space-6);
+    color: var(--db-color-text-muted);
+    font-size: var(--db-text-sm);
+}
+/* prose content (pandoc fragment) */
+.db-prose {
+    font-family: "Be Vietnam Pro", var(--db-font-body);
+    line-height: var(--db-leading-loose);
+    font-size: var(--db-text-lg);
+}
+.db-prose h1, .db-prose h2, .db-prose h3 {
+    font-family: "Be Vietnam Pro", var(--db-font-heading);
+    margin-top: var(--db-space-7);
+}
+.db-prose img { max-width: 100%; }
+.db-prose table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.db-prose th, .db-prose td {
+    border: 1px solid var(--db-color-border);
+    padding: var(--db-space-2) var(--db-space-3);
+}
+/* code blocks + copy button */
+.db-post__codeblock { position: relative; }
+.db-post__copy {
+    position: absolute;
+    top: var(--db-space-2);
+    right: var(--db-space-2);
+    font-size: var(--db-text-xs);
+}
+/* TOC */
+.db-toc {
+    border-left: 2px solid var(--db-color-accent);
+    padding-left: var(--db-space-4);
+    margin-bottom: var(--db-space-6);
+}
+.db-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.db-toc a {
+    display: block;
+    padding-block: var(--db-space-1);
+    color: var(--db-color-text-secondary);
+    text-decoration: none;
+    font-size: var(--db-text-sm);
+}
+.db-toc a.is-active {
+    color: var(--db-color-accent);
+    font-weight: var(--db-weight-semibold);
+}

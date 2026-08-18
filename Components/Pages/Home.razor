@@ -66,7 +66,7 @@
         <div class="lb-tagcloud__chips">
             @foreach (var tc in TagCounts)
             {
-                <a href="/tags/@tc.Tag" class="lb-tag lb-tag--big">#@tc.Tag <span>@tc.Count</span></a>
+                <a href="/tags/@tc.Tag" class="lb-tag lb-tag--big">@tc.Tag <span>@tc.Count</span></a>
             }
         </div>
     </div>

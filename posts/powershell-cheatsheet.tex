@@ -1,0 +1,501 @@
+%---
+% title: "PowerShell Cheatsheet"
+% date: 2026-08-18
+% tags: [powershell, windows]
+% summary: "Tổng hợp nhanh PowerShell từ cơ bản đến pipeline, provider, script và error handling."
+%---
+\section{1. Getting Started}
+\textbf{PowerShell} = a command line shell + a scripting language. On Windows 7+, and on Linux/macOS via \emph{PowerShell Core}.
+\begin{itemize}
+\item Open it: Start menu, type \texttt{PowerShell}.
+\item \textbf{Run as Administrator}: right-click, Run as Administrator (needed for the registry, system files, \texttt{Update-Help}).
+\item The \texttt{PS>} prompt means PowerShell is ready for input.
+\item \textbf{TAB} cycles completions forward, \textbf{SHIFT-TAB} backward. Works for command names and parameters.
+\end{itemize}
+
+\textbf{Familiar DOS commands}
+
+\begin{verbatim}
+cd .\Windows\  # change directory
+dir  # list contents
+cls  # clear the screen
+Get-Alias  # show every alias
+\end{verbatim}
+Those DOS commands are really \textbf{aliases} pointing at PowerShell cmdlets.
+
+\section{2. Commands}
+Command names follow the \textbf{Verb-Noun} convention: \texttt{Get-Content}, \texttt{Set-Variable}.
+\begin{itemize}
+\item \textbf{Cmdlet}: written in C\#, shipped by Microsoft.
+\item \textbf{Function}: written in PowerShell (these are what you will write).
+\item Also \textbf{aliases} and \textbf{external scripts}.
+\end{itemize}
+
+\textbf{Get-Command}
+
+\begin{verbatim}
+Get-Command  # everything
+Get-Command -Verb Get
+Get-Command -Noun Content
+Get-Command -Verb Get -Noun Content
+Get-Command -Name Get-Content
+\end{verbatim}
+Common verbs: \texttt{Get} (read), \texttt{Set}, \texttt{Update}, \texttt{Remove} (modify).
+
+\section{3. Help}
+\begin{verbatim}
+Get-Help Add-Content
+Get-Help Add-Content -Examples  # most useful
+Get-Help Add-Content -Detailed
+Get-Help Add-Content -Full
+Get-Help about_Core_Commands
+Get-Help -Name About*  # wildcard *
+Update-Help  # needs Admin
+\end{verbatim}
+\begin{itemize}
+\item Help sections: SYNOPSIS, SYNTAX, DESCRIPTION, RELATED LINKS, REMARKS.
+\item \textbf{About topics}: broad subjects, not tied to a single command.
+\item \textbf{Positional parameter}: drop the parameter name and pass the value by position.
+\end{itemize}
+
+\section{4. Variables}
+Every variable starts with \texttt{\$}.
+\begin{verbatim}
+$color = 'blue'  # declare + assign
+$color  # read the value
+Set-Variable -Name color -Value blue
+Get-Variable -Name color
+Get-Variable  # all variables
+\end{verbatim}
+Referencing an undefined variable raises \emph{VariableIsUndefined}.
+
+\textbf{Strict mode}
+
+\begin{verbatim}
+Set-StrictMode -Version Latest
+\end{verbatim}
+Throws on undefined variables and properties. Best practice when writing scripts.
+
+\textbf{Automatic variables}
+
+Created by PowerShell -- treat them as read-only:
+\begin{itemize}
+\item \texttt{\$MaximumHistoryCount} -- command history size, 4096 by default.
+\item \texttt{\$true} / \texttt{\$false} -- the boolean values.
+\item \texttt{\$null} -- nothing. Use it to declare an empty variable, or to swallow unwanted output: \texttt{\$null = \$list.Add(x)}.
+\item \texttt{\$LASTEXITCODE} -- exit code of the last external .exe (0 = success).
+\end{itemize}
+
+\textbf{Preference variables}
+
+\begin{verbatim}
+Get-Variable -Name *Preference
+$ErrorActionPreference = 'SilentlyContinue'
+$ErrorActionPreference = 'Continue'  # restore
+\end{verbatim}
+They control the output streams: Error, Warning, Verbose, Debug, Information.
+See \texttt{Get-Help about\_Preference\_Variables}.
+
+\section{5. Data Types}
+PowerShell infers the type and lets a variable change type freely.
+\begin{itemize}
+\item \textbf{Bool}: \texttt{\$true} / \texttt{\$false}.
+\item \textbf{Int32} (default, about $\pm 2.1$ billion), \textbf{Int64} for larger numbers.
+\item \textbf{Double} (default for decimals), \textbf{Float} -- both can be imprecise.
+\item \textbf{String}: must be quoted.
+\end{itemize}
+\begin{verbatim}
+$num = 1
+$num.GetType().name  # Int32
+$num = 1.5
+$num.GetType().name  # Double
+[Int32]$num  # 2  (cast -> rounds)
+\end{verbatim}
+
+\textbf{Double vs single quotes}
+
+\begin{verbatim}
+$color = 'blue'
+"I like $color"  # -> I like blue
+'I like $color'  # -> I like $color
+\end{verbatim}
+Double quotes trigger \emph{variable interpolation} (expansion). Single quotes are literal.
+With no quotes at all PowerShell reads the word as a command and errors out.
+
+\section{6. Objects}
+\textbf{Everything in PowerShell is an object.}
+A class is the template, an object is one instance of it.
+\textbf{Properties} are its data, \textbf{methods} are what it can do. Together they are its \emph{members}.
+\begin{verbatim}
+Select-Object -InputObject $color -Property *
+Get-Member -InputObject $color  # props + methods
+Get-Member -InputObject $color -Name Remove
+$color.Length  # dot notation
+$newColor = $color.Remove(1,1)  # methods take ()
+\end{verbatim}
+A method with a return type (e.g.\ \texttt{string Remove(...)}) produces a new object, so assign the result.
+A \texttt{void} method modifies the existing object in place.
+
+\section{7. Arrays}
+\begin{verbatim}
+$colorPicker = @('blue','white','yellow','black')
+$colorPicker[0]  # blue  (indexes start at 0)
+$colorPicker[-1]  # last element
+$colorPicker[1..3]  # range operator ..
+$colorPicker[3] = 'white'  # modify
+$colorPicker += 'orange'  # add one
+$colorPicker += @('pink','cyan')  # add several
+\end{verbatim}
+\textbf{Note}: arrays have a \emph{fixed size}. Every \texttt{+=} builds a brand new array, which hurts on large data. There is no simple way to remove an element.
+
+\section{8. ArrayLists}
+Dynamically sized, much faster than arrays for heavy adding/removing (roughly 100+ elements).
+\begin{verbatim}
+$cp = [System.Collections.ArrayList]@('blue','white')
+$null = $cp.Add('gray')  # Add returns an index -> discard it
+$cp.Remove('gray')  # removes by VALUE
+\end{verbatim}
+
+\section{9. Hashtables}
+\textbf{Key--value} pairs, each key must be unique.
+\begin{verbatim}
+$users = @{
+  abertram  = 'Adam Bertram'
+  raquelcer = 'Raquel Cerillo'
+}
+$users['abertram']  # read
+$users.abertram  # read as a property
+$users.Keys ; $users.Values
+$users.Add('natice','Natalie Ice')
+$users['phrigo'] = 'Phil Rigo'  # add / modify
+$users.ContainsKey('johnnyq')  # True/False
+$users.Remove('natice')
+\end{verbatim}
+
+\section{10. Custom Objects}
+\begin{verbatim}
+$o = New-Object -TypeName PSCustomObject
+$o = [PSCustomObject]@{ OSBuild='x'; OSVersion='y' }
+$o.OSBuild
+Get-Member -InputObject $o
+\end{verbatim}
+Build a hashtable whose keys are property names, then cast it to \texttt{[PSCustomObject]}. A \texttt{;} separates the pairs.
+
+\section{11. The Pipeline}
+The pipe operator \texttt{|} sends the \emph{output} of one command into the next as input. Unlike cmd.exe or bash, PowerShell pipes \textbf{objects}, not plain strings.
+\begin{verbatim}
+command1 | command2
+Get-Service -Name 'wuauserv' | Start-Service
+'wuauserv' | Get-Service | Start-Service
+\end{verbatim}
+An array sent down the pipeline is \textbf{unwrapped}: each item travels separately, so the next command runs once per item.
+\begin{verbatim}
+Get-Content -Path C:\Services.txt | Get-Service
+Get-Content -Path C:\Services.txt | Get-Service | Start-Service
+\end{verbatim}
+No hard limit on chained commands, but past about five, rethink the approach. Not every command accepts pipeline input.
+
+\section{12. Parameter Binding}
+\textbf{Parameter binding} is how PowerShell decides which parameter receives the piped object. The command's author must explicitly enable it.
+\begin{verbatim}
+Get-Help -Name Get-Service -Full  # see PARAMETERS
+\end{verbatim}
+Look at the \texttt{Accept pipeline input?} field:
+\begin{itemize}
+\item \textbf{ByValue}: matched by object \emph{type}. Only one parameter per type can bind this way (e.g.\ a string binds to \texttt{-Name}).
+\item \textbf{ByPropertyName}: matched by \emph{property name} on the incoming object (e.g.\ a \texttt{ComputerName} property binds to \texttt{-ComputerName}).
+\end{itemize}
+\begin{verbatim}
+$o = [PSCustomObject]@{Name='wuauserv'; ComputerName='SRV1'}
+$o | Get-Service
+\end{verbatim}
+Piping into a command with no pipeline support fails: \emph{The input object cannot be bound to any parameters}.
+
+\section{13. Scripts}
+A script is an external \texttt{.ps1} file holding a sequence of commands, run by typing its path.
+\begin{verbatim}
+C:\FolderPath\script.ps1  # full path
+.\script.ps1  # current directory
+\end{verbatim}
+Write scripts in any editor; the PowerShell ISE (\texttt{powershell\_ise.exe}, now deprecated) or VS Code are the usual choices.
+\begin{verbatim}
+Write-Host 'Hello, I am in a script!'
+\end{verbatim}
+
+\textbf{Execution policy}
+
+Scripts are blocked by default. Four settings:
+\begin{itemize}
+\item \textbf{Restricted} -- the default, no scripts at all.
+\item \textbf{AllSigned} -- only scripts signed by a trusted party.
+\item \textbf{RemoteSigned} -- your own scripts freely, downloaded ones only if signed.
+\item \textbf{Unrestricted} -- any script.
+\end{itemize}
+\begin{verbatim}
+Get-ExecutionPolicy
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+\end{verbatim}
+Needs Administrator, but only once -- the value lives in the registry (or Group Policy across a domain). A \emph{script signature} is an encrypted comment block appended to the file.
+
+\section{14. Comparison Operators}
+Conditions are expressions evaluating to \texttt{True} / \texttt{False}.
+\begin{itemize}
+\item \texttt{-eq} equal, \texttt{-ne} not equal.
+\item \texttt{-gt} greater, \texttt{-ge} greater or equal.
+\item \texttt{-lt} less, \texttt{-le} less or equal.
+\item \texttt{-contains} value is in an array.
+\item \texttt{-not} inverts the result.
+\end{itemize}
+\begin{verbatim}
+1 -eq 1  # True
+Test-Connection -ComputerName srv1 -Quiet -Count 1
+-not (Test-Connection -ComputerName srv1 -Quiet -Count 1)
+\end{verbatim}
+\texttt{-Quiet} reduces \texttt{Test-Connection} to a plain boolean, \texttt{-Count 1} to a single attempt.
+
+\section{15. if / elseif / else}
+\begin{verbatim}
+if (condition) {
+  # runs when the condition is True
+}
+\end{verbatim}
+\texttt{\#} starts a comment. Add \texttt{else} for the false branch, and \texttt{elseif} for extra cases instead of nesting.
+\begin{verbatim}
+if (-not (Test-Connection -ComputerName $s -Quiet -Count 1)) {
+  Write-Error -Message "$s is not responding!"
+} elseif ($s -eq $problemServer) {
+  Write-Error -Message "$s does not have the right file!"
+} else {
+  Get-Content -Path "\\$s\c$\App_configuration.txt"
+}
+\end{verbatim}
+\texttt{elseif} branches are mutually exclusive: the first True branch wins and the rest are never tested.
+
+\section{16. switch}
+Cleaner than a long \texttt{elseif} chain when you are testing \emph{one value} against many possibilities.
+\begin{verbatim}
+switch ($currentServer) {
+  $servers[0] {
+    # do something
+    break
+  }
+  $servers[1] {
+    break
+  }
+  default {
+    # no match was found
+  }
+}
+\end{verbatim}
+Unlike \texttt{elseif}, a \texttt{switch} keeps evaluating the remaining conditions after a match -- add \texttt{break} to make the branches mutually exclusive.
+
+\section{17. Loops}
+DRY -- Don't Repeat Yourself. Each pass of a loop is an \emph{iteration}. PowerShell has five loop types.
+
+\textbf{foreach -- three flavors}
+
+\begin{verbatim}
+foreach ($server in $servers) {  # statement
+  Get-Content -Path "\\$server\c$\f.txt"
+}
+$servers | ForEach-Object -Process {  # cmdlet, takes pipeline
+  Get-Content -Path "\\$_\c$\f.txt"
+}
+$servers.foreach({  # method, PS v4+, fastest
+  Get-Content -Path "\\$_\c$\f.txt"
+})
+\end{verbatim}
+\texttt{\$\_} is the current pipeline object. The loop variable is only a \textbf{copy}, so no flavor of \texttt{foreach} can modify the original array.
+
+\textbf{for -- a known number of times}
+
+\begin{verbatim}
+for ($i = 0; $i -lt 10; $i++) {
+  $i
+}
+\end{verbatim}
+Four parts: init, condition, step, body. Unlike \texttt{foreach}, it \emph{can} modify the array, and it can reach neighbouring elements.
+\begin{verbatim}
+for ($i = 0; $i -lt $servers.Length; $i++) {
+  $servers[$i] = "new $($servers[$i])"
+}
+for ($i = 1; $i -lt $servers.Length; $i++) {
+  Write-Host $servers[$i] "comes after" $servers[$i-1]
+}
+\end{verbatim}
+
+\textbf{while, do/while, do/until}
+
+\begin{verbatim}
+while ($counter -lt 10) {  # 0 or more runs
+  $counter
+  $counter++
+}
+do {  # runs at least once
+} while ($true)
+do {
+  $choice = Read-Host -Prompt 'Best language?'
+} until ($choice -eq 'PowerShell')
+\end{verbatim}
+Use \texttt{while} when the iteration count is unknown. \texttt{do/while} and \texttt{do/until} are inverses of each other, and both test \emph{after} the body. \texttt{break} exits any loop -- essential inside \texttt{while (\$true)}.
+
+\section{18. Errors \& Exceptions}
+An \textbf{exception} is an event that disrupts normal flow (divide by zero, index out of bounds, missing file). Unhandled, it reaches the user as an \textbf{error}.
+\begin{itemize}
+\item \textbf{Terminating error} -- stops execution. Use when the code cannot continue at all (e.g.\ the whole folder is missing).
+\item \textbf{Nonterminating error} -- prints a message and carries on. Use when one item fails but the rest are independent (e.g.\ one corrupt file out of many).
+\end{itemize}
+Whether an exception becomes terminating is a decision made by whoever wrote the cmdlet.
+\begin{verbatim}
+Get-Service bits,foo,lanmanserver
+# errors on 'foo', still returns bits and lanmanserver
+\end{verbatim}
+
+\section{19. ErrorAction}
+\texttt{-ErrorAction} is a \emph{common parameter}, available on every cmdlet. It says what to do about a \textbf{nonterminating} error:
+\begin{itemize}
+\item \texttt{Continue} -- print it and keep going (default).
+\item \texttt{Ignore} -- no message, not recorded in \texttt{\$Error}.
+\item \texttt{Inquire} -- print it and prompt the user.
+\item \texttt{SilentlyContinue} -- no message, but still recorded in \texttt{\$Error}.
+\item \texttt{Stop} -- print it and stop: turns it into a terminating error.
+\end{itemize}
+\begin{verbatim}
+Get-ChildItem -Path $folderPath -ErrorAction Stop
+$ErrorActionPreference = 'Stop'  # global default
+\end{verbatim}
+\texttt{-ErrorAction} overrides \texttt{\$ErrorActionPreference}. Setting the preference to \texttt{Stop} once removes the whole nonterminating category, so \texttt{try/catch} can see everything.
+
+\section{20. try / catch / finally}
+Only \textbf{terminating} errors can be caught -- hence the \texttt{-ErrorAction Stop} above.
+\begin{verbatim}
+try {
+  # code to attempt
+} catch {
+  # runs only if a terminating error occurred
+} finally {
+  # always runs; optional
+}
+\end{verbatim}
+Inside \texttt{catch}, the error object is in \texttt{\$\_}:
+\begin{verbatim}
+try {
+  $files = Get-ChildItem -Path $folderPath -ErrorAction Stop
+  $files.foreach({ (Get-Content $_)[0] })
+} catch {
+  $_.Exception.Message
+}
+\end{verbatim}
+The error object also carries the exception type and a stack trace; \texttt{Message} is usually what you want. \texttt{finally} is the place for cleanup (closing database connections, removing remoting sessions).
+
+\textbf{The \$Error variable}
+
+\begin{verbatim}
+$Error  # array of every error this session
+$Error[0]  # most recent
+$Error[1]  # second most recent
+\end{verbatim}
+Newest errors are added to the \emph{front}. See also \texttt{Get-Help about\_try\_catch\_finally}.
+
+\section{21. Functions}
+A \textbf{function} is a named block of code solving one task, defined once and called by name. A \textbf{cmdlet} does the same job but is compiled from C\#; functions are written in PowerShell.
+\begin{verbatim}
+function Install-Software {
+  Write-Host 'I installed some software!'
+}
+Install-Software
+Get-Command -CommandType Function
+\end{verbatim}
+Name them \texttt{Verb-Noun} (\texttt{Get-Verb} lists the approved verbs), noun singular. Redefining a function simply replaces it.
+
+\section{22. Parameters}
+Parameters live in a \texttt{param} block. \texttt{[CmdletBinding()]} or a \texttt{[Parameter()]} attribute marks an \emph{advanced} function.
+\begin{verbatim}
+function Install-Software {
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory)]
+    [ValidateSet('1','2')]
+    [string]$Version = 2
+  )
+  Write-Host "Installed version $Version."
+}
+Install-Software -Version 2
+\end{verbatim}
+\begin{itemize}
+\item \texttt{[string]} casts the argument -- optional, but strongly recommended.
+\item \texttt{Mandatory} makes PowerShell prompt when the value is missing; parameters are optional by default.
+\item \texttt{= 2} sets a default value, overridden by anything passed in.
+\item \texttt{ValidateSet} restricts the allowed values and fails early with a clear message. Many other validation attributes exist: \texttt{Get-Help about\_Functions\_Advanced\_Parameters}.
+\end{itemize}
+
+\section{23. Pipeline Input}
+Add \texttt{ValueFromPipeline} (whole object, ByValue) or \texttt{ValueFromPipelineByPropertyName} (one property) to the parameter attribute.
+\begin{verbatim}
+function Install-Software {
+  param(
+    [Parameter(Mandatory)]
+    [string]$Version,
+    [Parameter(Mandatory, ValueFromPipeline)]
+    [string]$ComputerName
+  )
+  process {
+    Write-Host "Version $Version on $ComputerName."
+  }
+}
+@('SRV1','SRV2') | Install-Software -Version 2
+\end{verbatim}
+Without a \texttt{process} block the body runs \emph{once}, for the last piped object only. \texttt{begin} and \texttt{end} blocks run before and after the whole pipeline: \texttt{Get-Help about\_Functions\_Advanced}.
+
+\section{24. Modules}
+A \textbf{module} is a group of related functions packaged for reuse -- at its simplest, a \texttt{.psm1} text file. Since v3 PowerShell auto-imports a module when one of its commands is called.
+\begin{verbatim}
+Get-Module  # imported in this session
+Get-Module -ListAvailable  # installed on disk
+Get-Command -Module Microsoft.PowerShell.Management
+Import-Module -Name Software
+Import-Module -Name Software -Force  # reload after edits
+Remove-Module -Name Software  # unload, stays on disk
+\end{verbatim}
+Only \textbf{exported} commands are callable from outside; unexported ones are \emph{private} (helper) functions.
+
+\textbf{Where modules live}
+
+\begin{itemize}
+\item \textbf{System}: \texttt{C:\textbackslash Windows\textbackslash System32\textbackslash WindowsPowerShell\textbackslash 1.0\textbackslash Modules} -- internal, don't add your own.
+\item \textbf{All Users}: \texttt{C:\textbackslash Program Files\textbackslash WindowsPowerShell\textbackslash Modules}.
+\item \textbf{Current User}: \texttt{...\textbackslash Documents\textbackslash WindowsPowerShell\textbackslash Modules}.
+\end{itemize}
+\begin{verbatim}
+$env:PSModulePath  # ';' separated search paths
+$env:PSModulePath + ';C:\MyModules'  # this session only
+[Environment]::SetEnvironmentVariable("PSModulePath",
+  $CurrentValue + ";C:\MyModules", "Machine")  # persistent
+\end{verbatim}
+
+\section{25. Module Anatomy \& Gallery}
+A module is a \emph{folder} named after the module, holding a \texttt{.psm1} (the code) and an optional \texttt{.psd1} \textbf{manifest} -- a hashtable of metadata. Keep the noun identical across a module's functions; if the noun has to change, split the module.
+\begin{verbatim}
+mkdir 'C:\Program Files\WindowsPowerShell\Modules\Software'
+Add-Content '...\Software\Software.psm1' -Value ''
+New-ModuleManifest -Path '...\Software\Software.psd1' `
+  -Author 'Adam Bertram' -RootModule Software.psm1 `
+  -Description 'This module helps in deploying software.'
+\end{verbatim}
+At minimum set \texttt{RootModule}, \texttt{Author}, \texttt{Description}, \texttt{ModuleVersion}. \texttt{FunctionsToExport} controls exactly which commands are exported.
+
+\textbf{PowerShell Gallery}
+
+\texttt{PowerShellGet} is the built-in module for talking to \emph{powershellgallery.com}.
+\begin{verbatim}
+Get-Command -Module PowerShellGet
+Find-Module -Name *VMware*  # search only
+Find-Module -Name VMware.PowerCLI | Install-Module
+Uninstall-Module -Name VMware.PowerCLI
+\end{verbatim}
+The Gallery is untrusted by default, so installing prompts; change it with \texttt{Set-PSRepository}. \texttt{Install-Module} defaults to the All Users path. \texttt{Remove-Module} only unloads -- \texttt{Uninstall-Module} deletes from disk, and only works on Gallery modules.
+
+\vfill
+\hrule
+\smallskip
+{\scriptsize Source: \emph{PowerShell for Sysadmins}, Ch.\ 1--7. Examples run on PowerShell v5.1.}

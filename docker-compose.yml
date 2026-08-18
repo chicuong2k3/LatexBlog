@@ -6,6 +6,10 @@ services:
     restart: unless-stopped
     ports:
       - "${HOST_PORT:-8090}:8080"
+    networks:
+      # cloudflared lives on this network and reaches the app as
+      # http://alternative-world:8080 (container port, not HOST_PORT).
+      - cfnet
     # Supabase config ships in appsettings.json (publishable anon key). To point
     # at another project without rebuilding, uncomment and set these — an empty
     # value would override the file with an empty string, so leave them out
@@ -13,3 +17,7 @@ services:
     # environment:
     #   - Supabase__Url=https://xxxx.supabase.co
     #   - Supabase__AnonKey=sb_publishable_xxx
+
+networks:
+  cfnet:
+    external: true

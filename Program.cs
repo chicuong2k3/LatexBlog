@@ -100,16 +100,56 @@ app.MapGet("/rss.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
 app.MapGet("/sitemap.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
 {
     var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
+    var posts = store.All;
     var sb = new System.Text.StringBuilder();
     sb.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
     sb.Append("<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">");
-    sb.Append("<url><loc>").Append(baseUrl).Append("/</loc></url>");
-    foreach (var p in store.All)
+    sb.Append("<url><loc>").Append(baseUrl).Append("/</loc>");
+    if (posts.Count > 0)
+        sb.Append("<lastmod>").Append(posts[0].Date).Append("</lastmod>");
+    sb.Append("</url>");
+    foreach (var p in posts)
     {
-        sb.Append("<url><loc>").Append(baseUrl).Append("/posts/").Append(p.Slug).Append("</loc></url>");
+        sb.Append("<url><loc>").Append(baseUrl).Append("/posts/").Append(p.Slug).Append("</loc>");
+        sb.Append("<lastmod>").Append(p.Date).Append("</lastmod>");
+        sb.Append("</url>");
     }
     sb.Append("</urlset>");
     return Results.Content(sb.ToString(), "application/xml; charset=utf-8");
+});
+
+// ---- robots.txt: explicitly welcome AI crawlers (GEO/AEO) alongside classic SEO ----
+app.MapGet("/robots.txt", (HttpContext ctx) =>
+{
+    var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
+    var txt = $"""
+        User-agent: *
+        Allow: /
+
+        User-agent: GPTBot
+        Allow: /
+
+        User-agent: ChatGPT-User
+        Allow: /
+
+        User-agent: ClaudeBot
+        Allow: /
+
+        User-agent: Claude-Web
+        Allow: /
+
+        User-agent: anthropic-ai
+        Allow: /
+
+        User-agent: Google-Extended
+        Allow: /
+
+        User-agent: PerplexityBot
+        Allow: /
+
+        Sitemap: {baseUrl}/sitemap.xml
+        """;
+    return Results.Text(txt.Replace("\r\n", "\n"), "text/plain; charset=utf-8");
 });
 
 // ---- cover SVG (bìa tự sinh cho bài viết / og:image) ----

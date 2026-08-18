@@ -3,13 +3,13 @@
 <div id="tag-list">
     @if (Posts.Count == 0)
     {
-        <p>@I18n.NoPosts</p>
+        <p class="lb-empty">@I18n.NoPosts</p>
     }
     else
     {
-        @foreach (var post in Posts)
+        for (var i = 0; i < Posts.Count; i++)
         {
-            <PostCard Post="post" />
+            <PostCard Post="Posts[i]" Number="i + 1" />
         }
     }
 </div>

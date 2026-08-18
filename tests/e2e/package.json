@@ -1,0 +1,14 @@
+{
+  "name": "latexblog-e2e",
+  "private": true,
+  "description": "E2E tests for LatexBlog (Playwright). Run: npm install && npx playwright install chromium",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3"
+  }
+}

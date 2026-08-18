@@ -23,9 +23,33 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
 app.UseHttpsRedirection();
 
+// ---- ngôn ngữ (vi/en) ----
+app.Use(async (ctx, next) =>
+{
+    var lang = "vi";
+    if (ctx.Request.Query["lang"] is var q && q.Count > 0)
+    {
+        lang = q[0] == "en" ? "en" : "vi";
+        ctx.Response.Cookies.Append("lang", lang, new CookieOptions
+        {
+            MaxAge = TimeSpan.FromDays(365),
+            SameSite = SameSiteMode.Lax,
+        });
+    }
+    else if (ctx.Request.Cookies["lang"] is { } c)
+    {
+        lang = c == "en" ? "en" : "vi";
+    }
+    LatexBlog.I18n.I18n.Lang = lang;
+    await next();
+});
+
 app.UseAntiforgery();
 
-app.MapStaticAssets();
+// Static files: classic middleware. MapStaticAssets (dotnet 9/10) registers
+// precompressed gzip variants in its manifest that do not exist in dev, so
+// any client accepting gzip receives an empty 200 for css/js — served raw here.
+app.UseStaticFiles();
 
 // ---- htmx fragment endpoints (fallback mode; see docs/Htmxor-verdict.md) ----
 // HtmlRenderer renders a component to an HTML string; the endpoint returns the
@@ -70,6 +94,91 @@ app.MapGet("/search/results", async ([FromServices] HtmlRenderer renderer, strin
         return root.ToHtmlString().ToString();
     });
     return Results.Content(html, "text/html; charset=utf-8");
+});
+
+// ---- RSS + sitemap ----
+app.MapGet("/rss.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
+{
+    var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
+    var sb = new System.Text.StringBuilder();
+    sb.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+    sb.Append("<rss version=\"2.0\"><channel>");
+    sb.Append("<title>LatexBlog</title><link>").Append(baseUrl).Append("</link>");
+    sb.Append("<description>Viết bằng LaTeX, xuất bản bằng Blazor.</description>");
+    foreach (var p in store.All)
+    {
+        sb.Append("<item><title>").Append(System.Net.WebUtility.HtmlEncode(p.Title)).Append("</title>");
+        sb.Append("<link>").Append(baseUrl).Append("/posts/").Append(p.Slug).Append("</link>");
+        sb.Append("<guid>").Append(baseUrl).Append("/posts/").Append(p.Slug).Append("</guid>");
+        sb.Append("<description>").Append(System.Net.WebUtility.HtmlEncode(p.Summary)).Append("</description>");
+        sb.Append("<pubDate>").Append(DateTimeOffset.Parse(p.Date).ToUniversalTime().ToString("R")).Append("</pubDate>");
+        sb.Append("</item>");
+    }
+    sb.Append("</channel></rss>");
+    return Results.Content(sb.ToString(), "application/rss+xml; charset=utf-8");
+});
+
+app.MapGet("/sitemap.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
+{
+    var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
+    var sb = new System.Text.StringBuilder();
+    sb.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+    sb.Append("<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">");
+    sb.Append("<url><loc>").Append(baseUrl).Append("/</loc></url>");
+    foreach (var p in store.All)
+    {
+        sb.Append("<url><loc>").Append(baseUrl).Append("/posts/").Append(p.Slug).Append("</loc></url>");
+    }
+    sb.Append("</urlset>");
+    return Results.Content(sb.ToString(), "application/xml; charset=utf-8");
+});
+
+// ---- cover SVG (bìa tự sinh cho bài viết / og:image) ----
+app.MapGet("/cover/{slug}.svg", (LatexBlog.Services.PostStore store, string slug) =>
+{
+    var p = store.All.FirstOrDefault(x => x.Slug == slug);
+    var title = p?.Title ?? "LatexBlog";
+    var safe = System.Net.WebUtility.HtmlEncode(title);
+    var svg = $"""
+        <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1b1530"/><stop offset=".55" stop-color="#0e0c1e"/><stop offset="1" stop-color="#241a3d"/>
+            </linearGradient>
+            <radialGradient id="glow" cx=".85" cy=".15" r=".6">
+              <stop offset="0" stop-color="#ff5fa2" stop-opacity=".5"/><stop offset="1" stop-color="#ff5fa2" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1200" height="630" fill="url(#g)"/>
+          <rect width="1200" height="630" fill="url(#glow)"/>
+          <g fill="none" stroke="#ff5fa2" stroke-width="6" opacity=".9">
+            <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z"/>
+            <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z" transform="rotate(72 600 330)"/>
+            <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z" transform="rotate(144 600 330)"/>
+            <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z" transform="rotate(216 600 330)"/>
+            <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z" transform="rotate(288 600 330)"/>
+          </g>
+          <text x="600" y="455" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#efe9f6">LatexBlog</text>
+          <text x="600" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#f7a0c6">{safe}</text>
+        </svg>
+        """;
+    return Results.Content(svg, "image/svg+xml; charset=utf-8");
+});
+
+// ---- ping Google sitemap ----
+app.MapGet("/ping-sitemap", (HttpContext ctx) =>
+{
+    var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
+    _ = Task.Run(async () =>
+    {
+        try
+        {
+            using var hc = new HttpClient();
+            await hc.GetAsync($"https://www.google.com/ping?sitemap={Uri.EscapeDataString(baseUrl + "/sitemap.xml")}");
+        }
+        catch { /* best-effort */ }
+    });
+    return Results.Redirect("/write");
 });
 
 app.MapRazorComponents<App>();

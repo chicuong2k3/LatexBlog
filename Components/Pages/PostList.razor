@@ -1,13 +1,15 @@
 @inject PostStore PostStore
 
+@{ var idx = 0; }
 @foreach (var post in PagePosts)
 {
-    <PostCard Post="post" />
+    idx++;
+    <PostCard Post="post" Number="(Page - 1) * PageSize + idx" />
 }
 @if (HasMore)
 {
-    <div id="load-more">
-        <button type="button" class="db-button"
+    <div id="load-more" class="lb-load-more">
+        <button type="button" class="lb-button"
                 hx-get="/posts?page=@(Page + 1)"
                 hx-target="#load-more"
                 hx-swap="outerHTML"

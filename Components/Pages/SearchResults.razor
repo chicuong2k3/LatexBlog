@@ -3,13 +3,13 @@
 <div id="search-results">
     @if (Results.Count == 0)
     {
-        <p class="db-search__empty">@I18n.NoResults</p>
+        <p class="lb-empty">@I18n.NoResults</p>
     }
     else
     {
-        @foreach (var post in Results)
+        for (var i = 0; i < Results.Count; i++)
         {
-            <PostCard Post="post" />
+            <PostCard Post="Results[i]" Number="i + 1" />
         }
     }
 </div>

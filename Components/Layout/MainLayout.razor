@@ -1,10 +1,15 @@
 @inherits LayoutComponentBase
 @using LatexBlog.I18n
 
-<div class="db-nav" x-data="{ menuOpen: false }">
-    <nav class="db-container db-nav__inner">
-        <a href="/" class="db-nav__brand">@I18n.SiteTitle</a>
-        <button type="button" class="db-nav__toggle"
+<div class="lb-nav" x-data="navBox" x-init="$store.auth.init()">
+    <div id="lb-progress" class="lb-progress" aria-hidden="true"></div>
+    <nav class="lb-wrap lb-nav-in">
+        <a href="/" class="lb-brand">
+            <svg class="lb-brand__mark" aria-hidden="true"><use href="#lb-blossom" /></svg>
+            @I18n.SiteTitle
+        </a>
+
+        <button type="button" class="lb-nav__toggle"
                 x-on:click="menuOpen = !menuOpen"
                 :aria-expanded="menuOpen"
                 aria-label="@I18n.ToggleMenu">
@@ -14,25 +19,139 @@
                 <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
         </button>
-        <ul class="db-nav__links" :class="{ 'open': menuOpen }">
+
+        <ul class="lb-nav-links" :class="{ 'open': menuOpen }">
             <li><a href="/">@I18n.MenuHome</a></li>
             <li><a href="/tags/toan">@I18n.MenuTags</a></li>
-            <li><a href="/search">@I18n.MenuSearch</a></li>
         </ul>
-        <button type="button" class="db-button db-button--ghost db-button--sm"
-                x-data="themeToggle" x-on:click="toggle"
-                :aria-label="dark ? '@I18n.ThemeToLight' : '@I18n.ThemeToDark'">
-            <span x-text="dark ? 'Sáng' : 'Tối'"></span>
-        </button>
+
+        <div class="lb-nav-right">
+            <template x-if="$store.auth.enabled && $store.auth.signedIn && $store.auth.isAdmin">
+                <a href="/write" class="lb-button lb-button--sm lb-nav-login">@I18n.WritePost</a>
+            </template>
+
+            <button type="button" class="lb-nav-icon" x-on:click="openSearch()" :aria-expanded="searchOpen" aria-label="@I18n.MenuSearch">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            </button>
+
+            <div class="lb-notif" x-data="notifications" x-init="init()">
+                <button type="button" class="lb-nav-icon" x-on:click="toggle()" :aria-expanded="open" aria-label="@I18n.Notifications">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    <span class="lb-notif__badge" x-show="unread" x-text="unread"></span>
+                </button>
+                <div class="lb-notif__panel" x-show="open" x-transition.opacity x-on:click.outside="open = false" role="menu" aria-label="@I18n.Notifications">
+                    <div class="lb-notif__head">
+                        <strong>@I18n.Notifications</strong>
+                        <button type="button" class="lb-notif__readall" x-show="unread" x-on:click="markAllRead()">@I18n.MarkAllRead</button>
+                    </div>
+                    <template x-if="!list.length">
+                        <p class="lb-notif__empty">@I18n.NotificationsEmpty</p>
+                    </template>
+                    <template x-for="n in list" :key="n.id">
+                        <a class="lb-notif__item" :class="{ 'is-unread': !n.read }" :href="'/posts/' + n.post_slug">
+                            <img class="lb-avatar lb-avatar--xs" :src="n.actor_avatar || ''" alt="" loading="lazy" />
+                            <span class="lb-notif__text">
+                                <strong x-text="n.actor_name"></strong>
+                                <span x-text="n.type === 'reply' ? '@I18n.NotifReply' : '@I18n.NotifMention'"></span>
+                            </span>
+                            <time x-text="new Date(n.created_at).toLocaleDateString('vi-VN')"></time>
+                        </a>
+                    </template>
+                </div>
+            </div>
+
+            <template x-if="$store.auth.enabled && !$store.auth.signedIn">
+                <button type="button" class="lb-button lb-button--sm lb-nav-login" x-on:click="$store.auth.signIn()">
+                    <svg class="lb-comments__g" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true">
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                    </svg>
+                    @I18n.SignIn
+                </button>
+            </template>
+            <template x-if="$store.auth.enabled && $store.auth.signedIn">
+                <div class="lb-nav-user">
+                    <a href="/profile" class="lb-nav-user__link">
+                        <img class="lb-avatar" :src="$store.auth.avatar" alt="" loading="lazy" />
+                        <span class="lb-nav-user__name" x-text="$store.auth.displayName"></span>
+                    </a>
+                    <button type="button" class="lb-nav-icon" x-on:click="$store.auth.signOut()" aria-label="@I18n.SignOut" title="@I18n.SignOut">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                    </button>
+                </div>
+            </template>
+
+            <a class="lb-lang" href="?lang=@(I18n.Lang == "en" ? "vi" : "en")" aria-label="Ngôn ngữ">@(I18n.Lang == "en" ? "VI" : "EN")</a>
+
+            <button type="button" class="lb-theme-btn"
+                    x-data="themeToggle" x-on:click="toggle"
+                    :aria-label="dark ? '@I18n.ThemeToLight' : '@I18n.ThemeToDark'">
+                <svg class="lb-theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x-show="!dark"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="lb-theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x-show="dark"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </button>
+        </div>
     </nav>
+
+    <div class="lb-searchmodal" x-show="searchOpen" x-transition.opacity
+         x-on:keydown.escape.window="closeSearch()" x-on:click="closeSearch()"
+         role="dialog" aria-modal="true" aria-label="@I18n.SearchTitle">
+        <div class="lb-searchmodal__panel" x-on:click.stop>
+            <div class="lb-searchmodal__modes" role="tablist">
+                <button type="button" :class="{ 'is-active': mode === 'posts' }" x-on:click="setMode('posts')">@I18n.SearchTitle</button>
+                <button type="button" :class="{ 'is-active': mode === 'comments' }" x-on:click="setMode('comments')">@I18n.SearchComments</button>
+            </div>
+            <div class="lb-searchmodal__bar" x-show="mode === 'posts'">
+                <svg class="lb-searchmodal__mag" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+                <input class="lb-field lb-searchmodal__input" x-ref="q" type="search" name="q"
+                       placeholder="@I18n.SearchPlaceholder" autocomplete="off"
+                       hx-get="/search/results" hx-target="#lb-search-results" hx-swap="innerHTML"
+                       hx-trigger="input changed delay:300ms" hx-params="q" />
+                <button type="button" class="lb-nav-icon" x-on:click="closeSearch()" aria-label="@I18n.Close">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div x-show="mode === 'posts'">
+                <div id="lb-search-results" class="lb-searchmodal__results" x-ref="results"></div>
+            </div>
+            <div x-show="mode === 'comments'" class="lb-searchmodal__cmode">
+                <div class="lb-searchmodal__bar">
+                    <svg class="lb-searchmodal__mag" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+                    <input class="lb-field lb-searchmodal__input" type="search" x-model="cq" x-on:input.debounce.500ms="searchComments()" placeholder="@I18n.SearchComments" />
+                </div>
+                <div class="lb-searchmodal__results">
+                    <template x-for="r in cresults" :key="r.id">
+                        <a class="lb-cresult" :href="'/posts/' + r.post_slug">
+                            <span class="lb-cresult__body" x-text="r.body.length > 120 ? r.body.slice(0, 120) + '…' : r.body"></span>
+                            <span class="lb-cresult__meta" x-text="r.author_name + ' · ' + r.post_slug"></span>
+                        </a>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="lb-top" class="lb-top" aria-label="@I18n.BackToTop">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
 </div>
 
-<main class="db-container db-main">
+<div class="lb-rte-math" id="lb-rte-math" x-data x-on:click.outside="closeRteMath()">
+    <input class="lb-field" id="lb-rte-math-tex" placeholder="e.g. \frac{a}{b}" onkeydown="if(event.key==='Enter'){insertRteMath();}" />
+    <div class="lb-rte-math__actions">
+        <button type="button" class="lb-button lb-button--sm" onclick="insertRteMath()">@I18n.Insert</button>
+        <button type="button" class="lb-button lb-button--quiet lb-button--sm" onclick="closeRteMath()">@I18n.Cancel</button>
+    </div>
+</div>
+
+<main class="lb-wrap lb-main">
     @Body
 </main>
 
-<footer class="db-footer">
-    <div class="db-container">
-        <p>@I18n.Footer</p>
+<footer class="lb-footer">
+    <div class="lb-wrap lb-footer-in">
+        <span><svg class="lb-footer__mark" aria-hidden="true"><use href="#lb-blossom" /></svg>@I18n.Footer</span>
+        <span>@I18n.FooterTagline</span>
     </div>
 </footer>

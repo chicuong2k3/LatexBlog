@@ -2,13 +2,13 @@
 @inject PostStore PostStore
 
 <PageTitle>@I18n.SearchTitle — @I18n.SiteTitle</PageTitle>
-<header class="db-search-header">
+<header class="lb-page-head">
     <h1>@I18n.SearchTitle</h1>
     <p>@I18n.SearchHint</p>
 </header>
 <input type="search"
        name="q"
-       class="db-field"
+       class="lb-field"
        placeholder="@I18n.SearchPlaceholder"
        autocomplete="off"
        hx-get="/search/results"
@@ -16,4 +16,4 @@
        hx-swap="innerHTML"
        hx-trigger="input changed delay:300ms"
        hx-params="q" />
-<div id="search-results" class="db-search-results"></div>
+<div id="search-results" class="lb-search-results"></div>

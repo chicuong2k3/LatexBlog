@@ -1,0 +1,17 @@
+{
+  "name": "LatexBlog",
+  "short_name": "LatexBlog",
+  "description": "Viết bằng LaTeX, xuất bản bằng Blazor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0a16",
+  "theme_color": "#0c0a16",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

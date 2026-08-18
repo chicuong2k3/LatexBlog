@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LatexBlog — Sakura trăng đêm (Moonlit Sakura)</title>
+<meta name="description" content="Mẫu giao diện LatexBlog: sakura nở dưới ánh trăng, đọc sách trong đêm yên.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>/* no-flash theme restore */
+(function(){var s=localStorage.getItem("lb-theme-moonlit");if(s===null){s=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",s);})();
+</script>
+<style>
+:root{
+  --bg:#efeafb; --bg-2:#e7e0f6; --surface:#faf7ff; --surface-2:#f3eefc;
+  --ink:#211c3a; --ink-soft:#4b4370; --muted:#6d648f;
+  --line:#e0d8f0; --line-strong:#cbc0e6;
+  --sakura:#c05a8d; --sakura-deep:#9c3f6f; --gold:#b98a3c;
+  --glow:0 0 0 transparent;
+  --shadow:0 14px 40px -22px rgba(80,60,140,.35);
+}
+[data-theme="dark"]{
+  --bg:#0e0c1e; --bg-2:#14112a; --surface:#171430; --surface-2:#1d1a3b;
+  --ink:#efe9f6; --ink-soft:#d4cde8; --muted:#9a91bd;
+  --line:#2b2750; --line-strong:#3b3670;
+  --sakura:#f7a0c6; --sakura-deep:#e07aa8; --gold:#eecb88;
+  --glow:0 0 22px rgba(247,160,198,.25);
+  --shadow:0 18px 50px -24px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:"Be Vietnam Pro",ui-sans-serif,system-ui,sans-serif;
+  background:
+    radial-gradient(1200px 700px at 80% -10%, var(--bg-2), transparent 60%),
+    var(--bg);
+  color:var(--ink);
+  line-height:1.7; font-size:16px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+::selection{background:var(--sakura); color:#fff}
+:focus-visible{outline:2px solid var(--sakura); outline-offset:3px; border-radius:4px}
+a{color:inherit; text-decoration:none}
+a.underline{text-decoration:underline; text-decoration-color:var(--sakura); text-underline-offset:3px}
+.wrap{max-width:1060px; margin:0 auto; padding:0 28px}
+.serif{font-family:"Fraunces",Georgia,serif; font-variation-settings:"opsz" 60}
+
+/* nav */
+.nav{border-bottom:1px solid var(--line)}
+.nav-in{display:flex; align-items:center; gap:20px; height:66px}
+.brand{display:flex; align-items:center; gap:11px; font-weight:600; font-size:1.04rem; letter-spacing:-.01em}
+.brand .mark{width:30px; height:30px; color:var(--sakura); filter:drop-shadow(var(--glow))}
+.brand b{font-family:"Fraunces",serif; font-weight:600; font-size:1.1rem}
+.nav-links{display:flex; gap:26px; margin-left:auto}
+.nav-links a{font-size:.95rem; color:var(--muted); transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.theme-btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  border-radius:999px; padding:7px 14px; font:inherit; font-size:.85rem; cursor:pointer;
+  display:flex; align-items:center; gap:7px; transition:border-color .2s, transform .12s;
+}
+.theme-btn:hover{border-color:var(--sakura)}
+.theme-btn:active{transform:translateY(1px)}
+.theme-btn .dot{width:9px; height:9px; border-radius:50%; background:var(--gold); box-shadow:var(--glow)}
+
+/* hero */
+.hero{position:relative; padding:88px 0 64px; overflow:hidden}
+.hero::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(560px 340px at 84% 8%, var(--glow-blob, rgba(247,160,198,.14)), transparent 70%),
+    radial-gradient(420px 300px at 12% 78%, rgba(238,203,136,.08), transparent 70%);
+}
+.hero-in{position:relative; display:grid; grid-template-columns:minmax(0,1fr); gap:34px}
+.hero-top{max-width:640px}
+.hero-top h1{
+  font-family:"Fraunces",serif; font-weight:500; font-size:clamp(2.1rem,5.2vw,3.4rem);
+  line-height:1.08; letter-spacing:-.02em; margin:0 0 16px;
+}
+.hero-top h1 em{font-style:italic; color:var(--sakura)}
+.hero-top p{color:var(--ink-soft); font-size:1.05rem; max-width:52ch; margin:0}
+.moon{position:absolute; top:-30px; right:0; width:150px; height:150px; color:var(--gold); opacity:.9; animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(1); opacity:.9}50%{transform:scale(1.05); opacity:1}}
+
+/* featured */
+.featured{
+  position:relative; border:1px solid var(--line); border-radius:18px;
+  background:var(--surface); box-shadow:var(--shadow); overflow:hidden;
+}
+.featured-in{display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); min-height:230px}
+.featured-text{padding:34px 38px}
+.featured-flag{font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:600}
+.featured-text h2{font-family:"Fraunces",serif; font-weight:500; font-size:1.55rem; line-height:1.2; margin:10px 0 12px}
+.featured-text p{color:var(--muted); margin:0 0 20px; max-width:46ch}
+.cta{display:inline-flex; align-items:center; gap:8px; color:var(--sakura-deep); font-weight:600; font-size:.95rem}
+.cta svg{transition:transform .2s}
+.cta:hover svg{transform:translateX(4px)}
+.featured-math{
+  display:grid; place-items:center; padding:34px; background:var(--bg-2);
+  border-left:1px solid var(--line);
+}
+.formula{font-family:"Fraunces",Georgia,serif; font-size:1.35rem; color:var(--ink)}
+.formula .lim{font-style:italic; font-size:.9em; margin-right:.2em}
+.formula .sub{font-size:.62em; vertical-align:-.35em; color:var(--muted)}
+.formula .frac{display:inline-flex; flex-direction:column; align-items:center; vertical-align:-.6em; margin:0 .28em}
+.formula .frac > span{padding:0 .5em}
+.formula .frac .num{border-bottom:1.5px solid var(--sakura)}
+.formula .prime{color:var(--sakura)}
+
+/* posts */
+.posts{padding:20px 0 80px}
+.section-label{font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 22px}
+.post-list{display:grid; gap:16px}
+.post{
+  display:grid; grid-template-columns:96px minmax(0,1fr) auto; gap:22px; align-items:center;
+  border:1px solid var(--line); border-radius:14px; background:var(--surface);
+  padding:20px 24px; transition:border-color .2s, transform .16s, box-shadow .2s;
+}
+.post:hover{border-color:var(--sakura); transform:translateY(-2px); box-shadow:var(--shadow)}
+.post-date{font-size:.82rem; color:var(--muted); font-variant-numeric:tabular-nums; text-align:right; padding-right:8px; border-right:1px solid var(--line)}
+.post-date .d{display:block; font-size:1.5rem; font-family:"Fraunces",serif; color:var(--ink-soft); line-height:1.1}
+.post-body h3{margin:0 0 6px; font-size:1.12rem; font-weight:600; letter-spacing:-.01em}
+.post-body h3 a:hover{color:var(--sakura-deep)}
+.post-body p{margin:0; color:var(--muted); font-size:.95rem; max-width:70ch}
+.post-tags{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+.tag{font-size:.8rem; color:var(--ink-soft); border:1px solid var(--line-strong); border-radius:999px; padding:4px 11px; transition:border-color .2s, color .2s}
+.tag:hover{border-color:var(--sakura); color:var(--sakura-deep)}
+.tag::before{content:"#"; color:var(--sakura); margin-right:1px}
+
+/* footer */
+.footer{border-top:1px solid var(--line); padding:30px 0 40px; color:var(--muted); font-size:.9rem}
+.footer-in{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.footer .mark{width:18px; height:18px; color:var(--sakura); vertical-align:-3px; margin-right:8px}
+
+/* falling petals */
+.petals{position:absolute; inset:0; pointer-events:none}
+.petal{position:absolute; top:-40px; color:var(--sakura); opacity:.5; animation:fall linear infinite}
+.petal svg{display:block}
+@keyframes fall{
+  0%{transform:translateY(-6vh) translateX(0) rotate(0deg)}
+  100%{transform:translateY(110vh) translateX(9vw) rotate(320deg)}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 18px}
+  .nav-links{display:none}
+  .hero{padding:56px 0 40px}
+  .moon{width:96px; height:96px; right:-12px; opacity:.7}
+  .featured-in{grid-template-columns:1fr}
+  .featured-math{border-left:0; border-top:1px solid var(--line); padding:26px}
+  .post{grid-template-columns:1fr; gap:10px}
+  .post-date{text-align:left; border-right:0; padding-right:0; display:flex; align-items:baseline; gap:10px}
+  .post-date .d{font-size:1.05rem; display:inline}
+  .post-tags{justify-content:flex-start}
+  .footer-in{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+  .petal{animation:none; display:none}
+  .moon{animation:none}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="sak-petal" d="M0 0 C-13 -9 -19 -29 -11 -40 C-7 -45 -2 -48 0 -42 C2 -48 7 -45 11 -40 C19 -29 13 -9 0 0 Z"/>
+    <symbol id="sak-blossom" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <use href="#sak-petal" transform="translate(50 50) rotate(0)"/>
+        <use href="#sak-petal" transform="translate(50 50) rotate(72)"/>
+        <use href="#sak-petal" transform="translate(50 50) rotate(144)"/>
+        <use href="#sak-petal" transform="translate(50 50) rotate(216)"/>
+        <use href="#sak-petal" transform="translate(50 50) rotate(288)"/>
+      </g>
+      <circle cx="50" cy="50" r="5" fill="currentColor" opacity=".55"/>
+    </symbol>
+    <symbol id="sak-moon" viewBox="0 0 100 100">
+      <path d="M66 6 A46 46 0 1 0 94 62 A37 37 0 0 1 66 6 Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="sak-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h13 M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#">
+      <svg class="mark" aria-hidden="true"><use href="#sak-blossom"/></svg>
+      <b>LatexBlog</b>
+    </a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="#">Trang chủ</a>
+      <a href="#">Thẻ</a>
+      <a href="#">Tìm kiếm</a>
+    </nav>
+    <button class="theme-btn" id="themeToggle" type="button" aria-label="Đổi chế độ sáng tối">
+      <span class="dot" aria-hidden="true"></span><span id="themeLabel">Sáng</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="petals" aria-hidden="true">
+      <span class="petal" style="left:12%; animation-duration:14s; animation-delay:-3s"><svg width="18" height="18" viewBox="-25 -50 50 50"><use href="#sak-petal"/></svg></span>
+      <span class="petal" style="left:38%; animation-duration:19s; animation-delay:-9s"><svg width="14" height="14" viewBox="-25 -50 50 50"><use href="#sak-petal"/></svg></span>
+      <span class="petal" style="left:64%; animation-duration:16s; animation-delay:-6s"><svg width="20" height="20" viewBox="-25 -50 50 50"><use href="#sak-petal"/></svg></span>
+      <span class="petal" style="left:86%; animation-duration:22s; animation-delay:-12s"><svg width="15" height="15" viewBox="-25 -50 50 50"><use href="#sak-petal"/></svg></span>
+    </div>
+    <div class="wrap hero-in">
+      <div class="hero-top">
+        <h1>Toán học nở như <em>sakura</em> dưới ánh trăng.</h1>
+        <p>Viết bằng LaTeX, xuất bản bằng Blazor. Những bài hướng dẫn toán và lập trình, đẹp và rõ ở cả ban ngày lẫn đêm khuya.</p>
+      </div>
+
+      <article class="featured">
+        <div class="featured-in">
+          <div class="featured-text">
+            <span class="featured-flag">Bài mới nhất</span>
+            <h2><a class="underline" href="#">Đạo hàm và ý nghĩa hình học</a></h2>
+            <p>Tìm hiểu đạo hàm qua góc nhìn hình học: định nghĩa, quy tắc tính và ứng dụng.</p>
+            <a class="cta" href="#">Đọc tiếp <svg width="16" height="16" aria-hidden="true"><use href="#sak-arrow"/></svg></a>
+          </div>
+          <div class="featured-math" aria-label="Công thức định nghĩa đạo hàm">
+            <div class="formula">
+              <span class="prime">f′(x)</span> =
+              <span class="lim">lim</span><span class="sub">h→0</span>
+              <span class="frac"><span class="num">f(x+h) − f(x)</span><span>h</span></span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <svg class="moon" aria-hidden="true"><use href="#sak-moon"/></svg>
+  </section>
+
+  <section class="posts">
+    <div class="wrap">
+      <p class="section-label">Bài viết</p>
+      <div class="post-list">
+        <article class="post">
+          <div class="post-date"><span class="d">15</span>08.2026</div>
+          <div class="post-body">
+            <h3><a href="#">Python cơ bản cho người mới</a></h3>
+            <p>Các khái niệm nền tảng của Python: biến, hàm và vòng lặp, kèm ví dụ chạy được.</p>
+          </div>
+          <div class="post-tags"><a class="tag" href="#">lap-trinh</a><a class="tag" href="#">python</a></div>
+        </article>
+        <article class="post">
+          <div class="post-date"><span class="d">10</span>08.2026</div>
+          <div class="post-body">
+            <h3><a href="#">Chào mừng đến với LatexBlog</a></h3>
+            <p>Giới thiệu về blog và quy trình xuất bản bài viết từ LaTeX.</p>
+          </div>
+          <div class="post-tags"><a class="tag" href="#">blog</a></div>
+        </article>
+        <article class="post">
+          <div class="post-date"><span class="d">05</span>08.2026</div>
+          <div class="post-body">
+            <h3><a href="#">Ma trận và phép biến đổi tuyến tính</a></h3>
+            <p>Ma trận biểu diễn phép biến đổi tuyến tính như thế nào, kèm ví dụ.</p>
+          </div>
+          <div class="post-tags"><a class="tag" href="#">toan</a><a class="tag" href="#">dai-so</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span><svg class="mark" aria-hidden="true"><use href="#sak-blossom"/></svg>© 2026 LatexBlog</span>
+    <span>Đọc đẹp, ngày lẫn đêm.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById("themeToggle"), label=document.getElementById("themeLabel");
+  function sync(){ label.textContent = root.getAttribute("data-theme")==="dark" ? "Sáng" : "Tối"; }
+  btn.addEventListener("click",function(){
+    var dark=root.getAttribute("data-theme")==="dark";
+    root.setAttribute("data-theme",dark?"light":"dark");
+    localStorage.setItem("lb-theme-moonlit",dark?"light":"dark");
+    sync();
+  });
+  sync();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LatexBlog — Bầu trời Shinkai (Shinkai Sky)</title>
+<meta name="description" content="Mẫu giao diện LatexBlog: bầu trời điện ảnh mùa hoa anh đào, ánh sáng và cánh hoa bokeh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>/* no-flash theme restore */
+(function(){var s=localStorage.getItem("lb-theme-shinkai");if(s===null){s=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",s);})();
+</script>
+<style>
+:root{
+  --sky-a:#ffd9e6; --sky-b:#ffe9d2; --sky-c:#d7e8ff;
+  --bg:#fbf7f9; --surface:#ffffff; --surface-2:#fff4f7;
+  --ink:#2a2438; --ink-soft:#453c5a; --muted:#6c6380;
+  --line:#f0e2ec; --line-strong:#e2ccdc;
+  --sakura:#e77fa8; --sakura-deep:#c95f8c; --skyblue:#7fb2e5; --gold:#e9b15c;
+  --shadow:0 16px 44px -24px rgba(150,90,130,.35);
+  --text-on-sky:#2a2438;
+}
+[data-theme="dark"]{
+  --sky-a:#2a2140; --sky-b:#2c2a55; --sky-c:#1b2f4d;
+  --bg:#0f0d1c; --surface:#17142a; --surface-2:#1c1834;
+  --ink:#efe9f4; --ink-soft:#d6cfe6; --muted:#9c92bb;
+  --line:#2b2650; --line-strong:#3d3670;
+  --sakura:#f79dc4; --sakura-deep:#e07aa8; --skyblue:#8fc0f0; --gold:#f0cf8f;
+  --shadow:0 18px 50px -24px rgba(0,0,0,.7);
+  --text-on-sky:#f4effa;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:"Be Vietnam Pro",ui-sans-serif,system-ui,sans-serif;
+  color:var(--ink); line-height:1.7; font-size:16px; background:var(--bg);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+::selection{background:var(--sakura); color:#fff}
+:focus-visible{outline:2px solid var(--sakura); outline-offset:3px; border-radius:4px}
+a{color:inherit; text-decoration:none}
+.wrap{max-width:1080px; margin:0 auto; padding:0 28px}
+.sans{font-family:"Sora","Be Vietnam Pro",sans-serif}
+
+/* nav */
+.nav{position:relative; z-index:5; background:color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+.nav-in{display:flex; align-items:center; gap:20px; height:66px}
+.brand{display:flex; align-items:center; gap:11px; font-weight:700; font-family:"Sora",sans-serif; font-size:1.05rem; letter-spacing:-.01em}
+.brand .mark{width:30px; height:30px; color:var(--sakura)}
+.nav-links{display:flex; gap:26px; margin-left:auto}
+.nav-links a{font-size:.95rem; color:var(--muted); transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.theme-btn{
+  border:1px solid var(--line-strong); background:var(--surface); color:var(--ink);
+  border-radius:999px; padding:7px 14px; font:inherit; font-size:.85rem; cursor:pointer;
+  display:flex; align-items:center; gap:7px; transition:border-color .2s;
+}
+.theme-btn:hover{border-color:var(--sakura)}
+.theme-btn .sun{width:11px; height:11px; border-radius:50%; background:var(--gold)}
+
+/* hero sky */
+.hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line)}
+.sky{position:absolute; inset:0; background:
+  radial-gradient(120% 90% at 12% 0%, var(--sky-a), transparent 55%),
+  radial-gradient(100% 80% at 88% 6%, var(--sky-b), transparent 55%),
+  linear-gradient(180deg, var(--sky-c), var(--bg) 92%);
+  animation:skyShift 24s ease-in-out infinite alternate;
+}
+@keyframes skyShift{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(-12deg)}}
+.bokeh{position:absolute; inset:0}
+.bokeh span{position:absolute; border-radius:50%; background:radial-gradient(circle at 35% 30%, rgba(255,255,255,.85), rgba(255,255,255,.12) 70%); filter:blur(1px); animation:drift ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(0) scale(1); opacity:.5}to{transform:translateY(-26px) scale(1.15); opacity:.9}}
+.hero-in{position:relative; padding:104px 0 78px; text-align:center}
+.hero-in h1{
+  font-family:"Sora",sans-serif; font-weight:700; font-size:clamp(2.3rem,6vw,4rem);
+  line-height:1.06; letter-spacing:-.03em; margin:0 auto 18px; max-width:16ch; color:var(--text-on-sky);
+  text-shadow:0 1px 30px rgba(255,255,255,.25);
+}
+.hero-in h1 .petal-word{color:var(--sakura-deep)}
+.hero-in .lead{color:color-mix(in srgb, var(--text-on-sky) 82%, transparent); font-size:1.06rem; max-width:52ch; margin:0 auto 30px}
+.hero-in .lead b{font-weight:600}
+
+/* featured title card */
+.title-card{
+  display:inline-flex; flex-direction:column; align-items:flex-start; text-align:left;
+  gap:14px; background:var(--surface); border:1px solid var(--line); border-radius:18px;
+  box-shadow:var(--shadow); padding:28px 32px; max-width:620px; width:100%;
+}
+.title-card .flag{font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--skyblue); font-weight:600}
+.title-card h2{font-family:"Sora",sans-serif; font-weight:600; font-size:1.5rem; line-height:1.22; margin:0; letter-spacing:-.01em}
+.title-card h2 a:hover{color:var(--sakura-deep)}
+.title-card p{color:var(--muted); margin:0; max-width:56ch}
+.title-card .row{display:flex; align-items:center; gap:16px; width:100%; justify-content:space-between}
+.title-card .meta{font-size:.85rem; color:var(--muted)}
+.title-card .cta{display:inline-flex; align-items:center; gap:8px; color:var(--sakura-deep); font-weight:600; font-size:.95rem}
+.title-card .cta svg{transition:transform .2s}
+.title-card .cta:hover svg{transform:translateX(4px)}
+
+/* posts grid */
+.posts{padding:64px 0 84px}
+.section-head{display:flex; align-items:baseline; gap:16px; margin-bottom:26px}
+.section-head h2{font-family:"Sora",sans-serif; font-weight:700; font-size:1.5rem; margin:0; letter-spacing:-.01em}
+.section-head .count{color:var(--muted); font-size:.9rem}
+.post-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+.post{
+  position:relative; border:1px solid var(--line); border-radius:16px; overflow:hidden;
+  background:var(--surface); transition:transform .16s, box-shadow .2s, border-color .2s;
+}
+.post:hover{transform:translateY(-3px); box-shadow:var(--shadow); border-color:var(--sakura)}
+.post .thumb{height:132px; position:relative; overflow:hidden}
+.post .thumb .swash{position:absolute; inset:0}
+.post .thumb .swash::before{content:""; position:absolute; inset:-20%; background:
+  radial-gradient(70% 90% at 20% 20%, var(--sky-a), transparent 60%),
+  radial-gradient(80% 100% at 80% 10%, var(--sky-c), transparent 60%);}
+.post .thumb .glyph{position:absolute; right:20px; bottom:-14px; color:var(--sakura); opacity:.85; width:64px; height:64px; transform:rotate(-8deg)}
+.post .body{padding:22px 24px 24px}
+.post .body h3{margin:0 0 8px; font-size:1.13rem; font-weight:600; letter-spacing:-.01em}
+.post .body h3 a:hover{color:var(--sakura-deep)}
+.post .body p{margin:0 0 16px; color:var(--muted); font-size:.95rem}
+.post .tags{display:flex; gap:8px; flex-wrap:wrap}
+.tag{font-size:.8rem; color:var(--ink-soft); border:1px solid var(--line-strong); border-radius:999px; padding:4px 11px; transition:border-color .2s, color .2s}
+.tag:hover{border-color:var(--sakura); color:var(--sakura-deep)}
+.tag::before{content:"#"; color:var(--sakura); margin-right:1px}
+
+/* footer */
+.footer{border-top:1px solid var(--line); padding:30px 0 42px; color:var(--muted); font-size:.9rem}
+.footer-in{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center}
+.footer .mark{width:18px; height:18px; color:var(--sakura); vertical-align:-3px; margin-right:8px}
+
+/* falling petals */
+.petals{position:absolute; inset:0; pointer-events:none}
+.petal{position:absolute; top:-40px; color:var(--sakura); animation:fall linear infinite}
+.petal svg{display:block; filter:drop-shadow(0 1px 4px rgba(230,127,168,.3))}
+@keyframes fall{
+  0%{transform:translateY(-6vh) translateX(0) rotate(0deg)}
+  100%{transform:translateY(106vh) translateX(-8vw) rotate(-300deg)}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 18px}
+  .nav-links{display:none}
+  .hero-in{padding:70px 0 54px}
+  .post-grid{grid-template-columns:1fr}
+  .footer-in{flex-direction:column; align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  .petal,.bokeh span{animation:none}
+  .petal{display:none}
+  .sky{animation:none}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="sky-petal" d="M0 0 C-13 -9 -19 -29 -11 -40 C-7 -45 -2 -48 0 -42 C2 -48 7 -45 11 -40 C19 -29 13 -9 0 0 Z"/>
+    <symbol id="sky-blossom" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <use href="#sky-petal" transform="translate(50 50) rotate(0)"/>
+        <use href="#sky-petal" transform="translate(50 50) rotate(72)"/>
+        <use href="#sky-petal" transform="translate(50 50) rotate(144)"/>
+        <use href="#sky-petal" transform="translate(50 50) rotate(216)"/>
+        <use href="#sky-petal" transform="translate(50 50) rotate(288)"/>
+      </g>
+      <circle cx="50" cy="50" r="5" fill="currentColor" opacity=".5"/>
+    </symbol>
+    <symbol id="sky-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h13 M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#">
+      <svg class="mark" aria-hidden="true"><use href="#sky-blossom"/></svg>
+      LatexBlog
+    </a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="#">Trang chủ</a>
+      <a href="#">Thẻ</a>
+      <a href="#">Tìm kiếm</a>
+    </nav>
+    <button class="theme-btn" id="themeToggle" type="button" aria-label="Đổi chế độ sáng tối">
+      <span class="sun" aria-hidden="true"></span><span id="themeLabel">Tối</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="sky" aria-hidden="true"></div>
+    <div class="bokeh" aria-hidden="true">
+      <span style="left:8%; top:20%; width:46px; height:46px"></span>
+      <span style="left:20%; top:58%; width:26px; height:26px; animation-delay:-4s"></span>
+      <span style="left:72%; top:24%; width:60px; height:60px; animation-delay:-8s"></span>
+      <span style="left:88%; top:54%; width:34px; height:34px; animation-delay:-2s"></span>
+      <span style="left:55%; top:12%; width:22px; height:22px; animation-delay:-6s"></span>
+    </div>
+    <div class="petals" aria-hidden="true">
+      <span class="petal" style="left:10%; animation-duration:15s; animation-delay:-4s"><svg width="20" height="20" viewBox="-25 -50 50 50"><use href="#sky-petal"/></svg></span>
+      <span class="petal" style="left:30%; animation-duration:20s; animation-delay:-10s"><svg width="15" height="15" viewBox="-25 -50 50 50"><use href="#sky-petal"/></svg></span>
+      <span class="petal" style="left:52%; animation-duration:17s; animation-delay:-7s"><svg width="22" height="22" viewBox="-25 -50 50 50"><use href="#sky-petal"/></svg></span>
+      <span class="petal" style="left:74%; animation-duration:23s; animation-delay:-13s"><svg width="16" height="16" viewBox="-25 -50 50 50"><use href="#sky-petal"/></svg></span>
+      <span class="petal" style="left:90%; animation-duration:18s; animation-delay:-2s"><svg width="18" height="18" viewBox="-25 -50 50 50"><use href="#sky-petal"/></svg></span>
+    </div>
+
+    <div class="wrap hero-in">
+      <h1>Mỗi công thức là một <span class="petal-word">cánh hoa</span> rơi xuống trang giấy.</h1>
+      <p class="lead">Viết bằng <b>LaTeX</b>, xuất bản bằng <b>Blazor</b> — nơi toán học và lập trình hiện lên như một khung hình điện ảnh mùa xuân.</p>
+
+      <article class="title-card">
+        <span class="flag">Bài mới nhất</span>
+        <h2><a href="#">Đạo hàm và ý nghĩa hình học</a></h2>
+        <p>Tìm hiểu đạo hàm qua góc nhìn hình học: định nghĩa, quy tắc tính và ứng dụng.</p>
+        <div class="row">
+          <span class="meta">17.08.2026 · #toan · #latex</span>
+          <a class="cta" href="#">Đọc tiếp <svg width="16" height="16" aria-hidden="true"><use href="#sky-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="posts">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Bài viết</h2>
+        <span class="count">4 bài</span>
+      </div>
+      <div class="post-grid">
+        <article class="post">
+          <div class="thumb" aria-hidden="true"><span class="swash"></span><svg class="glyph"><use href="#sky-blossom"/></svg></div>
+          <div class="body">
+            <h3><a href="#">Python cơ bản cho người mới</a></h3>
+            <p>Các khái niệm nền tảng của Python: biến, hàm và vòng lặp, kèm ví dụ chạy được.</p>
+            <div class="tags"><a class="tag" href="#">lap-trinh</a><a class="tag" href="#">python</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb" aria-hidden="true"><span class="swash"></span><svg class="glyph"><use href="#sky-blossom"/></svg></div>
+          <div class="body">
+            <h3><a href="#">Chào mừng đến với LatexBlog</a></h3>
+            <p>Giới thiệu về blog và quy trình xuất bản bài viết từ LaTeX.</p>
+            <div class="tags"><a class="tag" href="#">blog</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb" aria-hidden="true"><span class="swash"></span><svg class="glyph"><use href="#sky-blossom"/></svg></div>
+          <div class="body">
+            <h3><a href="#">Ma trận và phép biến đổi tuyến tính</a></h3>
+            <p>Ma trận biểu diễn phép biến đổi tuyến tính như thế nào, kèm ví dụ.</p>
+            <div class="tags"><a class="tag" href="#">toan</a><a class="tag" href="#">dai-so</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb" aria-hidden="true"><span class="swash"></span><svg class="glyph"><use href="#sky-blossom"/></svg></div>
+          <div class="body">
+            <h3><a href="#">Giới thiệu quy trình xuất bản LaTeX</a></h3>
+            <p>Từ tệp .tex đến HTML tĩnh: Pandoc, KaTeX và vòng đời một bài viết.</p>
+            <div class="tags"><a class="tag" href="#">latex</a><a class="tag" href="#">blog</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span><svg class="mark" aria-hidden="true"><use href="#sky-blossom"/></svg>© 2026 LatexBlog</span>
+    <span>Một khung hình mùa xuân cho từng bài viết.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById("themeToggle"), label=document.getElementById("themeLabel");
+  function sync(){ label.textContent = root.getAttribute("data-theme")==="dark" ? "Sáng" : "Tối"; }
+  btn.addEventListener("click",function(){
+    var dark=root.getAttribute("data-theme")==="dark";
+    root.setAttribute("data-theme",dark?"light":"dark");
+    localStorage.setItem("lb-theme-shinkai",dark?"light":"dark");
+    sync();
+  });
+  sync();
+})();
+</script>
+</body>
+</html>

@@ -136,7 +136,14 @@ def write_pygments_css(pandoc, out_css):
     m = re.search(r"<style>(.*?)</style>", proc.stdout, re.DOTALL)
     if not m:
         raise RuntimeError("could not extract pygments CSS from pandoc output")
-    out_css.write_text(m.group(1).strip(), encoding="utf-8")
+    block = m.group(1).strip()
+    # Keep only the syntax-highlighting part; pandoc's document template CSS
+    # (html/body max-width, p/a/h1.. margins, ...) would fight our design.
+    marker = "/* CSS for syntax highlighting */"
+    idx = block.find(marker)
+    if idx != -1:
+        block = block[idx:]
+    out_css.write_text(block, encoding="utf-8")
 
 
 def build_all(posts_dir, out_dir, index_path, pandoc):

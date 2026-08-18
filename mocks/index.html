@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LatexBlog — Chọn mẫu giao diện</title>
+<style>
+:root{--bg:#14121f;--ink:#efeaf6;--muted:#9a91bd;--line:#2b2750;--sakura:#f7a0c6}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Be Vietnam Pro",ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+header{padding:72px 0 20px}
+h1{font-size:clamp(1.9rem,4.5vw,2.8rem);margin:0 0 10px;letter-spacing:-.02em}
+header p{color:var(--muted);max-width:60ch;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:36px 0 80px}
+.card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#1a1730;transition:transform .16s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--sakura)}
+.card .preview{height:240px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.card .preview iframe{width:100%;height:100%;border:0;pointer-events:none}
+.card .body{padding:20px 22px 24px}
+.card h2{margin:0 0 6px;font-size:1.15rem;letter-spacing:-.01em}
+.card .lead{color:var(--sakura);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin:0 0 8px}
+.card p{color:var(--muted);margin:0 0 18px;font-size:.92rem}
+.card a{color:var(--ink);font-weight:600;text-decoration:none;border:1px solid var(--sakura);border-radius:999px;padding:8px 16px;display:inline-block;font-size:.9rem;transition:background .2s}
+.card a:hover{background:var(--sakura);color:#14121f}
+.note{color:var(--muted);font-size:.88rem;padding-bottom:60px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Chọn mẫu giao diện — chất anime hoa anh đào</h1>
+    <p>Ba phương án trực quan cho LatexBlog. Mở từng mẫu, bật/tắt chế độ sáng tối bằng nút ở góc phải, rồi cho tôi biết bạn chọn mẫu nào.</p>
+  </header>
+
+  <div class="grid">
+    <article class="card">
+      <div class="preview"><iframe src="moonlit-sakura.html" loading="lazy" title="Xem trước Moonlit Sakura"></iframe></div>
+      <div class="body">
+        <p class="lead">Dẫn đầu · gieo xúc xắc</p>
+        <h2>Sakura trăng đêm</h2>
+        <p>Đọc sách trong đêm yên: nền chàm sâu, cánh hoa nở dưới trăng, serif ấm kiểu sách. Lặng, trang nhã.</p>
+        <a href="moonlit-sakura.html">Mở mẫu</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="preview"><iframe src="shinkai-sky.html" loading="lazy" title="Xem trước Shinkai Sky"></iframe></div>
+      <div class="body">
+        <p class="lead">Phương án 2</p>
+        <h2>Bầu trời Shinkai</h2>
+        <p>Khung hình điện ảnh mùa xuân: bầu trời rực sáng, bokeh cánh hoa, chữ sans trong trẻo. Lãng mạn, thơ mộng.</p>
+        <a href="shinkai-sky.html">Mở mẫu</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="preview"><iframe src="neon-sakura.html" loading="lazy" title="Xem trước Neon Sakura"></iframe></div>
+      <div class="body">
+        <p class="lead">Phương án 3</p>
+        <h2>Sakura neon</h2>
+        <p>Phố đêm Nhật Bản: hồng neon trên nền tím than, đường quét ánh sáng, chữ đậm. Mạnh, cá tính.</p>
+        <a href="neon-sakura.html">Mở mẫu</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="note">Ba phương án được chọn ngẫu nhiên từ 7 ứng viên (gieo xúc xắc, seed 47ba06f1). Nếu không mẫu nào hợp, tôi có thể gieo lại để xem 3 phương án khác, hoặc trộn các yếu tố giữa chúng.</p>
+</div>
+</body>
+</html>

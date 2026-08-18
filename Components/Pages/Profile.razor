@@ -1,0 +1,105 @@
+@page "/profile"
+@inject PostStore PostStore
+@using System.Text.Json
+
+<PageTitle>@I18n.Profile — @I18n.SiteTitle</PageTitle>
+
+<script>window.__POSTS__ = @((MarkupString)JsonSerializer.Serialize(
+        PostStore.All.Select(p => new { p.Slug, p.Title, p.Summary, p.Date }),
+        new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }));</script>
+
+<section class="lb-profile" x-data="profile" x-init="init()">
+    <p class="lb-comments__hint" x-show="loading">@I18n.Loading</p>
+
+    <template x-if="!loading && !signedIn">
+        <div class="lb-profile__signin">
+            <h1>@I18n.Profile</h1>
+            <p>@I18n.ProfileSignIn</p>
+            <button type="button" class="lb-button" x-on:click="$store.auth.signIn()">
+                <svg class="lb-comments__g" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true">
+                    <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                    <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                    <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                    <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                </svg>
+                @I18n.SignInGoogle
+            </button>
+        </div>
+    </template>
+
+    <template x-if="signedIn">
+        <div class="lb-profile__inner">
+            <div class="lb-profile__card">
+                <h1>@I18n.Profile</h1>
+                <div class="lb-profile__row">
+                    <label class="lb-avatar-edit" title="@I18n.ChangeAvatar">
+                        <img class="lb-avatar lb-avatar--lg" :src="avatar || ''" alt="" loading="lazy" />
+                        <span class="lb-avatar-edit__overlay">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                            @I18n.ChangeAvatar
+                        </span>
+                        <span class="lb-avatar-edit__badge" aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        </span>
+                        <input class="lb-avatar-edit__file" type="file" accept="image/*" x-on:change="onFile($event)" />
+                    </label>
+                    <div class="lb-profile__id">
+                        <strong x-text="displayName"></strong>
+                        <span x-text="email"></span>
+                    </div>
+                </div>
+
+                <form class="lb-profile__form" x-on:submit.prevent="save()">
+                    <label class="lb-field-label" for="lb-name">@I18n.EditName</label>
+                    <input id="lb-name" class="lb-field" type="text" x-model="nameInput" required />
+                    <p class="lb-comments__error" x-show="error" x-text="error"></p>
+                    <button type="submit" class="lb-button" :disabled="saving">@I18n.Save</button>
+                </form>
+
+                <div class="lb-profile__stats">
+                    <div class="lb-stat"><strong x-text="stats.liked"></strong><span>@I18n.PostsLiked</span></div>
+                    <div class="lb-stat"><strong x-text="stats.comments"></strong><span>@I18n.CommentsWritten</span></div>
+                    <div class="lb-stat"><strong x-text="stats.highlights"></strong><span>@I18n.HighlightsMade</span></div>
+                </div>
+                <div class="lb-profile__exports">
+                    <button type="button" class="lb-button lb-button--sm" x-on:click="exportComments()">@I18n.ExportComments</button>
+                    <button type="button" class="lb-button lb-button--sm" x-on:click="exportHighlights()">@I18n.ExportHighlights</button>
+                </div>
+            </div>
+
+            <div class="lb-profile__liked">
+                <h2>@I18n.LikedPosts</h2>
+                <p class="lb-comments__hint" x-show="!likedPosts.length">@I18n.NoLikedPosts</p>
+                <ul class="lb-post-list">
+                    <template x-for="p in likedPosts" :key="p.slug">
+                        <li class="lb-post">
+                            <span class="lb-post-num"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:var(--neon);stroke:var(--neon);stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+                            <div class="lb-post-body">
+                                <h3><a :href="'/posts/' + p.slug" x-text="p.title"></a></h3>
+                                <p x-text="p.summary"></p>
+                            </div>
+                            <div class="lb-post-meta"><span class="lb-date" x-text="p.date"></span></div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+
+            <div class="lb-profile__hl">
+                <h2>@I18n.Highlights</h2>
+                <p class="lb-comments__hint" x-show="!highlights.length">@I18n.NoHighlights</p>
+                <ul class="lb-hl-list">
+                    <template x-for="h in highlights" :key="h.id">
+                        <li class="lb-hl-item">
+                            <blockquote class="lb-hl-item__quote" x-text="h.quote"></blockquote>
+                            <p class="lb-hl-item__note" x-show="h.note" x-text="'@I18n.Note: ' + h.note"></p>
+                            <div class="lb-hl-item__meta">
+                                <a :href="'/posts/' + h.post_slug" x-text="postTitle(h.post_slug)"></a>
+                                <button type="button" class="lb-comment__reply" x-on:click="deleteHighlight(h.id)">@I18n.Delete</button>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </template>
+</section>

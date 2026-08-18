@@ -3,34 +3,91 @@
 
 <PageTitle>@I18n.SiteTitle</PageTitle>
 
-<section class="db-hero">
-    <h1>@I18n.SiteTitle</h1>
-    <p class="db-hero__subtitle">@I18n.HeroSubtitle</p>
-</section>
+<section class="lb-hero">
+    <div class="lb-sweep" aria-hidden="true"></div>
+    <div class="lb-wrap">
+        <h1>@I18n.HeroPre<span class="lb-neon">@I18n.HeroNeon</span>@I18n.HeroMid<span class="lb-violet">@I18n.HeroViolet</span>@I18n.HeroEnd</h1>
+        <p class="lb-hero-lead">@I18n.HeroSubtitle — @I18n.HeroLead</p>
 
-<section id="post-list" class="db-post-list">
-    @foreach (var post in PagePosts)
-    {
-        <PostCard Post="post" />
-    }
-</section>
-
-@if (HasMore)
-{
-    <div id="load-more">
-        <button type="button" class="db-button"
-                hx-get="/posts?page=2"
-                hx-target="#load-more"
-                hx-swap="outerHTML"
-                hx-push-url="false">@I18n.LoadMore</button>
+        @if (Latest is not null)
+        {
+            <article class="lb-featured">
+                <div>
+                    <span class="lb-flag">@I18n.LatestPost</span>
+                    <h2><a href="/posts/@Latest.Slug">@Latest.Title</a></h2>
+                    <p>@Latest.Summary</p>
+                    <a class="lb-cta" href="/posts/@Latest.Slug">@I18n.ReadMore
+                        <svg width="16" height="16" aria-hidden="true"><use href="#lb-arrow" /></svg>
+                    </a>
+                </div>
+                <div class="lb-matrix" aria-label="@I18n.MatrixLabel">
+                    <div class="lb-matrix-box">
+                        <div class="lb-mrow"><span class="lb-bracket">(</span><span>cos θ&nbsp;&nbsp;−sin θ</span><span class="lb-bracket">)</span></div>
+                        <div class="lb-mrow"><span class="lb-bracket">(</span><span>sin θ&nbsp;&nbsp;&nbsp;cos θ</span><span class="lb-bracket">)</span></div>
+                    </div>
+                </div>
+            </article>
+        }
     </div>
-}
+</section>
+
+<section class="lb-posts">
+    <div class="lb-wrap">
+        <div class="lb-posts-head">
+            <h2>@I18n.PostsTitle</h2>
+            <span class="lb-count">@PostStore.All.Count @I18n.PostsCount</span>
+        </div>
+        <div class="lb-post-list">
+            @{ var idx = 0; }
+            @foreach (var post in PagePosts)
+            {
+                idx++;
+                <PostCard Post="post" Number="idx" />
+            }
+        </div>
+        @if (HasMore)
+        {
+            <div id="load-more" class="lb-load-more">
+                <button type="button" class="lb-button"
+                        hx-get="/posts?page=2"
+                        hx-target="#load-more"
+                        hx-swap="outerHTML"
+                        hx-push-url="false">@I18n.LoadMore</button>
+            </div>
+        }
+    </div>
+</section>
+
+<section class="lb-tagcloud">
+    <div class="lb-wrap">
+        <div class="lb-posts-head">
+            <h2>@I18n.TagsTitle</h2>
+        </div>
+        <div class="lb-tagcloud__chips">
+            @foreach (var tc in TagCounts)
+            {
+                <a href="/tags/@tc.Tag" class="lb-tag lb-tag--big">#@tc.Tag <span>@tc.Count</span></a>
+            }
+        </div>
+    </div>
+</section>
 
 @code {
     private const int PageSize = 3;
+
+    private PostMeta? Latest => PostStore.All.FirstOrDefault();
 
     private IReadOnlyList<PostMeta> PagePosts =>
         PostStore.All.Take(PageSize).ToList();
 
     private bool HasMore => PostStore.All.Count > PageSize;
+
+    private sealed record TagCount(string Tag, int Count);
+
+    private IReadOnlyList<TagCount> TagCounts =>
+        PostStore.All.SelectMany(p => p.Tags)
+                     .GroupBy(t => t, StringComparer.OrdinalIgnoreCase)
+                     .Select(g => new TagCount(g.Key, g.Count()))
+                     .OrderBy(x => x.Tag, StringComparer.OrdinalIgnoreCase)
+                     .ToList();
 }

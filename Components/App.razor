@@ -1,21 +1,24 @@
 @using LatexBlog.I18n
+@inject IConfiguration Config
 
 <!DOCTYPE html>
-<html lang="vi" data-theme="default">
+<html lang="@I18n.Lang" data-theme="default">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="@I18n.SiteTitle" />
     <base href="/" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daub-ui@3.19.12/daub.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daub-ui@3.19.12/daub-classless.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
     <link rel="stylesheet" href="/generated/pygments.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.css" />
+    <link rel="stylesheet" href="css/site.css?v=20260818b" />
+    <link rel="alternate" type="application/rss+xml" title="LatexBlog RSS" href="/rss.xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0c0a16" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <HeadOutlet />
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.9.12/dist/htmx.min.js"></script>
@@ -35,8 +38,45 @@
 </head>
 
 <body>
+    @((MarkupString)@"<!--
+THESIS: math is the loudest thing on the page - a formula glows neon while the rest of the blog stays quiet and readable; the category default of a doc-site column of grey cards is refused for street-night energy.
+OWN-WORLD: indigo-black ground, sakura-pink neon as the single saturated accent, violet counter-accent, hairline scanline veil, outlined post numerals, Bricolage Grotesque display over Space Grotesk body, stroke-drawn sakura blossom mark.
+FIRST VIEWPORT: bold two-line headline with two glowing words, latest post in a neon-edged featured card beside a live rotation matrix.
+SIGNATURE INTERACTION: the dark/light flip re-tunes the whole neon field - glows, scanlines and panels - not just the background.
+HONEST RISK: the neon register can read loud for readers of long math prose; the prose keeps the quiet end of the palette so reading stays calm.
+-->")
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <path id="lb-petal" d="M0 0 C-13 -9 -19 -29 -11 -40 C-7 -45 -2 -48 0 -42 C2 -48 7 -45 11 -40 C19 -29 13 -9 0 0 Z" />
+            <symbol id="lb-blossom" viewBox="0 0 100 100">
+                <g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round">
+                    <use href="#lb-petal" transform="translate(50 50) rotate(0)" />
+                    <use href="#lb-petal" transform="translate(50 50) rotate(72)" />
+                    <use href="#lb-petal" transform="translate(50 50) rotate(144)" />
+                    <use href="#lb-petal" transform="translate(50 50) rotate(216)" />
+                    <use href="#lb-petal" transform="translate(50 50) rotate(288)" />
+                </g>
+                <circle cx="50" cy="50" r="4.5" fill="currentColor" />
+            </symbol>
+            <symbol id="lb-arrow" viewBox="0 0 24 24">
+                <path d="M5 12h13 M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        </defs>
+    </svg>
     <Routes />
-    <script src="js/site.js"></script>
+    <script>
+        window.__SUPABASE__ = { url: "@Config["Supabase:Url"]", anonKey: "@Config["Supabase:AnonKey"]" };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+    <script src="js/site.js?v=20260818b"></script>
+    <script src="js/comments.js?v=20260818b"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js").catch(function () {});
+        }
+    </script>
 </body>
 
 </html>

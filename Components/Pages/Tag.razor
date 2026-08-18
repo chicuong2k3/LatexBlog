@@ -2,12 +2,12 @@
 @inject PostStore PostStore
 
 <PageTitle>#@CurrentTag — @I18n.SiteTitle</PageTitle>
-<header class="db-tag-header">
+<header class="lb-page-head">
     <h1>@I18n.TagPageTitle: #@CurrentTag</h1>
-    <div class="db-tag-header__chips">
+    <div class="lb-chips">
         @foreach (var tag in AllTags)
         {
-            <a href="/tags/@tag" class="db-chip"
+            <a href="/tags/@tag" class="lb-tag"
                hx-get="/tags?tag=@tag"
                hx-target="#tag-list"
                hx-push-url="false">#@tag</a>

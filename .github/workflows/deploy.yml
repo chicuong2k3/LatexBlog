@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  HOST_PORT: "8080"
+  HOST_PORT: "8090"
 
 jobs:
   deploy:

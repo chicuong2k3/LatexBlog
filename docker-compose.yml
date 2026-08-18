@@ -5,7 +5,7 @@ services:
     container_name: alternative-world
     restart: unless-stopped
     ports:
-      - "${HOST_PORT:-8080}:8080"
+      - "${HOST_PORT:-8090}:8080"
     # Supabase config ships in appsettings.json (publishable anon key). To point
     # at another project without rebuilding, uncomment and set these — an empty
     # value would override the file with an empty string, so leave them out

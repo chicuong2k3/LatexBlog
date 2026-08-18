@@ -6,8 +6,15 @@
 <section class="lb-hero">
     <div class="lb-sweep" aria-hidden="true"></div>
     <div class="lb-wrap">
-        <h1>Một thế giới <span class="lb-neon">khác</span> bắt đầu từ một câu hỏi <span class="lb-violet">khác</span>.</h1>
-        <p class="lb-hero-lead">Toán học và lập trình, đọc lại từ đầu — không đi theo lối mòn của những gì đã biết.</p>
+        <h1>"Nếu tôi nhìn được <span class="lb-neon">xa hơn</span>, đó là vì đứng trên vai những người <span class="lb-violet">khổng lồ</span>." <cite>— Isaac Newton</cite></h1>
+        <p class="lb-hero-lead">Nhìn thế giới qua một lăng kính khác.</p>
+
+        <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới" x-data x-init="initProse($el)">
+            <span class="lb-flag">Công thức trong ngày</span>
+            <div class="lb-matrix-box">
+                <span class="math display">f = \dfrac{1}{2\pi\sqrt{LC}}</span>
+            </div>
+        </div>
 
         @if (Latest is not null)
         {
@@ -19,12 +26,6 @@
                     <a class="lb-cta" href="/posts/@Latest.Slug">Đọc tiếp
                         <svg width="16" height="16" aria-hidden="true"><use href="#lb-arrow" /></svg>
                     </a>
-                </div>
-                <div class="lb-matrix" aria-label="Ma trận xoay một góc θ trong mặt phẳng">
-                    <div class="lb-matrix-box">
-                        <div class="lb-mrow"><span class="lb-bracket">(</span><span>cos θ&nbsp;&nbsp;−sin θ</span><span class="lb-bracket">)</span></div>
-                        <div class="lb-mrow"><span class="lb-bracket">(</span><span>sin θ&nbsp;&nbsp;&nbsp;cos θ</span><span class="lb-bracket">)</span></div>
-                    </div>
                 </div>
             </article>
         }

@@ -121,7 +121,6 @@ a { color: inherit; text-decoration: none; }
 .lb-featured {
   border: 1px solid var(--neon); border-radius: 12px; background: var(--surface);
   box-shadow: var(--glow-pink); padding: 26px 30px;
-  display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 26px; align-items: center;
 }
 .lb-flag {
   display: inline-block; font-size: .74rem; letter-spacing: .18em; text-transform: uppercase;
@@ -136,7 +135,9 @@ a { color: inherit; text-decoration: none; }
 .lb-cta { display: inline-flex; align-items: center; gap: 8px; color: var(--neon); font-weight: 700; font-size: .95rem; }
 .lb-cta svg { transition: transform .2s; }
 .lb-cta:hover svg { transform: translateX(4px); }
-.lb-matrix { display: grid; place-items: center; }
+/* standalone "formula of the day" — deliberately NOT the pink post-card border,
+   so it never reads as belonging to the latest-post card below it */
+.lb-matrix { display: inline-flex; flex-direction: column; align-items: flex-start; margin: 0 0 28px; }
 .lb-matrix-box {
   font-family: "Space Grotesk", monospace; font-size: 1.5rem; color: var(--ink);
   padding: 16px 22px; border: 1px solid var(--neon-2); border-radius: 8px; box-shadow: var(--glow-violet);
@@ -714,7 +715,6 @@ a { color: inherit; text-decoration: none; }
   .lb-nav-user__name { display: none; }
   .lb-theme-btn { margin-left: 0; }
   .lb-hero { padding: 64px 0 48px; }
-  .lb-featured { grid-template-columns: 1fr; gap: 20px; }
   .lb-post { grid-template-columns: 1fr; gap: 10px; }
   .lb-post-num { font-size: 1.3rem; }
   .lb-post-meta { text-align: left; }

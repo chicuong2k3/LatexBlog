@@ -552,7 +552,7 @@
                 openReply: function (id, ev) {
                     var c = this.comments.find(function (x) { return x.id === id; });
                     this.replyTarget = id;
-                    this.replyBody = c && c.author_name ? "@" + c.author_name + " " : "";
+                    this.replyBody = c && c.author_name ? "@" + c.author_name + "<br><br>" : "";
                     this.replyPreview = false;
                     var self = this;
                     var li = ev && ev.target && ev.target.closest(".lb-comment");
@@ -738,6 +738,32 @@
                             var h = self._byId[m.getAttribute("data-id")];
                             if (h) self.viewNote(h);
                         }
+                    });
+                    // mobile/touch: there's no right-click, so also open the menu once a
+                    // selection inside .lb-prose settles (debounced — selectionchange fires
+                    // continuously while dragging the native selection handles)
+                    var selTimer = null;
+                    document.addEventListener("selectionchange", function () {
+                        clearTimeout(selTimer);
+                        selTimer = setTimeout(function () {
+                            var sel = window.getSelection();
+                            if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+                            var range = sel.getRangeAt(0);
+                            var anchor = range.commonAncestorContainer;
+                            var anchorEl = anchor.nodeType === 1 ? anchor : anchor.parentNode;
+                            var prose = anchorEl && anchorEl.closest ? anchorEl.closest(".lb-prose") : null;
+                            if (!prose) return;
+                            var quote = sel.toString().trim().slice(0, 500);
+                            if (!quote) return;
+                            if (!Alpine.store("auth").signedIn) return;
+                            var rect = range.getBoundingClientRect();
+                            self._pendingQuote = quote;
+                            self._pendingRange = range.cloneRange();
+                            self.menuX = rect.left + rect.width / 2;
+                            self.menuY = rect.bottom + 6;
+                            self.menuOpen = true;
+                            self.noteOpen = false;
+                        }, 350);
                     });
                 },
                 viewNote: function (h) {

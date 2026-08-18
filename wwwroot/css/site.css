@@ -706,6 +706,8 @@ a { color: inherit; text-decoration: none; }
   .lb-nav-links a { display: block; padding: 12px 2px; }
   .lb-nav__toggle { display: block; }
   .lb-nav-user__name { display: none; }
+  .lb-nav-login__text { display: none; }
+  .lb-nav-right .lb-nav-login.lb-button { padding: 0 8px; }
   .lb-theme-btn { margin-left: 0; }
   .lb-hero { padding: 64px 0 48px; }
   .lb-post { grid-template-columns: 1fr; gap: 10px; }

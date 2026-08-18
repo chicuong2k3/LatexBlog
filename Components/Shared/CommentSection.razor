@@ -33,7 +33,6 @@
                             <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
                             <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
                             <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                         </div>
                         <div class="lb-rte__area" contenteditable="true" data-rte="main" x-on:input="rteInput($event)" placeholder="Viết bình luận…"></div>
                     </div>
@@ -64,7 +63,7 @@
                         <div class="lb-comment__actions" x-show="$store.auth.signedIn">
                             <button type="button" class="lb-comment__reply" x-show="$store.auth.isAdmin" x-on:click="adminDelete(c)">Xóa</button>
                             <button type="button" class="lb-comment__reply" x-show="canEdit(c)" x-on:click="startEdit(c)">Sửa</button>
-                            <button type="button" class="lb-comment__reply" x-on:click="replyTarget === c.id ? cancelReply() : openReply(c.id)" x-text="replyTarget === c.id ? 'Hủy' : 'Trả lời'"></button>
+                            <button type="button" class="lb-comment__reply" x-show="c.user_id !== $store.auth.userId" x-on:click="replyTarget === c.id ? cancelReply() : openReply(c.id, $event)" x-text="replyTarget === c.id ? 'Hủy' : 'Trả lời'"></button>
                         </div>
                         <template x-if="editingId === c.id">
                             <form class="lb-comments__editform" x-on:submit.prevent="saveEdit(c)">
@@ -75,7 +74,6 @@
                                         <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
                                         <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
                                         <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                                        <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                                     </div>
                                     <div class="lb-rte__area" contenteditable="true" x-init="$el.innerHTML = editBody" x-on:input="editBody = $event.currentTarget.innerHTML"></div>
                                 </div>
@@ -93,7 +91,6 @@
                                     <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
                                     <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
                                     <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                                    <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                                 </div>
                                 <div class="lb-rte__area" contenteditable="true" data-rte="reply" x-on:input="rteInput($event)" placeholder="Trả lời bình luận…"></div>
                             </div>

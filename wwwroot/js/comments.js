@@ -114,10 +114,37 @@
     // Toolbar dùng plain onclick (hoạt động trong mọi component); vùng nhập giữ
     // x-on:input riêng để đồng bộ dữ liệu (body/replyBody/noteText/noteEditHtml).
     function rteExec(e, cmd, val) {
-        document.execCommand(cmd, false, val || null);
         var area = e.currentTarget.closest(".lb-rte").querySelector(".lb-rte__area");
+        if (cmd === "formatBlock" && val) {
+            toggleBlock(area, String(val).replace(/[<>]/g, "").toLowerCase());
+        } else {
+            document.execCommand(cmd, false, val || null);
+        }
         if (area) area.focus();
         syncRteToolbar();
+    }
+
+    // formatBlock (pre/blockquote) isn't a native toggle like bold/italic —
+    // execCommand("formatBlock", false, "<p>") to turn it back off is flaky
+    // across browsers, so detect + unwrap it ourselves via the DOM instead.
+    function toggleBlock(area, tag) {
+        var sel = window.getSelection();
+        if (!area || !sel.rangeCount) return;
+        var node = sel.anchorNode;
+        var el = node && (node.nodeType === 1 ? node : node.parentNode);
+        var block = el && el.closest ? el.closest(tag) : null;
+        if (block && area.contains(block)) {
+            var p = document.createElement("p");
+            p.innerHTML = block.innerHTML;
+            block.replaceWith(p);
+            var range = document.createRange();
+            range.selectNodeContents(p);
+            range.collapse(false);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        } else {
+            document.execCommand("formatBlock", false, "<" + tag + ">");
+        }
     }
 
     // Toolbar active state. The command lives in the inline onclick (no data-*
@@ -126,7 +153,10 @@
         try {
             if (cmd === "formatBlock") {
                 var tag = String(val || "").replace(/[<>]/g, "").toLowerCase();
-                return String(document.queryCommandValue("formatBlock")).toLowerCase() === tag;
+                var sel = window.getSelection();
+                var node = sel && sel.anchorNode;
+                var el = node && (node.nodeType === 1 ? node : node.parentNode);
+                return !!(el && el.closest && el.closest(tag));
             }
             return document.queryCommandState(cmd);
         } catch (err) { return false; }
@@ -145,43 +175,6 @@
         }
     }
     document.addEventListener("selectionchange", syncRteToolbar);
-
-    var _rteMathArea = null;
-    function openRteMath(e) {
-        _rteMathArea = e.currentTarget.closest(".lb-rte").querySelector(".lb-rte__area");
-        var popup = document.getElementById("lb-rte-math");
-        var input = document.getElementById("lb-rte-math-tex");
-        if (popup) popup.classList.add("is-open");
-        if (input) { input.value = ""; input.focus(); }
-    }
-    function insertRteMath() {
-        var input = document.getElementById("lb-rte-math-tex");
-        var tex = input ? input.value.trim() : "";
-        if (tex && _rteMathArea) {
-            var marker = document.createElement("span");
-            marker.className = "lb-math";
-            marker.setAttribute("data-tex", tex);
-            var sel = window.getSelection();
-            if (sel.rangeCount && _rteMathArea.contains(sel.anchorNode)) {
-                var r = sel.getRangeAt(0);
-                r.deleteContents();
-                r.insertNode(marker);
-                r.setStartAfter(marker);
-                r.collapse(true);
-                sel.removeAllRanges();
-                sel.addRange(r);
-            } else {
-                _rteMathArea.appendChild(marker);
-            }
-            _rteMathArea.dispatchEvent(new Event("input", { bubbles: true }));
-        }
-        var popup = document.getElementById("lb-rte-math");
-        if (popup) popup.classList.remove("is-open");
-    }
-    function closeRteMath() {
-        var popup = document.getElementById("lb-rte-math");
-        if (popup) popup.classList.remove("is-open");
-    }
 
     // Render nội dung: rich HTML (mới) hoặc markdown (comment cũ).
     // Rich HTML: sanitize + KaTeX cho marker .lb-math[data-tex].
@@ -556,15 +549,27 @@
                         }
                     });
                 },
-                openReply: function (id) {
+                openReply: function (id, ev) {
                     var c = this.comments.find(function (x) { return x.id === id; });
                     this.replyTarget = id;
                     this.replyBody = c && c.author_name ? "@" + c.author_name + " " : "";
                     this.replyPreview = false;
                     var self = this;
+                    var li = ev && ev.target && ev.target.closest(".lb-comment");
                     this.$nextTick(function () {
-                        var ra = document.querySelector(".lb-comments__replyform .lb-rte__area");
-                        if (ra) ra.innerHTML = self.replyBody;
+                        // scope to this comment's own reply form — with x-show, every
+                        // comment's (hidden) reply form stays in the DOM, so an
+                        // unscoped querySelector can grab the wrong one
+                        var ra = (li || document).querySelector(".lb-comments__replyform .lb-rte__area");
+                        if (!ra) return;
+                        ra.innerHTML = self.replyBody;
+                        ra.focus();
+                        var range = document.createRange();
+                        range.selectNodeContents(ra);
+                        range.collapse(false);
+                        var sel = window.getSelection();
+                        sel.removeAllRanges();
+                        sel.addRange(range);
                     });
                 },
                 cancelReply: function () { this.replyTarget = null; this.replyBody = ""; this.replyPreview = false; },
@@ -610,7 +615,7 @@
                         .catch(function (e) { self.error = e.message; });
                 },
 
-                // ---- rich text editor (dùng global rteExec/openRteMath; đây chỉ đồng bộ dữ liệu) ----
+                // ---- rich text editor (dùng global rteExec; đây chỉ đồng bộ dữ liệu) ----
                 rteInput: function (e) {
                     var area = e.currentTarget;
                     if (area.getAttribute("data-rte") === "main") this.body = area.innerHTML;
@@ -1089,7 +1094,4 @@
     window.lbRenderComment = renderComment;
     window.lbLoadSupabase = loadSupabase;
     window.rteExec = rteExec;
-    window.openRteMath = openRteMath;
-    window.insertRteMath = insertRteMath;
-    window.closeRteMath = closeRteMath;
 })();

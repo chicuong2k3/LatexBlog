@@ -1,7 +1,12 @@
 @page "/"
+@using System.Text.Json.Nodes
 @inject PostStore PostStore
+@inject IHttpContextAccessor HttpContextAccessor
 
 <PageTitle>Alternative World</PageTitle>
+<HeadContent>
+    <script type="application/ld+json">@((MarkupString)WebsiteJsonLd)</script>
+</HeadContent>
 
 <section class="lb-hero">
     <div class="lb-sweep" aria-hidden="true"></div>
@@ -75,6 +80,27 @@
 
 @code {
     private const int PageSize = 3;
+
+    private string WebsiteJsonLd
+    {
+        get
+        {
+            var baseUrl = HttpContextAccessor.HttpContext is { } ctx
+                ? $"{ctx.Request.Scheme}://{ctx.Request.Host}"
+                : "";
+            var node = new JsonObject
+            {
+                ["@context"] = "https://schema.org",
+                ["@type"] = "WebSite",
+                ["name"] = "Alternative World",
+                ["url"] = baseUrl,
+                ["description"] = "Blog toán học và lập trình viết bằng LaTeX, nhìn thế giới qua một lăng kính khác.",
+                ["inLanguage"] = "vi",
+                ["publisher"] = new JsonObject { ["@type"] = "Organization", ["name"] = "Alternative World" },
+            };
+            return node.ToJsonString();
+        }
+    }
 
     private PostMeta? Latest => PostStore.All.FirstOrDefault();
 

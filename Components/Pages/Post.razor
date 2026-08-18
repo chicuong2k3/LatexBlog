@@ -22,6 +22,7 @@ else
         <meta property="og:type" content="article" />
         <meta property="og:url" content="@PostUrl" />
         <meta property="og:image" content="@CoverUrl" />
+        <script type="application/ld+json">@((MarkupString)ArticleJsonLd)</script>
     </HeadContent>
 
     <article class="lb-post-page" x-data="annotations" x-init="init('@PostMeta.Slug')">
@@ -96,7 +97,6 @@ else
                     <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
                     <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
                     <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                    <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                 </div>
                 <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-on:input="noteText = $event.currentTarget.innerHTML" placeholder="Viết ghi chú cho đoạn này…"></div>
             </div>
@@ -125,7 +125,6 @@ else
                             <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
                             <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
                             <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                         </div>
                         <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-init="$el.innerHTML = noteEditHtml" x-on:input="noteEditHtml = $event.currentTarget.innerHTML"></div>
                     </div>
@@ -155,6 +154,44 @@ else
         PostMeta is null || HttpContextAccessor.HttpContext is not { } ctx
             ? "/"
             : $"{ctx.Request.Scheme}://{ctx.Request.Host}/posts/{PostMeta.Slug}";
+
+    private string ArticleJsonLd
+    {
+        get
+        {
+            if (PostMeta is null) return "{}";
+            // JsonObject (not an anonymous type) so property names like "@context"/"@type"
+            // — invalid C# identifiers — can be used directly, no post-hoc string patching.
+            var node = new System.Text.Json.Nodes.JsonObject
+            {
+                ["@context"] = "https://schema.org",
+                ["@type"] = "BlogPosting",
+                ["headline"] = PostMeta.Title,
+                ["description"] = PostMeta.Summary,
+                ["datePublished"] = PostMeta.Date,
+                ["dateModified"] = PostMeta.Date,
+                ["keywords"] = string.Join(", ", PostMeta.Tags),
+                ["image"] = CoverUrl,
+                ["mainEntityOfPage"] = new System.Text.Json.Nodes.JsonObject
+                {
+                    ["@type"] = "WebPage",
+                    ["@id"] = PostUrl,
+                },
+                ["author"] = new System.Text.Json.Nodes.JsonObject
+                {
+                    ["@type"] = "Organization",
+                    ["name"] = "Alternative World",
+                },
+                ["publisher"] = new System.Text.Json.Nodes.JsonObject
+                {
+                    ["@type"] = "Organization",
+                    ["name"] = "Alternative World",
+                },
+                ["inLanguage"] = "vi",
+            };
+            return node.ToJsonString();
+        }
+    }
 
     private string CoverUrl =>
         PostMeta is null || HttpContextAccessor.HttpContext is not { } ctx

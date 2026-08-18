@@ -5,10 +5,12 @@ services:
     container_name: alternative-world
     restart: unless-stopped
     ports:
-      - "${HOST_PORT:-8090}:8080"
+      - "${HOST_PORT:-8090}:8090"
+    environment:
+      - ASPNETCORE_URLS=http://+:8090
     networks:
       # cloudflared lives on this network and reaches the app as
-      # http://alternative-world:8080 (container port, not HOST_PORT).
+      # http://alternative-world:8090 (container port matches tunnel route).
       - cfnet
     # Supabase config ships in appsettings.json (publishable anon key). To point
     # at another project without rebuilding, uncomment and set these — an empty

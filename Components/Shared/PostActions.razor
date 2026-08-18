@@ -19,14 +19,13 @@
         </button>
 
         <div class="lb-share" x-show="shareOpen" x-transition.opacity x-on:click.outside="shareOpen = false" role="menu">
-            <button type="button" class="lb-share__item" x-on:click="copyLink()">
+            <button type="button" class="lb-share__item" x-on:click="copyLink(); shareOpen = false">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                 <span>Sao chép liên kết</span>
             </button>
-            <a class="lb-share__item" :href="'https://www.facebook.com/sharer/sharer.php?u=' + enc(window.location.href)" target="_blank" rel="noopener">Facebook</a>
-            <a class="lb-share__item" :href="'https://twitter.com/intent/tweet?url=' + enc(window.location.href) + '&amp;text=' + enc(title)" target="_blank" rel="noopener">X</a>
-            <a class="lb-share__item" :href="'https://t.me/share/url?url=' + enc(window.location.href) + '&amp;text=' + enc(title)" target="_blank" rel="noopener">Telegram</a>
-            <a class="lb-share__item" :href="'https://api.whatsapp.com/send?text=' + enc(title + ' ' + window.location.href)" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="lb-share__item" :href="'https://www.facebook.com/sharer/sharer.php?u=' + enc(window.location.href)" target="_blank" rel="noopener" x-on:click="shareOpen = false">Facebook</a>
+            <a class="lb-share__item" :href="'https://twitter.com/intent/tweet?url=' + enc(window.location.href) + '&amp;text=' + enc(title)" target="_blank" rel="noopener" x-on:click="shareOpen = false">X</a>
+            <a class="lb-share__item" :href="'https://api.whatsapp.com/send?text=' + enc(title + ' ' + window.location.href)" target="_blank" rel="noopener" x-on:click="shareOpen = false">WhatsApp</a>
         </div>
     </div>
 </div>

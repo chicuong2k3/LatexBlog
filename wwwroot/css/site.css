@@ -67,6 +67,9 @@ a { color: inherit; text-decoration: none; }
   display: none; border: 0; background: none; color: var(--ink); padding: 6px; cursor: pointer;
 }
 .lb-nav-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+/* desktop: transparent wrapper around nav-links + nav-right, zero layout change —
+   only becomes a real (stacked, scrollable) box in the mobile media query below */
+.lb-nav-panel { display: contents; }
 .lb-nav-right .lb-nav-icon, .lb-nav-right .lb-theme-btn, .lb-nav-right .lb-button { height: 28px; }
 .lb-nav-right .lb-button { padding: 0 12px; display: inline-flex; align-items: center; gap: 7px; font-size: .82rem; }
 .lb-nav-icon {
@@ -233,14 +236,22 @@ a { color: inherit; text-decoration: none; }
 .lb-toc a:hover { color: var(--ink); }
 .lb-toc a.is-active { color: var(--neon); font-weight: 600; background: color-mix(in srgb, var(--neon) 10%, transparent); }
 
-/* Wide screens: the TOC floats beside the 780px column instead of pushing the
-   article down. Narrower than that it stays an inline card. */
+/* Wide screens: the TOC floats beside the article column instead of pushing
+   it down. Narrower than that it stays an inline card.
+   The column widens + reserves padding-right (border-box, so this shrinks
+   the *text* measure without moving the column's own right edge) instead of
+   just narrowing the centered 780px column — at viewport widths right around
+   this breakpoint (~1180-1300px, i.e. plenty of real laptops) the plain
+   780px-centered column's right edge lands under the fixed TOC with no gap.
+   max-height is capped short of the fixed back-to-top button so the two
+   fixed elements never overlap in the bottom-right corner either. */
 @media (min-width: 1180px) {
   .lb-toc {
     position: fixed; top: 92px; right: 28px; width: 216px; margin: 0;
-    max-height: calc(100vh - 140px); overflow-y: auto; z-index: 20;
+    max-height: calc(100vh - 220px); overflow-y: auto; z-index: 20;
     box-shadow: none;
   }
+  .lb-post-page { max-width: 900px; padding-right: 240px; }
 }
 
 /* prose (pandoc fragment) */
@@ -696,19 +707,34 @@ a { color: inherit; text-decoration: none; }
 /* ---------- responsive ---------- */
 @media (max-width: 720px) {
   .lb-wrap { padding: 0 18px; }
-  .lb-nav-links {
+  /* mobile: nav-links + nav-right (search/notif/login/theme) move into one
+     shared dropdown panel under the hamburger — trying to fit avatar, login,
+     theme toggle, search and notif icons all on the 66px bar itself is what
+     was overflowing narrow screens */
+  .lb-nav-panel {
     display: none; position: absolute; top: 66px; left: 0; right: 0;
-    flex-direction: column; align-items: stretch; gap: 0; padding: 8px 18px 14px;
+    flex-direction: column; padding: 8px 18px 14px; gap: 10px;
     background: var(--bg); border-bottom: 1px solid var(--line); z-index: 40;
+    max-height: calc(100vh - 66px); overflow-y: auto;
   }
-  .lb-nav-links.open { display: flex; }
+  .lb-nav-panel.open { display: flex; }
+  .lb-nav-links {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0;
+    margin: 0; padding: 0; list-style: none;
+  }
   .lb-nav-links li + li { border-top: 1px solid var(--line); }
   .lb-nav-links a { display: block; padding: 12px 2px; }
   .lb-nav__toggle { display: block; }
-  .lb-nav-user__name { display: none; }
-  .lb-nav-login__text { display: none; }
-  .lb-nav-right .lb-nav-login.lb-button { padding: 0 8px; }
-  .lb-theme-btn { margin-left: 0; }
+  .lb-nav-right {
+    margin-left: 0; padding-top: 10px; border-top: 1px solid var(--line);
+    flex-wrap: wrap; gap: 10px;
+  }
+  .lb-nav-user { flex: 1 1 auto; min-width: 0; }
+  .lb-nav-user__link { min-width: 0; }
+  .lb-nav-user__name { display: inline-block; }
+  .lb-nav-login { flex: 1 1 auto; justify-content: center; }
+  .lb-nav-login__text { display: inline; }
+  .lb-theme-btn { margin-left: auto; }
   .lb-hero { padding: 64px 0 48px; }
   .lb-post { grid-template-columns: 1fr; gap: 10px; }
   .lb-post-num { font-size: 1.3rem; }

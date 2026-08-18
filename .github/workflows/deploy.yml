@@ -1,0 +1,75 @@
+name: Deploy
+
+# Self-hosted runner living on the VPS itself: "deploy" is a local docker
+# rebuild, no SSH and no registry involved.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  HOST_PORT: "8080"
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, windows]
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preflight — docker available
+        run: |
+          $docker = Get-Command docker -ErrorAction SilentlyContinue
+          if (-not $docker) {
+            throw "docker not found on this runner. Install Docker Desktop (Linux containers) and make sure the runner service account can use it."
+          }
+          docker version --format 'client {{.Client.Version}} / server {{.Server.Version}}'
+          if ($LASTEXITCODE -ne 0) {
+            throw "docker is installed but the daemon is not reachable. Start Docker Desktop, or run the GitHub runner as a service under an account in the docker-users group."
+          }
+          docker compose version
+          if ($LASTEXITCODE -ne 0) { throw "docker compose v2 plugin missing (docker compose version failed)." }
+
+      - name: Preflight — Linux containers
+        run: |
+          $os = docker version --format '{{.Server.Os}}'
+          if ($os -ne 'linux') {
+            throw "Docker is in $os-container mode; this image is Linux-based. Switch Docker Desktop to Linux containers."
+          }
+
+      # The SDK image carries .NET, python3 and pandoc, so the runner itself
+      # needs none of them — only docker.
+      - name: Build image
+        run: |
+          docker compose build --pull
+          if ($LASTEXITCODE -ne 0) { throw "docker compose build failed" }
+
+      - name: Start container
+        run: |
+          docker compose up -d --force-recreate
+          if ($LASTEXITCODE -ne 0) { throw "docker compose up failed" }
+
+      - name: Health check
+        run: |
+          $url = "http://localhost:$env:HOST_PORT/"
+          foreach ($i in 1..30) {
+            try {
+              $r = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 5
+              if ($r.StatusCode -eq 200) { Write-Host "healthy after $i attempt(s)"; exit 0 }
+            } catch { }
+            Start-Sleep -Seconds 2
+          }
+          Write-Host "--- container logs ---"
+          docker compose logs --tail 60
+          throw "app did not answer 200 at $url within 60s"
+
+      - name: Prune dangling images
+        if: always()
+        run: docker image prune -f

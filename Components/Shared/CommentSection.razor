@@ -1,10 +1,9 @@
-@using LatexBlog.I18n
 
-<section class="lb-comments" x-data="comments" x-init="init('@Slug')" aria-label="@I18n.Comments">
-    <h2 class="lb-comments__title">@I18n.Comments</h2>
+<section class="lb-comments" x-data="comments" x-init="init('@Slug')" aria-label="Bình luận">
+    <h2 class="lb-comments__title">Bình luận</h2>
 
     <template x-if="!configured">
-        <p class="lb-comments__hint">@I18n.CommentsDisabled</p>
+        <p class="lb-comments__hint">Bình luận chưa được bật trên blog này.</p>
     </template>
 
     <template x-if="configured">
@@ -18,97 +17,97 @@
                             <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
                             <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
                         </svg>
-                        @I18n.SignInGoogle
+                        Đăng nhập bằng Google
                     </button>
                 </div>
             </template>
 
             <template x-if="$store.auth.signedIn">
                 <form class="lb-comments__form" x-on:submit.prevent="post()">
-                    <span class="lb-comments__who">@I18n.CommentingAs: <strong x-text="$store.auth.displayName"></strong></span>
+                    <span class="lb-comments__who">Bình luận với tư cách: <strong x-text="$store.auth.displayName"></strong></span>
 
                     <div class="lb-rte">
-                        <div class="lb-rte__toolbar" role="toolbar" aria-label="@I18n.Comments" onmousedown="return false">
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="@I18n.Bold"><b>B</b></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="@I18n.Italic"><i>I</i></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="@I18n.Code"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="@I18n.Quote"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="@I18n.List"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="@I18n.InlineMath"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
+                        <div class="lb-rte__toolbar" role="toolbar" aria-label="Bình luận" onmousedown="return false">
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                         </div>
-                        <div class="lb-rte__area" contenteditable="true" data-rte="main" x-on:input="rteInput($event)" placeholder="@I18n.CommentPlaceholder"></div>
+                        <div class="lb-rte__area" contenteditable="true" data-rte="main" x-on:input="rteInput($event)" placeholder="Viết bình luận…"></div>
                     </div>
 
                     <div class="lb-comments__actions">
-                        <button type="submit" class="lb-button" :disabled="posting">@I18n.PostComment</button>
+                        <button type="submit" class="lb-button" :disabled="posting">Gửi bình luận</button>
                     </div>
                 </form>
             </template>
 
             <p class="lb-comments__error" x-show="error" x-text="error"></p>
-            <p class="lb-comments__hint" x-show="loading">@I18n.CommentsLoading</p>
+            <p class="lb-comments__hint" x-show="loading">Đang tải bình luận…</p>
 
             <ul class="lb-comments__list">
                 <template x-for="c in comments" :key="c.id">
-                    <li class="lb-comment" :style="'margin-left:' + (c.depth * 34) + 'px'">
+                    <li class="lb-comment" :id="'comment-' + c.id" :style="'margin-left:' + (c.depth * 34) + 'px'">
                         <div class="lb-comment__head">
                             <img class="lb-comment__avatar" :src="c.avatar_url || ''" alt="" loading="lazy" />
                             <div class="lb-comment__meta">
-                                <strong x-text="c.author_name"></strong>
+                                <a class="lb-comment__author" :href="'/u/' + c.user_id" x-text="c.author_name"></a>
                                 <span class="lb-comment__when">
                                     <time x-text="new Date(c.created_at).toLocaleDateString('vi-VN')"></time>
-                                    <span class="lb-comment__edited" x-show="c.edited_at">@I18n.Edited</span>
+                                    <span class="lb-comment__edited" x-show="c.edited_at">(đã sửa)</span>
                                 </span>
                             </div>
                         </div>
                         <div class="lb-comment__body" x-html="renderBody(c.body)"></div>
                         <div class="lb-comment__actions" x-show="$store.auth.signedIn">
-                            <button type="button" class="lb-comment__reply" x-show="$store.auth.isAdmin" x-on:click="adminDelete(c)">@I18n.Delete</button>
-                            <button type="button" class="lb-comment__reply" x-show="canEdit(c)" x-on:click="startEdit(c)">@I18n.Edit</button>
-                            <button type="button" class="lb-comment__reply" x-on:click="replyTarget === c.id ? cancelReply() : openReply(c.id)" x-text="replyTarget === c.id ? '@I18n.Cancel' : '@I18n.Reply'"></button>
+                            <button type="button" class="lb-comment__reply" x-show="$store.auth.isAdmin" x-on:click="adminDelete(c)">Xóa</button>
+                            <button type="button" class="lb-comment__reply" x-show="canEdit(c)" x-on:click="startEdit(c)">Sửa</button>
+                            <button type="button" class="lb-comment__reply" x-on:click="replyTarget === c.id ? cancelReply() : openReply(c.id)" x-text="replyTarget === c.id ? 'Hủy' : 'Trả lời'"></button>
                         </div>
                         <template x-if="editingId === c.id">
                             <form class="lb-comments__editform" x-on:submit.prevent="saveEdit(c)">
                                 <div class="lb-rte">
                                     <div class="lb-rte__toolbar" role="toolbar" onmousedown="return false">
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="@I18n.Bold"><b>B</b></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="@I18n.Italic"><i>I</i></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="@I18n.Code"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="@I18n.Quote"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="@I18n.List"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                                        <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="@I18n.InlineMath"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
+                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
+                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
+                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
+                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
+                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
+                                        <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                                     </div>
                                     <div class="lb-rte__area" contenteditable="true" x-init="$el.innerHTML = editBody" x-on:input="editBody = $event.currentTarget.innerHTML"></div>
                                 </div>
                                 <div class="lb-comments__actions">
-                                    <button type="submit" class="lb-button lb-button--sm" :disabled="posting">@I18n.Save</button>
-                                    <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="cancelEdit()">@I18n.Cancel</button>
+                                    <button type="submit" class="lb-button lb-button--sm" :disabled="posting">Lưu</button>
+                                    <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="cancelEdit()">Hủy</button>
                                 </div>
                             </form>
                         </template>
                         <form class="lb-comments__replyform" x-show="replyTarget === c.id" x-on:submit.prevent="postReply(c.id)">
                             <div class="lb-rte lb-rte--sm">
-                                <div class="lb-rte__toolbar" role="toolbar" aria-label="@I18n.Reply" onmousedown="return false">
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="@I18n.Bold"><b>B</b></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="@I18n.Italic"><i>I</i></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="@I18n.Code"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="@I18n.Quote"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="@I18n.List"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                                    <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="@I18n.InlineMath"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
+                                <div class="lb-rte__toolbar" role="toolbar" aria-label="Trả lời" onmousedown="return false">
+                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
+                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
+                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
+                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
+                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
+                                    <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                                 </div>
-                                <div class="lb-rte__area" contenteditable="true" data-rte="reply" x-on:input="rteInput($event)" placeholder="@I18n.ReplyPlaceholder"></div>
+                                <div class="lb-rte__area" contenteditable="true" data-rte="reply" x-on:input="rteInput($event)" placeholder="Trả lời bình luận…"></div>
                             </div>
-                            <button type="submit" class="lb-button lb-button--sm" :disabled="posting">@I18n.PostReply</button>
+                            <button type="submit" class="lb-button lb-button--sm" :disabled="posting">Gửi trả lời</button>
                         </form>
                     </li>
                 </template>
             </ul>
 
             <button type="button" class="lb-button lb-button--sm lb-comments__more" x-show="hasMore" x-on:click="loadMore()" :disabled="loadingMore">
-                @I18n.LoadMoreComments <span x-text="'(' + (topTotal - topLoaded) + ')'"></span>
+                Xem thêm bình luận <span x-text="'(' + (topTotal - topLoaded) + ')'"></span>
             </button>
 
-            <p class="lb-comments__hint" x-show="!loading && !comments.length">@I18n.NoComments</p>
+            <p class="lb-comments__hint" x-show="!loading && !comments.length">Chưa có bình luận nào. Hãy là người đầu tiên.</p>
         </div>
     </template>
 </section>

@@ -1,0 +1,13 @@
+bin/
+obj/
+.git/
+.github/
+.claude/
+.impeccable/
+node_modules/
+tests/
+mocks/
+docs/
+tools/pandoc/
+wwwroot/generated/
+*.md

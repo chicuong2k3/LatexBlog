@@ -1,6 +1,6 @@
 {
-  "name": "LatexBlog",
-  "short_name": "LatexBlog",
+  "name": "Alternative World",
+  "short_name": "AltWorld",
   "description": "Viết bằng LaTeX, xuất bản bằng Blazor.",
   "start_url": "/",
   "display": "standalone",

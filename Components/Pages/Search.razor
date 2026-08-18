@@ -1,15 +1,15 @@
 @page "/search"
 @inject PostStore PostStore
 
-<PageTitle>@I18n.SearchTitle — @I18n.SiteTitle</PageTitle>
+<PageTitle>Tìm kiếm — Alternative World</PageTitle>
 <header class="lb-page-head">
-    <h1>@I18n.SearchTitle</h1>
-    <p>@I18n.SearchHint</p>
+    <h1>Tìm kiếm</h1>
+    <p>Gõ để tìm theo tiêu đề, tóm tắt hoặc thẻ.</p>
 </header>
 <input type="search"
        name="q"
        class="lb-field"
-       placeholder="@I18n.SearchPlaceholder"
+       placeholder="Tìm kiếm bài viết…"
        autocomplete="off"
        hx-get="/search/results"
        hx-target="#search-results"

@@ -107,11 +107,17 @@ begin
         from public.comments c
         where c.id = new.parent_id and c.user_id <> new.user_id;
     end if;
+    -- Một reply có kèm @tên người được reply chỉ tạo 1 thông báo: bỏ qua mention
+    -- cho những ai vừa nhận thông báo 'reply' của chính comment này.
     insert into public.notifications (user_id, actor_id, actor_name, actor_avatar, type, post_slug, comment_id)
     select p.id, new.user_id, new.author_name, new.avatar_url, 'mention', new.post_slug, new.id
     from public.profiles p
     where p.id <> new.user_id
-      and new.body ~ ('@' || replace(p.display_name, ' ', '[[:space:]]+'));
+      and new.body ~ ('@' || replace(p.display_name, ' ', '[[:space:]]+'))
+      and not exists (
+          select 1 from public.notifications n
+          where n.comment_id = new.id and n.user_id = p.id
+      );
     return new;
 end $$;
 

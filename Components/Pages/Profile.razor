@@ -2,19 +2,19 @@
 @inject PostStore PostStore
 @using System.Text.Json
 
-<PageTitle>@I18n.Profile — @I18n.SiteTitle</PageTitle>
+<PageTitle>Trang cá nhân — Alternative World</PageTitle>
 
 <script>window.__POSTS__ = @((MarkupString)JsonSerializer.Serialize(
         PostStore.All.Select(p => new { p.Slug, p.Title, p.Summary, p.Date }),
         new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }));</script>
 
 <section class="lb-profile" x-data="profile" x-init="init()">
-    <p class="lb-comments__hint" x-show="loading">@I18n.Loading</p>
+    <p class="lb-comments__hint" x-show="loading">Đang tải…</p>
 
     <template x-if="!loading && !signedIn">
         <div class="lb-profile__signin">
-            <h1>@I18n.Profile</h1>
-            <p>@I18n.ProfileSignIn</p>
+            <h1>Trang cá nhân</h1>
+            <p>Đăng nhập để xem trang cá nhân.</p>
             <button type="button" class="lb-button" x-on:click="$store.auth.signIn()">
                 <svg class="lb-comments__g" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true">
                     <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
@@ -22,7 +22,7 @@
                     <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
                     <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
                 </svg>
-                @I18n.SignInGoogle
+                Đăng nhập bằng Google
             </button>
         </div>
     </template>
@@ -30,13 +30,13 @@
     <template x-if="signedIn">
         <div class="lb-profile__inner">
             <div class="lb-profile__card">
-                <h1>@I18n.Profile</h1>
+                <h1>Trang cá nhân</h1>
                 <div class="lb-profile__row">
-                    <label class="lb-avatar-edit" title="@I18n.ChangeAvatar">
+                    <label class="lb-avatar-edit" title="Đổi ảnh đại diện">
                         <img class="lb-avatar lb-avatar--lg" :src="avatar || ''" alt="" loading="lazy" />
                         <span class="lb-avatar-edit__overlay">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                            @I18n.ChangeAvatar
+                            Đổi ảnh đại diện
                         </span>
                         <span class="lb-avatar-edit__badge" aria-hidden="true">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
@@ -50,26 +50,26 @@
                 </div>
 
                 <form class="lb-profile__form" x-on:submit.prevent="save()">
-                    <label class="lb-field-label" for="lb-name">@I18n.EditName</label>
+                    <label class="lb-field-label" for="lb-name">Tên hiển thị</label>
                     <input id="lb-name" class="lb-field" type="text" x-model="nameInput" required />
                     <p class="lb-comments__error" x-show="error" x-text="error"></p>
-                    <button type="submit" class="lb-button" :disabled="saving">@I18n.Save</button>
+                    <button type="submit" class="lb-button" :disabled="saving">Lưu</button>
                 </form>
 
                 <div class="lb-profile__stats">
-                    <div class="lb-stat"><strong x-text="stats.liked"></strong><span>@I18n.PostsLiked</span></div>
-                    <div class="lb-stat"><strong x-text="stats.comments"></strong><span>@I18n.CommentsWritten</span></div>
-                    <div class="lb-stat"><strong x-text="stats.highlights"></strong><span>@I18n.HighlightsMade</span></div>
+                    <div class="lb-stat"><strong x-text="stats.liked"></strong><span>bài đã thích</span></div>
+                    <div class="lb-stat"><strong x-text="stats.comments"></strong><span>bình luận đã viết</span></div>
+                    <div class="lb-stat"><strong x-text="stats.highlights"></strong><span>đoạn đã tô</span></div>
                 </div>
                 <div class="lb-profile__exports">
-                    <button type="button" class="lb-button lb-button--sm" x-on:click="exportComments()">@I18n.ExportComments</button>
-                    <button type="button" class="lb-button lb-button--sm" x-on:click="exportHighlights()">@I18n.ExportHighlights</button>
+                    <button type="button" class="lb-button lb-button--sm" x-on:click="exportComments()">Tải bình luận (JSON)</button>
+                    <button type="button" class="lb-button lb-button--sm" x-on:click="exportHighlights()">Tải ghi chú (JSON)</button>
                 </div>
             </div>
 
             <div class="lb-profile__liked">
-                <h2>@I18n.LikedPosts</h2>
-                <p class="lb-comments__hint" x-show="!likedPosts.length">@I18n.NoLikedPosts</p>
+                <h2>Bài viết đã thích</h2>
+                <p class="lb-comments__hint" x-show="!likedPosts.length">Bạn chưa thích bài viết nào.</p>
                 <ul class="lb-post-list">
                     <template x-for="p in likedPosts" :key="p.slug">
                         <li class="lb-post">
@@ -85,16 +85,16 @@
             </div>
 
             <div class="lb-profile__hl">
-                <h2>@I18n.Highlights</h2>
-                <p class="lb-comments__hint" x-show="!highlights.length">@I18n.NoHighlights</p>
+                <h2>Đoạn đã tô & ghi chú</h2>
+                <p class="lb-comments__hint" x-show="!highlights.length">Chưa có đoạn nào được tô.</p>
                 <ul class="lb-hl-list">
                     <template x-for="h in highlights" :key="h.id">
                         <li class="lb-hl-item">
                             <blockquote class="lb-hl-item__quote" x-text="h.quote"></blockquote>
-                            <p class="lb-hl-item__note" x-show="h.note" x-text="'@I18n.Note: ' + h.note"></p>
+                            <p class="lb-hl-item__note" x-show="h.note">Ghi chú: <span x-html="renderNote(h.note)"></span></p>
                             <div class="lb-hl-item__meta">
                                 <a :href="'/posts/' + h.post_slug" x-text="postTitle(h.post_slug)"></a>
-                                <button type="button" class="lb-comment__reply" x-on:click="deleteHighlight(h.id)">@I18n.Delete</button>
+                                <button type="button" class="lb-comment__reply" x-on:click="deleteHighlight(h.id)">Xóa</button>
                             </div>
                         </li>
                     </template>

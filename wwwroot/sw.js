@@ -1,5 +1,5 @@
-// LatexBlog service worker — offline reading: cache static assets + generated posts.
-var CACHE = "lb-v1";
+// Alternative World service worker — offline reading: cache static assets + generated posts.
+var CACHE = "lb-v7";
 var STATIC = [
   "/",
   "/css/site.css",

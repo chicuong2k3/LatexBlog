@@ -94,6 +94,12 @@ def find_pandoc():
         candidate = Path(dir_) / exe
         if candidate.exists():
             return str(candidate)
+    # Windows installers (winget/msi) drop pandoc here and only update the user
+    # PATH, which shells started before the install never see.
+    for var in ("LOCALAPPDATA", "ProgramFiles"):
+        base = os.environ.get(var)
+        if base and (Path(base) / "Pandoc" / exe).exists():
+            return str(Path(base) / "Pandoc" / exe)
     raise FileNotFoundError(
         "pandoc not found. Install it (see README or docs/Htmxor-verdict.md) "
         "or set PANDOC=/path/to/pandoc"
@@ -108,7 +114,6 @@ def render_pandoc(pandoc, tex_path, out_html):
         "--to", "html5",
         "--katex",
         "--highlight-style=pygments",
-        "--standalone=false",
         "--wrap=none",
     ]
     proc = subprocess.run(

@@ -6,16 +6,16 @@
 
 @if (PostMeta is null || (Html is null && DbBody is null))
 {
-    <PageTitle>@I18n.NotFoundTitle</PageTitle>
+    <PageTitle>Không tìm thấy trang</PageTitle>
     <section class="lb-not-found">
-        <h1>@I18n.NotFoundTitle</h1>
-        <p>@I18n.NotFoundMessage</p>
-        <a href="/" class="lb-button">@I18n.BackHome</a>
+        <h1>Không tìm thấy trang</h1>
+        <p>Trang bạn tìm kiếm không tồn tại hoặc đã bị di chuyển.</p>
+        <a href="/" class="lb-button">Về trang chủ</a>
     </section>
 }
 else
 {
-    <PageTitle>@PostMeta.Title — @I18n.SiteTitle</PageTitle>
+    <PageTitle>@PostMeta.Title — Alternative World</PageTitle>
     <HeadContent>
         <meta property="og:title" content="@PostMeta.Title" />
         <meta property="og:description" content="@PostMeta.Summary" />
@@ -27,24 +27,19 @@ else
     <article class="lb-post-page" x-data="annotations" x-init="init('@PostMeta.Slug')">
         <header class="lb-post-head">
             <h1>@PostMeta.Title</h1>
-            <p class="lb-post-meta">@I18n.PostedOn @PostMeta.Date · @ReadMinutes @I18n.ReadingTime</p>
+            <p class="lb-post-meta">Đăng ngày @PostMeta.Date · @ReadMinutes phút đọc</p>
             <div class="lb-post-tags">
                 @foreach (var tag in PostMeta.Tags)
                 {
                     <a href="/tags/@tag" class="lb-tag">#@tag</a>
                 }
             </div>
-            <div class="lb-readingtools" aria-label="@I18n.FocusMode">
-                <button type="button" data-size="-1" aria-label="A−">A−</button>
-                <button type="button" data-size="1" aria-label="A+">A+</button>
-                <button type="button" data-focus="1" aria-label="@I18n.FocusMode">@I18n.FocusMode</button>
-            </div>
         </header>
 
         @if (Toc.Count > 0)
         {
-            <nav class="lb-toc" x-data="tocSpy" aria-label="@I18n.Toc">
-                <strong>@I18n.Toc</strong>
+            <nav class="lb-toc" x-data="tocSpy" aria-label="Mục lục">
+                <strong>Mục lục</strong>
                 <ul>
                     @foreach (var entry in Toc)
                     {
@@ -72,8 +67,8 @@ else
 
         @if (Related.Count > 0)
         {
-            <aside class="lb-related" aria-label="@I18n.RelatedPosts">
-                <h2>@I18n.RelatedPosts</h2>
+            <aside class="lb-related" aria-label="Bài viết liên quan">
+                <h2>Bài viết liên quan</h2>
                 <ul class="lb-related__list">
                     @foreach (var p in Related)
                     {
@@ -89,35 +84,35 @@ else
         <CommentSection Slug="@PostMeta.Slug" />
 
         <div class="lb-hlmenu" x-show="menuOpen" :style="'left:' + menuX + 'px; top:' + menuY + 'px'" x-on:click.stop role="menu">
-            <button type="button" x-on:click="highlight()">@I18n.Highlight</button>
-            <button type="button" x-on:click="openNote()">@I18n.Note</button>
-            <button type="button" x-on:click="shareQuote()">@I18n.ShareQuote</button>
+            <button type="button" x-on:click="highlight()">Tô sáng</button>
+            <button type="button" x-on:click="openNote()">Ghi chú</button>
+            <button type="button" x-on:click="shareQuote()">Chia sẻ đoạn này</button>
         </div>
-        <div class="lb-hlnote" x-show="noteOpen" x-on:click.outside="cancelNote()" role="dialog" aria-label="@I18n.Note">
+        <div class="lb-hlnote" x-show="noteOpen" x-on:click.outside="cancelNote()" role="dialog" aria-label="Ghi chú">
             <div class="lb-rte">
                 <div class="lb-rte__toolbar" role="toolbar" onmousedown="return false">
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="@I18n.Bold"><b>B</b></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="@I18n.Italic"><i>I</i></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="@I18n.Code"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="@I18n.Quote"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="@I18n.List"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                    <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="@I18n.InlineMath"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
+                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
+                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
+                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
+                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
+                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
+                    <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                 </div>
-                <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-on:input="noteText = $event.currentTarget.innerHTML" placeholder="@I18n.NotePlaceholder"></div>
+                <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-on:input="noteText = $event.currentTarget.innerHTML" placeholder="Viết ghi chú cho đoạn này…"></div>
             </div>
             <div class="lb-hlnote__actions">
-                <button type="button" class="lb-button lb-button--sm" x-on:click="saveNote()">@I18n.Save</button>
-                <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="cancelNote()">@I18n.Cancel</button>
+                <button type="button" class="lb-button lb-button--sm" x-on:click="saveNote()">Lưu</button>
+                <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="cancelNote()">Hủy</button>
             </div>
         </div>
 
-        <div class="lb-noteview" x-show="noteView" x-on:click.outside="closeNoteView()" role="dialog" aria-label="@I18n.Note">
+        <div class="lb-noteview" x-show="noteView" x-on:click.outside="closeNoteView()" role="dialog" aria-label="Ghi chú">
             <template x-if="noteView && !noteEdit">
                 <div class="lb-noteview__inner">
                     <div class="lb-noteview__body" x-html="renderNote(noteView.note)"></div>
                     <div class="lb-noteview__actions">
-                        <button type="button" class="lb-button lb-button--sm" x-on:click="startEditNote()">@I18n.Edit</button>
-                        <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="closeNoteView()">@I18n.Close</button>
+                        <button type="button" class="lb-button lb-button--sm" x-on:click="startEditNote()">Sửa</button>
+                        <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="closeNoteView()">Đóng</button>
                     </div>
                 </div>
             </template>
@@ -125,18 +120,18 @@ else
                 <div class="lb-noteview__inner">
                     <div class="lb-rte">
                         <div class="lb-rte__toolbar" role="toolbar" onmousedown="return false">
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="@I18n.Bold"><b>B</b></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="@I18n.Italic"><i>I</i></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="@I18n.Code"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="@I18n.Quote"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="@I18n.List"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="@I18n.InlineMath"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
+                            <button type="button" class="lb-editor__btn" onclick="openRteMath(event)" title="Công thức toán"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16M12 8v8M9 12h6"/></svg></button>
                         </div>
                         <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-init="$el.innerHTML = noteEditHtml" x-on:input="noteEditHtml = $event.currentTarget.innerHTML"></div>
                     </div>
                     <div class="lb-noteview__actions">
-                        <button type="button" class="lb-button lb-button--sm" x-on:click="saveEditNote()">@I18n.Save</button>
-                        <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="noteEdit = false">@I18n.Cancel</button>
+                        <button type="button" class="lb-button lb-button--sm" x-on:click="saveEditNote()">Lưu</button>
+                        <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="noteEdit = false">Hủy</button>
                     </div>
                 </div>
             </template>

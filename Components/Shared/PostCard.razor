@@ -1,5 +1,4 @@
 @using LatexBlog.Services
-@using LatexBlog.I18n
 
 <article class="lb-post">
     <span class="lb-post-num" aria-hidden="true">@Number.ToString("00")</span>
@@ -8,7 +7,7 @@
         <p>@Post.Summary</p>
     </div>
     <div class="lb-post-meta">
-        <span class="lb-date">@I18n.PostedOn @Post.Date</span>
+        <span class="lb-date">Đăng ngày @Post.Date</span>
         <div class="lb-post-tags">
             @foreach (var tag in Post.Tags)
             {

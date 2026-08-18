@@ -77,24 +77,6 @@ document.addEventListener("alpine:init", () => {
     });
 })();
 
-// ---- reading tools (font size / focus) ----
-(function () {
-    var root = document.documentElement;
-    var saved = localStorage.getItem("lb-scale");
-    if (saved) root.style.setProperty("--read-scale", saved);
-    document.addEventListener("click", function (e) {
-        var b = e.target.closest("[data-size]");
-        if (b) {
-            var cur = parseFloat(root.style.getPropertyValue("--read-scale") || "1");
-            var next = Math.min(1.3, Math.max(.85, cur + parseFloat(b.getAttribute("data-size"))));
-            root.style.setProperty("--read-scale", next);
-            localStorage.setItem("lb-scale", String(next));
-        }
-        var f = e.target.closest("[data-focus]");
-        if (f) document.body.classList.toggle("lb-focus");
-    });
-})();
-
 // ---- reading progress ----
 (function () {
     var bar = document.getElementById("lb-progress");

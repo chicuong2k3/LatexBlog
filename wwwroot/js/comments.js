@@ -53,8 +53,61 @@
         });
     }
 
+    // Turn "@Display Name" into a link to that person's profile. Operates on
+    // text nodes only so it can never rewrite an attribute or a tag.
+    function linkifyMentions(html, people) {
+        var names = Object.keys(people || {});
+        if (!names.length || !html) return html;
+        names.sort(function (a, b) { return b.length - a.length; });  // longest first
+        var re = new RegExp("@(" + names.map(function (n) {
+            return n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        }).join("|") + ")", "g");
+        var wrap = document.createElement("div");
+        wrap.innerHTML = html;
+        var walker = document.createTreeWalker(wrap, NodeFilter.SHOW_TEXT);
+        var nodes = [], n;
+        while ((n = walker.nextNode())) {
+            if (n.parentNode.closest("a, code, pre")) continue;
+            if (re.test(n.nodeValue)) nodes.push(n);
+            re.lastIndex = 0;
+        }
+        nodes.forEach(function (node) {
+            var frag = document.createDocumentFragment();
+            var text = node.nodeValue, last = 0, m;
+            re.lastIndex = 0;
+            while ((m = re.exec(text))) {
+                if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+                var a = document.createElement("a");
+                a.className = "lb-mention";
+                a.href = "/u/" + people[m[1]];
+                a.textContent = "@" + m[1];
+                frag.appendChild(a);
+                last = m.index + m[0].length;
+            }
+            if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+            node.parentNode.replaceChild(frag, node);
+        });
+        return wrap.innerHTML;
+    }
+
     function stripHtml(html) {
         return String(html || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
+    }
+
+    // Optimistic read of supabase-js' persisted session (key: sb-<ref>-auth-token).
+    // Only pre-paints the header; init() still verifies via getSession().
+    function cachedSessionUser() {
+        if (!configured()) return null;
+        try {
+            for (var i = 0; i < localStorage.length; i++) {
+                var k = localStorage.key(i);
+                if (!/^sb-.*-auth-token$/.test(k)) continue;
+                var v = JSON.parse(localStorage.getItem(k));
+                var u = v && (v.user || (v.currentSession && v.currentSession.user));
+                if (u && u.id) return u;
+            }
+        } catch (e) { /* corrupt or blocked storage: fall back to the async path */ }
+        return null;
     }
 
     // ---- rich text editor (dùng chung cho comment / reply / note) ----
@@ -64,7 +117,34 @@
         document.execCommand(cmd, false, val || null);
         var area = e.currentTarget.closest(".lb-rte").querySelector(".lb-rte__area");
         if (area) area.focus();
+        syncRteToolbar();
     }
+
+    // Toolbar active state. The command lives in the inline onclick (no data-*
+    // attributes on the buttons), so read it back from there.
+    function rteCmdState(cmd, val) {
+        try {
+            if (cmd === "formatBlock") {
+                var tag = String(val || "").replace(/[<>]/g, "").toLowerCase();
+                return String(document.queryCommandValue("formatBlock")).toLowerCase() === tag;
+            }
+            return document.queryCommandState(cmd);
+        } catch (err) { return false; }
+    }
+
+    function syncRteToolbar() {
+        var sel = window.getSelection();
+        var node = sel && sel.anchorNode;
+        var el = node && (node.nodeType === 1 ? node : node.parentNode);
+        var area = el && el.closest && el.closest(".lb-rte__area");
+        if (!area) return;
+        var btns = area.closest(".lb-rte").querySelectorAll(".lb-editor__btn");
+        for (var i = 0; i < btns.length; i++) {
+            var m = /rteExec\(event,\s*'([^']+)'(?:,\s*'([^']*)')?/.exec(btns[i].getAttribute("onclick") || "");
+            if (m) btns[i].classList.toggle("is-active", rteCmdState(m[1], m[2]));
+        }
+    }
+    document.addEventListener("selectionchange", syncRteToolbar);
 
     var _rteMathArea = null;
     function openRteMath(e) {
@@ -204,14 +284,19 @@
 
     document.addEventListener("alpine:init", function () {
         // ================= shared auth store =================
+        // Supabase persists the session in localStorage; read it synchronously so
+        // the header paints the signed-in state immediately instead of flashing
+        // "sign in" until getSession() resolves (~500ms).
+        var cached = cachedSessionUser();
+        var cachedMd = (cached && cached.user_metadata) || {};
         Alpine.store("auth", {
             enabled: configured(),
             ready: false,
-            signedIn: false,
-            displayName: "",
-            avatar: "",
-            userId: "",
-            email: "",
+            signedIn: !!cached,
+            displayName: cachedMd.full_name || cachedMd.name || (cached && cached.email) || "",
+            avatar: cachedMd.avatar_url || "",
+            userId: (cached && cached.id) || "",
+            email: (cached && cached.email) || "",
             isAdmin: false,
             _started: false,
             init: function () {
@@ -221,14 +306,15 @@
                 loadSupabase()
                     .then(function (sb) {
                         return sb.auth.getSession().then(function (res) {
-                            if (!(res.data && res.data.session)) { self.ready = true; return; }
+                            // no live session: undo the optimistic localStorage seed
+                            if (!(res.data && res.data.session)) { self.clear(); self.ready = true; return; }
                             var user = res.data.session.user;
                             var md = (user && user.user_metadata) || {};
                             var fallbackName = md.full_name || md.name || user.email || "";
                             var fallbackAvatar = md.avatar_url || "";
                             // ensure a profile row exists (users created before the trigger)
                             return sb.from("profiles")
-                                .insert({ id: user.id, display_name: fallbackName, avatar_url: fallbackAvatar },
+                                .upsert({ id: user.id, display_name: fallbackName, avatar_url: fallbackAvatar },
                                     { onConflict: "id", ignoreDuplicates: true })
                                 .then(function () {
                                     return sb.from("profiles").select("display_name, avatar_url, is_admin").eq("id", user.id).maybeSingle();
@@ -262,12 +348,15 @@
                     })
                     .catch(function () {});
             },
+            clear: function () {
+                this.signedIn = false; this.displayName = ""; this.avatar = ""; this.userId = ""; this.email = ""; this.isAdmin = false;
+            },
             signOut: function () {
                 var self = this;
                 loadSupabase()
                     .then(function (sb) { return sb.auth.signOut(); })
                     .then(function () {
-                        self.signedIn = false; self.displayName = ""; self.avatar = ""; self.userId = ""; self.email = ""; self.isAdmin = false;
+                        self.clear();
                         lbToast("Đã đăng xuất.");
                     })
                     .catch(function () {});
@@ -295,6 +384,11 @@
                 replyPreviewHtml: "",
                 error: "",
                 slug: "",
+                // display_name -> user id, filled by mergeProfiles; used to turn
+                // "@Ten Nguoi" in a comment body into a profile link.
+                // ponytail: only covers people who appear on this page; a mention
+                // of a stranger stays plain text.
+                _people: {},
 
                 init: function (slug) {
                     // Alpine auto-calls init() (no arg) before x-init; guard it
@@ -305,7 +399,30 @@
                     Alpine.store("auth").init();
                     loadSupabase()
                         .then(function () { return self.loadPage(null); })
+                        .then(function () { return self.jumpToHash(); })
                         .catch(function (e) { self.error = e.message; self.loading = false; });
+                },
+
+                // Notifications link to /posts/<slug>#comment-<id>. Comments are
+                // paginated, so keep pulling pages until the target is loaded,
+                // then scroll to it and flash it.
+                jumpToHash: function () {
+                    var m = /^#comment-([0-9a-fA-F-]+)$/.exec(location.hash || "");
+                    if (!m) return;
+                    var self = this, id = m[1];
+                    var loaded = this.comments.some(function (c) { return c.id === id; });
+                    if (!loaded) {
+                        if (!this.hasMore || !this._lastTop) return;
+                        return this.loadPage(this._lastTop.created_at)
+                            .then(function () { return self.jumpToHash(); });
+                    }
+                    this.$nextTick(function () {
+                        var el = document.getElementById("comment-" + id);
+                        if (!el) return;
+                        el.scrollIntoView({ behavior: "smooth", block: "center" });
+                        el.classList.add("is-target");
+                        setTimeout(function () { el.classList.remove("is-target"); }, 2500);
+                    });
                 },
 
                 // cursor pagination: top-level mới nhất trước; mỗi trang + toàn bộ reply của chúng
@@ -369,7 +486,10 @@
                         return sb.from("profiles").select("id, display_name, avatar_url").in("id", uids);
                     }).then(function (pr) {
                         var prof = {};
-                        (pr.data || []).forEach(function (p) { prof[p.id] = p; });
+                        (pr.data || []).forEach(function (p) {
+                            prof[p.id] = p;
+                            if (p.display_name) self._people[p.display_name] = p.id;
+                        });
                         rows.forEach(function (r) {
                             var p = prof[r.user_id];
                             if (p) {
@@ -477,7 +597,7 @@
                         })
                         .catch(function (e) { self.posting = false; self.error = e.message; });
                 },
-                renderBody: function (body) { return renderComment(body); },
+                renderBody: function (body) { return linkifyMentions(renderComment(body), this._people); },
                 adminDelete: function (c) {
                     var self = this;
                     loadSupabase()
@@ -531,6 +651,22 @@
                 toggle: function () {
                     this.open = !this.open;
                     if (this.open) this.load();
+                },
+                // Mark read before following the link: a fire-and-forget update
+                // gets cancelled by the navigation, which is why they stayed unread.
+                openItem: function (n, ev) {
+                    if (n.read) return;
+                    ev.preventDefault();
+                    var href = ev.currentTarget.getAttribute("href");
+                    var self = this;
+                    loadSupabase()
+                        .then(function (sb) { return sb.from("notifications").update({ read: true }).eq("id", n.id); })
+                        .catch(function () {})
+                        .then(function () {
+                            n.read = true;
+                            self.unread = Math.max(0, self.unread - 1);
+                            window.location.href = href;
+                        });
                 },
                 markAllRead: function () {
                     var self = this;
@@ -751,96 +887,47 @@
             };
         });
 
-        // ================= post editor (admin /write) =================
-        Alpine.data("postEditor", function () {
+        // public profile: /u/<user id>
+        Alpine.data("publicProfile", function () {
             return {
-                ready: false, saving: false, error: "", message: "",
-                editingSlug: "", title: "", slug: "", date: "", tags: "", summary: "", body: "",
-                published: true, preview: false, previewHtml: "", posts: [],
-                init: function () {
+                loading: true, found: false,
+                displayName: "", avatar: "", commentCount: 0, comments: [],
+                init: function (id) {
+                    if (!id || !configured()) { this.loading = false; return; }
                     var self = this;
-                    Alpine.store("auth").init();
-                    Alpine.store("auth").whenReady().then(function () {
-                        self.ready = true;
-                        if (Alpine.store("auth").signedIn && Alpine.store("auth").isAdmin) self.load();
-                    });
-                },
-                load: function () {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) { return sb.from("posts").select("*").order("date", { ascending: false }); })
-                        .then(function (res) { if (!res.error) self.posts = res.data || []; })
-                        .catch(function () {});
-                },
-                newPost: function () {
-                    this.editingSlug = ""; this.title = ""; this.slug = ""; this.date = new Date().toISOString().slice(0, 10);
-                    this.tags = ""; this.summary = ""; this.body = ""; this.published = true; this.preview = false; this.error = "";
-                },
-                edit: function (p) {
-                    this.editingSlug = p.slug; this.title = p.title; this.slug = p.slug; this.date = String(p.date).slice(0, 10);
-                    this.tags = (p.tags || []).join(", "); this.summary = p.summary; this.body = p.body_md || "";
-                    this.published = p.published !== false; this.preview = false; this.error = "";
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                },
-                save: function () {
-                    var self = this;
-                    var tags = this.tags.split(",").map(function (t) { return t.trim(); }).filter(Boolean);
-                    if (!this.title.trim() || !this.slug.trim() || !this.date) { this.error = "Thiếu tiêu đề / slug / ngày"; return; }
-                    this.saving = true; this.error = "";
                     loadSupabase()
                         .then(function (sb) {
-                            return sb.from("posts").upsert({
-                                slug: self.slug.trim(), title: self.title.trim(), date: self.date, tags: tags,
-                                summary: self.summary.trim(), body_md: self.body, published: self.published,
-                                updated_at: new Date().toISOString(),
-                            }, { onConflict: "slug" });
+                            return sb.from("profiles").select("display_name, avatar_url").eq("id", id).maybeSingle();
                         })
                         .then(function (res) {
-                            self.saving = false;
-                            if (res.error) { self.error = res.error.message; return; }
-                            lbToast("Đã lưu bài!");
-                            self.load();
+                            if (!res.data) { self.loading = false; return; }
+                            self.found = true;
+                            self.displayName = res.data.display_name || "Ẩn danh";
+                            self.avatar = res.data.avatar_url || "";
+                            return loadSupabase().then(function (sb) {
+                                return Promise.all([
+                                    sb.from("comments").select("id, body, post_slug, created_at")
+                                        .eq("user_id", id).order("created_at", { ascending: false }).limit(10),
+                                    sb.from("comments").select("id", { count: "exact" }).eq("user_id", id),
+                                ]);
+                            }).then(function (r) {
+                                self.comments = r[0].data || [];
+                                self.commentCount = r[1].count || 0;
+                            });
                         })
-                        .catch(function (e) { self.saving = false; self.error = e.message; });
+                        .then(function () { self.loading = false; })
+                        .catch(function () { self.loading = false; });
                 },
-                remove: function (p) {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) { return sb.from("posts").delete().eq("slug", p.slug); })
-                        .then(function (res) {
-                            if (res.error) return;
-                            self.posts = self.posts.filter(function (x) { return x.slug !== p.slug; });
-                            if (self.editingSlug === p.slug) self.newPost();
-                        })
-                        .catch(function () {});
-                },
-                insert: function (e, before, after) {
-                    var editor = e.currentTarget.closest(".lb-editor");
-                    var ta = editor ? editor.querySelector("textarea") : null;
-                    if (!ta) return;
-                    var s = ta.selectionStart, end = ta.selectionEnd;
-                    var val = ta.value;
-                    var repl = before + (val.slice(s, end) || "") + after;
-                    this.body = val.slice(0, s) + repl + val.slice(end);
-                    var self = this;
-                    this.$nextTick(function () {
-                        var pos = s + before.length + (val.slice(s, end) || "").length;
-                        ta.setSelectionRange(pos, pos);
-                        ta.focus();
-                    });
-                },
-                togglePreview: function () {
-                    this.preview = !this.preview;
-                    this.previewHtml = this.preview ? renderComment(this.body) : "";
-                },
+                renderBody: function (body) { return renderComment(body); },
             };
         });
 
-        // ================= profile page =================
         Alpine.data("profile", function () {
             return {
                 loading: true,
-                signedIn: false,
+                // Derived, not snapshotted: signing out has to flip this page back
+                // to the signed-out view without a reload.
+                get signedIn() { return Alpine.store("auth").signedIn; },
                 displayName: "", email: "", avatar: "",
                 nameInput: "", file: null, saving: false, error: "",
                 likedPosts: [],
@@ -853,7 +940,6 @@
                         self.loading = false;
                         var s = Alpine.store("auth");
                         if (!s.signedIn) return;
-                        self.signedIn = true;
                         self.displayName = s.displayName;
                         self.avatar = s.avatar;
                         self.nameInput = s.displayName;
@@ -863,6 +949,8 @@
                         self.loadStats();
                     });
                 },
+                // notes are rich text (DOMPurify-sanitized in renderComment), not plain text
+                renderNote: function (note) { return renderComment(note); },
                 loadStats: function () {
                     var self = this;
                     var uid = Alpine.store("auth").userId;
@@ -1000,4 +1088,8 @@
     // exposed for site.js / inline handlers
     window.lbRenderComment = renderComment;
     window.lbLoadSupabase = loadSupabase;
+    window.rteExec = rteExec;
+    window.openRteMath = openRteMath;
+    window.insertRteMath = insertRteMath;
+    window.closeRteMath = closeRteMath;
 })();

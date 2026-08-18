@@ -1,0 +1,50 @@
+@page "/u/{Id}"
+
+<PageTitle>Trang cá nhân — Alternative World</PageTitle>
+
+<section class="lb-profile" x-data="publicProfile" x-init="init('@Id')">
+    <p class="lb-comments__hint" x-show="loading">Đang tải…</p>
+
+    <template x-if="!loading && !found">
+        <div class="lb-profile__signin">
+            <h1>Không tìm thấy người dùng</h1>
+            <p><a class="lb-cta" href="/">Về trang chủ</a></p>
+        </div>
+    </template>
+
+    <template x-if="found">
+        <div class="lb-profile__inner">
+            <div class="lb-profile__card">
+                <div class="lb-profile__row">
+                    <img class="lb-avatar lb-avatar--lg" :src="avatar || ''" alt="" loading="lazy" />
+                    <div>
+                        <h1 x-text="displayName"></h1>
+                        <p class="lb-comments__who"><span x-text="commentCount"></span> bình luận đã viết</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lb-profile__card">
+                <h2>Bình luận gần đây</h2>
+                <template x-if="!comments.length">
+                    <p class="lb-comments__hint">Chưa có bình luận nào.</p>
+                </template>
+                <ul class="lb-comments__list">
+                    <template x-for="c in comments" :key="c.id">
+                        <li class="lb-comment">
+                            <div class="lb-comment__body" x-html="renderBody(c.body)"></div>
+                            <div class="lb-comment__actions">
+                                <a class="lb-comment__reply" :href="'/posts/' + c.post_slug + '#comment-' + c.id">Xem trong bài</a>
+                                <time class="lb-comment__when" x-text="new Date(c.created_at).toLocaleDateString('vi-VN')"></time>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </template>
+</section>
+
+@code {
+    [Parameter] public string Id { get; set; } = "";
+}

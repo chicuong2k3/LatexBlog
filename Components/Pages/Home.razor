@@ -1,26 +1,26 @@
 @page "/"
 @inject PostStore PostStore
 
-<PageTitle>@I18n.SiteTitle</PageTitle>
+<PageTitle>Alternative World</PageTitle>
 
 <section class="lb-hero">
     <div class="lb-sweep" aria-hidden="true"></div>
     <div class="lb-wrap">
-        <h1>@I18n.HeroPre<span class="lb-neon">@I18n.HeroNeon</span>@I18n.HeroMid<span class="lb-violet">@I18n.HeroViolet</span>@I18n.HeroEnd</h1>
-        <p class="lb-hero-lead">@I18n.HeroSubtitle — @I18n.HeroLead</p>
+        <h1>Một thế giới <span class="lb-neon">khác</span> bắt đầu từ một câu hỏi <span class="lb-violet">khác</span>.</h1>
+        <p class="lb-hero-lead">Toán học và lập trình, đọc lại từ đầu — không đi theo lối mòn của những gì đã biết.</p>
 
         @if (Latest is not null)
         {
             <article class="lb-featured">
                 <div>
-                    <span class="lb-flag">@I18n.LatestPost</span>
+                    <span class="lb-flag">Bài mới nhất</span>
                     <h2><a href="/posts/@Latest.Slug">@Latest.Title</a></h2>
                     <p>@Latest.Summary</p>
-                    <a class="lb-cta" href="/posts/@Latest.Slug">@I18n.ReadMore
+                    <a class="lb-cta" href="/posts/@Latest.Slug">Đọc tiếp
                         <svg width="16" height="16" aria-hidden="true"><use href="#lb-arrow" /></svg>
                     </a>
                 </div>
-                <div class="lb-matrix" aria-label="@I18n.MatrixLabel">
+                <div class="lb-matrix" aria-label="Ma trận xoay một góc θ trong mặt phẳng">
                     <div class="lb-matrix-box">
                         <div class="lb-mrow"><span class="lb-bracket">(</span><span>cos θ&nbsp;&nbsp;−sin θ</span><span class="lb-bracket">)</span></div>
                         <div class="lb-mrow"><span class="lb-bracket">(</span><span>sin θ&nbsp;&nbsp;&nbsp;cos θ</span><span class="lb-bracket">)</span></div>
@@ -34,8 +34,8 @@
 <section class="lb-posts">
     <div class="lb-wrap">
         <div class="lb-posts-head">
-            <h2>@I18n.PostsTitle</h2>
-            <span class="lb-count">@PostStore.All.Count @I18n.PostsCount</span>
+            <h2>Bài viết</h2>
+            <span class="lb-count">@PostStore.All.Count bài</span>
         </div>
         <div class="lb-post-list">
             @{ var idx = 0; }
@@ -52,7 +52,7 @@
                         hx-get="/posts?page=2"
                         hx-target="#load-more"
                         hx-swap="outerHTML"
-                        hx-push-url="false">@I18n.LoadMore</button>
+                        hx-push-url="false">Xem thêm</button>
             </div>
         }
     </div>
@@ -61,7 +61,7 @@
 <section class="lb-tagcloud">
     <div class="lb-wrap">
         <div class="lb-posts-head">
-            <h2>@I18n.TagsTitle</h2>
+            <h2>Thẻ</h2>
         </div>
         <div class="lb-tagcloud__chips">
             @foreach (var tc in TagCounts)

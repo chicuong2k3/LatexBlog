@@ -78,6 +78,13 @@ HONEST RISK: the neon register can read loud for readers of long math prose; the
     <script>
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("/sw.js").catch(function () {});
+            // Reload once when a NEW service worker takes over (fresh deploy),
+            // so the user sees new content immediately instead of on 2nd load.
+            var hadController = !!navigator.serviceWorker.controller;
+            navigator.serviceWorker.addEventListener("controllerchange", function () {
+                if (hadController) location.reload();
+                hadController = true;
+            });
         }
     </script>
 </body>

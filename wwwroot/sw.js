@@ -1,7 +1,6 @@
 // Alternative World service worker — offline reading: cache static assets + generated posts.
 var CACHE = "lb-v11";
 var STATIC = [
-  "/",
   "/css/site.css",
   "/js/site.js",
   "/js/comments.js",

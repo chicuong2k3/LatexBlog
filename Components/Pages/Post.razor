@@ -37,6 +37,14 @@ else
             </div>
         </header>
 
+        @if (!string.IsNullOrWhiteSpace(PostMeta.Tldr))
+        {
+            <aside class="lb-tldr" aria-label="Tóm tắt">
+                <strong>TL;DR</strong>
+                <p>@PostMeta.Tldr</p>
+            </aside>
+        }
+
         @if (Toc.Count > 0)
         {
             <nav class="lb-toc" x-data="tocSpy" aria-label="Mục lục">

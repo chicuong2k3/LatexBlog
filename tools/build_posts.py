@@ -177,6 +177,7 @@ def build_all(posts_dir, out_dir, index_path, pandoc):
             "date": meta["date"],
             "tags": meta["tags"],
             "summary": meta["summary"],
+            "tldr": meta.get("tldr", ""),
         })
         print(f"  rendered {tex.name} -> {out_html}")
     index.sort(key=lambda p: p["date"], reverse=True)

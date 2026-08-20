@@ -39,3 +39,47 @@ test('phím tắt / mở popup tìm kiếm', async ({ page }) => {
   await page.keyboard.press('/');
   await expect(page.locator('.lb-searchmodal')).toBeVisible();
 });
+
+test('home masonry: danh sách bài xếp cột bằng pretext', async ({ page }) => {
+  await page.goto('/');
+  const list = page.locator('.lb-post-list');
+  await expect(list).toHaveClass(/lb-post-list--masonry/);
+  const first = list.locator('.lb-post').first();
+  await expect(first).toHaveCSS('position', 'absolute');
+  const box = await first.boundingBox();
+  expect(box.width).toBeGreaterThan(200);
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth - document.documentElement.clientWidth
+  );
+  expect(overflow).toBeLessThanOrEqual(1);
+});
+
+test('home masonry: card mới từ htmx được đưa vào lưới và xếp lại', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.lb-post-list')).toHaveClass(/lb-post-list--masonry/);
+  const before = await page.locator('.lb-post-list .lb-post').count();
+  await page.evaluate(() => {
+    const wrap = document.querySelector('.lb-posts .lb-wrap');
+    const card = document.createElement('article');
+    card.className = 'lb-post';
+    card.innerHTML =
+      '<span class="lb-post-num">04</span>' +
+      '<div class="lb-post-body"><h3><a href="/posts/x">Bài viết mới qua htmx</a></h3>' +
+      '<p>Một đoạn tóm tắt khá dài để kiểm tra việc xếp cột bằng pretext, đủ chữ để wrap nhiều dòng.</p></div>' +
+      '<div class="lb-post-meta"><span class="lb-date">Đăng ngày 2026-08-20</span>' +
+      '<div class="lb-post-tags"><a href="/tags/toan" class="lb-tag">toan</a></div></div>';
+    wrap.appendChild(card);
+    wrap.dispatchEvent(new Event('htmx:afterSwap', { bubbles: true }));
+  });
+  await expect(page.locator('.lb-post-list .lb-post')).toHaveCount(before + 1);
+  await expect(page.locator('.lb-post-list .lb-post').last()).toHaveCSS('position', 'absolute');
+});
+
+test('home masonry: fallback khi tắt JS', async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false });
+  const page = await ctx.newPage();
+  await page.goto('/');
+  await expect(page.locator('.lb-post-list')).not.toHaveClass(/lb-post-list--masonry/);
+  await expect(page.locator('.lb-post').first()).toBeVisible();
+  await ctx.close();
+});

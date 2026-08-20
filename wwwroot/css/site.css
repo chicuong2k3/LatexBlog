@@ -182,6 +182,24 @@ a { color: inherit; text-decoration: none; }
 .lb-tag::before { content: "#"; color: var(--neon); margin-right: 1px; }
 .lb-load-more { display: flex; justify-content: center; margin-top: 32px; }
 
+/* ---------- masonry (home, pretext-driven; JS adds the modifier) ---------- */
+.lb-post-list--masonry { position: relative; }
+.lb-post-list--masonry .lb-post {
+  display: flex; flex-direction: column; gap: 8px; align-items: flex-start;
+  width: auto; height: auto; margin: 0;
+  padding: 20px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--surface); box-shadow: none;
+}
+.lb-post-list--masonry .lb-post:hover {
+  background: color-mix(in srgb, var(--neon) 5%, var(--surface));
+}
+.lb-post-list--masonry .lb-post-num { font-size: 1.5rem; }
+.lb-post-list--masonry .lb-post-body h3 { font-size: 1.16rem; font-weight: 600; letter-spacing: -.01em; }
+.lb-post-list--masonry .lb-post-body p { max-width: none; }
+.lb-post-list--masonry .lb-post-meta { text-align: left; width: 100%; }
+.lb-post-list--masonry .lb-post-meta .lb-post-tags { justify-content: flex-start; }
+
+
 /* ---------- tag cloud (home) ---------- */
 .lb-tagcloud { padding: 52px 0 0; }
 .lb-tagcloud__chips { display: flex; gap: 10px; flex-wrap: wrap; }

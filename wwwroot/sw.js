@@ -1,5 +1,5 @@
 // Alternative World service worker — offline reading: cache static assets + generated posts.
-var CACHE = "lb-v10";
+var CACHE = "lb-v11";
 var STATIC = [
   "/",
   "/css/site.css",
@@ -27,18 +27,11 @@ self.addEventListener("fetch", function (e) {
   if (e.request.method !== "GET") return;
   if (url.origin !== location.origin) return;
 
-  // Static assets: cache-first.
-  if (STATIC.indexOf(url.pathname) !== -1 || /\.(css|js|png|svg|webmanifest)$/.test(url.pathname)) {
-    e.respondWith(
-      caches.match(e.request).then(function (hit) { return hit || fetch(e.request).then(function (res) { var cl = res.clone(); caches.open(CACHE).then(function (c) { c.put(e.request, cl); }); return res; }); })
-    );
-    return;
-  }
-
-  // Pages & generated posts: network-first, cache fallback (offline reading).
+  // Everything network-first, cache as offline fallback: clients always
+  // get fresh assets after a deploy, no manual cache-version bump needed.
   e.respondWith(
     fetch(e.request).then(function (res) {
-      if (res.ok && /\/$|\/posts\/|\.html/.test(url.pathname)) {
+      if (res.ok) {
         var cl = res.clone();
         caches.open(CACHE).then(function (c) { c.put(e.request, cl); });
       }

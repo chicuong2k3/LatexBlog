@@ -1,8 +1,11 @@
 {
   "mcpServers": {
     "latexblog": {
-      "command": "node",
-      "args": ["tools/mcp/server.js"]
+      "type": "http",
+      "url": "http://localhost:3999/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCP_TOKEN}"
+      }
     }
   }
 }

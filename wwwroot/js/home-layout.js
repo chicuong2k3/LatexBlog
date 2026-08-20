@@ -139,6 +139,35 @@ function onAfterSwap(e) {
   layoutMasonry();
 }
 
+// --- hero auto-fit -------------------------------------------------------------
+function autofitHero() {
+  const h1 = document.querySelector('.lb-hero h1');
+  if (!h1) return;
+  const wrap = h1.closest('.lb-wrap');
+  const cs = getComputedStyle(wrap);
+  const width = wrap.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  const text = h1.textContent.trim();
+  const family = firstFontFamily(getComputedStyle(h1).fontFamily);
+
+  const lineCountAt = (size) => {
+    const font = {
+      str: `800 ${size}px ${family}`,
+      letterSpacing: HERO_LETTER_SPACING * size, // em -> px at this size
+      lineHeight: HERO_LINE_HEIGHT * size,
+    };
+    const p = prepare(text, font.str, { letterSpacing: font.letterSpacing });
+    return layout(p, width, font.lineHeight).lineCount;
+  };
+
+  if (lineCountAt(HERO_SIZE_MIN) > 2) return; // too long even at min -> keep clamp
+  let lo = HERO_SIZE_MIN, hi = HERO_SIZE_MAX;
+  while (hi - lo > 0.5) {
+    const mid = (lo + hi) / 2;
+    if (lineCountAt(mid) <= 2) lo = mid; else hi = mid;
+  }
+  h1.style.fontSize = `${lo.toFixed(1)}px`;
+}
+
 // --- init ---------------------------------------------------------------------
 async function init() {
   if (!('Intl' in window) || !window.Intl.Segmenter) return; // pretext needs it
@@ -150,7 +179,7 @@ async function init() {
 
   list.classList.add(MASONRY_CLASS);
 
-  const run = () => { layoutMasonry(); /* hero autofit added in Task 3 */ };
+  const run = () => { layoutMasonry(); autofitHero(); };
   run();
 
   document.addEventListener('htmx:afterSwap', onAfterSwap);

@@ -83,3 +83,19 @@ test('home masonry: fallback khi tắt JS', async ({ browser }) => {
   await expect(page.locator('.lb-post').first()).toBeVisible();
   await ctx.close();
 });
+
+test('home hero: tự co cỡ chữ để quote vừa đúng 2 dòng', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForFunction(
+    () => document.querySelector('.lb-hero h1').style.fontSize !== ''
+  );
+  const h1 = page.locator('.lb-hero h1');
+  const style = await h1.getAttribute('style');
+  expect(style).toMatch(/font-size:\s*\d+(\.\d+)?px/);
+  const fs = parseFloat(style.match(/font-size:\s*([\d.]+)px/)[1]);
+  const h = (await h1.boundingBox()).height;
+  expect(fs).toBeGreaterThanOrEqual(2.4 * 16); // >= clamp min
+  expect(fs).toBeLessThanOrEqual(4.2 * 16);    // <= clamp max
+  expect(h).toBeGreaterThan(fs * 1.5);         // more than one line
+  expect(h).toBeLessThan(fs * 3);              // no more than ~3 lines
+});

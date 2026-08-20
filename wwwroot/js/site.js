@@ -91,20 +91,26 @@ document.addEventListener("alpine:init", () => {
 (function () {
     if (!document.querySelector(".lb-post-page")) return;
     var key = "lb-pos:" + location.pathname.split("/").pop();
-    var saved = parseFloat(localStorage.getItem(key));
 
     // ponytail: save scroll % (not px) so KaTeX/image reflow doesn't break the position
-    var t;
-    window.addEventListener("scroll", function () {
-        clearTimeout(t);
-        t = setTimeout(function () {
-            var h = document.documentElement.scrollHeight - window.innerHeight;
-            var pct = h > 0 ? window.scrollY / h : 0;
-            if (pct > 0.95 || window.scrollY < 200) localStorage.removeItem(key);
-            else localStorage.setItem(key, pct.toFixed(4));
-        }, 200);
-    }, { passive: true });
+    var save = document.createElement("button");
+    save.type = "button";
+    save.className = "lb-bookmark";
+    save.title = "Đánh dấu vị trí đang đọc";
+    save.setAttribute("aria-label", "Đánh dấu vị trí đang đọc");
+    save.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>';
+    save.addEventListener("click", function () {
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        localStorage.setItem(key, (h > 0 ? window.scrollY / h : 0).toFixed(4));
+        if (typeof Toastify !== "undefined") Toastify({
+            text: "Đã lưu vị trí đọc", duration: 2600, gravity: "bottom", position: "right",
+            className: "lb-toast",
+            style: { background: "var(--surface)", color: "var(--ink)", border: "1px solid var(--neon)", borderRadius: "8px" },
+        }).showToast();
+    });
+    document.body.appendChild(save);
 
+    var saved = parseFloat(localStorage.getItem(key));
     if (!(saved > 0)) return;
     var btn = document.createElement("button");
     btn.type = "button";

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "latexblog": {
+      "type": "http",
+      "url": "http://localhost:3999/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCP_TOKEN}"
+      }
+    }
+  }
+}

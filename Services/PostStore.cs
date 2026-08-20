@@ -3,7 +3,8 @@ using System.Text.Json;
 namespace LatexBlog.Services;
 
 public sealed record PostMeta(
-    string Slug, string Title, string Date, string[] Tags, string Summary);
+    string Slug, string Title, string Date, string[] Tags, string Summary,
+    string? Tldr = null);
 
 /// <summary>
 /// Bài viết = file (.tex) + bài trên Supabase.

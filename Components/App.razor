@@ -18,7 +18,9 @@
     <link rel="alternate" type="application/rss+xml" title="Alternative World RSS" href="/rss.xml" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="theme-color" content="#0c0a16" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
     <HeadOutlet />
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.9.12/dist/htmx.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" defer></script>
@@ -76,6 +78,13 @@ HONEST RISK: the neon register can read loud for readers of long math prose; the
     <script>
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("/sw.js").catch(function () {});
+            // Reload once when a NEW service worker takes over (fresh deploy),
+            // so the user sees new content immediately instead of on 2nd load.
+            var hadController = !!navigator.serviceWorker.controller;
+            navigator.serviceWorker.addEventListener("controllerchange", function () {
+                if (hadController) location.reload();
+                hadController = true;
+            });
         }
     </script>
 </body>

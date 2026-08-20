@@ -1,0 +1,310 @@
+%---
+% title: "Projection — chìa khóa của khoảng cách và hình chiếu"
+% date: 2026-08-06
+% tags: [dai-so-tuyen-tinh, thpt, oxyz, hinh-hoc]
+% summary: "Hình chiếu (projection) biến câu hỏi 'điểm nào gần nhất?' thành một phép tính. Một khái niệm đại số tuyến tính duy nhất giải trọn khoảng cách điểm–đường, điểm–mặt và chân đường vuông góc trong Oxyz."
+%---
+\section{Vì sao projection là "chìa khóa vàng"?}
+
+Trong đề THPT, có một họ bài toán lặp đi lặp lại: tìm điểm gần nhất trên một đường thẳng hay một mặt phẳng, tìm khoảng cách, tìm chân đường vuông góc, tìm hình chiếu. Nhìn bề ngoài chúng là năm, bảy dạng khác nhau, mỗi dạng một công thức. Nhưng thật ra \textbf{tất cả đều là một câu hỏi duy nhất}:
+
+\begin{quote}
+\emph{Cho một vector $v$ và một "không gian" (một đường thẳng, một mặt phẳng), hãy tách $v$ thành hai phần: một phần nằm trong không gian đó, một phần vuông góc với nó.}
+\end{quote}
+
+Phần nằm trong không gian gọi là \textbf{hình chiếu} (projection) của $v$. Và chỉ cần biết cách tách này, bạn sẽ \emph{suy ra} được mọi công thức khoảng cách thay vì học thuộc chúng.
+
+Trong bài này, ta đi từ một ý tưởng hình học cực kỳ trực quan, rồi dùng nó để giải một loạt bài Oxyz thật.
+
+\section{Ý tưởng trực quan: bóng đổ trên một cây gậy}
+
+Hãy tưởng tượng một chiếc gậy nằm trên mặt đất (một đường thẳng), và mặt trời chiếu thẳng đứng xuống. Một con chim bay trong không khí — \emph{bóng} của nó trên mặt đất rơi vào đâu?
+
+Bóng đó chính là \textbf{hình chiếu vuông góc} của vị trí con chim lên đường thẳng. Nó trả lời câu hỏi: \emph{điểm trên gậy nào gần con chim nhất?} Vì mặt trời chiếu vuông góc, bóng là điểm gần nhất.
+
+Nếu thay cây gậy bằng một tấm ván (một mặt phẳng), bóng của con chim trên tấm ván là hình chiếu lên mặt phẳng — lại là \emph{điểm gần nhất} trên tấm ván so với con chim.
+
+Kết luận trực quan cần giữ trong đầu:
+
+\begin{quote}
+\textbf{Hình chiếu của $v$ lên không gian $W$ = điểm trong $W$ gần $v$ nhất} và \textbf{vector nối $v$ đến hình chiếu thì vuông góc với $W$}.
+\end{quote}
+
+Hai phát biểu này thực ra là một, và nó sinh ra mọi thứ.
+
+\section{Công thức: chiếu lên một đường thẳng}
+
+Xét không gian đơn giản nhất: một đường thẳng qua gốc tọa độ, có vector chỉ phương $u$. Muốn chiếu $v$ lên đường thẳng đó, ta cần tìm hệ số $t$ sao cho điểm $tu$ (trên đường thẳng) gần $v$ nhất — nghĩa là vector $v - tu$ vuông góc với $u$:
+
+$$
+(v - tu) \cdot u = 0
+$$
+
+Khai triển:
+
+$$
+v \cdot u - t\, (u \cdot u) = 0 \quad\Longrightarrow\quad t = \frac{v \cdot u}{u \cdot u}
+$$
+
+Vậy hình chiếu là:
+
+$$
+\operatorname{proj}_{u}(v) \;=\; t\,u \;=\; \frac{v \cdot u}{u \cdot u}\, u
+$$
+
+Đây là \textbf{công thức gốc duy nhất} của bài này. Mọi thứ khác đều là hệ quả.
+
+Viết theo tọa độ, với $u = (u_1,u_2,u_3)$ và $v = (v_1,v_2,v_3)$:
+
+$$
+\operatorname{proj}_{u}(v) \;=\; \frac{u_1 v_1 + u_2 v_2 + u_3 v_3}{u_1^2 + u_2^2 + u_3^2}\, (u_1, u_2, u_3)
+$$
+
+\section{Phân tích vector = thành phần song song + thành phần vuông góc}
+
+Khi đã có hình chiếu, phần còn lại tự động vuông góc. Ta viết:
+
+$$
+v \;=\; \underbrace{\operatorname{proj}_{u}(v)}_{\text{song song với } u} \;+\; \underbrace{v_{\perp}}_{\text{vuông góc với } u}
+$$
+
+với $v_{\perp} = v - \operatorname{proj}_{u}(v)$.
+
+Phép phân tích này trả lời cùng lúc hai loại câu hỏi:
+
+\begin{itemize}
+  \item \textbf{Khoảng cách}: khoảng cách từ đầu mút của $v$ đến đường thẳng chính là $\|v_{\perp}\|$ — phần "bị bỏ lại" khi chiếu.
+  \item \textbf{Hình chiếu / chân đường vuông góc}: chính là $\operatorname{proj}_{u}(v)$.
+\end{itemize}
+
+Nói cách khác, chỉ cần \emph{chiếu được}, là cả khoảng cách lẫn chân đường vuông góc đều nằm trong tay.
+
+\section{Áp dụng 1: Khoảng cách từ điểm đến đường thẳng}
+
+Giả sử đường thẳng $d$ đi qua điểm $A$ và có vector chỉ phương $u$. Muốn tính khoảng cách từ điểm $M$ đến $d$.
+
+Thủ thuật: xét vector $AM = v$. Chiếu $v$ lên $u$ được $\operatorname{proj}_{u}(v)$. Khoảng cách cần tìm là \textbf{phần vuông góc}:
+
+$$
+d(M, d) \;=\; \left\|\, v - \operatorname{proj}_{u}(v) \,\right\|
+$$
+
+\textbf{Ví dụ.} Cho $A(1,2,3)$, $u = (1,0,0)$, $M(4,2,5)$. Tính khoảng cách từ $M$ đến đường thẳng $d$ qua $A$ theo phương $u$.
+
+\textbf{Giải.} Ta có $v = AM = M - A = (3,0,2)$. Chiếu lên $u = (1,0,0)$:
+
+$$
+\operatorname{proj}_{u}(v) = \frac{v\cdot u}{u\cdot u}\, u = \frac{3}{1}\,(1,0,0) = (3,0,0)
+$$
+
+Phần vuông góc:
+
+$$
+v_{\perp} = v - \operatorname{proj}_{u}(v) = (3,0,2) - (3,0,0) = (0,0,2)
+$$
+
+Vậy khoảng cách:
+
+$$
+d(M,d) = \|v_{\perp}\| = \sqrt{0^2+0^2+2^2} = 2
+$$
+
+Đối chiếu với trực giác: $u$ nằm dọc trục $x$, nên chiếu $M$ lên $d$ chỉ là chuyện trượt dọc trục $x$ cho tới khi thẳng "bên dưới" $M$. Hình chiếu $(3,0,0)$ được tính \emph{từ $A$}, nên chân đường vuông góc là $A + (3,0,0) = (4,2,3)$. Từ $M(4,2,5)$ tới $(4,2,3)$ đúng bằng $2$ đơn vị dọc trục $z$. Khớp.
+
+\section{Áp dụng 2: Hình chiếu và chân đường vuông góc lên đường thẳng}
+
+Khoảng cách chỉ là một nửa. Câu hỏi phổ biến hơn trong đề: \emph{tìm hình chiếu vuông góc của điểm $M$ lên đường thẳng $d$}, hay \emph{tìm chân đường vuông góc}.
+
+Chân đường vuông góc chính là điểm $H$ trên $d$ sao cho $MH \perp d$. Nhưng $H$ "trên $d$ và gần $M$ nhất" — chính là hình chiếu! Vậy:
+
+\begin{quote}
+Chân đường vuông góc / hình chiếu của $M$ lên $d$ (qua $A$, chỉ phương $u$) là:
+$$H = A + \operatorname{proj}_{u}(M - A)$$
+\end{quote}
+
+\textbf{Ví dụ.} Cho đường thẳng $d$: $\frac{x-1}{2} = \frac{y}{1} = \frac{z}{1}$ và điểm $M(3,4,0)$. Tìm hình chiếu vuông góc $H$ của $M$ lên $d$.
+
+\textbf{Giải.} Đường thẳng qua $A(1,0,0)$, chỉ phương $u = (2,1,1)$. Vector $v = M - A = (2,4,0)$.
+
+Tính các tích vô hướng:
+
+$$
+v \cdot u = 2\cdot 2 + 4\cdot 1 + 0\cdot 1 = 8, \qquad u\cdot u = 2^2+1^2+1^2 = 6
+$$
+
+Hệ số:
+
+$$
+t = \frac{v\cdot u}{u\cdot u} = \frac{8}{6} = \frac{4}{3}
+$$
+
+Hình chiếu:
+
+$$
+\operatorname{proj}_{u}(v) = \frac{4}{3}\,(2,1,1) = \left(\frac{8}{3}, \frac{4}{3}, \frac{4}{3}\right)
+$$
+
+Chân đường vuông góc:
+
+$$
+H = A + \operatorname{proj}_{u}(v) = (1,0,0) + \left(\frac{8}{3},\frac{4}{3},\frac{4}{3}\right) = \left(\frac{11}{3}, \frac{4}{3}, \frac{4}{3}\right)
+$$
+
+Kiểm chứng $MH \perp d$. Ở đây có một chi tiết dễ sai khi tính tay: $3 - \frac{11}{3}$ là $\frac{9-11}{3} = -\frac{2}{3}$, chứ không phải $\frac{3-11}{3}$. Quy đồng cẩn thận:
+
+$$
+M - H = \left(3 - \frac{11}{3},\; 4 - \frac{4}{3},\; 0 - \frac{4}{3}\right) = \left(-\frac{2}{3},\; \frac{8}{3},\; -\frac{4}{3}\right)
+$$
+
+Nhân vô hướng với $u = (2,1,1)$:
+
+$$
+(M-H)\cdot u = -\frac{4}{3} + \frac{8}{3} - \frac{4}{3} = 0
+$$
+
+Vuông góc. Vậy $H = \left(\frac{11}{3}, \frac{4}{3}, \frac{4}{3}\right)$.
+
+Để ý là ta không cần làm gì thêm để có khoảng cách — nó nằm ngay trong vector vừa tính:
+
+$$
+d(M,d) = \|M - H\| = \frac{1}{3}\sqrt{4 + 64 + 16} = \frac{\sqrt{84}}{3} = \frac{2\sqrt{21}}{3}
+$$
+
+\begin{quote}
+Một lần chiếu trả về \emph{hai} đáp án: chân đường vuông góc là $A + \operatorname{proj}_u(v)$, khoảng cách là độ dài phần còn lại. Đề thi hay hỏi tách riêng hai câu, nhưng chúng là cùng một phép tính.
+\end{quote}
+
+\section{Nâng cấp: chiếu lên một mặt phẳng}
+
+Bây giờ không gian không còn là một đường thẳng mà là một mặt phẳng qua gốc, sinh bởi hai vector $u, v$ (độc lập tuyến tính). Muốn chiếu vector $w$ lên mặt phẳng này, ta tìm hình chiếu $w_{\parallel}$ là tổ hợp $au + bv$ sao cho $w - w_{\parallel}$ vuông góc với cả $u$ và $v$:
+
+$$
+(w - au - bv)\cdot u = 0, \qquad (w - au - bv)\cdot v = 0
+$$
+
+Đây là một \textbf{hệ hai phương trình tuyến tính} hai ẩn $a, b$:
+
+$$
+\begin{aligned}
+(u\cdot u)\,a + (u\cdot v)\,b &= w\cdot u \\
+(v\cdot u)\,a + (v\cdot v)\,b &= w\cdot v
+\end{aligned}
+$$
+
+Giải được $a, b$, ta có $w_{\parallel} = au + bv$ và $w_{\perp} = w - w_{\parallel}$.
+
+Nhìn thấy điều gì? \textbf{Projection tự nó đòi hỏi giải hệ tuyến tính} — chính là thứ ta gặp ở Module 3 (rank, ma trận). Mọi thứ nối với nhau.
+
+Với mặt phẳng \emph{đặc biệt} — qua gốc và có pháp vector $n$ — còn một cách nhanh hơn: chiếu $w$ lên $n$ rồi trừ đi:
+
+$$
+w_{\parallel} = w - \operatorname{proj}_{n}(w)
+$$
+
+vì "phần nằm trong mặt phẳng" = "bỏ đi phần dọc theo pháp vector".
+
+\section{Áp dụng 3: Khoảng cách từ điểm đến mặt phẳng}
+
+Đây là một trong những công thức quen thuộc nhất trong đề: khoảng cách từ điểm $M(x_0,y_0,z_0)$ đến mặt phẳng $ax+by+cz+d=0$ là
+
+$$
+d = \frac{|a x_0 + b y_0 + c z_0 + d|}{\sqrt{a^2+b^2+c^2}}
+$$
+
+Thay vì học thuộc, ta \textbf{suy ra} nó bằng projection. Mặt phẳng có pháp vector $n = (a,b,c)$. Gọi $A$ là một điểm bất kỳ trên mặt phẳng. Khoảng cách từ $M$ đến mặt phẳng chính là độ dài hình chiếu của $AM$ lên $n$ (lấy trị tuyệt đối):
+
+$$
+d = \left| \operatorname{proj}_{n}(AM) \right| = \left| \frac{AM \cdot n}{n \cdot n}\, n \right| = \frac{|AM \cdot n|}{\|n\|}
+$$
+
+Bây giờ $AM \cdot n = (M - A)\cdot n$. Vì $A$ nằm trên mặt phẳng nên $a x_A + b y_A + c z_A = -d$. Khai triển:
+
+$$
+(M - A)\cdot n = (x_0 - x_A)a + (y_0 - y_A)b + (z_0 - z_A)c = a x_0 + b y_0 + c z_0 - (a x_A + b y_A + c z_A)
+$$
+
+$$
+= a x_0 + b y_0 + c z_0 + d
+$$
+
+Và $\|n\| = \sqrt{a^2+b^2+c^2}$. Gộp lại:
+
+$$
+d = \frac{|a x_0 + b y_0 + c z_0 + d|}{\sqrt{a^2+b^2+c^2}}
+$$
+
+Đúng công thức quen thuộc — \emph{nhưng giờ ta hiểu nó đến từ đâu}: nó chỉ là "độ dài hình chiếu của vector nối lên pháp vector". Không còn là phép màu.
+
+\section{Áp dụng 4: Hình chiếu của điểm lên mặt phẳng}
+
+Câu hỏi "tìm hình chiếu vuông góc của $M$ lên mặt phẳng $(P)$" — điểm $H$ trên $(P)$ sao cho $MH \perp (P)$ — chính là: bắt đầu từ $M$, đi dọc theo pháp vector $n$ một đoạn đúng bằng khoảng cách, rồi dừng lại khi chạm mặt phẳng.
+
+Cụ thể: gọi $d$ là khoảng cách (có dấu) từ $M$ đến $(P)$ dọc theo $n$. Hình chiếu:
+
+$$
+H = M - \operatorname{proj}_{n}(AM) \;=\; M - \frac{AM \cdot n}{n\cdot n}\, n
+$$
+
+trong đó $A$ là một điểm trên $(P)$.
+
+\textbf{Ví dụ.} Cho mặt phẳng $(P): 2x + y - 2z + 1 = 0$ và điểm $M(1,0,1)$. Tìm hình chiếu $H$ của $M$ lên $(P)$.
+
+\textbf{Giải.} Pháp vector $n = (2,1,-2)$, $\|n\|^2 = 4+1+4 = 9$. Chọn điểm $A$ trên $(P)$: cho $x=0, y=0$ thì $-2z+1=0$ nên $z = \tfrac{1}{2}$, vậy $A = (0,0,\tfrac{1}{2})$.
+
+Vector $AM = M - A = (1,0,\tfrac{1}{2})$. Tính:
+
+$$
+AM \cdot n = 1\cdot 2 + 0\cdot 1 + \tfrac{1}{2}\cdot(-2) = 2 - 1 = 1
+$$
+
+Hình chiếu lên $n$:
+
+$$
+\operatorname{proj}_{n}(AM) = \frac{AM \cdot n}{n\cdot n}\, n = \frac{1}{9}\,(2,1,-2) = \left(\frac{2}{9}, \frac{1}{9}, -\frac{2}{9}\right)
+$$
+
+Hình chiếu của điểm:
+
+$$
+H = M - \operatorname{proj}_{n}(AM) = (1,0,1) - \left(\frac{2}{9},\frac{1}{9},-\frac{2}{9}\right) = \left(\frac{7}{9}, -\frac{1}{9}, \frac{11}{9}\right)
+$$
+
+Kiểm tra $H$ thuộc $(P)$:
+
+$$
+2\cdot\frac{7}{9} + \left(-\frac{1}{9}\right) - 2\cdot\frac{11}{9} + 1 = \frac{14}{9} - \frac{1}{9} - \frac{22}{9} + 1 = -\frac{9}{9} + 1 = 0
+$$
+
+Đúng. Và $M - H = \left(\frac{2}{9}, \frac{1}{9}, -\frac{2}{9}\right)$ song song với $n=(2,1,-2)$ (cùng phương, tỉ lệ $1/9$) — tức $MH \perp (P)$. Chính xác.
+
+\section{Projection sinh ra cả bài toán "mặt cầu"}
+
+Một dạng quen thuộc khác: \emph{cho mặt cầu $(S)$ tâm $I$, tìm khoảng cách từ tâm đến một mặt phẳng $(P)$} để biện luận vị trí tương đối (cắt / tiếp xúc / không giao). Đây cũng chỉ là \textbf{độ dài hình chiếu của một vector lên pháp vector} — y hệt Áp dụng 3, với $M$ thay bằng tâm $I$.
+
+Tương tự, "bán kính của đường tròn giao tuyến" giữa mặt cầu và mặt phẳng chính là cạnh của tam giác vuông với cạnh huyền là bán kính mặt cầu và một cạnh góc vuông là khoảng cách tâm–mặt. Không cần công thức mới — chỉ cần một lần projection rồi Pythagoras.
+
+\section{Tóm tắt tư duy}
+
+Hãy nhớ một mạch duy nhất thay vì năm công thức:
+
+\begin{enumerate}
+  \item \textbf{Muốn biết "điểm nào gần nhất"} trong một không gian (đường/mặt) → \textbf{chiếu}.
+  \item Hình chiếu $\operatorname{proj}_{u}(v) = \frac{v\cdot u}{u\cdot u}\,u$ tách $v$ thành \emph{song song} + \emph{vuông góc}.
+  \item \textbf{Chân vuông góc / hình chiếu điểm} = điểm gốc + hình chiếu vector.
+  \item \textbf{Khoảng cách} = độ dài phần vuông góc $\|v_{\perp}\|$.
+  \item Chiếu lên mặt phẳng: giải một hệ tuyến tính nhỏ (hoặc chiếu lên pháp vector rồi trừ).
+\end{enumerate}
+
+Với mạch này, bạn không còn học thuộc "công thức khoảng cách điểm–mặt" hay "công thức chân đường vuông góc" — bạn \emph{nhìn thấy} chúng là cùng một ý tưởng: \textbf{bóng đổ vuông góc}.
+
+\section{Bài tập tự luyện}
+
+\begin{enumerate}
+  \item Cho đường thẳng $d: \frac{x-2}{1} = \frac{y-1}{2} = \frac{z}{-1}$ và điểm $M(0,0,3)$. Tìm hình chiếu vuông góc của $M$ lên $d$, rồi suy ra khoảng cách $d(M,d)$.
+  \item Cho mặt phẳng $(P): x + 2y - 2z - 3 = 0$ và điểm $M(2,-1,1)$. Tìm hình chiếu của $M$ lên $(P)$ và khoảng cách từ $M$ đến $(P)$ bằng phương pháp projection.
+  \item (Nâng cao) Cho đường thẳng $d$ và hai điểm $A, B$ ở hai phía. Tìm điểm $H$ trên $d$ sao cho $AH + HB$ nhỏ nhất. Gợi ý: chiếu $B$ xuống một đường, đây là "bài toán con bướm" kinh điển — và projection cho ta vị trí $H$ chính xác.
+\end{enumerate}
+
+\begin{quote}
+\emph{Trong bài sau của chuỗi (Module 3), ta sẽ thấy projection dẫn thẳng tới việc giải hệ tuyến tính, rồi tới khái niệm hạng (rank). Mọi mảnh của đại số tuyến tính đều nối liền nhau.}
+\end{quote}

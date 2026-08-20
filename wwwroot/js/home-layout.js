@@ -3,7 +3,7 @@
 // Loaded only on the home page via <script type="module"> in Home.razor.
 // Falls back to the plain CSS flow layout when JS/fonts/pretext are unavailable.
 
-import { prepare, layout } from './vendor/pretext.esm.js';
+import { prepare, layout, measureNaturalWidth } from './vendor/pretext.esm.js';
 
 // --- constants (MUST stay in sync with site.css) -------------------------
 const HERO_FONT = 'Bricolage Grotesque';
@@ -25,6 +25,24 @@ function firstFontFamily(family) {
   return first.startsWith('"') ? first : `"${first}"`;
 }
 
+const normalLineRatio = new Map();
+// line-height: normal resolves per-font; probe the rendered ratio so pretext
+// measurements match the browser exactly (a hardcoded 1.2 under-measures
+// Space Grotesk's ~1.42 and cards overlap on narrow columns).
+function normalLineHeight(size, family) {
+  const key = `${family}@${size}`;
+  if (!normalLineRatio.has(key)) {
+    const span = document.createElement('span');
+    span.style.cssText = `position:absolute;visibility:hidden;white-space:nowrap;font:400 ${size}px ${family};line-height:normal;`;
+    span.textContent = 'Ág';
+    document.body.appendChild(span);
+    const h = span.getBoundingClientRect().height;
+    span.remove();
+    normalLineRatio.set(key, h / size);
+  }
+  return size * normalLineRatio.get(key);
+}
+
 // Build a canvas font spec from the element's real computed style so the
 // measurement matches what the browser actually renders (design rule:
 // font + letterSpacing must be synced with CSS).
@@ -33,7 +51,10 @@ function cssFont(el, weightOverride) {
   const weight = weightOverride ?? (cs.fontWeight === 'normal' ? 400 : parseInt(cs.fontWeight, 10) || 400);
   const size = parseFloat(cs.fontSize);
   const family = firstFontFamily(cs.fontFamily);
-  const lineHeight = parseFloat(cs.lineHeight) || Math.round(size * 1.2);
+  const parsedLineHeight = parseFloat(cs.lineHeight);
+  const lineHeight = Number.isFinite(parsedLineHeight)
+    ? parsedLineHeight
+    : normalLineHeight(size, family);
   const letterSpacing = cs.letterSpacing === 'normal' ? 0 : (parseFloat(cs.letterSpacing) || 0);
   return { str: `${weight} ${size}px ${family}`, size, weight, family, lineHeight, letterSpacing };
 }
@@ -54,6 +75,28 @@ async function waitFonts() {
 function measureLines(text, font, widthPx) {
   const p = prepare(text, font.str, { letterSpacing: font.letterSpacing });
   return Math.max(1, layout(p, widthPx, font.lineHeight).lineCount); // clamp (empty summary gotcha)
+}
+
+// Tags render as flex chips (each with its own padding + border), so pretext's
+// plain line-count of the joined label under-counts rows whenever the chip
+// chrome pushes the total past the wrap width. Measure each chip's natural
+// width (pretext) + chrome, then greedily pack rows like the flex container.
+function tagRows(chips, font, chipChromeX, gap, innerW) {
+  const widths = chips.map((t) => {
+    const p = prepare(t.textContent, font.str, { letterSpacing: font.letterSpacing });
+    return measureNaturalWidth(p) + chipChromeX;
+  });
+  let rows = 1;
+  let cur = 0;
+  for (const w of widths) {
+    if (cur > 0 && cur + gap + w > innerW) {
+      rows += 1;
+      cur = w;
+    } else {
+      cur = cur === 0 ? w : cur + gap + w;
+    }
+  }
+  return rows;
 }
 
 function columnCountFor(width) {
@@ -98,19 +141,31 @@ function layoutMasonry() {
     const dateH = dateF ? dateF.lineHeight : 0;
     let tagsH = 0;
     if (tagF && tags) {
-      const label = [...tags.querySelectorAll('.lb-tag')].map((t) => '#' + t.textContent).join(' ');
-      const rows = measureLines(label, tagF, innerW);
-      const tagCS = getComputedStyle(tags.querySelector('.lb-tag'));
-      const chipH = tagF.lineHeight
-        + parseFloat(tagCS.paddingTop) + parseFloat(tagCS.paddingBottom)
-        + parseFloat(tagCS.borderTopWidth) * 2;
+      const chips = [...tags.querySelectorAll('.lb-tag')];
+      const tagCS = getComputedStyle(chips[0]);
+      const padX = parseFloat(tagCS.paddingLeft) + parseFloat(tagCS.paddingRight);
+      const borderX = parseFloat(tagCS.borderLeftWidth) + parseFloat(tagCS.borderRightWidth);
+      const chipH = tagF.lineHeight + parseFloat(tagCS.paddingTop) + parseFloat(tagCS.paddingBottom) + parseFloat(tagCS.borderTopWidth) * 2;
       const gap = parseFloat(getComputedStyle(tags).gap) || INNER_GAP;
+      const rows = tagRows(chips, tagF, padX + borderX, gap, innerW);
       tagsH = rows * chipH + Math.max(0, rows - 1) * gap;
     }
     const numH = numF ? numF.lineHeight : 0;
+    const cardGap = parseFloat(ccs.gap) || INNER_GAP;
+
+    // Reconstruct the rendered card height from the real flex structure:
+    // pad + num + gap + body(title+mb+summary) + gap + meta(date+mt+tags) + mb + pad.
+    // Margins come from computed style so the prediction matches the browser
+    // exactly (an early version summed plain gaps and cards overlapped on
+    // narrow columns where 3px errors accumulated).
+    const titleMB = parseFloat(getComputedStyle(title).marginBottom);
+    const tagsMT = parseFloat(getComputedStyle(tags).marginTop);
+    const metaMB = parseFloat(getComputedStyle(date.closest('.lb-post-meta')).marginBottom);
+    const bodyH = titleH + titleMB + summaryH;
+    const metaH = dateH + tagsMT + tagsH;
     const padH = parseFloat(ccs.paddingTop) + parseFloat(ccs.paddingBottom);
-    const blocks = [numH, titleH, summaryH, dateH, tagsH].filter((h) => h > 0).length;
-    const cardH = padH + numH + titleH + summaryH + dateH + tagsH + Math.max(0, blocks - 1) * INNER_GAP;
+    const borderH = parseFloat(ccs.borderTopWidth) + parseFloat(ccs.borderBottomWidth);
+    const cardH = padH + numH + cardGap + bodyH + cardGap + metaH + metaMB + borderH;
 
     const col = colH.indexOf(Math.min(...colH)); // greedy shortest-column
     card.style.position = 'absolute';

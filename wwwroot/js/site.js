@@ -87,6 +87,38 @@ document.addEventListener("alpine:init", () => {
     }, { passive: true });
 })();
 
+// ---- reading position bookmark ----
+(function () {
+    if (!document.querySelector(".lb-post-page")) return;
+    var key = "lb-pos:" + location.pathname.split("/").pop();
+    var saved = parseFloat(localStorage.getItem(key));
+
+    // ponytail: save scroll % (not px) so KaTeX/image reflow doesn't break the position
+    var t;
+    window.addEventListener("scroll", function () {
+        clearTimeout(t);
+        t = setTimeout(function () {
+            var h = document.documentElement.scrollHeight - window.innerHeight;
+            var pct = h > 0 ? window.scrollY / h : 0;
+            if (pct > 0.95 || window.scrollY < 200) localStorage.removeItem(key);
+            else localStorage.setItem(key, pct.toFixed(4));
+        }, 200);
+    }, { passive: true });
+
+    if (!(saved > 0)) return;
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "lb-resume";
+    btn.textContent = "Tiếp tục đọc (" + Math.round(saved * 100) + "%)";
+    btn.addEventListener("click", function () {
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo({ top: saved * h, behavior: "smooth" });
+        btn.remove();
+    });
+    document.body.appendChild(btn);
+    setTimeout(function () { btn.remove(); }, 12000);
+})();
+
 // ---- lightbox ----
 (function () {
     document.addEventListener("click", function (e) {

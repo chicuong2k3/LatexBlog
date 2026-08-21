@@ -23,6 +23,9 @@ else
         <meta property="og:url" content="@PostUrl" />
         <meta property="og:image" content="@CoverUrl" />
         <script type="application/ld+json">@((MarkupString)ArticleJsonLd)</script>
+        <script type="module" src="/js/page-layout.js?v=20260821a"
+                data-page-layout
+                data-heading=".lb-post-head h1"></script>
     </HeadContent>
 
     <article class="lb-post-page" x-data="annotations" x-init="init('@PostMeta.Slug')">

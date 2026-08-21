@@ -213,7 +213,10 @@ function autofitHeading(h1El, opts) {
   const text = h1El.textContent.trim();
   if (!text || !w) return null;
 
-  const clampMin = min ?? baseSize;
+  // Defaults keep the CSS size as the ceiling (never grow a heading beyond the
+  // design) but allow shrinking down to 60% so long titles can be pulled back
+  // to the target line count; explicit min/max (hero) override both.
+  const clampMin = min ?? baseSize * 0.6;
   const clampMax = max ?? baseSize;
   // line-height comes back from computed style as px (already scaled to the
   // element's font-size); convert to a ratio so per-size lines stay correct.
@@ -252,49 +255,65 @@ function autofitHeading(h1El, opts) {
 // --- page init ---------------------------------------------------------------
 // Binds the engine to a page: optionally masonry for a list, optionally
 // auto-fit for a heading, with font waiting + htmx afterSwap re-layout.
+// List/heading are re-queried on every run because htmx fragment swaps replace
+// the target element with a fresh one (e.g. tag filter / search results), so a
+// cached reference would go stale; the masonry class is re-added accordingly.
 function initPage({ masonrySelector, headingSelector, headingOpts, fontSpecs, requiredFonts, adoptSelector, resize }) {
   if (!('Intl' in window) || !window.Intl.Segmenter) return; // pretext needs it
-  const list = masonrySelector ? document.querySelector(masonrySelector) : null;
-  const heading = headingSelector ? document.querySelector(headingSelector) : null;
-  if (!list && !heading) return;
+  if (!masonrySelector && !headingSelector) return;
 
   const specs = fontSpecs ?? [];
   // Only a specific font is load-critical (the hero's display face); the body
   // fonts load alongside it from the same source. Hard-failing on every spec
   // made the layout flaky when a secondary webfont lagged behind in CI.
   const required = (requiredFonts && requiredFonts.length ? requiredFonts : specs);
+  const findList = () => (masonrySelector ? document.querySelector(masonrySelector) : null);
+  const findHeading = () => (headingSelector ? document.querySelector(headingSelector) : null);
+
+  // Home's "Xem thêm" swaps fresh cards into the surrounding .lb-wrap as
+  // siblings of the list; the swapped fragment now wraps its own cards in a
+  // .lb-post-list, so adopt both bare cards and cards inside a sibling list,
+  // then drop the now-empty wrapper.
+  const adopt = (list) => {
+    if (!adoptSelector || !list) return;
+    const wrap = list.closest(adoptSelector) ?? document.querySelector(adoptSelector);
+    if (!wrap) return;
+    for (const c of wrap.querySelectorAll(':scope > .lb-post, :scope > .lb-post-list > .lb-post')) {
+      list.appendChild(c);
+    }
+    for (const el of wrap.querySelectorAll(':scope > .lb-post-list')) {
+      if (el !== list && !el.querySelector('.lb-post')) el.remove();
+    }
+  };
+
+  const run = () => {
+    const list = findList();
+    const heading = findHeading();
+    if (!list && !heading) return;
+    if (list) {
+      list.classList.add(MASONRY_CLASS);
+      adopt(list);
+      resetMasonry(list);
+      layoutMasonry(list);
+    }
+    if (heading && headingOpts) autofitHeading(heading, headingOpts);
+  };
+
   (async () => {
     await waitFonts(specs);
     if (required.length && !fontsReady(required)) return; // font fail -> fallback
 
-    let appliedMasonry = false;
-    if (list) {
-      list.classList.add(MASONRY_CLASS);
-      resetMasonry(list);
-      appliedMasonry = layoutMasonry(list);
-    }
-    if (heading && headingOpts) autofitHeading(heading, headingOpts);
-
-    // Home's "Xem thêm" swaps fresh cards into the surrounding .lb-wrap as
-    // siblings of the list; move them into the grid before re-laying out.
-    const adopt = () => {
-      if (!adoptSelector || !list) return;
-      const wrap = list.closest(adoptSelector) ?? document.querySelector(adoptSelector);
-      if (wrap) wrap.querySelectorAll(':scope > .lb-post').forEach((c) => list.appendChild(c));
-    };
-
-    const run = () => {
-      adopt();
-      if (!list) return;
-      resetMasonry(list);
-      layoutMasonry(list);
-      if (heading && headingOpts) autofitHeading(heading, headingOpts);
-    };
+    run();
 
     document.addEventListener('htmx:afterSwap', (e) => {
       const elt = e.detail && e.detail.elt ? e.detail.elt : e.target;
-      // Re-layout when the swap touched our container, its adopter, or replaced content.
-      if (elt && (elt === list || (adoptSelector && elt.closest && elt.closest(adoptSelector)))) run();
+      if (!elt || !elt.closest) return;
+      // Re-layout when the swap touched our masonry container (or replaced it),
+      // its adopter, or the auto-fit heading.
+      const inList = masonrySelector && (elt.matches(masonrySelector) || elt.querySelector(masonrySelector));
+      const inAdopter = adoptSelector && elt.closest(adoptSelector);
+      const inHeading = headingSelector && (elt.matches(headingSelector) || elt.querySelector(headingSelector));
+      if (inList || inAdopter || inHeading) run();
     });
     if (resize !== false) {
       let t;

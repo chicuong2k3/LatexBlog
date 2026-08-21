@@ -1,11 +1,13 @@
 @inject PostStore PostStore
 
-@{ var idx = 0; }
-@foreach (var post in PagePosts)
-{
-    idx++;
-    <PostCard Post="post" Number="(Page - 1) * PageSize + idx" />
-}
+<div class="lb-post-list">
+    @{ var idx = 0; }
+    @foreach (var post in PagePosts)
+    {
+        idx++;
+        <PostCard Post="post" Number="(Page - 1) * PageSize + idx" />
+    }
+</div>
 @if (HasMore)
 {
     <div id="load-more" class="lb-load-more">

@@ -7,10 +7,12 @@
     }
     else
     {
-        for (var i = 0; i < Results.Count; i++)
-        {
-            <PostCard Post="Results[i]" Number="i + 1" />
-        }
+        <div class="lb-post-list">
+            @for (var i = 0; i < Results.Count; i++)
+            {
+                <PostCard Post="Results[i]" Number="i + 1" />
+            }
+        </div>
     }
 </div>
 

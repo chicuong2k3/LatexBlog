@@ -1,0 +1,233 @@
+%---
+% title: "Tôi đã giải Toán THPT bằng “tà đạo” — bài 3: Cauchy–Schwarz, bất đẳng thức đáng giá nhất tôi học"
+% date: 2026-08-26
+% tags: [dai-so-tuyen-tinh, thpt, oxyz, bat-dang-thuc]
+% summary: "Bài 3 chuỗi «Tôi đã giải Toán THPT bằng phương pháp tà đạo»: bất đẳng thức Cauchy–Schwarz với hai lời chứng minh, hệ quả tam giác (vì sao đoạn thẳng là đường ngắn nhất), và ba mẫu giải cực trị khoảng cách trong Oxyz mà tôi dùng đi dùng lại."
+%---
+\documentclass[12pt,a4paper]{article}
+
+% Khối khai báo dưới đây CHỈ dùng khi biên dịch PDF trực tiếp
+% (Overleaf, pdfLaTeX). Blog không cần nó: Pandoc tự bỏ qua phần này.
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+% Hình minh họa chỉ dành cho bản web: pdfLaTeX bỏ trống,
+% Pandoc (qua build script) gỡ wrapper và xuất thẻ <img>.
+\newcommand{\blogfig}[1]{}
+
+\begin{document}
+
+\section{Vì sao đoạn thẳng lại ngắn nhất?}
+
+``Đoạn thẳng là đường ngắn nhất.'' Hồi cấp ba tôi dùng câu này để giải đủ loại bài, nhưng chưa bao giờ tự hỏi vì sao nó đúng. Đến khi học đại số tuyến tính và gặp bất đẳng thức Cauchy--Schwarz, tôi mới có lời giải thích cho nó. Cùng lúc đó, một lớp bài cực trị khoảng cách trong Oxyz trở nên máy móc hẳn: chỉ cần viết biểu thức thành chuẩn của vectơ rồi áp bất đẳng thức.
+
+Hành trang cần trước khi đọc: tích vô hướng, chuẩn $\|\mathbf{u}\| = \sqrt{\mathbf{u}\cdot\mathbf{u}}$, và ký hiệu cũ --- vectơ in đậm, $\overrightarrow{AB} = \overrightarrow{OB}-\overrightarrow{OA}$.
+
+\section{Khoảng cách cũng là đại số tuyến tính}
+
+Với hai điểm $A$, $B$ và gốc $O$, khoảng cách được định nghĩa qua chuẩn của vectơ chỉ điểm:
+
+$$
+AB = \|\overrightarrow{AB}\| = \|\overrightarrow{OB}-\overrightarrow{OA}\|
+= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2+(z_B-z_A)^2}
+$$
+
+Tôi nhắc lại ký hiệu: khoảng cách hai điểm chỉ là chuẩn của một phép trừ vectơ chỉ điểm. Trong đại số tuyến tính, hàm $d(\mathbf{u},\mathbf{v}) = \|\mathbf{u}-\mathbf{v}\|$ gọi là \emph{metric} sinh ra từ chuẩn.
+
+\section{Cauchy--Schwarz: phát biểu}
+
+$$
+\boxed{\;|\,\mathbf{u}\cdot\mathbf{v}\,| \;\le\; \|\mathbf{u}\|\,\|\mathbf{v}\|\;}
+$$
+
+Dấu bằng xảy ra khi và chỉ khi $\mathbf{u}$, $\mathbf{v}$ \textbf{cùng phương}.
+
+Nói bằng ngôn ngữ góc thì đây chẳng có gì mới: chia hai vế cho $\|\mathbf{u}\|\|\mathbf{v}\|$, ta nhận ra nó chính là $|\cos\theta| \le 1$. Nhưng khoan hãy vội --- phần hay nằm ở lời chứng minh thứ hai.
+
+\subsection*{Chứng minh thứ nhất: qua cosin (một dòng)}
+
+$\mathbf{u}\cdot\mathbf{v} = \|\mathbf{u}\|\|\mathbf{v}\|\cos\theta$ và $|\cos\theta| \le 1$, nhân hai vế với $\|\mathbf{u}\|\|\mathbf{v}\| > 0$. Xong.
+
+Chứng minh này nhanh, nhưng phụ thuộc vào khái niệm góc. Phiên bản sau không cần hình học gì cả --- và đó mới là phiên bản ``tà đạo''.
+
+\subsection*{Chứng minh thứ hai: biệt thức (không cần hình vẽ)}
+
+Xét tam thức theo tham số $t$:
+
+$$
+f(t) = \|\mathbf{u} - t\,\mathbf{v}\|^2
+= (\mathbf{u}-t\mathbf{v})\cdot(\mathbf{u}-t\mathbf{v})
+= \|\mathbf{u}\|^2 - 2t(\mathbf{u}\cdot\mathbf{v}) + t^2\|\mathbf{v}\|^2
+$$
+
+Bình phương chuẩn luôn không âm, nên $f(t) \ge 0$ với mọi $t \in \mathbb{R}$. Một tam thức bậc hai luôn không âm phải có \textbf{biệt thức không dương}:
+
+$$
+\Delta = 4(\mathbf{u}\cdot\mathbf{v})^2 - 4\|\mathbf{v}\|^2\|\mathbf{u}\|^2 \le 0
+\quad\Longrightarrow\quad
+(\mathbf{u}\cdot\mathbf{v})^2 \le \|\mathbf{u}\|^2\|\mathbf{v}\|^2
+$$
+
+Lấy căn hai vế (hai vế đều không âm): đúng Cauchy--Schwarz. $\blacksquare$
+
+Điều tôi thích: chứng minh này chỉ dùng ba tính chất đại số (phân phối, kết hợp, bình phương độ dài), không vẽ nổi một đường nào. Vì vậy nó đúng cho \emph{mọi} không gian vectơ có tích vô hướng --- kể cả không gian hàm số, không gian ma trận mà sau này tôi gặp ở đại học. Đó là lý do Cauchy--Schwarz xứng danh ``bất đẳng thức đáng giá nhất''.
+
+\subsection*{Phân tích dấu bằng}
+
+$f(t) = 0$ khi và chỉ khi $\mathbf{u} = t_0\mathbf{v}$ với $t_0 = \dfrac{\mathbf{u}\cdot\mathbf{v}}{\mathbf{v}\cdot\mathbf{v}}$: hai vectơ \emph{cùng phương}. Trong bài tập, dấu ``='' của Cauchy--Schwarz luôn kèm điều kiện này --- quên nó là mất nửa số điểm.
+
+\section{Hệ quả: chứng minh ``đoạn thẳng là đường ngắn nhất''}
+
+Thay $\mathbf{v}$ bởi $\mathbf{u}+\mathbf{v}$ vào Cauchy--Schwarz:
+
+$$
+\mathbf{u}\cdot(\mathbf{u}+\mathbf{v}) \le \|\mathbf{u}\|\,\|\mathbf{u}+\mathbf{v}\|
+$$
+
+Bình phương chuẩn của tổng và dùng bất đẳng thức vừa rồi:
+
+$$
+\|\mathbf{u}+\mathbf{v}\|^2 = \|\mathbf{u}\|^2 + 2\,\mathbf{u}\cdot\mathbf{v} + \|\mathbf{v}\|^2
+\le \|\mathbf{u}\|^2 + 2\|\mathbf{u}\|\|\mathbf{v}\| + \|\mathbf{v}\|^2 = (\|\mathbf{u}\|+\|\mathbf{v}\|)^2
+$$
+
+Lấy căn:
+
+$$
+\boxed{\;\|\mathbf{u}+\mathbf{v}\| \le \|\mathbf{u}\| + \|\mathbf{v}\|\;}
+$$
+
+Đây là \textbf{bất đẳng thức tam giác}. Dịch ra hình học với ba điểm $A$, $M$, $B$ (đặt $\overrightarrow{AM}$, $\overrightarrow{MB}$ thay hai vectơ):
+
+$$
+AM + MB = \|\overrightarrow{AM}\| + \|\overrightarrow{MB}\|
+\ge \|\overrightarrow{AM}+\overrightarrow{MB}\| = \|\overrightarrow{AB}\| = AB
+$$
+
+Vậy là câu nói hồi cấp ba giờ có lời chứng minh đầy đủ: mọi đường đi gãy qua $M$ đều dài ít nhất đoạn thẳng $AB$, dấu bằng khi $M$ nằm trên đoạn $AB$.
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth,line cap=round,scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (M) at (1.7,2.3);
+  \coordinate (B) at (5.2,0.8);
+  \draw[->,line width=1.2pt,teal!70!black] (A) -- (M);
+  \node[teal!70!black,above left,font=\small] at (0.85,1.15) {$\overrightarrow{AM}$};
+  \draw[->,line width=1.2pt,blue!70!black] (M) -- (B);
+  \node[blue!70!black,above right,font=\small] at (3.45,1.55) {$\overrightarrow{MB}$};
+  \draw[->,line width=1.8pt,red!70!black,dashed] (A) -- (B);
+  \node[red!70!black,below,sloped,font=\small] at (2.6,0.4) {$\overrightarrow{AB}=\overrightarrow{AM}+\overrightarrow{MB}$};
+  \fill (A) circle (1.6pt); \node[below left,font=\small] at (A) {$A$};
+  \fill (M) circle (1.6pt); \node[above,font=\small] at (M) {$M$};
+  \fill (B) circle (1.6pt); \node[below right,font=\small] at (B) {$B$};
+  \node[font=\small\itshape] at (2.6,-0.85) {$AM + MB \ge AB$};
+\end{tikzpicture}
+\end{center}
+
+\blogfig{\includegraphics{/images/la-distance-cauchy-schwarz/bat-dang-thuc-tam-giac.svg}}
+
+\textbf{Hình 1.} Đường đi gãy qua $M$ luôn dài ít nhất đoạn thẳng $AB$; ngắn nhất khi $M$ nằm trên đoạn.
+
+\section{Ba mẫu tôi dùng đi dùng lại trong đề thi}
+
+\emph{Các ví dụ dưới đây tôi biên soạn theo cấu trúc và mức độ của đề tốt nghiệp THPT.}
+
+\subsection*{Mẫu 1: cực trị của $ax+by+cz$ trên mặt cầu}
+
+Đề hay hỏi kiểu này: điểm $M(x;y;z)$ chạy trên mặt cầu $x^2+y^2+z^2=R^2$, tìm giá trị lớn nhất/nhỏ nhất của $P = ax+by+cz$. Nhận ra $P = \mathbf{a}\cdot\mathbf{m}$ với $\mathbf{a}=(a;b;c)$, $\mathbf{m}=(x;y;z)$, thì Cauchy--Schwarz chốt ngay:
+
+$$
+|P| \le \|\mathbf{a}\|\cdot\|\mathbf{m}\| = \sqrt{a^2+b^2+c^2}\,\cdot R
+$$
+
+Dấu bằng xảy ra khi $\overrightarrow{OM}$ cùng phương với $\mathbf{a}$.
+
+\textbf{Ví dụ 1.} Điểm $M(x;y;z)$ thuộc mặt cầu $x^2+y^2+z^2=9$. Tìm giá trị lớn nhất của $P = 2x - y + 2z$.
+
+\textbf{Lời giải.} $\|\mathbf{a}\| = \sqrt{4+1+4} = 3$, nên $|P| \le 3 \cdot 3 = 9$. Dấu ``='' khi $(x;y;z)$ cùng phương $(2;-1;2)$ và $x^2+y^2+z^2=9$, tức $M(2;-1;2)$. Khi đó kiểm tra lại: $P = 4+1+4 = 9$.
+
+$$
+P_{\max} = 9, \qquad P_{\min} = -9
+$$
+
+Trước khi biết Cauchy--Schwarz, dạng này tôi giải bằng cách tham số hóa mặt cầu rồi đạo hàm --- mất mười dòng. Giờ là hai dòng và một điều kiện dấu bằng.
+
+\subsection*{Mẫu 2: nhỏ nhất tổng hai khoảng cách}
+
+\textbf{Ví dụ 2.} Điểm $M$ di động trong mặt phẳng Oxy. Tìm giá trị nhỏ nhất của:
+
+$$
+S = \sqrt{x^2+y^2} + \sqrt{(x-1)^2+(y-1)^2}
+$$
+
+Nhìn hình vẽ trước khi nhìn đại số: căn thứ nhất là $OM$ (khoảng cách tới gốc), căn thứ hai là $MP$ với $P(1;1;0)$. Theo bất đẳng thức tam giác:
+
+$$
+OM + MP \ge OP = \sqrt{1+1+0} = \sqrt{2}
+$$
+
+Dấu bằng khi $M$ nằm trên đoạn $OP$, tức $M(t;t;0)$ với $0 \le t \le 1$. Vậy $S_{\min} = \sqrt{2}$.
+
+\textbf{Nhận xét.} Dạng này trước đây tôi giải bằng phản xạ qua trục rồi tìm giao điểm, đúng nhưng dài. Nhận ra hai căn chỉ là hai chuẩn, bất đẳng thức tam giác cho đáp án trong một dòng.
+
+\subsection*{Mẫu 3: khoảng cách từ điểm đến mặt cầu}
+
+Với điểm $A$ và mặt cầu tâm $I$ bán kính $R$, mọi điểm $M$ trên mặt cầu thỏa $|IM - R|$... chính xác hơn, tam giác $AIM$ cho:
+
+$$
+|AI - R| \;\le\; AM \;\le\; AI + R
+$$
+
+(vì $AM$ là cạnh của tam giác có hai cạnh còn lại $AI$ và $R$). Dấu trái khi $M$ trên tia $IA$, dấu phải khi $M$ trên tia đối.
+
+\textbf{Ví dụ 3.} Cho mặt cầu $(S)$ tâm $I(2;3;6)$, bán kính $R=3$, và điểm $O(0;0;0)$. Tìm giá trị lớn nhất và nhỏ nhất của $OM$ với $M \in (S)$.
+
+\textbf{Lời giải.} $OI = \sqrt{4+9+36} = 7 > R$, nên $O$ nằm ngoài mặt cầu:
+
+$$
+OM_{\min} = OI - R = 7-3 = 4,
+\qquad
+OM_{\max} = OI + R = 10
+$$
+
+\section{Ba lỗi tôi từng mắc}
+
+\begin{enumerate}
+  \item \textbf{Quên điều kiện dấu bằng}: viết $\le$ rồi kết luận giá trị lớn nhất mà không kiểm tra vectơ cùng phương (hoặc điểm nằm trên đoạn/mặt cầu). Nhiều đề cài đáp án nhiễu đúng từ lỗi này.
+  \item \textbf{Dùng dấu bằng khi hai vectơ ngược chiều}: với $|P|$ thì cả cùng chiều lẫn ngược chiều đều cho dấu bằng (ra max và min); nhưng nếu bài chỉ hỏi $P_{\max}$ thì phải chọn chiều \emph{cùng} $\mathbf{a}$.
+  \item \textbf{Lạm dụng $\sqrt{a}+\sqrt{b} \ge \sqrt{a+b}$}: bất đẳng thức này luôn đúng, nhưng dấu bằng chỉ khi $a=0$ hoặc $b=0$ --- khác hẳn Cauchy--Schwarz. Tôi từng gán dấu bằng bừa và mất thời gian tìm điểm không tồn tại.
+\end{enumerate}
+
+\section{Bài tập tự luyện (có đáp án)}
+
+\textbf{Bài 1.} Điểm $M(x;y;z)$ thuộc mặt cầu $x^2+y^2+z^2=16$. Tìm giá trị lớn nhất của $P = x - 2y + 2z$.
+
+\textbf{Bài 2.} Trong không gian Oxyz, cho $A(1;2;0)$, $B(4;6;0)$ và điểm $M(x;y;0)$ tùy ý trong mặt phẳng Oxy. Tìm giá trị nhỏ nhất của $MA + MB$.
+
+\textbf{Bài 3 (nâng cao, biến thể Engel của Cauchy--Schwarz).} Cho $x, y > 0$ thỏa mãn $x+y=1$. Tìm giá trị nhỏ nhất của $\dfrac{1}{x}+\dfrac{1}{y}$.
+
+\textbf{Đáp số.}
+
+\begin{enumerate}
+  \item $|P| \le \sqrt{1+4+4}\cdot 4 = 12$, nên $P_{\max}=12$, đạt khi $M=\left(\dfrac{4}{3};-\dfrac{8}{3};\dfrac{8}{3}\right)$.
+  \item $MA+MB \ge AB = \sqrt{(4-1)^2+(6-2)^2} = 5$, dấu bằng khi $M$ nằm trên đoạn $AB$. Vậy $5$.
+  \item Áp dụng Cauchy--Schwarz cho $(\tfrac{1}{\sqrt{x}},\tfrac{1}{\sqrt{y}})$ và $(\sqrt{x},\sqrt{y})$:
+        $\left(\tfrac{1}{x}+\tfrac{1}{y}\right)(x+y) \ge (1+1)^2 = 4$, mà $x+y=1$ nên giá trị nhỏ nhất là $4$, đạt tại $x=y=\tfrac12$.
+\end{enumerate}
+
+\section{Điều tôi rút ra}
+
+Cauchy--Schwarz là ví dụ đầu tiên cho tôi thấy thế mạnh thật sự của đại số tuyến tính: một bất đẳng thức chứng minh bằng biệt thức tam thức, không cần hình vẽ, tự động đúng cho \emph{mọi} không gian vectơ có tích vô hướng --- $\mathbb{R}^3$, không gian đa thức, không gian hàm số, không gian dữ liệu. Hệ quả tam giác giải thích vì sao đường thẳng ngắn nhất; ba mẫu ứng dụng ở trên xử gần hết các bài cực trị khoảng cách trong Oxyz.
+
+Và một điều tôi thích về mặt ``tà đạo'': cả bài này chưa dùng đến đạo hàm. Mọi bài cực trị được giải thuần túy bằng bất đẳng thức --- tức bằng cấu trúc, không bằng kỹ thuật tính.
+
+Bài kế tiếp theo kế hoạch chuỗi: ma trận và khử Gauss --- nơi hệ phương trình bậc nhất, cái tôi từng giải tay chân lộn xộn, trở thành một đối tượng đại số tuyến tính có tên riêng: $A\mathbf{x} = \mathbf{b}$.
+
+\end{document}
+
+

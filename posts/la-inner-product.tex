@@ -1,0 +1,398 @@
+%---
+% title: "Tôi đã giải Toán THPT bằng “tà đạo” — bài 1: Giải hình học Oxyz bằng đại số, không cần vẽ hình"
+% date: 2026-08-26
+% tags: [dai-so-tuyen-tinh, thpt, oxyz, hinh-hoc]
+% summary: "Đại số là thế mạnh của tôi, còn vẽ hình là sở đoản. Học đại số tuyến tính, tôi nhận ra mọi bài toán hình học Oxyz thời cấp 3 đều giải được bằng phép tính thuần túy. Bài đầu tiên của chuỗi: tích vô hướng — định nghĩa, chứng minh, và bốn dạng góc trong đề tốt nghiệp THPT."
+%---
+\documentclass[12pt,a4paper]{article}
+
+% Khối khai báo dưới đây CHỈ dùng khi biên dịch PDF trực tiếp
+% (Overleaf, pdfLaTeX). Blog không cần nó: Pandoc tự bỏ qua phần này.
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+% Hình minh họa chỉ dành cho bản web: pdfLaTeX bỏ trống,
+% Pandoc (qua build script) gỡ wrapper và xuất thẻ <img>.
+\newcommand{\blogfig}[1]{}
+
+\begin{document}
+
+\section{Vẽ hình là sở đoản của tôi}
+
+Nói thật thì hồi cấp ba, hình học không gian là phần tôi ngán nhất. Trong khi đó những bài đại số như biến đổi biểu thức hay giải phương trình thì tôi làm khá êm.
+
+Khi biết đến môn đại số tuyến tính vào năm lớp 11, tôi chợt nghĩ: mọi bài toán hình học hồi cấp 3 đều có thể giải bằng phương pháp đại số, không cần phải vẽ hình. Chỉ cần cài tọa độ vào thì góc, khoảng cách, vuông góc đều quy về phép cộng và phép nhân với các con số.
+
+Hôm nay tôi sẽ trình bày lại cách mà tôi làm để giải các bài toán hình học Oxyz, bắt đầu từ khái niệm nhỏ nhất: tích vô hướng.
+
+\section{Ký hiệu}
+
+Quy ước dùng xuyên suốt bài viết này:
+
+\begin{itemize}
+  \item \textbf{Vectơ in đậm} $\mathbf{u}, \mathbf{v}, \mathbf{n}$: vectơ tự do.
+  \item \textbf{Mũi tên} $\overrightarrow{AB}$: vectơ nối hai điểm $A$, $B$. Với gốc $O$, mỗi điểm gắn với \emph{vectơ chỉ điểm} $\overrightarrow{OA} = (x_A;y_A;z_A)$, và quy tắc đúng là:
+        $\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}
+        = (x_B-x_A;\; y_B-y_A;\; z_B-z_A)$.
+  \item Số thực in nghiêng: $t$, $a$, $b$.
+\end{itemize}
+
+\section{Tích vô hướng: hai định nghĩa}
+
+Trong đại số tuyến tính, khái niệm này gọi là \emph{inner product}, ký hiệu tổng quát $\langle \mathbf{u}, \mathbf{v} \rangle$.
+
+\textbf{Định nghĩa 1 (hình học).}
+
+$$
+\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos\theta
+$$
+
+với $\theta$ là góc giữa hai vectơ ($0° \le \theta \le 180°$). Theo định nghĩa này, dấu của tích vô hướng cho biết mức cùng chiều: dương là nghiêng về cùng chiều, bằng không là vuông góc, âm là ngược chiều.
+
+\textbf{Định nghĩa 2 (tọa độ).} Với $\mathbf{u} = (u_1;u_2;u_3)$, $\mathbf{v} = (v_1;v_2;v_3)$:
+
+$$
+\mathbf{u} \cdot \mathbf{v} = u_1 v_1 + u_2 v_2 + u_3 v_3
+$$
+
+\subsection*{Định lý. Hai định nghĩa cho cùng một kết quả}
+
+\emph{Chứng minh.} Xét tam giác tạo bởi $\mathbf{u}$, $\mathbf{v}$ và $\mathbf{u}-\mathbf{v}$. Theo định luật cosin (góc giữa hai cạnh $\|\mathbf{u}\|$, $\|\mathbf{v}\|$ bằng $\theta$):
+
+$$
+\|\mathbf{u}-\mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2 - 2\,\|\mathbf{u}\|\,\|\mathbf{v}\|\cos\theta
+$$
+
+Khai triển cùng độ dài theo tọa độ:
+
+$$
+\|\mathbf{u}-\mathbf{v}\|^2 = (u_1{-}v_1)^2 + (u_2{-}v_2)^2 + (u_3{-}v_3)^2
+= \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2 - 2(u_1v_1+u_2v_2+u_3v_3)
+$$
+
+So sánh hai biểu thức và triệt đi $\|\mathbf{u}\|^2 + \|\mathbf{v}\|^2$:
+
+$$
+\|\mathbf{u}\|\,\|\mathbf{v}\|\cos\theta = u_1v_1 + u_2v_2 + u_3v_3
+$$
+
+Vậy hai định nghĩa trùng nhau. $\blacksquare$
+
+Đây chính là chỗ ``không cần vẽ hình'' bắt đầu có ý nghĩa: góc, độ dài, vuông góc đều truy xuất được bằng phép cộng và phép nhân trên con số.
+
+\section{Năm tính chất, năm chứng minh ngắn}
+
+\begin{enumerate}
+  \item \textbf{Giao hoán}: $\mathbf{u}\cdot\mathbf{v} = \mathbf{v}\cdot\mathbf{u}$.
+        \emph{(Tọa độ: $u_1v_1+u_2v_2+u_3v_3$ đối xứng giữa $u$ và $v$.)}
+  \item \textbf{Phân phối}: $(\mathbf{u}+\mathbf{v})\cdot\mathbf{w} = \mathbf{u}\cdot\mathbf{w} + \mathbf{v}\cdot\mathbf{w}$.
+        \emph{(Khai triển $(u_1{+}v_1)w_1 + (u_2{+}v_2)w_2 + (u_3{+}v_3)w_3$, mở ngoặc.)}
+  \item \textbf{Kết hợp với nhân vô hướng}: $(t\,\mathbf{u})\cdot\mathbf{v} = t\,(\mathbf{u}\cdot\mathbf{v})$.
+        \emph{(Hằng số kéo ra khỏi ba thừa số cùng lúc.)}
+  \item \textbf{Bình phương độ dài}: $\mathbf{u}\cdot\mathbf{u} = \|\mathbf{u}\|^2 = u_1^2+u_2^2+u_3^2$.
+        \emph{(Định nghĩa hình học với $\theta = 0°$, $\cos\theta = 1$.)}
+  \item \textbf{Trực giao}: $\mathbf{u} \perp \mathbf{v} \Leftrightarrow \mathbf{u}\cdot\mathbf{v} = 0$.
+        \emph{(Vì $\|\mathbf{u}\|, \|\mathbf{v}\| > 0$, tích bằng không khi và chỉ khi $\cos\theta = 0$, tức $\theta = 90°$.)}
+\end{enumerate}
+
+Tính chất 5 là phép dịch quan trọng nhất: nó biến câu hỏi hình học ``có vuông góc không'' thành một phép cộng nhân với con số. Trong đại số tuyến tính, khi $\mathbf{u}\cdot\mathbf{v}=0$ người ta nói $\mathbf{u}$ và $\mathbf{v}$ \emph{trực giao}.
+
+Ví dụ: $\mathbf{u}=(1;2;2)$, $\mathbf{v}=(2;-1;0)$ thì $\mathbf{u}\cdot\mathbf{v} = 2-2+0 = 0$, hai vectơ trực giao. Và $\|\mathbf{u}\| = \sqrt{1+4+4} = 3$.
+
+\section{Chuẩn và khoảng cách}
+
+Số $\|\mathbf{u}\| = \sqrt{\mathbf{u}\cdot\mathbf{u}} = \sqrt{u_1^2+u_2^2+u_3^2}$ gọi là \textbf{chuẩn} (norm) --- trên $\mathbb{R}^3$ chính là độ dài vectơ.
+
+Khoảng cách hai điểm là chuẩn của vectơ chỉ điểm hiệu:
+
+$$
+AB = \|\overrightarrow{AB}\| = \|\overrightarrow{OB}-\overrightarrow{OA}\|
+= \sqrt{(x_B-x_A)^2 + (y_B-y_A)^2 + (z_B-z_A)^2}
+$$
+
+Công thức ``khoảng cách hai điểm'' trong sách giáo khoa là hệ quả trực tiếp của tính chất 4.
+
+\section{Góc giữa hai vectơ}
+
+Giải Định nghĩa 1 theo $\cos\theta$:
+
+$$
+\boxed{\;\cos\theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|\,\|\mathbf{v}\|}
+= \frac{u_1v_1 + u_2v_2 + u_3v_3}{\sqrt{u_1^2+u_2^2+u_3^2}\;\sqrt{v_1^2+v_2^2+v_3^2}}\;}
+$$
+
+Không cần chứng minh thêm: đây là Định nghĩa 1 chia hai vế cho $\|\mathbf{u}\|\,\|\mathbf{v}\|$.
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth,line cap=round,scale=1]
+  \coordinate (O) at (0,0);
+  \draw[->,line width=1.3pt,blue!70!black] (O) -- (4.2,0.65);
+  \node[blue!70!black,below right,font=\small] at (4.2,0.65) {$\mathbf{u}$};
+  \draw[->,line width=1.3pt,red!70!black] (O) -- (2.4,2.9);
+  \node[red!70!black,right,font=\small] at (2.45,2.95) {$\mathbf{v}$};
+  \fill (O) circle (1.6pt);
+  \node[below left,font=\small] at (O) {$O$};
+  \draw[violet,line width=1pt] (1.483,0.232) arc[start angle=8.8,end angle=50.4,radius=1.5];
+  \node[violet,font=\small] at (1.85,0.95) {$\theta$};
+\end{tikzpicture}
+\end{center}
+
+\blogfig{\includegraphics{/images/la-inner-product/goc-giua-hai-vecto.svg}}
+
+\textbf{Hình 1.} Góc $\theta$ giữa hai vectơ được xác định hoàn toàn bởi tích vô hướng và hai chuẩn.
+
+Ba trường hợp đặc biệt dùng để kiểm tra bài làm:
+
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+$\theta$ & $\cos\theta$ & $\mathbf{u}\cdot\mathbf{v}$ & Ý nghĩa \\
+\hline
+$0°$ & $1$ & $\|\mathbf{u}\|\|\mathbf{v}\|$ & Cùng phương, cùng chiều \\
+\hline
+$90°$ & $0$ & $0$ & Trực giao \\
+\hline
+$180°$ & $-1$ & $-\|\mathbf{u}\|\|\mathbf{v}\|$ & Cùng phương, ngược chiều \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Áp dụng vào đề thi: bốn dạng góc}
+
+\emph{Ngoài ví dụ có ghi rõ nguồn đề thi, các ví dụ còn lại tôi biên soạn theo cấu trúc và mức độ của phần trắc nghiệm hình học tọa độ Oxyz trong đề tốt nghiệp THPT.}
+
+\subsection*{Dạng 1. Góc giữa hai vectơ}
+
+Công thức đã có ở trên, giờ chỉ việc thay số.
+
+\textbf{Ví dụ 1 (làm quen).} Cho $\mathbf{u}=(1;1;0)$ và $\mathbf{v}=(0;1;1)$. Tôi tính góc giữa chúng như sau:
+
+$$
+\mathbf{u}\cdot\mathbf{v} = 0+1+0 = 1,
+\qquad
+\|\mathbf{u}\| = \|\mathbf{v}\| = \sqrt{2}
+$$
+
+$$
+\cos\theta = \frac{1}{2}
+\quad\Longrightarrow\quad
+\theta = 60°
+$$
+
+\textbf{Ví dụ 2 (hình lập phương).} Trong không gian Oxyz, cho hình lập phương $ABCD.A'B'C'D'$ cạnh $a$ với $A(0;0;0)$, $B(a;0;0)$, $D(0;a;0)$, $A'(0;0;a)$. Tính $\cos$ của góc giữa hai đường thẳng $DB'$ và $AC'$.
+
+Loại bài này ngày xưa bắt tôi vẽ hình rồi chuyển vectơ từng bước một. Giờ tôi chỉ cài tọa độ: $D(0;a;0)$, $C'(a;a;a)$, $B'(a;0;a)$, rồi lấy hai vectơ:
+
+$$
+\overrightarrow{DB'} = (a;-a;a),
+\qquad
+\overrightarrow{AC'} = (a;a;a)
+$$
+
+$$
+\overrightarrow{DB'}\cdot\overrightarrow{AC'} = a^2-a^2+a^2 = a^2,
+\qquad
+\left\|\overrightarrow{DB'}\right\| = \left\|\overrightarrow{AC'}\right\| = a\sqrt{3}
+$$
+
+$$
+\cos\varphi = \frac{a^2}{a\sqrt{3}\cdot a\sqrt{3}} = \frac{1}{3}
+$$
+
+Tôi không cần vẽ nổi một đường nào.
+
+\subsection*{Dạng 2. Góc giữa hai đường thẳng}
+
+Với mỗi đường thẳng, tôi tìm vector chỉ phương rồi dùng lại nguyên công thức Dạng 1, kèm trị tuyệt đối:
+
+$$
+\cos(d,d') = \frac{|\mathbf{u}\cdot \mathbf{u}'|}{\|\mathbf{u}\|\,\|\mathbf{u}'\|}
+$$
+
+Trị tuyệt đối xuất hiện vì góc giữa hai đường thẳng quy ước thuộc $[0°;90°]$.
+
+\textbf{Ví dụ 3.} Đường $d$ có vector chỉ phương $\mathbf{u}=(1;0;1)$ và đường $d'$ có vector chỉ phương $\mathbf{u}'=(-1;1;0)$. Tính góc giữa $d$ và $d'$.
+
+Ta có $\mathbf{u}\cdot\mathbf{u}' = -1$, nên $\cos(\mathbf{u},\mathbf{u}') = -\dfrac{1}{2}$: góc giữa hai \emph{vectơ} là $120°$. Nhưng đề hỏi góc giữa hai \emph{đường thẳng}, nên tôi lấy trị tuyệt đối:
+
+$$
+\cos(d,d') = \frac{1}{2}
+\quad\Longrightarrow\quad
+(d,d') = 60°
+$$
+
+Nếu quên trị tuyệt đối, ta sẽ chọn nhầm $120°$ --- phương án nhiễu mà đề cài sẵn ở ngay đó.
+
+\textbf{Ví dụ 4 (hình lập phương).} Cho hình lập phương $ABCD.A'B'C'D'$ cạnh $2$ với $A(0;0;0)$, $B(2;0;0)$, $D(0;2;0)$, $A'(0;0;2)$. Tính góc giữa hai đường thẳng $AB'$ và $BC'$.
+
+Tọa độ: $A(0;0;0)$, $B'(2;0;2)$, $C'(2;2;2)$, nên:
+
+$$
+\overrightarrow{AB'} = (2;0;2),
+\qquad
+\overrightarrow{BC'} = \overrightarrow{OC'}-\overrightarrow{OB} = (0;2;2)
+$$
+
+$$
+\overrightarrow{AB'}\cdot\overrightarrow{BC'} = 4,
+\qquad
+\left\|\overrightarrow{AB'}\right\| = \left\|\overrightarrow{BC'}\right\| = 2\sqrt{2}
+$$
+
+$$
+\cos(d_1,d_2) = \frac{4}{8} = \frac{1}{2}
+\quad\Longrightarrow\quad
+(d_1,d_2) = 60°
+$$
+
+\subsection*{Dạng 3. Góc giữa đường thẳng và mặt phẳng}
+
+Dạng này dùng sin chứ không phải cos, và tôi muốn nói rõ lý do trước khi ghi công thức. Gọi $\beta$ là góc giữa vector chỉ phương $\mathbf{u}$ và pháp vector $\mathbf{n}$. Vì $\mathbf{n}$ đứng vuông góc với $(P)$, góc $\alpha$ giữa đường thẳng và mặt phẳng bù với $\beta$, tức $\alpha = 90° - \beta$. Lấy sin hai vế, tôi được:
+
+$$
+\sin\alpha = \sin(90°-\beta) = \cos\beta
+\quad\Longrightarrow\quad
+\boxed{\;\sin\alpha = \frac{|\mathbf{u}\cdot\mathbf{n}|}{\|\mathbf{u}\|\,\|\mathbf{n}\|}\;}
+$$
+
+Trị tuyệt đối xuất hiện vì đổi chiều $\mathbf{u}$ không làm thay đổi đường thẳng.
+
+Tôi hay kiểm tra công thức bằng một trường hợp đặc biệt: đường song song với mặt thì $\mathbf{u}\cdot\mathbf{n}=0$, công thức cho $\alpha=0°$ — đúng thực tế. Nếu dùng nhầm cos sẽ ra $90°$.
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth,line cap=round,scale=1]
+  \fill[blue!8] (0,0) -- (3.4,0) -- (4.4,1) -- (1,1) -- cycle;
+  \draw[blue!60!black] (0,0) -- (3.4,0) -- (4.4,1) -- (1,1) -- cycle;
+  \node[blue!60!black,font=\small] at (3.95,0.55) {$(P)$};
+  \coordinate (H) at (3.56,0.42);
+  \draw[->,line width=1.2pt,teal!70!black] (H) -- (3.56,2.75);
+  \node[teal!70!black,left,font=\small] at (3.56,2.7) {$\mathbf{n}$};
+  \draw[line width=1.3pt,red!70!black] (0.7,3.1) -- (4.6,-0.55);
+  \node[red!70!black,right,font=\small] at (4.6,-0.55) {$d$};
+  \fill[red!70!black] (H) circle (1.6pt);
+  \node[below left,font=\small] at (H) {$H$};
+  \draw[violet,line width=1pt] ([shift={(0,0.55)}]H) arc[start angle=90,end angle=137,radius=0.55];
+  \node[violet,font=\small] at (3.22,1.18) {$\beta$};
+  \draw[violet,line width=1pt] ([shift={(0.62,0)}]H) arc[start angle=0,end angle=-43,radius=0.62];
+  \node[violet,font=\small] at (4.42,0.12) {$\alpha$};
+\end{tikzpicture}
+\end{center}
+
+\blogfig{\includegraphics{/images/la-inner-product/goc-duong-mat.svg}}
+
+\textbf{Hình 2.} Góc giữa $d$ và $(P)$ bù với góc giữa $d$ và pháp vector $\mathbf{n}$: $\alpha + \beta = 90°$.
+
+\textbf{Ví dụ 5 (lấy nguyên văn từ Thi THPT Quốc gia 2019, Mã đề 101, Câu 17).} Cho hình chóp $S.ABC$ có $SA$ vuông góc với mặt phẳng $(ABC)$, $SA = 2a$, tam giác $ABC$ vuông tại $B$, $AB = a\sqrt{3}$ và $BC = a$. Góc giữa đường thẳng $SC$ và mặt phẳng $(ABC)$ bằng
+
+\textbf{A.} $90°$. \qquad \textbf{B.} $45°$. \qquad \textbf{C.} $30°$. \qquad \textbf{D.} $60°$.
+
+\textbf{Lời giải.} Đề cho hình học thuần túy và không có sẵn tọa độ. Tôi tự cài hệ trục: đặt $A(0;0;0)$, trục Ox dọc theo $AB$, trục Oy dọc theo $BC$, trục Oz dọc theo $AS$:
+
+$$
+B(a\sqrt{3};0;0), \qquad C(a\sqrt{3};a;0), \qquad S(0;0;2a)
+$$
+
+Mặt $(ABC)$ trùng với mặt Oxy nên pháp vector $\mathbf{n}=(0;0;1)$. Ta có:
+
+$$
+\overrightarrow{SC} = (a\sqrt{3};\,a;\,-2a),
+\qquad
+\left\|\overrightarrow{SC}\right\| = \sqrt{3a^2+a^2+4a^2} = 2a\sqrt{2}
+$$
+
+$$
+\sin\alpha = \frac{|-2a|}{2a\sqrt{2}} = \frac{\sqrt{2}}{2}
+\quad\Longrightarrow\quad
+\alpha = 45°
+$$
+
+\textbf{Chọn B}, khớp đáp án chính thức. Dạng bài này ngày xưa bắt tôi dựng tam giác vuông trong hình để suy ra góc, giờ chỉ cần cài tọa độ rồi thay số.
+
+\subsection*{Dạng 4. Góc giữa hai mặt phẳng}
+
+Góc $\varphi$ giữa hai mặt phẳng bằng góc giữa hai pháp vector của chúng, lấy giá trị nhọn:
+
+$$
+\cos\varphi = \frac{|\mathbf{n}_1 \cdot \mathbf{n}_2|}{\|\mathbf{n}_1\|\,\|\mathbf{n}_2\|}
+$$
+
+\textbf{Ví dụ 6.} Cho $(P): x - 2y + z - 2 = 0$ và $(Q): -2x + y + z + 3 = 0$. Tính góc giữa $(P)$ và $(Q)$.
+
+Pháp vector đọc ngay từ hệ số: $\mathbf{n}_1 = (1;-2;1)$ và $\mathbf{n}_2 = (-2;1;1)$, chuẩn đều là $\sqrt{6}$. Tôi tính được:
+
+$$
+\mathbf{n}_1\cdot\mathbf{n}_2 = -2-2+1 = -3
+$$
+
+$$
+\cos(P,Q) = \frac{|-3|}{6} = \frac{1}{2}
+\quad\Longrightarrow\quad
+(P,Q) = 60°
+$$
+
+Nếu bỏ qua trị tuyệt đối thì ta nhận được $\cos=-\dfrac{1}{2}$ và chọn nhầm $120°$. Còn hai mặt phẳng song song thì $\mathbf{n}_1$ cùng phương $\mathbf{n}_2$, công thức cho $\cos=1$, tức góc $0°$.
+
+\section{Tổng hợp}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Dạng góc} & \textbf{Cặp vectơ} & \textbf{Công thức} \\
+\hline
+Hai vectơ & $\mathbf{u}$, $\mathbf{v}$ & $\cos\theta = \dfrac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}$ \\
+\hline
+Hai đường thẳng & chỉ phương $\mathbf{u}$, $\mathbf{u}'$ & $\cos(d,d') = \dfrac{|\mathbf{u}\cdot\mathbf{u}'|}{\|\mathbf{u}\|\|\mathbf{u}'\|}$ \\
+\hline
+Đường--mặt phẳng & chỉ phương $\mathbf{u}$, pháp $\mathbf{n}$ & $\sin\alpha = \dfrac{|\mathbf{u}\cdot\mathbf{n}|}{\|\mathbf{u}\|\|\mathbf{n}\|}$ \\
+\hline
+Hai mặt phẳng & pháp $\mathbf{n}_1$, $\mathbf{n}_2$ & $\cos(P_1,P_2) = \dfrac{|\mathbf{n}_1\cdot\mathbf{n}_2|}{\|\mathbf{n}_1\|\|\mathbf{n}_2\|}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Bốn dòng bảng thực ra chỉ có dòng đầu tiên. Ba dòng còn lại chỉ khác ở chỗ chọn cặp vectơ nào (chỉ phương hay pháp vector) và có bọc trị tuyệt đối hay không.
+
+Các điều kiện vuông góc cũng rơi ra từ tính chất 5: hai vectơ trực giao khi $\mathbf{u}\cdot\mathbf{v}=0$, hai đường thẳng vuông góc khi $\mathbf{u}\cdot\mathbf{u}'=0$, hai mặt phẳng vuông góc khi $\mathbf{n}_1\cdot\mathbf{n}_2=0$. Riêng đường thẳng vuông góc mặt phẳng thì vector chỉ phương phải \emph{cùng phương} với pháp vector. Nếu $\mathbf{u}\cdot\mathbf{n}=0$ thì đường thẳng lại song song hoặc nằm trong mặt phẳng.
+
+\section{Ba lỗi hay gặp nhất}
+
+\begin{enumerate}
+  \item Quên trị tuyệt đối ở Dạng 2, dẫn đến chọn góc tù thay vì góc nhọn theo quy ước.
+  \item Dùng cos thay sin ở Dạng 3.
+  \item Nhầm điều kiện đường thẳng vuông góc mặt phẳng: phải là cùng phương với pháp vector, không phải tích vô hướng bằng không.
+\end{enumerate}
+
+\section{Bài tập tự luyện (có đáp án)}
+
+\textbf{Bài 1.} Cho $\mathbf{u} = (1;2;2)$ và $\mathbf{v} = (2;-1;2)$. Tính $\cos$ của góc giữa hai vectơ.
+
+\textbf{Bài 2.} Trong không gian Oxyz, cho hình chóp $S.ABC$ với $A(1;1;0)$, $B(2;1;0)$, $C(1;3;0)$ và $S(1;2;3)$. Tính $\sin$ của góc giữa cạnh $SC$ và mặt phẳng $(ABC)$.
+
+\textbf{Bài 3 (nâng cao).} Chứng minh đường thẳng $d$ đi qua $C(1;2;3)$, có vector chỉ phương $\mathbf{w}=(1;1;-1)$, vuông góc với mặt phẳng $(P)$ đi qua ba điểm $O(0;0;0)$, $A(1;0;1)$, $B(0;1;1)$. Gợi ý: tìm pháp vector $\mathbf{n}=(a;b;c)$ của $(P)$ bằng cách giải hệ $\mathbf{n}\cdot\overrightarrow{OA} = 0$ và $\mathbf{n}\cdot\overrightarrow{OB} = 0$.
+
+\textbf{Đáp số.}
+
+\begin{enumerate}
+  \item $\mathbf{u}\cdot\mathbf{v} = 2-2+4 = 4$, $\|\mathbf{u}\| = \|\mathbf{v}\| = 3$, nên $\cos\theta = \dfrac{4}{9}$.
+  \item $(ABC)$ nằm trong mặt Oxy nên pháp vector $\mathbf{n}=(0;0;1)$. Ta có $\overrightarrow{SC}=(0;1;-3)$ và $\sin\alpha = \dfrac{|-3|}{\sqrt{10}} = \dfrac{3\sqrt{10}}{10}$.
+  \item Giải $a+c=0$, $b+c=0$, chọn $c=-1$ được $\mathbf{n}=(1;1;-1)=\mathbf{w}$. Vector chỉ phương của $d$ cùng phương với pháp vector của $(P)$, vậy $d \perp (P)$.
+\end{enumerate}
+
+\section{Tóm lại}
+
+Với tích vô hướng, mọi thứ hình học cần đo --- độ dài, góc, vuông góc --- đều trở thành phép tính trên tọa độ. Từ bài này trở đi, cách giải trong chuỗi sẽ không phụ thuộc vào việc vẽ hình nữa. Các hình minh họa vẫn có, nhưng chỉ để hỗ trợ người đọc hình dung, còn lời giải thì thuần đại số.
+
+Nếu bạn cũng ngán vẽ hình giống tôi, thì đây chính là con đường. Bài kế tiếp: phép chiếu --- công cụ xử nốt các dạng hình chiếu và khoảng cách trong Oxyz.
+
+\end{document}
+
+
+
+
+%PART2%
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="'Segoe UI',Arial,sans-serif" font-size="16">
+  <defs>
+    <marker id="ah-blue2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker>
+    <marker id="ah-red2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+  </defs>
+  <!-- gốc -->
+  <circle cx="70" cy="260" r="4" fill="#0f172a"/>
+  <text x="52" y="280" fill="#0f172a" font-style="italic">O</text>
+  <!-- vectơ u -->
+  <line x1="70" y1="260" x2="414" y2="208" stroke="#1d4ed8" stroke-width="4" marker-end="url(#ah-blue2)"/>
+  <text x="426" y="216" fill="#1d4ed8" font-style="italic" font-weight="700">u</text>
+  <!-- vectơ v -->
+  <line x1="70" y1="260" x2="264" y2="24" stroke="#dc2626" stroke-width="4" marker-end="url(#ah-red2)"/>
+  <text x="272" y="26" fill="#dc2626" font-style="italic" font-weight="700">v</text>
+  <!-- cung góc theta -->
+  <path d="M 194.6 240.7 A 126 126 0 0 0 150.3 163.2" fill="none" stroke="#a21caf" stroke-width="2.5"/>
+  <text x="196" y="196" fill="#a21caf" font-style="italic">θ</text>
+</svg>

@@ -106,18 +106,30 @@ def find_pandoc():
     )
 
 
+BLOGFIG_RE = re.compile(
+    r"\\blogfig\{\s*(\\includegraphics(?:\[[^\]]*\])?\{[^}]*\})\s*\}"
+)
+
+
 def render_pandoc(pandoc, tex_path, out_html):
-    """Convert one .tex to an HTML fragment with KaTeX + pygments spans."""
+    """Convert one .tex to an HTML fragment with KaTeX + pygments spans.
+
+    ``\\blogfig{\\includegraphics{...}}`` marks blog-only illustrations:
+    direct pdfLaTeX builds expand \\blogfig to nothing (macro defined empty
+    in the post preamble), while this build unwraps the wrapper so Pandoc
+    turns the \\includegraphics into a real <img> for the web.
+    """
     cmd = [
-        pandoc, str(tex_path),
+        pandoc,
         "--from", "latex",
         "--to", "html5",
         "--katex",
         "--highlight-style=pygments",
         "--wrap=none",
     ]
+    text = BLOGFIG_RE.sub(r"\1", tex_path.read_text(encoding="utf-8"))
     proc = subprocess.run(
-        cmd, capture_output=True, text=True,
+        cmd, input=text, capture_output=True, text=True,
         encoding="utf-8", errors="replace",
     )
     if proc.returncode != 0:

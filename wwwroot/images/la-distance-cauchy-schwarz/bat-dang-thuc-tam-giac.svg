@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs>
+    <marker id="ah-teal3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+    <marker id="ah-blue3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker>
+    <marker id="ah-red3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+  </defs>
+  <!-- đường đi gãy A -> M -->
+  <line x1="50" y1="220" x2="180" y2="54" stroke="#0f766e" stroke-width="3.5" marker-end="url(#ah-teal3)"/>
+  <text x="86" y="128" fill="#0f766e" font-style="italic" font-weight="700">AM</text>
+  <!-- đường đi gãy M -> B -->
+  <line x1="188" y1="50" x2="456" y2="162" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#ah-blue3)"/>
+  <text x="310" y="88" fill="#1d4ed8" font-style="italic" font-weight="700">MB</text>
+  <!-- đoạn thẳng A -> B -->
+  <line x1="52" y1="216" x2="452" y2="168" stroke="#dc2626" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ah-red3)"/>
+  <text x="240" y="215" fill="#dc2626" font-style="italic">AB = AM + MB</text>
+  <!-- các điểm -->
+  <circle cx="50" cy="220" r="4" fill="#0f172a"/>
+  <text x="34" y="238" fill="#0f172a" font-style="italic">A</text>
+  <circle cx="184" cy="48" r="4" fill="#0f172a"/>
+  <text x="178" y="36" text-anchor="middle" fill="#0f172a" font-style="italic">M</text>
+  <circle cx="464" cy="164" r="4" fill="#0f172a"/>
+  <text x="474" y="170" fill="#0f172a" font-style="italic">B</text>
+  <!-- ghi chú -->
+  <text x="150" y="262" fill="#475569" font-style="italic">AM + MB &#8805; AB</text>
+</svg>

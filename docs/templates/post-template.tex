@@ -1,0 +1,51 @@
+%---
+% title: "Tiêu đề bài viết"
+% date: 2026-01-01
+% tags: [dai-so-tuyen-tinh, thpt, oxyz]
+% summary: "Một câu tóm tắt ngắn."
+%---
+% =====================================================================
+% TEMPLATE BÀI VIẾT — chuỗi "Đại số tuyến tính cho THPT"
+%
+% Cách dùng:
+%   1. Copy file này sang posts/<slug>.tex rồi điền frontmatter + nội dung.
+%   2. Blog: dotnet build tự render qua Pandoc (preamble bị bỏ qua tự động).
+%   3. PDF giảng dạy: upload cả file lên Overleaf làm main.tex,
+%      compiler pdfLaTeX -> ra PDF tiếng Việt ngay.
+% Lưu ý: KHÔNG đặt file template trong posts/ — build script sẽ nhặt
+% mọi *.tex trong đó.
+% =====================================================================
+\documentclass[12pt,a4paper]{article}
+
+% Khối khai báo dưới đây CHỈ dùng khi biên dịch PDF trực tiếp
+% (Overleaf, pdfLaTeX). Blog không cần nó: Pandoc tự bỏ qua phần này.
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+% Hình minh họa: PDF dùng TikZ (vẽ trực tiếp trong file).
+% Bản web dùng SVG qua \blogfig{...}: pdfLaTeX bỏ trống,
+% build script gỡ wrapper để Pandoc xuất thẻ <img>.
+% Ảnh SVG đặt tại wwwroot/images/<slug>/<ten>.svg
+\newcommand{\blogfig}[1]{}
+
+\begin{document}
+
+\section{Tên phần đầu tiên}
+
+Nội dung...
+
+% Ví dụ chèn hình minh họa (xóa khi không cần):
+% \begin{center}
+% \begin{tikzpicture}[>=Stealth]
+%   \draw[->] (0,0) -- (3,1);
+% \end{tikzpicture}
+% \end{center}
+% \blogfig{\includegraphics{/images/<slug>/ten-hinh.svg}}
+% \textbf{Hình 1.} Chú thích hình.
+
+\end{document}

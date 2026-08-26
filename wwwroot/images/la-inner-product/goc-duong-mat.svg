@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 370" font-family="'Segoe UI',Arial,sans-serif" font-size="16">
+  <defs>
+    <marker id="ah-teal2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+  </defs>
+  <!-- mặt phẳng (P) -->
+  <polygon points="90,290 335,290 407,218 162,218" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="374" y="252" fill="#2563eb" font-style="italic">(P)</text>
+  <!-- pháp vector n -->
+  <line x1="346" y1="260" x2="346" y2="100" stroke="#0f766e" stroke-width="3.5" marker-end="url(#ah-teal2)"/>
+  <text x="330" y="112" text-anchor="end" fill="#0f766e" font-style="italic" font-weight="700">n</text>
+  <!-- đường thẳng d -->
+  <line x1="140" y1="67" x2="421" y2="330" stroke="#dc2626" stroke-width="3"/>
+  <text x="430" y="338" fill="#dc2626" font-style="italic">d</text>
+  <!-- chân giao H -->
+  <circle cx="346" cy="260" r="4" fill="#dc2626"/>
+  <text x="330" y="278" text-anchor="end" fill="#dc2626" font-style="italic">H</text>
+  <!-- góc beta giữa d và n -->
+  <path d="M 346 220 A 40 40 0 0 0 317 233" fill="none" stroke="#a21caf" stroke-width="2.5"/>
+  <text x="318" y="242" fill="#a21caf" font-style="italic">β</text>
+  <!-- góc alpha giữa d và mặt phẳng -->
+  <path d="M 390.6 260 A 44.6 44.6 0 0 1 378.6 289.6" fill="none" stroke="#a21caf" stroke-width="2.5"/>
+  <text x="400" y="285" fill="#a21caf" font-style="italic">α</text>
+  <!-- ghi chú -->
+  <text x="150" y="352" fill="#475569" font-style="italic" font-weight="600">β + α = 90°  ⟹  sin α = cos β</text>
+</svg>

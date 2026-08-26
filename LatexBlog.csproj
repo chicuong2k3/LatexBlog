@@ -7,6 +7,10 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol.AspNetCore" Version="2.2.0" />
+  </ItemGroup>
+
   <Target Name="BuildPosts" BeforeTargets="BeforeBuild">
     <Exec Command="python tools/build_posts.py" WorkingDirectory="$(MSBuildProjectDirectory)" />
   </Target>

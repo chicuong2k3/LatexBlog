@@ -1,0 +1,995 @@
+{
+  "schema": "audit-detail/1",
+  "document": "posts/aether-history.tex",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "section": "aristotle-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "13",
+      "claim": "Aristotle lived 384-322 BC.",
+      "note": "",
+      "evidence_ids": [
+        "E001"
+      ],
+      "claim_text_sha256": "9e8f34e30646430433efd9e7f9c5a106019b45fb819fa615010104ea55162149"
+    },
+    {
+      "claim_id": "C002",
+      "section": "aquinas-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "79",
+      "claim": "Thomas Aquinas lived 1225-1274 and synthesised Aristotle with Christian theology.",
+      "note": "",
+      "evidence_ids": [
+        "E028"
+      ],
+      "claim_text_sha256": "a52fdf21d3537863e334860d8d55d3fef5a4ecece666f91d1cb95daecdc9ad5c"
+    },
+    {
+      "claim_id": "C003",
+      "section": "erasmus-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "CONTESTED",
+      "manuscript_lines": "111",
+      "claim": "Erasmus lived 1466-1536.",
+      "note": "Birth year contested in sources (1466/1467/1469).",
+      "evidence_ids": [
+        "E028",
+        "E003"
+      ],
+      "claim_text_sha256": "81f4954778ab31b782b5b2ccd2b6c7a0820da82679363e16017b02ac24626ee4"
+    },
+    {
+      "claim_id": "C004",
+      "section": "ockham-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "119",
+      "claim": "William of Ockham lived c.1287-1347 and formulated Ockham's razor.",
+      "note": "",
+      "evidence_ids": [
+        "E028"
+      ],
+      "claim_text_sha256": "95d949a77809633e7916dc0f05ba92a4054d09a7ccdbf18627e4dabcbf50a09c"
+    },
+    {
+      "claim_id": "C005",
+      "section": "copernicus",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "133",
+      "claim": "Copernicus (1473-1543) proposed heliocentrism in 1543, displacing Ptolemy's geocentric model.",
+      "note": "",
+      "evidence_ids": [
+        "E024"
+      ],
+      "claim_text_sha256": "fc517f88eae7e75956639497baab368576e898e2936a2eeee72d16493832a1dd"
+    },
+    {
+      "claim_id": "C006",
+      "section": "kepler",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "134;164",
+      "claim": "Kepler (1571-1630) showed planets move on ellipses, not circles.",
+      "note": "",
+      "evidence_ids": [
+        "E025"
+      ],
+      "claim_text_sha256": "f192e628547fdfd4ce0426f0f27fc52c5f004c608984082e934079bda2d72a60"
+    },
+    {
+      "claim_id": "C007",
+      "section": "galileo-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "135",
+      "claim": "Galileo (1564-1642) used the telescope and was condemned for heliocentrism.",
+      "note": "",
+      "evidence_ids": [
+        "E018"
+      ],
+      "claim_text_sha256": "4a28c22778a5788072d6a583d13d5c0df585b3bec2c3a1bafe45047ca0f40f8c"
+    },
+    {
+      "claim_id": "C008",
+      "section": "descartes-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "138;143",
+      "claim": "Descartes (1596-1650), 'father of modern philosophy', coined 'cogito ergo sum'; a crisis came around age 24 (1619).",
+      "note": "",
+      "evidence_ids": [
+        "E031"
+      ],
+      "claim_text_sha256": "7afac2689d0f2c02fb66f495ec7167e606f9a59c0b8c8d519e0dea599109fadb"
+    },
+    {
+      "claim_id": "C009",
+      "section": "bacon-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "162",
+      "claim": "Francis Bacon (1561-1626) championed the experimental method.",
+      "note": "",
+      "evidence_ids": [
+        "E029"
+      ],
+      "claim_text_sha256": "62469570883957abc4867cc8409ebfb3de4879954e7ed442e19218c3cccf891a"
+    },
+    {
+      "claim_id": "C010",
+      "section": "huygens-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "230",
+      "claim": "Christiaan Huygens (1629-1695) developed the wave theory of light and invented the pendulum clock.",
+      "note": "",
+      "evidence_ids": [
+        "E005"
+      ],
+      "claim_text_sha256": "0b1406082d798ba1b153f881da09cd9c944a5b051b72b2d9c73b2d3e0074c775"
+    },
+    {
+      "claim_id": "C011",
+      "section": "snell-dates",
+      "kind": "numeric",
+      "severity": "high",
+      "assessment": "LIKELY_ERROR",
+      "manuscript_lines": "308",
+      "claim": "Willebrord Snell lived 1591-1676 (as printed).",
+      "note": "Standard biography: 1580-1626; both printed years appear wrong.",
+      "evidence_ids": [
+        "E026"
+      ],
+      "claim_text_sha256": "5f2c522f6e3053aa9e25a472332aefd658332cf878b74b17613d8ed95f5bfc95"
+    },
+    {
+      "claim_id": "C012",
+      "section": "snell-refraction",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "308",
+      "claim": "Snell found the refraction law experimentally c.1621 but did not publish; Huygens later said his manuscript reached Descartes.",
+      "note": "",
+      "evidence_ids": [
+        "E026",
+        "E032"
+      ],
+      "claim_text_sha256": "526035bea212071f76976e1dce00342d49c4ffc46278703b579b86a62864dea5"
+    },
+    {
+      "claim_id": "C013",
+      "section": "fermat-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "CONTESTED",
+      "manuscript_lines": "317",
+      "claim": "Pierre de Fermat lived 1601-1665.",
+      "note": "1601 is the majority convention; some sources give 1607.",
+      "evidence_ids": [
+        "E007"
+      ],
+      "claim_text_sha256": "f5f7101640ad0e2fa9006cff2800f792d0f2c2cba40840fd80ec21b2d37c27be"
+    },
+    {
+      "claim_id": "C014",
+      "section": "democritus",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "340",
+      "claim": "Democritus (c.460-370 BC), with his teacher Leucippus, coined 'atomos'.",
+      "note": "",
+      "evidence_ids": [
+        "E013"
+      ],
+      "claim_text_sha256": "ff7ec68e81ca3f271c630dbb6067a1b9fa8a75030683ca676c61ff03f462f70d"
+    },
+    {
+      "claim_id": "C015",
+      "section": "epicurus",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "352",
+      "claim": "Epicurus (341-270 BC) developed atomism into a philosophy centred on pleasure.",
+      "note": "",
+      "evidence_ids": [
+        "E014"
+      ],
+      "claim_text_sha256": "d69e628850dff24c8df81b7922d3301a4c75fa99af245f88fd61f03251ca757d"
+    },
+    {
+      "claim_id": "C016",
+      "section": "lucretius",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "352",
+      "claim": "Lucretius (c.99-55 BC) expounded atomism in De Rerum Natura, a poem of six books.",
+      "note": "",
+      "evidence_ids": [
+        "E015"
+      ],
+      "claim_text_sha256": "56c708f1dfde4282a589020a09fb273f850124205f51a155d6cfa75c455d34c7"
+    },
+    {
+      "claim_id": "C017",
+      "section": "gassendi-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "359",
+      "claim": "Pierre Gassendi (1592-1655), a priest and professor at the College de France, revived ancient atomism.",
+      "note": "",
+      "evidence_ids": [
+        "E016"
+      ],
+      "claim_text_sha256": "3e02da8a2442a0d15d49823a83ee9cc7b28fb8dc2873f90fd6d3a74f9cb0308a"
+    },
+    {
+      "claim_id": "C018",
+      "section": "gassendi-dispute",
+      "kind": "numeric",
+      "severity": "medium",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "365",
+      "claim": "The Gassendi-Descartes dispute ran 1641-1646.",
+      "note": "",
+      "evidence_ids": [
+        "E016"
+      ],
+      "claim_text_sha256": "2d1613d9d4a929a474e6c9d75be0d3ddbd06c61e58e6b0e760dd57a0c91e975e"
+    },
+    {
+      "claim_id": "C019",
+      "section": "micrographia-year",
+      "kind": "numeric",
+      "severity": "high",
+      "assessment": "LIKELY_ERROR",
+      "manuscript_lines": "389",
+      "claim": "Hooke published Micrographia in 1667 (as printed).",
+      "note": "Micrographia was published in 1665.",
+      "evidence_ids": [
+        "E008"
+      ],
+      "claim_text_sha256": "e9bb58a15ab334fb148c930012d775020319a8082a37257eda741bbb4e2ebf87"
+    },
+    {
+      "claim_id": "C020",
+      "section": "hooke-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "389;391",
+      "claim": "Robert Hooke (1635-1703) began his career as Boyle's assistant.",
+      "note": "",
+      "evidence_ids": [
+        "E008"
+      ],
+      "claim_text_sha256": "896336101c301bd6a28f16b1e510cf33c285ea6a5bb207d8e4154d4169be945d"
+    },
+    {
+      "claim_id": "C021",
+      "section": "grimaldi",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "467",
+      "claim": "Grimaldi (1618-1663) discovered and named diffraction; his work appeared posthumously in 1665.",
+      "note": "",
+      "evidence_ids": [
+        "E012"
+      ],
+      "claim_text_sha256": "1b6ae8e7187b544dab2c2c5e0f9c74336dc3b9b2b24bacc230252c882134fffc"
+    },
+    {
+      "claim_id": "C022",
+      "section": "young-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "455;585",
+      "claim": "Thomas Young (1773-1829) revived the wave theory and discovered interference.",
+      "note": "",
+      "evidence_ids": [
+        "E033"
+      ],
+      "claim_text_sha256": "be1c9a5c80312404138d79cd64050f70838a467b4f2ff1b3d3a82241aef430c3"
+    },
+    {
+      "claim_id": "C023",
+      "section": "fresnel-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "455",
+      "claim": "Augustin-Jean Fresnel (1788-1827) completed the wave theory (diffraction, polarization).",
+      "note": "",
+      "evidence_ids": [
+        "E033"
+      ],
+      "claim_text_sha256": "95f47c0305396ee98fd946e5959ad19b1e2eb816abf08c9d2975c125dace40ff"
+    },
+    {
+      "claim_id": "C024",
+      "section": "newton-birth-consistency",
+      "kind": "numeric",
+      "severity": "high",
+      "assessment": "INTERNAL_INCONSISTENCY",
+      "manuscript_lines": "487;616",
+      "claim": "Newton's birth year is printed 1642 in one footnote and 1643 in another.",
+      "note": "25 Dec 1642 (Julian) = 4 Jan 1643 (Gregorian); choose one convention consistently.",
+      "evidence_ids": [
+        "E011"
+      ],
+      "claim_text_sha256": "00c0a34a6aa1d565b6329cb6876759431ceb61361517cb35c9d466966daffa6c"
+    },
+    {
+      "claim_id": "C025",
+      "section": "newton-trigonometry",
+      "kind": "factual",
+      "severity": "high",
+      "assessment": "LIKELY_ERROR",
+      "manuscript_lines": "487;616",
+      "claim": "Newton 'invented trigonometry' (printed in two footnotes).",
+      "note": "Newton co-invented calculus; trigonometry long predates him. Almost certainly should read 'calculus'.",
+      "evidence_ids": [
+        "E011"
+      ],
+      "claim_text_sha256": "bc61004a2ed4561ea5af6270180e6d6a04d36f79373c8c068d15b2db0d9b41cf"
+    },
+    {
+      "claim_id": "C026",
+      "section": "newton-prism-year",
+      "kind": "numeric",
+      "severity": "medium",
+      "assessment": "IMPRECISE",
+      "manuscript_lines": "487;501",
+      "claim": "Newton did the prism experiment in 1666 and published it in 1672, 'five years later', after plague drove him from Cambridge.",
+      "note": "1666->1672 is six years; plague closure was 1665-66.",
+      "evidence_ids": [
+        "E009"
+      ],
+      "claim_text_sha256": "9d22d84da4b40501f28623609f8b0fbe46f904567bd8456a694e2fac5700ffc7"
+    },
+    {
+      "claim_id": "C027",
+      "section": "newton-works",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "542;616;487",
+      "claim": "Newton's Opticks appeared 1704 and the Principia 1687.",
+      "note": "",
+      "evidence_ids": [
+        "E010",
+        "E011"
+      ],
+      "claim_text_sha256": "1713480b4e59d398c127bf1209a2f973322f32811cfd6ba55731d68650dfa67c"
+    },
+    {
+      "claim_id": "C028",
+      "section": "romer-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "592",
+      "claim": "Ole Romer (1644-1710), a Dane tutoring the French Dauphin, studied eclipses of Io.",
+      "note": "",
+      "evidence_ids": [
+        "E017"
+      ],
+      "claim_text_sha256": "0ddfc83d3672380086147d9597db3c117d46c91dbf376a5e01d19925044c845f"
+    },
+    {
+      "claim_id": "C029",
+      "section": "romer-year",
+      "kind": "numeric",
+      "severity": "medium",
+      "assessment": "IMPRECISE",
+      "manuscript_lines": "592",
+      "claim": "Romer first demonstrated the finite speed of light in 1675 (as printed).",
+      "note": "The demonstration is standardly dated 1676 (observations 1675-76).",
+      "evidence_ids": [
+        "E017"
+      ],
+      "claim_text_sha256": "2e1b31adf1341aeb30f18e166aaba8a6ccd60b93f5359b4de8a730b1649a8334"
+    },
+    {
+      "claim_id": "C030",
+      "section": "romer-figure",
+      "kind": "numeric",
+      "severity": "medium",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "594",
+      "claim": "Romer estimated ~11 min for light Sun-to-Earth, later revised to ~8 min; modern value ~8 min 19 s.",
+      "note": "Romer's stated figure was ~22 min for the orbit diameter (~11 min for the radius); verify wording.",
+      "evidence_ids": [
+        "E017"
+      ],
+      "claim_text_sha256": "f8e5c617066fe8dc5c7d7892d1cfa933c860d7bcb1084a7e6d0b8e4d10eaf402"
+    },
+    {
+      "claim_id": "C031",
+      "section": "michelson-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "655",
+      "claim": "Albert Michelson (1852-1931) was the first American to win a science Nobel (Physics, 1907).",
+      "note": "",
+      "evidence_ids": [
+        "E019"
+      ],
+      "claim_text_sha256": "057b572bc77d942c419b92f8eae647d5cffa2170dc68d8388b7878102d4b7e60"
+    },
+    {
+      "claim_id": "C032",
+      "section": "morley-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "655",
+      "claim": "Edward Morley lived 1838-1923.",
+      "note": "",
+      "evidence_ids": [
+        "E019"
+      ],
+      "claim_text_sha256": "af1e665be0a0f600d413a2c441cbf1d7f1d785d73aa56677dad53b0b2c1ef917"
+    },
+    {
+      "claim_id": "C033",
+      "section": "mm-experiment",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "655;659",
+      "claim": "The 1887 Michelson-Morley experiment found no ether wind (null result).",
+      "note": "",
+      "evidence_ids": [
+        "E019"
+      ],
+      "claim_text_sha256": "619da52e3ccb924facb1134b861fe0309f422bedebee93885c84a9ae1c97b4cb"
+    },
+    {
+      "claim_id": "C034",
+      "section": "lorentz-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "668;681",
+      "claim": "Hendrik Lorentz (1853-1928; Nobel 1902) developed the Lorentz transformation.",
+      "note": "",
+      "evidence_ids": [
+        "E020"
+      ],
+      "claim_text_sha256": "631ada192fb3ad321f231e4119046f31fc0f64ef43c4038a06b9d2c9983745a4"
+    },
+    {
+      "claim_id": "C035",
+      "section": "fitzgerald-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "668",
+      "claim": "George FitzGerald (1851-1901), an Irishman, proposed length contraction before Lorentz.",
+      "note": "",
+      "evidence_ids": [
+        "E020"
+      ],
+      "claim_text_sha256": "e8204f00415049aabb6ec17e4ceb9721a7358c760d98d85b7652aa232c55e5ee"
+    },
+    {
+      "claim_id": "C036",
+      "section": "contraction-years",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "673",
+      "claim": "FitzGerald (1889) and Lorentz (1892) independently proposed length contraction.",
+      "note": "",
+      "evidence_ids": [
+        "E020"
+      ],
+      "claim_text_sha256": "3bafce3a248584b462daf18ca4fd7b3cae4630a99d53bea1f8cf7a338584e963"
+    },
+    {
+      "claim_id": "C037",
+      "section": "contraction-formula",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "679",
+      "claim": "The Lorentz-FitzGerald contraction is L = L0*sqrt(1 - v^2/c^2).",
+      "note": "",
+      "evidence_ids": [
+        "E020"
+      ],
+      "claim_text_sha256": "198fab0d71b27023b9a73eeafa67c016c2b5afdfcd6ee5f71ae756cd9e33866e"
+    },
+    {
+      "claim_id": "C038",
+      "section": "einstein-bio",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "695",
+      "claim": "Einstein (1879-1955) published special relativity in 1905 and general relativity in 1915.",
+      "note": "",
+      "evidence_ids": [
+        "E021"
+      ],
+      "claim_text_sha256": "b6b495234ab41241e7ed8e84fb9062f18f6a9ffe9753d201dabe9ffd00ab6179"
+    },
+    {
+      "claim_id": "C039",
+      "section": "einstein-leiden-interval",
+      "kind": "numeric",
+      "severity": "high",
+      "assessment": "LIKELY_ERROR",
+      "manuscript_lines": "711",
+      "claim": "Einstein changed his view 'only five years later (1920)' at Leiden.",
+      "note": "The Leiden address is correctly 1920, but that is fifteen years after 1905, not five; the passage also puts the 1920 talk after a 1938 quotation, jumbling chronology.",
+      "evidence_ids": [
+        "E022",
+        "E021"
+      ],
+      "claim_text_sha256": "1a57a70a924d24f1567f6ba2a2d0cd83611312d1024047c5b2881f6c7fafd47f"
+    },
+    {
+      "claim_id": "C040",
+      "section": "bologna-stone",
+      "kind": "numeric",
+      "severity": "high",
+      "assessment": "INTERNAL_INCONSISTENCY",
+      "manuscript_lines": "572",
+      "claim": "The footnote dates Casciarolo 1571-1626 yet says he discovered the Bologna stone c.1630.",
+      "note": "Discovery after his stated death is impossible; the stone is usually dated to c.1603.",
+      "evidence_ids": [
+        "E027"
+      ],
+      "claim_text_sha256": "76af537743a31299b70199d4582b26625dcd1fcc317ca44b71d7a15e86a0f7e5"
+    },
+    {
+      "claim_id": "C041",
+      "section": "dark-energy",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "730",
+      "claim": "Dark energy makes up ~68% of the universe.",
+      "note": "",
+      "evidence_ids": [
+        "E030"
+      ],
+      "claim_text_sha256": "ebf7d949c159bb1147402b833cb48e4cb4c6a005a9f0837fce894664463a136e"
+    },
+    {
+      "claim_id": "C042",
+      "section": "metaphysics-name",
+      "kind": "interpretive",
+      "severity": "medium",
+      "assessment": "IMPRECISE",
+      "manuscript_lines": "36",
+      "claim": "'Metaphysics' means 'after physics' because Aristotle held it should be studied after physics.",
+      "note": "The name comes from later editors (Andronicus ordering the books after the Physics), not Aristotle's coinage.",
+      "evidence_ids": [
+        "E001",
+        "E032"
+      ],
+      "claim_text_sha256": "a047527501a5aa8e5e7ba72b31c4e56ede29916476b32942f1dddfe0a6c3dfea"
+    },
+    {
+      "claim_id": "C043",
+      "section": "descartes-first-aether",
+      "kind": "interpretive",
+      "severity": "medium",
+      "assessment": "INTERPRETIVE_OVERSTATED",
+      "manuscript_lines": "200",
+      "claim": "Descartes was the first to bring the aether into science, by giving it mechanical properties.",
+      "note": "Strong priority claim; attribute or hedge.",
+      "evidence_ids": [
+        "E032"
+      ],
+      "claim_text_sha256": "5ccc07b885e60bd45efc7495fd0da171b3d449bf7b231a6d52361f7e169bfbea"
+    },
+    {
+      "claim_id": "C044",
+      "section": "mechanical-philosophy",
+      "kind": "interpretive",
+      "severity": "medium",
+      "assessment": "INTERPRETIVE_OVERSTATED",
+      "manuscript_lines": "216",
+      "claim": "Descartes originated the Mechanical Philosophy.",
+      "note": "The term is usually credited to Boyle; Descartes was one founder among several.",
+      "evidence_ids": [
+        "E032"
+      ],
+      "claim_text_sha256": "34673036a820fc80e1b7055d68b6b3c5fb6cc723b832f065ab0b1dc37e937659"
+    },
+    {
+      "claim_id": "C045",
+      "section": "descartes-colour",
+      "kind": "interpretive",
+      "severity": "medium",
+      "assessment": "QUESTIONABLE",
+      "manuscript_lines": "271;273",
+      "claim": "Descartes' colour theory (fastest-spinning particles = red) was 'right in result, wrong in mechanism' because colour relates to frequency.",
+      "note": "Red is low-frequency light; mapping fast rotation to red does not make the result 'correct'. Reassess.",
+      "evidence_ids": [
+        "E004"
+      ],
+      "claim_text_sha256": "2135cf2069b66414e755f74dd5bbbad14e877c75ebe9fe408e1784d798fe6990"
+    },
+    {
+      "claim_id": "C046",
+      "section": "gassendi-won",
+      "kind": "interpretive",
+      "severity": "medium",
+      "assessment": "INTERPRETIVE_OVERSTATED",
+      "manuscript_lines": "365",
+      "claim": "Gassendi's atomism 'won' after the dispute with Descartes.",
+      "note": "Cartesian plenum/vortices stayed influential for decades; overstated.",
+      "evidence_ids": [
+        "E032"
+      ],
+      "claim_text_sha256": "8074f548f6ff3e6e0ee030a519897ebf444b3bd39695a2a1668f42ea27658713"
+    },
+    {
+      "claim_id": "C047",
+      "section": "ockham-galileo",
+      "kind": "numeric",
+      "severity": "high",
+      "assessment": "LIKELY_ERROR",
+      "manuscript_lines": "128",
+      "claim": "'Three decades after Ockham', Aristotle's influence still helped condemn Galileo.",
+      "note": "Ockham died 1347; Galileo condemned 1633 - about three centuries later, not three decades.",
+      "evidence_ids": [
+        "E028",
+        "E018"
+      ],
+      "claim_text_sha256": "7818cb428c84474e043edb9be47ba4e64305ec3b7679bc755a767d59414e1fe4"
+    },
+    {
+      "claim_id": "C048",
+      "section": "newton-gravity-eq",
+      "kind": "numeric",
+      "severity": "low",
+      "assessment": "IMPRECISE",
+      "manuscript_lines": "630",
+      "claim": "Newton's equation F = G*m1*m2/r^2 gives exact results without an aether.",
+      "note": "Mild anachronism: the constant G was introduced/measured long after Newton (Cavendish era).",
+      "evidence_ids": [
+        "E011"
+      ],
+      "claim_text_sha256": "3f5f71fa4db214ee1e0b514155eefda72a070b7c94be3dfab61eed1d26b33e4b"
+    },
+    {
+      "claim_id": "C049",
+      "section": "descartes-instant-light",
+      "kind": "factual",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "269",
+      "claim": "Descartes held that light is transmitted instantaneously.",
+      "note": "",
+      "evidence_ids": [
+        "E004"
+      ],
+      "claim_text_sha256": "4237a7060094f264a4790afffc18f43e58f1f4def4326540982b50a02fde4388"
+    },
+    {
+      "claim_id": "C050",
+      "section": "fermat-year",
+      "kind": "numeric",
+      "severity": "medium",
+      "assessment": "IMPRECISE",
+      "manuscript_lines": "325;328",
+      "claim": "Fermat obtained his least-time result reconciling Descartes' ratio in 1661.",
+      "note": "The result/letter is standardly dated 1662.",
+      "evidence_ids": [
+        "E007"
+      ],
+      "claim_text_sha256": "66b1d9012e8e07317af612b264207c4c787d436233de1bb097e4dcfb4aab0b44"
+    },
+    {
+      "claim_id": "C051",
+      "section": "aquinas-quote",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "83;88",
+      "claim": "Two quotations attributed to Aquinas (knowledge from the senses; metaphysics named after physics).",
+      "note": "",
+      "evidence_ids": [
+        "E002"
+      ],
+      "claim_text_sha256": "57396372555dc00ee9948a618623eb1a21bd9fad9decaa8e7c364982d5efc811"
+    },
+    {
+      "claim_id": "C052",
+      "section": "scholastic-quotes",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "101;106",
+      "claim": "Two quotations attributed to medieval scholastics.",
+      "note": "Attributed to no named author or work.",
+      "evidence_ids": [
+        "E028"
+      ],
+      "claim_text_sha256": "0468b18f1dac335054ddad682f876622069c4a374ac5972b20be585ca03dcad3"
+    },
+    {
+      "claim_id": "C053",
+      "section": "erasmus-quote",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "113",
+      "claim": "Quotation attributed to Erasmus (quiddities and haecceities).",
+      "note": "",
+      "evidence_ids": [
+        "E003"
+      ],
+      "claim_text_sha256": "03b233ca5429230fa0ede98d054d0ad1d9602f4c99d33de1b1c73293052fd5ec"
+    },
+    {
+      "claim_id": "C054",
+      "section": "huygens-quote",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "233;239",
+      "claim": "Two quotations attributed to Huygens criticising Descartes.",
+      "note": "",
+      "evidence_ids": [
+        "E006"
+      ],
+      "claim_text_sha256": "09fc9f90368c1d9023f95bc18252fc3a2fad14c507540c1b4695d3d40cf88e69"
+    },
+    {
+      "claim_id": "C055",
+      "section": "descartes-quote",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "259",
+      "claim": "Quotation attributed to Descartes on three qualities and three elements.",
+      "note": "",
+      "evidence_ids": [
+        "E004"
+      ],
+      "claim_text_sha256": "a4506cdcb03f57d63cb16acbae4e4452c025065b5b940883b506074f152c7852"
+    },
+    {
+      "claim_id": "C056",
+      "section": "fermat-quote",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "328",
+      "claim": "Quotation attributed to Fermat on his surprising result.",
+      "note": "",
+      "evidence_ids": [
+        "E007"
+      ],
+      "claim_text_sha256": "d8391b586c775267e75e3b7214f196910fc85bdb6c4ab0be6903e9131b4dc1a7"
+    },
+    {
+      "claim_id": "C057",
+      "section": "hooke-quote-motion",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "394",
+      "claim": "Quotation attributed to Hooke (no luminous body without motion of parts).",
+      "note": "",
+      "evidence_ids": [
+        "E008"
+      ],
+      "claim_text_sha256": "ac3b4dacdede83c03c84346dcbe9ad93342b3f88b8d16ffd5c6e9f25c09aee38"
+    },
+    {
+      "claim_id": "C058",
+      "section": "hooke-quote-density",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "432",
+      "claim": "Quotation attributed to Hooke on sines and 'density', citing Descartes.",
+      "note": "",
+      "evidence_ids": [
+        "E008"
+      ],
+      "claim_text_sha256": "225dfebf483580445d7fae7140169edeb45d3891a04bd1ac9ece5d0248350a47"
+    },
+    {
+      "claim_id": "C059",
+      "section": "hooke-quote-colour",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "479",
+      "claim": "Quotation attributed to Hooke defining blue and red by pulse order.",
+      "note": "",
+      "evidence_ids": [
+        "E008"
+      ],
+      "claim_text_sha256": "694814671ff2e926d08177a8564031417a6cf561669cdc116571e0dfa7b81d21"
+    },
+    {
+      "claim_id": "C060",
+      "section": "newton-quote-prism",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "492",
+      "claim": "Quotation attributed to Newton (oblong, not round, image).",
+      "note": "",
+      "evidence_ids": [
+        "E009"
+      ],
+      "claim_text_sha256": "80a2c718c88cb320081673540594ac4f2a6ad1f4c56285b152f94bf86a08938b"
+    },
+    {
+      "claim_id": "C061",
+      "section": "newton-quote-colour",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "506;512",
+      "claim": "Two quotations attributed to Newton (colours original to rays, unchangeable).",
+      "note": "",
+      "evidence_ids": [
+        "E009"
+      ],
+      "claim_text_sha256": "6a98664fab9ff352043695e491cf61168e611134db969afc1e1fcff0a69c86f9"
+    },
+    {
+      "claim_id": "C062",
+      "section": "newton-quote-nature",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "560",
+      "claim": "Quotation attributed to Newton leaving light's nature open.",
+      "note": "",
+      "evidence_ids": [
+        "E010"
+      ],
+      "claim_text_sha256": "412c7a24e5dd16b2f4501736f76fc7f7919468e29a5536be2706bd02fcf12a84"
+    },
+    {
+      "claim_id": "C063",
+      "section": "newton-quote-gravity",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "627",
+      "claim": "Quotation attributed to Newton on gravity via an unobservable agent.",
+      "note": "",
+      "evidence_ids": [
+        "E010"
+      ],
+      "claim_text_sha256": "9582f9d9dcabf64f870c7ef87549459f3d1fe1563743a502804c4b43c7df1549"
+    },
+    {
+      "claim_id": "C064",
+      "section": "einstein-quote-rubbish",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "708",
+      "claim": "'Rubbish heap' ether quotation attributed to The Evolution of Physics (1938).",
+      "note": "",
+      "evidence_ids": [
+        "E023"
+      ],
+      "claim_text_sha256": "218d78f7dd6e70805e6b55be7b3fdd4c1f208b046fa9741d69a5f6a2dc9d6e0c"
+    },
+    {
+      "claim_id": "C065",
+      "section": "einstein-quote-leiden",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "QUOTATION_UNVERIFIED",
+      "manuscript_lines": "714",
+      "claim": "Quotation attributed to Einstein's 1920 Leiden address (space endowed with physical qualities).",
+      "note": "",
+      "evidence_ids": [
+        "E022"
+      ],
+      "claim_text_sha256": "842e5cef9fa1e85858ae0961f3028024b57831ec6a2ef881cfccb13b19c0f8aa"
+    },
+    {
+      "claim_id": "C066",
+      "section": "descartes-refraction-error",
+      "kind": "factual",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "306;312",
+      "claim": "Descartes' corpuscular derivation implied light travels faster in a denser medium, which is false.",
+      "note": "",
+      "evidence_ids": [
+        "E004",
+        "E032"
+      ],
+      "claim_text_sha256": "22c219f05f76f808a9bc8992d635f600aef4432f46e2e99f88bf0a35c224dbe2"
+    },
+    {
+      "claim_id": "C067",
+      "section": "snell-law",
+      "kind": "factual",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "298",
+      "claim": "The refraction law states sin(i)/sin(r) is a constant fixed by the two media.",
+      "note": "",
+      "evidence_ids": [
+        "E004",
+        "E026"
+      ],
+      "claim_text_sha256": "97a5f0ce85187f6cd659a9cb06d03136bdc7a3a0db74a717535dc7d6242b233b"
+    },
+    {
+      "claim_id": "C068",
+      "section": "aristotle-cosmos",
+      "kind": "factual",
+      "severity": "low",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "47;51;53",
+      "claim": "Aristotle split the cosmos into an unchanging aether heavens and a four-element Earth, stationary at the centre; this held for more than two thousand years.",
+      "note": "",
+      "evidence_ids": [
+        "E001"
+      ],
+      "claim_text_sha256": "7bc75468d38ce19938bec48081d5cc3d8171b999289e43ccda99817e4624f27e"
+    },
+    {
+      "claim_id": "C069",
+      "section": "aristotle-light",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "63",
+      "claim": "Aristotle defined light as the energeia (actuality) of the transparent as transparent.",
+      "note": "",
+      "evidence_ids": [
+        "E001"
+      ],
+      "claim_text_sha256": "f2dcd630bfab1a73b03d64c0531084ac1cb51164ae1ced04a90edce27257fac4"
+    },
+    {
+      "claim_id": "C070",
+      "section": "hooke-newton-rings",
+      "kind": "factual",
+      "severity": "medium",
+      "assessment": "UNSUPPORTED_PLAUSIBLE",
+      "manuscript_lines": "463",
+      "claim": "Hooke observed 'Newton's rings' before Newton, and Boyle observed them before Hooke.",
+      "note": "",
+      "evidence_ids": [
+        "E008",
+        "E032"
+      ],
+      "claim_text_sha256": "059f632ff2ec347a9d56024c3dab07d8d623880a27413d071616923006da81ae"
+    }
+  ]
+}

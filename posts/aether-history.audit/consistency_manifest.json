@@ -1,0 +1,63 @@
+{
+  "methods": [],
+  "numeric_facts": [
+    {
+      "analysis_set": "as-printed",
+      "concept": "newton_birth_year",
+      "denominator": null,
+      "evidence_ids": [
+        "E011"
+      ],
+      "fact_id": "N001",
+      "numerator": null,
+      "sample_size": null,
+      "section": "newton-prism-footnote",
+      "unit": "year",
+      "value": 1642
+    },
+    {
+      "analysis_set": "as-printed",
+      "concept": "newton_birth_year",
+      "denominator": null,
+      "evidence_ids": [
+        "E011"
+      ],
+      "fact_id": "N002",
+      "numerator": null,
+      "sample_size": null,
+      "section": "newton-aether-footnote",
+      "unit": "year",
+      "value": 1642
+    },
+    {
+      "analysis_set": "as-printed",
+      "concept": "casciarolo_death_year",
+      "denominator": null,
+      "evidence_ids": [
+        "E027"
+      ],
+      "fact_id": "N003",
+      "numerator": null,
+      "sample_size": null,
+      "section": "bologna-footnote",
+      "unit": "year",
+      "value": 1626
+    },
+    {
+      "analysis_set": "as-printed",
+      "concept": "bologna_stone_discovery_year",
+      "denominator": null,
+      "evidence_ids": [
+        "E027"
+      ],
+      "fact_id": "N004",
+      "numerator": null,
+      "sample_size": null,
+      "section": "bologna-body",
+      "unit": "year",
+      "value": 1603
+    }
+  ],
+  "results": [],
+  "schema_version": "1.0"
+}

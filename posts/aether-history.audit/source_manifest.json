@@ -1,0 +1,801 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "authors": [
+        "Aristotle"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E001",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Relevant books/passages; human to locate exact loci",
+      "source_type": "book",
+      "title": "Aristotle — De Caelo / Physica / De Anima / Metaphysica",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Thomas Aquinas"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E002",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Passages for the two attributed quotations",
+      "source_type": "book",
+      "title": "Thomas Aquinas — Summa Theologiae / commentaries on Aristotle",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Desiderius Erasmus"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E003",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Passage for the attributed quotation",
+      "source_type": "book",
+      "title": "Erasmus — Moriae Encomium (In Praise of Folly)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1511
+    },
+    {
+      "authors": [
+        "Rene Descartes"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E004",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Sections on plenum, three elements, vortices, light, refraction, colour",
+      "source_type": "book",
+      "title": "Descartes — Principia Philosophiae / Le Monde / La Dioptrique",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1644
+    },
+    {
+      "authors": [
+        "Christiaan Huygens"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E005",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Wave theory, wavelets, Iceland spar; Leyden 1690; Thompson tr. 1912",
+      "source_type": "book",
+      "title": "Huygens — Traite de la lumiere",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1690
+    },
+    {
+      "authors": [
+        "Christiaan Huygens"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E006",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Passages for the two Huygens quotations about Descartes",
+      "source_type": "other",
+      "title": "Huygens — correspondence / remarks criticising Descartes",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Pierre de Fermat"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E007",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Letter reconciling least time with Descartes' ratio; the quotation and its date",
+      "source_type": "other",
+      "title": "Fermat — correspondence and Oeuvres (least-time result)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Robert Hooke"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E008",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Light as vibration, five conditions, wave-front, refraction, thin-plate colours, diffraction, colour-theory quotation",
+      "source_type": "book",
+      "title": "Hooke — Micrographia",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1665
+    },
+    {
+      "authors": [
+        "Isaac Newton"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E009",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Prism account, oblong spectrum, colour-as-original quotations",
+      "source_type": "journal_article",
+      "title": "Newton — A New Theory about Light and Colours (Phil. Trans.)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1672
+    },
+    {
+      "authors": [
+        "Isaac Newton"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E010",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Aether model, periodicity/fits, aether-and-gravity, nature-of-light quotation",
+      "source_type": "book",
+      "title": "Newton — Opticks (incl. Queries)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1704
+    },
+    {
+      "authors": [
+        "Isaac Newton"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E011",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Universal gravitation; works without an aether mechanism",
+      "source_type": "book",
+      "title": "Newton — Philosophiae Naturalis Principia Mathematica",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1687
+    },
+    {
+      "authors": [
+        "Francesco Maria Grimaldi"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E012",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Diffraction discovery/naming; posthumous 1665",
+      "source_type": "book",
+      "title": "Grimaldi — Physico-mathesis de lumine, coloribus et iride",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1665
+    },
+    {
+      "authors": [
+        "Diogenes Laertius"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E013",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Origin of atomism, atomos, void",
+      "source_type": "other",
+      "title": "Doxography on Leucippus & Democritus (Diogenes Laertius; Aristotle's reports)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Epicurus"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E014",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Development of atomism; pleasure as telos",
+      "source_type": "other",
+      "title": "Epicurus — Letter to Herodotus (in Diogenes Laertius X)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Lucretius"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E015",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Atomism in verse; number of books",
+      "source_type": "book",
+      "title": "Lucretius — De Rerum Natura",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Pierre Gassendi"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E016",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Revival & Christianising of atomism; dispute with Descartes; College Royal chair",
+      "source_type": "other",
+      "title": "Gassendi — Animadversiones / Syntagma Philosophicum / Objections to Descartes",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Ole Roemer"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E017",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Finite speed of light via Io eclipses; ~11 min; Dauphin tutor; life dates",
+      "source_type": "other",
+      "title": "Roemer — 1676 announcement (Journal des scavans) and Roemer biography",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1676
+    },
+    {
+      "authors": [
+        "Galileo Galilei"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E018",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Lantern speed-of-light attempt; telescope; life dates; condemnation",
+      "source_type": "book",
+      "title": "Galileo — Two New Sciences; and Galileo biography",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1638
+    },
+    {
+      "authors": [
+        "Albert A. Michelson",
+        "Edward W. Morley"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E019",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Null result; and Michelson/Morley biographies incl. 1907 Nobel",
+      "source_type": "journal_article",
+      "title": "Michelson & Morley — On the Relative Motion of the Earth and the Luminiferous Ether (Am. J. Sci.)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1887
+    },
+    {
+      "authors": [
+        "George FitzGerald",
+        "Hendrik Lorentz"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E020",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Contraction proposals, transformation, life dates, 1902 Nobel",
+      "source_type": "other",
+      "title": "FitzGerald (1889) & Lorentz (1892) length contraction; Lorentz transformation; biographies",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Albert Einstein"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E021",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Special relativity; ether superfluous",
+      "source_type": "journal_article",
+      "title": "Einstein — Zur Elektrodynamik bewegter Korper (Annalen der Physik)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1905
+    },
+    {
+      "authors": [
+        "Albert Einstein"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E022",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Redefinition of ether; the 1920 quotation; delivered 5 May 1920",
+      "source_type": "other",
+      "title": "Einstein — Ether and the Theory of Relativity (Leiden address)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1920
+    },
+    {
+      "authors": [
+        "Albert Einstein",
+        "Leopold Infeld"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E023",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "The 'rubbish heap' ether quotation",
+      "source_type": "book",
+      "title": "Einstein & Infeld — The Evolution of Physics",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1938
+    },
+    {
+      "authors": [
+        "Nicolaus Copernicus"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E024",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Heliocentrism replacing Ptolemy; life dates",
+      "source_type": "book",
+      "title": "Copernicus — De revolutionibus orbium coelestium; and biography",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1543
+    },
+    {
+      "authors": [
+        "Johannes Kepler"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E025",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Elliptical orbits; three laws; life dates",
+      "source_type": "book",
+      "title": "Kepler — Astronomia Nova; and biography",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1609
+    },
+    {
+      "authors": [
+        "Willebrord Snellius"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E026",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Life dates 1580-1626; Leiden chair; refraction discovery and non-publication",
+      "source_type": "other",
+      "title": "Willebrord Snell biography (life dates; refraction ~1621; unpublished)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Vincenzo Casciarolo"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E027",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Discovery date of the Bologna stone; Casciarolo's dates",
+      "source_type": "other",
+      "title": "History-of-chemistry source on the Bologna Stone and V. Casciarolo",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Frederick Copleston"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E028",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Life dates; Ockham's razor; scholastic method; Aquinas' synthesis; Erasmus",
+      "source_type": "other",
+      "title": "History of medieval philosophy (Aquinas, Ockham, scholasticism, Erasmus)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Francis Bacon"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E029",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Experimental method; life dates 1561-1626",
+      "source_type": "book",
+      "title": "Bacon — Novum Organum; and biography",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": 1620
+    },
+    {
+      "authors": [
+        "Planck Collaboration"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E030",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Dark-energy fraction ~68%; quantum field/vacuum; Casimir effect; gravitational field",
+      "source_type": "other",
+      "title": "Modern physics reference (dark energy, quantum fields, quantum vacuum, Casimir)",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Rene Descartes"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E031",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Life dates 1596-1650; military youth; 1619 crisis; cogito; father of modern philosophy",
+      "source_type": "other",
+      "title": "Descartes biography",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "A. I. Sabra"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E032",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Narrative synthesis: aether into science, Snell-Descartes controversy, Hooke/Boyle priority, mechanical philosophy",
+      "source_type": "other",
+      "title": "History-of-optics / mechanical-philosophy secondary source",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    },
+    {
+      "authors": [
+        "Thomas Young",
+        "Augustin-Jean Fresnel"
+      ],
+      "confidentiality": "public",
+      "evidence_id": "E033",
+      "identifiers": {
+        "doi": "",
+        "isbn": "",
+        "pmcid": "",
+        "pmid": "",
+        "url": ""
+      },
+      "locator": "Interference; diffraction/polarization; life dates",
+      "source_type": "other",
+      "title": "Thomas Young & Augustin-Jean Fresnel biographies",
+      "verification": {
+        "source_opened": false,
+        "status": "unverified",
+        "verified_by": "",
+        "verified_on": ""
+      },
+      "year": null
+    }
+  ]
+}

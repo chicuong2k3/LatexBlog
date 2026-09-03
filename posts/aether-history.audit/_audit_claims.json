@@ -1,0 +1,1232 @@
+{
+  "issues": [
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C001",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C002",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C003",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C004",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C005",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C006",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C007",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C008",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C009",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C010",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C011",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C012",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C013",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C014",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C015",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C016",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C017",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C018",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C019",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C020",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C021",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C022",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C023",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C024",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C025",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C026",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C027",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C028",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C029",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C030",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C031",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C032",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C033",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C034",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C035",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C036",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C037",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C038",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C039",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C040",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C041",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C042",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C043",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C044",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C045",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C046",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C047",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C048",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C049",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C050",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C051",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C052",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C053",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C054",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C055",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C056",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C057",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C058",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C059",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C060",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C061",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C062",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C063",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C064",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C065",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C066",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C067",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C068",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C069",
+      "severity": "error"
+    },
+    {
+      "code": "CLAIM_NOT_VERIFIED",
+      "item_id": "C070",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E024",
+      "location": "line:10",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E025",
+      "location": "line:11",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E018",
+      "location": "line:12",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E031",
+      "location": "line:13",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E029",
+      "location": "line:14",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E005",
+      "location": "line:15",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E026",
+      "location": "line:16",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E026",
+      "location": "line:17",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:17",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E007",
+      "location": "line:18",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E013",
+      "location": "line:19",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E014",
+      "location": "line:20",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E015",
+      "location": "line:21",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E016",
+      "location": "line:22",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E016",
+      "location": "line:23",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E008",
+      "location": "line:24",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E008",
+      "location": "line:25",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E012",
+      "location": "line:26",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E033",
+      "location": "line:27",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E033",
+      "location": "line:28",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E011",
+      "location": "line:29",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E011",
+      "location": "line:30",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E009",
+      "location": "line:31",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E010",
+      "location": "line:32",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E011",
+      "location": "line:32",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E017",
+      "location": "line:33",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E017",
+      "location": "line:34",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E017",
+      "location": "line:35",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E019",
+      "location": "line:36",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E019",
+      "location": "line:37",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E019",
+      "location": "line:38",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E020",
+      "location": "line:39",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E020",
+      "location": "line:40",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E020",
+      "location": "line:41",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E020",
+      "location": "line:42",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E021",
+      "location": "line:43",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E021",
+      "location": "line:44",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E022",
+      "location": "line:44",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E027",
+      "location": "line:45",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E030",
+      "location": "line:46",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E001",
+      "location": "line:47",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:47",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:48",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:49",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E004",
+      "location": "line:50",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:51",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E018",
+      "location": "line:52",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E028",
+      "location": "line:52",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E011",
+      "location": "line:53",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E004",
+      "location": "line:54",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E007",
+      "location": "line:55",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E002",
+      "location": "line:56",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E028",
+      "location": "line:57",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E003",
+      "location": "line:58",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E006",
+      "location": "line:59",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E001",
+      "location": "line:6",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E004",
+      "location": "line:60",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E007",
+      "location": "line:61",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E008",
+      "location": "line:62",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E008",
+      "location": "line:63",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E008",
+      "location": "line:64",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E009",
+      "location": "line:65",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E009",
+      "location": "line:66",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E010",
+      "location": "line:67",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E010",
+      "location": "line:68",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E023",
+      "location": "line:69",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E028",
+      "location": "line:7",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E022",
+      "location": "line:70",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E004",
+      "location": "line:71",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:71",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E004",
+      "location": "line:72",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E026",
+      "location": "line:72",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E001",
+      "location": "line:73",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E001",
+      "location": "line:74",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E008",
+      "location": "line:75",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E032",
+      "location": "line:75",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E003",
+      "location": "line:8",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E028",
+      "location": "line:8",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CITATION_MARKER",
+      "item_id": "E028",
+      "location": "line:9",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C001",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C002",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C003",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C003",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C004",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C005",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C006",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C007",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C008",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C009",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C010",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C011",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C012",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C012",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C013",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C014",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C015",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C016",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C017",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C018",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C019",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C020",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C021",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C022",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C023",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C024",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C025",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C026",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C027",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C027",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C028",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C029",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C030",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C031",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C032",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C033",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C034",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C035",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C036",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C037",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C038",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C039",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C039",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C040",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C041",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C042",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C042",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C043",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C044",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C045",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C046",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C047",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C047",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C048",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C049",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C050",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C051",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C052",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C053",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C054",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C055",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C056",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C057",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C058",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C059",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C060",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C061",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C062",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C063",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C064",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C065",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C066",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C066",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C067",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C067",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C068",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C069",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C070",
+      "severity": "error"
+    },
+    {
+      "code": "UNVERIFIED_CLAIM_EVIDENCE",
+      "item_id": "C070",
+      "severity": "error"
+    }
+  ],
+  "status": "fail",
+  "summary": {
+    "claims_registered": 70,
+    "claims_used": 70,
+    "errors": 228,
+    "sources_registered": 33,
+    "warnings": 0
+  },
+  "tool": "audit_claims"
+}

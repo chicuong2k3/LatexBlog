@@ -63,6 +63,14 @@ public sealed class PostStore
         return bodies != null && bodies.TryGetValue(slug, out var body) ? body : null;
     }
 
+    public void InvalidateDbCache()
+    {
+        lock (_dbLock)
+        {
+            _dbFetchedAt = DateTime.MinValue;
+        }
+    }
+
     public string? GetHtml(string slug)
     {
         if (IsDbPost(slug)) return null;

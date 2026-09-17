@@ -1,5 +1,11 @@
 const { test, expect } = require('@playwright/test');
 
+test('head dùng Unpoly, không còn htmx', async ({ page }) => {
+  await page.goto('/');
+  expect(await page.locator('script[src*="htmx"]').count()).toBe(0);
+  expect(await page.locator('script[src*="unpoly"]').count()).toBeGreaterThan(0);
+});
+
 test('trang chủ render hero, danh sách bài và cụm thẻ', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.lb-hero h1')).toBeVisible();

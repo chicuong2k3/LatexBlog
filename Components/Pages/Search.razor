@@ -17,9 +17,16 @@
        class="lb-field"
        placeholder="Tìm kiếm bài viết…"
        autocomplete="off"
-       hx-get="/search/results"
-       hx-target="#search-results"
-       hx-swap="innerHTML"
-       hx-trigger="input changed delay:300ms"
-       hx-params="q" />
-<div id="search-results" class="lb-search-results"></div>
+       value="@CurrentQ"
+       form="lb-search-form" />
+<form id="lb-search-form" method="get" action="/search"
+      up-target="#search-results" up-autosubmit up-watch-delay="300"></form>
+<div id="search-results" class="lb-search-results">
+    <SearchResults Q="@CurrentQ" />
+</div>
+
+@code {
+    [SupplyParameterFromQuery(Name = "q")] public string? Q { get; set; }
+
+    private string CurrentQ => Q ?? "";
+}

@@ -8,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents();
-builder.Services.AddScoped<HtmlRenderer>();
 builder.Services.AddSingleton<LatexBlog.Services.PostStore>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddUnpoly(o => o.MainTargets = [".lb-main"]);
@@ -30,53 +29,16 @@ app.UseHttpsRedirection();
 // any client accepting gzip receives an empty 200 for css/js — served raw here.
 app.UseStaticFiles();
 
+// Serves fingerprinted + _content/RCL assets from the static-web-assets manifest
+// (incl. Unpoly.Blazor's unpoly.min.js). Disk files are still served by the
+// middleware above, so the dev gzip-empty-body issue stays fixed.
+app.MapStaticAssets();
+
 app.UseUnpoly();        // BEFORE UseAntiforgery. Sets Vary, and empties 204/304 bodies.
 app.UseAntiforgery();
 
-// ---- htmx fragment endpoints (fallback mode; see docs/Htmxor-verdict.md) ----
-// HtmlRenderer renders a component to an HTML string; the endpoint returns the
-// body-only fragment for htmx to swap in. All fragment requests are GET.
-app.MapGet("/posts", async ([FromServices] HtmlRenderer renderer, int? page) =>
-{
-    var html = await renderer.Dispatcher.InvokeAsync(async () =>
-    {
-        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.PostList>(
-            ParameterView.FromDictionary(new Dictionary<string, object?>
-            {
-                [nameof(LatexBlog.Components.Pages.PostList.Page)] = Math.Max(1, page ?? 1),
-            }));
-        return root.ToHtmlString().ToString();
-    });
-    return Results.Content(html, "text/html; charset=utf-8");
-});
-
-app.MapGet("/tags", async ([FromServices] HtmlRenderer renderer, string? tag) =>
-{
-    var html = await renderer.Dispatcher.InvokeAsync(async () =>
-    {
-        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.TagList>(
-            ParameterView.FromDictionary(new Dictionary<string, object?>
-            {
-                [nameof(LatexBlog.Components.Pages.TagList.Tag)] = tag ?? "",
-            }));
-        return root.ToHtmlString().ToString();
-    });
-    return Results.Content(html, "text/html; charset=utf-8");
-});
-
-app.MapGet("/search/results", async ([FromServices] HtmlRenderer renderer, string? q) =>
-{
-    var html = await renderer.Dispatcher.InvokeAsync(async () =>
-    {
-        var root = await renderer.RenderComponentAsync<LatexBlog.Components.Pages.SearchResults>(
-            ParameterView.FromDictionary(new Dictionary<string, object?>
-            {
-                [nameof(LatexBlog.Components.Pages.SearchResults.Q)] = q ?? "",
-            }));
-        return root.ToHtmlString().ToString();
-    });
-    return Results.Content(html, "text/html; charset=utf-8");
-});
+// ---- htmx fragment endpoints: deleted (P1-T4). Unpoly requests full pages
+// and extracts fragments client-side, so every route stays bookmarkable. ----
 
 // ---- RSS + sitemap ----
 app.MapGet("/rss.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>

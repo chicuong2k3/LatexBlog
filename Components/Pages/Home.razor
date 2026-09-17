@@ -49,17 +49,15 @@
             @foreach (var post in PagePosts)
             {
                 idx++;
-                <PostCard Post="post" Number="idx" />
+                <PostCard Post="post" Number="(CurrentPage - 1) * PageSize + idx" />
             }
         </div>
         @if (HasMore)
         {
             <div id="load-more" class="lb-load-more">
-                <button type="button" class="lb-button"
-                        hx-get="/posts?page=2"
-                        hx-target="#load-more"
-                        hx-swap="outerHTML"
-                        hx-push-url="false">Xem thêm</button>
+                <a class="lb-button" href="/?page=@(CurrentPage + 1)"
+                   up-target=".lb-post-list:after, #load-more:maybe"
+                   up-fallback=".lb-main">Xem thêm</a>
             </div>
         }
     </div>
@@ -81,6 +79,10 @@
 
 @code {
     private const int PageSize = 3;
+
+    [SupplyParameterFromQuery] public int? Page { get; set; }
+
+    private int CurrentPage => Math.Max(1, Page ?? 1);
 
     private string WebsiteJsonLd
     {
@@ -106,9 +108,9 @@
     private PostMeta? Latest => PostStore.All.FirstOrDefault();
 
     private IReadOnlyList<PostMeta> PagePosts =>
-        PostStore.All.Take(PageSize).ToList();
+        PostStore.All.Skip((CurrentPage - 1) * PageSize).Take(PageSize).ToList();
 
-    private bool HasMore => PostStore.All.Count > PageSize;
+    private bool HasMore => CurrentPage * PageSize < PostStore.All.Count;
 
     private sealed record TagCount(string Tag, int Count);
 

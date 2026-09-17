@@ -472,6 +472,8 @@ a { color: inherit; text-decoration: none; }
 .lb-searchmodal__mag { color: var(--muted); margin: 0 4px; flex: none; }
 .lb-searchmodal__input { border: 0; background: none; box-shadow: none; padding: 6px 8px; font-size: 1.05rem; }
 .lb-searchmodal__input:focus { box-shadow: none; }
+.lb-searchmodal__form { display: flex; flex: 1; min-width: 0; }
+.lb-searchmodal__form .lb-searchmodal__input { flex: 1; min-width: 0; }
 .lb-searchmodal__results { max-height: 56vh; overflow-y: auto; padding: 6px 18px; }
 .lb-searchmodal__results .lb-post { grid-template-columns: 40px minmax(0, 1fr); gap: 6px 14px; padding: 14px 2px; }
 .lb-searchmodal__results .lb-post-num { font-size: 1.1rem; }

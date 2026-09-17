@@ -9,7 +9,10 @@
 
   <ItemGroup>
     <PackageReference Include="ModelContextProtocol.AspNetCore" Version="2.2.0" />
-    <PackageReference Include="Unpoly.Blazor" Version="0.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unpoly.Blazor\src\Unpoly.Blazor\Unpoly.Blazor.csproj" />
   </ItemGroup>
 
   <Target Name="BuildPosts" BeforeTargets="BeforeBuild">

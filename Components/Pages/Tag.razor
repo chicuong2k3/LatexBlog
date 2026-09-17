@@ -13,10 +13,7 @@
     <div class="lb-chips">
         @foreach (var tag in AllTags)
         {
-            <a href="/tags/@tag" class="lb-tag"
-               hx-get="/tags?tag=@tag"
-               hx-target="#tag-list"
-               hx-push-url="false">@tag</a>
+            <a href="/tags/@tag" class="lb-tag">@tag</a>
         }
     </div>
 </header>

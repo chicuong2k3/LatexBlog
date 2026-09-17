@@ -8,10 +8,7 @@ public sealed record PostMeta(
 
 /// <summary>
 /// Bài viết = file (.tex) + bài trên Supabase.
-/// Cache có fail-safe + chống stampede (tương đương FusionCache mà không cần dependency):
-/// - File posts: TTL 1h.
-/// - DB posts: TTL 60s, nếu fetch lỗi → phục vụ bản cache cũ (blog vẫn chạy khi Supabase chết).
-/// - Khóa lock → chỉ 1 request fetch DB khi cache hết hạn.
+/// Không cache: mọi lượt đọc đều đi thẳng tới disk / Supabase.
 /// </summary>
 public sealed class PostStore
 {
@@ -19,15 +16,6 @@ public sealed class PostStore
     private readonly ILogger<PostStore> _logger;
     private readonly IConfiguration _config;
     private readonly HttpClient _http = new() { Timeout = TimeSpan.FromSeconds(5) };
-    private readonly Dictionary<string, string> _htmlCache = new();
-    private readonly object _dbLock = new();
-
-    private List<PostMeta>? _filePosts;
-    private DateTime _fileFetchedAt = DateTime.MinValue;
-
-    private List<PostMeta>? _dbPosts;
-    private Dictionary<string, string>? _dbBodies;
-    private DateTime _dbFetchedAt = DateTime.MinValue;
 
     public PostStore(IWebHostEnvironment env, ILogger<PostStore> logger, IConfiguration config)
     {
@@ -43,8 +31,8 @@ public sealed class PostStore
     {
         get
         {
-            var file = GetFilePosts();
-            var (db, _) = GetDbBundle();
+            var file = LoadFilePosts();
+            var (db, _) = FetchDbBundle();
             var all = new List<PostMeta>(file);
             all.AddRange(db);
             return all.OrderByDescending(p => p.Date).ToList();
@@ -59,29 +47,17 @@ public sealed class PostStore
 
     public string? GetDbBody(string slug)
     {
-        var (_, bodies) = GetDbBundle();
-        return bodies != null && bodies.TryGetValue(slug, out var body) ? body : null;
-    }
-
-    public void InvalidateDbCache()
-    {
-        lock (_dbLock)
-        {
-            _dbFetchedAt = DateTime.MinValue;
-        }
+        var (_, bodies) = FetchDbBundle();
+        return bodies.TryGetValue(slug, out var body) ? body : null;
     }
 
     public string? GetHtml(string slug)
     {
         if (IsDbPost(slug)) return null;
-        if (_htmlCache.TryGetValue(slug, out var cached))
-            return cached;
         var path = Path.Combine(GeneratedDir, "posts", $"{slug}.html");
         if (!File.Exists(path))
             return null;
-        var html = File.ReadAllText(path);
-        _htmlCache[slug] = html;
-        return html;
+        return File.ReadAllText(path);
     }
 
     public IReadOnlyList<PostMeta> Search(string q)
@@ -94,16 +70,6 @@ public sealed class PostStore
                 p.Summary.Contains(query, StringComparison.OrdinalIgnoreCase) ||
                 p.Tags.Any(t => t.Contains(query, StringComparison.OrdinalIgnoreCase)))
             .ToList();
-    }
-
-    // ---- cache file posts (TTL 1h) ----
-    private List<PostMeta> GetFilePosts()
-    {
-        if (_filePosts != null && (DateTime.UtcNow - _fileFetchedAt).TotalHours < 1)
-            return _filePosts;
-        _filePosts = LoadFilePosts();
-        _fileFetchedAt = DateTime.UtcNow;
-        return _filePosts;
     }
 
     private List<PostMeta> LoadFilePosts()
@@ -121,36 +87,22 @@ public sealed class PostStore
         return items.ToList();
     }
 
-    // ---- cache DB posts (TTL 60s, fail-safe + stampede-protected) ----
-    private (List<PostMeta>, Dictionary<string, string>) GetDbBundle()
+    private (List<PostMeta>, Dictionary<string, string>) FetchDbBundle()
     {
-        if (_dbPosts != null && (DateTime.UtcNow - _dbFetchedAt).TotalSeconds < 60)
-            return (_dbPosts, _dbBodies ?? new Dictionary<string, string>());
-        lock (_dbLock)
+        try
         {
-            if (_dbPosts != null && (DateTime.UtcNow - _dbFetchedAt).TotalSeconds < 60)
-                return (_dbPosts, _dbBodies ?? new Dictionary<string, string>());
-            try
-            {
-                var (posts, bodies) = FetchDbBundle();
-                _dbPosts = posts;
-                _dbBodies = bodies;
-                _dbFetchedAt = DateTime.UtcNow;
-                return (posts, bodies);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogWarning(ex, "Supabase posts fetch failed — serving cached (fail-safe)");
-                if (_dbPosts != null)
-                    return (_dbPosts, _dbBodies ?? new Dictionary<string, string>());
-                return (new List<PostMeta>(), new Dictionary<string, string>());
-            }
+            return FetchDbRows();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogWarning(ex, "Supabase posts fetch failed - serving file posts only");
+            return (new List<PostMeta>(), new Dictionary<string, string>());
         }
     }
 
     private sealed record DbPostRow(string Slug, string Title, string Date, string[] Tags, string Summary, string BodyMd);
 
-    private (List<PostMeta>, Dictionary<string, string>) FetchDbBundle()
+    private (List<PostMeta>, Dictionary<string, string>) FetchDbRows()
     {
         var url = _config["Supabase:Url"];
         var key = _config["Supabase:AnonKey"];

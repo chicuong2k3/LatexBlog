@@ -81,7 +81,6 @@ public sealed class McpPostTools
         var res = await Http.SendAsync(req);
         if (!res.IsSuccessStatusCode)
             return $"ERROR Supabase {(int)res.StatusCode}: {await res.Content.ReadAsStringAsync()}";
-        _store.InvalidateDbCache();
         return $"OK: đã lưu '{slug}' ({(published ? "công khai" : "nháp")}) — /posts/{slug}";
     }
 
@@ -95,7 +94,6 @@ public sealed class McpPostTools
         var body = await res.Content.ReadAsStringAsync();
         if (!res.IsSuccessStatusCode) return $"ERROR Supabase {(int)res.StatusCode}: {body}";
         if (body == "[]") return $"ERROR: không có bài DB '{slug}'.";
-        _store.InvalidateDbCache();
         return $"OK: '{slug}' → published={published}";
     }
 }

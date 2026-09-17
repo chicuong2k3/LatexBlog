@@ -22,7 +22,9 @@ Hệ hai phương trình hai ẩn không có gì mới:
 
 $$ \begin{cases} x+y=5\\ 2x-y=1. \end{cases} $$
 
-Ta đã thế, cộng và khử từ THCS. Nhưng những phép ấy đang khai thác cấu trúc gì? Và nếu có mười ẩn thì có gì thay đổi?
+Từ THCS, ta đã biết cách giải những hệ như thế này bằng phương pháp thế hoặc phương pháp cộng đại số. Trong phương pháp cộng, ta nhân các phương trình với những số thích hợp rồi cộng hoặc trừ chúng để loại bớt một ẩn.
+
+Với hai ẩn, các phép tính này còn khá dễ theo dõi. Nhưng nếu hệ có năm, mười, hay hàng trăm ẩn thì sao? Có cách nào ghi lại và tổ chức những phép khử ấy mà không phải chép đi chép lại cả phương trình không?
 
 \subsection{Phương trình tuyến tính là gì?}
 
@@ -58,27 +60,31 @@ Hai con đường có cho cùng một số không?
 
 Lấy hai vector
 $$u=(x_1,y_1),\qquad v=(x_2,y_2).$$
-Cộng chúng trước:
-$$u+v=(x_1+x_2,y_1+y_2).$$
-Đưa tổng này vào \(L(x,y)=ax+by\):
+Đây là hai vector trong mặt phẳng, mỗi vector được xác định bởi hai tọa độ. Khi cộng hai vector, ta cộng từng tọa độ tương ứng:
+$$u+v=(x_1+x_2,\;y_1+y_2).$$
+Công thức
+$$L(x,y)=ax+by$$
+nhận một vector có tọa độ \((x,y)\) rồi cho ra một số. Vì vector \(u+v\) có tọa độ
+$$(x_1+x_2,\;y_1+y_2),$$
+nên trong công thức của \(L\), ta thay
+$$x=x_1+x_2,\qquad y=y_1+y_2.$$
+Do đó
 $$L(u+v)=a(x_1+x_2)+b(y_1+y_2).$$
 Phân phối:
 $$=ax_1+by_1+ax_2+by_2.$$
 Hai nhóm đầu và sau chính là \(L(u)\) và \(L(v)\), nên
 $$L(u+v)=L(u)+L(v).$$
-Tương tự với phép nhân vô hướng. Viết \(u=(x,y)\) thì \(ku=(kx,ky)\), do đó
+Phép nhân vô hướng cũng vậy. Lấy \(u=(2,1)\) và \(L(x,y)=2x-y\). Khi đó \(L(u)=3\), còn
+$$3u=(6,3),\qquad L(3u)=L(6,3)=12-3=9=3L(u).$$
+Nhân vector với \(3\), giá trị của \(L\) cũng nhân với \(3\).
+
+Với \(u=(x,y)\) bất kỳ, \(ku=(kx,ky)\), do đó
 $$L(ku)=a(kx)+b(ky)=k(ax+by)=kL(u).$$
-Hai đẳng thức vừa có nói một điều khá cụ thể:
+Hai đẳng thức vừa có:
 
-$$ L(u+v)=L(u)+L(v) $$
+$$ L(u+v)=L(u)+L(v),\qquad L(ku)=kL(u). $$
 
-nghĩa là cộng hai vector trước rồi tính \(L\) hay tính \(L\) riêng từng vector rồi cộng, kết quả vẫn như nhau.
-
-Còn
-
-$$ L(ku)=kL(u) $$
-
-nghĩa là nhân vector với \(k\) thì giá trị của \(L\) cũng bị nhân với \(k\).
+Cộng hai vector trước rồi tính \(L\), hay tính \(L\) riêng từng vector rồi cộng: kết quả như nhau.
 
 Hai đẳng thức này là hai tính chất cơ bản của một ánh xạ tuyến tính. Ta chưa cần định nghĩa khái niệm đó ngay; ở đây chỉ cần nhớ chúng xuất phát trực tiếp từ phép tính \(ax+by\).
 
@@ -130,15 +136,45 @@ $$
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/duong-thang-oxy.svg}}
 
-Trong ba chiều,
+Trong mặt phẳng, một vector có hai tọa độ:
+
+$$ (x,y), $$
+
+và \(L\) lấy hai tọa độ ấy, nhân lần lượt với \(a,b\), rồi cộng lại:
+
+$$ L(x,y)=ax+by. $$
+
+Sang không gian ba chiều, một vector có thêm tọa độ thứ ba:
+
+$$ (x,y,z). $$
+
+Ta làm đúng cùng một việc: nhân từng tọa độ với một hệ số rồi cộng:
 
 $$ L(x,y,z)=ax+by+cz. $$
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/mat-phang-oxyz.svg}}
 
-Tổng quát,
+Chẳng hạn,
 
-$$ L(x_1,\ldots,x_n)=a_1x_1+\cdots+a_nx_n. $$
+$$ L(x,y,z)=2x-y+3z $$
+
+thì
+
+$$ L(1,2,4)=2\cdot1-2+3\cdot4=12. $$
+
+Phương trình
+
+$$ L(x,y,z)=d $$
+
+lúc này không còn mô tả một đường thẳng mà mô tả một mặt phẳng trong không gian.
+
+Không có gì trong phép tính trên phụ thuộc đặc biệt vào số \(2\) hay \(3\). Nếu một vector có \(n\) tọa độ
+
+$$ \mathbf{x}=(x_1,\ldots,x_n), $$
+
+ta viết
+
+$$ L(\mathbf{x})=a_1x_1+\cdots+a_nx_n. $$
 
 Bây giờ xét riêng trường hợp
 
@@ -158,7 +194,11 @@ Mọi bội của một nghiệm cũng là nghiệm. Đây là nguyên lý chồ
 
 Vậy tập nghiệm của \(L(\mathbf{x})=0\) được giữ nguyên khi ta cộng hai nghiệm hoặc nhân một nghiệm với một số. Trường hợp vế phải khác \(0\) không có tính chất này. Đây là lý do trường hợp vế phải bằng \(0\) đáng được đặt tên riêng.
 
-Đến đây ta đã thấy kiểu biểu thức nào đang được dùng. Bây giờ mới đặt tên chính thức cho nó.
+Những biểu thức ta gặp từ đầu bài đều có cùng một dạng:
+
+$$ a_1x_1+\cdots+a_nx_n. $$
+
+Mỗi ẩn chỉ được nhân với một hằng số, rồi các kết quả được cộng lại. Không có \(x^2\), không có \(xy\), cũng không có \(\sin x\) hay \(\sqrt{x}\).
 
 Ta gọi phương trình
 $$
@@ -182,7 +222,7 @@ gọi là \textbf{phương trình tuyến tính thuần nhất} (\emph{homogeneo
 $$ a_1\cdot0+\cdots+a_n\cdot0=0. $$
 Vế trái luôn bằng \(0\) nên \((0,\ldots,0)\) luôn là nghiệm. Nghiệm này được gọi là nghiệm tầm thường.
 
-\textbf{Ví dụ 1 (Nhận diện phương trình tuyến tính).} Trong một phương trình tuyến tính, mỗi ẩn chỉ xuất hiện với lũy thừa \(1\), được nhân với một hằng số, rồi các kết quả được cộng lại. Vì vậy \(xy\), \(x^2\), \(\sqrt{x}\), \(\sin x\) đều phá vỡ dạng này. Các phương trình sau là tuyến tính:
+\textbf{Ví dụ 1 (Nhận diện phương trình tuyến tính).} Nhìn vào một phương trình, chỉ cần hỏi: mỗi ẩn có được nhân với hằng số, rồi các kết quả được cộng lại không? \(x^2\), \(xy\), \(\sqrt{x}\), \(\sin x\) đều trả lời ``không''. Các phương trình sau là tuyến tính:
 $$
 x + 3y = 7, \quad x_1 - 2x_2 - 3x_3 + x_4 = 0,
 $$
@@ -196,9 +236,9 @@ $$
 $$
 \sin x + y = 0, \quad \sqrt{x_1} + 2x_2 + x_3 = 1.
 $$
-Với \(f(x,y)=x+3y^2\),
-$$ f(0,2)=12\neq 2f(0,1)=6. $$
-Một hàm tuyến tính bắt buộc phải thỏa \(f(ku)=kf(u)\) với mọi \(u,k\). Vì ta đã tìm được một trường hợp vi phạm, \(f\) không thể tuyến tính.
+Với \(f(x,y)=x+3y^2\):
+$$ f(0,2)=12,\qquad 2f(0,1)=2\cdot 3=6. $$
+Nếu \(f\) tuyến tính thì \(f(0,2)\) phải bằng \(2f(0,1)\). Thực tế \(12\neq 6\), nên \(f\) không thể tuyến tính.
 
 \subsection{Hệ phương trình và nghiệm}
 
@@ -213,7 +253,7 @@ $$
 \end{cases} \tag{6}
 $$
 
-Với \(m\) phương trình và \(n\) ẩn, ký hiệu hệ số của \(x_j\) trong phương trình thứ \(i\) là \(a_{ij}\). Chẳng hạn trong (6), \(a_{12}=-1\), vì \(-1\) là hệ số của \(x_2\) trong phương trình thứ nhất. Nói ngắn gọn: chỉ số thứ nhất chỉ hàng, chỉ số thứ hai chỉ cột. Xếp các hệ số của (6) thành bảng nhỏ:
+Với hai hoặc ba phương trình, ta còn có thể đặt tên riêng cho từng hệ số. Nhưng khi số phương trình và số ẩn tăng lên, cách đó nhanh chóng trở nên rối. Ta cần một ký hiệu cho câu rất đơn giản: hệ số của ẩn thứ \(j\) trong phương trình thứ \(i\). Ta gọi nó là \(a_{ij}\). Chẳng hạn trong (6), \(a_{12}=-1\), vì \(-1\) là hệ số của \(x_2\) trong phương trình thứ nhất. Chỉ số thứ nhất chỉ hàng, chỉ số thứ hai chỉ cột. Xếp các hệ số của (6) thành bảng nhỏ:
 
 $$ \begin{array}{c|ccc} & x_1 & x_2 & x_3\\ \hline \text{PT 1} & 4 & -1 & 3\\ \text{PT 2} & 3 & 1 & 9 \end{array} $$
 
@@ -282,7 +322,7 @@ $$\begin{cases} 4x - 2y = 1 \\ 16x - 8y = 4 \end{cases}$$
 $$(16x-8y)-4(4x-2y)=4-4$$
 suy ra
 $$0 = 0.$$
-Còn lại \(4x - 2y = 1\): hai đường trùng nhau. Phương trình thứ hai chỉ là \(4\) lần phương trình thứ nhất, nên nó không đưa thêm điều kiện nào. Hai phương trình thực chất mô tả cùng một đường thẳng. Giải theo \(x\): \(x = \frac{1}{4} + \frac{1}{2}y\), đặt \(y = t\) tùy ý, nghiệm là \(x = \frac{1}{4} + \frac{1}{2}t,\ y = t\).
+Còn lại \(4x - 2y = 1\): hai đường trùng nhau. Phương trình thứ hai chỉ là \(4\) lần phương trình thứ nhất, nên nó không đưa thêm điều kiện nào. Hai phương trình thực chất mô tả cùng một đường thẳng. Giải theo \(x\): \(x = \frac{1}{4} + \frac{1}{2}y\). Ở đây \(y\) chưa bị chốt giá trị: chọn \(y = t\) tùy ý thì \(x = \frac{1}{4} + \frac{1}{2}t\). Nghiệm là \(x = \frac{1}{4} + \frac{1}{2}t,\ y = t\) với \(t\in\mathbb R\).
 
 Hàng \(0=0\) không còn ràng buộc gì: mọi giá trị đều thỏa nó.
 
@@ -309,6 +349,8 @@ $$ (x,y,z)=(5+r-2s,\ r,\ s),\qquad r,s\in\mathbb R. $$
 Vì \(r\) và \(s\) được chọn độc lập, ta nói nghiệm có hai tham số tự do.
 
 \subsection{Ma trận bổ sung và phép biến đổi hàng}
+
+Phần mở đầu có để lại một câu hỏi: hệ nhiều ẩn thì khử thế nào, và ghi các phép khử ấy ra sao để không phải chép lại cả phương trình? Xét hệ ba ẩn
 
 $$ \begin{cases} x+y+2z=9\\ 2x+4y-3z=1\\ 3x+6y-5z=0. \end{cases} $$
 
@@ -354,7 +396,7 @@ $$
 
 Trong Cửu Chương Toán Thuật, các hệ số đã được xếp thành cột và khử trực tiếp trên bảng số. Khi ấy chưa có khái niệm ma trận theo nghĩa hiện đại.
 
-Mỗi phương trình giờ là một hàng. Ba phép quen thuộc trở thành ba \textbf{phép biến đổi hàng sơ cấp} (\emph{elementary row operations}):
+Khi ta bỏ tên \(x,y,z\), một phương trình chỉ còn được ghi lại bằng một hàng số. Vì vậy, những phép trước đây ta làm trên phương trình giờ trở thành những phép làm trên hàng. Ba phép quen thuộc trở thành ba \textbf{phép biến đổi hàng sơ cấp} (\emph{elementary row operations}):
 \begin{enumerate}
   \item đổi hai hàng;
   \item nhân một hàng với số khác \(0\);
@@ -381,15 +423,7 @@ Vì thế lấy đẳng thức thứ nhất trừ hai lần đẳng thức thứ
 
 $$ -3y=-9. $$
 
-Nhưng ngược lại thì sao?
-
-Từ
-
-$$ -3y=-9 $$
-
-và
-
-$$ x+y=5 $$
+Nhưng ngược lại thì sao? Giả sử một cặp số thỏa hai phương trình mới: \(-3y=-9\) và \(x+y=5\). Lấy đẳng thức thứ nhất cộng hai lần đẳng thức thứ hai:
 
 $$ (-3y)+2(x+y)=-9+10, $$
 
@@ -397,7 +431,7 @@ suy ra
 
 $$ 2x-y=1. $$
 
-Viết gọn phương trình thứ \(i\) thành \(E_i=0\), trong đó \(E_i\) là vế trái trừ vế phải.
+Ba phép trên cần được nói cho mọi hệ, không riêng hệ vừa rồi. Để khỏi viết lại cả phương trình mỗi lần, viết gọn phương trình thứ \(i\) thành \(E_i=0\), trong đó \(E_i\) là vế trái trừ vế phải.
 
 \textbf{1. Đổi hai hàng.}
 Ta chỉ đổi thứ tự hai phương trình. Một bộ số thỏa cả hai trước khi đổi thì vẫn thỏa cả hai sau khi đổi.
@@ -417,7 +451,7 @@ và toàn bộ thông tin của phương trình cũ mất đi.
 $$ E_1=0,\qquad E_2=0. $$
 Thay \(E_2=0\) bằng
 $$ E_2+kE_1=0. $$
-Nếu nghiệm thỏa hệ cũ thì hiển nhiên nó thỏa phương trình mới. Ngược lại,
+Nếu nghiệm thỏa hệ cũ thì \(E_2=0\) và \(E_1=0\), nên \(E_2+kE_1=0+k\cdot0=0\): nó cũng thỏa phương trình mới. Ngược lại,
 $$ E_2=(E_2+kE_1)-kE_1, $$
 nên từ hai phương trình mới ta lấy lại được \(E_2=0\).
 

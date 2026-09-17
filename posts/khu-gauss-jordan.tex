@@ -1,0 +1,324 @@
+%---
+% title: "Khử Gauss–Jordan: một thủ tục giải mọi hệ tuyến tính"
+% date: 2026-09-18
+% tags: [dai-so-tuyen-tinh, thpt, he-phuong-trinh, khu-gauss]
+% summary: "Bài 2 chuỗi đại số tuyến tính cho THPT: từ nhu cầu một thủ tục khử có thứ tự, dạng bậc thang và bậc thang rút gọn, thuật toán Gauss–Jordan 6 bước, đọc nghiệm và tham số, đến hệ thuần nhất và hai định lý đầu tiên."
+%---
+\documentclass[12pt,a4paper]{article}
+
+% Khối khai báo dưới đây CHỈ dùng khi biên dịch PDF trực tiếp
+% (Overleaf, pdfLaTeX). Blog không cần nó: Pandoc tự bỏ qua phần này.
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+
+\begin{document}
+
+\section{Mở đầu}
+
+Ngày 1 tháng 1 năm 1801, linh mục Giuseppe Piazzi ở Sicily ghi nhận một vật thể mờ mà ông tin là một hành tinh còn thiếu. Ông đặt tên nó là Ceres, đo được một số vị trí rồi mất dấu nó khi nó tiến gần Mặt Trời. Bài toán đặt ra: từ vài quan sát ít ỏi, tính quỹ đạo để một năm sau đón nó đúng chỗ.
+
+Người nhận bài toán ấy là Carl Friedrich Gauss, khi đó 24 tuổi. Ông đưa bài toán về một hệ phương trình (bằng kỹ thuật gọi là bình phương tối thiểu), giải hệ, và một năm sau Ceres xuất hiện đúng chòm sao ông đã dự báo.
+
+Bài 1 cho ta ba phép biến đổi hàng không làm đổi nghiệm. Nhưng với một hệ bốn, năm ẩn, khử mò rất dễ rối: khử ẩn nào trước, lấy hàng nào trừ hàng nào, dừng ở đâu thì đọc được đáp án? Cần một thủ tục làm được với \emph{mọi} hệ: cùng một thứ tự bước, không cần nghĩ giữa chừng, và điểm dừng là một dạng ma trận mà chỉ cần nhìn là thấy nghiệm.
+
+\section{Ma trận đọc được trông thế nào?}
+
+Cuối bài 1, một hệ ba ẩn đã được đưa về
+$$
+\left[ \begin{array}{ccc|c} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 3 \end{array} \right].
+$$
+Không cần giải gì thêm: hàng một đọc là \(x=1\), hàng hai là \(y=2\), hàng ba là \(z=3\). Điều gì làm ma trận này dễ đọc đến vậy? Mỗi hàng có đúng một số \(1\) đứng đầu, các số \(1\) ấy xếp thành đường chéo từ trái trên xuống phải dưới, và mọi chỗ còn lại đều là \(0\).
+
+Dạng này có tên: \textbf{dạng bậc thang rút gọn} (\emph{reduced row echelon form}). Một ma trận ở dạng này khi có đủ bốn tính chất:
+
+\begin{enumerate}
+  \item Hàng nào không toàn số \(0\) thì số khác \(0\) đầu tiên của nó là \(1\). Số \(1\) này gọi là \textbf{số 1 đầu} (\emph{leading 1}).
+  \item Mọi hàng toàn số \(0\) (nếu có) đều dồn xuống đáy ma trận.
+  \item Xét hai hàng liên tiếp đều không toàn số \(0\): số \(1\) đầu của hàng dưới nằm về phía bên phải số \(1\) đầu của hàng trên.
+  \item Mỗi cột chứa một số \(1\) đầu thì các vị trí còn lại của cột đó đều là \(0\).
+\end{enumerate}
+
+Bỏ tính chất thứ tư đi, ta được \textbf{dạng bậc thang} (\emph{row echelon form}): chỉ cần ba tính chất đầu. Mọi ma trận bậc thang rút gọn đều là bậc thang, nhưng ngược lại thì không.
+
+\textbf{Ví dụ 1.} Ba ma trận sau ở dạng bậc thang rút gọn:
+$$
+\left[ \begin{array}{ccc|c} 1 & 0 & 0 & 4 \\ 0 & 1 & 0 & 7 \\ 0 & 0 & 1 & -1 \end{array} \right],\qquad
+\left[ \begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right],\qquad
+\left[ \begin{array}{cccc|c} 0 & 1 & -2 & 0 & 1 \\ 0 & 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \end{array} \right].
+$$
+Ba ma trận sau ở dạng bậc thang nhưng chưa rút gọn (cột chứa số \(1\) đầu còn có số khác \(0\) ở trên hoặc dưới nó):
+$$
+\left[ \begin{array}{ccc|c} 1 & 4 & -3 & 7 \\ 0 & 1 & 6 & 2 \\ 0 & 0 & 1 & 5 \end{array} \right],\qquad
+\left[ \begin{array}{ccc} 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{array} \right],\qquad
+\left[ \begin{array}{cccc|c} 0 & 1 & 2 & 6 & 0 \\ 0 & 0 & 1 & -1 & 0 \\ 0 & 0 & 0 & 0 & 1 \end{array} \right].
+$$
+
+\textbf{Ví dụ 2.} Dạng bậc thang nhận ra bằng mắt: dưới mỗi số \(1\) đầu đều là \(0\). Thay các dấu \(\ast\) bằng số thật bất kỳ, các ma trận sau đều ở dạng bậc thang:
+$$
+\left[ \begin{array}{cccc} 1 & \ast & \ast & \ast \\ 0 & 1 & \ast & \ast \\ 0 & 0 & 1 & \ast \\ 0 & 0 & 0 & 1 \end{array} \right],\qquad
+\left[ \begin{array}{cccc} 1 & \ast & \ast & \ast \\ 0 & 1 & \ast & \ast \\ 0 & 0 & 1 & \ast \\ 0 & 0 & 0 & 0 \end{array} \right],\qquad
+\left[ \begin{array}{cccc} 1 & \ast & \ast & \ast \\ 0 & 1 & \ast & \ast \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{array} \right],
+$$
+$$
+\left[ \begin{array}{cccccccccc} 0 & 1 & \ast & \ast & \ast & \ast & \ast & \ast & \ast & \ast \\ 0 & 0 & 0 & 1 & \ast & \ast & \ast & \ast & \ast & \ast \\ 0 & 0 & 0 & 0 & 1 & \ast & \ast & \ast & \ast & \ast \\ 0 & 0 & 0 & 0 & 0 & 1 & \ast & \ast & \ast & \ast \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ast \end{array} \right].
+$$
+Còn ở dạng rút gọn, số \(0\) xuất hiện cả trên lẫn dưới mỗi số \(1\) đầu:
+$$
+\left[ \begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{array} \right],\qquad
+\left[ \begin{array}{cccc} 1 & 0 & 0 & \ast \\ 0 & 1 & 0 & \ast \\ 0 & 0 & 1 & \ast \\ 0 & 0 & 0 & 0 \end{array} \right],\qquad
+\left[ \begin{array}{cccc} 1 & 0 & \ast & \ast \\ 0 & 1 & \ast & \ast \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{array} \right],
+$$
+$$
+\left[ \begin{array}{cccccccccc} 0 & 1 & \ast & 0 & 0 & 0 & \ast & \ast & 0 & \ast \\ 0 & 0 & 0 & 1 & 0 & 0 & \ast & \ast & 0 & \ast \\ 0 & 0 & 0 & 0 & 1 & 0 & \ast & \ast & 0 & \ast \\ 0 & 0 & 0 & 0 & 0 & 1 & \ast & \ast & 0 & \ast \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ast \end{array} \right].
+$$
+
+\section{Đọc nghiệm từ dạng rút gọn}
+
+\textbf{Ví dụ 3.} Ma trận bổ sung của một hệ bốn ẩn \(x_1,x_2,x_3,x_4\) đã được đưa về
+$$
+\left[ \begin{array}{cccc|c} 1 & 0 & 0 & 0 & 3 \\ 0 & 1 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 5 \end{array} \right].
+$$
+Mỗi hàng đọc thẳng thành một đẳng thức: \(x_1=3\), \(x_2=-1\), \(x_3=0\), \(x_4=5\). Hệ có nghiệm duy nhất \((3,-1,0,5)\).
+
+\textbf{Ví dụ 4.} Không phải ma trận rút gọn nào cũng cho đáp án ngay. Xét ba hệ ba ẩn \(x,y,z\) đã ở dạng rút gọn.
+
+(a)
+$$
+\left[ \begin{array}{ccc|c} 1 & 0 & 0 & 0 \\ 0 & 1 & 2 & 0 \\ 0 & 0 & 0 & 1 \end{array} \right]
+$$
+Hàng cuối đọc là \(0x+0y+0z=1\). Không có \(x,y,z\) nào thỏa đẳng thức này, nên hệ vô nghiệm.
+
+(b)
+$$
+\left[ \begin{array}{ccc|c} 1 & 0 & 3 & -1 \\ 0 & 1 & -4 & 2 \\ 0 & 0 & 0 & 0 \end{array} \right]
+$$
+Hàng cuối là \(0=0\), bỏ được. Hai hàng còn lại là
+$$
+x+3z=-1,\qquad y-4z=2.
+$$
+Ở đây \(x\) và \(y\) ứng với các số \(1\) đầu, gọi là các \textbf{ẩn chính} (\emph{leading variables}). Ẩn còn lại là \(z\), gọi là \textbf{ẩn tự do} (\emph{free variable}): nó không bị phương trình nào chốt, nên được chọn tùy ý. Giải \(x,y\) theo \(z\):
+$$
+x=-1-3z,\qquad y=2+4z.
+$$
+Đặt \(z=t\) tùy ý, tập nghiệm viết thành
+$$
+x=-1-3t,\quad y=2+4t,\quad z=t.
+$$
+Cho \(t\) từng giá trị số sẽ được từng nghiệm: \(t=0\) cho \((-1,2,0)\), \(t=1\) cho \((-4,6,1)\).
+
+(c)
+$$
+\left[ \begin{array}{ccc|c} 1 & -5 & 1 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{array} \right]
+$$
+Cả hệ chỉ còn một phương trình \(x-5y+z=4\), nghĩa là tập nghiệm là một mặt phẳng. Ẩn chính là \(x\), ẩn tự do là \(y,z\). Giải \(x\) theo \(y,z\):
+$$
+x=4+5y-z.
+$$
+Đặt \(y=s\), \(z=t\) tùy ý:
+$$
+x=4+5s-t,\quad y=s,\quad z=t. \tag{1}
+$$
+Người ta thường dùng các chữ \(r,s,t,\dots\) (hoặc \(t_1,t_2,\dots\) khi nhiều ẩn) cho tham số, miễn là không trùng tên với các ẩn.
+
+Cách viết nghiệm bằng tham số như (1) có tên riêng.
+
+\textbf{Định nghĩa 1.} Nếu một hệ tuyến tính có vô số nghiệm thì một bộ công thức tham số mà từ đó, cho tham số các giá trị số cụ thể, ta thu được mọi nghiệm, gọi là \textbf{nghiệm tổng quát} (\emph{general solution}) của hệ.
+
+\section{Thủ tục khử có thứ tự}
+
+Khi ma trận bổ sung đã ở dạng rút gọn thì việc còn lại chỉ là đọc. Vấn đề là làm thế nào đưa \emph{mọi} ma trận về dạng đó bằng ba phép biến đổi hàng. Thủ tục dưới đây trả lời đúng ba câu hỏi, theo đúng thứ tự này: cột nào trước, hàng nào mang số \(1\) đầu lên, rồi khử các số còn lại trong cột ấy.
+
+Xét ma trận
+$$
+\left[ \begin{array}{ccccc|c} 0 & 0 & -2 & 0 & 7 & 12 \\ 2 & 4 & -10 & 6 & 12 & 28 \\ 2 & 4 & -5 & 6 & -5 & -1 \end{array} \right].
+$$
+
+\textbf{Bước 1.} Tìm cột trái nhất không toàn số \(0\). Ở đây hai cột đầu toàn số \(0\), cột thứ ba có \(-2,-10,-5\).
+
+\textbf{Bước 2.} Nếu cần, đổi hàng trên cùng với một hàng khác để đưa một số khác \(0\) lên đầu cột vừa tìm. Đổi hàng một và hàng hai:
+$$
+\left[ \begin{array}{ccccc|c} 2 & 4 & -10 & 6 & 12 & 28 \\ 0 & 0 & -2 & 0 & 7 & 12 \\ 2 & 4 & -5 & 6 & -5 & -1 \end{array} \right].
+$$
+
+\textbf{Bước 3.} Nếu số đầu cột là \(a\), nhân hàng trên cùng với \(1/a\) để được số \(1\) đầu. Nhân hàng một với \(1/2\):
+$$
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & -2 & 0 & 7 & 12 \\ 2 & 4 & -5 & 6 & -5 & -1 \end{array} \right].
+$$
+
+\textbf{Bước 4.} Cộng bội thích hợp của hàng trên cùng vào các hàng dưới để mọi số dưới số \(1\) đầu thành \(0\). Lấy hàng ba trừ hai lần hàng một:
+$$
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & -2 & 0 & 7 & 12 \\ 0 & 0 & 5 & 0 & -17 & -29 \end{array} \right].
+$$
+
+\textbf{Bước 5.} Che hàng trên cùng lại, quay về Bước 1 với phần ma trận còn lại. Làm đến khi cả ma trận ở dạng bậc thang. Với hai hàng còn lại, cột trái nhất khác \(0\) là cột thứ ba: nhân hàng hai với \(-1/2\) được số \(1\) đầu, rồi lấy hàng ba trừ \(5\) lần hàng hai mới:
+$$
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & 1 & 0 & -\frac72 & -6 \\ 0 & 0 & 5 & 0 & -17 & -29 \end{array} \right],\qquad
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & 1 & 0 & -\frac72 & -6 \\ 0 & 0 & 0 & 0 & \frac12 & 1 \end{array} \right].
+$$
+Che tiếp hàng hai, còn hàng ba \([0\;0\;0\;0\;\frac12\;1]\): nhân với \(2\) được số \(1\) đầu:
+$$
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & 1 & 0 & -\frac72 & -6 \\ 0 & 0 & 0 & 0 & 1 & 2 \end{array} \right].
+$$
+Ma trận đã ở dạng bậc thang.
+
+\textbf{Bước 6.} Bắt đầu từ hàng khác \(0\) cuối cùng, đi ngược lên trên, cộng bội thích hợp của mỗi hàng vào các hàng phía trên để tạo số \(0\) \emph{phía trên} các số \(1\) đầu. Lấy hàng hai cộng \(7/2\) lần hàng ba, hàng một trừ \(6\) lần hàng ba, rồi hàng một cộng \(5\) lần hàng hai mới:
+$$
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 1 & 2 \end{array} \right],\qquad
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 0 & 2 \\ 0 & 0 & 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 1 & 2 \end{array} \right],\qquad
+\left[ \begin{array}{ccccc|c} 1 & 2 & 0 & 3 & 0 & 7 \\ 0 & 0 & 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 1 & 2 \end{array} \right].
+$$
+Ma trận cuối ở dạng bậc thang rút gọn.
+
+Thủ tục trên gọi là \textbf{phép khử Gauss--Jordan} (\emph{Gauss--Jordan elimination}): pha xuôi tạo số \(0\) dưới các số \(1\) đầu, pha ngược tạo số \(0\) phía trên chúng. Nếu chỉ làm pha xuôi và dừng ở dạng bậc thang thì gọi là \textbf{phép khử Gauss} (\emph{Gaussian elimination}). Tên gọi thứ hai đến từ kỹ sư người Đức Wilhelm Jordan, người phổ biến phương pháp này trong cuốn sách trắc địa \emph{Handbuch der Vermessungskunde} năm 1888.
+
+\textbf{Ví dụ 5.} Giải bằng khử Gauss--Jordan hệ
+$$
+\begin{cases}
+x_1+3x_2-2x_3+2x_5=0 \\
+2x_1+6x_2-5x_3-2x_4+4x_5-3x_6=-1 \\
+5x_3+10x_4+15x_6=5 \\
+2x_1+6x_2+8x_4+4x_5+18x_6=6.
+\end{cases}
+$$
+Ma trận bổ sung là
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & -2 & 0 & 2 & 0 & 0 \\ 2 & 6 & -5 & -2 & 4 & -3 & -1 \\ 0 & 0 & 5 & 10 & 0 & 15 & 5 \\ 2 & 6 & 0 & 8 & 4 & 18 & 6 \end{array} \right].
+$$
+Pha xuôi: lấy hàng hai và hàng bốn trừ hai lần hàng một:
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & -2 & 0 & 2 & 0 & 0 \\ 0 & 0 & -1 & -2 & 0 & -3 & -1 \\ 0 & 0 & 5 & 10 & 0 & 15 & 5 \\ 0 & 0 & 4 & 8 & 0 & 18 & 6 \end{array} \right].
+$$
+Nhân hàng hai với \(-1\), rồi lấy hàng ba trừ \(5\) lần hàng hai mới và hàng bốn trừ \(4\) lần hàng hai mới:
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & -2 & 0 & 2 & 0 & 0 \\ 0 & 0 & 1 & 2 & 0 & 3 & 1 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 6 & 2 \end{array} \right].
+$$
+Đổi hàng ba và hàng bốn rồi nhân hàng ba mới với \(1/6\):
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & -2 & 0 & 2 & 0 & 0 \\ 0 & 0 & 1 & 2 & 0 & 3 & 1 \\ 0 & 0 & 0 & 0 & 0 & 1 & \frac13 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right].
+$$
+Pha xuôi xong vì dưới các số \(1\) đầu đã toàn số \(0\). Pha ngược: lấy hàng hai trừ \(3\) lần hàng ba, rồi lấy hàng một cộng hai lần hàng hai mới:
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & 0 & 4 & 2 & 0 & 0 \\ 0 & 0 & 1 & 2 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 1 & \frac13 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right].
+$$
+Hàng toàn số \(0\) tương ứng với phương trình \(0=0\), bỏ được. Hệ còn lại là
+$$
+x_1+3x_2+4x_4+2x_5=0,\qquad x_3+2x_4=0,\qquad x_6=\frac13. \tag{1}
+$$
+Ẩn chính là \(x_1,x_3,x_6\); ẩn tự do là \(x_2,x_4,x_5\). Giải ẩn chính theo ẩn tự do rồi đặt \(x_2=r\), \(x_4=s\), \(x_5=t\):
+$$
+x_1=-3r-4s-2t,\quad x_2=r,\quad x_3=-2s,\quad x_4=s,\quad x_5=t,\quad x_6=\frac13.
+$$
+
+\section{Hệ thuần nhất: lúc nào cũng có nghiệm}
+
+Một hệ tuyến tính gọi là \textbf{thuần nhất} (\emph{homogeneous}) nếu mọi vế phải đều bằng \(0\). Bài 1 đã chỉ ra nghiệm \((0,\ldots,0)\) luôn thỏa một hệ như vậy; nghiệm này gọi là \textbf{nghiệm tầm thường} (\emph{trivial solution}), các nghiệm còn lại (nếu có) gọi là \textbf{nghiệm không tầm thường} (\emph{nontrivial solutions}).
+
+Vì nghiệm tầm thường luôn tồn tại, một hệ thuần nhất chỉ có hai kịch bản: chỉ có nghiệm tầm thường, hoặc có thêm vô số nghiệm. Với hai phương trình hai ẩn
+$$
+a_1x+b_1y=0,\qquad a_2x+b_2y=0,
+$$
+đồ thị là hai đường thẳng cùng đi qua gốc tọa độ: hoặc chúng chỉ gặp nhau tại gốc, hoặc trùng nhau và cho vô số nghiệm.
+
+\textbf{Ví dụ 6.} Hệ thuần nhất sau có cùng các hệ số với Ví dụ 5, chỉ khác vế phải toàn số \(0\):
+$$
+\begin{cases}
+x_1+3x_2-2x_3+2x_5=0 \\
+2x_1+6x_2-5x_3-2x_4+4x_5-3x_6=0 \\
+5x_3+10x_4+15x_6=0 \\
+2x_1+6x_2+8x_4+4x_5+18x_6=0.
+\end{cases} \tag{2}
+$$
+Ma trận bổ sung của (2) giống hệt Ví dụ 5, trừ cột cuối toàn số \(0\). Một cột toàn số \(0\) không bao giờ bị biến đổi hàng làm thay đổi, nên dạng rút gọn của nó cũng giống Ví dụ 5, trừ cột cuối:
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & 0 & 4 & 2 & 0 & 0 \\ 0 & 0 & 1 & 2 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right].
+$$
+Hệ còn lại là \(x_1+3x_2+4x_4+2x_5=0\), \(x_3+2x_4=0\), \(x_6=0\). Đặt \(x_2=r\), \(x_4=s\), \(x_5=t\):
+$$
+x_1=-3r-4s-2t,\quad x_2=r,\quad x_3=-2s,\quad x_4=s,\quad x_5=t,\quad x_6=0. \tag{3}
+$$
+Cho \(r=s=t=0\) ta thu lại nghiệm tầm thường.
+
+Ví dụ 6 cho thấy hai điều. Thứ nhất, cột vế phải của hệ thuần nhất mãi toàn số \(0\) nên có thể bỏ qua khi khử. Thứ hai, hàng toàn số \(0\) tương ứng với phương trình \(0=0\), bỏ được; hệ còn lại có ít phương trình hơn hệ ban đầu.
+
+Xét một hệ thuần nhất \(n\) ẩn mà dạng rút gọn của ma trận bổ sung có \(r\) hàng khác \(0\). Mỗi hàng khác \(0\) có một số \(1\) đầu, mỗi số \(1\) đầu ứng với một ẩn chính. Vậy hệ có \(r\) ẩn chính và \(n-r\) ẩn tự do:
+$$
+x_{k_1}+(\text{theo các ẩn tự do})=0,\quad x_{k_2}+(\text{theo các ẩn tự do})=0,\quad\ldots \tag{4}
+$$
+
+\textbf{Định lý 1.} Nếu một hệ thuần nhất có \(n\) ẩn và dạng rút gọn của ma trận bổ sung có \(r\) hàng khác \(0\) thì hệ có \(n-r\) ẩn tự do.
+
+\emph{Chứng minh.} Mỗi hàng khác \(0\) đóng góp đúng một số \(1\) đầu theo tính chất 3 của dạng bậc thang, và mỗi số \(1\) đầu chốt đúng một ẩn chính. Còn lại \(n-r\) ẩn không bị chốt, tức là tự do. \qed
+
+Định lý 1 kéo theo một hệ quả quan trọng. Một hệ thuần nhất \(m\) phương trình \(n\) ẩn có tối đa \(m\) hàng khác \(0\), tức là \(r\le m\). Nếu \(m<n\) thì \(r<n\), nên \(n-r\ge1\): hệ có ít nhất một ẩn tự do, mà ẩn tự do nhận giá trị tùy ý nên hệ có vô số nghiệm.
+
+\textbf{Định lý 2.} Một hệ thuần nhất mà số ẩn nhiều hơn số phương trình thì có vô số nghiệm.
+
+Nhìn lại Ví dụ 6: bốn phương trình, sáu ẩn. Chưa cần khử cũng biết trước nó có vô số nghiệm.
+
+\section{Thế ngược: chỉ khử xuôi rồi tính từ dưới lên}
+
+Khử Gauss--Jordan làm cả pha xuôi lẫn pha ngược. Với hệ lớn giải bằng máy, pha ngược tốn thêm khoảng một nửa số phép tính mà không cần thiết: chỉ cần pha xuôi tới dạng bậc thang, rồi tính ngược từ hàng cuối lên, gọi là \textbf{thế ngược} (\emph{back-substitution}).
+
+\textbf{Ví dụ 7.} Dạng bậc thang (chưa rút gọn) của hệ ở Ví dụ 5 là
+$$
+\left[ \begin{array}{cccccc|c} 1 & 3 & -2 & 0 & 2 & 0 & 0 \\ 0 & 0 & 1 & 2 & 0 & 3 & 1 \\ 0 & 0 & 0 & 0 & 0 & 1 & \frac13 \\ 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array} \right],
+$$
+tức là
+$$
+x_1+3x_2-2x_3+2x_5=0,\qquad x_3+2x_4+3x_6=1,\qquad x_6=\frac13.
+$$
+\emph{Bước 1.} Giải mỗi phương trình theo ẩn chính của nó:
+$$
+x_1=-3x_2+2x_3-2x_5,\qquad x_3=1-2x_4-3x_6,\qquad x_6=\frac13.
+$$
+\emph{Bước 2.} Từ phương trình cuối thế ngược lên trên. Thế \(x_6=\frac13\) vào phương trình giữa:
+$$
+x_3=-2x_4,\qquad x_6=\frac13.
+$$
+Thế \(x_3=-2x_4\) vào phương trình đầu:
+$$
+x_1=-3x_2-4x_4-2x_5.
+$$
+\emph{Bước 3.} Đặt ẩn tự do \(x_2=r\), \(x_4=s\), \(x_5=t\):
+$$
+x_1=-3r-4s-2t,\quad x_2=r,\quad x_3=-2s,\quad x_4=s,\quad x_5=t,\quad x_6=\frac13,
+$$
+đúng đáp án của Ví dụ 5.
+
+\textbf{Ví dụ 8.} Ba ma trận sau đều ở dạng bậc thang nhưng chưa rút gọn. Đọc trực tiếp sự tồn tại và duy nhất nghiệm:
+
+(a)
+$$
+\left[ \begin{array}{cccc|c} 1 & -3 & 7 & 2 & 5 \\ 0 & 1 & 2 & -4 & 1 \\ 0 & 0 & 1 & 6 & 9 \\ 0 & 0 & 0 & 0 & 1 \end{array} \right]
+$$
+Hàng cuối là \(0=1\): hệ vô nghiệm.
+
+(b)
+$$
+\left[ \begin{array}{cccc|c} 1 & -3 & 7 & 2 & 5 \\ 0 & 1 & 2 & -4 & 1 \\ 0 & 0 & 1 & 6 & 9 \\ 0 & 0 & 0 & 0 & 0 \end{array} \right]
+$$
+Hàng cuối là \(0=0\), bỏ được. Ba ẩn \(x_1,x_2,x_3\) ứng với số \(1\) đầu là ẩn chính, \(x_4\) tự do: hệ có vô số nghiệm.
+
+(c)
+$$
+\left[ \begin{array}{cccc|c} 1 & -3 & 7 & 2 & 5 \\ 0 & 1 & 2 & -4 & 1 \\ 0 & 0 & 1 & 6 & 9 \\ 0 & 0 & 0 & 1 & 0 \end{array} \right]
+$$
+Hàng cuối cho \(x_4=0\). Thế lên hàng ba được \(x_3=9\), thế tiếp lên hàng hai được \(x_2=-17\), thế lên hàng đầu được \(x_1=-109\). Hệ có nghiệm duy nhất.
+
+\section{Mấy sự thật về dạng bậc thang}
+
+Ba sự thật sau nên biết, dù bài này không chứng minh điều đầu tiên. Mọi ma trận đều có dạng rút gọn duy nhất: dù khử theo thứ tự nào, kết quả cuối cùng vẫn là một. Dạng bậc thang (chưa rút gọn) thì không duy nhất. Nhưng mọi dạng bậc thang của cùng một ma trận đều có cùng số hàng \(0\) và các số \(1\) đầu luôn nằm cùng vị trí; những vị trí ấy gọi là \textbf{vị trí chốt} (\emph{pivot positions}), cột chứa chúng gọi là \textbf{cột chốt} (\emph{pivot columns}).
+
+\textbf{Ví dụ 9.} Dạng bậc thang của ma trận ở mục thuật toán là
+$$
+\left[ \begin{array}{ccccc|c} 1 & 2 & -5 & 3 & 6 & 14 \\ 0 & 0 & 1 & 0 & -\frac72 & -6 \\ 0 & 0 & 0 & 0 & 1 & 2 \end{array} \right].
+$$
+Các số \(1\) đầu ở vị trí (hàng 1, cột 1), (hàng 2, cột 3), (hàng 3, cột 5). Đó là các vị trí chốt; các cột chốt là cột 1, 3, 5. Nếu đây là ma trận bổ sung của một hệ thì cột chốt chỉ đúng các ẩn chính: ở Ví dụ 5, cột chốt là 1, 3, 6 và ẩn chính là \(x_1,x_3,x_6\).
+
+Giữa lý thuyết và máy tính có một khoảng cách: máy tính xấp xỉ số nên mỗi phép tính đều có sai số làm tròn, và sai số có thể phình to qua hàng nghìn bước đến mức đáp án vô dụng. Những thuật toán như vậy gọi là \textbf{không ổn định} (\emph{unstable}). Tránh sai số làm tròn là cả một chuyên ngành (giải tích số); ở đây chỉ cần nhớ một hệ quả thực tế của nó: khử Gauss--Jordan tốn hơn khử Gauss khoảng một nửa số phép tính, nên các chương trình giải hệ lớn thường chỉ khử xuôi rồi thế ngược.
+
+Bài 1 hỏi vì sao được phép khử; bài này trả lời khử theo thứ tự nào để mọi hệ đều xong. Ma trận bổ sung đi vào thủ tục, dạng rút gọn đi ra, và ở giữa không còn chỗ nào cần đoán mò.
+\end{document}

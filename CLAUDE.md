@@ -1532,3 +1532,724 @@ Bài 1 — Hệ phương trình: thứ các em đã học từ THCS, nhưng có 
 Điểm quan trọng là nội dung bên trong nên làm cho cái tên có cơ sở: không chỉ nói trường học dạy sai, mà lấy một thứ học sinh từng phải nhớ → khôi phục câu hỏi ban đầu → xây trực giác → lịch sử → tự dựng lại công thức → rồi cho thấy cách nhìn mới mạnh hơn ở đâu.
 
 Như vậy “Forget School” trở thành lời hứa về phương pháp học, chứ không chỉ là clickbait.
+
+## 48. Viết như một người có điều muốn nói, không phải một hệ thống có nội dung cần truyền đạt
+
+Trước khi viết một đoạn, đừng hỏi:
+
+> "Tôi cần truyền đạt những thông tin nào?"
+
+Hãy hỏi:
+
+> "Tôi đang cố nói điều gì?"
+
+Hai câu hỏi này khác nhau.
+
+AI thường xử lý một đoạn như một container chứa đủ các ý cần thiết. Người viết thật thường có một **ý chính đang thúc mình viết**, rồi lựa chọn chi tiết phục vụ cho ý đó.
+
+Mỗi đoạn nên có một lực kéo.
+
+Ví dụ:
+
+* Tôi muốn chỉ ra công thức này thực ra rất tự nhiên.
+* Tôi không thích cách sách thường giới thiệu khái niệm này.
+* Có một quan sát nhỏ ở đây mà học sinh thường bỏ qua.
+* Tôi muốn người đọc thấy hai bài tưởng khác nhau thực ra là một.
+* Phép tính này đẹp hơn vẻ ngoài của nó.
+
+Nếu bản thân tác giả không có gì muốn nói ngoài "giải thích khái niệm X", đoạn văn rất dễ trở thành văn AI.
+
+---
+
+# 49. Có quan điểm
+
+Người viết thật lựa chọn.
+
+Không phải mọi điều đúng đều đáng nói.
+
+Không phải mọi định nghĩa đều cần giải thích ngang nhau.
+
+Không phải mọi lịch sử đều đáng kể.
+
+Không phải mọi ví dụ đều phải giữ.
+
+Tác giả được phép nghĩ:
+
+> Định nghĩa này không thú vị lắm; nói nhanh thôi.
+
+> Chỗ này mới là phần đáng dừng lại.
+
+> Công thức này thường bị dạy rất tệ.
+
+> Ví dụ thứ hai không thêm gì, bỏ.
+
+> Lịch sử ở đây thú vị hơn bản thân ký hiệu.
+
+Một văn bản không có thứ tự ưu tiên thường nghe như tài liệu tổng hợp của AI.
+
+---
+
+# 50. Biết bỏ
+
+Kỹ năng viết quan trọng không kém kỹ năng đặt câu là kỹ năng **không viết câu đó**.
+
+Sau mỗi đoạn, thử xóa:
+
+* câu mở đoạn;
+* câu kết đoạn;
+* câu giải thích sau công thức;
+* câu tổng kết sau ví dụ;
+* câu chuyển ý.
+
+Nếu đoạn vẫn hiểu được, thường nên để nó bị xóa.
+
+Đặc biệt nghi ngờ những câu như:
+
+> Điều này cho thấy...
+
+> Như vậy ta thấy...
+
+> Có thể nhận ra rằng...
+
+> Điều quan trọng ở đây là...
+
+> Đây chính là...
+
+Rất nhiều lần, công thức ngay trước đó đã nói xong rồi.
+
+---
+
+# 51. Tin người đọc
+
+Không giải thích lại một ý chỉ vì sợ người đọc bỏ lỡ.
+
+Không nói:
+
+> Ta thấy \(0=-6\), đây là một mâu thuẫn vì 0 không thể bằng -6, do đó hệ không có nghiệm.
+
+Chỉ cần:
+
+> Hàng cuối cho \(0=-6\). Hệ vô nghiệm.
+
+Người đọc THPT không cần được bảo vệ khỏi mọi bước suy luận nhỏ.
+
+Viết quá đầy đủ thường làm mất nhịp suy nghĩ.
+
+---
+
+# 52. Không viết theo nhịp giáo viên giả
+
+Tránh liên tục:
+
+> Ta hãy...
+
+> Thử...
+
+> Bây giờ hãy...
+
+> Các em có thể thấy...
+
+> Hãy để ý...
+
+> Hãy tưởng tượng...
+
+Người thật không đứng cạnh độc giả và điều khiển mắt họ mỗi hai câu.
+
+Có thể viết trực tiếp:
+
+> Với \(c=0\), một chuyện khác xảy ra.
+
+hoặc đơn giản:
+
+$$
+L(x)=0.
+$$
+
+Rồi tiếp tục tính.
+
+---
+
+# 53. Không phải đoạn nào cũng cần một arc
+
+AI rất thích cấu trúc:
+
+**hook → question → explanation → aha → conclusion.**
+
+Không dùng cấu trúc này lặp đi lặp lại.
+
+Một đoạn có thể chỉ là:
+
+$$
+\text{định nghĩa}
+$$
+
+Một đoạn khác:
+
+$$
+\text{một phép tính}
+$$
+
+Một đoạn khác chỉ có một nhận xét:
+
+> Điều kiện \(b=0\) quan trọng hơn vẻ ngoài của nó.
+
+Rồi sang đoạn tiếp.
+
+Nhịp không đều làm văn bản giống tư duy thật hơn.
+
+---
+
+# 54. Viết câu vì nó cần tồn tại
+
+Với mỗi câu, hỏi:
+
+> Nếu bỏ câu này, người đọc mất gì?
+
+Các câu chỉ có chức năng:
+
+* làm mềm transition;
+* nhắc lại điều vừa nói;
+* tạo cảm giác trôi chảy;
+* tạo cảm giác "hay";
+* tuyên bố rằng điều vừa nói quan trọng,
+
+thường nên bỏ.
+
+Văn tốt không cần phải trơn tuyệt đối.
+
+---
+
+# 55. Chấp nhận bước chuyển hơi gãy
+
+Người viết thật đôi khi đổi hướng trực tiếp:
+
+> Với \(n>3\), hình học không còn giúp nhiều.
+>
+> Bây giờ xét \(b=0\).
+
+Không nhất thiết phải có:
+
+> Sau khi đã mở rộng cách nhìn của mình tới nhiều chiều, ta có thể quay lại xem xét một trường hợp đặc biệt nhưng rất quan trọng...
+
+Câu sau mượt hơn nhưng tệ hơn.
+
+---
+
+# 56. Cụ thể trước, trừu tượng sau
+
+Người viết có kinh nghiệm ít dùng những danh từ chung chung như:
+
+* cấu trúc;
+* bản chất;
+* góc nhìn;
+* ý tưởng;
+* mối liên hệ;
+* tính chất sâu sắc;
+* công cụ mạnh mẽ;
+
+nếu có thể chỉ ra thứ cụ thể.
+
+Thay:
+
+> Hai phương trình có cùng một cấu trúc.
+
+bằng:
+
+> Cả hai đều lấy tọa độ, nhân với các hệ số rồi cộng lại.
+
+Thay:
+
+> Phép chiếu cho một góc nhìn hình học sâu sắc.
+
+bằng:
+
+> Tích vô hướng với vector đơn vị đo đúng độ dài của cái bóng theo hướng đó.
+
+Cho người đọc **thấy**, rồi nếu cần mới đặt tên.
+
+---
+
+# 57. Danh từ trừu tượng là thứ phải kiếm được
+
+Các từ như:
+
+> cấu trúc, tuyến tính, không gian, độc lập, chiều, ánh xạ
+
+không nên xuất hiện quá sớm chỉ vì chúng chính xác.
+
+Đầu tiên phải có đủ ví dụ để từ đó mang nghĩa.
+
+Một thuật ngữ được đưa vào trước khi người đọc cảm thấy cần nó sẽ giống một mục trong giáo trình.
+
+Một thuật ngữ xuất hiện sau ba trang quan sát đôi khi chỉ cần một câu.
+
+---
+
+# 58. Ưu tiên động từ
+
+AI thích danh từ hóa:
+
+> việc thực hiện phép biến đổi dẫn đến sự đơn giản hóa của hệ.
+
+Người viết tốt thường viết:
+
+> Biến đổi vài hàng, hệ ngắn đi ngay.
+
+Thay:
+
+> việc áp dụng phép chiếu cho phép xác định...
+
+bằng:
+
+> chiếu vector xuống hướng này, ta được...
+
+Động từ làm toán học chuyển động.
+
+---
+
+# 59. Dùng từ bình thường khi từ bình thường đủ tốt
+
+Không dùng:
+
+> tiến hành;
+> thực hiện;
+> xem xét;
+> tiến tới;
+> cho phép ta;
+> từ đó suy ra rằng;
+> trong trường hợp này;
+> đối với;
+> nhằm mục đích;
+
+nếu có thể dùng:
+
+> làm;
+> xét;
+> lấy;
+> nên;
+> vì;
+> khi;
+> với.
+
+Người viết toán giỏi không cần ngôn ngữ trịnh trọng để làm toán trông nghiêm túc.
+
+---
+
+# 60. Nhịp câu phải thay đổi tự nhiên
+
+Không để tất cả câu có độ dài tương tự.
+
+Sau một đoạn tính dài, một câu ngắn có thể mạnh:
+
+> Hết.
+
+> Không thể.
+
+> Đây là điểm mấu chốt.
+
+Nhưng đừng cố tạo một câu punchline sau mọi đoạn.
+
+Ngược lại, một ý khó có thể cần một câu dài hơn nếu các mệnh đề thật sự phụ thuộc nhau.
+
+Nhịp phải theo ý nghĩ, không theo template.
+
+---
+
+# 61. Đừng cố tỏ ra thông minh
+
+Xóa các câu được viết chủ yếu để nghe hay:
+
+> Đại số chẳng quan tâm.
+
+> Hình học phản bội ta.
+
+> Ta đã bước qua cánh cửa của đại số tuyến tính.
+
+> Đây là nơi mọi thứ bắt đầu trở nên thú vị.
+
+Một câu đẹp chỉ đáng giữ nếu nó nói chính xác một điều khó nói ngắn hơn.
+
+Không săn quote.
+
+---
+
+# 62. Có thể hơi vụng nếu đúng giọng
+
+Người viết thật đôi khi viết:
+
+> Cái này nhìn hơi kỳ.
+
+> Tạm thời cứ coi \(L\) là một cái máy nhận vector và trả ra số.
+
+> Ta chưa cần quan tâm tên gọi.
+
+> Chỗ này hơi phiền vì ký hiệu.
+
+Những câu như vậy có thể tự nhiên nếu phù hợp với giọng tác giả.
+
+Không tự động polish chúng thành:
+
+> Có thể ban đầu khái niệm này có vẻ chưa quen thuộc.
+
+Câu sau sạch hơn nhưng chết hơn.
+
+---
+
+# 63. Giữ những dấu vết của suy nghĩ
+
+Một người đang giải thích toán đôi khi tự sửa chính mình:
+
+> Ta có thể gọi \((x,y)\) là một điểm. Nhưng ở đây coi nó như vector sẽ tiện hơn.
+
+Hoặc:
+
+> Nói "đường thẳng" ở đây hơi che mất điều ta cần. Thứ quan trọng là vế trái.
+
+Đây không phải lỗi.
+
+Nó cho thấy tác giả đang lựa chọn cách nhìn ngay trước mắt người đọc.
+
+Đừng lạm dụng, nhưng cũng đừng xóa sạch chúng khỏi văn bản.
+
+---
+
+# 64. Một đoạn văn không cần cân đối
+
+AI thích các cấu trúc cân:
+
+> thứ nhất..., thứ hai..., thứ ba...
+
+hoặc:
+
+> không chỉ A mà còn B, từ đó C.
+
+Người viết thật có thể dành tám dòng cho một ý và một câu cho ý kế tiếp vì ý đầu quan trọng hơn.
+
+Đừng ép mọi phần có cùng trọng lượng.
+
+---
+
+# 65. Cho phép thiên vị
+
+Nếu tác giả thích một cách chứng minh hơn cách khác, có thể nói:
+
+> Cách này dài hơn, nhưng tôi thích nó vì nhìn được hình học phía sau.
+
+> Có một lời giải ngắn hơn bằng công thức, nhưng nó che mất điều đang xảy ra.
+
+> Tôi sẽ không dùng định thức ở đây; nó giải được bài nhưng quá sớm.
+
+Một giọng có lựa chọn sẽ giống con người hơn một giọng luôn trung lập và toàn diện.
+
+---
+
+# 66. Đừng chứng minh mình đang dạy tốt
+
+Không viết những câu như:
+
+> Thay vì học thuộc, ta sẽ hiểu bản chất.
+
+> Ta sẽ không chấp nhận công thức có sẵn.
+
+> Ở đây ta ưu tiên trực giác.
+
+Nếu bài thật sự làm được những điều đó, người đọc tự thấy.
+
+Triết lý viết nên nằm trong cấu trúc bài, không nằm trong khẩu hiệu lặp lại.
+
+---
+
+# 67. Dùng ví dụ vì nó có tính cách riêng
+
+Không tạo ví dụ chỉ để "minh họa định nghĩa".
+
+Một ví dụ tốt nên làm ít nhất một việc:
+
+* gây bất ngờ;
+* phá một trực giác sai;
+* tạo nhu cầu cho khái niệm mới;
+* làm lộ cấu trúc;
+* cho một mẹo có thể tổng quát;
+* cho thấy giới hạn của một phương pháp.
+
+Nếu ví dụ chỉ thay \(a,b,c\) bằng vài con số rồi xác nhận định nghĩa đúng, cân nhắc bỏ.
+
+---
+
+# 68. Không đóng mọi vòng lặp
+
+Có thể để lại một câu:
+
+> Tại sao không thể có đúng hai nghiệm? Ta sẽ quay lại chuyện này khi nói về không gian nghiệm.
+
+Không cần giải mọi thứ ngay khi nó xuất hiện.
+
+Một tác giả thật có thể để một ý treo lại nếu biết nó sẽ trở lại.
+
+AI thường có ám ảnh phải hoàn tất mọi ý trong cùng đoạn.
+
+---
+
+# 69. Lịch sử phải có chi tiết người thật sẽ nhớ
+
+Không:
+
+> Khái niệm này có một lịch sử lâu đời.
+
+Mà:
+
+> Trong *Cửu Chương Toán Thuật*, các hệ số được đặt thành cột trên bàn tính. Người ta đã khử trên những cột số ấy trước khi từ "ma trận" tồn tại.
+
+Một chi tiết cụ thể có giá trị hơn ba câu tóm tắt lịch sử.
+
+Nhưng chỉ kể khi chi tiết đó thực sự thú vị hoặc giải thích cách ý tưởng hình thành.
+
+---
+
+# 70. Đọc thành tiếng
+
+Sau khi viết xong, đọc đoạn văn thành tiếng.
+
+Đánh dấu những câu mà một người bình thường sẽ không nói được trong một hơi hoặc nghe như đang thuyết trình.
+
+Đặc biệt để ý:
+
+* quá nhiều mệnh đề cân nhau;
+* quá nhiều dấu hai chấm;
+* quá nhiều "vì vậy", "do đó", "từ đó";
+* câu nào cũng hoàn chỉnh quá đẹp;
+* câu nào cũng kết thúc bằng một insight.
+
+Văn viết không phải văn nói, nhưng nếu đọc lên hoàn toàn không có hơi người thì thường có vấn đề.
+
+---
+
+# 71. Tạo idiolect — giọng riêng của tác giả
+
+Một tác giả thật có những thói quen riêng.
+
+Có thể là:
+
+* thích câu ngắn;
+* thỉnh thoảng dùng "cái hay là...";
+* không ngại nói "phiền";
+* thích đặt hai công thức cạnh nhau rồi để người đọc so;
+* thích lịch sử toán;
+* ghét học thuộc công thức;
+* thường tìm hình học phía sau đại số;
+* có xu hướng hỏi "nếu bỏ thứ này đi thì sao?".
+
+Giữ một vài thói quen nhất quán.
+
+Nhưng đừng biến chúng thành template bắt buộc.
+
+Idiolect phải xuất hiện tự nhiên, không phải mỗi 500 chữ lại chèn một câu đặc trưng.
+
+---
+
+# 72. Đừng viết cho "học sinh THPT" như một nhân vật tưởng tượng
+
+Viết cho một người cụ thể đủ thông minh để theo dõi.
+
+Không liên tục:
+
+> các em đã biết;
+> các em có thể thấy;
+> các em hãy nhớ;
+> với học sinh THPT...
+
+Hãy nói về toán.
+
+Người đọc tự biết mình là ai.
+
+Chỉ nhắc kiến thức nền khi nó thật sự cần thiết.
+
+---
+
+# 73. Một người thật có thể không hoàn toàn nhất quán về độ trang trọng
+
+Có đoạn:
+
+> Xét hệ sau.
+
+Có đoạn:
+
+> Hệ này có gì đó không ổn.
+
+Có đoạn:
+
+> Vế trái giống hệt nhau tới một hằng số.
+
+Sự dao động nhỏ này tự nhiên.
+
+Đừng normalize toàn bộ văn bản thành một register duy nhất.
+
+---
+
+# 74. Sửa theo tai, không chỉ theo rule
+
+Rule chỉ giúp phát hiện vấn đề.
+
+Ở vòng sửa cuối, không hỏi:
+
+> Câu này có vi phạm rule nào không?
+
+Hỏi:
+
+> Tôi có thật sự viết câu này không?
+
+Nếu đọc một câu và cảm giác:
+
+> "Đúng, nhưng tôi chẳng bao giờ nói như vậy."
+
+viết lại.
+
+Đây là bước mà checklist không thay thế được.
+
+---
+
+# 75. Anti-LLM pass
+
+Sau khi bài đã hoàn thành, làm riêng một vòng sửa chỉ để phá cấu trúc do LLM tạo ra.
+
+Tìm:
+
+* paragraph nào cũng dài tương đương;
+* phần nào cũng có mở–thân–kết;
+* câu hỏi tu từ rồi lập tức tự trả lời;
+* câu tổng kết sau mỗi phép tính;
+* một insight ở cuối mỗi đoạn;
+* mỗi khái niệm đều có motivation;
+* mọi transition đều mượt;
+* mọi ví dụ đều được giải thích đầy đủ;
+* các cặp đối lập quá đẹp;
+* các bộ ba quá cân;
+* những câu "nghe hay" nhưng không thêm toán.
+
+Sau đó cố ý làm văn bản bớt hoàn hảo:
+
+* xóa transition;
+* để công thức đứng một mình;
+* rút đoạn ba câu còn một câu;
+* đổi một paragraph thành một nhận xét ngắn;
+* để một câu hỏi chưa trả lời;
+* để một ví dụ tự kết thúc ở phép tính;
+* bỏ một đoạn tổng kết.
+
+Mục tiêu không phải tạo lỗi.
+
+Mục tiêu là loại bỏ **sự hoàn hảo thống kê của văn bản sinh bởi máy**.
+
+---
+
+# 76. Human-writing test
+
+Trước khi chấp nhận một đoạn, hỏi:
+
+> Tác giả có thực sự có điều muốn nói ở đây không?
+
+> Có câu nào tồn tại chỉ để làm đoạn văn trôi chảy không?
+
+> Có chỗ nào tôi đang giải thích vì AI sợ người đọc không hiểu không?
+
+> Tôi có đang nói lại thứ công thức vừa nói không?
+
+> Câu nào là ý kiến riêng của tác giả?
+
+> Câu nào có thể chỉ xuất hiện trong chính bài này, chứ không thể copy sang một bài toán khác?
+
+> Có chi tiết cụ thể nào khiến đoạn văn có đời sống riêng không?
+
+> Nhịp của đoạn có quá đều không?
+
+> Nếu tên chủ đề bị thay bằng một chủ đề khác, prose này có vẫn dùng được không?
+
+Nếu câu cuối là "có", đoạn đó rất có thể là AI slop.
+
+---
+
+# 77. Nguyên tắc cuối cùng
+
+Đừng cố:
+
+> **viết giống con người.**
+
+Hãy cố:
+
+> **có một suy nghĩ thật, rồi viết đúng suy nghĩ ấy.**
+
+Giọng người không đến từ việc thêm tiếng lóng, câu ngắn, lỗi nhỏ hay vài nhận xét cá tính.
+
+Nó đến từ lựa chọn:
+
+**thứ gì đáng nói, thứ gì không; chỗ nào dừng, chỗ nào đào sâu; điều gì tác giả tin là quan trọng; và điều gì tác giả sẵn sàng bỏ qua.**
+
+AI slop bắt đầu khi mọi thứ đều được đối xử như nhau.
+
+Văn của người bắt đầu khi tác giả lựa chọn.
+
+## 78. Chuyển ý bằng câu hỏi chưa trả lời
+
+Nếu hai đoạn cần một câu như ``Tiếp theo chúng ta sẽ...'' để nối với nhau, trước tiên hãy kiểm tra xem có thể khiến đoạn trước tự sinh ra câu hỏi của đoạn sau hay không.
+
+Transition tốt nhất trong toán học không phải một câu chuyển ý. Nó là một câu hỏi chưa được trả lời.
+
+## 79. Bài kiểm tra cắt 30%
+
+Sau khi viết xong, thử xóa 30% prose nhưng giữ nguyên toàn bộ công thức. Nếu toán vẫn hiểu được, phần prose bị xóa nhiều khả năng là lời dẫn thừa.
+
+## 80. Học giọng từ đoạn tự nhiên nhất trong chính văn bản
+
+Nếu một đoạn có ``giọng tác giả'', hãy học giọng từ những đoạn tác giả viết tự nhiên nhất trong chính văn bản, thay vì cố tạo giọng người từ một bộ quy tắc chung.
+
+Đó mới là cách thoát khỏi vòng ``AI sửa AI''.
+
+## 81. Không cắt lời giải thích cần thiết
+
+Không cắt lời giải thích cần thiết. Cắt lời giải thích không trả lời một câu hỏi nào.
+
+Mỗi đoạn prose phải trả lời ít nhất một câu hỏi thật:
+
+Ta đang làm gì?
+Vì sao nghĩ đến việc đó?
+Vì sao phép biến đổi này hợp lệ?
+Công thức này từ đâu ra?
+Ký hiệu này giải quyết bất tiện gì?
+Điều gì thay đổi, điều gì được giữ nguyên?
+Nếu bỏ điều kiện này thì chuyện gì hỏng?
+
+Nếu một đoạn trả lời được một trong những câu ấy, được phép dài.
+
+Nếu nó chỉ nói ``điều này rất quan trọng'', ``ta vừa có một góc nhìn mới'', ``đây là một cấu trúc sâu sắc'', thì xóa.
+
+## 82. Không kết luận thay người đọc
+
+Khi một đoạn đã có công thức hoặc ví dụ đủ để người đọc tự rút ra kết luận, đừng viết kết luận thay họ.
+
+Đừng sợ một đoạn kết thúc bằng công thức, một câu hỏi, hay thậm chí kết thúc đột ngột. Người viết thật không đóng mọi cánh cửa trước khi sang phòng kế tiếp.
+
+## 83. Không viết câu bảo đảm ý nghĩa
+
+Không thêm câu chỉ để bảo đảm người đọc ``hiểu ý nghĩa''. Nếu người đọc có thể tự rút ra ý nghĩa từ phép tính vừa thấy, im lặng.
+
+Người viết thật không liên tục đứng sau lưng độc giả và nói: ``điều này có nghĩa là...''.
+
+## 84. Cho phép prose không đồng đều
+
+Đừng sợ prose không đồng đều. Một chỗ có thể giải thích 6 dòng vì nó khó; chỗ khác chỉ cần công thức. Nếu mọi khái niệm đều nhận đúng một đoạn giải thích, một ví dụ và một kết luận, đó là cấu trúc của máy chứ không phải của người viết.
+
+## 85. Bài đầu tiên gặp một ý tưởng không được nhảy bước
+
+Bài đầu tiên gặp một ý tưởng: không được nhảy bước chỉ vì bước đó ``dễ''.
+
+Một bước chỉ được bỏ khi học sinh đã thấy nó đủ nhiều lần để tự lấp vào.
+
+Đặc biệt không bỏ:
+
+một biến đổi ký hiệu mới;
+lý do một phép biến đổi hợp lệ;
+lý do một điều kiện tồn tại;
+bước đầu tiên của một thuật toán;
+chỗ chuyển từ trực giác sang định nghĩa.
+
+Đây khác hẳn ``giải thích mọi thứ''. Không cần giải thích \(2+3=5\), nhưng cần giải thích tại sao \(R_2\leftarrow R_2-2R_1\) không đổi nghiệm, vì đó chính là nền móng của cả Gaussian elimination.

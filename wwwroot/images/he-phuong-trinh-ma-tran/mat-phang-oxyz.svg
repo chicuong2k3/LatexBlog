@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs>
+    <marker id="ah-slate3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <!-- trục Ox, Oy, Oz -->
+  <line x1="190" y1="300" x2="372" y2="358" stroke="#64748b" stroke-width="2" marker-end="url(#ah-slate3)"/>
+  <line x1="190" y1="300" x2="334" y2="278" stroke="#64748b" stroke-width="2" marker-end="url(#ah-slate3)"/>
+  <line x1="190" y1="300" x2="190" y2="120" stroke="#64748b" stroke-width="2" marker-end="url(#ah-slate3)"/>
+  <text x="380" y="368" fill="#64748b" font-style="italic">x</text>
+  <text x="340" y="270" fill="#64748b" font-style="italic">y</text>
+  <text x="198" y="122" fill="#64748b" font-style="italic">z</text>
+  <text x="172" y="316" fill="#64748b" font-style="italic">O</text>
+  <!-- mặt phẳng x + y + z = 3: tam giác qua 3 điểm cắt trục -->
+  <polygon points="361,354 325,279 190,147" fill="#fbcfe8" opacity="0.55" stroke="#e63e8f" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="392" y="220" fill="#be185d" font-weight="bold">x + y + z = 3</text>
+  <!-- 3 điểm cắt trục -->
+  <circle cx="361" cy="354" r="4.5" fill="#e63e8f" stroke="#ffffff" stroke-width="2"/>
+  <text x="352" y="348" text-anchor="end" fill="#0f172a">(3, 0, 0)</text>
+  <circle cx="325" cy="279" r="4.5" fill="#e63e8f" stroke="#ffffff" stroke-width="2"/>
+  <text x="317" y="283" text-anchor="end" fill="#0f172a">(0, 3, 0)</text>
+  <circle cx="190" cy="147" r="4.5" fill="#e63e8f" stroke="#ffffff" stroke-width="2"/>
+  <text x="200" y="150" fill="#0f172a">(0, 0, 3)</text>
+</svg>

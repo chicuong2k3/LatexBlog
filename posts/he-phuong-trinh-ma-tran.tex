@@ -1,5 +1,5 @@
 %---
-% title: "Đại số tuyến tính cho THPT — bài 1: Hệ phương trình tuyến tính và ma trận bổ sung"
+% title: "Gửi Tôi Của Năm Mười Sáu Tuổi: Giá Như Khi Ấy Đại Số Tuyến Tính Được Viết Thế Này"
 % date: 2026-09-18
 % tags: [dai-so-tuyen-tinh, thpt, he-phuong-trinh, ma-tran]
 % summary: "Bài đầu chuỗi đại số tuyến tính cho THPT: phương trình tuyến tính là gì, nghiệm của hệ có mấy kịch bản, và cách gói cả hệ vào một ma trận bổ sung rồi giải bằng phép biến đổi hàng."
@@ -18,135 +18,156 @@
 
 \section{Mở đầu}
 
-Nếu đang học THPT, các em đã quá quen với những hệ như
-$$
-\begin{cases}
-x + y = 5 \\
-2x - y = 1
-\end{cases}
-$$
+Hệ hai phương trình hai ẩn không có gì mới:
 
-Ngay từ THCS, chúng ta đã biết cách giải hệ hai phương trình hai ẩn bằng phương pháp thế hoặc phương pháp cộng đại số. Lên THPT, các em tiếp tục gặp hệ phương trình trong nhiều bài toán khác: từ hình học Oxy và Oxyz cho đến một số bài toán đại số khó hơn. Từ những trường hợp quen thuộc này, chúng ta có thể tổng quát hóa thành lý thuyết về hệ phương trình tuyến tính với số ẩn nhiều hơn.
+$$ \begin{cases} x+y=5\\ 2x-y=1. \end{cases} $$
 
-Chúng ta sẽ thử nhìn lại những kiến thức quen thuộc của THPT như vector, tích vô hướng, phép chiếu,\dots bằng một góc nhìn mới.
-
-Những ý tưởng đó biến lời giải cho các bài toán hình học tọa độ dài thành vài dòng đại số và đôi khi cho cách tiếp cận đẹp với bài nâng cao hay đề học sinh giỏi.
-
-Chúng ta sẽ không bắt đầu như một giáo trình đại học bằng hàng loạt định nghĩa trừu tượng. Chúng ta sẽ bắt đầu từ thứ các em đã biết rõ nhất: hệ phương trình hai ẩn, rồi từng bước xem điều gì xảy ra khi tổng quát nó lên.
+Ta đã thế, cộng và khử từ THCS. Nhưng những phép ấy đang khai thác cấu trúc gì? Và nếu có mười ẩn thì có gì thay đổi?
 
 \subsection{Phương trình tuyến tính là gì?}
 
-Trên mặt phẳng tọa độ (Oxy), các em đã biết phương trình
+Trong \(Oxy\),
 $$
-ax + by = c \qquad (a, b \text{ không đồng thời bằng } 0)
+ax+by=c
 $$
-biểu diễn một đường thẳng.
+là một đường thẳng; trong \(Oxyz\),
+$$
+ax+by+cz=d
+$$
+là một mặt phẳng.
 
-Trong không gian (Oxyz), phương trình
-$$
-ax + by + cz = d \qquad (a, b, c \text{ không đồng thời bằng } 0)
-$$
-biểu diễn một mặt phẳng.
+Cả hai vế trái đều làm một việc: lấy từng tọa độ, nhân với một hệ số, rồi cộng lại:
+$$ax+by,\qquad ax+by+cz.$$
+Tạm thời \(L\) chỉ là một cái tên cho phép tính
+$$ L(x,y)=ax+by. $$
+Chưa có khái niệm mới nào ở đây; ta chỉ đặt tên để khỏi phải viết \(ax+by\) nhiều lần.
 
-Đường thẳng trong \(Oxy\) và mặt phẳng trong \(Oxyz\) thoạt nhìn là hai đối tượng khác nhau. Nhưng nhìn vào phương trình của chúng:
-$$
-ax+by=c,
-$$
-$$
-ax+by+cz=d.
-$$
-Khác biệt gần như chỉ là phương trình thứ hai có thêm một tọa độ \(z\). Nếu viết các tọa độ thành một vector, ta còn thấy rõ hơn:
-$$
-(x,y)
-\qquad\text{và}\qquad
-(x,y,z).
-$$
-Trong cả hai trường hợp, ta làm đúng một việc: \textbf{nhân mỗi tọa độ với một số rồi cộng chúng lại}.
-$$
-(x,y)\longmapsto ax+by,
-$$
-$$
-(x,y,z)\longmapsto ax+by+cz.
-$$
-Đây mới là cấu trúc quan trọng.
+Ta đã biết cộng hai vector và nhân vector với một số. Vậy thử xem \(L\) phản ứng thế nào khi ta làm hai việc ấy.
 
-Thử gọi phép tính ấy là \(L\). Chẳng hạn trong hai chiều,
-$$
-L(x,y)=ax+by.
-$$
-Nói theo ngôn ngữ quen thuộc, \(L\) cũng là một hàm số --- chỉ khác ở chỗ ``biến'' của nó không phải một số mà là cả một vector: bỏ vector vào, nhận về một số.
-Nếu cộng hai điểm --- hay chính xác hơn, hai vector --- trước rồi mới đưa vào \(L\), ta được
-$$
-L((x_1,y_1)+(x_2,y_2))
-=a(x_1+x_2)+b(y_1+y_2).
-$$
-Tách ngoặc ra:
-$$
-=ax_1+by_1+ax_2+by_2
-=L(x_1,y_1)+L(x_2,y_2).
-$$
-Tương tự, nếu kéo một vector lên \(k\) lần,
-$$
-L(kx,ky)=kL(x,y).
-$$
-Nói ngắn gọn, phép tính này \textbf{tôn trọng hai thao tác cơ bản của vector: cộng và nhân với một số}.
+Có hai cách:
 
-Đó mới là ý nghĩa sâu hơn của chữ \emph{linear}.
+$$ u,v \longrightarrow u+v \longrightarrow L(u+v) $$
 
-Bây giờ quay lại phương trình
-$$
-ax+by=c.
-$$
-Nó chỉ đang hỏi: những điểm nào được \(L\) biến thành cùng một số \(c\)?
+hoặc
 
-Câu này các em đã trả lời từ \(Oxy\) mà không để ý: phương trình \(ax+by=c\) vẽ ra một đường thẳng. Nói theo ngôn ngữ mới, đường thẳng ấy chính là tập hợp tất cả các điểm được \(L\) đưa về cùng một số \(c\). Kiểm tra nhanh cũng được: với \(L(x,y)=2x+3y\) và \(c=6\), các điểm \((0,2)\), \((3,0)\), \((1,\frac{4}{3})\) đều thỏa mãn --- và cả ba cùng nằm trên một đường thẳng.
+$$ u\longrightarrow L(u),\qquad v\longrightarrow L(v), $$
 
-Thêm một tọa độ,
-$$
-L(x,y,z)=ax+by+cz,
-$$
-thì câu hỏi tương tự --- những điểm nào được biến thành \(d\)? --- có đáp án là một mặt phẳng, đúng như các em đã thấy trong \(Oxyz\).
+rồi cộng hai kết quả.
 
-Vì vậy đường thẳng và mặt phẳng ở đây không phải hai công thức tình cờ giống nhau. Chúng là hai phiên bản, ở hai và ba chiều, của cùng một cấu trúc tuyến tính.
+Hai con đường có cho cùng một số không?
 
-Và chẳng có lý do gì phải dừng ở ba chiều. Với \(n\) tọa độ, ta vẫn làm đúng phép tính ấy:
-$$
-L(x_1,\ldots,x_n)
-=a_1x_1+\cdots+a_nx_n.
-$$
-Ta không vẽ được hình dạng của nó khi \(n>3\), vì mắt ta chỉ sống trong ba chiều: muốn xác định một điểm trong thực tế chỉ cần tối đa ba số, còn số thứ tư trở đi không còn hướng nào trên tờ giấy để đặt xuống. Nhưng đại số không cần mắt: cộng hai vector hay kéo dài một vector cũng chỉ là cộng và nhân từng tọa độ --- làm với 2, 3 hay 20 tọa độ đều giống nhau. Chính bước cho \(n\) tùy ý này là bước sang đại số tuyến tính.
+Lấy hai vector
+$$u=(x_1,y_1),\qquad v=(x_2,y_2).$$
+Cộng chúng trước:
+$$u+v=(x_1+x_2,y_1+y_2).$$
+Đưa tổng này vào \(L(x,y)=ax+by\):
+$$L(u+v)=a(x_1+x_2)+b(y_1+y_2).$$
+Phân phối:
+$$=ax_1+by_1+ax_2+by_2.$$
+Hai nhóm đầu và sau chính là \(L(u)\) và \(L(v)\), nên
+$$L(u+v)=L(u)+L(v).$$
+Tương tự với phép nhân vô hướng. Viết \(u=(x,y)\) thì \(ku=(kx,ky)\), do đó
+$$L(ku)=a(kx)+b(ky)=k(ax+by)=kL(u).$$
+Hai đẳng thức vừa có nói một điều khá cụ thể:
 
-Có một trường hợp đặc biệt làm tính tuyến tính lộ ra rất đẹp. Cho vế phải bằng \(0\):
-$$
-a_1x_1+\cdots+a_nx_n=0.
-$$
-Nếu \(u\) và \(v\) là hai nghiệm thì
-$$
-L(u)=0,\qquad L(v)=0.
-$$
-Do \(L\) tôn trọng phép cộng,
-$$
-L(u+v)=L(u)+L(v)=0.
-$$
-Vậy \(u+v\) cũng là nghiệm. Và với mọi số \(k\),
-$$
-L(ku)=kL(u)=0,
-$$
-nên \(ku\) cũng là nghiệm.
+$$ L(u+v)=L(u)+L(v) $$
 
-Đây không phải một mẹo tình cờ của phương trình. Nó là hệ quả trực tiếp của tính tuyến tính. Ta thường gọi hiện tượng này là \textbf{nguyên lý chồng chất} (\emph{superposition}).
+nghĩa là cộng hai vector trước rồi tính \(L\) hay tính \(L\) riêng từng vector rồi cộng, kết quả vẫn như nhau.
 
-Nhìn theo cách này, điều quan trọng không phải đơn giản là ``các ẩn có số mũ \(1\)''. Đó chỉ là dấu hiệu dễ nhận ra trên công thức. Điều thực sự nằm phía sau là:
-$$
-\boxed{L(u+v)=L(u)+L(v),\qquad L(ku)=kL(u).}
-$$
-Phần còn lại của đại số tuyến tính sẽ liên tục quay lại hai tính chất tưởng như rất đơn giản này.
+Còn
 
-Tổng quát hơn, ta định nghĩa \textbf{phương trình tuyến tính} theo $n$ ẩn $x_1, x_2, \dots, x_n$ là phương trình viết được dưới dạng
+$$ L(ku)=kL(u) $$
+
+nghĩa là nhân vector với \(k\) thì giá trị của \(L\) cũng bị nhân với \(k\).
+
+Hai đẳng thức này là hai tính chất cơ bản của một ánh xạ tuyến tính. Ta chưa cần định nghĩa khái niệm đó ngay; ở đây chỉ cần nhớ chúng xuất phát trực tiếp từ phép tính \(ax+by\).
+
+Phương trình
+
+$$ ax+by=c $$
+
+giờ có thể viết
+
+$$ L(x,y)=c. $$
+
+Chẳng hạn, lấy
+
+$$ L(x,y)=2x+3y. $$
+
+Ta thử hai điểm:
+
+$$ L(0,2)=6,\qquad L(3,0)=6. $$
+
+Vậy \(L(x,y)=6\) đang hỏi tất cả những điểm nào cho kết quả 6. Lấy luôn
+
+$$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=12, $$
+
+để thấy tổng hai nghiệm không còn là nghiệm. Sau đó mới tổng quát:
+
+Nếu \(u,v\) đều là nghiệm thì
+
+$$ L(u)=L(v)=c. $$
+
+Vì thế
+
+$$ L(u+v)=L(u)+L(v)=2c. $$
+
+Nếu muốn \(u+v\) vẫn thỏa cùng phương trình, phải có
+
+$$ 2c=c. $$
+
+Suy ra
+
+$$ c=0. $$
+
+Vậy \(0\) không phải một trường hợp được chọn vì dễ tính. Nó bị chính phép cộng ép xuất hiện.
+
+Với \(L(x,y)=2x+3y\) và \(c=6\),
 $$
-a_1x_1 + a_2x_2 + \cdots + a_nx_n = b \tag{1}
+(0,2),\ (3,0),\ \left(1,\frac43\right)
 $$
-trong đó $a_1, a_2, \dots, a_n$ và $b$ là hằng số, còn các hệ số $a$ không đồng thời bằng không. Trong hai trường hợp riêng $n = 2$ và $n = 3$, ta thường dùng ẩn không đánh chỉ số và viết là
+đều là nghiệm. Những điểm ấy nằm trên cùng một đường thẳng.
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/duong-thang-oxy.svg}}
+
+Trong ba chiều,
+
+$$ L(x,y,z)=ax+by+cz. $$
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/mat-phang-oxyz.svg}}
+
+Tổng quát,
+
+$$ L(x_1,\ldots,x_n)=a_1x_1+\cdots+a_nx_n. $$
+
+Bây giờ xét riêng trường hợp
+
+$$ L(\mathbf{x})=0,\qquad \mathbf{x}=(x_1,\ldots,x_n). $$
+
+Với \(L(\mathbf{x})=0\), điều vừa thấy còn cho ta thêm một tính chất quan trọng. Nếu \(L(u)=0\) và \(L(v)=0\), thì
+
+$$ L(u+v)=L(u)+L(v)=0. $$
+
+Tổng hai nghiệm lại là một nghiệm.
+
+Tương tự,
+
+$$ L(ku)=kL(u)=k\cdot0=0. $$
+
+Mọi bội của một nghiệm cũng là nghiệm. Đây là nguyên lý chồng chất (superposition).
+
+Vậy tập nghiệm của \(L(\mathbf{x})=0\) được giữ nguyên khi ta cộng hai nghiệm hoặc nhân một nghiệm với một số. Trường hợp vế phải khác \(0\) không có tính chất này. Đây là lý do trường hợp vế phải bằng \(0\) đáng được đặt tên riêng.
+
+Đến đây ta đã thấy kiểu biểu thức nào đang được dùng. Bây giờ mới đặt tên chính thức cho nó.
+
+Ta gọi phương trình
+$$
+a_1x_1+\cdots+a_nx_n=b \tag{1}
+$$
+là \textbf{phương trình tuyến tính} (\emph{linear equation}) theo $n$ ẩn $x_1, x_2, \dots, x_n$.
+Các số \(a_1,\ldots,a_n,b\) là hằng số.
+
+Nếu phương trình dùng để biểu diễn đường thẳng hoặc mặt phẳng, các hệ số \(a_i\) không được đồng thời bằng \(0\).
 $$
 a_1x + a_2y = b \quad (a_1, a_2 \text{ không đồng thời bằng } 0) \tag{2}
 $$
@@ -157,9 +178,11 @@ Trường hợp riêng khi $b = 0$, phương trình (1) trở thành
 $$
 a_1x_1 + a_2x_2 + \cdots + a_nx_n = 0 \tag{4}
 $$
-gọi là \textbf{phương trình tuyến tính thuần nhất} (\emph{homogeneous linear equation}) theo các ẩn $x_1, x_2, \dots, x_n$.
+gọi là \textbf{phương trình tuyến tính thuần nhất} (\emph{homogeneous linear equation}) theo các ẩn $x_1, x_2, \dots, x_n$. Thay \(x_1=\cdots=x_n=0\) vào vế trái:
+$$ a_1\cdot0+\cdots+a_n\cdot0=0. $$
+Vế trái luôn bằng \(0\) nên \((0,\ldots,0)\) luôn là nghiệm. Nghiệm này được gọi là nghiệm tầm thường.
 
-\textbf{Ví dụ 1 (Nhận diện phương trình tuyến tính).} Phương trình tuyến tính không bao giờ chứa tích hay căn của ẩn. Mọi ẩn chỉ xuất hiện với số mũ $1$, và không bao giờ nằm trong hàm lượng giác, logarit hay mũ. Các phương trình sau là tuyến tính:
+\textbf{Ví dụ 1 (Nhận diện phương trình tuyến tính).} Trong một phương trình tuyến tính, mỗi ẩn chỉ xuất hiện với lũy thừa \(1\), được nhân với một hằng số, rồi các kết quả được cộng lại. Vì vậy \(xy\), \(x^2\), \(\sqrt{x}\), \(\sin x\) đều phá vỡ dạng này. Các phương trình sau là tuyến tính:
 $$
 x + 3y = 7, \quad x_1 - 2x_2 - 3x_3 + x_4 = 0,
 $$
@@ -173,20 +196,28 @@ $$
 $$
 \sin x + y = 0, \quad \sqrt{x_1} + 2x_2 + x_3 = 1.
 $$
+Với \(f(x,y)=x+3y^2\),
+$$ f(0,2)=12\neq 2f(0,1)=6. $$
+Một hàm tuyến tính bắt buộc phải thỏa \(f(ku)=kf(u)\) với mọi \(u,k\). Vì ta đã tìm được một trường hợp vi phạm, \(f\) không thể tuyến tính.
 
 \subsection{Hệ phương trình và nghiệm}
 
-Các em đã giải nhiều hệ hai ẩn như hệ (5). Giờ thử thêm ẩn và thêm phương trình, như hệ (6):
 $$
 \begin{cases} 5x + y = 3 \\ 2x - y = 4 \end{cases} \tag{5}
-\qquad
+$$
+
+$$
 \begin{cases}
 4x_1 - x_2 + 3x_3 = -1 \\
 3x_1 + x_2 + 9x_3 = -4
 \end{cases} \tag{6}
 $$
 
-Viết vài hệ kiểu này còn được, nhưng lên chục phương trình chục ẩn thì cách viết quá cồng kềnh: tên ẩn lặp đi lặp lại, trong khi thứ đổi từ dòng này sang dòng khác chỉ là các hệ số. Vậy ta cần một dạng gọn cho hệ $m$ phương trình $n$ ẩn $x_1, x_2, \dots, x_n$:
+Với \(m\) phương trình và \(n\) ẩn, ký hiệu hệ số của \(x_j\) trong phương trình thứ \(i\) là \(a_{ij}\). Chẳng hạn trong (6), \(a_{12}=-1\), vì \(-1\) là hệ số của \(x_2\) trong phương trình thứ nhất. Nói ngắn gọn: chỉ số thứ nhất chỉ hàng, chỉ số thứ hai chỉ cột. Xếp các hệ số của (6) thành bảng nhỏ:
+
+$$ \begin{array}{c|ccc} & x_1 & x_2 & x_3\\ \hline \text{PT 1} & 4 & -1 & 3\\ \text{PT 2} & 3 & 1 & 9 \end{array} $$
+
+rồi đọc \(a_{12}=-1\) ở hàng 1 cột 2, \(a_{23}=9\) ở hàng 2 cột 3:
 $$
 \begin{cases}
 a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
@@ -195,85 +226,263 @@ a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
 a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
 \end{cases} \tag{7}
 $$
-Một tập hữu hạn các phương trình tuyến tính như vậy gọi là \textbf{hệ phương trình tuyến tính} (\emph{system of linear equations}), gọi tắt là \textbf{hệ tuyến tính} (\emph{linear system}); các biến trong hệ gọi là \textbf{ẩn số} (\emph{unknowns}).
+Một hệ tuyến tính là nhiều phương trình tuyến tính được yêu cầu đúng đồng thời.
 
-Còn cách đặt tên $a_{ij}$? Với vài hệ số, đặt tên từng cái là $a, b, c$ cũng xong. Nhưng một hệ hàng chục hệ số thì bảng chữ cái hết tác dụng từ lâu. Ta cần một cái tên cho biết luôn hệ số ấy nằm ở đâu: $a_{ij}$ là hệ số của ẩn thứ $j$ trong phương trình thứ $i$. Chẳng hạn $a_{12}$ nằm ở phương trình thứ nhất và nhân với $x_2$.
+Với hệ (5), \((1,-2)\) là một \textbf{nghiệm} vì thay \(x=1,y=-2\) vào thì cả hai phương trình đều đúng. Tổng quát, một nghiệm của hệ \(n\) ẩn là một bộ
 
-Với hệ (5), thử $x = 1, y = -2$: cả hai phương trình đều đúng. Với hệ (6), thử $x_1 = 1, x_2 = 2, x_3 = -1$: cả hai phương trình đều đúng. Một dãy số thế vào làm mọi phương trình đều đúng như vậy gọi là \textbf{nghiệm} của hệ. Tổng quát, nghiệm của hệ $n$ ẩn $x_1, x_2, \dots, x_n$ là một dãy $n$ số $s_1, s_2, \dots, s_n$ với $x_1 = s_1, x_2 = s_2, \dots, x_n = s_n$. Viết gọn bằng cách lược tên biến (thứ tự các ẩn đã cố định trong từng phương trình), hai nghiệm trên là $(1, -2)$ và $(1, 2, -1)$ --- mỗi nghiệm là một điểm trong mặt phẳng và không gian. Dạng viết gọn $(s_1, s_2, \dots, s_n)$ gọi là \textbf{bộ $n$ có thứ tự} (\emph{ordered $n$-tuple}); $n = 2$ thì gọi là \textbf{cặp có thứ tự} (\emph{ordered pair}), $n = 3$ thì gọi là \textbf{bộ ba có thứ tự} (\emph{ordered triple}).
+$$ (s_1,\ldots,s_n) $$
 
-\subsection{Hệ hai ẩn, ba ẩn nhìn theo hình học}
+sao cho thay \(x_i=s_i\) vào thì mọi phương trình đều đúng.
 
-Hệ hai ẩn gắn với giao điểm của các đường thẳng. Xét hệ
-$$
-\begin{cases} a_1x + b_1y = c_1 \\ a_2x + b_2y = c_2 \end{cases}
-$$
-trong đó đồ thị mỗi phương trình là một đường thẳng trên mặt phẳng $xy$. Mỗi nghiệm $(x, y)$ ứng với một giao điểm của hai đường, nên chỉ có ba khả năng:
+\subsection{Hệ hai ẩn nhìn theo hình học}
+
+Với hai ẩn, mỗi phương trình là một đường thẳng. Một nghiệm \((x,y)\) của hệ phải thỏa cả hai phương trình.
+
+Thỏa phương trình thứ nhất nghĩa là điểm \((x,y)\) nằm trên đường thứ nhất.
+
+Thỏa phương trình thứ hai nghĩa là nó nằm trên đường thứ hai.
+
+Vậy nghiệm của hệ chính là điểm nằm trên cả hai đường --- tức giao điểm.
+
+Hai đường có thể:
 \begin{enumerate}
-  \item Hai đường song song và phân biệt --- không có giao điểm, hệ vô nghiệm.
-  \item Hai đường cắt nhau tại đúng một điểm --- hệ có đúng một nghiệm.
-  \item Hai đường trùng nhau --- vô số giao điểm (mọi điểm trên đường chung), hệ có vô số nghiệm.
+  \item không gặp nhau;
+  \item gặp tại một điểm;
+  \item trùng nhau.
 \end{enumerate}
 
-Nói chung, hệ tuyến tính gọi là \textbf{tương thích} (\emph{consistent}) nếu có ít nhất một nghiệm, và \textbf{không tương thích} (\emph{inconsistent}) nếu vô nghiệm. Như vậy hệ tương thích gồm hai phương trình hai ẩn chỉ có đúng một nghiệm hoặc vô số nghiệm. Điều tương tự đúng với hệ ba phương trình ba ẩn
-$$
-\begin{cases}
-a_1x + b_1y + c_1z = d_1 \\
-a_2x + b_2y + c_2z = d_2 \\
-a_3x + b_3y + c_3z = d_3
-\end{cases}
-$$
-trong đó đồ thị mỗi phương trình là một mặt phẳng. Nghiệm của hệ (nếu có) ứng với điểm chung của cả ba mặt phẳng, nên vẫn chỉ có ba khả năng: vô nghiệm, một nghiệm duy nhất, hoặc vô số nghiệm (giao nhau theo một đường thẳng hay trùng cả mặt phẳng).
+Tương ứng, hệ vô nghiệm, có một nghiệm, hoặc có vô số nghiệm.
 
-Sau này ta sẽ chứng minh điều quan sát được ở hệ $2 \times 2$ và $3 \times 3$ đúng với mọi hệ tuyến tính:
-\begin{quote}
-Mọi hệ phương trình tuyến tính chỉ có thể vô nghiệm, có đúng một nghiệm, hoặc có vô số nghiệm. Không có khả năng nào khác.
-\end{quote}
+Hai đường thẳng phân biệt có thể có đúng hai điểm chung không?
 
-Thử một câu không cần tính: một đường thẳng có cắt đường khác tại đúng hai điểm mà không trùng nó không? Không. Vậy hệ hai phương trình hai ẩn có đúng hai nghiệm được không? Câu hỏi hình học trả lời luôn câu hỏi đại số --- và đó là trực giác đứng sau kết quả trên.
+Vậy hệ hai phương trình hai ẩn có thể có đúng hai nghiệm không?
+
+Không. Nếu hệ có hai nghiệm khác nhau, hai đường phải đi qua hai điểm chung ấy. Hai đường thẳng đi qua cùng hai điểm phân biệt thì chính là cùng một đường, nên chúng có vô số điểm chung.
 
 \subsection{Bốn ví dụ mẫu}
 
-\textbf{Ví dụ 2 (một nghiệm duy nhất).} Xét hệ $\begin{cases} x - y = 1 \\ 2x + y = 6 \end{cases}$. Cộng $-2$ lần phương trình đầu vào phương trình hai, hệ trở thành $\begin{cases} x - y = 1 \\ 3y = 4 \end{cases}$. Từ phương trình hai được $y = \frac{4}{3}$, thế vào phương trình đầu được $x = 1 + y = \frac{7}{3}$. Vậy hệ có nghiệm duy nhất $x = \frac{7}{3}, y = \frac{4}{3}$. Về hình học, hai đường thẳng cắt nhau tại đúng điểm $\left(\frac{7}{3}, \frac{4}{3}\right)$.
+\textbf{Ví dụ 2.} Một nghiệm
+$$\begin{cases} x - y = 1 \\ 2x + y = 6 \end{cases}$$
+$$(2x+y)-2(x-y)=6-2,$$
+nên
+$$3y=4.$$
+Khử:
+$$\begin{cases} x - y = 1 \\ 3y = 4 \end{cases}$$
+\(y = \frac{4}{3}\), \(x = \frac{7}{3}\): hai đường cắt nhau tại đúng điểm ấy.
 
-\textbf{Ví dụ 3 (vô nghiệm).} Với hệ $\begin{cases} x + y = 4 \\ 3x + 3y = 6 \end{cases}$, cộng $-3$ lần phương trình đầu vào phương trình hai, hệ trở thành $\begin{cases} x + y = 4 \\ 0 = -6 \end{cases}$. Phương trình hai mâu thuẫn nên hệ vô nghiệm. Về hình học, hai đường thẳng song song và phân biệt (cùng hệ số góc, khác tung độ gốc).
+\textbf{Ví dụ 3.} Vô nghiệm
+$$\begin{cases} x + y = 4 \\ 3x + 3y = 6 \end{cases}$$
+$$(3x+3y)-3(x+y)=6-12$$
+suy ra
+$$0 = -6.$$
+Hai đường song song.
 
-\textbf{Ví dụ 4 (vô số nghiệm).} Lấy hệ $\begin{cases} 4x - 2y = 1 \\ 16x - 8y = 4 \end{cases}$ và cộng $-4$ lần phương trình đầu vào phương trình hai, hệ trở thành $\begin{cases} 4x - 2y = 1 \\ 0 = 0 \end{cases}$. Phương trình hai không ràng buộc gì thêm nên bỏ được. Nghiệm của hệ chính là các cặp $(x, y)$ thỏa mãn $4x - 2y = 1$ --- về hình học, hai đường thẳng trùng nhau. Để mô tả tập nghiệm, giải phương trình theo $x$: $x = \frac{1}{4} + \frac{1}{2}y$, rồi đặt $y = t$ tùy ý (gọi $t$ là \emph{tham số} --- \emph{parameter}). Nghiệm viết dưới dạng \textbf{phương trình tham số} (\emph{parametric equations}): $x = \frac{1}{4} + \frac{1}{2}t,\ y = t$. Cho $t$ các giá trị số cụ thể sẽ được từng nghiệm: $t = 0$ cho $\left(\frac{1}{4}, 0\right)$, $t = 1$ cho $\left(\frac{3}{4}, 1\right)$, $t = -1$ cho $\left(-\frac{1}{4}, -1\right)$. (Cũng có thể giải $y$ theo $x$ rồi đặt $x = t$ --- công thức trông khác nhưng cho cùng một tập nghiệm.)
+\textbf{Ví dụ 4.} Vô số nghiệm
+$$\begin{cases} 4x - 2y = 1 \\ 16x - 8y = 4 \end{cases}$$
+$$(16x-8y)-4(4x-2y)=4-4$$
+suy ra
+$$0 = 0.$$
+Còn lại \(4x - 2y = 1\): hai đường trùng nhau. Phương trình thứ hai chỉ là \(4\) lần phương trình thứ nhất, nên nó không đưa thêm điều kiện nào. Hai phương trình thực chất mô tả cùng một đường thẳng. Giải theo \(x\): \(x = \frac{1}{4} + \frac{1}{2}y\), đặt \(y = t\) tùy ý, nghiệm là \(x = \frac{1}{4} + \frac{1}{2}t,\ y = t\).
 
-Sau hai ví dụ tính tay, thử đoán trước khi tính: nhìn hệ $\begin{cases} x + y = 4 \\ 2x + 2y = 9 \end{cases}$, có cần giải mới biết nó thế nào không? Vế trái phương trình hai gấp đôi phương trình đầu mà vế phải không gấp đôi ($9 \ne 8$) --- hai đường song song và phân biệt, hệ vô nghiệm ngay không tốn một dòng tính nào.
+Hàng \(0=0\) không còn ràng buộc gì: mọi giá trị đều thỏa nó.
 
-\textbf{Ví dụ 5 (vô số nghiệm, hai tham số).} Cho hệ $\begin{cases} x - y + 2z = 5 \\ 2x - 2y + 4z = 10 \\ 3x - 3y + 6z = 15 \end{cases}$. Nhìn qua là thấy phương trình hai và ba đều là bội của phương trình đầu, nghĩa là ba mặt phẳng trùng nhau. Mọi bộ $(x, y, z)$ thỏa $x - y + 2z = 5$ đều tự động thỏa cả ba. Giải theo $x$: $x = 5 + y - 2z$, đặt $y = r$, $z = s$ tùy ý, nghiệm viết là $x = 5 + r - 2s,\ y = r,\ z = s$. Chẳng hạn $r = 1, s = 0$ cho nghiệm $(6, 1, 0)$.
+Hàng \(0=-6\) thì ngược lại: không giá trị nào thỏa được.
+
+Cả hai vẫn là những phương trình tuyến tính suy biến, với mọi hệ số của ẩn bằng \(0\).
+
+Hệ sau có thể kết luận ngay mà không cần khử:
+
+$$ \begin{cases} x+y=4\\ 2x+2y=9 \end{cases} $$
+
+Nếu phương trình dưới thật sự là hai lần phương trình trên thì vế phải phải là \(8\), không phải \(9\). Hai điều kiện đang đòi hỏi hai chuyện mâu thuẫn nhau. Hệ vô nghiệm trước khi ta kịp đặt bút khử.
+
+\textbf{Ví dụ 5.} Vô số nghiệm, hai tham số
+$$\begin{cases} x - y + 2z = 5 \\ 2x - 2y + 4z = 10 \\ 3x - 3y + 6z = 15 \end{cases}$$
+Phương trình hai và ba đều là bội của phương trình đầu: ba mặt phẳng trùng nhau. Sau khi nhận ra ba phương trình thực chất chỉ là một điều kiện, ta chỉ còn
+$$ x-y+2z=5. $$
+Một phương trình nhưng có ba ẩn nên chưa thể xác định riêng cả ba số. Ta có thể chọn \(y\) và \(z\) tùy ý; khi hai số ấy đã chọn, \(x\) bị phương trình quyết định:
+$$ x=5+y-2z. $$
+Để ghi lại mọi cách chọn, đặt
+$$ y=r,\qquad z=s. $$
+Thay vào \(x=5+y-2z\):
+$$ (x,y,z)=(5+r-2s,\ r,\ s),\qquad r,s\in\mathbb R. $$
+Vì \(r\) và \(s\) được chọn độc lập, ta nói nghiệm có hai tham số tự do.
 
 \subsection{Ma trận bổ sung và phép biến đổi hàng}
 
-Càng nhiều phương trình và ẩn thì phép tính tìm nghiệm càng cồng kềnh. Ta có thể gọn nhẹ hóa bằng cách chuẩn hóa ký hiệu và quy trình. Chẳng hạn, nếu tự nhớ vị trí của các dấu $+$, các $x$ và dấu $=$ trong hệ tổng quát (7), ta rút gọn hệ thành một bảng số chữ nhật. Lý do bỏ được tên ẩn: các chữ $x$ không tham gia vào phép khử, ta chỉ biến đổi các hệ số:
+$$ \begin{cases} x+y+2z=9\\ 2x+4y-3z=1\\ 3x+6y-5z=0. \end{cases} $$
+
+Tạm chỉ nhìn hai phương trình đầu. Lấy phương trình hai trừ hai lần phương trình một:
+
+$$ (2x+4y-3z)-2(x+y+2z)=1-18. $$
+
+Khai triển:
+
+$$ 2x+4y-3z-2x-2y-4z=-17, $$
+
+nên
+
+$$ 2y-7z=-17. $$
+
+Trong phép tính vừa rồi, ta thực sự đã làm gì với \(x,y,z\)?
+
+Các ẩn \(x,y,z\) không đổi vai trò. Mọi phép cộng, trừ và nhân thực sự diễn ra trên các hệ số đứng trước chúng và ở vế phải. Phần hệ số của phép tính trên là:
+
+$$ (2,4,-3\mid1)-2(1,1,2\mid9) =(0,2,-7\mid-17). $$
+
+Dấu \(|\) chỉ dùng để ngăn các hệ số của \(x,y,z\) với số ở vế phải. Nó không phải một phép tính.
+
+Nếu đặt các hàng số ấy chồng lên nhau, ta được
+
+$$ \left[ \begin{array}{ccc|c} 1&1&2&9\\ 2&4&-3&1\\ 3&6&-5&0 \end{array} \right]. $$
+
+Đây là \textbf{ma trận bổ sung} (\emph{augmented matrix}) của hệ.
+
+Mỗi hàng của ma trận bổ sung vẫn chỉ là một phương trình của hệ; ta chỉ bỏ tên các ẩn vì vị trí của cột đã ghi nhớ chúng thay ta. Cột thứ nhất luôn chứa hệ số của \(x\), cột thứ hai của \(y\), cột thứ ba của \(z\), và cột cuối chứa vế phải:
+
+$$ \begin{array}{cccc} x & y & z & \text{vế phải}\\ 1 & 1 & 2 & 9\\ 2 & 4 & -3 & 1\\ 3 & 6 & -5 & 0 \end{array} $$
+
+Vì vị trí đã cho biết con số thuộc về ẩn nào, ta không cần chép \(x,y,z\) nữa.
 $$
-\begin{bmatrix}
+\left[ \begin{array}{cccc|c}
 a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\
 a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\
 \vdots & \vdots & & \vdots & \vdots \\
 a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
-\end{bmatrix}
+\end{array} \right]
 $$
-Bảng này gọi là \textbf{ma trận bổ sung} (\emph{augmented matrix}) của hệ. Ví dụ ma trận bổ sung của hệ $\begin{cases} x_1 + x_2 + 2x_3 = 9 \\ 2x_1 + 4x_2 - 3x_3 = 1 \\ 3x_1 + 6x_2 - 5x_3 = 0 \end{cases}$ là $\begin{bmatrix} 1 & 1 & 2 & 9 \\ 2 & 4 & -3 & 1 \\ 3 & 6 & -5 & 0 \end{bmatrix}$. (Từ ``ma trận'' (\emph{matrix}) trong toán học dùng để chỉ một bảng số chữ nhật. Mục sau ta sẽ học kỹ về ma trận, còn ở đây ta chỉ quan tâm ma trận bổ sung của hệ tuyến tính.)
 
-Cách giải cơ bản là thực hiện các phép biến đổi đại số không làm đổi tập nghiệm, tạo ra một dãy hệ ngày càng đơn giản, cho tới khi biết được hệ có tương thích không và nghiệm là gì. Thường dùng ba phép:
-\begin{enumerate}
-  \item Nhân một phương trình với một hằng số khác không.
-  \item Đổi chỗ hai phương trình cho nhau.
-  \item Cộng một bội của phương trình này vào phương trình khác.
-\end{enumerate}
-Vì mỗi hàng (dòng ngang) của ma trận bổ sung ứng với một phương trình, ba phép trên tương ứng với ba phép trên các hàng:
-\begin{enumerate}
-  \item Nhân một hàng với một hằng số khác không.
-  \item Đổi chỗ hai hàng.
-  \item Cộng một bội của hàng này vào hàng khác.
-\end{enumerate}
-Đó gọi là các \textbf{phép biến đổi hàng sơ cấp} (\emph{elementary row operations}).
+Trong Cửu Chương Toán Thuật, các hệ số đã được xếp thành cột và khử trực tiếp trên bảng số. Khi ấy chưa có khái niệm ma trận theo nghĩa hiện đại.
 
-\textbf{Ví dụ 6 (giải bằng biến đổi hàng).} Xét hệ $\begin{cases} x + y + 2z = 9 \\ 2x + 4y - 3z = 1 \\ 3x + 6y - 5z = 0 \end{cases}$ với ma trận bổ sung $\begin{bmatrix} 1 & 1 & 2 & 9 \\ 2 & 4 & -3 & 1 \\ 3 & 6 & -5 & 0 \end{bmatrix}$. Cộng $-2$ lần hàng một vào hàng hai, rồi $-3$ lần hàng một vào hàng ba; nhân hàng hai với $\frac{1}{2}$; cộng $-3$ lần hàng hai vào hàng ba; nhân hàng ba với $-2$; cộng $-1$ lần hàng hai vào hàng một; cuối cùng cộng $-\frac{11}{2}$ lần hàng ba vào hàng một và $\frac{7}{2}$ lần hàng ba vào hàng hai --- ta được $\begin{bmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 3 \end{bmatrix}$. Nghiệm là $x = 1, y = 2, z = 3$, viết gọn là bộ ba $(1, 2, 3)$ theo đúng thứ tự ẩn $x, y, z$. (Cách làm hệ thống cho mọi hệ sẽ học ở mục sau.)
+Mỗi phương trình giờ là một hàng. Ba phép quen thuộc trở thành ba \textbf{phép biến đổi hàng sơ cấp} (\emph{elementary row operations}):
+\begin{enumerate}
+  \item đổi hai hàng;
+  \item nhân một hàng với số khác \(0\);
+  \item cộng một bội của hàng này vào hàng khác.
+\end{enumerate}
+
+Vì sao ba phép này không làm thay đổi nghiệm? Thử trước với một hệ cụ thể:
+
+$$ \begin{cases} x+y=5\\ 2x-y=1 \end{cases} $$
+
+Thay phương trình hai bằng
+
+$$ (2x-y)-2(x+y)=1-10 $$
+
+ta được
+
+$$ -3y=-9. $$
+
+Nếu \((x,y)\) thỏa hai phương trình cũ thì
+
+$$ 2x-y=1,\qquad x+y=5. $$
+
+Vì thế lấy đẳng thức thứ nhất trừ hai lần đẳng thức thứ hai vẫn cho một đẳng thức đúng:
+
+$$ -3y=-9. $$
+
+Nhưng ngược lại thì sao?
+
+Từ
+
+$$ -3y=-9 $$
+
+và
+
+$$ x+y=5 $$
+
+$$ (-3y)+2(x+y)=-9+10, $$
+
+suy ra
+
+$$ 2x-y=1. $$
+
+Viết gọn phương trình thứ \(i\) thành \(E_i=0\), trong đó \(E_i\) là vế trái trừ vế phải.
+
+\textbf{1. Đổi hai hàng.}
+Ta chỉ đổi thứ tự hai phương trình. Một bộ số thỏa cả hai trước khi đổi thì vẫn thỏa cả hai sau khi đổi.
+
+\textbf{2. Nhân một hàng với \(k\neq0\).}
+Phương trình
+$$ E=0 $$
+và
+$$ kE=0 $$
+có cùng nghiệm, vì từ \(kE=0\) ta có thể chia lại cho \(k\).
+
+Đây cũng là lý do phải yêu cầu \(k\neq0\). Nếu nhân một phương trình với \(0\), nó biến thành
+$$ 0=0, $$
+và toàn bộ thông tin của phương trình cũ mất đi.
+
+\textbf{3. Cộng một bội của hàng khác.} Viết hai phương trình về dạng
+$$ E_1=0,\qquad E_2=0. $$
+Thay \(E_2=0\) bằng
+$$ E_2+kE_1=0. $$
+Nếu nghiệm thỏa hệ cũ thì hiển nhiên nó thỏa phương trình mới. Ngược lại,
+$$ E_2=(E_2+kE_1)-kE_1, $$
+nên từ hai phương trình mới ta lấy lại được \(E_2=0\).
+
+Mỗi thao tác đều đảo ngược được. Vì vậy không nghiệm nào bị mất và cũng không có nghiệm mới nào được tạo ra.
+
+\textbf{Ví dụ 6 (giải bằng biến đổi hàng).} Xét hệ $\begin{cases} x + y + 2z = 9 \\ 2x + 4y - 3z = 1 \\ 3x + 6y - 5z = 0 \end{cases}$ với ma trận bổ sung $\left[ \begin{array}{ccc|c} 1 & 1 & 2 & 9 \\ 2 & 4 & -3 & 1 \\ 3 & 6 & -5 & 0 \end{array} \right]$.
+
+Mục tiêu đầu tiên là làm các số dưới \(1\) ở cột đầu thành \(0\). Khi đó hai hàng dưới sẽ không còn chứa \(x\); ta đã loại được một ẩn khỏi chúng. Công việc này gọi là khử \(x\).
+
+Khử cột thứ nhất:
+$$ R_2\leftarrow R_2-2R_1,\qquad R_3\leftarrow R_3-3R_1 $$
+$$
+\left[ \begin{array}{ccc|c} 1 & 1 & 2 & 9 \\ 0 & 2 & -7 & -17 \\ 0 & 3 & -11 & -27 \end{array} \right]
+$$
+
+Bây giờ hàng hai và ba chỉ còn \(y,z\). Ta làm hệ số của \(y\) ở hàng ba thành \(0\), để hàng ba chỉ còn \(z\).
+
+Khử cột thứ hai: ta chia hàng hai cho \(2\) để hệ số của \(y\) trở thành \(1\). Điều này không bắt buộc, nhưng làm bước khử tiếp theo dễ nhìn hơn.
+
+$$ R_2\leftarrow \frac12R_2 $$
+
+cho
+
+$$
+\left[ \begin{array}{ccc|c} 1 & 1 & 2 & 9 \\ 0 & 1 & -\frac72 & -\frac{17}{2} \\ 0 & 3 & -11 & -27 \end{array} \right].
+$$
+
+Sau đó
+
+$$ R_3\leftarrow R_3-3R_2 $$
+
+cho
+
+$$ R_3= \left(0,0,-\frac12\mid-\frac32\right), $$
+
+Ta nhân hàng ba với \(-2\) để hệ số của \(z\) trở thành \(1\):
+
+$$ R_3\leftarrow-2R_3 $$
+
+được
+
+$$ R_3=(0,0,1\mid3). $$
+
+Khi ấy phương trình cuối đọc ngay được là \(z=3\).
+
+Bây giờ ta đã biết \(z\). Ta dùng hàng chứa \(z\) để xóa \(z\) khỏi các hàng phía trên; sau đó dùng hàng chứa \(y\) để xóa \(y\) khỏi hàng đầu. Ta đang đi ngược từ dưới lên, nên gọi là khử ngược. Trước hết
+$$ R_2\leftarrow R_2+\frac72R_3 $$
+cho
+$$
+\left[ \begin{array}{ccc|c} 1 & 1 & 2 & 9 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 3 \end{array} \right].
+$$
+
+Hàng hai giờ là \(y=2\).
+
+Rồi
+$$ R_1\leftarrow R_1-2R_3,\qquad R_1\leftarrow R_1-R_2. $$
+$$
+\left[ \begin{array}{ccc|c} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 3 \end{array} \right]
+$$
+Đến đây mỗi hàng chỉ còn một ẩn: hàng một là \(x=1\), hàng hai là \(y=2\), hàng ba là \(z=3\). Ma trận đã được đưa về dạng mà nghiệm có thể đọc trực tiếp:
+
+$$ (x,y,z)=(1,2,3). $$
 
 \begin{quote}
-\textbf{Ghi chú lịch sử.} Lần dùng ma trận bổ sung sớm nhất được biết đến xuất hiện khoảng năm 200--100 trước Công nguyên trong cuốn \emph{Cửu Chương Toán Thuật} của Trung Quốc. Các hệ số khi đó xếp theo cột chứ không theo hàng như ngày nay, nhưng đáng ngạc nhiên là hệ vẫn được giải bằng một dãy phép biến đổi trên các cột. Còn thuật ngữ ``ma trận bổ sung'' (\emph{augmented matrix}) dường như do nhà toán học Mỹ Maxime Bôcher (1867--1918) đặt ra trong cuốn \emph{Introduction to Higher Algebra} năm 1907 --- một nhà toán học lỗi lạc kiêm nhà diễn giải toán xuất sắc, sách của ông được sinh viên rất yêu thích và tới nay vẫn có người tìm đọc.
+\textbf{Ghi chú lịch sử.} Còn thuật ngữ ``ma trận bổ sung'' (\emph{augmented matrix}) dường như do nhà toán học Mỹ Maxime Bôcher (1867--1918) đặt ra trong cuốn \emph{Introduction to Higher Algebra} năm 1907.
 \end{quote}
 
 \end{document}

@@ -1,5 +1,6 @@
 @inherits LayoutComponentBase
 
+<UpChrome Provides=".lb-nav, .lb-notif__badge, #lb-search-results">
 <div class="lb-nav" x-data="navBox" x-init="$store.auth.init()">
     <div id="lb-progress" class="lb-progress" aria-hidden="true"></div>
     <nav class="lb-wrap lb-nav-in">
@@ -137,13 +138,17 @@
 </div>
 
 
+</UpChrome>
+
 <main class="lb-wrap lb-main">
     @Body
 </main>
 
+<UpChrome>
 <footer class="lb-footer">
     <div class="lb-wrap lb-footer-in">
         <span><svg class="lb-footer__mark" aria-hidden="true"><use href="#lb-blossom" /></svg>© 2026 Alternative World</span>
         <span>"Nếu muốn tìm ra bí mật của vũ trụ, hãy nghĩ về năng lượng, tần số và rung động." — Nikola Tesla</span>
     </div>
 </footer>
+</UpChrome>

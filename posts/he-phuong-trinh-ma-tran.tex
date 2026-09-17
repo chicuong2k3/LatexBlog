@@ -88,7 +88,7 @@ $$
 
 \subsection{Hệ phương trình và nghiệm}
 
-Một tập hữu hạn các phương trình tuyến tính gọi là \textbf{hệ phương trình tuyến tính} (\emph{system of linear equations}), gọi tắt là \textbf{hệ tuyến tính} (\emph{linear system}). Các biến trong hệ gọi là \textbf{ẩn số} (\emph{unknowns}). Chẳng hạn hệ (5) dưới đây có các ẩn $x, y$, còn hệ (6) có các ẩn $x_1, x_2, x_3$:
+Các em đã giải nhiều hệ hai ẩn như hệ (5). Giờ thử thêm ẩn và thêm phương trình, như hệ (6):
 $$
 \begin{cases} 5x + y = 3 \\ 2x - y = 4 \end{cases} \tag{5}
 \qquad
@@ -98,7 +98,7 @@ $$
 \end{cases} \tag{6}
 $$
 
-Một hệ tuyến tính tổng quát gồm $m$ phương trình theo $n$ ẩn $x_1, x_2, \dots, x_n$ viết được là
+Viết vài hệ kiểu này còn được, nhưng lên chục phương trình chục ẩn thì cách viết quá cồng kềnh: tên ẩn lặp đi lặp lại, trong khi thứ đổi từ dòng này sang dòng khác chỉ là các hệ số. Vậy ta cần một dạng gọn cho hệ $m$ phương trình $n$ ẩn $x_1, x_2, \dots, x_n$:
 $$
 \begin{cases}
 a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
@@ -107,9 +107,11 @@ a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
 a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
 \end{cases} \tag{7}
 $$
-Cách đánh chỉ số kép $a_{ij}$ cho biết vị trí của hệ số trong hệ: chỉ số đầu là phương trình chứa nó, chỉ số sau là ẩn mà nó nhân vào. Chẳng hạn $a_{12}$ nằm ở phương trình thứ nhất và nhân với $x_2$.
+Một tập hữu hạn các phương trình tuyến tính như vậy gọi là \textbf{hệ phương trình tuyến tính} (\emph{system of linear equations}), gọi tắt là \textbf{hệ tuyến tính} (\emph{linear system}); các biến trong hệ gọi là \textbf{ẩn số} (\emph{unknowns}).
 
-\textbf{Nghiệm} của một hệ tuyến tính $n$ ẩn $x_1, x_2, \dots, x_n$ là một dãy $n$ số $s_1, s_2, \dots, s_n$ sao cho phép thế $x_1 = s_1, x_2 = s_2, \dots, x_n = s_n$ làm mọi phương trình đều thành mệnh đề đúng. Ví dụ hệ (5) có nghiệm $x = 1, y = -2$, còn hệ (6) có nghiệm $x_1 = 1, x_2 = 2, x_3 = -1$. Viết gọn hơn thì hai nghiệm này là $(1, -2)$ và $(1, 2, -1)$, trong đó ta lược tên biến. Cách viết này cho phép hiểu nghiệm theo hình học như các điểm trong mặt phẳng và không gian. Tổng quát, nghiệm $x_1 = s_1, \dots, x_n = s_n$ của hệ $n$ ẩn viết gọn là $(s_1, s_2, \dots, s_n)$, gọi là \textbf{bộ $n$ có thứ tự} (\emph{ordered $n$-tuple}). Quy ước là mọi ẩn xuất hiện theo cùng một thứ tự trong từng phương trình. Khi $n = 2$ thì bộ này gọi là \textbf{cặp có thứ tự} (\emph{ordered pair}), khi $n = 3$ thì gọi là \textbf{bộ ba có thứ tự} (\emph{ordered triple}).
+Còn cách đặt tên $a_{ij}$? Với vài hệ số, đặt tên từng cái là $a, b, c$ cũng xong. Nhưng một hệ hàng chục hệ số thì bảng chữ cái hết tác dụng từ lâu. Ta cần một cái tên cho biết luôn hệ số ấy nằm ở đâu: $a_{ij}$ là hệ số của ẩn thứ $j$ trong phương trình thứ $i$. Chẳng hạn $a_{12}$ nằm ở phương trình thứ nhất và nhân với $x_2$.
+
+Với hệ (5), thử $x = 1, y = -2$: cả hai phương trình đều đúng. Với hệ (6), thử $x_1 = 1, x_2 = 2, x_3 = -1$: cả hai phương trình đều đúng. Một dãy số thế vào làm mọi phương trình đều đúng như vậy gọi là \textbf{nghiệm} của hệ. Tổng quát, nghiệm của hệ $n$ ẩn $x_1, x_2, \dots, x_n$ là một dãy $n$ số $s_1, s_2, \dots, s_n$ với $x_1 = s_1, x_2 = s_2, \dots, x_n = s_n$. Viết gọn bằng cách lược tên biến (thứ tự các ẩn đã cố định trong từng phương trình), hai nghiệm trên là $(1, -2)$ và $(1, 2, -1)$ --- mỗi nghiệm là một điểm trong mặt phẳng và không gian. Dạng viết gọn $(s_1, s_2, \dots, s_n)$ gọi là \textbf{bộ $n$ có thứ tự} (\emph{ordered $n$-tuple}); $n = 2$ thì gọi là \textbf{cặp có thứ tự} (\emph{ordered pair}), $n = 3$ thì gọi là \textbf{bộ ba có thứ tự} (\emph{ordered triple}).
 
 \subsection{Hệ hai ẩn, ba ẩn nhìn theo hình học}
 
@@ -139,6 +141,8 @@ Sau này ta sẽ chứng minh điều quan sát được ở hệ $2 \times 2$ v
 Mọi hệ phương trình tuyến tính chỉ có thể vô nghiệm, có đúng một nghiệm, hoặc có vô số nghiệm. Không có khả năng nào khác.
 \end{quote}
 
+Thử một câu không cần tính: một đường thẳng có cắt đường khác tại đúng hai điểm mà không trùng nó không? Không. Vậy hệ hai phương trình hai ẩn có đúng hai nghiệm được không? Câu hỏi hình học trả lời luôn câu hỏi đại số --- và đó là trực giác đứng sau kết quả trên.
+
 \subsection{Bốn ví dụ mẫu}
 
 \textbf{Ví dụ 2 (một nghiệm duy nhất).} Xét hệ $\begin{cases} x - y = 1 \\ 2x + y = 6 \end{cases}$. Cộng $-2$ lần phương trình đầu vào phương trình hai, hệ trở thành $\begin{cases} x - y = 1 \\ 3y = 4 \end{cases}$. Từ phương trình hai được $y = \frac{4}{3}$, thế vào phương trình đầu được $x = 1 + y = \frac{7}{3}$. Vậy hệ có nghiệm duy nhất $x = \frac{7}{3}, y = \frac{4}{3}$. Về hình học, hai đường thẳng cắt nhau tại đúng điểm $\left(\frac{7}{3}, \frac{4}{3}\right)$.
@@ -147,11 +151,13 @@ Mọi hệ phương trình tuyến tính chỉ có thể vô nghiệm, có đún
 
 \textbf{Ví dụ 4 (vô số nghiệm).} Lấy hệ $\begin{cases} 4x - 2y = 1 \\ 16x - 8y = 4 \end{cases}$ và cộng $-4$ lần phương trình đầu vào phương trình hai, hệ trở thành $\begin{cases} 4x - 2y = 1 \\ 0 = 0 \end{cases}$. Phương trình hai không ràng buộc gì thêm nên bỏ được. Nghiệm của hệ chính là các cặp $(x, y)$ thỏa mãn $4x - 2y = 1$ --- về hình học, hai đường thẳng trùng nhau. Để mô tả tập nghiệm, giải phương trình theo $x$: $x = \frac{1}{4} + \frac{1}{2}y$, rồi đặt $y = t$ tùy ý (gọi $t$ là \emph{tham số} --- \emph{parameter}). Nghiệm viết dưới dạng \textbf{phương trình tham số} (\emph{parametric equations}): $x = \frac{1}{4} + \frac{1}{2}t,\ y = t$. Cho $t$ các giá trị số cụ thể sẽ được từng nghiệm: $t = 0$ cho $\left(\frac{1}{4}, 0\right)$, $t = 1$ cho $\left(\frac{3}{4}, 1\right)$, $t = -1$ cho $\left(-\frac{1}{4}, -1\right)$. (Cũng có thể giải $y$ theo $x$ rồi đặt $x = t$ --- công thức trông khác nhưng cho cùng một tập nghiệm.)
 
+Sau hai ví dụ tính tay, thử đoán trước khi tính: nhìn hệ $\begin{cases} x + y = 4 \\ 2x + 2y = 9 \end{cases}$, có cần giải mới biết nó thế nào không? Vế trái phương trình hai gấp đôi phương trình đầu mà vế phải không gấp đôi ($9 \ne 8$) --- hai đường song song và phân biệt, hệ vô nghiệm ngay không tốn một dòng tính nào.
+
 \textbf{Ví dụ 5 (vô số nghiệm, hai tham số).} Cho hệ $\begin{cases} x - y + 2z = 5 \\ 2x - 2y + 4z = 10 \\ 3x - 3y + 6z = 15 \end{cases}$. Nhìn qua là thấy phương trình hai và ba đều là bội của phương trình đầu, nghĩa là ba mặt phẳng trùng nhau. Mọi bộ $(x, y, z)$ thỏa $x - y + 2z = 5$ đều tự động thỏa cả ba. Giải theo $x$: $x = 5 + y - 2z$, đặt $y = r$, $z = s$ tùy ý, nghiệm viết là $x = 5 + r - 2s,\ y = r,\ z = s$. Chẳng hạn $r = 1, s = 0$ cho nghiệm $(6, 1, 0)$.
 
 \subsection{Ma trận bổ sung và phép biến đổi hàng}
 
-Càng nhiều phương trình và ẩn thì phép tính tìm nghiệm càng cồng kềnh. Ta có thể gọn nhẹ hóa bằng cách chuẩn hóa ký hiệu và quy trình. Chẳng hạn, nếu tự nhớ vị trí của các dấu $+$, các $x$ và dấu $=$ trong hệ tổng quát (7), ta rút gọn hệ thành một bảng số chữ nhật:
+Càng nhiều phương trình và ẩn thì phép tính tìm nghiệm càng cồng kềnh. Ta có thể gọn nhẹ hóa bằng cách chuẩn hóa ký hiệu và quy trình. Chẳng hạn, nếu tự nhớ vị trí của các dấu $+$, các $x$ và dấu $=$ trong hệ tổng quát (7), ta rút gọn hệ thành một bảng số chữ nhật. Lý do bỏ được tên ẩn: các chữ $x$ không tham gia vào phép khử, ta chỉ biến đổi các hệ số:
 $$
 \begin{bmatrix}
 a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\

@@ -26,13 +26,13 @@ x + y = 5 \\
 \end{cases}
 $$
 
-Ngay từ THCS, chúng ta đã biết cách giải hệ hai phương trình hai ẩn bằng phương pháp thế hoặc phương pháp cộng đại số. Lên THPT, các em tiếp tục gặp hệ phương trình trong nhiều bài toán khác: từ tọa độ, hình học Oxy và Oxyz cho đến một số bài toán đại số khó hơn. Từ những trường hợp quen thuộc này, chúng ta có thể tổng quát hóa thành một lý thuyết lớn hơn, bao trùm mọi hệ phương trình tuyến tính.
+Ngay từ THCS, chúng ta đã biết cách giải hệ hai phương trình hai ẩn bằng phương pháp thế hoặc phương pháp cộng đại số. Lên THPT, các em tiếp tục gặp hệ phương trình trong nhiều bài toán khác: từ hình học Oxy và Oxyz cho đến một số bài toán đại số khó hơn. Từ những trường hợp quen thuộc này, chúng ta có thể tổng quát hóa thành lý thuyết về hệ phương trình tuyến tính với số ẩn nhiều hơn.
 
-Đối với học sinh THPT, mục tiêu của chuỗi bài này không phải học đại số tuyến tính chỉ để giải những hệ phương trình thật lớn. Chúng ta sẽ thử nhìn lại những kiến thức quen thuộc của THPT bằng một góc nhìn mới: vector, ma trận, tích vô hướng, phép chiếu, không gian tuyến tính\dots
+Chúng ta sẽ thử nhìn lại những kiến thức quen thuộc của THPT như vector, tích vô hướng, phép chiếu,\dots bằng một góc nhìn mới.
 
-Những ý tưởng đó biến lời giải hình học tọa độ dài thành vài dòng đại số, để lộ cấu trúc ẩn sau bài toán, và đôi khi cho cách tiếp cận đẹp với bài nâng cao hay đề học sinh giỏi.
+Những ý tưởng đó biến lời giải cho các bài toán hình học tọa độ dài thành vài dòng đại số và đôi khi cho cách tiếp cận đẹp với bài nâng cao hay đề học sinh giỏi.
 
-Vì vậy, chúng ta sẽ không bắt đầu như một giáo trình đại học bằng hàng loạt định nghĩa trừu tượng. Ta sẽ bắt đầu từ thứ các em đã biết rõ nhất: hệ phương trình hai ẩn, rồi từng bước xem điều gì xảy ra khi tổng quát nó lên.
+Chúng ta sẽ không bắt đầu như một giáo trình đại học bằng hàng loạt định nghĩa trừu tượng. Chúng ta sẽ bắt đầu từ thứ các em đã biết rõ nhất: hệ phương trình hai ẩn, rồi từng bước xem điều gì xảy ra khi tổng quát nó lên.
 
 \subsection{Phương trình tuyến tính là gì?}
 
@@ -48,11 +48,99 @@ ax + by + cz = d \qquad (a, b, c \text{ không đồng thời bằng } 0)
 $$
 biểu diễn một mặt phẳng.
 
-Đường thẳng với mặt phẳng trông chẳng liên quan gì đến nhau, vậy mà cả hai cùng một cấu trúc, đều là phương trình tuyến tính (\emph{linear equation}).
+Đường thẳng trong \(Oxy\) và mặt phẳng trong \(Oxyz\) thoạt nhìn là hai đối tượng khác nhau. Nhưng nhìn vào phương trình của chúng:
+$$
+ax+by=c,
+$$
+$$
+ax+by+cz=d.
+$$
+Khác biệt gần như chỉ là phương trình thứ hai có thêm một tọa độ \(z\). Nếu viết các tọa độ thành một vector, ta còn thấy rõ hơn:
+$$
+(x,y)
+\qquad\text{và}\qquad
+(x,y,z).
+$$
+Trong cả hai trường hợp, ta làm đúng một việc: \textbf{nhân mỗi tọa độ với một số rồi cộng chúng lại}.
+$$
+(x,y)\longmapsto ax+by,
+$$
+$$
+(x,y,z)\longmapsto ax+by+cz.
+$$
+Đây mới là cấu trúc quan trọng.
 
-Chữ ``tuyến'' nghĩa là đường thẳng, vì trên mặt phẳng đồ thị của phương trình là một đường thẳng. Gọi là tuyến tính vì mọi ẩn đều chỉ xuất hiện ở bậc một (không bình phương, không nhân nhau): vế trái chỉ là một phép cộng có trọng số các ẩn. Từ đó có một hệ quả kiểm được ngay: với phương trình thuần nhất (vế phải bằng không), cộng hai nghiệm hay nhân một nghiệm với một số vẫn được nghiệm mới. Tính chất này gọi là chồng chất (\emph{superposition}).
+Thử gọi phép tính ấy là \(L\). Chẳng hạn trong hai chiều,
+$$
+L(x,y)=ax+by.
+$$
+Nói theo ngôn ngữ quen thuộc, \(L\) cũng là một hàm số --- chỉ khác ở chỗ ``biến'' của nó không phải một số mà là cả một vector: bỏ vector vào, nhận về một số.
+Nếu cộng hai điểm --- hay chính xác hơn, hai vector --- trước rồi mới đưa vào \(L\), ta được
+$$
+L((x_1,y_1)+(x_2,y_2))
+=a(x_1+x_2)+b(y_1+y_2).
+$$
+Tách ngoặc ra:
+$$
+=ax_1+by_1+ax_2+by_2
+=L(x_1,y_1)+L(x_2,y_2).
+$$
+Tương tự, nếu kéo một vector lên \(k\) lần,
+$$
+L(kx,ky)=kL(x,y).
+$$
+Nói ngắn gọn, phép tính này \textbf{tôn trọng hai thao tác cơ bản của vector: cộng và nhân với một số}.
 
-Chỗ đáng chú ý: đường thẳng ứng với $n = 2$, mặt phẳng ứng với $n = 3$ của cùng một dạng $a_1x_1 + \cdots + a_nx_n = b$. Một khi đã thấy điều đó thì không có lý do gì $n$ phải dừng ở 2 hay 3 --- và chính bước cho $n$ tùy ý này là bước sang đại số tuyến tính.
+Đó mới là ý nghĩa sâu hơn của chữ \emph{linear}.
+
+Bây giờ quay lại phương trình
+$$
+ax+by=c.
+$$
+Nó chỉ đang hỏi: những điểm nào được \(L\) biến thành cùng một số \(c\)?
+
+Câu này các em đã trả lời từ \(Oxy\) mà không để ý: phương trình \(ax+by=c\) vẽ ra một đường thẳng. Nói theo ngôn ngữ mới, đường thẳng ấy chính là tập hợp tất cả các điểm được \(L\) đưa về cùng một số \(c\). Kiểm tra nhanh cũng được: với \(L(x,y)=2x+3y\) và \(c=6\), các điểm \((0,2)\), \((3,0)\), \((1,\frac{4}{3})\) đều thỏa mãn --- và cả ba cùng nằm trên một đường thẳng.
+
+Thêm một tọa độ,
+$$
+L(x,y,z)=ax+by+cz,
+$$
+thì câu hỏi tương tự --- những điểm nào được biến thành \(d\)? --- có đáp án là một mặt phẳng, đúng như các em đã thấy trong \(Oxyz\).
+
+Vì vậy đường thẳng và mặt phẳng ở đây không phải hai công thức tình cờ giống nhau. Chúng là hai phiên bản, ở hai và ba chiều, của cùng một cấu trúc tuyến tính.
+
+Và chẳng có lý do gì phải dừng ở ba chiều. Với \(n\) tọa độ, ta vẫn làm đúng phép tính ấy:
+$$
+L(x_1,\ldots,x_n)
+=a_1x_1+\cdots+a_nx_n.
+$$
+Ta không vẽ được hình dạng của nó khi \(n>3\), vì mắt ta chỉ sống trong ba chiều: muốn xác định một điểm trong thực tế chỉ cần tối đa ba số, còn số thứ tư trở đi không còn hướng nào trên tờ giấy để đặt xuống. Nhưng đại số không cần mắt: cộng hai vector hay kéo dài một vector cũng chỉ là cộng và nhân từng tọa độ --- làm với 2, 3 hay 20 tọa độ đều giống nhau. Chính bước cho \(n\) tùy ý này là bước sang đại số tuyến tính.
+
+Có một trường hợp đặc biệt làm tính tuyến tính lộ ra rất đẹp. Cho vế phải bằng \(0\):
+$$
+a_1x_1+\cdots+a_nx_n=0.
+$$
+Nếu \(u\) và \(v\) là hai nghiệm thì
+$$
+L(u)=0,\qquad L(v)=0.
+$$
+Do \(L\) tôn trọng phép cộng,
+$$
+L(u+v)=L(u)+L(v)=0.
+$$
+Vậy \(u+v\) cũng là nghiệm. Và với mọi số \(k\),
+$$
+L(ku)=kL(u)=0,
+$$
+nên \(ku\) cũng là nghiệm.
+
+Đây không phải một mẹo tình cờ của phương trình. Nó là hệ quả trực tiếp của tính tuyến tính. Ta thường gọi hiện tượng này là \textbf{nguyên lý chồng chất} (\emph{superposition}).
+
+Nhìn theo cách này, điều quan trọng không phải đơn giản là ``các ẩn có số mũ \(1\)''. Đó chỉ là dấu hiệu dễ nhận ra trên công thức. Điều thực sự nằm phía sau là:
+$$
+\boxed{L(u+v)=L(u)+L(v),\qquad L(ku)=kL(u).}
+$$
+Phần còn lại của đại số tuyến tính sẽ liên tục quay lại hai tính chất tưởng như rất đơn giản này.
 
 Tổng quát hơn, ta định nghĩa \textbf{phương trình tuyến tính} theo $n$ ẩn $x_1, x_2, \dots, x_n$ là phương trình viết được dưới dạng
 $$

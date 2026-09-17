@@ -1,6 +1,7 @@
 using LatexBlog.Components;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Unpoly.Blazor;
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddRazorComponents();
 builder.Services.AddScoped<HtmlRenderer>();
 builder.Services.AddSingleton<LatexBlog.Services.PostStore>();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddUnpoly(o => o.MainTargets = [".lb-main"]);
 
 var app = builder.Build();
 
@@ -23,12 +25,13 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
 app.UseHttpsRedirection();
 
-app.UseAntiforgery();
-
 // Static files: classic middleware. MapStaticAssets (dotnet 9/10) registers
 // precompressed gzip variants in its manifest that do not exist in dev, so
 // any client accepting gzip receives an empty 200 for css/js — served raw here.
 app.UseStaticFiles();
+
+app.UseUnpoly();        // BEFORE UseAntiforgery. Sets Vary, and empties 204/304 bodies.
+app.UseAntiforgery();
 
 // ---- htmx fragment endpoints (fallback mode; see docs/Htmxor-verdict.md) ----
 // HtmlRenderer renders a component to an HTML string; the endpoint returns the

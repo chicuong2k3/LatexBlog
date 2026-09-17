@@ -29,6 +29,11 @@ test('trang Về tôi', async ({ page }) => {
   await expect(page.locator('.lb-about h1')).toBeVisible();
 });
 
+test('mọi response vary theo Unpoly headers', async ({ request }) => {
+  const vary = (await request.get('/')).headers()['vary'] || '';
+  expect(vary).toContain('X-Up-Target');
+});
+
 test('trang /write có gate đăng nhập', async ({ page }) => {
   await page.goto('/write');
   await expect(page.locator('.lb-write')).toBeVisible();

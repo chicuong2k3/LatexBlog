@@ -5,6 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+    <!-- Unpoly.Blazor ships as a submodule under external/ and is built via the
+         ProjectReference below; keep the SDK from compiling its sources
+         (src/sample/tests/templates) into this app as well. -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);external\**</DefaultItemExcludes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Unpoly.Blazor\src\Unpoly.Blazor\Unpoly.Blazor.csproj" />
+    <ProjectReference Include="external\Unpoly.Blazor\src\Unpoly.Blazor\Unpoly.Blazor.csproj" />
   </ItemGroup>
 
   <Target Name="BuildPosts" BeforeTargets="BeforeBuild">

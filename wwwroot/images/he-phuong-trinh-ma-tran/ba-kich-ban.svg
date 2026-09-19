@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 290" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="ah-e63e8f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e63e8f"/></marker><marker id="ah-2563eb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ah-d97706" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+  <g stroke="#e2e8f0" stroke-width="1">
+  <line x1="30.0" y1="30" x2="30.0" y2="230"/>
+  <line x1="110.0" y1="30" x2="110.0" y2="230"/>
+  <line x1="150.0" y1="30" x2="150.0" y2="230"/>
+  <line x1="190.0" y1="30" x2="190.0" y2="230"/>
+  <line x1="230.0" y1="30" x2="230.0" y2="230"/>
+  <line x1="30" y1="230.0" x2="230" y2="230.0"/>
+  <line x1="30" y1="150.0" x2="230" y2="150.0"/>
+  <line x1="30" y1="110.0" x2="230" y2="110.0"/>
+  <line x1="30" y1="70.0" x2="230" y2="70.0"/>
+  <line x1="30" y1="30.0" x2="230" y2="30.0"/>
+  </g>
+  <line x1="24" y1="190.0" x2="240" y2="190.0" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="70.0" y1="236" x2="70.0" y2="20" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="244" y="195.0" fill="#64748b" font-style="italic">x</text>
+  <text x="54.0" y="26" fill="#64748b" font-style="italic">y</text>
+  <text x="54.0" y="207.0" fill="#64748b" font-style="italic">O</text>
+  <text x="130.0" y="266" text-anchor="middle" fill="#0f172a" font-weight="bold">Cắt nhau: 1 nghiệm</text>
+  <line x1="70.0" y1="230.0" x2="230.0" y2="70.0" stroke="#e63e8f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110.0" y1="30.0" x2="210.0" y2="230.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="163.3" cy="136.7" r="5.5" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+  <g stroke="#e2e8f0" stroke-width="1">
+  <line x1="280.0" y1="30" x2="280.0" y2="230"/>
+  <line x1="360.0" y1="30" x2="360.0" y2="230"/>
+  <line x1="400.0" y1="30" x2="400.0" y2="230"/>
+  <line x1="440.0" y1="30" x2="440.0" y2="230"/>
+  <line x1="480.0" y1="30" x2="480.0" y2="230"/>
+  <line x1="280" y1="230.0" x2="480" y2="230.0"/>
+  <line x1="280" y1="150.0" x2="480" y2="150.0"/>
+  <line x1="280" y1="110.0" x2="480" y2="110.0"/>
+  <line x1="280" y1="70.0" x2="480" y2="70.0"/>
+  <line x1="280" y1="30.0" x2="480" y2="30.0"/>
+  </g>
+  <line x1="274" y1="190.0" x2="490" y2="190.0" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="320.0" y1="236" x2="320.0" y2="20" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="494" y="195.0" fill="#64748b" font-style="italic">x</text>
+  <text x="304.0" y="26" fill="#64748b" font-style="italic">y</text>
+  <text x="304.0" y="207.0" fill="#64748b" font-style="italic">O</text>
+  <text x="380.0" y="266" text-anchor="middle" fill="#0f172a" font-weight="bold">Song song: vô nghiệm</text>
+  <line x1="320.0" y1="30.0" x2="480.0" y2="190.0" stroke="#e63e8f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="280.0" y1="70.0" x2="440.0" y2="230.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#e2e8f0" stroke-width="1">
+  <line x1="530.0" y1="30" x2="530.0" y2="230"/>
+  <line x1="610.0" y1="30" x2="610.0" y2="230"/>
+  <line x1="650.0" y1="30" x2="650.0" y2="230"/>
+  <line x1="690.0" y1="30" x2="690.0" y2="230"/>
+  <line x1="730.0" y1="30" x2="730.0" y2="230"/>
+  <line x1="530" y1="230.0" x2="730" y2="230.0"/>
+  <line x1="530" y1="150.0" x2="730" y2="150.0"/>
+  <line x1="530" y1="110.0" x2="730" y2="110.0"/>
+  <line x1="530" y1="70.0" x2="730" y2="70.0"/>
+  <line x1="530" y1="30.0" x2="730" y2="30.0"/>
+  </g>
+  <line x1="524" y1="190.0" x2="740" y2="190.0" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="570.0" y1="236" x2="570.0" y2="20" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="744" y="195.0" fill="#64748b" font-style="italic">x</text>
+  <text x="554.0" y="26" fill="#64748b" font-style="italic">y</text>
+  <text x="554.0" y="207.0" fill="#64748b" font-style="italic">O</text>
+  <text x="630.0" y="266" text-anchor="middle" fill="#0f172a" font-weight="bold">Trùng nhau: vô số nghiệm</text>
+  <line x1="560.0" y1="230.0" x2="660.0" y2="30.0" stroke="#e63e8f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="560.0" y1="230.0" x2="660.0" y2="30.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 7"/>
+</svg>

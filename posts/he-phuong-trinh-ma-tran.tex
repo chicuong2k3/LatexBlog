@@ -22,11 +22,11 @@ $$ \begin{cases} x+y=5\\ 2x-y=1. \end{cases} $$
 
 Từ THCS, ta đã biết cách giải những hệ như thế này bằng phương pháp thế hoặc phương pháp cộng đại số. Trong phương pháp cộng, ta nhân các phương trình với những số thích hợp rồi cộng hoặc trừ chúng để loại bớt một ẩn.
 
-Với hai hay ba ẩn, ta còn xoay xở giải bằng tay. Nhưng với hàng chục, hàng trăm hay hàng nghìn ẩn, cách viết và cách khử từng phương trình trở nên cồng kềnh và rất mất thời gian. Do đó, một trong những bài toán cơ bản mà đại số tuyến tính muốn giải quyết là:
+Với hai hay ba ẩn, ta còn có thể xoay xở giải bằng tay. Nhưng với hàng chục, hàng trăm hay hàng nghìn ẩn hay phương trình, cách viết và cách khử từng phương trình trở nên cồng kềnh và rất mất thời gian. Do đó, một trong những bài toán cơ bản mà đại số tuyến tính muốn giải quyết là:
 
-$$ \boxed{\text{Cho nhiều phương trình tuyến tính, hãy tìm tất cả các giá trị thỏa chúng đồng thời.}} $$
+$$ \boxed{\text{Kiểm tra hệ phương trình tuyến tính có nghiệm hay không, và nếu có thì có một thuật toán/qui trình giải tất cả các hệ phương trình tuyến tính một cách hệ thống hay không?}} $$
 
-Ta còn muốn biết trước liệu hệ có nghiệm hay không, có một nghiệm hay vô số nghiệm, và nếu hệ có nghiệm thì có một quy trình (thuật toán) giải có thể giải \textbf{tất cả các hệ phương trình tuyến tính} hay không.
+Trước khi đi vào phương pháp giải hệ phương trình tuyến tính, ta cần hiểu rõ khái niệm cơ bản nhất: phương trình tuyến tính là gì.
 
 \subsection{Phương trình tuyến tính là gì?}
 
@@ -96,6 +96,8 @@ Bây giờ cộng hai nghiệm đầu:
 
 $$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=12\neq6. $$
 
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tong-hai-nghiem.svg}}
+
 Tổng hai nghiệm không còn là nghiệm. Vậy khi nào tổng hai nghiệm vẫn là nghiệm?
 
 Giả sử \(\vec{u},\vec{v}\) đều là nghiệm của \(L(x,y)=c\), tức
@@ -151,6 +153,8 @@ Với \(L(\mathbf{x})=0\), tính chất vừa có còn mạnh hơn nữa. Nếu 
 $$ L(\alpha \mathbf{u}+\beta \mathbf{v})=L(\alpha \mathbf{u})+L(\beta \mathbf{v})=\alpha L(\mathbf{u})+\beta L(\mathbf{v})=0. $$
 
 Không chỉ tổng hay bội riêng lẻ; mọi tổ hợp \(\alpha \mathbf{u}+\beta \mathbf{v}\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (superposition).
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/thuan-nhat-qua-goc.svg}}
 
 Cộng hai nghiệm với nhau hoặc nhân một nghiệm với một số, kết quả vẫn là một nghiệm. Trường hợp vế phải khác \(0\) không có tính chất này. Đây là lý do trường hợp vế phải bằng \(0\) đáng được đặt tên riêng.
 
@@ -253,6 +257,8 @@ Hai đường có thể:
 
 Tương ứng, hệ vô nghiệm, có một nghiệm, hoặc có vô số nghiệm.
 
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/ba-kich-ban.svg}}
+
 Hai đường thẳng phân biệt có thể có đúng hai điểm chung không?
 
 Vậy hệ hai phương trình hai ẩn có thể có đúng hai nghiệm không?
@@ -271,6 +277,8 @@ Khử:
 $$\begin{cases} x - y = 1 \\ 3y = 4 \end{cases}$$
 \(y = \frac{4}{3}\), \(x = \frac{7}{3}\): hai đường cắt nhau tại đúng điểm ấy.
 
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/vd2-cat-nhau.svg}}
+
 \textbf{Ví dụ 3.} Vô nghiệm
 $$\begin{cases} x + y = 4 \\ 3x + 3y = 6 \end{cases}$$
 Từ phương trình đầu,
@@ -287,6 +295,8 @@ Hai đường là
 $$ y=-x+4 \quad\text{và}\quad y=-x+2. $$
 Chúng có cùng hệ số góc \(-1\) nhưng tung độ gốc khác nhau, nên song song và không có giao điểm.
 
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/vd3-song-song.svg}}
+
 Khi dùng phép khử, chính sự mâu thuẫn này xuất hiện dưới dạng
 $$(3x+3y)-3(x+y)=6-12,$$
 suy ra
@@ -295,6 +305,8 @@ $$0=-6.$$
 \textbf{Ví dụ 4.} Vô số nghiệm
 $$\begin{cases} 4x - 2y = 1 \\ 16x - 8y = 4 \end{cases}$$
 Ở đây điều đáng thấy không phải thao tác khử, mà là phương trình thứ hai vốn đã bằng \(4\) lần phương trình thứ nhất: nhân \(4x-2y=1\) với \(4\) ta được đúng \(16x-8y=4\). Vậy hai phương trình thực chất là cùng một điều kiện được viết hai lần. Bất kỳ điểm nào thỏa phương trình đầu cũng tự động thỏa phương trình sau, nên hai đường trùng nhau và hệ chỉ còn một phương trình với hai ẩn. Giải theo \(x\): \(x = \frac{1}{4} + \frac{1}{2}y\). Ở đây \(y\) chưa bị chốt giá trị: chọn \(y = t\) tùy ý thì \(x = \frac{1}{4} + \frac{1}{2}t\). Nghiệm là \(x = \frac{1}{4} + \frac{1}{2}t,\ y = t\) với \(t\in\mathbb R\).
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/vd4-trung-nhau.svg}}
 
 Nếu vẫn lấy phương trình hai trừ bốn lần phương trình nhất, ta nhận được
 $$0=0.$$

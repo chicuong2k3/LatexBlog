@@ -1,7 +1,8 @@
+@page "/tags"
 @page "/tags/{tag}"
 @inject PostStore PostStore
 
-<PageTitle>#@CurrentTag - Alternative World</PageTitle>
+<PageTitle>@(string.IsNullOrEmpty(CurrentTag) ? "Thẻ" : "#" + CurrentTag) - Alternative World</PageTitle>
 <HeadContent>
     <script type="module" src="/js/page-layout.js?v=20260821a"
             data-page-layout
@@ -9,7 +10,7 @@
             data-heading=".lb-page-head h1"></script>
 </HeadContent>
 <header class="lb-page-head">
-    <h1>Bài viết theo thẻ: #@CurrentTag</h1>
+    <h1>@(string.IsNullOrEmpty(CurrentTag) ? "Tất cả bài viết" : "Bài viết theo thẻ #" + CurrentTag)</h1>
     <div class="lb-chips">
         @foreach (var tag in AllTags)
         {

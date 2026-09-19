@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="ah-e63e8f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e63e8f"/></marker><marker id="ah-2563eb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ah-d97706" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+  <g stroke="#e2e8f0" stroke-width="1">
+  <line x1="70.0" y1="30" x2="70.0" y2="390"/>
+  <line x1="190.0" y1="30" x2="190.0" y2="390"/>
+  <line x1="250.0" y1="30" x2="250.0" y2="390"/>
+  <line x1="310.0" y1="30" x2="310.0" y2="390"/>
+  <line x1="370.0" y1="30" x2="370.0" y2="390"/>
+  <line x1="430.0" y1="30" x2="430.0" y2="390"/>
+  <line x1="70" y1="390.0" x2="430" y2="390.0"/>
+  <line x1="70" y1="270.0" x2="430" y2="270.0"/>
+  <line x1="70" y1="210.0" x2="430" y2="210.0"/>
+  <line x1="70" y1="150.0" x2="430" y2="150.0"/>
+  <line x1="70" y1="90.0" x2="430" y2="90.0"/>
+  <line x1="70" y1="30.0" x2="430" y2="30.0"/>
+  </g>
+  <line x1="64" y1="330.0" x2="440" y2="330.0" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="130.0" y1="396" x2="130.0" y2="20" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="444" y="335.0" fill="#64748b" font-style="italic">x</text>
+  <text x="114.0" y="26" fill="#64748b" font-style="italic">y</text>
+  <text x="114.0" y="347.0" fill="#64748b" font-style="italic">O</text>
+  <line x1="130.0" y1="390.0" x2="430.0" y2="90.0" stroke="#e63e8f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160.0" y1="30.0" x2="340.0" y2="390.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <line x1="70.0" y1="250.0" x2="430.0" y2="250.0" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <circle cx="270.0" cy="250.0" r="5.5" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+  <text x="282.0" y="272.0" fill="#0f172a" text-anchor="start">(7/3, 4/3)</text>
+  <text x="384.0" y="144.0" fill="#be185d" text-anchor="start" font-weight="bold">x − y = 1</text>
+  <text x="175.0" y="54.0" fill="#1d4ed8" text-anchor="start" font-weight="bold">2x + y = 6</text>
+  <text x="382.0" y="240.2" fill="#b45309" text-anchor="start" font-weight="bold">3y = 4</text>
+</svg>

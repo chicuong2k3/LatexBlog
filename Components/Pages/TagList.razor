@@ -21,6 +21,6 @@
 
     private IReadOnlyList<PostMeta> Posts =>
         PostStore.All
-            .Where(p => p.Tags.Contains(Tag ?? "", StringComparer.OrdinalIgnoreCase))
+            .Where(p => string.IsNullOrEmpty(Tag) || p.Tags.Contains(Tag, StringComparer.OrdinalIgnoreCase))
             .ToList();
 }

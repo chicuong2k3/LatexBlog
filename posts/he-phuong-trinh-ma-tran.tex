@@ -24,11 +24,24 @@ Từ THCS, ta đã biết cách giải những hệ như thế này bằng phư�
 
 Với hai hay ba ẩn, ta còn có thể xoay xở giải bằng tay. Nhưng với hàng chục, hàng trăm hay hàng nghìn ẩn hay phương trình, cách viết và cách khử từng phương trình trở nên cồng kềnh và rất mất thời gian. Do đó, một trong những bài toán cơ bản mà đại số tuyến tính muốn giải quyết là:
 
-$$ \boxed{\text{Kiểm tra hệ phương trình tuyến tính có nghiệm hay không, và nếu có thì có một thuật toán/qui trình giải tất cả các hệ phương trình tuyến tính một cách hệ thống hay không?}} $$
+\begin{quote}
+Kiểm tra hệ phương trình tuyến tính có nghiệm hay không, và nếu có thì có một thuật toán/qui trình giải tất cả các hệ phương trình tuyến tính một cách hệ thống hay không?
+\end{quote}
+
+Một quy trình như thế đã được viết ra từ khoảng hai nghìn năm trước. Sách \emph{Cửu Chương Toán Thuật} của Trung Hoa đã đặt ra bài toán sau. Ba bó lúa loại tốt, hai bó loại vừa và một bó loại kém cho \(39\) đấu thóc. Hai bó tốt, ba bó vừa và một bó kém cho \(34\) đấu. Một bó tốt, hai bó vừa và ba bó kém cho \(26\) đấu. Hỏi một bó mỗi loại cho bao nhiêu đấu thóc?
+
+Gọi số đấu thóc của một bó loại tốt, vừa, kém lần lượt là \(x,y,z\). Bài toán trở thành hệ
+$$ \begin{cases} 3x+2y+z=39\\ 2x+3y+z=34\\ x+2y+3z=26. \end{cases} $$
+
+Ba ẩn, ba phương trình. Phép thế vẫn làm được, nhưng đã bắt đầu rối, và người thời ấy không có chữ \(x,y,z\) để thế. Họ xếp các con số bằng que tính lên bàn tính rồi khử thẳng trên những con số đó. Cuối bài, ta sẽ giải lại đúng bài toán này theo cách của họ.
 
 Trước khi đi vào phương pháp giải hệ phương trình tuyến tính, ta cần hiểu rõ khái niệm cơ bản nhất: phương trình tuyến tính là gì.
 
 \subsection{Phương trình tuyến tính là gì?}
+
+\begin{quote}
+\textbf{Ghi chú lịch sử.} Việc coi một phương trình là một đường cũng từng là một ý tưởng mới. Khoảng những năm 1630, Pierre de Fermat và René Descartes, mỗi người theo cách riêng, tìm cách dùng đại số để nghiên cứu hình học. Họ gắn mỗi điểm với một cặp số, và mỗi đường với một phương trình mà mọi điểm trên nó thỏa mãn. Fermat chỉ ra rằng phương trình bậc nhất hai ẩn luôn cho một đường thẳng. Nhờ vậy, câu hỏi ``hai đường thẳng cắt nhau ở đâu'' biến thành câu hỏi ``hệ hai phương trình có nghiệm gì'', và ngược lại.
+\end{quote}
 
 Như chúng ta đã biết, với \(a,b\) không đồng thời bằng \(0\), phương trình
 $$
@@ -38,12 +51,27 @@ biểu diễn một đường thẳng trong \(Oxy\). Tương tự, với \(a,b,c
 $$
 ax+by+cz=d
 $$
-là một mặt phẳng trong \(Oxyz\). Vế trái của cả hai phương trình đều lấy từng tọa độ nhân với một hệ số tương ứng, rồi cộng lại chúng lại với nhau. Chúng ta gọi thao tác ấy là \(L\), ta có:
+là một mặt phẳng trong \(Oxyz\). Vế trái của cả hai phương trình đều lấy từng tọa độ nhân với một hệ số tương ứng, rồi cộng tất cả lại với nhau. Gọi thao tác ấy là \(L\). Với hai biến,
 $$ L(x,y)=ax+by. $$
 
-Ở trường phổ thông, ta đã quen với hai thao tác cơ bản trên vector đó là cộng hai vector và nhân một vector với một số. Từ đây vector trong mặt phẳng được viết có mũi tên trên đầu: \(\vec{u}\), \(\vec{v}\), đúng như cách các em đã gặp ở THPT.
+Khi chỉ có một biến, nó là \(L(x)=ax\), tức hàm tỉ lệ thuận các em học từ lớp 7. Hàm ấy có hai tính chất cơ bản đến mức ít ai để ý.
+\begin{enumerate}
+  \item \textbf{Cộng hai đầu vào.} Lấy hai số \(p\) và \(q\). Cộng chúng lại rồi mới nhân với \(a\), hay nhân từng số với \(a\) rồi cộng lại, kết quả như nhau. Chẳng hạn với \(a=3\), \(p=2\), \(q=5\), ta có \(3\cdot 7=21\) và \(3\cdot2+3\cdot5=6+15=21\).
+  $$ L(p+q)=a(p+q)=ap+aq=L(p)+L(q). $$
+  \item \textbf{Nhân đầu vào với một số.} Tăng \(x\) lên \(k\) lần thì \(L(x)\) cũng tăng \(k\) lần.
+  $$ L(kx)=a(kx)=k(ax)=kL(x). $$
+\end{enumerate}
+Chữ ``tuyến tính'' (\emph{linear}) có gốc từ chữ ``đường'' (\emph{line}), vì đồ thị của \(y=ax\) là một đường thẳng qua gốc tọa độ.
 
-Nếu lấy hai vector \(\vec{u}\) và \(\vec{v}\), liệu việc cộng chúng lại rồi mới tính \(L\) có cho cùng kết quả với việc tính \(L\) trên từng vector rồi đem cộng lại hay không?
+Ở đây dễ lẫn hai thứ khác nhau, nên cần tách ra. \(L\) là một quy tắc, nhận đầu vào và trả ra một số. Nó không phải một phương trình. Khi viết \(y=ax\) rồi vẽ, ta đang vẽ \emph{đồ thị} của quy tắc một đầu vào, tức tập các cặp \((x,\,ax)\) gồm đầu vào và đầu ra. Với \(L(x,y)=ax+by\), đầu vào đã là một cặp số, nên đồ thị là tập các bộ \((x,\,y,\,ax+by)\). Nó nằm trong không gian ba chiều và là một mặt phẳng qua gốc tọa độ, không còn là đường thẳng nữa.
+
+Phương trình \(ax+by=c\) là chuyện khác. Nó không vẽ \(L\), mà gom lại những đầu vào \((x,y)\) mà \(L\) cho ra đúng số \(c\). Những đầu vào ấy nằm trên một đường thẳng trong \(Oxy\). Chính \(y=ax\) cũng có thể đọc theo cách này. Viết lại thành \(ax-y=0\), nó là một phương trình tuyến tính hai ẩn, và đường thẳng qua gốc kia là tập nghiệm của nó. Cùng một đường thẳng, nhưng một lần là đồ thị của quy tắc một đầu vào, một lần là tập nghiệm của phương trình hai ẩn.
+
+Sang hai biến, \(L(x,y)=ax+by\) có còn giữ được hai tính chất ấy không?
+
+Muốn hỏi câu đó, trước hết phải cộng được hai đầu vào với nhau và nhân được một đầu vào với một số. Đầu vào của \(L\) là một cặp số \((x,y)\). Trong \(Oxy\), cặp số ấy vừa là tọa độ của điểm \(M(x,y)\), vừa là tọa độ của vector \(\overrightarrow{OM}\) đi từ gốc \(O\) tới \(M\). Hai điểm thì không cộng được với nhau, còn hai vector thì cộng được, và nhân một vector với một số cũng được. Đó là hai thao tác các em đã quen từ THPT. Vì vậy từ đây ta coi \((x,y)\) là vector, ký hiệu bằng chữ cái thường có mũi tên bên trên như \(\vec{u}\), \(\vec{v}\).
+
+Bắt đầu với phép cộng. Cộng hai vector \(\vec{u}\), \(\vec{v}\) rồi mới tính \(L\), hay tính \(L\) trên từng vector rồi đem cộng lại, hai cách có cho cùng một kết quả không?
 
 Lấy hai vector
 $$\vec{u}=(x_1,y_1),\qquad \vec{v}=(x_2,y_2).$$
@@ -74,6 +102,10 @@ Cộng hai vector trước rồi tính \(L\), hay tính \(L\) riêng từng vect
 
 Hai đẳng thức này chính là hai tính chất cốt lõi của một \textbf{ánh xạ tuyến tính} — khái niệm trung tâm của cả môn học này. Ở đây, ta chỉ cần nhớ rằng chúng xuất phát hoàn toàn tự nhiên từ chính cấu trúc của phép tính \(ax+by\).
 
+\begin{quote}
+\textbf{Ghi chú lịch sử.} Hai đẳng thức trên được dùng rất lâu trước khi trở thành một định nghĩa. Năm 1844, Hermann Grassmann viết cuốn \emph{Ausdehnungslehre}, trong đó ông cộng các đại lượng có hướng và nhân chúng với số theo đúng những quy tắc ta vừa dùng. Cuốn sách khó đọc và gần như không ai để ý. Năm 1888, Giuseppe Peano đọc lại Grassmann và viết cuốn \emph{Calcolo geometrico}. Ở chương IX, ông liệt kê các tiên đề cho một tập hợp có phép cộng và phép nhân với số, gần giống định nghĩa không gian vector ngày nay, rồi gọi một phép biến đổi là tuyến tính khi nó giữ được phép cộng. Peano không phát minh ra tính chất \(L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v})\). Ông nhận ra rằng đó là thứ các phép tính cũ có chung, và lấy nó làm định nghĩa.
+\end{quote}
+
 Phương trình
 
 $$ ax+by=c $$
@@ -99,6 +131,8 @@ $$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=12\neq6. $$
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tong-hai-nghiem.svg}}
 
 Tổng hai nghiệm không còn là nghiệm. Vậy khi nào tổng hai nghiệm vẫn là nghiệm?
+
+Vì sao lại quan tâm chuyện này? Đường thẳng \(2x+3y=6\) có vô số điểm, nên không thể mô tả nó bằng cách liệt kê từng nghiệm. Nếu cộng hai nghiệm, hay nhân một nghiệm với một số, luôn ra một nghiệm mới, thì chỉ cần giữ lại vài nghiệm là đủ để sinh ra những nghiệm còn lại. Các nhà toán học thế kỷ 18 gặp đúng nhu cầu này khi tìm cách mô tả mọi kiểu rung của một sợi dây đàn (xem ghi chú lịch sử ở phần dưới). Họ không hỏi về đường thẳng, nhưng câu hỏi họ đặt ra thì giống hệt.
 
 Giả sử \(\vec{u},\vec{v}\) đều là nghiệm của \(L(x,y)=c\), tức
 
@@ -157,6 +191,10 @@ Không chỉ tổng hay bội riêng lẻ; mọi tổ hợp \(\alpha \mathbf{u}+
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/thuan-nhat-qua-goc.svg}}
 
 Cộng hai nghiệm với nhau hoặc nhân một nghiệm với một số, kết quả vẫn là một nghiệm. Trường hợp vế phải khác \(0\) không có tính chất này. Đây là lý do trường hợp vế phải bằng \(0\) đáng được đặt tên riêng.
+
+\begin{quote}
+\textbf{Ghi chú lịch sử.} Tính chất ``cộng hai nghiệm vẫn ra nghiệm'' được chú ý từ vật lý trước. Giữa thế kỷ 18, nhiều nhà toán học tranh cãi xem một sợi dây đàn rung như thế nào. Năm 1753, Daniel Bernoulli cho rằng mọi chuyển động của dây đều là tổng của những dao động hình sin đơn giản, mỗi dao động với một biên độ thích hợp. Lập luận ấy đứng được vì phương trình của dây rung cũng có vế phải bằng \(0\), giống \(L(\mathbf{x})=0\) ở trên. Mỗi dao động đơn giản là một nghiệm, và tổng các nghiệm vẫn là nghiệm. Tranh luận quanh ý tưởng của Bernoulli kéo dài hàng chục năm, và câu hỏi nó để lại về sau dẫn tới chuỗi Fourier.
+\end{quote}
 
 Những biểu thức ta gặp từ đầu bài đều có cùng một dạng:
 
@@ -380,7 +418,9 @@ a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
 \end{array} \right]
 $$
 
-Trong Cửu Chương Toán Thuật, các hệ số đã được xếp thành cột và khử trực tiếp trên bảng số. Khi ấy chưa có khái niệm ma trận theo nghĩa hiện đại.
+\begin{quote}
+\textbf{Ghi chú lịch sử.} \emph{Cửu Chương Toán Thuật} là sách toán Trung Hoa được biên soạn khoảng hai nghìn năm trước. Chương thứ tám của sách giải hệ phương trình tuyến tính, và tên chương đọc theo âm Hán Việt là ``phương trình''. Chữ ta dùng hôm nay cũng mượn từ đó. Người ta biểu diễn số bằng que tính, đặt các que vào những ô vuông xếp thành hình chữ nhật trên bàn tính. Mỗi phương trình chiếm một cột, các hệ số và vế phải nằm theo thứ tự cố định, và phép khử được làm trực tiếp trên bảng số ấy. Đó gần như chính là ma trận bổ sung, chỉ khác là hàng của ta là cột của họ. Khi ấy chưa có khái niệm ma trận theo nghĩa hiện đại.
+\end{quote}
 
 Khi ta bỏ tên \(x,y,z\), một phương trình chỉ còn được ghi lại bằng một hàng số. Vì vậy, những phép trước đây ta làm trên phương trình giờ trở thành những phép làm trên hàng. Ba phép quen thuộc trở thành ba \textbf{phép biến đổi hàng sơ cấp} (\emph{elementary row operations}):
 \begin{enumerate}
@@ -504,7 +544,37 @@ $$
 $$ (x,y,z)=(1,2,3). $$
 
 \begin{quote}
+\textbf{Ghi chú lịch sử.} Cách làm ở Ví dụ 6 ngày nay gọi là phép khử Gauss (\emph{Gaussian elimination}), nhưng Gauss không phát minh ra nó. Ông cần nó vì một bài toán thiên văn. Năm 1801, Gauss tính quỹ đạo của tiểu hành tinh Ceres từ một ít quan sát. Mỗi lần quan sát cho một phương trình, nhưng số quan sát nhiều hơn số ẩn và phép đo nào cũng có sai số, nên các phương trình không bao giờ khớp nhau hoàn toàn. Gauss chọn nghiệm làm cho tổng bình phương các sai lệch nhỏ nhất. Đó là phương pháp bình phương tối thiểu, và nó đưa về một hệ tuyến tính có số phương trình bằng số ẩn. Năm 1810, trong bài viết về quỹ đạo tiểu hành tinh Pallas, ông trình bày cách khử dần từng ẩn để giải hệ ấy. Chính ông gọi đó là cách khử ``thông thường''. Cái tên gắn với Gauss chỉ xuất hiện về sau, trong thế kỷ 20.
+\end{quote}
+
+\begin{quote}
 \textbf{Ghi chú lịch sử.} Còn thuật ngữ ``ma trận bổ sung'' (\emph{augmented matrix}) dường như do nhà toán học Mỹ Maxime Bôcher (1867--1918) đặt ra trong cuốn \emph{Introduction to Higher Algebra} năm 1907.
 \end{quote}
+
+\subsection{Quay lại bài toán bó lúa}
+
+Bây giờ có thể giải bài toán ở đầu bài theo đúng cách người xưa đã làm. Người soạn \emph{Cửu Chương Toán Thuật} đặt mỗi phương trình thành một cột que tính trên bàn tính. Ta xoay bảng ấy đi một góc, cho mỗi phương trình nằm trên một hàng, và được ma trận bổ sung
+$$ \left[ \begin{array}{ccc|c} 3 & 2 & 1 & 39 \\ 2 & 3 & 1 & 34 \\ 1 & 2 & 3 & 26 \end{array} \right]. $$
+
+Hàng ba có hệ số đầu bằng \(1\), dùng nó để khử sẽ không phải làm việc với phân số. Đổi hàng một với hàng ba.
+$$ R_1\leftrightarrow R_3 $$
+$$ \left[ \begin{array}{ccc|c} 1 & 2 & 3 & 26 \\ 2 & 3 & 1 & 34 \\ 3 & 2 & 1 & 39 \end{array} \right] $$
+
+Khử \(x\) khỏi hai hàng dưới.
+$$ R_2\leftarrow R_2-2R_1,\qquad R_3\leftarrow R_3-3R_1 $$
+$$ \left[ \begin{array}{ccc|c} 1 & 2 & 3 & 26 \\ 0 & -1 & -5 & -18 \\ 0 & -4 & -8 & -39 \end{array} \right] $$
+
+Số âm vừa xuất hiện. Người làm trên bàn tính cũng gặp đúng chuyện này, và chương ``phương trình'' của \emph{Cửu Chương Toán Thuật} là nơi có quy tắc cộng trừ số âm sớm nhất mà ta còn biết. Theo lời chú giải của Lưu Huy (thế kỷ 3), người ta dùng que đỏ cho số dương và que đen cho số âm. Ở đây, số âm xuất hiện chính vì phép khử cần đến nó.
+
+Khử \(y\) khỏi hàng ba.
+$$ R_3\leftarrow R_3-4R_2 $$
+$$ \left[ \begin{array}{ccc|c} 1 & 2 & 3 & 26 \\ 0 & -1 & -5 & -18 \\ 0 & 0 & 12 & 33 \end{array} \right] $$
+
+Hàng ba cho \(12z=33\), nên \(z=\frac{11}{4}\). Hàng hai cho \(-y-5z=-18\), nên
+$$ y=18-5\cdot\frac{11}{4}=\frac{17}{4}. $$
+Hàng một cho
+$$ x=26-2\cdot\frac{17}{4}-3\cdot\frac{11}{4}=\frac{37}{4}. $$
+
+Một bó lúa tốt cho \(9\frac14\) đấu thóc, một bó vừa cho \(4\frac14\) đấu, một bó kém cho \(2\frac34\) đấu. Đây cũng là đáp số ghi trong sách.
 
 \end{document}

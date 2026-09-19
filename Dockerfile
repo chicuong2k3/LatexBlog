@@ -6,6 +6,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /src
 COPY LatexBlog.csproj ./
+COPY external/Unpoly.Blazor/src/Unpoly.Blazor/Unpoly.Blazor.csproj external/Unpoly.Blazor/src/Unpoly.Blazor/
 RUN dotnet restore
 COPY . .
 RUN dotnet publish -c Release -o /app --no-restore

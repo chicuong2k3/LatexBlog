@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 430" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs><marker id="ah-64748b" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="ah-e63e8f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63e8f"/></marker><marker id="ah-2563eb" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ah-059669" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker><marker id="ah-d97706" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+  <g stroke="#e2e8f0" stroke-width="1">
+  <line x1="60.0" y1="30" x2="60.0" y2="390"/>
+  <line x1="220.0" y1="30" x2="220.0" y2="390"/>
+  <line x1="300.0" y1="30" x2="300.0" y2="390"/>
+  <line x1="380.0" y1="30" x2="380.0" y2="390"/>
+  <line x1="460.0" y1="30" x2="460.0" y2="390"/>
+  <line x1="60" y1="390.0" x2="460" y2="390.0"/>
+  <line x1="60" y1="230.0" x2="460" y2="230.0"/>
+  <line x1="60" y1="150.0" x2="460" y2="150.0"/>
+  <line x1="60" y1="70.0" x2="460" y2="70.0"/>
+  </g>
+  <line x1="54" y1="310.0" x2="470" y2="310.0" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-64748b)"/>
+  <line x1="140.0" y1="396" x2="140.0" y2="20" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-64748b)"/>
+  <text x="474" y="315.0" fill="#64748b" font-style="italic">x</text>
+  <text x="124.0" y="26" fill="#64748b" font-style="italic">y</text>
+  <text x="124.0" y="327.0" fill="#64748b" font-style="italic">O</text>
+  <line x1="60.0" y1="123.3" x2="460.0" y2="390.0" stroke="#e63e8f" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <line x1="120.0" y1="30.0" x2="460.0" y2="256.7" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <line x1="140.0" y1="310.0" x2="300.0" y2="150.0" stroke="#d97706" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-d97706)"/>
+  <line x1="140.0" y1="310.0" x2="220.0" y2="230.0" stroke="#e63e8f" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-e63e8f)"/>
+  <text x="206.0" y="226.0" fill="#be185d" text-anchor="end" font-weight="bold">u</text>
+  <text x="286.0" y="146.0" fill="#b45309" text-anchor="end" font-weight="bold">2u</text>
+  <text x="83.2" y="123.2" fill="#be185d" font-weight="bold" transform="rotate(33.69 83.2 123.2)">L = 5</text>
+  <text x="195.2" y="64.5" fill="#b45309" font-weight="bold" transform="rotate(33.69 195.2 64.5)">L = 10</text>
+</svg>

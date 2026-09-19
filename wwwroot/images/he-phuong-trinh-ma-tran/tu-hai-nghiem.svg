@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs><marker id="ah-64748b" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="ah-e63e8f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63e8f"/></marker><marker id="ah-2563eb" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ah-059669" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker><marker id="ah-d97706" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" markerUnits="strokeWidth" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+  <g stroke="#e2e8f0" stroke-width="1">
+  <line x1="60.0" y1="30" x2="60.0" y2="380"/>
+  <line x1="110.0" y1="30" x2="110.0" y2="380"/>
+  <line x1="160.0" y1="30" x2="160.0" y2="380"/>
+  <line x1="260.0" y1="30" x2="260.0" y2="380"/>
+  <line x1="310.0" y1="30" x2="310.0" y2="380"/>
+  <line x1="360.0" y1="30" x2="360.0" y2="380"/>
+  <line x1="410.0" y1="30" x2="410.0" y2="380"/>
+  <line x1="460.0" y1="30" x2="460.0" y2="380"/>
+  <line x1="510.0" y1="30" x2="510.0" y2="380"/>
+  <line x1="60" y1="380.0" x2="510" y2="380.0"/>
+  <line x1="60" y1="330.0" x2="510" y2="330.0"/>
+  <line x1="60" y1="280.0" x2="510" y2="280.0"/>
+  <line x1="60" y1="180.0" x2="510" y2="180.0"/>
+  <line x1="60" y1="130.0" x2="510" y2="130.0"/>
+  <line x1="60" y1="80.0" x2="510" y2="80.0"/>
+  <line x1="60" y1="30.0" x2="510" y2="30.0"/>
+  </g>
+  <line x1="54" y1="230.0" x2="520" y2="230.0" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-64748b)"/>
+  <line x1="210.0" y1="386" x2="210.0" y2="20" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-64748b)"/>
+  <text x="524" y="235.0" fill="#64748b" font-style="italic">x</text>
+  <text x="194.0" y="26" fill="#64748b" font-style="italic">y</text>
+  <text x="194.0" y="247.0" fill="#64748b" font-style="italic">O</text>
+  <line x1="60.0" y1="130.0" x2="435.0" y2="380.0" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <line x1="60.0" y1="46.7" x2="510.0" y2="346.7" stroke="#e63e8f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="210.0" y1="230.0" x2="360.0" y2="330.0" stroke="#059669" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-059669)"/>
+  <line x1="210.0" y1="230.0" x2="260.0" y2="180.0" stroke="#2563eb" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-2563eb)"/>
+  <line x1="260.0" y1="180.0" x2="410.0" y2="280.0" stroke="#059669" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-059669)"/>
+  <circle cx="260.0" cy="180.0" r="5.5" fill="#e63e8f" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="410.0" cy="280.0" r="5.5" fill="#e63e8f" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="110.0" cy="80.0" r="5.5" fill="#e63e8f" stroke="#ffffff" stroke-width="2"/>
+  <text x="270.0" y="170.0" fill="#1d4ed8" text-anchor="start" font-weight="bold">p = (1, 1)</text>
+  <text x="420.0" y="270.0" fill="#0f172a" text-anchor="start">q = p + a</text>
+  <text x="120.0" y="70.0" fill="#0f172a" text-anchor="start">p − a</text>
+  <text x="360.0" y="352.0" fill="#047857" text-anchor="middle" font-weight="bold">a = q − p = (3, −2)</text>
+  <text x="152.2" y="92.5" fill="#be185d" font-weight="bold" transform="rotate(33.69 152.2 92.5)">2x + 3y = 5</text>
+  <text x="87.2" y="132.5" fill="#64748b" font-weight="bold" transform="rotate(33.69 87.2 132.5)">2x + 3y = 0</text>
+</svg>

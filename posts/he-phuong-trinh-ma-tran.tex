@@ -63,38 +63,45 @@ $$ L(x,y)=ax+by. $$
 $$ L(x,y)=c, $$
 và giải nó là tìm mọi cặp số mà \(L\) trả ra đúng \(c\).
 
-Chẳng hạn, với \(L(x,y)=2x+3y\) và \(c=6\), thử vài cặp số.
-$$ L(0,2)=6,\qquad L(3,0)=6,\qquad L\left(1,\frac43\right)=6. $$
-Ba cặp số này đều là nghiệm của \(2x+3y=6\), nên ba điểm tương ứng đều nằm trên đường thẳng đó. Không phải cặp số nào cũng vậy. Chẳng hạn \(L(1,1)=5\) và \(L(2,0)=4\), nên hai điểm \((1,1)\) và \((2,0)\) nằm ngoài đường thẳng. Hai cặp số này sẽ còn dùng lại ở dưới.
+Chẳng hạn, với \(L(x,y)=2x+3y\) và \(c=5\), thử vài cặp số.
+$$ L(1,1)=5,\qquad L(4,-1)=5,\qquad L(-2,3)=5. $$
+Ba cặp số này đều là nghiệm của \(2x+3y=5\), nên ba điểm tương ứng đều nằm trên đường thẳng đó.
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/duong-thang-oxy.svg}}
 
 \subsubsection{Có tạo được nghiệm mới từ nghiệm cũ không?}
 
-Ba nghiệm trên có được nhờ đoán. Đường thẳng \(2x+3y=6\) có vô số điểm, và đoán từng cặp số thì không bao giờ hết. Đã có vài nghiệm trong tay, có cách nào dùng chúng để làm ra nghiệm mới mà không phải đoán tiếp không? Vế trái \(ax+by\) chỉ được dựng từ hai phép, nhân với một số và cộng. Vì vậy, hai phép đáng thử trước tiên trên các nghiệm cũng là hai phép ấy, cộng hai cặp số với nhau và nhân một cặp số với một số. Thử xem chúng có còn ra nghiệm không.
+Ba nghiệm trên có được nhờ đoán. Đường thẳng \(2x+3y=5\) có vô số điểm, và đoán từng cặp số thì không bao giờ hết. Đã có vài nghiệm trong tay, có cách nào dùng chúng để làm ra nghiệm mới mà không phải đoán tiếp không? Vế trái \(ax+by\) chỉ được dựng từ hai phép, nhân với một số và cộng. Vì vậy, hai phép đáng thử trước tiên trên các nghiệm cũng là hai phép ấy, cộng hai cặp số với nhau và nhân một cặp số với một số. Thử xem chúng có còn ra nghiệm không.
 
 Để cộng được hai nghiệm, ta coi mỗi cặp số \((x,y)\) là vector \(\overrightarrow{OM}\) đi từ gốc \(O\) tới điểm \(M(x,y)\). Hai điểm thì không cộng được với nhau, còn hai vector thì cộng được và nhân được với một số, theo đúng cách các em đã học ở THPT, tức là làm trên từng tọa độ.
 
 \emph{Ký hiệu. Trong bài, vector được viết bằng chữ cái thường có mũi tên bên trên, như \(\vec{u}\), \(\vec{v}\).}
 
 Thử cộng hai nghiệm đầu.
-$$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=2\cdot3+3\cdot2=12. $$
+$$ (1,1)+(4,-1)=(5,0),\qquad L(5,0)=2\cdot5+3\cdot0=10. $$
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tong-hai-nghiem.svg}}
 
-\(12\neq6\), nên \((3,2)\) không phải nghiệm. Vậy \(12\) ở đâu ra? Hai nghiệm cùng cho \(6\) nên khó nhìn ra, vì thế thử với hai cặp số cho hai kết quả khác nhau.
+\(10\neq5\), nên \((5,0)\) không phải nghiệm. Vậy \(10\) ở đâu ra? Để ý \(10=5+5\), tức là
+$$ L(5,0)=L(1,1)+L(4,-1). $$
+Giá trị của \(L\) tại tổng hai nghiệm bằng tổng hai giá trị của \(L\) tại từng nghiệm. Nhưng hai nghiệm cùng cho \(5\), nên \(10\) cũng có thể chỉ tình cờ bằng \(2\cdot5\). Để chắc, thử với hai cặp số cho hai kết quả khác nhau.
 $$ L(1,1)=5,\qquad L(2,0)=4. $$
 Cộng hai cặp số, \((1,1)+(2,0)=(3,1)\), thì
-$$ L(3,1)=9=5+4, $$
-tức là
-$$ L(3,1)=L(1,1)+L(2,0). $$
-Cộng hai cặp số rồi mới tính \(L\), hay tính \(L\) cho từng cặp rồi cộng hai kết quả, đều ra cùng một số.
+$$ L(3,1)=9=5+4=L(1,1)+L(2,0). $$
+Lần này \(9\) không phải gấp đôi \(5\) hay gấp đôi \(4\). Nó đúng là tổng \(5+4\). Vậy \(10\) ở trên là \(5+5\), và nếu quy luật này luôn đúng thì cộng hai nghiệm của \(2x+3y=5\) sẽ luôn cho \(5+5=10\), không bao giờ cho \(5\).
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/cong-hai-vector.svg}}
 
-Thử thêm phép nhân với một số. Gấp đôi nghiệm \((0,2)\) thành \((0,4)\) thì
-$$ L(0,4)=12=2\cdot L(0,2). $$
-Hai đẳng thức \(L(3,1)=L(1,1)+L(2,0)\) và \(L(0,4)=2L(0,2)\) có đúng với mọi cặp số và mọi \(a,b\) không, hay chỉ tình cờ đúng với mấy con số vừa chọn? Nếu chúng luôn đúng, ta sẽ biết trước \(L\) cho ra số nào khi cộng hai nghiệm hay nhân một nghiệm với một số, mà không cần thử từng trường hợp.
+Hình trên cho thấy tính chất này trông như thế nào. Mỗi đường nét đứt gom những điểm cho cùng một giá trị của \(L\), và các đường \(L=4\), \(L=5\), \(L=9\) song song với nhau. Đầu mút của \(\vec{u}\) nằm trên đường \(L=5\), đầu mút của \(\vec{v}\) nằm trên đường \(L=4\). Cộng hai vector theo quy tắc hình bình hành, đỉnh thứ tư của hình bình hành là đầu mút của \(\vec{u}+\vec{v}\), và đỉnh ấy rơi đúng lên đường \(L=9\), tức đường có giá trị \(5+4\).
+
+Thử thêm phép nhân với một số. Gấp đôi nghiệm \((1,1)\) thành \((2,2)\) thì
+$$ L(2,2)=10=2\cdot L(1,1). $$
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/gap-doi.svg}}
+
+Gấp đôi vector thì đầu mút đi xa gốc gấp đôi, và rơi lên đường \(L=10\), gấp đôi đường \(L=5\).
+
+Hai đẳng thức \(L(3,1)=L(1,1)+L(2,0)\) và \(L(2,2)=2L(1,1)\) có đúng với mọi cặp số và mọi \(a,b\) không, hay chỉ tình cờ đúng với mấy con số vừa chọn? Nếu chúng luôn đúng, ta sẽ biết trước \(L\) cho ra số nào khi cộng hai nghiệm hay nhân một nghiệm với một số, mà không cần thử từng trường hợp.
 
 \subsubsection{Hai tính chất của \(L\)}
 
@@ -118,6 +125,10 @@ Nhân vector với \(k\) thì kết quả của \(L\) cũng bị nhân với \(k
 
 Cả hai phép tính chỉ dùng phá ngoặc, nên chúng đúng với mọi \(a,b\) và mọi vector, không riêng mấy con số lúc nãy.
 $$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v}),\qquad L(k\vec{u})=kL(\vec{u}). $$
+Hình dưới vẽ lại hai tính chất cho vector bất kỳ. Cộng hai vector thì đỉnh thứ tư của hình bình hành rơi lên đường có giá trị \(L(\vec{u})+L(\vec{v})\). Nhân vector với \(2\), với \(3\) thì đầu mút rơi lên các đường có giá trị gấp \(2\), gấp \(3\) lần.
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/hai-tinh-chat.svg}}
+
 Một hàm có hai tính chất này được gọi là \textbf{ánh xạ tuyến tính}, khái niệm trung tâm của cả môn học.
 
 \begin{quote}
@@ -132,8 +143,14 @@ Theo tính chất cộng,
 $$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v})=2c. $$
 Muốn \(\vec{u}+\vec{v}\) vẫn là nghiệm của chính \(L(x,y)=c\), ta cần \(2c=c\), nên
 $$ c=0. $$
-Khi \(c=0\), nếu \(L(\vec{u})=0\) và \(L(\vec{v})=0\), thì với mọi số \(\alpha,\beta\),
-$$ L(\alpha\vec{u}+\beta\vec{v})=\alpha L(\vec{u})+\beta L(\vec{v})=0. $$
+Khi \(c=0\), nếu \(L(\vec{u})=0\) và \(L(\vec{v})=0\), thì với mọi số \(\alpha,\beta\), vector \(\alpha\vec{u}+\beta\vec{v}\) cũng là nghiệm. Chỉ cần dùng lần lượt hai tính chất của \(L\). Tính chất cộng tách \(L\) của một tổng thành tổng hai giá trị, tính chất nhân đưa \(\alpha\) và \(\beta\) ra ngoài, rồi thay \(L(\vec{u})=L(\vec{v})=0\).
+$$
+\begin{aligned}
+L(\alpha\vec{u}+\beta\vec{v}) &= L(\alpha\vec{u})+L(\beta\vec{v}) \\
+        &= \alpha L(\vec{u})+\beta L(\vec{v}) \\
+        &= \alpha\cdot0+\beta\cdot0=0.
+\end{aligned}
+$$
 Mọi tổ hợp \(\alpha\vec{u}+\beta\vec{v}\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (\emph{superposition}). Trên hình, \(2x+3y=0\) là đường thẳng qua gốc tọa độ. Cộng hai vector nằm trên nó, hay kéo một vector dài gấp ba, ta vẫn ở trên đường thẳng ấy.
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/thuan-nhat-qua-goc.svg}}
@@ -148,31 +165,43 @@ Phương trình có vế phải khác \(0\) không có tính chất này. Vì v�
 
 Giờ quay lại câu hỏi ở đầu mục, tạo nghiệm mới từ những nghiệm đã có.
 
-Với \(2x+3y=0\), việc này dễ, vì cộng hai nghiệm hay nhân một nghiệm với một số vẫn ra nghiệm. Với \(2x+3y=6\) thì hỏng, và thủ phạm là số \(6\) ở vế phải. Mỗi nghiệm mang theo một số \(6\), cộng hai nghiệm thì thành \(12\). Vậy thử đưa bài toán về trường hợp đã làm được, tức là khử số \(6\) đi để quay về vế phải bằng \(0\).
+Với \(2x+3y=0\), việc này dễ, vì cộng hai nghiệm hay nhân một nghiệm với một số vẫn ra nghiệm. Với \(2x+3y=5\) thì hỏng, và thủ phạm là số \(5\) ở vế phải. Mỗi nghiệm mang theo một số \(5\), cộng hai nghiệm thì thành \(10\). Vậy thử đưa bài toán về trường hợp đã làm được, tức là khử số \(5\) đi để quay về vế phải bằng \(0\).
 
-Cộng hai nghiệm thì hai số \(6\) dồn lại thành \(12\). Trừ thì hai số \(6\) triệt tiêu nhau. Lấy hai nghiệm đã đoán được \(\vec{p}=(0,2)\) và \(\vec{q}=\left(1,\frac43\right)\), rồi đặt
-$$ \vec{a}=\vec{q}-\vec{p}=\left(1,\;-\frac23\right). $$
+Cộng hai nghiệm thì hai số \(5\) dồn lại thành \(10\). Trừ thì hai số \(5\) triệt tiêu nhau. Lấy hai nghiệm đã đoán được \(\vec{p}=(1,1)\) và \(\vec{q}=(4,-1)\), rồi đặt
+$$ \vec{a}=\vec{q}-\vec{p}=(3,-2). $$
 Theo hai tính chất của \(L\),
-$$ L(\vec{a})=L(\vec{q}-\vec{p})=L(\vec{q})-L(\vec{p})=6-6=0, $$
-nên \(\vec{a}\) là một nghiệm của \(2x+3y=0\). Hiệu hai nghiệm của phương trình vế phải bằng \(6\) là nghiệm của phương trình vế phải bằng \(0\).
+$$ L(\vec{a})=L(\vec{q}-\vec{p})=L(\vec{q})-L(\vec{p})=5-5=0, $$
+nên \(\vec{a}\) là một nghiệm của \(2x+3y=0\). Hiệu hai nghiệm của phương trình vế phải bằng \(5\) là nghiệm của phương trình vế phải bằng \(0\).
 
-Đi theo chiều ngược lại cũng được. Cộng vào \(\vec{p}\) một nghiệm của \(2x+3y=0\) thì vế trái chỉ được cộng thêm \(0\), nên vẫn bằng \(6\). Nghiệm của \(2x+3y=0\) thì lấy bao nhiêu cũng được, vì mọi bội \(t\vec{a}\) đều là nghiệm. Với mọi số \(t\),
-$$ L(\vec{p}+t\vec{a})=L(\vec{p})+tL(\vec{a})=6+0=6, $$
-nên \(\vec{p}+t\vec{a}=\left(t,\;2-\frac23t\right)\) luôn là nghiệm của \(2x+3y=6\).
+Có \(\vec{a}\) trong tay, giờ dùng nó để tạo nghiệm mới cho \(2x+3y=5\). Cộng vào \(\vec{p}\) một nghiệm của \(2x+3y=0\) thì giá trị của \(L\) chỉ tăng thêm \(0\), nên vẫn bằng \(5\). Mà nghiệm của \(2x+3y=0\) thì có bao nhiêu cũng được. Theo tính chất nhân với một số, \(L(t\vec{a})=tL(\vec{a})=t\cdot0=0\), nên mọi bội \(t\vec{a}\) đều là nghiệm. Với mọi số \(t\),
+$$ L(\vec{p}+t\vec{a})=L(\vec{p})+tL(\vec{a})=5+0=5, $$
+nên \(\vec{p}+t\vec{a}=(1+3t,\;1-2t)\) luôn là nghiệm của \(2x+3y=5\).
 
-Ngược lại, lấy một nghiệm \(\vec{w}\) bất kỳ của \(2x+3y=6\). Cần chứng tỏ \(\vec{w}\) cũng có dạng \(\vec{p}+t\vec{a}\). Xét hiệu \(\vec{w}-\vec{p}\). Theo hai tính chất của \(L\),
-$$ L(\vec{w}-\vec{p})=L(\vec{w})-L(\vec{p})=6-6=0. $$
+Đến đây mới được một nửa. Ta đã biết mọi điểm dạng \(\vec{p}+t\vec{a}\) đều là nghiệm, nhưng chưa biết có nghiệm nào nằm ngoài dạng đó hay không. Muốn nói tập nghiệm của \(2x+3y=5\) đúng bằng tập các điểm \(\vec{p}+t\vec{a}\), phải chứng minh cả hai chiều.
+\begin{enumerate}
+  \item Mọi điểm dạng \(\vec{p}+t\vec{a}\) đều là nghiệm. Chiều này vừa làm xong. Nó bảo đảm công thức không sinh ra điểm nào sai.
+  \item Mọi nghiệm đều viết được dưới dạng \(\vec{p}+t\vec{a}\) với một số \(t\) nào đó. Chiều này bảo đảm công thức không bỏ sót nghiệm nào.
+\end{enumerate}
+Đây cũng là cách chứng minh hai tập hợp bằng nhau, phải chỉ ra mỗi tập nằm trong tập kia. Thiếu chiều thứ hai thì công thức \(\vec{p}+t\vec{a}\) có thể chỉ cho một phần của tập nghiệm.
+
+Giờ làm chiều thứ hai. Lấy một nghiệm \(\vec{w}\) bất kỳ của \(2x+3y=5\). Cần chứng tỏ \(\vec{w}\) cũng có dạng \(\vec{p}+t\vec{a}\). Xét hiệu \(\vec{w}-\vec{p}\). Theo hai tính chất của \(L\),
+$$ L(\vec{w}-\vec{p})=L(\vec{w})-L(\vec{p})=5-5=0. $$
 Gọi tọa độ của hiệu này là \((m,n)\). Đẳng thức trên nói rằng
 $$ 2m+3n=0,\qquad\text{tức}\qquad n=-\frac{2}{3}m. $$
 Thay vào tọa độ của hiệu,
-$$ \vec{w}-\vec{p}=\left(m,\;-\frac{2}{3}m\right)=m\left(1,\;-\frac23\right)=m\,\vec{a}. $$
-Đặt \(t=m\), ta được \(\vec{w}=\vec{p}+t\vec{a}\). Vậy mọi nghiệm đều có dạng này. Từ hai nghiệm đoán được lúc đầu, ta viết ra được mọi nghiệm.
-$$ (x,y)=\left(t,\;2-\frac23t\right),\qquad t\in\mathbb{R}. $$
+$$ \vec{w}-\vec{p}=\left(m,\;-\frac{2}{3}m\right)=\frac{m}{3}\,(3,-2)=\frac{m}{3}\,\vec{a}. $$
+Đặt \(t=\frac{m}{3}\), ta được \(\vec{w}=\vec{p}+t\vec{a}\). Vậy mọi nghiệm đều có dạng này. Từ hai nghiệm đoán được lúc đầu, ta viết ra được mọi nghiệm.
+$$ (x,y)=(1+3t,\;1-2t),\qquad t\in\mathbb{R}. $$
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tu-hai-nghiem.svg}}
+
+Trên hình, \(\vec{a}\) nằm trên đường \(2x+3y=0\) đi qua gốc tọa độ. Đặt \(\vec{a}\) nối tiếp vào đầu mút của \(\vec{p}\) thì ta đi dọc theo đường \(2x+3y=5\). Cho \(t\) chạy qua mọi số thực, điểm \(\vec{p}+t\vec{a}\) chạy khắp đường thẳng ấy.
+
 Ai đã học phương trình tham số của đường thẳng sẽ nhận ra đây chính là nó, với \(\vec{a}\) là vector chỉ phương. Ở đây, vector chỉ phương hiện ra từ hiệu của hai nghiệm, không cần biết trước.
 
 \subsubsection{Nhiều ẩn hơn}
 
-Chứng minh ở trên chỉ dùng phá ngoặc, nên số ẩn không quan trọng. Với ba ẩn,
+Với ba ẩn,
 $$ L(x,y,z)=a_1x+a_2y+a_3z, $$
 và phương trình \(L(x,y,z)=d\) là một mặt phẳng trong không gian, giống ba phương trình của bài bó lúa. Hình dưới là mặt phẳng \(x+y+z=3\).
 
@@ -183,7 +212,21 @@ $$ L(1,2,4)=2\cdot1-2+3\cdot4=12. $$
 
 Với \(n\) ẩn, vector có \(n\) tọa độ. Không vẽ được mũi tên nữa, nên ta viết vector bằng chữ in đậm, \(\mathbf{x}=(x_1,\ldots,x_n)\). Cộng vector và nhân vector với số vẫn làm trên từng tọa độ.
 $$ L(\mathbf{x})=a_1x_1+\cdots+a_nx_n. $$
-Hai tính chất của \(L\) vẫn đúng, và nguyên lý chồng chất cũng vậy. Nếu \(L(\mathbf{u})=0\) và \(L(\mathbf{v})=0\), thì với mọi số \(\alpha,\beta\),
+Kiểm tra lại hai tính chất của \(L\) với \(n\) tọa độ. Lấy
+$$ \mathbf{u}=(u_1,\ldots,u_n),\qquad \mathbf{v}=(v_1,\ldots,v_n). $$
+Cộng từng tọa độ, ta được \(\mathbf{u}+\mathbf{v}=(u_1+v_1,\ldots,u_n+v_n)\), nên
+$$
+\begin{aligned}
+L(\mathbf{u}+\mathbf{v}) &= a_1(u_1+v_1)+\cdots+a_n(u_n+v_n) \\
+        &= (a_1u_1+\cdots+a_nu_n)+(a_1v_1+\cdots+a_nv_n) \\
+        &= L(\mathbf{u})+L(\mathbf{v}).
+\end{aligned}
+$$
+Với số \(k\) bất kỳ, \(k\mathbf{u}=(ku_1,\ldots,ku_n)\), nên
+$$ L(k\mathbf{u})=a_1(ku_1)+\cdots+a_n(ku_n)=k(a_1u_1+\cdots+a_nu_n)=kL(\mathbf{u}). $$
+Vẫn chỉ là phá ngoặc rồi gom lại, giống hệt trường hợp hai ẩn, chỉ dài hơn.
+
+Có hai tính chất này thì nguyên lý chồng chất cũng còn đúng. Nếu \(L(\mathbf{u})=0\) và \(L(\mathbf{v})=0\), thì với mọi số \(\alpha,\beta\),
 $$ L(\alpha \mathbf{u}+\beta \mathbf{v})=L(\alpha \mathbf{u})+L(\beta \mathbf{v})=\alpha L(\mathbf{u})+\beta L(\mathbf{v})=0. $$
 
 \subsubsection{Định nghĩa}

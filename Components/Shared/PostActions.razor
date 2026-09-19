@@ -1,32 +1,33 @@
+@* Views, like and share for one post. Bound by the .lb-actions[data-slug] compiler in comments.js. *@
+<div class="lb-actions" data-slug="@Slug" data-title="@Title">
+    <Badge Variant="outline" Class="lb-actions__btn lb-actions__btn--static" aria-label="Lượt xem">
+        <Icon Name="eye" />
+        <span data-f="views">0</span>
+    </Badge>
 
-<div class="lb-actions" x-data="postActions" x-init="init('@Slug', '@Title')">
-    <span class="lb-actions__btn lb-actions__btn--static" aria-label="Lượt xem">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-        <span x-text="views"></span>
-    </span>
-
-    <button type="button" class="lb-actions__btn" :class="{ 'lb-actions__btn--liked': liked }"
-            x-on:click="toggleLike()" aria-label="Thích">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x-show="!liked"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x-show="liked"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        <span x-text="likes"></span>
-    </button>
+    <Button Type="button" Variant="outline" Size="sm" Class="lb-actions__btn" data-act="like" aria-label="Thích">
+        <Icon Name="heart" data-f="heart-off" />
+        <Icon Name="heart" fill="currentColor" data-f="heart-on" hidden />
+        <span data-f="likes">0</span>
+    </Button>
 
     <div class="lb-actions__sharewrap">
-        <button type="button" class="lb-actions__btn" x-on:click="share()" aria-label="Chia sẻ">
+        <Button Type="button" Variant="outline" Size="sm" Class="lb-actions__btn" data-act="share" aria-expanded="false" aria-label="Chia sẻ">
+            @* Lucide "share-2" and "link" are not in the library's icon set; drawn inline. *@
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
             Chia sẻ
-        </button>
+        </Button>
 
-        <div class="lb-share" x-show="shareOpen" x-transition.opacity x-on:click.outside="shareOpen = false" role="menu">
-            <button type="button" class="lb-share__item" x-on:click="copyLink(); shareOpen = false">
+        <Card Class="lb-share gap-0 py-1" role="menu" hidden>
+            <Button Type="button" Variant="ghost" Size="sm" Class="lb-share__item justify-start" role="menuitem" data-act="copy-link">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                 <span>Sao chép liên kết</span>
-            </button>
-            <a class="lb-share__item" :href="'https://www.facebook.com/sharer/sharer.php?u=' + enc(window.location.href)" target="_blank" rel="noopener" x-on:click="shareOpen = false">Facebook</a>
-            <a class="lb-share__item" :href="'https://twitter.com/intent/tweet?url=' + enc(window.location.href) + '&amp;text=' + enc(title)" target="_blank" rel="noopener" x-on:click="shareOpen = false">X</a>
-            <a class="lb-share__item" :href="'https://api.whatsapp.com/send?text=' + enc(title + ' ' + window.location.href)" target="_blank" rel="noopener" x-on:click="shareOpen = false">WhatsApp</a>
-        </div>
+            </Button>
+            @* External share links: up-follow="false" keeps Unpoly from trying to swap them in. *@
+            <Button Href="#" Variant="ghost" Size="sm" Class="lb-share__item justify-start" role="menuitem" data-share="facebook" target="_blank" rel="noopener" up-follow="false">Facebook</Button>
+            <Button Href="#" Variant="ghost" Size="sm" Class="lb-share__item justify-start" role="menuitem" data-share="x" target="_blank" rel="noopener" up-follow="false">X</Button>
+            <Button Href="#" Variant="ghost" Size="sm" Class="lb-share__item justify-start" role="menuitem" data-share="whatsapp" target="_blank" rel="noopener" up-follow="false">WhatsApp</Button>
+        </Card>
     </div>
 </div>
 

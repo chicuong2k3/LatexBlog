@@ -17,10 +17,23 @@
 
   <ItemGroup>
     <ProjectReference Include="external\Unpoly.Blazor\src\Unpoly.Blazor\Unpoly.Blazor.csproj" />
+    <ProjectReference Include="external\Unpoly.Blazor.Shadcn\src\Unpoly.Blazor.Shadcn\Unpoly.Blazor.Shadcn.csproj" />
   </ItemGroup>
 
   <Target Name="BuildPosts" BeforeTargets="BeforeBuild">
     <Exec Command="python tools/build_posts.py" WorkingDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+
+  <!-- Tailwind v4 compiles Styles/app.css (shadcn tokens + every class the components use)
+       into wwwroot/css/app.css. Skipped under `dotnet watch`; run `npm run css:watch` there. -->
+  <Target Name="NpmInstall" BeforeTargets="Tailwind"
+          Condition="!Exists('node_modules') And '$(SkipTailwind)' != 'true'">
+    <Exec Command="npm install --no-audit --no-fund" WorkingDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+
+  <Target Name="Tailwind" BeforeTargets="BeforeBuild"
+          Condition="'$(SkipTailwind)' != 'true' And '$(DotNetWatchBuild)' != 'true'">
+    <Exec Command="npm run css" WorkingDirectory="$(MSBuildProjectDirectory)" />
   </Target>
 
 </Project>

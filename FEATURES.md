@@ -4,7 +4,7 @@ Cập nhật: 2026-08-18.
 
 ## Đã có
 
-Sakura Neon design · dark mode (sun/moon) · search popup (kính lúp, 2 chế độ
+Sakura Neon design (chỉ giao diện sáng) · search popup (kính lúp, 2 chế độ
 bài viết/bình luận) · tags trên trang chủ · comments (editor markdown + toán
 KaTeX, reply 2 cấp kiểu Facebook, prefill @tên, edit trong 5 phút, phân trang
 cursor + "Xem thêm", avatar theo profile, admin xoá) · @mention → **thông báo**

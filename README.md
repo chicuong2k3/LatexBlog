@@ -12,7 +12,9 @@ DAUB CSS.
 - htmx 1.9.12 (jsDelivr CDN) — fragment endpoints via HtmlRenderer: search,
   tag filter, load-more (Htmxor gate failed on .NET 10; see
   docs/Htmxor-verdict.md)
-- Alpine.js 3.14.1 — dark mode, TOC scrollspy, mobile menu, copy-code
+- Unpoly.Blazor.Shadcn (submodule, Tailwind v4 via `npm run css`) — UI components
+- Vanilla JS as Unpoly `up.compiler`s — TOC scrollspy, mobile menu, copy-code,
+  comments/auth (no Alpine; light theme only)
 - KaTeX 0.16.11 (CSS + JS via CDN; `pandoc --katex` keeps raw TeX in `math
   inline` spans — client-side auto-render required)
 - Python 3 (stdlib only) build script + Pandoc (dev/CI only)

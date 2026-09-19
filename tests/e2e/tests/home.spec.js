@@ -19,15 +19,6 @@ test('featured card hiển thị bài mới nhất', async ({ page }) => {
   await expect(page.locator('.lb-featured h2 a')).toHaveAttribute('href', /\/posts\//);
 });
 
-test('toggle dark mode đổi data-theme', async ({ page }) => {
-  await page.goto('/');
-  const before = await page.evaluate(() => document.documentElement.getAttribute('data-theme'));
-  await page.click('.lb-theme-btn');
-  await page.waitForTimeout(200);
-  const after = await page.evaluate(() => document.documentElement.getAttribute('data-theme'));
-  expect(after).not.toBe(before);
-});
-
 test('chuyển ngôn ngữ sang EN', async ({ page }) => {
   await page.goto('/?lang=en');
   await expect(page.locator('.lb-nav-links a').first()).toHaveText('Home');

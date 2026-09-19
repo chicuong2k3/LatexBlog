@@ -490,3 +490,4 @@ tools/pandoc/
 # deterministic build output
 wwwroot/generated/
 
+wwwroot/css/app.css

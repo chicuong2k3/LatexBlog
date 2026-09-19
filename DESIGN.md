@@ -18,21 +18,20 @@ gieo xúc xắc (seed `47ba06f1`, phương án 7) — hai phương án còn lạ
 
 ## Palette
 
-Hai hệ thống token qua `[data-theme]` (mặc định = sáng, giá trị `dark`):
+Một bộ token sáng duy nhất (đã bỏ chế độ tối):
 
-| Vai trò | Sáng | Tối |
-|---|---|---|
-| Nền `--bg` | `#fdf1f6` | `#0c0a16` |
-| Bề mặt `--surface` | `#ffffff` | `#161226` |
-| Mực `--ink` / mờ `--muted` | `#231726` / `#7a4a68` | `#f2ecf7` / `#9d8fb8` |
-| Neon chính `--neon` | `#e63e8f` | `#ff5fa2` |
-| Neon phụ `--neon-2` | `#7a5cff` | `#8b7cff` |
-| Neon thứ ba `--neon-3` | `#0ea5c4` | `#5fd4ff` |
-| Kẻ `--line` | `#f0d8e4` | `#2b2140` |
+| Vai trò | Giá trị |
+|---|---|
+| Nền `--bg` | `#fdf1f6` |
+| Bề mặt `--surface` | `#ffffff` |
+| Mực `--ink` / mờ `--muted` | `#231726` / `#7a4a68` |
+| Neon chính `--neon` | `#e63e8f` |
+| Neon phụ `--neon-2` | `#7a5cff` |
+| Neon thứ ba `--neon-3` | `#0ea5c4` |
+| Kẻ `--line` | `#f0d8e4` |
 
 Chiến lược màu: **Committed** — một màu bão hòa (hồng sakura) đảm nhận
-30–60% bề mặt; tím và cyan là các vai phụ, không tranh chấp. Dark-first vì
-chế độ tối là ràng buộc cứng; bản sắc "phố đêm" sinh ra từ nền tối.
+30–60% bề mặt; tím và cyan là các vai phụ, không tranh chấp.
 
 ## Type
 
@@ -55,7 +54,7 @@ chế độ tối là ràng buộc cứng; bản sắc "phố đêm" sinh ra t�
   tắt, ngày + thẻ; hover = tint nền, không dịch layout.
 - **Trang bài:** tiêu đề + ngày + thẻ; TOC scrollspy (active = nền tint,
   không border-side); prose pandoc với heading `h1` (pandoc ánh xạ
-  `\section → h1`), code panel luôn tối với token màu retune khi dark.
+  `\section → h1`).
 - **404:** "Không tìm thấy trang." với dấu chấm neon.
 
 ## Components & States
@@ -65,8 +64,6 @@ chế độ tối là ràng buộc cứng; bản sắc "phố đêm" sinh ra t�
 - **Nút (`lb-button`):** viền neon, hover tint + glow, active nhấn xuống 1px.
 - **Ô tìm kiếm (`lb-field`):** focus viền neon + glow.
 - **Copy code (`lb-copy`):** trên góc phải code panel; "Sao chép" → "Đã chép!".
-- **Theme toggle:** label hành động `Sáng`/`Tối` (dark → "Sáng"), đồng bộ
-  với I18n, lưu `localStorage["db-theme"]`, no-flash trước first paint.
 - **Focus:** outline 2px neon; selection hồng nền trắng chữ; scrollbar themed.
 
 ## Motion
@@ -86,7 +83,7 @@ tắt sweep và mọi transition.
 
 - Tương phản: văn xuôi `--ink` trên `--surface`; text phụ `--muted` ≥ 4.5:1.
 - KaTeX render thật (không thay bằng hình); toán display cuộn ngang khi dài.
-- Toàn bộ tương tác dùng bàn phím; aria-label cho toggle menu/theme.
+- Toàn bộ tương tác dùng bàn phím; aria-label cho toggle menu.
 
 ## Tech notes
 

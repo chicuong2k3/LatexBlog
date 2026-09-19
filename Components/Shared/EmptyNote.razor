@@ -1,0 +1,10 @@
+@* "Nothing here" message for post lists. *@
+<Empty Class="lb-empty">
+    <EmptyHeader>
+        <EmptyDescription>@ChildContent</EmptyDescription>
+    </EmptyHeader>
+</Empty>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

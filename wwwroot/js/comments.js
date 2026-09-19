@@ -1,4 +1,4 @@
-// ---- auth, comments, likes, share, profile: Supabase-backed, Alpine
+// ---- auth, comments, likes, share, profile: Supabase-backed, vanilla + Unpoly compilers
 // Config: window.__SUPABASE__ (appsettings.json via App.razor). Empty => disabled.
 (function () {
     var cfg = window.__SUPABASE__ || null;
@@ -111,10 +111,10 @@
     }
 
     // ---- rich text editor (dùng chung cho comment / reply / note) ----
-    // Toolbar dùng plain onclick (hoạt động trong mọi component); vùng nhập giữ
-    // x-on:input riêng để đồng bộ dữ liệu (body/replyBody/noteText/noteEditHtml).
-    function rteExec(e, cmd, val) {
-        var area = e.currentTarget.closest(".lb-rte").querySelector(".lb-rte__area");
+    // Toolbar buttons carry data-rte-cmd / data-rte-val; one delegated listener runs them.
+    function rteExec(btn) {
+        var cmd = btn.getAttribute("data-rte-cmd"), val = btn.getAttribute("data-rte-val");
+        var area = btn.closest(".lb-rte").querySelector(".lb-rte__area");
         if (cmd === "formatBlock" && val) {
             toggleBlock(area, String(val).replace(/[<>]/g, "").toLowerCase());
         } else {
@@ -123,6 +123,14 @@
         if (area) area.focus();
         syncRteToolbar();
     }
+    document.addEventListener("click", function (e) {
+        var btn = e.target.closest && e.target.closest("[data-rte-cmd]");
+        if (btn) rteExec(btn);
+    });
+    // keep the editor's selection when a toolbar button is pressed
+    document.addEventListener("mousedown", function (e) {
+        if (e.target.closest && e.target.closest(".lb-rte__toolbar")) e.preventDefault();
+    });
 
     // formatBlock (pre/blockquote) isn't a native toggle like bold/italic —
     // execCommand("formatBlock", false, "<p>") to turn it back off is flaky
@@ -147,8 +155,7 @@
         }
     }
 
-    // Toolbar active state. The command lives in the inline onclick (no data-*
-    // attributes on the buttons), so read it back from there.
+    // Toolbar active state, read back from each button's data-rte-cmd / data-rte-val.
     function rteCmdState(cmd, val) {
         try {
             if (cmd === "formatBlock") {
@@ -168,10 +175,10 @@
         var el = node && (node.nodeType === 1 ? node : node.parentNode);
         var area = el && el.closest && el.closest(".lb-rte__area");
         if (!area) return;
-        var btns = area.closest(".lb-rte").querySelectorAll(".lb-editor__btn");
+        var btns = area.closest(".lb-rte").querySelectorAll("[data-rte-cmd]");
         for (var i = 0; i < btns.length; i++) {
-            var m = /rteExec\(event,\s*'([^']+)'(?:,\s*'([^']*)')?/.exec(btns[i].getAttribute("onclick") || "");
-            if (m) btns[i].classList.toggle("is-active", rteCmdState(m[1], m[2]));
+            btns[i].classList.toggle("is-active",
+                rteCmdState(btns[i].getAttribute("data-rte-cmd"), btns[i].getAttribute("data-rte-val")));
         }
     }
     document.addEventListener("selectionchange", syncRteToolbar);
@@ -275,849 +282,1041 @@
         } catch (e) { /* selection đã thay đổi */ }
     }
 
-    document.addEventListener("alpine:init", function () {
-        // ================= shared auth store =================
-        // Supabase persists the session in localStorage; read it synchronously so
-        // the header paints the signed-in state immediately instead of flashing
-        // "sign in" until getSession() resolves (~500ms).
-        var cached = cachedSessionUser();
-        var cachedMd = (cached && cached.user_metadata) || {};
-        Alpine.store("auth", {
-            enabled: configured(),
-            ready: false,
-            signedIn: !!cached,
-            displayName: cachedMd.full_name || cachedMd.name || (cached && cached.email) || "",
-            avatar: cachedMd.avatar_url || "",
-            userId: (cached && cached.id) || "",
-            email: (cached && cached.email) || "",
-            isAdmin: false,
-            _started: false,
-            init: function () {
-                var self = this;
-                if (!this.enabled || this._started) return;
-                this._started = true;
-                loadSupabase()
-                    .then(function (sb) {
-                        return sb.auth.getSession().then(function (res) {
-                            // no live session: undo the optimistic localStorage seed
-                            if (!(res.data && res.data.session)) { self.clear(); self.ready = true; return; }
-                            var user = res.data.session.user;
-                            var md = (user && user.user_metadata) || {};
-                            var fallbackName = md.full_name || md.name || user.email || "";
-                            var fallbackAvatar = md.avatar_url || "";
-                            // ensure a profile row exists (users created before the trigger)
-                            return sb.from("profiles")
-                                .upsert({ id: user.id, display_name: fallbackName, avatar_url: fallbackAvatar },
-                                    { onConflict: "id", ignoreDuplicates: true })
-                                .then(function () {
-                                    return sb.from("profiles").select("display_name, avatar_url, is_admin").eq("id", user.id).maybeSingle();
-                                })
-                                .then(function (p) { self.applyUser(user, p.data); self.ready = true; });
-                        });
-                    })
-                    .catch(function () { self.ready = true; });
-            },
-            whenReady: function () {
-                var self = this;
-                if (this.ready) return Promise.resolve();
-                return new Promise(function (resolve) {
-                    var iv = setInterval(function () { if (self.ready) { clearInterval(iv); resolve(); } }, 80);
+    // ================= shared auth store (replaces Alpine.store("auth")) =================
+    // Supabase persists the session in localStorage; read it synchronously so the header
+    // paints the signed-in state immediately instead of flashing "sign in" until
+    // getSession() resolves (~500ms).
+    var cached = cachedSessionUser();
+    var cachedMd = (cached && cached.user_metadata) || {};
+    var readyResolve;
+    var auth = {
+        enabled: configured(),
+        ready: false,
+        signedIn: !!cached,
+        displayName: cachedMd.full_name || cachedMd.name || (cached && cached.email) || "",
+        avatar: cachedMd.avatar_url || "",
+        userId: (cached && cached.id) || "",
+        email: (cached && cached.email) || "",
+        isAdmin: false,
+        _started: false,
+        _listeners: [],
+        _readyPromise: new Promise(function (r) { readyResolve = r; }),
+        onChange: function (fn) {
+            var l = this._listeners; l.push(fn);
+            return function () { var i = l.indexOf(fn); if (i !== -1) l.splice(i, 1); };
+        },
+        changed: function () {
+            paintAuth(document);
+            this._listeners.slice().forEach(function (fn) { fn(); });
+        },
+        markReady: function () { this.ready = true; readyResolve(); this.changed(); },
+        init: function () {
+            var self = this;
+            if (this._started) return;
+            this._started = true;
+            if (!this.enabled) { this.markReady(); return; }
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.auth.getSession().then(function (res) {
+                        // no live session: undo the optimistic localStorage seed
+                        if (!(res.data && res.data.session)) { self.clear(); self.markReady(); return; }
+                        var user = res.data.session.user;
+                        var md = (user && user.user_metadata) || {};
+                        var fallbackName = md.full_name || md.name || user.email || "";
+                        var fallbackAvatar = md.avatar_url || "";
+                        // ensure a profile row exists (users created before the trigger)
+                        return sb.from("profiles")
+                            .upsert({ id: user.id, display_name: fallbackName, avatar_url: fallbackAvatar },
+                                { onConflict: "id", ignoreDuplicates: true })
+                            .then(function () {
+                                return sb.from("profiles").select("display_name, avatar_url, is_admin").eq("id", user.id).maybeSingle();
+                            })
+                            .then(function (p) { self.applyUser(user, p.data); self.markReady(); });
+                    });
+                })
+                .catch(function () { self.markReady(); });
+        },
+        whenReady: function () { return this._readyPromise; },
+        applyUser: function (user, profile) {
+            this.signedIn = true;
+            this.userId = user.id;
+            this.email = user.email || "";
+            this.isAdmin = !!(profile && profile.is_admin);
+            var md = (user && user.user_metadata) || {};
+            var id = (user && user.identities && user.identities[0] && user.identities[0].identity_data) || {};
+            this.displayName = (profile && profile.display_name) || md.full_name || md.name || user.email || "";
+            this.avatar = (profile && profile.avatar_url) || md.avatar_url || id.avatar_url || "";
+        },
+        signIn: function () {
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.auth.signInWithOAuth({ provider: "google", options: { redirectTo: window.location.href } });
+                })
+                .catch(function () {});
+        },
+        clear: function () {
+            this.signedIn = false; this.displayName = ""; this.avatar = ""; this.userId = ""; this.email = ""; this.isAdmin = false;
+        },
+        signOut: function () {
+            var self = this;
+            loadSupabase()
+                .then(function (sb) { return sb.auth.signOut(); })
+                .then(function () { self.clear(); self.changed(); lbToast("Đã đăng xuất."); })
+                .catch(function () {});
+        },
+    };
+
+    // data-auth="in|out|admin" shows an element by auth state; data-auth-text / data-auth-src
+    // bind a field of the store. Painted on every auth change and on every swapped fragment.
+    function paintOne(el) {
+        var want = el.getAttribute("data-auth");
+        if (want) {
+            var on = want === "in" ? auth.enabled && auth.signedIn
+                : want === "out" ? auth.enabled && !auth.signedIn
+                : want === "admin" ? auth.enabled && auth.signedIn && auth.isAdmin
+                : false;
+            el.hidden = !on;
+        }
+        var f = el.getAttribute("data-auth-text");
+        if (f) el.textContent = auth[f] || "";
+        f = el.getAttribute("data-auth-src");
+        if (f) { if (auth[f]) { el.src = auth[f]; el.style.display = ""; } else el.removeAttribute("src"); }
+    }
+    function paintAuth(root) {
+        root.querySelectorAll("[data-auth], [data-auth-text], [data-auth-src]").forEach(paintOne);
+    }
+    up.compiler("[data-auth], [data-auth-text], [data-auth-src]", paintOne);
+    up.compiler("[data-auth-action]", function (el) {
+        function onClick() { el.getAttribute("data-auth-action") === "sign-out" ? auth.signOut() : auth.signIn(); }
+        el.addEventListener("click", onClick);
+        return function () { el.removeEventListener("click", onClick); };
+    });
+    auth.init();
+
+    function setDisabled(root, on) {
+        root.querySelectorAll("[data-busy-disable]").forEach(function (b) { b.disabled = on; });
+    }
+    function fmtDate(s) { return new Date(s).toLocaleDateString("vi-VN"); }
+    function caretToEnd(area) {
+        area.focus();
+        var range = document.createRange();
+        range.selectNodeContents(area);
+        range.collapse(false);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+    }
+
+    // ================= comments (cursor pagination + editor) =================
+    up.compiler(".lb-comments[data-slug]", function (root) {
+        var slug = root.getAttribute("data-slug");
+        var st = {
+            posting: false, loadingMore: false, comments: [], topTotal: 0, topLoaded: 0,
+            hasMore: false, lastTop: null, replyTarget: null,
+            // display_name -> user id, filled by mergeProfiles; used to turn "@Ten Nguoi" in a
+            // comment body into a profile link.
+            // ponytail: only covers people who appear on this page; a mention of a stranger
+            // stays plain text.
+            people: {},
+        };
+        lbShow(root.querySelector("[data-f=off]"), !configured());
+        lbShow(root.querySelector("[data-f=on]"), configured());
+        if (!configured()) return;
+
+        var list = root.querySelector("[data-f=list]");
+        var errorBox = root.querySelector("[data-f=error]");
+        var loadingEl = root.querySelector("[data-f=loading]");
+        var emptyEl = root.querySelector("[data-f=empty]");
+        var moreBtn = root.querySelector("[data-act=more]");
+        var mainArea = root.querySelector('.lb-rte__area[data-rte="main"]');
+
+        function setError(msg) {
+            errorBox.querySelector("[data-f=error-text]").textContent = msg || "";
+            lbShow(errorBox, !!msg);
+        }
+        function setLoading(on) { lbShow(loadingEl, on); paintFooter(); }
+        function paintFooter() {
+            lbShow(moreBtn, st.hasMore);
+            moreBtn.disabled = st.loadingMore;
+            moreBtn.querySelector("[data-f=remaining]").textContent = "(" + (st.topTotal - st.topLoaded) + ")";
+            lbShow(emptyEl, loadingEl.hidden && !st.comments.length);
+        }
+        function renderBody(body) { return linkifyMentions(renderComment(body), st.people); }
+        function canEdit(c) {
+            if (!c || !auth.signedIn) return false;
+            if (c.user_id !== auth.userId) return false;
+            var age = Date.now() - new Date(c.created_at).getTime();
+            return age >= 0 && age < 5 * 60 * 1000;
+        }
+        function byId(id) { return st.comments.find(function (x) { return x.id === id; }); }
+
+        function renderItem(c) {
+            var li = lbTpl(root, "comment");
+            li.id = "comment-" + c.id;
+            li.setAttribute("data-id", c.id);
+            li.style.marginLeft = (c.depth * 34) + "px";
+            var img = li.querySelector("[data-f=avatar]");
+            if (c.avatar_url) img.src = c.avatar_url;
+            var author = li.querySelector("[data-f=author]");
+            author.href = "/u/" + c.user_id;
+            author.textContent = c.author_name;
+            li.querySelector("[data-f=when]").textContent = fmtDate(c.created_at);
+            lbShow(li.querySelector("[data-f=edited]"), !!c.edited_at);
+            li.querySelector("[data-f=body]").innerHTML = renderBody(c.body);
+            lbShow(li.querySelector("[data-f=actions]"), auth.signedIn);
+            lbShow(li.querySelector("[data-act=delete]"), auth.isAdmin);
+            lbShow(li.querySelector("[data-act=edit]"), canEdit(c));
+            var reply = li.querySelector("[data-act=reply]");
+            lbShow(reply, c.user_id !== auth.userId);
+            reply.textContent = st.replyTarget === c.id ? "Hủy" : "Trả lời";
+            lbShow(li.querySelector("[data-f=replyform]"), st.replyTarget === c.id);
+            return li;
+        }
+        function render() {
+            list.innerHTML = "";
+            st.comments.forEach(function (c) { list.appendChild(renderItem(c)); });
+            paintFooter();
+        }
+
+        // Notifications link to /posts/<slug>#comment-<id>. Comments are paginated, so keep
+        // pulling pages until the target is loaded, then scroll to it and flash it.
+        function jumpToHash() {
+            var m = /^#comment-([0-9a-fA-F-]+)$/.exec(location.hash || "");
+            if (!m) return;
+            var id = m[1];
+            if (!byId(id)) {
+                if (!st.hasMore || !st.lastTop) return;
+                return loadPage(st.lastTop.created_at).then(jumpToHash);
+            }
+            var el = document.getElementById("comment-" + id);
+            if (!el) return;
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+            el.classList.add("is-target");
+            setTimeout(function () { el.classList.remove("is-target"); }, 2500);
+        }
+
+        // cursor pagination: top-level mới nhất trước; mỗi trang + toàn bộ reply của chúng
+        function loadPage(cursor) {
+            var PAGE = 3;
+            return loadSupabase().then(function (sb) {
+                var q = sb.from("comments")
+                    .select("id, user_id, author_name, avatar_url, body, created_at, parent_id")
+                    .eq("post_slug", slug)
+                    .is("parent_id", null)
+                    .order("created_at", { ascending: false })
+                    .order("id", { ascending: false })
+                    .limit(PAGE);
+                if (cursor) q = q.lt("created_at", cursor);
+                var countQ = sb.from("comments").select("id", { count: "exact" })
+                    .eq("post_slug", slug).is("parent_id", null);
+                return Promise.all([q, countQ]);
+            }).then(function (res) {
+                var topRes = res[0], countRes = res[1];
+                st.topTotal = countRes.count || 0;
+                if (topRes.error) { setError(topRes.error.message); setLoading(false); return; }
+                var tops = topRes.data || [];
+                if (!tops.length) { setLoading(false); return; }
+                var ids = tops.map(function (t) { return t.id; });
+                return loadSupabase().then(function (sb) {
+                    return sb.from("comments")
+                        .select("id, user_id, author_name, avatar_url, body, created_at, parent_id")
+                        .in("parent_id", ids).order("created_at", { ascending: true });
+                }).then(function (repRes) {
+                    var rows = tops.concat(repRes.data || []);
+                    return mergeProfiles(rows).then(function () {
+                        var batch = buildThread(rows);
+                        st.comments = cursor ? st.comments.concat(batch) : batch;
+                        st.lastTop = tops[tops.length - 1];
+                        st.topLoaded += tops.length;
+                        st.hasMore = st.topLoaded < st.topTotal;
+                        lbShow(loadingEl, false);
+                        render();
+                        if (repRes.error) setError(repRes.error.message);
+                    });
                 });
-            },
-            applyUser: function (user, profile) {
-                this.signedIn = true;
-                this.userId = user.id;
-                this.email = user.email || "";
-                this.isAdmin = !!(profile && profile.is_admin);
-                var md = (user && user.user_metadata) || {};
-                var id = (user && user.identities && user.identities[0] && user.identities[0].identity_data) || {};
-                this.displayName = (profile && profile.display_name) || md.full_name || md.name || user.email || "";
-                this.avatar = (profile && profile.avatar_url) || md.avatar_url || id.avatar_url || "";
-            },
-            signIn: function () {
-                loadSupabase()
-                    .then(function (sb) {
-                        return sb.auth.signInWithOAuth({ provider: "google", options: { redirectTo: window.location.href } });
-                    })
-                    .catch(function () {});
-            },
-            clear: function () {
-                this.signedIn = false; this.displayName = ""; this.avatar = ""; this.userId = ""; this.email = ""; this.isAdmin = false;
-            },
-            signOut: function () {
-                var self = this;
-                loadSupabase()
-                    .then(function (sb) { return sb.auth.signOut(); })
-                    .then(function () {
-                        self.clear();
-                        lbToast("Đã đăng xuất.");
-                    })
-                    .catch(function () {});
-            },
-        });
+            });
+        }
+        function loadMore() {
+            if (!st.hasMore || st.loadingMore || !st.lastTop) return;
+            st.loadingMore = true; paintFooter();
+            loadPage(st.lastTop.created_at)
+                .then(function () { st.loadingMore = false; paintFooter(); })
+                .catch(function (e) { st.loadingMore = false; paintFooter(); setError(e.message); });
+        }
 
-        // ================= comments (cursor pagination + editor) =================
-        Alpine.data("comments", function () {
-            return {
-                configured: configured(),
-                loading: true,
-                loadingMore: false,
-                posting: false,
-                body: "",
-                replyBody: "",
-                replyTarget: null,
-                comments: [],
-                topTotal: 0,
-                topLoaded: 0,
-                hasMore: false,
-                _lastTop: null,
-                preview: false,
-                previewHtml: "",
-                replyPreview: false,
-                replyPreviewHtml: "",
-                error: "",
-                slug: "",
-                // display_name -> user id, filled by mergeProfiles; used to turn
-                // "@Ten Nguoi" in a comment body into a profile link.
-                // ponytail: only covers people who appear on this page; a mention
-                // of a stranger stays plain text.
-                _people: {},
-
-                init: function (slug) {
-                    // Alpine auto-calls init() (no arg) before x-init; guard it
-                    if (!slug) return;
-                    this.slug = slug;
-                    if (!this.configured) { this.loading = false; return; }
-                    var self = this;
-                    Alpine.store("auth").init();
-                    loadSupabase()
-                        .then(function () { return self.loadPage(null); })
-                        .then(function () { return self.jumpToHash(); })
-                        .catch(function (e) { self.error = e.message; self.loading = false; });
-                },
-
-                // Notifications link to /posts/<slug>#comment-<id>. Comments are
-                // paginated, so keep pulling pages until the target is loaded,
-                // then scroll to it and flash it.
-                jumpToHash: function () {
-                    var m = /^#comment-([0-9a-fA-F-]+)$/.exec(location.hash || "");
-                    if (!m) return;
-                    var self = this, id = m[1];
-                    var loaded = this.comments.some(function (c) { return c.id === id; });
-                    if (!loaded) {
-                        if (!this.hasMore || !this._lastTop) return;
-                        return this.loadPage(this._lastTop.created_at)
-                            .then(function () { return self.jumpToHash(); });
+        // profile hiện tại (tên/avatar đã sửa) đè lên snapshot lúc bình luận
+        function mergeProfiles(rows) {
+            var uids = [];
+            rows.forEach(function (r) { if (r.user_id && uids.indexOf(r.user_id) === -1) uids.push(r.user_id); });
+            if (!uids.length) return Promise.resolve();
+            return loadSupabase().then(function (sb) {
+                return sb.from("profiles").select("id, display_name, avatar_url").in("id", uids);
+            }).then(function (pr) {
+                var prof = {};
+                (pr.data || []).forEach(function (p) {
+                    prof[p.id] = p;
+                    if (p.display_name) st.people[p.display_name] = p.id;
+                });
+                rows.forEach(function (r) {
+                    var p = prof[r.user_id];
+                    if (p) {
+                        if (p.display_name) r.author_name = p.display_name;
+                        if (p.avatar_url) r.avatar_url = p.avatar_url;
                     }
-                    this.$nextTick(function () {
-                        var el = document.getElementById("comment-" + id);
-                        if (!el) return;
-                        el.scrollIntoView({ behavior: "smooth", block: "center" });
-                        el.classList.add("is-target");
-                        setTimeout(function () { el.classList.remove("is-target"); }, 2500);
-                    });
-                },
+                });
+            });
+        }
 
-                // cursor pagination: top-level mới nhất trước; mỗi trang + toàn bộ reply của chúng
-                loadPage: function (cursor) {
-                    var self = this;
-                    var PAGE = 3;
-                    return loadSupabase().then(function (sb) {
-                        var q = sb.from("comments")
-                            .select("id, user_id, author_name, avatar_url, body, created_at, parent_id")
-                            .eq("post_slug", self.slug)
-                            .is("parent_id", null)
-                            .order("created_at", { ascending: false })
-                            .order("id", { ascending: false })
-                            .limit(PAGE);
-                        if (cursor) q = q.lt("created_at", cursor);
-                        var countQ = sb.from("comments").select("id", { count: "exact" })
-                            .eq("post_slug", self.slug).is("parent_id", null);
-                        return Promise.all([q, countQ]);
-                    }).then(function (res) {
-                        var topRes = res[0], countRes = res[1];
-                        self.topTotal = countRes.count || 0;
-                        if (topRes.error) { self.error = topRes.error.message; self.loading = false; return; }
-                        var tops = topRes.data || [];
-                        if (!tops.length) { self.loading = false; return; }
-                        var ids = tops.map(function (t) { return t.id; });
-                        return loadSupabase().then(function (sb) {
-                            return sb.from("comments")
-                                .select("id, user_id, author_name, avatar_url, body, created_at, parent_id")
-                                .in("parent_id", ids).order("created_at", { ascending: true });
-                        }).then(function (repRes) {
-                            var rows = tops.concat(repRes.data || []);
-                            return self.mergeProfiles(rows).then(function () {
-                                var batch = buildThread(rows);
-                                if (cursor) self.comments = self.comments.concat(batch);
-                                else self.comments = batch;
-                                self._lastTop = tops[tops.length - 1];
-                                self.topLoaded += tops.length;
-                                self.hasMore = self.topLoaded < self.topTotal;
-                                self.loading = false;
-                                if (repRes.error) self.error = repRes.error.message;
-                            });
-                        });
-                    });
-                },
-                loadMore: function () {
-                    if (!this.hasMore || this.loadingMore || !this._lastTop) return;
-                    this.loadingMore = true;
-                    var self = this;
-                    this.loadPage(this._lastTop.created_at)
-                        .then(function () { self.loadingMore = false; })
-                        .catch(function (e) { self.loadingMore = false; self.error = e.message; });
-                },
+        function insert(text, parentId) {
+            st.posting = true; setDisabled(root, true); setError("");
+            loadSupabase()
+                .then(function (sb) {
+                    var row = { post_slug: slug, body: text };
+                    if (parentId) row.parent_id = parentId;
+                    return sb.from("comments").insert(row).select();
+                })
+                .then(function (res) {
+                    st.posting = false; setDisabled(root, false);
+                    if (res.error) { setError(res.error.message); return; }
+                    st.replyTarget = null;
+                    if (mainArea) mainArea.innerHTML = "";
+                    lbToast("Đã gửi bình luận!");
+                    var row = res.data && res.data[0];
+                    if (row) insertLocally(row, parentId);
+                    else loadPage(null);
+                })
+                .catch(function (e) { st.posting = false; setDisabled(root, false); setError(e.message); });
+        }
+        // chèn comment mới vào danh sách đang hiển thị (không cần tải lại)
+        function insertLocally(row, parentId) {
+            mergeProfiles([row]).then(function () {
+                if (!parentId) {
+                    row.depth = 0; row.rootId = row.id;
+                    st.comments.unshift(row); // mới nhất lên đầu
+                    st.topLoaded++; st.topTotal++;
+                } else {
+                    var parent = byId(parentId);
+                    var rootId = parent ? parent.rootId : null;
+                    if (rootId) {
+                        row.depth = 1; row.rootId = rootId;
+                        var idx = -1;
+                        st.comments.forEach(function (c, i) { if (c.rootId === rootId) idx = i; });
+                        st.comments.splice(idx + 1, 0, row);
+                    } else {
+                        st.comments.unshift(row);
+                    }
+                }
+                render();
+            });
+        }
+        function openReply(li, c) {
+            if (st.replyTarget && st.replyTarget !== c.id) closeReply();
+            st.replyTarget = c.id;
+            li.querySelector("[data-act=reply]").textContent = "Hủy";
+            lbShow(li.querySelector("[data-f=replyform]"), true);
+            var ra = li.querySelector("[data-f=replyform] .lb-rte__area");
+            ra.innerHTML = c.author_name ? "@" + escapeHtml(c.author_name) + "<br><br>" : "";
+            caretToEnd(ra);
+        }
+        function closeReply() {
+            var li = st.replyTarget && list.querySelector('[data-id="' + st.replyTarget + '"]');
+            st.replyTarget = null;
+            if (!li) return;
+            li.querySelector("[data-act=reply]").textContent = "Trả lời";
+            lbShow(li.querySelector("[data-f=replyform]"), false);
+        }
+        function startEdit(li, c) {
+            var form = li.querySelector("[data-f=editform]");
+            form.querySelector(".lb-rte__area").innerHTML = c.body;
+            lbShow(form, true);
+        }
+        function cancelEdit(li) { lbShow(li.querySelector("[data-f=editform]"), false); }
+        function saveEdit(li, c) {
+            var body = li.querySelector("[data-f=editform] .lb-rte__area").innerHTML;
+            if (!stripHtml(body).trim() || st.posting) return;
+            st.posting = true; setDisabled(root, true); setError("");
+            loadSupabase()
+                .then(function (sb) { return sb.rpc("edit_comment", { p_id: c.id, p_body: body }); })
+                .then(function (res) {
+                    st.posting = false; setDisabled(root, false);
+                    if (res.error) { setError(res.error.message); return; }
+                    var row = res.data;
+                    if (row) { c.body = row.body; c.edited_at = row.edited_at; }
+                    li.replaceWith(renderItem(c));
+                    lbToast("Đã sửa bình luận!");
+                })
+                .catch(function (e) { st.posting = false; setDisabled(root, false); setError(e.message); });
+        }
+        function adminDelete(c) {
+            loadSupabase()
+                .then(function (sb) { return sb.rpc("admin_delete_comment", { p_id: c.id }); })
+                .then(function (res) {
+                    if (res.error) { setError(res.error.message); return; }
+                    st.comments = st.comments.filter(function (x) { return x.id !== c.id; });
+                    render();
+                    lbToast("Đã xóa bình luận!");
+                })
+                .catch(function (e) { setError(e.message); });
+        }
 
-                // profile hiện tại (tên/avatar đã sửa) đè lên snapshot lúc bình luận
-                mergeProfiles: function (rows) {
-                    var self = this;
-                    var uids = [];
-                    rows.forEach(function (r) { if (r.user_id && uids.indexOf(r.user_id) === -1) uids.push(r.user_id); });
-                    if (!uids.length) return Promise.resolve();
-                    return loadSupabase().then(function (sb) {
-                        return sb.from("profiles").select("id, display_name, avatar_url").in("id", uids);
-                    }).then(function (pr) {
-                        var prof = {};
-                        (pr.data || []).forEach(function (p) {
-                            prof[p.id] = p;
-                            if (p.display_name) self._people[p.display_name] = p.id;
-                        });
-                        rows.forEach(function (r) {
-                            var p = prof[r.user_id];
-                            if (p) {
-                                if (p.display_name) r.author_name = p.display_name;
-                                if (p.avatar_url) r.avatar_url = p.avatar_url;
-                            }
-                        });
-                    });
-                },
+        function onClick(e) {
+            var btn = e.target.closest("[data-act]");
+            if (!btn || !root.contains(btn)) return;
+            var act = btn.getAttribute("data-act");
+            if (act === "more") { loadMore(); return; }
+            var li = btn.closest(".lb-comment");
+            var c = li && byId(li.getAttribute("data-id"));
+            if (!c) return;
+            if (act === "delete") adminDelete(c);
+            else if (act === "edit") startEdit(li, c);
+            else if (act === "cancel-edit") cancelEdit(li);
+            else if (act === "reply") st.replyTarget === c.id ? closeReply() : openReply(li, c);
+        }
+        function onSubmit(e) {
+            var form = e.target;
+            var which = form.getAttribute("data-form");
+            if (!which) return;
+            e.preventDefault();
+            var li = form.closest(".lb-comment");
+            if (which === "main") {
+                var text = mainArea.innerHTML;
+                if (!stripHtml(text).trim() || st.posting) return;
+                insert(text, null);
+            } else if (which === "reply") {
+                var body = form.querySelector(".lb-rte__area").innerHTML;
+                if (!stripHtml(body).trim() || st.posting) return;
+                insert(body, li.getAttribute("data-id"));
+            } else if (which === "edit") {
+                saveEdit(li, byId(li.getAttribute("data-id")));
+            }
+        }
+        // signing in/out changes which action buttons each comment shows
+        var off = auth.onChange(function () { if (st.comments.length) render(); });
 
-                post: function () {
-                    var text = this.body;
-                    if (!stripHtml(text).trim() || this.posting) return;
-                    this._insert(text, null);
-                },
-                postReply: function (parentId) {
-                    var text = this.replyBody;
-                    if (!stripHtml(text).trim() || this.posting) return;
-                    this._insert(text, parentId);
-                },
-                _insert: function (text, parentId) {
-                    this.posting = true; this.error = "";
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) {
-                            var row = { post_slug: self.slug, body: text };
-                            if (parentId) row.parent_id = parentId;
-                            return sb.from("comments").insert(row).select();
-                        })
-                        .then(function (res) {
-                            self.posting = false;
-                            if (res.error) { self.error = res.error.message; return; }
-                            self.body = ""; self.replyBody = ""; self.replyTarget = null;
-                            var ma = document.querySelector('.lb-rte__area[data-rte="main"]');
-                            if (ma) ma.innerHTML = "";
-                            var ra = document.querySelector('.lb-rte__area[data-rte="reply"]');
-                            if (ra) ra.innerHTML = "";
-                            lbToast("Đã gửi bình luận!");
-                            var row = res.data && res.data[0];
-                            if (row) self.insertLocally(row, parentId);
-                            else self.loadPage(null);
-                        })
-                        .catch(function (e) { self.posting = false; self.error = e.message; });
-                },
-                // chèn comment mới vào danh sách đang hiển thị (không cần tải lại)
-                insertLocally: function (row, parentId) {
-                    var self = this;
-                    this.mergeProfiles([row]).then(function () {
-                        if (!parentId) {
-                            row.depth = 0; row.rootId = row.id;
-                            self.comments.unshift(row); // mới nhất lên đầu
-                            self.topLoaded++; self.topTotal++;
-                        } else {
-                            var parent = self.comments.find(function (c) { return c.id === parentId; });
-                            var rootId = parent ? parent.rootId : null;
-                            if (rootId) {
-                                row.depth = 1; row.rootId = rootId;
-                                var idx = -1;
-                                self.comments.forEach(function (c, i) { if (c.rootId === rootId) idx = i; });
-                                self.comments.splice(idx + 1, 0, row);
-                            } else {
-                                self.comments.unshift(row);
-                            }
-                        }
-                    });
-                },
-                openReply: function (id, ev) {
-                    var c = this.comments.find(function (x) { return x.id === id; });
-                    this.replyTarget = id;
-                    this.replyBody = c && c.author_name ? "@" + c.author_name + "<br><br>" : "";
-                    this.replyPreview = false;
-                    var self = this;
-                    var li = ev && ev.target && ev.target.closest(".lb-comment");
-                    this.$nextTick(function () {
-                        // scope to this comment's own reply form — with x-show, every
-                        // comment's (hidden) reply form stays in the DOM, so an
-                        // unscoped querySelector can grab the wrong one
-                        var ra = (li || document).querySelector(".lb-comments__replyform .lb-rte__area");
-                        if (!ra) return;
-                        ra.innerHTML = self.replyBody;
-                        ra.focus();
-                        var range = document.createRange();
-                        range.selectNodeContents(ra);
-                        range.collapse(false);
-                        var sel = window.getSelection();
-                        sel.removeAllRanges();
-                        sel.addRange(range);
-                    });
-                },
-                cancelReply: function () { this.replyTarget = null; this.replyBody = ""; this.replyPreview = false; },
+        root.addEventListener("click", onClick);
+        // capture phase: Unpoly also listens for submit on every form (submitSelectors = 'form')
+        root.addEventListener("submit", onSubmit, true);
+        loadSupabase()
+            .then(function () { return loadPage(null); })
+            .then(jumpToHash)
+            .catch(function (e) { setError(e.message); setLoading(false); });
+        return function () {
+            off();
+            root.removeEventListener("click", onClick);
+            root.removeEventListener("submit", onSubmit, true);
+        };
+    });
 
-                // ---- edit (chỉ trong 5 phút, server-enforced qua RPC) ----
-                editingId: null,
-                editBody: "",
-                canEdit: function (c) {
-                    if (!c || !Alpine.store("auth").signedIn) return false;
-                    if (c.user_id !== Alpine.store("auth").userId) return false;
-                    var age = Date.now() - new Date(c.created_at).getTime();
-                    return age >= 0 && age < 5 * 60 * 1000;
-                },
-                startEdit: function (c) { this.editingId = c.id; this.editBody = c.body; },
-                cancelEdit: function () { this.editingId = null; this.editBody = ""; },
-                saveEdit: function (c) {
-                    if (!stripHtml(this.editBody).trim() || this.posting) return;
-                    this.posting = true; this.error = "";
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) { return sb.rpc("edit_comment", { p_id: c.id, p_body: self.editBody }); })
-                        .then(function (res) {
-                            self.posting = false;
-                            if (res.error) { self.error = res.error.message; return; }
-                            var row = res.data;
-                            if (row) { c.body = row.body; c.edited_at = row.edited_at; }
-                            self.editingId = null;
-                            self.editBody = "";
-                            lbToast("Đã sửa bình luận!");
-                        })
-                        .catch(function (e) { self.posting = false; self.error = e.message; });
-                },
-                renderBody: function (body) { return linkifyMentions(renderComment(body), this._people); },
-                adminDelete: function (c) {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) { return sb.rpc("admin_delete_comment", { p_id: c.id }); })
-                        .then(function (res) {
-                            if (res.error) { self.error = res.error.message; return; }
-                            self.comments = self.comments.filter(function (x) { return x.id !== c.id; });
-                            lbToast("Đã xóa bình luận!");
-                        })
-                        .catch(function (e) { self.error = e.message; });
-                },
+    // ================= notifications (nav bell) =================
+    up.compiler(".lb-notif", function (root) {
+        var list = [], unread = 0, timer = null;
+        var panel = root.querySelector(".lb-notif__panel");
+        var toggleBtn = root.querySelector("[data-act=notif-toggle]");
+        var badge = root.querySelector(".lb-notif__badge");
+        var items = root.querySelector("[data-f=items]");
+        var readAll = root.querySelector("[data-act=read-all]");
 
-                // ---- rich text editor (dùng global rteExec; đây chỉ đồng bộ dữ liệu) ----
-                rteInput: function (e) {
-                    var area = e.currentTarget;
-                    if (area.getAttribute("data-rte") === "main") this.body = area.innerHTML;
-                    else this.replyBody = area.innerHTML;
-                },
-            };
+        function paint() {
+            badge.textContent = unread;
+            lbShow(badge, unread > 0);
+            lbShow(readAll, unread > 0);
+            lbShow(root.querySelector("[data-f=empty]"), !list.length);
+            items.innerHTML = "";
+            list.forEach(function (n) {
+                var a = lbTpl(root, "notif");
+                a.href = "/posts/" + n.post_slug + (n.comment_id ? "#comment-" + n.comment_id : "");
+                a.classList.toggle("is-unread", !n.read);
+                a.setAttribute("data-id", n.id);
+                var img = a.querySelector("[data-f=avatar]");
+                if (n.actor_avatar) img.src = n.actor_avatar;
+                a.querySelector("[data-f=name]").textContent = n.actor_name;
+                a.querySelector("[data-f=text]").textContent = n.type === "reply" ? "đã trả lời bình luận của bạn" : "đã nhắc đến bạn";
+                a.querySelector("[data-f=when]").textContent = fmtDate(n.created_at);
+                items.appendChild(a);
+            });
+        }
+        function load() {
+            if (!auth.signedIn) return;
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.from("notifications").select("*")
+                        .eq("user_id", auth.userId)
+                        .order("created_at", { ascending: false }).limit(20);
+                })
+                .then(function (res) {
+                    if (res.error) return;
+                    list = res.data || [];
+                    unread = list.filter(function (n) { return !n.read; }).length;
+                    paint();
+                })
+                .catch(function () {});
+        }
+        function setOpen(open) {
+            lbShow(panel, open);
+            toggleBtn.setAttribute("aria-expanded", String(open));
+            if (open) load();
+        }
+        // Mark read before following the link: a fire-and-forget update gets cancelled by
+        // the navigation, which is why they stayed unread.
+        function openItem(a, ev) {
+            var n = list.find(function (x) { return String(x.id) === a.getAttribute("data-id"); });
+            if (!n || n.read) return;
+            ev.preventDefault();
+            ev.stopPropagation();
+            var href = a.getAttribute("href");
+            loadSupabase()
+                .then(function (sb) { return sb.from("notifications").update({ read: true }).eq("id", n.id); })
+                .catch(function () {})
+                .then(function () {
+                    n.read = true;
+                    unread = Math.max(0, unread - 1);
+                    window.location.href = href;
+                });
+        }
+        function markAllRead() {
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.from("notifications").update({ read: true })
+                        .eq("user_id", auth.userId).eq("read", false);
+                })
+                .then(function () {
+                    unread = 0;
+                    list.forEach(function (n) { n.read = true; });
+                    paint();
+                })
+                .catch(function () {});
+        }
+        function onClick(e) {
+            if (e.target.closest("[data-act=notif-toggle]")) { setOpen(panel.hidden); return; }
+            if (e.target.closest("[data-act=read-all]")) { markAllRead(); return; }
+            var a = e.target.closest(".lb-notif__item");
+            if (a) openItem(a, e);
+        }
+        function onDocClick(e) { if (!root.contains(e.target) && !panel.hidden) setOpen(false); }
+
+        root.addEventListener("click", onClick, true);
+        document.addEventListener("click", onDocClick);
+        auth.whenReady().then(function () {
+            if (!auth.signedIn) return;
+            load();
+            timer = setInterval(function () { if (auth.signedIn) load(); }, 90000);
         });
+        return function () {
+            clearInterval(timer);
+            root.removeEventListener("click", onClick, true);
+            document.removeEventListener("click", onDocClick);
+        };
+    });
 
-        // ================= notifications (nav bell) =================
-        Alpine.data("notifications", function () {
-            return {
-                open: false, unread: 0, list: [],
-                init: function () {
-                    var self = this;
-                    Alpine.store("auth").init();
-                    Alpine.store("auth").whenReady().then(function () {
-                        if (!Alpine.store("auth").signedIn) return;
-                        self.load();
-                        setInterval(function () { if (Alpine.store("auth").signedIn) self.load(); }, 90000);
-                    });
-                },
-                load: function () {
-                    var self = this;
-                    if (!Alpine.store("auth").signedIn) return;
-                    loadSupabase()
-                        .then(function (sb) {
-                            return sb.from("notifications").select("*")
-                                .eq("user_id", Alpine.store("auth").userId)
-                                .order("created_at", { ascending: false }).limit(20);
-                        })
-                        .then(function (res) {
-                            if (res.error) return;
-                            self.list = res.data || [];
-                            self.unread = self.list.filter(function (n) { return !n.read; }).length;
-                        })
-                        .catch(function () {});
-                },
-                toggle: function () {
-                    this.open = !this.open;
-                    if (this.open) this.load();
-                },
-                // Mark read before following the link: a fire-and-forget update
-                // gets cancelled by the navigation, which is why they stayed unread.
-                openItem: function (n, ev) {
-                    if (n.read) return;
-                    ev.preventDefault();
-                    var href = ev.currentTarget.getAttribute("href");
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) { return sb.from("notifications").update({ read: true }).eq("id", n.id); })
-                        .catch(function () {})
-                        .then(function () {
-                            n.read = true;
-                            self.unread = Math.max(0, self.unread - 1);
-                            window.location.href = href;
-                        });
-                },
-                markAllRead: function () {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) {
-                            return sb.from("notifications").update({ read: true })
-                                .eq("user_id", Alpine.store("auth").userId).eq("read", false);
-                        })
-                        .then(function () {
-                            self.unread = 0;
-                            self.list.forEach(function (n) { n.read = true; });
-                        })
-                        .catch(function () {});
-                },
-            };
-        });
+    // ================= annotations (tô sáng + ghi chú đoạn bài) =================
+    up.compiler(".lb-post-page[data-slug]", function (article) {
+        if (!configured()) return;
+        var slug = article.getAttribute("data-slug");
+        var menu = article.querySelector(".lb-hlmenu");
+        var noteBox = article.querySelector(".lb-hlnote");
+        var noteArea = noteBox.querySelector(".lb-rte__area");
+        var view = article.querySelector(".lb-noteview");
+        var viewShow = view.querySelector("[data-f=view]");
+        var viewEdit = view.querySelector("[data-f=edit]");
+        var pendingRange = null, pendingQuote = "", byId = {}, noteView = null;
 
-        // ================= annotations (tô sáng + ghi chú đoạn bài) =================
-        Alpine.data("annotations", function () {
-            return {
-                configured: configured(),
-                slug: "",
-                menuOpen: false,
-                noteOpen: false,
-                noteText: "",
-                menuX: 0,
-                menuY: 0,
-                _pendingRange: null,
-                _pendingQuote: "",
-                _byId: {},
-                noteView: null,
-                noteEdit: false,
-                noteEditHtml: "",
-                init: function (slug) {
-                    this.slug = slug;
-                    if (!this.configured) return;
-                    var self = this;
-                    Alpine.store("auth").init();
-                    Alpine.store("auth").whenReady().then(function () {
-                        if (Alpine.store("auth").signedIn) self.load();
-                    });
-                    // chuột phải khi có chọn text trong bài -> menu tô sáng / ghi chú
-                    document.addEventListener("contextmenu", function (e) {
-                        var prose = e.target && e.target.closest ? e.target.closest(".lb-prose") : null;
-                        if (!prose) return;
-                        var sel = window.getSelection();
-                        if (!sel || sel.isCollapsed) return;
-                        if (!prose.contains(sel.anchorNode) || !prose.contains(sel.focusNode)) return;
-                        e.preventDefault();
-                        if (!Alpine.store("auth").signedIn) { Alpine.store("auth").signIn(); return; }
-                        var quote = sel.toString().trim().slice(0, 500);
-                        if (!quote) return;
-                        self._pendingQuote = quote;
-                        self._pendingRange = sel.getRangeAt(0).cloneRange();
-                        self.menuX = e.clientX;
-                        self.menuY = e.clientY;
-                        self.menuOpen = true;
-                        self.noteOpen = false;
-                    });
-                    document.addEventListener("click", function () { self.menuOpen = false; });
-                    document.addEventListener("click", function (e) {
-                        var m = e.target && e.target.closest ? e.target.closest(".lb-hl") : null;
-                        if (m && m.getAttribute("data-note")) {
-                            var h = self._byId[m.getAttribute("data-id")];
-                            if (h) self.viewNote(h);
-                        }
-                    });
-                    // mobile/touch: there's no right-click, so also open the menu once a
-                    // selection inside .lb-prose settles (debounced — selectionchange fires
-                    // continuously while dragging the native selection handles)
-                    var selTimer = null;
-                    document.addEventListener("selectionchange", function () {
-                        clearTimeout(selTimer);
-                        selTimer = setTimeout(function () {
-                            var sel = window.getSelection();
-                            if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
-                            var range = sel.getRangeAt(0);
-                            var anchor = range.commonAncestorContainer;
-                            var anchorEl = anchor.nodeType === 1 ? anchor : anchor.parentNode;
-                            var prose = anchorEl && anchorEl.closest ? anchorEl.closest(".lb-prose") : null;
-                            if (!prose) return;
-                            var quote = sel.toString().trim().slice(0, 500);
-                            if (!quote) return;
-                            if (!Alpine.store("auth").signedIn) return;
-                            var rect = range.getBoundingClientRect();
-                            self._pendingQuote = quote;
-                            self._pendingRange = range.cloneRange();
-                            self.menuX = rect.left + rect.width / 2;
-                            self.menuY = rect.bottom + 6;
-                            self.menuOpen = true;
-                            self.noteOpen = false;
-                        }, 350);
-                    });
-                },
-                viewNote: function (h) {
-                    this.noteView = h;
-                    this.noteEdit = false;
-                    this.noteEditHtml = h.note || "";
-                },
-                closeNoteView: function () { this.noteView = null; this.noteEdit = false; },
-                startEditNote: function () { this.noteEdit = true; this.noteEditHtml = this.noteView.note || ""; },
-                saveEditNote: function () {
-                    var self = this;
-                    loadSupabase().then(function (sb) {
-                        return sb.from("highlights").update({ note: self.noteEditHtml })
-                            .eq("id", self.noteView.id).eq("user_id", Alpine.store("auth").userId);
-                    }).then(function (res) {
-                        if (res.error) return;
-                        self.noteView.note = self.noteEditHtml;
-                        self.noteEdit = false;
-                        lbToast("Đã lưu ghi chú!");
-                        var m = document.querySelector('.lb-hl[data-id="' + self.noteView.id + '"]');
-                        if (m) m.setAttribute("data-note", self.noteEditHtml);
-                    }).catch(function () {});
-                },
-                renderNote: function (note) { return renderComment(note); },
-                load: function () {
-                    var self = this;
-                    loadSupabase().then(function (sb) {
-                        return sb.from("highlights").select("*")
-                            .eq("post_slug", self.slug).eq("user_id", Alpine.store("auth").userId);
-                    }).then(function (res) {
-                        if (res.error || !res.data) return;
-                        var article = document.querySelector(".lb-post-page");
-                        if (!article) return;
-                        self._byId = {};
-                        res.data.forEach(function (h) {
-                            self._byId[h.id] = h;
-                            applyHighlight(article, h);
-                        });
-                    }).catch(function () {});
-                },
-                save: function (note) {
-                    var self = this;
-                    loadSupabase().then(function (sb) {
-                        return sb.from("highlights").insert({
-                            post_slug: self.slug,
-                            user_id: Alpine.store("auth").userId,
-                            quote: self._pendingQuote,
-                            note: note || "",
-                        }).select();
-                    }).then(function (res) {
-                        if (res.error) return;
-                        var row = res.data && res.data[0];
-                        if (row && self._pendingRange) {
-                            var mark = document.createElement("mark");
-                            mark.className = "lb-hl";
-                            mark.setAttribute("data-id", row.id);
-                            mark.setAttribute("data-note", row.note || "");
-                            try {
-                                var frag = self._pendingRange.extractContents();
-                                mark.appendChild(frag);
-                                self._pendingRange.insertNode(mark);
-                            } catch (e) {}
-                        }
-                        self.menuOpen = false;
-                        self.noteOpen = false;
-                        self.noteText = "";
-                        window.getSelection().removeAllRanges();
-                    }).catch(function () {});
-                },
-                highlight: function () { this.save(""); },
-                shareQuote: function () {
-                    var url = window.location.href.split("#")[0] + "#:~:text=" + encodeURIComponent(this._pendingQuote);
-                    var self = this;
-                    navigator.clipboard.writeText(url)
-                        .then(function () { lbToast("Đã chép liên kết đoạn!"); })
-                        .catch(function () {});
-                    this.menuOpen = false;
-                },
-                openNote: function () {
-                    this.menuOpen = false;
-                    this.noteOpen = true;
-                    this.noteText = "";
-                    var a = document.querySelector(".lb-hlnote .lb-rte__area");
-                    if (a) a.innerHTML = "";
-                },
-                cancelNote: function () { this.noteOpen = false; this.noteText = ""; },
-                saveNote: function () { this.save(this.noteText); },
-            };
-        });
+        function openMenu(x, y) {
+            menu.style.left = x + "px";
+            menu.style.top = y + "px";
+            lbShow(menu, true);
+            lbShow(noteBox, false);
+        }
+        function closeMenu() { lbShow(menu, false); }
+        function viewNote(h) {
+            noteView = h;
+            viewShow.querySelector("[data-f=body]").innerHTML = renderComment(h.note);
+            lbShow(viewShow, true);
+            lbShow(viewEdit, false);
+            lbShow(view, true);
+        }
+        function closeNoteView() { noteView = null; lbShow(view, false); }
+        function startEditNote() {
+            viewEdit.querySelector(".lb-rte__area").innerHTML = noteView.note || "";
+            lbShow(viewShow, false);
+            lbShow(viewEdit, true);
+        }
+        function saveEditNote() {
+            var html = viewEdit.querySelector(".lb-rte__area").innerHTML;
+            loadSupabase().then(function (sb) {
+                return sb.from("highlights").update({ note: html })
+                    .eq("id", noteView.id).eq("user_id", auth.userId);
+            }).then(function (res) {
+                if (res.error) return;
+                noteView.note = html;
+                lbToast("Đã lưu ghi chú!");
+                var m = document.querySelector('.lb-hl[data-id="' + noteView.id + '"]');
+                if (m) m.setAttribute("data-note", html);
+                viewNote(noteView);
+            }).catch(function () {});
+        }
+        function load() {
+            loadSupabase().then(function (sb) {
+                return sb.from("highlights").select("*")
+                    .eq("post_slug", slug).eq("user_id", auth.userId);
+            }).then(function (res) {
+                if (res.error || !res.data) return;
+                byId = {};
+                res.data.forEach(function (h) {
+                    byId[h.id] = h;
+                    applyHighlight(article, h);
+                });
+            }).catch(function () {});
+        }
+        function save(note) {
+            loadSupabase().then(function (sb) {
+                return sb.from("highlights").insert({
+                    post_slug: slug,
+                    user_id: auth.userId,
+                    quote: pendingQuote,
+                    note: note || "",
+                }).select();
+            }).then(function (res) {
+                if (res.error) return;
+                var row = res.data && res.data[0];
+                if (row) byId[row.id] = row;
+                if (row && pendingRange) {
+                    var mark = document.createElement("mark");
+                    mark.className = "lb-hl";
+                    mark.setAttribute("data-id", row.id);
+                    mark.setAttribute("data-note", row.note || "");
+                    try {
+                        var frag = pendingRange.extractContents();
+                        mark.appendChild(frag);
+                        pendingRange.insertNode(mark);
+                    } catch (e) {}
+                }
+                closeMenu();
+                lbShow(noteBox, false);
+                noteArea.innerHTML = "";
+                window.getSelection().removeAllRanges();
+            }).catch(function () {});
+        }
+        function shareQuote() {
+            var url = window.location.href.split("#")[0] + "#:~:text=" + encodeURIComponent(pendingQuote);
+            navigator.clipboard.writeText(url)
+                .then(function () { lbToast("Đã chép liên kết đoạn!"); })
+                .catch(function () {});
+            closeMenu();
+        }
+        function openNote() {
+            closeMenu();
+            noteArea.innerHTML = "";
+            lbShow(noteBox, true);
+        }
 
-        // ================= like + share (post page) =================
-        Alpine.data("postActions", function () {
-            return {
-                slug: "", title: "", likes: 0, liked: false, loading: true,
-                views: 0, shareOpen: false,
-                init: function (slug, title) {
-                    this.slug = slug; this.title = title;
-                    var self = this;
-                    Alpine.store("auth").init();
-                    loadSupabase()
-                        .then(function (sb) {
-                            var viewedKey = "lb-viewed-" + slug;
-                            var inc = sessionStorage.getItem(viewedKey)
-                                ? Promise.resolve(null)
-                                : sb.rpc("increment_views", { p_slug: slug })
-                                    .then(function () { sessionStorage.setItem(viewedKey, "1"); });
-                            return inc.then(function () {
-                                return sb.from("post_views").select("views").eq("post_slug", slug).maybeSingle();
-                            }).then(function (vres) {
-                                if (vres.data) self.views = vres.data.views;
-                                return sb.from("post_likes").select("user_id", { count: "exact" }).eq("post_slug", slug);
-                            });
-                        })
-                        .then(function (res) {
-                            self.likes = res.count || 0;
-                            self.loading = false;
-                            return loadSupabase().then(function (sb) { return sb.auth.getUser(); });
-                        })
-                        .then(function (ures) {
-                            if (!ures.data.user) return;
-                            return loadSupabase().then(function (sb) {
-                                return sb.from("post_likes").select("user_id")
-                                    .eq("post_slug", self.slug).eq("user_id", ures.data.user.id).maybeSingle();
-                            }).then(function (l) { self.liked = !!l.data; });
-                        })
-                        .catch(function () { self.loading = false; });
-                },
-                toggleLike: function () {
-                    if (!Alpine.store("auth").signedIn) { Alpine.store("auth").signIn(); return; }
-                    if (this.liked) { this.likes--; this.liked = false; this._unlike(); }
-                    else { this.likes++; this.liked = true; this._like(); }
-                },
-                _like: function () {
-                    var self = this;
-                    loadSupabase().then(function (sb) { return sb.auth.getUser(); })
-                        .then(function (r) { var uid = r.data.user.id; return loadSupabase().then(function (sb) { return sb.from("post_likes").insert({ post_slug: self.slug, user_id: uid }); }); })
-                        .catch(function () { self.likes--; self.liked = false; });
-                },
-                _unlike: function () {
-                    var self = this;
-                    loadSupabase().then(function (sb) { return sb.auth.getUser(); })
-                        .then(function (r) { var uid = r.data.user.id; return loadSupabase().then(function (sb) { return sb.from("post_likes").delete().eq("post_slug", self.slug).eq("user_id", uid); }); })
-                        .catch(function () { self.likes++; self.liked = true; });
-                },
-                share: function () { this.shareOpen = true; },
-                copyLink: function () {
+        // chuột phải khi có chọn text trong bài -> menu tô sáng / ghi chú
+        function onContextMenu(e) {
+            var prose = e.target && e.target.closest ? e.target.closest(".lb-prose") : null;
+            if (!prose || !article.contains(prose)) return;
+            var sel = window.getSelection();
+            if (!sel || sel.isCollapsed) return;
+            if (!prose.contains(sel.anchorNode) || !prose.contains(sel.focusNode)) return;
+            e.preventDefault();
+            if (!auth.signedIn) { auth.signIn(); return; }
+            var quote = sel.toString().trim().slice(0, 500);
+            if (!quote) return;
+            pendingQuote = quote;
+            pendingRange = sel.getRangeAt(0).cloneRange();
+            openMenu(e.clientX, e.clientY);
+        }
+        function onDocClick(e) {
+            var t = e.target;
+            var act = t.closest && t.closest("[data-act]");
+            if (act && (menu.contains(act) || noteBox.contains(act) || view.contains(act))) {
+                switch (act.getAttribute("data-act")) {
+                    case "hl-highlight": save(""); return;
+                    case "hl-note": openNote(); return;
+                    case "hl-share": shareQuote(); return;
+                    case "note-save": save(noteArea.innerHTML); return;
+                    case "note-cancel": lbShow(noteBox, false); return;
+                    case "view-edit": startEditNote(); return;
+                    case "view-close": closeNoteView(); return;
+                    case "view-save": saveEditNote(); return;
+                    case "view-cancel": viewNote(noteView); return;
+                }
+            }
+            if (!menu.contains(t)) closeMenu();
+            if (!noteBox.hidden && !noteBox.contains(t)) lbShow(noteBox, false);
+            var m = t.closest ? t.closest(".lb-hl") : null;
+            if (m && m.getAttribute("data-note")) {
+                var h = byId[m.getAttribute("data-id")];
+                if (h) { viewNote(h); return; }
+            }
+            if (!view.hidden && !view.contains(t)) closeNoteView();
+        }
+        // mobile/touch: there's no right-click, so also open the menu once a selection
+        // inside .lb-prose settles (debounced — selectionchange fires continuously while
+        // dragging the native selection handles)
+        var onSelection = lbDebounce(function () {
+            var sel = window.getSelection();
+            if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+            var range = sel.getRangeAt(0);
+            var anchor = range.commonAncestorContainer;
+            var anchorEl = anchor.nodeType === 1 ? anchor : anchor.parentNode;
+            var prose = anchorEl && anchorEl.closest ? anchorEl.closest(".lb-prose") : null;
+            if (!prose || !article.contains(prose)) return;
+            var quote = sel.toString().trim().slice(0, 500);
+            if (!quote) return;
+            if (!auth.signedIn) return;
+            var rect = range.getBoundingClientRect();
+            pendingQuote = quote;
+            pendingRange = range.cloneRange();
+            openMenu(rect.left + rect.width / 2, rect.bottom + 6);
+        }, 350);
+
+        auth.whenReady().then(function () { if (auth.signedIn) load(); });
+        document.addEventListener("contextmenu", onContextMenu);
+        document.addEventListener("click", onDocClick);
+        document.addEventListener("selectionchange", onSelection);
+        return function () {
+            document.removeEventListener("contextmenu", onContextMenu);
+            document.removeEventListener("click", onDocClick);
+            document.removeEventListener("selectionchange", onSelection);
+        };
+    });
+
+    // ================= like + share (post page) =================
+    up.compiler(".lb-actions[data-slug]", function (root) {
+        var slug = root.getAttribute("data-slug");
+        var title = root.getAttribute("data-title") || "";
+        var likes = 0, liked = false;
+        var likeBtn = root.querySelector("[data-act=like]");
+        var share = root.querySelector(".lb-share");
+        var shareBtn = root.querySelector("[data-act=share]");
+        var shareWrap = root.querySelector(".lb-actions__sharewrap");
+
+        function paint() {
+            likeBtn.classList.toggle("lb-actions__btn--liked", liked);
+            lbShow(likeBtn.querySelector("[data-f=heart-off]"), !liked);
+            lbShow(likeBtn.querySelector("[data-f=heart-on]"), liked);
+            likeBtn.querySelector("[data-f=likes]").textContent = likes;
+        }
+        function enc(s) { return encodeURIComponent(s); }
+        var here = window.location.href;
+        root.querySelector("[data-share=facebook]").href = "https://www.facebook.com/sharer/sharer.php?u=" + enc(here);
+        root.querySelector("[data-share=x]").href = "https://twitter.com/intent/tweet?url=" + enc(here) + "&text=" + enc(title);
+        root.querySelector("[data-share=whatsapp]").href = "https://api.whatsapp.com/send?text=" + enc(title + " " + here);
+        paint();
+
+        loadSupabase()
+            .then(function (sb) {
+                var viewedKey = "lb-viewed-" + slug;
+                var inc = sessionStorage.getItem(viewedKey)
+                    ? Promise.resolve(null)
+                    : sb.rpc("increment_views", { p_slug: slug })
+                        .then(function () { sessionStorage.setItem(viewedKey, "1"); });
+                return inc.then(function () {
+                    return sb.from("post_views").select("views").eq("post_slug", slug).maybeSingle();
+                }).then(function (vres) {
+                    if (vres.data) root.querySelector("[data-f=views]").textContent = vres.data.views;
+                    return sb.from("post_likes").select("user_id", { count: "exact" }).eq("post_slug", slug);
+                });
+            })
+            .then(function (res) {
+                likes = res.count || 0;
+                paint();
+                return loadSupabase().then(function (sb) { return sb.auth.getUser(); });
+            })
+            .then(function (ures) {
+                if (!ures.data.user) return;
+                return loadSupabase().then(function (sb) {
+                    return sb.from("post_likes").select("user_id")
+                        .eq("post_slug", slug).eq("user_id", ures.data.user.id).maybeSingle();
+                }).then(function (l) { liked = !!l.data; paint(); });
+            })
+            .catch(function () {});
+
+        function withUser(fn) {
+            return loadSupabase().then(function (sb) {
+                return sb.auth.getUser().then(function (r) { return fn(sb, r.data.user.id); });
+            });
+        }
+        function toggleLike() {
+            if (!auth.signedIn) { auth.signIn(); return; }
+            if (liked) {
+                likes--; liked = false; paint();
+                withUser(function (sb, uid) { return sb.from("post_likes").delete().eq("post_slug", slug).eq("user_id", uid); })
+                    .catch(function () { likes++; liked = true; paint(); });
+            } else {
+                likes++; liked = true; paint();
+                withUser(function (sb, uid) { return sb.from("post_likes").insert({ post_slug: slug, user_id: uid }); })
+                    .catch(function () { likes--; liked = false; paint(); });
+            }
+        }
+        function setShare(open) { lbShow(share, open); shareBtn.setAttribute("aria-expanded", String(open)); }
+        function onClick(e) {
+            var act = e.target.closest("[data-act]");
+            if (act) {
+                var a = act.getAttribute("data-act");
+                if (a === "like") toggleLike();
+                else if (a === "share") setShare(true);
+                else if (a === "copy-link") {
                     navigator.clipboard.writeText(window.location.href)
                         .then(function () { lbToast("Đã chép liên kết!"); })
                         .catch(function () {});
-                },
-                enc: function (s) { return encodeURIComponent(s); },
-            };
-        });
-
-        // public profile: /u/<user id>
-        Alpine.data("publicProfile", function () {
-            return {
-                loading: true, found: false,
-                displayName: "", avatar: "", commentCount: 0, comments: [],
-                init: function (id) {
-                    if (!id || !configured()) { this.loading = false; return; }
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) {
-                            return sb.from("profiles").select("display_name, avatar_url").eq("id", id).maybeSingle();
-                        })
-                        .then(function (res) {
-                            if (!res.data) { self.loading = false; return; }
-                            self.found = true;
-                            self.displayName = res.data.display_name || "Ẩn danh";
-                            self.avatar = res.data.avatar_url || "";
-                            return loadSupabase().then(function (sb) {
-                                return Promise.all([
-                                    sb.from("comments").select("id, body, post_slug, created_at")
-                                        .eq("user_id", id).order("created_at", { ascending: false }).limit(10),
-                                    sb.from("comments").select("id", { count: "exact" }).eq("user_id", id),
-                                ]);
-                            }).then(function (r) {
-                                self.comments = r[0].data || [];
-                                self.commentCount = r[1].count || 0;
-                            });
-                        })
-                        .then(function () { self.loading = false; })
-                        .catch(function () { self.loading = false; });
-                },
-                renderBody: function (body) { return renderComment(body); },
-            };
-        });
-
-        Alpine.data("profile", function () {
-            return {
-                loading: true,
-                // Derived, not snapshotted: signing out has to flip this page back
-                // to the signed-out view without a reload.
-                get signedIn() { return Alpine.store("auth").signedIn; },
-                displayName: "", email: "", avatar: "",
-                nameInput: "", file: null, saving: false, error: "",
-                likedPosts: [],
-                highlights: [],
-                stats: { liked: 0, comments: 0, highlights: 0 },
-                init: function () {
-                    var self = this;
-                    Alpine.store("auth").init();
-                    Alpine.store("auth").whenReady().then(function () {
-                        self.loading = false;
-                        var s = Alpine.store("auth");
-                        if (!s.signedIn) return;
-                        self.displayName = s.displayName;
-                        self.avatar = s.avatar;
-                        self.nameInput = s.displayName;
-                        self.email = s.email;
-                        self.loadLiked();
-                        self.loadHighlights();
-                        self.loadStats();
-                    });
-                },
-                // notes are rich text (DOMPurify-sanitized in renderComment), not plain text
-                renderNote: function (note) { return renderComment(note); },
-                loadStats: function () {
-                    var self = this;
-                    var uid = Alpine.store("auth").userId;
-                    loadSupabase().then(function (sb) {
-                        return Promise.all([
-                            sb.from("post_likes").select("id", { count: "exact" }).eq("user_id", uid),
-                            sb.from("comments").select("id", { count: "exact" }).eq("user_id", uid),
-                            sb.from("highlights").select("id", { count: "exact" }).eq("user_id", uid),
-                        ]);
-                    }).then(function (res) {
-                        self.stats.liked = res[0].count || 0;
-                        self.stats.comments = res[1].count || 0;
-                        self.stats.highlights = res[2].count || 0;
-                    }).catch(function () {});
-                },
-                exportComments: function () {
-                    var self = this;
-                    loadSupabase().then(function (sb) {
-                        return sb.from("comments").select("post_slug, author_name, body, created_at, parent_id")
-                            .eq("user_id", Alpine.store("auth").userId).order("created_at", { ascending: false });
-                    }).then(function (res) { if (!res.error) self.download("latexblog-comments.json", JSON.stringify(res.data, null, 2)); })
-                      .catch(function () {});
-                },
-                exportHighlights: function () {
-                    var self = this;
-                    loadSupabase().then(function (sb) {
-                        return sb.from("highlights").select("post_slug, quote, note, created_at")
-                            .eq("user_id", Alpine.store("auth").userId).order("created_at", { ascending: false });
-                    }).then(function (res) { if (!res.error) self.download("latexblog-highlights.json", JSON.stringify(res.data, null, 2)); })
-                      .catch(function () {});
-                },
-                download: function (name, text) {
-                    var blob = new Blob([text], { type: "application/json" });
-                    var a = document.createElement("a");
-                    a.href = URL.createObjectURL(blob);
-                    a.download = name;
-                    a.click();
-                    URL.revokeObjectURL(a.href);
-                },
-                loadHighlights: function () {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) {
-                            return sb.from("highlights").select("*")
-                                .eq("user_id", Alpine.store("auth").userId)
-                                .order("created_at", { ascending: false }).limit(50);
-                        })
-                        .then(function (res) {
-                            if (res.error) return;
-                            self.highlights = res.data || [];
-                        })
-                        .catch(function () {});
-                },
-                deleteHighlight: function (id) {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) {
-                            return sb.from("highlights").delete().eq("id", id).eq("user_id", Alpine.store("auth").userId);
-                        })
-                        .then(function () {
-                            self.highlights = self.highlights.filter(function (h) { return h.id !== id; });
-                        })
-                        .catch(function () {});
-                },
-                postTitle: function (slug) {
-                    var posts = window.__POSTS__ || [];
-                    var p = posts.find(function (x) { return x.slug === slug; });
-                    return p ? p.title : slug;
-                },
-                loadLiked: function () {
-                    var self = this;
-                    loadSupabase()
-                        .then(function (sb) {
-                            return sb.from("post_likes").select("post_slug").eq("user_id", Alpine.store("auth").userId);
-                        })
-                        .then(function (res) {
-                            var slugs = (res.data || []).map(function (d) { return d.post_slug; });
-                            var posts = window.__POSTS__ || [];
-                            self.likedPosts = posts.filter(function (p) { return slugs.indexOf(p.slug) !== -1; });
-                        })
-                        .catch(function () {});
-                },
-                onFile: function (e) {
-                    var f = e.target.files && e.target.files[0];
-                    if (!f) return;
-                    this.file = f;
-                    if (this._previewUrl) URL.revokeObjectURL(this._previewUrl);
-                    this._previewUrl = URL.createObjectURL(f);
-                    this.avatar = this._previewUrl;
-                },
-                save: function () {
-                    var self = this;
-                    if (!this.nameInput.trim()) { this.error = "Tên không được để trống."; return; }
-                    this.saving = true; this.error = "";
-                    var uid = Alpine.store("auth").userId;
-                    loadSupabase()
-                        .then(function (sb) {
-                            var chain = Promise.resolve(sb);
-                            if (self.file) {
-                                var ext = (self.file.name.split(".").pop() || "png").toLowerCase();
-                                var path = uid + "/" + Date.now() + "." + ext;
-                                chain = sb.storage.from("avatars").upload(path, self.file, { upsert: false })
-                                    .then(function (res) {
-                                        if (res.error) throw res.error;
-                                        var pub = sb.storage.from("avatars").getPublicUrl(path);
-                                        self.avatar = pub.data.publicUrl;
-                                        return sb;
-                                    });
-                            }
-                            return chain;
-                        })
-                        .then(function (sb) {
-                            return sb.from("profiles").upsert({
-                                id: uid,
-                                display_name: self.nameInput.trim(),
-                                avatar_url: self.avatar,
-                                updated_at: new Date().toISOString(),
-                            });
-                        })
-                        .then(function (res) {
-                            self.saving = false;
-                            if (res.error) { self.error = res.error.message; return; }
-                            Alpine.store("auth").displayName = self.nameInput.trim();
-                            Alpine.store("auth").avatar = self.avatar;
-                            self.displayName = self.nameInput.trim();
-                            self.file = null;
-                            lbToast("Đã lưu!");
-                        })
-                        .catch(function (e) { self.saving = false; self.error = e.message; });
-                },
-            };
-        });
+                    setShare(false);
+                }
+                return;
+            }
+            if (e.target.closest("[data-share]")) setShare(false);
+        }
+        function onDocClick(e) { if (!share.hidden && !shareWrap.contains(e.target)) setShare(false); }
+        root.addEventListener("click", onClick);
+        document.addEventListener("click", onDocClick);
+        return function () {
+            root.removeEventListener("click", onClick);
+            document.removeEventListener("click", onDocClick);
+        };
     });
 
-    // exposed for site.js / inline handlers
+    // ================= public profile: /u/<user id> =================
+    up.compiler(".lb-profile[data-user-id]", function (root) {
+        var id = root.getAttribute("data-user-id");
+        function done(found) {
+            lbShow(root.querySelector("[data-f=loading]"), false);
+            lbShow(root.querySelector("[data-f=missing]"), !found);
+            lbShow(root.querySelector("[data-f=found]"), found);
+        }
+        if (!id || !configured()) { done(false); return; }
+        loadSupabase()
+            .then(function (sb) {
+                return sb.from("profiles").select("display_name, avatar_url").eq("id", id).maybeSingle();
+            })
+            .then(function (res) {
+                if (!res.data) { done(false); return; }
+                root.querySelector("[data-f=name]").textContent = res.data.display_name || "Ẩn danh";
+                var img = root.querySelector("[data-f=avatar]");
+                if (res.data.avatar_url) img.src = res.data.avatar_url;
+                return loadSupabase().then(function (sb) {
+                    return Promise.all([
+                        sb.from("comments").select("id, body, post_slug, created_at")
+                            .eq("user_id", id).order("created_at", { ascending: false }).limit(10),
+                        sb.from("comments").select("id", { count: "exact" }).eq("user_id", id),
+                    ]);
+                }).then(function (r) {
+                    var comments = r[0].data || [];
+                    root.querySelector("[data-f=count]").textContent = r[1].count || 0;
+                    lbShow(root.querySelector("[data-f=none]"), !comments.length);
+                    var list = root.querySelector("[data-f=list]");
+                    comments.forEach(function (c) {
+                        var li = lbTpl(root, "comment");
+                        li.querySelector("[data-f=body]").innerHTML = renderComment(c.body);
+                        li.querySelector("[data-f=link]").href = "/posts/" + c.post_slug + "#comment-" + c.id;
+                        li.querySelector("[data-f=when]").textContent = fmtDate(c.created_at);
+                        list.appendChild(li);
+                    });
+                    done(true);
+                });
+            })
+            .catch(function () { done(false); });
+    });
+
+    // ================= own profile: /profile =================
+    up.compiler(".lb-profile[data-profile]", function (root) {
+        var file = null, previewUrl = null, highlights = [], started = false;
+        var posts = JSON.parse(root.getAttribute("data-posts") || "[]");
+        var avatarImg = root.querySelector("[data-f=avatar]");
+        var nameInput = root.querySelector("#lb-name");
+        var errorEl = root.querySelector("[data-f=error]");
+        var fileInput = root.querySelector("input[type=file]");
+        var form = root.querySelector(".lb-profile__form");
+
+        function setError(msg) { errorEl.textContent = msg || ""; lbShow(errorEl, !!msg); }
+        function setAvatar(url) { if (url) { avatarImg.src = url; avatarImg.style.display = ""; } }
+        function postTitle(slug) {
+            var p = posts.find(function (x) { return x.slug === slug; });
+            return p ? p.title : slug;
+        }
+        // Derived from the store, not snapshotted: signing out has to flip this page back to
+        // the signed-out view without a reload.
+        function paint() {
+            lbShow(root.querySelector("[data-f=loading]"), !auth.ready);
+            lbShow(root.querySelector("[data-f=signin]"), auth.ready && !auth.signedIn);
+            lbShow(root.querySelector("[data-f=inner]"), auth.ready && auth.signedIn);
+            if (auth.ready && auth.signedIn && !started) start();
+        }
+        function start() {
+            started = true;
+            root.querySelector("[data-f=name]").textContent = auth.displayName;
+            root.querySelector("[data-f=email]").textContent = auth.email;
+            setAvatar(auth.avatar);
+            nameInput.value = auth.displayName;
+            loadLiked();
+            loadHighlights();
+            loadStats();
+        }
+        function loadStats() {
+            var uid = auth.userId;
+            loadSupabase().then(function (sb) {
+                return Promise.all([
+                    sb.from("post_likes").select("id", { count: "exact" }).eq("user_id", uid),
+                    sb.from("comments").select("id", { count: "exact" }).eq("user_id", uid),
+                    sb.from("highlights").select("id", { count: "exact" }).eq("user_id", uid),
+                ]);
+            }).then(function (res) {
+                root.querySelector("[data-f=stat-liked]").textContent = res[0].count || 0;
+                root.querySelector("[data-f=stat-comments]").textContent = res[1].count || 0;
+                root.querySelector("[data-f=stat-highlights]").textContent = res[2].count || 0;
+            }).catch(function () {});
+        }
+        function download(name, text) {
+            var blob = new Blob([text], { type: "application/json" });
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = name;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+        function exportRows(table, cols, name) {
+            loadSupabase().then(function (sb) {
+                return sb.from(table).select(cols)
+                    .eq("user_id", auth.userId).order("created_at", { ascending: false });
+            }).then(function (res) { if (!res.error) download(name, JSON.stringify(res.data, null, 2)); })
+              .catch(function () {});
+        }
+        function renderHighlights() {
+            var list = root.querySelector("[data-f=hl-list]");
+            list.innerHTML = "";
+            lbShow(root.querySelector("[data-f=hl-empty]"), !highlights.length);
+            highlights.forEach(function (h) {
+                var item = lbTpl(root, "highlight");
+                item.setAttribute("data-id", h.id);
+                item.querySelector("[data-f=quote]").textContent = h.quote;
+                var note = item.querySelector("[data-f=note]");
+                lbShow(note, !!h.note);
+                // notes are rich text (DOMPurify-sanitized in renderComment), not plain text
+                note.querySelector("[data-f=note-html]").innerHTML = renderComment(h.note);
+                var a = item.querySelector("[data-f=post]");
+                a.href = "/posts/" + h.post_slug;
+                a.textContent = postTitle(h.post_slug);
+                list.appendChild(item);
+            });
+        }
+        function loadHighlights() {
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.from("highlights").select("*")
+                        .eq("user_id", auth.userId)
+                        .order("created_at", { ascending: false }).limit(50);
+                })
+                .then(function (res) {
+                    if (res.error) return;
+                    highlights = res.data || [];
+                    renderHighlights();
+                })
+                .catch(function () {});
+        }
+        function deleteHighlight(id) {
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.from("highlights").delete().eq("id", id).eq("user_id", auth.userId);
+                })
+                .then(function () {
+                    highlights = highlights.filter(function (h) { return String(h.id) !== id; });
+                    renderHighlights();
+                })
+                .catch(function () {});
+        }
+        function loadLiked() {
+            loadSupabase()
+                .then(function (sb) {
+                    return sb.from("post_likes").select("post_slug").eq("user_id", auth.userId);
+                })
+                .then(function (res) {
+                    var slugs = (res.data || []).map(function (d) { return d.post_slug; });
+                    var liked = posts.filter(function (p) { return slugs.indexOf(p.slug) !== -1; });
+                    var list = root.querySelector("[data-f=liked-list]");
+                    list.innerHTML = "";
+                    lbShow(root.querySelector("[data-f=liked-empty]"), !liked.length);
+                    liked.forEach(function (p) {
+                        var card = lbTpl(root, "liked");
+                        var a = card.querySelector("[data-f=title]");
+                        a.href = "/posts/" + p.slug;
+                        a.textContent = p.title;
+                        card.querySelector("[data-f=summary]").textContent = p.summary;
+                        card.querySelector("[data-f=date]").textContent = p.date;
+                        list.appendChild(card);
+                    });
+                })
+                .catch(function () {});
+        }
+        function onFile(e) {
+            var f = e.target.files && e.target.files[0];
+            if (!f) return;
+            file = f;
+            if (previewUrl) URL.revokeObjectURL(previewUrl);
+            previewUrl = URL.createObjectURL(f);
+            setAvatar(previewUrl);
+        }
+        function save(e) {
+            e.preventDefault();
+            var name = nameInput.value.trim();
+            if (!name) { setError("Tên không được để trống."); return; }
+            var avatar = auth.avatar;
+            setDisabled(root, true); setError("");
+            var uid = auth.userId;
+            loadSupabase()
+                .then(function (sb) {
+                    if (!file) return sb;
+                    var ext = (file.name.split(".").pop() || "png").toLowerCase();
+                    var path = uid + "/" + Date.now() + "." + ext;
+                    return sb.storage.from("avatars").upload(path, file, { upsert: false })
+                        .then(function (res) {
+                            if (res.error) throw res.error;
+                            avatar = sb.storage.from("avatars").getPublicUrl(path).data.publicUrl;
+                            return sb;
+                        });
+                })
+                .then(function (sb) {
+                    return sb.from("profiles").upsert({
+                        id: uid,
+                        display_name: name,
+                        avatar_url: avatar,
+                        updated_at: new Date().toISOString(),
+                    });
+                })
+                .then(function (res) {
+                    setDisabled(root, false);
+                    if (res.error) { setError(res.error.message); return; }
+                    auth.displayName = name;
+                    auth.avatar = avatar;
+                    file = null;
+                    root.querySelector("[data-f=name]").textContent = name;
+                    auth.changed();
+                    lbToast("Đã lưu!");
+                })
+                .catch(function (err) { setDisabled(root, false); setError(err.message); });
+        }
+        function onClick(e) {
+            var act = e.target.closest("[data-act]");
+            if (!act) return;
+            var a = act.getAttribute("data-act");
+            if (a === "export-comments") exportRows("comments", "post_slug, author_name, body, created_at, parent_id", "latexblog-comments.json");
+            else if (a === "export-highlights") exportRows("highlights", "post_slug, quote, note, created_at", "latexblog-highlights.json");
+            else if (a === "delete-highlight") deleteHighlight(act.closest("[data-id]").getAttribute("data-id"));
+        }
+
+        root.addEventListener("click", onClick);
+        fileInput.addEventListener("change", onFile);
+        // capture phase: Unpoly also listens for submit on every form (submitSelectors = 'form')
+        form.addEventListener("submit", save, true);
+        var off = auth.onChange(paint);
+        paint();
+        return function () {
+            off();
+            root.removeEventListener("click", onClick);
+            form.removeEventListener("submit", save, true);
+            if (previewUrl) URL.revokeObjectURL(previewUrl);
+        };
+    });
+
+
+    // exposed for site.js
     window.lbRenderComment = renderComment;
     window.lbLoadSupabase = loadSupabase;
-    window.rteExec = rteExec;
 })();

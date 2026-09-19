@@ -1,6 +1,8 @@
 @using LatexBlog.Services
 
-<article class="lb-post">
+@* layout-engine.js measures .lb-post / .lb-post-num / .lb-post-body / .lb-post-tags / .lb-tag
+   for masonry, so those classes stay on the components as hooks. *@
+<Card Class="lb-post">
     <span class="lb-post-num" aria-hidden="true">@Number.ToString("00")</span>
     <div class="lb-post-body">
         <h3><a href="/posts/@Post.Slug">@Post.Title</a></h3>
@@ -11,11 +13,11 @@
         <div class="lb-post-tags">
             @foreach (var tag in Post.Tags)
             {
-                <a href="/tags/@tag" class="lb-tag">@tag</a>
+                <TagBadge Tag="@tag" />
             }
         </div>
     </div>
-</article>
+</Card>
 
 @code {
     [Parameter, EditorRequired] public PostMeta Post { get; set; } = default!;

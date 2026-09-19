@@ -1,111 +1,84 @@
-
-<section class="lb-comments" x-data="comments" x-init="init('@Slug')" aria-label="Bình luận">
+@* Comment thread for one post. Bound by the .lb-comments[data-slug] compiler in comments.js,
+   which renders each comment from <template data-tpl="comment">. Forms are up-submit="false":
+   comments.js posts them to Supabase, Unpoly must not. *@
+<section class="lb-comments" data-slug="@Slug" aria-label="Bình luận">
     <h2 class="lb-comments__title">Bình luận</h2>
 
-    <template x-if="!configured">
-        <p class="lb-comments__hint">Bình luận chưa được bật trên blog này.</p>
-    </template>
+    <p class="lb-comments__hint" data-f="off" hidden>Bình luận chưa được bật trên blog này.</p>
 
-    <template x-if="configured">
-        <div>
-            <template x-if="!$store.auth.signedIn">
-                <div class="lb-comments__auth">
-                    <button type="button" class="lb-button" x-on:click="$store.auth.signIn()">
-                        <svg class="lb-comments__g" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true">
-                            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-                            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-                            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-                            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-                        </svg>
-                        Đăng nhập bằng Google
-                    </button>
-                </div>
-            </template>
-
-            <template x-if="$store.auth.signedIn">
-                <form class="lb-comments__form" x-on:submit.prevent="post()">
-                    <span class="lb-comments__who">Bình luận với tư cách: <strong x-text="$store.auth.displayName"></strong></span>
-
-                    <div class="lb-rte">
-                        <div class="lb-rte__toolbar" role="toolbar" aria-label="Bình luận" onmousedown="return false">
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                        </div>
-                        <div class="lb-rte__area" contenteditable="true" data-rte="main" x-on:input="rteInput($event)" placeholder="Viết bình luận…"></div>
-                    </div>
-
-                    <div class="lb-comments__actions">
-                        <button type="submit" class="lb-button" :disabled="posting">Gửi bình luận</button>
-                    </div>
-                </form>
-            </template>
-
-            <p class="lb-comments__error" x-show="error" x-text="error"></p>
-            <p class="lb-comments__hint" x-show="loading">Đang tải bình luận…</p>
-
-            <ul class="lb-comments__list">
-                <template x-for="c in comments" :key="c.id">
-                    <li class="lb-comment" :id="'comment-' + c.id" :style="'margin-left:' + (c.depth * 34) + 'px'">
-                        <div class="lb-comment__head">
-                            <img class="lb-comment__avatar" :src="c.avatar_url || ''" alt="" loading="lazy" />
-                            <div class="lb-comment__meta">
-                                <a class="lb-comment__author" :href="'/u/' + c.user_id" x-text="c.author_name"></a>
-                                <span class="lb-comment__when">
-                                    <time x-text="new Date(c.created_at).toLocaleDateString('vi-VN')"></time>
-                                    <span class="lb-comment__edited" x-show="c.edited_at">(đã sửa)</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="lb-comment__body" x-html="renderBody(c.body)"></div>
-                        <div class="lb-comment__actions" x-show="$store.auth.signedIn">
-                            <button type="button" class="lb-comment__reply" x-show="$store.auth.isAdmin" x-on:click="adminDelete(c)">Xóa</button>
-                            <button type="button" class="lb-comment__reply" x-show="canEdit(c)" x-on:click="startEdit(c)">Sửa</button>
-                            <button type="button" class="lb-comment__reply" x-show="c.user_id !== $store.auth.userId" x-on:click="replyTarget === c.id ? cancelReply() : openReply(c.id, $event)" x-text="replyTarget === c.id ? 'Hủy' : 'Trả lời'"></button>
-                        </div>
-                        <template x-if="editingId === c.id">
-                            <form class="lb-comments__editform" x-on:submit.prevent="saveEdit(c)">
-                                <div class="lb-rte">
-                                    <div class="lb-rte__toolbar" role="toolbar" onmousedown="return false">
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                                        <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                                    </div>
-                                    <div class="lb-rte__area" contenteditable="true" x-init="$el.innerHTML = editBody" x-on:input="editBody = $event.currentTarget.innerHTML"></div>
-                                </div>
-                                <div class="lb-comments__actions">
-                                    <button type="submit" class="lb-button lb-button--sm" :disabled="posting">Lưu</button>
-                                    <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="cancelEdit()">Hủy</button>
-                                </div>
-                            </form>
-                        </template>
-                        <form class="lb-comments__replyform" x-show="replyTarget === c.id" x-on:submit.prevent="postReply(c.id)">
-                            <div class="lb-rte lb-rte--sm">
-                                <div class="lb-rte__toolbar" role="toolbar" aria-label="Trả lời" onmousedown="return false">
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                                </div>
-                                <div class="lb-rte__area" contenteditable="true" data-rte="reply" x-on:input="rteInput($event)" placeholder="Trả lời bình luận…"></div>
-                            </div>
-                            <button type="submit" class="lb-button lb-button--sm" :disabled="posting">Gửi trả lời</button>
-                        </form>
-                    </li>
-                </template>
-            </ul>
-
-            <button type="button" class="lb-button lb-button--sm lb-comments__more" x-show="hasMore" x-on:click="loadMore()" :disabled="loadingMore">
-                Xem thêm bình luận <span x-text="'(' + (topTotal - topLoaded) + ')'"></span>
-            </button>
-
-            <p class="lb-comments__hint" x-show="!loading && !comments.length">Chưa có bình luận nào. Hãy là người đầu tiên.</p>
+    <div data-f="on" hidden>
+        <div class="lb-comments__auth" data-auth="out" hidden>
+            <Button Type="button" Variant="outline" data-auth-action="sign-in">
+                <GoogleMark />
+                Đăng nhập bằng Google
+            </Button>
         </div>
+
+        <form class="lb-comments__form" data-form="main" up-submit="false" data-auth="in" hidden>
+            <span class="lb-comments__who">Bình luận với tư cách: <strong data-auth-text="displayName"></strong></span>
+
+            <div class="lb-rte">
+                <RteToolbar Label="Bình luận" IconSize="14" />
+                <div class="lb-rte__area" contenteditable="true" data-rte="main" placeholder="Viết bình luận…"></div>
+            </div>
+
+            <div class="lb-comments__actions">
+                <Button Type="submit" data-busy-disable>Gửi bình luận</Button>
+            </div>
+        </form>
+
+        <Alert Variant="destructive" Class="lb-comments__error" data-f="error" hidden>
+            <AlertDescription data-f="error-text"></AlertDescription>
+        </Alert>
+        <p class="lb-comments__hint" data-f="loading"><Spinner /> Đang tải bình luận…</p>
+
+        <ul class="lb-comments__list" data-f="list"></ul>
+
+        <Button Type="button" Variant="outline" Size="sm" Class="lb-comments__more" data-act="more" hidden>
+            Xem thêm bình luận <span data-f="remaining"></span>
+        </Button>
+
+        <p class="lb-comments__hint" data-f="empty" hidden>Chưa có bình luận nào. Hãy là người đầu tiên.</p>
+    </div>
+
+    <template data-tpl="comment">
+        <li class="lb-comment">
+            <div class="lb-comment__head">
+                <Avatar Class="lb-comment__avatar">
+                    <AvatarImage data-f="avatar" loading="lazy" />
+                </Avatar>
+                <div class="lb-comment__meta">
+                    <a class="lb-comment__author" data-f="author"></a>
+                    <span class="lb-comment__when">
+                        <time data-f="when"></time>
+                        <span class="lb-comment__edited" data-f="edited" hidden>(đã sửa)</span>
+                    </span>
+                </div>
+            </div>
+            <div class="lb-comment__body" data-f="body"></div>
+            <div class="lb-comment__actions" data-f="actions">
+                <Button Type="button" Variant="outline" Size="xs" Class="lb-comment__reply" data-act="delete">Xóa</Button>
+                <Button Type="button" Variant="outline" Size="xs" Class="lb-comment__reply" data-act="edit">Sửa</Button>
+                <Button Type="button" Variant="outline" Size="xs" Class="lb-comment__reply" data-act="reply">Trả lời</Button>
+            </div>
+            <form class="lb-comments__editform" data-form="edit" data-f="editform" up-submit="false" hidden>
+                <div class="lb-rte">
+                    <RteToolbar />
+                    <div class="lb-rte__area" contenteditable="true"></div>
+                </div>
+                <div class="lb-comments__actions">
+                    <Button Type="submit" Size="sm" data-busy-disable>Lưu</Button>
+                    <Button Type="button" Variant="ghost" Size="sm" data-act="cancel-edit">Hủy</Button>
+                </div>
+            </form>
+            <form class="lb-comments__replyform" data-form="reply" data-f="replyform" up-submit="false" hidden>
+                <div class="lb-rte lb-rte--sm">
+                    <RteToolbar Label="Trả lời" />
+                    <div class="lb-rte__area" contenteditable="true" data-rte="reply" placeholder="Trả lời bình luận…"></div>
+                </div>
+                <Button Type="submit" Size="sm" data-busy-disable>Gửi trả lời</Button>
+            </form>
+        </li>
     </template>
 </section>
 

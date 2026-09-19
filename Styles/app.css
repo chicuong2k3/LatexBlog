@@ -1,0 +1,41 @@
+/* Tailwind v4 entry for Unpoly.Blazor.Shadcn. Built to wwwroot/css/app.css by `npm run css`
+   (the Tailwind target in LatexBlog.csproj). site.css loads after this file and keeps the
+   Sakura Neon layout; this file only maps shadcn's tokens onto that palette. */
+@import "tailwindcss";
+@import "../external/Unpoly.Blazor.Shadcn/src/Unpoly.Blazor.Shadcn/Styles/ui.css";
+
+@source "../Components/**/*.razor";
+@source "../external/Unpoly.Blazor.Shadcn/src/Unpoly.Blazor.Shadcn/Components/**/*.razor";
+@source "../external/Unpoly.Blazor.Shadcn/src/Unpoly.Blazor.Shadcn/ButtonVariants.cs";
+@source "../external/Unpoly.Blazor.Shadcn/src/Unpoly.Blazor.Shadcn/wwwroot/ui.js";
+
+
+:root {
+    --background: #fdf1f6;
+    --foreground: #231726;
+    --card: #ffffff;
+    --card-foreground: #231726;
+    --popover: #ffffff;
+    --popover-foreground: #231726;
+    --primary: #e63e8f;
+    --primary-foreground: #ffffff;
+    --secondary: #fbeef4;
+    --secondary-foreground: #43243a;
+    --muted: #fbeef4;
+    --muted-foreground: #7a4a68;
+    --accent: color-mix(in srgb, #e63e8f 10%, transparent);
+    --accent-foreground: #e63e8f;
+    --border: #f0d8e4;
+    --input: #e4bfd4;
+    --ring: #e63e8f;
+    --surface-border: var(--border);
+    --radius: 0.5rem;
+}
+
+
+/* Preflight strips list markers and heading sizes; pandoc prose depends on them. */
+@layer base {
+    .lb-prose ul { list-style: disc; }
+    .lb-prose ol { list-style: decimal; }
+    .lb-prose img, .lb-prose svg, .lb-prose video { display: inline; }
+}

@@ -1,0 +1,14 @@
+@* The 404 body, shared by /not-found and an unknown /posts/{slug}. *@
+<Empty Class="lb-not-found">
+    <EmptyHeader Class="max-w-none">
+        <EmptyTitle><h1>Không tìm thấy trang<span class="lb-neon">@(Neon ? "." : "")</span></h1></EmptyTitle>
+        <EmptyDescription>Trang bạn tìm kiếm không tồn tại hoặc đã bị di chuyển.</EmptyDescription>
+    </EmptyHeader>
+    <EmptyContent>
+        <Button Href="/">Về trang chủ</Button>
+    </EmptyContent>
+</Empty>
+
+@code {
+    [Parameter] public bool Neon { get; set; }
+}

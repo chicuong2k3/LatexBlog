@@ -1,68 +1,115 @@
-// ---- theme ----
-function getTheme() {
-    return document.documentElement.getAttribute("data-theme") || "default";
-}
-function setTheme(t) {
-    document.documentElement.setAttribute("data-theme", t);
-    localStorage.setItem("db-theme", t);
-}
-document.addEventListener("alpine:init", () => {
-    Alpine.data("themeToggle", () => ({
-        dark: getTheme() === "dark",
-        toggle() {
-            setTheme(this.dark ? "default" : "dark");
-            this.dark = !this.dark;
-        },
-    }));
+// Vanilla + Unpoly compilers (no Alpine). Every component is an up.compiler so it binds on
+// first load AND on every fragment Unpoly swaps in; each returns a destructor.
 
-    // TOC scrollspy - consumed by Post page
-    Alpine.data("tocSpy", () => ({
-        activeId: "",
-        init() {
-            const el = this.$el;
-            const links = el.querySelectorAll('a[href^="#"]');
-            const headings = [...links]
-                .map((a) => document.getElementById(a.getAttribute("href").slice(1)))
-                .filter(Boolean);
-            if (!headings.length) return;
-            const io = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) this.activeId = entry.target.id;
-                });
-            }, { rootMargin: "-80px 0px -70% 0px" });
-            headings.forEach((h) => io.observe(h));
-        },
-    }));
+// ---- tiny DOM helpers, shared with comments.js ----
+window.lbShow = function (el, on) { if (el) el.hidden = !on; };
+window.lbDebounce = function (fn, ms) {
+    var t; return function () { var a = arguments, s = this; clearTimeout(t); t = setTimeout(function () { fn.apply(s, a); }, ms); };
+};
+// Clone <template data-tpl="name"> inside root; returns its first element.
+window.lbTpl = function (root, name) {
+    var t = root.querySelector('template[data-tpl="' + name + '"]');
+    return t.content.firstElementChild.cloneNode(true);
+};
 
-    // nav (mobile menu + search popup) - consumed by MainLayout
-    Alpine.data("navBox", () => ({
-        menuOpen: false,
-        searchOpen: false,
-        mode: "posts",
-        cq: "",
-        cresults: [],
-        openSearch() {
-            this.searchOpen = true;
-            this.$nextTick(() => { if (this.$refs.q) this.$refs.q.focus(); });
-        },
-        closeSearch() {
-            this.searchOpen = false;
-            if (this.$refs.results) this.$refs.results.innerHTML = "";
-            this.cresults = [];
-            this.cq = "";
-        },
-        setMode(m) { this.mode = m; },
-        searchComments() {
-            var self = this;
-            var q = this.cq.trim();
-            if (!q) { this.cresults = []; return; }
-            if (typeof window.lbLoadSupabase !== "function") return;
-            window.lbLoadSupabase().then(function (sb) {
-                return sb.from("comments").select("id, post_slug, author_name, body, created_at")
-                    .ilike("body", "%" + q + "%").order("created_at", { ascending: false }).limit(20);
-            }).then(function (res) { self.cresults = res.data || []; }).catch(function () {});
-        },
-    }));
+// ---- TOC scrollspy (Post page) ----
+up.compiler(".lb-toc", function (el) {
+    var links = [].slice.call(el.querySelectorAll('a[href^="#"]'));
+    var headings = links.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); }).filter(Boolean);
+    if (!headings.length) return;
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            links.forEach(function (a) { a.classList.toggle("is-active", a.getAttribute("href") === "#" + entry.target.id); });
+        });
+    }, { rootMargin: "-80px 0px -70% 0px" });
+    headings.forEach(function (h) { io.observe(h); });
+    return function () { io.disconnect(); };
+});
+
+// ---- nav: mobile menu + search popup (MainLayout) ----
+up.compiler(".lb-nav", function (nav) {
+    var panel = nav.querySelector(".lb-nav-panel");
+    var menuBtn = nav.querySelector("[data-lb-menu-toggle]");
+    var modal = nav.querySelector(".lb-searchmodal");
+    var openBtn = nav.querySelector("[data-lb-search-open]");
+    var q = modal.querySelector('input[name="q"]');
+    var postResults = modal.querySelector("#lb-search-results");
+    var cq = modal.querySelector("[data-lb-cq]");
+    var cresults = modal.querySelector("[data-lb-cresults]");
+
+    function toggleMenu() {
+        var open = !panel.classList.contains("open");
+        panel.classList.toggle("open", open);
+        menuBtn.setAttribute("aria-expanded", String(open));
+    }
+    function setMode(m) {
+        modal.querySelectorAll("[data-lb-search-mode]").forEach(function (b) {
+            var on = b.getAttribute("data-lb-search-mode") === m;
+            b.classList.toggle("is-active", on);
+            b.setAttribute("aria-selected", String(on));
+        });
+        modal.querySelectorAll("[data-lb-search-pane]").forEach(function (p) {
+            lbShow(p, p.getAttribute("data-lb-search-pane") === m);
+        });
+    }
+    function openSearch() {
+        lbShow(modal, true);
+        openBtn.setAttribute("aria-expanded", "true");
+        if (q) q.focus();
+    }
+    function closeSearch() {
+        lbShow(modal, false);
+        openBtn.setAttribute("aria-expanded", "false");
+        if (postResults) postResults.innerHTML = "";
+        cresults.innerHTML = "";
+        cq.value = "";
+    }
+    var searchComments = lbDebounce(function () {
+        var text = cq.value.trim();
+        if (!text) { cresults.innerHTML = ""; return; }
+        if (typeof window.lbLoadSupabase !== "function") return;
+        window.lbLoadSupabase().then(function (sb) {
+            return sb.from("comments").select("id, post_slug, author_name, body, created_at")
+                .ilike("body", "%" + text + "%").order("created_at", { ascending: false }).limit(20);
+        }).then(function (res) {
+            cresults.innerHTML = "";
+            (res.data || []).forEach(function (r) {
+                var a = lbTpl(modal, "cresult");
+                a.href = "/posts/" + r.post_slug;
+                a.querySelector("[data-f=body]").textContent = r.body.length > 120 ? r.body.slice(0, 120) + "…" : r.body;
+                a.querySelector("[data-f=meta]").textContent = r.author_name + " · " + r.post_slug;
+                cresults.appendChild(a);
+            });
+        }).catch(function () {});
+    }, 500);
+
+    function onClick(e) {
+        var t = e.target;
+        if (t.closest("[data-lb-menu-toggle]")) toggleMenu();
+        else if (t.closest("[data-lb-search-open]")) openSearch();
+        else if (t.closest("[data-lb-search-close]")) closeSearch();
+        else if (t.closest("[data-lb-search-mode]")) setMode(t.closest("[data-lb-search-mode]").getAttribute("data-lb-search-mode"));
+        else if (t === modal) closeSearch(); // backdrop
+    }
+    function onKey(e) { if (e.key === "Escape" && !modal.hidden) closeSearch(); }
+    function onSubmit() { closeSearch(); }
+
+    nav.addEventListener("click", onClick);
+    document.addEventListener("keydown", onKey);
+    cq.addEventListener("input", searchComments);
+    modal.querySelector("form").addEventListener("submit", onSubmit);
+    return function () {
+        nav.removeEventListener("click", onClick);
+        document.removeEventListener("keydown", onKey);
+    };
+});
+
+// ---- prose: copy-code buttons + KaTeX (Post page, home formula) ----
+up.compiler(".lb-prose, .lb-matrix", function (el) {
+    var md = el.getAttribute("data-md");
+    if (md !== null) initDbProse(el, JSON.parse(md));
+    else initProse(el);
 });
 
 // ---- back to top ----

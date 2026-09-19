@@ -2,46 +2,51 @@
 
 <PageTitle>Trang cá nhân — Alternative World</PageTitle>
 
-<section class="lb-profile" x-data="publicProfile" x-init="init('@Id')">
-    <p class="lb-comments__hint" x-show="loading">Đang tải…</p>
+@* Filled from Supabase by the .lb-profile[data-user-id] compiler in comments.js. *@
+<section class="lb-profile" data-user-id="@Id">
+    <p class="lb-comments__hint" data-f="loading"><Spinner /> Đang tải…</p>
 
-    <template x-if="!loading && !found">
-        <div class="lb-profile__signin">
-            <h1>Không tìm thấy người dùng</h1>
-            <p><a class="lb-cta" href="/">Về trang chủ</a></p>
-        </div>
-    </template>
+    <Empty Class="lb-profile__signin" data-f="missing" hidden>
+        <EmptyHeader>
+            <EmptyTitle><h1>Không tìm thấy người dùng</h1></EmptyTitle>
+        </EmptyHeader>
+        <EmptyContent>
+            <Button Href="/" Variant="link" Class="lb-cta">Về trang chủ</Button>
+        </EmptyContent>
+    </Empty>
 
-    <template x-if="found">
-        <div class="lb-profile__inner">
-            <div class="lb-profile__card">
-                <div class="lb-profile__row">
-                    <img class="lb-avatar lb-avatar--lg" :src="avatar || ''" alt="" loading="lazy" />
-                    <div>
-                        <h1 x-text="displayName"></h1>
-                        <p class="lb-comments__who"><span x-text="commentCount"></span> bình luận đã viết</p>
-                    </div>
+    <div class="lb-profile__inner" data-f="found" hidden>
+        <Card Class="lb-profile__card">
+            <CardContent Class="lb-profile__row">
+                <Avatar Size="lg" Class="size-18">
+                    <AvatarImage Class="lb-avatar lb-avatar--lg" data-f="avatar" loading="lazy" />
+                </Avatar>
+                <div>
+                    <h1 data-f="name"></h1>
+                    <p class="lb-comments__who"><span data-f="count">0</span> bình luận đã viết</p>
                 </div>
-            </div>
+            </CardContent>
+        </Card>
 
-            <div class="lb-profile__card">
-                <h2>Bình luận gần đây</h2>
-                <template x-if="!comments.length">
-                    <p class="lb-comments__hint">Chưa có bình luận nào.</p>
-                </template>
-                <ul class="lb-comments__list">
-                    <template x-for="c in comments" :key="c.id">
-                        <li class="lb-comment">
-                            <div class="lb-comment__body" x-html="renderBody(c.body)"></div>
-                            <div class="lb-comment__actions">
-                                <a class="lb-comment__reply" :href="'/posts/' + c.post_slug + '#comment-' + c.id">Xem trong bài</a>
-                                <time class="lb-comment__when" x-text="new Date(c.created_at).toLocaleDateString('vi-VN')"></time>
-                            </div>
-                        </li>
-                    </template>
-                </ul>
+        <Card Class="lb-profile__card">
+            <CardHeader>
+                <CardTitle><h2>Bình luận gần đây</h2></CardTitle>
+            </CardHeader>
+            <CardContent>
+                <p class="lb-comments__hint" data-f="none" hidden>Chưa có bình luận nào.</p>
+                <ul class="lb-comments__list" data-f="list"></ul>
+            </CardContent>
+        </Card>
+    </div>
+
+    <template data-tpl="comment">
+        <li class="lb-comment">
+            <div class="lb-comment__body" data-f="body"></div>
+            <div class="lb-comment__actions">
+                <Button Href="#" Variant="outline" Size="xs" Class="lb-comment__reply" data-f="link">Xem trong bài</Button>
+                <time class="lb-comment__when" data-f="when"></time>
             </div>
-        </div>
+        </li>
     </template>
 </section>
 

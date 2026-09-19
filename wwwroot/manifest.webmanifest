@@ -4,8 +4,8 @@
   "description": "Viết bằng LaTeX, xuất bản bằng Blazor.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0c0a16",
-  "theme_color": "#0c0a16",
+  "background_color": "#fdf1f6",
+  "theme_color": "#fdf1f6",
   "icons": [
     {
       "src": "/icon-192.png",

@@ -13,15 +13,6 @@
   --scan: rgba(230, 62, 143, .05);
   --code-bg: #fdf6fa; --code-ink: #231726; --code-border: #eed6e4;
 }
-[data-theme="dark"] {
-  --bg: #0c0a16; --bg-2: #131020; --surface: #161226; --surface-2: #1b1530;
-  --ink: #f2ecf7; --ink-soft: #dcd2e8; --muted: #9d8fb8;
-  --line: #2b2140; --line-strong: #3d2e5e;
-  --neon: #ff5fa2; --neon-2: #8b7cff; --neon-3: #5fd4ff;
-  --glow-pink: 0 0 0 transparent; --glow-violet: 0 0 0 transparent;
-  --scan: rgba(255, 95, 162, .06);
-  --code-bg: #0b0916; --code-ink: #e8e2f4; --code-border: #2b2140;
-}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -43,7 +34,8 @@ body::after {
 }
 ::selection { background: var(--neon); color: #fff; }
 :focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; border-radius: 4px; }
-a { color: inherit; text-decoration: none; }
+/* in @layer base so shadcn Button/Badge/Item colour utilities (layered) still win on <a> */
+@layer base { a { color: inherit; text-decoration: none; } }
 ::-webkit-scrollbar { width: 12px; height: 12px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 6px; border: 3px solid var(--bg); }
@@ -70,7 +62,7 @@ a { color: inherit; text-decoration: none; }
 /* desktop: transparent wrapper around nav-links + nav-right, zero layout change —
    only becomes a real (stacked, scrollable) box in the mobile media query below */
 .lb-nav-panel { display: contents; }
-.lb-nav-right .lb-nav-icon, .lb-nav-right .lb-theme-btn, .lb-nav-right .lb-button { height: 28px; }
+.lb-nav-right .lb-nav-icon, .lb-nav-right .lb-button { height: 28px; }
 .lb-nav-right .lb-button { padding: 0 12px; display: inline-flex; align-items: center; gap: 7px; font-size: .82rem; }
 .lb-nav-icon {
   display: inline-flex; align-items: center; justify-content: center;
@@ -85,14 +77,6 @@ a { color: inherit; text-decoration: none; }
 .lb-nav-user__link:hover { background: color-mix(in srgb, var(--neon) 8%, transparent); }
 .lb-avatar { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--neon); object-fit: cover; box-shadow: var(--glow-pink); }
 .lb-nav-user__name { font-size: .86rem; color: var(--ink-soft); max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.lb-theme-btn {
-  border: 1px solid var(--neon); background: transparent; color: var(--ink);
-  border-radius: 6px; padding: 6px; cursor: pointer; line-height: 0;
-  display: inline-flex; align-items: center; justify-content: center;
-  transition: background .2s, box-shadow .2s;
-}
-.lb-theme-btn:hover { background: color-mix(in srgb, var(--neon) 14%, transparent); box-shadow: var(--glow-pink); }
-.lb-theme-icon { display: block; }
 
 /* ---------- hero (home) ---------- */
 .lb-hero { position: relative; overflow: hidden; padding: 96px 0 72px; }
@@ -323,26 +307,6 @@ a { color: inherit; text-decoration: none; }
 .lb-copy:hover { border-color: var(--neon); color: var(--neon); }
 /* KaTeX display blocks: keep inside panel, scroll wide formulas */
 .lb-prose .math.display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
-/* dark-mode token retune for pygments on dark panels */
-[data-theme="dark"] .lb-prose pre code { color: var(--code-ink); }
-[data-theme="dark"] .lb-prose pre .kw, [data-theme="dark"] .lb-prose pre .kd,
-[data-theme="dark"] .lb-prose pre .kn, [data-theme="dark"] .lb-prose pre .kp,
-[data-theme="dark"] .lb-prose pre .kr, [data-theme="dark"] .lb-prose pre .kt,
-[data-theme="dark"] .lb-prose pre .cf, [data-theme="dark"] .lb-prose pre .im,
-[data-theme="dark"] .lb-prose pre .bu { color: #ff8ab8; }
-[data-theme="dark"] .lb-prose pre .st, [data-theme="dark"] .lb-prose pre .sc,
-[data-theme="dark"] .lb-prose pre .ch, [data-theme="dark"] .lb-prose pre .s1,
-[data-theme="dark"] .lb-prose pre .ss, [data-theme="dark"] .lb-prose pre .vs { color: #8fe3b0; }
-[data-theme="dark"] .lb-prose pre .co, [data-theme="dark"] .lb-prose pre .c1,
-[data-theme="dark"] .lb-prose pre .cv, [data-theme="dark"] .lb-prose pre .do { color: #8d84b8; font-style: italic; }
-[data-theme="dark"] .lb-prose pre .dv, [data-theme="dark"] .lb-prose pre .bn,
-[data-theme="dark"] .lb-prose pre .fl, [data-theme="dark"] .lb-prose pre .mf { color: #e5c07b; }
-[data-theme="dark"] .lb-prose pre .fu { color: #7fd4ff; }
-[data-theme="dark"] .lb-prose pre .dt, [data-theme="dark"] .lb-prose pre .at,
-[data-theme="dark"] .lb-prose pre .pp { color: #c8a0ff; }
-[data-theme="dark"] .lb-prose pre .cn, [data-theme="dark"] .lb-prose pre .va { color: #dce6ff; }
-[data-theme="dark"] .lb-prose pre .op, [data-theme="dark"] .lb-prose pre .ot { color: var(--code-ink); }
-[data-theme="dark"] .lb-prose pre .al, [data-theme="dark"] .lb-prose pre .er { color: #ff6b6b; }
 
 /* ---------- not found / error ---------- */
 .lb-not-found { max-width: 640px; margin: 0 auto; padding: 96px 0 40px; text-align: center; }
@@ -755,9 +719,9 @@ a { color: inherit; text-decoration: none; }
 /* ---------- responsive ---------- */
 @media (max-width: 720px) {
   .lb-wrap { padding: 0 18px; }
-  /* mobile: nav-links + nav-right (search/notif/login/theme) move into one
+  /* mobile: nav-links + nav-right (search/notif/login) move into one
      shared dropdown panel under the hamburger — trying to fit avatar, login,
-     theme toggle, search and notif icons all on the 66px bar itself is what
+     search and notif icons all on the 66px bar itself is what
      was overflowing narrow screens */
   .lb-nav-panel {
     display: none; position: absolute; top: 66px; left: 0; right: 0;
@@ -782,7 +746,6 @@ a { color: inherit; text-decoration: none; }
   .lb-nav-user__name { display: inline-block; }
   .lb-nav-login { flex: 1 1 auto; justify-content: center; }
   .lb-nav-login__text { display: inline; }
-  .lb-theme-btn { margin-left: auto; }
   .lb-hero { padding: 64px 0 48px; }
   .lb-post { grid-template-columns: 1fr; gap: 10px; }
   .lb-post-num { font-size: 1.3rem; }

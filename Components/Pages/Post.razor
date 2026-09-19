@@ -7,11 +7,7 @@
 @if (PostMeta is null || (Html is null && DbBody is null))
 {
     <PageTitle>Không tìm thấy trang</PageTitle>
-    <section class="lb-not-found">
-        <h1>Không tìm thấy trang</h1>
-        <p>Trang bạn tìm kiếm không tồn tại hoặc đã bị di chuyển.</p>
-        <a href="/" class="lb-button">Về trang chủ</a>
-    </section>
+    <NotFoundBlock />
 }
 else
 {
@@ -28,36 +24,36 @@ else
                 data-heading=".lb-post-head h1"></script>
     </HeadContent>
 
-    <article class="lb-post-page" x-data="annotations" x-init="init('@PostMeta.Slug')">
+    <article class="lb-post-page" data-slug="@PostMeta.Slug">
         <header class="lb-post-head">
             <h1>@PostMeta.Title</h1>
             <p class="lb-post-meta">Đăng ngày @PostMeta.Date · @ReadMinutes phút đọc</p>
             <div class="lb-post-tags">
                 @foreach (var tag in PostMeta.Tags)
                 {
-                    <a href="/tags/@tag" class="lb-tag">@tag</a>
+                    <TagBadge Tag="@tag" />
                 }
             </div>
         </header>
 
         @if (!string.IsNullOrWhiteSpace(PostMeta.Tldr))
         {
-            <aside class="lb-tldr" aria-label="Tóm tắt">
-                <strong>TL;DR</strong>
-                <p>@PostMeta.Tldr</p>
-            </aside>
+            <Alert Class="lb-tldr" aria-label="Tóm tắt">
+                <AlertTitle><strong>TL;DR</strong></AlertTitle>
+                <AlertDescription><p>@PostMeta.Tldr</p></AlertDescription>
+            </Alert>
         }
 
         @if (Toc.Count > 0)
         {
-            <nav class="lb-toc" x-data="tocSpy" aria-label="Mục lục">
+            <nav class="lb-toc" aria-label="Mục lục">
                 <strong>Mục lục</strong>
                 <ul>
                     @foreach (var entry in Toc)
                     {
                         <li>
-                            <a href="#@entry.Id"
-                               x-bind:class="activeId === '@entry.Id' ? 'is-active' : ''">@entry.Text</a>
+                            <Button Href="@($"#{entry.Id}")" Variant="link" Size="sm"
+                                    Class="h-auto justify-start whitespace-normal p-0 text-left">@entry.Text</Button>
                         </li>
                     }
                 </ul>
@@ -66,13 +62,13 @@ else
 
         @if (Html is not null)
         {
-            <div class="lb-prose" x-data x-init="initProse($el)">
+            <div class="lb-prose">
                 @((MarkupString)Html)
             </div>
         }
         else if (DbBody is not null)
         {
-            <div class="lb-prose" x-data x-init="initDbProse($el, @((MarkupString)JsonSerializer.Serialize(DbBody)))"></div>
+            <div class="lb-prose" data-md="@JsonSerializer.Serialize(DbBody)"></div>
         }
 
         <PostActions Slug="@PostMeta.Slug" Title="@PostMeta.Title" />
@@ -81,73 +77,60 @@ else
         {
             <aside class="lb-related" aria-label="Bài viết liên quan">
                 <h2>Bài viết liên quan</h2>
-                <ul class="lb-related__list">
+                <ItemGroup Class="lb-related__list">
                     @foreach (var p in Related)
                     {
-                        <li class="lb-related__item">
-                            <a href="/posts/@p.Slug">@p.Title</a>
-                            <span class="lb-related__tags">@string.Join(" · ", p.Tags.Select(t => "#" + t))</span>
-                        </li>
+                        <Item Href="@($"/posts/{p.Slug}")" Variant="outline" Size="sm" Class="lb-related__item">
+                            <ItemContent>
+                                <ItemTitle>@p.Title</ItemTitle>
+                                <ItemDescription Class="lb-related__tags">@string.Join(" · ", p.Tags.Select(t => "#" + t))</ItemDescription>
+                            </ItemContent>
+                        </Item>
                     }
-                </ul>
+                </ItemGroup>
             </aside>
         }
 
         <CommentSection Slug="@PostMeta.Slug" />
 
-        <div class="lb-hlmenu" x-show="menuOpen" :style="'left:' + menuX + 'px; top:' + menuY + 'px'" x-on:click.stop role="menu">
-            <button type="button" x-on:click="highlight()">Tô sáng</button>
-            <button type="button" x-on:click="openNote()">Ghi chú</button>
-            <button type="button" x-on:click="shareQuote()">Chia sẻ đoạn này</button>
-        </div>
-        <div class="lb-hlnote" x-show="noteOpen" x-on:click.outside="cancelNote()" role="dialog" aria-label="Ghi chú">
+        <ButtonGroup Class="lb-hlmenu" role="menu" hidden>
+            <Button Type="button" Variant="ghost" Size="sm" role="menuitem" data-act="hl-highlight">Tô sáng</Button>
+            <Button Type="button" Variant="ghost" Size="sm" role="menuitem" data-act="hl-note">Ghi chú</Button>
+            <Button Type="button" Variant="ghost" Size="sm" role="menuitem" data-act="hl-share">Chia sẻ đoạn này</Button>
+        </ButtonGroup>
+        <Card Class="lb-hlnote gap-3 py-3" role="dialog" aria-label="Ghi chú" hidden>
             <div class="lb-rte">
-                <div class="lb-rte__toolbar" role="toolbar" onmousedown="return false">
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                    <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                </div>
-                <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-on:input="noteText = $event.currentTarget.innerHTML" placeholder="Viết ghi chú cho đoạn này…"></div>
+                <RteToolbar />
+                <div class="lb-rte__area lb-noteview__edit" contenteditable="true" placeholder="Viết ghi chú cho đoạn này…"></div>
             </div>
             <div class="lb-hlnote__actions">
-                <button type="button" class="lb-button lb-button--sm" x-on:click="saveNote()">Lưu</button>
-                <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="cancelNote()">Hủy</button>
+                <Button Type="button" Size="sm" data-act="note-save">Lưu</Button>
+                <Button Type="button" Variant="ghost" Size="sm" data-act="note-cancel">Hủy</Button>
             </div>
-        </div>
+        </Card>
 
-        <div class="lb-noteview" x-show="noteView" x-on:click.outside="closeNoteView()" role="dialog" aria-label="Ghi chú">
-            <template x-if="noteView && !noteEdit">
-                <div class="lb-noteview__inner">
-                    <div class="lb-noteview__body" x-html="renderNote(noteView.note)"></div>
-                    <div class="lb-noteview__actions">
-                        <button type="button" class="lb-button lb-button--sm" x-on:click="startEditNote()">Sửa</button>
-                        <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="closeNoteView()">Đóng</button>
-                    </div>
+        <Card Class="lb-noteview gap-0 py-3" role="dialog" aria-label="Ghi chú" hidden>
+            <div class="lb-noteview__inner" data-f="view">
+                <div class="lb-noteview__body" data-f="body"></div>
+                <div class="lb-noteview__actions">
+                    <Button Type="button" Size="sm" data-act="view-edit">Sửa</Button>
+                    <Button Type="button" Variant="ghost" Size="sm" data-act="view-close">Đóng</Button>
                 </div>
-            </template>
-            <template x-if="noteView && noteEdit">
-                <div class="lb-noteview__inner">
-                    <div class="lb-rte">
-                        <div class="lb-rte__toolbar" role="toolbar" onmousedown="return false">
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'bold')" title="In đậm"><b>B</b></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'italic')" title="In nghiêng"><i>I</i></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;pre&gt;')" title="Mã nguồn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'formatBlock','&lt;blockquote&gt;')" title="Trích dẫn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3-1 4-4 4-8H3v-6h6v6c0 5-2 8-6 8zM15 21c3-1 4-4 4-8h-4v-6h6v6c0 5-2 8-6 8z"/></svg></button>
-                            <button type="button" class="lb-editor__btn" onclick="rteExec(event,'insertUnorderedList')" title="Danh sách"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg></button>
-                        </div>
-                        <div class="lb-rte__area lb-noteview__edit" contenteditable="true" x-init="$el.innerHTML = noteEditHtml" x-on:input="noteEditHtml = $event.currentTarget.innerHTML"></div>
-                    </div>
-                    <div class="lb-noteview__actions">
-                        <button type="button" class="lb-button lb-button--sm" x-on:click="saveEditNote()">Lưu</button>
-                        <button type="button" class="lb-button lb-button--quiet lb-button--sm" x-on:click="noteEdit = false">Hủy</button>
-                    </div>
+            </div>
+            <div class="lb-noteview__inner" data-f="edit" hidden>
+                <div class="lb-rte">
+                    <RteToolbar />
+                    <div class="lb-rte__area lb-noteview__edit" contenteditable="true"></div>
                 </div>
-            </template>
-        </div>
+                <div class="lb-noteview__actions">
+                    <Button Type="button" Size="sm" data-act="view-save">Lưu</Button>
+                    <Button Type="button" Variant="ghost" Size="sm" data-act="view-cancel">Hủy</Button>
+                </div>
+            </div>
+        </Card>
     </article>
 }
+
 
 @code {
     private static readonly Regex HeadingRegex = new(

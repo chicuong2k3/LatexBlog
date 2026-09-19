@@ -15,8 +15,8 @@
         <h1>"Nếu tôi nhìn được <span class="lb-neon">xa hơn</span>, đó là vì đứng trên vai những người <span class="lb-violet">khổng lồ</span>." <cite>— Isaac Newton</cite></h1>
         <p class="lb-hero-lead">Nhìn thế giới qua một lăng kính khác.</p>
 
-        <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới" x-data x-init="initProse($el)">
-            <span class="lb-flag">Công thức trong ngày</span>
+        <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới">
+            <Badge Variant="outline" Class="lb-flag border-current">Công thức trong ngày</Badge>
             <div class="lb-matrix-box">
                 <span class="math display">f = \dfrac{1}{2\pi\sqrt{LC}}</span>
             </div>
@@ -24,16 +24,18 @@
 
         @if (Latest is not null)
         {
-            <article class="lb-featured">
-                <div>
-                    <span class="lb-flag">Bài mới nhất</span>
-                    <h2><a href="/posts/@Latest.Slug">@Latest.Title</a></h2>
-                    <p>@Latest.Summary</p>
-                    <a class="lb-cta" href="/posts/@Latest.Slug">Đọc tiếp
-                        <svg width="16" height="16" aria-hidden="true"><use href="#lb-arrow" /></svg>
-                    </a>
-                </div>
-            </article>
+            <Card Class="lb-featured">
+                <CardHeader>
+                    <Badge Variant="outline" Class="lb-flag w-fit border-current">Bài mới nhất</Badge>
+                    <CardTitle><h2><a href="/posts/@Latest.Slug">@Latest.Title</a></h2></CardTitle>
+                    <CardDescription><p>@Latest.Summary</p></CardDescription>
+                </CardHeader>
+                <CardFooter>
+                    <Button Href="@($"/posts/{Latest.Slug}")" Variant="link" Class="lb-cta px-0">Đọc tiếp
+                        <Icon Name="arrow-right" />
+                    </Button>
+                </CardFooter>
+            </Card>
         }
     </div>
 </section>
@@ -42,7 +44,7 @@
     <div class="lb-wrap">
         <div class="lb-posts-head">
             <h2>Bài viết</h2>
-            <span class="lb-count">@PostStore.All.Count bài</span>
+            <Badge Variant="secondary" Class="lb-count">@PostStore.All.Count bài</Badge>
         </div>
         <div class="lb-post-list">
             @{ var idx = 0; }
@@ -55,9 +57,9 @@
         @if (HasMore)
         {
             <div id="load-more" class="lb-load-more">
-                <a class="lb-button" href="/?page=@(CurrentPage + 1)"
-                   up-target=".lb-post-list:after, #load-more:maybe"
-                   up-fallback=".lb-main">Xem thêm</a>
+                <Button Href="@($"/?page={CurrentPage + 1}")" Variant="outline"
+                        up-target=".lb-post-list:after, #load-more:maybe"
+                        up-fallback=".lb-main">Xem thêm</Button>
             </div>
         }
     </div>
@@ -71,7 +73,7 @@
         <div class="lb-tagcloud__chips">
             @foreach (var tc in TagCounts)
             {
-                <a href="/tags/@tc.Tag" class="lb-tag lb-tag--big">@tc.Tag <span>@tc.Count</span></a>
+                <TagBadge Tag="@tc.Tag" Big="true"> <span>@tc.Count</span></TagBadge>
             }
         </div>
     </div>

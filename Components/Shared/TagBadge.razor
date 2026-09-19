@@ -1,0 +1,9 @@
+@* A post tag as a shadcn Badge link. .lb-tag carries the Sakura Neon look (site.css) and is
+   what layout-engine.js measures. *@
+<Badge Href="@($"/tags/{Tag}")" Variant="outline" Class="@(Big ? "lb-tag lb-tag--big" : "lb-tag")">@Tag@ChildContent</Badge>
+
+@code {
+    [Parameter, EditorRequired] public string Tag { get; set; } = default!;
+    [Parameter] public bool Big { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

@@ -1,3 +1,6 @@
 [submodule "external/Unpoly.Blazor"]
 	path = external/Unpoly.Blazor
 	url = https://github.com/chicuong2k3/Unpoly.Blazor.git
+[submodule "external/Unpoly.Blazor.Shadcn"]
+	path = external/Unpoly.Blazor.Shadcn
+	url = https://github.com/chicuong2k3/Unpoly.Blazor.Shadcn.git

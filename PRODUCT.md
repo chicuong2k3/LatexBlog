@@ -35,9 +35,9 @@ và thẻ.
 
 - Nguồn bài là `posts/*.tex` (frontmatter + Pandoc) → `wwwroot/generated/`.
 - Kiến trúc: .NET 10 Blazor Web App (Static SSR), htmx (load-more, search,
-  tag filter) + Alpine.js (dark mode, TOC scrollspy, menu, copy-code).
+  tag filter) + Unpoly.Blazor.Shadcn, JS thuần qua `up.compiler` (TOC
+  scrollspy, menu, copy-code). Chỉ có giao diện sáng.
 - **Hiển thị công thức toán (KaTeX) phải được giữ nguyên** — ràng buộc cứng.
-- **Chế độ tối (dark mode) phải được giữ nguyên** — ràng buộc cứng.
 - Các trang hiện có: Trang chủ, Bài viết, Thẻ, Tìm kiếm, NotFound.
 - I18n hiện chỉ có chuỗi tiếng Việt; cơ chế đa ngôn ngữ tồn tại để mở rộng.
 - Khi offline (CDN): công thức hiển thị LaTeX thô, văn xuôi vẫn đọc được.
@@ -64,5 +64,5 @@ và thẻ.
 
 ## Accessibility & Inclusion
 
-- Văn bản và chỗ trống đạt tương phản đủ ở cả hai theme.
+- Văn bản và chỗ trống đạt tương phản đủ.
 - Toàn bộ điều khiển dùng được bằng bàn phím.

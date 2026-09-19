@@ -1,5 +1,5 @@
 %---
-% title: "Gửi Tôi Của Năm Mười Sáu Tuổi: Giá Như Khi Ấy Đại Số Tuyến Tính Được Viết Thế Này"
+% title: "Gửi Tôi Của Năm Mười Sáu Tuổi: Giá Như Khi Ấy Đại Số Tuyến Tính Được Viết Thế Này. Kì 1 - Giới thiệu hệ phương trình tuyến tính"
 % date: 2026-09-18
 % tags: [dai-so-tuyen-tinh, thpt, he-phuong-trinh, ma-tran]
 % summary: "Bài đầu chuỗi đại số tuyến tính cho THPT: phương trình tuyến tính là gì, nghiệm của hệ có mấy kịch bản, và cách gói cả hệ vào một ma trận bổ sung rồi giải bằng phép biến đổi hàng."
@@ -301,7 +301,7 @@ a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
 a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
 \end{cases} \tag{7}
 $$
-Một hệ tuyến tính là nhiều phương trình tuyến tính được yêu cầu đúng đồng thời.
+Hệ (7) được gọi là một \textbf{hệ phương trình tuyến tính} (\emph{system of linear equations}) gồm \(m\) phương trình, \(n\) ẩn. Đó là một số hữu hạn phương trình tuyến tính của cùng các ẩn \(x_1,\ldots,x_n\), xét chung với nhau. Giải hệ là tìm những giá trị của các ẩn làm cho mọi phương trình trong hệ cùng đúng.
 
 Với hệ (5), \((1,-2)\) là một \textbf{nghiệm} vì thay \(x=1,y=-2\) vào thì cả hai phương trình đều đúng. Tổng quát, một nghiệm của hệ \(n\) ẩn là một bộ
 
@@ -335,6 +335,24 @@ Hai đường thẳng phân biệt có thể có đúng hai điểm chung không
 Vậy hệ hai phương trình hai ẩn có thể có đúng hai nghiệm không?
 
 Không. Nếu hệ có hai nghiệm khác nhau, hai đường phải đi qua hai điểm chung ấy. Hai đường thẳng đi qua cùng hai điểm phân biệt thì chính là cùng một đường, nên chúng có vô số điểm chung.
+
+\subsection{Hệ ba ẩn nhìn theo hình học}
+
+Với ba ẩn, mỗi phương trình là một mặt phẳng trong \(Oxyz\), và nghiệm của hệ là điểm chung của các mặt phẳng ấy. Bài toán bó lúa chính là ba mặt phẳng như vậy.
+
+Ba mặt phẳng có nhiều cách nằm hơn hai đường thẳng.
+\begin{enumerate}
+  \item Cắt nhau tại đúng một điểm. Hệ có một nghiệm. Bài toán bó lúa thuộc trường hợp này, và điểm chung là \(\left(\frac{37}{4},\frac{17}{4},\frac{11}{4}\right)\).
+  \item Cùng đi qua một đường thẳng, như các trang của một cuốn sách mở quanh gáy. Hệ có vô số nghiệm, nằm trên đường thẳng đó.
+  \item Trùng nhau. Mọi điểm trên mặt phẳng đều là nghiệm. Ví dụ 5 ở mục sau thuộc trường hợp này.
+  \item Không có điểm chung nào. Có thể vì hai mặt phẳng song song với nhau. Nhưng cũng có thể không cặp nào song song mà hệ vẫn vô nghiệm, khi ba mặt phẳng cắt nhau từng đôi theo ba đường thẳng song song, tạo thành một hình lăng trụ.
+\end{enumerate}
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/ba-mat-phang.svg}}
+
+Trường hợp lăng trụ không có ở hai chiều. Hai đường thẳng không song song thì chắc chắn cắt nhau, còn ba mặt phẳng không song song với nhau vẫn có thể không có điểm chung nào. Vì vậy với ba ẩn, xét riêng từng cặp phương trình không đủ để biết hệ có nghiệm hay không.
+
+Dù vậy, số nghiệm vẫn chỉ có thể là \(0\), \(1\) hoặc vô số, với cùng lý do như ở hai chiều. Nếu hệ có hai nghiệm khác nhau thì cả ba mặt phẳng đều chứa hai điểm ấy. Một mặt phẳng chứa hai điểm thì chứa luôn đường thẳng đi qua chúng. Vậy cả ba mặt phẳng có chung một đường thẳng, và hệ có vô số nghiệm.
 
 \subsection{Bốn ví dụ mẫu}
 
@@ -455,6 +473,28 @@ $$
 \textbf{Ghi chú lịch sử.} \emph{Cửu Chương Toán Thuật} là sách toán Trung Hoa được biên soạn khoảng hai nghìn năm trước. Chương thứ tám của sách giải hệ phương trình tuyến tính, và tên chương đọc theo âm Hán Việt là ``phương trình''. Chữ ta dùng hôm nay cũng mượn từ đó. Người ta biểu diễn số bằng que tính, đặt các que vào những ô vuông xếp thành hình chữ nhật trên bàn tính. Mỗi phương trình chiếm một cột, các hệ số và vế phải nằm theo thứ tự cố định, và phép khử được làm trực tiếp trên bảng số ấy. Đó gần như chính là ma trận bổ sung, chỉ khác là hàng của ta là cột của họ. Khi ấy chưa có khái niệm ma trận theo nghĩa hiện đại.
 \end{quote}
 
+Trước khi làm tiếp, có một câu hỏi mà THCS ít khi trả lời. Vì sao phép cộng đại số không làm thay đổi nghiệm của hệ? Học sinh biết dùng nó, nhưng ít khi được hỏi vì sao nó không làm mất nghiệm, cũng không sinh thêm nghiệm lạ.
+
+Câu hỏi này không thừa, vì có những phép biến đổi trông vô hại nhưng làm hỏng tập nghiệm. Phương trình \(x=1\) chỉ có một nghiệm. Bình phương hai vế, ta được \(x^2=1\), có thêm nghiệm lạ \(x=-1\). Nhân hai vế của một phương trình với \(0\) thì còn tệ hơn, phương trình biến thành \(0=0\) và mọi số đều thỏa.
+
+Muốn chắc một phép biến đổi không làm hỏng tập nghiệm, phải kiểm tra cả hai chiều, giống như khi chứng minh tập nghiệm của \(2x+3y=5\) đúng bằng tập các điểm \(\vec{p}+t\vec{a}\). Thử trước với một hệ cụ thể.
+$$ \begin{cases} x+y=5\\ 2x-y=1 \end{cases} $$
+Thay phương trình hai bằng phương trình hai trừ hai lần phương trình một. Vế trái thành \((2x-y)-2(x+y)=-3y\), vế phải thành \(1-2\cdot5=-9\), nên hệ mới là
+$$ \begin{cases} x+y=5\\ -3y=-9 \end{cases} $$
+Hai hệ này có cùng tập nghiệm không? Phép tính vừa rồi mới chỉ là biến đổi ký hiệu để lập ra hệ mới, nó chưa nói gì về nghiệm. Muốn biết về nghiệm, phải lấy một cặp số cụ thể, thay vào, rồi xem các đẳng thức số có đúng không. Phương trình một của hai hệ giống hệt nhau, nên chỉ phải lo phương trình hai.
+
+\textbf{Chiều thứ nhất.} Lấy một cặp số \((x_0,y_0)\) thỏa hệ cũ. Khi đó
+$$ x_0+y_0=5 \quad\text{và}\quad 2x_0-y_0=1 $$
+là hai đẳng thức số đúng. Nhân đẳng thức thứ nhất với \(2\), ta được \(2x_0+2y_0=10\), cũng là một đẳng thức số đúng. Trừ vế theo vế hai đẳng thức đúng thì được một đẳng thức đúng, nên
+$$ (2x_0-y_0)-(2x_0+2y_0)=1-10, $$
+tức \(-3y_0=-9\). Vậy \((x_0,y_0)\) thỏa phương trình hai của hệ mới, và cũng thỏa phương trình một vì phương trình ấy không đổi.
+
+\textbf{Chiều thứ hai.} Lấy một cặp số \((x_0,y_0)\) thỏa hệ mới. Khi đó \(x_0+y_0=5\) và \(-3y_0=-9\) đều đúng. Cộng vào đẳng thức thứ hai hai lần đẳng thức thứ nhất,
+$$ (-3y_0)+2(x_0+y_0)=-9+10, $$
+tức \(2x_0-y_0=1\). Vậy \((x_0,y_0)\) thỏa hệ cũ.
+
+Hai chiều cho thấy hệ cũ và hệ mới có cùng tập nghiệm.
+
 Khi ta bỏ tên \(x,y,z\), một phương trình chỉ còn được ghi lại bằng một hàng số. Vì vậy, những phép trước đây ta làm trên phương trình giờ trở thành những phép làm trên hàng. Ba phép quen thuộc trở thành ba \textbf{phép biến đổi hàng sơ cấp} (\emph{elementary row operations}):
 \begin{enumerate}
   \item đổi hai hàng;
@@ -462,61 +502,37 @@ Khi ta bỏ tên \(x,y,z\), một phương trình chỉ còn được ghi lại 
   \item cộng một bội của hàng này vào hàng khác.
 \end{enumerate}
 
-Vì sao ba phép này không làm thay đổi nghiệm? Thử trước với một hệ cụ thể:
+Phần trên mới kiểm tra một phép biến đổi trên một hệ. Giờ phát biểu và chứng minh cho mọi hệ.
 
-$$ \begin{cases} x+y=5\\ 2x-y=1 \end{cases} $$
+Viết hệ \(m\) phương trình, \(n\) ẩn dưới dạng
+$$ (S)\qquad E_1=0,\quad\ldots,\quad E_m=0, $$
+trong đó \(E_i\) là vế trái trừ vế phải của phương trình thứ \(i\), còn \(E_i(\mathbf{x})\) là giá trị của biểu thức ấy tại bộ số \(\mathbf{x}=(x_1,\ldots,x_n)\).
+Cách viết này không làm đổi nghiệm, vì \(A=B\) và \(A-B=0\) có cùng nghiệm, trừ \(B\) vào hai vế được cái sau và cộng \(B\) vào hai vế thì quay lại cái trước. Chẳng hạn \(2x-y=1\) viết thành \(2x-y-1=0\). Tập nghiệm của hệ là
+$$ S=\{\mathbf{x}\in\mathbb{R}^n \mid E_i(\mathbf{x})=0 \text{ với mọi } i=1,\ldots,m\}. $$
 
-Thay phương trình hai bằng
+\textbf{Mệnh đề.} Nếu hệ \((S')\) nhận được từ hệ \((S)\) bằng một phép biến đổi sơ cấp thì hai hệ có cùng tập nghiệm, \(S'=S\).
 
-$$ (2x-y)-2(x+y)=1-10 $$
+\textbf{Chứng minh.} Xét lần lượt ba phép. Gọi \(S'\) là tập nghiệm của hệ mới.
 
-ta được
+\emph{Phép 1, đổi chỗ hai phương trình.} Hệ mới gồm đúng các biểu thức \(E_1,\ldots,E_m\), chỉ khác thứ tự liệt kê. Điều kiện ``\(E_i(\mathbf{x})=0\) với mọi \(i\)'' không phụ thuộc vào thứ tự liệt kê, nên \(S'=S\).
 
-$$ -3y=-9. $$
+\emph{Phép 2, nhân phương trình thứ \(i\) với \(k\neq0\).} Hệ mới thay \(E_i\) bằng \(kE_i\) và giữ nguyên các phương trình khác. Với mọi \(\mathbf{x}\),
+$$ E_i(\mathbf{x})=0 \iff kE_i(\mathbf{x})=0. $$
+Chiều thuận do nhân hai vế với \(k\), chiều nghịch do chia hai vế cho \(k\), và chia được vì \(k\neq0\). Các điều kiện còn lại giống hệ cũ, nên \(S'=S\).
 
-Nếu \((x,y)\) thỏa hai phương trình cũ thì
+Nếu \(k=0\) thì chiều nghịch hỏng, vì \(0\cdot E_i(\mathbf{x})=0\) đúng với mọi \(\mathbf{x}\). Phương trình thứ \(i\) thành \(0=0\), không còn ràng buộc gì, và hệ mới có thể có thêm nghiệm. Đó là lý do phép 2 đòi \(k\neq0\).
 
-$$ 2x-y=1,\qquad x+y=5. $$
+\emph{Phép 3, cộng \(k\) lần phương trình thứ \(j\) vào phương trình thứ \(i\), với \(j\neq i\).} Hệ mới thay \(E_i\) bằng \(E_i+kE_j\) và giữ nguyên các phương trình khác, trong đó có \(E_j\).
 
-Vì thế lấy đẳng thức thứ nhất trừ hai lần đẳng thức thứ hai vẫn cho một đẳng thức đúng:
+Lấy \(\mathbf{x}\in S\). Khi đó \(E_i(\mathbf{x})=0\) và \(E_j(\mathbf{x})=0\), nên
+$$ (E_i+kE_j)(\mathbf{x})=E_i(\mathbf{x})+kE_j(\mathbf{x})=0+k\cdot0=0. $$
+Các phương trình khác của hệ mới trùng với hệ cũ nên \(\mathbf{x}\) vẫn thỏa. Vậy \(\mathbf{x}\in S'\), tức \(S\subseteq S'\).
 
-$$ -3y=-9. $$
+Lấy \(\mathbf{x}\in S'\). Khi đó \((E_i+kE_j)(\mathbf{x})=0\) và \(E_j(\mathbf{x})=0\), nên
+$$ E_i(\mathbf{x})=(E_i+kE_j)(\mathbf{x})-kE_j(\mathbf{x})=0-k\cdot0=0. $$
+Các phương trình khác cũng trùng với hệ cũ. Vậy \(\mathbf{x}\in S\), tức \(S'\subseteq S\).
 
-Nhưng ngược lại thì sao? Giả sử một cặp số thỏa hai phương trình mới: \(-3y=-9\) và \(x+y=5\). Lấy đẳng thức thứ nhất cộng hai lần đẳng thức thứ hai:
-
-$$ (-3y)+2(x+y)=-9+10, $$
-
-suy ra
-
-$$ 2x-y=1. $$
-
-Ba phép trên cần được nói cho mọi hệ, không riêng hệ vừa rồi. Để khỏi viết lại cả phương trình mỗi lần, viết gọn phương trình thứ \(i\) thành \(E_i=0\), trong đó \(E_i\) là vế trái trừ vế phải.
-
-\textbf{1. Đổi hai hàng.}
-Ta chỉ đổi thứ tự hai phương trình. Một bộ số thỏa cả hai trước khi đổi thì vẫn thỏa cả hai sau khi đổi.
-
-\textbf{2. Nhân một hàng với \(k\neq0\).}
-Phương trình
-$$ E=0 $$
-và
-$$ kE=0 $$
-có cùng nghiệm, vì từ \(kE=0\) ta có thể chia lại cho \(k\).
-
-Đây cũng là lý do phải yêu cầu \(k\neq0\). Nếu nhân một phương trình với \(0\), nó biến thành
-$$ 0=0, $$
-và toàn bộ thông tin của phương trình cũ mất đi.
-
-\textbf{3. Cộng một bội của hàng khác.} Viết hai phương trình về dạng
-$$ E_1=0,\qquad E_2=0. $$
-Thay \(E_2=0\) bằng
-$$ E_2+kE_1=0. $$
-Nếu \(E_1=0\) và \(E_2=0\), thì
-$$ E_2+kE_1=0+k\cdot0=0, $$
-vì vậy mọi nghiệm của hệ cũ đều thỏa phương trình mới. Ngược lại,
-$$ E_2=(E_2+kE_1)-kE_1, $$
-nên từ hai phương trình mới ta lấy lại được \(E_2=0\).
-
-Mỗi thao tác đều đảo ngược được. Vì vậy không nghiệm nào bị mất và cũng không có nghiệm mới nào được tạo ra.
+Hai bao hàm cho \(S'=S\). \(\blacksquare\)
 
 \textbf{Ví dụ 6 (giải bằng biến đổi hàng).} Xét hệ $\begin{cases} x + y + 2z = 9 \\ 2x + 4y - 3z = 1 \\ 3x + 6y - 5z = 0 \end{cases}$ với ma trận bổ sung $\left[ \begin{array}{ccc|c} 1 & 1 & 2 & 9 \\ 2 & 4 & -3 & 1 \\ 3 & 6 & -5 & 0 \end{array} \right]$.
 
@@ -567,17 +583,22 @@ $$
 
 Hàng hai giờ là \(y=2\).
 
-Rồi
-$$ R_1\leftarrow R_1-2R_3,\qquad R_1\leftarrow R_1-R_2. $$
+Còn hàng một vẫn chứa cả ba ẩn. Xóa \(z\) khỏi nó trước.
+$$ R_1\leftarrow R_1-2R_3 $$
+$$
+\left[ \begin{array}{ccc|c} 1 & 1 & 0 & 3 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 3 \end{array} \right]
+$$
+Rồi xóa nốt \(y\) khỏi hàng một.
+$$ R_1\leftarrow R_1-R_2 $$
 $$
 \left[ \begin{array}{ccc|c} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 2 \\ 0 & 0 & 1 & 3 \end{array} \right]
 $$
-Đến đây mỗi hàng chỉ còn một ẩn: hàng một là \(x=1\), hàng hai là \(y=2\), hàng ba là \(z=3\). Ma trận đã được đưa về dạng mà nghiệm có thể đọc trực tiếp:
+Đến đây mỗi hàng chỉ còn một ẩn: hàng một là \(x=1\), hàng hai là \(y=2\), hàng ba là \(z=3\). Ma trận đã được đưa về dạng mà nghiệm đọc được trực tiếp.
 
 $$ (x,y,z)=(1,2,3). $$
 
 \begin{quote}
-\textbf{Ghi chú lịch sử.} Cách làm ở Ví dụ 6 ngày nay gọi là phép khử Gauss (\emph{Gaussian elimination}), nhưng Gauss không phát minh ra nó. Ông cần nó vì một bài toán thiên văn. Năm 1801, Gauss tính quỹ đạo của tiểu hành tinh Ceres từ một ít quan sát. Mỗi lần quan sát cho một phương trình, nhưng số quan sát nhiều hơn số ẩn và phép đo nào cũng có sai số, nên các phương trình không bao giờ khớp nhau hoàn toàn. Gauss chọn nghiệm làm cho tổng bình phương các sai lệch nhỏ nhất. Đó là phương pháp bình phương tối thiểu, và nó đưa về một hệ tuyến tính có số phương trình bằng số ẩn. Năm 1810, trong bài viết về quỹ đạo tiểu hành tinh Pallas, ông trình bày cách khử dần từng ẩn để giải hệ ấy. Chính ông gọi đó là cách khử ``thông thường''. Cái tên gắn với Gauss chỉ xuất hiện về sau, trong thế kỷ 20.
+\textbf{Ghi chú lịch sử.} Cách làm ở Ví dụ 6 ngày nay gọi là phép khử Gauss (\emph{Gaussian elimination}), nhưng cái tên không phải do ông đặt, và phép khử thì đã có trước ông rất lâu, như ghi chú về \emph{Cửu Chương Toán Thuật} ở trên. Ông cần nó vì một bài toán thiên văn. Năm 1801, Gauss tính quỹ đạo của tiểu hành tinh Ceres từ một ít quan sát. Mỗi lần quan sát cho một phương trình, nhưng số quan sát nhiều hơn số ẩn và phép đo nào cũng có sai số, nên các phương trình không bao giờ khớp nhau hoàn toàn. Gauss chọn nghiệm làm cho tổng bình phương các sai lệch nhỏ nhất. Đó là phương pháp bình phương tối thiểu, và nó đưa về một hệ tuyến tính có số phương trình bằng số ẩn. Năm 1810, trong bài viết về quỹ đạo tiểu hành tinh Pallas, ông trình bày cách khử dần từng ẩn để giải hệ ấy. Chính ông gọi đó là cách khử ``thông thường''. Cái tên gắn với Gauss chỉ xuất hiện về sau, trong thế kỷ 20.
 \end{quote}
 
 \begin{quote}
@@ -609,5 +630,11 @@ Hàng một cho
 $$ x=26-2\cdot\frac{17}{4}-3\cdot\frac{11}{4}=\frac{37}{4}. $$
 
 Một bó lúa tốt cho \(9\frac14\) đấu thóc, một bó vừa cho \(4\frac14\) đấu, một bó kém cho \(2\frac34\) đấu. Đây cũng là đáp số ghi trong sách.
+
+\subsection{Còn thiếu gì}
+
+Bài bó lúa giải xong rồi, nhưng từng bước vẫn là tự nghĩ ra. Khử ẩn nào trước là do ta chọn. Ba ẩn thì chọn thế nào cũng được, hai mươi ẩn thì không.
+
+Khử đến đâu thì dừng, và nhìn vào ma trận cuối có biết ngay hệ vô nghiệm hay vô số nghiệm không? Bài sau, phép khử Gauss--Jordan trả lời.
 
 \end{document}

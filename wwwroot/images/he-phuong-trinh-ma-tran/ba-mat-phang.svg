@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 290" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <polygon points="17.1,122.9 126.5,157.4 212.9,117.1 103.5,82.6" fill="#e63e8f" fill-opacity="0.28" stroke="#e63e8f" stroke-width="1.6"/>
+  <polygon points="71.8,197.8 158.2,157.4 158.2,42.2 71.8,82.6" fill="#2563eb" fill-opacity="0.28" stroke="#2563eb" stroke-width="1.6"/>
+  <polygon points="60.3,160.3 169.7,194.9 169.7,79.7 60.3,45.1" fill="#059669" fill-opacity="0.28" stroke="#059669" stroke-width="1.6"/>
+  <circle cx="115.0" cy="120.0" r="5.5" fill="#0f172a" stroke="#fff" stroke-width="2"/>
+  <text x="115.0" y="270.0" text-anchor="middle" fill="#0f172a" font-weight="bold">Một điểm chung: 1 nghiệm</text>
+  <polygon points="285.7,163.7 404.3,201.1 404.3,76.3 285.7,38.9" fill="#e63e8f" fill-opacity="0.28" stroke="#e63e8f" stroke-width="1.6"/>
+  <polygon points="274.8,192.0 415.2,172.8 415.2,48.0 274.8,67.2" fill="#2563eb" fill-opacity="0.28" stroke="#2563eb" stroke-width="1.6"/>
+  <polygon points="334.1,210.7 355.9,154.1 355.9,29.3 334.1,85.9" fill="#059669" fill-opacity="0.28" stroke="#059669" stroke-width="1.6"/>
+  <line x1="345.0" y1="182.4" x2="345.0" y2="57.6" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="345.0" y="270.0" text-anchor="middle" fill="#0f172a" font-weight="bold">Chung một đường: vô số nghiệm</text>
+  <polygon points="521.4,18.5 649.1,58.8 594.3,211.1 466.6,170.8" fill="#e63e8f" fill-opacity="0.28" stroke="#e63e8f" stroke-width="1.6"/>
+  <polygon points="456.3,151.8 584.0,192.2 693.7,141.0 566.0,100.6" fill="#2563eb" fill-opacity="0.28" stroke="#2563eb" stroke-width="1.6"/>
+  <polygon points="555.7,129.2 683.4,169.5 628.6,68.4 500.9,28.1" fill="#059669" fill-opacity="0.28" stroke="#059669" stroke-width="1.6"/>
+  <line x1="511.2" y1="47.0" x2="638.8" y2="87.4" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="476.9" y1="142.2" x2="604.5" y2="182.6" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="545.5" y1="110.2" x2="673.1" y2="150.6" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="575.0" y="270.0" text-anchor="middle" fill="#0f172a" font-weight="bold">Lăng trụ: vô nghiệm</text>
+  <polygon points="707.1,170.9 816.5,205.4 902.9,165.1 793.5,130.6" fill="#e63e8f" fill-opacity="0.28" stroke="#e63e8f" stroke-width="1.6"/>
+  <polygon points="707.1,122.9 816.5,157.4 902.9,117.1 793.5,82.6" fill="#2563eb" fill-opacity="0.28" stroke="#2563eb" stroke-width="1.6"/>
+  <polygon points="707.1,74.9 816.5,109.4 902.9,69.1 793.5,34.6" fill="#059669" fill-opacity="0.28" stroke="#059669" stroke-width="1.6"/>
+  <text x="805.0" y="270.0" text-anchor="middle" fill="#0f172a" font-weight="bold">Song song: vô nghiệm</text>
+</svg>

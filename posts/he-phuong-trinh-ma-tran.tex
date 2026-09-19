@@ -65,7 +65,7 @@ và giải nó là tìm mọi cặp số mà \(L\) trả ra đúng \(c\).
 
 Chẳng hạn, với \(L(x,y)=2x+3y\) và \(c=6\), thử vài cặp số.
 $$ L(0,2)=6,\qquad L(3,0)=6,\qquad L\left(1,\frac43\right)=6. $$
-Ba cặp số này đều là nghiệm của \(2x+3y=6\), nên ba điểm tương ứng đều nằm trên đường thẳng đó.
+Ba cặp số này đều là nghiệm của \(2x+3y=6\), nên ba điểm tương ứng đều nằm trên đường thẳng đó. Không phải cặp số nào cũng vậy. Chẳng hạn \(L(1,1)=5\) và \(L(2,0)=4\), nên hai điểm \((1,1)\) và \((2,0)\) nằm ngoài đường thẳng. Hai cặp số này sẽ còn dùng lại ở dưới.
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/duong-thang-oxy.svg}}
 
@@ -82,13 +82,19 @@ $$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=2\cdot3+3\cdot2=12. $$
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tong-hai-nghiem.svg}}
 
-\(12\neq6\), nên \((3,2)\) không phải nghiệm. Vậy \(12\) ở đâu ra? Nó chính là \(6+6\), tức là
-$$ L(3,2)=L(0,2)+L(3,0). $$
+\(12\neq6\), nên \((3,2)\) không phải nghiệm. Vậy \(12\) ở đâu ra? Hai nghiệm cùng cho \(6\) nên khó nhìn ra, vì thế thử với hai cặp số cho hai kết quả khác nhau.
+$$ L(1,1)=5,\qquad L(2,0)=4. $$
+Cộng hai cặp số, \((1,1)+(2,0)=(3,1)\), thì
+$$ L(3,1)=9=5+4, $$
+tức là
+$$ L(3,1)=L(1,1)+L(2,0). $$
 Cộng hai cặp số rồi mới tính \(L\), hay tính \(L\) cho từng cặp rồi cộng hai kết quả, đều ra cùng một số.
+
+\blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/cong-hai-vector.svg}}
 
 Thử thêm phép nhân với một số. Gấp đôi nghiệm \((0,2)\) thành \((0,4)\) thì
 $$ L(0,4)=12=2\cdot L(0,2). $$
-Hai đẳng thức \(L(3,2)=L(0,2)+L(3,0)\) và \(L(0,4)=2L(0,2)\) có đúng với mọi cặp số và mọi \(a,b\) không, hay chỉ tình cờ đúng với mấy con số vừa chọn? Nếu chúng luôn đúng, ta sẽ biết trước \(L\) cho ra số nào khi cộng hai nghiệm hay nhân một nghiệm với một số, mà không cần thử từng trường hợp.
+Hai đẳng thức \(L(3,1)=L(1,1)+L(2,0)\) và \(L(0,4)=2L(0,2)\) có đúng với mọi cặp số và mọi \(a,b\) không, hay chỉ tình cờ đúng với mấy con số vừa chọn? Nếu chúng luôn đúng, ta sẽ biết trước \(L\) cho ra số nào khi cộng hai nghiệm hay nhân một nghiệm với một số, mà không cần thử từng trường hợp.
 
 \subsubsection{Hai tính chất của \(L\)}
 
@@ -144,24 +150,24 @@ Giờ quay lại câu hỏi ở đầu mục, tạo nghiệm mới từ những 
 
 Với \(2x+3y=0\), việc này dễ, vì cộng hai nghiệm hay nhân một nghiệm với một số vẫn ra nghiệm. Với \(2x+3y=6\) thì hỏng, và thủ phạm là số \(6\) ở vế phải. Mỗi nghiệm mang theo một số \(6\), cộng hai nghiệm thì thành \(12\). Vậy thử đưa bài toán về trường hợp đã làm được, tức là khử số \(6\) đi để quay về vế phải bằng \(0\).
 
-Cộng hai nghiệm thì hai số \(6\) dồn lại thành \(12\). Trừ thì hai số \(6\) triệt tiêu nhau. Lấy hai nghiệm đã đoán được \(\vec{p}=(0,2)\) và \(\vec{q}=(3,0)\), rồi đặt
-$$ \vec{a}=\vec{q}-\vec{p}=(3,-2). $$
+Cộng hai nghiệm thì hai số \(6\) dồn lại thành \(12\). Trừ thì hai số \(6\) triệt tiêu nhau. Lấy hai nghiệm đã đoán được \(\vec{p}=(0,2)\) và \(\vec{q}=\left(1,\frac43\right)\), rồi đặt
+$$ \vec{a}=\vec{q}-\vec{p}=\left(1,\;-\frac23\right). $$
 Theo hai tính chất của \(L\),
-$$ L(\vec{a})=L(\vec{q})-L(\vec{p})=6-6=0, $$
+$$ L(\vec{a})=L(\vec{q}-\vec{p})=L(\vec{q})-L(\vec{p})=6-6=0, $$
 nên \(\vec{a}\) là một nghiệm của \(2x+3y=0\). Hiệu hai nghiệm của phương trình vế phải bằng \(6\) là nghiệm của phương trình vế phải bằng \(0\).
 
 Đi theo chiều ngược lại cũng được. Cộng vào \(\vec{p}\) một nghiệm của \(2x+3y=0\) thì vế trái chỉ được cộng thêm \(0\), nên vẫn bằng \(6\). Nghiệm của \(2x+3y=0\) thì lấy bao nhiêu cũng được, vì mọi bội \(t\vec{a}\) đều là nghiệm. Với mọi số \(t\),
 $$ L(\vec{p}+t\vec{a})=L(\vec{p})+tL(\vec{a})=6+0=6, $$
-nên \(\vec{p}+t\vec{a}=(3t,\;2-2t)\) luôn là nghiệm của \(2x+3y=6\).
+nên \(\vec{p}+t\vec{a}=\left(t,\;2-\frac23t\right)\) luôn là nghiệm của \(2x+3y=6\).
 
 Ngược lại, lấy một nghiệm \(\vec{w}\) bất kỳ của \(2x+3y=6\). Cần chứng tỏ \(\vec{w}\) cũng có dạng \(\vec{p}+t\vec{a}\). Xét hiệu \(\vec{w}-\vec{p}\). Theo hai tính chất của \(L\),
 $$ L(\vec{w}-\vec{p})=L(\vec{w})-L(\vec{p})=6-6=0. $$
 Gọi tọa độ của hiệu này là \((m,n)\). Đẳng thức trên nói rằng
 $$ 2m+3n=0,\qquad\text{tức}\qquad n=-\frac{2}{3}m. $$
 Thay vào tọa độ của hiệu,
-$$ \vec{w}-\vec{p}=\left(m,\;-\frac{2}{3}m\right)=\frac{m}{3}\,(3,-2)=\frac{m}{3}\,\vec{a}. $$
-Đặt \(t=\frac{m}{3}\), ta được \(\vec{w}=\vec{p}+t\vec{a}\). Vậy mọi nghiệm đều có dạng này. Từ hai nghiệm đoán được lúc đầu, ta viết ra được mọi nghiệm.
-$$ (x,y)=(3t,\;2-2t),\qquad t\in\mathbb{R}. $$
+$$ \vec{w}-\vec{p}=\left(m,\;-\frac{2}{3}m\right)=m\left(1,\;-\frac23\right)=m\,\vec{a}. $$
+Đặt \(t=m\), ta được \(\vec{w}=\vec{p}+t\vec{a}\). Vậy mọi nghiệm đều có dạng này. Từ hai nghiệm đoán được lúc đầu, ta viết ra được mọi nghiệm.
+$$ (x,y)=\left(t,\;2-\frac23t\right),\qquad t\in\mathbb{R}. $$
 Ai đã học phương trình tham số của đường thẳng sẽ nhận ra đây chính là nó, với \(\vec{a}\) là vector chỉ phương. Ở đây, vector chỉ phương hiện ra từ hiệu của hai nghiệm, không cần biết trước.
 
 \subsubsection{Nhiều ẩn hơn}

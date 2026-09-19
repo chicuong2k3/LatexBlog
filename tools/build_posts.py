@@ -225,4 +225,7 @@ def main():
 
 
 if __name__ == "__main__":
+    # Windows consoles default to cp1252; paths like "Ảnh" crash print().
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     sys.exit(main())

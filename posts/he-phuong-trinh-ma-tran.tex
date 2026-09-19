@@ -41,36 +41,36 @@ $$
 là một mặt phẳng trong \(Oxyz\). Vế trái của cả hai phương trình đều lấy từng tọa độ nhân với một hệ số tương ứng, rồi cộng lại chúng lại với nhau. Chúng ta gọi thao tác ấy là \(L\), ta có:
 $$ L(x,y)=ax+by. $$
 
-Ở trường phổ thông, ta đã quen với hai thao tác cơ bản trên vector đó là cộng hai vector và nhân một vector với một số. 
+Ở trường phổ thông, ta đã quen với hai thao tác cơ bản trên vector đó là cộng hai vector và nhân một vector với một số. Từ đây vector trong mặt phẳng được viết có mũi tên trên đầu: \(\vec{u}\), \(\vec{v}\), đúng như cách các em đã gặp ở THPT.
 
-Nếu lấy hai vector \(u\) và \(v\), liệu việc cộng chúng lại rồi mới tính \(L\) có cho cùng kết quả với việc tính \(L\) trên từng vector rồi đem cộng lại hay không?
+Nếu lấy hai vector \(\vec{u}\) và \(\vec{v}\), liệu việc cộng chúng lại rồi mới tính \(L\) có cho cùng kết quả với việc tính \(L\) trên từng vector rồi đem cộng lại hay không?
 
 Lấy hai vector
-$$u=(x_1,y_1),\qquad v=(x_2,y_2).$$
+$$\vec{u}=(x_1,y_1),\qquad \vec{v}=(x_2,y_2).$$
 Đây là hai vector trong mặt phẳng, mỗi vector được xác định bởi hai tọa độ. Khi cộng hai vector, ta cộng từng tọa độ tương ứng:
-$$u+v=(x_1+x_2,\;y_1+y_2).$$
+$$\vec{u}+\vec{v}=(x_1+x_2,\;y_1+y_2).$$
 Công thức
 $$L(x,y)=ax+by$$
-nhận một vector có tọa độ \((x,y)\) rồi cho ra một số. Vì vector \(u+v\) có tọa độ
+nhận một vector có tọa độ \((x,y)\) rồi cho ra một số. Vì vector \(\vec{u}+\vec{v}\) có tọa độ
 $$(x_1+x_2,\;y_1+y_2),$$
 nên trong công thức của \(L\), ta thay
 $$x=x_1+x_2,\qquad y=y_1+y_2.$$
 Do đó
 $$
 \begin{aligned}
-L(u+v) &= a(x_1+x_2)+b(y_1+y_2) \\
-       &= (ax_1+by_1)+(ax_2+by_2) \\
-       &= L(u)+L(v).
+L(\vec{u}+\vec{v}) &= a(x_1+x_2)+b(y_1+y_2) \\
+        &= (ax_1+by_1)+(ax_2+by_2) \\
+        &= L(\vec{u})+L(\vec{v}).
 \end{aligned}
 $$
 
-Tương tự với phép nhân vô hướng: với \(u=(x,y)\) bất kỳ và \(k\in \mathbb{R}\), ta có
-$$L(ku)=a(kx)+b(ky)=k(ax+by)=kL(u).$$
+Tương tự với phép nhân vô hướng: với \(\vec{u}=(x,y)\) bất kỳ và \(k\in \mathbb{R}\), ta có
+$$L(k\vec{u})=a(kx)+b(ky)=k(ax+by)=kL(\vec{u}).$$
 Hai đẳng thức vừa có:
 
-$$ L(u+v)=L(u)+L(v),\qquad L(ku)=kL(u). $$
+$$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v}),\qquad L(k\vec{u})=kL(\vec{u}). $$
 
-Cộng hai vector trước rồi tính \(L\), hay tính \(L\) riêng từng vector rồi cộng đều cho cùng một kết quả. Còn \(L(ku)=kL(u)\) nói rằng nếu nhân vector với \(k\), kết quả của \(L\) cũng bị nhân với \(k\).
+Cộng hai vector trước rồi tính \(L\), hay tính \(L\) riêng từng vector rồi cộng đều cho cùng một kết quả. Còn \(L(k\vec{u})=kL(\vec{u})\) nói rằng nếu nhân vector với \(k\), kết quả của \(L\) cũng bị nhân với \(k\).
 
 Hai đẳng thức này chính là hai tính chất cốt lõi của một \textbf{ánh xạ tuyến tính} — khái niệm trung tâm của cả môn học này. Ở đây, ta chỉ cần nhớ rằng chúng xuất phát hoàn toàn tự nhiên từ chính cấu trúc của phép tính \(ax+by\).
 
@@ -98,15 +98,15 @@ $$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=12\neq6. $$
 
 Tổng hai nghiệm không còn là nghiệm. Vậy khi nào tổng hai nghiệm vẫn là nghiệm?
 
-Giả sử \(u,v\) đều là nghiệm của \(L(x,y)=c\), tức
+Giả sử \(\vec{u},\vec{v}\) đều là nghiệm của \(L(x,y)=c\), tức
 
-$$ L(u)=L(v)=c. $$
+$$ L(\vec{u})=L(\vec{v})=c. $$
 
 Vì thế
 
-$$ L(u+v)=L(u)+L(v)=2c. $$
+$$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v})=2c. $$
 
-Muốn \(u+v\) vẫn là nghiệm của chính \(L(x,y)=c\), ta cần
+Muốn \(\vec{u}+\vec{v}\) vẫn là nghiệm của chính \(L(x,y)=c\), ta cần
 
 $$ 2c=c, $$
 
@@ -138,7 +138,7 @@ Nếu vector có \(n\) tọa độ
 
 $$ \mathbf{x}=(x_1,\ldots,x_n), $$
 
-ta tiếp tục theo đúng mẫu đó: mỗi tọa độ \(x_i\) được nhân với một hệ số \(a_i\), rồi cộng tất cả lại:
+ta tiếp tục theo đúng mẫu đó: mỗi tọa độ \(x_i\) được nhân với một hệ số \(a_i\), rồi cộng tất cả lại. Ở đây ta không vẽ mũi tên nữa mà viết in đậm \(\mathbf{x}\) để chỉ vector có \(n\) tọa độ; cách cộng và nhân với số vẫn làm theo từng tọa độ như ở mặt phẳng:
 
 $$ L(\mathbf{x})=a_1x_1+\cdots+a_nx_n. $$
 
@@ -146,11 +146,11 @@ Bây giờ xét riêng trường hợp
 
 $$ L(\mathbf{x})=0,\qquad \mathbf{x}=(x_1,\ldots,x_n). $$
 
-Với \(L(\mathbf{x})=0\), tính chất vừa có còn mạnh hơn nữa. Nếu \(L(u)=0\) và \(L(v)=0\), thì với mọi số \(\alpha,\beta\),
+Với \(L(\mathbf{x})=0\), tính chất vừa có còn mạnh hơn nữa. Nếu \(L(\mathbf{u})=0\) và \(L(\mathbf{v})=0\), thì với mọi số \(\alpha,\beta\),
 
-$$ L(\alpha u+\beta v)=L(\alpha u)+L(\beta v)=\alpha L(u)+\beta L(v)=0. $$
+$$ L(\alpha \mathbf{u}+\beta \mathbf{v})=L(\alpha \mathbf{u})+L(\beta \mathbf{v})=\alpha L(\mathbf{u})+\beta L(\mathbf{v})=0. $$
 
-Không chỉ tổng hay bội riêng lẻ; mọi tổ hợp \(\alpha u+\beta v\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (superposition).
+Không chỉ tổng hay bội riêng lẻ; mọi tổ hợp \(\alpha \mathbf{u}+\beta \mathbf{v}\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (superposition).
 
 Cộng hai nghiệm với nhau hoặc nhân một nghiệm với một số, kết quả vẫn là một nghiệm. Trường hợp vế phải khác \(0\) không có tính chất này. Đây là lý do trường hợp vế phải bằng \(0\) đáng được đặt tên riêng.
 

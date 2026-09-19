@@ -16,21 +16,17 @@
 
 \begin{document}
 
-Hãy xem xét hệ phương trình hai ẩn đơn giản sau:
+Hệ hai phương trình hai ẩn là thứ ta đã quá quen thuộc từ những năm cấp hai:
 
 $$ \begin{cases} x+y=5\\ 2x-y=1. \end{cases} $$
 
 Từ THCS, ta đã biết cách giải những hệ như thế này bằng phương pháp thế hoặc phương pháp cộng đại số. Trong phương pháp cộng, ta nhân các phương trình với những số thích hợp rồi cộng hoặc trừ chúng để loại bớt một ẩn.
 
-Với hai ẩn, các phép tính khử còn khá dễ theo dõi.
-
-Hệ phương trình không chỉ là một dạng bài trong sách. Khi nhiều đại lượng phải đồng thời thỏa nhiều điều kiện, ta thường nhận được một hệ phương trình. Tính dòng điện trong một mạng mạch, cân bằng một phản ứng hóa học, hay xác định nhiều đại lượng chưa biết từ nhiều phép đo đều có thể dẫn tới những hệ tuyến tính.
-
-Với hai hay ba ẩn, ta còn có thể giải bằng tay. Nhưng với hàng chục, hàng trăm hay hàng nghìn ẩn, cách viết và cách khử từng phương trình trở nên cồng kềnh và rất mất thời gian. Do đó một trong những bài toán cơ bản mà đại số tuyến tính muốn giải quyết là:
+Với hai hay ba ẩn, ta còn xoay xở giải bằng tay. Nhưng với hàng chục, hàng trăm hay hàng nghìn ẩn, cách viết và cách khử từng phương trình trở nên cồng kềnh và rất mất thời gian. Do đó, một trong những bài toán cơ bản mà đại số tuyến tính muốn giải quyết là:
 
 $$ \boxed{\text{Cho nhiều phương trình tuyến tính, hãy tìm tất cả các giá trị thỏa chúng đồng thời.}} $$
 
-Ta còn muốn biết trước liệu hệ có nghiệm hay không, có một nghiệm hay vô số nghiệm, và nếu hệ có nghiệm thì có một quy trình (thuật toán) giải có thể giải \textbf{tất cả các hệ phương trình tuyến tính} hay không. Trước khi đi vào chi tiết, chúng ta cần nhắc lại khái niệm về phương trình tuyến tính.
+Ta còn muốn biết trước liệu hệ có nghiệm hay không, có một nghiệm hay vô số nghiệm, và nếu hệ có nghiệm thì có một quy trình (thuật toán) giải có thể giải \textbf{tất cả các hệ phương trình tuyến tính} hay không.
 
 \subsection{Phương trình tuyến tính là gì?}
 
@@ -42,16 +38,12 @@ biểu diễn một đường thẳng trong \(Oxy\). Tương tự, với \(a,b,c
 $$
 ax+by+cz=d
 $$
-là một mặt phẳng trong \(Oxyz\). Vế trái của cả hai phương trình đều làm một việc, đó là lấy từng tọa độ nhân với một hệ số, rồi cộng lại với nhau. Chúng ta hãy gọi thao tác như vậy là \(L\). 
+là một mặt phẳng trong \(Oxyz\). Vế trái của cả hai phương trình đều làm cùng một việc: lấy từng tọa độ nhân với một hệ số tương ứng, rồi cộng lại. Hãy đặt tên cho thao tác ấy là \(L\):
 $$ L(x,y)=ax+by. $$
 
-Ta đã biết cách cộng hai vector và nhân vector với một số (nếu chưa biết thì nên ôn lại kiến thức về vector). Vậy thử áp dụng \(L\) cho vector xem sao.
+Ở trường phổ thông, ta đã quen với hai thao tác cơ bản trên vector: cộng hai vector và nhân vector với một số. Một câu hỏi rất tự nhiên nảy sinh: phép tính \(L\) này ``tương tác'' thế nào với hai thao tác ấy?
 
-Chúng ta sẽ áp dụng \(L\) cho hai vector theo hai cách khác nhau:
-
-Cách đầu tiên là cộng hai vector trước rồi áp dụng \(L\) cho vector tổng nhận được. 
-Cách thứ hai là áp dụng \(L\) cho từng vector trước rồi cộng các kết quả. Câu hỏi đặt ra là: Hai con đường có cho cùng một kết quả không? 
-Ok chúng ta hãy cùng tính toán để trả lời câu hỏi trên.
+Cụ thể, nếu lấy hai vector \(u\) và \(v\), liệu việc cộng chúng lại rồi mới tính \(L\) có cho cùng kết quả với việc tính \(L\) trên từng vector rồi đem cộng lại hay không?
 
 Lấy hai vector
 $$u=(x_1,y_1),\qquad v=(x_2,y_2).$$
@@ -64,13 +56,15 @@ $$(x_1+x_2,\;y_1+y_2),$$
 nên trong công thức của \(L\), ta thay
 $$x=x_1+x_2,\qquad y=y_1+y_2.$$
 Do đó
-$$L(u+v)=a(x_1+x_2)+b(y_1+y_2)$$
-$$=ax_1+by_1+ax_2+by_2$$
-$$=(ax_1+by_1)+(ax_2+by_2)$$
-Hai nhóm đầu và sau chính là \(L(u)\) và \(L(v)\), nên
-$$L(u+v)=L(u)+L(v)$$
+$$
+\begin{aligned}
+L(u+v) &= a(x_1+x_2)+b(y_1+y_2) \\
+       &= (ax_1+by_1)+(ax_2+by_2) \\
+       &= L(u)+L(v).
+\end{aligned}
+$$
 
-Tiếp theo là xem xét phép nhân vô hướng. Với \(u=(x,y)\) bất kỳ, \(ku=(kx,ky)\) với \(k\in \mathbb{R}\), ta có
+Tương tự với phép nhân vô hướng: với \(u=(x,y)\) bất kỳ và \(k\in \mathbb{R}\), ta có
 $$L(ku)=a(kx)+b(ky)=k(ax+by)=kL(u).$$
 Hai đẳng thức vừa có:
 
@@ -78,7 +72,7 @@ $$ L(u+v)=L(u)+L(v),\qquad L(ku)=kL(u). $$
 
 Cộng hai vector trước rồi tính \(L\), hay tính \(L\) riêng từng vector rồi cộng đều cho cùng một kết quả. Còn \(L(ku)=kL(u)\) nói rằng nếu nhân vector với \(k\), kết quả của \(L\) cũng bị nhân với \(k\).
 
-Hai đẳng thức này là hai tính chất cơ bản của một ánh xạ tuyến tính. Nhưng tạm thời ta chưa cần nhắc đến khái niệm này, ở đây chỉ cần nhớ chúng xuất phát trực tiếp từ phép tính \(ax+by\).
+Hai đẳng thức này chính là hai tính chất cốt lõi của một \textbf{ánh xạ tuyến tính} — khái niệm trung tâm của cả môn học này. Ở đây, ta chỉ cần nhớ rằng chúng xuất phát hoàn toàn tự nhiên từ chính cấu trúc của phép tính \(ax+by\).
 
 Phương trình
 
@@ -88,13 +82,9 @@ giờ có thể viết
 
 $$ L(x,y)=c. $$
 
-Chẳng hạn, lấy
-
-$$ L(x,y)=2x+3y. $$
-
-và $$ c=6 $$
-
-Khi đó \(L(x,y)=6\) hỏi tất cả những điểm nào cho kết quả 6. Thử ngay:
+Chẳng hạn, với \(L(x,y)=2x+3y\) và \(c=6\), phương trình
+$$ L(x,y)=6 $$
+đang đi tìm tất cả những điểm \((x,y)\) cho ra kết quả bằng \(6\). Ta dễ dàng kiểm tra ngay vài điểm:
 
 $$ L(0,2)=6,\qquad L(3,0)=6,\qquad L\left(1,\frac43\right)=6. $$
 

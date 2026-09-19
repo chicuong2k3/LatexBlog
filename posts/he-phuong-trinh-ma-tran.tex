@@ -35,27 +35,31 @@ $$ \begin{cases} 3x+2y+z=39\\ 2x+3y+z=34\\ x+2y+3z=26. \end{cases} $$
 
 Ba ẩn, ba phương trình. Phép thế vẫn làm được, nhưng đã bắt đầu rối, và người thời ấy không có chữ \(x,y,z\) để thế. Họ xếp các con số bằng que tính lên bàn tính rồi khử thẳng trên những con số đó. Cuối bài, ta sẽ giải lại đúng bài toán này theo cách của họ.
 
-Trước khi đi vào phương pháp giải hệ phương trình tuyến tính, ta cần hiểu rõ khái niệm cơ bản nhất: phương trình tuyến tính là gì.
+Muốn có một quy trình giải cho mọi hệ như vậy, trước hết cần hiểu từng phương trình trong hệ.
 
 \subsection{Phương trình tuyến tính là gì?}
 
-\begin{quote}
-\textbf{Ghi chú lịch sử.} Việc coi một phương trình là một đường cũng từng là một ý tưởng mới. Khoảng những năm 1630, Pierre de Fermat và René Descartes, mỗi người theo cách riêng, tìm cách dùng đại số để nghiên cứu hình học. Họ gắn mỗi điểm với một cặp số, và mỗi đường với một phương trình mà mọi điểm trên nó thỏa mãn. Fermat chỉ ra rằng phương trình bậc nhất hai ẩn luôn cho một đường thẳng. Nhờ vậy, câu hỏi ``hai đường thẳng cắt nhau ở đâu'' biến thành câu hỏi ``hệ hai phương trình có nghiệm gì'', và ngược lại.
-\end{quote}
+\subsubsection{Một dạng biểu thức chung}
 
-\subsubsection{Từ đường thẳng đến một phép tính}
+Nhìn vế trái của ba phương trình trong bài toán bó lúa.
+$$ 3x+2y+z,\qquad 2x+3y+z,\qquad x+2y+3z. $$
+Mỗi ẩn chỉ được nhân với một số, rồi các kết quả được cộng lại.
 
-Với \(a,b\) không đồng thời bằng \(0\), phương trình
+Dạng này các em còn gặp trong hình học tọa độ. Với \(a_1,a_2,a_3\) không đồng thời bằng \(0\), phương trình
+$$ a_1x+a_2y+a_3z=d $$
+biểu diễn một mặt phẳng trong \(Oxyz\). Vậy mỗi phương trình của bài bó lúa là một mặt phẳng, và nghiệm của hệ là điểm chung của ba mặt phẳng ấy.
+
+Bớt đi một ẩn, với \(a,b\) không đồng thời bằng \(0\), phương trình
 $$ ax+by=c $$
-biểu diễn một đường thẳng trong \(Oxy\). Tương tự, với \(a,b,c\) không đồng thời bằng \(0\), phương trình
-$$ ax+by+cz=d $$
-biểu diễn một mặt phẳng trong \(Oxyz\).
+biểu diễn một đường thẳng trong \(Oxy\). Mặt phẳng khó vẽ và khó nhìn hơn đường thẳng nhiều, nên các mục tiếp theo làm với hai ẩn trước, rồi mới quay lại ba ẩn ở mục ``Nhiều ẩn hơn''. Mọi điều tìm ra với hai ẩn đều sẽ còn đúng ở đó.
 
-Nhìn vế trái của hai phương trình. Cả hai đều làm cùng một việc, lấy từng tọa độ nhân với một hệ số rồi cộng tất cả lại. Ta đặt tên cho việc đó là \(L\). Với hai tọa độ,
+Hình học tọa độ ra đời muộn hơn hệ phương trình rất nhiều. Người soạn \emph{Cửu Chương Toán Thuật} giải bài bó lúa mà không vẽ gì cả. Phải đến khoảng những năm 1630, Fermat và Descartes mới gắn mỗi phương trình với một đường. Dùng một công cụ ra đời sau để nhìn lại một bài toán cũ là chuyện bình thường trong toán học. Ở đây nó đáng dùng vì hình vẽ trả lời ngay những câu mà con số che đi, chẳng hạn vì sao một hệ có thể vô nghiệm hay có vô số nghiệm.
+
+Phần sau sẽ phải hỏi nhiều lần những câu như ``đưa tổng hai cặp số vào vế trái thì được gì''. Để viết gọn, ta đặt tên cho vế trái. Với hai ẩn, gọi
 $$ L(x,y)=ax+by. $$
-\(L\) giống một cái máy. Cho vào một cặp số \((x,y)\), máy trả ra một số. Phương trình \(ax+by=c\) giờ viết gọn thành
+\(L\) là một hàm số hai biến. Hàm số các em quen nhận vào một số, còn \(L\) nhận vào một cặp số \((x,y)\), rồi trả ra một số. Phương trình \(ax+by=c\) viết gọn thành
 $$ L(x,y)=c, $$
-và giải nó nghĩa là tìm tất cả những cặp số mà máy trả ra đúng \(c\).
+và giải nó là tìm mọi cặp số mà \(L\) trả ra đúng \(c\).
 
 Chẳng hạn, với \(L(x,y)=2x+3y\) và \(c=6\), thử vài cặp số.
 $$ L(0,2)=6,\qquad L(3,0)=6,\qquad L\left(1,\frac43\right)=6. $$
@@ -65,24 +69,26 @@ Ba cặp số này đều là nghiệm của \(2x+3y=6\), nên ba điểm tươn
 
 \subsubsection{Có tạo được nghiệm mới từ nghiệm cũ không?}
 
-Đường thẳng có vô số điểm, nên không thể mô tả nó bằng cách liệt kê từng nghiệm. Một ý tự nhiên là tạo nghiệm mới từ những nghiệm đã có. Nếu cộng hai nghiệm, hay nhân một nghiệm với một số, luôn ra một nghiệm mới, thì chỉ cần giữ lại vài nghiệm là đủ để sinh ra những nghiệm còn lại. Các nhà toán học thế kỷ 18 gặp đúng nhu cầu này khi tìm cách mô tả mọi kiểu rung của một sợi dây đàn (xem ghi chú lịch sử ở phần dưới). Họ không hỏi về đường thẳng, nhưng câu hỏi họ đặt ra thì giống hệt.
+Đường thẳng \(2x+3y=6\) có vô số điểm, không liệt kê hết được. Nhưng ở lớp 10, các em đã mô tả trọn một đường thẳng bằng phương trình tham số, chỉ cần một điểm \((x_0,y_0)\) trên đường và một vector chỉ phương \((a_1,a_2)\). Với \(2x+3y=6\), lấy điểm \((0,2)\) và vector chỉ phương \((3,-2)\), ta được
+$$ x=3t,\qquad y=2-2t,\qquad t\in\mathbb{R}. $$
+Thử lại, \(2\cdot3t+3(2-2t)=6\) với mọi \(t\). Chỉ từ một nghiệm và một vector, dùng phép cộng và phép nhân với một số, ta có mọi nghiệm. Vậy phép cộng và phép nhân với số liên quan thế nào tới tập nghiệm? Để bắt đầu, thử xem cộng hai nghiệm, hay nhân một nghiệm với một số, có còn ra nghiệm không.
 
-Muốn cộng hai nghiệm, ta phải cộng được hai cặp số. Trong \(Oxy\), cặp số \((x,y)\) vừa là tọa độ của điểm \(M(x,y)\), vừa là tọa độ của vector \(\overrightarrow{OM}\) đi từ gốc \(O\) tới \(M\). Hai điểm thì không cộng được với nhau, còn hai vector thì cộng được, và nhân một vector với một số cũng được. Đó là hai thao tác các em đã quen từ THPT. Vì vậy từ đây ta coi mỗi cặp số là một vector, ký hiệu bằng chữ cái thường có mũi tên bên trên như \(\vec{u}\), \(\vec{v}\). Cộng hai vector thì cộng từng tọa độ, nhân vector với một số thì nhân từng tọa độ với số đó.
+Để cộng được hai nghiệm, ta coi mỗi cặp số \((x,y)\) là vector \(\overrightarrow{OM}\) đi từ gốc \(O\) tới điểm \(M(x,y)\). Hai điểm thì không cộng được với nhau, còn hai vector thì cộng được và nhân được với một số, theo đúng cách các em đã học ở THPT, tức là làm trên từng tọa độ. Từ đây vector được ký hiệu bằng chữ cái thường có mũi tên bên trên, như \(\vec{u}\), \(\vec{v}\).
 
 Thử cộng hai nghiệm đầu.
 $$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=2\cdot3+3\cdot2=12. $$
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tong-hai-nghiem.svg}}
 
-\(12\neq6\), nên tổng hai nghiệm không còn là nghiệm. Nhưng con số \(12\) không phải ngẫu nhiên. Nó đúng bằng \(6+6\), tức kết quả của máy trên nghiệm thứ nhất cộng với kết quả trên nghiệm thứ hai. Có vẻ như cộng hai đầu vào thì máy cũng cộng hai đầu ra lại.
+\(12\neq6\), nên tổng hai nghiệm không còn là nghiệm. Nhưng \(12\) đúng bằng \(6+6\), tức giá trị của \(L\) tại nghiệm thứ nhất cộng với giá trị tại nghiệm thứ hai. Cộng hai đầu vào thì \(L\) cũng cộng hai đầu ra.
 
-Chuyện này các em đã gặp từ lớp 7, ở hàm tỉ lệ thuận. Lấy \(f(x)=3x\). Ta có \(f(2)=6\) và \(f(5)=15\). Đưa vào tổng \(2+5=7\) thì \(f(7)=21\), đúng bằng \(6+15\). Gấp đôi \(2\) thành \(4\) thì \(f(4)=12\), cũng gấp đôi \(6\). Với \(ax+by\), điều đó có luôn đúng, hay chỉ tình cờ đúng với mấy con số vừa chọn?
+Hàm tỉ lệ thuận học ở lớp 7 cũng như vậy. Lấy \(f(x)=3x\). Ta có \(f(2)=6\) và \(f(5)=15\). Đưa vào tổng \(2+5=7\) thì \(f(7)=21\), đúng bằng \(6+15\). Gấp đôi \(2\) thành \(4\) thì \(f(4)=12\), cũng gấp đôi \(6\). Với \(ax+by\), điều đó luôn đúng, hay chỉ tình cờ đúng với mấy con số vừa chọn?
 
 \subsubsection{Hai tính chất của \(L\)}
 
 Kiểm tra phép cộng trước. Lấy hai vector bất kỳ
-$$ \vec{u}=(x_1,y_1),\qquad \vec{v}=(x_2,y_2). $$
-Cộng từng tọa độ, ta được
+$$ \vec{u}=(x_1,y_1),\qquad \vec{v}=(x_2,y_2), $$
+thì
 $$ \vec{u}+\vec{v}=(x_1+x_2,\;y_1+y_2). $$
 Đưa vector này vào \(L\), tức thay \(x=x_1+x_2\) và \(y=y_1+y_2\) vào \(ax+by\), rồi phá ngoặc và gom lại.
 $$
@@ -94,13 +100,13 @@ L(\vec{u}+\vec{v}) &= a(x_1+x_2)+b(y_1+y_2) \\
 $$
 Cộng hai vector trước rồi đưa vào \(L\), hay đưa từng vector vào \(L\) rồi cộng hai kết quả, đều ra cùng một số.
 
-Phép nhân với một số cũng vậy. Với \(\vec{u}=(x,y)\) bất kỳ và số \(k\) bất kỳ,
+Với phép nhân, lấy \(\vec{u}=(x,y)\) bất kỳ và số \(k\) bất kỳ.
 $$ L(k\vec{u})=a(kx)+b(ky)=k(ax+by)=kL(\vec{u}). $$
 Nhân vector với \(k\) thì kết quả của \(L\) cũng bị nhân với \(k\).
 
-Vậy điều ta thấy với mấy con số không phải tình cờ. Nó luôn đúng.
+Cả hai phép tính chỉ dùng phá ngoặc, nên chúng đúng với mọi \(a,b\) và mọi vector, không riêng mấy con số lúc nãy.
 $$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v}),\qquad L(k\vec{u})=kL(\vec{u}). $$
-Hai đẳng thức này là hai tính chất cốt lõi của một \textbf{ánh xạ tuyến tính}, khái niệm trung tâm của cả môn học này. Ở đây, ta chỉ cần nhớ rằng chúng sinh ra hoàn toàn tự nhiên từ phép tính \(ax+by\).
+Một hàm có hai tính chất này được gọi là \textbf{ánh xạ tuyến tính}, khái niệm trung tâm của cả môn học.
 
 \begin{quote}
 \textbf{Ghi chú lịch sử.} Hai đẳng thức trên được dùng rất lâu trước khi trở thành một định nghĩa. Năm 1844, Hermann Grassmann viết cuốn \emph{Ausdehnungslehre}, trong đó ông cộng các đại lượng có hướng và nhân chúng với số theo đúng những quy tắc ta vừa dùng. Cuốn sách khó đọc và gần như không ai để ý. Năm 1888, Giuseppe Peano đọc lại Grassmann và viết cuốn \emph{Calcolo geometrico}. Ở chương IX, ông liệt kê các tiên đề cho một tập hợp có phép cộng và phép nhân với số, gần giống định nghĩa không gian vector ngày nay, rồi gọi một phép biến đổi là tuyến tính khi nó giữ được phép cộng. Peano không phát minh ra tính chất \(L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v})\). Ông nhận ra rằng đó là thứ các phép tính cũ có chung, và lấy nó làm định nghĩa.
@@ -108,7 +114,7 @@ Hai đẳng thức này là hai tính chất cốt lõi của một \textbf{ánh
 
 \subsubsection{Khi nào tổng hai nghiệm vẫn là nghiệm?}
 
-Quay lại câu hỏi về nghiệm. Giả sử \(\vec{u},\vec{v}\) đều là nghiệm của \(L(x,y)=c\), tức
+Giả sử \(\vec{u},\vec{v}\) đều là nghiệm của \(L(x,y)=c\), tức
 $$ L(\vec{u})=L(\vec{v})=c. $$
 Theo tính chất cộng,
 $$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v})=2c. $$
@@ -116,13 +122,19 @@ Muốn \(\vec{u}+\vec{v}\) vẫn là nghiệm của chính \(L(x,y)=c\), ta cầ
 $$ c=0. $$
 Với \(2x+3y=6\) thì \(c=6\neq0\), nên tổng hai nghiệm không thể là nghiệm, đúng như \(L(3,2)=12\) vừa thấy.
 
-Khi \(c=0\) thì mọi chuyện khác hẳn. Nếu \(L(\vec{u})=0\) và \(L(\vec{v})=0\), thì với mọi số \(\alpha,\beta\),
+Khi \(c=0\), chẳng hạn \(2x+3y=0\), thì ngược lại. Nếu \(L(\vec{u})=0\) và \(L(\vec{v})=0\), thì với mọi số \(\alpha,\beta\),
 $$ L(\alpha\vec{u}+\beta\vec{v})=\alpha L(\vec{u})+\beta L(\vec{v})=0. $$
-Không chỉ tổng hay bội riêng lẻ, mà mọi tổ hợp \(\alpha\vec{u}+\beta\vec{v}\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (\emph{superposition}). Chẳng hạn \(2x+3y=0\) là một đường thẳng đi qua gốc tọa độ. Cộng hai vector nằm trên nó, hay kéo dài một vector gấp ba lần, ta vẫn ở trên đường thẳng ấy.
+Mọi tổ hợp \(\alpha\vec{u}+\beta\vec{v}\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (\emph{superposition}). Trên hình, \(2x+3y=0\) là đường thẳng qua gốc tọa độ. Cộng hai vector nằm trên nó, hay kéo một vector dài gấp ba, ta vẫn ở trên đường thẳng ấy.
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/thuan-nhat-qua-goc.svg}}
 
-Trường hợp vế phải khác \(0\) không có tính chất này. Đây là lý do trường hợp vế phải bằng \(0\) đáng được đặt tên riêng.
+Giờ có thể giải thích phương trình tham số ở đầu mục. Vector chỉ phương \(\vec{a}=(3,-2)\) thỏa \(2\cdot3+3\cdot(-2)=0\), tức \(L(\vec{a})=0\). Nó là một nghiệm của \(2x+3y=0\), không phải của \(2x+3y=6\). Lấy \(\vec{p}=(0,2)\), một nghiệm của \(2x+3y=6\). Theo hai tính chất của \(L\),
+$$ L(\vec{p}+t\vec{a})=L(\vec{p})+tL(\vec{a})=6+0=6, $$
+nên \(\vec{p}+t\vec{a}\) luôn là nghiệm. Ngược lại, nếu \(\vec{w}\) là một nghiệm bất kỳ thì
+$$ L(\vec{w}-\vec{p})=L(\vec{w})-L(\vec{p})=6-6=0, $$
+nên \(\vec{w}-\vec{p}\) nằm trên đường thẳng \(2x+3y=0\), tức là một bội \(t\vec{a}\) của \(\vec{a}\). Vậy mọi nghiệm của \(2x+3y=6\) đều bằng một nghiệm cố định cộng với một nghiệm của phương trình có vế phải bằng \(0\). Cộng hai nghiệm của \(2x+3y=6\) với nhau thì hỏng, nhưng cộng một nghiệm của nó với một nghiệm của \(2x+3y=0\) thì luôn được.
+
+Phương trình có vế phải khác \(0\) không có tính chất này. Vì vậy, ở mục Định nghĩa, trường hợp vế phải bằng \(0\) sẽ có tên riêng.
 
 \begin{quote}
 \textbf{Ghi chú lịch sử.} Tính chất ``cộng hai nghiệm vẫn ra nghiệm'' được chú ý từ vật lý trước. Giữa thế kỷ 18, nhiều nhà toán học tranh cãi xem một sợi dây đàn rung như thế nào. Năm 1753, Daniel Bernoulli cho rằng mọi chuyển động của dây đều là tổng của những dao động hình sin đơn giản, mỗi dao động với một biên độ thích hợp. Lập luận ấy đứng được vì phương trình của dây rung cũng có vế phải bằng \(0\), giống \(L=0\) ở trên. Mỗi dao động đơn giản là một nghiệm, và tổng các nghiệm vẫn là nghiệm. Tranh luận quanh ý tưởng của Bernoulli kéo dài hàng chục năm, và câu hỏi nó để lại về sau dẫn tới chuỗi Fourier.
@@ -130,18 +142,18 @@ Trường hợp vế phải khác \(0\) không có tính chất này. Đây là 
 
 \subsubsection{Nhiều ẩn hơn}
 
-Không có gì trong các phép tính trên dùng đến việc chỉ có hai tọa độ. Trong không gian ba chiều, vector có ba tọa độ nên \(L\) có ba số hạng.
-$$ L(x,y,z)=ax+by+cz. $$
+Chứng minh ở trên chỉ dùng phá ngoặc, nên số ẩn không quan trọng. Với ba ẩn,
+$$ L(x,y,z)=a_1x+a_2y+a_3z, $$
+và phương trình \(L(x,y,z)=d\) là một mặt phẳng trong không gian, giống ba phương trình của bài bó lúa. Hình dưới là mặt phẳng \(x+y+z=3\).
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/mat-phang-oxyz.svg}}
 
 Chẳng hạn, với \(L(x,y,z)=2x-y+3z\) thì
 $$ L(1,2,4)=2\cdot1-2+3\cdot4=12. $$
-Phương trình \(L(x,y,z)=d\) lúc này không còn mô tả một đường thẳng mà mô tả một mặt phẳng trong không gian.
 
-Nếu vector có \(n\) tọa độ, ta tiếp tục theo đúng mẫu đó. Mỗi tọa độ \(x_i\) được nhân với một hệ số \(a_i\), rồi cộng tất cả lại. Với \(n\) tọa độ thì không vẽ được mũi tên nữa, nên ta viết vector bằng chữ in đậm, \(\mathbf{x}=(x_1,\ldots,x_n)\). Cộng vector và nhân vector với số vẫn làm theo từng tọa độ như ở mặt phẳng.
+Với \(n\) ẩn, vector có \(n\) tọa độ. Không vẽ được mũi tên nữa, nên ta viết vector bằng chữ in đậm, \(\mathbf{x}=(x_1,\ldots,x_n)\). Cộng vector và nhân vector với số vẫn làm trên từng tọa độ.
 $$ L(\mathbf{x})=a_1x_1+\cdots+a_nx_n. $$
-Hai tính chất của \(L\) vẫn đúng, chứng minh y hệt trường hợp hai tọa độ. Vì thế nguyên lý chồng chất cũng vẫn đúng. Nếu \(L(\mathbf{u})=0\) và \(L(\mathbf{v})=0\), thì với mọi số \(\alpha,\beta\),
+Hai tính chất của \(L\) vẫn đúng, và nguyên lý chồng chất cũng vậy. Nếu \(L(\mathbf{u})=0\) và \(L(\mathbf{v})=0\), thì với mọi số \(\alpha,\beta\),
 $$ L(\alpha \mathbf{u}+\beta \mathbf{v})=L(\alpha \mathbf{u})+L(\beta \mathbf{v})=\alpha L(\mathbf{u})+\beta L(\mathbf{v})=0. $$
 
 \subsubsection{Định nghĩa}

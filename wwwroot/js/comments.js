@@ -247,41 +247,6 @@
         return out;
     }
 
-    // ============ highlight engine (tìm đoạn text trong bài) ============
-    function findTextRange(root, needle) {
-        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-        var nodes = [], full = "";
-        while (walker.nextNode()) { nodes.push(walker.currentNode); full += walker.currentNode.textContent; }
-        var idx = full.indexOf(needle);
-        if (idx === -1) return null;
-        var startNode = null, startOff = 0, endNode = null, endOff = 0, acc = 0;
-        for (var i = 0; i < nodes.length; i++) {
-            var len = nodes[i].textContent.length;
-            if (startNode === null && idx < acc + len) { startNode = nodes[i]; startOff = idx - acc; }
-            if (idx + needle.length <= acc + len) { endNode = nodes[i]; endOff = idx + needle.length - acc; break; }
-            acc += len;
-        }
-        if (!startNode || !endNode) return null;
-        var range = document.createRange();
-        range.setStart(startNode, startOff);
-        range.setEnd(endNode, endOff);
-        return range;
-    }
-
-    function applyHighlight(root, h) {
-        var range = findTextRange(root, h.quote);
-        if (!range) return;
-        var mark = document.createElement("mark");
-        mark.className = "lb-hl";
-        mark.setAttribute("data-id", h.id);
-        mark.setAttribute("data-note", h.note || "");
-        try {
-            var frag = range.extractContents();
-            mark.appendChild(frag);
-            range.insertNode(mark);
-        } catch (e) { /* selection đã thay đổi */ }
-    }
-
     // ================= shared auth store (replaces Alpine.store("auth")) =================
     // Supabase persists the session in localStorage; read it synchronously so the header
     // paints the signed-in state immediately instead of flashing "sign in" until
@@ -808,178 +773,6 @@
         };
     });
 
-    // ================= annotations (tô sáng + ghi chú đoạn bài) =================
-    up.compiler(".lb-post-page[data-slug]", function (article) {
-        if (!configured()) return;
-        var slug = article.getAttribute("data-slug");
-        var menu = article.querySelector(".lb-hlmenu");
-        var noteBox = article.querySelector(".lb-hlnote");
-        var noteArea = noteBox.querySelector(".lb-rte__area");
-        var view = article.querySelector(".lb-noteview");
-        var viewShow = view.querySelector("[data-f=view]");
-        var viewEdit = view.querySelector("[data-f=edit]");
-        var pendingRange = null, pendingQuote = "", byId = {}, noteView = null;
-
-        function openMenu(x, y) {
-            menu.style.left = x + "px";
-            menu.style.top = y + "px";
-            lbShow(menu, true);
-            lbShow(noteBox, false);
-        }
-        function closeMenu() { lbShow(menu, false); }
-        function viewNote(h) {
-            noteView = h;
-            viewShow.querySelector("[data-f=body]").innerHTML = renderComment(h.note);
-            lbShow(viewShow, true);
-            lbShow(viewEdit, false);
-            lbShow(view, true);
-        }
-        function closeNoteView() { noteView = null; lbShow(view, false); }
-        function startEditNote() {
-            viewEdit.querySelector(".lb-rte__area").innerHTML = noteView.note || "";
-            lbShow(viewShow, false);
-            lbShow(viewEdit, true);
-        }
-        function saveEditNote() {
-            var html = viewEdit.querySelector(".lb-rte__area").innerHTML;
-            loadSupabase().then(function (sb) {
-                return sb.from("highlights").update({ note: html })
-                    .eq("id", noteView.id).eq("user_id", auth.userId);
-            }).then(function (res) {
-                if (res.error) return;
-                noteView.note = html;
-                lbToast("Đã lưu ghi chú!");
-                var m = document.querySelector('.lb-hl[data-id="' + noteView.id + '"]');
-                if (m) m.setAttribute("data-note", html);
-                viewNote(noteView);
-            }).catch(function () {});
-        }
-        function load() {
-            loadSupabase().then(function (sb) {
-                return sb.from("highlights").select("*")
-                    .eq("post_slug", slug).eq("user_id", auth.userId);
-            }).then(function (res) {
-                if (res.error || !res.data) return;
-                byId = {};
-                res.data.forEach(function (h) {
-                    byId[h.id] = h;
-                    applyHighlight(article, h);
-                });
-            }).catch(function () {});
-        }
-        function save(note) {
-            loadSupabase().then(function (sb) {
-                return sb.from("highlights").insert({
-                    post_slug: slug,
-                    user_id: auth.userId,
-                    quote: pendingQuote,
-                    note: note || "",
-                }).select();
-            }).then(function (res) {
-                if (res.error) return;
-                var row = res.data && res.data[0];
-                if (row) byId[row.id] = row;
-                if (row && pendingRange) {
-                    var mark = document.createElement("mark");
-                    mark.className = "lb-hl";
-                    mark.setAttribute("data-id", row.id);
-                    mark.setAttribute("data-note", row.note || "");
-                    try {
-                        var frag = pendingRange.extractContents();
-                        mark.appendChild(frag);
-                        pendingRange.insertNode(mark);
-                    } catch (e) {}
-                }
-                closeMenu();
-                lbShow(noteBox, false);
-                noteArea.innerHTML = "";
-                window.getSelection().removeAllRanges();
-            }).catch(function () {});
-        }
-        function shareQuote() {
-            var url = window.location.href.split("#")[0] + "#:~:text=" + encodeURIComponent(pendingQuote);
-            navigator.clipboard.writeText(url)
-                .then(function () { lbToast("Đã chép liên kết đoạn!"); })
-                .catch(function () {});
-            closeMenu();
-        }
-        function openNote() {
-            closeMenu();
-            noteArea.innerHTML = "";
-            lbShow(noteBox, true);
-        }
-
-        // chuột phải khi có chọn text trong bài -> menu tô sáng / ghi chú
-        function onContextMenu(e) {
-            var prose = e.target && e.target.closest ? e.target.closest(".lb-prose") : null;
-            if (!prose || !article.contains(prose)) return;
-            var sel = window.getSelection();
-            if (!sel || sel.isCollapsed) return;
-            if (!prose.contains(sel.anchorNode) || !prose.contains(sel.focusNode)) return;
-            e.preventDefault();
-            if (!auth.signedIn) { auth.signIn(); return; }
-            var quote = sel.toString().trim().slice(0, 500);
-            if (!quote) return;
-            pendingQuote = quote;
-            pendingRange = sel.getRangeAt(0).cloneRange();
-            openMenu(e.clientX, e.clientY);
-        }
-        function onDocClick(e) {
-            var t = e.target;
-            var act = t.closest && t.closest("[data-act]");
-            if (act && (menu.contains(act) || noteBox.contains(act) || view.contains(act))) {
-                switch (act.getAttribute("data-act")) {
-                    case "hl-highlight": save(""); return;
-                    case "hl-note": openNote(); return;
-                    case "hl-share": shareQuote(); return;
-                    case "note-save": save(noteArea.innerHTML); return;
-                    case "note-cancel": lbShow(noteBox, false); return;
-                    case "view-edit": startEditNote(); return;
-                    case "view-close": closeNoteView(); return;
-                    case "view-save": saveEditNote(); return;
-                    case "view-cancel": viewNote(noteView); return;
-                }
-            }
-            if (!menu.contains(t)) closeMenu();
-            if (!noteBox.hidden && !noteBox.contains(t)) lbShow(noteBox, false);
-            var m = t.closest ? t.closest(".lb-hl") : null;
-            if (m && m.getAttribute("data-note")) {
-                var h = byId[m.getAttribute("data-id")];
-                if (h) { viewNote(h); return; }
-            }
-            if (!view.hidden && !view.contains(t)) closeNoteView();
-        }
-        // mobile/touch: there's no right-click, so also open the menu once a selection
-        // inside .lb-prose settles (debounced — selectionchange fires continuously while
-        // dragging the native selection handles)
-        var onSelection = lbDebounce(function () {
-            var sel = window.getSelection();
-            if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
-            var range = sel.getRangeAt(0);
-            var anchor = range.commonAncestorContainer;
-            var anchorEl = anchor.nodeType === 1 ? anchor : anchor.parentNode;
-            var prose = anchorEl && anchorEl.closest ? anchorEl.closest(".lb-prose") : null;
-            if (!prose || !article.contains(prose)) return;
-            var quote = sel.toString().trim().slice(0, 500);
-            if (!quote) return;
-            if (!auth.signedIn) return;
-            var rect = range.getBoundingClientRect();
-            pendingQuote = quote;
-            pendingRange = range.cloneRange();
-            openMenu(rect.left + rect.width / 2, rect.bottom + 6);
-        }, 350);
-
-        auth.whenReady().then(function () { if (auth.signedIn) load(); });
-        document.addEventListener("contextmenu", onContextMenu);
-        document.addEventListener("click", onDocClick);
-        document.addEventListener("selectionchange", onSelection);
-        return function () {
-            document.removeEventListener("contextmenu", onContextMenu);
-            document.removeEventListener("click", onDocClick);
-            document.removeEventListener("selectionchange", onSelection);
-        };
-    });
-
     // ================= like + share (post page) =================
     up.compiler(".lb-actions[data-slug]", function (root) {
         var slug = root.getAttribute("data-slug");
@@ -1118,7 +911,7 @@
 
     // ================= own profile: /profile =================
     up.compiler(".lb-profile[data-profile]", function (root) {
-        var file = null, previewUrl = null, highlights = [], started = false;
+        var file = null, previewUrl = null, started = false;
         var posts = JSON.parse(root.getAttribute("data-posts") || "[]");
         var avatarImg = root.querySelector("[data-f=avatar]");
         var nameInput = root.querySelector("#lb-name");
@@ -1128,10 +921,6 @@
 
         function setError(msg) { errorEl.textContent = msg || ""; lbShow(errorEl, !!msg); }
         function setAvatar(url) { if (url) { avatarImg.src = url; avatarImg.style.display = ""; } }
-        function postTitle(slug) {
-            var p = posts.find(function (x) { return x.slug === slug; });
-            return p ? p.title : slug;
-        }
         // Derived from the store, not snapshotted: signing out has to flip this page back to
         // the signed-out view without a reload.
         function paint() {
@@ -1147,7 +936,6 @@
             setAvatar(auth.avatar);
             nameInput.value = auth.displayName;
             loadLiked();
-            loadHighlights();
             loadStats();
         }
         function loadStats() {
@@ -1156,12 +944,10 @@
                 return Promise.all([
                     sb.from("post_likes").select("id", { count: "exact" }).eq("user_id", uid),
                     sb.from("comments").select("id", { count: "exact" }).eq("user_id", uid),
-                    sb.from("highlights").select("id", { count: "exact" }).eq("user_id", uid),
                 ]);
             }).then(function (res) {
                 root.querySelector("[data-f=stat-liked]").textContent = res[0].count || 0;
                 root.querySelector("[data-f=stat-comments]").textContent = res[1].count || 0;
-                root.querySelector("[data-f=stat-highlights]").textContent = res[2].count || 0;
             }).catch(function () {});
         }
         function download(name, text) {
@@ -1178,49 +964,6 @@
                     .eq("user_id", auth.userId).order("created_at", { ascending: false });
             }).then(function (res) { if (!res.error) download(name, JSON.stringify(res.data, null, 2)); })
               .catch(function () {});
-        }
-        function renderHighlights() {
-            var list = root.querySelector("[data-f=hl-list]");
-            list.innerHTML = "";
-            lbShow(root.querySelector("[data-f=hl-empty]"), !highlights.length);
-            highlights.forEach(function (h) {
-                var item = lbTpl(root, "highlight");
-                item.setAttribute("data-id", h.id);
-                item.querySelector("[data-f=quote]").textContent = h.quote;
-                var note = item.querySelector("[data-f=note]");
-                lbShow(note, !!h.note);
-                // notes are rich text (DOMPurify-sanitized in renderComment), not plain text
-                note.querySelector("[data-f=note-html]").innerHTML = renderComment(h.note);
-                var a = item.querySelector("[data-f=post]");
-                a.href = "/posts/" + h.post_slug;
-                a.textContent = postTitle(h.post_slug);
-                list.appendChild(item);
-            });
-        }
-        function loadHighlights() {
-            loadSupabase()
-                .then(function (sb) {
-                    return sb.from("highlights").select("*")
-                        .eq("user_id", auth.userId)
-                        .order("created_at", { ascending: false }).limit(50);
-                })
-                .then(function (res) {
-                    if (res.error) return;
-                    highlights = res.data || [];
-                    renderHighlights();
-                })
-                .catch(function () {});
-        }
-        function deleteHighlight(id) {
-            loadSupabase()
-                .then(function (sb) {
-                    return sb.from("highlights").delete().eq("id", id).eq("user_id", auth.userId);
-                })
-                .then(function () {
-                    highlights = highlights.filter(function (h) { return String(h.id) !== id; });
-                    renderHighlights();
-                })
-                .catch(function () {});
         }
         function loadLiked() {
             loadSupabase()
@@ -1297,8 +1040,6 @@
             if (!act) return;
             var a = act.getAttribute("data-act");
             if (a === "export-comments") exportRows("comments", "post_slug, author_name, body, created_at, parent_id", "latexblog-comments.json");
-            else if (a === "export-highlights") exportRows("highlights", "post_slug, quote, note, created_at", "latexblog-highlights.json");
-            else if (a === "delete-highlight") deleteHighlight(act.closest("[data-id]").getAttribute("data-id"));
         }
 
         root.addEventListener("click", onClick);

@@ -27,81 +27,69 @@ up.compiler(".lb-toc", function (el) {
     return function () { io.disconnect(); };
 });
 
-// ---- nav: mobile menu + search popup (MainLayout) ----
+// ---- nav: mobile menu (MainLayout) ----
 up.compiler(".lb-nav", function (nav) {
     var panel = nav.querySelector(".lb-nav-panel");
     var menuBtn = nav.querySelector("[data-lb-menu-toggle]");
-    var modal = nav.querySelector(".lb-searchmodal");
-    var openBtn = nav.querySelector("[data-lb-search-open]");
-    var q = modal.querySelector('input[name="q"]');
-    var postResults = modal.querySelector("#lb-search-results");
-    var cq = modal.querySelector("[data-lb-cq]");
-    var cresults = modal.querySelector("[data-lb-cresults]");
-
-    function toggleMenu() {
+    function onClick(e) {
+        if (!e.target.closest("[data-lb-menu-toggle]")) return;
         var open = !panel.classList.contains("open");
         panel.classList.toggle("open", open);
         menuBtn.setAttribute("aria-expanded", String(open));
     }
-    function setMode(m) {
-        modal.querySelectorAll("[data-lb-search-mode]").forEach(function (b) {
-            var on = b.getAttribute("data-lb-search-mode") === m;
-            b.classList.toggle("is-active", on);
-            b.setAttribute("aria-selected", String(on));
-        });
-        modal.querySelectorAll("[data-lb-search-pane]").forEach(function (p) {
-            lbShow(p, p.getAttribute("data-lb-search-pane") === m);
-        });
-    }
-    function openSearch() {
-        lbShow(modal, true);
-        openBtn.setAttribute("aria-expanded", "true");
-        if (q) q.focus();
-    }
-    function closeSearch() {
-        lbShow(modal, false);
-        openBtn.setAttribute("aria-expanded", "false");
-        if (postResults) postResults.innerHTML = "";
-        cresults.innerHTML = "";
-        cq.value = "";
+    nav.addEventListener("click", onClick);
+    return function () { nav.removeEventListener("click", onClick); };
+});
+
+// ---- search palette (CommandDialog #lb-search) ----
+// ui.js filters the post links; this adds comment matches from Supabase and closes the dialog
+// once a result is chosen (the dialog lives in the nav, which Unpoly keeps across swaps).
+up.compiler("#lb-search", function (dialog) {
+    var input = dialog.querySelector('[data-slot="command-input"]');
+    var group = dialog.querySelector("[data-lb-cresults]");
+    var lastQuery = "";
+
+    function refilter() {
+        // ui.js filters on "input"; re-run it so freshly added comment items are matched too.
+        input.dispatchEvent(new Event("input", { bubbles: true }));
     }
     var searchComments = lbDebounce(function () {
-        var text = cq.value.trim();
-        if (!text) { cresults.innerHTML = ""; return; }
-        if (typeof window.lbLoadSupabase !== "function") return;
+        var text = input.value.trim();
+        if (text === lastQuery) return;
+        lastQuery = text;
+        if (text.length < 2 || typeof window.lbLoadSupabase !== "function") {
+            group.innerHTML = "";
+            refilter();
+            return;
+        }
         window.lbLoadSupabase().then(function (sb) {
             return sb.from("comments").select("id, post_slug, author_name, body, created_at")
-                .ilike("body", "%" + text + "%").order("created_at", { ascending: false }).limit(20);
+                .ilike("body", "%" + text + "%").order("created_at", { ascending: false }).limit(10);
         }).then(function (res) {
-            cresults.innerHTML = "";
+            if (input.value.trim() !== text) return; // a newer query is on its way
+            group.innerHTML = "";
             (res.data || []).forEach(function (r) {
-                var a = lbTpl(modal, "cresult");
-                a.href = "/posts/" + r.post_slug;
-                a.querySelector("[data-f=body]").textContent = r.body.length > 120 ? r.body.slice(0, 120) + "…" : r.body;
+                var body = String(r.body || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+                var a = lbTpl(dialog, "cresult");
+                a.id = "lb-cres-" + r.id;
+                a.href = "/posts/" + r.post_slug + "#comment-" + r.id;
+                a.setAttribute("data-keywords", text); // the server already matched it
+                a.querySelector("[data-f=body]").textContent = body.length > 120 ? body.slice(0, 120) + "…" : body;
                 a.querySelector("[data-f=meta]").textContent = r.author_name + " · " + r.post_slug;
-                cresults.appendChild(a);
+                group.appendChild(a);
             });
+            refilter();
         }).catch(function () {});
-    }, 500);
+    }, 400);
 
-    function onClick(e) {
-        var t = e.target;
-        if (t.closest("[data-lb-menu-toggle]")) toggleMenu();
-        else if (t.closest("[data-lb-search-open]")) openSearch();
-        else if (t.closest("[data-lb-search-close]")) closeSearch();
-        else if (t.closest("[data-lb-search-mode]")) setMode(t.closest("[data-lb-search-mode]").getAttribute("data-lb-search-mode"));
-        else if (t === modal) closeSearch(); // backdrop
+    function onPick(e) {
+        if (e.target.closest('[data-slot="command-item"]')) dialog.close();
     }
-    function onKey(e) { if (e.key === "Escape" && !modal.hidden) closeSearch(); }
-    function onSubmit() { closeSearch(); }
-
-    nav.addEventListener("click", onClick);
-    document.addEventListener("keydown", onKey);
-    cq.addEventListener("input", searchComments);
-    modal.querySelector("form").addEventListener("submit", onSubmit);
+    input.addEventListener("input", searchComments);
+    dialog.addEventListener("click", onPick);
     return function () {
-        nav.removeEventListener("click", onClick);
-        document.removeEventListener("keydown", onKey);
+        input.removeEventListener("input", searchComments);
+        dialog.removeEventListener("click", onPick);
     };
 });
 

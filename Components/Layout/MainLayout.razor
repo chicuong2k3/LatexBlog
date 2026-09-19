@@ -1,8 +1,8 @@
 @inherits LayoutComponentBase
 
-@* Behaviour lives in wwwroot/js (site.js: nav, search; comments.js: auth, notifications),
+@* Behaviour lives in wwwroot/js (site.js: nav, comment search; comments.js: auth, notifications),
    bound through up.compiler on the classes / data-* hooks below. *@
-<UpChrome Provides=".lb-nav, .lb-notif__badge, #lb-search-results">
+<UpChrome Provides=".lb-nav, .lb-notif__badge">
 <div class="lb-nav">
     <div id="lb-progress" class="lb-progress" aria-hidden="true"></div>
     <nav class="lb-wrap lb-nav-in">
@@ -19,12 +19,12 @@
         <div class="lb-nav-panel">
         <ul class="lb-nav-links">
             <li><Button Href="/" Variant="link" Size="sm" Class="px-0">Trang chủ</Button></li>
-            <li><Button Href="/tags/toan" Variant="link" Size="sm" Class="px-0">Thẻ</Button></li>
+            <li><Button Href="/tags" Variant="link" Size="sm" Class="px-0">Thẻ</Button></li>
         </ul>
 
         <div class="lb-nav-right">
             <Button Type="button" Variant="ghost" Size="icon-sm" Class="lb-nav-icon"
-                    data-lb-search-open aria-expanded="false" aria-label="Tìm kiếm">
+                    data-command-open="lb-search" aria-label="Tìm kiếm (Ctrl+K)">
                 <Icon Name="search" />
             </Button>
 
@@ -81,48 +81,37 @@
         </div>
     </nav>
 
-    <div class="lb-searchmodal" role="dialog" aria-modal="true" aria-label="Tìm kiếm" hidden>
-        <Card Class="lb-searchmodal__panel gap-0 py-0">
-            <div class="lb-searchmodal__modes" role="tablist">
-                <Button Type="button" Variant="ghost" Size="sm" role="tab" Class="is-active"
-                        data-lb-search-mode="posts" aria-selected="true">Tìm kiếm</Button>
-                <Button Type="button" Variant="ghost" Size="sm" role="tab"
-                        data-lb-search-mode="comments" aria-selected="false">Tìm trong bình luận</Button>
-            </div>
-            <div data-lb-search-pane="posts">
-                <div class="lb-searchmodal__bar">
-                    <form method="get" action="/search" class="lb-searchmodal__form">
-                        <InputGroup>
-                            <InputGroupAddon><Icon Name="search" /></InputGroupAddon>
-                            <InputGroupControl Class="lb-searchmodal__input" Type="search" name="q"
-                                               placeholder="Tìm kiếm bài viết…" autocomplete="off" />
-                        </InputGroup>
-                    </form>
-                    <Button Type="button" Variant="ghost" Size="icon-sm" Class="lb-nav-icon" data-lb-search-close aria-label="Đóng">
-                        <Icon Name="x" />
-                    </Button>
-                </div>
-                <div id="lb-search-results" class="lb-searchmodal__results"></div>
-            </div>
-            <div data-lb-search-pane="comments" class="lb-searchmodal__cmode" hidden>
-                <div class="lb-searchmodal__bar">
-                    <InputGroup>
-                        <InputGroupAddon><Icon Name="search" /></InputGroupAddon>
-                        <InputGroupControl Class="lb-searchmodal__input" Type="search" data-lb-cq placeholder="Tìm trong bình luận" />
-                    </InputGroup>
-                </div>
-                <ItemGroup Class="lb-searchmodal__results" data-lb-cresults></ItemGroup>
-                <template data-tpl="cresult">
-                    <Item Href="#" Size="sm" Class="lb-cresult">
-                        <ItemContent>
-                            <ItemTitle Class="lb-cresult__body" data-f="body"></ItemTitle>
-                            <ItemDescription Class="lb-cresult__meta" data-f="meta"></ItemDescription>
-                        </ItemContent>
-                    </Item>
-                </template>
-            </div>
-        </Card>
-    </div>
+    @* Search as a command palette (Unpoly.Blazor.Shadcn CommandDialog): every post is already
+       here as a link, and ui.js filters them as you type — no round trip, no /search page.
+       Keywords add the summary, the tags and a đ→d copy of the title, because the filter folds
+       diacritics but đ is its own letter. Comment matches come from Supabase (site.js) into
+       the "Bình luận" group, and the same filter then shows them. ⌘K / Ctrl+K or "/" opens it. *@
+    <CommandDialog Id="lb-search" Key="mod+k" Title="Tìm kiếm"
+                   Description="Tìm bài viết theo tiêu đề, tóm tắt, thẻ, hoặc tìm trong bình luận.">
+        <CommandInput Placeholder="Tìm bài viết, thẻ hoặc bình luận…" AriaLabel="Tìm kiếm" />
+        <CommandList>
+            <CommandEmpty Class="py-8 text-center text-sm text-muted-foreground">Không tìm thấy gì.</CommandEmpty>
+            <CommandGroup Heading="Bài viết">
+                @foreach (var post in PostStore.All)
+                {
+                    <CommandItem Href="@($"/posts/{post.Slug}")" Keywords="@Keywords(post)">
+                        <Icon Name="file-text" />
+                        <span class="truncate">@post.Title</span>
+                    </CommandItem>
+                }
+            </CommandGroup>
+            <CommandGroup Heading="Bình luận" data-lb-cresults></CommandGroup>
+        </CommandList>
+        <template data-tpl="cresult">
+            <CommandItem Href="#">
+                <Icon Name="message-circle" />
+                <span class="flex min-w-0 flex-col">
+                    <span class="truncate" data-f="body"></span>
+                    <span class="truncate text-xs text-muted-foreground" data-f="meta"></span>
+                </span>
+            </CommandItem>
+        </template>
+    </CommandDialog>
 
     <Button Type="button" Variant="outline" Size="icon" id="lb-top" Class="lb-top" aria-label="Về đầu trang">
         <Icon Name="arrow-up" />
@@ -144,3 +133,16 @@
     </div>
 </footer>
 </UpChrome>
+
+@code {
+    [Inject] private PostStore PostStore { get; set; } = default!;
+
+    private static string Keywords(PostMeta post) =>
+        string.Join(' ', new[]
+        {
+            post.Summary,
+            string.Join(' ', post.Tags),
+            string.Join(' ', post.Tags).Replace('-', ' '), // "dai so" should find tag dai-so-tuyen-tinh
+            post.Title.Replace('đ', 'd').Replace('Đ', 'D'),
+        });
+}

@@ -60,11 +60,9 @@
                 <div class="lb-profile__stats">
                     <Card Size="sm" Class="lb-stat"><strong data-f="stat-liked">0</strong><span>bài đã thích</span></Card>
                     <Card Size="sm" Class="lb-stat"><strong data-f="stat-comments">0</strong><span>bình luận đã viết</span></Card>
-                    <Card Size="sm" Class="lb-stat"><strong data-f="stat-highlights">0</strong><span>đoạn đã tô</span></Card>
                 </div>
                 <div class="lb-profile__exports">
                     <Button Type="button" Variant="outline" Size="sm" data-act="export-comments">Tải bình luận (JSON)</Button>
-                    <Button Type="button" Variant="outline" Size="sm" data-act="export-highlights">Tải ghi chú (JSON)</Button>
                 </div>
             </CardContent>
         </Card>
@@ -73,12 +71,6 @@
             <h2>Bài viết đã thích</h2>
             <p class="lb-comments__hint" data-f="liked-empty" hidden>Bạn chưa thích bài viết nào.</p>
             <div class="lb-post-list" data-f="liked-list"></div>
-        </div>
-
-        <div class="lb-profile__hl">
-            <h2>Đoạn đã tô & ghi chú</h2>
-            <p class="lb-comments__hint" data-f="hl-empty" hidden>Chưa có đoạn nào được tô.</p>
-            <ItemGroup Class="lb-hl-list" data-f="hl-list"></ItemGroup>
         </div>
     </div>
 
@@ -91,17 +83,6 @@
             </div>
             <div class="lb-post-meta"><span class="lb-date" data-f="date"></span></div>
         </Card>
-    </template>
-
-    <template data-tpl="highlight">
-        <Item Variant="outline" Class="lb-hl-item flex-col items-stretch">
-            <blockquote class="lb-hl-item__quote" data-f="quote"></blockquote>
-            <p class="lb-hl-item__note" data-f="note">Ghi chú: <span data-f="note-html"></span></p>
-            <div class="lb-hl-item__meta">
-                <a data-f="post"></a>
-                <Button Type="button" Variant="outline" Size="xs" Class="lb-comment__reply" data-act="delete-highlight">Xóa</Button>
-            </div>
-        </Item>
     </template>
 </section>
 

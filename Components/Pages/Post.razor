@@ -24,7 +24,7 @@ else
                 data-heading=".lb-post-head h1"></script>
     </HeadContent>
 
-    <article class="lb-post-page" data-slug="@PostMeta.Slug">
+    <article class="lb-post-page">
         <header class="lb-post-head">
             <h1>@PostMeta.Title</h1>
             <p class="lb-post-meta">Đăng ngày @PostMeta.Date · @ReadMinutes phút đọc</p>
@@ -92,42 +92,6 @@ else
         }
 
         <CommentSection Slug="@PostMeta.Slug" />
-
-        <ButtonGroup Class="lb-hlmenu" role="menu" hidden>
-            <Button Type="button" Variant="ghost" Size="sm" role="menuitem" data-act="hl-highlight">Tô sáng</Button>
-            <Button Type="button" Variant="ghost" Size="sm" role="menuitem" data-act="hl-note">Ghi chú</Button>
-            <Button Type="button" Variant="ghost" Size="sm" role="menuitem" data-act="hl-share">Chia sẻ đoạn này</Button>
-        </ButtonGroup>
-        <Card Class="lb-hlnote gap-3 py-3" role="dialog" aria-label="Ghi chú" hidden>
-            <div class="lb-rte">
-                <RteToolbar />
-                <div class="lb-rte__area lb-noteview__edit" contenteditable="true" placeholder="Viết ghi chú cho đoạn này…"></div>
-            </div>
-            <div class="lb-hlnote__actions">
-                <Button Type="button" Size="sm" data-act="note-save">Lưu</Button>
-                <Button Type="button" Variant="ghost" Size="sm" data-act="note-cancel">Hủy</Button>
-            </div>
-        </Card>
-
-        <Card Class="lb-noteview gap-0 py-3" role="dialog" aria-label="Ghi chú" hidden>
-            <div class="lb-noteview__inner" data-f="view">
-                <div class="lb-noteview__body" data-f="body"></div>
-                <div class="lb-noteview__actions">
-                    <Button Type="button" Size="sm" data-act="view-edit">Sửa</Button>
-                    <Button Type="button" Variant="ghost" Size="sm" data-act="view-close">Đóng</Button>
-                </div>
-            </div>
-            <div class="lb-noteview__inner" data-f="edit" hidden>
-                <div class="lb-rte">
-                    <RteToolbar />
-                    <div class="lb-rte__area lb-noteview__edit" contenteditable="true"></div>
-                </div>
-                <div class="lb-noteview__actions">
-                    <Button Type="button" Size="sm" data-act="view-save">Lưu</Button>
-                    <Button Type="button" Variant="ghost" Size="sm" data-act="view-cancel">Hủy</Button>
-                </div>
-            </div>
-        </Card>
     </article>
 }
 

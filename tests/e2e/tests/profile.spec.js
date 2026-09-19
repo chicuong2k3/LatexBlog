@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 // Trang cá nhân — đẩy dữ liệu trực tiếp vào component (mock auth + data).
 
-test('profile hiện form sửa, stats, bài đã thích, highlights', async ({ page }) => {
+test('profile hiện form sửa, stats, bài đã thích', async ({ page }) => {
   await page.goto('/profile');
   await page.waitForTimeout(3000);
   await page.evaluate(() => {
@@ -14,15 +14,12 @@ test('profile hiện form sửa, stats, bài đã thích, highlights', async ({ 
     d.email = 't@test.com';
     d.loading = false;
     d.likedPosts = [{ slug: 's1', title: 'Bài A', summary: 'tóm tắt', date: '2026-01-01' }];
-    d.highlights = [{ id: 'h1', quote: 'đoạn được tô', note: 'ghi chú của tôi', post_slug: 's1' }];
-    d.stats = { liked: 3, comments: 5, highlights: 2 };
+    d.stats = { liked: 3, comments: 5 };
   });
   await page.waitForTimeout(500);
   await expect(page.locator('#lb-name')).toHaveValue('Tester');
   await expect(page.locator('.lb-stat').first()).toContainText('3');
   await expect(page.locator('.lb-post-body h3 a')).toHaveText('Bài A');
-  await expect(page.locator('.lb-hl-item__quote')).toContainText('đoạn được tô');
-  await expect(page.locator('.lb-hl-item__note')).toContainText('ghi chú của tôi');
 });
 
 test('avatar là label clickable (không còn input riêng)', async ({ page }) => {
@@ -39,7 +36,7 @@ test('avatar là label clickable (không còn input riêng)', async ({ page }) =
   expect(await page.locator('#lb-avatar').count()).toBe(0);
 });
 
-test('nút export bình luận + ghi chú tồn tại', async ({ page }) => {
+test('nút export bình luận tồn tại', async ({ page }) => {
   await page.goto('/profile');
   await page.waitForTimeout(3000);
   await page.evaluate(() => {

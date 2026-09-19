@@ -39,6 +39,10 @@ Muốn có một quy trình giải cho mọi hệ như vậy, trước hết c�
 
 \subsection{Phương trình tuyến tính là gì?}
 
+Chữ ``tuyến tính'' là từ Hán Việt, trong đó ``tuyến'' nghĩa là đường. Nó dịch từ chữ \emph{linear} của tiếng Anh, vốn cũng gốc từ \emph{line}, tức đường thẳng. Tên gọi này đến từ chỗ phương trình tuyến tính hai ẩn luôn biểu diễn một đường thẳng.
+
+Giải một phương trình là tìm tất cả các nghiệm của nó. Một phương trình tuyến tính hai ẩn có vô số nghiệm, nên không thể tìm từng nghiệm một. Muốn nắm được hết, ta phải hiểu các nghiệm liên hệ với nhau thế nào, để chỉ từ vài nghiệm mà biết được tất cả. Các câu hỏi trong mục này đều xoay quanh chuyện đó.
+
 \subsubsection{Một dạng biểu thức chung}
 
 Nhìn vế trái của ba phương trình trong bài toán bó lúa.
@@ -51,11 +55,9 @@ biểu diễn một mặt phẳng trong \(Oxyz\). Vậy mỗi phương trình c�
 
 Bớt đi một ẩn, với \(a,b\) không đồng thời bằng \(0\), phương trình
 $$ ax+by=c $$
-biểu diễn một đường thẳng trong \(Oxy\). Mặt phẳng khó vẽ và khó nhìn hơn đường thẳng nhiều, nên các mục tiếp theo làm với hai ẩn trước, rồi mới quay lại ba ẩn ở mục ``Nhiều ẩn hơn''. Mọi điều tìm ra với hai ẩn đều sẽ còn đúng ở đó.
+biểu diễn một đường thẳng trong \(Oxy\). Mặt phẳng khó vẽ và khó nhìn hơn đường thẳng nhiều, nên các mục tiếp theo làm với hai ẩn trước, rồi mới quay lại ba ẩn ở mục ``Nhiều ẩn hơn''.
 
-Hình học tọa độ ra đời muộn hơn hệ phương trình rất nhiều. Người soạn \emph{Cửu Chương Toán Thuật} giải bài bó lúa mà không vẽ gì cả. Phải đến khoảng những năm 1630, Fermat và Descartes mới gắn mỗi phương trình với một đường. Dùng một công cụ ra đời sau để nhìn lại một bài toán cũ là chuyện bình thường trong toán học. Ở đây nó đáng dùng vì hình vẽ trả lời ngay những câu mà con số che đi, chẳng hạn vì sao một hệ có thể vô nghiệm hay có vô số nghiệm.
-
-Phần sau sẽ phải hỏi nhiều lần những câu như ``đưa tổng hai cặp số vào vế trái thì được gì''. Để viết gọn, ta đặt tên cho vế trái. Với hai ẩn, gọi
+Ta đặt tên cho vế trái. Với hai ẩn, gọi
 $$ L(x,y)=ax+by. $$
 \(L\) là một hàm số hai biến. Hàm số các em quen nhận vào một số, còn \(L\) nhận vào một cặp số \((x,y)\), rồi trả ra một số. Phương trình \(ax+by=c\) viết gọn thành
 $$ L(x,y)=c, $$
@@ -69,20 +71,24 @@ Ba cặp số này đều là nghiệm của \(2x+3y=6\), nên ba điểm tươn
 
 \subsubsection{Có tạo được nghiệm mới từ nghiệm cũ không?}
 
-Đường thẳng \(2x+3y=6\) có vô số điểm, không liệt kê hết được. Nhưng ở lớp 10, các em đã mô tả trọn một đường thẳng bằng phương trình tham số, chỉ cần một điểm \((x_0,y_0)\) trên đường và một vector chỉ phương \((a_1,a_2)\). Với \(2x+3y=6\), lấy điểm \((0,2)\) và vector chỉ phương \((3,-2)\), ta được
-$$ x=3t,\qquad y=2-2t,\qquad t\in\mathbb{R}. $$
-Thử lại, \(2\cdot3t+3(2-2t)=6\) với mọi \(t\). Chỉ từ một nghiệm và một vector, dùng phép cộng và phép nhân với một số, ta có mọi nghiệm. Vậy phép cộng và phép nhân với số liên quan thế nào tới tập nghiệm? Để bắt đầu, thử xem cộng hai nghiệm, hay nhân một nghiệm với một số, có còn ra nghiệm không.
+Ba nghiệm trên có được nhờ đoán. Đường thẳng \(2x+3y=6\) có vô số điểm, và đoán từng cặp số thì không bao giờ hết. Đã có vài nghiệm trong tay, có cách nào dùng chúng để làm ra nghiệm mới mà không phải đoán tiếp không? Vế trái \(ax+by\) chỉ được dựng từ hai phép, nhân với một số và cộng. Vì vậy, hai phép đáng thử trước tiên trên các nghiệm cũng là hai phép ấy, cộng hai cặp số với nhau và nhân một cặp số với một số. Thử xem chúng có còn ra nghiệm không.
 
-Để cộng được hai nghiệm, ta coi mỗi cặp số \((x,y)\) là vector \(\overrightarrow{OM}\) đi từ gốc \(O\) tới điểm \(M(x,y)\). Hai điểm thì không cộng được với nhau, còn hai vector thì cộng được và nhân được với một số, theo đúng cách các em đã học ở THPT, tức là làm trên từng tọa độ. Từ đây vector được ký hiệu bằng chữ cái thường có mũi tên bên trên, như \(\vec{u}\), \(\vec{v}\).
+Để cộng được hai nghiệm, ta coi mỗi cặp số \((x,y)\) là vector \(\overrightarrow{OM}\) đi từ gốc \(O\) tới điểm \(M(x,y)\). Hai điểm thì không cộng được với nhau, còn hai vector thì cộng được và nhân được với một số, theo đúng cách các em đã học ở THPT, tức là làm trên từng tọa độ.
+
+\emph{Ký hiệu. Trong bài, vector được viết bằng chữ cái thường có mũi tên bên trên, như \(\vec{u}\), \(\vec{v}\).}
 
 Thử cộng hai nghiệm đầu.
 $$ (0,2)+(3,0)=(3,2),\qquad L(3,2)=2\cdot3+3\cdot2=12. $$
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/tong-hai-nghiem.svg}}
 
-\(12\neq6\), nên tổng hai nghiệm không còn là nghiệm. Nhưng \(12\) đúng bằng \(6+6\), tức giá trị của \(L\) tại nghiệm thứ nhất cộng với giá trị tại nghiệm thứ hai. Cộng hai đầu vào thì \(L\) cũng cộng hai đầu ra.
+\(12\neq6\), nên \((3,2)\) không phải nghiệm. Vậy \(12\) ở đâu ra? Nó chính là \(6+6\), tức là
+$$ L(3,2)=L(0,2)+L(3,0). $$
+Cộng hai cặp số rồi mới tính \(L\), hay tính \(L\) cho từng cặp rồi cộng hai kết quả, đều ra cùng một số.
 
-Hàm tỉ lệ thuận học ở lớp 7 cũng như vậy. Lấy \(f(x)=3x\). Ta có \(f(2)=6\) và \(f(5)=15\). Đưa vào tổng \(2+5=7\) thì \(f(7)=21\), đúng bằng \(6+15\). Gấp đôi \(2\) thành \(4\) thì \(f(4)=12\), cũng gấp đôi \(6\). Với \(ax+by\), điều đó luôn đúng, hay chỉ tình cờ đúng với mấy con số vừa chọn?
+Thử thêm phép nhân với một số. Gấp đôi nghiệm \((0,2)\) thành \((0,4)\) thì
+$$ L(0,4)=12=2\cdot L(0,2). $$
+Hai đẳng thức \(L(3,2)=L(0,2)+L(3,0)\) và \(L(0,4)=2L(0,2)\) có đúng với mọi cặp số và mọi \(a,b\) không, hay chỉ tình cờ đúng với mấy con số vừa chọn? Nếu chúng luôn đúng, ta sẽ biết trước \(L\) cho ra số nào khi cộng hai nghiệm hay nhân một nghiệm với một số, mà không cần thử từng trường hợp.
 
 \subsubsection{Hai tính chất của \(L\)}
 
@@ -120,25 +126,43 @@ Theo tính chất cộng,
 $$ L(\vec{u}+\vec{v})=L(\vec{u})+L(\vec{v})=2c. $$
 Muốn \(\vec{u}+\vec{v}\) vẫn là nghiệm của chính \(L(x,y)=c\), ta cần \(2c=c\), nên
 $$ c=0. $$
-Với \(2x+3y=6\) thì \(c=6\neq0\), nên tổng hai nghiệm không thể là nghiệm, đúng như \(L(3,2)=12\) vừa thấy.
-
-Khi \(c=0\), chẳng hạn \(2x+3y=0\), thì ngược lại. Nếu \(L(\vec{u})=0\) và \(L(\vec{v})=0\), thì với mọi số \(\alpha,\beta\),
+Khi \(c=0\), nếu \(L(\vec{u})=0\) và \(L(\vec{v})=0\), thì với mọi số \(\alpha,\beta\),
 $$ L(\alpha\vec{u}+\beta\vec{v})=\alpha L(\vec{u})+\beta L(\vec{v})=0. $$
 Mọi tổ hợp \(\alpha\vec{u}+\beta\vec{v}\) của hai nghiệm vẫn là nghiệm. Đây là nguyên lý chồng chất (\emph{superposition}). Trên hình, \(2x+3y=0\) là đường thẳng qua gốc tọa độ. Cộng hai vector nằm trên nó, hay kéo một vector dài gấp ba, ta vẫn ở trên đường thẳng ấy.
 
 \blogfig{\includegraphics{/images/he-phuong-trinh-ma-tran/thuan-nhat-qua-goc.svg}}
-
-Giờ có thể giải thích phương trình tham số ở đầu mục. Vector chỉ phương \(\vec{a}=(3,-2)\) thỏa \(2\cdot3+3\cdot(-2)=0\), tức \(L(\vec{a})=0\). Nó là một nghiệm của \(2x+3y=0\), không phải của \(2x+3y=6\). Lấy \(\vec{p}=(0,2)\), một nghiệm của \(2x+3y=6\). Theo hai tính chất của \(L\),
-$$ L(\vec{p}+t\vec{a})=L(\vec{p})+tL(\vec{a})=6+0=6, $$
-nên \(\vec{p}+t\vec{a}\) luôn là nghiệm. Ngược lại, nếu \(\vec{w}\) là một nghiệm bất kỳ thì
-$$ L(\vec{w}-\vec{p})=L(\vec{w})-L(\vec{p})=6-6=0, $$
-nên \(\vec{w}-\vec{p}\) nằm trên đường thẳng \(2x+3y=0\), tức là một bội \(t\vec{a}\) của \(\vec{a}\). Vậy mọi nghiệm của \(2x+3y=6\) đều bằng một nghiệm cố định cộng với một nghiệm của phương trình có vế phải bằng \(0\). Cộng hai nghiệm của \(2x+3y=6\) với nhau thì hỏng, nhưng cộng một nghiệm của nó với một nghiệm của \(2x+3y=0\) thì luôn được.
 
 Phương trình có vế phải khác \(0\) không có tính chất này. Vì vậy, ở mục Định nghĩa, trường hợp vế phải bằng \(0\) sẽ có tên riêng.
 
 \begin{quote}
 \textbf{Ghi chú lịch sử.} Tính chất ``cộng hai nghiệm vẫn ra nghiệm'' được chú ý từ vật lý trước. Giữa thế kỷ 18, nhiều nhà toán học tranh cãi xem một sợi dây đàn rung như thế nào. Năm 1753, Daniel Bernoulli cho rằng mọi chuyển động của dây đều là tổng của những dao động hình sin đơn giản, mỗi dao động với một biên độ thích hợp. Lập luận ấy đứng được vì phương trình của dây rung cũng có vế phải bằng \(0\), giống \(L=0\) ở trên. Mỗi dao động đơn giản là một nghiệm, và tổng các nghiệm vẫn là nghiệm. Tranh luận quanh ý tưởng của Bernoulli kéo dài hàng chục năm, và câu hỏi nó để lại về sau dẫn tới chuỗi Fourier.
 \end{quote}
+
+\subsubsection{Từ hai nghiệm ra mọi nghiệm}
+
+Giờ quay lại câu hỏi ở đầu mục, tạo nghiệm mới từ những nghiệm đã có.
+
+Với \(2x+3y=0\), việc này dễ, vì cộng hai nghiệm hay nhân một nghiệm với một số vẫn ra nghiệm. Với \(2x+3y=6\) thì hỏng, và thủ phạm là số \(6\) ở vế phải. Mỗi nghiệm mang theo một số \(6\), cộng hai nghiệm thì thành \(12\). Vậy thử đưa bài toán về trường hợp đã làm được, tức là khử số \(6\) đi để quay về vế phải bằng \(0\).
+
+Cộng hai nghiệm thì hai số \(6\) dồn lại thành \(12\). Trừ thì hai số \(6\) triệt tiêu nhau. Lấy hai nghiệm đã đoán được \(\vec{p}=(0,2)\) và \(\vec{q}=(3,0)\), rồi đặt
+$$ \vec{a}=\vec{q}-\vec{p}=(3,-2). $$
+Theo hai tính chất của \(L\),
+$$ L(\vec{a})=L(\vec{q})-L(\vec{p})=6-6=0, $$
+nên \(\vec{a}\) là một nghiệm của \(2x+3y=0\). Hiệu hai nghiệm của phương trình vế phải bằng \(6\) là nghiệm của phương trình vế phải bằng \(0\).
+
+Đi theo chiều ngược lại cũng được. Cộng vào \(\vec{p}\) một nghiệm của \(2x+3y=0\) thì vế trái chỉ được cộng thêm \(0\), nên vẫn bằng \(6\). Nghiệm của \(2x+3y=0\) thì lấy bao nhiêu cũng được, vì mọi bội \(t\vec{a}\) đều là nghiệm. Với mọi số \(t\),
+$$ L(\vec{p}+t\vec{a})=L(\vec{p})+tL(\vec{a})=6+0=6, $$
+nên \(\vec{p}+t\vec{a}=(3t,\;2-2t)\) luôn là nghiệm của \(2x+3y=6\).
+
+Ngược lại, lấy một nghiệm \(\vec{w}\) bất kỳ của \(2x+3y=6\). Cần chứng tỏ \(\vec{w}\) cũng có dạng \(\vec{p}+t\vec{a}\). Xét hiệu \(\vec{w}-\vec{p}\). Theo hai tính chất của \(L\),
+$$ L(\vec{w}-\vec{p})=L(\vec{w})-L(\vec{p})=6-6=0. $$
+Gọi tọa độ của hiệu này là \((m,n)\). Đẳng thức trên nói rằng
+$$ 2m+3n=0,\qquad\text{tức}\qquad n=-\frac{2}{3}m. $$
+Thay vào tọa độ của hiệu,
+$$ \vec{w}-\vec{p}=\left(m,\;-\frac{2}{3}m\right)=\frac{m}{3}\,(3,-2)=\frac{m}{3}\,\vec{a}. $$
+Đặt \(t=\frac{m}{3}\), ta được \(\vec{w}=\vec{p}+t\vec{a}\). Vậy mọi nghiệm đều có dạng này. Từ hai nghiệm đoán được lúc đầu, ta viết ra được mọi nghiệm.
+$$ (x,y)=(3t,\;2-2t),\qquad t\in\mathbb{R}. $$
+Ai đã học phương trình tham số của đường thẳng sẽ nhận ra đây chính là nó, với \(\vec{a}\) là vector chỉ phương. Ở đây, vector chỉ phương hiện ra từ hiệu của hai nghiệm, không cần biết trước.
 
 \subsubsection{Nhiều ẩn hơn}
 

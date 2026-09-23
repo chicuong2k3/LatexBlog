@@ -7,7 +7,7 @@ public sealed record PostMeta(
     string? Tldr = null);
 
 /// <summary>
-/// Bài viết = file (.tex) + bài trên Supabase.
+/// Bài viết = file (.tex hoặc .md) + bài trên Supabase.
 /// Không cache: mọi lượt đọc đều đi thẳng tới disk / Supabase.
 /// </summary>
 public sealed class PostStore

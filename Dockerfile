@@ -1,5 +1,5 @@
 # Build stage: needs the .NET SDK plus python3 + pandoc, because the csproj
-# regenerates wwwroot/generated/ from posts/*.tex before compiling.
+# regenerates wwwroot/generated/ from posts/*.{tex,md} before compiling.
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 RUN apt-get update \
     && apt-get install -y --no-install-recommends python3 python-is-python3 pandoc \

@@ -284,6 +284,8 @@ body::after {
 .lb-prose th { background: var(--surface-2); color: var(--ink); font-weight: 600; }
 .lb-prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.2em 0; }
 .lb-prose img { max-width: 100%; border-radius: 8px; }
+.lb-prose figure { margin: 0 0 1.2em; text-align: center; }
+.lb-prose figcaption { font-size: .9em; opacity: .75; margin-top: .4em; }
 .lb-prose code {
   font-family: "Space Grotesk", ui-monospace, monospace; font-size: .9em;
   background: color-mix(in srgb, var(--neon) 10%, transparent); color: var(--ink); padding: .12em .4em; border-radius: 4px;

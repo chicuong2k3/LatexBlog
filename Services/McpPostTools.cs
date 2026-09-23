@@ -34,20 +34,20 @@ public sealed class McpPostTools
         return req;
     }
 
-    [McpServerTool(Name = "list_posts"), Description("Liệt kê tất cả bài viết của blog (cả bài .tex build sẵn và bài DB) kèm metadata.")]
+    [McpServerTool(Name = "list_posts"), Description("Liệt kê tất cả bài viết của blog (cả bài .tex/.md build sẵn và bài DB) kèm metadata.")]
     public string ListPosts() =>
         JsonSerializer.Serialize(
             _store.All.Select(p => new { p.Slug, p.Title, p.Date, p.Tags, p.Summary, HasTldr = !string.IsNullOrEmpty(p.Tldr), Editable = _store.IsDbPost(p.Slug) }),
             new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
 
-    [McpServerTool(Name = "read_post"), Description("Đọc nội dung markdown của một bài DB theo slug. Bài .tex build sẵn không sửa từ xa được.")]
+    [McpServerTool(Name = "read_post"), Description("Đọc nội dung markdown của một bài DB theo slug. Bài build sẵn (.tex/.md) không sửa từ xa được qua MCP.")]
     public string ReadPost([Description("slug bài viết")] string slug)
     {
         var body = _store.GetDbBody(slug);
         if (body is not null) return body;
         return _store.GetMeta(slug) is null
             ? $"ERROR: không có bài '{slug}'."
-            : $"ERROR: '{slug}' là bài .tex build sẵn trong repo — chỉ đọc/sửa qua git, không qua MCP.";
+            : $"ERROR: '{slug}' là bài build sẵn trong repo — chỉ đọc/sửa qua git, không qua MCP.";
     }
 
     [McpServerTool(Name = "write_post"), Description(

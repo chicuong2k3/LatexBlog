@@ -33,6 +33,59 @@ def hi():
 \\end{verbatim}
 """
 
+SAMPLE_MD = """---
+title: "Bài viết Markdown"
+date: 2026-09-23
+tags: [meta, markdown]
+summary: "Bài mẫu minh hoạ pipeline .md."
+slug: markdown-post
+---
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+Inline math $E = mc^2$ và \\( \\sqrt{x} \\).
+
+$$
+\\begin{cases}
+x + y = 3 \\\\
+2x - y = 0
+\\end{cases}
+$$
+
+```python
+def hi():
+    return 1
+```
+
+> Blockquote.
+
+- Item 1
+- Item 2
+  1. Nested
+
+| A | B |
+|---|---|
+| 1 | 2 |
+
+Footnote.[^1]
+
+[^1]: Nội dung footnote.
+"""
+
+SAMPLE_MD_DEFAULT_SLUG = """---
+title: "Bài slug mặc định"
+date: 2026-09-20
+tags: [meta]
+summary: "Không có slug."
+---
+
+# Nội dung
+"""
+
 pandoc = os.environ.get("PANDOC") or shutil.which("pandoc")
 if not pandoc:
     for _cand in Path("tools/pandoc").rglob("pandoc.exe" if os.name == "nt" else "pandoc"):
@@ -66,6 +119,29 @@ class ParseFrontmatterTest(unittest.TestCase):
     def test_key_lowercased(self):
         meta, _ = parse_frontmatter("%---\n% Title: \"X\"\n%---\nbody\n")
         self.assertEqual(meta["title"], "X")
+
+    def test_parses_yaml_frontmatter(self):
+        meta, body = parse_frontmatter(SAMPLE_MD)
+        self.assertEqual(meta["title"], "Bài viết Markdown")
+        self.assertEqual(meta["date"], "2026-09-23")
+        self.assertEqual(meta["tags"], ["meta", "markdown"])
+        self.assertEqual(meta["summary"], "Bài mẫu minh hoạ pipeline .md.")
+        self.assertEqual(meta["slug"], "markdown-post")
+        self.assertNotIn("---", body.splitlines()[0])
+
+    def test_yaml_body_has_frontmatter_stripped(self):
+        _, body = parse_frontmatter(SAMPLE_MD)
+        self.assertTrue(body.startswith("# Heading 1"))
+        self.assertNotIn("title:", body)
+        self.assertIn("$E = mc^2$", body)
+
+    def test_tex_regex_does_not_match_yaml_md(self):
+        meta, body = parse_frontmatter(SAMPLE_MD)
+        self.assertNotIn("%---", body)
+
+    def test_yaml_regex_does_not_match_tex(self):
+        meta, _ = parse_frontmatter(SAMPLE_TEX)
+        self.assertEqual(meta["title"], "Bài viết A")
 
 
 class SlugifyTitleTest(unittest.TestCase):
@@ -164,6 +240,53 @@ class BuildAllTest(unittest.TestCase):
         self.assertGreater(len(css), 100)
         self.assertIn("color", css)
         self.assertNotIn("<style>", css)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_builds_md_post(self):
+        self._write_post("markdown-post.md", SAMPLE_MD)
+        items = build_all(self.posts, self.out, self.index, pandoc)
+        self.assertEqual([i["slug"] for i in items], ["markdown-post"])
+        html = (self.out / "markdown-post.html").read_text(encoding="utf-8")
+        self.assertIn('<h1 id="heading-1"', html)
+        self.assertIn('<h2 id="heading-2"', html)
+        self.assertIn('<h3 id="heading-3"', html)
+        self.assertIn('class="math display"', html)
+        self.assertIn('class="math inline"', html)
+        self.assertIn("<pre", html)
+        self.assertIn("sourceCode python", html)
+        self.assertIn("<blockquote>", html)
+        self.assertIn("<table>", html)
+        self.assertIn('id="footnotes"', html)
+        self.assertNotIn("title:", html)
+        self.assertNotIn("---", html.splitlines()[0])
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_md_default_slug_from_stem(self):
+        self._write_post("bai-slug-mac-dinh.md", SAMPLE_MD_DEFAULT_SLUG)
+        items = build_all(self.posts, self.out, self.index, pandoc)
+        self.assertEqual([i["slug"] for i in items], ["bai-slug-mac-dinh"])
+        self.assertTrue((self.out / "bai-slug-mac-dinh.html").exists())
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_mixed_tex_and_md_build_together(self):
+        self._write_post("a.tex", SAMPLE_TEX)
+        self._write_post("markdown-post.md", SAMPLE_MD)
+        items = build_all(self.posts, self.out, self.index, pandoc)
+        slugs = {i["slug"] for i in items}
+        self.assertEqual(slugs, {"a", "markdown-post"})
+        self.assertTrue((self.out / "a.html").exists())
+        self.assertTrue((self.out / "markdown-post.html").exists())
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_cross_extension_slug_collision_raises(self):
+        self._write_post("same.tex", SAMPLE_TEX)
+        self._write_post(
+            "same.md",
+            SAMPLE_MD.replace('slug: markdown-post', 'slug: same'),
+        )
+        with self.assertRaises(ValueError) as ctx:
+            build_all(self.posts, self.out, self.index, pandoc)
+        self.assertIn("slug collision", str(ctx.exception))
 
 
 if __name__ == "__main__":

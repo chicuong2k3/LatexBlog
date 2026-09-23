@@ -21,9 +21,9 @@ mạch từ đầu tới cuối.
 
 ## Positioning
 
-Toán học là công dân hạng nhất: nguồn bài là `.tex`, Pandoc chuyển thành
-HTML, KaTeX render công thức phía client. Một blog mà công thức toán đẹp và
-nhất quán là lý do tồn tại — không phải tính năng phụ.
+Toán học là công dân hạng nhất: nguồn bài là `.tex` hoặc `.md`, Pandoc
+chuyển thành HTML, KaTeX render công thức phía client. Một blog mà công
+thức toán đẹp và nhất quán là lý do tồn tại — không phải tính năng phụ.
 
 ## Operating Context
 
@@ -33,7 +33,7 @@ và thẻ.
 
 ## Capabilities and Constraints
 
-- Nguồn bài là `posts/*.tex` (frontmatter + Pandoc) → `wwwroot/generated/`.
+- Nguồn bài là `posts/*.{tex,md}` (frontmatter + Pandoc) → `wwwroot/generated/`.
 - Kiến trúc: .NET 10 Blazor Web App (Static SSR), htmx (load-more, search,
   tag filter) + Unpoly.Blazor.Shadcn, JS thuần qua `up.compiler` (TOC
   scrollspy, menu, copy-code). Chỉ có giao diện sáng.
@@ -51,9 +51,9 @@ và thẻ.
 
 ## Evidence on Hand
 
-- Bốn bài viết thật (`posts/*.tex`): "Chào mừng đến với LatexBlog",
-  "Ma trận và phép biến đổi tuyến tính", "Python cơ bản cho người mới",
-  "Đạo hàm và ý nghĩa hình học" — kèm date, tags, summary thật.
+- Bài viết thật trong `posts/` (`.tex` hoặc `.md`): "Chào mừng đến với
+  LatexBlog", "Ma trận và phép biến đổi tuyến tính", "Python cơ bản cho
+  người mới", "Đạo hàm và ý nghĩa hình học" — kèm date, tags, summary thật.
 
 ## Product Principles
 

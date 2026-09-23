@@ -1,9 +1,9 @@
 # LatexBlog
 
-Personal blog: posts written as LaTeX (`.tex`), rendered to static HTML at
-build time with Pandoc, served by a .NET 10 Blazor Web App in **Static SSR**
-mode. Interactivity via htmx (1.9.12 CDN) partials and Alpine.js. Styling via
-DAUB CSS.
+Personal blog: posts written as LaTeX (`.tex`) or Markdown (`.md`), rendered
+to static HTML at build time with Pandoc, served by a .NET 10 Blazor Web App
+in **Static SSR** mode. Interactivity via htmx (1.9.12 CDN) partials and
+Alpine.js. Styling via DAUB CSS.
 
 ## Stack
 
@@ -38,7 +38,11 @@ dotnet run        # serve at http://localhost:5080 (port 5000 is taken on this m
 
 ## Authoring a post
 
-Create `posts/my-slug.tex` with frontmatter in a `%---` comment block:
+Two formats are supported in `posts/`: `.tex` (LaTeX) and `.md` (Markdown).
+
+### LaTeX (`posts/my-slug.tex`)
+
+Frontmatter in a `%---` comment block:
 
 ```latex
 %---
@@ -51,15 +55,32 @@ Create `posts/my-slug.tex` with frontmatter in a `%---` comment block:
 ...LaTeX...
 ```
 
+### Markdown (`posts/my-slug.md`)
+
+Frontmatter as a standard YAML `---` block:
+
+```markdown
+---
+title: "Tiêu đề bài viết"
+date: 2026-08-17
+tags: [toan, markdown]
+summary: "Một câu tóm tắt."
+---
+
+# Mở đầu
+
+Nội dung Markdown. Math: $E = mc^2$ hoặc \( \sqrt{x} \).
+```
+
 Required: `title`, `date` (YYYY-MM-DD), `tags` (non-empty list), `summary`.
 Optional: `slug` (defaults to the filename). Build fails fast with a clear
 message on malformed frontmatter, missing fields, invalid dates, empty tags,
-or slug collisions.
+or slug collisions (including cross-extension: `foo.tex` vs `foo.md`).
 
 ## Layout
 
 ```
-posts/*.tex                  source of truth
+posts/*.{tex,md}              source of truth (LaTeX or Markdown)
 tools/build_posts.py         frontmatter parse + pandoc + index.json (stdlib)
 tools/test_build_posts.py    Python unit tests (python tools\test_build_posts.py)
 wwwroot/generated/           build output (git-ignored; deterministic)

@@ -1,6 +1,6 @@
 # LatexBlog — Project Rules
 
-## Vietnamese prose rewriting (`posts/*.tex`) — MANDATORY
+## Vietnamese prose rewriting (`posts/*.{tex,md}`) — MANDATORY
 
 When writing, editing, reviewing, or refactoring the Vietnamese blog posts, rewrite the
 sentences so they read **naturally and fluently — the way a real person would actually
@@ -34,7 +34,7 @@ MUST:
   they just make it. State what the reader has just understood and move on
   (e.g. `Nhận ra được điểm chung này, coi như các em đã bước sang đại số tuyến tính`).
 - Writing skills (MANDATORY): ALWAYS run `no-ai-slop` (detect, then edit) and `stop-slop`
-  (quick checks + 5-dimension scoring, revise if below 35/50) on every `posts/*.tex` draft
+  (quick checks + 5-dimension scoring, revise if below 35/50) on every `posts/*.{tex,md}` draft
   before delivering. Repo conventions in this file override skill defaults on conflict:
   `---` is normal Vietnamese punctuation (not an em-dash crutch); bilingual glosses and
   quoted historical notes are content, never clutter.

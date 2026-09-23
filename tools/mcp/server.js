@@ -28,7 +28,9 @@ function run(cmd, args, opts = {}) {
 }
 
 function frontmatter(text) {
-  const m = text.match(/^%\s*---\s*\n([\s\S]*?)^%\s*---\s*$/m);
+  // LaTeX: %--- comment block. Markdown: standard YAML ---...--- block.
+  let m = text.match(/^%\s*---\s*\n([\s\S]*?)^%\s*---\s*$/m);
+  if (!m) m = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n/);
   const meta = {};
   if (m) for (const line of m[1].split("\n")) {
     const mm = line.trim().replace(/^%\s*/, "").match(/^([a-z]+):\s*(.+)$/);
@@ -42,18 +44,21 @@ const text = (s) => ({ content: [{ type: "text", text: s }] });
 function buildServer() {
   const server = new McpServer({ name: "latexblog", version: "1.1.0" });
 
-  server.tool("list_posts", "Liệt kê tất cả bài viết (.tex) của blog kèm frontmatter.", {}, async () => {
-    const items = fs.readdirSync(POSTS).filter((f) => f.endsWith(".tex")).map((f) => {
+  server.tool("list_posts", "Liệt kê tất cả bài viết (.tex/.md) của blog kèm frontmatter.", {}, async () => {
+    const items = fs.readdirSync(POSTS).filter((f) => f.endsWith(".tex") || f.endsWith(".md")).map((f) => {
       const meta = frontmatter(fs.readFileSync(path.join(POSTS, f), "utf8"));
-      return { file: f, slug: f.replace(/\.tex$/, ""), title: meta.title, date: meta.date, tags: meta.tags, hasTldr: !!meta.tldr };
+      const slug = f.replace(/\.(tex|md)$/, "");
+      return { file: f, slug, title: meta.title, date: meta.date, tags: meta.tags, hasTldr: !!meta.tldr };
     });
     return text(JSON.stringify(items, null, 2));
   });
 
-  server.tool("read_post", "Đọc nguồn LaTeX của một bài viết theo slug (tên file không có .tex).",
+  server.tool("read_post", "Đọc nguồn bài viết (.tex hoặc .md) theo slug (tên file không có đuôi).",
     { slug: z.string().regex(/^[a-z0-9-]+$/) }, async ({ slug }) => {
-      const p = path.join(POSTS, slug + ".tex");
-      if (!fs.existsSync(p)) return text("ERROR: không có bài " + slug);
+      const pt = path.join(POSTS, slug + ".tex");
+      const pm = path.join(POSTS, slug + ".md");
+      const p = fs.existsSync(pt) ? pt : fs.existsSync(pm) ? pm : null;
+      if (!p) return text("ERROR: không có bài " + slug);
       return text(fs.readFileSync(p, "utf8"));
     });
 

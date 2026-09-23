@@ -1,30 +1,45 @@
 #!/usr/bin/env python3
-"""Build blog posts from LaTeX sources (stdlib only).
+"""Build blog posts from LaTeX or Markdown sources (stdlib only).
 
 Part 1: frontmatter parsing, slugification, validation.
 Part 2 (Task 5): pandoc rendering + index.json.
+
+Supports two authoring formats in posts/:
+- *.tex  → Pandoc LaTeX reader, frontmatter in %--- comment block.
+- *.md   → Pandoc Markdown reader, frontmatter as standard YAML ---...--- block.
 """
 import re
 import unicodedata
 from datetime import date
 from pathlib import Path
 
+# LaTeX frontmatter: %--- comment block (existing format).
 FRONTMATTER_RE = re.compile(
     r"^%\s*---\s*\n(?P<body>(?:^%.*$\n?)*?)^%\s*---\s*$",
     re.MULTILINE,
+)
+
+# Markdown frontmatter: standard YAML ---...--- block at the very start.
+YAML_FRONTMATTER_RE = re.compile(
+    r"\A---\s*\n(?P<body>.*?)\n---\s*\n",
+    re.DOTALL,
 )
 
 REQUIRED_FIELDS = ("title", "date", "tags", "summary")
 
 
 def parse_frontmatter(text):
-    """Extract YAML-ish frontmatter from a %--- comment block.
+    """Extract YAML-ish frontmatter.
 
-    Returns (meta: dict, body: str). Meta keys are lowercased.
+    Tries the LaTeX %--- comment block first, then the standard YAML
+    ---...--- block (used by .md posts). Returns (meta: dict, body: str).
+    Meta keys are lowercased.
     Supports: title: "string", date: YYYY-MM-DD, tags: [a, b],
     summary: "string", slug: "string".
     """
     m = FRONTMATTER_RE.match(text)
+    if not m:
+        m = YAML_FRONTMATTER_RE.match(text)
     if not m:
         return {}, text.strip()
     meta = {}
@@ -111,30 +126,43 @@ BLOGFIG_RE = re.compile(
 )
 
 
-def render_pandoc(pandoc, tex_path, out_html):
-    """Convert one .tex to an HTML fragment with KaTeX + pygments spans.
+def _pandoc_reader(source_name):
+    """Pick Pandoc --from reader based on file extension."""
+    if source_name.endswith(".md"):
+        # markdown: default extensions + explicit \( \) and \[ \] math.
+        return "markdown+tex_math_single_backslash+tex_math_double_backslash"
+    return "latex"
 
-    ``\\blogfig{\\includegraphics{...}}`` marks blog-only illustrations:
-    direct pdfLaTeX builds expand \\blogfig to nothing (macro defined empty
-    in the post preamble), while this build unwraps the wrapper so Pandoc
-    turns the \\includegraphics into a real <img> for the web.
+
+def render_pandoc(pandoc, source_name, body_text, out_html):
+    """Convert one post body (.tex or .md) to an HTML fragment.
+
+    ``source_name`` picks the Pandoc reader (``*.tex`` → latex, ``*.md``
+    → markdown). ``body_text`` is the post with frontmatter already
+    stripped by ``parse_frontmatter``.
+
+    For LaTeX sources, ``\\blogfig{\\includegraphics{...}}`` marks
+    blog-only illustrations: direct pdfLaTeX builds expand \\blogfig to
+    nothing (macro defined empty in the post preamble), while this build
+    unwraps the wrapper so Pandoc turns the \\includegraphics into a
+    real <img> for the web.
     """
     cmd = [
         pandoc,
-        "--from", "latex",
+        "--from", _pandoc_reader(source_name),
         "--to", "html5",
         "--katex",
         "--highlight-style=pygments",
         "--wrap=none",
     ]
-    text = BLOGFIG_RE.sub(r"\1", tex_path.read_text(encoding="utf-8"))
+    text = BLOGFIG_RE.sub(r"\1", body_text)
     proc = subprocess.run(
         cmd, input=text, capture_output=True, text=True,
         encoding="utf-8", errors="replace",
     )
     if proc.returncode != 0:
         raise RuntimeError(
-            f"pandoc failed for {tex_path.name}:\n{proc.stderr[:2000]}"
+            f"pandoc failed for {source_name}:\n{proc.stderr[:2000]}"
         )
     out_html.write_text(proc.stdout, encoding="utf-8")
 
@@ -164,25 +192,26 @@ def write_pygments_css(pandoc, out_css):
 
 
 def build_all(posts_dir, out_dir, index_path, pandoc):
-    """Render all .tex posts; return metadata list sorted by date desc."""
-    posts = sorted(Path(posts_dir).glob("*.tex"))
+    """Render all .tex + .md posts; return metadata list sorted by date desc."""
+    posts_dir = Path(posts_dir)
+    posts = sorted(list(posts_dir.glob("*.tex")) + list(posts_dir.glob("*.md")))
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     index = []
     seen_slugs = {}
-    for tex in posts:
-        text = tex.read_text(encoding="utf-8")
-        meta, _ = parse_frontmatter(text)
-        slug = meta.get("slug", tex.stem)
+    for post in posts:
+        text = post.read_text(encoding="utf-8")
+        meta, body = parse_frontmatter(text)
+        slug = meta.get("slug", post.stem)
         if slug in seen_slugs:
             raise ValueError(
-                f"slug collision: {tex.name} and {seen_slugs[slug]} "
+                f"slug collision: {post.name} and {seen_slugs[slug]} "
                 f"both map to '{slug}'"
             )
-        seen_slugs[slug] = tex.name
-        validate_meta(meta, slug, tex)
+        seen_slugs[slug] = post.name
+        validate_meta(meta, slug, post)
         out_html = out_dir / f"{slug}.html"
-        render_pandoc(pandoc, tex, out_html)
+        render_pandoc(pandoc, post.name, body, out_html)
         index.append({
             "slug": slug,
             "title": meta["title"],
@@ -191,7 +220,7 @@ def build_all(posts_dir, out_dir, index_path, pandoc):
             "summary": meta["summary"],
             "tldr": meta.get("tldr", ""),
         })
-        print(f"  rendered {tex.name} -> {out_html}")
+        print(f"  rendered {post.name} -> {out_html}")
     index.sort(key=lambda p: p["date"], reverse=True)
     index_path = Path(index_path)
     index_path.parent.mkdir(parents=True, exist_ok=True)

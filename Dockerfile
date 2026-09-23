@@ -14,6 +14,7 @@ COPY package.json package-lock.json ./
 RUN npm ci --no-audit --no-fund
 COPY LatexBlog.csproj ./
 COPY external/Unpoly.Blazor/src/Unpoly.Blazor/Unpoly.Blazor.csproj external/Unpoly.Blazor/src/Unpoly.Blazor/
+COPY external/Unpoly.Blazor.Shadcn/src/Unpoly.Blazor.Shadcn/Unpoly.Blazor.Shadcn.csproj external/Unpoly.Blazor.Shadcn/src/Unpoly.Blazor.Shadcn/
 RUN dotnet restore
 COPY . .
 RUN dotnet publish -c Release -o /app --no-restore

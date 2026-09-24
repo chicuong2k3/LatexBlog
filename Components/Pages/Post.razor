@@ -46,18 +46,7 @@ else
 
         @if (Toc.Count > 0)
         {
-            <nav class="lb-toc" aria-label="Mục lục">
-                <strong>Mục lục</strong>
-                <ul>
-                    @foreach (var entry in Toc)
-                    {
-                        <li>
-                            <Button Href="@($"#{entry.Id}")" Variant="link" Size="sm"
-                                    Class="h-auto justify-start whitespace-normal p-0 text-left">@entry.Text</Button>
-                        </li>
-                    }
-                </ul>
-            </nav>
+            <TableOfContents Items="Toc" Class="lb-toc" Title="Mục lục" />
         }
 
         @if (Html is not null)
@@ -106,7 +95,7 @@ else
     private PostMeta? PostMeta;
     private string? Html;
     private string? DbBody;
-    private List<TocEntry> Toc { get; } = new();
+    private List<TableOfContentsEntry> Toc { get; } = new();
 
     private string PostUrl =>
         PostMeta is null || HttpContextAccessor.HttpContext is not { } ctx
@@ -189,7 +178,7 @@ else
             ctx.Response.StatusCode = StatusCodes.Status404NotFound;
     }
 
-    private static IEnumerable<TocEntry> ExtractToc(string html)
+    private static IEnumerable<TableOfContentsEntry> ExtractToc(string html)
     {
         foreach (Match m in HeadingRegex.Matches(html))
         {
@@ -197,9 +186,7 @@ else
             text = System.Net.WebUtility.HtmlDecode(text).Trim();
             if (text.Length == 0)
                 continue;
-            yield return new TocEntry(m.Groups[2].Value, text);
+            yield return new TableOfContentsEntry(m.Groups[2].Value, text, int.Parse(m.Groups[1].Value));
         }
     }
-
-    private sealed record TocEntry(string Id, string Text);
 }

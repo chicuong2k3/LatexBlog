@@ -8,47 +8,39 @@ slug: divide-and-conquer-binary-search
 
 # Chia để trị
 
-Cùng là thu nhỏ một bài toán có $n$ phần tử, nhưng bớt từng phần tử và bỏ một nửa ở mỗi bước là hai chuyện khác nhau. Nếu bài toán lớn chưa giải được ngay, ta thử giải những bài nhỏ hơn cùng dạng. Thu nhỏ mỗi lần bao nhiêu mới thực sự giúp ta bớt việc? Bớt từng phần tử thì vẫn phải đi qua khoảng $n$ bài toán, chẳng khác mấy làm tuần tự.
+Cùng là thu nhỏ một bài toán có $n$ phần tử, nhưng bớt từng phần tử và bỏ một nửa ở mỗi bước là hai chuyện khác nhau. Nếu bài toán lớn chưa giải được ngay, ta thử giải những bài nhỏ hơn cùng dạng. Vấn đề là mỗi lần thu nhỏ phải bỏ được bao nhiêu công việc.
 
-Giả sử thay vào đó, mỗi lần ta chỉ cần giải tiếp một bài bằng khoảng một nửa bài trước. Kích thước giảm theo chuỗi
-
-$$
-n,\quad \frac n2,\quad \frac n4,\quad \frac n8,\quad \ldots
-$$
-
-So với việc mỗi lần bớt một phần tử, dãy này ngắn hơn hẳn. Đặt hai cách cạnh nhau, ta đếm được số bước của từng cách.
-
-Trong tiếng Latin, *divide et impera* nghĩa là “chia để trị”. Vốn là một phương châm chính trị, cụm từ này được mượn để gọi cách giải bài toán bằng các bài nhỏ hơn rồi ghép kết quả lại. Bài con phải cùng dạng với bài ban đầu thì mới áp dụng tiếp được cách giải ấy. Đến trường hợp đủ nhỏ để xử lý trực tiếp, ta dừng đệ quy. Trường hợp dừng này gọi là *base case*.
-
-Nhưng chia nhỏ không nhất thiết là chia đôi. Một `fold` cũng xử lý một phần tử rồi làm tiếp với $n-1$ phần tử còn lại. Kích thước khi ấy giảm theo
+Nếu mỗi bước chỉ xử lý một phần tử rồi làm tiếp phần còn lại, kích thước giảm như
 
 $$
-n\to n-1\to n-2\to\cdots\to1.
+n,\quad n-1,\quad n-2,\quad \ldots,\quad 1.
 $$
 
-Đường này dài khoảng $n$ bước, còn nếu liên tục chỉ phải giải một bài bằng nửa bài trước thì đi theo
+Ta vẫn phải đi qua khoảng $n$ bước. Nếu mỗi bước chỉ cần giải tiếp một bài bằng khoảng một nửa bài trước, kích thước giảm theo chuỗi
 
 $$
-n\to n/2\to n/4\to\cdots\to1
+n,\quad \frac n2,\quad \frac n4,\quad \frac n8,\quad \ldots.
 $$
 
-và sau khoảng $\log_2 n$ lần chia đã xuống tới $1$. Đây là số bước **dọc một nhánh**. Nếu mỗi lần tách ra hai bài con rồi giải cả hai, tổng thời gian còn tính cả công việc ở nhánh kia và chi phí ghép kết quả.
+Sau $k$ lần chia, kích thước còn khoảng $n/2^k$. Muốn đi xuống còn một phần tử, ta cần $2^k\ge n$, tức $k\ge\lceil\log_2 n\rceil$. Đây là lý do chia đôi giúp đi nhanh hơn: mỗi bước loại một phần lớn của không gian đang xét.
 
-Không nhất thiết phải chia đôi. Có thuật toán tạo bài con cỡ $n/4$; có thuật toán tạo hai bài con cỡ $n/5$ và $7n/10$. Các bài con đều nhỏ đi theo một tỉ lệ cố định, nên một đường đệ quy không thể kéo dài mãi.
+Trong tiếng Latin, *divide et impera* nghĩa là “chia để trị”. Cụm từ này được mượn để gọi cách giải bài toán bằng các bài nhỏ hơn rồi ghép kết quả lại. Bài con phải cùng dạng với bài ban đầu thì mới áp dụng tiếp được cách giải ấy. Khi bài đủ nhỏ để xử lý trực tiếp, ta dừng đệ quy. Trường hợp dừng này gọi là *base case*.
 
-Hai nhánh có thể gặp cùng một bài con và tính lại nó. Khi đó, memoization hoặc dynamic programming lưu kết quả của lần tính trước. Nếu các bài con độc lập, ta còn có thể chạy song song bằng `Parallel.For` hoặc PLINQ. Nhưng trước khi tính chuyện lưu hay chạy song song, ta vẫn phải đếm số bài con mà thuật toán tạo ra.
+Chia nhỏ không bắt buộc phải chia đôi. Một `fold` có thể xử lý một phần tử rồi làm tiếp với $n-1$ phần tử còn lại; đường đi của nó dài khoảng $n$ bước. Có thuật toán tạo một bài con cỡ $n/4$, cũng có thuật toán tạo hai bài con cỡ $n/5$ và $7n/10$. Các bài con đều nhỏ đi theo một tỉ lệ cố định, nên một đường đệ quy không thể kéo dài mãi.
+
+Các con có thể độc lập, cũng có thể gặp lại cùng một bài con. Khi đó, memoization hoặc dynamic programming lưu kết quả của lần tính trước. Nếu các nhánh độc lập, ta có thể chạy song song bằng `Parallel.For` hoặc PLINQ. Trước khi chọn hai kỹ thuật ấy, cần đếm số bài con mà thuật toán tạo ra: chia nhỏ không tự động làm thuật toán nhanh.
 
 # Binary search
 
 Ta vừa xét trường hợp mỗi lần chia có thể còn nhiều bài con. Tìm một giá trị trong dãy đã sắp xếp thì khác. So với phần tử giữa, nếu nó lớn hơn mục tiêu, ta bỏ nửa bên phải; nếu nó nhỏ hơn, ta bỏ nửa bên trái. Thứ tự của dãy bảo đảm nửa bị bỏ không chứa đáp án. Từ $n$ ứng viên, chỉ còn khoảng $n/2$.
 
-Chỉ một nửa còn cần tìm tiếp. Nếu mỗi phép so sánh tốn thời gian hằng số, thời gian tìm kiếm thỏa hệ thức
+Điểm khác biệt nằm ở chỗ chỉ một nửa còn cần tìm tiếp. Mỗi bước chỉ phát sinh một lời gọi đệ quy và một phép so sánh. Nếu một phép so sánh tốn thời gian hằng số, thời gian tìm kiếm thỏa hệ thức
 
 $$
 T(n)=T(n/2)+O(1)
 $$
 
-thay vì $2T(n/2)+O(1)$.
+chứ không phải $2T(n/2)+O(1)$. Có một bài con cần giải ở mỗi bước, và kích thước của bài đó giảm một nửa.
 
 Dãy đã sắp xếp không nhất thiết phải được lưu sẵn. Nếu muốn biết giá trị ở vị trí $x$, ta có thể tính $f(x)$. Khi nào phép bỏ nửa vẫn đúng?
 
@@ -66,7 +58,7 @@ $$
 f(x)=t.
 $$
 
-Có thể không tồn tại $x$ như vậy, nhưng nếu tồn tại thì nó chỉ có một. Giả sử có hai giá trị $x_1<x_2$ cùng cho kết quả $t$, tính chặt tăng lại buộc $f(x_1)<f(x_2)$, mâu thuẫn với việc cả hai đều bằng $t$.
+Có thể không tồn tại $x$ như vậy, nhưng nếu tồn tại thì nó chỉ có một. Thật vậy, giả sử có hai giá trị $x_1<x_2$ cùng cho kết quả $t$. Tính chặt tăng buộc $f(x_1)<f(x_2)$, trong khi cả hai vế đều bằng $t$. Mâu thuẫn này cho thấy không thể có hai nghiệm khác nhau.
 
 Miền $\mathbb N$ vô hạn. Vậy lấy đâu ra đoạn để tìm? Vì $f(0)\ge 0$ và mỗi lần $x$ tăng $1$ thì $f(x)$ tăng ít nhất $1$, ta có $f(x)\ge x$. Nếu $f(x)=t$, nhất định $x\le t$. Vậy chỉ cần xét
 
@@ -103,6 +95,26 @@ static IEnumerable<int> Seek(Func<int, int> f, int t, int a, int b)
 
 Mỗi lần chỉ giữ nửa đoạn còn có khả năng chứa nghiệm. Đó là **binary search**. Trên $[0,t]$, cần $O(\log(t+1))$ lần gọi $f$ nếu phép tính và so sánh đều có chi phí hằng số.
 
+Cận này tính như sau. Gọi $L=b-a+1$ là độ dài đoạn đang xét; ban đầu $L_0=t+1$. Mỗi lần vào `Seek` với $a\le b$ chỉ gọi $f$ đúng một lần, rồi đệ quy trên $[a,m-1]$ hoặc $[m+1,b]$ với $m=a+\lfloor(b-a)/2\rfloor$. Hai độ dài mới là $\lfloor(b-a)/2\rfloor$ và $\lceil(b-a)/2\rceil$, nên độ dài đoạn kế tiếp $L'$ thỏa
+
+$$
+L'\le\left\lceil\frac{L-1}{2}\right\rceil\le\left\lfloor\frac{L}{2}\right\rfloor.
+$$
+
+Suy ra bằng quy nạp: sau $k$ lần gọi $f$ mà thuật toán còn phải tiếp tục thì
+
+$$
+1\le L_k\le\left\lfloor\frac{t+1}{2^{k}}\right\rfloor\le\frac{t+1}{2^{k}},
+$$
+
+tức $2^{k}\le t+1$, hay $k\le\log_2(t+1)$. Nếu lần gọi thứ $N$ có xảy ra thì $N-1\le\log_2(t+1)$, nên
+
+$$
+N\le\left\lfloor\log_2(t+1)\right\rfloor+1=O(\log(t+1)).
+$$
+
+Ngoài mỗi lời gọi $f$, bước chỉ tốn $O(1)$ phép tính và so sánh, nên tổng thời gian cũng là $O(\log(t+1))$. Chi phí bên trong chính $f$ chưa tính vào đây.
+
 Không tính điểm giữa bằng $(a+b)/2$. Tổng có thể tràn `int` dù hai đầu mút hợp lệ. Ở đây $0\le a\le b\le t$, nên cách tính $a+(b-a)/2$ tránh được lỗi ấy.
 
 Nhưng chương trình C# chưa thực hiện đúng bài toán trên $\mathbb N$. Kiểu `int` không phải số tự nhiên có độ chính xác vô hạn. Với một số hàm, chương trình **trả `[]` dù nghiệm tồn tại**.
@@ -123,9 +135,9 @@ static int F(int n)
 }
 ```
 
-`unchecked` im lặng bọc vòng modulo $2^{32}$, mà $2^{512} \equiv 0 \pmod{2^{32}}$ vì $512 \ge 32$. `F(512)` trả $0$. So sánh $1024 < 0$ sai, $1024 = 0$ sai, đệ quy đi nhầm nửa và không bao giờ gặp $x=10$. (`checked` thì ném exception ngay dòng `result * 2`.)
+`unchecked` im lặng bọc vòng modulo $2^{32}$, mà $2^{512} \equiv 0 \pmod{2^{32}}$ vì $512 \ge 32$. `F(512)` trả $0`. So sánh $1024 < 0$ sai, $1024 = 0$ sai, đệ quy đi nhầm nửa và không bao giờ gặp $x=10$. (`checked` thì ném exception ngay dòng `result * 2`.)
 
-Dùng `BigInteger` tránh tràn số, nhưng lần hỏi $f(512)$ vẫn tốn công trong khi nghiệm là $10$. Với một hàm $f$ đắt hơn phép lũy thừa, khoản này càng lớn.
+Dùng `BigInteger` tránh tràn số, nhưng lần hỏi $f(512)$ vẫn tốn công trong khi nghiệm là $10$. Với một hàm $f$ đắt hơn phép lũy thừa, khoản này càng lớn. Ta cần một cách chọn điểm giữa không phụ thuộc vào việc hỏi một vị trí quá xa.
 
 Nếu viết điều kiện trực tiếp thành $t<f(m)$ rồi $t=f(m)$, ta còn gọi $f$ hai lần khi nhánh đầu sai. Đoạn `Seek` ở trên đã tránh lỗi này bằng biến `fm`.
 
@@ -188,7 +200,9 @@ static int Smallest(int a, int b, Func<int, int> f, int t)
 }
 ```
 
-Vòng `while` giữ nguyên đoạn $(a,b]$ có thể chứa vị trí đầu tiên đạt $t\le f(x)$. Khi $f(m)\ge t$, mọi $x\ge m$ không thể là vị trí đầu tiên nếu còn $m$, nên thay $b$ bằng $m$; khi $f(m)<t$, mọi $x\le m$ đều chưa đạt ngưỡng, nên thay $a$ bằng $m$. Mỗi bước giảm $b-a$, và lúc $b=a+1$ chỉ còn $b$ để trả. Trong lời gọi từ `Bound`, ta biết $f(b)\ge t$, nên đó thật là vị trí đầu tiên. Trong các lời gọi trên một hàng hoặc cột về sau, nếu không ô nào đạt ngưỡng, hàm vẫn trả $b$; vì vậy mã phải hỏi lại $f(b)$ để nhận ra trường hợp ấy. Vòng lặp có thể viết bằng đệ quy; tách `Smallest` ra vì phần tìm kiếm hai chiều sẽ dùng lại.
+Vòng `while` giữ bất biến: trong đoạn $(a,b]$, vị trí đầu tiên đạt $t\le f(x)$, nếu có, vẫn chưa bị loại. Khi $f(m)\ge t$, ô $m$ đã đạt ngưỡng; mọi ô từ $m$ sang phải cũng đạt ngưỡng, nên ô đầu tiên không thể nằm bên phải $m$. Vì thế ta thu hẹp thành $(a,m]$. Khi $f(m)<t$, do $f$ tăng theo $x$, mọi ô từ $a$ đến $m$ đều nhỏ hơn $t$, nên ta thu hẹp thành $(m,b]$. Ở mỗi bước, chiều dài đoạn giảm khoảng một nửa. Khi $b=a+1$, chỉ còn ô $b$, và đây là vị trí đầu tiên đạt ngưỡng nếu bất biến còn hiệu lực.
+
+Trong lời gọi từ `Bound`, ta biết $f(b)\ge t$, nên ô trả về thật sự đạt ngưỡng và là vị trí đầu tiên. Với các lời gọi trên một hàng hoặc cột về sau, có thể không tồn tại ô nào đạt ngưỡng; khi đó hàm trả $b$ như một mốc giả, nên mã phải hỏi lại $f(b)$ để phân biệt trường hợp này với nghiệm thật. Vòng lặp có thể viết bằng đệ quy; tách `Smallest` ra vì phần tìm kiếm hai chiều sẽ dùng lại.
 
 Phiên bản cuối có những điểm sau.
 
@@ -242,7 +256,7 @@ $k=\log_2 n$ nên $T(n)=cn\log_2 n=\Theta(n\log n)$ nếu $c>0$. Bậc này gọ
 
 # Bài toán tìm kiếm hai chiều
 
-Trên dãy một chiều, so một giá trị là biết nên tìm bên trái hay bên phải. Nếu các giá trị nằm trong một lưới, một ô ở giữa còn có thể giúp ta bỏ phần nào? Xét $f$ nhận hai tọa độ và tăng chặt theo từng tọa độ.
+Trên dãy một chiều, so một giá trị là biết nên tìm bên trái hay bên phải. Trên lưới, một phép so sánh ở giữa có thể loại một cả hàng hoặc một cả cột. Xét $f$ nhận hai tọa độ và tăng chặt theo từng tọa độ.
 
 $$
 x < x' \Rightarrow f(x,y) < f(x',y),
@@ -255,6 +269,8 @@ Bài toán là tìm **tất cả** cặp $(x,y)$ có $f(x,y)=t$. Tăng một t�
 Xếp các giá trị $f(x,y)$ thành lưới, cột mang chỉ số $x$ và hàng mang chỉ số $y$. Góc dưới-trái là $(0,0)$; chẳng hạn một ô ở góc trên-phải có tọa độ $(11,13)$. Sang phải hoặc đi lên thì số trong ô tăng. Bài toán là tìm mọi ô chứa $472$.
 
 Vì $f(0,0)\ge0$, đi từ $(0,0)$ đến $(x,y)$ đòi $x$ bước sang phải và $y$ bước lên; mỗi bước làm giá trị tăng ít nhất $1$. Do đó $f(x,y)\ge x+y$. Nếu $f(x,y)=t$ thì $x,y\le t$, nên quét $[0,t]^2$ sẽ không sót nghiệm.
+
+Đây là lý do miền vô hạn của $\mathbb N^2$ không làm bài toán trở nên vô dùng: mọi nghiệm đều nằm trong một hình vuông hữu hạn. Tuy nhiên quét toàn bộ hình vuông vẫn tốn $\Theta(t^2)$ lần hỏi. Ta cần dùng thứ tự tăng của các hàng và các cột để loại nhiều ô cùng lúc.
 
 ```csharp
 static IEnumerable<(int X, int Y)> Search(Func<int, int, int> f, int t)
@@ -302,7 +318,9 @@ static IEnumerable<(int X, int Y)> SearchIn(int x, int y, Func<int, int, int> f,
 }
 ```
 
-Cách đi dọc mép vùng còn lại gọi là **saddleback search**. Trên hình chữ nhật $p\times q$, nếu chưa gặp nghiệm, ta tăng chỉ số cột hoặc giảm chỉ số hàng; khi gặp nghiệm, cả hai cùng đổi. Để ra khỏi hình, cần nhiều nhất $p$ lần tăng cột và $q$ lần giảm hàng. Bước cuối đã ra khỏi hình nên ta hỏi $f$ nhiều nhất $p+q-1$ lần. Nếu lần nào cũng gặp $t$, mỗi bước đi chéo và cần $\min(p,q)$ lần; có đầu vào cho phép dừng sớm hơn cả thế. Trên $[0,t]^2$, đây là cận trên $O(t+1)$, không phải thời gian của mọi lần chạy.
+Cách đi dọc mép vùng còn lại gọi là **saddleback search**. Bất biến của thuật toán là mọi nghiệm còn có thể nằm trong hình chữ nhật có góc trên-trái $(x,y)$ và góc dưới-phải $(t,0)$. Khi $f(x,y)<t$, toàn bộ cột $x$ phía dưới đều nhỏ hơn $t$, nên tăng $x$ làm mất đúng các ô không thể là nghiệm. Khi $f(x,y)>t$, toàn bộ hàng $y$ phía bên phải đều lớn hơn $t$, nên giảm $y$ cũng làm mất đúng các ô không thể là nghiệm. Khi bằng $t$, ô $(x,y)$ được ghi nhận; tính tăng chặt bảo đảm không còn ô nào khác trên cùng hàng hoặc cùng cột có cùng giá trị, nên ta tăng $x$ và giảm $y$ đồng thời. Vì mỗi bước loại một cột hoặc một hàng mà không bỏ nghiệm, thuật toán tìm đủ và không hỏi lại các ô đã loại.
+
+Trên hình chữ nhật $p\times q$, để ra khỏi hình, cần nhiều nhất $p$ lần tăng cột và $q$ lần giảm hàng. Bước cuối đã ra khỏi hình nên ta hỏi $f$ nhiều nhất $p+q-1$ lần. Nếu lần nào cũng gặp $t$, mỗi bước đi chéo và cần $\min(p,q)$ lần; có đầu vào cho phép dừng sớm hơn cả thế. Trên $[0,t]^2$, đây là cận trên $O(t+1)$, không phải thời gian của mọi lần chạy.
 
 Với $f(x,y)=x^2+3^y$ và $t=20259$, phép đếm cho $20402$ lần tính $f$ và đáp án $[(24,9)]$. Muốn chạy ví dụ này đúng như toán học, phải dùng số nguyên đủ lớn, vì `int` tràn khi tính $3^y$ ở nhiều ô trên đường đi.
 
@@ -445,7 +463,7 @@ Khi $z>t$ và $x=x_1$, cả hàng $r$ đều lớn hơn $t$. Hình trên-trái r
 
 Nếu vùng cao hơn rộng, đổi vai trò hàng và cột. Trên cột giữa $c$, `Smallest` tìm hàng thấp nhất $y$ có $f(c,y)\ge t$. Nếu $f(c,y)<t$ thì ngay cả ô cao nhất của cột cũng nhỏ hơn $t$; mọi cột bên trái càng nhỏ hơn, nên chỉ tìm phía phải $c$. Nếu $f(c,y)>t$, các ô ở trên-phải $(c,y)$ quá lớn, còn các ô ở dưới-trái quá nhỏ. Chỉ giữ hình trên-trái $((x_1,y_1),(c{-}1,y))$ và hình dưới-phải $((c{+}1,y{-}1),(x_2,y_2))$. Khi bằng $t$, ghi nhận ô $(c,y)$, bỏ hàng và cột của nó, rồi thay biên dưới của hình trên-trái từ $y$ thành $y+1$. Những giới hạn ấy là các lời gọi trong mã dưới đây.
 
-```csharp
+Các vùng được giữ lại luôn có tính chất này: mọi nghiệm chưa tìm được phải nằm trong chúng. Khi một hình bị loại, lập luận trên chỉ dựa vào hai điều kiện tăng chặt theo tọa độ, nên không loại ô đang bằng $t$. Khi gặp một ô bằng $t$, tính chặt tăng loại phần còn lại của cùng hàng và cùng cột. Quy nạp theo số vùng còn lại chứng minh các lời gọi đệ quy tìm đủ mọi nghiệm và không hỏi một ô nằm trong hai vùng.
 static IEnumerable<(int X, int Y)> Search(Func<int, int, int> f, int t)
 {
     int p = Smallest(-1, t, y => f(0, y), t);
@@ -569,7 +587,7 @@ Mỗi lần hỏi phân cây quyết định thành nhiều nhất ba nhánh, n�
 
 # Binary search trees
 
-Các cách tìm trên lưới vừa rồi tính $f$ tại những ô cần hỏi. Với một tập giá trị phải tìm đi tìm lại, ta có thể lưu sẵn các giá trị. Dãy đã sắp xếp cho phép tìm nhanh, nhưng chèn hoặc xóa một giá trị thì phải dời các phần tử. Cây tìm kiếm cho một cách lưu khác. Mỗi nút giữ một giá trị; giá trị nhỏ hơn nằm bên trái, lớn hơn nằm bên phải. Mỗi phép so sánh đưa ta xuống một nhánh. Tuy vậy, nếu cây bị lệch, nhánh ấy có thể chứa gần hết số nút.
+Các cách tìm trên lưới vừa rồi tính $f$ tại những ô cần hỏi. Với một tập giá trị phải tìm đi tìm lại, ta có thể lưu sẵn các giá trị và tổ chức chúng thành cây tìm kiếm nhị phân (*binary search tree*). Mỗi nút giữ một giá trị; giá trị nhỏ hơn nằm bên trái, giá trị lớn hơn nằm bên phải. Mỗi phép so sánh chỉ đưa ta xuống một nhánh, nên số phép so sánh phụ thuộc vào chiều cao cây, không phụ thuộc vào số nút nếu cây được cân. Nếu cây bị lệch, một nhánh có thể chứa gần hết số nút và phép tìm sẽ mất $\Theta(n)$ bước.
 
 ## Cây
 
@@ -606,6 +624,8 @@ Biểu thức C# `[.. Flatten(l), x, .. Flatten(r)]` chép kết quả của hai
 ## Điều kiện tìm kiếm trong cây
 
 `Flatten` đi qua cây theo thứ tự trái, gốc, phải, nhưng thứ tự ấy chỉ cho danh sách tăng nếu các nhãn được đặt đúng chỗ. Muốn đi trái khi khóa cần tìm nhỏ hơn nhãn gốc, mọi nhãn ở nhánh trái phải nhỏ hơn nhãn gốc; nhánh phải thì ngược lại. Giữ điều kiện ấy tại từng nút, `Flatten` sẽ trả danh sách chặt tăng. Ta gọi đó là **cây tìm kiếm nhị phân** (*binary search tree*).
+
+Lý do có thể chứng minh bằng quy nạp như sau: với một cây rỗng, danh sách inorder rỗng nên đã tăng. Với một nút có nhánh trái $L$, nhãn $x$ và nhánh phải $R$, quy nạp cho ta $\operatorname{keys}(L)<x<\operatorname{keys}(R)$. Vì vậy ghép ba phần $\operatorname{keys}(L),x,\operatorname{keys}(R)$ vẫn tăng.
 
 Nếu cho phép các khóa trùng nhau, danh sách inorder chỉ cần không giảm; khi ấy phải quy định rõ cách xử lý khóa bằng nhau. Còn với một từ điển, mỗi nhãn có thể là một record gồm khóa duy nhất và thông tin gắn với khóa. Chẳng hạn khóa là từ, phần còn lại là nghĩa. Cây sắp theo khóa, nên inorder trả record theo thứ tự từ.
 

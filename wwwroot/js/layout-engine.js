@@ -115,84 +115,12 @@ function fontsReady(specs) {
 function layoutMasonry(listEl) {
   const cards = [...listEl.querySelectorAll(':scope > .lb-post')];
   if (!cards.length) return false;
-
-  const wrap = listEl.closest('.lb-wrap') ?? listEl.parentElement;
-  const wrapCs = getComputedStyle(wrap);
-  const containerWidth = wrap.clientWidth - parseFloat(wrapCs.paddingLeft) - parseFloat(wrapCs.paddingRight);
-
-  const cols = columnCountFor(window.innerWidth);
-  const colW = (containerWidth - CARD_GAP * (cols - 1)) / cols;
-  if (colW < 220) return false; // card too narrow -> keep CSS flow layout
-
-  const colH = new Array(cols).fill(0);
-  for (const card of cards) {
-    const num = card.querySelector('.lb-post-num');
-    const title = card.querySelector('.lb-post-body h3');
-    const summary = card.querySelector('.lb-post-body p');
-    const date = card.querySelector('.lb-date');
-    const tags = card.querySelector('.lb-post-tags');
-    const ccs = getComputedStyle(card);
-
-    const numF = num ? cssFont(num) : null;
-    const titleF = cssFont(title);
-    const summaryF = cssFont(summary);
-    const dateF = date ? cssFont(date) : null;
-    const tagF = tags && tags.querySelector('.lb-tag') ? cssFont(tags.querySelector('.lb-tag')) : null;
-
-    const innerW = colW - parseFloat(ccs.paddingLeft) - parseFloat(ccs.paddingRight);
-    const titleH = measureLines(title.textContent, titleF, innerW) * titleF.lineHeight;
-    const summaryH = measureLines(summary.textContent, summaryF, innerW) * summaryF.lineHeight;
-    const dateH = dateF ? dateF.lineHeight : 0;
-    let tagsH = 0;
-    if (tagF && tags) {
-      const chips = [...tags.querySelectorAll('.lb-tag')];
-      const tagCS = getComputedStyle(chips[0]);
-      const padX = parseFloat(tagCS.paddingLeft) + parseFloat(tagCS.paddingRight);
-      const borderX = parseFloat(tagCS.borderLeftWidth) + parseFloat(tagCS.borderRightWidth);
-      const chipH = tagF.lineHeight + parseFloat(tagCS.paddingTop) + parseFloat(tagCS.paddingBottom) + parseFloat(tagCS.borderTopWidth) * 2;
-      const gap = parseFloat(getComputedStyle(tags).gap) || INNER_GAP;
-      const rows = tagRows(chips, tagF, padX + borderX, gap, innerW);
-      tagsH = rows * chipH + Math.max(0, rows - 1) * gap;
-    }
-    const numH = numF ? numF.lineHeight : 0;
-    const cardGap = parseFloat(ccs.gap) || INNER_GAP;
-
-    // Reconstruct the rendered card height from the real flex structure:
-    // pad + num + gap + body(title+mb+summary) + gap + meta(date+mt+tags) + mb + pad.
-    // Margins come from computed style so the prediction matches the browser
-    // exactly (an early version summed plain gaps and cards overlapped on
-    // narrow columns where 3px errors accumulated).
-    const titleMB = parseFloat(getComputedStyle(title).marginBottom);
-    const tagsMT = parseFloat(getComputedStyle(tags).marginTop);
-    const metaMB = parseFloat(getComputedStyle(date.closest('.lb-post-meta')).marginBottom);
-    const bodyH = titleH + titleMB + summaryH;
-    const metaH = dateH + tagsMT + tagsH;
-    const padH = parseFloat(ccs.paddingTop) + parseFloat(ccs.paddingBottom);
-    const borderH = parseFloat(ccs.borderTopWidth) + parseFloat(ccs.borderBottomWidth);
-    const cardH = padH + numH + cardGap + bodyH + cardGap + metaH + metaMB + borderH;
-
-    const col = colH.indexOf(Math.min(...colH)); // greedy shortest-column
-    card.style.position = 'absolute';
-    card.style.left = `${col * (colW + CARD_GAP)}px`;
-    card.style.top = `${colH[col]}px`;
-    card.style.width = `${colW}px`;
-    colH[col] += cardH + CARD_GAP;
-  }
-
-  listEl.style.minHeight = `${Math.max(...colH) - CARD_GAP}px`;
+  listEl.classList.add(MASONRY_CLASS);
   return true;
 }
 
-// Clears every masonry inline position + min-height so the container can be
-// re-laid out from scratch (idempotency contract; call before each layout).
 function resetMasonry(listEl) {
-  listEl.querySelectorAll(':scope > .lb-post').forEach((c) => {
-    c.style.position = '';
-    c.style.left = '';
-    c.style.top = '';
-    c.style.width = '';
-  });
-  listEl.style.minHeight = '';
+  listEl.classList.remove(MASONRY_CLASS);
 }
 
 // --- heading auto-fit -------------------------------------------------------

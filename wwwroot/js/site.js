@@ -41,6 +41,80 @@ up.compiler(".lb-nav", function (nav) {
     return function () { nav.removeEventListener("click", onClick); };
 });
 
+up.compiler("[data-lb-music]", function (root) {
+    var play = root.querySelector("[data-lb-music-play]");
+    var icon = root.querySelector("[data-lb-music-icon]");
+    var state = root.querySelector("[data-lb-music-state]");
+    var progress = root.querySelector("[data-lb-music-progress]");
+    var time = root.querySelector("[data-lb-music-time]");
+    var volume = root.querySelector("[data-lb-music-volume]");
+    var context = null;
+    var master = null;
+    var voices = [];
+    var timer = null;
+    var started = 0;
+    var elapsed = 0;
+    var playing = false;
+
+    function formatTime(seconds) {
+        var m = Math.floor(seconds / 60).toString().padStart(2, "0");
+        var s = Math.floor(seconds % 60).toString().padStart(2, "0");
+        return m + ":" + s;
+    }
+    function update() {
+        var value = playing ? (Date.now() - started) / 1000 + elapsed : elapsed;
+        var duration = 96;
+        progress.style.width = Math.min(100, value / duration * 100) + "%";
+        time.textContent = formatTime(value % duration);
+    }
+    function setIcon(next) {
+        icon.innerHTML = next ? '<path d="m9 5 10 7-10 7V5Z" />' : '<path d="m8 5 11 7-11 7V5Z" />';
+        play.setAttribute("aria-label", next ? "Tạm dừng nhạc" : "Phát nhạc");
+    }
+    function start() {
+        if (!context) {
+            context = new (window.AudioContext || window.webkitAudioContext)();
+            master = context.createGain();
+            var filter = context.createBiquadFilter();
+            filter.type = "lowpass";
+            filter.frequency.value = 1100;
+            master.gain.value = Number(volume.value);
+            master.connect(filter).connect(context.destination);
+            [220, 277.18, 329.63].forEach(function (frequency, i) {
+                var oscillator = context.createOscillator();
+                var voice = context.createGain();
+                oscillator.type = i === 0 ? "sine" : "triangle";
+                oscillator.frequency.value = frequency;
+                voice.gain.value = i === 0 ? .08 : .035;
+                oscillator.connect(voice).connect(master);
+                oscillator.start();
+                voices.push(oscillator);
+            });
+        }
+        context.resume();
+        playing = true;
+        started = Date.now();
+        state.textContent = "Đang phát · Sakura Ambient";
+        setIcon(true);
+        timer = setInterval(update, 500);
+    }
+    function stop() {
+        playing = false;
+        elapsed += (Date.now() - started) / 1000;
+        clearInterval(timer);
+        state.textContent = "Âm thanh tổng hợp · không tải tệp";
+        setIcon(false);
+    }
+    play.addEventListener("click", function () { playing ? stop() : start(); });
+    volume.addEventListener("input", function () { if (master) master.gain.value = Number(volume.value); });
+    update();
+    return function () {
+        if (timer) clearInterval(timer);
+        voices.forEach(function (voice) { try { voice.stop(); } catch (e) { } });
+        if (context) context.close();
+    };
+});
+
 // ---- search palette (CommandDialog #lb-search) ----
 // ui.js filters the post links; this adds comment matches from Supabase and closes the dialog
 // once a result is chosen (the dialog lives in the nav, which Unpoly keeps across swaps).

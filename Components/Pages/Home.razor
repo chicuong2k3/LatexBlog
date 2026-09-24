@@ -6,22 +6,17 @@
 <PageTitle>Alternative World</PageTitle>
 <HeadContent>
     <script type="application/ld+json">@((MarkupString)WebsiteJsonLd)</script>
-    <script type="module" src="/js/home-layout.js?v=20260821a"></script>
 </HeadContent>
 
 <section class="lb-hero">
-    <div class="lb-sweep" aria-hidden="true"></div>
     <div class="lb-wrap">
         <h1>"Nếu tôi nhìn được <span class="lb-neon">xa hơn</span>, đó là vì đứng trên vai những người <span class="lb-violet">khổng lồ</span>." <cite>— Isaac Newton</cite></h1>
         <p class="lb-hero-lead">Nhìn thế giới qua một lăng kính khác.</p>
+    </div>
+</section>
 
-        <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới">
-            <Badge Variant="outline" Class="lb-flag border-current">Công thức trong ngày</Badge>
-            <div class="lb-matrix-box">
-                <span class="math display">f = \dfrac{1}{2\pi\sqrt{LC}}</span>
-            </div>
-        </div>
-
+<section class="lb-home-panels">
+    <div class="lb-wrap lb-home-panels__grid">
         @if (Latest is not null)
         {
             <Card Class="lb-featured">
@@ -37,6 +32,16 @@
                 </CardFooter>
             </Card>
         }
+
+        <div class="lb-home-panels__side">
+            <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới">
+                <Badge Variant="outline" Class="lb-flag border-current">Công thức trong ngày</Badge>
+                <div class="lb-matrix-box">
+                    <span class="math display">f = \dfrac{1}{2\pi\sqrt{LC}}</span>
+                </div>
+            </div>
+            <MusicPlayer />
+        </div>
     </div>
 </section>
 
@@ -46,7 +51,7 @@
             <h2>Bài viết</h2>
             <Badge Variant="secondary" Class="lb-count">@PostStore.All.Count bài</Badge>
         </div>
-        <div class="lb-post-list">
+        <div class="lb-post-list lb-post-grid">
             @{ var idx = 0; }
             @foreach (var post in PagePosts)
             {
@@ -80,7 +85,7 @@
 </section>
 
 @code {
-    private const int PageSize = 3;
+    private const int PageSize = 6;
 
     [SupplyParameterFromQuery] public int? Page { get; set; }
 

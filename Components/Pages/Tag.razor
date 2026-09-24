@@ -12,9 +12,9 @@
 <header class="lb-page-head">
     <h1>@(string.IsNullOrEmpty(CurrentTag) ? "Tất cả bài viết" : "Bài viết theo thẻ #" + CurrentTag)</h1>
     <div class="lb-chips">
-        @foreach (var tag in AllTags)
+        @foreach (var tagName in AllTags)
         {
-            <TagBadge Tag="@tag" />
+            <TagBadge Tag="@tagName" Active="@(string.Equals(CurrentTag, tagName, StringComparison.OrdinalIgnoreCase))" />
         }
     </div>
 </header>

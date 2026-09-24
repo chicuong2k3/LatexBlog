@@ -1,8 +1,11 @@
 @* A post tag as a shadcn Badge link. *@
-<Badge Href="@($"/tags/{Tag}")" Variant="secondary" Class="@(Big ? "lb-tag lb-tag--big" : "lb-tag")">@Tag@ChildContent</Badge>
+<Badge Href="@($"/tags/{Tag}")" Variant="outline" Class="@ClassValue" aria-current="@(Active ? "page" : null)">@Tag@ChildContent</Badge>
 
 @code {
     [Parameter, EditorRequired] public string Tag { get; set; } = default!;
     [Parameter] public bool Big { get; set; }
+    [Parameter] public bool Active { get; set; }
     [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    private string ClassValue => $"lb-tag{(Big ? " lb-tag--big" : "")}{(Active ? " lb-tag--active" : "")}";
 }

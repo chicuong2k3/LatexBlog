@@ -989,3 +989,75 @@ body::before { display: none; }
 .lb-nav-icon[data-command-open]:hover { background: linear-gradient(115deg, #4458d7, #128a8a); color: #fff; }
 .lb-nav-login { background: var(--gradient) !important; border-color: transparent !important; color: #fff !important; }
 .lb-nav-login:hover { background: linear-gradient(115deg, #4458d7, #128a8a) !important; color: #fff !important; }
+
+.lb-nav,
+.lb-featured,
+.lb-music,
+.lb-toc,
+.lb-tldr,
+.lb-comment,
+.lb-related__item,
+.lb-notif__panel,
+.lb-share {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--surface) 78%, transparent), color-mix(in srgb, var(--surface-2) 58%, transparent));
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  border-color: color-mix(in srgb, var(--neon) 22%, var(--line));
+}
+.lb-post-grid .lb-post,
+.lb-post-list--masonry .lb-post {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--surface) 82%, transparent), color-mix(in srgb, var(--surface-2) 64%, transparent));
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  border-color: color-mix(in srgb, var(--neon) 20%, var(--line));
+}
+.lb-home-panels__side .lb-matrix-box {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--surface) 72%, transparent), color-mix(in srgb, var(--neon-3) 10%, transparent));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.lb-featured:hover,
+.lb-music:hover,
+.lb-toc:hover { border-color: color-mix(in srgb, var(--neon) 52%, var(--line)); }
+
+:root { --gradient: #5367e8; --gradient-soft: #e9edf7; }
+.lb-hero::before { background: var(--bg-2); opacity: .55; }
+.lb-hero::after { background: var(--bg-2); opacity: .55; }
+.lb-brand__mark,
+.lb-brand::after,
+.lb-neon,
+.lb-violet { color: var(--neon); background: none; -webkit-background-clip: initial; background-clip: initial; }
+.lb-featured,
+.lb-music,
+.lb-tldr,
+.lb-comment.is-target { border-image: none; border-color: color-mix(in srgb, var(--neon) 24%, var(--line)); }
+.lb-button,
+.lb-load-more .lb-button,
+.lb-nav-icon[data-command-open],
+.lb-nav-login { background: var(--neon) !important; color: #fff !important; border-color: transparent !important; }
+.lb-button:hover,
+.lb-nav-icon[data-command-open]:hover,
+.lb-nav-login:hover { background: var(--neon-2) !important; color: #fff !important; }
+.lb-music__cover,
+.lb-music__play,
+.lb-post-grid .lb-post-num,
+.lb-post-list--masonry .lb-post-num { background: var(--neon); }
+.lb-music__play:hover { background: var(--neon-2); }
+.lb-post-grid .lb-post:hover,
+.lb-post-list--masonry .lb-post:hover { background: var(--surface); border-color: var(--neon); }
+.lb-progress { background: var(--neon); }
+.lb-tag { background: transparent; color: var(--ink-soft); border-color: var(--line-strong); }
+.lb-tag--active,
+.lb-tag--active:hover { background: var(--neon) !important; color: #fff !important; border-color: var(--neon) !important; }
+.lb-nav,
+.lb-featured,
+.lb-music,
+.lb-toc,
+.lb-tldr,
+.lb-comment,
+.lb-related__item,
+.lb-notif__panel,
+.lb-share,
+.lb-post-grid .lb-post,
+.lb-post-list--masonry .lb-post { background: color-mix(in srgb, var(--surface) 88%, transparent); }
+.lb-toc a.is-active { color: #fff; background: var(--neon); }

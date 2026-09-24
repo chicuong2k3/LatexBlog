@@ -34,13 +34,14 @@
         }
 
         <div class="lb-home-panels__side">
-            <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới">
-                <Badge Variant="outline" Class="lb-flag border-current">Công thức trong ngày</Badge>
-                <div class="lb-matrix-box">
-                    <span class="math display">f = \dfrac{1}{2\pi\sqrt{LC}}</span>
+            <div class="lb-home-panels__formula">
+                <div class="lb-matrix" aria-label="Tần số cộng hưởng mạch LC, không thuộc bài viết bên dưới">
+                    <Badge Variant="outline" Class="lb-flag border-current">Công thức trong ngày</Badge>
+                    <div class="lb-matrix-box">
+                        <span class="math display">@DailyFormula</span>
+                    </div>
                 </div>
             </div>
-            <MusicPlayer />
         </div>
     </div>
 </section>
@@ -90,6 +91,18 @@
     [SupplyParameterFromQuery] public int? Page { get; set; }
 
     private int CurrentPage => Math.Max(1, Page ?? 1);
+
+    private static readonly string[] DailyFormulas =
+    {
+        "E = mc^2",
+        "a^2 + b^2 = c^2",
+        "e^{i\\pi} + 1 = 0",
+        "F = ma",
+        @"\int_a^b f(x)\,dx",
+        @"\nabla\cdot E = \frac{\rho}{\varepsilon_0}"
+    };
+
+    private string DailyFormula => DailyFormulas[Random.Shared.Next(DailyFormulas.Length)];
 
     private string WebsiteJsonLd
     {

@@ -175,16 +175,20 @@ up.compiler(".lb-prose, .lb-matrix", function (el) {
 });
 
 // ---- back to top ----
-(function () {
-    var btn = document.getElementById("lb-top");
-    if (!btn) return;
-    window.addEventListener("scroll", function () {
+up.compiler("#lb-top", function (btn) {
+    function update() {
         btn.classList.toggle("is-visible", window.scrollY > 400);
-    }, { passive: true });
-    btn.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-})();
+    }
+    function onScroll() { update(); }
+    function onClick() { window.scrollTo({ top: 0, behavior: "smooth" }); }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    btn.addEventListener("click", onClick);
+    update();
+    return function () {
+        window.removeEventListener("scroll", onScroll);
+        btn.removeEventListener("click", onClick);
+    };
+});
 
 // ---- reading progress ----
 (function () {

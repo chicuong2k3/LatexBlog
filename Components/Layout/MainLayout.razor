@@ -113,26 +113,20 @@
         </template>
     </CommandDialog>
 
-    <Button Type="button" Variant="outline" Size="icon" id="lb-top" Class="lb-top" aria-label="Về đầu trang">
-        <Icon Name="arrow-up" />
-    </Button>
 </div>
 
 
 </UpChrome>
 
+<Button Type="button" Variant="outline" Size="icon" id="lb-top" Class="lb-top" aria-label="Về đầu trang">
+    <Icon Name="arrow-up" />
+</Button>
+
 <main class="lb-wrap lb-main">
     @Body
 </main>
 
-<UpChrome>
-<footer class="lb-footer">
-    <div class="lb-wrap lb-footer-in">
-        <span><svg class="lb-footer__mark" aria-hidden="true"><use href="#lb-blossom" /></svg>© 2026 Alternative World</span>
-        <span>"Nếu muốn tìm ra bí mật của vũ trụ, hãy nghĩ về năng lượng, tần số và rung động." — Nikola Tesla</span>
-    </div>
-</footer>
-</UpChrome>
+
 
 @code {
     [Inject] private PostStore PostStore { get; set; } = default!;

@@ -7,7 +7,7 @@ number: 2
 
 # Liber Primus, Phần I (tiếp)
 
-<!-- Nguồn: PDF 30–44, bắt đầu tại trang in 13. Bản dịch đang được soạn; phần tiếp theo của Phần I bắt đầu ở PDF 45. -->
+<!-- Nguồn: PDF 30–48, bắt đầu tại trang in 13. Bản dịch đang được soạn; phần tiếp theo của Phần I bắt đầu ở PDF 49. -->
 
 <!-- PDF 30, trang in 13, §14 -->
 

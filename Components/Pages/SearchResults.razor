@@ -1,18 +1,34 @@
 @inject PostStore PostStore
+@inject BookStore BookStore
 
 <div id="search-results">
-    @if (Results.Count == 0)
+    @if (Results.Count == 0 && BookResults.Count == 0)
     {
-        <EmptyNote>Không tìm thấy bài viết phù hợp.</EmptyNote>
+        <EmptyNote>Không tìm thấy bài viết hoặc sách phù hợp.</EmptyNote>
     }
     else
     {
-        <div class="lb-post-list">
-            @for (var i = 0; i < Results.Count; i++)
-            {
-                <PostCard Post="Results[i]" Number="i + 1" />
-            }
-        </div>
+        @if (Results.Count > 0)
+        {
+            <h2 class="lb-search-results__heading">Bài viết</h2>
+            <div class="lb-post-list">
+                @for (var i = 0; i < Results.Count; i++)
+                {
+                    <PostCard Post="Results[i]" Number="i + 1" />
+                }
+            </div>
+        }
+
+        @if (BookResults.Count > 0)
+        {
+            <h2 class="lb-search-results__heading">Sách dịch</h2>
+            <div class="lb-post-list lb-post-grid">
+                @for (var i = 0; i < BookResults.Count; i++)
+                {
+                    <BookCard Book="BookResults[i]" Number="i + 1" />
+                }
+            </div>
+        }
     }
 </div>
 
@@ -21,4 +37,7 @@
 
     private IReadOnlyList<PostMeta> Results =>
         string.IsNullOrWhiteSpace(Q) ? Array.Empty<PostMeta>() : PostStore.Search(Q);
+
+    private IReadOnlyList<BookMeta> BookResults =>
+        string.IsNullOrWhiteSpace(Q) ? Array.Empty<BookMeta>() : BookStore.Search(Q);
 }

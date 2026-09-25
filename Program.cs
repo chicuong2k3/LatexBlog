@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents();
 builder.Services.AddSingleton<LatexBlog.Services.PostStore>();
+builder.Services.AddSingleton<LatexBlog.Services.BookStore>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddUnpoly(o => o.MainTargets = [".lb-main"]);
 
@@ -62,7 +63,7 @@ app.MapGet("/rss.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
     return Results.Content(sb.ToString(), "application/rss+xml; charset=utf-8");
 });
 
-app.MapGet("/sitemap.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
+app.MapGet("/sitemap.xml", (LatexBlog.Services.PostStore store, LatexBlog.Services.BookStore books, HttpContext ctx) =>
 {
     var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
     var posts = store.All;
@@ -78,6 +79,13 @@ app.MapGet("/sitemap.xml", (LatexBlog.Services.PostStore store, HttpContext ctx)
         sb.Append("<url><loc>").Append(baseUrl).Append("/posts/").Append(p.Slug).Append("</loc>");
         sb.Append("<lastmod>").Append(p.Date).Append("</lastmod>");
         sb.Append("</url>");
+    }
+    sb.Append("<url><loc>").Append(baseUrl).Append("/books</loc></url>");
+    foreach (var book in books.All)
+    {
+        sb.Append("<url><loc>").Append(baseUrl).Append("/books/").Append(book.Slug).Append("</loc></url>");
+        foreach (var chapter in book.Chapters)
+            sb.Append("<url><loc>").Append(baseUrl).Append("/books/").Append(book.Slug).Append('/').Append(chapter.Slug).Append("</loc></url>");
     }
     sb.Append("</urlset>");
     return Results.Content(sb.ToString(), "application/xml; charset=utf-8");

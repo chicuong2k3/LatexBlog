@@ -985,8 +985,8 @@ body::before { display: none; }
 .lb-bookmark:hover,
 .lb-resume:hover { box-shadow: none; }
 .lb-top { z-index: 100; }
-.lb-nav-icon[data-command-open] { background: var(--gradient); color: #fff; }
-.lb-nav-icon[data-command-open]:hover { background: linear-gradient(115deg, #4458d7, #128a8a); color: #fff; }
+.lb-nav-icon[data-command-open]:not(.lb-search-trigger) { background: var(--gradient); color: #fff; }
+.lb-nav-icon[data-command-open]:not(.lb-search-trigger):hover { background: linear-gradient(115deg, #4458d7, #128a8a); color: #fff; }
 .lb-nav-login { background: var(--gradient) !important; border-color: transparent !important; color: #fff !important; }
 .lb-nav-login:hover { background: linear-gradient(115deg, #4458d7, #128a8a) !important; color: #fff !important; }
 
@@ -1033,10 +1033,10 @@ body::before { display: none; }
 .lb-comment.is-target { border-image: none; border-color: color-mix(in srgb, var(--neon) 24%, var(--line)); }
 .lb-button,
 .lb-load-more .lb-button,
-.lb-nav-icon[data-command-open],
+.lb-nav-icon[data-command-open]:not(.lb-search-trigger),
 .lb-nav-login { background: var(--neon) !important; color: #fff !important; border-color: transparent !important; }
 .lb-button:hover,
-.lb-nav-icon[data-command-open]:hover,
+.lb-nav-icon[data-command-open]:not(.lb-search-trigger):hover,
 .lb-nav-login:hover { background: var(--neon-2) !important; color: #fff !important; }
 .lb-music__cover,
 .lb-music__play,
@@ -1061,3 +1061,30 @@ body::before { display: none; }
 .lb-post-grid .lb-post,
 .lb-post-list--masonry .lb-post { background: color-mix(in srgb, var(--surface) 88%, transparent); }
 .lb-toc a.is-active { color: #fff; background: var(--neon); }
+
+.lb-post-grid .lb-post-num,
+.lb-post-list--masonry .lb-post-num { font-size: 1rem; }
+
+.lb-nav-icon.lb-search-trigger {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1px solid var(--line-strong);
+}
+.lb-nav-icon.lb-search-trigger:hover,
+.lb-nav-icon.lb-search-trigger:focus-visible {
+  background: color-mix(in srgb, var(--neon) 8%, transparent);
+  color: var(--neon);
+  border-color: var(--neon);
+}
+
+.lb-book-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.lb-book-nav a { color: var(--neon); font-weight: 600; }
+.lb-book-nav a:last-child { margin-left: auto; }

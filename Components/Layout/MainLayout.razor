@@ -20,10 +20,11 @@
         <ul class="lb-nav-links">
             <li><Button Href="/" Variant="link" Size="sm" Class="px-0">Trang chủ</Button></li>
             <li><Button Href="/tags" Variant="link" Size="sm" Class="px-0">Thẻ</Button></li>
+            <li><Button Href="/books" Variant="link" Size="sm" Class="px-0">Dịch sách</Button></li>
         </ul>
 
         <div class="lb-nav-right">
-            <Button Type="button" Variant="ghost" Size="icon-sm" Class="lb-nav-icon"
+            <Button Type="button" Variant="outline" Size="icon-sm" Class="lb-nav-icon lb-search-trigger"
                     data-command-open="lb-search" aria-label="Tìm kiếm (Ctrl+K)">
                 <Icon Name="search" />
             </Button>
@@ -81,14 +82,14 @@
         </div>
     </nav>
 
-    @* Search as a command palette (Unpoly.Blazor.Shadcn CommandDialog): every post is already
+    @* Search as a command palette (Unpoly.Blazor.Shadcn CommandDialog): every post and book is already
        here as a link, and ui.js filters them as you type — no round trip, no /search page.
        Keywords add the summary, the tags and a đ→d copy of the title, because the filter folds
        diacritics but đ is its own letter. Comment matches come from Supabase (site.js) into
        the "Bình luận" group, and the same filter then shows them. ⌘K / Ctrl+K or "/" opens it. *@
     <CommandDialog Id="lb-search" Key="mod+k" Title="Tìm kiếm"
-                   Description="Tìm bài viết theo tiêu đề, tóm tắt, thẻ, hoặc tìm trong bình luận.">
-        <CommandInput Placeholder="Tìm bài viết, thẻ hoặc bình luận…" AriaLabel="Tìm kiếm" />
+                   Description="Tìm bài viết, sách dịch hoặc bình luận.">
+        <CommandInput Placeholder="Tìm bài viết, sách, thẻ hoặc bình luận…" AriaLabel="Tìm kiếm" />
         <CommandList>
             <CommandEmpty Class="py-8 text-center text-sm text-muted-foreground">Không tìm thấy gì.</CommandEmpty>
             <CommandGroup Heading="Bài viết">
@@ -97,6 +98,15 @@
                     <CommandItem Href="@($"/posts/{post.Slug}")" Keywords="@Keywords(post)">
                         <Icon Name="file-text" />
                         <span class="truncate">@post.Title</span>
+                    </CommandItem>
+                }
+            </CommandGroup>
+            <CommandGroup Heading="Sách dịch">
+                @foreach (var book in BookStore.All)
+                {
+                    <CommandItem Href="@($"/books/{book.Slug}")" Keywords="@BookKeywords(book)">
+                        <Icon Name="bookmark" />
+                        <span class="truncate">@book.Title</span>
                     </CommandItem>
                 }
             </CommandGroup>
@@ -130,6 +140,7 @@
 
 @code {
     [Inject] private PostStore PostStore { get; set; } = default!;
+    [Inject] private BookStore BookStore { get; set; } = default!;
 
     private static string Keywords(PostMeta post) =>
         string.Join(' ', new[]
@@ -138,5 +149,16 @@
             string.Join(' ', post.Tags),
             string.Join(' ', post.Tags).Replace('-', ' '), // "dai so" should find tag dai-so-tuyen-tinh
             post.Title.Replace('đ', 'd').Replace('Đ', 'D'),
+        });
+
+    private static string BookKeywords(BookMeta book) =>
+        string.Join(' ', new[]
+        {
+            book.Summary,
+            book.Author ?? string.Empty,
+            book.OriginalTitle ?? string.Empty,
+            string.Join(' ', book.Tags),
+            string.Join(' ', book.Tags).Replace('-', ' '),
+            book.Title.Replace('đ', 'd').Replace('Đ', 'D'),
         });
 }

@@ -28,12 +28,6 @@ else
         <header class="lb-post-head">
             <h1>@PostMeta.Title</h1>
             <p class="lb-post-meta">Đăng ngày @PostMeta.Date · @ReadMinutes phút đọc</p>
-            <div class="lb-post-tags">
-                @foreach (var tag in PostMeta.Tags)
-                {
-                    <TagBadge Tag="@tag" />
-                }
-            </div>
         </header>
 
         @if (!string.IsNullOrWhiteSpace(PostMeta.Tldr))

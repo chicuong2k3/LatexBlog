@@ -1,0 +1,7 @@
+Custom style instructions go here. These are appended to the built-in
+language profile. Use them for project-specific preferences:
+
+- Terminology conventions
+- Tone and register
+- Proper noun handling
+- Region-specific phrasing

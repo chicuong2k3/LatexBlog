@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "translate-book": {
+      "source": "DDChen666/translate-book",
+      "sourceType": "github",
+      "skillPath": "skills/translate-book/SKILL.md",
+      "computedHash": "8975e99b6c378dc19670aa0de8fc848c8349bc074c79bab813387e103656dd83"
+    }
+  }
+}

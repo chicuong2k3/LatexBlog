@@ -1,0 +1,94 @@
+{
+  "default": {
+    "label": "Generic publishing profile",
+    "style_guide": [
+      "Write in polished, publication-grade target-language prose.",
+      "Prefer natural phrasing over literal stiffness, while preserving meaning, tone, and structure.",
+      "Preserve emphasis, contrast, rhetorical force, and paragraph logic.",
+      "Keep proper nouns and specialist terms consistent.",
+      "Avoid obvious machine-translation artifacts."
+    ]
+  },
+  "zh-TW": {
+    "label": "Traditional Chinese (Taiwan)",
+    "style_guide": [
+      "Write in fluent, modern, publication-grade Traditional Chinese used by strong Taiwan trade publishers.",
+      "Prefer Taiwan publishing usage and avoid Mainland-specific phrasing unless it is clearly the dominant standard term.",
+      "Keep the prose natural, compact, and readable rather than mechanically literal.",
+      "For business, technology, engineering, and biography content, use standard reader-friendly terminology.",
+      "Preserve tone, rhythm, contrast, and emphasis."
+    ]
+  },
+  "zh-HK": {
+    "label": "Traditional Chinese (Hong Kong)",
+    "style_guide": [
+      "Write in fluent, publication-grade Traditional Chinese appropriate for Hong Kong readers.",
+      "Prefer Hong Kong conventional wording where it differs materially from Taiwan or Mainland usage.",
+      "Keep the prose natural and editorially polished."
+    ]
+  },
+  "zh-CN": {
+    "label": "Simplified Chinese (Mainland)",
+    "style_guide": [
+      "Write in fluent, publication-grade Simplified Chinese appropriate for Mainland readers.",
+      "Use standard contemporary Mainland publishing usage.",
+      "Keep the prose natural and editorially polished."
+    ]
+  },
+  "ja": {
+    "label": "Japanese",
+    "style_guide": [
+      "Write in polished, publication-grade Japanese.",
+      "Balance readability with fidelity and keep terminology consistent.",
+      "Avoid awkward calques from English syntax."
+    ]
+  },
+  "ko": {
+    "label": "Korean",
+    "style_guide": [
+      "Write in polished, publication-grade Korean.",
+      "Use modern standard Korean publishing usage.",
+      "Avoid stiff literal transfer from English."
+    ]
+  },
+  "fr": {
+    "label": "French",
+    "style_guide": [
+      "Write in polished, publication-grade French.",
+      "Preserve nuance and cadence while avoiding anglophone syntactic carryover.",
+      "Keep terminology and register consistent."
+    ]
+  },
+  "de": {
+    "label": "German",
+    "style_guide": [
+      "Write in polished, publication-grade German.",
+      "Preserve conceptual precision and keep register consistent.",
+      "Avoid English-influenced phrasing where a natural German construction exists."
+    ]
+  },
+  "es": {
+    "label": "Spanish",
+    "style_guide": [
+      "Write in polished, publication-grade Spanish.",
+      "Prefer broadly neutral publishing Spanish unless the user requests a specific region.",
+      "Keep terminology and tone consistent."
+    ]
+  },
+  "pt-BR": {
+    "label": "Portuguese (Brazil)",
+    "style_guide": [
+      "Write in polished, publication-grade Brazilian Portuguese.",
+      "Use natural Brazilian publishing usage rather than literal transfer from English.",
+      "Preserve voice and structure."
+    ]
+  },
+  "it": {
+    "label": "Italian",
+    "style_guide": [
+      "Write in polished, publication-grade Italian.",
+      "Keep the prose natural, idiomatic, and editorially strong.",
+      "Avoid awkward English calques."
+    ]
+  }
+}

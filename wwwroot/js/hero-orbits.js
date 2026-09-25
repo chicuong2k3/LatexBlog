@@ -13,14 +13,14 @@ const ORBITS = 7;
 const SEGMENTS = 512;
 const A_MIN = 2.6, A_MAX = 9.4;
 const E_TIGHT = 0.86, E_WIDE = 0.28;
-const OPACITY_IN = 0.34, OPACITY_OUT = 0.14;
+const OPACITY_IN = 0.46, OPACITY_OUT = 0.22;
 const TILT_DEG = 2, TILT_STEP_DEG = 3;
 const GROUP_TILT_DEG = -14;
 const PRECESS_PERIOD_S = 90;
 const NODE_PERIOD_S = 24;
 const NODE_OPACITY = 0.85;
-const NODE_SCALE = 0.42;
-const FOG_DENSITY = 0.055;
+const NODE_SCALE = 0.62;
+const FOG_DENSITY = 0.038;
 const CAMERA_Y = 3.2, CAMERA_Z = 12;
 const FALLBACK = { bg: '#f4f6fb', neon: '#5367e8', neon2: '#159b9b', neon3: '#2d78c5' };
 
@@ -92,9 +92,25 @@ export function mount(canvas) {
         owned.push(geo, mat);
     }
 
-    // One travelling node on the tightest orbit. A sprite, not a mesh: it needs no light
-    // and cannot fall outside the palette.
+    // A Sprite with no texture map draws a solid quad, which reads as a rendering artefact
+    // rather than a point of light. A radial gradient is what makes it look like one.
+    function dotTexture() {
+        var size = 64;
+        var c = document.createElement('canvas');
+        c.width = c.height = size;
+        var g = c.getContext('2d');
+        var grd = g.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+        grd.addColorStop(0, 'rgba(255,255,255,1)');
+        grd.addColorStop(0.35, 'rgba(255,255,255,0.5)');
+        grd.addColorStop(1, 'rgba(255,255,255,0)');
+        g.fillStyle = grd;
+        g.fillRect(0, 0, size, size);
+        return new THREE.CanvasTexture(c);
+    }
+
+    var nodeTex = dotTexture();
     var nodeMat = new THREE.SpriteMaterial({
+        map: nodeTex,
         color: new THREE.Color(palette[0]),
         transparent: true,
         opacity: NODE_OPACITY,
@@ -102,7 +118,7 @@ export function mount(canvas) {
     var node = new THREE.Sprite(nodeMat);
     node.scale.setScalar(NODE_SCALE);
     group.add(node);
-    owned.push(nodeMat);
+    owned.push(nodeMat, nodeTex);
 
     function resize() {
         var w = canvas.clientWidth, h = canvas.clientHeight;

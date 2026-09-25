@@ -1128,6 +1128,6 @@ body::before { display: none; }
   position: absolute; inset: 0; z-index: 0;
   width: 100%; height: 100%;
   pointer-events: none;
-  opacity: .55;
+  opacity: .75;
 }
-@media (max-width: 720px) { .lb-orbits { opacity: .28; } }
+@media (max-width: 720px) { .lb-orbits { opacity: .38; } }

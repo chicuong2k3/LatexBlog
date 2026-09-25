@@ -107,7 +107,7 @@ up.compiler(".lb-prose, .lb-matrix", function (el) {
 up.compiler("[data-lb-orbits]", function (canvas) {
     var cancelled = false;
     var dispose = function () {};
-    import('/js/hero-orbits.js?v=20260926a')
+    import('/js/hero-orbits.js?v=20260926b')
         .then(function (m) {
             // The fragment can be swapped away mid-import; mounting into a detached node
             // would leak a WebGL context that nothing ever releases.

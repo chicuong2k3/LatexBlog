@@ -187,3 +187,28 @@ test('Unpoly điều hướng rồi quay lại: đúng một canvas, scene sốn
     await expect.poll(() => frames(page), { timeout: 15000 }).toBeGreaterThan(2);
   }
 });
+
+test('three.js được vendor cục bộ và service worker cache offline được', async ({ request }) => {
+  const three = await request.get('/js/vendor/three.module.min.js');
+  expect(three.status()).toBe(200);
+  expect(three.headers()['content-type']).toContain('javascript');
+
+  const sw = await request.get('/sw.js');
+  const src = await sw.text();
+  expect(src).toContain('/js/vendor/three.module.min.js');
+  expect(src).toContain('/js/hero-orbits.js');
+  expect(src).toContain('lb-v19');
+});
+
+// A ceiling, not a target. The canvas opacity multiplies the line band's 0.22-0.46, so the
+// brightest line lands near 0.35 effective alpha — a field, not a subject. These numbers
+// were raised once from 0.6/0.3 after a screenshot review found the figure too faint to
+// read as deliberate; they must not be raised again without looking at the hero.
+test('nền 3D giữ mức tĩnh: opacity thấp, và thấp hơn nữa trên mobile', async ({ page }) => {
+  await page.goto('/');
+  const read = () =>
+    page.locator('canvas[data-lb-orbits]').evaluate((c) => Number(getComputedStyle(c).opacity));
+  expect(await read()).toBeLessThanOrEqual(0.8);
+  await page.setViewportSize({ width: 375, height: 800 });
+  expect(await read()).toBeLessThanOrEqual(0.4);
+});

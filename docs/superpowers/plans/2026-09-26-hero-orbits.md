@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- three.js is pinned to **exactly `0.186.1`**, from `build/three.module.min.js`, expected size **392831 bytes**.
+- three.js is pinned to **exactly `0.170.0`**, from `build/three.module.min.js`, expected size **691648 bytes**. That release predates the build split, so the file is self-contained and imports nothing.
 - Scene tokens are read at mount time from `getComputedStyle(document.documentElement)` — `--bg`, `--neon`, `--neon-2`, `--neon-3`. **No hex literal for a palette colour in JavaScript.**
 - Line opacity stays within **0.14 – 0.34**. Nothing in the scene is a filled shape except the node sprite at **0.85**.
 - The scene loads on the home page only. No post, chapter or book page may reference it.
@@ -35,7 +35,7 @@
 | `wwwroot/sw.js` | Offline registration of the two new paths + cache bump. |
 | `tests/e2e/tests/home.spec.js` | Five new cases. |
 
-`hero-orbits.js` stays a separate file from `site.js` on purpose: `site.js` is a classic script loaded on every page and must stay free of any three.js reference, or the 384 KB stops being conditional.
+`hero-orbits.js` stays a separate file from `site.js` on purpose: `site.js` is a classic script loaded on every page and must stay free of any three.js reference, or the 676 KB stops being conditional.
 
 ---
 
@@ -210,12 +210,19 @@ Expected: FAIL — the poll times out at 15 s with a frame count of 0, because n
 - [ ] **Step 3: Vendor three.js**
 
 ```powershell
-Invoke-WebRequest -Uri "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.min.js" `
+Invoke-WebRequest -Uri "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" `
   -OutFile "wwwroot/js/vendor/three.module.min.js"
 (Get-Item wwwroot/js/vendor/three.module.min.js).Length
 ```
 
-Expected: `392831`. Any other size means the wrong artifact was fetched — delete it and stop rather than committing a mystery file. The file **is committed**, matching the 7 vendor files already tracked in git.
+Expected: `691648`. Any other size means the wrong artifact was fetched — delete it and stop rather than committing a mystery file. Then confirm it imports nothing, which is the whole reason this release was chosen over a newer one:
+
+```powershell
+$t = [System.IO.File]::ReadAllText("wwwroot\js\vendor\three.module.min.js")
+([regex]::Matches($t, 'from\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value }) -join ', '
+```
+
+Expected output: empty. From r180 onward the entry does `import … from './three.core.js'`, and vendoring that means either 1.78 MB of text or a hand-patched import specifier that a re-download from the CDN silently reverts — with no build step to catch it. 0.170.0 predates the split. The file **is committed**, matching the 7 vendor files already tracked in git.
 
 - [ ] **Step 4: Write the scene module**
 
@@ -225,7 +232,7 @@ Create `wwwroot/js/hero-orbits.js`:
 // wwwroot/js/hero-orbits.js
 // The hero's Kepler figure: nested ellipses sharing one focus, the way Newton drew them.
 // Reached only through the up.compiler in site.js, which is the one thing that knows a
-// canvas appeared — three.js is 384 KB and must not cost a post page anything.
+// canvas appeared — three.js is 676 KB and must not cost a post page anything.
 //
 // Every colour is read from the site's own CSS tokens rather than hardcoded, because
 // site.css redefines :root in several appended theme blocks and a hex literal here would
@@ -389,7 +396,7 @@ Append to `wwwroot/js/site.js`:
 ```js
 // ---- hero orbits (home page) ----
 // Registered from a script every page loads, but the scene and three.js are pulled in on
-// demand. Two reasons, both learned the hard way: 384 KB should not be fetched by a post
+// demand. Two reasons, both learned the hard way: 676 KB should not be fetched by a post
 // page, and a <script type="module"> inside Home.razor would never run when Unpoly swaps
 // the fragment in, because HTML5 does not execute scripts inserted by DOM manipulation —
 // a reader arriving on a post and clicking "Trang chủ" would get an empty canvas.
@@ -770,7 +777,7 @@ git commit -m "feat(blog): cache hero orbits offline"
 | Stacking and `pointer-events` | 1 |
 | Mobile opacity | 1, asserted in 5 |
 | Offline, cache bump to `lb-v19` | 5 |
-| Cost (384 KB, home page only) | 2 Step 3 verifies the byte count |
+| Cost (676 KB, home page only) | 2 Step 3 verifies the byte count and the absence of imports |
 | Verification list, all five cases | 1, 2, 3, 4, 5 |
 | Manual register review | 5 Step 5 |
 

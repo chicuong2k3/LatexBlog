@@ -100,6 +100,27 @@ up.compiler(".lb-prose, .lb-matrix", function (el) {
     else initProse(el);
 });
 
+// ---- hero orbits (home page) ----
+// three.js is 384 KB and must not be fetched by a post page, so the scene is imported on
+// demand rather than from a <script> in Home.razor — which would also never run, since
+// HTML5 does not execute the scripts Unpoly inserts by DOM manipulation.
+up.compiler("[data-lb-orbits]", function (canvas) {
+    var cancelled = false;
+    var dispose = function () {};
+    import('/js/hero-orbits.js?v=20260926a')
+        .then(function (m) {
+            // The fragment can be swapped away mid-import; mounting into a detached node
+            // would leak a WebGL context that nothing ever releases.
+            if (cancelled) return;
+            dispose = m.mount(canvas) || function () {};
+        })
+        .catch(function () { canvas.remove(); });
+    return function () {
+        cancelled = true;
+        dispose();
+    };
+});
+
 // ---- back to top ----
 up.compiler("#lb-top", function (btn) {
     function update() {
@@ -201,7 +222,6 @@ function initDbProse(el, md) {
     if (typeof window.lbRenderComment === "function") el.innerHTML = window.lbRenderComment(md);
     else el.textContent = md;
 }
-
 // ---- copy-code buttons + KaTeX rendering - consumed by Post page
 function initProse(root) {
     root.querySelectorAll("pre").forEach((pre) => {

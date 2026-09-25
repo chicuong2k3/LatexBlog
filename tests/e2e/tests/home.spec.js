@@ -117,3 +117,14 @@ test('canvas không chặn bôi đen chữ trên hero', async ({ page }) => {
     .evaluate((c) => getComputedStyle(c).pointerEvents);
   expect(pe).toBe('none');
 });
+
+test('scene orbits dựng và chạy: frame counter tăng, canvas có kích thước thật', async ({ page }) => {
+  await page.goto('/');
+  const canvas = page.locator('canvas[data-lb-orbits]');
+  await expect
+    .poll(async () => Number((await canvas.getAttribute('data-lb-frames')) || 0), { timeout: 15000 })
+    .toBeGreaterThan(3);
+  const size = await canvas.evaluate((c) => [c.width, c.height]);
+  expect(size[0]).toBeGreaterThan(0);
+  expect(size[1]).toBeGreaterThan(0);
+});

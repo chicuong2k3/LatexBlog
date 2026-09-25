@@ -70,7 +70,7 @@ the first canvas that actually appears.
 
 This matters for two reasons:
 
-- three.js is 384 KB raw. Loading it eagerly in `App.razor` would tax every page of
+- three.js is 676 KB raw. Loading it eagerly in `App.razor` would tax every page of
   a maths blog for one hero.
 - A `<script type="module">` placed inside `Home.razor` would only ever run on a
   full page load of `/`. Unpoly navigation (`up-fallback=".lb-main"`) inserts markup
@@ -177,20 +177,37 @@ never be cached and the hero would lose its figure offline. Vendoring follows th
 existing `wwwroot/js/vendor/pretext.esm.js` precedent.
 
 `/js/hero-orbits.js` and `/js/vendor/three.module.min.js` are added to the `STATIC`
-array and `CACHE` is bumped `lb-v18` → `lb-v19`. The static list is populated on
-`install`, so the 384 KB is fetched at install time rather than on first paint.
+array and `CACHE` is bumped `lb-v18` -> `lb-v19`. The static list is populated on
+`install`, so the payload is fetched at install time rather than on first paint.
 
-three.js is pinned to `0.186.1` and vendored by hand, not by a package manager. The
+three.js is pinned to `0.170.0` and vendored by hand, not by a package manager. The
 `package.json` toolchain here exists for Tailwind only.
+
+**Why 0.170.0 and not the newest.** From r180 onward three.js splits its build:
+`three.module.min.js` becomes a thin entry that does `import ... from
+'./three.core.js'`, and the core is a separate 1.39 MB file. Vendoring the current
+release therefore means either ~1.78 MB of text, or ~808 KB across two files plus a
+one-line edit rewriting that import to `./three.core.min.js`. That patch is the
+failure mode worth naming: re-downloading the entry from the CDN silently drops it,
+the page then 404s on `three.core.js`, and **no build step fails** -- the hero breaks
+at runtime only.
+
+0.170.0 predates the split. Its `build/three.module.min.js` is self-contained at
+691,648 bytes, imports nothing, and matches upstream byte-for-byte, so a
+re-download is always safe. The cost is roughly 25 KB more gzipped than the patched
+current release, and sixteen months of releases behind.
 
 ## Cost
 
-384 KB raw, roughly 100 KB over gzip, fetched once, on the home page only, and
-cached by the service worker after install. It is the single largest asset the site
-ships. The alternative — hand-written raw WebGL, around 6 KB of drawing code for
-ellipses and one sprite — was considered and rejected: the request was to integrate
-three.js, and a bespoke renderer is a second engine to maintain.
+691,648 bytes raw, vendored on disk and fetched by the service worker at install.
+Roughly 175 KB over gzip, once, on the home page only. It is the single largest
+asset the site ships.
 
+The figure needs no loaders, controls or lights, but with no bundler there is
+nothing to tree-shake, so the whole library comes along. The alternative -- a
+hand-written raw WebGL renderer, around 6 KB of drawing code for these ellipses and
+one sprite -- was considered and rejected: the request was to integrate three.js,
+and a bespoke renderer is a second engine to maintain.
 ## Verification
 
 Playwright cases in `tests/e2e/tests/home.spec.js`, matching the existing

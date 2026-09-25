@@ -95,7 +95,7 @@ body::after {
     radial-gradient(560px 360px at 86% 20%, color-mix(in srgb, var(--neon) 20%, transparent), transparent 60%),
     radial-gradient(420px 300px at 50% 100%, color-mix(in srgb, var(--neon-3) 14%, transparent), transparent 60%);
 }
-.lb-hero .lb-wrap { position: relative; max-width: 1140px; }
+
 .lb-hero h1 {
   font-family: "Bricolage Grotesque", sans-serif; font-weight: 800;
   font-size: clamp(2.4rem, 6.4vw, 4.2rem); line-height: .98; letter-spacing: -.03em;
@@ -1088,3 +1088,46 @@ body::before { display: none; }
 }
 .lb-book-nav a { color: var(--neon); font-weight: 600; }
 .lb-book-nav a:last-child { margin-left: auto; }
+.lb-book-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+/* a link styled as a button: navigation, so it stays an <a> (native href, focus ring,
+   middle-click) — the .lb-actions__btn pill, given room to breathe as a standalone control */
+.lb-book-nav__btn {
+  display: inline-flex; align-items: center; gap: 12px; min-height: 44px;
+  max-width: 100%; min-width: 0; padding: 8px 20px;
+  border: 1px solid var(--line-strong); border-radius: 999px;
+  background: var(--surface); color: var(--ink-soft); text-decoration: none;
+  transition: border-color .2s, color .2s, background .2s, transform .12s;
+}
+.lb-book-nav__btn:hover {
+  border-color: var(--neon); color: var(--neon);
+  background: color-mix(in srgb, var(--neon) 6%, transparent);
+}
+.lb-book-nav__btn:active { transform: translateY(1px); }
+.lb-book-nav__btn:focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; }
+/* the label column takes the slack so the arrow keeps hugging the outer edge */
+.lb-book-nav__label { display: flex; flex-direction: column; min-width: 0; text-align: left; }
+.lb-book-nav__dir {
+  font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--muted);
+}
+.lb-book-nav__title { font-size: .98rem; font-weight: 600; overflow-wrap: anywhere; }
+.lb-book-nav__arrow { flex: none; display: inline-flex; }
+.lb-book-nav__btn--next { margin-left: auto; }
+.lb-book-nav__btn--next .lb-book-nav__label { text-align: right; }
+
+@media (max-width: 720px) {
+  .lb-book-nav { flex-direction: column; }
+  .lb-book-nav__btn { width: 100%; }
+  .lb-book-nav__btn--next { margin-left: 0; }
+  .lb-book-nav__btn--next .lb-book-nav__label { text-align: left; }
+  .lb-book-nav__btn--next .lb-book-nav__arrow { order: 2; }
+}

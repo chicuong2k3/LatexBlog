@@ -28,11 +28,23 @@ else
         <nav class="lb-book-nav" aria-label="Điều hướng chương">
             @if (PreviousChapter is not null)
             {
-                <a href="/books/@Book.Slug/@PreviousChapter.Slug">← @PreviousChapter.Title</a>
+                <a class="lb-book-nav__btn" href="/books/@Book.Slug/@PreviousChapter.Slug" rel="prev">
+                    <span class="lb-book-nav__arrow"><Icon Name="arrow-left" Class="size-5" /></span>
+                    <span class="lb-book-nav__label">
+                        <span class="lb-book-nav__dir">@ChapterDirection(PreviousChapter)</span>
+                        <span class="lb-book-nav__title">@PreviousChapter.Title</span>
+                    </span>
+                </a>
             }
             @if (NextChapter is not null)
             {
-                <a href="/books/@Book.Slug/@NextChapter.Slug">@NextChapter.Title →</a>
+                <a class="lb-book-nav__btn lb-book-nav__btn--next" href="/books/@Book.Slug/@NextChapter.Slug" rel="next">
+                    <span class="lb-book-nav__label">
+                        <span class="lb-book-nav__dir">@ChapterDirection(NextChapter)</span>
+                        <span class="lb-book-nav__title">@NextChapter.Title</span>
+                    </span>
+                    <span class="lb-book-nav__arrow"><Icon Name="arrow-right" Class="size-5" /></span>
+                </a>
             }
         </nav>
     </article>
@@ -56,6 +68,9 @@ else
     private BookChapterMeta? NextChapter => Book is not null && ChapterIndex >= 0 && ChapterIndex < Book.Chapters.Length - 1
         ? Book.Chapters[ChapterIndex + 1]
         : null;
+
+    // Same label the chapter header uses, so a button never contradicts the page it links to.
+    private static string ChapterDirection(BookChapterMeta meta) => meta.Number > 0 ? $"Chương {meta.Number}" : "Phần mở đầu";
 
     private int ReadMinutes
     {

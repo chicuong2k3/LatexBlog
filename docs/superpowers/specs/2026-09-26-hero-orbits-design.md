@@ -29,7 +29,9 @@ it.
 
 This design holds that line by three rules:
 
-1. Line opacity stays in the `0.14`–`0.34` band. Nothing in the scene is filled.
+1. Line opacity stays in the `0.22`–`0.46` band, and the canvas itself sits at `0.75`
+   desktop / `0.38` mobile. The brightest line therefore lands near `0.35` effective
+   alpha — visible as a field, never as a subject. Nothing in the scene is filled.
 2. The only moving light is one small node. The field of lines is nearly static.
 3. The scene lives in the hero only. No post, chapter or book page loads it.
 
@@ -107,15 +109,17 @@ x = a·(cos E − e)        z = b·sin E        E ∈ [0, 2π)
   `−14°` about X, so the family reads as a shallow bowl seen from slightly above.
   Without the tilt it is a flat rosette and the 3D is invisible.
 - **Lines:** `THREE.LineLoop` over 512 sampled points, `LineBasicMaterial` with
-  `transparent: true`. Opacity steps linearly by index from `0.34` at the centre to
-  `0.14` at the rim. Colour cycles through `--neon`, `--neon-2`, `--neon-3` by
+  `transparent: true`. Opacity steps linearly by index from `0.46` at the centre to
+  `0.22` at the rim. Colour cycles through `--neon`, `--neon-2`, `--neon-3` by
   orbit index.
 - **Node:** one `Sprite` on the innermost orbit, advanced by `E(t) = t · ω` with `ω`
   chosen for one revolution every 24 s, wrapping at `2π`. A sprite rather than a mesh
   so it needs no light and cannot fall out of the palette. Its `material.opacity` is
   `0.85` — the brightest single element in the scene, and still below the neon
-  headline.
-- **Fog:** `FogExp2(pageBackground, 0.055)`, so distant parts of the figure recede
+  headline. The sprite carries a radial-gradient `CanvasTexture`: without one, a
+  `Sprite` draws a solid quad, which reads as a rendering artefact rather than a
+  point of light. That was visible in the first screenshot review.
+- **Fog:** `FogExp2(pageBackground, 0.038)`, so distant parts of the figure recede
   instead of stacking into a flat wash.
 - **Renderer:** `alpha: true` (the CSS gradient shows through), `antialias: true`,
   `setPixelRatio(min(devicePixelRatio, 2))`.
@@ -167,7 +171,7 @@ inserted as a child of `.lb-hero` at `z-index: 0`; `.lb-hero .lb-wrap` already
 carries `position: relative` and is raised to `z-index: 1`. The existing
 `overflow: hidden` on `.lb-hero` clips the figure.
 
-Below 720 px the canvas opacity is halved: the hero is short on a phone, and a
+Below 720 px the canvas opacity is reduced: the hero is short on a phone, and a
 44 %-opacity field behind a 2.4 rem headline costs legibility for no gain.
 
 ## Offline

@@ -14,7 +14,7 @@
 
 - three.js is pinned to **exactly `0.170.0`**, from `build/three.module.min.js`, expected size **691648 bytes**. That release predates the build split, so the file is self-contained and imports nothing.
 - Scene tokens are read at mount time from `getComputedStyle(document.documentElement)` — `--bg`, `--neon`, `--neon-2`, `--neon-3`. **No hex literal for a palette colour in JavaScript.**
-- Line opacity stays within **0.14 – 0.34**. Nothing in the scene is a filled shape except the node sprite at **0.85**.
+- Line opacity stays within **0.22 - 0.46**. Nothing in the scene is a filled shape except the node sprite at **0.85**.
 - The scene loads on the home page only. No post, chapter or book page may reference it.
 - `prefers-reduced-motion: reduce` renders **exactly one frame** and starts no animation loop.
 - The canvas is `pointer-events: none` and `aria-hidden="true"`.
@@ -129,9 +129,9 @@ and append at the end of the file:
   position: absolute; inset: 0; z-index: 0;
   width: 100%; height: 100%;
   pointer-events: none;
-  opacity: .55;
+  opacity: .75;
 }
-@media (max-width: 720px) { .lb-orbits { opacity: .28; } }
+@media (max-width: 720px) { .lb-orbits { opacity: .38; } }
 ```
 
 `z-index: 0` on the canvas and `z-index: 1` on the wrap are what keep the figure behind the headline. `.lb-hero` already has `position: relative` and `overflow: hidden`, so the canvas is positioned against the hero and clipped by it.
@@ -244,14 +244,14 @@ const ORBITS = 7;
 const SEGMENTS = 512;
 const A_MIN = 2.6, A_MAX = 9.4;
 const E_TIGHT = 0.86, E_WIDE = 0.28;
-const OPACITY_IN = 0.34, OPACITY_OUT = 0.14;
+const OPACITY_IN = 0.46, OPACITY_OUT = 0.22;
 const TILT_DEG = 2, TILT_STEP_DEG = 3;
 const GROUP_TILT_DEG = -14;
 const PRECESS_PERIOD_S = 90;
 const NODE_PERIOD_S = 24;
 const NODE_OPACITY = 0.85;
-const NODE_SCALE = 0.42;
-const FOG_DENSITY = 0.055;
+const NODE_SCALE = 0.62;
+const FOG_DENSITY = 0.038;
 const CAMERA_Y = 3.2, CAMERA_Z = 12;
 const FALLBACK = { bg: '#f4f6fb', neon: '#5367e8', neon2: '#159b9b', neon3: '#2d78c5' };
 

@@ -96,3 +96,24 @@ test('home hero: tự co cỡ chữ để quote vừa đúng 2 dòng', async ({ 
   expect(h).toBeGreaterThan(fs * 1.5);         // more than one line
   expect(h).toBeLessThan(fs * 3);              // no more than ~3 lines
 });
+
+test('hero có canvas 3D đúng kích thước và không gây tràn ngang', async ({ page }) => {
+  await page.goto('/');
+  const canvas = page.locator('canvas[data-lb-orbits]');
+  await expect(canvas).toHaveCount(1);
+  await expect(canvas).toHaveAttribute('aria-hidden', 'true');
+  const box = await canvas.boundingBox();
+  expect(box.width).toBeGreaterThan(300);
+  expect(box.height).toBeGreaterThan(150);
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth - document.documentElement.clientWidth
+  );
+  expect(overflow).toBeLessThanOrEqual(1);
+});
+
+test('canvas không chặn bôi đen chữ trên hero', async ({ page }) => {
+  await page.goto('/');
+  const pe = await page.locator('canvas[data-lb-orbits]')
+    .evaluate((c) => getComputedStyle(c).pointerEvents);
+  expect(pe).toBe('none');
+});

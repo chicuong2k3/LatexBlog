@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Xác định vị trí vật thể trên elip</title>
+  <desc id="desc">Sơ đồ Proposition XXXI: elip với đỉnh A, tâm O, tiêu điểm S, bán kính phụ G và vị trí P cần tìm.</desc>
+  <rect width="900" height="520" fill="#fffdf8"/>
+  <ellipse cx="450" cy="270" rx="290" ry="130" fill="none" stroke="#263248" stroke-width="5"/>
+  <line x1="120" y1="270" x2="780" y2="270" stroke="#526078" stroke-width="3"/>
+  <line x1="450" y1="270" x2="450" y2="90" stroke="#526078" stroke-width="3"/>
+  <line x1="450" y1="270" x2="650" y2="190" stroke="#b45309" stroke-width="4"/>
+  <circle cx="450" cy="270" r="7" fill="#b45309"/>
+  <circle cx="650" cy="190" r="7" fill="#b45309"/>
+  <g fill="#263248" font-family="Georgia, serif" font-size="22">
+    <text x="110" y="260">A</text><text x="440" y="260">O</text><text x="450" y="85">S</text><text x="660" y="180">P</text>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="18">
+    <text x="100" y="330">đỉnh A</text><text x="500" y="315">bán kính SP</text><text x="600" y="400">điểm P</text>
+  </g>
+</svg>

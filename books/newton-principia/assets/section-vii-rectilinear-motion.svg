@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Chuyển động rơi thẳng và so sánh với đường tròn</title>
+  <desc id="desc">Sơ đồ Proposition XXXIV–XXXVI: trục rơi, vị trí C, vòng tròn so sánh và các bán kính liên quan.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="900" height="520" fill="#fffdf8"/>
+  <line x1="110" y1="110" x2="110" y2="450" stroke="#526078" stroke-width="4" marker-end="url(#arrow)"/>
+  <circle cx="110" cy="110" r="8" fill="#b45309"/>
+  <circle cx="110" cy="300" r="8" fill="#b45309"/>
+  <circle cx="110" cy="430" r="8" fill="#b45309"/>
+  <line x1="110" y1="300" x2="330" y2="300" stroke="#526078" stroke-width="3" stroke-dasharray="7 7"/>
+  <circle cx="330" cy="300" r="65" fill="none" stroke="#b45309" stroke-width="4"/>
+  <line x1="110" y1="300" x2="205" y2="235" stroke="#b45309" stroke-width="3"/>
+  <g fill="#263248" font-family="Georgia, serif" font-size="22">
+    <text x="90" y="100">A</text><text x="120" y="305">C</text><text x="85" y="450">S</text><text x="340" y="305">đường tròn so sánh</text>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="18">
+    <text x="145" y="175">đường rơi</text><text x="430" y="285">bán kính BC</text><text x="450" y="410">thời gian và quãng đường</text>
+  </g>
+</svg>

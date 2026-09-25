@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+  <title id="title">Elip, tiêu điểm và lực hướng tâm</title>
+  <desc id="desc">Sơ đồ Proposition XI: elip có hai tiêu điểm S và H, đường kính, tiếp tuyến, ordinate và các đoạn dùng để chứng minh lực hướng tâm.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="540" fill="#fffdf8"/>
+  <ellipse cx="500" cy="270" rx="340" ry="160" fill="none" stroke="#263248" stroke-width="5"/>
+  <circle cx="500" cy="270" r="7" fill="#b45309"/>
+  <circle cx="320" cy="270" r="7" fill="#526078"/>
+  <circle cx="680" cy="270" r="7" fill="#526078"/>
+  <path d="M 500 270 L 740 160" stroke="#b45909" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M 500 270 L 260 160" stroke="#526078" stroke-width="3" stroke-dasharray="7 7"/>
+  <path d="M 740 160 L 760 75" stroke="#526078" stroke-width="3"/>
+  <path d="M 680 270 L 680 430" stroke="#526078" stroke-width="3"/>
+  <g fill="#263248" font-family="Georgia, serif" font-size="22">
+    <text x="475" y="305">C</text><text x="300" y="305">H</text><text x="665" y="305">S</text>
+    <text x="730" y="150">P</text><text x="750" y="65">T</text><text x="660" y="455">Q</text>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="19">
+    <text x="80" y="490">tiêu điểm H</text>
+    <text x="405" y="490">tiêu điểm S và tâm C</text>
+    <text x="715" y="490">tiếp tuyến và ordinate</text>
+  </g>
+</svg>

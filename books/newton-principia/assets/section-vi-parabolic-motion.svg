@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Xác định vị trí vật thể trên quỹ đạo parabol</title>
+  <desc id="desc">Sơ đồ Proposition XXX: parabol có đỉnh A, tiêu điểm S, điểm G trên trục, điểm H và vị trí P cần tìm.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="900" height="520" fill="#fffdf8"/>
+  <path d="M 90 420 Q 450 70 810 420" fill="none" stroke="#263248" stroke-width="5"/>
+  <line x1="90" y1="420" x2="810" y2="420" stroke="#526078" stroke-width="3"/>
+  <line x1="450" y1="420" x2="450" y2="245" stroke="#526078" stroke-width="3" stroke-dasharray="7 7"/>
+  <line x1="450" y1="245" x2="620" y2="125" stroke="#b45309" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="450" y1="245" x2="600" y2="90" stroke="#526078" stroke-width="3"/>
+  <circle cx="450" cy="245" r="7" fill="#b45309"/>
+  <circle cx="620" cy="125" r="7" fill="#b45309"/>
+  <g fill="#263248" font-family="Georgia, serif" font-size="22">
+    <text x="430" y="455">A</text><text x="430" y="235">S</text><text x="430" y="410">G</text><text x="610" y="115">P</text><text x="590" y="80">H</text>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="18">
+    <text x="100" y="470">trục chính</text><text x="515" y="250">bán kính SP</text><text x="620" y="360">điểm P cần tìm</text>
+  </g>
+</svg>

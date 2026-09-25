@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Các tam giác diện tích bằng nhau quanh tâm lực S</title>
+  <desc id="desc">Minh họa Proposition I: quỹ đạo A B C D E F, các bán kính từ S và các tam giác SAB, SBC, SCD có diện tích bằng nhau.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="560" fill="#fffdf8"/>
+  <path d="M 100 400 C 230 70 600 35 880 170" fill="none" stroke="#b45309" stroke-width="5"/>
+  <g fill="none" stroke="#526078" stroke-width="2.5">
+    <path d="M 180 350 L 320 120"/>
+    <path d="M 320 120 L 500 75"/>
+    <path d="M 500 75 L 660 95"/>
+    <path d="M 660 95 L 800 140"/>
+    <path d="M 100 400 L 180 350"/>
+    <path d="M 100 400 L 320 120"/>
+    <path d="M 100 400 L 500 75"/>
+    <path d="M 100 400 L 660 95"/>
+    <path d="M 100 400 L 800 140"/>
+  </g>
+  <g fill="#e9edf3" stroke="#526078" stroke-width="1.5">
+    <path d="M 100 400 L 180 350 L 320 120 Z"/>
+    <path d="M 100 400 L 320 120 L 500 75 Z"/>
+    <path d="M 100 400 L 500 75 L 660 95 Z"/>
+  </g>
+  <g fill="#263248" font-family="Georgia, serif" font-size="23">
+    <text x="75" y="435">S</text><text x="160" y="340">A</text><text x="305" y="105">B</text>
+    <text x="485" y="60">C</text><text x="645" y="82">D</text><text x="790" y="128">E</text><text x="870" y="158">F</text>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="20">
+    <text x="115" y="475">SAB</text><text x="270" y="245">SBC</text><text x="410" y="190">SCD</text>
+    <text x="610" y="250">các tam giác có diện tích bằng nhau</text>
+  </g>
+  <path d="M 180 350 L 110 330" stroke="#b45309" stroke-width="3" marker-end="url(#arrow)"/>
+</svg>

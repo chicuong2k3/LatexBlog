@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Minh họa chuyển động trong môi trường có lực cản</title>
+  <desc id="desc">Trục thời gian, đường hyperbola và các đường thẳng biểu diễn vận tốc theo thời gian.</desc>
+  <rect width="900" height="520" fill="#fbfaf6"/>
+  <g fill="none" stroke="#24313a" stroke-width="3">
+    <path d="M90 430H820"/>
+    <path d="M450 430V60"/>
+    <path d="M110 430C220 300 300 200 450 170C600 140 690 115 800 95" stroke="#b04a3a" stroke-width="6"/>
+    <path d="M450 430L760 120" stroke="#2f6f73" stroke-width="4"/>
+    <path d="M450 430L720 210" stroke="#8a6a2f" stroke-width="4"/>
+    <path d="M120 390H760" stroke="#7c8790" stroke-dasharray="10 8" stroke-width="2"/>
+  </g>
+  <g fill="#24313a" font-family="sans-serif" font-size="24">
+    <text x="770" y="465">thời gian</text>
+    <text x="465" y="75">vận tốc</text>
+    <text x="120" y="405">A</text>
+    <text x="430" y="455">O</text>
+    <text x="710" y="110">B</text>
+  </g>
+  <g fill="#7a2f27" font-family="sans-serif" font-size="22">
+    <text x="560" y="155">đường quỹ tích</text>
+  </g>
+  <g stroke="#24313a" stroke-width="2">
+    <path d="M450 430h-18M450 430v-18"/>
+    <path d="M760 120h-18M760 120v-18"/>
+  </g>
+</svg>

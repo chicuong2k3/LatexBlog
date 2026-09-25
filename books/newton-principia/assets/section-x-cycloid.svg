@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Cycloid, quả địa cầu và con lắc</title>
+  <desc id="desc">Sơ đồ tổng hợp dựng lại cho Phần X: cycloid ngoài quả địa cầu, cycloid trong quả địa cầu và con lắc chạy theo cycloid.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" fill="#fffdf8"/>
+  <circle cx="480" cy="300" r="170" fill="#eef4f2" stroke="#526078" stroke-width="4"/>
+  <path d="M 90 440 Q 170 270 250 440 Q 330 610 410 440 Q 490 270 570 440 Q 650 610 730 440 Q 810 270 890 440" fill="none" stroke="#b45309" stroke-width="5"/>
+  <line x1="480" y1="300" x2="480" y2="100" stroke="#526078" stroke-width="3" stroke-dasharray="7 7"/>
+  <line x1="480" y1="100" x2="600" y2="150" stroke="#b45309" stroke-width="3"/>
+  <circle cx="480" cy="100" r="7" fill="#b45309"/>
+  <circle cx="600" cy="150" r="7" fill="#b45309"/>
+  <g fill="#263248" font-family="Georgia, serif" font-size="22">
+    <text x="465" y="90">C</text><text x="610" y="140">T</text><text x="450" y="500">cycloid</text>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="18">
+    <text x="90" y="500">đường viền ngoài</text><text x="640" y="500">đường viền trong</text><text x="505" y="205">con lắc</text>
+  </g>
+</svg>

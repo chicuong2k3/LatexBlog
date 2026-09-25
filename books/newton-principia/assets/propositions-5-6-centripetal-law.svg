@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Cách dựng tâm lực và công thức lực hướng tâm</title>
+  <desc id="desc">Hình bên trái minh họa cách dựng tâm lực từ ba tiếp tuyến và các đoạn vuông góc. Hình bên phải minh họa cung quỹ đạo, dây cung, tiếp tuyến và phiên của cung.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="520" fill="#fffdf8"/>
+  <path d="M 550 35 V 485" stroke="#d6dbe5" stroke-width="2"/>
+  <g fill="#263248" font-family="Georgia, serif" font-size="23">
+    <text x="35" y="40">Bài toán tìm tâm lực</text>
+    <text x="600" y="40">Lực hướng tâm theo cung</text>
+  </g>
+  <g transform="translate(50 100)">
+    <path d="M 50 320 C 120 80 330 70 430 250" fill="none" stroke="#b45309" stroke-width="5"/>
+    <path d="M 50 320 L 170 100" stroke="#526078" stroke-width="3"/>
+    <path d="M 170 100 L 350 30" stroke="#526078" stroke-width="3"/>
+    <path d="M 350 30 L 430 250" stroke="#526078" stroke-width="3"/>
+    <path d="M 50 320 L 95 240" stroke="#263248" stroke-width="3"/>
+    <path d="M 170 100 L 210 20" stroke="#263248" stroke-width="3"/>
+    <path d="M 350 30 L 390 -50" stroke="#263248" stroke-width="3"/>
+    <path d="M 95 240 L 210 20" stroke="#b45309" stroke-width="2"/>
+    <path d="M 210 20 L 390 -50" stroke="#b45309" stroke-width="2"/>
+    <circle cx="255" cy="-5" r="7" fill="#b45309"/>
+    <g fill="#263248" font-family="Georgia, serif" font-size="19">
+      <text x="35" y="355">P</text><text x="150" y="90">Q</text><text x="335" y="20">R</text>
+      <text x="80" y="230">A</text><text x="195" y="10">B</text><text x="375" y="-55">C</text><text x="260" y="10">S</text>
+    </g>
+  </g>
+  <g transform="translate(620 100)">
+    <path d="M 50 300 C 150 60 340 55 440 210" fill="none" stroke="#b45309" stroke-width="5"/>
+    <path d="M 50 300 L 440 210" stroke="#263248" stroke-width="3"/>
+    <path d="M 50 300 L 220 80" stroke="#526078" stroke-width="3"/>
+    <path d="M 220 80 L 440 210" stroke="#526078" stroke-width="3" stroke-dasharray="7 7"/>
+    <path d="M 220 80 L 220 300" stroke="#b45309" stroke-width="3" marker-end="url(#arrow)"/>
+    <g fill="#263248" font-family="Georgia, serif" font-size="19">
+      <text x="35" y="335">A</text><text x="420" y="245">B</text><text x="205" y="70">S</text>
+      <text x="230" y="200">phiên của cung</text>
+    </g>
+  </g>
+  <g fill="#526078" font-family="Georgia, serif" font-size="19">
+    <text x="80" y="475">PA, QB, RC tỷ lệ nghịch với vận tốc</text>
+    <text x="650" y="475">lực tỷ lệ trực tiếp với phiên của cung</text>
+  </g>
+</svg>

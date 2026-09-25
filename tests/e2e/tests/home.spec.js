@@ -158,3 +158,32 @@ test('tắt JS thì hero vẫn hiện, không cần canvas để đọc', async 
   await expect(page.locator('.lb-hero-lead')).toBeVisible();
   await ctx.close();
 });
+
+// Nav links are Unpoly-intercepted, so clicking them is what exercises the destructor.
+// page.goto() would be a full load and would prove nothing about teardown.
+const goHome = async (page) => {
+  await page.locator('.lb-nav-links a', { hasText: 'Trang chủ' }).first().click();
+  await expect(page.locator('.lb-hero h1')).toBeVisible();
+};
+const frames = (page) =>
+  page.locator('canvas[data-lb-orbits]').getAttribute('data-lb-frames').then(Number).catch(() => 0);
+
+test('Unpoly điều hướng rồi quay lại: đúng một canvas, scene sống lại', async ({ page }) => {
+  // Start away from home, so three.js is not yet loaded and the lazy import has to run
+  // against a canvas that arrived through a fragment swap — the path a <script> tag inside
+  // Home.razor would have missed entirely.
+  await page.goto('/books');
+  await goHome(page);
+
+  await expect(page.locator('canvas[data-lb-orbits]')).toHaveCount(1);
+  await expect.poll(() => frames(page), { timeout: 15000 }).toBeGreaterThan(2);
+
+  // Two more round trips: a leaked context or a double mount would show up here.
+  for (let i = 0; i < 2; i++) {
+    await page.locator('.lb-nav-links a', { hasText: 'Thẻ' }).first().click();
+    await expect(page.locator('.lb-main')).toBeVisible();
+    await goHome(page);
+    await expect(page.locator('canvas[data-lb-orbits]')).toHaveCount(1);
+    await expect.poll(() => frames(page), { timeout: 15000 }).toBeGreaterThan(2);
+  }
+});

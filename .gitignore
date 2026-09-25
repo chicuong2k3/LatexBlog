@@ -484,6 +484,9 @@ $RECYCLE.BIN/
 # SDD progress ledger and task scratch (subagent-driven-development)
 .superpowers/
 
+# Local OpenCode continuation state
+.omo/
+
 # local pandoc install (dev/CI only)
 tools/pandoc/
 

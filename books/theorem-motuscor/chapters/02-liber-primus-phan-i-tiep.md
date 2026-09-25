@@ -1214,4 +1214,266 @@ $$
 
 khi được biểu thị bằng giây và dùng các logarithm Brigghi ở bảy chữ số thập phân.
 
-<!-- Phần tiếp theo của §32 bắt đầu từ PDF 45. -->
+<!-- PDF 45, trang in 28, tiếp theo §32-§33 -->
+
+khi dùng các logarithm Brigghi ở bảy chữ số thập phân, ta luôn có thể chắc chắn về giá trị của $\nu$ trong khoảng $0^\circ{,}07$; nếu dùng các bảng nhỏ chỉ đến năm chữ số, sai số có thể lên tới $7',12$.
+
+II. Nếu $e\cos E$ được tính bằng sự trợ giúp của các logarithm, sai số có thể mắc phải tới
+
+$$
+\frac{3\omega e\cos E}{\lambda}.
+$$
+
+Vì thế, đại lượng $1-e\cos E$, tức là $\frac ra$, cũng chịu cùng sai số ấy. Do đó, khi tính logarithm của đại lượng này, sai số có thể lên tới $(1+\delta)\omega$, nếu đặt
+
+$$
+\delta=\frac{3e\cos E}{1-e\cos E}
+$$
+
+và lấy giá trị dương. Nếu $\log a$ được cho tuyệt đối chính xác, sai số trong $\log r$ cũng có thể lên tới giới hạn $(1+\delta)\omega$.
+
+Khi tâm sai nhỏ, $\delta$ luôn bị giữ trong những giới hạn hẹp. Nhưng nếu $e$ chỉ khác $1$ một chút, $1-e\cos E$ vẫn rất nhỏ miễn là $E$ còn nhỏ; khi ấy $\delta$ có thể tăng đến một giá trị không thể xem nhẹ. Vì vậy, trong trường hợp ấy, công thức III ở Điều 8 kém phù hợp hơn. Ta cũng có thể biểu thị
+
+$$
+\delta
+=
+\frac{3(a-r)}{r}
+=
+\frac{3e(\cos\nu+e)}{1-ee},
+$$
+
+công thức này còn cho thấy rõ hơn khi nào có thể bỏ qua sai số $(1+\delta)\omega$.
+
+III. Dùng công thức X ở Điều 8 để tính anomalia thật từ anomalia tâm sai, $\log\sqrt{a/r}$ sẽ chịu sai số
+
+$$
+\left(\frac12+\frac12\delta\right)\omega,
+$$
+
+và do đó
+
+$$
+\log\sin\frac{\varphi}{2}\,\sin E\,\sqrt{\frac ar}
+$$
+
+cũng chịu sai số ấy. Từ đó, sai số lớn nhất có thể xảy ra khi xác định góc $\nu-E$, hoặc $\nu$, là
+
+$$
+\frac{\omega}{\lambda}(7+\delta)\tan\frac{\nu-E}{2}.
+$$
+
+Nếu biểu thị bằng giây và dùng bảy chữ số thập phân, sai số ấy bằng
+
+$$
+(0'',166+0'',024\delta)\tan\frac{\nu-E}{2}.
+$$
+
+Khi tâm sai vừa phải, $\delta$ và $\tan\frac{\nu-E}{2}$ đều nhỏ. Vì thế, phương pháp này cho độ chính xác cao hơn phương pháp đã xét trong I. Ngược lại, khi tâm sai rất lớn và gần $1$, $\delta$ cùng $\tan\frac{\nu-E}{2}$ trở nên đáng kể; khi đó phương pháp trong I lại tốt hơn. Với các công thức của ta, luôn có thể dễ dàng quyết định phương pháp nào nên dùng.
+
+IV. Khi xác định anomalia trung bình từ anomalia tâm sai bằng công thức XII ở Điều 8, sai số của đại lượng $e\sin E$ được tính bằng logarithm, và do đó cả sai số của chính anomalia trung bình $M$, có thể lên tới
+
+$$
+\frac{3\omega e\sin E}{\lambda}.
+$$
+
+Nếu muốn biểu thị giới hạn ấy bằng giây, phải nhân với $206265''$. Do đó, dễ dàng kết luận rằng trong bài toán nghịch đảo, nơi $E$ được xác định bằng cách thử từ $M$, chính $E$ có thể sai lệch một lượng
+
+<!-- PDF 46, trang in 29, tiếp theo §32 -->
+
+$$
+\frac{3\omega e\sin E}{\lambda}
+\frac{dE}{dM}\,206265''
+=
+\frac{3\omega ea\sin E}{\lambda r}\,206265'',
+$$
+
+ngay cả khi phương trình
+
+$$
+E-e\sin E=M
+$$
+
+đã được thỏa mãn với mọi độ chính xác mà bảng cho phép.
+
+Vì vậy, anomalia thật tính từ anomalia trung bình có thể sai theo hai lý do. Nếu ta xem anomalia trung bình là tuyệt đối chính xác, lý do thứ nhất là sai số trong việc tính $\nu$ từ $E$; như đã thấy, sai số này luôn nhỏ. Lý do thứ hai là chính giá trị của anomalia tâm sai $E$ đã có thể sai.
+
+Tác dụng của lý do thứ hai được xác định bằng tích của sai số trong $E$ với $\frac{d\nu}{dE}$. Tích ấy bằng
+
+$$
+\frac{3\omega e\sin E}{\lambda}
+\frac{d\nu}{dM}\,206265''
+=
+\frac{3\omega ea\sin\nu}{\lambda r}\,206265''
+=
+\left(
+\frac{e\sin\nu+\frac12ee\sin2\nu}{1-ee}
+\right)0'',0712,
+$$
+
+nếu dùng bảy chữ số thập phân. Với các giá trị nhỏ của $e$, sai số này luôn vừa phải, nhưng khi $e$ chỉ khác $1$ một chút thì có thể trở nên rất lớn. Bảng sau cho thấy giá trị lớn nhất của biểu thức ấy đối với một số giá trị của $e$:
+
+| $e$ | Sai số lớn nhất | $e$ | Sai số lớn nhất | $e$ | Sai số lớn nhất |
+|---:|---:|---:|---:|---:|---:|
+| $0{,}90$ | $0'',42$ | $0{,}94$ | $0'',73$ | $0{,}98$ | $2'',28$ |
+| $0{,}91$ | $0'',48$ | $0{,}95$ | $0'',89$ | $0{,}99$ | $4'',59$ |
+| $0{,}92$ | $0'',54$ | $0{,}96$ | $1'',12$ | $0{,}999$ | $46'',23$ |
+| $0{,}93$ | $0'',62$ | $0{,}97$ | $1'',50$ |  |  |
+
+V. Trong chuyển động hyperbol, nếu $\nu$ được xác định từ $F$ và $\psi$ đã biết chính xác bằng công thức III ở Điều 21, sai số có thể lên tới
+
+$$
+\frac{3\omega\sin\nu}{\lambda}\,206265''.
+$$
+
+Nếu $\nu$ được tính bằng công thức
+
+$$
+\tan\frac{\nu}{2}
+=
+\frac{(u-1)\cot\frac{\psi}{2}}{u+1},
+$$
+
+khi $u$ và $\psi$ đã biết chính xác, giới hạn sai số lớn hơn một phần ba, tức là
+
+$$
+\frac{4\omega\sin\nu}{\lambda}\,206265''
+=
+0'',09\sin\nu
+$$
+
+khi dùng bảy chữ số thập phân.
+
+VI. Nếu đại lượng
+
+$$
+\frac{\lambda kt}{b^{3/2}}=N
+$$
+
+được tính bằng các logarithm Brigghi theo công thức XI ở Điều 22, và giả sử $e$ cùng $u$, hoặc $e$ cùng $F$, đã biết chính xác, thì số hạng đầu của $N$ sẽ chịu sai số
+
+$$
+\frac{5(uu-1)e\omega}{2u}
+$$
+
+nếu được tính ở dạng
+
+$$
+\frac{\lambda e(uu-1)}{2u},
+$$
+
+hoặc chịu sai số
+
+$$
+\frac{3(uu+1)e\omega}{2u}
+$$
+
+nếu được tính ở dạng
+
+$$
+\frac12\lambda eu
+$$
+
+<!-- PDF 47, trang in 30, tiếp theo §32 -->
+
+$$
+-\frac{\lambda e}{2u},
+$$
+
+hoặc chịu sai số
+
+$$
+3e\omega\tan F
+$$
+
+nếu được tính ở dạng $\lambda e\tan F$. Ở đây ta bỏ qua sai số phát sinh trong $\log\lambda$ hoặc $\log\frac12\lambda$.
+
+Trong trường hợp thứ nhất, sai số còn có thể biểu thị bằng $5e\omega\tan F$; trong trường hợp thứ hai, bằng
+
+$$
+\frac{3e\omega}{\cos F}.
+$$
+
+Do đó, trong trường hợp thứ ba, sai số luôn nhỏ nhất; trong hai trường hợp đầu nó lớn hơn, tuỳ theo $u$ hoặc $\frac1u$ lớn hay nhỏ hơn $2$, tức là tuỳ theo $\pm F$ lớn hơn hay nhỏ hơn $36^\circ52'$. Số hạng thứ hai của $N$ luôn chịu sai số $\omega$.
+
+VII. Ngược lại, nếu $u$ hoặc $F$ được xác định bằng cách thử từ $N$, ta thấy $u$ chịu sai số
+
+$$
+\left(1\pm5e\omega\tan F\right)\frac{du}{dN},
+$$
+
+hoặc
+
+$$
+\left(1+\frac{3e\omega}{\cos F}\right)\frac{du}{dN},
+$$
+
+tùy theo số hạng thứ nhất của $N$ được dùng trực tiếp, hay được phân rã thành các thừa số hoặc các phần. Còn $F$ chịu sai số
+
+$$
+\left(1\pm3e\omega\tan F\right)\frac{dF}{dN}.
+$$
+
+Dấu trên có hiệu lực sau perihelium, dấu dưới có hiệu lực trước perihelium. Nếu ở đây thay $\frac{du}{dN}$ hoặc $\frac{dF}{dN}$ bằng $\frac{d\nu}{dN}$, tác dụng của sai số này đối với việc xác định $\nu$ sẽ là
+
+$$
+\frac{bb\tan\psi(1\pm5e\tan F)\omega}{\lambda rr}
+$$
+
+hoặc
+
+$$
+\frac{bb\tan\psi(1+5e\sec F)\omega}{\lambda rr},
+$$
+
+nếu dùng đại lượng phụ $u$. Ngược lại, nếu dùng $F$, tác dụng ấy bằng
+
+$$
+\frac{bb\tan\psi(1\pm5e\tan F)\omega}{\lambda rr}
+=
+\frac{\omega}{\lambda}
+\left\{
+\frac{(1+e\cos\nu)^2}{\tan^3\psi}
+\ \pm\
+\frac{3e\sin\nu(1+e\cos\nu)}{\tan^2\psi}
+\right\}.
+$$
+
+Nếu muốn biểu thị sai số bằng giây, phải thêm thừa số $206265''$. Sai số này chỉ trở nên đáng kể khi $\psi$ là một góc nhỏ, tức là khi $e$ lớn hơn $1$ một chút. Dưới đây là các giá trị lớn nhất của biểu thức thứ ba ấy đối với một số giá trị của $e$, khi dùng bảy chữ số thập phân:
+
+| $e$ | Sai số lớn nhất |
+|---:|---:|
+| $1{,}3$ | $0'',34$ |
+| $1{,}2$ | $0'',54$ |
+| $1{,}1$ | $1'',31$ |
+| $1{,}05$ | $3'',03$ |
+| $1{,}01$ | $34'',41$ |
+| $1{,}001$ | $1064'',65$ |
+
+<!-- PDF 48, trang in 31, tiếp theo §32-§33 -->
+
+Với sai số này, còn phải cộng thêm sai số xác định ở mục V phát sinh từ giá trị sai của chính $F$ hoặc $u$, để có được sự bất định tổng thể của $\nu$.
+
+VIII. Nếu phương trình XI ở Điều 22 được giải bằng các logarithm hyperbol, và dùng $F$ làm đại lượng phụ, tác dụng của sai số trong phép toán này đối với việc xác định $\nu$, theo lập luận tương tự, là
+
+$$
+\frac{(1+e\cos\nu)^2\lambda\omega'}{\tan^3\psi}
+\ \pm\
+\frac{3e\sin\nu(1+e\cos\nu)\omega}
+     {\lambda\tan^2\psi}.
+$$
+
+Ở đây $\omega'$ là sai số lớn nhất trong các bảng logarithm hyperbol. Số hạng thứ hai của biểu thức này giống số hạng thứ hai trong biểu thức ở VII; còn số hạng thứ nhất nhỏ hơn số hạng thứ nhất ở đó theo tỷ lệ $\lambda\omega':\omega$, tức là theo tỷ lệ $1:23$, nếu ta giả sử bảng Vrsini chính xác ở tám chữ số, hay
+
+$$
+\omega'=0{,}000000005.
+$$
+
+## §33
+
+Trong những mặt cắt conic có tâm sai chỉ khác $1$ một chút, tức là trong các elip và hyperbol gần parabol, các phương pháp đã trình bày ở trên không thể đạt được mọi độ chính xác có thể mong muốn, cả khi dùng chúng để xác định anomalia thật từ thời gian lẫn thời gian từ anomalia thật. Những sai số không tránh khỏi còn tăng lên khi quỹ đạo càng giống parabol, cho đến khi vượt qua mọi giới hạn.
+
+Các bảng lớn hơn, được lập với nhiều hơn bảy chữ số thập phân, có thể làm giảm sự bất định này, nhưng không thể xóa bỏ nó, cũng không ngăn được nó vượt qua mọi giới hạn ngay khi quỹ đạo tiến quá gần parabol. Hơn nữa, các phương pháp đã nêu trở nên khá phiền phức trong trường hợp ấy, vì phần gián tiếp của chúng phải lặp lại những lần thử nhiều lần; sự phiền này càng trở nên nặng nề hơn nếu ta dùng các bảng lớn. Vì vậy, việc phát triển một phương pháp đặc biệt để tránh sự bất định ấy, chỉ với sự trợ giúp của các bảng thông thường mà vẫn đạt độ chính xác đủ, rõ ràng không phải là việc thừa.
+
+> **\*)** Vì thời gian chứa thừa số $a^{3/2}$ hoặc $b^{3/2}$, sai số phát sinh trong $M$ hoặc $N$ càng lớn khi $a=\frac{p}{1-ee}$ hoặc $b=\frac{p}{ee-1}$ càng lớn.
+
+<!-- Phần tiếp theo của §33 bắt đầu từ PDF 49. -->

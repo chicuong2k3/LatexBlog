@@ -128,3 +128,33 @@ test('scene orbits dựng và chạy: frame counter tăng, canvas có kích thư
   expect(size[0]).toBeGreaterThan(0);
   expect(size[1]).toBeGreaterThan(0);
 });
+
+test('prefers-reduced-motion: scene dựng đúng 1 frame rồi đứng yên', async ({ browser }) => {
+  const ctx = await browser.newContext({ reducedMotion: 'reduce' });
+  const page = await ctx.newPage();
+  await page.goto('/');
+  const canvas = page.locator('canvas[data-lb-orbits]');
+  await expect.poll(async () => canvas.getAttribute('data-lb-frames'), { timeout: 15000 }).toBe('1');
+  await page.waitForTimeout(1200);
+  expect(await canvas.getAttribute('data-lb-frames')).toBe('1');
+  await expect(page.locator('.lb-hero h1')).toBeVisible();
+  await ctx.close();
+});
+
+test('không có WebGL thì bỏ canvas, hero vẫn đọc được', async ({ page }) => {
+  await page.addInitScript(() => {
+    HTMLCanvasElement.prototype.getContext = function () { return null; };
+  });
+  await page.goto('/');
+  await expect(page.locator('canvas[data-lb-orbits]')).toHaveCount(0);
+  await expect(page.locator('.lb-hero h1')).toBeVisible();
+});
+
+test('tắt JS thì hero vẫn hiện, không cần canvas để đọc', async ({ browser }) => {
+  const ctx = await browser.newContext({ javaScriptEnabled: false });
+  const page = await ctx.newPage();
+  await page.goto('/');
+  await expect(page.locator('.lb-hero h1')).toBeVisible();
+  await expect(page.locator('.lb-hero-lead')).toBeVisible();
+  await ctx.close();
+});

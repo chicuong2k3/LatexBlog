@@ -114,6 +114,8 @@ up.compiler("[data-lb-orbits]", function (canvas) {
             if (cancelled) return;
             dispose = m.mount(canvas) || function () {};
         })
+        // Reached when the import itself fails; a WebGL failure is already handled inside
+        // mount(), which removes the canvas rather than throwing at the caller.
         .catch(function () { canvas.remove(); });
     return function () {
         cancelled = true;

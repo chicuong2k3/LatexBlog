@@ -1,0 +1,52 @@
+@page "/books/{slug}"
+@inject BookStore BookStore
+
+<PageTitle>@(BookItem?.Title ?? "Dịch sách") - Alternative World</PageTitle>
+
+@if (BookItem is null)
+{
+    <NotFoundBlock />
+}
+else
+{
+    <article class="lb-post-page">
+        <header class="lb-post-head">
+            <p class="lb-post-meta"><a href="/books">Dịch sách</a>@if (!string.IsNullOrWhiteSpace(BookItem.Author)) {<text> · @BookItem.Author</text>}</p>
+            <h1>@BookItem.Title</h1>
+            <p class="lb-post-meta">
+                @if (!string.IsNullOrWhiteSpace(BookItem.OriginalTitle)) {<text>Bản gốc: @BookItem.OriginalTitle · </text>}
+                @BookItem.Chapters.Length chương
+            </p>
+        </header>
+
+        @if (IntroHtml is not null)
+        {
+            <div class="lb-prose">@((MarkupString)IntroHtml)</div>
+        }
+
+        @if (BookItem.Chapters.Length > 0)
+        {
+            <aside class="lb-related" aria-label="Danh sách chương">
+                <h2>Các chương</h2>
+                <ItemGroup Class="lb-related__list">
+                    @foreach (var chapter in BookItem.Chapters)
+                    {
+                        <Item Href="@($"/books/{BookItem.Slug}/{chapter.Slug}")" Variant="outline" Size="sm" Class="lb-related__item">
+                            <ItemContent>
+                                <ItemTitle>@chapter.Title</ItemTitle>
+                                <ItemDescription>@(chapter.Number > 0 ? $"Chương {chapter.Number}" : "Phần mở đầu") · @chapter.Summary</ItemDescription>
+                            </ItemContent>
+                        </Item>
+                    }
+                </ItemGroup>
+            </aside>
+        }
+    </article>
+}
+
+@code {
+    [Parameter] public string? Slug { get; set; }
+
+    private BookMeta? BookItem => BookStore.GetBook(Slug ?? "");
+    private string? IntroHtml => BookItem is null ? null : BookStore.GetIntroHtml(BookItem.Slug);
+}

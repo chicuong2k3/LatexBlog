@@ -1,0 +1,15 @@
+<Card Class="lb-post lb-book-card">
+    <span class="lb-post-num" aria-hidden="true">@Number.ToString("00")</span>
+    <div class="lb-post-body">
+        <h3><a href="/books/@Book.Slug">@Book.Title</a></h3>
+        <p>@Book.Summary</p>
+    </div>
+    <div class="lb-post-meta">
+        <span class="lb-date">@Book.Chapters.Length chương</span>
+    </div>
+</Card>
+
+@code {
+    [Parameter, EditorRequired] public BookMeta Book { get; set; } = default!;
+    [Parameter] public int Number { get; set; }
+}

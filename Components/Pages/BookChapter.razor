@@ -1,0 +1,93 @@
+@page "/books/{bookSlug}/{chapterSlug}"
+@using System.Text.RegularExpressions
+@inject BookStore BookStore
+@inject IHttpContextAccessor HttpContextAccessor
+
+<PageTitle>@(Chapter?.Title ?? "Dịch sách") - @Book?.Title - Alternative World</PageTitle>
+
+@if (Book is null || Chapter is null || Html is null)
+{
+    <NotFoundBlock />
+}
+else
+{
+    <article class="lb-post-page">
+        <header class="lb-post-head">
+            <p class="lb-post-meta"><a href="/books">Dịch sách</a> · <a href="/books/@Book.Slug">@Book.Title</a></p>
+            <h1>@Chapter.Title</h1>
+            <p class="lb-post-meta">@(Chapter.Number > 0 ? $"Chương {Chapter.Number}" : "Phần mở đầu") · @ReadMinutes phút đọc</p>
+        </header>
+
+        @if (Toc.Count > 0)
+        {
+            <TableOfContents Items="Toc" Class="lb-toc" Title="Mục lục" />
+        }
+
+        <div class="lb-prose">@((MarkupString)Html)</div>
+
+        <nav class="lb-book-nav" aria-label="Điều hướng chương">
+            @if (PreviousChapter is not null)
+            {
+                <a href="/books/@Book.Slug/@PreviousChapter.Slug">← @PreviousChapter.Title</a>
+            }
+            @if (NextChapter is not null)
+            {
+                <a href="/books/@Book.Slug/@NextChapter.Slug">@NextChapter.Title →</a>
+            }
+        </nav>
+    </article>
+}
+
+@code {
+    private static readonly Regex HeadingRegex = new(
+        @"<h([1-3])\s+id=""([^""]+)""[^>]*>(.*?)</h\1>",
+        RegexOptions.IgnoreCase | RegexOptions.Singleline);
+
+    [Parameter] public string? BookSlug { get; set; }
+    [Parameter] public string? ChapterSlug { get; set; }
+
+    private BookMeta? Book { get; set; }
+    private BookChapterMeta? Chapter { get; set; }
+    private string? Html { get; set; }
+    private List<TableOfContentsEntry> Toc { get; } = new();
+
+    private int ChapterIndex => Book?.Chapters.ToList().FindIndex(item => item.Slug == ChapterSlug) ?? -1;
+    private BookChapterMeta? PreviousChapter => ChapterIndex > 0 ? Book?.Chapters[ChapterIndex - 1] : null;
+    private BookChapterMeta? NextChapter => Book is not null && ChapterIndex >= 0 && ChapterIndex < Book.Chapters.Length - 1
+        ? Book.Chapters[ChapterIndex + 1]
+        : null;
+
+    private int ReadMinutes
+    {
+        get
+        {
+            var text = Html is null ? "" : Regex.Replace(Html, "<[^>]+>", " ");
+            var words = Regex.Matches(text, "\\S+").Count;
+            return Math.Max(1, (int)Math.Ceiling(words / 200.0));
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        Book = BookStore.GetBook(BookSlug ?? "");
+        Chapter = Book?.Chapters.FirstOrDefault(item => item.Slug == ChapterSlug);
+        Html = Book is null || Chapter is null ? null : BookStore.GetChapterHtml(Book.Slug, Chapter.Slug);
+        Toc.Clear();
+        if (Html is not null)
+            Toc.AddRange(ExtractToc(Html));
+        if (Book is null && HttpContextAccessor.HttpContext is { } ctx)
+            ctx.Response.StatusCode = StatusCodes.Status404NotFound;
+    }
+
+    private static IEnumerable<TableOfContentsEntry> ExtractToc(string html)
+    {
+        foreach (Match match in HeadingRegex.Matches(html))
+        {
+            var text = Regex.Replace(match.Groups[3].Value, "<[^>]+>", "");
+            text = System.Net.WebUtility.HtmlDecode(text).Trim();
+            if (text.Length == 0)
+                continue;
+            yield return new TableOfContentsEntry(match.Groups[2].Value, text, int.Parse(match.Groups[1].Value));
+        }
+    }
+}

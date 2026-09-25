@@ -1,0 +1,17 @@
+<nav class="@Class" aria-label="@Title">
+    <span data-slot="table-of-contents-title">@Title</span>
+    <ul>
+        @foreach (var item in Items)
+        {
+            <li data-slot="table-of-contents-item" data-level="@item.Level">
+                <a href="@($"#{item.Id}")">@item.Text</a>
+            </li>
+        }
+    </ul>
+</nav>
+
+@code {
+    [Parameter, EditorRequired] public IReadOnlyList<TableOfContentsEntry> Items { get; set; } = Array.Empty<TableOfContentsEntry>();
+    [Parameter] public string? Class { get; set; }
+    [Parameter] public string Title { get; set; } = "Mục lục";
+}

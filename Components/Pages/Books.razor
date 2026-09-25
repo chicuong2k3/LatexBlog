@@ -1,0 +1,34 @@
+@page "/books"
+@inject BookStore BookStore
+
+<PageTitle>Dịch sách - Alternative World</PageTitle>
+<HeadContent>
+    <script type="module" src="/js/page-layout.js?v=20260821a"
+            data-page-layout
+            data-masonry="#books-list .lb-post-list"
+            data-heading=".lb-page-head h1"></script>
+</HeadContent>
+<header class="lb-page-head">
+    <h1>Dịch sách</h1>
+    <p>Những cuốn sách nước ngoài được dịch và lưu giữ thành một collection riêng.</p>
+</header>
+
+@if (BookItems.Count == 0)
+{
+    <EmptyNote>Chưa có cuốn sách nào.</EmptyNote>
+}
+else
+{
+    <div id="books-list" class="lb-post-list lb-post-grid">
+        @{ var index = 0; }
+        @foreach (var book in BookItems)
+        {
+            index++;
+            <BookCard Book="book" Number="index" />
+        }
+    </div>
+}
+
+@code {
+    private IReadOnlyList<BookMeta> BookItems => BookStore.All;
+}

@@ -7,7 +7,7 @@ number: 2
 
 # Liber Primus, Phần I (tiếp)
 
-<!-- Nguồn: PDF 30–48, bắt đầu tại trang in 13. Bản dịch đang được soạn; phần tiếp theo của Phần I bắt đầu ở PDF 49. -->
+<!-- Nguồn: PDF 30–61, bắt đầu tại trang in 13. Bản dịch đang được soạn; Section I kết thúc ở PDF 61, Section II bắt đầu ở PDF 62. -->
 
 <!-- PDF 30, trang in 13, §14 -->
 
@@ -1476,4 +1476,937 @@ Các bảng lớn hơn, được lập với nhiều hơn bảy chữ số thậ
 
 > **\*)** Vì thời gian chứa thừa số $a^{3/2}$ hoặc $b^{3/2}$, sai số phát sinh trong $M$ hoặc $N$ càng lớn khi $a=\frac{p}{1-ee}$ hoặc $b=\frac{p}{ee-1}$ càng lớn.
 
-<!-- Phần tiếp theo của §33 bắt đầu từ PDF 49. -->
+<!-- PDF 49, trang in 32, §34-§35 -->
+
+## §34
+
+Phương pháp thông thường, thường được dùng để khắc phục những bất tiện ấy, dựa trên các nguyên lý sau. Giả sử có một elip hoặc hyperbol với tâm sai $e$, nửa tham số $p$, và do đó khoảng cách tại perihelium là
+
+$$
+\frac{p}{1+e}=q.
+$$
+
+Sau khoảng thời gian $t$ kể từ perihelium, anomalia thật của vật thể là $\nu$. Giả sử cùng thời điểm ấy, trong một parabol có nửa tham số bằng $2q$, khoảng cách tại perihelium bằng $q$, anomalia thật là $w$; khối lượng $\mu$ được bỏ qua ở cả hai hoặc giả sử bằng nhau. Khi ấy, các tích phân sau bắt đầu từ $\nu=0$ và $w=0$ thỏa mãn
+
+$$
+\int\frac{pp\,d\nu}{(1+e\cos\nu)^2}
+:
+\int\frac{4qq\,dw}{(1+\cos w)^2}
+=
+\sqrt p:\sqrt{2q},
+$$
+
+vì
+
+$$
+\int
+\frac{(1+e)^{1/2}\,d\nu}
+     {(1+e\cos\nu)^2\sqrt2}
+=
+\int
+\frac{2\,dw}{(1+\cos w)^2}.
+$$
+
+Đặt
+
+$$
+\alpha=\frac{1-e}{1+e},
+\qquad
+\theta=\tan\frac{\nu}{2}.
+$$
+
+Tích phân thứ nhất trở thành
+
+$$
+\sqrt{1+\alpha}
+\left(
+\theta
++\frac12\theta^3(1-2\alpha)
+-\frac12\theta^5(2\alpha-3\alpha^2)
++\frac12\theta^7(5\alpha^2-4\alpha^3)
+-\cdots
+\right),
+$$
+
+còn tích phân thứ hai là
+
+$$
+\tan\frac{w}{2}
++\frac12\tan^3\frac{w}{2}.
+$$
+
+Từ phương trình này, dễ dàng xác định $w$ theo $\alpha,\nu$, hoặc $\nu$ theo $\alpha,w$, bằng sự trợ giúp của các chuỗi vô hạn. Nếu thuận tiện hơn, ta có thể thay $\alpha$ bằng
+
+$$
+1-e=\frac{2\alpha}{1+\alpha}=\delta.
+$$
+
+Rõ ràng khi $\alpha=0$, tức $\delta=0$, ta có $\nu=w$. Do đó, chuỗi trên có dạng
+
+$$
+w=\nu+\delta\nu'+\delta^2\nu''+\delta^3\nu'''+\cdots,
+$$
+
+$$
+\nu=w+\delta w'+\delta^2w''+\delta^3w'''+\cdots,
+$$
+
+trong đó $\nu',\nu'',\nu'''$ v.v. là các hàm của $\nu$, còn $w',w'',w'''$ v.v. là các hàm của $w$.
+
+Khi $\delta$ nhỏ, chuỗi này hội tụ nhanh, và chỉ vài số hạng cũng đủ để xác định $w$ từ $\nu$, hoặc $\nu$ từ $w$. Từ $w$ có thể tìm ra $t$, hoặc từ $t$ có thể tìm ra $w$ theo cách đã trình bày ở trên cho chuyển động parabol.
+
+## §35
+
+Bessel đã phát triển các biểu thức giải tích của ba hệ số đầu tiên $w',w'',w'''$ trong chuỗi thứ hai, đồng thời lập một bảng các giá trị số của hai hệ số đầu $w',w''$ cho từng độ của w, được công bố trong *Von Zach, Monatliche Correspondenz*, vol. XII, p. 197. Với hệ số đầu tiên $w'$, bảng
+
+<!-- PDF 50, trang in 33, tiếp theo §35-§36 -->
+
+đã được Simpson tính từ trước, và được đính kèm vào công trình xuất sắc của ông Olbers đã khen ngợi ở trên.
+
+Trong nhiều trường hợp, phương pháp này với sự trợ giúp của bảng Bessel cho phép xác định anomalia thật từ thời gian với độ chính xác đủ. Điều còn mong muốn được có thể rút gọn về hai điểm sau.
+
+I. Trong bài toán nghịch đảo, khi thời gian đã được xác định từ anomalia thật, cần trở về một phương pháp gần như gián tiếp và suy ra $w$ từ $\nu$ bằng cách thử. Để tránh bất tiện ấy, chuỗi trước phải được xử lý giống chuỗi thứ hai. Ta dễ dàng nhận thấy $\nu'$ là cùng một hàm của $\nu$ như $w'$ là hàm của $w$; vì vậy, bảng của $w'$ chỉ cần đổi dấu là có thể dùng cho $\nu'$. Sau đó, chỉ còn cần bảng của $\nu''$, khi ấy có thể giải cả hai bài toán với cùng độ chính xác.
+
+II. Cũng có thể xảy ra những trường hợp mà tâm sai chỉ khác $1$ một chút, đến mức các phương pháp tổng quát đã nêu trên không còn cho độ chính xác đủ, nhưng sai số cũng chưa lớn đến mức cần phải dùng một phương pháp riêng để kiểm soát chắc chắn tác dụng của lũy thừa bậc ba của $\delta$ và các đại lượng nhỏ khác. Trong chuyển động hyperbol, những trường hợp như vậy có thể xảy ra: nếu dùng phương pháp ấy theo dạng riêng nhưng vẫn dùng các bảng thông thường chỉ có bảy chữ số, ta không thể tránh được sai số vài giây. Tuy những trường hợp như vậy hiếm gặp trong thực hành, vẫn có thể thấy rằng còn thiếu một điều gì đó nếu không thể xác định anomalia thật trong mọi trường hợp với độ chính xác $0',1$, hoặc ít nhất là $0'',2$, nếu không tra cứu các bảng lớn hơn; nhưng những bảng lớn ấy phải tìm trong các sách hiếm.
+
+Vì vậy, ta hy vọng rằng việc trình bày phương pháp riêng mà ta đã sử dụng từ lâu sẽ không bị xem là thừa. Phương pháp ấy cũng có ưu điểm là không bị giới hạn chỉ ở những tâm sai khác $1$ một chút; ít nhất trong phương diện này, nó cho phép áp dụng một cách tổng quát.
+
+## §36
+
+Trước khi trình bày phương pháp này, cần lưu ý rằng sự bất định của các phương pháp tổng quát đã nêu trên tự thân dừng lại trong những quỹ đạo tiến gần parabol, ngay khi $E$ hoặc $F$ đạt một giá trị đáng kể; điều này dù chỉ xảy ra ở những khoảng cách lớn từ Mặt Trời.
+
+Để chứng minh điều đó, sai số lớn nhất có thể xảy ra trong elip, mà ta đã tìm thấy ở Điều 32, IV, là
+
+$$
+\frac{3\omega ea\sin\nu}{\lambda r}\,206265'',
+$$
+
+ta có thể biểu thị bằng
+
+$$
+\frac{3\omega e\sqrt{1-ee}\sin E}
+     {\lambda(1-e\cos E)^2}\,206265'',
+$$
+
+<!-- PDF 51, trang in 34, tiếp theo §36 -->
+
+từ đó, sai số luôn bị giới hạn trong những biên hẹp, ngay khi $E$ có giá trị đáng kể, hoặc khi $\cos E$ càng xa $1$ hơn, dù tâm sai lớn đến đâu. Điều này sẽ rõ hơn trong bảng sau, nơi ta tính giá trị số lớn nhất của công thức ấy cho một số giá trị xác định, với bảy chữ số thập phân:
+
+| $E$ | Sai số lớn nhất |
+|---:|---:|
+| $1^\circ$ | $3'',04$ |
+| $20^\circ$ | $0'',76$ |
+| $30^\circ$ | $0'',34$ |
+| $40^\circ$ | $0'',19$ |
+| $50^\circ$ | $0'',12$ |
+| $60^\circ$ | $0'',08$ |
+
+Trong hyperbol cũng xảy ra tương tự. Ta thấy ngay nếu biểu thức ở Điều 32, VII được viết thành
+
+$$
+\frac{
+\omega\cos F(\cos F+3e\sin F)\sqrt{ee-1}
+}
+{\lambda(e-\cos F)^2}\,206265'',
+$$
+
+thì các giá trị lớn nhất của biểu thức này, theo một số giá trị xác định của $F$, được bảng sau cho thấy:
+
+| $F$ | $u$ | $1/u$ | Sai số lớn nhất |
+|---:|---:|---:|---:|
+| $1^\circ$ | $1{,}192$ | $0{,}839$ | $8'',66$ |
+| $2^\circ$ | $1{,}428$ | $0{,}700$ | $1'',38$ |
+| $3^\circ$ | $1{,}752$ | $0{,}571$ | $0'',47$ |
+| $4^\circ$ | $2{,}144$ | $0{,}466$ | $0'',22$ |
+| $5^\circ$ | $2{,}747$ | $0{,}364$ | $0'',11$ |
+| $6^\circ$ | $3{,}732$ | $0{,}268$ | $0'',06$ |
+| $7^\circ$ | $5{,}671$ | $0{,}176$ | $0'',02$ |
+
+Vì vậy, nếu $E$ hoặc $F$ vượt quá $40^\circ$ hoặc $50^\circ$, không có lý do để từ bỏ phương pháp tổng quát. Tuy nhiên, trong trường hợp ấy, chuỗi ở Điều 34 cũng hội tụ quá chậm. Vì thế, không thể coi đó là khiếm khuyết của phương pháp đang trình bày, bởi nó được thiết kế đặc biệt cho những trường hợp mà $E$ hoặc $F$ chưa vượt quá những giá trị vừa phải.
+
+<!-- PDF 52, trang in 35, §37 -->
+
+## §37
+
+Ta xét lại phương trình giữa anomalia tâm sai và thời gian trong chuyển động elip:
+
+$$
+E-e\sin E
+=
+\frac{kt\sqrt{1+\mu}}{a^{3/2}},
+$$
+
+trong đó $E$ được biểu thị bằng các phần của bán kính. Từ đây ta bỏ qua thừa số $\sqrt{1+\mu}$. Nếu có trường hợp cần giữ lại thừa số này, khi ấy $t$ không còn biểu thị thời gian thực sau perihelium, mà biểu thị thời gian ấy đã nhân với $\sqrt{1+\mu}$.
+
+Ta đặt $q$ là khoảng cách tại perihelium, và thay $E,\sin E$ bằng các đại lượng
+
+$$
+x=E-\sin E,
+\qquad
+x'=\frac12(E+\sin E).
+$$
+
+Lý do chọn hai đại lượng này sẽ dần hiện ra trong những dòng tiếp theo. Bằng cách đó, phương trình trên trở thành
+
+$$
+(1-e)(x^2E+x'\sin E)
++
+(x+x'e)(E-\sin E)
+=
+kt\left(\frac{1-e}{q}\right)^{3/2}.
+$$
+
+Khi $E$ được xem là một đại lượng nhỏ bậc nhất, các biểu thức trên có dạng [OCR không rõ] và
+
+$$
+E-\sin E
+=
+\frac16E^3-\frac1{120}E^5+\cdots,
+$$
+
+là một đại lượng bậc ba. Đặt
+
+$$
+\frac{6(E-\sin E)}{xE+x'\sin E}=4A,
+\qquad
+\frac{xE+x'\sin E}{2\sqrt A}=B.
+$$
+
+Khi đó, $4A$ là một đại lượng bậc hai, còn $B$ lệch khỏi đơn vị ở bậc bốn. Phương trình của ta trở thành
+
+$$
+B\left(
+2(1-e)A^{3/2}
++
+[\,\text{OCR không rõ}\,](1+[\,\text{OCR không rõ}\,]e)A^{1/2}
+\right)
+=
+kt\left(\frac{1-e}{q}\right)^{3/2}
+\tag{1}.
+$$
+
+Với các bảng lượng giác thông thường, $xE+x'\sin E$ có thể được tính với độ chính xác đủ, nhưng $E-\sin E$ thì không thể, khi $E$ là một góc nhỏ. Vì vậy, người ta khó xác định chính xác $E$ chỉ bằng $A$ và $B$. Một bảng đặc biệt sẽ giúp giải quyết khó khăn này: khi đối số là $E$, ta có thể lấy trực tiếp logarithm của $B$. Những trợ giúp cần thiết để lập bảng ấy đều dễ dàng thu được trong phân tích hoặc ở mức trung bình. Ngoài ra, còn có
+
+$$
+\frac{9E+\sin E}{20B}=\sqrt A,
+$$
+
+để tìm $\sqrt A$; từ đó, theo phương trình (1), có thể xác định $t$ với mọi độ chính xác có thể mong muốn.
+
+<!-- PDF 53, trang in 36, §38 -->
+
+Đây là một mẫu của bảng như vậy; nó chỉ cho thấy sự tăng chậm của chính $\log B$. Sẽ là thừa nếu làm bảng này dài hơn, bên dưới ta sẽ trình bày những bảng có dạng thuận tiện hơn nhiều:
+
+| $E$ | $\log B$ | $E$ | $\log B$ | $E$ | $\log B$ |
+|---:|---:|---:|---:|---:|---:|
+| $0^\circ$ | $0{,}0000000$ | $25^\circ$ | $0{,}0000168$ | $50^\circ$ | $0{,}0002675$ |
+| $5$ | $00$ | $30$ | $0349$ | $55$ | $3910$ |
+| $10$ | $04$ | $35$ | $0645$ | $60$ | $5526$ |
+| $15$ | $22$ | $40$ | $1099$ |  |  |
+| $20$ | $69$ | $45$ | $1758$ |  |  |
+
+## §38
+
+Không vô ích khi minh họa những điều đã trình bày trong Điều trước bằng một ví dụ. Giả sử anomalia thật bằng $100^\circ$, tâm sai bằng $0{,}96764567$, và $\log q=9{,}765650$. Ta hãy tính $E,B,A$ và $t$:
+
+$$
+\begin{aligned}
+\log\tan\frac12\nu&=0{,}0761865,\\
+\log\sqrt{\frac{1-e}{1+e}}&=9{,}1079927.
+\end{aligned}
+$$
+
+Do đó
+
+$$
+\log\tan\frac12E=9{,}1841792,
+$$
+
+từ đó
+
+$$
+\frac12E=8^\circ41'19'',3,
+\qquad
+E=17^\circ22'38'',6.
+$$
+
+Ứng với giá trị này của $E$, ta có $\log B=0{,}0000040$. Ngoài ra, tính được
+
+$$
+E=0{,}3032928,
+\qquad
+\sin E=0{,}2986643,
+$$
+
+và
+
+$$
+\frac12E'+\frac12\sin E'=0{,}1514150.
+$$
+
+Logarithm của đại lượng cuối là $9{,}1801689$, nên
+
+$$
+\log A=9{,}1801649.
+$$
+
+Từ đây, theo công thức (1) ở Điều trước, ta tính được
+
+$$
+\begin{aligned}
+\log\frac{2Bq^{3/2}}{k\sqrt{1-e}}&=2{,}4589614,\\
+\log\frac{2B(1+9e)}{15k}
+\left(\frac{q}{1-e}\right)^{3/2}&=3{,}7601038,\\
+\log A^{3/2}&=9{,}1801649,\\
+\log A^{1/2}&=7{,}5404947.
+\end{aligned}
+$$
+
+Các dòng logarithm còn lại được in như sau:
+
+$$
+\begin{aligned}
+\log 45{,}56386&=1{,}6591263,\\
+\log 19{,}98014&=1{,}3005985,
+\end{aligned}
+$$
+
+và
+
+$$
+\frac{19{,}98014}{63{,}54400}=t.
+$$
+
+Nếu xử lý cùng ví dụ này bằng phương pháp thông thường, ta cũng tìm được $E$ trong các đơn vị tương ứng:
+
+$$
+5^\circ10'',79=16^\circ53'30'',79,
+$$
+
+do đó anomalia trung bình là
+
+$$
+49^\circ7'',85=29^\circ47'',85.
+$$
+
+Từ đó, cùng với
+
+$$
+\log k\left(\frac{1-e}{q}\right)^{1/2}
+=1{,}6664302,
+$$
+
+ta suy ra $t=63{,}54410$. Khác biệt,
+
+<!-- PDF 54, trang in 37, tiếp theo §38-§39 -->
+
+Khác biệt ấy, [OCR không rõ] một phần nhỏ của một ngày; nếu các sai số cùng phối hợp, sai số ấy có thể dễ dàng trở thành lớn gấp ba hoặc gấp bốn.
+
+Dù vậy, chỉ với sự trợ giúp của bảng $\log B$ như trên, bài toán nghịch đảo cũng có thể được giải với mọi độ chính xác mong muốn: xác định $E$ bằng những lần thử lặp lại, sao cho giá trị của $t$ tính được từ đó khớp với giá trị đã cho. Tuy nhiên, phép tính ấy sẽ khá phiền. Vì vậy, ta sẽ chỉ ra cách trang trí bảng phụ thuận tiện hơn nhiều, tránh hoàn toàn những lần thử mơ hồ, và đưa toàn bộ phép tính về một thuật toán thật dứt khoát và nhanh gọn, không bỏ sót điều gì cần thiết.
+
+## §39
+
+Gần một nửa công sức mà những lần thử ấy đòi hỏi có thể được bỏ qua ngay lập tức, nếu ta có một bảng được trang trí sao cho có thể suy ra trực tiếp $\log B$. Khi ấy chỉ còn ba phép tính. Phép thứ nhất là phép gián tiếp: xác định $A$ để thỏa mãn phương trình (1) ở Điều 37. Phép thứ hai là xác định $E$ từ $A$ và $B\); có thể làm trực tiếp, hoặc qua các phương trình
+
+$$
+E=2B\left(A^{1/2}+\frac12A^{3/2}\right),
+$$
+
+hay
+
+$$
+\sin E=2B\left(A^{1/2}-\frac12A^{3/2}\right).
+$$
+
+Phép thứ ba là xác định $t$ từ $E$ theo phương trình VII ở Điều 8. Ta sẽ đưa phép thứ nhất về một thuật toán nhanh và không còn lần thử mơ hồ; hai phép sau sẽ được gộp lại thành một, bằng cách đưa một đại lượng mới $C$ vào bảng của ta. Khi ấy, ta không cần đến $E$ nữa, đồng thời cũng thu được một công thức ngắn gọn và thuận tiện cho bán kính vectơ. Ta sẽ lần lượt trình bày những điều ấy.
+
+Trước hết, hãy biến đổi phương trình (1) sao cho có thể dùng bảng Barker để giải. Đặt
+
+$$
+A^{1/2}
+=
+\tan\frac12w\sqrt{\frac{5-5e}{1+9e}}.
+$$
+
+Khi đó
+
+$$
+75\tan\frac12w
++
+25\tan^3\frac12w
+=
+\frac{75kt\sqrt{\frac12+\frac32e}}{2Bq^{3/2}}
+=
+\frac{\alpha t}{B}.
+$$
+
+Ta gọi
+
+$$
+\alpha=
+\frac{75kt\sqrt{\frac12+\frac32e}}{2q^{3/2}}.
+$$
+
+Nếu đã biết $B$, có thể lấy ngay $w$ từ bảng Barker, vì đó là anomalia thập, ứng với với nó là chuyển động trung bình
+
+$$
+\frac{\alpha t}{B}.
+$$
+
+Từ $w$, ta suy ra $A$ theo công thức
+
+$$
+A=\beta\tan^2\frac12w,
+$$
+
+trong đó
+
+$$
+\beta=\frac{5-5e}{1+9e}.
+$$
+
+<!-- PDF 55, trang in 38, tiếp theo §39-§40 -->
+
+Phần còn lại không khó nhận ra; tuy nhiên, vì sự khác biệt giữa chúng phức tạp, có thể trước hết dự đoán rằng $w$ và $A$ chỉ chịu sai số nhỏ nếu bỏ qua hoàn toàn ước số $B$ ngay từ đầu.
+
+Ta sẽ xác định trước $w$ và $A$ bằng phép tính nhẹ, đặt $B=1$. Với giá trị xấp xỉ của $A$ và bảng phụ, ta tìm $B$, rồi lặp lại cùng phép tính ấy một cách chính xác. Thường thì sau khi sửa $A$, giá trị của $B$ sẽ đúng bằng giá trị đã tìm được trong lần xấp xỉ, nên phép lặp lại là thừa; chỉ phải trừ ra những trường hợp mà giá trị của $E$ đã trở nên đáng kể.
+
+Cũng cần nhắc rằng nếu ngay từ đầu đã tìm được giá trị xấp xỉ của $B$ ở một nơi khác, thì nên dùng ngay giá trị ấy trong lần xấp xỉ đầu tiên. Điều này thường xảy ra khi ta tính nhiều giá trị gần nhau và đã có một hoặc hai giá trị tuyệt đối. Như vậy, người tính toán thường không cần lặp lại dù chỉ một lần. Ta chọn lần xấp xỉ nhanh hơn này vì $B$ chỉ khác $1$ ở bậc bốn, và sau khi nhân với một hệ số số cố định, sự thuận tiện của việc chuẩn bị sẽ càng lộ rõ khi đưa vào các đại lượng
+
+$$
+E-\sin E,
+\qquad
+\frac12E+\frac12\sin E
+$$
+
+thay cho chính $E$ và $\sin E$.
+
+## §40
+
+Đối với phép thứ ba, tức là xác định anomalia thật, ta không cần chính góc $E$, mà chỉ cần $\tan\frac12E$, hay đúng hơn là $\log\tan\frac12E$. Vì vậy, có thể nối phép ấy với phép thứ hai một cách thuận tiện nếu bảng của ta cung cấp trực tiếp logarithm của đại lượng
+
+$$
+\frac{\tan\frac12E}{\sqrt A},
+$$
+
+đại lượng này chỉ khác $1$ ở bậc hai. Tuy nhiên, ta vẫn muốn trang trí bảng hơi khác một chút, để đổi lấy việc nội suy thuận tiện hơn nhiều, dù phạm vi của bảng chỉ thu hẹp một chút.
+
+Vì lý do tiện lợi, đặt \(T=\tan\frac12E\). Giá trị của \(A\) đã cho ở Điều 37,
+
+$$
+\frac{15(E-\sin E)}{9E+\sin E},
+$$
+
+dễ dàng biến đổi thành
+
+$$
+A=
+\frac{
+T-\frac12T^2+\frac23T^3-\text{[OCR không rõ]}T^4+\text{[OCR không rõ]}T^5-\cdots
+}{
+1-\frac12T+\frac25T^2-\frac13T^3+\frac27T^4-\cdots
+},
+$$
+
+theo quy luật tiến triển rõ ràng. Từ đây, bằng phép đảo các chuỗi, ta suy ra
+
+$$
+\frac{A}{T}
+=
+1-\frac12A
++\text{[OCR không rõ]}A^2
++\text{[OCR không rõ]}A^3
++\text{[OCR không rõ]}A^4
++\text{[OCR không rõ]}A^5
++\cdots.
+$$
+
+<!-- PDF 56, trang in 39, tiếp theo §40-§42 -->
+
+Đặt
+
+$$
+\frac{A}{T}=1-\frac12A+C.
+$$
+
+Khi ấy $C$ là đại lượng bậc bốn, được nhận vào bảng của ta. Ta có thể chuyển ngay từ $A$ sang $\nu$ theo công thức
+
+$$
+\tan\frac12\nu
+=
+\sqrt{\frac{1+e}{1-e}}
+\sqrt{\frac{A}{1-\frac12A+C}}
+=
+\frac{\gamma\tan\frac12w}
+{\sqrt{1-\frac12A+C}},
+$$
+
+trong đó
+
+$$
+\gamma=\sqrt{\frac{5+5e}{1+9e}}.
+$$
+
+Như vậy, ta còn thu được một phép tính rất thuận tiện cho bán kính vectơ. Theo Điều 8, VI,
+
+$$
+r
+=
+\frac{q\cos^2\frac12E}{\cos^2\frac12\nu}
+=
+\frac{q}{(1+T)\cos^2\frac12\nu}
+=
+\frac{(1-\frac12A+C)q}
+{(1+\frac12A+C)\cos^2\frac12\nu}.
+$$
+
+## §41
+
+Không còn gì phải làm, trừ việc đưa cả bài toán nghịch đảo, tức là xác định thời gian từ anomalia thật, về một thuật toán nhanh hơn. Vì thế, ta thêm một cột mới $T$ vào bảng của mình. Trước tiên, $T$ được tính từ $\nu$ theo công thức
+
+$$
+T=\frac{1-e}{1+e}\tan\frac12\nu.
+$$
+
+Sau đó, từ cột $T$ của bảng, ta lấy ra $A$ và $\log B$, hoặc, chính xác hơn và cũng thuận tiện hơn, lấy $C$ và $\log B$. Từ đó, ta suy ra \(A\) theo công thức
+
+$$
+A=\frac{(1+C)T}{1+\frac12T},
+$$
+
+rồi tính $t$ từ $A$ và $B$ theo công thức (1) ở Điều 37.
+
+Nếu ở đây cũng muốn dùng bảng Barker, thì trong bài toán nghịch đảo này, lợi ích của việc ấy ít hơn, nên không cần xét đến \(A\), mà có thể dùng ngay
+
+$$
+\tan\frac12w
+=
+\tan\frac12\nu
+\sqrt{\frac{1+C}{\gamma(1+\frac12T)}}.
+$$
+
+Từ đó, ta nhân chuyển động trung bình của anomalia thật \(w\), lấy từ bảng Barker, với \(B/\alpha\), để có \(t\).
+
+## §42
+
+Ta đã dựng bảng như đã mô tả, mở rộng nó đủ để phục vụ công việc này, và đã bổ sung nó vào danh sách bảng của sách. Với elip, chỉ phần trước của bảng là liên quan; phần sau, bao gồm chuyển động hyperbol, sẽ được giải thích dưới đây. Đối số của bảng là đại lượng \(A\), tiến triển theo các phần nghìn từ \(0\) đến \(0{,}300\); sau đó là \(\log B\) và \(C\), được tính theo các phần \(10000000\)-thứ, tức là
+
+<!-- PDF 57, trang in 40, tiếp theo §42-§43 -->
+
+Phần bảng đã được viết đến bảy chữ số thập phân; các chữ số có nghĩa đã bị bỏ đi. Cột thứ tư cho ta các giá trị của $T$, trước hết tính đến năm rồi đến sáu chữ số. Độ chính xác này là đủ, vì cột ấy chỉ cần dùng để lấy các giá trị tương ứng của $\log B$ và $C$ khi ta muốn xác định $t$ từ $\nu$ theo quy cách ở Điều trước.
+
+Vì bài toán nghịch đảo, tức là xác định $\nu$ và $r$ từ $t$, dùng thường xuyên hơn nhiều và có thể giải hoàn toàn mà không cần đến $T$, ta chọn $A$ làm đối số của bảng, thay vì chọn $T$. T khi ấy cũng gần như thích hợp không kém, thậm chí còn làm việc dựng bảng thuận tiện hơn một chút.
+
+Không cần nhắc rằng mọi số trong bảng đều được tính từ đầu đến mười chữ số, nên bảy chữ số ở đây có thể được xem là đủ ở mọi nơi. Ta không thể dừng lại ở đây để giải thích các phương pháp giải tích được dùng cho công việc này, vì như vậy sẽ xa cách quá nhiều so với mục đích hiện tại. Tuy nhiên, phạm vi của bảng trong mọi trường hợp mà ta có thể làm theo phương pháp đã trình bày là đủ; khi đi xa hơn giới hạn $A=0{,}3$, ứng với $T=0{,}392374$ và $E=64^\circ7'$, có thể dừng lại, như trên đã chỉ ra.
+
+## §43
+
+Để minh họa rõ hơn các điều đã bàn, ta thêm một ví dụ về phép tính đầy đủ, xác định anomalia thật và bán kính vectơ từ thời gian. Ta dùng lại các số ở Điều 38. Đặt
+
+$$
+e=0{,}96764567,
+\qquad
+\log q=9{,}7656500,
+\qquad
+t=63{,}54400.
+$$
+
+Trước tiên, ta suy ra các hằng số
+
+$$
+\log\alpha=0{,}3052357,
+\qquad
+\log\beta=8{,}2217564,
+\qquad
+\log\gamma=0{,}0028755.
+$$
+
+Từ đó
+
+$$
+\log(\alpha t)=2{,}1083102.
+$$
+
+Trong bảng Barker, giá trị xấp xỉ tương ứng là
+
+$$
+w=99^\circ6',
+$$
+
+từ đó
+
+$$
+A=0{,}022926,
+\qquad
+\log B=0{,}0000040.
+$$
+
+Lập luận đúng để đưa vào bảng Barker là
+
+$$
+\log\frac{\alpha t}{B}=2{,}1085062,
+$$
+
+ứng với
+
+$$
+w=99^\circ6'13'',14.
+$$
+
+Phép tính tiếp theo được trình bày như sau.
+
+<!-- PDF 58, trang in 41, tiếp theo §43-§44 -->
+
+$$
+\begin{aligned}
+\log\tan^2\frac12w&=0{,}1385934,\\
+\log\beta&=8{,}2217564,\\
+\log A&=8{,}3603298,\\
+A&=0{,}02292608,\\
+C&=0{,}0000242,\\
+1-\frac12A+C&=0{,}9886833,\\
+1+\frac12A+C&=1{,}0046004.
+\end{aligned}
+$$
+
+Ở phía bên kia,
+
+$$
+\begin{aligned}
+\log\tan\frac12w&=0{,}0692967,\\
+\log\gamma&=0{,}0028755,\\
+\frac12\operatorname{Comp.log}\left(1-\frac12A+C\right)&=0{,}0040143,\\
+\log\tan\frac12\nu&=0{,}0761865,\\
+\frac12\nu&=50^\circ0'0'',\\
+\nu&=100^\circ0'0'',\\
+\log q&=9{,}7656500,\\
+\operatorname{Comp.log}\cos\frac12\nu&=0{,}3838650,\\
+\log\left(1+\frac12A+C\right)&=9{,}9919714,\\
+C.\log\left(1+\frac12A+C\right)&=9{,}9980028,\\
+\log r&=0{,}1594892.
+\end{aligned}
+$$
+
+Nếu trong phép tính này hoàn toàn bỏ qua hệ số $B$, anomalia thật cũng chỉ bị ảnh hưởng bởi sai số nhỏ, khoảng $0'',1$, và sai số ấy thuộc về phía dư.
+
+## §44
+
+Chuyển động hyperbol cũng có thể trình bày ngắn gọn hơn, vì nó được xử lý bằng phương pháp hoàn toàn tương tự với chuyển động elip. Ta trình bày phương trình giữa thời gian \(t\) và đại lượng phụ \(u\) bằng dạng sau:
+
+$$
+(e-1)
+\left(
+x_0\left(u-\frac1u\right)+x'_0\log u
+\right)
++
+(x_0+x'_0e)
+\left(
+\frac12\left(u-\frac1u\right)-\log u
+\right)
+=
+kt\left(\frac{e-1}{q}\right)^{3/2}.
+$$
+
+Ở đây các logarithm là logarithm hyperbol, và
+
+$$
+x_0\left(u-\frac1u\right)+x'_0\log u
+$$
+
+là một đại lượng bậc nhất, còn
+
+$$
+\frac12\left(u-\frac1u\right)-\log u
+$$
+
+là đại lượng bậc ba; đồng thời, \(\log u\) được xem là một đại lượng nhỏ bậc nhất. Đặt
+
+$$
+\frac{
+6\left(\frac12\left(u-\frac1u\right)-\log u\right)
+}{
+x_0\left(u-\frac1u\right)+x'_0\log u
+}
+=4A,
+\qquad
+\frac{
+x_0\left(u-\frac1u\right)+x'_0\log u
+}{
+2\sqrt A
+}
+=B.
+$$
+
+Khi ấy $A$ là đại lượng bậc hai, còn $B$ lệch khỏi đơn vị ở bậc bốn. Phương trình của ta có dạng
+
+$$
+B\left(
+2(e-1)A^{3/2}
++
+x'_0(1+9e)A^{1/2}
+\right)
+=
+kt\left(\frac{e-1}{q}\right)^{3/2}
+\tag{2},
+$$
+
+hoàn toàn tương tự phương trình (1) ở Điều 37. Đặt
+
+$$
+\left(\frac{u-1}{u+1}\right)^{3/2}=T,
+$$
+
+<!-- PDF 59, trang in 42, tiếp theo §44-§45 -->
+
+thì $T$ là đại lượng bậc hai. Theo phương pháp các chuỗi vô hạn, ta tìm được
+
+$$
+\frac{A}{T}
+=
+1+\frac12A
++\text{[OCR không rõ]}A^2
+-\text{[OCR không rõ]}A^3
++\text{[OCR không rõ]}A^4
+-\text{[OCR không rõ]}A^5
++\cdots.
+$$
+
+Vì vậy, nếu đặt
+
+$$
+\frac{A}{T}=1+\frac12A+C,
+$$
+
+thì $C$ là đại lượng bậc bốn, và
+
+$$
+A=\frac{(1+C)T}{1-\frac12T}.
+$$
+
+Cuối cùng, theo phương trình VII ở Điều 21, bán kính vectơ có dạng
+
+$$
+r
+=
+\frac{q}{(1-T)\cos^2\frac12\nu}
+=
+\frac{(1+\frac12A+C)q}
+{(1-\frac12A+C)\cos^2\frac12\nu}.
+$$
+
+## §45
+
+Phần sau của bảng thứ nhất, được nối thêm vào công trình này, dành cho chuyển động hyperbol, như đã nói ở trên. Với đối số \(A\), cũng là phần chung của hai bảng, bảng cho logarithm của \(B\) và đại lượng \(C\) đến bảy chữ số thập phân, bỏ các chữ số có nghĩa ở trước, còn \(T\) được cho đến năm, rồi đến sáu chữ số. Phần này cũng được kéo dài, giống phần trước, đến \(A=0{,}300\), ứng với
+
+$$
+T=0{,}241207,
+\qquad
+u=2{,}980
+\quad\text{hoặc}\quad
+0{,}341,
+\qquad
+F=\pm58^\circ19'.
+$$
+
+Mở rộng thêm sẽ là thừa, như đã nêu ở Điều 36.
+
+Bây giờ ta trình bày thứ tự phép tính, vừa để xác định thời gian từ anomalia thật, vừa để xác định anomalia thật từ thời gian. Trong bài toán trước, ta đã có
+
+$$
+T=\frac{e-1}{e+1}\tan\frac12\nu.
+$$
+
+Từ \(T\), bảng của ta cho \(\log B\) và \(C\), rồi
+
+$$
+A=\frac{(1+C)T}{1-\frac12T},
+$$
+
+và cuối cùng, theo công thức (2) ở Điều trước, ta tìm được \(t\).
+
+Trong bài toán sau, trước tiên tính các logarithm của các hằng số
+
+$$
+\alpha=\frac{75kt\sqrt{\frac12+\frac32e}}{2q^{3/2}},
+\qquad
+\beta=\frac{5e-5}{1+9e},
+\qquad
+\gamma=\sqrt{\frac{5e+5}{1+9e}}.
+$$
+
+Khi ấy, \(A\) được xác định từ \(t\) theo cùng cách như trong chuyển động elip: chuyển động trung bình \(\alpha t/B\) trong bảng Barker ứng với anomalia thật \(w\), và ta đặt
+
+$$
+A=\beta\tan^2\frac12w.
+$$
+
+Trước tiên, ta tìm giá trị xấp xỉ của \(A\), bỏ qua hệ số \(B\), hoặc dùng hệ số ấy nếu đã có; bảng của ta cung cấp giá trị xấp xỉ của \(B\), rồi ta lặp lại phép tính. Giá trị mới của \(B\) hầu như không cần hiệu chỉnh đáng kể, nên không cần lặp lại phép tính thêm lần nữa. Khi đã sửa xong giá trị của \(A\), ta lấy \(C\) từ bảng, và do đó có
+
+$$
+\tan\frac12\nu
+=
+\frac{\gamma\tan\frac12w}{\sqrt{1+\frac12A+C}},
+\qquad
+r=
+\frac{(1+\frac12A+C)q}
+{(1-\frac12A+C)\cos^2\frac12\nu}.
+$$
+
+Như vậy, không có sự khác biệt nào giữa các công thức cho chuyển động elip và hyperbol, nếu ta coi \(\beta,A,T\) trong chuyển động hyperbol là những đại lượng âm.
+
+## §46
+
+Chuyển động hyperbol cũng nên được minh họa bằng vài ví dụ. Ta dùng lại các số ở các Điều 23 và 26.
+
+### I
+
+Cho
+
+$$
+e=1{,}2618820,
+\qquad
+\log q=0{,}0201657,
+\qquad
+\nu=18^\circ51'0''.
+$$
+
+Ta cần tìm \(t\).
+
+$$
+\begin{aligned}
+2\log\tan\frac12\nu&=8{,}4402018,\\
+\log\frac{e-1}{e+1}&=9{,}0636557,\\
+\log T&=7{,}5038575,\\
+T&=0{,}00319054,\\
+\log B&=0{,}0000001,\\
+C&=0{,}0000005.
+\end{aligned}
+$$
+
+Tiếp theo,
+
+$$
+\begin{aligned}
+\log\frac{2Bq^{3/2}}{k\sqrt{e-1}}&=2{,}3866444,\\
+\log\frac{2B(1+9e)}{15k}
+\left(\frac{q}{e-1}\right)^{3/2}&=2{,}8843582,\\
+\log A^{3/2}&=8{,}7594738,\\
+\log A^{1/2}&=7{,}5049476,\\
+\log 13{,}77584&=1{,}1391182,\\
+\log 0{,}138605&=9{,}1417796,
+\end{aligned}
+$$
+
+và
+
+$$
+\frac{0{,}13861}{13{,}91445}=t.
+$$
+
+### II
+
+Giữ nguyên \(e\) và \(q\) như trên, cho
+
+$$
+t=65{,}41256,
+$$
+
+ta cần tìm \(\nu\) và \(r\). Các logarithm của các hằng số là
+
+$$
+\log\alpha=9{,}9758545,
+\qquad
+\log\beta=9{,}0251649,
+\qquad
+\log\gamma=9{,}9807046.
+$$
+
+Từ đó
+
+$$
+\log(\alpha t)=1{,}7914943.
+$$
+
+Bảng Barker cho giá trị xấp xỉ
+
+$$
+w=70^\circ31'44'',
+$$
+
+và do đó
+
+$$
+A=0{,}052983.
+$$
+
+Giá trị này của \(A\), tra trong bảng của ta, cho
+
+$$
+\log B=0{,}0000207,
+$$
+
+nên
+
+$$
+\log\frac{\alpha t}{B}=1{,}7914736.
+$$
+
+Giá trị đúng của \(w\) là
+
+$$
+w=70^\circ31'36'',86.
+$$
+
+Các phép tính còn lại được trình bày như sau.
+
+<!-- PDF 60, trang in 43, tiếp theo §46 -->
+
+$$
+\begin{aligned}
+2\log\tan^2\frac12w&=9{,}6989398,\\
+\log\beta&=9{,}0251649,\\
+\log A&=8{,}7241047,\\
+A&=0{,}05297911,\\
+C&=0{,}0001252,\\
+1+\frac12A+C&=1{,}0425085,\\
+1-\frac12A+C&=0{,}9895294.
+\end{aligned}
+$$
+
+Ở phía bên kia,
+
+$$
+\begin{aligned}
+\log\tan\frac12w&=9{,}8494699,\\
+\log\gamma&=9{,}9807046,\\
+\frac12\operatorname{Comp.log}\left(1+\frac12A+C\right)&=9{,}9990602,\\
+\log\tan\frac12\nu&=9{,}8211947,\\
+\frac12\nu&=33^\circ31'30'',02,\\
+\nu&=67^\circ3'0'',04,\\
+\log q&=0{,}0201657,\\
+\operatorname{Comp.log}\cos\frac12\nu&=0{,}1580578,\\
+\log\left(1+\frac12A+C\right)&=0{,}0180796,\\
+C.\log\left(1-\frac12A+C\right)&=0{,}0004573,\\
+\log r&=0{,}2008544.
+\end{aligned}
+$$
+
+<!-- PDF 61, trang in 44, kết thúc Section I -->
+
+Những giá trị tìm được ở trên, theo Điều 26, là
+
+$$
+\nu=67^\circ2'59'',78,
+\qquad
+\log r=0{,}2008541.
+$$
+
+Như vậy, các sai số nằm ở phía dư. Lẽ ra \(\nu\) phải bằng
+
+$$
+67^\circ3'0'',00.
+$$
+
+Khi lấy giá trị ấy làm giả định, giá trị của \(t\) tính bằng những bảng lớn hơn sẽ đúng như mong muốn.
+
+<!-- Section I kết thúc ở PDF 61; Section II bắt đầu từ PDF 62. -->

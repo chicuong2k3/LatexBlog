@@ -77,6 +77,22 @@ Vì thế toàn bộ dao động là đồng thời, tức được thực hiệ
 
 Chuyển động nhanh nhất trong một môi trường có lực cản không xảy ra tại điểm thấp nhất $C$, mà tại điểm $O$, nơi cung toàn bộ $Ba$ bị chia đôi. Vật thể đi từ $O$ ấy về phía $a$ bị chậm lại với cùng tỷ lệ mà nó được tăng tốc trước đó khi rơi từ $B$ xuống $O$.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXV xử lý trường hợp lực cản tỷ lệ với moment của thời gian, tức một lực cản **không đổi theo vận tốc** — cái mà ngày nay gọi là ma sát Coulomb. Kết quả bất ngờ: con lắc vẫn dao động trên một cycloid, vẫn **đẳng thời gian**, và chỉ các cung của nó nhỏ đi dần. Hệ quả còn nói thêm một điều tinh tế: chỗ nhanh nhất không phải điểm thấp nhất.
+>
+> **Công thức.** So sánh với trường hợp quen thuộc hơn. Với lực cản nhớt tuyến tính $b\dot\theta$, phương trình là
+>
+> $$
+> m\ddot\theta+b\dot\theta+k\theta=0,
+> $$
+>
+> và nghiệm có dạng $\theta=\theta_0e^{-\beta t}\cos(\omega_d t+\phi)$ với $\omega_d=\sqrt{\omega_0^2-\beta^2}<\omega_0$. Biên độ tắt theo lũy thừa, và quan trọng hơn, **chu kỳ bị dài ra**: tần số luôn nhỏ hơn tần số không cản. Với lực cản không đổi, tần số lại đúng bằng tần số không cản, và biên độ chỉ giảm một lượng cố định sau mỗi nửa chu kỳ.
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết tính đẳng thời gian của cycloid là điều quý nhất của con lắc, và ông muốn biết nó có sống sót dưới lực cản hay không. Ông chọn lực cản không đổi vì đó là loại duy nhất mà các cung mô tả vẫn giữ được đúng hình dạng cycloid, nên toàn bộ lập luận về tỷ lệ cung mà ông dùng ở Phần X vẫn dùng được. Chỗ nhanh nhất dịch khỏi điểm thấp nhất cũng là hệ quả trực tiếp: lực cản không đổi ấy có thành phần tiêu cực lớn nhất khi con lắc ở hai biên.
+>
+> **Hiện nay thì sao.** Phân biệt này vẫn là cách phân biệt chuẩn giữa hai loại cản trong mọi hệ dao động: cản tỷ lệ vận tốc làm **đổi** tần số, còn cản không đổi thì **không** đổi tần số mà chỉ làm lệch quỹ đạo quanh vị trí cân bằng. Cũng trong Phần này, Proposition XXIV và Hệ quả 7 khẳng định khối lượng vật chất tỷ lệ với trọng lượng trong mọi thí nghiệm, tức là **khối lượng quán tính bằng khối lượng hấp dẫn** — đẳng thức mà người ta còn phải đo lại nhiều lần trong thế kỷ XX với độ chính xác cao hơn nhiều lần so với thời cậu Newton.
+
 ## Proposition XXVI. Định lý XXI
 
 Các vật thể treo chịu lực cản tỷ lệ với vận tốc có các dao động đồng thời trên một cycloid.
@@ -557,6 +573,16 @@ Từ đây tôi kết luận rằng toàn bộ lực cản của hộp khi chứ
 Cho $A$ là lực cản của hộp trên bề mặt bên ngoài, và $B$ là lực cản của hộp rỗng trên các bề mặt bên trong. Nếu lực cản lên các phần bên trong của các vật thể chuyển động cùng vận tốc tỷ lệ với lượng vật chất, hay số hạt bị cản, thì $78B$ là lực cản lên các phần bên trong của hộp khi chứa đầy. Vì thế toàn bộ lực cản $A+B$ của hộp rỗng tỷ lệ với toàn bộ lực cản $A+78B$ của hộp đầy như $77$ với $78$, và theo phép chia, $A+B$ tỷ lệ với $77B$ như $77$ với $1$. Do đó $A+B$ tỷ lệ với $B$ như $77\times77$ với $1$, và chia lần nữa, ta có $A$ tỷ lệ với $B$ như $5928$ với $1$.
 
 Vì thế lực cản lên các phần bên trong của hộp rỗng nhỏ hơn lực cản trên bề mặt bên ngoài hơn $5000$ lần. Lập luận này phụ thuộc vào giả thiết rằng lực cản lớn hơn của hộp đầy không phát sinh từ nguyên nhân tiềm ẩn nào khác, mà chỉ từ tác dụng của một chất lỏng tinh vi nào đó lên kim loại chứa bên trong.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Nhận xét chung kết thúc bằng một thí nghiệm mà chính Newton đề ra để kiểm tra giả thuyết ether: nếu có một môi trường ether tinh vi xuyên tự do qua các lỗ của mọi vật thể, thì nó phải tạo ra một lực cản nào đó. Ông dùng con lắc có quả cầu là **một hộp gỗ tròn nhồi chì**, rồi so sánh số dao động để quả cầu mất một phần tư chuyển động của nó, lúc hộp rỗng và lúc hộp đầy.
+>
+> **Công thức.** Kết quả là lực cản bên trong hộp rỗng nhỏ hơn lực cản trên bề mặt bên ngoài hơn $5000$ lần. Cách lập luận đẹp ở chỗ ông không đo trực tiếp lực cản bên trong, mà **so sánh hai thời gian tắt dao động**. Vì quán tính của hộp đầy lớn hơn $78$ lần, nếu lực cản bên trong chỉ tỷ lệ với số hạt bị cản thì hộp đầy phải tắt chậm hơn, nghĩa là phải trở lại vạch cũ sau $78$ dao động. Thực tế nó trở lại sau $77$. Sai lệch đúng một dao động ấy đủ để suy ra tỷ lệ $5928$ với $1$ giữa hai thành phần lực cản.
+>
+> **Vì sao Newton viết như vậy.** Vì ông không thể đo lực cản của một môi trường mà ông không chắc có tồn tại. Cách duy nhất là phép thử theo kiểu so sánh: dựng một hiệu ứng đủ lớn nếu ether tồn tại, rồi tìm xem có hiệu ứng ấy hay không. Đó chính là cấu trúc của mọi phép thử trôi trong vật lí sau này, và ông nêu rõ điều kiện cần thiết: kết luận chỉ đúng nếu không còn nguyên nhân tiềm ẩn nào khác.
+>
+> **Hiện nay thì sao.** Đây là một phép thử trôi ether thuần tuý, theo đúng nghĩa mà ngày nay vẫn dùng từ đó, và là tiền thân trực tiếp của thí nghiệm Michelson–Morley năm 1881: cùng một ý tưởng so sánh dao động của cùng một cơ chế ở hai trạng thái môi trường để tìm chênh lệch. Kết luận của Newton vẫn là kết luận của mọi phép thử sau: kết quả âm tính không có nghĩa là không có môi trường, mà chỉ có nghĩa là môi trường ấy, nếu có, tương tác với vật thể yếu hơn giới hạn đo được. Ngay phía trên, các thí nghiệm khác còn xác nhận lực cản tỷ lệ với mật độ môi trường: nước trên không khí khoảng $850$ với $1$, thủy ngân trên nước khoảng $13$ với $1$, đúng bằng tỷ lệ khối lượng riêng.
 
 Thí nghiệm này được kể lại theo trí nhớ, vì tờ giấy đã mô tả nó bị mất. Vì vậy tôi phải bỏ qua một số phần phân số đã trượt khỏi trí nhớ, và không có thời giờ để thử lại. Lần đầu tôi làm thí nghiệm, móc quá yếu, nên hộp đầy bị chậm lại sớm hơn. Nguyên nhân là móc không đủ chắc để chịu trọng lượng của hộp: khi hộp dao động qua lại, móc bị cong theo phía này hoặc phía kia. Tôi liền chuẩn bị một móc đủ chắc để điểm treo đứng yên, và mọi việc xảy ra đúng như đã mô tả.
 

@@ -29,6 +29,16 @@ Vì vậy, trong những thời gian bằng nhau, các diện tích bằng nhau 
 
 Bây giờ hãy tăng số lượng những tam giác ấy, đồng thời làm bề rộng của chúng giảm dần vô hạn. Theo Hệ quả 4 của Lemma III, chu vi giới hạn $ADF$ của chúng sẽ là một đường cong. Vì vậy, lực hướng tâm, nhờ đó vật thể luôn được kéo trở lại từ tiếp tuyến của đường cong này, sẽ tác dụng liên tục. Mọi diện tích được mô tả, như $SADS$, $SAFS$, luôn tỷ lệ với thời gian mô tả chúng, và do đó trong trường hợp này cũng tỷ lệ với những thời gian ấy.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition I là **định luật Kepler thứ hai**: các diện tích bằng nhau trong các thời gian bằng nhau. Người đọc hôm nay nhận ra điều đó không phải một định luật riêng về hành tinh, mà là hệ quả trực tiếp của **bảo toàn moment động lượng**. Mọi tam giác $SAB$, $SBC$ trong lập luận của Newton đều bằng nhau chỉ vì chúng có cùng một đáy và cùng một chiều cao hạ từ $S$ — mà đáy ấy chính là quãng đường, và chiều cao là khoảng cách từ $S$ tới đường thẳng chứa nó.
+>
+> **Công thức.** Tốc độ quét diện tích là $\dfrac{dA}{dt} = \dfrac{1}{2}|\vec{r} \times \vec{v}|$, và vì $\vec{L} = m(\vec{r} \times \vec{v})$ nên $\dfrac{dA}{dt} = \dfrac{L}{2m}$. Khi $L$ và $m$ không đổi thì $\dfrac{dA}{dt}$ không đổi — đó chính là nội dung của Proposition I. Ở dạng cực, $\dfrac{dA}{dt} = \dfrac{1}{2} r^2 \dot{\theta} = \dfrac{1}{2} h$, với $h = r^2 \dot{\theta}$ gọi là **moment động lượng riêng**.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần định lý này như một **định lý giả định** để rồi suy ra phần còn lại của Phần II, chứ chưa cần biết lực là gì. Chú ý giả định then chốt: tâm lực phải **bất động**. Chính vì vậy Hệ quả 6 phải chứng minh thêm rằng kết luận vẫn đúng khi cả mặt phẳng quỹ đạo lẫn tâm lực cùng trôi đều về phía trước. Người đọc hôm nay nhận ra đó là cách ông lái kết quả về hệ quy chiếu, tức **điều lệ bất biến của galileo**: chuyển từ khung đứng yên sang khung chuyển động.
+>
+> **Hiện nay thì sao.** Bảo toàn moment động lượng tổng quát hơn Proposition I rất nhiều: nó không cần lực hướng tâm, chỉ cần lực có moment bằng không. Nó giữ cho mọi chuyển động quay quanh một trục cố định, cho con quay bay trong không trung, và nó là lý do bóng đá bay theo đường cong mà không cần lực tâm nào. Người đọc hôm nay cũng thấy đây là **định luật Kepler thứ hai** theo nghĩa đen: Kepler đo diện tích từ năm 1609, và ông không có từ nào để gọi moment động lượng.
+
 ![Các tam giác diện tích bằng nhau quanh tâm lực S](../assets/proposition-1-equal-areas.svg)
 
 *Hình 5. Sơ đồ được dựng lại từ hình minh họa trong bản gốc; cần đối chiếu các đường bán kính và tiếp tuyến với scan.*
@@ -38,6 +48,16 @@ Bây giờ hãy tăng số lượng những tam giác ấy, đồng thời làm 
 Vận tốc của một vật thể bị hút về một tâm bất động, trong những không gian không có sức cản, tỷ lệ nghịch với đoạn vuông góc hạ từ tâm ấy xuống đường thẳng tiếp xúc với quỹ đạo.
 
 Bởi vì các vận tốc tại những nơi $A$, $B$, $C$, $D$, $E$ tỷ lệ với các đáy $AB$, $BC$, $CD$, $DE$, $EF$ của những tam giác bằng nhau. Và những đáy ấy lại tỷ lệ nghịch với các đoạn vuông góc hạ xuống chúng.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Hệ quả 1 nói tốc độ tỷ lệ nghịch với khoảng cách từ tâm xuống tiếp tuyến. Khoảng cách ấy, gọi là $b$, chính là **tham số va chạm** của một đường ray hấp dẫn, và là cách đo phân bố góc trong tán xạ Rutherford. Đây là nội dung thực nghiệm của việc bảo toàn moment động lượng khi đi từ lý thuyết sang phòng thí nghiệm.
+>
+> **Công thức.** Với $b$ là khoảng cách từ tâm tới tiếp tuyến, Hệ quả 1 cho $v \propto \dfrac{1}{b}$. Nhân với khoảng cách $r$ ta được $bv = r^2 \dot{\theta} = h$ không đổi, tức $b = \dfrac{h}{v}$ chính là bản chất của lực hút tối thiểu. Khi lực là nghịch đảo bậc hai, quỹ đạo là conic, và mỗi conic ứng với một giá trị riêng của $\dfrac{h^2}{\mu}$ — chính là tham số quyết định quỹ đạo là tròn, elip hay hyperbol.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần công thức này để suy ra rằng cùng một lực, đặt ở những khoảng cách khác nhau, sẽ cho những quỹ đạo khác nhau nhưng đều tuân theo cùng một quy luật diện tích. Hệ quả 2 và 3 còn cho ông công cụ dựng quỹ đạo: đường chéo của hình bình hành luôn đi qua tâm lực, nên biết hai điểm và tâm là dựng được. Việc ông cần Hệ quả 6 cũng cho thấy ông hiểu ngay từ đầu rằng quy luật này phải sống sót qua phép dịch chuyển quán tính.
+>
+> **Hiện nay thì sao.** Tách bạch tốc độ và hướng là cách viết chuẩn của cơ học vectơ: vận tốc tách thành thành phần song song và thành phần vuông góc với bán kính, và chỉ thành phần vuông góc mới đóng góp vào moment động lượng. Hệ quả 1 là hình thức đầu tiên của phép tách ấy. Cùng công thức $bv$ còn giải thích vì sao tán sao từ khoảng cách xa đến tâm hạt nhân có góc tán nhỏ dần, và vì sao hai vật thể cùng tốc độ nhưng lệch tâm một chút sẽ có quỹ đạo khác hẳn nhau.
 
 ## Hệ quả 2
 

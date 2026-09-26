@@ -42,6 +42,16 @@ Vì $2BC^2 \times CA^2$ là hằng số đã cho, lực hướng tâm tỷ lệ 
 
 Vì vậy, lực tỷ lệ với khoảng cách của vật thể từ tâm của elip; và ngược lại, nếu lực tỷ lệ với khoảng cách, vật thể sẽ chuyển động trong một elip có tâm trùng với tâm lực, hoặc có thể trong một đường tròn mà elip ấy có thể thoái lui.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Kết quả của Bài toán V là lực **tỷ lệ thuận với khoảng cách** đến tâm: đây chính là lực hồi phục của **dao động tử điều hòa**. Nói cách khác, Newton đã tìm ra rằng lực tuyến tính theo độ lệch thì quỹ đạo là một elip, và con đường đó là mặt cắt conic đầu tiên xuất hiện trong vật lí.
+>
+> **Công thức.** $F \propto PC$ với $PC$ là khoảng cách tới tâm, tức $\vec{F} = -k\vec{r}$ và $k$ không đổi. Từ đó $\ddot{\vec{r}} = -\omega^2 \vec{r}$ với $\omega^2 = k/m$, và nghiệm tổng quát là $\vec{r}(t) = \vec{A}\cos(\omega t) + \vec{B}\sin(\omega t)$ với $\vec{A} \perp \vec{B}$ và $|\vec{A}| = |\vec{B}|$. Chính điều kiện hai độ dài bằng nhau ấy sinh ra elip, và chu kỳ là $T = 2\pi/\omega$ không phụ thuộc biên độ — đúng như Hệ quả 2 nói về thời gian tuần hoàn bằng nhau của mọi elip cùng tâm.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một trường hợp đối xứng để kiểm tra toàn bộ Phần II. Nếu lực hướng về tâm của hình thì quy luật lực phải đơn giản nhất có thể, và $F \propto r$ là ứng viên đơn giản nhất. Ông cũng cần nó để chuẩn bị: ở Phần III ông sẽ chứng minh lực hút *thực sự* tạo ra elip, và ông làm việc ấy với đường tròn làm trường hợp tham chiếu.
+>
+> **Hiện nay thì sao.** Dao động tử điều hòa là ví dụ đầu tiên người ta học trong cơ học, và nó vẫn là nơi mọi lý thuyết cơ bản phải vượt qua. Bản chất sâu hơn nằm ở không gian trạng thái: quỹ đạo của nó trong mặt phẳng $(x, \dot{x})$ là một elip, và đó chính là hình dạng mà cơ học lượng tử dành cho các trạng thái kích thích — trạng thái cơ bản là hình tròn, các trạng thái trên là elip. Newton đã vẽ ra bức tranh đầu tiên của cái mà ngày nay gọi là **elip trạng thái**.
+
 ## Hệ quả 2
 
 Và những thời gian tuần hoàn của các chuyển động quanh cùng một tâm trong mọi elip sẽ bằng nhau.
@@ -59,3 +69,13 @@ Nếu mặt cắt parabol của nón bị thay đổi thành hypebol, vật th�
 Tương tự, trong hình tròn hoặc elip, nếu các lực hướng về tâm của hình được đặt trên trục hoành, thì các lực ấy, khi các ordinate tăng hoặc giảm theo một tỷ số đã cho, hoặc thậm chí khi góc nghiêng của các ordinate với trục hoành thay đổi, luôn tăng hoặc giảm theo tỷ số các khoảng cách từ tâm, với điều kiện các thời gian tuần hoàn vẫn bằng nhau.
 
 Điều tương tự cũng đúng trong mọi hình: nếu các ordinate tăng hoặc giảm theo một tỷ số đã cho, hoặc nếu độ nghiêng của chúng thay đổi bất kỳ cách nào, trong khi thời gian tuần hoàn vẫn giữ nguyên, thì các lực hướng về bất kỳ tâm nào đặt trên trục hoành sẽ tăng hoặc giảm theo tỷ số các khoảng cách từ tâm.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Học luận cuối chương là mắt xích nối *Principia* với Galileo: khi tâm elip lùi ra vô cùng, elip thoái lui thành parabol, lực tỷ lệ với khoảng cách trở thành lực **đều**, và bài toán quỹ đạo trở thành đúng định lý ném ngang của Galileo. Newton viết ra mắt xích ấy bằng ba câu, và đó là cách ông thừa nhận mình đang đứng trên vai một người khác.
+>
+> **Công thức.** Với elip có các bán trục $CA = a$, $CB = b$, khi tâm lùi ra vô cùng dọc theo một trục thì elip chuyển thành parabol và $F \propto PC \to F = \text{hằng số}$. Ở giới hạn đó nghiệm là ném ngang: $x = v_0 t$, $y = \tfrac{1}{2} g t^2$, nên $y = \dfrac{g}{2v_0^2} x^2$ — đúng là parabol. Còn khi đổi dấu lực ở phía trong hình, quỹ đạo elip biến thành hypebol, và vì tâm lực nằm giữa hai nhánh nên lực trở thành **lực ly tâm**.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một **nguyên lý biến đổi**, không phải một danh sách kết quả. Nếu một quy luật đúng dưới những phép biến đổi hình học này thì nó phải đúng dưới mọi phép biến đổi cùng loại, và người đọc chỉ cần kiểm tra một trường hợp. Câu cuối cùng của Học luận phát biểu nguyên lý ấy ở dạng tổng quát: chỉ cần các ordinate tăng hay giảm theo cùng một tỷ số, và thời gian tuần hoàn giữ nguyên, thì lực cũng tăng hay giảm theo cùng tỷ số ấy.
+>
+> **Hiện nay thì sao.** Nguyên lý của Học luận chính là **đối xứng thu nhoát**, và nó là phép thử chuẩn để kiểm tra một quy luật lực: lực thuần nhất cấp $F \propto r^n$ phải cho cùng dạng quỹ đạo khi ta co mọi khoảng cách theo một tỉ lệ. Cùng câu đó cũng giải thích vì sao lực ly tâm trong vật lí hiện đại chỉ là cái bóng toả phạm của một lực hướng tâm thật chứ không phải một lực riêng: đổi dấu lực ở bên trong hình chính là cách hình học nói ra điều đó.

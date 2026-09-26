@@ -33,6 +33,16 @@ Tâm trọng lực chung của Trái Đất, Mặt Trời và tất cả các h�
 
 Nếu đặt một vật thể vào tâm mà các vật thể khác hướng về nhiều nhất, theo ý kiến thông thường, thì đặc quyền ấy phải dành cho Mặt Trời. Nhưng vì chính Mặt Trời cũng chuyển động, ta phải chọn một điểm bất động để tâm Mặt Trời lùi khỏi nó ít nhất; nếu vật thể của Mặt Trời đặc hơn và lớn hơn, nó sẽ càng ít bị chuyển động, và tâm ấy sẽ càng lùi xa điểm bất động ấy ít hơn.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XI và XII nói một điều mà người đọc hôm nay coi là hiển nhiên, nhưng năm 1687 thì chưa: **Mặt Trời không đứng yên**. Nó luôn bị các hành tinh kéo lệch, và cái duy nhất đứng yên trong hệ Mặt Trời là **tâm trọng lực chung** — trọng tâm chung của toàn bộ hệ.
+>
+> **Công thức.** Ông dùng chính các tỷ lệ khối lượng đã ở chương trước để định vị tâm ấy. Với Sao Mộc, khối lượng bằng $\frac{1}{1067}$ Mặt Trời, nên tâm trọng lực chung của hai vật thể rơi vào một điểm hơi **ngoài** bề mặt Mặt Trời. Với sao Thổ, khối lượng bằng $\frac{1}{3021}$, nên tâm ấy rơi vào một điểm hơi **bên trong**. Ngay cả khi mọi hành tinh cùng nằm về một phía, tâm trọng lực chung vẫn cách tâm Mặt Trời không quá **một đường kính** Mặt Trời.
+>
+> **Vì sao Newton viết như vậy.** Vì ông từ chối cách lưới cập tắt dễ thấy. Giả thuyết I đã nói tâm hệ thống thế giới là bất động, và thông thường người ta nghĩ ngay chỗ ấy là Mặt Trời. Ông trình bày ngược lại: nếu muốn dành đặc quyền trung tâm cho Mặt Trời, thì phải chọn một điểm bất động mà Mặt Trời lùi khỏi là ít nhất; mà vì chính Mặt Trời cũng chuyển động, nên điểm ấy không thể là tâm Mặt Trời. Ông còn thêm một nhận xét sắc: Mặt Trời càng đặc và càng lớn thì càng ít bị chuyển động, và càng lùi xa điểm bất động ấy ít hơn — tức ông đã chọn phương án có độ lệch nhỏ nhất.
+>
+> **Hiện nay thì sao.** Ước lượng của Newton còn đúng đến mức bất ngờ: tâm trọng lực chung của hệ Mặt Trời lệch khỏi tâm Mặt Trời tối đa khoảng **hai bán kính** Mặt Trời, chủ yếu do Sao Mộc và sao Thổ kéo, nằm gọn trong giới hạn "một đường kính" mà ông nêu. Chuyển động phản xạ ấy ngày nay được đo trực tiếp, và chính nó là manh mối đầu tiên dẫn tới việc phát hiện hành tinh ngoài hệ Mặt Trời. Cũng trong chương này ông đặt câu hỏi còn sống tới ngày nay: cái gì thật sự bất động trong vũ trụ? Câu trả lời của ông — chỉ tâm khối lượng chung là bất động — là hướng mà Mach sau này phát triển thành nguyên lý máy.
+
 ## Proposition XIII. Định lý XIII
 
 Các hành tinh chuyển động trong những elip có tiêu điểm chung tại tâm Mặt Trời, và các bán kính kẻ từ tâm ấy tới chúng mô tả những diện tích tỷ lệ với các thời gian mô tả.
@@ -64,5 +74,15 @@ hay $16:81:156609$. Vì vậy, hiệu giữa lực trọng lực của Mặt Tr�
 Khả năng lớn nhất của sao Thổ làm nhiễu chuyển động của Sao Mộc tỷ lệ với hiệu ấy. Vì vậy, nhiễu động quỹ đạo của Sao Mộc nhỏ hơn nhiều so với nhiễu động quỹ đạo của sao Thổ. Nhiễu động của các quỹ đạo khác còn nhỏ hơn nữa, ngoại trừ quỹ đạo Trái Đất bị Mặt Trăng làm nhiễu một cách đáng cảm nhận.
 
 Tâm trọng lực chung của Trái Đất và Mặt Trăng chuyển động trong một elip quanh Mặt Trời, với Mặt Trời ở một tiêu điểm, và bán kính kẻ từ tâm Mặt Trời tới tâm ấy mô tả những diện tích tỷ lệ với thời gian mô tả. Nhưng trong thời gian đó, Trái Đất cũng quay quanh tâm trọng lực chung ấy theo chuyển động kinh nguyệt.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XIII là chỗ Newton không chỉ đặt sang một bên các hành tinh khác, mà còn **định lượng** mức nhiễu chúng gây ra, để biết lý thuyết của ông còn đáng tin tới đâu. Đây chính là chỗ nảy sinh của lý thuyết nhiễu trong thiên văn.
+>
+> **Công thức.** Ông tính lực Sao Mộc kéo sao Thổ khi hai hành tinh hội tụ: vì khoảng cách tương đối gần $4:9$, lực ấy so với lực Mặt Trời kéo sao Thổ chỉ bằng $1:211$. Từ đó ông đánh giá hậu quả: sai số trong chuyển động trung bình của sao Thổ **khó vượt quá hai phút mỗi năm**, ngay cả ở lần hội tụ mạnh nhất. Có một mẹo tinh tế ở đây: phần lớn sai số ấy chỉ là hệ quả của việc Mặt Trời bị lắc, nên nếu đặt tiêu điểm dưới của quỹ đạo vào **tâm trọng lực chung của Sao Mộc và Mặt Trời** thì nó bị hấp thụ gần hết, chỉ còn lại mới là nhiễu thật sự.
+>
+> **Vì sao Newton viết như vậy.** Vì ông hiểu rằng một lý thuyết chỉ đáng tin đến mức mà lỗi của nó nhỏ hơn sai số đo được. Ông không dùng phép tính để phủ nhận nhiễu, mà dùng nó để **đặt biên** cho nhiễu, rồi chỉ ra cách chọn hệ quy chiếu sao cho biên ấy co lại. Đó là một bài kiểm tra độ chính xác được viết ngay bên trong lý thuyết, và mười bảy thế kỷ sau ai cũng làm theo cách đó.
+>
+> **Hiện nay thì sao.** Chính cách lập luận này mở ra cả một ngành. Trong thế kỷ XVIII, Lagrange xây dựng phương trình hành tinh từ ý tưởng ấy, và Laplace dùng nó năm 1785 để giải thích cái gọi là **bất đẳng thức lớn** của Sao Mộc và sao Thổ — chu kỳ khoảng chín trăm năm trong độ lệch của cặp hành tinh ấy, từng làm khó lòng các nhà thiên văn. Ở độ chính xác hiện đại, nhiễu dài hạn của Sao Mộc chỉ vài giây cung, nhỏ hơn nhiều so với hai phút mà Newton dự phòng. Còn với Trái Đất, ông kết luận tâm trọng lực chung Trái Đất–Mặt Trăng quanh Mặt Trời cùng với chuyển động quay quanh tâm ấy trong khoảng một tháng; mức độ ấy đúng, khi tâm ấy nằm cách tâm Trái Đất khoảng $4700$ km, tức bên trong lớp vỏ Trái Đất.
 
 *Các công thức và tỷ lệ của Proposition XIII đã được đối chiếu với scan trang 402–403. Hình minh họa dùng lại chưa phải hình riêng của Proposition XI–XIII.*

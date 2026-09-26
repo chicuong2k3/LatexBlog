@@ -89,6 +89,16 @@ Nhưng vì chuyển động tròn và lực ly tâm sinh ra từ đó lớn hơn
 
 Chuyển động quay của các phần chất lỏng quanh trục quả cầu tỷ lệ nghịch với bình phương khoảng cách từ tâm quả cầu, và vận tốc tuyệt đối tỷ lệ nghịch với bình phương ấy nhân với khoảng cách từ trục.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Phần IX dựng hai quy luật quay khác nhau, và sự khác nhau ấy là mấu chốt. Với **hình trụ** quay, thời gian tuần hoàn của chất lỏng tỷ lệ với khoảng cách tới trục, nên mọi phần chất lỏng có **vận tốc tuyệt đối bằng nhau**: gần trục thì quay nhanh, xa trục thì quay chậm, sao cho tốc độ dọc theo vòng tròn là như nhau. Với **quả cầu** quay, thời gian tuần hoàn lại tỷ lệ với **bình phương** khoảng cách, và vận tốc tuyệt đối tỷ lệ nghịch với khoảng cách.
+>
+> **Công thức.** Với hình trụ, $T\propto r$ và $v_\theta = 2\pi r/T$ không đổi. Với quả cầu, $T\propto r^2$ và $v_\theta \propto \dfrac{1}{r}$. Quy luật thứ hai chính là công thức của một **vortex tự do** trong lý thuyết dòng chảy tiềm năng ngày nay, với mọi lớp chất lỏng mang cùng một lượng quay. Từ đó mà trường hợp quả cầu dẫn tới một mô hình vortex rất cụ thể, và chính mô hình ấy sẽ được Newton thử áp cho hệ Mặt Trời ở phần cuối.
+>
+> **Vì sao Newton viết như vậy.** Vì ông bắt đầu bằng một **giả thuyết về ma sát**: lực cản giữa các phần chất lỏng tỷ lệ với vận tốc tương đối giữa chúng. Từ một giả thiết về ma sát, mọi thứ còn lại là hình học: các lớp cầu liên tiếp có diện tích tỷ lệ với bình phương bán kính, nên lực ma sát tỷ lệ với diện tích, và tích phân ra thành diện tích hyperbola. Vì vậy cả hai quy luật đều là hệ quả của một ý tưởng duy nhất.
+>
+> **Hiện nay thì sao.** Cả hai kết quả đều cho thấy chất lỏng đang quay **không phải một khối cứng quay**: với hình trụ, tốc độ dọc theo vòng tròn bằng nhau chứ không phải bằng nhau; với quả cầu, nó giảm như $1/r$. Người đọc hôm nay biết thêm một điều mà ông không có: một chất lỏng thật bị khuấy bởi một hình trụ quay sẽ cố tiến tới trạng thái quay **cứng**, tức mọi phần có cùng tốc độ góc, và chỉ ở ngoài cùng mới chuyển sang dạng vortex tự do. Nhưng điều đó không cứu được mô hình dùng cho hành tinh, như phần cuối sẽ thấy.
+
 ### Hệ quả 2
 
 Nếu một quả cầu quay đều quanh một trục có vị trí đã cho trong một chất lỏng vô hạn đồng nhất và đứng yên, nó sẽ truyền cho chất lỏng một chuyển động xoáy như vortex. Chuyển động ấy sẽ lan dần vô hạn, và ở mỗi phần sẽ tăng dần cho đến khi thời gian tuần hoàn của các phần bằng bình phương khoảng cách từ tâm quả cầu.
@@ -184,5 +194,15 @@ Các phần của vortex không thể quay với chuyển động ấy. Cho ba q
 Một vật thể quay trong quỹ đạo $CF$ và mô tả những diện tích tỷ lệ với thời gian sẽ chuyển động đều. Nhưng theo các quy luật thiên văn, vật thể quay trong quỹ đạo $BE$ sẽ chậm hơn ở aphelion $B$ và nhanh hơn ở perihelion $E$. Trong khi đó, theo cơ học, vật chất của vortex phải chuyển động nhanh hơn trong không gian hẹp giữa $A$ và $C$ so với không gian rộng giữa $D$ và $F$, tức nhanh hơn ở aphelion so với perihelion. Hai kết luận này không tương thích.
 
 Do đó các hành tinh không thể được giải thích bằng vortex. Những chuyển động thiên thể ấy có thể được hiểu như thế nào trong không gian trống, không có vortex, sẽ được trình bày trong Sách I và, đầy đủ hơn, trong Sách tiếp theo.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Ở hai Nhận xét cuối, Newton làm điều mà ít người dám làm: ông dựng một mô hình vật lí cho cả hệ Mặt Trời, rồi **tự kiểm tra nó và công bố nó sai**. Mô hình ấy là vortex — các hành tinh được mang bởi dòng chất lỏng xoáy quanh Mặt Trời và quanh Sao Mộc. Đây là lý thuyết cạnh tranh chính với lực hút của Newton, và nó từng rất hấp dẫn vì nó giải thích quy luật của Kepler mà không cần tới lực tác động từ khoảng cách.
+>
+> **Công thức.** Phép kiểm tra đầu tiên là định luật Kepler thứ ba. Thời gian tuần hoàn của các hành tinh tỷ lệ với khoảng cách của chúng theo "tỷ lệ sesquiplicate", tức $T\propto r^{3/2}$, hay $T^2\propto r^3$. Nhưng mô hình vortex của ông cho ra $T\propto r^2$. Hai số mũ ấy không thể cùng đúng.
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết chỗ nào dễ sai nhất, nên ông chọn cách kiểm tra thẳng vào một đại lượng quan sát được độc lập. Nếu hành tinh chỉ là vật chất trong một dòng xoáy, nó phải chạy nhanh hơn ở chỗ dòng đó bị hẹp. Với ba quỹ tích mà đường tròn ngoài cùng đồng tâm với Mặt Trời, khoảng hẹp nằm ở aphelion, nên chất lỏng phải nhanh hơn ở aphelion. Nhưng thiên văn nói hành tinh **chậm hơn** ở aphelion. Ông viết thẳng ra: "Hai kết luận này không tương thích."
+>
+> **Hiện nay thì sao.** Một mô hình có thể giải thích được một đặc trưng nổi bật mà vẫn hỏng ở đặc trưng khác, và việc phát hiện điều đó chỉ đến khi ta ép mô hình trả lời **một quan sát khác**, không dùng lại dữ kiện đã dùng để dựng nó. Newton còn tự nói rõ chỗ duy nhất có thể cứu mô hình: vortex phải loãng dần ra ngoài, và ông thấy điều đó không hợp lý. Cần thêm nữa, ông từng thử giải thích quy luật sesquiplicate bằng vortex rồi đích thân mình kêu gọi: "Hãy để các triết gia xem hiện tượng ấy có thể được giải thích bằng vortex như thế nào." Rồi ông loại bỏ nó, và chuyển sang giải thích bằng quy luật nghịch đảo bậc hai ở Sách I.
 
 *Các công thức và thuật ngữ trong Phần IX được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*

@@ -141,7 +141,27 @@ Vì vậy, để biến một hình thẳng thành hình khác, chỉ cần chuy
 
 Lemma này hữu ích khi giải những bài toán khó: những hình phức tạp có thể được biến thành hình đơn giản hơn. Các đường thẳng hội tụ tại một điểm có thể biến thành các đường song song; và sau khi giải bài toán trong hình mới, ta chuyển ngược lại bằng các phép biến đổi nghịch.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Lemma XXII là một trong những kết quả bị đánh giá thấp nhất và cũng thú vị nhất của *Principia*: có những phép biến đổi hình học **giữ nguyên bậc** của một đường cong. Nếu $G$ chạy trên một đường bậc ba thì $g$ cũng chạy trên một đường bậc ba; đường thẳng thì ra đường thẳng, hình cắt conic thì ra hình cắt conic.
+>
+> **Công thức.** Mấu chốt nằm ở việc **cả hai toạ độ cũ và mới đều biến đổi theo cùng một tỷ lệ**, nên khi thay cả hai vào phương trình của đường cũ thì bậc của phương trình được giữ nguyên. Đường thẳng, ở đó $AD$ và $DG$ chỉ xuất hiện bậc nhất, biến thành một phương trình bậc nhất trong $ad$ và $dg$ — tức vẫn là đường thẳng; lặp lại với bậc hai rồi bậc ba thì suy ra hai đường luôn cùng bậc. Tính chạm tiếp tuyến cũng được bảo toàn, vì nó chỉ phụ thuộc điểm và đường thẳng, mà cả hai đều được chuyển theo cùng cách.
+>
+> **Vì sao Newton viết như vậy.** Vì ông đang giải vấn đề thực tiễn: bài toán dựng quỹ đạo từ các điểm và tiếp tuyến rất dễ bế tắc nếu cứ giữ nguyên hình dạng. Bằng Lemma này, ông biến các đường thẳng hội tụ thành đường song song — một cấu hình dễ vẽ hơn nhiều — giải bài toán trong hình đã biến, rồi chuyển ngược lại bằng phép nghịch đảo. Đó là một chiến lược giải, không chỉ là một kỹ thuật vẽ.
+>
+> **Hiện nay thì sao.** Người đọc hôm nay gọi đây là **chuẩn hoá phương trình bằng phép đổi biến**, và nó vẫn là cách chuẩn để giải bài toán conic ngoài mặt phẳng. Cùng ý bảo toàn bậc ấy xuất hiện trong lý thuyết đại số hình học hiện đại dưới tên phép biến đổi song ánh xạ, và nó là cơ sở để gọi hai đường cong là "chung lớp". Chi tiết đáng chú ý: Newton chứng minh bằng cách thay trực tiếp vào phương trình, tức đã làm công việc của kẻ phân tích chứ không chỉ của kẻ dựng hình — dù ông vẫn khẳng định mình đang dùng hình học thuần tuý.
+
 Lemma cũng dùng được cho các bài toán không gian. Khi có hai hình cắt conh, một trong chúng, nếu là hypebol hoặc parabol, có thể biến thành elip, rồi elip dễ dàng biến thành đường tròn.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Câu ngắn này ở cuối Lemma XXII là một trong những nhận xét đắt giá nhất mà người đọc thường bỏ qua: bằng những phép biến đổi thuần hình học, **một hình cắt conic bất kỳ trong không gian ba chiều có thể được biến thành đường tròn**. Nghĩa là về mặt hình học, elip, parabol và hypebol chỉ khác nhau ở góc nhìn.
+>
+> **Công thức.** Mặt phẳng nào chứa trục lớn của một hình cắt conic đều cắt nó theo một elip; nếu mặt phẳng ấy vuông góc với trục lớn, lát cắt là elip có hai trục bằng nhau, tức **đường tròn**. Với hypebol và parabol, chỉ cần chọn đúng mặt phẳng cắt là được vòng tròn.
+>
+> **Vì sao Newton viết như vậy.** Vì ông đang giải bài toán quỹ đạo trong không gian ba chiều, và ông muốn dùng lại toàn bộ kho vũ khí hình phẳng đã dựng. Nếu mọi quỹ đạo đều quy về được đường tròn, thì toàn bộ Phần III và IV áp dụng lại được nguyên vẹn. Việc ông nói thẳng rằng Lemma này "cũng dùng được cho các bài toán không gian" cho thấy ông biết mình đang mở rộng phạm vi công cụ, chứ không chỉ giải một bài toán hẹp.
+>
+> **Hiện nay thì sao.** Người đọc hôm nay gặp chính ý này mỗi khi chiếu quỹ đạo lên mặt phẳng vuông góc với vectơ moment động lượng: quỹ đạo trở thành đường tròn, còn thời gian quét một góc không đổi, nên bài toán "vệ tinh quay hết một vòng quanh Trái Đất mất bao lâu" trở nên tầm thường. Việc một quỹ đạo elip nghiêng trong không gian trở thành đường tròn trên mặt phẳng phẳng cũng là lý do nhiều bài toán quỹ đạo trong thiên văn học vẫn được giải bằng hình học thuần tuý.
 
 ## Proposition XXV. Bài toán XVII
 

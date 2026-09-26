@@ -40,3 +40,15 @@ Toàn bộ học thuyết cơ học, được các tác giả khác nhau chứng
 ![Sơ đồ phân tích lực trên bánh xe, đòn cân và mặt phẳng nghiêng](../assets/corollary-2-force-resolution.svg)
 
 *Hình 2. Các sơ đồ được dựng lại từ phần chữ và sơ đồ ASCII trong bản gốc; cần đối chiếu trực tiếp với scan trước khi coi là hoàn tất.*
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Hệ quả II là hai chiều của cùng một phép toán: **phân tích lực** thành hai lực xiên, và **hợp** hai lực xiên thành một. Hôm nay đó là phép cộng và phép rã vector: $\vec{F} = F_x\hat{i} + F_y\hat{j}$, với $F_x = F\cos\theta$ và $F_y = F\sin\theta$. Kiểm tra: lực $10\ \mathrm{N}$ nghiêng $30^\circ$ cho $F_x \approx 8{,}66\ \mathrm{N}$ và $F_y = 5\ \mathrm{N}$; và $8{,}66^2 + 5^2 = 100 = 10^2$.
+>
+> **Công thức.** Ngoài ra còn một định lý quan trọng ẩn trong ví dụ bánh xe: lực $AC$ kéo bán kính thẳng ra khỏi tâm thì **không** làm bánh xe quay. Ngôn ngữ hiện đại là $\vec{\tau} = \vec{r} \times \vec{F} = 0$ khi $\vec{F}$ chạy qua trục. Từ đây suy ra **nguyên lý truyền lực**: hiệu ứng của một lực chỉ phụ thuộc đường tác dụng của nó, chứ không phụ thuộc điểm đặt lực nằm ở đâu trên đường đó. Đó là lý do đòn bẩy, ròng rọc và bánh răng cưu đều dùng được.
+>
+> Với mặt phẳng nghiêng nghiêng góc $\theta$, trọng lượng $mg$ tách thành $mg\sin\theta$ dọc theo mặt phẳng và $mg\cos\theta$ vuông góc với nó, nên vật trượt với gia tốc $a = g\sin\theta$ và phản lực $N = mg\cos\theta$.
+>
+> **Vì sao Newton viết như vậy.** Ông không chứng minh bằng đại số mà bằng **ba thiết bị thật**: bánh xe có trọng lượng treo, mặt phẳng nghiêng, và nêm. Cả ba đều là máy cơ thật, và cả ba đều cho cùng một kết luận. Riêng ví dụ nêm rồi tới ren là một bước nhảy hay: ông nói con ren chẳng qua gì khác ngoài một nêm được thúc bởi đòn cân, nên mọi tính chất của nêm đều chuyển sang ren. Người đọc hôm nay sẽ gọi tỉ số giữa lực thắng và lực bị thắng là **lợi thế máy**, và công thức của nó là $1/\tan\alpha$ với $\alpha$ là nửa góc nhọn của nêm.
+>
+> Có một điểm về phương pháp mà nên nói thẳng. Câu kết "toàn bộ học thuyết cơ học phụ thuộc vào những điều vừa nói, nên chân lý của nó được xác nhận" **không phải là một chứng minh**. Nó là lập luận từ sự thống nhất của các trường hợp: quy luật này đúng ở ba thiết bị khác nhau, bao nhiêu hình thức cơ học cũng dùng nó, nên khó có thể sai. Đó là một lập luận có giá trị thực nghiệm, nhưng nó để lại một khoảng trống: một quy luật có thể đúng ở mọi trường hợp ta kiểm tra mà vẫn sai. Người đọc hôm nay có thể vá khoảng trống đó bằng toán học: Hệ quả I cho quy tắc hình bình hành, Hệ quả II chỉ là hệ quả của nó, và quy tắc hình bình hành thì đã được chứng minh nghiêm bằng đại số vector từ thế kỷ XIX.

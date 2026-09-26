@@ -1,0 +1,22 @@
+# Sửa đổi đã được duyệt đối với bản dịch
+#
+# Định dạng: file<TAB>chuỗi_cũ<TAB>chuỗi_mới, phân cách bằng tab thật.
+# tools/check_book_callouts.py --fidelity đọc file này để biết sửa đổi nào hợp lệ.
+# Không khai báo thì checker báo lỗi. Đó là chủ ý.
+chapters/02-dinh-luat-van-dong.md	sao chổm	sao chổi
+chapters/65-sach-iii-proposition-xxxvii-xl.md	hành tình	hành tinh
+chapters/66-sach-iii-lemma-v-xi-proposition-xli.md	hành tình	hành tinh
+chapters/68-he-thong-thoi-gioi.md	hành tình	hành tinh
+chapters/69-muc-luc-va-chi-muc.md	hành tình	hành tinh
+chapters/68-he-thong-thoi-gioi.md	vận tốc của sao chổi xấp xỉ bằng. Tôi đã kiểm tra	vận tốc của sao chổi xấp xỉ bằng cùng. Tôi đã kiểm tra
+chapters/68-he-thong-thoi-gioi.md	là [OCR không rõ]; sao chổi	là $71\frac{2}{3}^\circ$; sao chổi
+chapters/68-he-thong-thoi-gioi.md	chuyển động quận chiều của sao chổi lúc ấy khoảng $4^\circ$;	chuyển động quận chiều của sao chổi lúc ấy khoảng $4\frac{2}{3}^\circ$;
+chapters/68-he-thong-thoi-gioi.md	là [OCR không rõ], xảy ra lúc	là $79\frac{2}{3}^\circ$, xảy ra lúc
+chapters/68-he-thong-thoi-gioi.md	| Vệ tinh thứ nhất | $[OCR không rõ]$ |	| Vệ tinh thứ nhất | $1^\circ48' = 108''$ |
+chapters/68-he-thong-thoi-gioi.md	| Vệ tinh thứ hai | $[OCR không rõ]$ | $3$ ngày $[OCR không rõ]$ |	| Vệ tinh thứ hai | $3^\circ01' = 181''$ | $3$ ngày $13$ giờ $17$ phút $54$ giây |
+chapters/68-he-thong-thoi-gioi.md	| Vệ tinh thứ ba | $[OCR không rõ]$ | $7$ ngày $[OCR không rõ]$ |	| Vệ tinh thứ ba | $4^\circ46' = 286''$ | $7$ ngày $3$ giờ $59$ phút $36$ giây |
+chapters/68-he-thong-thoi-gioi.md	| Vệ tinh thứ tư | $[OCR không rõ]$ | $16$ ngày $[OCR không rõ]$ |	| Vệ tinh thứ tư | $8^\circ13\frac{1}{2}' = 493\frac{1}{2}''$ | $16$ ngày $15$ giờ $5$ phút $13$ giây |
+chapters/68-he-thong-thoi-gioi.md	$HPKkh\lambda$ [OCR không rõ]	$HPKhpk$
+chapters/68-he-thong-thoi-gioi.md	của [OCR không rõ] và Sturmy.	của Colepress và Sturmy.
+chapters/68-he-thong-thoi-gioi.md	<!-- Hình cần đối chiếu với scan, trang khoảng PDF 528. -->	<!-- Không có hình ở vị trí này: đã đối chiếu PDF 515–519, thảo luận giả thuyết quả cầu rắc của Eudoxus, Callippus và Aristotle trong bản gốc là văn xuôi thuần, không kèm sơ đồ. Xem Hình 1 ngay dưới cho các đường cong rơi về tâm. -->
+chapters/68-he-thong-thoi-gioi.md	<!-- Bảng chuyển động parabol của sao chổi bắt đầu ở PDF 568 và tiếp tục ở trang kế; cần đối chiếu scan. -->	<!-- Bảng I và Bảng II đã đối chiếu với ảnh scan PDF 569: khớp toàn bộ 44 số của Bảng I và 40 số của Bảng II. -->

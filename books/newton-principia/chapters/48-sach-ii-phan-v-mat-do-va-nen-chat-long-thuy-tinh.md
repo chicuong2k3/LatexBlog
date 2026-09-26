@@ -57,6 +57,16 @@ Nếu chất lỏng nằm trong vật thể dẻo hoặc không cứng, và khô
 
 Trong vật thể cứng, chất lỏng không thể chịu một áp lực lớn hơn ở phía này mà không nhường ở phía kia, và sự nhường xảy ra trong khoảnh khắc. Mặt cứng không nhường theo chất lỏng. Khi chất lỏng nhường, nó ép phía đối diện, nên áp lực có xu hướng trở về bằng nhau ở mọi phía. Vì vậy áp lực trở lại bằng nhau trong một khoảnh khắc, không cần chuyển động cục bộ. Các phần chất lỏng sau đó ép nhau và đứng yên.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Newton mở Phần V bằng một **định nghĩa** chứ không phải một định luật: chất lỏng là vật thể mà mọi bộ phận đều nhường cho mọi lực truyền vào, và khi nhường thì dễ dàng trôi qua lại với nhau. Trường hợp 7 của Proposition XIX rồi chứng minh điều hệ quả đắn đỏ của định nghĩa ấy: một chất lỏng đứng yên không thể chịu áp lực lệch nhau giữa các mặt.
+>
+> **Công thức.** Lập luận là phản chứng ngay trong một khoảnh khắc. Nếu một mặt chịu áp lực lớn hơn mặt đối diện, theo định nghĩa thì chất lỏng phải nhường ngay, và khi nó nhường thì lại ép phía đối diện, nên áp lực có xu hướng trở về cân bằng. Vì vậy áp lực trở lại bằng nhau **trong một khoảnh khắc**, "không cần chuyển động cục bộ" nào. Ở một chất lỏng dưới tải trọng, đây chính là điều kiện trạng thái tĩnh.
+>
+> **Vì sao Newton viết như vậy.** Vì ông định nghĩa chất lỏng bằng **hành vi nhường**, chứ không bằng câu "chất này chảy". Nhường là một thuộc tính động, nên ông phải chứng minh rằng trạng thái đứng yên là kết quả tức thời của nó, chứ không phải một giả định thêm vào. Bằng cách đó ông tách bạch trạng thái tĩnh khỏi quá trình chảy ngay từ đầu.
+>
+> **Hiện nay thì sao.** Trong ngôn ngữ ngày nay, kết luận ấy là phát biểu chuẩn: ứng suất của một chất lỏng đứng yên luôn **đẳng hướng**, tức $\sigma_{ij} = -p\,\delta_{ij}$, nghĩa là chất lỏng không đỡ được ứng suất cắt nào. Đây chính là ranh giới phân biệt chất lỏng với chất rắn: chất rắn có mô đun cắt khác không, chất lỏng thì không, và mô đun cắt bằng không là định nghĩa trạng thái lỏng. Chữ "trong một khoảnh khắc" ở Trường hợp 7 cũng là mấu chốt: chất lỏng đạt cân bằng áp suất ngay lập tức, chứ không phải sau một quá trình dài.
+
 ### Hệ quả
 
 Áp lực truyền ra bề mặt bên ngoài không làm thay đổi chuyển động giữa các phần chất lỏng, trừ khi bề mặt thay đổi hình dạng ở một nơi, hoặc các phần chất lỏng ép nhau chặt hơn hoặc nhẹ hơn và vì thế trượt qua nhau khác nhau.
@@ -100,6 +110,22 @@ Một vật thể có khối lượng riêng lớn hơn chất lỏng sẽ chìm
 Vật thể trong chất lỏng có hai loại trọng lực: trọng lực tuyệt đối và trọng lực tương đối, hay thường gọi. Trọng lực tuyệt đối là toàn bộ lực khiến vật thể có xu hướng xuống. Trọng lực tương đối là phần trọng lực vượt quá trọng lực của chất lỏng xung quanh.
 
 Loại tuyệt đối giữ các phần chất lỏng và vật thể ở đúng vị trí của chúng. Loại tương đối ngăn các vật thể lệch nhau khi so sánh; chúng chặn nhau trong sự cố xuống và vì thế ở đúng chỗ. Những vật thể trong không khí không nặng hơn không khí thường được coi là nhẹ; những vật thể nặng hơn không khí được coi là nặng. Trọng lượng thông thường là phần trọng lượng thật vượt trọng lượng không khí. Vì vậy những vật thể nhẹ hơn chỉ là nhẹ tương đối, vì trong chân không chúng vẫn rơi.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Hệ quả 6 phân biệt **hai loại trọng lực** của một vật thể trong chất lỏng: trọng lực tuyệt đối, tức toàn bộ lực kéo vật thể xuống, và trọng lực tương đối, tức phần vượt quá trọng lực của chính chất lỏng xung quanh. Loại tuyệt đối giữ các phần ở đúng vị trí của chúng; loại tương đối mới là thứ ngăn các vật thể trôi lệch so với nhau.
+>
+> **Công thức.** Một vật thể thể tích $V$ và khối lượng riêng $\rho$, nhúng trong chất lỏng có khối lượng riêng $\rho_f$, chịu lực nâng $\rho_f V g$ theo Hệ quả 5. Vì vậy trọng lượng tương đối của nó là
+>
+> $$
+> N = mg-\rho_f Vg = (\rho-\rho_f)Vg,
+> $$
+>
+> và đó chính là con số mà một cái cân đo được.
+>
+> **Vì sao Newton viết như vậy.** Vì ông nhận ra một điều dễ gây hiểu nhầm: các vật thể "nhẹ hơn không khí" vẫn rơi trong chân không. Ông viết thẳng rằng những vật thể ấy chỉ là **nhẹ tương đối**, vì bỏ không khí đi thì chúng vẫn rơi. Nghĩa là "nhẹ" không phải một thuộc tính tuyệt đối của vật thể mà là một so sánh, và chỉ cái phần dư mới so sánh được mới quyết định vật thể nổi hay chìm.
+>
+> **Hiện nay thì sao.** Đây chính là khái niệm trọng lượng biểu kiến, và mọi phép đo trọng lượng đều dựa vào nó. Một quả bóng bay không "nhẹ" theo nghĩa nào; nó nổi lên vì nó đẩy ra một lượng không khí nặng hơn chính nó — cũng chính định luật Archimedes mà Hệ quả 5 vừa phát biểu. Cùng cách nhìn ấy giải thích vì sao một viên đá ném lên có thể nhẹ hơn không khí ở độ cao lớn: mật độ không khí nơi đó quá thấp, nên khác biệt trọng lượng tương đối đảo dấu.
 
 ### Hệ quả 7
 

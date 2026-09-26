@@ -170,6 +170,16 @@ Những Proposition ở đây phù hợp với cấu tạo thật của Trái Đ
 
 Trọng lực giảm khi đi từ bề mặt Trái Đất ra ngoài theo bình phương khoảng cách từ tâm, nhưng tăng theo khoảng cách khi đi sâu vào trong.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Các Proposition từ XLVIII đến LIII dựng một trong những kết quả đẹp nhất của *Principia*: **cycloid là đường cong đẳng thời gian** — một con lắc bị buộc phải chạy trên cycloid thì hoàn thành mọi dao động, dù lớn hay nhỏ, trong cùng một khoảng thời gian. Proposition LI chỉ ra điều đó bằng cách cho thấy gia tốc luôn tỷ lệ với cung phải đi, nên tỷ số giữa hai dao động được giữ nguyên suốt chừng.
+>
+> **Công thức.** Với bán kính đường tròn sinh cycloid là $a$ và gia tốc trọng trường $g$, chu kỳ là $T = 2\pi\sqrt{\dfrac{a}{g}}$. Chu kỳ ấy tỷ lệ căn bậc hai với độ dài dây, đúng như con lắc đơn, nhưng **không phụ thuộc biên độ** — đó là toàn bộ giá trị của nó. Cơ chế bên trong là bán kính quả cầu, khiến lực hướng tâm tỷ lệ thuận với khoảng cách, đúng lực cần cho dao động điều hòa.
+>
+> **Vì sao Newton viết như vậy.** Vì ông đang ở trong Phần X, nơi lực tỷ lệ với khoảng cách vừa được chứng minh cho quỹ đạo elip đồng tâm, nên ông nhận ra ngay rằng lực ấy tạo ra dao động đẳng kỳ, rồi tìm ra đường cong khiến nó thành hiện thực. Hệ quả 2 ghi công đúng chỗ: bản dịch nói rõ đây là việc Wren và Huygens đã phát hiện, và Huygens đã dùng nó để chế tạo đồng hồ quản lắc.
+>
+> **Hiện nay thì sao.** Nhận xét cuối chương về hầm mỏ là một quan sát địa chấn thật: bên trong Trái Đất, trọng lực **tăng** tuyến tính theo độ sâu nếu mật độ đều, và chính vì thế một quả lắc trong hầm sâu có chu kỳ khác hẳn ở mặt đất — hiện tượng được dùng để đo mật độ bên trong hành tinh. Còn tính đẳng thời gian của cycloid thì vẫn sống trong kỹ thuật gia tốc hạt: trong máy gia tốc đồng bộ, các đoạn nam châm uốn cong được nối bằng đường cong cycloid chính là để giữ chu kỳ dao động dọc khớp với chu kỳ quay, tránh mất hạt.
+
 ## Proposition LIII. Bài toán XXXV
 
 Cho biết các phần tư của các hình cong, hãy tìm các lực để vật thể chuyển động trong những đường cong đã cho luôn thực hiện dao động trong những thời gian bằng nhau.
@@ -305,3 +315,13 @@ Theo Định lý trước, chúng chuyển động như thể bị một vật t
 Xác định chuyển động của hai vật thể hút nhau bằng lực nghịch với bình phương khoảng cách, khi chúng rời những nơi đã cho theo phương và vận tốc đã cho.
 
 Chuyển động ban đầu đã cho, nên chuyển động đều của tâm trọng lực chung và chuyển động của không gian chuyển động cùng nó cũng đã biết. Sau đó, theo Hệ quả 5 của các Định luật và Định lý trước, có thể xác định các chuyển động tiếp theo.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition LXI là một kết quả cấu trúc rất đẹp: với lực hút nghịch đảo bậc hai giữa hai vật thể, toàn bộ chuyển động tương đương với việc **mỗi vật thể bị hút riêng bởi một vật thể thứ ba** đặt tại tâm trọng lực chung. Hai vật thể chỉ tương tác với nhau bằng một lực hút, nhưng bài toán lại quy về đúng một bài toán một vật thể.
+>
+> **Công thức.** Lý do nằm ở tỷ số khoảng cách cố định: nếu hai vật thể có khối lượng $m_1$, $m_2$ quanh tâm $C$, thì $CP_1:CP_2 = m_2:m_1$ không đổi, nên mọi lũy thừa và mọi hàm của hai khoảng cách ấy đều tỷ lệ với nhau. Với lực nghịch đảo bậc hai, lực hút tương hỗ giữa hai vật thể tỷ lệ với lực từ một vật thể tưởng tượng đặt tại $C$, chỉ khác một hằng số điều chỉnh. Đó chính là phép giảm bài toán hai vật thể về **khối lượng quy hiệu dụng** $\mu = \dfrac{m_1 m_2}{m_1 + m_2}$: toạ độ tương đối chạy đúng như một vật thể duy nhất có khối lượng $\mu$ quanh tâm $C$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần chuyển giao thức từ "lực hướng về một tâm bất đổi" sang "lực hút giữa các vật thể", mà lực thứ hai không có tâm cố định. Ông không thể chỉ nói hai vật thể quay quanh nhau, vì mọi kết quả từ Phần I đến Phần X đều giả định một tâm bất đổi. Định lý này chính là cây cầu nối, và nó được xây bằng chính các định lý về tỷ số đã có sẵn từ trước.
+>
+> **Hiện nay thì sao.** Hệ quả của Proposition LV còn đáng chú ý hơn: nếu một vật thể chịu lực hút về **hai hay nhiều tâm nằm trên cùng một đường thẳng**, thì diện tích quét vẫn tỷ lệ với thời gian. Người đọc hôm nay biết đây chính là **bài toán ba vật thể của Euler** — trường hợp mà mọi tâm lực đều nằm trên một đường, điều kiện đủ để bài toán vẫn còn giải được bằng trực giác và lượng giác. Nó cho thấy ranh giới thật sự của lý thuyết trung tâm nằm ở chỗ các tâm lực **không** cùng nằm trên một đường, và đó cũng chính là lý do bài toán ba vật thể tổng quát không có lời giải giải tích.

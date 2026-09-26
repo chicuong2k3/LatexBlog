@@ -139,6 +139,24 @@ Do góc $CSB$ luôn nhọn, nếu vật thể $ADBE$ được tạo bởi sự q
 
 Nếu đường cong $DNFG$ có tính chất sau: từ một điểm bất kỳ $N$ trên đường, hạ đường vuông góc $NM$ xuống trục $AB$, và từ điểm đã cho $G$ kẻ đường thẳng $GR$ song song với đường tiếp tuyến của hình tại $N$, cắt trục kéo dài tại $R$, sao cho $MN$ tỷ lệ với $GR$ như $GR^3$ tỷ lệ với $4BR\times GB^2$, thì vật thể tạo bởi sự quét của hình này quanh trục $AB$, khi chuyển động trong môi trường hiếm đã nói trước từ $A$ về phía $B$, sẽ chịu lực cản nhỏ hơn mọi vật thể trụ khác có cùng chiều dài và độ rộng.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Sau khi chứng minh quả cầu chịu lực cản bằng **một nửa** lực cản của hình trụ cùng đường kính, Nhận xét này đi thêm một bước và hỏi một câu khác hẳn: với một chiều dài và một độ rộng đã cho, **hình dạng nào có lực cản nhỏ nhất?** Câu trả lời của Newton là một vật thể tròn xoay sinh bởi các cung parabol, thỏa mãn một điều kiện tối ưu.
+>
+> **Công thức.** Điều kiện tối ưu được ông viết bằng hình. Với $N$ là một điểm bất kỳ trên đường cong, hạ đường vuông góc $NM$ xuống trục $AB$, rồi từ $G$ kẻ đường thẳng $GR$ song song với tiếp tuyến tại $N$ và cắt trục kéo dài tại $R$, sao cho
+>
+> $$
+> MN \propto GR,
+> \qquad
+> GR^3 \propto 4BR\times GB^2.
+> $$
+>
+> Đây chính là **điều kiện biến thiên bằng không** của một bài toán tối ưu, viết hoàn toàn bằng hình học thuần.
+>
+> **Vì sao Newton viết như vậy.** Vì ông đang săn vật thể mà mọi biến dạng nhỏ đều làm lực cản tăng lên, chứ không phải vật thể có lực cản nhỏ tuyệt đối. Ông viết điều kiện ấy mà không có ký hiệu biến thiên, vì lúc đó chưa có công cụ ấy; người ta phải chờ thêm gần một thế kỷ cho tới khi Euler và Lagrange dựng nên phép tính biến thiên. Và ông kết thúc bằng một câu khiến người đọc bất ngờ: ông nghĩ kết quả này có thể dùng để xây tàu.
+>
+> **Hiện nay thì sao.** Bài toán tìm vật thể tròn xoay chịu lực cản nhỏ nhất vẫn là bài toán kinh điển của cơ học chất lỏng, và câu trả lời hiện đại — thân mang lực cản nhỏ nhất, mũi nhọn và đuôi thon dần — là lời giải của chính bài toán Newton đặt ra năm 1687. Đó là lý do vỏ tàu ngày nay có đường nước mượt và thon về phía đuôi. Nhưng ý tưởng sâu hơn cả hình dạng là **phương pháp**: gắn một điều kiện biến thiên bằng không lên một bài toán hình học, và đó chính là kỹ thuật dùng để tối ưu mọi hình dạng trong kỹ thuật, từ cánh máy bay đến vỏ thuyền.
+
 ## Proposition XXXV. Bài toán VII
 
 Nếu một môi trường hiếm gồm những hạt rất nhỏ, đứng yên, bằng nhau và được sắp xếp tự do ở những khoảng cách bằng nhau, hãy tìm lực cản của một quả cầu chuyển động đều về phía trước trong môi trường ấy.
@@ -294,6 +312,22 @@ Mỗi hạt nước đứng yên chịu áp lực bằng nhau ở mọi phía, t
 ### Trường hợp 5
 
 Vận tốc của nước chảy ra như nhau, dù hình dạng của lỗ là tròn, vuông, tam giác hay hình bất kỳ khác có cùng diện tích với hình tròn. Vận tốc ấy không phụ thuộc vào hình dạng của lỗ, mà phát sinh từ độ sâu của lỗ dưới mặt phẳng $KL$.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Bài toán VIII là thí nghiệm **Torricelli**: nước chảy ra khỏi một lỗ ở đáy bình với vận tốc bằng vận tốc mà một vật nặng có khi rơi tự do từ chiều cao của cột nước. Trường hợp 5 nói thêm một điều mạnh: vận tốc ấy **không phụ thuộc hình dạng của lỗ**, chỉ phụ thuộc diện tích lỗ và độ sâu.
+>
+> **Công thức.** Vận tốc ở lỗ là $v=\sqrt{2gh}$ với $h$ là chiều cao cột nước — đúng định luật rơi tự do của Galileo. Nhưng phần thú vị nằm ở chỗ nước **không** chảy thẳng: nó hội tụ về lỗ từ mọi phía nên dòng nước bị co lại ngay dưới lỗ. Newton đo đúng điều đó: lỗ tròn đường kính $\frac58$ inch, còn dòng nước cách lỗ nửa inch chỉ còn $\frac{21}{50}$ inch, tức tỷ lệ $25$ với $21$. Vì diện tích tỷ lệ bình phương, nước ngoài lỗ phải nhanh hơn trong lỗ khoảng
+>
+> $$
+> \frac{25^2}{21^2}\approx\frac{17}{12},
+> $$
+>
+> tức gần bằng căn bậc hai của $2$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết vận tốc lý thuyết ở lỗ và vận tốc thực ở dòng nước là hai đại lượng khác nhau, và ông muốn **đo** cái khoảng cách ấy chứ không giả định nó bằng không. Ông còn cẩn thận gắn tấm bằng vào mặt bên chứ không ở đáy, để dòng nước không bị tăng tốc do rơi và không bị co thêm. Đó là một thiết kế thí nghiệm chuẩn bị tốt, gần hai trăm năm trước khi người ta dùng phương pháp theo dõi dòng chảy hiện đại.
+>
+> **Hiện nay thì sao.** Hiện tượng co dòng ấy gọi là **vena contracta**, và nó là cơ sở của một sự thật quan trọng trong thủy động: lưu lượng qua một lỗ phụ thuộc diện tích **hiệu dụng** chứ không phải diện tích hình học, nên không thể dùng công thức $Q=\sqrt{2gh}\,S$ một cách ngây thơ cho mọi lỗ. Hệ quả 9 còn cho một xấp xỉ dùng được: trọng lượng nước trên một đĩa nhỏ đặt ở giữa lỗ gần bằng trọng lượng của cột nước cao **nửa** chiều cao $GH$. Chính Torricelli dùng thí nghiệm này để chứng minh không khí có thể bị hút hết khỏi một bình, nên thế giới không thể đầy kín không khí.
 
 ### Trường hợp 6
 

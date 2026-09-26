@@ -25,6 +25,16 @@ Qua các đầu $A$, $B$, $C$ của các đoạn vuông góc, kẻ $AD$, $DBE$, 
 
 Từ đó dễ dàng suy ra rằng các điểm $S$, $D$, $T$ nằm trên cùng một đường thẳng. Lập luận tương tự cho biết các điểm $S$, $E$, $V$ cũng nằm trên cùng một đường thẳng. Vì vậy, tâm $S$ là giao điểm của các đường thẳng $TD$ và $YE$.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Bài toán I là bài toán **ngược**: cho trước quỹ đạo và vận tốc, hãy tìm lực. Đây đúng là cách vật lí thực nghiệm làm việc — từ đường bay của một hạt trong từ trường, người ta dựng lại chính từ trường đã sinh ra nó. Người đọc hôm nay nhận ra toàn bộ cách dựng của Newton chỉ gói trong một câu: khoảng cách từ tâm tới tiếp tuyến phải bằng $h/v$, và tâm là giao điểm của các đường vuông góc ấy.
+>
+> **Công thức.** Các đoạn vuông góc $PA$, $QB$, $RC$ được dựng tỷ lệ nghịch với vận tốc, mà $b = \dfrac{h}{v}$ với $h$ là moment động lượng riêng. Vậy đầu mút mỗi đoạn vuông góc phải nằm trên đường thẳng đi qua tâm $S$ và vuông góc với tiếp tuyến tại điểm ấy. Với nhiều điểm dữ liệu, giao điểm của các đường thẳng ấy cho ra tâm.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một **thuật toán** để dò ra lực khi lực chưa biết, chứ không chỉ một định lý để kiểm tra lực khi đã biết. Đây là tư duy của người làm thực nghiệm: đo đại lượng quan sát được, rồi suy ra đại lượng không quan sát được. Newton cần nó để dựng quỹ đạo từ số liệu hành tinh, và cũng để kiểm tra xem số liệu có đúng là quỹ đạo chung một tâm hay không.
+>
+> **Hiện nay thì sao.** Đây là cách tán sao được phát hiện: hạt bay qua từ trường từ tính, và từ độ cong của quỹ đạo suy ra cả cường độ từ trường lẫn dấu hiệu điện tích của hạt. Cùng cách đó dùng để định vị nguồn phát bức xạ, và để tìm tâm quỹ đạo của một hệ nhiều sao khi khối lượng tổng không nằm đúng tâm hình học. Học luận cuối chương trước đã nói trước rằng một dấu hiệu khớp không phải là bằng chứng, nên Bài toán I còn phải kiểm tra xem các đường thẳng ấy có *cùng gặp một điểm* hay không.
+
 ## Proposition VI. Định lý V
 
 Trong một không gian không có sức cản, nếu một vật thể quay trong bất kỳ quỹ đạo nào quanh một tâm bất động, và trong thời gian ngắn nhất mô tả một cung vừa bắt đầu, đồng thời phiên của cung ấy được giả sử vẽ sao cho chia đôi dây cung và kéo dài đi qua tâm lực, thì lực hướng tâm ở giữa cung sẽ tỷ lệ trực tiếp với phiên của cung và nghịch với bình phương thời gian.
@@ -60,3 +70,13 @@ Bởi vì vận tốc tỷ lệ nghịch với đoạn vuông góc $SY$, theo H�
 Vì vậy, nếu một hình cong $APQ$ bất kỳ được cho, và bên trong có một điểm $S$ cũng được cho, là nơi một lực hướng tâm luôn hướng về, thì có thể tìm ra quy luật của lực hướng tâm, nhờ đó vật thể $P$ sẽ liên tục bị kéo trở lại từ chuyển động thẳng, bị giữ trên chu vi của hình ấy, và sẽ mô tả hình ấy bằng một chuyển động quay vĩnh cửu.
 
 Nói cách khác, ta cần tìm, bằng tính toán, khối lượng $SP^2 \times QT^2$ hoặc $SY^2 \times PV$ tỷ lệ nghịch với lực này. Những Bài toán sau sẽ cung cấp ví dụ cho điều đó.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition VI là định lý lực hướng tâm tổng quát nhất trong *Principia*, vì nó thay bán kính bằng **độ cong**. "Phiên của cung" (versine) là khoảng cách từ dây cung tới cung tại điểm giữa, và chính là bản rời rạc của độ cong. Người đọc hôm nay thấy đằng sau câu tỷ lệ ấy là công thức quen thuộc $F = mv^2\kappa$.
+>
+> **Công thức.** Với cung nhỏ dài $s$ và độ cong $\kappa$, phiên của cung tỷ lệ với $\kappa s^2$; theo tham số hóa thông thường thì $\text{versine} \approx \tfrac{1}{8}\kappa s^2$, còn hằng số thay đổi theo quy ước định nghĩa versine. Vì $s = vt$, Proposition VI cho $F \propto \dfrac{\tfrac{1}{8}\kappa v^2 t^2}{t^2} = \tfrac{1}{8}\kappa v^2$, tức $F \propto \kappa v^2$ — chính là $F = mv^2\kappa$ sau khi hấp thụ hệ số tỉ lệ. Ở Hệ quả 3 và 4, khi quỹ đạo có đường tròn osculating, ta có $\kappa = 1/r$ với $r$ là bán kính độ cong, và kết quả trở lại đúng bằng Proposition IV.
+>
+> **Vì sao Newton viết như vậy.** Vì ông chưa có khái niệm độ cong trừu tượng, mà cũng không cần: mỗi đường cong trong mặt phẳng đều thay được bằng cung tròn osculating tại từng điểm, và ông chỉ cần bán kính của nó. Việc ông viết Hệ quả 5 như một bài toán tổng quát — cho hình cong và điểm $S$ bất kỳ, hãy tìm quy luật lực — cho thấy ông đang xây một *thủ tục*, không phải một danh sách kết quả riêng lẻ.
+>
+> **Hiện nay thì sao.** Dạng $F = mv^2\kappa$ là cách viết đúng đắn cho mọi chuyển động cong, và nó cho thấy vì sao trong hành tinh học, lực tại một điểm quỹ đạo phải liên quan tới độ cong chứ không phải tới hình dạng tổng thể. Cùng công thức này giải thích vì sao một hành tinh ở điểm có độ cong lớn thì chịu lực mạnh hơn, dù khối lượng và khoảng cách không đổi. Trong vật lí hiện đại, cùng ý đó xuất hiện ở nơi độ cong quỹ đạo quyết định lực từ tính tương tác, và ở nơi quỹ đạo trong không gian bị co lại bởi hấp dẫn.

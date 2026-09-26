@@ -41,6 +41,16 @@ Vì vậy, các thời gian bằng nhau: thời gian một vật thể rơi từ
 
 Do đó, mọi thời gian để các vật thể rơi từ những nơi bất kỳ đến tâm đều bằng nhau. Mọi chu kỳ tuần hoàn của các vật thể quay đều bằng nhau, theo Hệ quả 3 của Proposition IV.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXXVIII nói về trường hợp lực tỷ lệ **thuận với chiều cao**, và kết quả đằng sau nó là một tính chất gây ngạc nhiên: **mọi thời gian rơi từ bất kỳ độ cao nào xuống tâm đều bằng nhau**. Người đọc hôm nay đây là tính **đẳng kỳ** của dao động tử điều hòa, và cũng là cơ sở vật lý của con lắc đồng hồ.
+>
+> **Công thức.** Với lực tuyến tính $F = -kx$, gọi $D$ là sin thẳng của một cung trên đường tròn bán kính $AS$, thì thời gian rơi từ $A$ đến $C$ tỷ lệ với $\widehat{AD}$ và vận tốc tại $C$ tỷ lệ với $CD$ — cả hai đều là lượng lượng giác, chứ không phải đại lượng tuyến tính. Hệ quả 2 nói thẳng: mọi thời gian rơi đều bằng nhau, và mọi chu kỳ quay tròn đều bằng nhau. Ở dạng hiện đại, chu kỳ ấy là $T = 2\pi\sqrt{\dfrac{m}{k}}$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một tiêu chuẩn để so sánh: lực nghịch đảo bậc hai rất khó tính, nên ông lấy trường hợp lực tuyến tính làm thước đo. Việc ông chấp nhận rằng thời gian ở đây là hàm lượng giác chứ không phải hàm đại số là dấu hiệu ông hiểu rõ các bài toán này khác nhau bản chất ra sao.
+>
+> **Hiện nay thì sao.** Tính đẳng kỳ này là lý do con lắc dùng được làm đồng hồ: chu kỳ không hề phụ thuộc vào biên độ. Nó cũng cho thấy mọi dao động quanh một điểm cân bằng dưới lực tuyến tính — dù của một vật thể hay của cả một hệ nhiều vật thể — đều có cùng tần số góc. Và vì nó suy ra từ lực tuyến tính, nó còn là phép thử nhanh để biết một dao động có đúng là điều hòa hay không: chỉ cần đo chu kỳ ở hai biên độ khác nhau.
+
 ## Proposition XXXIX. Bài toán XXVII
 
 Giả sử có một lực hướng tâm bất kỳ, và giả sử đã biết các phần tư của các hình cong. Hãy tìm vận tốc của một vật thể đang lên hoặc xuống trên đường thẳng tại những nơi khác nhau nó đi qua; đồng thời tìm thời gian nó đến một nơi bất kỳ, và ngược lại.
@@ -163,5 +173,15 @@ Suy ra thời gian thứ nhất so với thời gian cuối bằng
 $$
 (2PD\cdot DL):DLme.
 \]
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXXIX là phương pháp tổng quát, và nó chính là **định lý công – năng lượng** trong hình thức nguyên thủy: dựng đồ thị lực dọc theo đường rơi, thì vận tốc bằng căn bậc hai của diện tích dưới đồ thị ấy.
+>
+> **Công thức.** Với $E$ là nơi vật thể đang ở, $EG$ là ordinate tỷ lệ với lực hướng tâm tại $E$, và $BFG$ là quỹ tích của $G$, Newton chỉ ra $v_E = \sqrt{\text{diện tích }ABGE}$. Vì $\text{diện tích }ABGE = \int F\,dx$ chính là công của lực, ta có $v^2 = \dfrac{2}{m}\int F\,dx$ — đúng là định lý công – năng lượng. Thời gian cũng lấy được bằng cách dựng ordinate tỷ lệ nghịch với $v$ rồi lấy diện tích.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một thuật toán dùng được cho **bất kỳ** quy luật lực nào, kể cả những quy luật không biết trước dạng công thức. Bằng cách quy mọi thứ về diện tích, ông biến một bài toán vật lý thành bài toán hình học, và bài toán hình học thì luôn dựng được bằng thước kẻ. Đó là điểm mấu chốt: ông không cần biết công thức của lực, chỉ cần biết lực trông như thế nào.
+>
+> **Hiện nay thì sao.** Đây vẫn là cách dạy định lý công – năng lượng: vẽ đồ thị lực theo vị trí, lấy diện tích, đó là độ tăng động năng. Trong kỹ thuật, cùng cách ấy xuất hiện ở bài toán tối ưu năng lượng và trong thiết kế tấm pin mặt trời, nơi đường cong dòng của hai tấm phải trùng nhau để ghép nối được. Điểm mạnh bền của phương pháp Newton là nó **giả định rất ít**: không cần lực tác rời, không cần tính tích phân kính nhiều, và vẫn cho một phép kiểm tra bằng số hình học.
 
 ## Phần VIII. Sáng tạo các quỹ đạo mà vật thể quay dưới tác dụng của một lực hướng tâm bất kỳ

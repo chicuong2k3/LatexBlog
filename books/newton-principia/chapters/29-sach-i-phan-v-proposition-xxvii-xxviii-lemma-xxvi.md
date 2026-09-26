@@ -41,6 +41,16 @@ Ngược lại, một hình thang đã biết loại, trừ một vài trường
 
 Còn các Lemma khác, nhờ đó quỹ đạo đã biết loại có thể được dựng qua các điểm đã cho và chạm các đường đã cho. Một Lemma như vậy là: nếu kẻ một đường thẳng qua một điểm bất kỳ theo vị trí, đường ấy cắt một hình cắt conh đã cho tại hai điểm, và chia đôi khoảng cách giữa hai giao điểm, thì điểm chia đôi sẽ nằm trên một hình cắt conh khác cùng loại với hình trước, có các trục song song với các trục của hình trước. Nhưng tôi vội chuyển sang những điều hữu ích hơn.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Bài toán XIX dựng quỹ đạo chạm năm tiếp tuyến, và mấu chốt là Hệ quả 3 của Lemma XXV: **đường thẳng nối trung điểm hai đường chéo của một tứ giác nội tiếp tiếp tuyến thì đi qua tâm conic**. Vì vậy, chỉ cần hai tứ giác như vậy là tìm được tâm, rồi mọi thứ còn lại chỉ là hình học thuần tuý.
+>
+> **Công thức.** Với tứ giác $ABFE$ có bốn cạnh chạm conic, trung điểm $M$, $N$ của hai đường chéo $AF$, $BE$ nằm trên một đường thẳng đi qua tâm. Lặp lại với một tứ giác khác cho ra đường thứ hai cùng đi qua tâm, nên tâm chính là giao điểm của hai đường ấy. Người đọc hôm nay gọi đây là **quan hệ cực – đường chân tròn** ở dạng nguyên thuỷ: tâm của conic chính là cực của đường thẳng ở vô cùng.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần tâm để hoàn tất việc dựng, và ông chỉ có thước kẻ và com pa. Nhưng câu cuối Học luận mới là điều đáng chú ý nhất chương: sau khi nêu một định lý đẹp — trung điểm của các dây cung đi qua một điểm cố định nằm trên một hình cắt conh khác cùng loại, có các trục song song — ông viết thẳng "nhưng tôi vội chuyển sang những điều hữu ích hơn". Newton tự bỏ qua một kết quả vì nó không phục vụ mục đích ông đang theo đuổi.
+>
+> **Hiện nay thì sao.** Việc Newton đánh giá thấp giá trị thực nghiệm của một định lý đẹp là một lời nhắc hữu ích. Hình học đồng phẳng về sau đã coi định lý ấy là cơ sở của cả **đường tròn đường kính** và **cặp đường chân tròn liên hợp**, và nó xuất hiện trong hình học tính tục. Người đọc hôm nay rút ra được hai điều: một kết quả đẹp không tự động là một kết quả quan trọng, và sự phân biệt ấy phụ thuộc vào câu hỏi bạn đang trả lời.
+
 ## Lemma XXVI
 
 Đặt ba góc của một tam giác, cho trước cả về loại và độ lớn, tương xứng với ba đường thẳng cứng theo vị trí, miễn là chúng không song song tất cả, sao cho các góc xoắn ốc có thể chạm các đường ấy.
@@ -67,6 +77,16 @@ Ga:ab = GP:PQ.
 $$
 
 Theo cách dựng, tỷ số ấy bằng $Ga:AB$. Vì vậy $ab=AB$, và do đó các tam giác $abc$, $ABC$, đã chứng minh đồng dạng, cũng bằng nhau. Vì các góc $D$, $E$, $F$ của tam giác $DEF$ lần lượt chạm các cạnh $ab$, $ac$, $bc$ của tam giác $abc$, có thể hoàn thành hình $ABCdef$ đồng dạng và bằng hình $abcDEF$. Bài toán được giải.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Lemma XXVI dựng một tam giác sao cho ba góc của nó chạm ba đường thẳng đã cho, và toàn bộ phép dựng dùng **đồng dạng xoắn ốc**: một điểm $G$ từ đó cùng tỷ số khoảng cách và góc quay xác định toàn bộ cấu hình. Người đọc hôm nay gọi đó là phép **đồng dạng trực tiếp**, tức một phép quay kết hợp phóng đại.
+>
+> **Công thức.** Cấu trúc cốt lõi là đẳng thức $Ga:AB = GP:PQ$ cùng với việc dựng các đường tròn $DGE$, $DGF$ để lấy góc. Ghép một tỷ số khoảng cách với một góc quay chính là phép nhân hai số phức: nếu $z$ biểu diễn điểm $a$ và $w$ biểu diễn tỷ số $GP:PQ$ cùng góc quay tương ứng, thì điểm cần tìm chính là $zw$. Việc Newton dùng hình học thay cho phép nhân là do ông không có ký hiệu phức, không phải vì ông không cần đến nó.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần phủ một dạng bài toán mà các Proposition trước chưa giải: dựng conic đã biết **cả loại lẫn độ lớn**, với các đoạn cho trước bị chặn giữa ba đường thẳng đã cho. Đó đúng là dạng bài toán mà người thực địa phải giải, và nó đòi hỏi phép đặt tam giác chứ không chỉ phép dựng conic qua điểm và tiếp tuyến.
+>
+> **Hiện nay thì sao.** Phép đồng dạng trực tiếp là công cụ nền của cả hình học phẳng và cơ học: nó cho biết một điểm sẽ ra đâu khi ta vừa xoay vừa phóng, và nó chính là cách dựng điểm thứ ba của một tam giác khi biết hai cạnh và góc ở giữa. Hệ quả ở cuối Lemma — dựng một đường thẳng có các đoạn cho trước bị chặn giữa ba đường thẳng — liên quan tới **định lý chặn** của hình học giải tích, và đó là công cụ để tính nhanh trong tọa độ mỗi khi phải quy một bài toán hình học về đại số.
 
 ## Hệ quả
 

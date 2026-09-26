@@ -49,10 +49,30 @@ Nếu một quả cầu chuyển động đều về phía trước qua một ch
 
 Điều này xuất hiện từ Hệ quả 2 của Proposition XXXVII, và lập luận tiếp tục theo cùng cách như Proposition trước.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXXIX xét cùng quả cầu ấy nhưng chuyển động **trong một kênh trụ**, và kết quả cho thấy lực cản không còn chỉ phụ thuộc vào quả cầu: nó còn phụ thuộc vào diện tích miệng kênh so với tiết diện của quả cầu, qua hai hệ số hiệu chỉnh.
+>
+> **Công thức.** Lực cản tỷ lệ với lực ở trường hợp không bị kênh chặn, nhân với tỷ lệ diện tích miệng kênh với phần dư của nó sau khi trừ **nửa** đường tròn lớn nhất của quả cầu, nhân với bình phương tỷ lệ ấy khi trừ **toàn bộ** đường tròn, rồi nhân với tỷ lệ mật độ chất lỏng với mật độ quả cầu. Hai hệ số hiệu chỉnh chỉ bằng một khi miệng kênh vô cùng rộng, nên chúng biến mất và ta quay lại đúng kết quả của Proposition XXXVIII.
+>
+> **Vì sao Newton viết như vậy.** Vì ông hiểu rằng chất lỏng phía trước vật thể không thể tự do trôi đi vô hạn khi bị chặn bởi thành kênh: nó bị dồn lên, và chỗ dồn ấy làm đổi trường vận tốc quanh quả cầu, do đó làm đổi lực cản. Nhận xét ngay sau đây nói rõ cơ chế tương tự: ông đóng băng chính phần nước ấy trong bài toán trước, vì "tính chảy của nó làm tăng lực cản".
+>
+> **Hiện nay thì sao.** Hiệu ứng này gọi là **hiệu ứng chặn** (blockage), và nó là một trong những cạm bẫy kinh điển khi đo lực cản: cùng một vật thể, cùng một tốc độ, chỉ khác cách nó được đặt trong thiết bị đo, đã có thể cho kết quả khác nhau đáng kể. Ngành cơ học chất lỏng ngày nay xử lý nó bằng các hệ số hiệu chỉnh theo tỷ lệ chặn giữa tiết diện vật thể và tiết diện ống; khi tỷ lệ ấy vượt quá khoảng năm phần trăm thì phép đo coi như không còn đáng tin. Newton đã chỉ ra dạng của hiệu ứng này từ năm 1687, chỉ với giả thiết miệng kênh không quá rộng.
+
 ## Nhận xét
 
 Trong hai Proposition vừa rồi, ta giả sử, như đã làm trước đây trong Lemma V, rằng toàn bộ nước ở phía trước quả cầu, mà tính chảy của nó làm tăng lực cản, đã đông lại.
 
 Nếu nước ấy trở lại thành chất lỏng, nó sẽ làm lực cản tăng lên đôi chút. Nhưng trong các Proposition này, lượng tăng ấy rất nhỏ, nên có thể bỏ qua, vì bề mặt lồi của quả cầu tạo ra gần như cùng một tác dụng như việc đóng băng nước.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXXVIII đưa ra một con số rất cụ thể: lực cản của một quả cầu trong chất lỏng nén vô hạn bằng lực phá hủy toàn bộ chuyển động của nó trong thời gian nó đi được **tám phần ba đường kính**. Nhận xét sau đó tiết lộ giả thiết mà con số ấy đứng trên: Newton cho **đông cứng** chất lỏng ở phía trước quả cầu.
+>
+> **Công thức.** Cách suy ra thuần hình học: quả cầu cùng hình trụ ngoại tiếp có tỷ lệ thể tích $2:3$, hình trụ mất hết chuyển động sau khi đi bốn đường kính, nên quả cầu chỉ cần $\frac23\times 4 = \frac83$ đường kính. Từ đó lực cản tỷ lệ với $\rho v^2 d^2$. Hệ quả 4 cho một kết quả lạ: một quả cầu có cùng mật độ với chất lỏng quanh nó mất **một nửa** chuyển động sau khi đi được hai đường kính.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một bài toán có lời giải bằng hình học thuần, nên ông đóng băng phần chất lỏng bị đẩy phía trước để nó thành một vật thể rắn đã biết. Ông còn tự đánh giá: nếu để nguyên là chất lỏng thì lực cản lớn hơn một chút, nhưng chênh lệch rất nhỏ, vì bề mặt lồi của quả cầu tạo ra gần như cùng một tác dụng với việc đóng băng.
+>
+> **Hiện nay thì sao.** Cách làm này cho ta đúng **các quy luật tỷ lệ** — $F\propto\rho v^2 d^2$ — nhưng không cho **hằng số**. Và đó đúng là giới hạn của lý lẽ hình học: hệ số lực cản của một quả cầu trong không khí là con số thực nghiệm, phụ thuộc số Reynolds, tức phụ thuộc đúng những thuộc tính chất lỏng mà Newton đã đóng băng. Nói cách khác, hình học quyết định **tỷ lệ**, còn vật lí quyết định **con số**.
 
 *Các hệ số và ký hiệu trong Proposition XXXVIII–XXXIX được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*

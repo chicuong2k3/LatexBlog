@@ -27,6 +27,18 @@ Sau đó, khi chuyển động tương đối của nước giảm xuống, sự
 
 Vì vậy, nỗ lực này không phụ thuộc vào bất kỳ sự dịch chuyển nào của nước so với các vật thể xung quanh. Chuyển động tròn thật cũng không thể được định nghĩa bằng sự dịch chuyển ấy.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Đây là thí nghiệm nổi tiếng nhất trong *Principia*, và cũng là thí nghiệm mà cơ học quay thừa kế làm gốc. Mặt nước lõm lên khi bình quay là hiện ứng **ly tâm**, và câu "nỗ lực này không phụ thuộc vào bất kỳ sự dịch chuyển nào của nước so với các vật thể xung quanh" là lập luận giữ vai trò trọng tải của cả đoạn. Newton đang nói: ta nhìn thấy hiệu ứng này ngay cả lúc nước đứng yên trong bình, nên nó phải phản ánh điều gì đó vượt ngoài quan hệ với mọi vật thể chung quanh.
+>
+> **Công thức.** Mặt nước lõm là parabol: $z = \dfrac{\omega^2 r^2}{2g}$. Kiểm tra với bình quay $\omega = 4\ \mathrm{rad/s}$, bán kính $r = 0{,}1\ \mathrm{m}$: $z = 16 \cdot 0{,}01 / (2 \cdot 9{,}81) \approx 0{,}0082\ \mathrm{m}$, tức nước dâng khoảng $8\ \mathrm{mm}$. Đó là lý do càng quay nhanh thì nước càng dâng cao: độ cao tỉ lệ với bình phương tốc độ góc.
+>
+> **Vì sao Newton viết như vậy.** Đây là phép thử cho cả hệ thống. Nếu mọi thứ chỉ là tương đối thì không có gì có thể bị đẩy ra khỏi trục bởi lực, vì "ra khỏi trục" đòi hỏi một trục có nghĩa. Ông cần điều đó, vì toàn bộ cấu trúc hấp dẫn của ông đứng trên chỗ lực hướng tâm có một tâm cố định, mà các định nghĩa ở chương 01 không chứng minh được.
+>
+> **Hiện nay thì sao — và ở đây lập luận của Newton thất bại.** Hiệu ứng dâng nước có thật, nhưng lực ly tâm mà Newton gọi tên **không phải lực thật**. Nó là lực quán tính, chỉ xuất hiện khi ta chọn hệ quy chiếu quay; trong hệ quán tính không có lực ly tâm nào, nước chỉ đơn giản đi thẳng thay vì đi thẳng theo vòng tròn. Và đây là chỗ chí mạng: thí nghiệm **không phân biệt được** "bình quay trong không gian tuyệt đối" với "cả vũ trụ gồm sao cố định, bình nước và người quan sát cùng quay quanh bình". Cả hai đều dự đoán mặt nước lõm y hệt. Nên nó chứng minh quay *so với một hệ quán tính nào đó*, chứ không chứng minh quay so với không gian tuyệt đối. Đây chính là phản biện của Mach, và Newton không có câu trả lời.
+>
+> Điều thú vị là cùng hiệu ứng ấy lại cho ta đo tốc độ quay của Trái Đất: **con lắc Foucault** quay mặt phẳng dao động với tốc độ $\Omega = \omega\sin\lambda$, nên ở vĩ độ Paris ($\lambda \approx 48{,}9^\circ$) nó quay hết một vòng trong khoảng $32$ giờ. Chỗ Newton chỉ ra hiện tượng là thật; chỗ ông suy ra nó chứng minh cho không gian tuyệt đối thì không.
+
 Mỗi vật thể đang quay chỉ có một chuyển động tròn thật, tương ứng với chỉ một quyền lực cố gắng rời xa trục quay của nó như một tác dụng riêng và đầy đủ. Nhưng những chuyển động tương đối trong cùng một vật thể thì vô số, tùy theo các quan hệ mà vật thể ấy có với những vật thể bên ngoài.
 
 Những chuyển động tương đối ấy, cũng như những quan hệ khác, hoàn toàn không có tác dụng thật, trừ khi chúng có thể tham gia vào chuyển động thật duy nhất ấy.
@@ -62,3 +74,13 @@ Nhưng nếu ta quan sát sợi dây và thấy sức căng của nó đúng b�
 Sau đó, từ sự dịch chuyển của các quả cầu giữa những vật thể ấy, ta sẽ tìm được phương hướng của chuyển động.
 
 Nhưng làm thế nào để thu thập chuyển động thật từ nguyên nhân, tác dụng và những hiệu có vẻ như của chúng; và ngược lại, làm thế nào để từ chuyển động thật hoặc có vẻ như, ta có thể đi đến hiểu biết về nguyên nhân và tác dụng của chúng, sẽ được giải thích đầy đủ hơn trong phần trình bày tiếp theo.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Phần này là phần hay nhất của chương theo nghĩa khác: Newton tìm ra cách **thực nghiệm** để đo chuyển động quay mà không cần so với vật thể nào. Hai quả cầu gắn vào dây, quay quanh tâm chung: sức căng dây cho biết lực cố rời trục, và từ đó tính được lượng chuyển động tròn. Rồi ông làm một bước tinh tế hơn nhiều — dùng **hướng** của lực để biết hướng của chuyển động, và đo bằng sự thay đổi của sức căng dây.
+>
+> **Công thức.** Ngôn ngữ hiện đại cho cả đoạn này là **bảo toàn moment của động lượng**: $\vec{L} = I\vec{\omega}$, $\vec{\tau} = \dfrac{d\vec{L}}{dt}$. Câu nói về "những mặt phía sau" chỉ là phát biểu bằng hình học của điều quen thuộc: lực tăng tốc vật đang chạy hiệu quả nhất ở phía sau, nơi lực và vận tốc cùng hướng, nên $P = Fv$ đạt cực đại.
+>
+> **Vì sao Newton viết như vậy.** Biết những mặt phía sau nghĩa là biết những mặt đối diện phía trước, nên ông suy ra được **hướng** của chuyển động. Người đọc hôm nay thấy đây là mầm của sự thật quan trọng: moment và động lượng là hai vector **vuông góc với nhau**, nên tác động moment theo phương nào sẽ làm trục quay nghiêng về phía vuông góc với phương đó. **Con lắc xoay** biểu diễn điều đó thành thứ đo được: dùng moment theo phương ngang lên một đĩa đang quay, đĩa không đổi tốc độ quay mà chỉ chuyển động quanh trục thẳng đứng. Newton không có khái niệm vector nên không thấy mạch nối, nhưng ông đã có đúng hình học của nó.
+>
+> **Hiện nay thì sao.** Trong số những thứ Newton viết, rất ít tồn tại nguyên vẹn: định luật I có giới hạn, định luật II phải sửa cho tốc độ cao, không gian tuyệt đối bị bác bỏ, thuật ngữ hấp dẫn bị thay. Nhưng ý rằng **chuyển động quay khác chuyển động tịnh tiến ở chỗ có thật, và có một đại lượng bảo toàn đi kèm nó** thì vẫn đúng nguyên vẹn — và đó chính là moment của động lượng. Newton tìm đúng vật thể, chỉ là đặt nó vào không gian thay vì đặt nó vào vật thể. Con quay tàu, con quay hành tinh, mạng phân kỳ vệ tinh và MEMS đều là hệ quả của phát hiện ở đoạn này. Chỗ ông tự thừa nhận khó nhất — nếu có vật thể ở xa luôn giữ vị trí cố định thì dịch chuyển tương đối của các quả cầu không cho biết chuyển động thuộc về bên nào — vẫn đúng và chưa giải quyết trọn vẹn.

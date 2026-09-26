@@ -38,3 +38,15 @@ Sau đó, theo Hệ quả II, chuyển động của mỗi vật thể phải đ
 Khi đã làm như vậy, vì các vật thể tác dụng lên nhau theo phương của một đường thẳng vuông góc với mặt phẳng, các chuyển động song song phải được giữ nguyên sau khi bật lại như trước. Đối với các chuyển động vuông góc, ta gán những thay đổi bằng nhau theo những phía ngược nhau, để tổng của các chuyển động cùng hướng và hiệu của các chuyển động ngược hướng vẫn như trước.
 
 Những kiểu bật lại như vậy cũng đôi khi tạo ra chuyển động tròn quanh tâm riêng của các vật thể. Nhưng đây là những trường hợp mà tôi không xét đến trong phần sau; và sẽ quá dài dòng nếu chứng minh từng chi tiết liên quan đến chủ đề này.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Hệ quả III là **bảo toàn động lượng**: tổng động lượng của một hệ không đổi, miễn là không có lực từ bên ngoài tác vào. Điều đáng chú ý về mặt lịch sử là đây là lần đầu tiên trong vật lí một đại luật bảo toàn được **suy ra như hệ quả logic** của các định luật khác, chứ không phải một tiên đề đứng riêng. Chỉ hơn một thế kỷ sau, Noether mới cho thấy mọi định luật bảo toàn đều là hệ quả của một đối xứng liên tục: bảo toàn động lượng từ đối xứng theo phép tịnh tiến không gian.
+>
+> **Công thức.** Newton làm toán bằng "phần" chứ không bằng ký hiệu: vật $A$ mang $6$ phần chuyển động, vật $B$ mang $10$ phần, tổng là $16$. Sau khi bật lại, mọi cách phân bố đều giữ nguyên tổng đó — nếu $A$ nhận thêm $9$ thì $A$ có $15$ và $B$ còn $1$; nếu $A$ nhận thêm $12$ thì $A$ có $18$ và $B$ thành $-2$, tức là đi ngược lại với $2$ phần. Ngôn ngữ hiện đại là $\vec{p}_1 + \vec{p}_2 = \text{hằng số}$, và tôi đã kiểm lại cả hai trường hợp: $15 + 1 = 16$ và $18 - 2 = 16$.
+>
+> Có một điểm dễ bỏ qua nhưng rất quan trọng: bảo toàn động lượng chỉ là **ràng buộc**, chưa phải lời giải — một phương trình không đủ xác định hai ẩn số. Ngày nay phương trình thứ hai là bảo toàn năng lượng cơ, hoặc dùng hệ số phục hồi $e$. Đó là lý do Newton liệt kê nhiều trường hợp khả dĩ thay vì đưa ra công thức: ông đang chứng minh tính bất biến, không phải giải bài toán. Kiểm chứng: với $m_A = 3$, $v_A = 2$, $m_B = 2$, $v_B = 5$ (đúng $6$ và $10$ phần), va chạm thuần một chiều đàn hồi cho $v_A' = 4{,}4$ và $v_B' = 1{,}4$; động lượng $3 \cdot 4{,}4 + 2 \cdot 1{,}4 = 16$ và năng lượng cơ $31$ trước, $31$ sau, đều khớp. Nhưng đó là $A$ **nhận thêm $7{,}2$ phần** — không nằm trong danh sách $3, 4, 5, 9, 10, 11, 12$ mà ông kể ra.
+>
+> **Vì sao Newton viết như vậy.** Phần va chạm xiên ở cuối chính là cách phân tích chuẩn trong vật lí hiện đại: xác định mặt phẳng tiếp xúc tại điểm chạm, rồi tách chuyển động thành thành phần vuông góc và thành phần song song với nó. Vì lực tiếp xúc chỉ dọc theo phương vuông góc mặt phẳng, thành phần song song được giữ nguyên, còn hai thành phần vuông góc thì trao đổi cho nhau.
+>
+> Điều ông thừa nhận không làm được cũng đáng chú ý: các va chạm tạo ra chuyển động quay quanh tâm riêng. Ngày nay ta biết phần năng lượng còn lại chuyển sang **chuyển động quay**, và cần thêm bảo toàn moment động lượng để giải. Newton biết là còn dở nhưng nói thẳng ra trong sách — một thói quen hiếm trong văn bản khoa học.

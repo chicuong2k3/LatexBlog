@@ -253,6 +253,16 @@ PR:PT = Pq:PT,
 \]
 nên $PR = Pq$, trái với giả thiết.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Hệ quả 3 của Lemma XX là một trong những kết quả thuần túy nhất và đẹp nhất trong phần hình học của *Principia*: **hai hình cắt conic bất kỳ cắt nhau ở nhiều nhất bốn điểm**. Người đọc hôm nay gọi đây là trường hợp riêng của định lý Bézout cho đường cong bậc hai.
+>
+> **Công thức.** Lập luận của Newton là phản chứng: nếu hai conic cắt nhau ở năm điểm, lấy hai điểm làm cực rồi kẻ đường, ta sẽ có $PR = Pq$ — hai đoạn thẳng khác nhau phải bằng nhau, mâu thuẫn. Từ đây suy ra điều quan trọng hơn: **năm điểm xác định duy nhất một hình cắt conic**. Phương trình bậc hai có sáu hệ số, trừ một vì quy mô, còn năm tham số — khớp chính xác với con số năm điểm.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần nó như một **công cụ phân biệt**, chứ không phải một định lý để trích dẫn. Ở Lemma XXI ngay sau đó, ông dùng đúng phép kiểm tra "năm điểm" này để kết luận rằng một quỹ tích buộc phải là **đường thẳng** chứ không thể là đường cong. Nếu Lemma XX không có Hệ quả 3, phần cuối của Lemma XXI sẽ không đóng lại được.
+>
+> **Hiện nay thì sao.** Người đọc hôm nay dùng Hệ quả 3 như một phép thử theo hướng ngược: thấy năm điểm nằm trên một đường cong lạ thì ngay lập tức hỏi nó có phải conic không, và nếu không thì không conic nào đi qua được cả năm điểm ấy. Cùng bằng chứng ấy cũng nằm ở gốc của **lý thuyết nội suy**: cho năm điểm dữ liệu, duy nhất có một conic khớp, và sai số ở điểm thứ sáu là phép đo chất lượng của phép khớp.
+
 ## Lemma XXI
 
 Nếu hai đường thẳng di động và không xác định $BM$, $CM$ kẻ qua các điểm cố định $B$, $C$ với điểm giao $M$, mô tả một đường thẳng thứ ba $MN$ đã cho theo vị trí; và hai đường thẳng di động không xác định $BD$, $CD$ được kẻ tạo với hai đường ấy những góc đã cho $MBD$, $MCD$ tại $B$, $C$, thì hai đường $BD$, $CD$ sẽ mô tả, tại điểm giao $D$, một hình cắt conh đi qua $B$, $C$. Ngược lại, nếu $BD$, $CD$ mô tả tại $D$ một hình cắt conh đi qua các điểm đã cho $B$, $C$, $A$, và $\angle DBM$ luôn bằng góc đã cho $\angle ABC$, cũng như $\angle DCM$ luôn bằng $\angle ACB$, thì $M$ sẽ nằm trên một đường thẳng đã cho theo vị trí.
@@ -322,3 +332,13 @@ $$
 Pr:Pt = PR:PT = pB:PB = pe:Pt,
 $$
 nên $pe$ và $Pr$ luôn bằng nhau. Bằng cách này, các điểm của quỹ đạo được tìm thấy dễ dàng hơn, trừ khi ta muốn mô tả đường cong theo cách cơ học như trong cách dựng thứ hai.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Lemma XXI là một lập luận **quỹ tích** theo kiểu mà ngành hình học đồng phẳng gọi là phép chiếu: hai đường thẳng động quay quanh hai điểm cố định theo những góc cố định, và giao điểm của chúng vẽ ra một đường thẳng. Đó chính là cơ chế của phép chiếu, mặc dù thuật ngữ ấy chưa tồn tại.
+>
+> **Công thức.** Cấu trúc của Lemma XXI là: cho một điểm $A$ cố định trên conic, quay hai cạnh $BA$, $CA$ quanh $B$, $C$ sao cho giao điểm luôn nằm trên một đường thẳng; khi đó giao điểm của các cạnh ứng với $D$ và $P$ vẽ nên conic đi qua $A$, $D$, $P$, $B$, $C$. Mấu chốt nằm ở bước cuối: nếu quỹ tích là một đường cong, nó sẽ phải là conic đi qua đúng năm điểm đó — mà Hệ quả 3 của Lemma XX vừa cấm. Suy ra quỹ tích buộc là đường thẳng.
+>
+> **Vì sao Newton viết như vậy.** Vì ông đang giải bài toán bốn đường thẳng nổi tiếng của các nhà cổ đại, và ông từ chối dùng phép tính giải tích. Ông viết thẳng ở cuối Hệ quả 2 của Lemma XIX rằng đây không phải một phép tính giải tích, mà là một sự phối hợp hình học, đúng như các nhà cổ đại yêu cầu. Đó là một tuyên bố có chủ ý, và nó đáng chú ý về mặt lịch sử: ông viết *Principia* vài thập kỷ trước khi hình học đồng phẳng trở thành một môn học riêng.
+>
+> **Hiện nay thì sao.** Nội dung của Lemma XXI chính là **đường thẳng trong trường phẳng chiếu**, và nó là nền của hình học hình chiếu mà Desargues, Pascal và Brianchon phát triển sau đó. Cùng lập luận "năm điểm xác định một conic" lại trở thành **thực bao hình học**: giả hệ với một conic từ năm điểm là bài toán chuẩn của kỹ thuật đo đạc, và nó chỉ có lời giải khi năm điểm ấy "tốt" theo đúng nghĩa mà Hệ quả 3 vừa định nghĩa.

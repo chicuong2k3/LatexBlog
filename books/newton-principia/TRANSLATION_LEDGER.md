@@ -77,6 +77,101 @@ Bản OCR dùng để đối chiếu: [Internet Archive OCR](https://archive.org
 | Mục lục Hệ thống thế giới và chỉ mục Principia (PDF 579–587, trang in 573–581) | `chapters/69-muc-luc-va-chi-muc.md` | Đã dịch, đang đối chiếu scan | Đã dịch mục lục và các mục chỉ mục; giữ số trang tham chiếu. PDF 588–594 được ghi nhận riêng là trang trắng/thư viện. |
 | PDF 588–594 | Không có file dịch | Đã rà soát | Các trang trắng hoặc chỉ chứa dấu thư viện, không có nội dung sách cần dịch. |
 
+## Lớp chú thích vật lí hiện đại (lớp chồng, không thuộc bản dịch)
+
+Lớp chú thích dùng marker `> **[Ghi chú hiện đại]**`, quy ước tại `ANNOTATION_GUIDE.md`.
+
+| Mục | Trạng thái |
+|---|---|
+| Số chương có chú thích | 70/70 |
+| Tổng số chú thích | 150 |
+| Độ dài chú thích | 273–450 từ (trung vị 369) |
+| Lỗi cấu trúc nhãn / render / sai lệch bản dịch | 0 / 0 / 0 |
+| Cảnh báo mật độ ngoài ngưỡng | 0 |
+
+Kiểm tra lại bằng:
+
+```
+python tools/check_book_callouts.py "books\newton-principia" --render --fidelity
+```
+
+### Sửa bản dịch đã được duyệt
+
+| File | Vị trí | Trước | Sau | Căn cứ |
+|---|---|---|---|---|
+| `chapters/02-dinh-luat-van-dong.md` | trong văn bản | `sao chổm` | `sao chổi` | lỗi chính tả hiển nhiên |
+| `chapters/65-sach-iii-proposition-xxxvii-xl.md` | dòng 837 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
+| `chapters/66-sach-iii-lemma-v-xi-proposition-xli.md` | dòng 1508 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
+| `chapters/68-he-thong-thoi-gioi.md` | dòng 351 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
+| `chapters/68-he-thong-thoi-gioi.md` | dòng 673 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
+| `chapters/69-muc-luc-va-chi-muc.md` | dòng 40 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
+| `chapters/68-he-thong-thoi-gioi.md` | dòng 751 | `vận tốc của sao chổi xấp xỉ bằng.` | `vận tốc của sao chổi xấp xỉ bằng cùng.` | khôi phục từ nguyên văn bản 1846 |
+
+Câu ở dòng 751 của `68-he-thong-thoi-gioi.md` bị thiếu chữ "cùng" do đánh dấu
+câu. Đối chiếu nguyên văn bản 1846 (trang "THE SYSTEM OF THE WORLD", đoạn bàn về
+tốc độ sao chổi): "by my computation, the velocity of comets is found to be much
+about the same." Vế bổ sung lấy nguyên từ nguồn, không suy đoán.
+
+Nhật ký máy đọc: `AUTHORIZED_TEXT_FIXES.tsv`.
+
+### Đã đối chiếu nguồn — không sửa
+
+| File | Vị trí | Kết luận |
+|---|---|---|
+| `chapters/00-loi-dan-nhap.md` | dòng 473 | Không phải lỗi dịch |
+
+Câu về cây táo dịch đúng nguyên văn bản 1846: "The celebrated apple-tree ... was
+destroyed by the wind about twenty years ago; but it has been preserved in the form
+of a chair." Chênh lệch về mốc thời gian nằm ở dữ kiện lịch sử, không nằm ở bản
+dịch: Newton năm 1727 viết cây bị gió phá từ "khoảng hai mươi năm trước", tức quanh
+1707, còn mốc thường được viện dẫn cho vụ đổ cây là khoảng năm 1900. Chênh lệch này
+đã được nêu trong chú thích của chính chương đó, thay vì sửa văn bản dịch.
+
+### Hình ảnh — đã trích từ scan
+
+Toàn bộ hình trong `chapters/68-he-thong-thoi-gioi.md` đã được trích trực tiếp từ bản
+scan 1846 và lưu vào `assets/`. Khai báo từng hình: `EXTRACTED_FIGURES.tsv`.
+
+| Hình | Nội dung | Trang scan |
+|---|---|---|
+| 1 | Mặt cầu Trái Đất $AFB$ và các đường cong $VD$, $VE$, $VF$ | PDF 519 |
+| 2 | Mật độ ánh sáng: $ABD$, $PQ$, $C$, $FG$, trục chân trời $H$ | PDF 529 |
+| 3 | Quả cầu $ABCD$ cắt bởi mặt phẳng $AC$ | PDF 533 |
+| 4 | Trái Đất $ADEP$, hai cực, xích đạo, đường vĩ độ | PDF 543 |
+| 5 | Hình bầu dục mặt biển $EADB$ | PDF 547 |
+| 6 | Sơ đồ phân tích lực tại Mặt Trăng | PDF 548 |
+| 7 | Mặt cầu $ADBE$ và mặt nước $aDbE$ | PDF 549 |
+| 8 | Dựng tuyến tính Lemma I | PDF 573 |
+| 9 | Dựng tuyến tính Lemma II | PDF 574 |
+| 10 | Biểu diễn chuyển động theo giờ, Lemma III | PDF 575 |
+| 11 | Bài toán I: quỹ đạo sao chổi | PDF 576 |
+
+Một vị trí đánh dấu hình trong bản dịch là **placeholder ảo**: đã đối chiếu PDF
+515–519, thảo luận giả thuyết quả cầu rắc của Eudoxus, Callippus và Aristotle trong bản
+gốc là văn xuôi thuần, không kèm sơ đồ. Đã thay bằng ghi chú nói rõ điều đó.
+
+### Ô [OCR không rõ] — đã đối chiếu và điền
+
+Toàn bộ 11 ô `[OCR không rõ]` trong `chapters/68-he-thong-thoi-gioi.md` đã được điền
+từ ảnh scan, mỗi ô khai trong `AUTHORIZED_TEXT_FIXES.tsv`:
+
+- Bảng vệ tinh sao Mộc (PDF 523): độ giãn dài lớn nhất $1^\circ48'=108''$,
+  $3^\circ01'=181''$, $4^\circ46'=286''$, $8^\circ13\frac12'=493\frac12''$; thời
+  gian quay $1$d $18$h $28$m $36$s, $3$d $13$h $17$m $54$s, $7$d $3$h $59$m $36$s,
+  $16$d $15$h $5$m $13$s.
+- Tên hình thoi trên PDF 543 là $HPKhpk$ theo scan, không phải $HPKkh\lambda$ như bản
+  dịch ghi.
+- Tên nhà quan sát trên PDF 544 là Colepress và Sturmy; lớp OCR cho ra
+  `Qvleptvss` và `Stitrnnj`.
+- Khoảng cách góc của hai sao chổi trên PDF 570 là $71\frac23^\circ$ và
+  $79\frac23^\circ$; chuyển động quận chiều của sao chổi 1680 là
+  $4\frac23^\circ$, không phải $4^\circ$.
+
+### Bảng — đã đối chiếu
+
+Bảng I và Bảng II trong `chapters/68-he-thong-thoi-gioi.md` đã đối chiếu với ảnh scan
+PDF 569: khớp toàn bộ 44 số của Bảng I và 40 số của Bảng II.
+
 ## Quy tắc hoàn tất
 
 Một cuốn chỉ được đánh dấu hoàn tất khi:

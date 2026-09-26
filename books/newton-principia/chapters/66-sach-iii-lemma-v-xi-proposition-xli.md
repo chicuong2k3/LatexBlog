@@ -177,6 +177,16 @@ Theo cùng phương pháp, từ năm vĩ độ quan sát được, ta có thể 
 
 Nếu các hiệu số giữa những kinh độ quan sát được nhỏ, chẳng hạn $4$ hoặc $5$ độ, thì ba hoặc bốn lần quan sát sẽ đủ để tìm một kinh độ và vĩ độ mới. Nhưng nếu các hiệu số lớn hơn, chẳng hạn $10$ hoặc $20$ độ, phải dùng năm lần quan sát.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Lemma VI giải một bài toán mà ta vẫn tưởng là hiển nhiên: đã biết vị trí của sao chổi ở năm thời điểm quan sát, làm sao biết nó ở một thời điểm bất kỳ ở giữa? Thời đó chưa ai làm được, và đây là bước chân đầu tiên của mọi lời dự đoán nghiêm túc về một sao chổi.
+>
+> **Công thức.** Ông vẽ một đường cong đều đi qua năm điểm quan sát, rồi lấy vuông diện tích dưới nó bằng Lemma trước; thế là ra kinh độ cần tìm. Ông còn nói rõ lý do thực hành: nếu các kinh độ quan sát cách nhau nhỏ, chẳng hạn bốn hay năm độ, thì ba hoặc bốn lần quan sát là đủ; nhưng nếu cách xa hơn, chẳng hạn mười hay hai mươi độ, thì phải dùng đủ năm.
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết độ chính xác giảm rất nhanh khi cung quan sát ngắn lại. Càng chỉ quan sát trong một khoảng ngắn, càng dễ nhầm "nó đang đi thế này" với "tôi vừa tình cờ thấy". Ông nói thẳng con số phải dùng, tức là đang viết cho người thực hành chứ không phải cho lý thuyết. Và ông ghép vào đây một cách dựng để tạo ra quan sát mới khi dữ kiện chưa đủ, tức là ông chấp nhận nội suy từ dữ liệu thay vì ngồi chờ.
+>
+> **Hiện nay thì sao.** Bài toán ấy ngày nay gọi là nội suy quỹ đạo, và nó vẫn là mắt xích đầu tiên của mọi lời dự đoán. Khác ở chỗ ta không nội suy trên một đường cong tự dựng, mà tích phương trình chuyển động thật rồi so với hàng trăm quan sát bằng bình phương ít nhất. Nhưng lời khuyên của ông vẫn đúng nguyên vẹn: cung quan sát càng ngắn, quỹ đạo càng không xác định, và đó là lý do người ta phải chờ sao chổi đi lâu hơn trước khi loan tin. Khi Halley dùng phép tính thuộc loại này để tiên đoán sao chổi của mình sẽ trở lại, ông đã biết mình đang đánh cược vào đúng độ chính xác ấy.
+
 ## Lemma VII
 
 Qua một điểm $P$ đã cho, kẻ một đường thẳng $BC$ sao cho các phần $PB,PC$, bị hai đường thẳng $AB,AC$ đã cho cắt ra, tỷ lệ với nhau theo một tỷ lệ đã cho.
@@ -394,6 +404,16 @@ Lời chứng minh phép dựng này làm từ các Lemma trước, vì đườn
 Thật ra, có thể thuận tiện hơn nếu chọn $B,b,\beta$ không hoàn toàn ngẫu nhiên mà gần với đúng. Nếu góc $[OCR không rõ]$ mà hình chiếu của quỹ đạo trong mặt phẳng hoàng đạo cắt đường thẳng $[OCR không rõ]$ được biết đại khái, hãy dựng đường thẳng $AC$ với góc ấy tại $B[OCR không rõ]$, sao cho nó tỷ lệ với $TT$ theo tỷ lệ căn bậc hai của $SQ$ và $S[OCR không rõ]$. Sau đó kẻ đường thẳng $SEB$ sao cho phần $EB$ của nó bằng độ dài $[OCR không rõ]`; khi ấy $B$ được xác định và dùng cho lần đầu.
 
 Sau đó hủy đường thẳng $AC$, dựng lại $AC$ theo phép dựng trước, đồng thời tìm độ dài $MP$. Trên $tB$, lấy điểm $b$ theo quy tắc: nếu $TA$ và $rC$ cắt nhau tại $Y$, thì khoảng cách $Yb$ phải tỷ lệ với khoảng cách $YB$ theo tỷ lệ tạo thành từ tỷ lệ $MP:MN$ và tỷ lệ căn bậc hai của $SB$ với $Sb$. Có thể tìm điểm thứ ba $\beta$ theo cùng phương pháp, nếu lặp lại phép tính lần thứ ba. Nhưng nếu làm như vậy, thường chỉ cần hai phép tính. Khi khoảng cách $Bb$ rất nhỏ, sau khi tìm được $F,f$ và $G,g$, hãy kẻ $Ff$ và $Gg`; chúng sẽ cắt $TA$ và $rC$ tại các điểm cần tìm là $X$ và $Z$.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XLI là câu hỏi mang tính thực hành nhất của cả sách: nếu chỉ có **ba** vị trí quan sát được của một sao chổi, liệu có thể dựng được quỹ đạo của nó không? Newton nói thẳng đây là bài toán rất khó, ông đã thử nhiều phương pháp và vài bài toán trong Sách I cũng dẫn tới cùng mục đích, trước khi tìm ra lời giải đơn giản hơn dưới đây.
+>
+> **Công thức.** Có ba vị trí của Trái Đất trên *orbis magnus* và ba kinh độ quan sát được của sao chổi ở ba thời điểm. Từ đó ông dựng một hàng loạt cấu trúc hình học: điểm giả thiết, đường chia theo tỷ lệ thời gian dùng Lemma VII, hai tiếp tuyến tại các quan sát ngoài, rồi lấy điểm giao để có thêm hai vị trí nữa của sao chổi. Cuối cùng ông dựng một parabol đi qua hai điểm ấy với tiêu điểm là Mặt Trời, và parabol đó là quỹ đạo cần tìm.
+>
+> **Vì sao Newton viết như vậy.** Vì ở thế kỷ XVII người ta không có máy tính, nên "giải" một bài toán hình học nghĩa là **dựng được** nó bằng thước và compa theo một trình tự xác định. Ông còn thêm một chi tiết rất thực dụng: thay vì chọn điểm giả thiết bừa, nên chọn gần đúng, rồi dùng đường tròn đi qua kết quả của ba lần dựng để chốt vị trí, và thường chỉ cần hai lần tính là đủ. Đó là hình thức thời đó của việc lặp lại cho tới khi kết quả hội tụ.
+>
+> **Hiện nay thì sao.** Đây là nguồn gốc của cả ngành tính quỹ đạo. Nhờ có nó, quỹ đạo một sao chổi trở thành thứ có thể tính trước, rồi dùng để tiên đoán nó quay lại — điều mà Halley đã làm với chính sao chổi của mình, một trong những dự đoán nổi tiếng nhất trong lịch sử thiên văn. Ngày nay phép dựng này không còn dùng, nhưng nguyên lý thì nguyên vẹn: ba quan sát là mức tối thiểu lý thuyết để chốt một quỹ đạo, và mọi bản hiện đại cũng cần ít nhất ba điểm đó rồi mới thêm dữ liệu để tinh chỉnh. Chương này còn áp đúng phép tính ấy vào sao chổi năm 1680, từ các quan sát của Flamsted và các hiệu chỉnh của Halley.
 
 ### Ví dụ
 
@@ -1485,7 +1505,7 @@ Người ta nói rằng đôi khi người Ai Cập nhìn thấy các sao cố �
 
 Do sự lay động không ổn định của không khí và hơi nước bay lên, các tia sáng lần lượt bị lệch khỏi khe hẹp của đồng tử mắt. Nhưng điều ấy không thể xảy ra trong khe rộng hơn nhiều của vật kính trong một kính viễn. Vì vậy, sự chớp sáng xuất hiện trong trường hợp thứ nhất, nhưng biến mất trong trường hợp thứ hai. Sự biến mất ấy ở trường hợp sau chứng minh ánh sáng truyền đều đặn qua các vùng trời, không chịu sự khúc xạ đáng kể.
 
-Để tránh một phản biện có thể nêu rằng những sao chổi chỉ sáng yếu không có đuôi, như thể các tia thứ cấp khi ấy quá yếu để tác động lên mắt, và vì thế đuôi của các sao cố định không xuất hiện, ta hãy xét rằng bằng kính viễn, ánh sáng của các sao cố định có thể được tăng lên hơn một trăm lần mà vẫn không thấy đuôi. Ánh sáng của các hành tình còn dồi dào hơn mà cũng không có đuôi. Nhưng sao chổi đôi khi có đuôi khổng lồ, trong khi ánh sáng đầu chúng chỉ yếu và mờ.
+Để tránh một phản biện có thể nêu rằng những sao chổi chỉ sáng yếu không có đuôi, như thể các tia thứ cấp khi ấy quá yếu để tác động lên mắt, và vì thế đuôi của các sao cố định không xuất hiện, ta hãy xét rằng bằng kính viễn, ánh sáng của các sao cố định có thể được tăng lên hơn một trăm lần mà vẫn không thấy đuôi. Ánh sáng của các hành tinh còn dồi dào hơn mà cũng không có đuôi. Nhưng sao chổi đôi khi có đuôi khổng lồ, trong khi ánh sáng đầu chúng chỉ yếu và mờ.
 
 Điều ấy xảy ra với sao chổi năm $1680$. Vào tháng Mười hai, ánh sáng của nó chỉ ngang với các sao cấp hai, nhưng nó vẫn phát ra một đuôi đáng chú ý, dài
 
@@ -1574,6 +1594,16 @@ Giống như khói của một vật thể nóng trong không khí của ta, kh�
 Sự xiên ấy nhỏ nhất ở nơi hơi nước bay lên nhanh nhất, tức gần vật thể phát khói khi nó ở gần Mặt Trời. Nhưng vì sự xiên thay đổi, cột hơi nước sẽ cong. Hơi nước ở những phía trước đó mới hơn, tức đã bay lên muộn hơn, nên ở phía ấy nó đậm đặc hơn, do đó phản chiếu nhiều ánh sáng hơn và có ranh giới rõ hơn.
 
 Tôi không nói gì thêm về sự lay động bất định, đột ngột của các đuôi sao chổi và những hình dạng không quy tắc mà các tác giả thỉnh thoảng mô tả. Chúng có thể phát sinh từ những biến đổi của không khí ta và chuyển động của các đám mây, khiến các đám mây che khuất một phần đuôi; hoặc có thể phát sinh từ những phần của [tên đường trời không rõ], những phần có thể bị nhầm với các phần của đuôi sao chổi khi chúng đi qua.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Đuôi sao chổi là thứ khiến người đời bốn thế kỷ trước tranh luận, và ở đây Newton đang bác bỏ tận gốc hai lời giải thích phổ biến nhất trong ba lời được nêu. Lập luận của ông dựa trên một ý tưởng đơn giản nhưng chí mạng: ta không nhìn thấy ánh sáng, ta chỉ nhìn thấy ánh sáng phản chiếu.
+>
+> **Công thức.** Trong phòng tối, tia Mặt Trời chỉ hiện ra vì ánh sáng phản chiếu trên bụi và khói trong không khí. Ngoài bầu trời không có gì để phản chiếu, nên đuôi sao chổi bắt buộc phải có vật chất. Lời giải thích bằng khúc xạ thì bị bác bằng kính viễn: sự chớp sáng quanh các sao cố định thấy bằng mắt thường biến mất ngay khi nhìn qua kính, vì khe rộng của vật kính không bị lay như khe hẹp của đồng tử, nghĩa là ngoài không gian không có môi trường khúc xạ đáng kể. Còn lời giải thích bằng hơi nước thì ông giữ lại, kiểm chứng bằng chính nhiệt: thân sao chổi ở cận điểm Mặt Trời nhận nhiệt gấp hai mươi tám nghìn lần nhiệt Mặt Trời mùa hè ở chúng ta, tức hơn hai nghìn lần nhiệt sắt nóng đỏ, nên mọi thứ bay hơi chắc chắn bị tiêu tán ngay. Vì thế sao chổi phải là khối rắn chắc giữ nhiệt rất lâu, và đuôi chính là hơi nước rất mịn mà nhân nó phát ra.
+>
+> **Vì sao Newton viết như vậy.** Vì ông không chỉ chọn một lời giải thích mà **bác bỏ** từng lời bằng một phép thử có thể kiểm tra, rồi mới chỉ ra dữ kiện buộc phải chọn lời kia. Đối thủ ông cãi ở đây thường được nhận là Robert Burnett, tác giả một lý thuyết trời mới ra năm 1681.
+>
+> **Hiện nay thì sao.** Kết luận của Newton gần như hoàn toàn đúng. Nhân sao chổi là một khối băng bụi bẩn chứ không phải khí; coma và đuôi là hơi nước cùng bụi bị Mặt Trời thăng cấp, rồi bị đẩy ra bởi **áp lực bức xạ** và gió Mặt Trời. Vì thế đuôi luôn hướng **ra xa** Mặt Trời, bất kể sao chổi đang đi vào hay đi ra, đúng như ông suy ra từ vị trí đuôi quan sát năm 1680. Riêng ý "ta chỉ nhìn thấy ánh sáng phản chiếu" ngày nay ai cũng dùng, nhưng chỗ sắc nhất là cách bác bỏ lời giải thích bằng khúc xạ: chính quan sát bằng kính viễn đã dẹp một lý thuyết thị giác thời đó.
 
 ### Tính loãng của hơi nước và thời gian bay lên
 

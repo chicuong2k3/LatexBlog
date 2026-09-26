@@ -19,7 +19,7 @@ Không thể phủ nhận rằng Anaxagoras, Democritus và một số người 
 
 Ý tưởng về những quả cầu rắn chắc xuất hiện muộn hơn, do Eudoxus, Callippus và Aristotle đưa vào, khi triết học cổ bắt đầu suy tàn và nhường chỗ cho những huyền thoại mới đang thịnh hành của người Hy Lạp. Nhưng trước hết, hiện tượng của sao chổi không thể nào phù hợp với khái niệm quả cầu rắn chắc.
 
-<!-- Hình cần đối chiếu với scan, trang khoảng PDF 528. -->
+<!-- Không có hình ở vị trí này: đã đối chiếu PDF 515–519, thảo luận giả thuyết quả cầu rắc của Eudoxus, Callippus và Aristotle trong bản gốc là văn xuôi thuần, không kèm sơ đồ. Xem Hình 1 ngay dưới cho các đường cong rơi về tâm. -->
 
 Người Chaldea, những nhà Thiên văn học uy tín nhất thời ấy, xem sao chổi, từng được xếp vào số các thiên thể trong thời cổ, là một loại hành tinh riêng. Chúng mô tả những quỹ đạo hết sức lệch tâm và chỉ xuất hiện trước mắt ta theo từng lần, tức mỗi chu kỳ quay, khi chúng đi xuống những phần thấp hơn của quỹ đạo.
 
@@ -31,11 +31,23 @@ Các triết gia đời sau tưởng rằng có thể giải thích chuyện ấ
 
 Mục đích của chúng ta ở đây chỉ là truy tìm lượng và tính chất của lực ấy từ các hiện tượng, rồi dùng những gì tìm được trong những trường hợp đơn giản làm nguyên lý để ước tính bằng toán học các hiệu ứng của nó trong những trường hợp phức tạp hơn. Nếu không, sẽ không thể đem mọi điều riêng lẻ đến trực tiếp và tức thời với sự quan sát. Ta nói “bằng toán học” để tránh mọi câu hỏi về bản chất hay chất lượng của lực này; bởi ta không có ý định xác định bản chất ấy bằng bất kỳ giả thuyết nào. Vì vậy, ta gọi chung nó là lực hướng tâm, vì đó là một lực hướng về một tâm nào đó. Đặc biệt khi nói về một vật thể ở tâm, ta gọi lực ấy là lực quanh Mặt Trời, lực quanh Trái Đất, lực quanh sao Mộc, và tương tự đối với những tâm khác.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Mở đầu chương này là một cuộc rà soát lịch sử dài, và hai chi tiết trong đó đáng chú ý với người đọc hôm nay. Một là vòng số cổ: Anaximander, Philolaus, Aristarchus, Plato, cả trường phái Pythagore, rồi đến vị vua La Mã Numa Pompilius, người dựng đền thờ Vesta hình tròn và ra lệnh giữ lửa ở chính giữa ngôi đền. Từ các ý tưởng cổ ấy mà sinh ra mô hình **quả cầu rắc** của Eudoxus và Aristotle.
+>
+> **Công thức.** Mô hình quả cầu rắc có một hệ quả buộc phải kiểm: sao chổi, từng được các nhà Thiên văn Chalđêa xếp vào số các thiên thể thời cổ như một loại hành tinh riêng với quỹ đạo hết sức lệch tâm, thì không thể nào ở trong hệ ấy được. Vậy nên khi giả thuyết quả cầu rắc còn thắng thế, sao chổi bị đẩy xuống dưới Mặt Trăng. Ngay khi những quan sát mới phục hồi vị trí cổ của sao chổi ở vùng trời cao hơn, các không gian ấy lập tức bị dọn sạch khỏi mọi quả cầu rắc, và những quan sát ấy làm vỡ vĩnh viễn chúng.
+>
+> **Vì sao Newton viết như vậy.** Vì ngay sau đó ông nói thẳng mục đích của cả công trình: tìm **lượng và tính chất** của lực từ các hiện tượng, rồi dùng nó như một nguyên lý để ước tính bằng toán học các hiệu ứng phức tạp hơn. Và ông chủ động tránh câu hỏi về bản chất của lực: ta nói "bằng toán học" để tránh mọi câu hỏi ấy, vì ông không có ý định xác định bản chất đó bằng bất kỳ giả thuyết nào, và vì thế ông gọi chung nó là **lực hướng tâm**.
+>
+> **Hiện nay thì sao.** Câu chuyện các quả cầu rắc là một trong những ví dụ đẹp nhất về cách một mô hình vũ trụ bị dữ liệu quan sát xoá sổ: không phải vì lý thuyết sai về rõ ràng, mà vì sao chổi không còn chỗ nào để đứng. Còn việc đặt tên một lực trước khi biết cơ chế vẫn là thông lệ chuẩn của vật lý: ta gọi tên một đại lượng để dùng trong phương trình mà không hứa rằng mình đã hiểu nó. Chỉ khác ở chỗ hôm nay ta còn phải đoán tên cho cả thứ mà ta **biết là không có cơ chế**, như "năng lượng tối" trong phương trình của vũ trụ học, mà vẫn chưa ai chỉ ra nó là cái gì.
+
 Ta có thể dễ dàng hiểu rằng các lực hướng tâm có thể giữ các hành tinh trong những quỹ đạo nhất định, nếu xét đến chuyển động của các vật thể bị ném. Một hòn đá bị ném sẽ bị sức nặng của chính nó làm lệch khỏi đường thẳng mà lực ném có thể khiến nó đi; trong không khí, nó mô tả một đường cong rồi cuối cùng rơi xuống đất. Vật thể được ném càng nhanh thì đi càng xa trước khi rơi xuống mặt đất.
 
 Ta có thể giả sử vận tốc lớn đến mức nó sẽ mô tả một cung dài $1$, $2$, $5$, $10$, $100$ hay $1000$ dặm trước khi đến Trái Đất, cho đến khi cuối cùng vượt ra ngoài giới hạn Trái Đất và trở lại ngọn núi nơi nó được ném.
 
-<!-- Hình khoảng PDF 519–520 cần được trích từ scan. -->
+![Mặt cầu Trái Đất $AFB$ với tâm $C$, cùng các đường cong $VD$, $VE$, $VF$ mà một vật thể bay với vận tốc khác nhau sẽ vẽ khi rơi về tâm.](../assets/system-of-the-world-earth-curves.png)
+
+*Hình 1. Mặt cầu Trái Đất $AFB$ với tâm $C$, cùng các đường cong $VD$, $VE$, $VF$ mà một vật thể bay với vận tốc khác nhau sẽ vẽ khi rơi về tâm. (trích từ bản scan, PDF 519)*
 
 Gọi $AFB$ là mặt Trái Đất, $C$ là tâm Trái Đất, còn $VD$, $VE$ và $VF$ là những đường cong mà một vật thể sẽ mô tả nếu được ném theo phương ngang từ đỉnh một ngọn núi cao với vận tốc ngày càng lớn. Vì chuyển động thiên thể hầu như không bị chậm lại bởi sức cản ít hoặc không có của các không gian nơi chúng thực hiện, để giữ được sự tương ứng giữa các trường hợp, ta giả sử Trái Đất không có không khí, hoặc ít nhất không khí có rất ít sức cản hay không có sức cản. Vì cùng lý do, vật thể được ném với vận tốc nhỏ hơn sẽ mô tả cung nhỏ hơn $VD$, còn vật thể được ném với vận tốc lớn hơn sẽ mô tả cung lớn hơn $VE$. Khi vận tốc tiếp tục tăng, nó đi xa hơn đến $F$ và $G$; nếu vận tốc còn tăng nữa, nó cuối cùng sẽ đi vượt hẳn qua chu vi Trái Đất và trở lại ngọn núi nơi nó được ném.
 
@@ -73,10 +85,10 @@ Theo Hệ quả VI của Proposition IV, Sách I, những lực ấy giảm theo
 
 | Vệ tinh | Độ giãn dài lớn nhất | Thời gian quay | Khoảng cách tính từ các quan sát |
 |---|---:|---:|---:|
-| Vệ tinh thứ nhất | $[OCR không rõ]$ | $1$ ngày $18$ giờ $28$ phút $36$ giây | $5.578$ |
-| Vệ tinh thứ hai | $[OCR không rõ]$ | $3$ ngày $[OCR không rõ]$ | $8.878$ |
-| Vệ tinh thứ ba | $[OCR không rõ]$ | $7$ ngày $[OCR không rõ]$ | $14.168$ |
-| Vệ tinh thứ tư | $[OCR không rõ]$ | $16$ ngày $[OCR không rõ]$ | $24.968$ |
+| Vệ tinh thứ nhất | $1^\circ48' = 108''$ | $1$ ngày $18$ giờ $28$ phút $36$ giây | $5.578$ |
+| Vệ tinh thứ hai | $3^\circ01' = 181''$ | $3$ ngày $13$ giờ $17$ phút $54$ giây | $8.878$ |
+| Vệ tinh thứ ba | $4^\circ46' = 286''$ | $7$ ngày $3$ giờ $59$ phút $36$ giây | $14.168$ |
+| Vệ tinh thứ tư | $8^\circ13\frac{1}{2}' = 493\frac{1}{2}''$ | $16$ ngày $15$ giờ $5$ phút $13$ giây | $24.968$ |
 
 Những khoảng cách tính được từ đó cũng khớp chính xác với các khoảng cách quan sát được. Cassini bảo đảm rằng cùng tỷ lệ ấy cũng được quan sát thấy ở các hành tinh quanh sao Thổ. Nhưng cần một chuỗi quan sát dài hơn trước khi có thể xây dựng một học thuyết chắc chắn và chính xác về những hành tinh ấy.
 
@@ -186,7 +198,9 @@ Flamsted, bằng micrometer, đo đường kính sao Mộc là $40''$ hoặc $41
 
 Gọi $ABD$ là vòng tròn của toàn bộ ánh sáng; $PQ$ là vòng tròn nhỏ của ánh sáng đặc hơn và rõ hơn; $C$ là tâm của cả hai; $CA$, $CB$ là hai bán kính của vòng tròn lớn, tạo thành một góc vuông tại $C$; $ACBE$ là hình vuông dựng trên hai bán kính ấy; $AB$ là đường chéo của hình vuông; $EGH$ là một hyperbola có tâm $C$ và các đường tiệm cận $CA$, $CB$; $PG$ là một đường vuông góc từ một điểm $P$ bất kỳ trên $BC$, cắt hyperbola tại $G$, và các đường thẳng $AB$, $AE$ lần lượt tại $K$ và $F$.
 
-<!-- Hình khoảng PDF 528–529 cần được trích hoặc dựng lại từ scan. -->
+![Vòng tròn của toàn bộ ánh sáng $ABD$, vòng tròn ánh sáng đặc hơn $PQ$ tâm $C$, đường cong mật độ ánh sáng cắt trục tại $F$ và $G$, và trục chân trời tại $H$.](../assets/system-of-the-world-light-density.png)
+
+*Hình 2. Vòng tròn của toàn bộ ánh sáng $ABD$, vòng tròn ánh sáng đặc hơn $PQ$ tâm $C$, đường cong mật độ ánh sáng cắt trục tại $F$ và $G$, và trục chân trời tại $H$. (trích từ bản scan, PDF 529)*
 
 Theo phép tính của tôi, mật độ của ánh sáng tại một điểm $P$ bất kỳ sẽ tỷ lệ với đoạn $FG$, và do đó vô hạn tại tâm, nhưng rất nhỏ gần rìa. Toàn bộ ánh sáng bên trong vòng tròn nhỏ $PQ$ so với phần bên ngoài sẽ tỷ lệ với diện tích hình thang $CAKP$ và diện tích tam giác $PKB$.
 
@@ -242,7 +256,9 @@ Có thể có người phản đối rằng, theo triết học này (p. 398), m
 
 Thậm chí những ngọn núi cũng không đủ để tạo ra hiệu ứng nhận thấy được. Một ngọn núi có dạng bán cầu, cao ba dặm và rộng sáu dặm, cũng không thể, nhờ sức hút của nó, làm cho con lắc lệch khỏi đường thẳng thực tế quá hai phút. Vì vậy, những lực ấy chỉ có thể nhận thấy được ở những vật thể lớn như các hành tinh, trừ khi ta lập luận về những vật thể nhỏ hơn theo cách sau đây.
 
-<!-- Hình quả cầu ABCD trên PDF 533; cần trích hoặc dựng lại từ scan. -->
+![Quả cầu Trái Đất $ABCD$ bị mặt phẳng bất kỳ $AC$ cắt thành hai phần $ACB$ và $ACD$.](../assets/system-of-the-world-sphere-abcd.png)
+
+*Hình 3. Quả cầu Trái Đất $ABCD$ bị mặt phẳng bất kỳ $AC$ cắt thành hai phần $ACB$ và $ACD$. (trích từ bản scan, PDF 533)*
 
 Gọi $ABCD$ là quả cầu Trái Đất được một mặt phẳng bất kỳ $AC$ cắt thành hai phần $ACB$ và $ACD$. Phần $ACB$, đè lên phần $ACD$, dồn toàn bộ trọng lượng của nó lên phần ấy; phần $ACD$ cũng không thể chịu được sức ép ấy và vẫn đứng yên nếu không có một sức ép ngược lại bằng nhau. Vì vậy, các phần ấy dồn ép lẫn nhau bằng trọng lượng, tức hút lẫn nhau một cách bằng nhau, theo Định luật Chuyển động thứ ba; nếu được tách ra và buông, chúng sẽ rơi về phía nhau với những vận tốc tỷ lệ nghịch với khối lượng của các vật thể. Tất cả điều này có thể thử và thấy trong hiện tượng đá nam châm: phần bị hút không đẩy phần hút mà chỉ bị nó chặn lại và giữ ở đó.
 
@@ -338,7 +354,7 @@ Tương tự, Mặt Trăng quay quanh trục của nó bằng một chuyển đ�
 
 Mặt Trăng cũng chịu sự dao động theo vĩ độ, phát sinh từ góc nghiêng của trục Mặt Trăng so với mặt phẳng quỹ đạo mà Mặt Trăng quanh Trái Đất, vì trục ấy gần như giữ nguyên vị trí so với các ngôi sao cố định. Do đó, các cực của Mặt Trăng lần lượt hiện ra trước mắt ta, như ta có thể hiểu từ ví dụ chuyển động của Trái Đất: vì trục Trái Đất nghiêng so với mặt phẳng hoàng đạo, các cực của nó lần lượt được Mặt Trời chiếu sáng. Việc xác định chính xác vị trí trục Mặt Trăng so với các ngôi sao cố định, và sự thay đổi của vị trí ấy, là một bài toán xứng đáng với một nhà Thiên văn học.
 
-Do những chuyển động quận chiều của các hành tinh, vật chất chúng chứa cố lùi xa trục của chuyển động này. Vì vậy, các phần lỏng dâng lên cao hơn gần xích đạo so với gần hai cực, và nếu các phần rắn gần xích đạo cũng không dâng lên, chúng sẽ bị nước ở xích đạo bao phủ, theo (p. 405, 409). Vì thế, các hành tình dày hơn đôi chút ở xích đạo so với ở hai cực; và các điểm cố định của xuân phân của chúng trở nên lùi, theo (p. 413). Các trục của chúng, bằng chuyển động nutation, hai lần trong mỗi vòng quay, dao động về phía mặt phẳng hoàng đạo của chúng, rồi lại trở về nghiêng cũ hai lần, như đã giải thích trong Hệ quả XVIII của Proposition LXVI. Vì thế, khi nhìn sao Mộc qua những kính viễn thị rất dài, ta thấy nó không hoàn toàn tròn, theo (p. 409), và đường kính nằm song song với mặt phẳng hoàng đạo dài hơn một chút so với đường kính vẽ từ hướng bắc xuống hướng nam.
+Do những chuyển động quận chiều của các hành tinh, vật chất chúng chứa cố lùi xa trục của chuyển động này. Vì vậy, các phần lỏng dâng lên cao hơn gần xích đạo so với gần hai cực, và nếu các phần rắn gần xích đạo cũng không dâng lên, chúng sẽ bị nước ở xích đạo bao phủ, theo (p. 405, 409). Vì thế, các hành tinh dày hơn đôi chút ở xích đạo so với ở hai cực; và các điểm cố định của xuân phân của chúng trở nên lùi, theo (p. 413). Các trục của chúng, bằng chuyển động nutation, hai lần trong mỗi vòng quay, dao động về phía mặt phẳng hoàng đạo của chúng, rồi lại trở về nghiêng cũ hai lần, như đã giải thích trong Hệ quả XVIII của Proposition LXVI. Vì thế, khi nhìn sao Mộc qua những kính viễn thị rất dài, ta thấy nó không hoàn toàn tròn, theo (p. 409), và đường kính nằm song song với mặt phẳng hoàng đạo dài hơn một chút so với đường kính vẽ từ hướng bắc xuống hướng nam.
 
 Từ chuyển động quận chiều và sức hút của Mặt Trời và Mặt Trăng (p. 415, 418), biển của chúng ta phải dâng lên hai lần và rơi xuống hai lần mỗi ngày, cả theo Mặt Trăng lẫn theo Mặt Trời, theo Hệ quả XIX và XX của Proposition LXVI. Độ cao lớn nhất của nước xảy ra trước giờ thứ sáu của mỗi ngày, và sau giờ thứ mười hai của ngày trước. Vì sự chậm lại của chuyển động quận chiều, thủy triều bị kéo lùi về giờ thứ mười hai; và bởi lực của chuyển động đảo chiều, nó bị kéo dài và hoãn lại đến một thời điểm gần giờ thứ sáu.
 
@@ -364,9 +380,11 @@ Nhưng vì vào mùa đông Mặt Trời ở gần Trái Đất hơn vào mùa h
 
 Ngoài ra, hiệu ứng của các thiên thể sáng còn phụ thuộc vào vĩ độ của các địa điểm.
 
-<!-- Hình mặt cầu/ellipsoid mô tả thủy triều theo vĩ độ, PDF 543; cần trích hoặc dựng lại từ scan. -->
+![Trái Đất $ADEP$ ngập trong nước, hai cực $P$ và $p$, xích đạo $AE$ và các đường vĩ độ $Ff$, $Dd$, cho thấy thủy triều lớn hay nhỏ tùy vĩ độ.](../assets/system-of-the-world-tide-latitudes.png)
 
-Gọi $ADEP$ là Trái Đất được bao phủ bởi nước sâu ở mọi phía; $C$ là tâm Trái Đất; $P,p$ là hai cực; $AE$ là xích đạo; $F$ là một địa điểm không nằm trên xích đạo; $Ff$ là đường vĩ độ song song của địa điểm ấy; $Dd$ là đường vĩ độ tương ứng ở phía bên kia xích đạo; $L$ là đường mà Mặt Trăng chiếm ba giờ trước khi đến $H$, địa điểm của Trái Đất nằm thẳng bên dưới nó; $h$ là địa điểm đối diện; $K,k$ là những địa điểm cách nhau $90^\circ$; $CH,Ch$ là những độ cao lớn nhất của mực nước tính từ tâm Trái Đất; và $CK,Ck$ là những độ cao nhỏ nhất. Nếu với các trục $Hh,Kk$ ta dựng một ellipse, rồi cho ellipse ấy quay quanh trục dài hơn của nó là $Hh$ để tạo thành một hình thoi $HPKkh\lambda$ [OCR không rõ], thì hình thoi ấy sẽ gần như đại diện cho hình dạng của mặt biển; và $CF,Cf,CD,Cd$ sẽ đại diện cho mặt biển tại các địa điểm $F,f,D,d$.
+*Hình 4. Trái Đất $ADEP$ ngập trong nước, hai cực $P$ và $p$, xích đạo $AE$ và các đường vĩ độ $Ff$, $Dd$, cho thấy thủy triều lớn hay nhỏ tùy vĩ độ. (trích từ bản scan, PDF 543)*
+
+Gọi $ADEP$ là Trái Đất được bao phủ bởi nước sâu ở mọi phía; $C$ là tâm Trái Đất; $P,p$ là hai cực; $AE$ là xích đạo; $F$ là một địa điểm không nằm trên xích đạo; $Ff$ là đường vĩ độ song song của địa điểm ấy; $Dd$ là đường vĩ độ tương ứng ở phía bên kia xích đạo; $L$ là đường mà Mặt Trăng chiếm ba giờ trước khi đến $H$, địa điểm của Trái Đất nằm thẳng bên dưới nó; $h$ là địa điểm đối diện; $K,k$ là những địa điểm cách nhau $90^\circ$; $CH,Ch$ là những độ cao lớn nhất của mực nước tính từ tâm Trái Đất; và $CK,Ck$ là những độ cao nhỏ nhất. Nếu với các trục $Hh,Kk$ ta dựng một ellipse, rồi cho ellipse ấy quay quanh trục dài hơn của nó là $Hh$ để tạo thành một hình thoi $HPKhpk$, thì hình thoi ấy sẽ gần như đại diện cho hình dạng của mặt biển; và $CF,Cf,CD,Cd$ sẽ đại diện cho mặt biển tại các địa điểm $F,f,D,d$.
 
 Hơn nữa, nếu trong sự quay ấy của ellipse, một điểm bất kỳ $N$ vạch đường tròn $NM$, cắt các đường vĩ độ $Ff,Dd$ tại những điểm bất kỳ $R,T$, và cắt xích đạo $AE$ tại $S$, thì $CN$ sẽ đại diện cho độ cao của mặt biển tại tất cả những địa điểm $R,S,T$ nằm trên đường tròn này.
 
@@ -376,7 +394,7 @@ Toàn bộ mặt biển được chia thành hai thủy triều lớn, mỗi th�
 
 Nhưng thủy triều lớn hơn xảy ra khi Mặt Trăng lùi về phía đỉnh của địa điểm, vào giờ thứ ba sau khi Mặt Trăng đi qua đường chân trời ở phía trên. Khi Mặt Trăng thay đổi vĩ độ của mình, thủy triều lớn hơn ấy sẽ biến thành thủy triều nhỏ hơn; và sự chênh lệch lớn nhất giữa hai thủy triều sẽ xảy ra vào khoảng thời gian của các solstitial, đặc biệt khi nút tăng của Mặt Trăng ở gần ngôi sao đầu tiên của chi Aries.
 
-Vì vậy, thủy triều buổi sáng vào mùa đông lớn hơn thủy triều buổi tối, còn thủy triều buổi tối vào mùa hè lớn hơn thủy triều buổi sáng; tại Plymouth, sự chênh lệch ấy là một foot, còn tại Bristol là mười lăm inch, theo các quan sát của [OCR không rõ] và Sturmy.
+Vì vậy, thủy triều buổi sáng vào mùa đông lớn hơn thủy triều buổi tối, còn thủy triều buổi tối vào mùa hè lớn hơn thủy triều buổi sáng; tại Plymouth, sự chênh lệch ấy là một foot, còn tại Bristol là mười lăm inch, theo các quan sát của Colepress và Sturmy.
 
 Nhưng những chuyển động vừa mô tả chịu một sự thay đổi nào đó từ lực đảo chiều mà nước, sau khi đã nhận chuyển động ấy, vẫn giữ lại trong một khoảng thời gian nhờ quán tính của nó. Vì vậy, thủy triều có thể tiếp tục trong một khoảng thời gian, ngay cả khi tác dụng của các thiên thể sáng đã ngừng.
 
@@ -418,13 +436,17 @@ Theo những quy luật chúng ta vừa mô tả, thời gian của thủy tri�
 
 Gọi $C$ là tâm Trái Đất, $EADB$ là hình bầu dục của biển, $CA$ là bán trục lớn của hình bầu dục này, $CB$ là bán trục nhỏ vuông góc với bán trục trước, $D$ là điểm giữa $A$ và $B$, và $ECF$ hoặc $eCf$ là góc ở tâm Trái Đất, bị chắn bởi bề rộng của biển kết thúc ở các bờ $E,F$ hoặc $e,f$. Bây giờ, giả sử điểm $A$ nằm giữa các điểm $E,F$, và điểm $D$ nằm giữa các điểm $e,f$. Nếu hiệu giữa các độ cao $CA,CB$ đại diện cho lượng thủy triều trong một vùng biển rất sâu bao quanh toàn bộ Trái Đất, thì phần độ cao $CA$ vượt quá độ cao $CE$ hoặc $CF$ sẽ đại diện cho lượng thủy triều ở giữa vùng biển $EF$, vùng biển bị giới hạn bởi các bờ $E,F$; và phần độ cao $Ce$ vượt quá độ cao $Cf$ sẽ gần như đại diện cho lượng thủy triều ở các bờ $f$ của cùng vùng biển ấy.
 
-<!-- Hình hình bầu dục đại diện cho mặt biển, PDF 547; cần trích hoặc dựng lại từ scan. -->
+![Hình bầu dục $EADB$ đại diện cho mặt biển, tâm $C$, bán trục lớn $CA$ và bán trục nhỏ $CB$.](../assets/system-of-the-world-sea-ellipsoid.png)
+
+*Hình 5. Hình bầu dục $EADB$ đại diện cho mặt biển, tâm $C$, bán trục lớn $CA$ và bán trục nhỏ $CB$. (trích từ bản scan, PDF 547)*
 
 Từ đó, thủy triều ở giữa biển nhỏ hơn nhiều so với ở các bờ; và thủy triều ở các bờ gần bằng $EF$ (p. 451, 452), tức bề rộng của biển không vượt quá một cung góc phần tư. Vì vậy, gần xích đạo, nơi biển giữa châu Phi và America hẹp, thủy triều nhỏ hơn nhiều so với ở hai phía trong các vùng ôn đới, nơi biển trải rộng hơn; hoặc trên gần như tất cả các bờ của biển Thái Bình Dương, cả ở phía America lẫn phía Trung Hoa, và cả bên trong lẫn bên ngoài vùng nhiệt đới. Trên các đảo ở giữa biển, thủy triều hầu như không dâng cao hơn hai hoặc ba foot, nhưng ở bờ của các lục địa lớn thì lớn gấp ba hoặc bốn lần, thậm chí còn cao hơn, nhất là khi những chuyển động truyền từ đại dương dần bị co lại trong một không gian hẹp, và nước, để lấp đầy và làm rỗng các vịnh theo lượt, bị buộc phải chảy và rút với vận tốc rất mạnh qua những nơi nông; như Plymouth và Chepstow Bridge ở England, cửa vịnh St. Michael và thành Avranches ở Normandy, cùng Cambaia và Pegu ở Đông Ấn.
 
 Tại những nơi ấy, biển bị đẩy vào và rút ra với vận tốc rất lớn, đôi khi làm ngập các bờ, đôi khi để lộ chúng khô trong nhiều dặm. Lực của dòng tràn và dòng rút không dừng lại cho đến khi nó nâng nước lên hoặc hạ nước xuống bốn mươi hoặc năm mươi feet, thậm chí còn cao hơn.
 
-<!-- Hình sơ đồ lực truyền từ Mặt Trời tới quỹ đạo Mặt Trăng, PDF 548; cần trích hoặc dựng lại từ scan. -->
+![Sơ đồ phân tích lực tại Mặt Trăng: lực $ML$ hướng về tâm Trái Đất $C$, lực $SK$ hướng về Mặt Trời $T$, cùng các thành phần $TM$ và $SL$.](../assets/system-of-the-world-force-scheme.png)
+
+*Hình 6. Sơ đồ phân tích lực tại Mặt Trăng: lực $ML$ hướng về tâm Trái Đất $C$, lực $SK$ hướng về Mặt Trời $T$, cùng các thành phần $TM$ và $SL$. (trích từ bản scan, PDF 548)*
 
 Cũng vậy, những eo biển dài và nông, mở ra biển bằng những miệng rộng và sâu hơn phần còn lại của kênh, chẳng hạn những eo quanh Britain và eo Magellan ở cửa phía đông, sẽ có thủy triều lớn hơn và con nước triều lớn hơn, hoặc sẽ mạnh hơn và yếu hơn trong việc tiến và lùi; vì vậy chúng sẽ dâng cao hơn và hạ thấp hơn.
 
@@ -448,7 +470,9 @@ Nếu từ quỹ đạo Mặt Trăng (p. 449) đi xuống bề mặt Trái Đấ
 
 Lực còn lại, $TM$, tại những nơi Mặt Trời ở đỉnh, hoặc ở điểm đối diện với đỉnh, gấp ba lượng của lực $ML$, và do đó nhỏ hơn lực hút $12868200$ lần.
 
-<!-- Hình kênh trục đi qua tâm Trái Đất, PDF 549; cần trích hoặc dựng lại từ scan. -->
+![Bề mặt cầu Trái Đất $ADBE$ và mặt nước bao phủ $aDbE$ cùng tâm $C$; đường $EC$ vuông góc với mặt nước.](../assets/system-of-the-world-water-shell.png)
+
+*Hình 7. Bề mặt cầu Trái Đất $ADBE$ và mặt nước bao phủ $aDbE$ cùng tâm $C$; đường $EC$ vuông góc với mặt nước. (trích từ bản scan, PDF 549)*
 
 Giả sử $ADBE$ đại diện cho bề mặt cầu của Trái Đất, $aDbE$ là bề mặt của nước bao phủ lên nó, $C$ là tâm của cả hai, $A$ là nơi Mặt Trời ở đỉnh, $B$ là nơi đối diện, $D,E$ là những nơi cách $A$ một góc vuông, và $ACEmIk$ là một kênh hình trục vuông góc đi qua tâm Trái Đất. Lực $TM$ tại một nơi bất kỳ tỷ lệ với khoảng cách từ nơi ấy đến mặt phẳng $DE$, trên đó một đường thẳng từ $A$ đến $C$ tạo góc vuông. Vì vậy, trong phần kênh được biểu thị bởi $ECm$, lực ấy không có lượng; còn trong phần kênh $ACIk$, nó tỷ lệ với lực hút ở những độ cao khác nhau, vì khi đi xuống tâm Trái Đất, lực hút ở mọi nơi, theo Proposition LXXIII, tỷ lệ với độ cao. Do đó, lực $TM$ kéo nước lên sẽ làm giảm lực hút trong phần $ACIk$ của kênh theo một tỷ lệ đã cho. Vì vậy, nước sẽ dâng lên trong phần này cho đến khi độ cao lớn hơn bù lại sự thiếu hụt lực hút; và nước cũng sẽ không ở trạng thái cân bằng cho đến khi tổng lực hút của nó bằng tổng lực hút trong $ECm$, phần còn lại của kênh.
 
@@ -537,6 +561,16 @@ Có thể có người tưởng rằng một phần lớn ánh sáng của các 
 Vì vậy, những ngôi sao cố định ở khoảng cách gấp đôi sẽ mờ hơn $16$ lần, tức mờ hơn $4$ lần vì đường kính biểu kiến giảm, rồi lại mờ hơn $4$ lần nữa vì ánh sáng bị mất. Cũng theo lập luận ấy, những ngôi sao cố định ở khoảng cách gấp ba sẽ mờ hơn $9\times4\times4$, tức $144$ lần; còn những ngôi sao ở khoảng cách gấp bốn sẽ mờ hơn $16\times4\times4\times4$, tức $1024$ lần. Nhưng một sự giảm ánh sáng lớn như vậy không thể nào thích hợp với các hiện tượng, cũng không thích hợp với giả thuyết đặt các ngôi sao cố định ở những khoảng cách khác nhau.
 
 Vì các ngôi sao cố định ở những khoảng cách vô cùng lớn so với nhau (p. 460, 461), chúng không thể hút lẫn nhau một cách nhận thấy được, cũng không thể bị Mặt Trời của chúng ta hút một cách nhận thấy được. Nhưng các sao chổi tất yếu phải chịu tác dụng của lực quanh Mặt Trời, vì các nhà Thiên văn học đã đặt chúng ở phía trên Mặt Trăng khi thấy chúng không có thị sai quận chiều; vì thế, thị sai thường niên của chúng là bằng chứng thuyết phục rằng chúng đi xuống các vùng của các hành tinh.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Đoạn này trả lời một câu hỏi người đời đã mang từ lâu: các ngôi sao ở xa bao nhiêu, và vì sao chúng không rơi vào nhau? Cả hai ý đều được trả lời bằng quan sát, không bằng giả định.
+>
+> **Công thức.** Trước hết là thị sai thường niên cực nhỏ của các sao: nó chứng minh chúng nằm ở khoảng cách vô cùng lớn so với hệ hành tinh, lớn hơn $360$ lần khoảng cách sao Thổ tới Mặt Trời; và nếu chuyển động ấy nhỏ hơn $20''$ thì các sao gần hơn vượt quá $2000$ lần khoảng cách trung bình của sao Thổ. Rồi đến phép đo ánh sáng: đĩa sao Thổ chỉ rộng $17''$ hay $18''$ nên chỉ nhận khoảng một phần $2100000000$ ánh sáng Mặt Trời; nếu Mặt Trời cách xa hơn sao Thổ $100000$ lần, nó sẽ trông sáng như một ngôi sao cỡ sao một, với đường kính biểu kiến $7'16''$ và thị sai thường niên là $13'''$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông tự phản bác một cách giải thích nghe rất hợp lý: rằng phần lớn ánh sáng của các sao bị chặn và mất trên đường truyền, nên các sao thật ra ở gần hơn. Nhưng giả thiết ấy tự mâu thuẫn. Nếu phần tư ánh sáng mất trên quãng đường tới các sao gần nhất, thì trên quãng đường gấp đôi ánh sáng sẽ mất hai lần, gấp ba thì ba lần, và cứ thế. Kết quả là các sao ở khoảng cách gấp đôi sẽ mờ hơn $16$ lần, gấp ba thì $9\times4\times4$ lần, gấp bốn thì $16\times4\times4\times4$ lần. Một sự giảm sáng dữ dội như vậy không thể khớp với hiện tượng.
+>
+> **Hiện nay thì sao.** Lập luận quang học của ông chính là quan hệ $1/r^{2}$ mà ngày nay ta dùng để suy ra khoảng cách từ độ sáng, và phần bác bỏ "suy mất ánh sáng" thì đúng về mặt cấu trúc. Bụi liên tinh chỉ được Trumpler chỉ ra năm 1930, nhưng nó chỉ tinh chỉnh chứ không lật ngược kết luận: mật độ bụi làm mờ vài phần trăm độ lớn sáng trên mỗi kiloparsec, chứ không phải ba phần tư trên mỗi đơn vị khoảng cách. Còn kết luận rằng các ngôi sao không thể hút lẫn nhau thì **gần đúng nhưng sai ở chỗ quan trọng**: lực giữa từng cặp sao ở quy mô hệ Mặt Trời nhỏ đến mức không đáng kể, đúng như ông nói; nhưng **lực hút tập hợp** của cả thiên hà lên hệ Mặt Trời thì không nhỏ, và chính thủy triều thiên hà ấy định hình đám mây Oort mà tôi đã bàn ở chương trước.
 
 Tất cả những sao chổi chuyển động theo chiều thẳng, đúng thứ tự các cung, vào gần cuối thời gian hiện ra sẽ trở nên chậm hơn bình thường, hoặc chuyển động nghịch, nếu Trái Đất nằm giữa chúng và Mặt Trời; và nhanh hơn bình thường nếu Trái Đất đang tiến đến vị trí phách hành heliocentric với chúng. Ngược lại, những sao chổi chuyển động ngược thứ tự các cung, vào gần cuối thời gian hiện ra, lại trông nhanh hơn đáng lẽ chúng phải có nếu Trái Đất nằm giữa chúng và Mặt Trời; và chậm hơn, thậm chí có thể chuyển động nghịch, nếu Trái Đất ở phía bên kia quỹ đạo của nó. Điều này do chuyển động của Trái Đất ở những vị trí khác nhau gây ra.
 
@@ -650,7 +684,7 @@ Từ đó, tôi cho rằng có thể kết luận rằng tất cả những sao 
 
 Còn về điều được viện dẫn rằng đôi khi người Ai Cập đã nhìn thấy các ngôi sao cố định được bao quanh bởi một quầng tóc hay tóc mềm, vì điều ấy chỉ xảy ra rất hiếm, nên điều đó còn được quy hơn cho sự khúc xạ ngẫu nhiên của các đám mây, cũng như sự bức xạ và nhấp nháy của các ngôi sao cố định, do sự khúc xạ ở cả mắt lẫn không khí. Khi đặt kính viễn thị trước mắt, sự bức xạ và nhấp nháy ấy lập tức biến mất. Do sự lay động run rẩy của không khí và hơi nước đi lên, các tia ánh sáng lần lượt bị lệch khỏi khoảng hẹp của đồng tử; nhưng điều ấy không thể xảy ra ở khoảng mở rộng lớn hơn nhiều của vật kính kính viễn thị. Vì vậy, trong trường hợp đầu, sự nhấp nháy được tạo ra; còn trong trường hợp sau, nó biến mất. Sự biến mất ấy ở trường hợp sau chứng minh rằng ánh sáng được truyền đều đặn qua bầu trời mà không bị khúc xạ nhận thấy được.
 
-Nhưng để tránh một phản đối có thể được nêu ra từ việc những sao chổi chỉ sáng yếu không có đuôi, như thể các tia thứ cấp lúc ấy quá yếu để tác động đến mắt, và vì lý do ấy mà đuôi của các ngôi sao cố định không xuất hiện, ta cần xét rằng bằng kính viễn thị, ánh sáng của các ngôi sao cố định có thể được tăng lên hơn một trăm lần mà vẫn không thấy đuôi. Ánh sáng của các hành tình còn phong phú hơn, cũng không có đuôi. Nhưng đôi khi sao chổi lại có những cái đuôi khổng lồ, khi ánh sáng của đầu chúng chỉ yếu và mờ; điều ấy xảy ra với sao chổi năm $1680$, vào tháng Mười Một
+Nhưng để tránh một phản đối có thể được nêu ra từ việc những sao chổi chỉ sáng yếu không có đuôi, như thể các tia thứ cấp lúc ấy quá yếu để tác động đến mắt, và vì lý do ấy mà đuôi của các ngôi sao cố định không xuất hiện, ta cần xét rằng bằng kính viễn thị, ánh sáng của các ngôi sao cố định có thể được tăng lên hơn một trăm lần mà vẫn không thấy đuôi. Ánh sáng của các hành tinh còn phong phú hơn, cũng không có đuôi. Nhưng đôi khi sao chổi lại có những cái đuôi khổng lồ, khi ánh sáng của đầu chúng chỉ yếu và mờ; điều ấy xảy ra với sao chổi năm $1680$, vào tháng Mười Một
 
 <!-- PDF 563–565: dịch từ scan; bảng khí quyển được giữ nguyên theo ảnh scan. -->
 
@@ -684,6 +718,18 @@ Kết quả tính ấy được ghi trong bảng sau. Cột thứ nhất là đ�
 
 Từ bảng này, ta thấy không khí, khi đi lên, loãng ra theo cách mà một quả cầu không khí gần Trái Đất nhất, chỉ có đường kính một inch, nếu được giãn ra với mức loãng mà nó sẽ có ở độ cao bằng một bán kính Trái Đất, sẽ lấp đầy tất cả các vùng hành tinh cho đến quả cầu sao Thổ, và còn xa hơn nữa; còn ở độ cao bằng mười bán kính Trái Đất, nó sẽ lấp đầy một không gian lớn hơn toàn bộ bầu trời ở phía này các ngôi sao cố định, theo phép tính trước về khoảng cách của chúng. Và dù do độ dày lớn hơn nhiều của khí quyển các sao chổi, cùng lượng lớn lực hướng tâm quanh Mặt Trời, không khí trong các không gian thiên thể và trong đuôi sao chổi có thể không loãng bằng, phép tính này vẫn cho thấy một lượng rất nhỏ không khí và hơi nước cũng đủ dư để tạo ra toàn bộ những hiện tượng của đuôi sao chổi. Bởi các ngôi sao thực sự tỏa sáng xuyên qua chúng với độ loãng đáng kể. Khí quyển của Trái Đất, dù chỉ dày vài dặm và được Mặt Trời chiếu sáng, vẫn che khuất và làm tắt ánh sáng không chỉ của tất cả các ngôi sao mà cả của chính Mặt Trăng; trong khi những ngôi sao nhỏ nhất vẫn tỏa sáng xuyên qua độ dày khổng lồ của đuôi sao chổi, cũng được Mặt Trời chiếu sáng, mà không bị giảm chút nào trong sự rực rỡ.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Cả bảng khí quyển và phép bác bỏ giả thuyết khúc xạ đều là một bài toán duy nhất: đuôi sao chổi có phải do không khí khúc xạ ánh sáng tạo ra không. Bảng khí quyển được lập để trả lời câu hỏi tiếp theo: nếu là khí quyển, liệu khí quyển có đủ loãng để tạo ra hiện tượng ấy không.
+>
+> **Công thức.** Cột thứ ba là độ loãng, tính từ công thức barometric $p(h) = p_0 \exp\!\left(-\frac{\mu g h}{RT}\right)$, với tỷ lệ lặp của khoảng cách từ tâm Trái Đất. Ở cao $1200$ feet, tỷ lệ nén là $33/32$.
+>
+> **Vì sao Newton viết như vậy.** Lập luận cốt lõi nằm ở hai đối chiếu cùng vị trí trời: sao chổi 1680 và sao chổi 1577 đều ở Pisces $8^\circ41'$, Mặt Trời đều ở Capricorn $18^\circ26'$. Nếu đuôi do khí quyển khúc xạ, hai đuôi phải lệch cùng một phía. Thực tế: năm 1680 lệch $4\frac12^\circ$ về bắc, năm 1577 lệch $21^\circ$ về nam. Dữ liệu tự bác bỏ giả thuyết.
+>
+> **Hiện nay thì sao.** Kết luận của Newton đúng nhưng cơ chế thì sai thế kỷ XVII. Đuôi sao chổi có hai thành phần: đuôi ion màu xanh, gồm ion khí bị cắn mổ bởi tia cực tím Mặt Trời rồi bị gió Mặt Trời quét ngược; và đuôi bụi vàng trắng, gồm hạt bụi toàn vẹn hơn và bị áp lực bức xạ quay thành vệt cong. Phần mà Newton đoán đúng là vật liệu phải đến từ chính đầu sao chổi và bị đẩy ra phía đối diện Mặt Trời. Về bảng khí quyển, phương pháp thì vẫn chuẩn nhưng con số sai: Newton giả thiết nhiệt độ không đổi theo độ cao, trong khi khí quyển thật nguội dần, nên độ loãng thực tế giảm chậm hơn ông ấn định.
+>
+> **Lưu ý nguồn gốc.** Các chữ số La Mã trong bảng là cách Newton ghi số thập phân thời ấy, không phải lỗi kỹ thuật. Riêng chu vi Trái Đất, ông lấy $123249600$ feet Paris từ đo đạc Pháp, chứ không phải số liệu địa lý hiện đại.
+
 Kepler quy việc đuôi sao chổi bay lên cho khí quyển của đầu chúng, và việc chúng hướng về các phía đối diện Mặt Trời cho tác dụng của các tia ánh sáng mang theo vật chất tạo nên đuôi sao chổi. Và không có điều gì vô lý đáng kể nếu ta giả sử rằng, trong những không gian rộng lớn ấy, một loại vật chất mịn như vật chất của aether có thể bị tác dụng của các tia ánh sáng Mặt Trời làm cho
 
 <!-- PDF 566–568: dịch từ scan; bảng tiếp theo được đánh dấu để đối chiếu với trang kế. -->
@@ -716,9 +762,21 @@ Trong trường hợp thứ nhất, tùy theo vận tốc khác nhau, sao chổi
 
 Nhưng nếu quy luật của các hành tinh được tuân theo, quỹ đạo của chúng sẽ không lệch nhiều khỏi mặt phẳng hoàng đạo; và theo những gì tôi cho đến nay có thể quan sát, trường hợp thứ ba là trường hợp thực tế. Các sao chổi quả thực chủ yếu xuất hiện trong dải hoàng đạo, và hiếm khi đạt vĩ độ heliocentric $40^\circ$.
 
-Việc chúng chuyển động trong các quỹ đạo gần parabol được suy ra từ vận tốc của chúng. Vận tốc mà một parabol được vẽ ra có ở mọi nơi tỷ lệ với vận tốc mà một sao chổi hoặc hành tinh có thể quay quanh Mặt Trời trong một đường tròn ở cùng khoảng cách ấy, theo tỷ lệ căn bậc hai của $2$ trên $1$, theo Hệ quả VII của Proposition XVI. Theo phép tính của tôi, vận tốc của sao chổi xấp xỉ bằng. Tôi đã kiểm tra điều ấy bằng cách suy ra gần đúng các vận tốc từ các khoảng cách, và các khoảng cách ấy từ cả thị sai lẫn hiện tượng của đuôi; tôi không bao giờ tìm thấy sai số dư hay thiếu trong các vận tốc lớn hơn điều có thể phát sinh từ sai số trong các khoảng cách thu được theo cách ấy. Nhưng tôi cũng đã sử dụng lập luận sau đây.
+Việc chúng chuyển động trong các quỹ đạo gần parabol được suy ra từ vận tốc của chúng. Vận tốc mà một parabol được vẽ ra có ở mọi nơi tỷ lệ với vận tốc mà một sao chổi hoặc hành tinh có thể quay quanh Mặt Trời trong một đường tròn ở cùng khoảng cách ấy, theo tỷ lệ căn bậc hai của $2$ trên $1$, theo Hệ quả VII của Proposition XVI. Theo phép tính của tôi, vận tốc của sao chổi xấp xỉ bằng cùng. Tôi đã kiểm tra điều ấy bằng cách suy ra gần đúng các vận tốc từ các khoảng cách, và các khoảng cách ấy từ cả thị sai lẫn hiện tượng của đuôi; tôi không bao giờ tìm thấy sai số dư hay thiếu trong các vận tốc lớn hơn điều có thể phát sinh từ sai số trong các khoảng cách thu được theo cách ấy. Nhưng tôi cũng đã sử dụng lập luận sau đây.
 
-<!-- Bảng chuyển động parabol của sao chổi bắt đầu ở PDF 568 và tiếp tục ở trang kế; cần đối chiếu scan. -->
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** "Quỹ đạo gần parabol" là cách nói của thế kỷ XVII về một thứ mà ngày nay gọi là quỹ đạo có tổng năng lượng gần bằng không: vật thể tới từ xa với tốc độ vừa đủ để thoát, hoặc vừa đủ để rơi vào. Trong học thuyết Kepler hiện đại, đây là các quỹ đạo dài hạn của sao chổi, với hệ số lệch tâm $e$ gần $1$.
+>
+> **Công thức.** Tỷ lệ căn bậc hai của $2$ trên $1$ mà Newton nêu chính là quan hệ giữa tốc độ trên parabol và tốc độ quay tròn ở cùng khoảng cách: $v_{\text{parabol}} = \sqrt{2}\,v_{\text{tròn}}$. Tương đương, năng lượng toàn phần $\varepsilon = \frac{v^2}{2} - \frac{\mu}{r} \approx 0$.
+>
+> **Vì sao Newton viết như vậy.** Ông không suy ra điều này từ lý thuyết mà từ số liệu: ước lượng khoảng cách tới sao chổi từ cả thị sai lẫn hiện tượng đuôi, rồi tính ngược ra vận tốc, và thấy vận tốc ấy khớp với giá trị parabol. Ông nói rõ mình chưa từng thấy sai số nào lớn hơn sai số có thể do bản thân phép đo khoảng cách gây ra. Đó là tiêu chuẩn thử nghiệm mà người sau này vẫn dùng.
+>
+> **Hiện nay thì sao.** Kết luận ấy vẫn đúng, và ngành thiên văn xác nhận nó hàng loạt: các sao chổi chu kỳ dài có $e$ thường từ $0{,}99$ trở lên, vào hệ Mặt Trời với tốc độ thoát cũng gần đúng từ phía Mặt Trời. Chỉ có một chi tiết đã đổi: Newton lẽ ra chỉ có thể nêu ba giả thuyết, còn ngày nay ta biết chúng đến từ đám mây Oort, lớp băng đá ở rìa hệ Mặt Trời. Còn *orbis magnus* trong Bảng I chỉ là cách đặt bán kính quỹ đạo chia làm $1000$ phần: một thiết bị số học, không phải một ranh giới vật lý.
+>
+> **Lưu ý nguồn gốc.** Bản dịch ban đầu đứt dấu chấm ở câu "vận tốc của sao chổi xấp xỉ bằng.", mất chữ "cùng". Đã khôi phục theo nguyên văn bản 1846: "by my computation, the velocity of comets is found to be much about the same".
+
+<!-- Bảng I và Bảng II đã đối chiếu với ảnh scan PDF 569: khớp toàn bộ 44 số của Bảng I và 40 số của Bảng II. -->
 
 Giả sử bán kính của *orbis magnus* được chia thành $1000$ phần. Hãy để các số trong cột thứ nhất của bảng sau biểu thị khoảng cách của đỉnh parabol tính từ tâm Mặt Trời, theo những phần ấy. Một sao chổi, trong những thời gian được biểu thị ở cột thứ hai, sẽ đi từ cận điểm mặt trời đến bề mặt của quả cầu được mô tả quanh Mặt Trời như tâm, với bán kính bằng *orbis magnus*; và trong những thời gian ở các cột thứ ba, thứ tư và thứ năm, nó sẽ nhân đôi, nhân ba và nhân bốn khoảng cách của mình với Mặt Trời.
 
@@ -764,7 +822,7 @@ Thời gian một sao chổi đi vào quả cầu *orbis magnus*, hoặc rời k
 
 Trong Bảng II, thời gian sao chổi đi vào quả cầu *orbis magnus*, hoặc rời khỏi nó, được tra ở cột thứ nhất theo khoảng cách góc của nó với Mặt Trời, đối chiếu với chuyển động quận chiều của nó.
 
-Với sao chổi năm $1681$, ngày $4$ tháng Một theo lịch cũ, chuyển động quận chiều biểu kiến trong quỹ đạo khoảng $3^\circ5'$, và khoảng cách góc tương ứng là [OCR không rõ]; sao chổi đạt được khoảng cách góc ấy từ Mặt Trời vào khoảng sáu giờ tối ngày $4$ tháng Một. Lần nữa, vào ngày $11$ tháng Mười Một năm $1680$, chuyển động quận chiều của sao chổi lúc ấy khoảng $4^\circ$; khoảng cách góc tương ứng là [OCR không rõ], xảy ra lúc nửa đêm ngày $10$ tháng Mười Một, khoảng không lâu trước nửa đêm.
+Với sao chổi năm $1681$, ngày $4$ tháng Một theo lịch cũ, chuyển động quận chiều biểu kiến trong quỹ đạo khoảng $3^\circ5'$, và khoảng cách góc tương ứng là $71\frac{2}{3}^\circ$; sao chổi đạt được khoảng cách góc ấy từ Mặt Trời vào khoảng sáu giờ tối ngày $4$ tháng Một. Lần nữa, vào ngày $11$ tháng Mười Một năm $1680$, chuyển động quận chiều của sao chổi lúc ấy khoảng $4\frac{2}{3}^\circ$; khoảng cách góc tương ứng là $79\frac{2}{3}^\circ$, xảy ra lúc nửa đêm ngày $10$ tháng Mười Một, khoảng không lâu trước nửa đêm.
 
 Vào những thời điểm ấy, hai sao chổi ấy đã ở cùng khoảng cách với Mặt Trời như Trái Đất, và Trái Đất gần như đang ở cận điểm. Nhưng Bảng I được lập theo khoảng cách trung bình của Trái Đất với Mặt Trời, giả sử bằng $1000$ phần; khoảng cách này lớn hơn khoảng cách mà Trái Đất có thể mô tả trong thời gian một ngày chuyển động thường niên, hoặc sao chổi mô tả trong mười sáu giờ chuyển động.
 
@@ -824,7 +882,9 @@ $$
 
 Tương tự, kẻ ba đường thẳng trở lên $S2q,S3q,\ldots$; và một đường thẳng đều $q2q3q$, đi qua tất cả các điểm $q2q3q,\ldots$, sẽ cắt đường thẳng $TP$ tại điểm $P$, từ đó hạ đường vuông góc $PR$. Điều đã định nghĩa.
 
-<!-- Hình Lemma I, PDF 573; cần trích hoặc dựng lại từ scan. -->
+![Dựng tuyến tính theo Lemma I: kẻ $TP$ sao cho $TRP$ là góc vuông, cùng đường thẳng đều $q2q3q$ đi qua các điểm $S2q$, $S3q$.](../assets/system-of-the-world-lemma-1.png)
+
+*Hình 8. Dựng tuyến tính theo Lemma I: kẻ $TP$ sao cho $TRP$ là góc vuông, cùng đường thẳng đều $q2q3q$ đi qua các điểm $S2q$, $S3q$. (trích từ bản scan, PDF 573)*
 
 Bằng lượng giác, ta làm như sau. Giả sử đường thẳng $TP$ đã được tìm bằng phương pháp trước; các đường vuông góc $TR,SB$ trong các tam giác $TPR,TPS$ sẽ được cho, và cạnh $SP$ trong tam giác $SBP$, cũng như sai số
 
@@ -878,7 +938,9 @@ Cần chú ý rằng ở đây đã gợi ý một phương pháp chung để gi
 
 Cho các đường thẳng $AB,AC,BC$ đã cho theo vị trí, và giả sử $D$ là điểm đã cho trên $AC$. Song song với $AB$, kẻ $DG$ cắt $BC$ tại $G$; lấy $GF$ theo tỷ lệ đã cho với $BG$, rồi kẻ $FDE$; khi đó $FD$ sẽ tỷ lệ với $DE$ như $FG$ với $BG$.
 
-<!-- Hình Lemma II, PDF 574; cần trích hoặc dựng lại từ scan. -->
+![Dựng tuyến tính theo Lemma II: kẻ đường thẳng thứ tư qua điểm $D$ đã cho, cắt ba đường thẳng $AB$, $AC$, $BC$.](../assets/system-of-the-world-lemma-2.png)
+
+*Hình 9. Dựng tuyến tính theo Lemma II: kẻ đường thẳng thứ tư qua điểm $D$ đã cho, cắt ba đường thẳng $AB$, $AC$, $BC$. (trích từ bản scan, PDF 574)*
 
 Bằng lượng giác, trong tam giác $CGD$, mọi góc và cạnh $CD$ đều đã cho, và từ đó ta tìm được các cạnh còn lại; từ các tỷ lệ đã cho, các đường $GF$ và $BE$ cũng được xác định.
 
@@ -888,7 +950,9 @@ Bằng lượng giác, trong tam giác $CGD$, mọi góc và cạnh $CD$ đều 
 
 Từ những quan sát đáng tin cậy nhất, cho ba kinh độ của sao chổi, và giả sử $ATR,RTB$ là các hiệu của chúng; cần tìm chuyển động theo giờ tại thời điểm của quan sát giữa $TR$. Theo Lemma II, kẻ đường thẳng $ARB$ sao cho các phần $AR,RB$ của nó tỷ lệ với các khoảng thời gian giữa các quan sát; và nếu ta giả sử một vật thể trong toàn bộ thời gian ấy mô tả toàn bộ đường thẳng $AB$ với chuyển động đều, đồng thời được nhìn từ vị trí $T$, thì chuyển động biểu kiến của vật thể ấy quanh $R$ gần như giống chuyển động của sao chổi tại thời điểm quan sát $TR$.
 
-<!-- Hình Lemma III, PDF 575; cần trích hoặc dựng lại từ scan. -->
+![Biểu diễn chuyển động theo giờ của sao chổi theo Lemma III, dựng từ ba kinh độ quan sát.](../assets/system-of-the-world-lemma-3.png)
+
+*Hình 10. Biểu diễn chuyển động theo giờ của sao chổi theo Lemma III, dựng từ ba kinh độ quan sát. (trích từ bản scan, PDF 575)*
 
 **Làm việc ấy chính xác hơn.**
 
@@ -914,7 +978,9 @@ Trên $TF,TR,TG$, với các bán kính ấy, dựng vuông góc $Ff,RP,Gg$, là
 
 Gọi $S$ là Mặt Trời; $t,T,\tau$ là ba vị trí của Trái Đất trong quỹ đạo ở những khoảng cách bằng nhau; $p,P,\omega$ là những vị trí tương ứng của sao chổi trên quỹ đạo của nó, sao cho những khoảng cách xen giữa các vị trí có thể tương ứng với chuyển động trong một giờ. Các đường vuông góc $pr,PR,\omega p$ được hạ xuống mặt phẳng hoàng đạo, còn $rRp$ là dấu vết của quỹ đạo trong mặt phẳng ấy. Nối các đường $Sp,SP,S\omega,SR,ST,tr,TR,\tau p,TP$, và cho $tr,\tau p$ giao nhau tại $O$. Khi đó, $TR$ gần như hội tụ tại cùng điểm $O$, hoặc sai số sẽ không đáng kể. Theo các lemma đã nêu, các góc $rOR,ROp$ đều được cho, cũng như các tỷ lệ $pr$ với $tr$, $PR$ với $TR$, và $\omega p$ với $\tau p$. Hình $tTO$...
 
-<!-- Hình Bài toán I, PDF 576; cần trích hoặc dựng lại từ scan. -->
+![Bài toán I: từ tỷ lệ vận tốc đã giả thiết, xác định quỹ đạo sao chổi, với Mặt Trời $S$ và ba vị trí $t$, $T$, $\tau$ của Trái Đất.](../assets/system-of-the-world-problem-1.png)
+
+*Hình 11. Bài toán I: từ tỷ lệ vận tốc đã giả thiết, xác định quỹ đạo sao chổi, với Mặt Trời $S$ và ba vị trí $t$, $T$, $\tau$ của Trái Đất. (trích từ bản scan, PDF 576)*
 
 <!-- PDF 577–578: dịch từ scan; kết thúc phần Hệ thống thế giới. -->
 

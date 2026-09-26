@@ -48,6 +48,16 @@ Gọi $A$ là khoảng cách vật thể từ tâm tại một điểm bất k�
 
 Theo Proposition XXXIX, vận tốc của vật thể lên và xuống trên đường thẳng ở đúng tỷ lệ ấy.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XL phát biểu một điều tưởng hiển nhiên nhưng rất sâu: nếu hai vật thể ở cùng khoảng cách từ tâm thì chúng cảm nhận cùng một lực, và nếu chúng bằng vận tốc ở một khoảng cách thì chúng sẽ bằng vận tốc ở **mọi** khoảng cách ấy. Nói cách khác, vận tốc chỉ phụ thuộc vào vị trí, không phụ thuộc vào đường đi đã đi qua.
+>
+> **Công thức.** Với lực $F = kA^m$ và khoảng cách cực đại $P$, lực chỉ sinh công trên đoạn rơi được, nên $\tfrac{1}{2}v^2 = \int_A^P kA'^{m}\,dA'$, tức $v = \sqrt{\dfrac{2k}{m+1}\left(P^{m+1} - A^{m+1}\right)}$. Với lực hút $m = -2$ và $k = \mu$, ta được $v = \sqrt{2\mu\left(\tfrac{1}{A} - \tfrac{1}{P}\right)}$. Hệ quả 2 của chương dùng cách đánh số lũy thừa lệch một đơn vị so với công thức này, nên khi đọc cần tự chọn một quy ước và giữ nhất quán.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần một **điều kiện đủ** để chứng minh: hai vật thể chỉ khác nhau ở chỗ một cái đi theo đường cong còn cái kia đi thẳng, và ông chứng minh lực vuông góc với đường đi chỉ làm vật thể lệch khỏi tiếp tuyến chứ không làm thay đổi vận tốc. Hệ quả 1 nói rõ điều này cho dây treo và vật cản trơn: lực căng dây không làm thay đổi vận tốc, nó chỉ buộc vật thể rời khỏi đường thẳng.
+>
+> **Hiện nay thì sao.** Đây chính là nội dung của khẳng định "lực ràng buộc không sinh công", và nó là lý do một con lắc dao động với biên độ nào thì vẫn tuân theo cùng một công thức vận tốc. Nó cũng giải thích tính chất không phụ thuộc đường đi: năng lượng cơ học là một hàm chỉ của vị trí, nên mọi quỹ đạo có cùng năng lượng sẽ có cùng tốc độ tại cùng vị trí. Người đọc hôm nay dùng đúng ý này khi phân tích tàu trượt trên đường ray, và khi kiểm tra xem một ràng buộc cơ học có làm hao tổn năng lượng hay không.
+
 ## Proposition XLI. Bài toán XXVIII
 
 Giả sử có lực hướng tâm bất kỳ, và đã biết các phần tư của các hình cong. Hãy tìm cả các quỹ đạo mà vật thể sẽ chuyển động, cả thời gian chuyển động trên những quỹ đạo tìm được.
@@ -146,3 +156,13 @@ Vì vậy, ở cuối mỗi khoảng thời gian, ta có cả ordinate $Ce$ ho�
 Trong các Proposition này, ta giả sử lực hướng tâm thay đổi theo một quy luật nào đó khi rời xa tâm, nhưng ở những khoảng cách bằng nhau từ tâm thì lực ấy luôn giống nhau.
 
 Từ đây đến đây, tôi đã xét chuyển động của các vật thể trong các quỹ đạo bất biến. Còn phải nói thêm về chuyển động của chúng trong các quỹ đạo quay quanh các tâm lực.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Câu cuối chương tiết lộ giả định mà **toàn bộ Phần VIII dựa vào**: lực hướng tâm chỉ phụ thuộc khoảng cách tới tâm, chứ không phụ thuộc phương. Nói cách khác, trường lực có tính đối xứng cầu. Giả định tưởng chừng hiển nhiên ấy chính là thứ khiến mọi bài toán trong chương này giải được bằng hình học thuần tuý.
+>
+> **Công thức.** Với lực $F = F(r)$, bảo toàn moment động lượng cho $h = r^2\dot{\theta}$ không đổi, và định luật II tách thành một cặp phương trình tách được cho $r$ và cho $\theta$. Đó là lý do mọi phép dựng ở chương này — từ Hệ quả 1 đến Hệ quả 3 của Proposition XLI — đều chỉ dựng trên một đại lượng trung gian duy nhất là $ABFD$, tức công của lực tính tới độ sâu $A$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết rõ điều kiện này giới hạn phạm vi của mình, và ông nói thẳng ra ngay trước khi chuyển sang chương tiếp. Hệ quả 3 của Proposition XLI cũng minh họa cơ chế phân loại: vận tốc vừa đủ thì có hypebol và vật thể rơi về tâm, nhiều hơn thì có elip và vật thể đi ra vô cùng, đúng bằng cả ba kết quả bằng một cấu hình hình học duy nhất.
+>
+> **Hiện nay thì sao.** Giả định ấy bị bỏ qua trong hai trường hợp rất quan trọng. Một là **bài toán nhiều vật thể**: với ba hay nhiều hơn các vật thể, lực lên mỗi vật thể không còn là hàm chỉ của khoảng cách tới một tâm duy nhất, và mọi phép tách phương trình sụp đổ — đó là lý do bài toán ba vật thể không có lời giải giải tích tổng quát. Hai là khi ta chiếu quỹ đạo xuống một mặt phẳng cố định thay vì mặt phẳng vuông góc với vectơ moment động lượng. Người đọc hôm nay gặp dạng sụp đổ ấy dưới tên bài toán ba vật thể, và nó là lý do trong vật lí hạt cũng như thiên văn, mọi tính toán quỹ đạo đều bắt đầu bằng phép xấp xỉ một tâm lực trung tâm.

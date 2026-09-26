@@ -25,6 +25,16 @@ Lực trọng lực hướng về một hành tinh bất kỳ phát sinh từ v�
 
 Nếu ai đó cho rằng theo quy luật này, mọi vật thể quanh ta phải hướng lẫn nhau, trong khi ta không thấy lực hút ấy ở bất cứ đâu, tôi đáp rằng lực hút giữa những vật thể ấy nhỏ hơn lực hút giữa chúng và Trái Đất rất nhiều, nên không thể được giác quan ta nhận ra.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition VII là **định luật hấp dẫn phổ quát** dưới dạng thuần: có một lực hướng về mọi vật thể, tỷ lệ với lượng vật chất mà chúng chứa. Cùng với Proposition VI, nó tạo thành công thức trọn vẹn $F = G\dfrac{m_1 m_2}{r^2}$.
+>
+> **Công thức.** Chứng minh của Newton dựa trên tính cộng. Lực hút của một hành tinh, xét riêng, tỷ lệ nghịch với bình phương khoảng cách, và lực ấy do từng phần của hành tinh cộng lại, mỗi phần đóng góp theo đúng lượng vật chất của nó. Theo Định luật III, phần nào của $A$ kéo $B$ bao nhiêu thì $B$ kéo lại phần ấy bấy nhiêu. Nhân từng cặp phần với khối lượng của chúng, tổng ra đúng tích $m_1 m_2$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông tự trả lời trước phản biện rằng ai đó sẽ nêu ra: theo quy luật này, hai viên sỏi cạnh nhau cũng phải hút nhau, mà ta không thấy gì. Câu trả lời của ông là lực ấy nhỏ hơn lực giữ chúng với Trái Đất rất nhiều, nên nằm dưới ngưỡng giác quan. Đó là một ước lượng thẳng thắn, và nó chỉ ra chính xác vì sao cần một dụng cụ đặc biệt mới đo được hiệu ứng ấy giữa các vật thể trên bàn.
+>
+> **Hiện nay thì sao.** Dụng cụ mà Newton mô tả trong câu trả lời ấy phải mất thêm hơn một thế kỷ mới có: **cân xoắn** của Cavendish năm 1798 mới đo được lực hút giữa hai khối vật chất trong phòng thí nghiệm, và những cân xoắn sau đó của Eötvös dùng chính nguyên lý ấy để đo $G$ và kiểm tra xem trọng lực có phụ thuộc vật liệu hay không. Nói cách khác, Newton đã chỉ đúng phép thử mà người ta cần, đồng thời nói thẳng rằng giác quan không đủ — và phải chờ kỹ thuật đủ tinh vi, chứ không chờ một ý tưởng mới.
+
 ### Hệ quả 2
 
 Lực trọng lực hướng về các hạt bằng nhau ở mọi phía của một vật thể tỷ lệ nghịch với bình phương khoảng cách từ các vị trí đến các hạt, theo Hệ quả 3 của Proposition LXXIV, Sách I.
@@ -82,5 +92,25 @@ Các hành tinh càng nhỏ, ceteris paribus, chúng càng đặc, vì lực tr�
 Nếu nước của ta được đưa ra quỹ đạo sao Thổ, nó sẽ đông thành băng; nếu ở quỹ đạo Sao Thủy, nó sẽ nhanh chóng bay thành hơi. Ánh sáng Mặt Trời, mà nhiệt độ tỷ lệ với nó, đặc gấp bảy lần ở quỹ đạo Sao Thủy so với chúng ta. Nhiệt kế cho thấy nhiệt độ gấp bảy lần nhiệt độ Mặt Trời mùa hè của ta làm nước sôi.
 
 Không nên nghi ngờ rằng vật chất của Sao Thủy thích nghi với nhiệt của nó, và vì thế đặc hơn vật chất Trái Đất, vì trong vật chất đặc hơn, các hoạt động của tự nhiên cần nhiệt độ mạnh hơn.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Hệ quả 1–3 là chỗ Newton làm việc thật với số liệu thiên văn: ông lấy các thời gian tuần hoàn và các parallax, rồi tính ra ba bộ tỷ lệ cho Mặt Trời, Sao Mộc, sao Thổ và Trái Đất.
+>
+> **Công thức.** Khối lượng tương đối theo thứ tự ấy là
+>
+> $$
+> 1:\frac{1}{1067}:\frac{1}{3021}:\frac{1}{1691282},
+> $$
+>
+> trọng lực tại bề mặt là $10000:943:529:435$, và mật độ là
+>
+> $$
+> 100:94\frac{1}{2}:67:400.
+> $$
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết rõ bộ số nào đáng tin. Ông tự ghi ngay: lượng vật chất của Trái Đất phải tăng hay giảm theo **lập phương** của parallax Mặt Trời, mà parallax Mặt Trời thời đó là đại lượng bấp bênh nhất trong thiên văn. Ngược lại, tỷ lệ mật độ gần như **không** phụ thuộc parallax, vì nó chỉ cần bán kính và trọng lực bề mặt tương đối. Vì vậy ông dồn sự chắc chắn vào đúng chỗ còn lại.
+>
+> **Hiện nay thì sao.** Với các giá trị hiện đại, phần mật độ là một thành công đáng kinh ngạc. Lấy Mặt Trời bằng 100, mật độ trung bình hiện nay là 100 cho Mặt Trời, khoảng 94 cho Sao Mộc, khoảng 49 cho sao Thổ và khoảng 392 cho Trái Đất. Ở Sao Mộc, con số của Newton gần như tuyệt đối; ông cũng nói Trái Đất đặc "gấp bốn" Mặt Trời, trong khi tỷ lệ hiện đại là 3,9. Còn việc Mặt Trời **hơi đặc hơn** Sao Mộc thì nghe lạ mà đúng, vì Mặt Trời là khí và giữ được trạng thái loãng nhờ nhiệt độ lớn, đúng như lý do ông nêu. Các con số tuyệt đối thì kém hơn nhiều, và chính ông đã cảnh báo trước bằng phép lập phương ấy. Ở Hệ quả 4, còn một chỗ cần phân biệt: ánh sáng Mặt Trời ở quỹ tảo Sao Thủy mạnh gấp bảy lần là **đúng** với cường độ ánh sáng, nhưng **không** đúng với nhiệt độ, vì nhiệt độ cân bằng chỉ tỷ lệ với căn bậc hai của cường độ — nên ở Sao Thủy chỉ nóng hơn chúng ta khoảng một phần rưỡi, không phải bảy lần.
 
 *Số liệu Hệ quả 1–3 đã được đối chiếu với scan trang 398–399. Hình minh họa dùng lại chưa phải hình riêng của Proposition VII–VIII, nên vẫn cần rà soát.*

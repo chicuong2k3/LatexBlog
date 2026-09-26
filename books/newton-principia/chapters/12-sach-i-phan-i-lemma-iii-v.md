@@ -29,6 +29,16 @@ Hình chữ nhật ngoại tiếp được bao bởi các tiếp tuyến của c
 
 Vì vậy, những hình giới hạn ấy, xét theo chu vi $acE$, không phải là hình chữ nhật, mà là các giới hạn đường cong của những hình chữ nhật.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Bốn hệ quả này là cách Newton phát biểu cả **đạo hàm** và **tích phân** mà không dùng hai từ đó. Hệ quả 2 nói dây cung dần trùng hình cong: đó là mệnh đề giới hạn của tương phân sai số, nên đạo hàm là giới hạn của tương phân. Hệ quả 3 nói tiếp tuyến cũng trùng hình cong: đó là đạo hàm tại một điểm. Và Hệ quả 4 — các hình giới hạn "không phải là hình chữ nhật, mà là các giới hạn đường cong của hình chữ nhật" — là mấu chốt: tích phân của một đạo hàm trả lại chính hàm gốc.
+>
+> **Công thức.** Với $y = f(x)$, đạo hàm theo Hệ quả 3 là $f'(x) = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}$, tức giới hạn của tiếp tuyến. Hệ quả 2 nói cùng cái đó còn xuất hiện dưới dạng giới hạn của tỷ số dây cung khi cung co lại về điểm. Định lý tích phân cơ bản — thứ mà Hệ quả 4 tiên đoán — là $\int_a^b f'(x)\,dx = f(b) - f(a)$: tích phân đạo hàm trả lại hàm gốc.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần dây cung và tiếp tuyến cho hình học cơ học, không phải cho toán học. Trong *Principia*, tốc độ biến đổi luôn xuất hiện như một đại lượng hữu hạn gắn với một khoảng hay một thời điểm, chứ không phải một giá trị tại điểm. Việc ông đặt dây cung cạnh tiếp tuyến như hai cách nhìn của cùng một giới hạn là bằng chứng ông hiểu chúng là một phép tính duy nhất, chỉ khác cách tiếp cận.
+>
+> **Hiện nay thì sao.** Cách trình bày này bị giới hạn ở chỗ nó dùng một hình học cụ thể, nên không khái quát được cho những hàm không phải đường cong trong mặt phẳng. Giải tích hiện đại định nghĩa đạo hàm bằng giới hạn của tỷ số trong không gian trừu tượng, và định nghĩa tích phân bằng độ đo thay vì bằng giới hạn tổng hình chữ nhật — vẫn cùng ý "xấp xỉ rồi cho số mảnh tăng lên", nhưng không cần một hình vẽ. Nhánh kế thừa thẳng trong vật lí là phép tính vectơ và giải tích ten-xơ, nơi cùng cái giới hạn ấy định nghĩa tốc độ biến đổi của trường vận tốc và của trường ứng su.
+
 ## Lemma IV
 
 Nếu trong hai hình $AacE$, $PprT$, ta nội tiếp, như trước, hai hàng hình bình hành, mỗi hàng có cùng số lượng, và khi bề rộng của chúng giảm dần vô hạn, các tỷ số giới hạn của các hình bình hành trong hình này với các hình bình hành trong hình kia, tương ứng từng cái một, là như nhau, thì hai hình $AacE$, $PprT$ ấy cũng có tỷ số với nhau bằng chính tỷ số ấy.
@@ -44,3 +54,13 @@ Nếu trong các hình của Lemma này, các hình bình hành được lấy t
 ## Lemma V
 
 Trong các hình đồng dạng, mọi cặp cạnh tương đồng, dù là cạnh cong hay cạnh thẳng, đều tỉ lệ; và các diện tích tỉ lệ theo tỷ số bậc hai của các cạnh tương đồng.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Lemma V là quy luật lũy thừa: cạnh tỉ lệ theo hệ số $k$ thì diện tích tỉ lệ theo $k^2$. Người đọc hôm nay thấy đây là trường hợp riêng của **phân tích thứ nguyên**: mọi đại lượng vật lí đều mang một số chiều, và số mũ của nó trong công thức chính là thứ quyết định số chiều đó. Nó cũng là mảnh đầu tiên của **kích thước fractal**, nơi số chiều không nhất thiết là số nguyên.
+>
+> **Công thức.** Với hệ số tỉ lệ tuyến tính $k$, Lemma V cho $L \to kL$ và $A \to k^2 A$, nên $A \propto L^2$. Suy rộng: thể tích $\propto L^3$, và một đại lượng có số chiều $d$ thì tỉ lệ theo $L^d$. Khi $d$ không phải số nguyên — đường bờ, tập hợp lỗi trên vật liệu gãy, hệ rễ cây — ta có chiều Hausdorff, và luật lũy thừa vẫn đúng với số mũ thực.
+>
+> **Vì sao Newton viết như vậy.** Người Hy Lạp cổ đại đã biết điều này cho hình vuông, nhưng phải chờ trực giác nhân với số chiều mới nói trọn vẹn. Việc Newton tuyên bố nó như một định nghĩa thay vì một bổ đề cho thấy ông đang dựng một ngôn ngữ hình học từ đầu, trong đó độ dài và diện tích là hai loại đại lượng khác nhau về bậc. Điều đó là cần thiết: ngay sau đó ông sắp dùng diện tích quét trong một khoảng thời gian làm đại lượng cơ bản, và ông phải biết trước nó không cùng loại với độ dài.
+>
+> **Hiện nay thì sao.** Việc phân biệt thứ nguyên vẫn là một trong những thói quen phòng thí nghiệm rẻ nhất và mạnh nhất: một phương trình vật lí sai về thứ nguyên gần như chắc chắn sai về con số. Kiểm tra thứ nguyên cũng loại được những hệ số vô nghĩa và buộc người ta đặt câu hỏi một biến có thực sự mới hay không. Ngoài vật lí, cùng ý này điều khiển cách ta nghĩ về in ba chiều, về hiệu quả tăng theo bậc, và về việc một đường bờ có chiều xấp xỉ 1,3 chứ không phải 1 hay 2.

@@ -137,6 +137,16 @@ Trong những trường hợp khác, chuyển động theo giờ tỷ lệ với
 
 Mỗi khi sin của một góc chuyển từ dương sang âm, hoặc từ âm sang dương, chuyển động lùi phải chuyển thành tiến, và chuyển động tiến phải chuyển thành lùi. Vì vậy, node tiến về phía trước mỗi khi Mặt Trăng nằm giữa một phần vuông và node gần phần vuông ấy. Trong các trường hợp khác, node lùi; và do phần lùi vượt phần tiến, chúng chuyển mỗi tháng theo chiều lùi (`in antecedentia`).
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXX làm một việc mà ít người để ý: nó tìm ra cách **mặt phẳng quỹ đạo Mặt Trăng nghiêng dần**. Mặt phẳng ấy không đứng yên trong không gian, và đường nối hai node của nó cứ xoay quanh Trái Đất theo chiều lùi dần.
+>
+> **Công thức.** Trước hết là một bước loại trừ rất đẹp. Lực Mặt Trời gây nhiễu Mặt Trăng gồm hai thành phần $LM$ và $TM$ như ở chương trước. Thành phần $LM$ nằm **trong** mặt phẳng quỹ đạo, nên nó chỉ kéo Mặt Trăng tới gần hay xa Trái Đất mà không hề làm nghiêng mặt phẳng ấy; ông bỏ nó đi. Chỉ thành phần $TM$, nằm ngoài mặt phẳng, mới làm nghiêng nó. Từ đó ông ra công thức: vận tốc của node tỷ lệ với **tích ba sin** của ba góc, tức khoảng cách của Mặt Trăng tới phần vuông, khoảng cách của Mặt Trăng tới node, và khoảng cách của node tới Mặt Trời, chia cho lập phương bán kính.
+>
+> **Vì sao Newton viết như vậy.** Vì ông biết dấu hiệu của chuyển động ấy thay đổi theo vị trí, nên phải trả lời câu hỏi khó: node đi tiến hay lùi? Công thức cho thấy ba giao số ấy đổi dấu, nên ông rà lại từng trường hợp: mỗi tháng node **tiến** trong một khoảng ngắn, đúng khi Mặt Trăng nằm giữa một phần vuông và node nằm gần phần vuông ấy; ngoài ra thì node lùi. Vì phần lùi lớn hơn hẳn phần tiến, trung bình cả tháng node lùi.
+>
+> **Hiện nay thì sao.** Chuyển động ấy ngày nay gọi là **lùi node**, và nó không phải chi tiết lý thuyết mà là thứ quyết định lịch nhật thực. Node Mặt Trăng lùi hết một vòng hoàng đạo trong khoảng **mười tám phẩy sáu năm**. Vì Mặt Trăng phải trở lại đúng node cũ mới tái lập hiện tượng ấy, tháng trăng tính theo node — tháng rằm, dài khoảng $27{,}21$ ngày — ngắn hơn tháng tính theo sao, vốn dài $27{,}32$ ngày. Hệ quả thực tế nhất là nhật thực: Mặt Trăng chỉ có thể che Mặt Trời hay bị Mặt Trời che khi nó nằm gần một node. Do đó các nhật thực không tới rải rác, mà đến từng **mùa**, cách nhau khoảng $173$ ngày, mỗi mùa có từ hai đến năm lần.
+
 ### Hệ quả 1
 
 Nếu từ $P$ và $M$, hai điểm cực của một cung nhỏ nhất $PM$ trên đường $Qq$ nối hai phần vuông, ta hạ các đường vuông góc $PK$ và $Mk$, rồi kéo dài chúng đến khi cắt đường node $Nn$ tại $D$ và $d$, thì chuyển động theo giờ của node sẽ tỷ lệ với tích của diện tích $MPDd$ và bình phương $AZ$.
@@ -333,5 +343,15 @@ $$
 $$
 
 Chênh lệch nhỏ hơn một phần [OCR không rõ] của toàn bộ chuyển động, và có vẻ phát sinh từ độ lệch tâm của quỹ đạo Mặt Trăng cùng độ nghiêng của nó so với mặt phẳng hoàng đạo. Độ lệch tâm làm cho chuyển động node tăng quá mức; ngược lại, độ nghiêng làm cho chuyển động node bị giảm và trở về đúng vận tốc của nó.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXXII cộng toàn bộ kết quả trên để lấy chuyển động trung bình của node trong một năm sao, rồi đem so với bảng thiên văn thời đó. Đây là lần đầu trong sách ông tự đối chiếu con số của mình với bảng số do người khác lập.
+>
+> **Công thức.** Ông giả định node bị kéo trở về chỗ cũ sau mỗi giờ, nên nó đứng yên với các sao cố định, còn Mặt Trời thì đi hết một vòng thật. Ở trạng thái giả định ấy, chuyển động của node tỷ lệ với bình phương sin khoảng cách node tới Mặt Trời, và tổng của chúng trên cả vòng tròn ra đúng tỷ lệ $1:2$. Từ đó ông tìm được chuyển động của node trong thời gian Mặt Trời đi từ node này tới node kia là $19^\circ18'1''23'''$, trong khi các bảng thiên văn đưa ra $19^\circ21'21''50'''$.
+>
+> **Vì sao Newton viết như vậy.** Vì ông không giấu sai số. Chênh lệch ấy rất nhỏ, và ông chỉ ra nó nhiều lẽ do độ lệch tâm quỹ đạo Mặt Trăng làm chuyển động node tăng quá mức, còn độ nghiêng của quỹ đạo lại làm nó giảm, nên hai sai lệch triệt tiêu một phần. Việc đem con số của mình ra so với bảng của người khác rồi chỉ ra nguồn sai số, thay vì im lặng, là tiêu chuẩn mà ngày nay mọi nghiên cứu định lượng đều phải đạt.
+>
+> **Hiện nay thì sao.** Giá trị chính xác ngày nay là $19^\circ20'30''$ mỗi năm, theo chiều lùi. Nghĩa là con số của Newton lệch chưa tới hai phần trăm, và phần sai còn lại là hệ quả của việc ông bỏ qua độ lệch tâm cùng độ nghiêng. Con số này còn là mẫu số của một nhịp thời gian dài hạn trong thiên văn: nó cộng dồn thành một vòng quay node trong mười tám phẩy sáu năm, và chính nhịp ấy cũng đặt chu kỳ cho hiện tượng nutation đã bàn ở chương trước, vì cùng một cơ chế làm node lùi thì cũng làm trục Trái Đất đảo nhẹ qua chậm. Đó là lý do kinh nghiệm sơ bộ về nutation của ông, dù chỉ được nói qua một dòng, lại chính xác.
 
 *Các công thức và sơ đồ của Proposition XXIX–XXXII có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan từng trang trước khi đánh dấu là đã kiểm tra công thức.*

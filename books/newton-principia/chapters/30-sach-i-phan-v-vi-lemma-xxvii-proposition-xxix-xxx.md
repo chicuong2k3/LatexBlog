@@ -132,6 +132,16 @@ Giả sử một đường tròn $ASP$ luôn đi qua vật thể đang chuyển 
 
 Ngược lại, có thể tìm thời gian để vật thể mô tả một cung $AP$ đã định. Nối $AP$, dựng vuông góc tại trung điểm, cắt $GH$ tại $H$.
 
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Proposition XXX giải bài toán mà mọi bài toán quỹ đạo đều dẫn tới: cho một thời điểm, vật thể ở đâu trên quỹ đạo? Với quỹ đạo parabol, bài toán này có lời giải bằng công thức tường minh. Người đọc hôm nay gọi đây là **phương trình Barker**, và đây là trường hợp duy nhất trong ba loại quỹ đạo không cần hàm đặc biệt nào.
+>
+> **Công thức.** Với tham số $D = t\sqrt{\dfrac{2\mu}{p}}$ và bán tham số tiêu cự $p$, lời giải có dạng $r = \dfrac{p}{2}\left(1 + D^2\right)$ cùng các toạ độ theo $D$. Con số $3$ trong $GH = 3M$ của Newton không tình cờ: nó đến từ kết quả cổ đại của Archimedes rằng diện tích dưới một parabol bằng $\dfrac{2}{3}$ diện tích hình chữ nhật bao quanh nó. Vì tốc độ quét diện tích không đổi, thời gian chỉ là hàm tuyến tính của diện tích, mà diện tích ấy lại là hàm bậc ba của tham số — nên tỷ số $3:8$ ở Hệ quả 2 là hệ quả trực tiếp.
+>
+> **Vì sao Newton viết như vậy.** Vì ông cần biến "biết quỹ đạo" thành "biết vị trí tại mọi thời điểm", và đó là bước cuối cùng trước khi ông áp dụng vào hành tinh. Ông cũng chỉ ra ở Hệ quả 3 rằng chiều ngược cũng làm được: cho một cung $AP$ đã biết, dựng lại thời gian. Tính hai chiều ấy là điều kiện để một hình cắt conic thực sự dùng được trong thiên văn.
+>
+> **Hiện nay thì sao.** Việc quỹ đạo parabol cho lời giải đóng, trong khi quỹ đạo elip thì không, là một trong những bất đối xứng thú vị nhất của cơ học Kepler. Với elip, phương trình Kepler là phương trình lượng giác–giải tích không biểu thị được bằng hàm sơ cấp, và phải dùng hàm elliptic. Người đọc hôm nay dùng đúng sự phân biệt này khi lên kế hoạch động vật: quỹ đạo parabol xuất hiện khi tốc độ không đổi và lực ngược với bình phương khoảng cách — đúng bài toán ném đá mà Học luận cuối Phần II đã nêu tới.
+
 ## Lemma XXVIII
 
 Không có hình bầu dục nào mà diện tích bị các đường thẳng tùy ý cắt ra có thể luôn được tìm bằng các phương trình với số hữu hạn các số hạng và số chiều.
@@ -157,3 +167,13 @@ Phương trình không đổi, chỉ các đại lượng xác định vị trí
 Vì vậy, không thể luôn luôn tìm giao điểm của một đường thẳng với đường xoắn ốc bằng một phương trình hữu hạn. Do đó, không có hình bầu dục nào mà diện tích bị các đường thẳng tùy ý cắt ra có thể luôn luôn được biểu thị bằng một phương trình hữu hạn.
 
 Cùng lập luận ấy, nếu khoảng cách giữa cực và điểm mô tả đường xoắn ốc tỷ lệ với phần chu vi hình bầu dục bị cắt, ta có thể chứng minh độ dài chu vi cũng không thể luôn luôn được biểu thị bằng một phương trình hữu hạn. Ở đây tôi nói đến những hình bầu dục không bị các hình liên hợp chạm vào khi kéo dài vô hạn.
+
+> **[Ghi chú hiện đại]**
+>
+> **Khái niệm tương ứng.** Lemma XXVIII là một trong những bằng chứng sớm nhất và sắc nhất cho ý tưởng rằng **không phải đại lượng hình học nào cũng biểu thị được bằng một phương trình hữu hạn**. Nó nêu ra một hình bầu dục mà diện tích bị các đường thẳng tùy ý cắt ra không bao giờ tìm được bằng công thức đại số.
+>
+> **Công thức.** Lập luận đi qua đường xoắn ốc. Nếu phần diện tích bị cắt biểu thị được bằng phương trình hữu hạn, thì khoảng cách từ cực — vốn tỷ lệ với diện tích ấy — cũng vậy, nên mọi điểm của đường xoắn ốc đều xác định được. Nhưng một đường thẳng cắt đường xoắn ốc này ở **vô số** điểm, trong khi một phương trình bậc $n$ chỉ có $n$ nghiệm. Sự xung đột ấy buộc phải thừa nhận một phương trình vô hạn số chiều.
+>
+> **Vì sao Newton viết như vậy.** Vì ông đang bảo vệ tiền đề của cả Phần VI: các đại lượng ông định nghĩa bằng tích phân phải là những đại lượng thực sự tồn tại và xác định được. Với tư cách là người tạo ra phép tính, ông hiểu rõ hơn ai hết rằng "tích phân được" không phải điều hiển nhiên, và ông phải tự chứng minh nó. Câu chuyển sang bài toán không gian ở giữa Lemma cho thấy ông biết phải phân biệt cái nào giải được bằng hình học phẳng và cái nào không.
+>
+> **Hiện nay thì sao.** Ý tưởng này tiền đoán hai kết quả lớn của thế kỷ XIX. Thứ nhất là **định lý Abel–Ruffini**: phương trình bậc năm trở lên không giải được bằng phân biệt và căn. Thứ hai là chứng minh của Lindemann năm 1882 rằng $\pi$ là số siêu hạt, từ đó bảo đảm **không thể bình phương hình tròn** bằng thước kẻ và com pa. Nói cách khác, phép đo diện tích bằng tích phân mà Newton dùng suốt *Principia* thuộc đúng loại đối tượng mà toán học về sau phải thừa nhận là không quy về được đại số.

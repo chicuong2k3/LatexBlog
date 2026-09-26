@@ -263,7 +263,7 @@ Ta giả sử các phần nước dính nhẹ vào nhau, để khi rơi chúng c
 
 Hình dung toàn bộ khoang rỗng của bình, bao quanh dòng nước rơi $ABNFEM$, chứa đầy băng, để nước có thể chảy qua băng như qua một phễu.
 
-Nếu nước chỉ chảy sát băng mà không chạm vào nó, hoặc điều tương đương, nếu bề mặt băng hoàn toàn nhẵn, nước chạm vào vẫn trượt trên đó tự do nhất và không gặp lực cản, thì nước sẽ chảy qua lỗ $EF\) với cùng vận tốc như trước. Toàn bộ trọng lượng của cột nước $ABNFEM$ sẽ được dùng để đẩy nước ra như trước, và đáy bình sẽ chịu trọng lượng của băng bao quanh cột nước ấy.
+Nếu nước chỉ chảy sát băng mà không chạm vào nó, hoặc điều tương đương, nếu bề mặt băng hoàn toàn nhẵn, nước chạm vào vẫn trượt trên đó tự do nhất và không gặp lực cản, thì nước sẽ chảy qua lỗ $EF$ với cùng vận tốc như trước. Toàn bộ trọng lượng của cột nước $ABNFEM$ sẽ được dùng để đẩy nước ra như trước, và đáy bình sẽ chịu trọng lượng của băng bao quanh cột nước ấy.
 
 Bây giờ, cho băng trong bình tan thành nước. Tốc độ nước chảy ra vẫn giữ nguyên. Nó không nhỏ hơn, vì băng đã tan sẽ có xu hướng rơi xuống. Nó cũng không lớn hơn, vì băng đã trở thành nước không thể rơi xuống mà không làm chậm sự rơi xuống của một lượng nước khác bằng chính lượng nước ấy. Cùng một lực phải luôn sinh cùng một vận tốc trong nước chảy ra.
 
@@ -453,7 +453,7 @@ Vận tốc của đường tròn nhỏ đi lên tỷ lệ với vận tốc c�
 
 $$
 \frac{EF^2-PQ^2}{EF^2}.
-\]
+$$
 
 Cho vận tốc tương đối ấy bằng vận tốc mà nước sẽ đi qua khoảng không gian hình khuyên nếu đường tròn nhỏ đứng yên, tức vận tốc mà nước sẽ thu được nếu rơi và mô tả chiều cao $IG$. Lực của nước lên đường tròn nhỏ đi lên sẽ như trước, theo Hệ quả 5 của các Định luật Chuyển động. Lực cản của đường tròn nhỏ đi lên sẽ tỷ lệ với trọng lượng của một hình trụ nước có đáy là đường tròn nhỏ và chiều cao $IG$ như
 
@@ -467,7 +467,7 @@ Vận tốc của đường tròn nhỏ sẽ tỷ lệ với vận tốc mà nư
 
 $$
 \frac{EF^2-PQ^2}{EF^2}.
-\]
+$$
 
 Cho độ rộng của kênh tăng vô hạn. Tỷ lệ giữa $EF^2-PQ^2$ và $EF^2$, và giữa $EF^2$ và $EF^2-PQ^2$, cuối cùng trở thành tỷ lệ bằng nhau. Vì vậy vận tốc của đường tròn nhỏ bằng vận tốc mà nước sẽ thu được khi rơi và mô tả chiều cao $IG$. Lực cản trở thành trọng lượng của một hình trụ có đáy là đường tròn nhỏ và chiều cao bằng một nửa chiều cao $IG$.
 

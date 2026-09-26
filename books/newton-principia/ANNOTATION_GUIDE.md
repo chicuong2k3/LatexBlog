@@ -170,6 +170,50 @@ callout, người đọc phải hiểu rõ hơn về **vật lí**, không phả
 Dùng số liệu thật, đơn vị SI, năm đo có ghi. **Không bịa** số liệu, hằng số, tên người
 hay năm. Khi không chắc về một đẳng thức, bỏ dòng công thức đó thay vì đoán.
 
+### 5ter. Mọi khẳng định phải có dấu vết
+
+Callout trả lời cho người đọc đã biết vật lí các câu hỏi đó: **vì sao có công thức
+này, vì sao định nghĩa như vậy, nó đúng không, sai thì vì sao sai, tác giả nghĩ gì,
+thời đó có tranh cãi nào.** Nhưng không câu nào được trả lời bằng trí nhớ.
+
+Mỗi khẳng định trong callout phải thuộc một trong bốn loại, và phải nhìn ra được
+loại đó khi người đọc kiểm:
+
+1. **Trích văn bản nguồn.** Newton tự nói gì thì trích nguyên văn, kèm trích dẫn
+   ("Nhưng để thí nghiệm này khớp với các lý thuyết đến từng chi tiết, phải tính cả
+   sức cản của không khí và lực đàn hồi của các vật thể va chạm" — Học luận sau các
+   định luật). Đây là loại mạnh nhất và nên ưu tiên tuyệt đối.
+2. **Newton tự tuyên bố.** Ông nói thí nghiệm ấy do ai làm, ai công bố trước, ông đã
+   "tự thử" cái gì. Ghi rõ đây là lời ông, không phải kết luận của người viết.
+3. **Nghiên cứu hiện đại nói.** Khi dẫn sách bài hay bài báo, nêu rõ tên tác giả và
+   công trình. Không dẫn "SEP nói" nếu chưa mở đúng mục đó ra đọc.
+4. **Suy luận của người viết.** Phải đánh dấu là suy luận, và suy luận phải bám sát
+   cái ba loại trên.
+
+Cấm tuyệt đối: nói Newton "có lẽ", "hẳn là", "chắc chắn là" mà không kèm nguồn; ghi một
+năm, một tên, một con số thí nghiệm mà không truy được về chỗ cụ thể; và **không** dùng
+trí nhớ về lịch sử khoa học làm nguồn. Nếu chưa kiểm được mà chưa có cơ hội kiểm,
+thì bỏ câu đó. Một callout thiếu một chi tiết lịch sử còn hơn một callout có một
+chi tiết bịa.
+
+### 5quater. Không ghi nhầm ấn phẩm
+
+Bản dịch theo **ấn phẩm thứ ba (1726)**, qua Motte 1846. Các ấn phẩm 1687, 1713 và
+1726 khác nhau ở nhiều đoạn dài, nên ghi chú phải phân biệt:
+
+- **Cấm** viết "Newton viết năm 1687 rằng…" cho một đoạn thuộc ấn phẩm 1726, và cấm
+  trích nguyên văn 1687 rồi gắn vào văn bản đang dịch nếu hai bản ở chỗ đó khác nhau.
+- Khi trích nguyên văn mà bản dịch theo lệch với bản mình dịch, phải nói rõ mình đang
+  dịch bản nào và bản kia khác thế nào.
+- Định nghĩa V là ví dụ kinh điển: bản 1687 không có phần hòn đá, quả đạn, Mặt Trăng.
+  Định nghĩa VI cũng đổi công thức. Xem mục "Ấn phẩm nào đang được dịch" trong
+  `book.md`.
+- Khi kiểm chứng được rồi mà thấy hướng dẫn sai, sửa hướng dẫn trước rồi mới sửa
+  callout — vì hướng dẫn sai thì mọi callout viết sau đó cũng sai theo.
+
+Khi kiểm chứng được rồi mà thấy hướng dẫn sai, sửa hướng dẫn trước rồi mới sửa
+callout — vì hướng dẫn sai thì mọi callout viết sau đó cũng sai theo.
+
 ## 6. Cấm tuyệt đối
 
 Văn phong callout phải là của người viết có chuyên môn, không phải của chatbot. Cấm:

@@ -111,7 +111,7 @@ Nối $DA$, $DP$, cắt đường tròn tại $E$, $T$. Biểu diễn trọng l�
 
 $$
 DA^2:(AP^2+2BAP)
-\]
+$$
 
 là tỷ lệ giữa trọng lực và lực cản tại $P$. Thời gian toàn bộ cuộc đi lên tỷ lệ với diện tích cung $EDT$.
 
@@ -280,7 +280,7 @@ $$
 DTV:DPQ
 =
 DB^2:CK\cdot Z.
-\]
+$$
 
 Nếu diện tích $DTY$, biểu diễn moment của thời gian, bằng hình chữ nhật cố định $BD\cdot m$, thì
 
@@ -300,13 +300,13 @@ Moment của diện tích $AKLN$ trở thành
 
 $$
 \frac{BP\cdot BD\cdot m}{Z}.
-\]
+$$
 
 Trừ moment $DTV=BD\cdot m$, ta còn
 
 $$
 \frac{AP\cdot BD\cdot m}{Z}.
-\]
+$$
 
 Đây là moment của quãng đường vật thể đi trong lúc lên hoặc rơi. Vì vậy hiệu của các diện tích và quãng đường tăng hoặc giảm theo những moment tỷ lệ, nên chúng tỷ lệ với nhau.
 
@@ -316,7 +316,7 @@ Gọi $M$ là độ dài thu được khi áp dụng diện tích $DET$ lên $BD
 
 $$
 DA:DE=V:M.
-\]
+$$
 
 Quãng đường vật thể đi trong môi trường có lực cản trong toàn bộ cuộc lên hoặc rơi tỷ lệ với quãng đường vật thể rơi từ trạng thái đứng yên trong môi trường không cản trong cùng thời gian, như hiệu của các diện tích nói trên tỷ lệ với
 

@@ -193,7 +193,7 @@ hoặc, theo dấu thay đổi của chuỗi,
 
 $$
 EK=P+2Qo+4Ro^2+8So^3+\cdots.
-\]
+$$
 
 Bình phương các hiệu tung độ, cộng với bình phương các hoành độ, cho bình phương các cung $GH$, $HI$. Từ đó suy ra vận tốc, lực cản và mật độ môi trường tại mỗi điểm.
 
@@ -266,7 +266,7 @@ thì
 
 $$
 DI=\frac{ac-a^2-2ao-o^2}{c-2a}.
-\]
+$$
 
 Khai triển:
 
@@ -328,7 +328,7 @@ DN=\frac{bb}{e}O,
 VX=\frac{bb}{e}O,
 \qquad
 GD=C-\frac{bb}{e}O.
-\]
+$$
 
 Khai triển thành chuỗi, các hệ số của chuỗi suy ra mật độ môi trường. Nếu trong $VZ$ lấy $VY$ sao cho
 
@@ -366,7 +366,7 @@ Dựng hyperbola tâm $X$, tiệm cận $MX$, $NX$, đi qua $A$, sao cho
 
 $$
 AI:VG=XV^n:XR.
-\]
+$$
 
 6. Số $n$ càng lớn, hyperbola càng chính xác khi vật thể đi lên và càng kém chính xác khi rơi; hyperbola conic giữ tỷ lệ trung bình và đơn giản hơn.
 7. Có thể xác định hyperbola gần đúng từ hiện tượng bằng cách cho hai vật thể giống nhau phóng cùng vận tốc ở hai góc khác nhau, ghi nhận hai điểm rơi, rồi lặp lại phép tính với các giả thiết khác nhau và dựng đường cong $NNN$.

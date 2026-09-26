@@ -1806,7 +1806,7 @@ Dù vậy, chỉ với sự trợ giúp của bảng $\log B$ như trên, bài t
 
 ## §39
 
-Gần một nửa công sức mà những lần thử ấy đòi hỏi có thể được bỏ qua ngay lập tức, nếu ta có một bảng được trang trí sao cho có thể suy ra trực tiếp $\log B$. Khi ấy chỉ còn ba phép tính. Phép thứ nhất là phép gián tiếp: xác định $A$ để thỏa mãn phương trình (1) ở Điều 37. Phép thứ hai là xác định $E$ từ $A$ và $B\); có thể làm trực tiếp, hoặc qua các phương trình
+Gần một nửa công sức mà những lần thử ấy đòi hỏi có thể được bỏ qua ngay lập tức, nếu ta có một bảng được trang trí sao cho có thể suy ra trực tiếp $\log B$. Khi ấy chỉ còn ba phép tính. Phép thứ nhất là phép gián tiếp: xác định $A$ để thỏa mãn phương trình (1) ở Điều 37. Phép thứ hai là xác định $E$ từ $A$ và $B$; có thể làm trực tiếp, hoặc qua các phương trình
 
 $$
 E=2B\left(A^{1/2}+\frac12A^{3/2}\right),

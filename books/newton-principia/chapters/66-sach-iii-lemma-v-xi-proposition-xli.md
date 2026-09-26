@@ -395,15 +395,15 @@ $$
 AF=CG,\qquad af=eg,\qquad [OCR\ không\ rõ].
 $$
 
-Qua $P,f,[OCR không rõ]$, kẻ đường tròn cắt đường thẳng $AT$ tại $X$. Khi ấy $X$ là một vị trí khác của sao chổi trong mặt phẳng hoàng đạo. Tại $X$ và $Z$, dựng các tiếp tuyến của vĩ độ sao chổi so với các bán kính $TX$ và $rZ`. Khi ấy, hai vị trí của sao chổi trên quỹ đạo riêng đã được xác định.
+Qua $P,f,[OCR không rõ]$, kẻ đường tròn cắt đường thẳng $AT$ tại $X$. Khi ấy $X$ là một vị trí khác của sao chổi trong mặt phẳng hoàng đạo. Tại $X$ và $Z$, dựng các tiếp tuyến của vĩ độ sao chổi so với các bán kính $TX$ và $rZ$. Khi ấy, hai vị trí của sao chổi trên quỹ đạo riêng đã được xác định.
 
 Cuối cùng, theo Proposition XIX, Sách I, dựng một parabol đi qua hai vị trí ấy, có tiêu điểm $S$. Parabol này sẽ là quỹ đạo của sao chổi. $\square$
 
 Lời chứng minh phép dựng này làm từ các Lemma trước, vì đường thẳng $AC$ bị cắt tại $E$ theo tỷ lệ thời gian, theo Lemma VII, đúng như nó phải có theo Lemma VIII; và $BE$, theo Lemma X, là một phần của đường thẳng $BS$ hoặc $[OCR không rõ]$ trong mặt phẳng hoàng đạo, bị chặn giữa cung $ABC$ và dây cung $AEC$. $MP$, theo Hệ quả của Lemma X, là độ dài dây cung của cung ấy, tức độ dài mà sao chổi phải mô tả trên quỹ đạo thật giữa lần quan sát thứ nhất và thứ ba, và do đó bằng $MN$, nếu $B$ là vị trí thật của sao chổi trong mặt phẳng hoàng đạo.
 
-Thật ra, có thể thuận tiện hơn nếu chọn $B,b,\beta$ không hoàn toàn ngẫu nhiên mà gần với đúng. Nếu góc $[OCR không rõ]$ mà hình chiếu của quỹ đạo trong mặt phẳng hoàng đạo cắt đường thẳng $[OCR không rõ]$ được biết đại khái, hãy dựng đường thẳng $AC$ với góc ấy tại $B[OCR không rõ]$, sao cho nó tỷ lệ với $TT$ theo tỷ lệ căn bậc hai của $SQ$ và $S[OCR không rõ]$. Sau đó kẻ đường thẳng $SEB$ sao cho phần $EB$ của nó bằng độ dài $[OCR không rõ]`; khi ấy $B$ được xác định và dùng cho lần đầu.
+Thật ra, có thể thuận tiện hơn nếu chọn $B,b,\beta$ không hoàn toàn ngẫu nhiên mà gần với đúng. Nếu góc $[OCR không rõ]$ mà hình chiếu của quỹ đạo trong mặt phẳng hoàng đạo cắt đường thẳng $[OCR không rõ]$ được biết đại khái, hãy dựng đường thẳng $AC$ với góc ấy tại $B[OCR không rõ]$, sao cho nó tỷ lệ với $TT$ theo tỷ lệ căn bậc hai của $SQ$ và $S[OCR không rõ]$. Sau đó kẻ đường thẳng $SEB$ sao cho phần $EB$ của nó bằng độ dài $[OCR không rõ]$; khi ấy $B$ được xác định và dùng cho lần đầu.
 
-Sau đó hủy đường thẳng $AC$, dựng lại $AC$ theo phép dựng trước, đồng thời tìm độ dài $MP$. Trên $tB$, lấy điểm $b$ theo quy tắc: nếu $TA$ và $rC$ cắt nhau tại $Y$, thì khoảng cách $Yb$ phải tỷ lệ với khoảng cách $YB$ theo tỷ lệ tạo thành từ tỷ lệ $MP:MN$ và tỷ lệ căn bậc hai của $SB$ với $Sb$. Có thể tìm điểm thứ ba $\beta$ theo cùng phương pháp, nếu lặp lại phép tính lần thứ ba. Nhưng nếu làm như vậy, thường chỉ cần hai phép tính. Khi khoảng cách $Bb$ rất nhỏ, sau khi tìm được $F,f$ và $G,g$, hãy kẻ $Ff$ và $Gg`; chúng sẽ cắt $TA$ và $rC$ tại các điểm cần tìm là $X$ và $Z$.
+Sau đó hủy đường thẳng $AC$, dựng lại $AC$ theo phép dựng trước, đồng thời tìm độ dài $MP$. Trên $tB$, lấy điểm $b$ theo quy tắc: nếu $TA$ và $rC$ cắt nhau tại $Y$, thì khoảng cách $Yb$ phải tỷ lệ với khoảng cách $YB$ theo tỷ lệ tạo thành từ tỷ lệ $MP:MN$ và tỷ lệ căn bậc hai của $SB$ với $Sb$. Có thể tìm điểm thứ ba $\beta$ theo cùng phương pháp, nếu lặp lại phép tính lần thứ ba. Nhưng nếu làm như vậy, thường chỉ cần hai phép tính. Khi khoảng cách $Bb$ rất nhỏ, sau khi tìm được $F,f$ và $G,g$, hãy kẻ $Ff$ và $Gg$; chúng sẽ cắt $TA$ và $rC$ tại các điểm cần tìm là $X$ và $Z$.
 
 > **[Ghi chú hiện đại]**
 >
@@ -1044,7 +1044,7 @@ Cùng ngày, ông Arthur Storer, tại dòng sông Patuxent gần Hunting Creek 
 
 $$
 38\frac12^\circ,
-\]
+$$
 
 lúc $5$ giờ sáng, tức $10$ giờ tại London, thấy sao chổi ở phía trên Spica và gần như nối liền với nó; khoảng cách giữa hai vật khoảng
 
@@ -1086,7 +1086,7 @@ với vĩ độ Nam
 
 $$
 1^\circ30'.
-\]
+$$
 
 Cùng ngày tại Boston, nó cách Spica về phía đông khoảng
 
@@ -1284,7 +1284,7 @@ về phía bắc của đường thẳng qua Cor Leonis và Spica, nên vĩ đ�
 
 $$
 2^\circ38'.
-\]
+$$
 
 Vì vĩ độ, như đã nói, không ngừng tăng theo các quan sát đồng thời của Montenari, Hook và quan sát viên ở New England, nên ngày $24$ nó phải lớn hơn
 
@@ -1334,7 +1334,7 @@ Ngày $25$ tháng Mười một, trước khi Mặt Trời mọc, Montenari quan
 
 $$
 [OCR\ không\ rõ].
-\]
+$$
 
 Cellius quan sát cùng thời điểm rằng sao chổi nằm trên một đường thẳng giữa ngôi sao sáng ở đùi phải của Xử Nữ và cái cân phía nam của Thiên Bình. Đường thẳng này cắt đường đi của sao chổi ở
 
@@ -1366,7 +1366,7 @@ và trong tháng Mười hai sau đó, nó lệch khỏi hoàng đạo về phí
 
 $$
 29^\circ.
-\]
+$$
 
 Hai phần quỹ đạo, nơi sao chổi đi xuống phía Mặt Trời rồi lại đi lên khỏi Mặt Trời, lệch nhau về một phía với góc biểu kiến trên
 
@@ -1577,7 +1577,7 @@ theo các quan sát của tôi và của những người khác; còn trong trư
 
 $$
 21^\circ.
-\]
+$$
 
 Như vậy, sự khúc xạ của bầu trời đã bị bác bỏ. Hiện tượng đuôi sao chổi phải được giải thích bằng một vật chất phản chiếu ánh sáng. Việc đuôi phát sinh từ đầu sao chổi và hướng về các phía đối xứng Mặt Trời còn được xác nhận bằng các quy luật mà đuôi tuân theo.
 
@@ -1681,7 +1681,7 @@ Ngày $19$ tháng Mười một, một người trẻ ở Cambridge thấy sao c
 
 $$
 2^\circ.
-\]
+$$
 
 Ông Storer, trong những bức thư đã đến tay tôi, viết rằng vào tháng Mười hai, khi đuôi có khối lượng và sự rực rỡ lớn nhất, đầu chỉ nhỏ và nhỏ hơn nhiều so với đầu đã thấy vào tháng Mười một trước khi Mặt Trời mọc. Ông đoán nguyên nhân của hiện tượng là lúc đầu có lượng vật chất lớn hơn, sau đó lượng ấy dần bị tiêu hao.
 

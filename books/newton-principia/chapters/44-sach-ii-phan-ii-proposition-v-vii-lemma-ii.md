@@ -255,7 +255,7 @@ là
 
 $$
 3aA^2B^4C^2+4bA^3B^3C^2+2cA^3B^4C.
-\]
+$$
 
 Moment của
 
@@ -267,7 +267,7 @@ là
 
 $$
 3aA^2B^{-2}-2bA^3B^{-3}.
-\]
+$$
 
 ### Chứng minh
 
@@ -287,7 +287,7 @@ Lấy hiệu, phần tăng của hình chữ nhật khi các cạnh tăng $a$, $
 
 $$
 aB+bA.
-\]
+$$
 
 **Trường hợp 2.** Nếu $AB=G$, thì moment của $ABC=GC$ là
 

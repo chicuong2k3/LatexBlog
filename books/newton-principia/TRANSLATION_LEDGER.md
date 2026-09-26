@@ -6,8 +6,8 @@ Bản OCR dùng để đối chiếu: [Internet Archive OCR](https://archive.org
 | Trang nguồn | File đích | Trạng thái | Ghi chú |
 |---|---|---|---|
 | Front matter (PDF 1–16) và toàn bộ `LIFE OF SIR ISAAC NEWTON` (PDF 17–69, trang in 9–61) | `chapters/00-loi-dan-nhap.md` | Đã dịch, đang đối chiếu scan | Đã bổ sung đầy đủ lời tựa, lời giới thiệu, tiểu sử Isaac Newton, các trích dẫn và phần kết; cần rà soát đối chiếu từng trang với scan. |
-| Definitions I–VIII | `chapters/01-dinh-nghia.md` | Đã dịch, đã sửa theo đối chiếu | Đã tách đoạn và đặt tiêu đề mô tả. Định nghĩa I sửa 2 chỗ sau khi đối chiếu Latin 1687 `Quantitas Materiæ est mensura ejusdem orta ex illius Densitate & Magnitudine conjunctim`: `mensura ejusdem` dịch thành "thước đo của chính lượng vật chất ấy" (trước đây là "đại lượng đo mức độ của nó"), và `Nive et Pulveribus` dịch thành "tuyết và các loại bột" (trước đây là "tuyết, bụi mịn hoặc bột" — "bụi mịn" là từ của bản Motte, không có trong Latin). `Magnitudo` giữ là "thể tích". Định nghĩa II sửa 1 câu: bản 1687 đọc `Motus totius est summa motuum in partibus singulis, adeoq; in corpore duplo majore æquali cum Velocitate duplus est, et dupla cum Velocitate quadruplus` — không có `si`; `in corpore duplo majore` mở khung và cả hai vế cùng nằm trong khung, nên vế sau kế thừa điều kiện "gấp đôi" của vế trước ($m'=2m,\ v'=2v \Rightarrow p'=4p$). Bản dịch cũ đọc vế sau là chỉ vận tốc tăng, dẫn tới nhận định sai rằng Newton mâu thuẫn với $p=mv$. Đã thêm chữ "cũng" và bỏ nhận định mâu thuẫn/$mv^2$; khớp với Motte/Cajori 1846 và Cohen–Whitman 2016, đều đọc tích luỹ. Xem `AUTHORIZED_TEXT_FIXES.tsv`. Sửa thêm 4 chỗ dịch `mensura` trong định nghĩa II, VI, VII, VIII: "đại lượng đo mức độ của nó / của lực ấy" → "thước đo của chính nó" (Latin 1687: `mensura ejusdem` ở II và VI, `ipsius mensura` ở VII và VIII). Lớp chú giải của định nghĩa I–II cũng được viết lại: bỏ nhận định "định nghĩa Newton vòng tròn", bỏ "1687 chưa có nguyên tử", bỏ phần phê bình cú pháp Latin, và bỏ hai đoạn bàn về cách dịch — theo `ANNOTATION_GUIDE.md` mục 5bis. |
-| Laws I–III | `chapters/02-dinh-luat-van-dong.md` | Đã dịch | Đã tách đoạn và đặt tiêu đề mô tả. |
+| Definitions I–VIII | `chapters/01-dinh-nghia.md` | Đã dịch, đã sửa theo đối chiếu | Đã tách đoạn và đặt tiêu đề mô tả. **Bản dịch theo ấn phẩm thứ ba 1726, qua Motte 1846** (xem `book.md`). Định nghĩa I sửa 2 chỗ: `mensura ejusdem` dịch "thước đo của chính lượng vật chất ấy" (trước đây là "đại lượng đo mức độ của nó"), và `Nive et Pulveribus` dịch "tuyết và các loại bột" (trước đây là "tuyết, bụi mịn hoặc bột" — "bụi mịn" là từ của bản Motte, không có trong Latin). `Magnitudo` giữ là "thể tích". Định nghĩa II sửa 1 câu: bản 1687 đọc `Motus totius est summa motuum in partibus singulis, adeoq; in corpore duplo majore æquali cum Velocitate duplus est, et dupla cum Velocitate quadruplus` — không có `si`; `in corpore duplo majore` mở khung và cả hai vế cùng nằm trong khung, nên vế sau kế thừa điều kiện "gấp đôi" của vế trước ($m'=2m,\ v'=2v \Rightarrow p'=4p$). Bản dịch cũ đọc vế sau là chỉ vận tốc tăng, dẫn tới nhận định sai rằng Newton mâu thuẫn với $p=mv$. Đã thêm chữ "cũng"; khớp với Motte/Cajori 1846 và Cohen–Whitman 2016, đều đọc tích luỹ. Sửa thêm 4 chỗ dịch `mensura` ở định nghĩa II, VI, VII, VIII: "đại lượng đo mức độ của nó / của lực ấy" → "thước đo của chính nó". Định nghĩa III sửa 4 chỗ, định nghĩa IV sửa 3 chỗ: `actio` dịch "tác động" thay "hành động", `ex ictu` dịch "va đập" thay "đụng va". **Chênh lệch ấn phẩm đã kiểm chứng**: định nghĩa V trong bản 1687 chỉ có hai câu định nghĩa rồi tới câu "lượng của một lực hướng tâm xét theo ba loại"; toàn bộ phần hòn đá trên dây, quả đạn bắn từ đỉnh núi, các mốc 10/30/90 độ và Mặt Trăng không có trong 1687, có trong 1726. Định nghĩa VI cũng đổi ("lớn hơn hoặc nhỏ hơn theo hiệu lực" ở 1687 → "tỉ lệ với hiệu lực" ở 1726). **Chưa kiểm được** ấn phẩm 1713 đã có phần bổ sung của định nghĩa V hay chưa. **Định nghĩa VI–VIII sửa thêm 2 chỗ dịch**: (1) `efficacia causæ` dịch "mức độ hiệu quả của nguyên nhân" thay "hiệu lực của nguyên nhân", vì `efficacia` không phải một đại lượng đã định nghĩa trong vật lí hiện đại; giữ "tỉ lệ với" vì 1726 đọc `proportional to`, khác `major vel minor pro` của 1687. (2) Câu cuối định nghĩa VIII trước đây dịch sai theo hai điểm: Latin 1726 `juxta Superficiem Terræ… gravitas motrix seu pondus est ut corpus` nói **gần mặt đất** (không phải "gần tâm") và nói trọng lượng **tỉ lệ với vật thể** nhân lực gia tốc, chứ không nói "lực động chỉ thay đổi theo khoảng cách" — vế đó không có trong nguồn và tự mâu thuẫn với vế trước. Đối chiếu Motte 1846: "near the surface of the earth, where the accelerative gravity … is the same, the motive gravity or weight is as the body". **Ba ghi chú VI–VIII viết lại** theo phản hồi rà soát: bỏ "lượng tuyệt đối là nguồn của trường" và mọi công thức từ trường cực từ (nam châm thật là lưỡng cực, trường xa giảm $1/r^3$); bỏ ví dụ $20\ \mathrm{N}$ trên hai vật ở định nghĩa VII vì nó trái ý Newton; bỏ hoàn toàn Menelaus (nhà toán học cổ đại, không liên quan) và thay bằng Jean Richer trên đảo Cayenne — **năm 1672**, không phải 1671; xem mục "Nguồn ngoài đã đối chiếu" bên dưới.; bỏ claim "mọi lực hướng tâm tỉ lệ nghịch đảo bình phương và quỹ đạo là conic" ở định nghĩa VIII. Xem `AUTHORIZED_TEXT_FIXES.tsv`. |
+| Laws I–III + Học luận | `chapters/02-dinh-luat-van-dong.md` | Đã dịch, đang đối chiếu scan | Đã tách đoạn và đặt tiêu đề mô tả. Bổ sung **Học luận sau các định luật**, trước đây bị bỏ sót: đây là toàn bộ phần trình bày bằng chứng thực nghiệm của Newton cho ba định luật. Dịch từ bản 1846, đối chiếu với Latin 1687 (`la.wikisource.org/.../Axiata,_sive_Leges_Motus`) cho phần trùng nhau. **Còn phải đối chiếu scan**: số trang nguồn, và hình sơ đồ hai vật thể cầu A, B với hai nửa đường tròn EAF, GBH (đã để placeholder, chưa trích được). Bản 1846 có thêm đoạn lập luận lực hút hai chiều giữa các bộ phận Trái Đất, đoạn này **không có** trong Latin 1687 và được thêm ở ấn phẩm sau; bản Motte dựa trên ấn phẩm thứ ba 1726. Ba ghi chú mới theo `ANNOTATION_GUIDE.md` mục 5ter. |
 | Hệ quả I | `chapters/03-he-qua-dinh-luat.md` | Đã dịch | Đã dựng lại sơ đồ hình bình hành tại `assets/corollary-1-parallelogram.svg`; cần đối chiếu hình với scan. |
 | Hệ quả II | `chapters/04-he-qua-ii-hop-phan-tich-luc.md` | Đang rà soát | Đã dịch lời chứng minh và dựng `assets/corollary-2-force-resolution.svg`; cần đối chiếu ký hiệu và hình với scan. |
 | Hệ quả III | `chapters/05-he-qua-iii.md` | Đã dịch, đã đối chiếu số liệu | Đã sửa lỗi OCR: chuyển động của A trước bật lại là 6 phần, không phải 0. |
@@ -84,8 +84,8 @@ Lớp chú thích dùng marker `> **[Ghi chú hiện đại]**`, quy ước tạ
 | Mục | Trạng thái |
 |---|---|
 | Số chương có chú thích | 70/70 |
-| Tổng số chú thích | 150 |
-| Độ dài chú thích | 273–450 từ (trung vị 369) |
+| Tổng số chú thích | 153 |
+| Độ dài chú thích | 273–450 từ (trung vị 373) |
 | Lỗi cấu trúc nhãn / render / sai lệch bản dịch | 0 / 0 / 0 |
 | Cảnh báo mật độ ngoài ngưỡng | 0 |
 
@@ -106,6 +106,8 @@ python tools/check_book_callouts.py "books\newton-principia" --render --fidelity
 | `chapters/68-he-thong-thoi-gioi.md` | dòng 673 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
 | `chapters/69-muc-luc-va-chi-muc.md` | dòng 40 | `hành tình` | `hành tinh` | lỗi chính tả hiển nhiên |
 | `chapters/68-he-thong-thoi-gioi.md` | dòng 751 | `vận tốc của sao chổi xấp xỉ bằng.` | `vận tốc của sao chổi xấp xỉ bằng cùng.` | khôi phục từ nguyên văn bản 1846 |
+| `chapters/01-dinh-nghia.md` | định nghĩa VI | `hiệu lực của nguyên nhân` | `mức độ hiệu quả của nguyên nhân` | `efficacia causæ` không phải một đại lượng đã định nghĩa trong vật lí hiện đại; giữ "tỉ lệ với" vì 1726 đọc `proportional to` |
+| `chapters/01-dinh-nghia.md` | định nghĩa VIII, câu cuối | `Vì thế, gần tâm, lực gia tốc lớn hơn, nhưng lực động có thể vẫn không đổi, và trong trường hợp ấy, lực động chỉ thay đổi theo khoảng cách.` | `Vì vậy, gần mặt đất Trái Đất, nơi lực gia tốc trọng trường — tức lực sinh ra trọng lực — là như nhau ở mọi vật thể, thì lực động hay trọng lượng tỉ lệ với vật thể; nhưng nếu ta lên tới những vùng cao hơn, nơi lực gia tốc nhỏ hơn, trọng lượng sẽ giảm tương ứng, và sẽ luôn bằng tích của vật thể với lực gia tốc ấy.` | Latin 1726 `juxta Superficiem Terræ… gravitas motrix seu pondus est ut corpus`; Motte 1846 "near the surface of the earth, where the accelerative gravity … is the same, the motive gravity or weight is as the body". Bản dịch cũ ghi "gần tâm" thay "gần mặt đất" và thêm vế "lực động chỉ thay đổi theo khoảng cách" không có trong nguồn |
 
 Câu ở dòng 751 của `68-he-thong-thoi-gioi.md` bị thiếu chữ "cùng" do đánh dấu
 câu. Đối chiếu nguyên văn bản 1846 (trang "THE SYSTEM OF THE WORLD", đoạn bàn về
@@ -126,6 +128,169 @@ of a chair." Chênh lệch về mốc thời gian nằm ở dữ kiện lịch s
 dịch: Newton năm 1727 viết cây bị gió phá từ "khoảng hai mươi năm trước", tức quanh
 1707, còn mốc thường được viện dẫn cho vụ đổ cây là khoảng năm 1900. Chênh lệch này
 đã được nêu trong chú thích của chính chương đó, thay vì sửa văn bản dịch.
+
+### Rà soát toàn diện Definitions I–VIII
+
+Rà lại cả chương như một chỉnh thể sau khi định nghĩa VI–VIII viết xong. Bốn lỗi nội
+dung đã sửa, một sự nhầm lẫn **không** phải lỗi file:
+
+| Vị trí | Trước | Sau | Căn cứ |
+|---|---|---|---|
+| Định nghĩa I, ghi chú "Hiện nay thì sao" | "thứ tỉ lệ theo vị trí là tỉ số giữa hai loại khối lượng, không phải giữa trọng lượng và khối lượng" | "Cái đổi theo vị trí là $g$, nên trọng lượng đổi theo. Còn tỉ số $m_i/m_g$ là **hằng số của vật liệu**…" | Sai. Tỉ số $m_i/m_g$ là thuộc tính của vật, không đổi khi vật đi từ Trái Đất sang Mặt Trăng. Chính định nghĩa I nói lượng vật chất "được biết đến qua trọng lượng của mỗi vật thể, vì nó tỉ lệ với trọng lượng" — tức tỉ lệ đó là giữa **vật thể và trọng lượng** (và đó là lý do con lắc dùng để đo nó), không phải giữa hai loại khối lượng |
+| Định nghĩa II, ghi chú "Vì sao Newton viết như vậy" | "phe Cartesian đếm bậc hai, còn Leibniz bảo vệ phép đo bậc nhất" | "Descartes gắn nó với tích của khối lượng và vận tốc, còn Leibniz bảo vệ phép đo bậc hai $mv^2$ — tức năng lượng, *vis viva*. Newton đứng về phe bậc nhất." | Đảo ngược. Descartes gắn *quantity of motion* với $mv$ (bậc nhất); Leibniz bảo vệ $mv^2$ (bậc hai, *vis viva*). Newton theo phe $mv$ — chính là định nghĩa II của chính sách này |
+| Định nghĩa VI, ghi chú "Khái niệm tương ứng" | "không phải ba đại lượng khác nhau, cũng không đơn thuần là cùng một lực nhìn từ ba nơi" | "không phải ba lực độc lập, mà là ba cách định lượng có quan hệ với nhau" | Diễn đạt quá mạnh. Chính Newton đang **phân biệt** ba measures ấy suốt định nghĩa VI–VIII; điều cần nói chỉ là chúng không phải ba lực riêng biệt |
+| Định nghĩa VII, ghi chú "Khái niệm tương ứng" | "đây là đại lượng phụ thuộc vị trí mà không phụ thuộc vật thể" | "**trong ví dụ hấp dẫn mà Newton đang xét**, đây là đại lượng phụ thuộc vị trí…" | Quá tổng quát nếu áp cho mọi *vis centripeta*. Tính chất "không phụ thuộc vật thể" là của trường hấp dẫn, không phải của lực hướng tâm nói chung |
+
+**Không phải lỗi file.** Báo cáo cho rằng công thức tốc độ thoát bị mất căn
+($v_{\mathrm{esc}} = 2GM/r$) là không đúng với file nguồn: `chapters/01-dinh-nghia.md:160`
+viết đúng `$v_{\mathrm{esc}} = \sqrt{2GM/r}$`. Dạng hỏng quan sát được là dấu hiệu
+renderer làm mất `\sqrt` và các ngoặc, **không** phải lỗi nội dung. Sửa file ở chỗ này
+sẽ là sửa sai. Xem mục "Lỗi renderer toàn cục" bên dưới.
+
+### Lỗi renderer toàn cục — đã dò pipeline, không phải lỗi KaTeX
+
+**Kết luận: KaTeX có nối vào và chạy tốt. Vấn đề nằm ở tầng Pandoc _đọc_ toán,
+không phải tầng hiển thị.** Sửa file theo dạng hỏng quan sát được sẽ là sửa sai.
+
+**Đường đi (xác minh bằng cách đọc mã):**
+
+- `LatexBlog.csproj:27-29` → `python tools/build_books.py` → `build_books.py:12` import
+  `render_pandoc` từ `build_posts` → `build_books.py:229` gọi cho từng chương.
+- Hệt một bước: chuyển đổi Markdown→HTML xảy ra **lúc build bằng tiến trình Pandoc
+  ngoài** (`tools/pandoc/pandoc-3.6.4/pandoc.exe`), cờ `--katex` tại `build_posts.py:154`,
+  reader `markdown+tex_math_single_backslash+tex_math_double_backslash` tại
+  `build_posts.py:133`.
+- Về phía C# **không** có chuyển đổi nào. `Services/BookStore.cs` chỉ
+  `File.ReadAllText` HTML đã dựng sẵn (`ReadGeneratedHtml`, L92-105), tiêm vào
+  `BookChapter.razor:26` qua `(MarkupString)Html`. Không có thư viện Markdown C# nào
+  trong `.csproj`.
+- KaTeX nạp ở `Components/App.razor:11` (CSS), `:36` (`katex.min.js`), `:37`
+  (`auto-render.min.js`). MathJax **không có** trong repo.
+- `auto-render.min.js` được nạp nhưng **không dùng**: Pandoc để TeX thô trong
+  `<span class="math inline|display">` không kèm `\(...\)` nên bộ quét của auto-render
+  không thấy. `site.js:253-261` tự gọi `katex.render()` trên mọi `.math`.
+  Selector `up.compiler(".lb-prose, .lb-matrix", ...)` tại `site.js:97` **có** khớp
+  `BookChapter.razor:26`, nên sách vẫn được render toán. Comment "Post page" ở
+  `site.js:96` và `:227` là **stale**, gây hiểu nhầm; không phải rào chắn.
+- Blazor Web App **static SSR**: `Program.cs:10` `AddRazorComponents()`,
+  `Program.cs:160` `MapRazorComponents<App>()` không có `AddInteractiveServerRenderMode`.
+  Toán render hoàn toàn bằng JS phía client, có tải `katex.min.js` ở `App.razor:15`.
+- `books/` và `posts/` dùng **cùng một** `render_pandoc()`; chỉ khác ở phần mở rộng tệp.
+  Claim trong `books/README.md` là đúng.
+- Đã loại trừ: không có sanitizer nào trên prose sách (DOMPurify chỉ dùng cho
+  comments, `comments.js`), không có CSS nào ẩn toán (`site.css:311` chỉ
+  `overflow-x:auto`).
+
+**Nguyên nhân thật.** Pandoc **không nhận** một số span toán làm toán, nên TeX thô rơi
+xuống phân tích Markdown thường và bị ăn mất (`_` thành `<em>`, `\vec`/`\to`/`\text`
+biến mất, `$` còn lại). Đây chính là dạng "GMmgr2", "1−v2/c2", "2GM/r" quan sát được.
+Hai lớp lỗi, đã đối chiếu source với HTML sinh ra:
+
+1. **Toán inline có khoảng trắng trong dấu** — 29 trường hợp. Ví dụ đã kiểm chứng
+   `chapters/02-dinh-luat-van-dong.md:68`: nguồn `$ \vec{F}_{A \to B} = -\vec{F}_{B \to A} $`
+   (có khoảng trắng sau `$`) → `dinh-luat-van-dong.html:36` ra
+   `$ <em>{A B} = -</em>{B A} $`. Cùng file, dòng 42 `$\vec{F} \cdot \vec{v} = 0$`
+   (không khoảng trắng) thì **có** nhận. Trong file này, số span toán (181) bằng đúng
+   số span không có khoảng trắng (181): span chèn khoảng trắng là span duy nhất hỏng.
+2. **Khối `$$` không cặp được** — lớp lớn hơn. Ví dụ đã kiểm chứng
+   `chapters/65-sach-iii-proposition-xxxvii-xl.md:216-220`:
+   `$$ \n 1158268534\text{ feet}. \n $$` → HTML ra `<p>$$ 1158268534:147706353. ]</p>`,
+   tức `$$` còn nguyên, `\text{ feet}` bị mất, và khối ở dòng 243 bị **gộp vào**.
+   File này có **0** toán inline chèn khoảng trắng nhưng vẫn 19 `$` thô, nên lớp lỗi
+   này độc lập với lớp 1.
+
+**Phạm vi thiệt hại (đếm trên HTML đã sinh):** 24/75 file chương chứa `$` chưa phân tích,
+tổng 108 ký tự `$` thô đang được phát ra. File tệ nhất:
+`sach-iii-proposition-xxxvii-xl` (19), `sach-iii-lemma-v-xi-proposition-xli` (17),
+`sach-ii-phan-iii-proposition-xi-xiv` (10), `sach-ii-phan-ii-proposition-viii-x` (8).
+
+`chapters/01-dinh-nghia.md` **sạch** vì mọi span ở đó đều không chèn khoảng trắng — đó
+lý do dòng 30 nhìn đúng và dễ làm tưởng pipeline ổn.
+
+**Lỗ hổng kiểm thử — đây là lý do 24 file hỏng lọt qua im lặng:**
+
+- `tools/test_build_posts.py` **có** kiểm thử toán: L29 `$x^2$`, L50
+  `$E = mc^2$`, L217 assert `class="math inline"`, L253-254 assert `class="math display"`.
+- `tools/test_build_books.py` **không có** assertion nào về toán.
+- E2E: `tests/e2e/tests/post.spec.js:4-7` assert `.lb-prose .katex` hiển thị — chỉ trên
+  trang **post**. `home.spec.js:175` chỉ mở `/books` (trang danh sách).
+  **Không test nào mở một chương sách và kiểm tra toán.**
+
+### Đã sửa hàng loạt — toán sạch trên toàn bộ 75 chương
+
+Sửa xong, kiểm chứng bằng chính HTML sinh ra. **Trước: 24/75 file chương chứa `$` chưa
+phân tích, 108 ký tự `$` thô. Sau: 0 file, 0 ký tự.**
+
+Cơ chế đã **kiểm chứng thực nghiệm**, không còn là suy luận: ba loại lỗi delimiter đã
+xác định, sửa đúng loại đó thì `$` thô biến mất hoàn toàn. (Bản ghi trước đó ghi "suy
+luận, chưa kiểm chứng" vì lúc đó chỉ đọc artifact, chưa sửa thử.)
+
+| Lớp | Số | Dạng | Ví dụ đã kiểm chứng |
+|---|---|---|---|
+| 1. Khối `$$` đóng bằng `\]` | 48 | `\]` → `$$` | `65-sach-iii-proposition-xxxvii-xl.md`, khối mở ở dòng 242 bị `\]` đóng, kéo theo khối ở dòng 248 bị gộp |
+| 2. Dấu đóng `$` bị gõ thành `\)` hoặc backtick | 13 | `\)`/`` ` `` → `$` | `50-...:259` lỗ $EF\)`, `68-...:384` ở $F\`` |
+| 3. Toán inline chèn khoảng trắng | 1 | `$ ... $` → `$...$` | `02-dinh-luat-van-dong.md:68` |
+
+**Không phải mọi `\]` đều sai.** Reader là
+`markdown+tex_math_single_backslash+tex_math_double_backslash`, nên `\[`…`\]` là dạng
+hiển thị hợp lệ. Chỉ `\]` **không đóng được** một `\[` nào, trong lúc có khối `$$`
+đang mở, mới là lỗi. Áp dụng quy tắc sai lần đầu đã phá 5 khối `\[`…`\]` đang đúng ở
+`sach-ii-phan-ii-proposition-v-vii-lemma-ii.md`; phát hiện qua việc số `$` thô **tăng**
+từ 6 lên 12, nên đã `git checkout` toàn bộ rồi làm lại với hai trạng thái độc lập
+(`$$` và `\[`). Lần hai cho 48 sửa đúng, không phá gì.
+
+Tiêu chí đo là **HTML đã sinh**, không phải đếm trong nguồn: bộ dò đầu tiên của tôi báo
+5860 lỗi vì regex khớp chéo giữa các span, toàn là báo động giả. Chỉ đếm `$` còn sốngng
+trong HTML mới là đất chân đáng tin.
+
+**Khai báo thay đổi.** 97 hunk được sinh tự động từ `git diff` và ghi vào
+`AUTHORIZED_TEXT_FIXES.tsv`, mỗi hunk một dòng với ngữ cảnh mở rộng cho tới khi chuỗi
+cũ duy nhất trong HEAD. Hai lớp guard đã bắt được lỗi nghiêm trọng: hunk có `old` rỗng làm
+`str.replace("", x)` chèn giữa mọi ký tự (một lần gây diff 1.529.019 dòng), và hàng đảo
+ngược `$$` → `\]`. Trước khi ghi, script mô phỏng đúng phép biến đổi của checker và xác
+nhận **25/25 file tái tạo khớp từng byte**.
+
+**Kiểm tra bổ sung, không chỉ đếm `$`.** Một khối `$$` hở có thể nuốt văn xuôi vào
+toán mà **không** để lại dấu `$` nào, nên đếm `$` sẽ bỏ sót. Đã quét toàn bộ span
+`math inline|display` trong HTML tìm tiếng Việt nằm ngoài `\text{...}`: 297 kết quả, và
+tất cả đều hợp lệ (đơn vị "ngày", "giờ", "phút", "phần", "năm" bọc trong `\text{}`, và
+placeholder `[OCR không rõ]`). Không có văn xuôi nào bị nuốt.
+
+**Còn tồn đọng, không gây lỗi nhìn thấy:** `chapters/68-he-thong-thoi-gioi.md` có 35 dòng
+`$$` — lẻ, tức một khối không đóng. Pandoc tự hồi phục: "Bài toán II" vẫn ra `<h3>` + văn
+xuôi `<p>` bình thường. Để ngỏ, cần đối chiếu scan.
+
+**Chưa đóng lại (việc ngoài phạm vi sửa hàng loạt):** chưa thêm chốt chặn build, chưa
+thêm assertion toán vào `test_build_books.py`, chưa có e2e test mở chương sách, và hai
+comment stale ở `site.js:96` và `site.js:227` vẫn ghi "Post page" dù toán áp dụng cho cả
+sách.
+
+**Đã loại trừ giả thuyết "renderer nuốt `\sqrt`":** `01-dinh-nghia.md:160` có
+`\sqrt{2GM/r}` và file đó sạch. `\sqrt` mất ở chỗ khác là vì span toán ấy không được
+nhận, nên TeX rơi xuống Markdown — không phải vì KaTeX hay CSS.
+
+### Nguồn ngoài đã đối chiếu
+
+Dùng cho các khẳng định lịch sử trong ghi chú hiện đại mà bản dịch không tự chứa. Mọi
+dòng dưới đây đã được mở và đọc, không dựa vào trí nhớ.
+
+| Khẳng định | Nguồn | Kết luận |
+|---|---|---|
+| Nguyên văn Newton về chuyến đo Cayenne: đồng hồ quả lắc chạy chậm hơn ở gần xích đạo, **năm 1672**, chậm hơn $2'29''$ mỗi ngày, con lắc đồng pha ngắn hơn $1\frac12$ line | `chapters/60-sach-iii-proposition-xvii-xx.md` dòng 175 (Học luận sau Proposition XX, Sách III) | **Nguồn chính** cho ghi chú định nghĩa VII — nằm trong chính cuốn sách, không cần ra ngoài |
+| Năm, địa điểm, độ dài con lắc và kết luận về hình dạng Trái Đất | J. J. O'Connor & E. F. Robertson, "Jean Richer", *MacTutor History of Mathematics*, Đại học St Andrews — <https://mathshistory.st-andrews.ac.uk/Biographies/Richer/> | Khớp: rời Paris 15/11/1671, khởi hành từ La Rochelle 08/02/1672, **tới Cayenne 22/04/1672**, rời đi 25/05/1673. Báo cáo *Observations astronomiques et physiques faites en l'isle de Caïenne* (1679) |
+| Trích nguyên văn Newton trong bản Motte | Cùng nguồn: "in the year 1672, M. Richer took notice of it in the island of Cayenne … at the rate of 2m 28s a day" | Xác nhận năm **1672** |
+| Giá trị $g$ hiện đại: Cayenne ($4^\circ57'$) $\approx 9{,}7807$, Paris ($48^\circ50'$) $\approx 9{,}8094$ m/s² | ENS de Lyon, "Jean Richer à Cayenne (1672-1673)" — <http://eaae.ens-lyon.fr/groupspace/longitudes/pendulum/ens-inrp/ch/richer.pdf/download> | Chỉ để đối chiếu chéo, **không** đưa con số này vào ghi chú |
+| Kết luận "Trái Đất dẹt ở hai cực" là cách hiểu của Newton; Huygens quy cho lực ly tâm, Cassini (1720) thì cho Trái Đất dài ở hai cực | Cùng nguồn MacTutor và Encyclopaedia Britannica, "Jean Richer" — <https://www.britannica.com/biography/Jean-Richer> | Ghi chú chỉ nêu kết luận của Newton, không tranh luận Huygens/Cassini để tránh tràn độ dài |
+
+**Lỗi đã phát hiện và sửa trong phiên này.** Ghi chú định nghĩa VII trước đó ghi Richer
+"sang Cayenne năm 1671". Sai. Cả nguyên văn chương 60 lẫn nguồn ngoài đều cho **1672**;
+1671 chỉ là năm cấp hộ chiếu và rời Paris. Đã sửa thành 1672 và bỏ phần "người đầu tiên
+đo được" vì nguyên văn Newton chỉ xếp Richer là "trước hết" (first of all), không phải
+tuyên bố tuyệt đối về đệ nhất.
+
+**Còn phải đối chiếu scan.** Con số $2'29''$ trong bản dịch chương 60 lệch với $2'28''$
+mà MacTutor trích từ bản Motte. Ghi chú định nghĩa VII dùng con số của bản dịch nên
+tự nhất quán nội bộ, nhưng cần đối chiếu lại với trang scan trước khi chốt.
 
 ### Hình ảnh — đã trích từ scan
 

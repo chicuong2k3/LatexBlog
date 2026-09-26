@@ -241,7 +241,7 @@ Và bán kính tỷ lệ với versed sine này như
 
 $$
 1158268534\text{ feet}:147706353\text{ feet}.
-\]
+$$
 
 Vì vậy, nếu Mặt Trăng rơi về phía Trái Đất bằng lực giữ nó trong quỹ đạo, trong một phút nó sẽ đi được
 
@@ -443,7 +443,7 @@ Do đó, hiệu của hai phần ấy là
 
 $$
 LN\cdot(Mm-NM)-NM\cdot MC+[OCR\ không\ rõ],
-\]
+$$
 
 hay phần dương của hiệu ấy, tức
 
@@ -473,7 +473,7 @@ tỷ lệ với
 
 $$
 2AH\cdot HC,
-\]
+$$
 
 tức lực của cùng hai hạt ấy tại $A$, theo tỷ lệ
 
@@ -497,13 +497,13 @@ Tương tự, cùng số lượng $CX^2$ tỷ lệ với cùng số $AC^2$ là
 
 $$
 2CX^2:2AC^2.
-\]
+$$
 
 Do đó, hợp lực của tất cả các hạt trên chu vi của đường tròn $IK$ tỷ lệ với hợp lực của cùng số hạt tại vị trí $A$ là
 
 $$
 IX^2-2CX^2:2AC^2.
-\]
+$$
 
 Theo Lemma I, tỷ lệ này so với hợp lực của cùng số hạt trên chu vi của đường tròn $AE$ là
 
@@ -521,7 +521,7 @@ còn lực của cùng vật chất ấy nếu nó nằm trên chu vi của đư
 
 $$
 IX^2\cdot AC^2.
-\]
+$$
 
 Do đó, lực của tất cả các hạt của toàn bộ vật chất nằm bên ngoài quả cầu, trên tất cả các chu vi của các đường tròn, tỷ lệ với lực của cùng số hạt nằm trên chu vi của đường tròn lớn nhất $AE$ là
 
@@ -596,7 +596,7 @@ là chuyển động trung bình theo giờ của các node trong một quỹ đ
 
 $$
 20^\circ11'46''.
-\]
+$$
 
 Vì vậy, node Mặt Trăng trong quỹ đạo ấy sẽ lùi mỗi năm
 
@@ -634,7 +634,7 @@ Hãy giả sử vành này có lượng vật chất bằng toàn bộ phần Tr
 
 $$
 [OCR\ không\ rõ]:AC^2-aC^2.
-\]
+$$
 
 Vì $PC$ hay $aC$, bán kính nhỏ nhất của Trái Đất, tỷ lệ với $AC$, bán kính lớn nhất của Trái Đất, là
 
@@ -664,7 +664,7 @@ tức là
 
 $$
 4590:485223.
-\]
+$$
 
 Vì vậy, chuyển động của vành sẽ tỷ lệ với tổng các chuyển động của cả vành lẫn quả cầu là
 
@@ -828,7 +828,7 @@ $$
 24:30=4:5.
 $$
 
-Nữa, theo Hevelius, sao chổi trong tháng Tư năm $1665\) sáng hơn gần như tất cả các sao cố định, thậm chí còn sáng hơn chính sao Thổ, vì màu sắc của nó sống động hơn nhiều. Sao chổi này sáng hơn sao chổi đã xuất hiện vào cuối năm trước, vốn đã được so sánh với các sao cấp một. Đường kính đầu nó vào khoảng
+Nữa, theo Hevelius, sao chổi trong tháng Tư năm $1665$ sáng hơn gần như tất cả các sao cố định, thậm chí còn sáng hơn chính sao Thổ, vì màu sắc của nó sống động hơn nhiều. Sao chổi này sáng hơn sao chổi đã xuất hiện vào cuối năm trước, vốn đã được so sánh với các sao cấp một. Đường kính đầu nó vào khoảng
 
 $$
 6'.

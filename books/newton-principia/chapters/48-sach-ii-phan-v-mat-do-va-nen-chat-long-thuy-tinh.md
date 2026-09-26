@@ -183,7 +183,7 @@ Gọi $S$ là tâm, $SA$, $SB$, $SC$, $SD$, $SE$ là các khoảng cách tỷ l�
 
 $$
 \frac{AH}{SA^2},\qquad \frac{BI}{SB^2},\qquad \frac{CK}{SC^2}.
-\]
+$$
 
 Giả sử khối lượng riêng thay đổi đều giữa các khoảng cách. Các áp lực là tích của khối lượng riêng với các khoảng cách tương ứng. Mật độ là tổng các áp lực, nên hiệu của các mật độ $AH-BI$, $BI-CK$, v.v. tỷ lệ với các hiệu của các tổng áp lực.
 

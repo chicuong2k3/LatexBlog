@@ -31,7 +31,7 @@ Chia hình nón $APQ$ thành các khối chóp cụt bởi các mặt ngang $de$
 
 Theo Định luật III, khối $defg$ bị khối $fghi$ phản lực ép trên bề mặt $fg$ đúng bằng lực nó ép khối ấy. Vì vậy nó bị nén ở cả hai phía, giữa hình nón $Ade$ và khối $fghi$. Theo Trường hợp 6 của Proposition XIX, nó không thể giữ hình dạng nếu không bị nén với cùng lực ở mọi phía.
 
-Vì vậy, với cùng lực ép trên các bề mặt $de$ và $fg$, khối ấy sẽ cố phá ra ở hai mặt bên $df$ và $eg$. Vì nó hoàn toàn chảy, không cứng hay bám dính, nó sẽ tràn ra trừ khi có chất lỏng xung quanh chống lại. Do đó, khi cố tràn ra, nó ép chất lỏng xung quanh ở hai mặt bên $df$, $eg$ với cùng lực mà nó ép khối kế tiếp. Áp suất vì thế được truyền từ hai mặt bên ấy vào các không gian $NO$, $KL\) cũng nhiều như nó được truyền từ bề mặt $fg$ về phía $PQ$.
+Vì vậy, với cùng lực ép trên các bề mặt $de$ và $fg$, khối ấy sẽ cố phá ra ở hai mặt bên $df$ và $eg$. Vì nó hoàn toàn chảy, không cứng hay bám dính, nó sẽ tràn ra trừ khi có chất lỏng xung quanh chống lại. Do đó, khi cố tràn ra, nó ép chất lỏng xung quanh ở hai mặt bên $df$, $eg$ với cùng lực mà nó ép khối kế tiếp. Áp suất vì thế được truyền từ hai mặt bên ấy vào các không gian $NO$, $KL$ cũng nhiều như nó được truyền từ bề mặt $fg$ về phía $PQ$.
 
 ## Proposition XLII. Định lý XXXIII
 
@@ -41,7 +41,7 @@ Mọi chuyển động truyền qua chất lỏng đều từ một tiến trìn
 
 Cho một chuyển động truyền từ điểm $A$ qua lỗ $BC$, và giả sử nó có thể tiến trong không gian hình nón $BCQP$ theo những đường thẳng tỏa ra từ $A$. Trước hết, giả sử chuyển động ấy là chuyển động của sóng trên mặt nước đứng.
 
-Cho $de$, $fg$, $hi$, $kl$ là các đỉnh của những con sóng liên tiếp, được phân tách bởi các thung lũng hoặc hố. Vì nước trên các sống sóng cao hơn nước ở các phần chưa chuyển động $KL$, $NO$, nó chảy xuống từ các đỉnh ấy về phía $KL$ và $NO`. Vì nước trong các hố thấp hơn nước ở các phần chưa chuyển động, nó chảy từ các phần chưa chuyển động vào các hố ấy.
+Cho $de$, $fg$, $hi$, $kl$ là các đỉnh của những con sóng liên tiếp, được phân tách bởi các thung lũng hoặc hố. Vì nước trên các sống sóng cao hơn nước ở các phần chưa chuyển động $KL$, $NO$, nó chảy xuống từ các đỉnh ấy về phía $KL$ và $NO$. Vì nước trong các hố thấp hơn nước ở các phần chưa chuyển động, nó chảy từ các phần chưa chuyển động vào các hố ấy.
 
 Dòng chảy thứ nhất làm các sống sóng giãn ra về cả hai phía và truyền về $KL$, $NO$. Chuyển động của sóng từ $A$ về $PQ$ được duy trì bởi dòng nước liên tục chảy từ các sống sóng vào các hố bên cạnh, nên không thể nhanh hơn tỷ lệ với tốc độ nước chảy xuống. Vì nước phải chảy xuống với cùng vận tốc ở cả hai phía, sự giãn ra của sóng về $KL$ và $NO$ cũng được truyền với cùng vận tốc.
 
@@ -259,7 +259,7 @@ Toàn bộ lực ấy, tức trọng lượng ép làm nén đoạn $EG$, tỷ l
 
 $$
 \frac{PO\cdot A}{V^2}.
-\]
+$$
 
 Thời gian để những vật thể bằng nhau đi qua những không gian bằng nhau tỷ lệ nghịch với căn bậc hai của lực. Do đó thời gian một dao động do lực đàn hồi tạo ra tỷ lệ với thời gian dao động của con lắc dài $A$ theo toàn bộ tỷ lệ của $V$ với $A$.
 

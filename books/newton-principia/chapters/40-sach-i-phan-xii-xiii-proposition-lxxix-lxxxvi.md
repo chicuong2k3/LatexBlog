@@ -453,7 +453,7 @@ Nếu hạt thể $C$ nằm bên trong vật thể, lấy $CK=CG$. Phần vật 
 
 $$
 CK^{n-3}=CG^{n-3}.
-\]
+$$
 
 ### Hệ quả 1
 

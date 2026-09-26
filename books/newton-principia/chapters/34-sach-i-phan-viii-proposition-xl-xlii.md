@@ -17,7 +17,7 @@ Nếu một vật thể chịu một lực hướng tâm bất kỳ chuyển đ�
 
 Cho một vật thể rơi từ $A$ qua $D$, $E$ đến tâm $C$, và cho một vật thể khác chuyển động từ $V$ trên đường cong $VIK$.
 
-Từ tâm $C$, với các bán kính bất kỳ, dựng các đường tròn đồng tâm $DI$, $EK`, cắt $AC$ tại $D$, $E$ và đường cong $VIK$ tại $I$, $K$. Kẻ $IC$ cắt $KE$ tại $N$, hạ vuông góc $NT$ xuống $IK$. Đoạn $DE$ hoặc $IN$ giữa hai chu vi đường tròn là rất nhỏ.
+Từ tâm $C$, với các bán kính bất kỳ, dựng các đường tròn đồng tâm $DI$, $EK$, cắt $AC$ tại $D$, $E$ và đường cong $VIK$ tại $I$, $K$. Kẻ $IC$ cắt $KE$ tại $N$, hạ vuông góc $NT$ xuống $IK$. Đoạn $DE$ hoặc $IN$ giữa hai chu vi đường tròn là rất nhỏ.
 
 Giả sử hai vật thể ở $D$, $I$ có vận tốc bằng nhau. Vì $CD=CI$, các lực hướng tâm tại $D$, $I$ cũng bằng nhau. Gọi chúng là các lực $DE$, $IN$. Theo Hệ quả 2 của các Định luật Chuyển động, phân rã lực $IN$ thành $NT$ và $IT$.
 

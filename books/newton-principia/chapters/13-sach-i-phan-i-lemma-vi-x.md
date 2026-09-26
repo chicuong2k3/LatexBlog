@@ -65,9 +65,9 @@ Vì vậy, trong mọi lập luận về các tỷ số giới hạn, ta có th�
 
 Nếu một đường thẳng $AE$ và một đường cong $ABC$, cả hai đều được cho ở vị trí xác định, cắt nhau theo một góc xác định $A$; và trên đường thẳng ấy, theo những góc xác định khác, các đoạn $BD$, $CE$ lần lượt được dựng, gặp đường cong tại $B$, $C$; và các điểm $B$ và $C$ cùng tiến về điểm $A$ rồi gặp nhau, thì tôi nói diện tích của các tam giác $ABD$, $ACE$ cuối cùng sẽ có tỷ lệ bậc hai của các cạnh.
 
-Trong khi $B$, $C$ tiến về $A$, hãy luôn giả sử $AD$ được kéo dài đến những điểm ở xa $d$ và $e$, sao cho $Ad$, $Ae$ tỉ lệ với $AD$, $AE$; và kẻ các đoạn $db$, $ec$ song song với các đoạn $DB$, $EC`, cắt các đường $AB$ và $AC$ kéo dài tại $b$ và $c$.
+Trong khi $B$, $C$ tiến về $A$, hãy luôn giả sử $AD$ được kéo dài đến những điểm ở xa $d$ và $e$, sao cho $Ad$, $Ae$ tỉ lệ với $AD$, $AE$; và kẻ các đoạn $db$, $ec$ song song với các đoạn $DB$, $EC$, cắt các đường $AB$ và $AC$ kéo dài tại $b$ và $c$.
 
-Hãy luôn để các đường cong $Abe$ và $ABC$ đồng dạng, và kẻ đường thẳng $Ag$ tiếp xúc với cả hai đường cong tại $A$, cắt các đoạn $DB$, $EC$, $db$, $ec$ tại $F$, $G$, $f$, $g$. Khi giữ độ dài $Ae$ không đổi và cho $B$, $C$ gặp nhau tại $A$, góc $cAg$ biến mất; các diện tích cong $ABf$, $Ace$ sẽ trùng với các diện tích thẳng $Abf$, $Age`, và do đó, theo Lemma V, chúng sẽ có tỷ lệ bậc hai của các cạnh $Ad$, $Ae$.
+Hãy luôn để các đường cong $Abe$ và $ABC$ đồng dạng, và kẻ đường thẳng $Ag$ tiếp xúc với cả hai đường cong tại $A$, cắt các đoạn $DB$, $EC$, $db$, $ec$ tại $F$, $G$, $f$, $g$. Khi giữ độ dài $Ae$ không đổi và cho $B$, $C$ gặp nhau tại $A$, góc $cAg$ biến mất; các diện tích cong $ABf$, $Ace$ sẽ trùng với các diện tích thẳng $Abf$, $Age$, và do đó, theo Lemma V, chúng sẽ có tỷ lệ bậc hai của các cạnh $Ad$, $Ae$.
 
 Nhưng diện tích $ABD$, $ACE$ luôn tỉ lệ với những diện tích này; và do đó các cạnh $AD$, $AE$ cũng tỉ lệ với những cạnh ấy. Vì vậy, diện tích $ABD$, $ACE$ cuối cùng có tỷ lệ bậc hai của các cạnh $AD$, $AE$.
 

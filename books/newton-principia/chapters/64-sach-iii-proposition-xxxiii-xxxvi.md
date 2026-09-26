@@ -259,7 +259,7 @@ hay với chu vi $QAqa$ nhân với
 
 $$
 AZ\cdot TZ\cdot\frac{Pp}{2Mp\cdot AT^2}.
-\]
+$$
 
 ### Hệ quả 3
 

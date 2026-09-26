@@ -334,7 +334,7 @@ là chuyển động của Mặt Trời trong khoảng giữa hai lần hội t�
 
 $$
 19^\circ18'1''23'''.
-\]
+$$
 
 Đây là chuyển động trung bình của node trong năm sao. Theo các bảng thiên văn, nó là
 

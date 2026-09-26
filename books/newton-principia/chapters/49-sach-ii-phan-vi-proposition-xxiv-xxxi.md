@@ -528,7 +528,7 @@ Do đó lực cản, vốn tỷ lệ với $AV+CV^2$, trở thành tỷ lệ v�
 
 $$
 13\frac56 AV+48\frac34 CV^2.
-\]
+$$
 
 Trong trường hợp cột thứ tư, nơi vận tốc là $1$, toàn bộ lực cản tỷ lệ với phần tỷ lệ với bình phương vận tốc như
 
@@ -536,7 +536,7 @@ $$
 13\frac56+48\frac34
 \quad\text{với}\quad
 48\frac34.
-\]
+$$
 
 Vì vậy lực cản của con lắc trong nước tỷ lệ với phần lực cản trong không khí tỷ lệ với bình phương vận tốc, và phần ấy là phần duy nhất đáng xét đối với vật thể chuyển động nhanh, như $571$ với $1$. Nếu toàn bộ sợi dây của con lắc dao động trong nước cũng chìm hoàn toàn trong nước, lực cản của nó sẽ còn lớn hơn. Vì vậy lực cản của con lắc dao động trong nước, tức phần tỷ lệ với bình phương vận tốc và chỉ cần xét đối với vật thể chuyển động nhanh, tỷ lệ với lực cản của toàn bộ con lắc ấy dao động trong không khí với cùng vận tốc như khoảng $850$ với $1$, tức gần như tỷ lệ giữa mật độ nước và mật độ không khí.
 

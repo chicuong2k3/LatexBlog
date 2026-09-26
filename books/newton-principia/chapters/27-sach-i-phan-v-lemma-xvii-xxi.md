@@ -69,7 +69,7 @@ Giả sử bốn đường $PQ$, $PR$, $PS$, $PT$ không song song với các c�
 Vì các góc của các tam giác $PQq$, $PRr$, $PSs$, $PTt$ đã cho, các tỷ số
 $$
 PQ:Pq,\quad PR:Pr,\quad PS:Ps,\quad PT:Pt
-\]
+$$
 đều đã cho. Vì vậy, các tỷ số tạo thành
 $$
 PQ \times PR : Pq \times Pr
@@ -77,7 +77,7 @@ $$
 và
 $$
 PS \times PT : Ps \times Pt
-\]
+$$
 đều đã cho.
 
 Theo những điều đã chứng minh, tỷ số
@@ -250,7 +250,7 @@ Một hình cắt conh không thể cắt một hình cắt conh khác tại nhi
 Nếu điều ấy có thể, cho hai hình cắt conic đi qua năm điểm $A$, $B$, $C$, $P$, $O$. Cho $BD$ cắt chúng tại $D$, $d$, và cho $Cd$ cắt $PQ$ tại $q$. Khi ấy
 $$
 PR:PT = Pq:PT,
-\]
+$$
 nên $PR = Pq$, trái với giả thiết.
 
 > **[Ghi chú hiện đại]**
@@ -271,7 +271,7 @@ Trên $MN$, cho một điểm $N$ cố định. Khi điểm di động $M$ rơi 
 $$
 \angle BPT = \angle BNM,\qquad
 \angle CPR = \angle CNM.
-\]
+$$
 
 Vì $\angle MBD = \angle NBP$ và các góc tương ứng bằng nhau, sau khi bỏ các góc chung, ta có
 $$

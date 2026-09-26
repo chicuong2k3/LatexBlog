@@ -61,7 +61,7 @@ khi đó không gian mô tả gần như bằng
 
 $$
 1,3362943611F\frac{P}{G}.
-\]
+$$
 
 Những điều này xuất hiện từ Proposition IX, Sách II và các hệ quả của nó, với giả thiết rằng quả cầu chỉ gặp lực cản phát sinh từ tính quán tính của vật chất.
 

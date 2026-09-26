@@ -82,7 +82,7 @@ $$
 \sin(u+\lambda-\Omega)
 =\cot\frac i2\,\tan\beta\,\cos u.
 \end{aligned}
-\]
+$$
 
 Góc \(u-\lambda+\Omega\), khi \(i<90^\circ\), hoặc \(u+\lambda-\Omega\), khi \(i>90^\circ\), theo cách nói thông thường được gọi là đã quy về elip, chính là hiệu giữa kinh độ heliocentric \(\lambda\) và kinh độ trên quỹ đạo theo cách nói ấy là \(\Omega\pm u\), còn theo cách nói của ta là \(\Omega+u\). Khi độ nghiêng nhỏ hoặc chỉ khác \(180^\circ\) một chút, sự quy đổi này có thể xem là một đại lượng bậc hai. Trong trường hợp ấy, nên tính \(\beta\) trước theo công thức III, rồi tính \(\lambda\) theo công thức VII hoặc X; nhờ vậy có thể đạt độ chính xác lớn hơn so với việc dùng công thức I.
 
@@ -927,7 +927,7 @@ bằng cách đặt
 
 $$
 \frac{R'}{r'}=\tan\zeta.
-\]
+$$
 
 Khi ấy
 

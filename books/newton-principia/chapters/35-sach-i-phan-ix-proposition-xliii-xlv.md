@@ -37,7 +37,7 @@ Theo Hệ quả 5, từ đó tìm được quỹ đạo và chuyển động c�
 
 Hiệu của các lực làm cho hai vật thể chuyển động tương đương, một vật thể trong quỹ đạo đứng yên, vật thể kia trong cùng quỹ đạo đang quay, tỷ lệ nghịch với lập phương các độ cao chung.
 
-Cho các phần $VP$, $PK$ của quỹ đạo đứng yên tương tự và bằng các phần $vp$, $pk$ của quỹ đạo đang quay. Giả sử khoảng cách giữa $P$, $K\) rất nhỏ.
+Cho các phần $VP$, $PK$ của quỹ đạo đứng yên tương tự và bằng các phần $vp$, $pk$ của quỹ đạo đang quay. Giả sử khoảng cách giữa $P$, $K$ rất nhỏ.
 
 Hạ vuông góc $kr$ từ $k$ xuống $pC$, kéo dài đến $m$ sao cho
 $$

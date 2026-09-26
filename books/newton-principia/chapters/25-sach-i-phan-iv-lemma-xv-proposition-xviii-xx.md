@@ -98,7 +98,7 @@ Trên đường kính $Kk$ dựng đường tròn cắt $OH$ tại $H$. Với ti
 Chia đôi $Kk$ tại $X$, nối $HX$, $HS$, $HV$, $Hv$. Vì
 $$
 VK:KS = Vk:Sk,
-\]
+$$
 theo cách cộng và chia tỷ số, các tam giác $VXH$, $HXS$ đồng dạng. Do đó
 $$
 VH:SH = VX:XH = VK:KS.

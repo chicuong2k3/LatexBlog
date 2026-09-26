@@ -269,11 +269,11 @@ $$
 Do đó,
 $$
 AC:AO = CP:BQ.
-\]
+$$
 Vì vậy, vận tốc ấy tỷ lệ theo căn bậc hai của
 $$
 \frac{AC\cdot SP}{AO\cdot SY^2}.
-\]
+$$
 
 Cho bề rộng $GV$ của hình $RPB$ giảm vô hạn, để $P$ trùng $C$, $S$ trùng $B$, $SP$ trùng $BC$, và $SY$ trùng $BQ$. Vận tốc của vật thể lúc rơi vuông góc trên $CB$ tỷ lệ với vận tốc của vật thể mô tả đường tròn quanh $B$ tại $BC$, theo căn bậc hai của
 $$

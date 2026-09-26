@@ -172,7 +172,7 @@ $$
 Suy ra thời gian thứ nhất so với thời gian cuối bằng
 $$
 (2PD\cdot DL):DLme.
-\]
+$$
 
 > **[Ghi chú hiện đại]**
 >

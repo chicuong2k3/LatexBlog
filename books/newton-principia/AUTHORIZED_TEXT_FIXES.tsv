@@ -3,6 +3,13 @@
 # Định dạng: file<TAB>chuỗi_cũ<TAB>chuỗi_mới, phân cách bằng tab thật.
 # tools/check_book_callouts.py --fidelity đọc file này để biết sửa đổi nào hợp lệ.
 # Không khai báo thì checker báo lỗi. Đó là chủ ý.
+chapters/01-dinh-nghia.md	Lượng vật chất là đại lượng đo mức độ của nó, phát sinh từ mật độ và thể tích của nó cùng nhau.	Lượng vật chất là thước đo của chính lượng vật chất ấy, phát sinh từ mật độ và thể tích của nó cùng nhau.
+chapters/01-dinh-nghia.md	đối với tuyết, bụi mịn hoặc bột, khi chúng bị nén lại hoặc hóa lỏng	đối với tuyết và các loại bột, khi chúng bị nén lại hoặc hóa lỏng
+chapters/01-dinh-nghia.md	Chuyển động của toàn thể là tổng của các chuyển động của mọi bộ phận. Vì vậy, trong một vật thể có lượng vật chất gấp đôi và cùng vận tốc, chuyển động cũng gấp đôi; nếu vận tốc gấp đôi, chuyển động gấp bốn.	Chuyển động của toàn thể là tổng các chuyển động của từng bộ phận; vì vậy, với một vật thể có lượng vật chất gấp đôi, nếu vận tốc bằng nhau thì lượng chuyển động gấp đôi, còn nếu vận tốc cũng gấp đôi thì lượng chuyển động gấp bốn.
+chapters/01-dinh-nghia.md	Lượng chuyển động là đại lượng đo mức độ của nó, phát sinh từ vận tốc và lượng vật chất cùng nhau.	Lượng chuyển động là thước đo của chính nó, phát sinh từ vận tốc và lượng vật chất cùng nhau.
+chapters/01-dinh-nghia.md	Lượng tuyệt đối của một lực hướng tâm là đại lượng đo mức độ của lực ấy, tỉ lệ với hiệu lực của nguyên nhân truyền nó ra từ tâm, qua những khoảng không gian xung quanh.	Lượng tuyệt đối của một lực hướng tâm là thước đo của chính nó, tỉ lệ với hiệu lực của nguyên nhân truyền nó ra từ tâm, qua những khoảng không gian xung quanh.
+chapters/01-dinh-nghia.md	Lượng gia tốc của một lực hướng tâm là đại lượng đo mức độ của lực ấy, tỉ lệ với vận tốc mà nó sinh ra trong một thời gian đã cho.	Lượng gia tốc của một lực hướng tâm là thước đo của chính nó, tỉ lệ với vận tốc mà nó sinh ra trong một thời gian đã cho.
+chapters/01-dinh-nghia.md	Lượng động của một lực hướng tâm là đại lượng đo mức độ của lực ấy, tỉ lệ với chuyển động mà nó sinh ra trong một thời gian đã cho.	Lượng động của một lực hướng tâm là thước đo của chính nó, tỉ lệ với chuyển động mà nó sinh ra trong một thời gian đã cho.
 chapters/02-dinh-luat-van-dong.md	sao chổm	sao chổi
 chapters/65-sach-iii-proposition-xxxvii-xl.md	hành tình	hành tinh
 chapters/66-sach-iii-lemma-v-xi-proposition-xli.md	hành tình	hành tinh

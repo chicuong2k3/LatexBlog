@@ -37,7 +37,7 @@ Vì vậy, cùng định luật ấy cũng đúng với một hệ thống gồm
 
 > **[Ghi chú hiện đại]**
 >
-> **Khái niệm tương ứng.** "Trọng tâm chung" của Newton là **tâm khối**, nhưng bản dịch dùng cùng một thuật ngữ cho hai khái niệm khác nhau. Tâm khối định nghĩa bằng **khối lượng**; tâm trọng lực định nghĩa bằng **trọng lượng**. Chúng chỉ trùng nhau khi trọng lực đều trên toàn bộ vật thể. Newton được phép giả thiết điều đó với vật thể nhỏ, nhưng chính ông sẽ chứng minh ở Sách III rằng trọng lực thay đổi theo khoảng cách và theo vị trí, nên ở đó hai tâm ấy tách ra.
+> **Khái niệm tương ứng.** "Trọng tâm chung" của Newton là **tâm khối**. Tuy nhiên từ này ở ông gộp cả hai khái niệm mà vật lí hôm nay tách bạch: tâm khối định nghĩa bằng **khối lượng**, tâm trọng lực định nghĩa bằng **trọng lượng**. Chúng chỉ trùng nhau khi trọng lực đều trên toàn bộ vật thể. Newton được phép giả thiết điều đó với vật thể nhỏ, nhưng chính ông sẽ chứng minh ở Sách III rằng trọng lực thay đổi theo khoảng cách và theo vị trí, nên ở đó hai tâm ấy tách ra.
 >
 > **Công thức.** Cách chia đoạn nối hai tâm mà Newton gọi là "tỉ lệ nghịch với các vật thể" chính là công thức tâm khối: $\dfrac{d_1}{d_2} = \dfrac{m_2}{m_1}$. Kiểm tra: hai vật thể có khối lượng $2$ và $6$ cách nhau $8$ đơn vị, tâm khối nằm cách vật thể thứ nhất $6$ và cách vật thể thứ hai $2$, vì $6 : 2 = 3$ đúng bằng tỉ lệ nghịch của hai khối lượng. Dạng đầy đủ là $\vec{r}_{CM} = \dfrac{\sum_i m_i \vec{r}_i}{M}$ và $M\vec{a}_{CM} = \sum_i \vec{F}_{ext,i}$.
 >

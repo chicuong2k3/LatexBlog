@@ -176,7 +176,7 @@ Trọng lực giảm khi đi từ bề mặt Trái Đất ra ngoài theo bình p
 >
 > **Công thức.** Với bán kính đường tròn sinh cycloid là $a$ và gia tốc trọng trường $g$, chu kỳ là $T = 2\pi\sqrt{\dfrac{a}{g}}$. Chu kỳ ấy tỷ lệ căn bậc hai với độ dài dây, đúng như con lắc đơn, nhưng **không phụ thuộc biên độ** — đó là toàn bộ giá trị của nó. Cơ chế bên trong là bán kính quả cầu, khiến lực hướng tâm tỷ lệ thuận với khoảng cách, đúng lực cần cho dao động điều hòa.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang ở trong Phần X, nơi lực tỷ lệ với khoảng cách vừa được chứng minh cho quỹ đạo elip đồng tâm, nên ông nhận ra ngay rằng lực ấy tạo ra dao động đẳng kỳ, rồi tìm ra đường cong khiến nó thành hiện thực. Hệ quả 2 ghi công đúng chỗ: bản dịch nói rõ đây là việc Wren và Huygens đã phát hiện, và Huygens đã dùng nó để chế tạo đồng hồ quản lắc.
+> **Vì sao Newton viết như vậy.** Vì ông đang ở trong Phần X, nơi lực tỷ lệ với khoảng cách vừa được chứng minh cho quỹ đạo elip đồng tâm, nên ông nhận ra ngay rằng lực ấy tạo ra dao động đẳng kỳ, rồi tìm ra đường cong khiến nó thành hiện thực. Hệ quả 2 ghi công đúng chỗ: đây là việc Wren và Huygens đã phát hiện, và Huygens đã dùng nó để chế tạo đồng hồ quản lắc.
 >
 > **Hiện nay thì sao.** Nhận xét cuối chương về hầm mỏ là một quan sát địa chấn thật: bên trong Trái Đất, trọng lực **tăng** tuyến tính theo độ sâu nếu mật độ đều, và chính vì thế một quả lắc trong hầm sâu có chu kỳ khác hẳn ở mặt đất — hiện tượng được dùng để đo mật độ bên trong hành tinh. Còn tính đẳng thời gian của cycloid thì vẫn sống trong kỹ thuật gia tốc hạt: trong máy gia tốc đồng bộ, các đoạn nam châm uốn cong được nối bằng đường cong cycloid chính là để giữ chu kỳ dao động dọc khớp với chu kỳ quay, tránh mất hạt.
 

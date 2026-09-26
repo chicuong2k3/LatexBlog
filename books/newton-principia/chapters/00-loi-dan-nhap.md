@@ -496,7 +496,7 @@ Cây táo nổi tiếng, được nói rằng một quả rơi xuống đã khi�
 >
 > **Hiện nay thì sao.** Câu chuyện có thật ở chỗ Newton tự kể, nhưng chi tiết phổ biến thì không có: không tồn tại ghi chép nào về một cái đầu bị quả táo đập, và cảnh báo thường gán cho *Principia* là một sự sắp xếp hậu nghiệm. Sẵn có Archimedes, Galileo, Descartes và Robert Hooke đã nghĩ về phạm vi của trọng lực trước đó, và chính Hooke mới là người nói với Newton rằng lực hấp dẫn có thể lan tới khoảng cách xa. Cũng nên nhớ câu Newton thường được trích: mình giỏi vì đứng trên vai người lớn tuổi hơn. Cây táo sau đó bị gió đổ, thân cây được giữ lại thành một chiếc ghế, và các đoạn ghép từ cây gốc vẫn được nhân giống ở khắp nơi.
 >
-> **Lưu ý nguồn gốc.** Câu này dịch đúng nguyên văn bản 1846, nên không phải lỗi dịch. Chỗ lệch nằm ở dữ kiện lịch sử: Newton viết năm 1727 rằng cây bị gió phá từ "khoảng hai mươi năm trước", tức quanh 1707, còn mốc thường được viện dẫn cho vụ đổ cây là khoảng năm 1900.
+> **Lưu ý nguồn gốc.** Newton viết năm 1727 rằng cây bị gió phá từ "khoảng hai mươi năm trước", tức quanh 1707, trong khi mốc thường được viện dẫn cho vụ đổ cây là khoảng năm 1900.
 
 Thiên nhiên và những quy luật của Thiên nhiên ẩn giấu trong đêm,
 Chúa nói: “Hãy để Newton tồn tại,” và tất cả hóa ra sáng.

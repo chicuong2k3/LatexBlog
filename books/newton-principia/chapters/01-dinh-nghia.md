@@ -9,9 +9,9 @@ number: 1
 
 ## Định nghĩa I. Lượng vật chất
 
-Lượng vật chất là đại lượng đo mức độ của nó, phát sinh từ mật độ và thể tích của nó cùng nhau.
+Lượng vật chất là thước đo của chính lượng vật chất ấy, phát sinh từ mật độ và thể tích của nó cùng nhau.
 
-Vì vậy, không khí có mật độ gấp đôi và chiếm một thể tích gấp đôi thì lượng vật chất của nó gấp bốn; nếu chiếm một thể tích gấp ba thì lượng vật chất gấp sáu. Điều này cũng cần được hiểu theo cách tương tự đối với tuyết, bụi mịn hoặc bột, khi chúng bị nén lại hoặc hóa lỏng; và cũng đối với mọi vật thể mà vì bất kỳ nguyên nhân nào chúng bị nén lại ở những mức độ khác nhau.
+Vì vậy, không khí có mật độ gấp đôi và chiếm một thể tích gấp đôi thì lượng vật chất của nó gấp bốn; nếu chiếm một thể tích gấp ba thì lượng vật chất gấp sáu. Điều này cũng cần được hiểu theo cách tương tự đối với tuyết và các loại bột, khi chúng bị nén lại hoặc hóa lỏng; và cũng đối với mọi vật thể mà vì bất kỳ nguyên nhân nào chúng bị nén lại ở những mức độ khác nhau.
 
 Ở đây tôi không xét đến một môi trường trung gian, nếu có một môi trường như vậy, tự do khuếch tán trong các kẽ giữa các phần của vật thể. Lượng mà tôi đang nói đến ở đây chính là lượng mà từ nay trở đi, tôi sẽ gọi bằng tên là **vật thể** hoặc **khối lượng**.
 
@@ -19,31 +19,41 @@ Lượng ấy cũng được biết đến qua trọng lượng của mỗi vậ
 
 > **[Ghi chú hiện đại]**
 >
-> **Khái niệm tương ứng.** `quantitas materiae` hôm nay gọi là khối lượng. Định nghĩa hiện đại đo khối lượng bằng thao tác chứ không bằng mật độ: $m = F/a$ — đo lực và gia tốc của một vật thể rồi suy ra khối lượng. Từ 2019, lựa chọn kilogram trong Hệ đơn vị quốc tế cũng định nghĩa bằng hằng số Planck, không còn dựa vào một vật thể bằng vật liệu.
+> **Khái niệm tương ứng.** `quantitas materiae` hôm nay gọi là khối lượng. Định nghĩa hiện đại đo khối lượng bằng thao tác chứ không bằng mật độ: $m = F/a$ — đo lực và gia tốc rồi suy ra khối lượng. Từ 2019, kilogram trong Hệ đơn vị quốc tế cũng định nghĩa bằng hằng số Planck, không còn dựa vào một vật thể bằng vật liệu.
 >
-> **Công thức.** Ý của Newton là $m = \rho V$. Với $\rho = 14{,}8\ \mathrm{kg/L}$ và $V = 6\ \mathrm{L}$ thì $m = 88{,}8\ \mathrm{kg}$; với $\rho' = 2\rho$ và $V' = 2V$ thì $m' = 4m$, đúng như ông nói. Còn khi nén, $\rho' = 2\rho$ và $V' = V/2$ thì $m' = (2\rho)(V/2) = m$: mật độ tăng, thể tích giảm, khối lượng giữ nguyên. Ông đang bảo công thức phải chịu được vật thể bị nén, chứ không nói nén sinh thêm vật chất.
+> **Công thức.** Ý của Newton là $m = \rho V$. Với $\rho' = 2\rho$ và $V' = 2V$ thì $m' = 4m$, đúng như ông nói. Còn khi nén, $\rho' = 2\rho$ và $V' = V/2$ thì $m' = (2\rho)(V/2) = m$: mật độ tăng, thể tích giảm, khối lượng giữ nguyên. Ông đang bảo công thức phải chịu được vật thể bị nén, chứ không nói nén sinh thêm vật chất.
 >
-> **Vì sao Newton viết như vậy.** Câu đầu có vấn đề logic thật: mật độ cũng được định nghĩa bằng khối lượng, $\rho = m/V$, nên $m = \rho V$ chỉ là vòng tròn nếu đọc theo sách giáo khoa. Newton chưa có khái niệm mật độ theo nghĩa vật lí hiện đại, nên dùng nó như một đại lượng hiển nhiên: ông đang lần đầu tách lượng vật chất khỏi kích thước hình học, chứ chưa định nghĩa nó theo cách đo trực tiếp. Câu về môi trường trung gian khuếch tán trong các kẽ là loại trừ có chủ đích: ông gọi vật thể là gồm các phần mà không tính chất lỏng hay khí nằm trong kẽ. Năm 1687 chưa có nguyên tử hay trường, và dành riêng một câu để loại chỗ này cho thấy ông đã biết vật thể thực tế không đặc.
+> **Vì sao Newton viết như vậy.** Đọc theo định nghĩa hiện đại $\rho = m/V$ thì $m = \rho V$ có vẻ vòng tròn, nhưng đó không phải cách Newton dựng các đại lượng này: mật độ thời đó được đo bằng *specific gravity*, tỉ số với vật liệu tham chiếu, nên độc lập với khối lượng. Định nghĩa I vì thế là quy tắc quy định thước đo cho lượng vật chất từ mật độ và thể tích, hơn là định nghĩa operational theo nghĩa sách giáo khoa — nhận xét của Cohen. Câu loại trừ môi trường trung gian khuếch tán trong các kẽ là có chủ đích: vật thể gồm các phần không tính chất lỏng hay khí nằm trong kẽ. Ý tưởng nguyên tử đã có từ lâu trước Newton, và lý thuyết corpuscular giữ vai trò lớn trong vật lí thế kỷ XVII; cái thời đó còn thiếu là khung trường theo nghĩa Maxwell.
 >
-> Cả câu cuối cùng là chỗ đáng nghi nhất. Ta có $W = mg$, nên nếu $g$ không đổi thì $W \propto m$: vật $10\ \mathrm{kg}$ có trọng lượng $\approx 98{,}1\ \mathrm{N}$ ở Trái Đất ($g \approx 9{,}81\ \mathrm{m/s^2}$) và $\approx 16{,}2\ \mathrm{N}$ ở Mặt Trăng ($g \approx 1{,}62\ \mathrm{m/s^2}$), còn khối lượng vẫn là $10\ \mathrm{kg}$. Newton nói chúng tỉ lệ chứ không nói chúng là một. Thí nghiệm con lắc ông viện dẫn chỉ đo được tỉ lệ ấy khi $g$ không đổi, nên không chứng minh cho một khối lượng bất biến — dù đo qua trọng lượng vẫn hợp lý về mặt thực hành, vì phần lớn cơ học thế kỷ XVII đều đo vậy.
+> **Hiện nay thì sao.** Câu cuối cùng là mấu chốt: lượng vật chất luôn biết được qua trọng lượng của mỗi vật thể. Newton nói chúng *tỉ lệ*, không nói chúng là một. Thí nghiệm con lắc ông dẫn ở đây, và các thí nghiệm con lắc về sau, nhắm vào đúng quan hệ giữa lượng vật chất, trọng lượng và chu kỳ dao động. Bằng ký hiệu ngày nay, đó là khối lượng quán tính và khối lượng hấp dẫn tỷ lệ với nhau:
 >
-> Nhưng ngay sau đây ông định nghĩa lực quán tính cũng tỉ lệ với khối lượng. Từ hai chỗ ấy hình thành hai khái niệm hiện đại: khối lượng quán tính $F = m_i a$ và khối lượng hấp dẫn $F = m_g g$. Thực nghiệm xác nhận chúng bằng nhau tới độ chính xác rất cao, và chính mối quan hệ đó là một trong những ngõ ngách dẫn tới Einstein.
+> $$m_i \propto m_g$$
+>
+> Phần quán tính xuất hiện trong $F = m_i a$; lực hấp dẫn ở gần mặt đất là $F_g = m_g g$, tổng quát là $F_g = \dfrac{GMm_g}{r^2}$. Mọi vật liệu đều quy đổi giữa hai phần ấy theo cùng một tỉ số, và thực nghiệm xác nhận điều đó tới độ chính xác rất cao — một ngõ ngách dẫn tới Einstein. Một vật $10\ \mathrm{kg}$ nặng $\approx 98{,}1\ \mathrm{N}$ ở Trái Đất ($g \approx 9{,}81\ \mathrm{m/s^2}$) nhưng $\approx 16{,}2\ \mathrm{N}$ ở Mặt Trăng ($g \approx 1{,}62\ \mathrm{m/s^2}$), còn khối lượng không đổi: thứ tỉ lệ theo vị trí là tỉ số giữa hai loại khối lượng, không phải giữa trọng lượng và khối lượng.
 
 ## Định nghĩa II. Lượng chuyển động
 
-Lượng chuyển động là đại lượng đo mức độ của nó, phát sinh từ vận tốc và lượng vật chất cùng nhau.
+Lượng chuyển động là thước đo của chính nó, phát sinh từ vận tốc và lượng vật chất cùng nhau.
 
-Chuyển động của toàn thể là tổng của các chuyển động của mọi bộ phận. Vì vậy, trong một vật thể có lượng vật chất gấp đôi và cùng vận tốc, chuyển động cũng gấp đôi; nếu vận tốc gấp đôi, chuyển động gấp bốn.
+Chuyển động của toàn thể là tổng các chuyển động của từng bộ phận; vì vậy, với một vật thể có lượng vật chất gấp đôi, nếu vận tốc bằng nhau thì lượng chuyển động gấp đôi, còn nếu vận tốc cũng gấp đôi thì lượng chuyển động gấp bốn.
 
 > **[Ghi chú hiện đại]**
 >
-> **Khái niệm tương ứng.** `quantitas motus` hôm nay gọi là động lượng, ký hiệu $\vec{p} = m\vec{v}$. Newton chọn tích $mv$ vì đó là đại lượng cộng được: chuyển động của cả một hệ vật thể bằng tổng chuyển động của các bộ phận, đúng như câu thứ hai của định nghĩa.
+> **Khái niệm tương ứng.** `quantitas motus` hôm nay gọi là động lượng, ký hiệu $\vec{p} = m\vec{v}$. Theo định nghĩa của Newton, lượng chuyển động tỉ lệ đồng thời với lượng vật chất và vận tốc; viết bằng ký hiệu hiện đại, $p = mv$. Đại lượng này có tính cộng: lượng chuyển động của toàn hệ bằng tổng lượng chuyển động của các bộ phận, đúng câu thứ hai của định nghĩa.
 >
-> **Công thức.** Phép thử khối lượng gấp đôi thì ra: $p' = 2m \cdot v = 2p$, khớp với lời Newton. Còn phép thử vận tốc gấp đôi thì không khớp: với $m$ cố định, $v \to 2v$ chỉ làm $p$ tăng gấp đôi, chứ không phải gấp bốn. Gấp bốn chỉ đúng với $mv^2$.
+> **Công thức.** Hai trường hợp Newton nêu là:
 >
-> **Vì sao Newton viết như vậy.** Câu "nếu vận tốc gấp đôi, chuyển động gấp bốn" là một chỗ vướng thật sự trong văn bản, và người đọc hôm nay không nên lách qua nó. Cả ba định luật sau đây đều dùng chuyển động đúng theo nghĩa $mv$: định luật II nói lực tỉ lệ với tốc độ biến thiên của nó, và định luật I nói chuyển động được giữ nguyên khi không có lực. Nếu chuyển động là $mv^2$ thì cả hai định luật ấy sẽ sai. Vậy nên bản in ở đây hoặc là một sơ suất, hoặc là dấu vết cách Newton dùng từ "chuyển động" theo nghĩa cũ hơn, gần với $mv^2$, ở đúng câu này mà không ở chỗ khác. Có thể chỉ ra mâu thuẫn, nhưng không nên vá nó bằng cách đọc bản dịch cho qua.
+> $$
+> \begin{aligned}
+> m,\ v &\Rightarrow p = mv \\
+> 2m,\ v &\Rightarrow p' = 2mv = 2p \\
+> 2m,\ 2v &\Rightarrow p' = (2m)(2v) = 4p
+> \end{aligned}
+> $$
 >
-> Một điểm nữa đáng để ý: đây là **định nghĩa**, nên nó rỗng cho tới khi các định luật chủ động dùng nó. Bảo toàn động lượng ngày nay không phải một tiên đề riêng mà là hệ quả của đối xứng theo phép tịnh tiến không gian, theo cách Noether lập ra năm 1918. Với vận tốc gần tốc độ ánh sáng, $\vec{p} = \gamma m\vec{v}$ với $\gamma = 1/\sqrt{1 - v^2/c^2}$, nên ở tốc độ lớn $\vec{p}$ không còn tỉ lệ với $\vec{v}$.
+> **Vì sao Newton viết như vậy.** Câu đầu đòi hỏi một điều then chốt: lượng chuyển động phải **cộng được** trên các bộ phận, vì cả khung cản của ông dựng trên việc gom vật thể về một điểm rồi cộng lại. Tích của lượng vật chất và vận tốc thoả điều kiện đó. Đây cũng là lý do cả ba định luật ngay sau đây đều viết bằng lượng chuyển động: định luật I nói nó được giữ nguyên khi không có lực, định luật II nói lực tỉ lệ với tốc độ biến thiên của nó. Ông chọn phép đo này giữa một cuộc tranh cãi chưa dứt về cách đo "lượng" của chuyển động: phe Cartesian đếm bậc hai, còn Leibniz bảo vệ phép đo bậc nhất.
+>
+> **Hiện nay thì sao.** Trong cơ học Lagrange và Hamilton, định lý Noether năm 1918 suy ra từ đối xứng tịnh tiến không gian rằng động lượng được bảo toàn. Đó là cách nhìn hiện đại, ra đời rất lâu sau Newton, chứ không phải logic ông đang dùng. Với vận tốc gần tốc độ ánh sáng thì $\vec{p} = \gamma m\vec{v}$ với $\gamma = 1/\sqrt{1 - v^2/c^2}$, nên ở tốc độ lớn $\vec{p}$ không còn tỉ lệ với $\vec{v}$.
 
 ## Định nghĩa III. Lực nội tại và lực quán tính
 
@@ -129,7 +139,7 @@ Lượng của một lực hướng tâm bất kỳ có thể được xét theo
 
 ## Định nghĩa VI. Lượng tuyệt đối của lực hướng tâm
 
-Lượng tuyệt đối của một lực hướng tâm là đại lượng đo mức độ của lực ấy, tỉ lệ với hiệu lực của nguyên nhân truyền nó ra từ tâm, qua những khoảng không gian xung quanh.
+Lượng tuyệt đối của một lực hướng tâm là thước đo của chính nó, tỉ lệ với hiệu lực của nguyên nhân truyền nó ra từ tâm, qua những khoảng không gian xung quanh.
 
 Vì vậy, lực từ của một viên đá nam châm mạnh hơn ở viên này và yếu hơn ở viên khác, tùy theo kích thước và cường độ của chúng.
 
@@ -143,7 +153,7 @@ Vì vậy, lực từ của một viên đá nam châm mạnh hơn ở viên nà
 
 ## Định nghĩa VII. Lượng gia tốc của lực hướng tâm
 
-Lượng gia tốc của một lực hướng tâm là đại lượng đo mức độ của lực ấy, tỉ lệ với vận tốc mà nó sinh ra trong một thời gian đã cho.
+Lượng gia tốc của một lực hướng tâm là thước đo của chính nó, tỉ lệ với vận tốc mà nó sinh ra trong một thời gian đã cho.
 
 Vì vậy, lực của cùng một viên đá nam châm mạnh hơn ở khoảng cách gần hơn và yếu hơn ở khoảng cách xa hơn. Lực hấp dẫn cũng mạnh hơn trong thung lũng và yếu hơn ở đỉnh những ngọn núi cao; và, như sẽ chứng minh sau, lực ấy còn yếu hơn ở những khoảng cách lớn hơn so với thân Trái Đất, nhưng ở những khoảng cách bằng nhau thì nó như nhau ở mọi nơi, bởi vì, nếu loại bỏ hoặc tính đến sức cản của không khí, nó làm mọi vật thể rơi tăng tốc như nhau, dù chúng nặng hay nhẹ, lớn hay nhỏ.
 
@@ -161,7 +171,7 @@ Vì vậy, lực của cùng một viên đá nam châm mạnh hơn ở khoảng
 
 ## Định nghĩa VIII. Lượng động của lực hướng tâm
 
-Lượng động của một lực hướng tâm là đại lượng đo mức độ của lực ấy, tỉ lệ với chuyển động mà nó sinh ra trong một thời gian đã cho.
+Lượng động của một lực hướng tâm là thước đo của chính nó, tỉ lệ với chuyển động mà nó sinh ra trong một thời gian đã cho.
 
 Vì vậy, trọng lượng lớn hơn ở một vật thể lớn hơn và nhỏ hơn ở một vật thể nhỏ hơn; và, trong cùng một vật thể, trọng lượng lớn hơn ở gần Trái Đất và nhỏ hơn ở những khoảng cách xa hơn.
 

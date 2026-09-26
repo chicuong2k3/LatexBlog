@@ -773,8 +773,6 @@ Việc chúng chuyển động trong các quỹ đạo gần parabol được su
 > **Vì sao Newton viết như vậy.** Ông không suy ra điều này từ lý thuyết mà từ số liệu: ước lượng khoảng cách tới sao chổi từ cả thị sai lẫn hiện tượng đuôi, rồi tính ngược ra vận tốc, và thấy vận tốc ấy khớp với giá trị parabol. Ông nói rõ mình chưa từng thấy sai số nào lớn hơn sai số có thể do bản thân phép đo khoảng cách gây ra. Đó là tiêu chuẩn thử nghiệm mà người sau này vẫn dùng.
 >
 > **Hiện nay thì sao.** Kết luận ấy vẫn đúng, và ngành thiên văn xác nhận nó hàng loạt: các sao chổi chu kỳ dài có $e$ thường từ $0{,}99$ trở lên, vào hệ Mặt Trời với tốc độ thoát cũng gần đúng từ phía Mặt Trời. Chỉ có một chi tiết đã đổi: Newton lẽ ra chỉ có thể nêu ba giả thuyết, còn ngày nay ta biết chúng đến từ đám mây Oort, lớp băng đá ở rìa hệ Mặt Trời. Còn *orbis magnus* trong Bảng I chỉ là cách đặt bán kính quỹ đạo chia làm $1000$ phần: một thiết bị số học, không phải một ranh giới vật lý.
->
-> **Lưu ý nguồn gốc.** Bản dịch ban đầu đứt dấu chấm ở câu "vận tốc của sao chổi xấp xỉ bằng.", mất chữ "cùng". Đã khôi phục theo nguyên văn bản 1846: "by my computation, the velocity of comets is found to be much about the same".
 
 <!-- Bảng I và Bảng II đã đối chiếu với ảnh scan PDF 569: khớp toàn bộ 44 số của Bảng I và 40 số của Bảng II. -->
 

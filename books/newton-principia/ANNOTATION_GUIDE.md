@@ -122,8 +122,50 @@ Mỗi callout phải trả lời được ba câu hỏi, và phải trả lời 
   cần để chỉ tỉ lệ (ví dụ $W = mg$, $g \approx 9{,}81\ \mathrm{m/s^2}$ ở Trái Đất,
   $g_{\text{Trăng}} \approx 1{,}62\ \mathrm{m/s^2}$).
 - **Vì sao Newton hiểu như vậy?** Bối cảnh triết học/khoa học thế kỷ XVII giải thích cách
-  ông định nghĩa. Chỉ ra mâu thuẫn logic thật sự nếu có (ví dụ định nghĩa I định nghĩa
-  khối lượng qua mật độ trong khi mật độ lại được định nghĩa qua khối lượng).
+  ông định nghĩa. Chỉ ra mâu thuẫn logic **thật sự**, và chỉ sau khi đã kiểm tra phép đo
+  thời đó. Định nghĩa I trông như vòng tròn nếu áp $\rho = m/V$, nhưng mật độ thời
+  Newton được đo bằng *specific gravity* — tỉ số với một vật liệu tham chiếu — nên nó
+  không lặp vòng. Một mâu thuẫn chỉ được ghi vào callout khi nó còn đứng vững sau bước
+  kiểm tra đó.
+
+### Ba lớp phải tách bạch
+
+Dễ nhất là vô tình gán khái niệm thế kỷ XIX–XX ngược trở lại cho Newton. Vì vậy mỗi
+callout phải giữ ba lớp này ở ba chỗ khác nhau, không trộn:
+
+1. **Newton thực sự nói gì** — ở nhãn *Vì sao Newton viết như vậy*. Chỉ nêu bối cảnh
+   triết học/khoa học thế kỷ XVII và lý do ông dựng khái niệm đó. **Không** phê bình
+   văn bản nguồn như một văn bản — xem mục 5bis.
+2. **Ký hiệu hiện đại tương ứng là gì** — ở nhãn *Công thức*.
+3. **Vật lí đương đại nhìn nhận nó thế nào** — ở nhãn *Hiện nay thì sao*, kèm mức độ
+   đúng/sai của Newton.
+
+Cùng một nguyên tắc này cũng quyết định lúc nào được dùng nhãn *Lưu ý nguồn gốc*:
+chỉ dùng để nêu thứ Newton thật sự **không** có. Đừng dùng nó để kể những gì đã có
+sẵn trong khoa học thời đó — các ý tưởng nguyên tử và lý thuyết corpuscular đã phổ biến
+từ lâu trước 1687, nên "thời đó chưa có nguyên tử" là sai. Trường theo nghĩa Maxwell
+thì mới thật sự chưa có.
+
+### 5bis. Ranh giới giữa sửa dịch và ghi chú
+
+Callout chỉ làm hai việc: **giải nghĩa** và **so sánh với vật lí hiện tại**. Ngoài ra
+không được làm gì cả. Cụ thể:
+
+- **Không phê bình văn bản nguồn.** Cấm bàn về cú pháp Latin, về elíp, về biến thể giữa
+  các ấn phẩm, về việc một vế có "mang theo" điều kiện của vế trước hay không. Đó là
+  việc của tầng bản dịch. Muốn giải thích nghĩa của một cấu trúc câu thì giải thích
+  **ý nghĩa** của nó, không giải thích cấu trúc.
+- **Không bàn về bản dịch tiếng Việt.** Cấm giải thích, bào chữa hoặc xin lỗi vì một
+  cách dùng từ của người dịch ("vì sao bản dịch dùng chữ 'cũng'", "không nên vá nó bằng
+  cách đọc bản dịch cho qua"). Chọn từ đúng là việc của bản dịch.
+- **Không để lại một cách hiểu sai rồi ghi chú lại thay vì sửa.** Nếu bản dịch sai,
+  sửa bản dịch. Nếu bản dịch đúng mà câu chữ gốc dễ gây hiểu nhầm, đó cũng là việc
+  của người dịch xử lý bằng cách diễn đạt lại cho đúng — không phải viết callout để
+  cảnh báo người đọc.
+- Mọi sửa đổi văn bản dịch đều phải khai trong `AUTHORIZED_TEXT_FIXES.tsv` theo mục 7.
+
+Nói cách khác: callout đừng bao giờ là nơi chứa lời xin lỗi về bản dịch. Đọc xong
+callout, người đọc phải hiểu rõ hơn về **vật lí**, không phải hiểu rõ hơn về **bản dịch**.
 
 Dùng số liệu thật, đơn vị SI, năm đo có ghi. **Không bịa** số liệu, hằng số, tên người
 hay năm. Khi không chắc về một đẳng thức, bỏ dòng công thức đó thay vì đoán.

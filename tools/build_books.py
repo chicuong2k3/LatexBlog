@@ -196,7 +196,11 @@ def build_all(
     seen_book_slugs: dict[str, Path] = {}
     sources = [
         _book_source(directory, seen_book_slugs)
-        for directory in sorted(path for path in books_dir.iterdir() if path.is_dir())
+        for directory in sorted(
+            path
+            for path in books_dir.iterdir()
+            if path.is_dir() and not path.name.startswith(".")
+        )
     ]
     out_dir.mkdir(parents=True, exist_ok=True)
     index: list[dict[str, Any]] = []

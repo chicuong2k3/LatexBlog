@@ -1084,4 +1084,23 @@ là thuật ngữ và ký hiệu chứ không phải hình vẽ; tra cứu đư�
 `CHAPTER_PLAN.json`. Chương dùng ngưỡng chung của Newton (`01` phải có 8 callout) sẽ báo sai
 cho cuốn này.
 
+### 2026-09-28 — Chương I, Phần 2 (PDF 36–38, tr. 8–10, §8–§12)
+
+Bổ sung §8–§12 vào `chapters/01-sai-lech-huu-han.md`, thêm 1 callout (tổng chương hiện có
+4, đúng hạn mức). **Chưa niêm phong**; còn §13–§33 và EXEMPLUM I–IV (PDF 39–62).
+
+**Đã soi bản scan:** PDF 36 (§8, §9), PDF 37 (§10), PDF 38 (§11, §12), và PDF 39 đã soi ở
+đợt trước (§12 nối tiếp, §13).
+
+**Chỗ đáng lưu ý:** ở §9 Euler lập luận rằng cấp số cộng "chứa đựng mọi lượng thực". Nếu
+$\omega$ là số cố định thì các giá trị $x + n\omega$ chỉ tạo thành một dãy rời rạc. Câu này
+chỉ thành lời nếu đọc $\omega$ là lượng biến thiên liên tục, đúng như Euler nói ở §4 là nó
+"tùy ý tăng lên hay giảm xuống". Đã ghi vào callout, có đánh dấu đây là suy luận của người
+viết chứ không phải phát biểu của Euler.
+
+**Còn lại trong chương, đã render sẵn ở độ đọc được:** PDF 40–46 (tr. 12–18) chứa EXEMPLUM
+II–IV và §14–§16, phần công thức dày nhất của chương. §14 có một bảng hệ số (tr. 16) và §15
+một bảng vi sai, cả hai sẽ phải dựng lại thay vì chép ảnh, giống sơ đồ ở tr. 7.
+
+
 

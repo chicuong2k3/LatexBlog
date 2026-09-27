@@ -202,4 +202,130 @@ một ít công sức, sẽ tìm ra những chuỗi sai lệch.
 > Về $\Delta^3 y$ ở §6: bản in viết `Δ³y = Δ³y¹ = Δ³y² =` &c., mà lẽ ra phải là
 > $\Delta^3 y = \Delta\Delta y^1 - \Delta\Delta y$. Giữ nguyên như in.
 
-<!-- Chưa dịch: PDF 36-62, tức trang in 8-34, gồm §8-§34 và các EXEMPLUM I-IV. -->
+<!-- PDF 36, trang in 8 -->
+
+**8.** Hãy đặt $y = x$; khi ấy $y^1 = x^1 = x + \omega$, $y^2 = x^2 = x + 2\omega$, và cứ thế.
+Khi lấy sai lệch, ta sẽ có $\Delta x = \omega$, $\Delta x^1 = \omega$, $\Delta x^2 = \omega$, &c.
+Do đó mọi differentia bậc nhất của $x$ đều là hằng, và hệ quả là mọi differentia bậc hai đều
+tan biến; cũng như vậy, mọi differentia bậc ba và của các bậc cao hơn. Vậy, vì
+$\Delta x = \omega$, nên theo cách tương tự, thay cho chữ $\omega$, ký tự $\Delta x$ được
+dùng một cách tiện lợi. Do đó, với lượng biến thiên $x$ mà các giá trị liên tiếp $x$,
+$x^1$, $x^2$, $x^3$, &c. được giả thiết lập thành một cấp số cộng, các differentia
+$\Delta x$, $\Delta x^1$, $\Delta x^2$, &c. sẽ là hằng và bằng nhau; và hệ quả là
+
+$$
+\Delta\Delta x = 0, \qquad \Delta^3 x = 0, \qquad \Delta^4 x = 0,
+$$
+
+và cứ thế.
+
+**9.** Với các giá trị của chính $x$, lần lượt được ban cho, ta ở đây giả thiết một cấp số
+cộng, sao cho differentia bậc nhất của chúng là hằng, còn differentia bậc hai và tất cả
+những bậc còn lại đều tan biến. Điều này còn tuỳ thuộc vào ý chúng ta, vì lẽ ra ta có thể
+dùng bất kỳ cấp số nào khác; dù vậy, cấp số cộng được dùng thuận lợi hơn tất cả những
+cái khác, vì nó vừa đơn giản nhất và dễ hiểu nhất, vừa — điều này mới là tối đa — vì nó
+mở ra được mọi giá trị mà $x$ nói chung có thể nhận. Quả thật, khi ban cho $\omega$ cả những
+giá trị âm lẫn dương, thì trong chuỗi giá trị của $x$ này chứa đựng mọi lượng thực có thể
+đứng ở chỗ của $x$; trái lại, nếu ta chọn một chuỗi nhân, thì sẽ không có lối nào tới các giá
+trị âm. Vì lý do đó, tính biến thiên của các functio $y$ được phán đoán chính xác nhất khi
+chúng được thiết lập từ các giá trị của $x$ theo cấp số cộng.
+
+> **[Chú giải]**
+>
+> **"Chứa đựng mọi lượng thực" — câu này chỉ đúng nếu ω hiểu được là biến**
+>
+> Euler lập luận: cấp số cộng với $\omega$ thì nhận cả giá trị âm lẽ cả dương, nên nó chạm
+> tới được mọi lượng thực, còn chuỗi nhân thì không. Lập luận ấy là lý do ông chọn cấp số
+> cộng làm bước nhảy.
+>
+> Nhưng nếu $\omega$ là một số cố định thì các giá trị $x + n\omega$ với $n$ nguyên tạo thành
+> một dãy rời rạc, không phải mọi số thực. Điều đó không thành vấn đề, vì Euler không bao giờ
+> định $\omega$; ông nói ở §4 là $\omega$ "pro arbitrio augeri diminuique queat" — tùy ý tăng
+> hay giảm. Chỉ khi đọc $\omega$ là một lượng biến thiên liên tục thì câu ấy mới thành lời.
+>
+> Điều cần chú ý về sau: chính vì $\omega$ phải tùy ý đi tới vô cùng nhỏ, thế giới hữu hạn ở
+> đây mới không bị khóa cứng. Cấp số cộng với một bước cố định sẽ không đủ cho việc đó.
+
+**10.** Vì $\Delta y = y^1 - y$, nên những sai lệch cao hơn cũng có thể được định nghĩa từ
+các hạng đầu tiên của chuỗi $y$, $y^1$, $y^2$, $y^3$, &c. Vì $\Delta y^1 = y^2 - y^1$, ta có
+
+$$
+\Delta\Delta y = y^2 - 2y^1 + y
+$$
+
+và
+
+$$
+\Delta\Delta y^1 = y^3 - 2y^2 + y^1,
+$$
+
+nên
+
+$$
+\Delta^3 y = \Delta\Delta y^1 - \Delta\Delta y = y^3 - 3y^2 + 3y^1 - y.
+$$
+
+Cũng theo cách ấy,
+
+$$
+\Delta^4 y = y^4 - 4y^3 + 6y^2 - 4y^1 + y
+$$
+
+và
+
+$$
+\Delta^5 y = y^5 - 5y^4 + 10y^3 - 10y^2 + 5y^1 - y,
+$$
+
+trong những công thức ấy các hệ số thuần số tuân theo cùng một quy luật, quy luật quan
+sát được trong các lũy thừa của Nhị thức. Như vậy, cũng như differentia bậc nhất được xác
+định từ hai hạng ($y$, $y^1$, $y^2$, $y^3$, &c.), differentia bậc hai được xác định từ ba
+hạng, bậc ba từ bốn hạng, và cứ thế. Và khi đã biết các differentia của mọi bậc của $y$ thì
+theo cùng cách ấy, các differentia của mọi bậc của $y^1$, $y^2$, &c. cũng được xác định.
+
+<!-- PDF 38, trang in 10 -->
+
+**11.** Vậy, khi một functio $y$ bất kỳ được đưa ra, thì từng differentia của nó — cả bậc
+nhất lẫn những bậc sau, ít nhất là những cái ứng với bước nhảy $\omega$ mà các giá trị của
+$x$ tiến theo — đều có thể được tìm ra. Và việc này không đòi hỏi phải kéo dài chuỗi giá
+trị của $y$ đi xa hơn nữa. Quả thật, differentia bậc nhất $\Delta y$ được tìm ra bằng cách
+viết $x + \omega$ ở chỗ của $x$ trong $y$, rồi lấy functio $y$ trừ đi cái giá trị $y^1$ sinh
+ra; và cũng theo cách ấy, differentia bậc hai $\Delta\Delta y$ được tìm ra nếu trong
+differentia bậc nhất $\Delta y$ ta đặt $x + \omega$ ở chỗ của $x$, để sinh ra $\Delta y^1$,
+rồi lấy $\Delta y^1$ trừ $\Delta y$. Cũng theo cách ấy, nếu lấy sai lệch của differentia
+bậc hai $\Delta\Delta y$, rồi lấy nó trừ đi cái giá trị mà nó sinh ra khi ở chỗ của $x$ ta
+đặt $x + \omega$, thì sẽ có differentia bậc ba $\Delta^3 y$; và từ đó, theo cùng cách ấy, là
+differentia bậc tư $\Delta^4 y$, &c. Vậy chỉ cần biết cách tìm differentia bậc nhất của
+mỗi functio là ta cũng có thể tìm được differentia bậc hai, bậc ba, và tất cả những bậc
+sau nó; bởi vì differentia bậc hai của $y$ chẳng qua là differentia bậc nhất của $\Delta y$;
+và differentia bậc ba của $y$ chẳng qua là differentia bậc nhất của $\Delta\Delta y$; và cứ
+thế cho những cái còn lại.
+
+**12.** Nếu functio $y$ được ghép từ hai hay nhiều thành phần, như là
+$y = p + q + r + \text{\&c.}$, thì vì $y^1 = p^1 + q^1 + r^1 + \text{\&c.}$, ta có
+differentia
+
+$$
+\Delta y = \Delta p + \Delta q + \Delta r + \text{\&c.},
+$$
+
+và cũng theo cách ấy
+
+$$
+\Delta\Delta y = \Delta\Delta p + \Delta\Delta q + \Delta\Delta r + \text{\&c.};
+$$
+
+nên việc tìm các differentia, khi functio đã cho là sự ghép của các thành phần, trở nên
+không khó hơn là bao. Nhưng nếu functio $y$ lại là tích của hai functio $p$ và $q$, tức là
+$y = pq$, thì vì $y^1 = p^1q^1$, $p^1 = p + \Delta p$ và $q^1 = q + \Delta q$, ta có
+
+$$
+p^1q^1 = pq + p\Delta q + q\Delta p + \Delta p\,\Delta q,
+$$
+
+nên $\Delta y = p\Delta q + q\Delta p + \Delta p\,\Delta q$. Vậy nếu $p$ là một lượng
+constans $a$, thì $\Delta a = 0$, và differentia bậc nhất của functio $y = aq$ là
+$\Delta y = a\Delta q$; cũng theo cách ấy differentia bậc hai là
+$\Delta\Delta y = a\Delta\Delta q$, và bậc ba — bản in viết `Δ³q = aΔ³q`, xem sổ đối chiếu.
+
+<!-- Chưa dịch: PDF 39-62, tức trang in 11-34, gồm §13-§33 và các EXEMPLUM I-IV. -->

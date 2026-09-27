@@ -80,9 +80,9 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 67 | 49 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md`| bài giảng, trang in 49 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 68 | 50 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md`| bài giảng, trang in 50 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 69 | 51 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md`| bài giảng, trang in 51 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 70 | — | — | bài giảng, trang in 52 theo thứ tự | — | Chưa dịch |
-| 71 | — | — | bài giảng, trang in 53 theo thứ tự | — | Chưa dịch |
-| 72 | 54 | — | bài giảng, trang in 54 theo thứ tự | — | Chưa dịch |
+| 70 | — | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 52 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 71 | — | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 53 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 72 | 54 | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 54 theo thứ tự |Hình 17: plate ở trang in 55 (`fig-p055-00.jpg`)|**Đã dịch, đã đối chiếu scan**|
 | 73 | 55 | — | bài giảng, trang in 55 theo thứ tự | — | Chưa dịch |
 | 74 | 56 | — | bài giảng, trang in 56 theo thứ tự | — | Chưa dịch |
 | 75 | 57 | — | bài giảng, trang in 57 theo thứ tự | — | Chưa dịch |

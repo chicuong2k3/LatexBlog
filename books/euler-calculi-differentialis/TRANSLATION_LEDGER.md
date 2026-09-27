@@ -1318,7 +1318,19 @@ $$\Delta\left(\frac{x^7}{7\omega} - \frac{x^6}{2} + \frac{\omega}{2}x^5 - \frac{
 
 **Bốn dòng cộng cả dòng lỗi đều dùng đúng quy luật** $\Delta F = x^n$ với $F$ là tổng cần tìm, nên đây là một hệ công thức đóng của $\sum x^n$ mà người đọc có thể tự kiểm. Ghi lại ở đây: các đa thức này sau này sẽ là các số Bernoulli khi chia cho $\omega$ và khai triển quanh $x$ — nhưng chưa xác minh trong chương này, nên chỉ ghi là nhận xét của người dịch, chưa đưa vào callout.
 
-**Còn lại trong chương:** PDF 58–62 (tr. 30–34), gồm phần còn lại của EXEMPLUM I và §29–§33. Catchword ở cuối trang 57 là `Σaxx`, dấu hiệu chữ D 3.
+### 2026-09-28 — Chương I, Phần 15 (PDF 58, tr. 30, hết EXEMPLUM I và mở EXEMPLUM II của §28)
+
+Bổ sung trang 58 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của EXEMPLUM I (cộng ba tổng $\Sigma ax^2$, $\Sigma bx$, $\Sigma c$ để có $\Sigma(ax^2+bx+c)$) và toàn bộ EXEMPLUM II (differentia $x^4-2\omega^2xx+\omega^4$). Không thêm callout. **Chưa niêm phong**; còn §29–§33 (PDF 59–62).
+
+**Đã soi bản scan:** toàn trang 58, cộng một mức phóng cao cho dòng trung gian của EXEMPLUM II.
+
+**Một số mũ thiếu trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng trung gian đầu tiên của EXEMPLUM II, $\Sigma x^4 = \frac{1}{5\omega}x^5 - \frac{1}{2}x^4 + \frac{1}{3}\omega x^3 - \frac{1}{30}\omega x^3$, số hạng cuối thiếu số mũ trên $\omega$: phải là $-\frac{1}{30}\omega^3x$. Đúng công thức ấy ở trang 57 đã in chính xác là $-\frac{1}{30}\omega^3x$. Đã soi bản in ở độ phóng 26: sau $\omega$ không có số mũ, rồi đến $x^3$. Dòng kết quả cuối cùng của cùng ví dụ thì đúng, nên sự sai chỉ nằm ở dòng làm trung gian.
+
+**Đã tự kiểm và khớp:** dòng kết quả của EXEMPLUM II, $\Delta F = x^4-2\omega^2x^2+\omega^4$ với $F = \frac{x^5}{5\omega} - \frac{1}{2}x^4 - \frac{1}{3}\omega x^3 + \omega^2x^2 + \frac{19}{30}\omega^3x$; và cả ba dòng ở EXEMPLUM I khớp với các tổng đã tìm ở §27, trong đó hệ số cuối $\frac{19}{30}\omega^3x$ của ví dụ II cũng được kiểm riêng: $\omega^3x\left(-\frac{1}{30} - \frac{1}{3} + 1\right) = \frac{19}{30}\omega^3x$.
+
+**Chữ "..." trong bản in:** ở các dòng $\Sigma bx$, $\Sigma c$, $-\Sigma 2\omega^2x^2$ và $+\Sigma\omega^4$, Euler dùng những chấm thưa để chừa chỗ cho các số hạng đã bỏ đi. Đã giữ nguyên những chấm ấy, không lấp đầy.
+
+**Còn lại trong chương:** PDF 59–62 (tr. 31–34), gồm §29–§33. Câu mở đầu của §29 bắt đầu ngay cuối trang 58 bằng chữ `Si`, nối sang trang 59.
 
 
 

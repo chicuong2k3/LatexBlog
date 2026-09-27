@@ -1206,9 +1206,80 @@ $$
 \Sigma axx
 $$
 
-<!-- Chưa dịch: PDF 58-62, tức trang in 30-34, gồm EXEMPLUM I (nối tiếp) và §29-§33.
-     Catchword ở cuối trang 57 là "Σaxx", dấu hiệu chữ D 3. -->
+<!-- PDF 58, trang in 30 -->
 
+$$
+\Sigma axx = \frac{ax^3}{3\omega} - \frac{axx}{2} + \frac{ax}{6}
+$$
+
+&
+
+$$
+\Sigma bx = \quad\ldots\quad \frac{bxx}{2\omega} - \frac{bx}{2}
+$$
+
+rồi
+
+$$
+\Sigma c = \quad\ldots\quad\ldots\quad\ldots\quad \frac{cx}{\omega}
+$$
+
+Từ đó, cộng các tổng này lại, ta sẽ có
+
+$$
+\Sigma(axx+bx+c) = \frac{a}{3\omega}x^3 - \frac{(aw-b)}{2\omega}x^2
+                 + \frac{(aw^2-3bw+6c)}{6\omega}x + C
+$$
+
+đó chính là functio đang tìm, có differentia là $axx+bx+c$.
+
+### Exemplum II
+
+*Hãy tìm functio mà differentia của nó là $x^4-2\omega^2xx+\omega^4$.*
+
+Ta sẽ lập cùng một phép tính như trên, và sẽ có
+
+$$
+\Sigma x^4 = \frac{1}{5\omega}x^5 - \frac{1}{2}x^4 + \frac{1}{3}\omega x^3
+            - \frac{1}{30}\omega x^3
+$$
+
+&
+
+$$
+- \Sigma 2\omega^2 x^2 = \quad\ldots - \frac{2\omega}{3}x^3 + \omega^2x^2
+                      - \frac{\omega^3}{3}x
+$$
+
+rồi
+
+$$
++ \Sigma\omega^4 = \quad\ldots\quad\ldots\quad\ldots\quad + \omega^3x
+$$
+
+nên functio đang tìm sẽ là
+
+$$
+\frac{1}{5\omega}x^5 - \frac{1}{2}x^4 - \frac{1}{3}\omega x^3 + \omega^2x^2
++ \frac{19}{30}\omega^3x + C
+$$
+
+Vì nếu ở đây ta thay $x$ bằng $x+\omega$, rồi lấy lượng thu được trừ đi số đã tìm ra
+này, thì sẽ còn lại đúng differentia đã cho là $x^4-2\omega^2x^2+\omega^4$.
+
+<!-- Chưa dịch: PDF 59-62, tức trang in 31-34, gồm §29-§33. Câu mở đầu của §29 bắt đầu
+     ngay cuối trang 58 bằng chữ "Si", nối sang trang 59. -->
+
+<!-- Ghi chú dịch giả: ở dòng trung gian của EXEMPLUM II, số hạng cuối in ra là
+     -(1/30)ωx³, trong khi phải là -(1/30)ω³x. Cùng công thức ở trang 57 đã in đúng là
+     -(1/30)ω³x. Đã soi bản in ở độ phóng 26: sau ω không có số mũ, rồi đến x³. Giữ
+     nguyên như in. Dòng kết quả cuối cùng ở trang này thì đúng, nên sự sai chỉ nằm ở
+     dòng làm trung gian. -->
+
+<!-- Ghi chú dịch giả: đã tự kiểm dòng kết quả của EXEMPLUM II: lấy sai lệch của
+     F = x⁵/(5ω) - x⁴/2 - (ω/3)x³ + ω²x² + (19/30)ω³x cho đúng x⁴ - 2ω²x² + ω⁴, đúng
+     như differentia đã cho. Ba dòng tổng ở EXEMPLUM I cũng đã kiểm và đều khớp với các
+     tổng đã tìm ở §27. -->
 <!-- Ghi chú dịch giả: ở dòng Σx⁵, số hạng cuối in ra là -(5/12)ω³x². Đã tự kiểm lại
      bằng cách lấy sai lệch: với F = x⁶/(6ω) - (1/2)x⁵ + (5/12)ωx⁴ - (1/12)ω³x² thì
      ΔF = x⁵ đúng bằng 0, còn với hệ số 5/12 thì còn dư -(2/3)ω⁴x - (1/3)ω⁵. Vậy

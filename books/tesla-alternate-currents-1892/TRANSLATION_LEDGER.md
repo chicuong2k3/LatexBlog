@@ -105,9 +105,9 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 92 | — | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md`| bài giảng, trang in 74 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 93 | 75 | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md`| bài giảng, trang in 75 theo thứ tự |`fig-p075-00.jpg` (Hình 23)|**Đã dịch, đã đối chiếu scan**|
 | 94 | 76 | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md`| bài giảng, trang in 76 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 95 | 77 | — | bài giảng, trang in 77 theo thứ tự | — | Chưa dịch |
-| 96 | 78 | — | bài giảng, trang in 78 theo thứ tự | — | Chưa dịch |
-| 97 | 79 | — | bài giảng, trang in 79 theo thứ tự | — | Chưa dịch |
+| 95 | 77 | `chapters/19-diem-nong-tren-dien-cuc-va-nut-chiu-nhiet-ben-nhat.md`| bài giảng, trang in 77 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 96 | 78 | `chapters/19-diem-nong-tren-dien-cuc-va-nut-chiu-nhiet-ben-nhat.md`| bài giảng, trang in 78 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 97 | 79 | `chapters/19-diem-nong-tren-dien-cuc-va-nut-chiu-nhiet-ben-nhat.md`| bài giảng, trang in 79 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 98 | — | — | bài giảng, trang in 80 theo thứ tự | — | Chưa dịch |
 | 99 | 81 | — | bài giảng, trang in 81 theo thứ tự | — | Chưa dịch |
 | 100 | 82 | — | bài giảng, trang in 82 theo thứ tự | — | Chưa dịch |

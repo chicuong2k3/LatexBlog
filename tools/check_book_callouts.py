@@ -1,6 +1,6 @@
 """Kiểm tra lớp chú giải hiện đại trong các chương sách dịch.
 
-Callout là blockquote bắt đầu bằng marker ``**[Ghi chú hiện đại]**``. Script này
+Callout là blockquote bắt đầu bằng marker ``**[Chú giải]**``. Script này
 kiểm tra cấu trúc từng callout, báo cáo mật độ theo từng chương, và (tuỳ chọn)
 render lại từng chương bằng đúng tham số Pandoc mà ``tools/build_books.py`` dùng.
 
@@ -26,13 +26,35 @@ for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, "reconfigure"):
         _stream.reconfigure(encoding="utf-8", errors="replace")
 
-MARKER = "**[Ghi chú hiện đại]**"
-REQUIRED_LABELS = (
+MARKER = "**[Chú giải]**"
+# Marker cũ, chỉ để _strip_callouts gỡ callout trong bản git HEAD khi so
+# fidelity — bản đã commit còn nhãn cũ. _is_marker không dùng danh sách này.
+LEGACY_MARKERS = ("**[Ghi chú hiện đại]**",)
+# ANNOTATION_GUIDE.md muc 13: tieu de phai neu van de cu the, khong dung
+# nhan chung chung. Danh sach nay chan nhan chung, khong ep co tieu de.
+BANNED_HEADINGS = (
     "**Khái niệm tương ứng.**",
     "**Công thức.**",
     "**Vì sao Newton viết như vậy.**",
+    "**Hiện nay thì sao.**",
+    "**Lưu ý nguồn gốc.**",
 )
-OPTIONAL_LABELS = ("**Lưu ý nguồn gốc.**",)
+
+# ANNOTATION_GUIDE.md muc 4: cau sao, va ten duoc them chi de co ve sau sac.
+BANNED_PHRASES = (
+    "Đây là mấu chốt",
+    "Điều đáng chú ý",
+    "Điều thú vị",
+    "Đây chính là nền tảng",
+    "Có thể thấy rằng",
+    "Không chỉ",
+    "Một ngõ ngách",
+    "Điều này mở đường",
+    "Vô tình đặt nền móng",
+    "Hàng thế kỷ sau",
+    "Theo một nghĩa nào đó",
+    "là một minh chứng cho",
+)
 
 # Mật độ mục tiêu, theo bảng ở ANNOTATION_GUIDE.md mục 4.
 DENSITY_BANDS = {
@@ -52,8 +74,9 @@ DENSITY_BANDS = {
 DEFAULT_BAND = (2, 6)
 
 # Ngưỡng cảnh báo mỗi callout.
-MIN_WORDS = 80
-MAX_WORDS = 450
+# ANNOTATION_GUIDE.md muc 11: do dai do do kho quyet dinh, khong can bang.
+MIN_WORDS = 25
+MAX_WORDS = 700
 
 # Ký tự tiếng Việt + chữ Latin. Dùng để phát hiện câu tiếng Anh sót lọt.
 _VN_CHARS = "ăâđêôơưĂÂĐÊÔƠƯàáảãạằắẳẵặầấẩẫậèéẻẽẹềếểễệìíỉĩịòóỏõọồốổỗộờớởỡợùúủũụừứửữựỳýỷỹỵ"
@@ -86,6 +109,10 @@ class ChapterReport:
 
 def _is_marker(line: str) -> bool:
     return line.startswith("> ") and MARKER in line
+
+
+def _is_any_marker(line: str) -> bool:
+    return line.startswith("> ") and any(m in line for m in (MARKER, *LEGACY_MARKERS))
 
 
 def _collect_callouts(lines: list[str]) -> list[list[str]]:
@@ -123,9 +150,15 @@ def _check_callout(report: ChapterReport, index: int, block: list[str]) -> None:
         report.problems.append(Problem(where, f"dòng đầu phải là {MARKER!r}, thực tế {stripped[0]!r}"))
 
     joined = " ".join(stripped)
-    for label in REQUIRED_LABELS:
-        if label not in joined:
-            report.problems.append(Problem(where, f"thiếu nhãn {label}"))
+    for line in stripped:
+        for heading in BANNED_HEADINGS:
+            if line.startswith(heading):
+                report.problems.append(
+                    Problem(where, f"tiêu đề chung chung {heading} — nêu vấn đề cụ thể")
+                )
+    for phrase in BANNED_PHRASES:
+        if phrase in joined:
+            report.problems.append(Problem(where, f"câu sáo {phrase!r}"))
 
     # Dấu $ phải cân.
     dollars = joined.count("$$") * 2 + len(re.findall(r"(?<!\$)\$(?!\$)", joined))
@@ -169,7 +202,7 @@ def _strip_callouts(text: str) -> str:
     out: list[str] = []
     in_callout = False
     for line in text.splitlines():
-        if _is_marker(line):
+        if _is_any_marker(line):
             in_callout = True
             if out and not out[-1].strip():
                 out.pop()

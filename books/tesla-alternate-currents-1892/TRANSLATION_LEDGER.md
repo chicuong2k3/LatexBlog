@@ -85,8 +85,8 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 72 | 54 | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 54 theo thứ tự |Hình 17: plate ở trang in 55 (`fig-p055-00.jpg`)|**Đã dịch, đã đối chiếu scan**|
 | 73 | 55 | `chapters/11-dong-co-quay-chi-voi-mot-moi-noi.md`| bài giảng, trang in 55 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 74 | 56 | `chapters/11-dong-co-quay-chi-voi-mot-moi-noi.md`| bài giảng, trang in 56 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 75 | 57 | — | bài giảng, trang in 57 theo thứ tự | — | Chưa dịch |
-| 76 | 58 | — | bài giảng, trang in 58 theo thứ tự | — | Chưa dịch |
+| 75 | 57 | `chapters/12-dong-co-khong-day-va-nang-luong-o-khap-noi.md`| bài giảng, trang in 57 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 76 | 58 | `chapters/12-dong-co-khong-day-va-nang-luong-o-khap-noi.md`| bài giảng, trang in 58 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 77 | 59 | — | bài giảng, trang in 59 theo thứ tự | — | Chưa dịch |
 | 78 | 60 | — | bài giảng, trang in 60 theo thứ tự | — | Chưa dịch |
 | 79 | 61 | — | bài giảng, trang in 61 theo thứ tự | — | Chưa dịch |

@@ -31,7 +31,7 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 18 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 0 theo thứ tự | — | Chưa dịch |
 | 19 | — | `chapters/01-mo-dau-ke-hoach-cong-trinh.md`| bài giảng, trang in 1 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 20 | 2 | `chapters/01-mo-dau-ke-hoach-cong-trinh.md`| bài giảng, trang in 2 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
-| 21 | 8 | `chapters/01-mo-dau-ke-hoach-cong-trinh.md`| bài giảng, trang in 3 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
+| 21 | 3 | `chapters/01-mo-dau-ke-hoach-cong-trinh.md`| bài giảng, trang in 3 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 22 | 4 | `chapters/02-dong-xoay-chieu-nhu-song.md`| bài giảng, trang in 4 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 23 | — | `chapters/02-dong-xoay-chieu-nhu-song.md`| bài giảng, trang in 5 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 24 | — | `chapters/02-dong-xoay-chieu-nhu-song.md`| bài giảng, trang in 6 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
@@ -47,7 +47,7 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 34 | 16 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 16 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 35 | 17 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 17 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 36 | 18 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 18 theo thứ tự |`fig-p018-00.jpg` (Hình 4)|**Đã dịch, đã đối chiếu scan**|
-| 37 | 10 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 19 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
+| 37 | 19 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 19 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 38 | — | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 20 theo thứ tự |`fig-p020-00.jpg` (Hình 5); `fig-p020-01.jpg` (Hình 6)|**Đã dịch, đã đối chiếu scan**|
 | 39 | — | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 21 theo thứ tự |`fig-p021-00.jpg` (Hình 7)|**Đã dịch, đã đối chiếu scan**|
 | 40 | — | `chapters/05-khoang-cach-phong-dien-va-day-phat-sang.md`| bài giảng, trang in 22 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
@@ -97,7 +97,7 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 84 | 66 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 66 theo thứ tự | — | Chưa dịch |
 | 85 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 67 theo thứ tự | — | Chưa dịch |
 | 86 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 68 theo thứ tự | — | Chưa dịch |
-| 87 | 60 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 69 theo thứ tự | — | Chưa dịch |
+| 87 | 69 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 69 theo thứ tự | — | Chưa dịch |
 | 88 | 70 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 70 theo thứ tự | — | Chưa dịch |
 | 89 | 71 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 71 theo thứ tự | — | Chưa dịch |
 | 90 | 72 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 72 theo thứ tự | — | Chưa dịch |
@@ -111,13 +111,13 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 98 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 80 theo thứ tự | — | Chưa dịch |
 | 99 | 81 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 81 theo thứ tự | — | Chưa dịch |
 | 100 | 82 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 82 theo thứ tự | — | Chưa dịch |
-| 101 | 88 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 83 theo thứ tự | — | Chưa dịch |
+| 101 | 83 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 83 theo thứ tự | — | Chưa dịch |
 | 102 | 84 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 84 theo thứ tự | — | Chưa dịch |
 | 103 | 85 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 85 theo thứ tự | — | Chưa dịch |
 | 104 | 86 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 86 theo thứ tự | — | Chưa dịch |
 | 105 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 87 theo thứ tự | — | Chưa dịch |
 | 106 | 88 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 88 theo thứ tự | — | Chưa dịch |
-| 107 | 80 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 89 theo thứ tự | — | Chưa dịch |
+| 107 | 89 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 89 theo thứ tự | — | Chưa dịch |
 | 108 | 90 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 90 theo thứ tự | — | Chưa dịch |
 | 109 | 91 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 91 theo thứ tự | — | Chưa dịch |
 | 110 | 92 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 92 theo thứ tự | — | Chưa dịch |
@@ -160,10 +160,10 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 147 | 129 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 129 theo thứ tự | — | Chưa dịch |
 | 148 | 130 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 130 theo thứ tự | — | Chưa dịch |
 | 149 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 131 theo thứ tự | — | Chưa dịch |
-| 150 | 182 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 132 theo thứ tự | — | Chưa dịch |
+| 150 | 132 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 132 theo thứ tự | — | Chưa dịch |
 | 151 | 133 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 133 theo thứ tự | — | Chưa dịch |
 | 152 | 134 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 134 theo thứ tự | — | Chưa dịch |
-| 153 | 185 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 135 theo thứ tự | — | Chưa dịch |
+| 153 | 135 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 135 theo thứ tự | — | Chưa dịch |
 | 154 | 136 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 136 theo thứ tự | — | Chưa dịch |
 | 155 | 137 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 137 theo thứ tự | — | Chưa dịch |
 | 156 | 138 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 138 theo thứ tự | — | Chưa dịch |
@@ -236,6 +236,13 @@ Hai lỗi trong dòng số hình cần đặc biệt lưu ý vì dò hình tự 
 |---|---|---|
 | 150 | `Fig. 83.` | `Fig. 33.` |
 | 118 | `Fig. 12. In this instance, by` | `Fig. 25.` |
+| 21 | `8` | `3` | Số trang in đọc sai; scan cho `3` |
+| 37 | `10` | `19` | Số trang in đọc sai; scan cho `19` |
+| 87 | `60` | `69` | Số trang in đọc sai; scan cho `69` |
+| 101 | `88` | `83` | Số trang in đọc sai; scan cho `83` |
+| 107 | `80` | `89` | Số trang in đọc sai; scan cho `89` |
+| 150 | `182` | `132` | Số trang in đọc sai; scan cho `132` |
+| 153 | `185` | `135` | Số trang in đọc sai; scan cho `135` |
 
 Ngoài ra `Fig. 12` là một số hình **có thật** trong sách (ở chỗ khác), nên phải đối
 chiếu từng hình với nhãn in trên scan thay vì tin regex.

@@ -1381,10 +1381,75 @@ cấp không ít quy tắc, nhờ đó việc tìm tổng được nâng đỡ m
 những thừa số giản dị nào đó, hợp thành một cấp số cộng, mà differentia của chính nó là
 đại lượng $\omega$. Chẳng hạn, nếu functio đã cho là $(x+\omega)(x+2\omega)$ và ta cần
 differentia của nó: bởi khi đặt $x+\omega$ vào chỗ của $x$, functio này trở thành
-$(x+2\omega)(x+\dots$
+$(x+2\omega)(x+3\omega)$, differentia của nó là $2\omega(x+2\omega)$. Ngược lại, nếu
+differentia đã cho là $2\omega(x+2\omega)$ thì tổng của nó sẽ là $(x+\omega)(x+2\omega)$,
+và do đó ta có
 
-<!-- Chưa dịch: PDF 62, tức trang in 34, gồm §32 (nối tiếp) và §33. Catchword ở cuối
-     trang 61 là "(x+". -->
+$$
+\Sigma(x+2\omega) = \frac{1}{2\omega}(x+\omega)(x+2\omega).
+$$
+
+Tương tự, nếu functio đã cho là $(x+n\omega)(x+(n+1)\omega)$, và differentia của nó là
+$2\omega(x+(n+1)\omega)$ thì
+
+$$
+\Sigma(x+(n+1)\omega) = \frac{1}{2\omega}(x+n\omega)(x+(n+1)\omega)
+$$
+
+&
+
+$$
+\Sigma(x+n\omega) = \frac{1}{2\omega}(x+(n-1)\omega)(x+n\omega).
+$$
+
+<!-- PDF 62, trang in 34 -->
+
+**33.** Nếu functio lập thành từ nhiều thừa số, chẳng hạn
+$y = (x+(n-1)\omega)(x+n\omega)\times(n+1)\omega$, và
+$y^1 = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$, thì
+$\Delta y = 3\omega(x+n\omega)(x+(n+1)\omega)$; do đó
+
+$$
+\Sigma(x+n\omega)(x+(n+1)\omega) = \frac{1}{3\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)
+$$
+
+Cũng sẽ tìm được, bằng lý do ấy:
+
+$$
+\Sigma(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega) = \frac{1}{4\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega).
+$$
+
+Từ đó quy luật tìm các tổng sẽ lộ ra, nếu differentia lập thành từ nhiều thừa số thuộc
+loại ấy. Tuy nhiên...
+
+<!-- Ghi chú dịch giả: trong dòng định nghĩa y ở §33, thừa số thứ ba bị in thiếu: bản in
+     ghi (x+(n-1)ω)(x+nω)×(n+1)ω, thiếu luôn chữ x+ trước (n+1)ω. Đã soi ở độ phóng 20,
+     nét chữ rõ và dấu nhân thì có; đây là lỗi của bản in. Đúng phải là (x+(n+1)ω), như
+     dòng ngay dưới là y^1 = (x+nω)(x+(n+1)ω)(x+(n+2)ω), và như công thức Δy ở ngay sau.
+     Đã chép nguyên văn, không tự sửa. -->
+
+<!-- Ghi chú dịch giả: đã tự kiểm cả bốn công thức của trang này bằng phép lấy sai khác.
+     Với F = (1/(2ω))(x+(n-1)ω)(x+nω) thì ΔF = (x+nω); với
+     F = (1/(3ω))(x+(n-1)ω)(x+nω)(x+(n+1)ω) thì ΔF = (x+nω)(x+(n+1)ω); với
+     F = (1/(4ω))(x+(n-1)ω)(x+nω)(x+(n+1)ω)(x+(n+2)ω) thì
+     ΔF = (x+nω)(x+(n+1)ω)(x+(n+2)ω). Ở cả ba, chênh lệch trong ngoặc bằng đúng 2ω, 3ω,
+     4ω nên hệ số trước ra chính là 1/(kω) với k số thừa số. Cùng cách đó đã kiểm
+     Σ(x+2ω) = (1/(2ω))(x+ω)(x+2ω). -->
+
+<!-- Ghi chú dịch giả: biểu thức (x+2ω)(x+3ω) bị bản in ngắt giữa chừng, nửa (x+2ω)(x+ ở
+     cuối trang 61 còn nửa (x+3ω) sang trang 62. Ở đây đã viết trọn vẹn một biểu thức. -->
+
+<!-- Ghi chú dịch giả: chữ gần cuối trang đọc không chắc. Nét có thể là f hoặc s, cho
+     nên chỗ này đọc được hoặc là fonte hay sonte; trong câu vnde lex inveniendi summas ...
+     pateat thì fonte (từ nguồn) hợp lý hơn, song đây là chỗ nghi vấn, không dám chắc.
+     Giữ theo cách đọc fonte. -->
+
+<!-- Ghi chú dịch giả: trang 62 kết thúc giữa chữ, câu cuối bị cắt ở au- (autem); mép
+     phải cũng mang chữ catchword au-. Đầu trang là CAPUT I. kèm số trang 34 đặt bên trái.
+     Đây là trang cuối của Chương I; PDF 63 (tr. 35) mở đầu CAPUT II. -->
+
+<!-- Hết Chương I. Còn lại: không. -->
+
 
 <!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4, ...)
      vì hệ số bằng 0 — đúng với công thức: số mũ của các số hạng là n+1, n, n-1, n-3,

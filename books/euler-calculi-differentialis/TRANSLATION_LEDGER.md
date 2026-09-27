@@ -1368,5 +1368,23 @@ Bổ sung trang 61 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Dấu ở chân trang:** dưới cùng trang 61 có một chữ `E` ở giữa, là dấu hiệu trang của người in; chữ catchword ở mép phải là `(x+`. Đầu trang là `CAPUT I.` kèm số trang `33`.
 
+### 2026-09-28 — Chương I, Phần 19 (PDF 62, tr. 34, hết §32 và trọn §33)
+
+Bổ sung trang 62 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §32 (tổng của một tích hai thừa số lập thành cấp số cộng, rồi hai công thức tổng quát theo $n$) và toàn bộ §33 (functio lập thành từ ba thừa số thì differentia của nó bằng $3\omega$ lần hai thừa số giữa; rồi trường hợp bốn thừa số). Không thêm callout. **Đây là trang cuối của Chương I**; PDF 63 (tr. 35) mở đầu CAPUT II.
+
+**Đã soi bản scan:** toàn trang 62, cộng ba mức phóng (18, 20) cho dòng định nghĩa $y$ ở §33 và cho hai dòng văn cuối trang. Đầu trang đặt số trang `34` bên trái, khác với trang 61 đặt bên phải — chỉ là xen kẽ trang chẵn/lẻ.
+
+**Một lỗi thật của bản in, đã chép nguyên văn.** Trong dòng định nghĩa $y$ ở §33, thừa số thứ ba bị in thiếu: bản in ghi $(x+(n-1)\omega)(x+n\omega)\times(n+1)\omega$, thiếu luôn chữ $x+$ trước $(n+1)\omega$. Đúng phải là $(x+(n+1)\omega)$: dòng ngay dưới là $y^1 = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$, và công thức $\Delta y$ ngay sau cũng chỉ khớp với ba thừa số dạng ấy. Đã soi ở độ phóng 20, nét chữ rõ và dấu nhân thì có; đây là lỗi của bản in chứ không phải đọc nhầm.
+
+**Đã tự kiểm cả bốn công thức của trang này bằng phép lấy sai khác.** Với $F=\frac{1}{2\omega}(x+(n-1)\omega)(x+n\omega)$ thì $\Delta F = (x+n\omega)$; với $F=\frac{1}{3\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)$ thì $\Delta F = (x+n\omega)(x+(n+1)\omega)$; với $F=\frac{1}{4\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$ thì $\Delta F = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$. Ở cả ba, chênh lệch trong ngoặc bằng đúng $2\omega$, $3\omega$, $4\omega$, nên hệ số trước ra chính là $\frac{1}{k\omega}$ với $k$ là số thừa số — đây là quy luật mà Euler chưa nói thẳng ở đây nhưng §33 dẫn tới. Cũng đã kiểm $\Sigma(x+2\omega)=\frac{1}{2\omega}(x+\omega)(x+2\omega)$.
+
+**Biểu thức bị ngắt giữa hai trang:** $(x+2\omega)(x+$ ở cuối trang 61, còn $(x+3\omega)$ sang trang 62. Trong bản dịch đã viết trọn một biểu thức; việc ngắt chỗ ấy đã ghi trong chương.
+
+**Một chữ đọc không chắc, đã giữ theo cách đọc khả dĩ nhất.** Ở câu `vnde lex inveniendi summas, si differentia ex pluribus huiusmodi factoribus constet, fonte pateat`, nét chữ cho phép đọc hoặc là `f` hoặc là `s` (dấu ſ), nên chỗ này có thể là `fonte` hay `sonte`. Vì câu nói về nguồn của quy luật nên `fonte` hợp lý hơn, nhưng đây là chỗ nghi vấn chứ không phải chỗ chắc; đã ghi rõ sự nghi vấn trong chương thay vì khẳng định.
+
+**Trang kết thúc giữa chữ:** câu cuối bị cắt ở `au-` (`autem`), mép phải cũng mang chữ catchword `au-`. Câu nối sang PDF 63.
+
+**Trạng thái Chương I:** đã dịch hết 32 trang nguồn, PDF 31–62 (tr. 3–34), tức toàn bộ CAPUT I gồm §1–§33. **Chưa niêm phong** — theo `books/AGENTS.md`, chỉ chủ sở hữu mới tự ghi `status: hoan-thanh`, nên trạng thái frontmatter để nguyên.
+
 
 

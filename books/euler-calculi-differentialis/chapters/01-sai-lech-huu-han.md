@@ -666,16 +666,69 @@ $$
 \end{aligned}
 $$
 
-<!-- Chưa dịch: PDF 47-62, tức trang in 19-34, gồm §18-§33. Câu mở đầu của mục kế tiếp
-     bắt đầu ngay cuối trang 46 bằng chữ "Si-", nối sang trang 47. -->
+<!-- PDF 47, trang in 19 -->
+
+Tương tự, ta sẽ có
+
+$$
+\Delta x^{-1} = -\frac{\omega}{x^2} + \frac{\omega^2}{x^3} - \frac{\omega^3}{x^4}
+               + \text{\&c.}
+$$
+
+$$
+\Delta x^{-2} = -\frac{2\omega}{x^3} + \frac{3\omega^2}{x^4} - \frac{4\omega^3}{x^5}
+               + \text{\&c.}
+$$
+
+$$
+\Delta x^{-3} = -\frac{3\omega}{x^4} + \frac{6\omega^2}{x^5} - \frac{10\omega^3}{x^6}
+               + \text{\&c.}
+$$
+
+$$
+\Delta x^{-4} = -\frac{4\omega}{x^5} + \frac{10\omega^3}{x^6} - \frac{20\omega^3}{x^7}
+               + \text{\&c.}
+$$
+
+Và từ đó, với những lũy thừa còn lại. Tương tự, ta sẽ có:
+
+$$
+\Delta x^{\frac{1}{2}} = \frac{\omega}{2x^{\frac{1}{2}}} - \frac{\omega^2}{8x^{\frac{3}{2}}}
+                         + \frac{\omega^3}{16x^{\frac{5}{2}}} - \text{\&c.}
+$$
+
+$$
+\Delta x^{\frac{1}{3}} = \frac{\omega}{3x^{\frac{2}{3}}} - \frac{\omega^2}{9x^{\frac{5}{3}}}
+                         + \frac{5\omega^3}{81x^{\frac{8}{3}}} - \text{\&c.}
+$$
+
+$$
+\Delta x^{-\frac{1}{2}} = -\frac{\omega}{2x^{\frac{3}{2}}} + \frac{3\omega^2}{8x^{\frac{5}{2}}}
+                          - \frac{5\omega^3}{16x^{\frac{7}{2}}} + \text{\&c.}
+$$
+
+$$
+\Delta x^{-\frac{2}{3}} = -\frac{\omega}{3x^{\frac{4}{3}}} + \frac{2\omega^2}{9x^{\frac{7}{3}}}
+                          - \frac{14\omega^3}{81x^{\frac{10}{3}}} + \text{\&c.}
+$$
+
+<!-- Chưa dịch: PDF 48-62, tức trang in 20-34, gồm §18-§33. Câu mở đầu của §18 bắt đầu
+     ngay cuối trang 47 bằng chữ "Si-", nối sang trang 48. -->
 
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->
 
-<!-- Ghi chú dịch giả: ở §17, phần dẫn nói phép tính trải tới cả số mũ âm, phân số và
-     vô tỉ, nhưng danh sách Euler in ra ngay dưới chỉ liệt kê differentia bậc nhất của
-     x, x², x³, x⁴, tức là số mũ dương. Đã phóng to cột số mũ trên bản scan để kiểm:
-     không có dấu trừ nào, và các biểu thức bên phải (2ωx + ω², 3ωx² + 3ω²x + ω³,
-     4ωx³ + 6ω²x² + 4ω³x + ω⁴) đúng là differentia bậc nhất của các lũy thừa dương ấy.
-     Chép đúng như in, không sửa theo phần dẫn. -->
+<!-- Ghi chú dịch giả: ở dòng x⁻⁴, trang in viết số mũ của số hạng giữa là ω³, trong khi
+     số hạng cuối cũng là ω³. Dãy khai triển bắt buộc số mũ tăng dần ω, ω², ω³, nên số
+     hạng giữa phải là 10ω²/x⁶. Đây nhiều khả năng là lỗi của người chữ. Đã chép đúng
+     như in, không sửa. -->
+
+<!-- Ghi chú dịch giả: ở dòng cuối, số mũ trên x là -2/3, nhưng hệ số và số mũ của x bên
+     phải (-ω/(3x^{4/3}) + 2ω²/(9x^{7/3}) - 14ω³/(81x^{10/3})) lại là differentia bậc
+     nhất của x^{-1/3}. Differentia bậc nhất của x^{-2/3} phải là
+     -2ω/(3x^{5/3}) + 5ω²/(9x^{8/3}) - 40ω³/(81x^{11/3}). Cũng giữ nguyên như in.
+     Lưu ý dòng liền trên, x^{-1/2}, đã đúng; chỉ dòng này lệch. -->
+
+<!-- Ghi chú dịch giả: danh sách ở cuối trang 46 chỉ nêu số mũ dương; phần mở rộng sang
+     số mũ âm và phân số mà §17 hứa ở phần dẫn nằm ngay ở trang 47, ngay sau đó. -->

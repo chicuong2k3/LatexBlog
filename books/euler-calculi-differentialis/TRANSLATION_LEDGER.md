@@ -1149,16 +1149,44 @@ callout đã ghi rõ đây là nhận diện của người viết chứ giải,
 ông không đặt tên cho bảng, chỉ gọi là *Tabula* và cho quy tắc điền. Cũng ghi rõ bài của
 Stirling ra năm 1733, trước lần in 1755 này.
 
-**§17, số mũ không có dấu trừ.** Phần dẫn của §17 nói phép tính còn trải tới cả số mũ âm,
-phân số và vô tỉ, nhưng danh sách Euler in ngay dưới chỉ gồm differentia bậc nhất của
-$x, x^2, x^3, x^4$ — tức số mũ dương. Đã phóng to cột số mũ trên scan trang 46 để kiểm:
-không có dấu trừ nào, và các biểu thức vế phải ($2\omega x + \omega^2$,
+**§17, danh sách ở cuối trang 46 chỉ có số mũ dương.** Phần dẫn của §17 nói phép tính còn
+trải tới cả số mũ âm, phân số và vô tỉ, nhưng danh sách in ngay dưới phần dẫn trên trang 46
+chỉ gồm differentia bậc nhất của $x, x^2, x^3, x^4$. Đã phóng to cột số mũ trên scan
+trang 46 để kiểm: không có dấu trừ nào, và các biểu thức vế phải ($2\omega x + \omega^2$,
 $3\omega x^2 + 3\omega^2 x + \omega^3$, $4\omega x^3 + 6\omega^2 x^2 + 4\omega^3 x +
-\omega^4$) đúng là differentia bậc nhất của các lũy thừa dương ấy. Đã chép đúng như in,
-không sửa cho khớp phần dẫn, và ghi rõ điều này trong chú thích dịch giả ở cuối chương.
+\omega^4$) đúng là differentia bậc nhất của các lũy thừa dương ấy. Phần mở rộng mà phần
+dẫn hứa nằm ngay ở trang 47, xem kỳ dưới.
 
-**Còn lại trong chương:** PDF 47–62 (tr. 19–34), gồm §18–§33. Câu mở đầu của mục tiếp theo
-bắt đầu ngay cuối trang 46 bằng chữ `Si-`, nối sang trang 47.
+### 2026-09-28 — Chương I, Phần 4 (PDF 47, tr. 19, nối tiếp §17)
+
+Bổ sung trang 47 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §17, gồm các
+lũy thừa mũ âm nguyên ($x^{-1}$ đến $x^{-4}$) rồi tới các mũ phân số ($x^{1/2}$,
+$x^{1/3}$, $x^{-1/2}$, $x^{-2/3}$). Không thêm callout. **Chưa niêm phong**; còn §18–§33
+(PDF 48–62).
+
+**Đã soi bản scan:** toàn trang 47 ở nhiều mức phóng. Lớp OCR của trang này hỏng gần như
+toàn bộ (`2 CO`, `5to3`, `2 »`, `1Oto3`, `4»J`) nên mọi công thức đều phải đọc từ ảnh.
+
+**Hai chỗ bản in có vẻ sai; cả hai đã chép nguyên văn và ghi chú, không sửa:**
+
+1. **Dòng $x^{-4}$.** Bản in viết $-\frac{4\omega}{x^5} + \frac{10\omega^3}{x^6} -
+   \frac{20\omega^3}{x^7}$, tức hai số hạng sau cùng mang số mũ 3. Dãi khai triển bắt buộc
+   số mũ tăng dần $\omega, \omega^2, \omega^3$, nên số hạng giữa phải là
+   $10\omega^2/x^6$. Ba dòng trước đã đối chiếu khớp hoàn toàn với khai triển nhị thức
+   ($x^{-2}$: $2,3,4$; $x^{-3}$: $3,6,10$), nên đây nhiều khả năng là lỗi của người chữ.
+2. **Dòng cuối, số mũ $x$.** Bản in ghi số mũ là $-2/3$, nhưng hệ số và số mũ của $x$ bên
+   phải, $-\frac{\omega}{3x^{4/3}} + \frac{2\omega^2}{9x^{7/3}} -
+   \frac{14\omega^3}{81x^{10/3}}$, lại là differentia bậc nhất của $x^{-1/3}$. Với
+   $x^{-2/3}$ phải là $-\frac{2\omega}{3x^{5/3}} + \frac{5\omega^2}{9x^{8/3}} -
+   \frac{40\omega^3}{81x^{11/3}}$. Dòng $x^{-1/2}$ ngay phía trên đã đúng, chỉ dòng này
+   lệch. Đã soi kỹ tử số của số mũ: là `2`, không phải `1`.
+
+**Bốn dòng còn lại đã đối chiếu với khai triển nhị thức và đều khớp:** $x^{1/2}$ với
+$1/2, -1/8, 1/16$; $x^{1/3}$ với $1/3, -1/9, 5/81$; $x^{-1/2}$ với $-1/2, 3/8, -5/16$;
+$x^{-2}$ với $-2, 3, -4$.
+
+**Còn lại trong chương:** PDF 48–62 (tr. 20–34), gồm §18–§33. Câu mở đầu của §18 bắt đầu
+ngay cuối trang 47 bằng chữ `Si-`, nối sang trang 48.
 
 
 

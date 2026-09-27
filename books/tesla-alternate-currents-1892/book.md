@@ -95,7 +95,8 @@ Các chương đã dịch:
 | 08 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md` | 44–48 | Chổi lông quay, sự nhạy cảm tĩnh điện và từ tính. **Đã dịch, đã đối chiếu scan.** |
 | 09 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md` | 49–51 | Vì sao chổi lông hình thành, và lời hứa về điện tín. **Đã dịch, đã đối chiếu scan.** |
 | 10 | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md` | 52–54 | Cánh quạt, radiometer, và động cơ cảm ứng một cuộn dây. **Đã dịch, đã đối chiếu scan.** |
-| 11–17 | — | 55–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 11 | `chapters/11-dong-co-quay-chi-voi-mot-moi-noi.md` | 55–56 | Động cơ quay chỉ với một mối nối. **Đã dịch, đã đối chiếu scan.** |
+| 12–17 | — | 57–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 

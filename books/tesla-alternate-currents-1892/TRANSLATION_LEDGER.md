@@ -83,8 +83,8 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 70 | — | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 52 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 71 | — | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 53 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 72 | 54 | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md`| bài giảng, trang in 54 theo thứ tự |Hình 17: plate ở trang in 55 (`fig-p055-00.jpg`)|**Đã dịch, đã đối chiếu scan**|
-| 73 | 55 | — | bài giảng, trang in 55 theo thứ tự | — | Chưa dịch |
-| 74 | 56 | — | bài giảng, trang in 56 theo thứ tự | — | Chưa dịch |
+| 73 | 55 | `chapters/11-dong-co-quay-chi-voi-mot-moi-noi.md`| bài giảng, trang in 55 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 74 | 56 | `chapters/11-dong-co-quay-chi-voi-mot-moi-noi.md`| bài giảng, trang in 56 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 75 | 57 | — | bài giảng, trang in 57 theo thứ tự | — | Chưa dịch |
 | 76 | 58 | — | bài giảng, trang in 58 theo thứ tự | — | Chưa dịch |
 | 77 | 59 | — | bài giảng, trang in 59 theo thứ tự | — | Chưa dịch |
@@ -311,6 +311,12 @@ plate trên đều xuất hiện đã dùng — phần lớn còn đợ vào ch�
   - *Mở plate ra nhìn, nhãn in khớp:* `Fig. 5, 6, 12, 13, 15, 16, 17, 22`.
   - *Định danh qua lớp nhãn của chính PDF (vị trí `capmap.json`), chưa mở plate ra xem:* `Fig. 1, 2, 3, 4, 7, 8, 9, 10, 11, 14, 18, 19, 21, 23`–`35`.
   - Không hình nào trong `Fig. 1`–`Fig. 35` còn thiếu plate.
+- **Chưa giải quyết — Hình 17:** trang in 54 gọi Hình 17 là *động cơ* gồm cuộn dây,
+  lõi sắt và đĩa đồng tự do. Nhưng plate `fig-p055-00.jpg` mang nhãn in
+  *Fig. 17.—Discharger with Non-Sparking Movement* và vẽ máy phát, ống cao su,
+  ống phóng điện, dây W và tia lửa — tức là một bộ phóng điện, không phải động cơ.
+  Hai bằng chứng mâu thuẫn nên **chưa đặt plate này** vào chương 11; phải mở scan
+  trang in 55 để phán đoán trước khi dùng.
 - **Hai lỗi OCR đã được chứng minh là bẫy:** `Fig. 83`
   (thực ra `Fig. 33`) và `Fig. 12` ở PDF 118 (thực ra `Fig. 25`).
 

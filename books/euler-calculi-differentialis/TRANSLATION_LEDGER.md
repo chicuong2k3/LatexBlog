@@ -1288,7 +1288,21 @@ Bổ sung trang 55 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Ký hiệu $\Sigma$:** bản in dùng chữ Sigma hoa. Sổ ký hiệu có dòng `S.` = tổng của một chuỗi, hiển thị thành `$\sum$`. Ở đây bản in dùng $\Sigma$ (Sigma hoa) chứ không phải `S.`, nên đã hiển thị thành `$\Sigma$`; hai ký hiệu cùng nghĩa. Nếu sau này gặp dạng `S.` thì theo sổ mà dùng `$\sum$`.
 
-**Còn lại trong chương:** PDF 56–62 (tr. 28–34), gồm phần còn lại của §26 và §27–§33. Câu mở đầu của phần tiếp theo là `nes`, nối từ chữ `rationes` ở cuối trang 55 sang trang 56.
+### 2026-09-28 — Chương I, Phần 13 (PDF 56, tr. 28, nối tiếp §26 và mở §27)
+
+Bổ sung trang 56 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §26 (từ `z = Δy` suy ra `y = Σz + C`; tổng của lượng nhân với hằng; và $\Sigma\omega = x + C$, $\Sigma\omega^2 = \omega x + C$, $\Sigma\omega^3 = \omega^2x + C$), cùng mở đầu §27 (đảo ngược các differentia của lũy thừa để tìm các tổng $\Sigma\omega$, $\Sigma 1$, $\Sigma x$, $\Sigma x^2$). Không thêm callout. **Chưa niêm phong**; còn §27 (nối tiếp) và §28–§33 (PDF 57–62).
+
+**Đã soi bản scan:** toàn trang 56. Lớp OCR đọc được; riêng khối cuối trang phải soi lại ở độ phóng cao.
+
+**Một chữ bên vế trái sai trong bản in, đã chép nguyên văn và ghi chú.** Trong §27, dòng bắt đầu bằng chữ `hay` in $\Sigma x^3 = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}$, trong khi dòng ngay trên nó (`ergo`) in $\Sigma x^2$. Dòng `hay` chỉ là phép thay thế của dòng `ergo` nên phải là $\Sigma x^2$. Đã tự kiểm: $\frac{x^3}{3\omega} - \omega\left(\frac{x^2}{2\omega} - \frac{x}{2}\right) - \frac{\omega^2}{3}\cdot\frac{x}{\omega} = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}$, đúng bằng vế phải in ra. Như vậy vế trái đã in sai, và nó trùng với vế trái của dòng kế tiếp.
+
+**Cách soi:** lần đầu cắt ảnh bitmap đã bị lệch vị trí (vùng trắng, hoặc dải chữ quá mờ) nên chuyển sang render trực tiếp từ PDF bằng `tools/euler_scan.py --zoom 26 --crop ...`; ở mức này hai số mũ phân biệt rõ — dòng `ergo` là 2, dòng `hay` là 3. Ghi lại ở đây vì các lần sau nên dùng ngay `--zoom` cao thay vì phóng to ảnh bitmap.
+
+**Dòng cuối đã tự kiểm và khớp:** $\Sigma x^3 = \frac{x^4}{4\omega} - \frac{3\omega}{2}\Sigma x^2 - \omega^2\Sigma x - \frac{\omega^3}{4}\Sigma 1$ là hệ quả của $\Sigma(4\omega x^3 + 6\omega^2xx + 4\omega^3x + \omega^4) = x^4$, cùng kiểu với các dòng $\Sigma x$ và $\Sigma x^2$ ngay trên.
+
+**Quy ước nhân của Euler:** bản in viết `xx` nghĩa là $x^2$, `aa` là hằng số, `3ωxx` là $3\omega x^2$. Đã giữ nguyên dạng `xx` như ở §19, không đổi thành $x^2$.
+
+**Còn lại trong chương:** PDF 57–62 (tr. 29–34), gồm phần còn lại của §27 và §28–§33. Catchword ở cuối trang 56 là `vbi`.
 
 
 

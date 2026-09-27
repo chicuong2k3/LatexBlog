@@ -1093,8 +1093,74 @@ differentia $z$ và cần tìm tổng $y$ của nó, thì ta sẽ có $y = \Sigm
 phương trình $z = \Delta y$ mà đi ngược lại, sẽ lập được phương trình $y = \Sigma z$; vào
 đó có thể thêm vào một lượng không đổi bất kỳ, vì những lý do
 
-<!-- Chưa dịch: PDF 56-62, tức trang in 28-34, gồm §26 (nối tiếp) và §27-§33. Câu mở
-     đầu của phần tiếp theo là "nes", nối từ chữ "rationes" ở cuối trang 55 sang trang 56. -->
+<!-- PDF 56, trang in 28 -->
+
+đã nêu ở trên; từ đó, nếu tìm được phương trình $z = \Delta y$, thì ta cũng sẽ có
+$y = \Sigma z + C$. Rồi, vì differentia của lượng $ay$ là $a\Delta y = az$, nên ta sẽ có
+$\Sigma az = ay$, nếu $a$ là một lượng không đổi. Vì $\Delta x = \omega$, ta sẽ có
+$\Sigma\omega = x + C$ và $\Sigma a\omega = ax + C$; và vì $\omega$ là một lượng không đổi,
+ta sẽ có $\Sigma\omega^2 = \omega x + C$; $\Sigma\omega^3 = \omega^2x + C$; và cứ như vậy.
+
+**27.** Vậy, nếu ta đảo ngược các differentia của các lũy thừa của chính $x$ đã tìm được
+ở trên, ta sẽ có
+
+$$
+\Sigma\omega = x; \quad \text{hincque} \quad \Sigma 1 = \frac{x}{\omega};
+$$
+
+Rồi ta có
+
+$$
+\Sigma(2\omega x + \omega^2) = x^2;
+$$
+
+từ đó suy ra
+
+$$
+\Sigma x = \frac{x^2}{2\omega} - \Sigma\frac{\omega}{2}
+         = \frac{x^2}{2\omega} - \frac{x}{2}.
+$$
+
+Tiếp theo là
+
+$$
+\Sigma(3\omega xx + 3\omega^2x + \omega^3) = x^3
+$$
+
+hay
+
+$$
+3\omega\Sigma x^2 + 3\omega^2\Sigma x + \omega^3\Sigma 1 = x^3
+$$
+
+nên
+
+$$
+\Sigma x^2 = \frac{x^3}{3\omega} - \omega\Sigma x - \frac{\omega^2}{3}\Sigma 1
+$$
+
+hay
+
+$$
+\Sigma x^3 = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}
+$$
+
+và theo cách tương tự ta sẽ có
+
+$$
+\Sigma x^3 = \frac{x^4}{4\omega} - \frac{3\omega}{2}\Sigma x^2
+            - \omega^2\Sigma x - \frac{\omega^3}{4}\Sigma 1
+$$
+
+<!-- Chưa dịch: PDF 57-62, tức trang in 29-34, gồm §27 (nối tiếp) và §28-§33. Catchword
+     ở cuối trang 56 là "vbi". -->
+
+<!-- Ghi chú dịch giả: ở dòng ngay trên dòng "và theo cách tương tự", bản in viết
+     Σx³, trong khi dòng ngay trên nó (bắt đầu bằng chữ "hay") vẫn là Σx². Dòng "hay" ấy
+     chỉ là phép thay thế của dòng trước nên phải là Σx², và đã tự kiểm lại:
+     x³/(3ω) - ω(x²/(2ω) - x/2) - (ω²/3)(x/ω) = x³/(3ω) - x²/2 + ωx/6, đúng như
+     vế phải in ra. Như vậy vế trái đã in sai. Đã soi ảnh ở độ phóng 26 để chắc chắn số
+     mũ của dòng "hay" là 3, còn dòng trên là 2. Giữ nguyên như in. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

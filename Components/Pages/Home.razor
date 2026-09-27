@@ -131,11 +131,11 @@
             {
                 ["@context"] = "https://schema.org",
                 ["@type"] = "WebSite",
-                ["name"] = "Alternative World",
+                ["name"] = SiteInfo.Brand,
                 ["url"] = baseUrl,
                 ["description"] = "Blog toán học và lập trình viết bằng LaTeX, nhìn thế giới qua một lăng kính khác.",
                 ["inLanguage"] = "vi",
-                ["publisher"] = new JsonObject { ["@type"] = "Organization", ["name"] = "Alternative World" },
+                ["publisher"] = new JsonObject { ["@type"] = "Organization", ["name"] = SiteInfo.Brand },
             };
             return node.ToJsonString();
         }

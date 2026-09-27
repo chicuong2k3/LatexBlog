@@ -48,7 +48,7 @@ app.MapGet("/rss.xml", (LatexBlog.Services.PostStore store, HttpContext ctx) =>
     var sb = new System.Text.StringBuilder();
     sb.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
     sb.Append("<rss version=\"2.0\"><channel>");
-    sb.Append("<title>Alternative World</title><link>").Append(baseUrl).Append("</link>");
+    sb.Append("<title>").Append(LatexBlog.Services.SiteInfo.Brand).Append("</title><link>").Append(baseUrl).Append("</link>");
     sb.Append("<description>Viết bằng LaTeX, xuất bản bằng Blazor.</description>");
     foreach (var p in store.All)
     {
@@ -129,7 +129,7 @@ app.MapGet("/robots.txt", (HttpContext ctx) =>
 app.MapGet("/cover/{slug}.svg", (LatexBlog.Services.PostStore store, string slug) =>
 {
     var p = store.All.FirstOrDefault(x => x.Slug == slug);
-    var title = p?.Title ?? "Alternative World";
+    var title = p?.Title ?? LatexBlog.Services.SiteInfo.Brand;
     var safe = System.Net.WebUtility.HtmlEncode(title);
     var svg = $"""
         <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -150,7 +150,7 @@ app.MapGet("/cover/{slug}.svg", (LatexBlog.Services.PostStore store, string slug
             <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z" transform="rotate(216 600 330)"/>
             <path d="M600 330 C560 296 520 246 545 205 C558 182 590 180 600 198 C610 180 642 182 655 205 C680 246 640 296 600 330 Z" transform="rotate(288 600 330)"/>
           </g>
-          <text x="600" y="455" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#efe9f6">Alternative World</text>
+          <text x="600" y="455" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#efe9f6">{LatexBlog.Services.SiteInfo.Brand}</text>
           <text x="600" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#f7a0c6">{safe}</text>
         </svg>
         """;

@@ -44,7 +44,7 @@ và thẻ.
 
 ## Brand Commitments
 
-- Tên sản phẩm: **LatexBlog**.
+- Tên sản phẩm: **AIM**.
 - Ngôn ngữ mặc định: tiếng Việt.
 - Ràng buộc thẩm mỹ được chủ sở hữu ghim: **giao diện mang chất anime hoa
   anh đào (sakura)**. Ghi nhận nguyên văn, không mở rộng.

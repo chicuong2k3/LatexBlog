@@ -1,5 +1,5 @@
-// Alternative World service worker — offline reading: cache static assets + generated posts.
-var CACHE = "lb-v19";
+// AIM service worker — offline reading: cache static assets + generated posts.
+var CACHE = "lb-v20";
 var STATIC = [
   "/css/app.css",
   "/css/site.css",

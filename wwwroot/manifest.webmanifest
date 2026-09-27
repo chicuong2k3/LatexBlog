@@ -1,6 +1,6 @@
 {
-  "name": "Alternative World",
-  "short_name": "AltWorld",
+  "name": "AIM",
+  "short_name": "AIM",
   "description": "Viết bằng LaTeX, xuất bản bằng Blazor.",
   "start_url": "/",
   "display": "standalone",

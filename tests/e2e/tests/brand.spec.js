@@ -51,3 +51,27 @@ test('json-ld trang chủ nói AIM', async ({ page }) => {
   expect(node.name).toBe('AIM');
   expect(node.publisher.name).toBe('AIM');
 });
+
+test('trang về tôi: có đủ ba tầng', async ({ page }) => {
+  await page.goto('/about');
+  await expect(page.locator('.lb-about h2')).toHaveText([
+    'AIM là gì',
+    'Tên đến từ đâu',
+    'Trang này sẽ làm gì',
+  ]);
+});
+
+test('trang về tôi: giữ nguyên trích dẫn Newton', async ({ page }) => {
+  await page.goto('/about');
+  await expect(page.locator('.lb-about__lead')).toContainText('đại dương chân lý mênh mông');
+});
+
+test('trang về tôi: giữ chi tiết LaTeX và KaTeX', async ({ page }) => {
+  await page.goto('/about');
+  await expect(page.locator('.lb-about')).toContainText('KaTeX');
+});
+
+test('trang về tôi: giữ câu về bình luận và trang cá nhân', async ({ page }) => {
+  await page.goto('/about');
+  await expect(page.locator('.lb-about')).toContainText('thích những bài mình ưng');
+});

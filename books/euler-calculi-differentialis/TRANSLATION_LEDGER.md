@@ -1268,7 +1268,17 @@ Bổ sung trang 53 vào `chapters/01-sai-lech-huu-han.md`: §23, phần đảo n
 
 **Chữ `y`, `y^II`, `y^III`, `y^IV` giữ nguyên kiểu chữ La Mã như bản in**, vì các bậc 2, 3, 4 ở đây được đánh số bằng chữ số La Mã, khác với `y^1`.
 
-**Còn lại trong chương:** PDF 54–62 (tr. 26–34), gồm §24–§33. Catchword ở cuối trang 53 là `sin`.
+### 2026-09-28 — Chương I, Phần 11 (PDF 54, tr. 26, nối tiếp §23, rồi §24 và §25)
+
+Bổ sung trang 54 vào `chapters/01-sai-lech-huu-han.md`: nối thêm một ví dụ âm của §23, toàn bộ §24 (đi ngược: từ differentia tìm lại functio; $ax+b$ có differentia $a\omega$, nên lượng không đổi $b$ là tùy ý; differentia của $P$ và của $P+A$ đều là $Q$), và mở đầu §25 (đặt tên functio đang tìm là $\mathrm{SUMMAM}$). Không thêm callout. **Chưa niêm phong**; còn §25 (nối tiếp) và §26–§33 (PDF 55–62).
+
+**Đã soi bản scan:** toàn trang 54. Trang này gần như toàn văn xuôi, lớp OCR đọc được; dòng `y − 2Δy + 3Δ²y − 4Δ³y + 5Δ⁴y` vẫn đối chiếu với ảnh.
+
+**Dòng nối của §23 đã tự kiểm:** thay $x$ bằng $x-2\omega$ tức lấy $n=-2$ trong công thức tổng quát của trang trước, ta được các hệ số $-2$, $\frac{(-2)(-3)}{2}=3$, $\frac{(-2)(-3)(-4)}{6}=-4$, $\frac{(-2)(-3)(-4)(-5)}{24}=5$ — khớp đúng dòng in.
+
+**Ký hiệu `SUMMAM`:** bản in dùng chữ thường viết hoa. Đã hiển thị thành `$\mathrm{SUMMAM}$` để giữ cảm giác tên riêng. Lưu ý sổ ký hiệu có dòng `S.` = tổng của một chuỗi, $\sum$, và `S.x` = tổng cộng dần; ở đây `SUMMAM` là *tên functio*, không phải ký hiệu $\sum$ — chưa thêm dòng mới vào sổ ký hiệu, ghi lại ở đây để tiện tra khi gặp lại.
+
+**Còn lại trong chương:** PDF 55–62 (tr. 27–34), gồm phần còn lại của §25 và §26–§33. Câu mở đầu của phần tiếp theo là `Quemadmodum`, nối từ cuối trang 54 sang trang 55.
 
 
 

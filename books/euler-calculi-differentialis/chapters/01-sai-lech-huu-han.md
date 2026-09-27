@@ -1019,8 +1019,36 @@ $$
 y - \Delta y + \Delta^2y - \Delta^3y + \Delta^4y - \text{\&c.}
 $$
 
-<!-- Chưa dịch: PDF 54-62, tức trang in 26-34, gồm §24-§33. Catchword ở cuối trang 53
-     là "sin". -->
+<!-- PDF 54, trang in 26 -->
+
+còn nếu thay $x$ bằng $x-2\omega$, functio $y$ sẽ trình ra ở dạng
+
+$$
+y - 2\Delta y + 3\Delta^2y - 4\Delta^3y + 5\Delta^4y - \text{\&c.}
+$$
+
+**24.** Ta hãy thêm vài điều về phương pháp nghiên cứu, theo đó: nếu đã cho differentia,
+thì từ chính nó phải tìm ra được functio mà nó là differentia của. Vì việc này vô cùng
+khó, và thường đòi hỏi chính phân tích vô hạn, nên ta chỉ triển khai một vài trường hợp
+dễ hơn.
+
+Trước hết, hãy đi ngược lại: nếu ta đã tìm được differentia của một functio nào đó, thì
+ngược lại, khi differentia ấy đã được đưa ra, chính functio mà nó sinh ra cũng có thể được
+trình ra. Chẳng hạn, khi differentia của functio $ax+b$ là $a\omega$, nếu muốn biết
+differentia của functio nào là $a\omega$, thì câu trả lời có ngay: đó là $ax+b$. Trong đó
+ta tìm được một lượng không đổi $b$, vốn không có mặt trong differentia, và vì thế nó phụ
+thuộc vào ý chọn của ta. Luôn luôn, nếu differentia của functio $P$ là $Q$, thì differentia
+của $P+A$ cũng là $Q$, trong đó $A$ chỉ là một lượng không đổi bất kỳ. Từ đó, nếu differentia
+$Q$ ấy được đưa ra, thì functio mà nó sinh ra sẽ là $P+A$, và do đó nó không có một giá trị
+xác định, bởi lượng không đổi $A$ còn phụ thuộc vào ý chọn.
+
+**25.** Ta hãy gọi functio đang được tìm, tức là functio mà differentia của nó đã được đưa
+ra, là $\mathrm{SUMMAM}$; tên gọi ấy được dùng tiện lợi, vì một lượng tổng thường được đặt
+đối với differentia, và cũng vì trong thực tế functio đang tìm quả thật là tổng của tất cả
+những giá trị đứng trước differentiae. Cũng như
+
+<!-- Chưa dịch: PDF 55-62, tức trang in 27-34, gồm §25 (nối tiếp) và §26-§33. Câu mở
+     đầu của phần tiếp theo là "Quemadmodum", nối từ cuối trang 54 sang trang 55. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

@@ -97,7 +97,8 @@ Các chương đã dịch:
 | 10 | `chapters/10-canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day.md` | 52–54 | Cánh quạt, radiometer, và động cơ cảm ứng một cuộn dây. **Đã dịch, đã đối chiếu scan.** |
 | 11 | `chapters/11-dong-co-quay-chi-voi-mot-moi-noi.md` | 55–56 | Động cơ quay chỉ với một mối nối. **Đã dịch, đã đối chiếu scan.** |
 | 12 | `chapters/12-dong-co-khong-day-va-nang-luong-o-khap-noi.md` | 57–58 | Động cơ không dây, và năng lượng ở khắp nơi. **Đã dịch, đã đối chiếu scan.** |
-| 13–17 | — | 59–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 13 | `chapters/13-kich-thuoc-bong-den-va-su-nong-cua-day-nung.md` | 59–61 | Kích thước bóng đèn và sự nóng của dây nung. **Đã dịch, đã đối chiếu scan.** |
+| 14–17 | — | 62–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 

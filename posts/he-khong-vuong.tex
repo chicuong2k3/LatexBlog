@@ -1,0 +1,238 @@
+%---
+% title: "Gửi Tôi Của Năm Mười Sáu Tuổi: Giá Như Khi Ấy Đại Số Tuyến Tính Được Viết Thế Này. Kì 6 - Hệ phương trình không vuông"
+% date: 2026-09-27
+% tags: [dai-so-tuyen-tinh, thpt, he-phuong-trinh, he-khong-vuong, hang]
+% summary: "Kì 6 chuỗi đại số tuyến tính cho THPT: với hệ không vuông, điều duy nhất quyết định có nghiệm hay không là vế phải có nằm trong không gian sinh bởi các cột của ma trận không, và một hệ có nghiệm duy nhất khi nào mọi cột đều là cột trục."
+%---
+\documentclass[12pt,a4paper]{article}
+
+% Khối khai báo dưới đây CHỈ dùng khi biên dịch PDF trực tiếp
+% (Overleaf, pdfLaTeX). Blog không cần nó: Pandoc tự bỏ qua phần này.
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+
+\begin{document}
+
+Kì trước ta để ngỏ một câu: với hệ không vuông, nghịch đảo biến mất, còn đúng một thứ dùng được cho mọi hình dạng. Hôm nay ta mở cái thứ đó ra.
+
+Cụ thể hơn, hai câu hỏi. Với hai phương trình ba ẩn, bao giờ ta biết trước là hệ sẽ vô nghiệm, và bao giờ ta biết trước là nó sẽ có vô số nghiệm? Với ba phương trình hai ẩn, có thể nào nó có \emph{đúng một} nghiệm không?
+
+\subsection{Vế phải là một tổ hợp các cột}
+
+Ta xét hệ hai phương trình ba ẩn
+$$
+\begin{cases}
+x_1+x_2=2\\
+x_2+x_3=3
+\end{cases}
+$$
+Ở dạng ma trận, với
+$$
+A=\left[ \begin{array}{rrr} 1&1&0\\ 0&1&1 \end{array} \right],
+\qquad
+b=\left[ \begin{array}{r} 2\\ 3 \end{array} \right],
+$$
+ta có \(Ax=b\).
+
+Hãy làm đúng những gì kì ba đã làm, và lần này đừng dừng lại. Cột thứ nhất của \(Ax\) là \(x_1\) lần cột thứ nhất của \(A\). Cột thứ hai là \(x_2\) lần cột thứ hai. Cột thứ ba, với hệ số bằng \(0\), không đóng góp gì. Vậy
+$$
+Ax=x_1\left[ \begin{array}{r} 1\\ 0 \end{array} \right]
++x_2\left[ \begin{array}{r} 1\\ 1 \end{array} \right]
++x_3\left[ \begin{array}{r} 0\\ 1 \end{array} \right].
+$$
+Vế phải là một phép trộn: lấy cột thứ nhất nhân với \(x_1\), cột thứ hai nhân với \(x_2\), cột thứ ba nhân với \(x_3\), rồi cộng tất cả lại. Thứ tự là nhân trước, cộng sau.
+
+Và ta đang đòi phép trộn đó phải ra đúng \(b\). Nhưng \(x_1,x_2,x_3\) là ba con số ta được chọn tự do. Ba con số tự do để đặt kết quả vào một chỗ bất kỳ, thì chỉ có một cách.
+
+Ta đã trả phí cho bài toán này từ kì ba, ở định lý 1: cột thứ nhất của \(AB\) là một tổ hợp tuyến tính của các cột của \(A\). Xem chiều ngược lại thì ra một điều kiện. Ở đây, vế phải \(b\) là một tổ hợp tuyến tính của các cột của \(A\), với hệ số là chính nghiệm cần tìm. Nên hệ có nghiệm khi và chỉ khi vế phải nằm trong không gian sinh bởi các cột của \(A\).
+
+Với hệ vừa rồi, thử đưa \(b=(2,3)\) vào. Chọn \(x_1=2,\,x_2=0,\,x_3=3\):
+$$
+2\left[ \begin{array}{r} 1\\ 0 \end{array} \right]
++0\left[ \begin{array}{r} 1\\ 1 \end{array} \right]
++3\left[ \begin{array}{r} 0\\ 1 \end{array} \right]
+=\left[ \begin{array}{r} 2\\ 3 \end{array} \right].
+$$
+Ra đúng \(b\). Vậy hệ có nghiệm.
+
+Hãy đổi vế phải, thử \(b=(2,4)\). Ba cột của \(A\) không đổi, và cột thứ nhất cùng cột thứ ba đã đủ để dựng mọi vector hai chiều rồi, nên lần này cũng dựng được. Còn hệ thì
+$$
+\begin{cases}
+x_1+x_2=2\\
+x_2+x_3=4
+\end{cases}
+$$
+vẫn có nghiệm, chỉ là khác đi.
+
+\subsection{Khi nào hệ không nhất quán}
+
+Muốn có một hệ vô nghiệm, ta cần các cột của \(A\) không đủ rộng để chạm tới \(b\). Với ba ẩn thì chưa sao, ba cột trong \(\mathbb R^2\) luôn dựng được mọi thứ. Nhưng với hai ẩn trong \(\mathbb R^3\) thì chỉ có hai cột, mà \(\mathbb R^3\) cần tới ba.
+
+Xét
+$$
+A=\left[ \begin{array}{rr} 1&0\\ 0&1\\ 1&1 \end{array} \right],
+\qquad
+b=\left[ \begin{array}{r} 1\\ 2\\ 4 \end{array} \right],
+$$
+tức là
+$$
+\begin{cases}
+x_1=1\\
+x_2=2\\
+x_1+x_2=4
+\end{cases}
+$$
+Hai phương trình đầu nói \(x_1=1\) và \(x_2=2\). Cộng lại thì \(x_1+x_2=3\), không phải \(4\). Phương trình thứ ba trái với hai phương trình kia, nên hệ vô nghiệm.
+
+Đây là bài toán ba mặt phẳng trong \(\mathbb R^3\) không cắt nhau tại một điểm, mà kì một đã minh hoạ bằng hình.
+
+Bây giờ đổi vế phải, lấy \(b=(1,2,3)\). Hệ trở thành
+$$
+\begin{cases}
+x_1=1\\
+x_2=2\\
+x_1+x_2=3
+\end{cases}
+$$
+Ba phương trình này nói cùng một điều. Hệ nhất quán, và nghiệm là \((1,2)\) --- duy nhất.
+
+Ta vừa dùng \emph{hai vế phải khác nhau} trên \emph{cùng một ma trận}, và nhận được một hệ vô nghiệm cùng một hệ có nghiệm duy nhất. Ma trận \(A\) không hề thay đổi. Chỉ có \(b\) thôi đã quyết định cả hai.
+
+\subsection{Dạng khử tự nói lên điều đó}
+
+Vậy làm sao biết trước vế phải có nằm trong không gian sinh bởi các cột hay không, mà không phải thử?
+
+Ta dùng phép khử, và lần này ta nhìn vào nó một cách khác. Khử \([A\mid b]\) rồi đọc từng hàng như một phương trình.
+
+Với hệ ba phương trình hai ẩn vừa rồi:
+$$
+\left[ \begin{array}{rr|r} 1&0&1\\ 0&1&2\\ 1&1&4 \end{array} \right].
+$$
+Hàng thứ ba trừ hàng thứ nhất, rồi trừ tiếp hàng thứ hai:
+$$
+\left[ \begin{array}{rr|r} 1&0&1\\ 0&1&2\\ 0&0&1 \end{array} \right].
+$$
+Hàng cuối đọc ra là phương trình \(0=1\). Vô nghiệm. Ở đây ta dừng ở dạng bậc thang, chưa rút gọn hẳn, vì hàng cần xem đã hiện ra rồi.
+
+Còn với \(b=(1,2,3)\) thì hàng thứ ba là \((0,0,0)\), tức là \(0=0\), phương trình thừa, bỏ được. Và hai hàng trên đã cho ra \(x_1=1,\,x_2=2\).
+
+Nên tiêu chuẩn là
+$$
+\textbf{Định lý 1}\quad Ax=b\ \text{có nghiệm}
+\iff
+\text{trong dạng rút gọn của } [A\mid b]\ \text{không có hàng}\ (0\ \cdots\ 0\mid c)\ \text{với } c\neq 0.
+$$
+Hệ như vậy được gọi là \emph{nhất quán}. Chiều ngược lại thì gọi là \emph{không nhất quán}.
+
+Đây là thứ ta đã dùng từ kì hai, và lý do của nó giờ mới rõ: hàng \((0\ \cdots\ 0\mid c)\) chính là phương trình \(0=c\).
+
+\subsection{Hạng của một ma trận}
+
+Hãy đếm số hàng khác số \(0\) trong dạng rút gọn của \(A\). Con số đó được gọi là \emph{hạng} của \(A\), và ta ký hiệu là \(\operatorname{rk}(A)\).
+
+Có một sự thật nhỏ nhưng quan trọng, và ta chứng minh được ngay từ cách phép khử hoạt động. Ta chọn cột trục từ trái sang phải: cột đầu tiên còn hàng nào chưa có số \(1\) ở đầu thì lấy nó. Vậy quyết định cột nào được chọn là cột trục chỉ phụ thuộc vào các cột \emph{bên trái}.
+
+Hệ quả: thêm một cột vào bên phải không đổi chút nào việc các cột cũ có được chọn làm cột trục hay không. Nói cách khác, các cột trục của \([A\mid b]\) nằm trong \(n\) cột đầu y hệt các cột trục của \(A\).
+
+Còn cột cuối, cột của \(b\), thì được chọn làm cột trục khi và chỉ khi hệ không nhất quán. Vì nếu nó là cột trục thì có một hàng sau khi triệt tiêu cột đó mà để lại \((0\ \cdots\ 0\mid 1)\), tức là một hàng \((0\ \cdots\ 0\mid c)\) với \(c\neq0\). Chiều ngược lại, hàng \((0\ \cdots\ 0\mid c)\) với \(c\neq0\) buộc cột của \(b\) phải là cột trục.
+
+Đếm lại số cột trục ta được
+$$
+\textbf{Định lý 2}\quad
+\begin{cases}
+\operatorname{rk}([A\mid b])=\operatorname{rk}(A)+1 &\text{khi } Ax=b\ \text{không nhất quán},\\[2pt]
+\operatorname{rk}([A\mid b])=\operatorname{rk}(A) &\text{khi } Ax=b\ \text{nhất quán}.
+\end{cases}
+$$
+Và điều kiện nhất quán, viết gọn lại
+$$
+\textbf{Định lý 3}\quad Ax=b\ \text{nhất quán}\iff \operatorname{rk}(A)=\operatorname{rk}([A\mid b]).
+$$
+Ta có thể đọc định lý 1, 2, 3 thành một câu: \emph{chỉ có vế phải quyết định hệ có nghiệm hay không}. Hạng của \(A\) là thứ đã biết từ trước, nó không đổi khi ta đổi vế phải.
+
+\subsection{Điều kiện để có đúng một nghiệm}
+
+Câu hỏi thứ hai dễ bị trả lời sai. Lấy hệ ba phương trình hai ẩn, nhiều phương trình hơn số ẩn. Chắc chắn phải thừa, chắc chắn phải vô số nghiệm chứ?
+
+Không phải. Hệ
+$$
+\begin{cases}
+x_1=1\\
+x_2=2\\
+x_1+x_2=3
+\end{cases}
+$$
+có đúng một nghiệm, \((1,2)\). Ba phương trình, hai ẩn, một nghiệm. Hai phương trình sau chỉ lặp lại phương trình trước, nên chúng thừa mà không tạo ra tự do.
+
+Vậy phải phân biệt hai thứ hay bị gộp làm một. Một hàng toàn số \(0\) trong dạng rút gọn nghĩa là \emph{có một phương trình thừa}. Còn một ẩn tự do nghĩa là \emph{có một hướng để dịch chuyển}. Hai cái này không phải là một. Số hàng thừa không báo gì về số nghiệm.
+
+Vậy nghiệm duy nhất khi nào? Hệ \(Ax=b\) có \(n\) ẩn, và giả sử nó nhất quán. Khi đó, những cột trục của \([A\mid b]\) nằm trong \(n\) cột đầu, nên số cột trục đúng bằng \(\operatorname{rk}(A)\), tức bằng số hàng khác \(0\) trong dạng rút gọn. Mỗi cột trục cho ra một ẩn đã bị xác định. Số ẩn còn lại, chưa bị xác định, là
+$$
+n-\operatorname{rk}(A).
+$$
+Vậy
+$$
+\textbf{Định lý 4}\quad Ax=b\ \text{có đúng một nghiệm}
+\iff Ax=b\ \text{nhất quán}\ \text{và}\ \operatorname{rk}(A)=n.
+$$
+Hai vế phải cùng đúng. Điều kiện thứ hai nói rằng cả \(n\) cột của \(A\) đều là cột trục, tức không còn cột nào trống. Ta gọi trường hợp đó là các cột của \(A\) \emph{độc lập tuyến tính}.
+
+Chú ý điều kiện này không có gì với số phương trình. Hệ ba phương trình hai ẩn cũng có thể có nghiệm duy nhất, hệ một trăm phương trình hai ẩn cũng thế. Chỉ cần đủ nhiều phương trình độc lập, và thừa bao nhiêu cũng vô hại.
+
+Nhưng khi số ẩn nhiều hơn số phương trình thì chuyện đó không thể xảy ra. Vì \(\operatorname{rk}(A)\) không bao giờ vượt quá số hàng của \(A\):
+$$
+\textbf{Định lý 5}\quad \text{Nếu } Ax=b\ \text{nhất quán và số ẩn lớn hơn số phương trình, thì hệ có vô số nghiệm.}
+$$
+Hệ thống nhất luôn nằm trong trường hợp này, vì nó có sẵn nghiệm tầm thường. Định lý 2 của kì hai chỉ nói về hệ thống nhất, còn lập luận ở đây không cần giả thiết ấy.
+
+\subsection{Bảng tổng kết}
+
+Ghép lại, với \(m\) phương trình và \(n\) ẩn:
+
+$$
+\begin{array}{c|c|c}
+\text{hình dạng} & \text{nhất quán} & \text{số nghiệm}\\ \hline
+m<n & \text{luôn có, nếu là hệ thống nhất} & \text{vô số}\\
+m=n & \operatorname{rk}(A)=n & 1\\
+m=n & \operatorname{rk}(A)<n & \text{vô số}\\
+m=n & \text{không} & 0\\
+m>n & \operatorname{rk}(A)=n & 1\\
+m>n & \operatorname{rk}(A)<n & \text{vô số}\\
+m>n & \text{không} & 0
+\end{array}
+$$
+
+Đọc cột cuối: số nghiệm chỉ có ba giá trị, \(0\), \(1\), hoặc vô số. Ta chưa lúc nào có được đúng hai nghiệm. Kì một đã hỏi câu đó rồi, và câu trả lời nằm ngay trong cách ta đếm ở trên: nếu có một nghiệm thì có cả một họ, vì các nghiệm khác dùng \(n-\operatorname{rk}(A)\) ẩn tự do làm tham số.
+
+Hai hàng đầu của bảng cũng cho thấy ngay một việc: nếu số ẩn nhiều hơn số phương trình, ta không có cách nào ép hệ về đúng một nghiệm. Muốn vậy, tối thiểu phải có \(n\) phương trình độc lập. Đó là lý do phần lớn sách giáo khoàn phải dành cả một mục riêng cho bài toán vuông --- không phải vì nó dễ hơn, mà vì nó là hình dạng \emph{duy nhất} có thể đòi một câu trả lời dứt khoát.
+
+\subsection{Thêm một phương trình nghĩa là gì}
+
+Định lý 2 nói thêm một điều về việc thêm bớt phương trình.
+
+Thêm vào một hệ một phương trình nữa, tức là thêm một hàng nữa vào \([A\mid b]\). Hạng của \(A\) không đổi. Nên theo định lý 2, chỉ có hai khả năng:
+
+Nếu phương trình mới là hệ quả của những phương trình cũ, nó là hàng toàn số \(0\) sau khi khử, và tập nghiệm không đổi.
+
+Nếu phương trình mới mâu thuẫn với những cái cũ, nó làm cột của \(b\) thành cột trục, dạng rút gọn có một hàng \((0\ \cdots\ 0\mid 1)\), và tập nghiệm rỗng.
+
+Không có khả năng thứ ba. Một phương trình thêm vào hoặc là không đổi gì, hoặc phá hủng tất cả. Nó không bao giờ làm thay đổi nghiệm theo một kiểu nào đó.
+
+Với hệ ba mặt phẳng ở kì một, đó chính là việc mặt phẳng thứ ba hoặc cùng đi qua một điểm với hai mặt kia, hoặc cắt cả hai mặt kia ở hai điểm khác nhau. Không có mặt phẳng thứ ba nào cắt mặt thứ nhất tại \(A\), mặt thứ hai tại \(B\), rồi đi qua một điểm thứ ba.
+
+Ta bắt đầu kì một bằng cách hỏi ba mặt phẳng có cắt nhau tại một điểm không. Từ kì hai, thứ ta đếm là số cột trục. Cùng một câu hỏi, hai cách trả lời, và giờ chúng nói về nhau.
+
+\subsection{Còn thiếu gì}
+
+Ta đã giải được mọi hệ tuyến tính, vuông hay không vuông. Nhưng nhìn lại định lý 4, ta thấy một điều lệch lạc.
+
+Điều kiện có nghiệm duy nhất là \(\operatorname{rk}(A)=n\), tức \(A\) có đủ \(n\) cột trục. Với ma trận vuông, điều đó chính là khả nghịch, và ta đã có công cụ đẹp cho nó: ma trận nghịch đảo. Nhưng với ma trận không vuông cỡ \(m\times n\) mà \(m>n\), thì hạng \(n\) là hết, và nghịch đảo không tồn tại vì hình dạng không cho phép. Ta có một hằng số, nhưng không có ma trận nào để đặt nó vào.
+
+Điều đó gợi ý rằng ma trận nghịch đảo chỉ là một trường hợp đặc biệt của một thứ tổng quát hơn, thứ mà ta sẽ tìm ở kì sau, khi bắt đầu quy mọi ma trận thành một phép biến đổi chứ không còn là một bảng số.
+
+Còn một điều nữa, và nó chưa được giải ở đây. Khi \(n-\operatorname{rk}(A)>0\), các nghiệm không nằm rải rác. Chúng lấp đầy một mặt phẳng, một mặt, một không gian nào đó, và cái không gian ấy tự nó là tập nghiệm của một hệ thống nhất. Ta sẽ gặp lại nó, và lần này nó là đối tượng chính.
+
+\end{document}

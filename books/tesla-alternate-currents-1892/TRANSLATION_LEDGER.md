@@ -96,9 +96,9 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 83 | — | `chapters/15-tam-chan-nhom-va-vi-sao-no-tiet-kiem-nang-luong.md`| bài giảng, trang in 65 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 84 | 66 | `chapters/15-tam-chan-nhom-va-vi-sao-no-tiet-kiem-nang-luong.md`| bài giảng, trang in 66 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 85 | — | `chapters/15-tam-chan-nhom-va-vi-sao-no-tiet-kiem-nang-luong.md`| bài giảng, trang in 67 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 86 | — | — | bài giảng, trang in 68 theo thứ tự | — | Chưa dịch |
-| 87 | 69 | — | bài giảng, trang in 69 theo thứ tự | — | Chưa dịch |
-| 88 | 70 | — | bài giảng, trang in 70 theo thứ tự | — | Chưa dịch |
+| 86 | — | `chapters/16-khi-nao-tam-chan-con-ich-va-khi-nao-no-thanh-tro-ngai.md`| bài giảng, trang in 68 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 87 | 69 | `chapters/16-khi-nao-tam-chan-con-ich-va-khi-nao-no-thanh-tro-ngai.md`| bài giảng, trang in 69 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 88 | 70 | `chapters/16-khi-nao-tam-chan-con-ich-va-khi-nao-no-thanh-tro-ngai.md`| bài giảng, trang in 70 theo thứ tự |`fig-p070-00.jpg` (Hình 18); `fig-p070-01.jpg` (Hình 19)|**Đã dịch, đã đối chiếu scan**|
 | 89 | 71 | — | bài giảng, trang in 71 theo thứ tự | — | Chưa dịch |
 | 90 | 72 | — | bài giảng, trang in 72 theo thứ tự | — | Chưa dịch |
 | 91 | 73 | — | bài giảng, trang in 73 theo thứ tự | — | Chưa dịch |

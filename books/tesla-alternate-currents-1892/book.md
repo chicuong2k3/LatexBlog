@@ -100,7 +100,8 @@ Các chương đã dịch:
 | 13 | `chapters/13-kich-thuoc-bong-den-va-su-nong-cua-day-nung.md` | 59–61 | Kích thước bóng đèn và sự nóng của dây nung. **Đã dịch, đã đối chiếu scan.** |
 | 14 | `chapters/14-hinh-dang-bong-den-tieu-diem-va-ong-nhom-chan-ton-hao.md` | 62–64 | Hình dạng bóng đèn, tiêu điểm, và ống nhôm chắn tổn hao. **Đã dịch, đã đối chiếu scan.** |
 | 15 | `chapters/15-tam-chan-nhom-va-vi-sao-no-tiet-kiem-nang-luong.md` | 65–67 | Tấm chắn nhôm, và vì sao nó tiết kiệm năng lượng. **Đã dịch, đã đối chiếu scan.** |
-| 16–17 | — | 68–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 16 | `chapters/16-khi-nao-tam-chan-con-ich-va-khi-nao-no-thanh-tro-ngai.md` | 68–70 | Khi nào tấm chắn còn ích, và khi nào nó thành trở ngại. **Đã dịch, đã đối chiếu scan.** |
+| 17 | — | 71–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 

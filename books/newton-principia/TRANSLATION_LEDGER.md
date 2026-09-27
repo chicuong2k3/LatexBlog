@@ -6,7 +6,7 @@ Bản OCR dùng để đối chiếu: [Internet Archive OCR](https://archive.org
 | Trang nguồn | File đích | Trạng thái | Ghi chú |
 |---|---|---|---|
 | Front matter (PDF 1–16) và toàn bộ `LIFE OF SIR ISAAC NEWTON` (PDF 17–69, trang in 9–61) | `chapters/00-loi-dan-nhap.md` | Đã dịch, đang đối chiếu scan | Đã bổ sung đầy đủ lời tựa, lời giới thiệu, tiểu sử Isaac Newton, các trích dẫn và phần kết; cần rà soát đối chiếu từng trang với scan. |
-| Definitions I–VIII | `chapters/01-dinh-nghia.md` | Đã dịch, đã sửa theo đối chiếu | Đã tách đoạn và đặt tiêu đề mô tả. **Bản dịch theo ấn phẩm thứ ba 1726, qua Motte 1846** (xem `book.md`). Định nghĩa I sửa 2 chỗ: `mensura ejusdem` dịch "thước đo của chính lượng vật chất ấy" (trước đây là "đại lượng đo mức độ của nó"), và `Nive et Pulveribus` dịch "tuyết và các loại bột" (trước đây là "tuyết, bụi mịn hoặc bột" — "bụi mịn" là từ của bản Motte, không có trong Latin). `Magnitudo` giữ là "thể tích". Định nghĩa II sửa 1 câu: bản 1687 đọc `Motus totius est summa motuum in partibus singulis, adeoq; in corpore duplo majore æquali cum Velocitate duplus est, et dupla cum Velocitate quadruplus` — không có `si`; `in corpore duplo majore` mở khung và cả hai vế cùng nằm trong khung, nên vế sau kế thừa điều kiện "gấp đôi" của vế trước ($m'=2m,\ v'=2v \Rightarrow p'=4p$). Bản dịch cũ đọc vế sau là chỉ vận tốc tăng, dẫn tới nhận định sai rằng Newton mâu thuẫn với $p=mv$. Đã thêm chữ "cũng"; khớp với Motte/Cajori 1846 và Cohen–Whitman 2016, đều đọc tích luỹ. Sửa thêm 4 chỗ dịch `mensura` ở định nghĩa II, VI, VII, VIII: "đại lượng đo mức độ của nó / của lực ấy" → "thước đo của chính nó". Định nghĩa III sửa 4 chỗ, định nghĩa IV sửa 3 chỗ: `actio` dịch "tác động" thay "hành động", `ex ictu` dịch "va đập" thay "đụng va". **Chênh lệch ấn phẩm đã kiểm chứng**: định nghĩa V trong bản 1687 chỉ có hai câu định nghĩa rồi tới câu "lượng của một lực hướng tâm xét theo ba loại"; toàn bộ phần hòn đá trên dây, quả đạn bắn từ đỉnh núi, các mốc 10/30/90 độ và Mặt Trăng không có trong 1687, có trong 1726. Định nghĩa VI cũng đổi ("lớn hơn hoặc nhỏ hơn theo hiệu lực" ở 1687 → "tỉ lệ với hiệu lực" ở 1726). **Chưa kiểm được** ấn phẩm 1713 đã có phần bổ sung của định nghĩa V hay chưa. **Định nghĩa VI–VIII sửa thêm 2 chỗ dịch**: (1) `efficacia causæ` dịch "mức độ hiệu quả của nguyên nhân" thay "hiệu lực của nguyên nhân", vì `efficacia` không phải một đại lượng đã định nghĩa trong vật lí hiện đại; giữ "tỉ lệ với" vì 1726 đọc `proportional to`, khác `major vel minor pro` của 1687. (2) Câu cuối định nghĩa VIII trước đây dịch sai theo hai điểm: Latin 1726 `juxta Superficiem Terræ… gravitas motrix seu pondus est ut corpus` nói **gần mặt đất** (không phải "gần tâm") và nói trọng lượng **tỉ lệ với vật thể** nhân lực gia tốc, chứ không nói "lực động chỉ thay đổi theo khoảng cách" — vế đó không có trong nguồn và tự mâu thuẫn với vế trước. Đối chiếu Motte 1846: "near the surface of the earth, where the accelerative gravity … is the same, the motive gravity or weight is as the body". **Ba ghi chú VI–VIII viết lại** theo phản hồi rà soát: bỏ "lượng tuyệt đối là nguồn của trường" và mọi công thức từ trường cực từ (nam châm thật là lưỡng cực, trường xa giảm $1/r^3$); bỏ ví dụ $20\ \mathrm{N}$ trên hai vật ở định nghĩa VII vì nó trái ý Newton; bỏ hoàn toàn Menelaus (nhà toán học cổ đại, không liên quan) và thay bằng Jean Richer trên đảo Cayenne — **năm 1672**, không phải 1671; xem mục "Nguồn ngoài đã đối chiếu" bên dưới.; bỏ claim "mọi lực hướng tâm tỉ lệ nghịch đảo bình phương và quỹ đạo là conic" ở định nghĩa VIII. Xem `AUTHORIZED_TEXT_FIXES.tsv`. |
+| Definitions I–VIII | `chapters/01-dinh-nghia.md` | Hoàn thành (chủ đã đánh dấu `status: hoan-thanh` ngày 2026-09-27) | Đã tách đoạn và đặt tiêu đề mô tả. **Bản dịch theo ấn phẩm thứ ba 1726, qua Motte 1846** (xem `book.md`). Định nghĩa I sửa 2 chỗ: `mensura ejusdem` dịch "thước đo của chính lượng vật chất ấy" (trước đây là "đại lượng đo mức độ của nó"), và `Nive et Pulveribus` dịch "tuyết và các loại bột" (trước đây là "tuyết, bụi mịn hoặc bột" — "bụi mịn" là từ của bản Motte, không có trong Latin). `Magnitudo` giữ là "thể tích". Định nghĩa II sửa 1 câu: bản 1687 đọc `Motus totius est summa motuum in partibus singulis, adeoq; in corpore duplo majore æquali cum Velocitate duplus est, et dupla cum Velocitate quadruplus` — không có `si`; `in corpore duplo majore` mở khung và cả hai vế cùng nằm trong khung, nên vế sau kế thừa điều kiện "gấp đôi" của vế trước ($m'=2m,\ v'=2v \Rightarrow p'=4p$). Bản dịch cũ đọc vế sau là chỉ vận tốc tăng, dẫn tới nhận định sai rằng Newton mâu thuẫn với $p=mv$. Đã thêm chữ "cũng"; khớp với Motte/Cajori 1846 và Cohen–Whitman 2016, đều đọc tích luỹ. Sửa thêm 4 chỗ dịch `mensura` ở định nghĩa II, VI, VII, VIII: "đại lượng đo mức độ của nó / của lực ấy" → "thước đo của chính nó". Định nghĩa III sửa 4 chỗ, định nghĩa IV sửa 3 chỗ: `actio` dịch "tác động" thay "hành động", `ex ictu` dịch "va đập" thay "đụng va". **Chênh lệch ấn phẩm đã kiểm chứng**: định nghĩa V trong bản 1687 chỉ có hai câu định nghĩa rồi tới câu "lượng của một lực hướng tâm xét theo ba loại"; toàn bộ phần hòn đá trên dây, quả đạn bắn từ đỉnh núi, các mốc 10/30/90 độ và Mặt Trăng không có trong 1687, có trong 1726. Định nghĩa VI cũng đổi ("lớn hơn hoặc nhỏ hơn theo hiệu lực" ở 1687 → "tỉ lệ với hiệu lực" ở 1726). **Chưa kiểm được** ấn phẩm 1713 đã có phần bổ sung của định nghĩa V hay chưa. **Định nghĩa VI–VIII sửa thêm 2 chỗ dịch**: (1) `efficacia causæ` dịch "mức độ hiệu quả của nguyên nhân" thay "hiệu lực của nguyên nhân", vì `efficacia` không phải một đại lượng đã định nghĩa trong vật lí hiện đại; giữ "tỉ lệ với" vì 1726 đọc `proportional to`, khác `major vel minor pro` của 1687. (2) Câu cuối định nghĩa VIII trước đây dịch sai theo hai điểm: Latin 1726 `juxta Superficiem Terræ… gravitas motrix seu pondus est ut corpus` nói **gần mặt đất** (không phải "gần tâm") và nói trọng lượng **tỉ lệ với vật thể** nhân lực gia tốc, chứ không nói "lực động chỉ thay đổi theo khoảng cách" — vế đó không có trong nguồn và tự mâu thuẫn với vế trước. Đối chiếu Motte 1846: "near the surface of the earth, where the accelerative gravity … is the same, the motive gravity or weight is as the body". **Ba ghi chú VI–VIII viết lại** theo phản hồi rà soát: bỏ "lượng tuyệt đối là nguồn của trường" và mọi công thức từ trường cực từ (nam châm thật là lưỡng cực, trường xa giảm $1/r^3$); bỏ ví dụ $20\ \mathrm{N}$ trên hai vật ở định nghĩa VII vì nó trái ý Newton; bỏ hoàn toàn Menelaus (nhà toán học cổ đại, không liên quan) và thay bằng Jean Richer trên đảo Cayenne — **năm 1672**, không phải 1671; xem mục "Nguồn ngoài đã đối chiếu" bên dưới.; bỏ claim "mọi lực hướng tâm tỉ lệ nghịch đảo bình phương và quỹ đạo là conic" ở định nghĩa VIII. Xem `AUTHORIZED_TEXT_FIXES.tsv`. |
 | Laws I–III + Học luận | `chapters/02-dinh-luat-van-dong.md` | Đã dịch, đang đối chiếu scan | Đã tách đoạn và đặt tiêu đề mô tả. Bổ sung **Học luận sau các định luật**, trước đây bị bỏ sót: đây là toàn bộ phần trình bày bằng chứng thực nghiệm của Newton cho ba định luật. Dịch từ bản 1846, đối chiếu với Latin 1687 (`la.wikisource.org/.../Axiata,_sive_Leges_Motus`) cho phần trùng nhau. **Còn phải đối chiếu scan**: số trang nguồn, và hình sơ đồ hai vật thể cầu A, B với hai nửa đường tròn EAF, GBH (đã để placeholder, chưa trích được). Bản 1846 có thêm đoạn lập luận lực hút hai chiều giữa các bộ phận Trái Đất, đoạn này **không có** trong Latin 1687 và được thêm ở ấn phẩm sau; bản Motte dựa trên ấn phẩm thứ ba 1726. Ba ghi chú mới theo `ANNOTATION_GUIDE.md` mục 5ter. |
 | Hệ quả I | `chapters/03-he-qua-dinh-luat.md` | Đã dịch | Đã dựng lại sơ đồ hình bình hành tại `assets/corollary-1-parallelogram.svg`; cần đối chiếu hình với scan. |
 | Hệ quả II | `chapters/04-he-qua-ii-hop-phan-tich-luc.md` | Đang rà soát | Đã dịch lời chứng minh và dựng `assets/corollary-2-force-resolution.svg`; cần đối chiếu ký hiệu và hình với scan. |
@@ -79,20 +79,49 @@ Bản OCR dùng để đối chiếu: [Internet Archive OCR](https://archive.org
 
 ## Lớp chú thích vật lí hiện đại (lớp chồng, không thuộc bản dịch)
 
-Lớp chú thích dùng marker `> **[Ghi chú hiện đại]**`, quy ước tại `ANNOTATION_GUIDE.md`.
+Lớp chú thích dùng marker `> **[Chú giải]**`, quy ước tại `ANNOTATION_GUIDE.md`.
 
 | Mục | Trạng thái |
 |---|---|
 | Số chương có chú thích | 70/70 |
 | Tổng số chú thích | 153 |
-| Độ dài chú thích | 273–450 từ (trung vị 373) |
+| Độ dài chú thích | 224–462 từ (trung vị 345) |
 | Lỗi cấu trúc nhãn / render / sai lệch bản dịch | 0 / 0 / 0 |
 | Cảnh báo mật độ ngoài ngưỡng | 0 |
+
+**Đợt biên tập lại toàn bộ (2026-09-27).** Cả 153 chú thích đã viết lại theo văn phong
+mới: bỏ bộ khung cố định bốn nhãn, mỗi chú thích mở bằng một tiêu đề nêu đúng vấn đề
+cụ thể, rồi đi thẳng vào công thức → lý do Newton viết vậy → hệ quả hiện đại. Không
+đổi bản dịch nguồn; các chỉnh sửa thuật ngữ và bản dịch vẫn nằm trong
+`AUTHORIZED_TEXT_FIXES.tsv` và các mục bên dưới. Đã bỏ các câu sáo và tên được thêm
+để trông sâu sắc; giữ lại tên chỉ ở chỗ mang thông tin (chẳng hạn khi tên gắn với một
+kết quả, một phép đo, hay một mốc lịch sử). `ANNOTATION_GUIDE.md` mục 5 đã sửa lại
+để không còn đòi ba nhãn cũ.
+
+**Dọn tiêu đề trùng (2026-09-27).** Trước đợt này mỗi chương mở bằng `# <tiêu đề>` ngay
+trong thân, trong khi `Components/Pages/BookChapter.razor` đã render `<h1>@Chapter.Title</h1>`
+ở header — cùng một chuỗi, hiện hai lần, và lần trong thân còn lọt vào mục lục vì
+`ExtractToc` thu cả `h1`. Đã xoá dòng `# ` ở **69/70** chương, chỉ khi nó lặp nguyên văn
+`title:` trong frontmatter (theo `books/README.md`, `title:` mới là tiêu đề chuẩn); mỗi lần
+xoá đều khai ở `AUTHORIZED_TEXT_FIXES.tsv`. Không sửa `BookChapter.razor` và không đổi
+CSS, nên tiêu đề lớn ở header giữ nguyên diện mạo. Đo trên DOM: 69 chương còn đúng một
+`h1`.
+
+Giữ lại `01-dinh-nghia.md`: `h1` trong thân là "Định nghĩa I. Lượng vật chất", khác `title:`
+("Những khái niệm cơ bản về vật chất và chuyển động"), và nó là cha của các `h2` Định nghĩa
+II–VIII. Xoá đi thì trang mất luôn nhãn của Định nghĩa I. Chấp nhận trang này còn hai thẻ
+`h1`, vì hai chuỗi khác nhau và nội dung không mất.
+
+Còn tồn đọng, không sửa trong đợt này: hai cuốn `theorem-motuscor` và
+`whittaker-aether-vol1` có chương đặt nhiều `h1` ngang hàng trong thân
+("Lời tựa" / "Bản ghi chú về ký hiệu" / "Mục lục"; "Liber Primus, Phần II" / "Section II"),
+đáng lẽ là `h2`. `DENSITY_BANDS` trong checker mới chỉ hiệu chỉnh cho cuốn này nên chưa có
+cách kiểm hai cuốn kia bằng công cụ.
 
 Kiểm tra lại bằng:
 
 ```
-python tools/check_book_callouts.py "books\newton-principia" --render --fidelity
+python tools/check_book_callouts.py "books\newton-principia" --strict --render --fidelity
 ```
 
 ### Sửa bản dịch đã được duyệt

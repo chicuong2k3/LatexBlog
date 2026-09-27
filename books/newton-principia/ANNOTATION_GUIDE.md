@@ -25,35 +25,45 @@ Bản dịch phải trung thành nguyên văn. Vì vậy:
 ## 2. Cú pháp callout
 
 Callout là **blockquote Markdown** bắt đầu bằng marker cố định. Marker này là chuỗi
-được grep: `**[Ghi chú hiện đại]**`.
+được grep: `**[Chú giải]**`.
 
 ````markdown
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Khái niệm Newton định nghĩa tương ứng với khái niệm nào trong
-> vật lí hiện nay, gọi tên tiếng Anh và tiếng Việt, và khác ở chỗ nào.
+> **“Lượng vật chất” ngày nay gọi là khối lượng**
 >
-> **Công thức.** Công thức hiện đại, bằng LaTeX trong `$$...$$`.
+> Viết câu đầu bằng ký hiệu hiện đại:
 >
-> **Vì sao Newton viết như vậy.** Bối cảnh thế kỷ XVII giải thích cách diễn đạt của
-> Newton, và điều đó dẫn tới hệ quả gì khi đọc bằng vật lí hiện đại.
+> $$m = \rho V$$
+>
+> Nén thì hai đại lượng đổi ngược chiều. Với $\rho' = 2\rho$ và $V' = V/2$:
+>
+> $$m' = (2\rho)\frac{V}{2} = m.$$
+>
+> Nén vật không làm sinh thêm vật chất.
 ````
 
-Nhãn thứ tư và thứ năm là tùy chọn, chỉ dùng khi thật sự cần, và không thay
-thế ba nhãn bắt buộc:
+Bên trong callout **không dùng bộ khung cố định**. Cụ thể:
 
-> **Hiện nay thì sao.** Kết luận của vật lí đương đại về khái niệm đó, kèm
-> công thức hiện đại nếu có, và mức độ đúng/sai của Newton.
-
-> **Lưu ý nguồn gốc.** Ghi rõ điều gì Newton **không** có, hoặc mắc lỗi/đơn giản
-> hóa gì so với cách hiểu hiện đại (ví dụ: Newton dùng "trọng lực tương đối" như
-> một vật thể, dù ông không đề cập tới trường hấp dẫn).
-
-Không được tự đặt nhãn nào khác ngoài năm nhãn trên.
+- Tiêu đề con (in đậm) phải **nêu ra vấn đề cụ thể** của đoạn đó, hoặc bỏ hẳn tiêu đề
+  nếu ghi chú ngắn. Xem `chapters/01-dinh-nghia.md` callout đầu làm mẫu.
+- Cấm các nhãn chung chung sau ở vị trí tiêu đề: `**Khái niệm tương ứng.**`,
+  `**Công thức.**`, `**Vì sao Newton viết như vậy.**`, `**Hiện nay thì sao.**`,
+  `**Lưu ý nguồn gốc.**`. `tools/check_book_callouts.py` báo lỗi khi gặp.
+- Được tự đặt tiêu đề riêng, miễn là nói ra vấn đề: *“Tại sao vật nặng và nhẹ rơi
+  như nhau?”*, *“Lực này có phải lực ly tâm không?”*, *“Viết bằng ký hiệu hiện đại”*.
+- Câu hỏi để quyết định có cần ghi chú: **bỏ ghi chú này đi, người đọc hiện đại có
+  hiểu sai hoặc bỏ lỡ điều gì không?** Nếu không, bỏ.
+- Cấm câu sáo và tên được thêm cho vẻ sâu sắc: *“Đây là mấu chốt”*, *“Điều đáng
+  chú ý”*, *“Điều thú vị”*, *“Có thể thấy rằng”*, *“Một ngõ ngách dẫn tới”*,
+  *“Vô tình đặt nền móng cho”*, *“Hàng thế kỷ sau”*... Không thêm Einstein,
+  Noether, Maxwell, relativity hay quantum mechanics chỉ để đoạn văn trông sâu sắc.
 
 ### Quy tắc công thức
 
-- Công thức viết **một dòng**: `$$m = \rho V$$`. Đây là dạng an toàn nhất trong blockquote.
+- Công thức cho một dòng: đặt `$$...$$` trên **một dòng riêng có tiền tố `>`**, ví dụ
+  `> $$m = \rho V$$`. Block `$$` nhiều dòng trong blockquote cũng an toàn, đã kiểm
+  với `chapters/01-dinh-nghia.md`.
 - Công thức nhiều dòng dùng `aligned`, **mỗi dòng có tiền tố `>`**:
 
   ````
@@ -67,14 +77,17 @@ Không được tự đặt nhãn nào khác ngoài năm nhãn trên.
 
 - Chỉ dùng lệnh KaTeX an toàn: `\frac`, `\sqrt`, `\sum`, `\int`, `\begin{aligned}`,
   `\begin{cases}`, `\vec`, `\hat`, `\mathrm`, `\text`, `\cdot`, `\times`, `\approx`,
-  `\propto`, `\partial`. **Không** dùng môi trường `\begin{align}`, `\label`, `\eqref`,
-  `\newcommand`, `\begin{figure}`.
+  `\propto`, `\partial`, `\qquad`, `\Rightarrow`. **Không** dùng môi trường
+  `\begin{align}`, `\label`, `\eqref`, `\newcommand`, `\begin{figure}`.
+- Mỗi công thức phải làm ít nhất một việc: diễn đạt chính xác câu của tác giả; kiểm
+  tra một ví dụ; chỉ ra hai đại lượng khác nhau; làm lộ một giả thiết; hoặc cho thấy
+  giới hạn của lập luận. Không chèn công thức chỉ vì đoạn đang nói về vật lí.
 - Trong callout **không** nhúng hình (`![](...)`) và **không** nhúng bảng Markdown.
   Nếu cần hình, mô tả bằng lời và dẫn tới `assets/` hiện có.
 
 ## 3. Chọn khái niệm nào để chú giải
 
-Bắt buộc có callout:
+Ứng viên nên có callout — nhưng vẫn phải qua câu hỏi ở mục 2 ở trên. Có:
 
 1. Mỗi **Định nghĩa** (Definition).
 2. Mỗi **Định luật** (Law).
@@ -98,7 +111,11 @@ Không cần callout:
 
 ## 4. Mật độ
 
-Mỗi callout **80–450 từ**, tính theo bộ đếm của `tools/check_book_callouts.py` (đã loại trừ phần công thức LaTeX). Mỗi chương:
+**Độ dài do độ khó quyết định, không phải do quy ước.** Một câu đơn giản có thể
+chỉ cần 2–3 câu chú giải; một đoạn khó có thể cần nhiều đoạn và công thức. Chỉ còn
+hai ngưỡng cứng, do `tools/check_book_callouts.py` kiểm: **25–700 từ** (đã loại trừ
+phần công thức LaTeX). Đừng cân đối hình thức giữa các Definition. Số callout mỗi
+chương:
 
 | Chương | Số callout |
 |---|---|
@@ -114,7 +131,8 @@ tốt hơn là dàn đều và nông.
 
 ## 5. Chất lượng nội dung
 
-Mỗi callout phải trả lời được ba câu hỏi, và phải trả lời ** riêng biệt**:
+Callout phải trả lời ba câu hỏi, và phải trả lời **riêng biệt** — nhưng không phải
+bằng ba nhãn cố định. Ba câu hỏi ấy là nội dung cần có, không phải tiêu đề bắt buộc:
 
 - **Khái niệm tương ứng là gì?** Tên tiếng Anh, tên tiếng Việt, định nghĩa ngắn. Chỉ ra
   chỗ nào khác với cách Newton dùng từ đó.
@@ -127,6 +145,12 @@ Mỗi callout phải trả lời được ba câu hỏi, và phải trả lời 
   Newton được đo bằng *specific gravity* — tỉ số với một vật liệu tham chiếu — nên nó
   không lặp vòng. Một mâu thuẫn chỉ được ghi vào callout khi nó còn đứng vững sau bước
   kiểm tra đó.
+
+Các câu trả lời phải **lộ ra qua tiêu đề và nội dung**, không qua nhãn. Một tiêu đề
+như *“Ba chuyên đề riêng: một nghiệm cơ bản, một phép nội suy, một phép đo tỷ lệ”* nói
+được nhiều hơn ba nhãn *“Khái niệm tương ứng / Công thức / Hiện nay thì sao”*, và
+người đọc tự thấy đâu là định nghĩa, đâu là công thức, đâu là lịch sử. Câu nào không
+liên quan tới vấn đề đang bàn thì bỏ hẳn, đừng viết cho đủ số.
 
 ### Ba lớp phải tách bạch
 

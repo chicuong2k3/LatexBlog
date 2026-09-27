@@ -1,11 +1,19 @@
 import json
 import os
+import re
 import shutil
 import tempfile
 import unittest
 from pathlib import Path
 
-from build_books import build_all, validate_book_meta, validate_chapter_meta
+from build_books import (
+    STATUS_COMPLETE,
+    STATUS_INCOMPLETE,
+    build_all,
+    chapter_status,
+    validate_book_meta,
+    validate_chapter_meta,
+)
 
 pandoc = os.environ.get("PANDOC") or shutil.which("pandoc")
 if not pandoc:
@@ -34,7 +42,28 @@ slug: chapter-one
 # Mở đầu
 
 Nội dung $x^2$.
+
+$$
+a+b
+$$
 """
+
+CHAPTER_INVALID_PADDED_INLINE_MATH = CHAPTER.replace("$x^2$", "$ x^2 $")
+
+CHAPTER_INVALID_DISPLAY_CLOSER = """---
+title: "Chương Một"
+summary: "Nội dung chương đầu tiên."
+slug: chapter-one
+---
+
+$$
+a+b
+\\]
+"""
+
+CHAPTER_COMPLETE = CHAPTER.replace(
+    'slug: chapter-one', 'slug: chapter-one\nstatus: hoan-thanh'
+)
 
 
 class ValidateBookMetaTest(unittest.TestCase):
@@ -47,6 +76,38 @@ class ValidateBookMetaTest(unittest.TestCase):
             validate_book_meta(
                 {"title": "x", "summary": "s", "tags": []}, Path("book.md")
             )
+
+    def test_book_manifest_status_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "not allowed on a book manifest"):
+            validate_book_meta(
+                {"title": "x", "summary": "s", "tags": ["t"], "status": "hoan-thanh"},
+                Path("book.md"),
+            )
+
+
+class ChapterStatusTest(unittest.TestCase):
+    def test_absent_status_is_incomplete(self):
+        self.assertEqual(chapter_status({}, Path("chapter.md")), STATUS_INCOMPLETE)
+
+    def test_complete_status_is_kept(self):
+        self.assertEqual(
+            chapter_status({"status": "hoan-thanh"}, Path("chapter.md")),
+            STATUS_COMPLETE,
+        )
+
+    def test_incomplete_status_is_kept(self):
+        self.assertEqual(
+            chapter_status({"status": "chua-hoan-thanh"}, Path("chapter.md")),
+            STATUS_INCOMPLETE,
+        )
+
+    def test_unknown_status_raises(self):
+        with self.assertRaisesRegex(ValueError, "status"):
+            chapter_status({"status": "xong"}, Path("chapter.md"))
+
+    def test_non_string_status_raises(self):
+        with self.assertRaisesRegex(ValueError, "status"):
+            chapter_status({"status": True}, Path("chapter.md"))
 
 
 class ValidateChapterMetaTest(unittest.TestCase):
@@ -90,6 +151,59 @@ class BuildBooksTest(unittest.TestCase):
         self.assertEqual(data[0]["author"], "Jane Doe")
 
     @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_unmarked_chapter_and_its_book_are_incomplete(self):
+        self._write_book()
+
+        items = build_all(self.books, self.out, self.index, pandoc)
+
+        self.assertEqual(items[0]["status"], STATUS_INCOMPLETE)
+        self.assertEqual(items[0]["chapters"][0]["status"], STATUS_INCOMPLETE)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_book_is_complete_only_when_every_chapter_is_sealed(self):
+        root = self._write_book(chapter=CHAPTER_COMPLETE)
+        (root / "chapters" / "02-chapter-two.md").write_text(
+            CHAPTER.replace("chapter-one", "chapter-two"), encoding="utf-8"
+        )
+
+        items = build_all(self.books, self.out, self.index, pandoc)
+
+        self.assertEqual(
+            [chapter["status"] for chapter in items[0]["chapters"]],
+            [STATUS_COMPLETE, STATUS_INCOMPLETE],
+        )
+        self.assertEqual(items[0]["status"], STATUS_INCOMPLETE)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_book_is_complete_when_all_chapters_are_sealed(self):
+        root = self._write_book(chapter=CHAPTER_COMPLETE)
+        (root / "chapters" / "02-chapter-two.md").write_text(
+            CHAPTER_COMPLETE.replace("chapter-one", "chapter-two"), encoding="utf-8"
+        )
+
+        items = build_all(self.books, self.out, self.index, pandoc)
+
+        self.assertEqual(items[0]["status"], STATUS_COMPLETE)
+        data = json.loads(self.index.read_text(encoding="utf-8"))
+        self.assertEqual(data[0]["status"], STATUS_COMPLETE)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_book_with_no_chapters_is_not_complete(self):
+        root = self._write_book()
+        (root / "chapters" / "01-chapter-one.md").unlink()
+
+        items = build_all(self.books, self.out, self.index, pandoc)
+
+        self.assertEqual(items[0]["status"], STATUS_INCOMPLETE)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_unknown_chapter_status_fails_the_build(self):
+        self._write_book(chapter=CHAPTER.replace("slug: chapter-one", "slug: chapter-one\nstatus: xong"))
+
+        with self.assertRaisesRegex(ValueError, "status"):
+            build_all(self.books, self.out, self.index, pandoc)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
     def test_copies_book_assets_to_generated_output(self):
         root = self._write_book()
         assets = root / "assets"
@@ -101,6 +215,33 @@ class BuildBooksTest(unittest.TestCase):
         copied = self.out / "the-prisoner" / "assets" / "figure.svg"
         self.assertTrue(copied.exists())
         self.assertIn("<svg", copied.read_text(encoding="utf-8"))
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_math_becomes_katex_spans_with_no_literal_dollars(self):
+        self._write_book()
+
+        build_all(self.books, self.out, self.index, pandoc)
+
+        html = (self.out / "the-prisoner" / "chapters" / "chapter-one.html").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn('class="math inline"', html)
+        self.assertIn('class="math display"', html)
+        self.assertNotIn("$", html)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_padded_inline_math_fails_the_build(self):
+        self._write_book(chapter=CHAPTER_INVALID_PADDED_INLINE_MATH)
+
+        with self.assertRaisesRegex(RuntimeError, "unparsed math"):
+            build_all(self.books, self.out, self.index, pandoc)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_display_block_closed_with_bracket_fails_the_build(self):
+        self._write_book(chapter=CHAPTER_INVALID_DISPLAY_CLOSER)
+
+        with self.assertRaisesRegex(RuntimeError, "unparsed math"):
+            build_all(self.books, self.out, self.index, pandoc)
 
     def test_duplicate_book_slug_raises(self):
         duplicate = BOOK.replace(
@@ -130,6 +271,53 @@ class BuildBooksTest(unittest.TestCase):
         build_all(self.books, self.out, self.index, pandoc)
 
         self.assertEqual(sentinel.read_text(encoding="utf-8"), "post-data")
+
+
+class BookSourceIntegrityTest(unittest.TestCase):
+    """Lint the real translated sources, not a fixture.
+
+    Pandoc silently drops a footnote definition that no reference points at, and
+    silently swallows ``[^x]: text`` written as ``[x]: text`` by reading it as a
+    link reference definition. Either mistake loses a citation with no build
+    error, so the repo sources are checked directly.
+    """
+
+    BOOKS = Path(__file__).resolve().parent.parent / "books"
+    LABEL = r"[A-Za-z0-9_-]+"
+
+    def _chapters(self):
+        return sorted(self.BOOKS.glob("*/chapters/*.md"))
+
+    def _split_footnotes(self, text):
+        definitions = dict(re.findall(rf"^\[\^({self.LABEL})\]:[ \t]*(.*)$", text, re.M))
+        references = set(re.findall(rf"\[\^({self.LABEL})\]", re.sub(rf"^\[\^({self.LABEL})\]:.*$", "", text, flags=re.M)))
+        return definitions, references
+
+    def test_every_footnote_reference_has_a_definition(self):
+        for chapter in self._chapters():
+            with self.subTest(chapter=chapter):
+                definitions, references = self._split_footnotes(chapter.read_text(encoding="utf-8"))
+                self.assertEqual(
+                    sorted(references - set(definitions)), [],
+                    f"{chapter}: referenced but never defined",
+                )
+
+    def test_no_footnote_definition_is_orphaned(self):
+        for chapter in self._chapters():
+            with self.subTest(chapter=chapter):
+                definitions, references = self._split_footnotes(chapter.read_text(encoding="utf-8"))
+                self.assertEqual(
+                    sorted(set(definitions) - references), [],
+                    f"{chapter}: defined but never referenced",
+                )
+
+    def test_footnote_definitions_are_not_bare_link_references(self):
+        """`[x]: text` is a Pandoc link reference; `[^x]: text` is a footnote."""
+        for chapter in self._chapters():
+            with self.subTest(chapter=chapter):
+                text = chapter.read_text(encoding="utf-8")
+                bare = set(re.findall(rf"^\[({self.LABEL})\]:", text, re.M))
+                self.assertEqual(sorted(bare), [], f"{chapter}: bare link reference definition")
 
 
 if __name__ == "__main__":

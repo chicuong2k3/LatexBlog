@@ -13,6 +13,9 @@ from build_posts import find_pandoc, parse_frontmatter, render_pandoc, slugify_t
 
 BOOK_REQUIRED = ("title", "summary", "tags")
 CHAPTER_REQUIRED = ("title", "summary")
+STATUS_COMPLETE = "hoan-thanh"
+STATUS_INCOMPLETE = "chua-hoan-thanh"
+CHAPTER_STATUSES = (STATUS_COMPLETE, STATUS_INCOMPLETE)
 SAFE_SEGMENT = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 CHAPTER_PREFIX = re.compile(r"^(\d+)")
 
@@ -34,6 +37,7 @@ class ChapterSource:
     prefix: int
     title: str
     summary: str
+    status: str
     body: str
 
 
@@ -89,6 +93,13 @@ def validate_book_meta(meta: dict[str, Any], path: Path) -> None:
     _required_text(meta, "title", path)
     _required_text(meta, "summary", path)
     _required_tags(meta, path)
+    if "status" in meta:
+        raise BookBuildError(
+            path,
+            "frontmatter 'status' is not allowed on a book manifest; a book counts as "
+            "complete only when every one of its chapters is marked "
+            f"'status: {STATUS_COMPLETE}'",
+        )
 
 
 def validate_chapter_meta(meta: dict[str, Any], path: Path) -> None:
@@ -98,6 +109,23 @@ def validate_chapter_meta(meta: dict[str, Any], path: Path) -> None:
         raise BookBuildError(path, f"missing frontmatter field(s): {', '.join(missing)}")
     _required_text(meta, "title", path)
     _required_text(meta, "summary", path)
+
+
+def chapter_status(meta: dict[str, Any], path: Path) -> str:
+    """Resolve a chapter's translation status, defaulting to incomplete.
+
+    Unmarked means unfinished, so a chapter only counts as finished once the
+    source says so explicitly.
+    """
+    raw = meta.get("status")
+    if raw is None:
+        return STATUS_INCOMPLETE
+    if not isinstance(raw, str) or raw.strip() not in CHAPTER_STATUSES:
+        raise BookBuildError(
+            path,
+            f"frontmatter 'status' must be one of: {', '.join(CHAPTER_STATUSES)}",
+        )
+    return raw.strip()
 
 
 def _parse_source(path: Path, book: bool) -> tuple[dict[str, Any], str]:
@@ -164,6 +192,7 @@ def _book_source(directory: Path, seen_book_slugs: dict[str, Path]) -> BookSourc
             prefix=prefix,
             title=_required_text(chapter_meta, "title", chapter_path),
             summary=_required_text(chapter_meta, "summary", chapter_path),
+            status=chapter_status(chapter_meta, chapter_path),
             body=chapter_body,
         ))
 
@@ -219,21 +248,34 @@ def build_all(
         intro_path = ""
         if book.body:
             intro = book_out / "intro.html"
-            render_pandoc(pandoc, book.manifest.name, book.body, intro)
+            render_pandoc(
+                pandoc, book.manifest.name, book.body, intro,
+                reject_literal_dollars=True,
+            )
             intro_path = "intro.html"
 
         chapters: list[dict[str, Any]] = []
         for chapter in book.chapters:
             chapter_path = book_out / "chapters" / f"{chapter.slug}.html"
             chapter_path.parent.mkdir(parents=True, exist_ok=True)
-            render_pandoc(pandoc, chapter.path.name, chapter.body, chapter_path)
+            render_pandoc(
+                pandoc, chapter.path.name, chapter.body, chapter_path,
+                reject_literal_dollars=True,
+            )
             chapters.append({
                 "slug": chapter.slug,
                 "number": chapter.number,
                 "title": chapter.title,
                 "summary": chapter.summary,
+                "status": chapter.status,
                 "htmlPath": f"chapters/{chapter.slug}.html",
             })
+
+        book_status = (
+            STATUS_COMPLETE
+            if chapters and all(c["status"] == STATUS_COMPLETE for c in chapters)
+            else STATUS_INCOMPLETE
+        )
 
         index.append({
             "slug": book.slug,
@@ -243,6 +285,7 @@ def build_all(
             "language": book.language,
             "summary": book.summary,
             "tags": book.tags,
+            "status": book_status,
             "introPath": intro_path,
             "chapters": chapters,
         })

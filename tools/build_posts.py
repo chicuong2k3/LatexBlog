@@ -134,7 +134,41 @@ def _pandoc_reader(source_name):
     return "latex"
 
 
-def render_pandoc(pandoc, source_name, body_text, out_html):
+UNPARSED_MATH_HINT_LINES = 12
+
+
+def _unparsed_math_report(source_name, body_text, html):
+    """Explain why a dollar sign survived into the rendered HTML.
+
+    Pandoc drops a math span it cannot parse, then lets ordinary Markdown eat
+    the raw TeX, so the failure is invisible in the output: no error, just a
+    wrong formula. A '$' reaching the HTML is therefore the signature.
+
+    Posts legitimately contain '$' (shell variables inside code blocks), so
+    this is opt-in per call site rather than always on.
+    """
+    count = html.count("$")
+    lines = [
+        f"  {i}: {line.strip()[:90]}"
+        for i, line in enumerate(body_text.split("\n"), 1)
+        if "$" in line
+    ]
+    hint = "\n".join(lines[:UNPARSED_MATH_HINT_LINES])
+    if len(lines) > UNPARSED_MATH_HINT_LINES:
+        hint += f"\n  ... and {len(lines) - UNPARSED_MATH_HINT_LINES} more"
+    return (
+        f"unparsed math in {source_name}: {count} '$' survived into the HTML.\n"
+        f"Pandoc did not treat every math span as math, so the raw TeX was "
+        f"parsed as Markdown and mangled. Usual causes: a display block "
+        f"closed with '\\]' instead of '$$'; a closing '$' typed as '\\)' or a "
+        f"backtick; inline math padded with spaces; an odd number of '$$'.\n"
+        f"Lines containing '$':\n{hint}"
+    )
+
+
+def render_pandoc(
+    pandoc, source_name, body_text, out_html, reject_literal_dollars=False
+):
     """Convert one post body (.tex or .md) to an HTML fragment.
 
     ``source_name`` picks the Pandoc reader (``*.tex`` → latex, ``*.md``
@@ -146,6 +180,10 @@ def render_pandoc(pandoc, source_name, body_text, out_html):
     nothing (macro defined empty in the post preamble), while this build
     unwraps the wrapper so Pandoc turns the \\includegraphics into a
     real <img> for the web.
+
+    ``reject_literal_dollars`` turns a surviving '$' into a hard error. Books
+    want it: every '$' there is meant as math. Posts must leave it off, since
+    shell snippets legitimately contain '$env:'-style variables.
     """
     cmd = [
         pandoc,
@@ -163,6 +201,10 @@ def render_pandoc(pandoc, source_name, body_text, out_html):
     if proc.returncode != 0:
         raise RuntimeError(
             f"pandoc failed for {source_name}:\n{proc.stderr[:2000]}"
+        )
+    if reject_literal_dollars and "$" in proc.stdout:
+        raise RuntimeError(
+            _unparsed_math_report(source_name, body_text, proc.stdout)
         )
     out_html.write_text(proc.stdout, encoding="utf-8")
 

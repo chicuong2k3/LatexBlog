@@ -1,5 +1,29 @@
 # Book translation rules
 
+## Translation status — sealed chapters are read-only
+
+Each chapter's frontmatter carries a `status` field:
+
+```yaml
+status: hoan-thanh        # translation finished
+status: chua-hoan-thanh   # still in progress (this is the default when absent)
+```
+
+**A chapter marked `status: hoan-thanh` is sealed. Do not edit it. Not the prose,
+not the formulas, not the footnotes, not the whitespace, not the frontmatter.**
+
+- Sealed means sealed. Even a "harmless" typo fix or a blank-line cleanup is
+  forbidden, because the owner marked that file as final.
+- If a sealed chapter genuinely needs a change, stop and ask. Only the owner may
+  un-seal it, by editing the `status` themselves.
+- A book has no `status` of its own — the build rejects one. A book counts as
+  complete only when every one of its chapters is sealed, and the site derives
+  the badge from that.
+- Never mark a chapter `hoan-thanh` on the owner's behalf. Sealing is their
+  decision, not yours.
+
+## Translation rules
+
 - Treat the source book, not an OCR summary, as the source of truth.
 - Translate every source page and every sentence. Do not omit, summarize, add, or silently repair source content.
 - Preserve formulas, footnotes, tables, captions, page references, headers, and diagrams.

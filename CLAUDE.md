@@ -1,5 +1,25 @@
 # LatexBlog — Project Rules
 
+## Sealed book chapters are read-only (MANDATORY)
+
+Chapters under `books/*/chapters/` carry `status:` in their frontmatter.
+`status: hoan-thanh` means the owner considers that translation finished.
+
+**If a chapter is marked `hoan-thanh`, you must not edit it — not the prose, not
+the formulas, not the footnotes, not the whitespace, not the frontmatter.** This
+is a hard rule, not a preference. The owner decides what is finished; an agent
+does not get to "improve" a sealed file, not even to fix an obvious typo or a
+stray blank line.
+
+- Absent `status` means unfinished, so unfinished files stay freely editable.
+- A book has no `status` of its own; the build rejects one. Book completeness is
+  derived — a book is complete only when every chapter is sealed.
+- Never seal a chapter yourself. Only the owner writes `status: hoan-thanh`.
+- If a sealed chapter appears to need work, stop and report it instead of
+  editing.
+
+See `books/AGENTS.md` for the full rule.
+
 ## Vietnamese prose rewriting (`posts/*.{tex,md}`) — MANDATORY
 
 When writing, editing, reviewing, or refactoring the Vietnamese blog posts, rewrite the

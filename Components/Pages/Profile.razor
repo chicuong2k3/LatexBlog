@@ -2,7 +2,7 @@
 @inject PostStore PostStore
 @using System.Text.Json
 
-<PageTitle>Trang cá nhân — Alternative World</PageTitle>
+<PageTitle>@SiteInfo.Title("Trang cá nhân")</PageTitle>
 
 @* Filled from Supabase by the .lb-profile[data-profile] compiler in comments.js. The post list
    rides on data-posts rather than an inline <script>: Unpoly does not run scripts in fragments

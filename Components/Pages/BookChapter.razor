@@ -3,7 +3,7 @@
 @inject BookStore BookStore
 @inject IHttpContextAccessor HttpContextAccessor
 
-<PageTitle>@(Chapter?.Title ?? "Dịch sách") - @Book?.Title - Alternative World</PageTitle>
+<PageTitle>@SiteInfo.Title(Chapter?.Title ?? "Dịch sách", Book?.Title)</PageTitle>
 
 @if (Book is null || Chapter is null || Html is null)
 {

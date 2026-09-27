@@ -1,7 +1,7 @@
 @page "/books/{slug}"
 @inject BookStore BookStore
 
-<PageTitle>@(BookItem?.Title ?? "Dịch sách") - Alternative World</PageTitle>
+<PageTitle>@SiteInfo.Title(BookItem?.Title ?? "Dịch sách")</PageTitle>
 
 @if (BookItem is null)
 {

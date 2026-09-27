@@ -2,7 +2,7 @@
 @page "/tags/{tag}"
 @inject PostStore PostStore
 
-<PageTitle>@(string.IsNullOrEmpty(CurrentTag) ? "Thẻ" : "#" + CurrentTag) - Alternative World</PageTitle>
+<PageTitle>@SiteInfo.Title(string.IsNullOrEmpty(CurrentTag) ? "Thẻ" : "#" + CurrentTag)</PageTitle>
 <HeadContent>
     <script type="module" src="/js/page-layout.js?v=20260821a"
             data-page-layout

@@ -3,7 +3,7 @@
 @inject PostStore PostStore
 @inject IHttpContextAccessor HttpContextAccessor
 
-<PageTitle>Alternative World</PageTitle>
+<PageTitle>@SiteInfo.Title()</PageTitle>
 <HeadContent>
     <script type="application/ld+json">@((MarkupString)WebsiteJsonLd)</script>
 </HeadContent>

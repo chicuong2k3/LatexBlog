@@ -1047,8 +1047,54 @@ ra, là $\mathrm{SUMMAM}$; tên gọi ấy được dùng tiện lợi, vì mộ
 đối với differentia, và cũng vì trong thực tế functio đang tìm quả thật là tổng của tất cả
 những giá trị đứng trước differentiae. Cũng như
 
-<!-- Chưa dịch: PDF 55-62, tức trang in 27-34, gồm §25 (nối tiếp) và §26-§33. Câu mở
-     đầu của phần tiếp theo là "Quemadmodum", nối từ cuối trang 54 sang trang 55. -->
+<!-- PDF 55, trang in 27 -->
+
+Cũng như, vì $y^1 = y + \Delta y$ và $y^{II} = y + \Delta y + \Delta y^1$, nên nếu các giá trị
+của $y$ được tiếp tục đi ngược lại, và ta gọi $y_1$ là giá trị ứng với $x-\omega$, $y_n$ là
+giá trị ứng với $x-n\omega$, còn $y^{III}, y^{IV}, y^V$, &c. là những giá trị ở trước nữa,
+thì từ đó hãy lập một chuỗi đi ngược, kèm theo các differentia của nó:
+
+$$
+y_V\,;\quad y_{IV}\,;\quad y_{III}\,;\quad y_{II}\,;\quad y_I\,;\quad y
+$$
+
+&
+
+$$
+\Delta y_V\,;\quad \Delta y_{IV}\,;\quad \Delta y_{III}\,;\quad
+\Delta y_{II}\,;\quad \Delta y_I
+$$
+
+ta sẽ có
+
+$$
+y = \Delta y_I + y_I
+$$
+
+&
+
+vì $y_I = \Delta y_{II} + y_{II}$, và tiếp nữa $y_{II} = \Delta y_{III} + y_{III}$, nên
+chắc chắn là
+
+$$
+y = \Delta y_I + \Delta y_{II} + \Delta y_{III} + \Delta y_{IV} + \Delta y_V
+$$
+
+&c.
+
+Vậy functio $y$, có differentia là $\Delta y$, chính là tổng của tất cả những giá trị
+đứng trước differentia $\Delta y$, những giá trị sinh ra khi thay $x$ bằng các giá trị
+đứng trước $x-\omega$; $x-2\omega$; $x-3\omega$; &c.
+
+**26.** Cũng như ta đã dùng ký hiệu $\Delta$ để chỉ differentia, ta sẽ dùng ký hiệu
+$\Sigma$ để chỉ tổng: cụ thể, nếu differentia của functio $y$ là $z$, thì $z = \Delta y$;
+từ đó, nếu đã cho $y$, ta đã dạy cách tìm differentia $z$ ở trên. Nhưng nếu đã cho
+differentia $z$ và cần tìm tổng $y$ của nó, thì ta sẽ có $y = \Sigma z$; và do đó, từ
+phương trình $z = \Delta y$ mà đi ngược lại, sẽ lập được phương trình $y = \Sigma z$; vào
+đó có thể thêm vào một lượng không đổi bất kỳ, vì những lý do
+
+<!-- Chưa dịch: PDF 56-62, tức trang in 28-34, gồm §26 (nối tiếp) và §27-§33. Câu mở
+     đầu của phần tiếp theo là "nes", nối từ chữ "rationes" ở cuối trang 55 sang trang 56. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

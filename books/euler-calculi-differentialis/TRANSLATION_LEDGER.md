@@ -1278,7 +1278,17 @@ Bổ sung trang 54 vào `chapters/01-sai-lech-huu-han.md`: nối thêm một ví
 
 **Ký hiệu `SUMMAM`:** bản in dùng chữ thường viết hoa. Đã hiển thị thành `$\mathrm{SUMMAM}$` để giữ cảm giác tên riêng. Lưu ý sổ ký hiệu có dòng `S.` = tổng của một chuỗi, $\sum$, và `S.x` = tổng cộng dần; ở đây `SUMMAM` là *tên functio*, không phải ký hiệu $\sum$ — chưa thêm dòng mới vào sổ ký hiệu, ghi lại ở đây để tiện tra khi gặp lại.
 
-**Còn lại trong chương:** PDF 55–62 (tr. 27–34), gồm phần còn lại của §25 và §26–§33. Câu mở đầu của phần tiếp theo là `Quemadmodum`, nối từ cuối trang 54 sang trang 55.
+### 2026-09-28 — Chương I, Phần 12 (PDF 55, tr. 27, nối tiếp §25 và mở §26)
+
+Bổ sung trang 55 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §25 (dựng chuỗi đi ngược $y_V, \dots, y_I, y$ kèm differentia, rồi thay thế dần để có $y = \Delta y_I + \Delta y_{II} + \Delta y_{III} + \Delta y_{IV} + \Delta y_V$, khép lại lý do đặt tên SUMMAM) và mở đầu §26 (đặt ký hiệu $\Sigma$ cho tổng, đối với $\Delta$ cho differentia, và nêu $y = \Sigma z$). Không thêm callout. **Chưa niêm phong**; còn §26 (nối tiếp) và §27–§33 (PDF 56–62).
+
+**Đã soi bản scan:** toàn trang 55. Lớp OCR đọc được trang này; hai hàng chuỗi $y_V \dots y$ và $\Delta y_V \dots \Delta y_I$ vẫn đối chiếu với ảnh.
+
+**Chuỗi đi ngược đã tự kiểm:** $y = \Delta y_I + y_I$, rồi $y_I = \Delta y_{II} + y_{II}$, rồi $y_{II} = \Delta y_{III} + y_{III}$, thay dần cho đúng tổng in ra. Các chỉ số La Mã viết dưới (y_I, y_II, &c.) và chỉ số La Mã viết trên (y^I, y^II, &c.) là hai chiều khác nhau: trên là các giá trị *ở phía trước* theo $x+\omega, x+2\omega$, &c., dưới là các giá trị *ở phía sau* theo $x-\omega, x-2\omega$, &c. Đã giữ nguyên kiểu chữ La Mã của bản in ở cả hai.
+
+**Ký hiệu $\Sigma$:** bản in dùng chữ Sigma hoa. Sổ ký hiệu có dòng `S.` = tổng của một chuỗi, hiển thị thành `$\sum$`. Ở đây bản in dùng $\Sigma$ (Sigma hoa) chứ không phải `S.`, nên đã hiển thị thành `$\Sigma$`; hai ký hiệu cùng nghĩa. Nếu sau này gặp dạng `S.` thì theo sổ mà dùng `$\sum$`.
+
+**Còn lại trong chương:** PDF 56–62 (tr. 28–34), gồm phần còn lại của §26 và §27–§33. Câu mở đầu của phần tiếp theo là `nes`, nối từ chữ `rationes` ở cuối trang 55 sang trang 56.
 
 
 

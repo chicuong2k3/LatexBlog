@@ -1246,7 +1246,19 @@ Bổ sung trang 51 vào `chapters/01-sai-lech-huu-han.md`: EXEMPLUM II (differen
 
 **Ký hiệu:** theo `KY_HIEU_EULER.md`, `fin` → `$\sin$`, `cof`/`cos` → `$\cos$`, và `l` → `$\ln$` (nên `la` viết thành `$\ln a$`).
 
-**Còn lại trong chương:** PDF 52–62 (tr. 24–34), gồm §22–§33. Câu mở đầu của EXEMPLUM kế tiếp bắt đầu ngay cuối trang 51 bằng chữ `Ex-`, nối sang trang 52.
+### 2026-09-28 — Chương I, Phần 9 (PDF 52, tr. 24, EXEMPLUM IV và §22)
+
+Bổ sung trang 52 vào `chapters/01-sai-lech-huu-han.md`: EXEMPLUM IV (differentia của $\cos x$ trong đường tròn bán kính $1$) và §22, trong đó Euler phát biểu dạng chung $\Delta y = P\omega + Q\omega^2 + R\omega^3 + S\omega^4 + \&c.$ cho mọi functio của $x$, và chỉ ra rằng $\Delta^2 y$ và $\Delta^3 y$ có cùng dạng. **Thêm 1 callout**; tổng chương hiện có 6, nên đã nâng hạn mức `callouts` của mục 01 trong `CHAPTER_PLAN.json` và band `"01"` trong `tools/check_book_callouts.py` từ 5 lên 6 cho khớp. **Chưa niêm phong**; còn §23–§33 (PDF 53–62).
+
+**Đã soi bản scan:** toàn trang 52. Lớp OCR của trang này đọc được gần như toàn bộ; dòng công thức $\Delta\cos x$ vẫn được đối chiếu với ảnh.
+
+**Callout mới, về lý do:** ở §22, các công thức $\Delta y = P\omega + Q\omega^2 + \&c.$ và $\Delta^2 y = P\omega^2 + Q\omega^3 + \&c.$ trông rất giống nhau, rất dễ khiến người đọc tưởng $P$ ở hai chỗ là cùng một hàm của $x$. Euler nói ngược lại, ngay dưới các công thức: các chữ ấy không phải giá trị đã định, và cùng một chữ ở những differentia khác nhau không biểu thị cùng một functio; ông chỉ dùng lại chữ ấy vì nếu không thì số chữ cái khác nhau sẽ không đủ. Đây đúng là chỗ người đọc dễ đi sai theo thói quen ký hiệu quen thuộc, nên đã thêm callout.
+
+**Dòng $\Delta\cos x$ đã tự kiểm và khớp:** $\Delta\cos x = (\cos\omega - 1)\cos x - \sin\omega\sin x$ thay bằng hai chuỗi Euler in ở trang 51.
+
+**Ký hiệu:** trang này Euler viết `cos` và `fin`; theo `KY_HIEU_EULER.md` hiển thị thành `$\cos$` và `$\sin$`.
+
+**Còn lại trong chương:** PDF 53–62 (tr. 25–34), gồm §23–§33. Câu mở đầu của §23 bắt đầu ngay cuối trang 52 bằng chữ `Cum`, nối sang trang 53.
 
 
 

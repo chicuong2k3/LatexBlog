@@ -913,8 +913,79 @@ $$
              + \frac{\omega^4}{24}\sin x + \frac{\omega^5}{120}\cos x - \text{\&c.}
 $$
 
-<!-- Chưa dịch: PDF 52-62, tức trang in 24-34, gồm §22-§33. Câu mở đầu của EXEMPLUM kế
-     tiếp bắt đầu ngay cuối trang 51 bằng chữ "Ex-", nối sang trang 52. -->
+<!-- PDF 52, trang in 24 -->
+
+### Exemplum IV
+
+*Trong đường tròn có bán kính bằng $1$, hãy tìm differentia của cos của cung $x$.*
+
+Đặt $y = \cos x$, vì $y^1 = \cos(x+\omega)$, ta sẽ có
+
+$$
+y^1 = \cos\omega\cdot\cos x - \sin\omega\cdot\sin x
+$$
+
+&
+
+$$
+\Delta y = \cos\omega\cdot\cos x - \sin\omega\cdot\sin x - \cos x
+$$
+
+Dùng các chuỗi đã nêu ở trên, ta thu được:
+
+$$
+\Delta\cos x = -\omega\sin x - \frac{\omega^2}{2}\cos x
+             + \frac{\omega^3}{6}\sin x + \frac{\omega^4}{24}\cos x
+             - \frac{\omega^5}{120}\sin x - \text{\&c.}
+$$
+
+**22.** Vậy, nếu có một functio bất kỳ nào đó của chính $x$, dù là đại số hay siêu việt,
+gọi là $y$, và differentia bậc nhất của nó có dạng
+
+$$
+\Delta y = P\omega + Q\omega^2 + R\omega^3 + S\omega^4 + \text{\&c.}
+$$
+
+thì khi lấy tiếp differentia của chính differentia ấy, ta sẽ thấy differentia bậc hai
+của $y$ cũng có dạng thức:
+
+$$
+\Delta\Delta y = P\omega^2 + Q\omega^3 + R\omega^4 + \text{\&c.}
+$$
+
+và cũng theo cách ấy, differentia bậc ba của $y$ sẽ có dạng
+
+$$
+\Delta^3 y = P\omega^3 + Q\omega^4 + R\omega^5 + \text{\&c.}
+$$
+
+cứ như vậy.
+
+> **[Chú giải]**
+>
+> **Cùng một chữ cách, khác nghĩa mỗi lần**
+>
+> Các công thức trên trông rất giống nhau, dễ khiến ta tưởng rằng $P$ trong
+> $\Delta y$ và $P$ trong $\Delta^2 y$ là cùng một hàm số của $x$. Không phải vậy.
+>
+> Euler nói thẳng ở đây: các chữ $P, Q, R$, &c. không phải là những giá trị đã định,
+> và cùng một chữ ở những differentia khác nhau không biểu thị cùng một functio của $x$.
+> Ông chỉ dùng lại chữ ấy cho tiện, vì nếu mỗi bậc lại đặt một bộ chữ mới thì số chữ
+> cái sẽ không đủ dùng.
+>
+> Nói cách khác, ký hiệu ở đây được dùng như chỗ trống để điền, chứ không phải như
+> một hằng số cố định. Đọc theo cách của ký hiệu quen thuộc sẽ ra một kết quả sai.
+
+Ở đây cần lưu ý rằng các chữ $P, Q, R$, &c. ở đây không được dùng cho những giá trị
+đã định trước, và cùng một chữ ở những differentia khác nhau không biểu thị cùng một
+functio của $x$; ông chỉ dùng lại những chữ ấy vì nếu không thì số chữ cái khác nhau
+sẽ không đủ.
+
+Còn những dạng differentia như thế này thì đáng chú ý, bởi chúng mang lại công dụng lớn
+nhất trong Phân tích vô hạn.
+
+<!-- Chưa dịch: PDF 53-62, tức trang in 25-34, gồm §23-§33. Câu mở đầu của §23 bắt đầu
+     ngay cuối trang 52 bằng chữ "Cum", nối sang trang 53. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

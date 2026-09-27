@@ -88,13 +88,6 @@ body::after {
 
 /* ---------- hero (home) ---------- */
 .lb-hero { position: relative; overflow: hidden; padding: 96px 0 72px; }
-.lb-hero::before {
-  content: ""; position: absolute; inset: 0;
-  background:
-    radial-gradient(720px 420px at 16% 10%, color-mix(in srgb, var(--neon-2) 22%, transparent), transparent 60%),
-    radial-gradient(560px 360px at 86% 20%, color-mix(in srgb, var(--neon) 20%, transparent), transparent 60%),
-    radial-gradient(420px 300px at 50% 100%, color-mix(in srgb, var(--neon-3) 14%, transparent), transparent 60%);
-}
 .lb-hero .lb-wrap { position: relative; z-index: 1; max-width: 1140px; }
 .lb-hero h1 {
   font-family: "Bricolage Grotesque", sans-serif; font-weight: 800;
@@ -636,11 +629,6 @@ body::after {
 .lb-stat span { font-size: .76rem; color: var(--muted); }
 .lb-profile__exports { display: flex; gap: 8px; flex-wrap: wrap; }
 
-/* ---------- about ---------- */
-.lb-about { max-width: 720px; margin: 0 auto; padding: 56px 0 20px; }
-.lb-about h1 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: clamp(1.8rem, 4.5vw, 2.6rem); margin: 0 0 12px; letter-spacing: -.02em; }
-.lb-about__lead { color: var(--neon); font-size: 1.1rem; font-weight: 600; margin: 0 0 18px; }
-.lb-about p { color: var(--ink-soft); }
 
 /* ---------- rich text editor (comment / note) ---------- */
 .lb-rte { border: 1px solid var(--line-strong); border-radius: 8px; overflow: hidden; background: var(--surface); }
@@ -1038,8 +1026,13 @@ body::before { display: none; }
 .lb-toc:hover { border-color: color-mix(in srgb, var(--neon) 52%, var(--line)); }
 
 :root { --gradient: #5367e8; --gradient-soft: #e9edf7; }
-.lb-hero::before { background: var(--bg-2); opacity: .55; }
-.lb-hero::after { background: var(--bg-2); opacity: .55; }
+.lb-hero::before,
+.lb-hero::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  opacity: 0 !important;
+}
 .lb-brand__mark,
 .lb-brand::after,
 .lb-neon,
@@ -1066,6 +1059,17 @@ body::before { display: none; }
 .lb-tag { background: transparent; color: var(--ink-soft); border-color: var(--line-strong); }
 .lb-tag--active,
 .lb-tag--active:hover { background: var(--neon) !important; color: #fff !important; border-color: var(--neon) !important; }
+.lb-prose img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 820px);
+  height: auto;
+  margin: 1.4rem auto;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+}
 .lb-nav,
 .lb-featured,
 .lb-music,
@@ -1138,13 +1142,3 @@ body::before { display: none; }
   .lb-book-nav__btn--next .lb-book-nav__arrow { order: 2; }
 }
 
-/* ---------- hero orbits (home) ---------- */
-/* The .lb-hero::before wash is this canvas's fallback, not a layer under it: if the module
-   never arrives, the gradient is already the whole design. Do not delete it. */
-.lb-orbits {
-  position: absolute; inset: 0; z-index: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
-  opacity: .75;
-}
-@media (max-width: 720px) { .lb-orbits { opacity: .38; } }

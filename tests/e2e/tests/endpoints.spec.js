@@ -24,10 +24,6 @@ test('manifest PWA + service worker', async ({ request }) => {
   expect((await request.get('/sw.js')).status()).toBe(200);
 });
 
-test('trang Về tôi', async ({ page }) => {
-  await page.goto('/about');
-  await expect(page.locator('.lb-about h1')).toBeVisible();
-});
 
 test('mọi response vary theo Unpoly headers', async ({ request }) => {
   const vary = (await request.get('/')).headers()['vary'] || '';

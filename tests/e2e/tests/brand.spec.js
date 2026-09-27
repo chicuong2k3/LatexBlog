@@ -6,7 +6,7 @@ test('trang chủ: tiêu đề chỉ còn AIM', async ({ page }) => {
 });
 
 test('trang tĩnh: tiêu đề kết thúc bằng — AIM', async ({ page }) => {
-  for (const path of ['/about', '/tags', '/tags/aether', '/books', '/search']) {
+  for (const path of ['/tags', '/tags/aether', '/books', '/search']) {
     await page.goto(path);
     await expect(page).toHaveTitle(/ — AIM$/);
   }
@@ -52,33 +52,7 @@ test('json-ld trang chủ nói AIM', async ({ page }) => {
   expect(node.publisher.name).toBe('AIM');
 });
 
-test('trang về tôi: có đủ ba tầng', async ({ page }) => {
-  await page.goto('/about');
-  await expect(page.locator('.lb-about h2')).toHaveText([
-    'AIM là gì',
-    'Tên đến từ đâu',
-    'Trang này sẽ làm gì',
-  ]);
-});
-
-test('trang về tôi: giữ nguyên trích dẫn Newton', async ({ page }) => {
-  await page.goto('/about');
-  await expect(page.locator('.lb-about__lead')).toContainText('đại dương chân lý mênh mông');
-});
-
-test('trang về tôi: giữ chi tiết LaTeX và KaTeX', async ({ page }) => {
-  await page.goto('/about');
-  await expect(page.locator('.lb-about')).toContainText('KaTeX');
-});
-
-test('trang về tôi: giữ câu về bình luận và trang cá nhân', async ({ page }) => {
-  await page.goto('/about');
-  await expect(page.locator('.lb-about')).toContainText('thích những bài mình ưng');
-});
-
-test('nav có mục Về tôi dẫn tới /about', async ({ page }) => {
+test('nav không còn mục Về tôi', async ({ page }) => {
   await page.goto('/');
-  const link = page.locator('.lb-nav-links a[href="/about"]');
-  await expect(link).toBeVisible();
-  await expect(link).toHaveText('Về tôi');
+  await expect(page.locator('.lb-nav-links a[href="/about"]')).toHaveCount(0);
 });

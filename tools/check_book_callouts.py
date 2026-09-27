@@ -73,6 +73,15 @@ DENSITY_BANDS = {
 }
 DEFAULT_BAND = (2, 6)
 
+# Ngưỡng theo từng cuốn: số chương trùng nhau giữa các cuốn nên phải tra theo tên
+# cuốn, không dùng chung DENSITY_BANDS. Ngưỡng mỗi cuốn nằm trong ANNOTATION_GUIDE.md.
+BOOK_DENSITY_BANDS: dict[str, dict[str, tuple[int, int]]] = {
+    "tesla-alternate-currents-1892": {
+        "00": (0, 3),
+        **{f"{n:02d}": (0, 1) for n in range(1, 18)},
+    },
+}
+
 # Ngưỡng cảnh báo mỗi callout.
 # ANNOTATION_GUIDE.md muc 11: do dai do do kho quyet dinh, khong can bang.
 MIN_WORDS = 25
@@ -274,7 +283,11 @@ def check_fidelity(
     return problems
 
 
-def _band_for(name: str) -> tuple[int, int]:
+def _band_for(name: str, book: str | None = None) -> tuple[int, int]:
+    if book is not None:
+        bands = BOOK_DENSITY_BANDS.get(book)
+        if bands and name[:2] in bands:
+            return bands[name[:2]]
     return DENSITY_BANDS.get(name[:2], DEFAULT_BAND)
 
 
@@ -331,7 +344,7 @@ def main(argv: list[str]) -> int:
     density_notes: list[str] = []
 
     for r in reports:
-        lo, hi = _band_for(r.name)
+        lo, hi = _band_for(r.name, books_dir.name)
         if r.callouts and not lo <= r.callouts <= hi:
             density_notes.append(f"  {r.name}: {r.callouts} callout, ngưỡng {lo}–{hi}")
         if r.problems:

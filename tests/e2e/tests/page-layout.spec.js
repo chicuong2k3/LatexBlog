@@ -32,11 +32,6 @@ test('trang tìm kiếm: không có kết quả thì hiện thông báo rỗng',
   await expect(page.locator('#search-results .lb-empty')).toBeVisible();
 });
 
-test('trang về tôi: heading hiển thị, không lỗi', async ({ page }) => {
-  await page.goto('/about');
-  await expect(page.locator('.lb-about h1')).toHaveText('Về tôi');
-});
-
 test('trang bài viết: tiêu đề hiển thị và tự co cho vừa dòng', async ({ page }) => {
   await page.goto('/posts/aether-history');
   const h1 = page.locator('.lb-post-head h1');

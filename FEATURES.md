@@ -25,7 +25,6 @@ sitemap + ping Google** · **Open Graph + bìa SVG tự sinh** · **print CSS** 
 - [x] **i18n thật (vi/en)** — toàn bộ chuỗi UI qua `I18n.Pick`, switcher
   `?lang=`, cookie, AsyncLocal. (Chuỗi JS toast/copy vẫn vi.)
 - [x] **Chế độ đọc** — A−/A+ (lưu localStorage), focus mode, progress bar, reading time.
-- [x] **Trang "Về tôi"** — `/about`.
 - [x] **Thống kê profile** — like/comment count.
 - [x] **Export dữ liệu** — tải comments JSON.
 - [x] **Sitemap lastmod + ping Google** — `/ping-sitemap`, nút ở `/write`.

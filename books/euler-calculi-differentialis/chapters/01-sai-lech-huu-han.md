@@ -806,8 +806,58 @@ $$
 - \text{\&c.}
 $$
 
-<!-- Chưa dịch: PDF 50-62, tức trang in 22-34, gồm §20 (nối tiếp) và §21-§33. Câu mở
-     đầu của mục kế tiếp bắt đầu ngay cuối trang 49 bằng chữ "vnde", nối sang trang 50. -->
+<!-- PDF 50, trang in 22 -->
+
+từ đó ta sẽ có
+
+$$
+\Delta y = \Delta\sqrt{aa+xx}
+= \frac{2\omega x+\omega\omega}{2\sqrt{aa+xx}}
+  - \frac{4\omega^2x^2 - 4\omega^3x - \omega^4}{8(aa+xx)\sqrt{aa+xx}}
+  + \text{\&c.}
+$$
+
+hoặc
+
+$$
+= \frac{\omega x}{\sqrt{aa+xx}}
+  + \frac{aa\omega^2}{2(aa+xx)\sqrt{aa+xx}}
+  - \frac{aa\omega^3x}{2(aa+xx)^2\sqrt{aa+xx}} + \text{\&c.}
+$$
+
+Từ đó ta còn thu được rằng differentia của một functio bất kỳ trong chính $x$, gọi là $y$,
+có thể được biểu thị theo dạng sau, rằng
+
+$$
+\Delta y = -P\omega + Q\omega^2 + R\omega^3 + S\omega^4 + \text{\&c.}
+$$
+
+với $P, Q, R, S$, &c. là các hàm số nào đó của chính $x$, tùy theo từng trường hợp mà có
+thể định nghĩa được từ functio $y$.
+
+**21.** Cũng không phải differentia của các functio siêu việt bị loại trừ khỏi dạng thức
+này; điều đó sẽ hiện ra rõ hơn qua các ví dụ sau.
+
+### Exemplum I
+
+*Tìm differentia bậc nhất của logarithmus hyperbolicus của chính $x$.*
+
+Hãy đặt $y = \ln x$; và vì $y^1 = \ln(x+\omega)$, ta sẽ có
+
+$$
+\Delta y = y^1 - y = \ln(x+\omega) - \ln x = \ln\left(1 + \frac{\omega}{x}\right).
+$$
+
+Logarithmus loại này, ở trên ta đã dạy là có thể biểu thị bằng một chuỗi vô hạn; dùng nó
+vào đây, ta sẽ có
+
+$$
+\Delta y = \Delta\ln x = \frac{\omega}{x} - \frac{\omega^2}{2xx}
+          + \frac{\omega^3}{3x^3} - \frac{\omega^4}{4x^4} + \text{\&c.}
+$$
+
+<!-- Chưa dịch: PDF 51-62, tức trang in 23-34, gồm §21 (nối tiếp) và §22-§33. Câu mở
+     đầu của mục kế tiếp bắt đầu ngay cuối trang 50 bằng chữ "Ex-", nối sang trang 51. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->
@@ -837,3 +887,9 @@ $$
      Nhưng khai triển đúng của 1/(aa+xx+2ωx+ωω) cho số hạng ω² là ω²(3xx-aa)/(aa+xx)³,
      nên số hạng đã in ra sai. Số hạng ω³ ngay cạnh, -4ω³(x³-aax)/(aa+xx)⁴, thì đúng.
      Đã chép nguyên như in. -->
+
+<!-- Ghi chú dịch giả: ở trang 50, dòng đầu của phần nối §20, tử số in ra là
+     4ω2x² - 4ω3x - ω4, tức hai số hạng sau mang dấu trừ. Nhưng -(2ωx+ω²)²
+     = -(4ω2x² + 4ω3x + ω4), nên hai dấu ấy phải là dấu cộng. Đã soi ảnh phóng
+     to: đúng như in. Dòng 'hoặc' ngay dưới, sắp xếp lại theo lũy thừa của ω, thì hoàn toàn
+     đúng, nên sự sai nằm ở dòng trên. Đã chép nguyên như in. -->

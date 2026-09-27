@@ -1224,8 +1224,19 @@ $-\frac{4\omega^3(x^3-aax)}{(aa+xx)^4}$, lại đúng — đã tự kiểm lại
 $\frac{Q}{2\sqrt{P}} - \frac{QQ}{8P\sqrt{P}} + \frac{Q^3}{16P^2\sqrt{P}}$ đúng với khai
 triển nhị thức của $\sqrt{1+t}$.
 
-**Còn lại trong chương:** PDF 50–62 (tr. 22–34), gồm phần còn lại của §20 và §21–§33. Câu
-mở đầu của mục tiếp theo bắt đầu ngay cuối trang 49 bằng chữ `vnde`, nối sang trang 50.
+### 2026-09-28 — Chương I, Phần 7 (PDF 50, tr. 22, nối tiếp §20 và mở §21)
+
+Bổ sung trang 50 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §20 (viết $\Delta\sqrt{aa+xx}$ theo $\omega$ rồi sắp lại theo lũy thừa của $\omega$; và kết luận rằng mọi functio đều có $\Delta y = -P\omega + Q\omega^2 + R\omega^3 + S\omega^4 + \&c.$ với các hàm $P, Q, R, S$ của $x$), cùng §21 và EXEMPLUM I (differentia bậc nhất của $\ln x$). Không thêm callout. **Chưa niêm phong**; còn §21 (nối tiếp) và §22–§33 (PDF 51–62).
+
+**Đã soi bản scan:** toàn trang 50, cộng hai mức phóng cho tử số ở dòng đầu.
+
+**Một dấu sai trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng đầu của phần nối §20, tử số in ra là $4\omega^2x^2 - 4\omega^3x - \omega^4$ — hai số hạng sau mang dấu trừ. Nhưng $-(2\omega x+\omega^2)^2 = -(4\omega^2x^2 + 4\omega^3x + \omega^4)$, nên phải là dấu cộng. Đã soi ảnh phóng to: đúng như in. Đáng chú ý là dòng `hoặc` ngay dưới, sắp xếp lại theo lũy thừa của $\omega$, thì hoàn toàn đúng; tức mâu thuẫn nằm ngay trong trang của Euler.
+
+**Dòng `hoặc` đã tự kiểm và khớp:** $\frac{\omega x}{\sqrt{P}} + \frac{aa\omega^2}{2P\sqrt{P}} - \frac{aa\omega^3x}{2P^2\sqrt{P}}$ với $P = aa+xx$, đúng bằng khai triển nhị thức của $\sqrt{1+t}$.
+
+**Ký hiệu `l`:** theo `KY_HIEU_EULER.md`, chữ `l` (logarithmus hyperbolicus) hiển thị thành `$\ln$`. Đã dùng `\ln` trong EXEMPLUM I, khớp với quy ước sẵn có của sổ.
+
+**Còn lại trong chương:** PDF 51–62 (tr. 23–34), gồm phần còn lại của §21 và §22–§33. Câu mở đầu của mục tiếp theo bắt đầu ngay cuối trang 50 bằng chữ `Ex-`, nối sang trang 51.
 
 
 

@@ -5,8 +5,6 @@ slug: "sach-i-phan-iv-lemma-xvi-proposition-xxi"
 number: 26
 ---
 
-# Sách I, Phần IV. Lemma XVI và Proposition XXI
-
 ## Lemma XVI
 
 Từ ba điểm đã cho, hãy kẻ tới một điểm thứ tư chưa cho ba đường thẳng sao cho hiệu của chúng hoặc đã cho, hoặc bằng không.
@@ -39,15 +37,19 @@ Nếu cả ba đường thẳng đều bằng nhau, $Z$ sẽ nằm tại tâm c�
 
 Bài toán Lemma này cũng được Apollonius giải trong sách *Tactions*, được Vieta khôi phục.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma XVI chính là **bài toán Apollonius**, và nó mô tả một thủ pháp định vị mà ta vẫn dùng hằng ngày: xác định vị trí từ **hiệu** các khoảng cách đo được. Quỹ tích của một hiệu là một hypebol, nên mỗi cặp tín hiệu cho một hypebol, và giao điểm của vài hypebol cho ra vị trí.
+> **Bài toán Apollonius: định vị từ hiệu các khoảng cách đo được**
 >
-> **Công thức.** Với hai trạm phát $A$, $B$ có vị trí đã biết, điểm $Z$ thỏa mãn $AZ - BZ = k$ là một điểm trên hypebol có tiêu cự $A$, $B$. Với ba trạm ta có hai hypebol cùng chia một điểm, và giao điểm ấy là vị trí cần tìm. Trường hợp ba khoảng cách bằng nhau trong Trường hợp 3 chính là **trung tâm đường tròn ngoại tiếp** ba điểm đã cho.
+> Quỹ tích của một hiệu là một hypebol, nên mỗi cặp tín hiệu cho một hypebol, và giao điểm của vài hypebol cho ra vị trí.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần giải bài toán dựng quỹ đạo từ ba điểm quan sát, và ông nhận ra nó quy về một bài toán hình học thuần tuý về hiệu khoảng cách. Việc ông dẫn lại công trình cổ của Apollonius — được Vieta khôi phục — cho thấy ông làm việc trong một truyền thống toán học còn sống, chứ không phải khám phá từ chỗ trống.
+> Với hai trạm phát $A$, $B$ có vị trí đã biết, điểm $Z$ thỏa mãn $AZ - BZ = k$ là một điểm trên hypebol có tiêu cự $A$, $B$. Với ba trạm ta có hai hypebol cùng chia một điểm, và giao điểm ấy là vị trí cần tìm. Trường hợp ba khoảng cách bằng nhau trong Trường hợp 3 chính là **trung tâm đường tròn ngoại tiếp** ba điểm đã cho.
 >
-> **Hiện nay thì sao.** Đây chính là nguyên lý của **định vị bằng sai khác thời gian đến**: máy thu đo thời gian tín hiệu từ các trạm phát đã biết, lấy hiệu thời gian đến, nhân với tốc độ sóng, rồi giải hệ hypebol. Người đọc hôm nay thấy ở đây hình học năm thế kỷ XVII vẫn là phần lõi của một công nghệ dùng hằng ngày.
+> **Ông dẫn lại công trình cổ của Apollonius**
+>
+> Ông cần giải bài toán dựng quỹ đạo từ ba điểm quan sát, và ông nhận ra nó quy về một bài toán hình học thuần tuý về hiệu khoảng cách. Công trình của Apollonius — được Vieta khôi phục — cho thấy ông làm việc trong một truyền thống toán học còn sống, chứ không phải khám phá từ chỗ trống.
+>
+> Đây là nguyên lý của **định vị bằng sai khác thời gian đến**: máy thu đo thời gian tín hiệu từ các trạm phát đã biết, lấy hiệu thời gian đến, nhân với tốc độ sóng, rồi giải hệ hypebol. Hình học năm thế kỷ XVII vẫn là phần lõi của một công nghệ dùng hằng ngày.
 
 ## Proposition XXI. Bài toán XIII
 
@@ -87,12 +89,16 @@ Vì vậy, $B$, $C$, $D$ nằm trên một hình cắt conic mô tả quanh tiê
 
 Nhà hình học xuất sắc M. de la Hire cũng đã giải bài toán này gần như theo cùng cách trong *Conics*, Proposition XXV, Book VIII.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận nói một điều tinh tế mà người đọc thường bỏ qua: hai nhánh của một hypebol không phải cùng một quỹ đạo, vì **quỹ đạo là một đường liên tục**. Một vật thể không thể nhảy từ nhánh này sang nhánh kia. Câu đó là một lập luận về tính liên thông, viết bằng ngôn ngữ thời kỳ XVII.
+> **Hai nhánh của một hypebol không phải cùng một quỹ đạo**
 >
-> **Công thức.** Cách dựng trong Học luận chỉ cần một tỷ số duy nhất để phân loại: so sánh $GA$ với $AS$. Lớn hơn thì elip, bằng thì parabol, nhỏ hơn thì hypebol — và điểm $a$ đổi phía qua đường thẳng $GP$ đúng khi hình chuyển từ elip sang hypebol. Đó là cách Newton phân biệt ba loại quỹ đạo mà không cần vẽ hình.
+> Lý do: **quỹ đạo là một đường liên tục**. Một vật thể không thể nhảy từ nhánh này sang nhánh kia. Câu đó là một lập luận về tính liên thông, viết bằng ngôn ngữ thời kỳ XVII.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang nghĩ về **tính liên tục** của chuyển động. Một quỹ đạo là ảnh của một đường đi liên tục trong không gian thời gian, nên nó không thể rời khỏi một thành phần liên thông. Ông cũng cho biết đây là điểm còn tranh luận: nhà hình học Pháp M. de la Hire đã giải bài toán ba điểm gần như cùng cách, theo ghi chú ở cuối chương.
+> Cách dựng trong Học luận chỉ cần một tỷ số duy nhất để phân loại: so sánh $GA$ với $AS$. Lớn hơn thì elip, bằng thì parabol, nhỏ hơn thì hypebol — và điểm $a$ đổi phía qua đường thẳng $GP$ đúng khi hình chuyển từ elip sang hypebol. Đó là cách Newton phân biệt ba loại quỹ đạo mà không cần vẽ hình.
 >
-> **Hiện nay thì sao.** Lập luận này chính là lý do trong thiên văn học ta phân biệt quỹ đạo quanh Trái Đất với quỹ đạo quanh Mặt Trời: quỹ đạo quần đạo thấp là một tập bất biến, tách biệt bằng quả cầu Hill, nên muốn rời nó để thành quỹ đạo quanh Mặt Trời thì bắt buộc phải có cú đẩy. Người đọc hôm nay gọi đó là **bảo toàn miền liên thông**, và nó là một trong những lý do dự đoán quỹ đạo dài hạn phải tính đến cả những va chạm nhỏ chứ không chỉ lực chính.
+> **Ông đang nghĩ về tính liên tục của chuyển động**
+>
+> Một quỹ đạo là ảnh của một đường đi liên tục trong không gian thời gian, nên nó không thể rời khỏi một thành phần liên thông. Ông cũng cho biết đây là điểm còn tranh luận: nhà hình học Pháp M. de la Hire đã giải bài toán ba điểm gần như cùng cách, theo ghi chú ở cuối chương.
+>
+> Lập luận này là lý do trong thiên văn học ta phân biệt quỹ đạo thấp quanh Trái Đất với quỹ đạo quanh Mặt Trời: quỹ đạo thấp là một tập bất biến, tách biệt bằng quả cầu Hill, nên muốn rời nó để thành quỹ đạo quanh Mặt Trời thì bắt buộc phải có cú đẩy. Người đọc hôm nay gọi đó là **bảo toàn miền liên thông**, và nó là một trong những lý do dự đoán quỹ đạo dài hạn phải tính đến cả những va chạm nhỏ chứ không chỉ lực chính.

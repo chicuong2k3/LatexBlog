@@ -5,8 +5,6 @@ slug: "sach-i-phan-xiii-proposition-lxxxvii-xciii"
 number: 41
 ---
 
-# Sách I, Phần XIII. Proposition LXXXVII–XCIII
-
 ![Sơ đồ lực hút của các vật thể](../assets/section-xii-spherical-attraction.svg)
 
 *Hình 29. Sơ đồ được dùng lại từ Phần XII; cần đối chiếu với các hình bản gốc của Phần XIII.*
@@ -27,15 +25,17 @@ Nếu lực giảm theo bình phương khoảng cách, gia tốc hút hai vật 
 
 Từ lực mà các vật thể giống nhau hút các hạt thể được đặt tương tự, có thể suy ra tỷ lệ giảm của lực hút các hạt thể khi hạt thể lùi xa chúng, nếu sự giảm ấy trực tiếp hoặc nghịch theo một tỷ lệ bất kỳ của khoảng cách.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition LXXXVII không nói về lực mà nói về **gia tốc**, và Hệ quả 1 biến nó thành một bảng tra đối chiếu: với hai vật thể cùng hình đặt ở cùng khoảng cách, cách gia tốc tỷ lệ với kích thước tùy theo số mũ của quy luật lực.
+> **Đổi vật thể hút, đọc số mũ của quy luật lực từ gia tốc đo được**
 >
-> **Công thức.** Với lực tỷ lệ $1/r^2$, gia tốc tỷ lệ với $A^3$ và $B^3$. Với lực tỷ lệ $1/r^3$, hai gia tốc **bằng nhau**, dù hai vật thể khác nhau bao nhiêu. Với lực tỷ lệ $1/r^4$, gia tốc tỷ lệ nghịch với $A^3$ và $B^3$.
+> Proposition này nói về **gia tốc** chứ không phải về lực, và Hệ quả 1 biến nó thành một bảng đối chiếu: với hai vật thể cùng hình đặt ở những vị trí tương ứng, cách gia tốc tỷ lệ với kích thước, tùy theo số mũ của quy luật lực. Với lực giảm theo bình phương khoảng cách, gia tốc hút hai vật thể có cạnh $A$ và $B$ tỷ lệ với $A^3$ và $B^3$. Với lực giảm theo lập phương, hai gia tốc **bằng nhau**. Với lực giảm theo lũy thừa bốn, gia tốc tỷ lệ nghịch với $A^3$ và $B^3$.
 >
-> **Vì sao Newton viết như vậy.** Dòng $1/r^3$ là dòng đáng chú ý nhất: nó cho một **tiêu chí phân biệt**. Nếu thí nghiệm cho thấy gia tốc không đổi khi ta thay một vật thể nhỏ bằng một vật thể lớn, thì quy luật lực không thể là nghịch đảo bậc hai. Newton không nói rõ điều đó, nhưng cả bảng số liệu ông đưa ra đang là một công cụ chẩn đoán.
+> Cách dùng bảng này là điểm đáng chú ý, chứ không phải các con số trong đó. Nếu một thí nghiệm cho thấy gia tốc không đổi khi ta thay một vật thể nhỏ bằng một vật thể lớn, thì quy luật lực không thể là nghịch đảo bậc hai — vì dòng $1/r^2$ của bảng bắt buộc gia tốc phải thay đổi. Dòng giữa là một tiêu chí loại trừ, và nó loại được đúng cái quy luật mà người ta dễ tưởng là chắc chắn nhất.
 >
-> **Hiện nay thì sao.** Hệ quả 2 là nội dung của phép đo trực tiếp hằng số hấp dẫn: giữ nguyên khoảng cách, thay đổi kích thước vật thể, rồi đọc tỷ lệ gia tốc để suy ra số mũ $n$. Đó chính là nguyên lý của cân xoắn — thiết bị Cavendish dùng năm 1798 để đo hằng số hấp dẫn, và là nền tảng của các thí nghiệm Eötvös hiện đại vẫn dùng để kiểm tra xem lực hút có đúng nghịch đảo bình phương hay không. Ngày nay các phép đo siêu nhạy dùng giao thoa nguyên tử, nhưng nguyên lý vẫn là nguyên lý của Hệ quả 2: thay đổi kích thước nguồn hấp dẫn, rồi đọc số mũ từ đáp ứng đo được.
+> Chứng minh của Proposition cho thấy vì sao phép so sánh ấy hợp lệ: chia mỗi vật thể thành các hạt thể tương ứng, cùng cân nặng và đặt ở những vị trí tương ứng, thì lực hút của một hạt thể thứ nhất so với hạt thể tương ứng thứ hai tỷ lệ với lực hút của các hạt thể tương ứng khác, nên khi cộng lại thì cả hai tổng cũng giữ tỷ lệ ấy.
+>
+> Hệ quả 2 là phép đo trực tiếp số mũ $n$: giữ nguyên khoảng cách, thay kích thước vật thể hút, rồi đọc tỷ lệ gia tốc. Đó là nguyên lý của cân xoắn — Cavendish dùng nó năm 1798 để đo hằng số hấp dẫn, và các thí nghiệm Eötvös sau đó dùng cùng nguyên lý để kiểm tra xem lực hút có đúng nghịch đảo bình phương hay không. Ngày nay các phép đo siêu nhạy dùng giao thoa nguyên tử, nhưng nguyên lý không đổi: thay kích thước nguồn hấp dẫn, rồi đọc số mũ từ đáp ứng đo được.
 
 ## Proposition LXXXVIII. Định lý XLV
 
@@ -161,15 +161,17 @@ $$
 PS:AS.
 $$
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Hệ quả 3 nói rằng bên trong một **spheroid** đồng nhất, lực hút biến thiên **tuyến tính** với khoảng cách từ tâm, và điều đó đúng trên mọi đường kính. Đây là tính chất đặc trưng của họ spheroid, không phải của vật thể bất kỳ.
+> **Bên trong một spheroid đồng nhất, lực tùy tuyến tính theo khoảng cách trên mọi đường kính**
 >
-> **Công thức.** Chứng minh dựng hai spheroid trong đồng tâm và đồng dạng với spheroid ngoài, sao cho một spheroid trong đi qua đúng $P$. Các hạt thể của hai nón đối diện $DPF$ và $EPG$ có khoảng cách từ $P$ tỷ lệ với bình phương khoảng cách, nên hút $P$ như nhau; chia thành các lớp spheroid đồng tâm thì lực của nón triệt tiêu lớp. Lặp lại, mọi lực của vật chất nằm ngoài spheroid trong $PCBM$ cũng triệt tiêu. Chỉ còn spheroid trong, mà lực của nó tỷ lệ với lực của toàn spheroid theo tỷ lệ $PS:AS$.
+> Đây là đặc trưng định danh của họ spheroid, không phải của vật thể bất kỳ, và nó đối xứng một cách đáng giữ: bên trong thì tuyến tính, bên ngoài thì phức tạp.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang truy tìm hình dạng nào vẫn cho lực hút đơn giản khi hạt thể rơi vào bên trong. Ở Hệ quả 2 ngay trước, ông mới chỉ ra rằng lực bên ngoài của spheroid có một công thức riêng, phức tạp hơn hình cầu; nhưng bên trong thì nó trở về dạng tuyến tính gọn gàng. Ông không né tránh hình dẹt — ông đang lập công thức cho nó, vì chính Trái Đất của ông là một hình cầu dẹt.
+> Chứng minh dựng hai spheroid trong đồng tâm và đồng dạng với spheroid ngoài, sao cho một spheroid trong đi qua đúng $P$. Các hạt thể của hai nón đối diện $DPF$ và $EPG$ có khoảng cách từ $P$ tỷ lệ với bình phương khoảng cách, nên hút $P$ như nhau; chia thành các lớp spheroid đồng tâm thì lực của nón triệt tiêu từng lớp. Lặp lại, mọi lực của vật chất nằm ngoài spheroid trong $PCBM$ cũng triệt tiêu. Chỉ còn spheroid trong, mà lực của nó tỷ lệ với lực của toàn spheroid theo tỷ lệ $PS:AS$.
 >
-> **Hiện nay thì sao.** Tính chất "trường bên trong là hàm tuyến tính" là đặc trưng định danh của họ ellipsoid trong lý thuyết thế năng, và nó cho phép suy ra cấu trúc bên trong hành tinh từ dữ liệu trọng lực. Chi tiết thú vị nằm ở chỗ đối xứng: hình cầu đồng nhất có trường **bên ngoài** đúng như một điểm, nên trọng lực bên ngoài không nói được gì về cấu trúc bên trong; ellipsoid thì ngược lại — trường bên ngoài lệch khỏi điểm một cách có hệ thống, và chính cái sai lệch ấy, đo được từ vệ tinh, cho biết hành tinh dẹt bao nhiêu cùng mật độ bên trong phân bố ra sao. Hình dẹt đo được của Sao Mộc và Sao Thổ được đọc ra theo đúng cách ấy.
+> Ông viết vậy vì đang truy tìm hình dạng nào vẫn cho lực hút đơn giản khi hạt thể rơi vào bên trong. Ở Hệ quả 2 ngay trước, ông vừa chỉ ra lực bên ngoài của spheroid có một công thức riêng, phức tạp hơn hình cầu; bên trong thì nó trở về dạng tuyến tính gọn gàng. Ông không né tránh hình dẹt — ông đang lập công thức cho nó, vì chính Trái Đất của ông là một hình cầu dẹt.
+>
+> Người đọc hôm nay dùng đúng tính chất này để suy ra cấu trúc bên trong hành tinh từ dữ liệu trọng lực, và sự bất đối xứng ấy là lý do kỹ thuật phải đổi hướng. Hình cầu đồng nhất có trường **bên ngoài** đúng như một điểm, nên trọng lực bên ngoài không nói được gì về cấu trúc bên trong. Ellipsoid thì ngược lại: trường bên ngoài lệch khỏi một điểm một cách có hệ thống, và chính cái sai lệch ấy, đo được từ vệ tinh, cho biết hành tinh dẹt bao nhiêu cùng mật độ bên trong phân bổ ra sao. Độ dẹt đo được của Sao Mộc và Sao Thổ được đọc ra theo đúng cách ấy.
 
 ## Proposition XCII. Bài toán XLVI
 

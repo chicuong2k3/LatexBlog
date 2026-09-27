@@ -5,8 +5,6 @@ slug: "sach-i-phan-vii-proposition-xxxiv-xxxvi"
 number: 32
 ---
 
-# Sách I, Phần VII. Proposition XXXIV–XXXVI
-
 ![Chuyển động rơi thẳng và so sánh với đường tròn](../assets/section-vii-rectilinear-motion.svg)
 
 *Hình 20. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -125,15 +123,17 @@ Do đó
 \]
 Vì thế diện tích $KSA'$ bằng diện tích $SDd$, như trên.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXIV và XXXV lập ra một sự tương đương lạ lùng: chuyển động rơi thẳng vào tâm của một trường lực nghịch đảo bậc hai **tương đương với chuyển động quay tròn**. Cụ thể, vận tốc của vật thể rơi ở khoảng cách $r$ bằng vận tốc của một vật thể quay đều tròn quanh cùng tâm ở khoảng cách **bằng một nửa** $r$.
+> **Rơi thẳng vào tâm, thay bằng một vòng tròn ở bán kính bằng nửa latus rectum**
 >
-> **Công thức.** Với lực nghịch đảo bậc hai, vận tốc rơi từ vô cùng là $v^2 = \dfrac{2\mu}{r}$, còn vận tốc quay tròn ở bán kính $r/2$ là $v_c^2 = \dfrac{\mu}{r/2} = \dfrac{2\mu}{r}$ — hai vế bằng nhau chính xác. Proposition XXXV mạnh hơn, vì nó phát biểu sự tương đương bằng **tốc độ quét diện tích**: các diện tích quét bằng nhau trong các thời gian bằng nhau, nên vật thể rơi có cùng tốc độ quét diện tích với một chuyển động quay đều có bán kính bằng nửa latus rectum.
+> Với lực $\mu/r^2$, vận tốc rơi từ vô cùng ở khoảng cách $r$ là $v^2 = \dfrac{2\mu}{r}$; vận tốc quay tròn ở bán kính $r/2$ là $v_c^2 = \dfrac{\mu}{r/2} = \dfrac{2\mu}{r}$. Hai vế bằng nhau chính xác, nhưng đó mới là phần dễ.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một công thức duy nhất cho chuyển động thẳng, mà mọi thứ ông đã chứng minh từ Proposition I trở đi đều nói về quỹ đạo khép kín. Sự tương đương với quay tròn cho phép ông tái sử dụng toàn bộ kết quả cũ, và nó biến một bài toán trên đường thẳng — vốn không có điểm tiếp tuyến rõ ràng — thành một bài toán quen thuộc.
+> Phần khó nằm ở Proposition XXXV, phát biểu bằng **tốc độ quét diện tích** thay vì bằng vận tốc: rơi thẳng và quay đều cùng quét một diện tích bằng nhau trong cùng một khoảng thời gian. Vì mọi quỹ đạo quanh một tâm đều có $\tfrac{1}{2}h$ không đổi, với $h$ là moment động lượng riêng, nên tương đương này độc lập với việc lực có nghịch đảo bậc hai hay không. Bán kính của vòng tròn tương đương là nửa latus rectum $p/2$, với $p = h^2/\mu$ — còn chuyển động thuần túy đi thẳng thì $h = 0$, nên cả $p$ lẫn bán kính đều bằng không, và phép thay thế quy về đúng trường hợp suy biên của nó.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay dùng đúng sự tương đương này mỗi khi lập quỹ đạo cho một cú đẩy xuyên tâm: bài toán rơi thẳng vào tâm được thay bằng một đoạn cung tròn có cùng tốc độ quét diện tích, và nhờ đó tính được bằng công thức lượng giác thay vì phải tích phân. Cùng ý ấy là nền của cả **cú đẩy hấp dẫn** của tàu thăm: thay vì tốn nhiên liệu để tăng tốc, tàu lấy tốc độ quay tròn quanh hành tinh, rồi dùng chính lực hút của hành tinh để thoát khỏi nó.
+> Ông cần cái này vì mọi thứ ông đã chứng minh từ Proposition I trở đi đều nói về quỹ đạo khép kín. Chuyển động thẳng không có tiếp tuyến, không có tiêu điểm, không có hình học. Thay nó bằng một cung tròn thì toàn bộ kho vũ khí cũ dùng lại được.
+>
+> Người đọc hôm nay gặp đúng phép thay thế này khi lập quỹ đạo cho một cú đẩy xuyên tâm: đoạn rơi thẳng được thay bằng một cung tròn có cùng tốc độ quét diện tích, nhờ đó tính được bằng công thức lượng giác thay vì phải tích phân. Và con số $p/2$ không phải ngẫu nhiên: với areal rate cố định $h$, năng lượng riêng là $E = \dfrac{h^2}{2r^2} - \dfrac{\mu}{r}$, và $E = 0$ khi và chỉ khi $r = p/2$. Đó là bán kính lớn nhất tàu có thể đạt bằng đúng lực hút của hành tinh, nên một cú hãm tối đặt ở đó là rẻ nhất khi muốn nâng điểm xa nhất.
 
 ## Proposition XXXVI. Bài toán XXV
 
@@ -145,12 +145,14 @@ Từ một nơi $C$ bất kỳ của vật thể, dựng ordinate $CD$. Nối $S
 
 Theo Proposition XXXV, vật thể khi rơi mô tả không gian $AC$ trong cùng thời gian với một vật thể quay đều quanh tâm $S$ mô tả cung $OK$.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXVI tính thời gian rơi bằng cách **cân bằng diện tích**: dựng một hình quạt tròn có diện tích bằng diện tích mà bán kính quét trong suốt thời gian rơi, rồi đọc thời gian ra từ góc ở tâm của hình quạt ấy. Đây là lần đầu tiên trong *Principia*, thời gian xuất hiện dưới dạng **một góc**, chứ không phải một tỷ lệ với một đại lượng khác.
+> **Thời gian rơi đọc ra từ một cung tròn, chứ không phải từ một tích phân**
 >
-> **Công thức.** Với $\mu$ là tham số chuyển động, thời gian rơi từ đỉnh $r_0$ xuống tâm là $t = \dfrac{\pi r_0^{3/2}}{2\sqrt{2\mu}}$. Với số liệu Trái Đất, $r_0 \approx 6{,}371 \times 10^6\ \mathrm{m}$ và $\mu \approx 3{,}986 \times 10^{14}\ \mathrm{m^3/s^2}$, ta được $t \approx 895\ \mathrm{s}$, tức khoảng **15 phút**. Lưu ý con số $\pi$ xuất hiện trong thời gian rơi: nó đến từ chỗ diện tích hình quạt tròn chứa $\pi$ ở tên số.
+> Cấu hình dựng: lấy $AS$ làm đường kính, dựng nửa đường tròn $ADS$, rồi dựng nửa đường tròn $OKH$ bằng nó — tức vòng tròn so sánh có bán kính $r_0/2$. Vị trí $C$ của vật thể sau một khoảng thời gian ứng với cung $OK$ trên vòng tròn ấy, nhờ Proposition XXXV. Thời gian vậy đọc ra như một cung tròn, chứ không như một tỷ lệ với một đại lượng khác.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần thời gian, chứ không chỉ quãng đường — và ông biết rằng thời gian là thứ khó nhất để lấy từ lực nghịch đảo bậc hai, vì ở đây vận tốc thay đổi không đều nên không có một hệ số tỷ lệ đơn giản nào cả. Có thể dùng nguyên lý diện tích để quy về một hình quạt tròn đồng nghĩa với nó.
+> Tích phân cho cùng kết quả: $t = \int_0^{r_0}\dfrac{dr}{\sqrt{2\mu\left(\frac1r - \frac1{r_0}\right)}} = \dfrac{\pi}{2}\sqrt{\dfrac{r_0^3}{2\mu}} = \dfrac{\pi r_0^{3/2}}{2\sqrt{2\mu}}$. Với bề mặt Trái Đất, $r_0 = 6{,}371 \times 10^6\ \mathrm{m}$ và $\mu = 3{,}986 \times 10^{14}\ \mathrm{m^3/s^2}$, ta được $t \approx 895\ \mathrm{s}$, tức gần 15 phút. Hệ số $\pi$ ở đây đúng là $\pi$ của hình tròn: thời gian rơi luôn gắn với một nửa vòng quay, vì đó là cách duy nhất gắn được thời gian vào diện tích đã quét. Sự xuất hiện tất yếu của một số siêu hạt như thế chính là thứ Lemma XXVIII ở chương trước đã tiên đoán.
 >
-> **Hiện nay thì sao.** Sự xuất hiện của $\pi$ trong thời gian rơi chính là hiện tượng mà Lemma XXVIII ở chương trước đã tiên đoán: không phải đại lượng hình học nào cũng biểu thị được bằng phương trình hữu hạn, và thời gian rơi là ví dụ đầu tiên trong cơ học mà số siêu hạt xuất hiện một cách tất yếu. Người đọc hôm nay vẫn dùng chính phép cân bằng diện tích này khi ước lượng thời gian bay của tàu thăm, và con số 15 phút từ bề mặt Trái Đất xuống tâm vẫn là một con số tham khảo quen thuộc trong các bài toán quỹ đạo xuyên tâm.
+> Ông cần thời gian chứ không chỉ quãng đường, và thời gian là thứ khó nhất để lấy từ lực nghịch đảo bậc hai: vận tốc ở đây thay đổi không đều, không có hệ số tỷ lệ đơn giản nào để dùng. Quy về một hình quạt tròn đồng nghĩa với nó là cách duy nhất bằng hình học thuần tuý.
+>
+> Người đọc hôm nay vẫn dùng chính phép cân bằng diện tích này khi ước lượng thời gian bay của tàu thăm, và con số 15 phút từ bề mặt Trái Đất xuống tâm vẫn là một mốc tham khảo quen thuộc trong các bài toán quỹ đạo xuyên tâm.

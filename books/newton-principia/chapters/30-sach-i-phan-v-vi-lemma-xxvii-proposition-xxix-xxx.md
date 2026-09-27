@@ -5,8 +5,6 @@ slug: "sach-i-phan-v-vi-lemma-xxvii-proposition-xxix-xxx"
 number: 30
 ---
 
-# Sách I, Phần V–VI. Lemma XXVII, Proposition XXIX–XXX
-
 ![Xác định vị trí vật thể trên quỹ đạo parabol](../assets/section-vi-parabolic-motion.svg)
 
 *Hình 18. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -132,15 +130,15 @@ Giả sử một đường tròn $ASP$ luôn đi qua vật thể đang chuyển 
 
 Ngược lại, có thể tìm thời gian để vật thể mô tả một cung $AP$ đã định. Nối $AP$, dựng vuông góc tại trung điểm, cắt $GH$ tại $H$.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXX giải bài toán mà mọi bài toán quỹ đạo đều dẫn tới: cho một thời điểm, vật thể ở đâu trên quỹ đạo? Với quỹ đạo parabol, bài toán này có lời giải bằng công thức tường minh. Người đọc hôm nay gọi đây là **phương trình Barker**, và đây là trường hợp duy nhất trong ba loại quỹ đạo không cần hàm đặc biệt nào.
+> **Biết cung đã quét, tìm được vị trí trên quỹ đạo parabol**
 >
-> **Công thức.** Với tham số $D = t\sqrt{\dfrac{2\mu}{p}}$ và bán tham số tiêu cự $p$, lời giải có dạng $r = \dfrac{p}{2}\left(1 + D^2\right)$ cùng các toạ độ theo $D$. Con số $3$ trong $GH = 3M$ của Newton không tình cờ: nó đến từ kết quả cổ đại của Archimedes rằng diện tích dưới một parabol bằng $\dfrac{2}{3}$ diện tích hình chữ nhật bao quanh nó. Vì tốc độ quét diện tích không đổi, thời gian chỉ là hàm tuyến tính của diện tích, mà diện tích ấy lại là hàm bậc ba của tham số — nên tỷ số $3:8$ ở Hệ quả 2 là hệ quả trực tiếp.
+> Cơ chế gọn hơn cả những gì Proposition viết ra. Diện tích quét $ASD$ bằng $\tfrac{2}{3}$ diện tích hình chữ nhật dựng trên $AP$ và nửa ordinate — đúng kết quả của Archimedes. Thời gian tỷ lệ với diện tích, còn diện tích dưới parabol tỷ lệ với lập phương của tham số. Nên **căn bậc ba của diện tích quét, tra bảng, là ra vị trí**; con số $3$ trong $GH = 3M$ chính là hệ số $\tfrac{2}{3}$ ấy đi ngược lên.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần biến "biết quỹ đạo" thành "biết vị trí tại mọi thời điểm", và đó là bước cuối cùng trước khi ông áp dụng vào hành tinh. Ông cũng chỉ ra ở Hệ quả 3 rằng chiều ngược cũng làm được: cho một cung $AP$ đã biết, dựng lại thời gian. Tính hai chiều ấy là điều kiện để một hình cắt conic thực sự dùng được trong thiên văn.
+> Bảng tra đó là *Tabula Motuum*. Newton dựng và dùng nó suốt đời, công bố muộn tới năm 1713, kèm lưu ý phải bỏ mấy chữ số cuối khi bảng bị xuống chữ. Người đọc hôm nay gọi quan hệ thời gian–vị trí trên parabol là **phương trình Barker**, và nó là trường hợp duy nhất trong ba loại quỹ đạo không cần hàm đặc biệt nào.
 >
-> **Hiện nay thì sao.** Việc quỹ đạo parabol cho lời giải đóng, trong khi quỹ đạo elip thì không, là một trong những bất đối xứng thú vị nhất của cơ học Kepler. Với elip, phương trình Kepler là phương trình lượng giác–giải tích không biểu thị được bằng hàm sơ cấp, và phải dùng hàm elliptic. Người đọc hôm nay dùng đúng sự phân biệt này khi lên kế hoạch động vật: quỹ đạo parabol xuất hiện khi tốc độ không đổi và lực ngược với bình phương khoảng cách — đúng bài toán ném đá mà Học luận cuối Phần II đã nêu tới.
+> Sự bất đối xứng này chi phối công việc hằng ngày của ngành thiên văn thế kỷ XVII. Trên elip, phương trình Kepler không biểu thị được bằng hàm sơ cấp, phải dùng hàm elliptic, nên dựng lịch hành tinh là nghề làm bảng: phần lớn công sức tính toán của nhóm Newton ở London nằm ở đó. Trong bài toán ném đá mà Học luận cuối Phần II nêu tới, parabol lại là trường hợp tổng quát — lực tỷ lệ nghịch bình phương khoảng cách, không có lực bổ trợ, thì quỹ tích là parabol.
 
 ## Lemma XXVIII
 
@@ -168,12 +166,12 @@ Vì vậy, không thể luôn luôn tìm giao điểm của một đường th�
 
 Cùng lập luận ấy, nếu khoảng cách giữa cực và điểm mô tả đường xoắn ốc tỷ lệ với phần chu vi hình bầu dục bị cắt, ta có thể chứng minh độ dài chu vi cũng không thể luôn luôn được biểu thị bằng một phương trình hữu hạn. Ở đây tôi nói đến những hình bầu dục không bị các hình liên hợp chạm vào khi kéo dài vô hạn.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma XXVIII là một trong những bằng chứng sớm nhất và sắc nhất cho ý tưởng rằng **không phải đại lượng hình học nào cũng biểu thị được bằng một phương trình hữu hạn**. Nó nêu ra một hình bầu dục mà diện tích bị các đường thẳng tùy ý cắt ra không bao giờ tìm được bằng công thức đại số.
+> **Có những đại lượng hình học không bao giờ biểu thị được bằng phương trình hữu hạn**
 >
-> **Công thức.** Lập luận đi qua đường xoắn ốc. Nếu phần diện tích bị cắt biểu thị được bằng phương trình hữu hạn, thì khoảng cách từ cực — vốn tỷ lệ với diện tích ấy — cũng vậy, nên mọi điểm của đường xoắn ốc đều xác định được. Nhưng một đường thẳng cắt đường xoắn ốc này ở **vô số** điểm, trong khi một phương trình bậc $n$ chỉ có $n$ nghiệm. Sự xung đột ấy buộc phải thừa nhận một phương trình vô hạn số chiều.
+> Lập luận của Newton dựng một đường xoắn ốc vô số vòng, rồi ép một phương trình phải có vô số nghiệm. Giả sử diện tích của hình bầu dục bị một đường thẳng bất kỳ cắt ra có công thức hữu hạn. Khi ấy khoảng cách từ cực — vốn tỷ lệ với diện tích ấy — cũng có công thức hữu hạn, nên mọi điểm trên đường xoắn ốc đều xác định được. Nhưng một đường thẳng cắt đường xoắn ốc ở vô số điểm, trong khi phương trình bậc $n$ chỉ cho nhiều nhất $n$ nghiệm. Sau mỗi vòng quét, các đại lượng ứng với đường cắt trở về đúng giá trị ban đầu, nên phương trình trở về đúng dạng cũ — và lối thoát duy nhất là một phương trình vô số số chiều, vô số nghiệm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang bảo vệ tiền đề của cả Phần VI: các đại lượng ông định nghĩa bằng tích phân phải là những đại lượng thực sự tồn tại và xác định được. Với tư cách là người tạo ra phép tính, ông hiểu rõ hơn ai hết rằng "tích phân được" không phải điều hiển nhiên, và ông phải tự chứng minh nó. Câu chuyển sang bài toán không gian ở giữa Lemma cho thấy ông biết phải phân biệt cái nào giải được bằng hình học phẳng và cái nào không.
+> Vì sao ông phải chứng minh điều tưởng như hiển nhiên? Vì cả *Principia* đứng trên tiền đề rằng mọi đại lượng ông định nghĩa bằng tích phân đều là những thứ có thật và xác định được. Người tạo ra phép vi phân thì hiểu hơn ai hết rằng "tích phân được" không phải điều hiển nhiên, nên ông phải tự chứng minh lấy. Ông cũng dừng đúng chỗ cần dừng: những gì không giải được bằng hình học phẳng thì đừng đưa về hình học phẳng.
 >
-> **Hiện nay thì sao.** Ý tưởng này tiền đoán hai kết quả lớn của thế kỷ XIX. Thứ nhất là **định lý Abel–Ruffini**: phương trình bậc năm trở lên không giải được bằng phân biệt và căn. Thứ hai là chứng minh của Lindemann năm 1882 rằng $\pi$ là số siêu hạt, từ đó bảo đảm **không thể bình phương hình tròn** bằng thước kẻ và com pa. Nói cách khác, phép đo diện tích bằng tích phân mà Newton dùng suốt *Principia* thuộc đúng loại đối tượng mà toán học về sau phải thừa nhận là không quy về được đại số.
+> Chi tiết trong Học luận cho thấy phạm vi hẹp hơn tên gọi của Lemma. Ông dừng ở **độ dài chu vi**. Diện tích hình bầu dục vẫn tích phân được và tỷ lệ với bán trục một cách giải tích; chu vi thì không — nó là tích phân elliptic. Người đọc hôm nay đứng trước hai hàng rào cùng loại: phương trình bậc năm trở lên không giải được bằng phân biệt và căn (Abel, Ruffini), và $\pi$ là số siêu hạt (Lindemann, 1882), nên không tồn tại công thức hữu hạn nào dựng được độ dài chu vi đường tròn từ đường kính.

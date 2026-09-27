@@ -4,8 +4,6 @@ summary: "Lời tựa của N. W. Chittenden, lời giới thiệu của bản M
 slug: "loi-dan-nhap"
 ---
 
-# Lời dẫn nhập
-
 ## Lời tựa của N. W. Chittenden
 
 Gió trời tươi mới và những vệt đỏ ửng trên đường chân trời của thế giới tinh thần báo hiệu một kỷ nguyên mới đang bình minh. Những ngày của sự giáo dục rối loạn, điều hứng hoang đường, đang qua đi. Trước mắt chúng ta là lời hứa của một thời đại tốt đẹp hơn, nơi sức lao động thật sự của con người được làm trọn vẹn và nhận được phần thưởng tương xứng.
@@ -404,17 +402,19 @@ Cuộc tranh luận ấy, mở ra vào năm $1699$, tiếp tục cho đến cu�
 
 *Báo cáo* ấy, cùng tập hợp những lá thư và bản thảo, với tên *Commercium Epistolicum D. Johannis Collins et Aliorum de Analysi Promota Jussu Societatis Regiae Editum*, do đó xuất hiện vào đầu năm $1713$. Việc xuất bản ấy dường như khiến tâm trạng của Leibniz càng đắng cay hơn; ông hạ mình xuống những cáo buộc không có cơ sở và những lời đe dọa rỗng tuếch.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Vi phân và tích phân — hai thứ học sinh gặp ở lớp 12 — chính là công cụ Newton dùng để viết *Principia*. Chúng cho phép giải tích tức thời một đường cong bằng cách coi đoạn nhỏ nhất như một số hạng, rồi đi ngược từ đạo hàm về hàm.
+> **Ai phát minh phương pháp vi phân: Ủy ban Hoàng gia buộc phải chọn một tên**
 >
-> **Công thức.** Vi phân theo Newton: $dy = p\,dx$, với $p$ là hệ số góc tiếp tuyến. Tích phân theo Leibniz: $\int y\,dx$. Cùng một phép tính, hai hệ ký hiệu khác nhau.
+> Ở đoạn này tác giả viết bằng giọng của Ủy ban Hoàng gia. Báo cáo ấy, cùng tập hợp những lá thư và bản thảo, với tên *Commercium Epistolicum D. Johannis Collins et Aliorum de Analysi Promota Jussu Societatis Regiae Editum*, do đó xuất hiện vào đầu năm $1713$. Việc xuất bản ấy dường như khiến tâm trạng của Leibniz càng đắng cay hơn; ông hạ mình xuống những cáo buộc không có cơ sở và những lời đe dọa rỗng tuếch.
 >
-> **Vì sao Newton viết như vậy.** Ở đoạn này tác giả cố tình làm lộ một điều gây tranh cãi: Newton không coi mình là người phát minh ra bản thân phương pháp. Dòng trước đó, ông quy công phát minh cho sự cần cù và tư duy kiên nhẫn, và nói ông chưa từng xuất bản tác phẩm nào thuần toán học. Đó là lý do phương pháp của ông nằm im từ 1666 tới khi ông chuyển nó cho bạn là Joseph Raphall Hooker, trong một lá thư năm 1671, để nhờ truyền đạt cho Leibniz. Lá thư ấy lẽ ra đã làm rõ ngay thứ tự thời gian.
+> Vi phân theo Newton: $dy = p\,dx$, với $p$ là hệ số góc tiếp tuyến. Tích phân theo Leibniz: $\int y\,dx$. Cùng một phép tính, hai hệ ký hiệu khác nhau.
 >
-> **Hiện nay thì sao.** Báo cáo năm 1712 của Ủy ban Hoàng gia đặt câu hỏi đúng: không phải "ai phát minh phương pháp này hay phương pháp kia", mà là "ai là người phát minh đầu tiên". Ngày nay các sử gia nghiêng về thái độ hai bên phát minh độc lập: Newton bắt đầu năm 1665–1666, Leibniz tới Leipzig năm 1672 và phát triển từ 1675. Bản án Ủy ban giữ được khoảng ba thế kỷ, trước khi công trình của White và Biggs làm rõ lịch trình thư tục từ bản lưu trữ Newton. Chắc chắn hơn cả hai bên: ký hiệu thế giới dùng hôm nay là của Leibniz, nên người học vi phân ở Việt Nam đang dùng hệ ký hiệu của ông, chứ không phải của Newton.
+> Ở đây tác giả cố tình làm lộ một điều gây tranh cãi: Newton không coi mình là người phát minh ra bản thân phương pháp. Dòng trước đó, ông quy công phát minh cho sự cần cù và tư duy kiên nhẫn, và nói ông chưa từng xuất bản tác phẩm nào thuần toán học. Đó là lý do phương pháp của ông nằm im từ 1666 tới khi ông chuyển nó cho bạn là Joseph Raphall Hooker, trong một lá thư năm 1671, để nhờ truyền đạt cho Leibniz. Lá thư ấy lẽ ra đã làm rõ ngay thứ tự thời gian.
 >
-> **Lưu ý nguồn gốc.** Câu chốt trong báo cáo là vấn đề ưu tiên, không phải vấn đề bảo vệ danh dự. Vụ án còn mang màu sắc chính trị: một hội đồng học thuật Anh phán cho công dân nước mình, còn Leibniz là người Đức, làm việc dưới sự bảo trợ của các tiểu vương Đức. Ông từng đề nghị Ủy ban bác bỏ toàn bộ thư mục khi tước Vương xứ Đức bị giáng chức.
+> Báo cáo năm 1712 của Ủy ban Hoàng gia đặt câu hỏi đúng: không phải "ai phát minh phương pháp này hay phương pháp kia", mà là "ai là người phát minh đầu tiên". Ngày nay các sử gia nghiêng về thái độ hai bên phát minh độc lập: Newton bắt đầu năm 1665–1666, Leibniz tới Leipzig năm 1672 và phát triển từ 1675. Bản án Ủy ban giữ được khoảng ba thế kỷ, trước khi công trình của White và Biggs làm rõ lịch trình thư tục từ bản lưu trữ Newton. Chắc chắn hơn cả hai bên: ký hiệu thế giới dùng hôm nay là của Leibniz, nên người học vi phân ở Việt Nam đang dùng hệ ký hiệu của ông, chứ không phải của Newton.
+>
+> **Về nguồn gốc.** Câu chốt trong báo cáo là vấn đề ưu tiên, không phải vấn đề bảo vệ danh dự. Vụ án còn mang màu sắc chính trị: một hội đồng học thuật Anh phán cho công dân nước mình, còn Leibniz là người Đức, làm việc dưới sự bảo trợ của các tiểu vương Đức. Ông từng đề nghị Ủy ban bác bỏ toàn bộ thư mục khi tước Vương xứ Đức bị giáng chức.
 
 Trước khi vị công tước ấy được đưa lên ngai vàng Anh, ông từng là cố vấn riêng của Công tước xứ Hanover. Trong trao đổi thư năm $1675$ và $1676$ với Abbé Conti, lúc ấy ở triều đình của George I, và với Caroline, Hoàng hậu tương lai, ông đã tấn công các học thuyết của *Principia*, và gián tiếp tấn công cả tác giả, theo cách làm tổn thương rất nhiều uy tín của ông với tư cách một người học thuật và một người trọng danh dự.
 
@@ -484,19 +484,19 @@ Ngôi nhà lâu đổi ở Woolsthorpe đã được tiến sĩ Stukeley đến 
 
 Cây táo nổi tiếng, được nói rằng một quả rơi xuống đã khiến Newton chú ý đến chủ đề trọng lực, đã bị gió phá hủy khoảng hai mươi năm trước; nhưng nó đã được giữ lại dưới hình thức một chiếc ghế. Ngôi nhà được bảo vệ với sự chu đáo tôn kính. Nó đã được sửa chữa vào năm $1798$, và một bảng đá cẩm trắng được dựng trong căn phòng nơi tác giả sinh ra, với dòng chữ khắc sau đây: “Ngài Isaac Newton, con của John Newton, Chúa tể của trang viên Woolsthorpe, sinh ra trong căn phòng này vào ngày $25$ tháng Mười hai năm $1642$.”
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Quả táo rơi là hình ảnh quen thuộc nhất của khoa học, nhưng đó là hình ảnh được kể lại nhiều lần, không phải một sự kiện có ghi chép tại thời điểm xảy ra. Newton không viết một dòng nào về nó vào năm 1666.
+> **Quả táo rơi: không có ghi chép nào cho biết đầu bị đập**
 >
-> **Công thức.** $F = G\,\dfrac{M m}{r^2}$. Ở khoảng cách bằng $60$ bán kính
-> Trái Đất, cùng một lực ấy chỉ còn khoảng $1/3600$ giá trị ở bề mặt;
-> và Quyển I chính là để chứng minh gia tốc hướng tâm của Mặt Trăng đúng bằng con số ấy.
+> Quả táo rơi là hình ảnh quen thuộc nhất của khoa học, nhưng đó là hình ảnh được kể lại nhiều lần, không phải một sự kiện có ghi chép tại thời điểm xảy ra. Newton không viết một dòng nào về nó vào năm 1666.
 >
-> **Vì sao Newton viết như vậy.** Mốc ghi chép đáng tin đầu tiên không phải năm 1666 mà là năm 1721, năm mươi lăm năm sau đó. Ngồi với tiến sĩ Stukeley tại ngôi nhà Woolsthorpe, ông kể rằng mình đã nghĩ về chuyện một quả rơi xuống, và liệu lực khiến nó rơi có phải cùng một lực giữ Mặt Trăng trên quỹ đạo hay không. Rồi ông nói, theo lời kể, tinh thần ông bỗng tràn ngập một ánh sáng lạ lùng. Điểm đáng chú ý của tài liệu này: nó ghi lại một khoảnh khắc tư duy, chứ không phải một phát minh lớn.
+> $F = G\,\dfrac{M m}{r^2}$. Ở khoảng cách bằng $60$ bán kính Trái Đất, cùng một lực ấy chỉ còn khoảng $1/3600$ giá trị ở bề mặt; và Quyển I chính là để chứng minh gia tốc hướng tâm của Mặt Trăng đúng bằng con số ấy.
 >
-> **Hiện nay thì sao.** Câu chuyện có thật ở chỗ Newton tự kể, nhưng chi tiết phổ biến thì không có: không tồn tại ghi chép nào về một cái đầu bị quả táo đập, và cảnh báo thường gán cho *Principia* là một sự sắp xếp hậu nghiệm. Sẵn có Archimedes, Galileo, Descartes và Robert Hooke đã nghĩ về phạm vi của trọng lực trước đó, và chính Hooke mới là người nói với Newton rằng lực hấp dẫn có thể lan tới khoảng cách xa. Cũng nên nhớ câu Newton thường được trích: mình giỏi vì đứng trên vai người lớn tuổi hơn. Cây táo sau đó bị gió đổ, thân cây được giữ lại thành một chiếc ghế, và các đoạn ghép từ cây gốc vẫn được nhân giống ở khắp nơi.
+> Mốc ghi chép đáng tin đầu tiên không phải năm 1666 mà là năm 1721, năm mươi lăm năm sau đó. Ngồi với tiến sĩ Stukeley tại ngôi nhà Woolsthorpe, ông kể rằng mình đã nghĩ về chuyện một quả rơi xuống, và liệu lực khiến nó rơi có phải cùng một lực giữ Mặt Trăng trên quỹ đạo hay không. Rồi ông nói, theo lời kể, tinh thần ông bỗng tràn ngập một ánh sáng lạ lùng. Điểm cần nói về tài liệu này: nó ghi lại một khoảnh khắc tư duy, chứ không phải một phát minh lớn.
 >
-> **Lưu ý nguồn gốc.** Newton viết năm 1727 rằng cây bị gió phá từ "khoảng hai mươi năm trước", tức quanh 1707, trong khi mốc thường được viện dẫn cho vụ đổ cây là khoảng năm 1900.
+> Câu chuyện có thật ở chỗ Newton tự kể, nhưng chi tiết phổ biến thì không có: không tồn tại ghi chép nào về một cái đầu bị quả táo đập, và cảnh báo thường gán cho *Principia* là một sự sắp xếp hậu nghiệm. Sẵn có Archimedes, Galileo, Descartes và Robert Hooke đã nghĩ về phạm vi của trọng lực trước đó, và chính Hooke mới là người nói với Newton rằng lực hấp dẫn có thể lan tới khoảng cách xa. Cũng nên nhớ câu Newton thường được trích: mình giỏi vì đứng trên vai người lớn tuổi hơn. Cây táo sau đó bị gió đổ, thân cây được giữ lại thành một chiếc ghế, và các đoạn ghép từ cây gốc vẫn được nhân giống ở khắp nơi.
+>
+> **Về nguồn gốc.** Newton viết năm 1727 rằng cây bị gió phá từ "khoảng hai mươi năm trước", tức quanh 1707, trong khi mốc thường được viện dẫn cho vụ đổ cây là khoảng năm 1900.
 
 Thiên nhiên và những quy luật của Thiên nhiên ẩn giấu trong đêm,
 Chúa nói: “Hãy để Newton tồn tại,” và tất cả hóa ra sáng.

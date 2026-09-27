@@ -5,8 +5,6 @@ slug: "sach-i-phan-vi-vii-proposition-xxxi-xxxiii"
 number: 31
 ---
 
-# Sách I, Phần VI–VII. Proposition XXXI–XXXIII
-
 ![Xác định vị trí vật thể trên elip](../assets/section-vi-elliptic-motion.svg)
 
 *Hình 19. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -196,15 +194,17 @@ Cách thực hành này đủ nhanh, vì các góc $V$, $X$, tính bằng giây 
 
 Khi đã biết góc chuyển động trung bình quy thành $BHP$, các phương pháp đã biết cho ta góc chuyển động thật $BSP$ và khoảng cách $SP$.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXI giải bài toán mà thiên văn học cần nhất: biết thời gian, tìm vị trí. Đây chính là **phương trình Kepler**, và trong toàn bộ *Principia* không có kết quả nào khó hơn. Hai lời giải Newton đưa ra — một hình học bằng cycloid, một giải tích bằng chuỗi vô hạn — là hai con đường mà ngành thiên văn vẫn phân biệt rõ.
+> **Từ thời gian, tìm vị trí: bài toán khó nhất của cả cuốn sách**
 >
-> **Công thức.** Cách hình học dùng một sự kiện đẹp: nếu một bánh xe lăn không trượt trên đường thẳng, điểm trên vành bánh xe mô tả **cycloid**. Newton chọn bán kính bánh xe sao cho $OG:OA = OA:OS$, rồi dùng chu kỳ của cycloid làm thang đo thời gian. Cách giải tích thì viết góc chuyển động trung bình dưới dạng chuỗi $AOQ + E + G + I + \cdots$, trong đó các số hạng chứa $\sin(2T)$ và $\sin^3(T)$ — đúng là dạng khai triển của quan hệ giữa dị thường anom và trung bình anom.
+> Đây là phương trình Kepler, và trong toàn bộ *Principia* không có kết quả nào khó hơn. Newton đưa ra hai lời giải, mỗi lời một ngôn ngữ.
 >
-> **Vì sao Newton viết như vậy.** Vì ông phải dựng lịch hành tinh mà mắt thường không đủ tới, và vì ông còn phải dựng lịch Mặt Trăng. Ông không có máy tính, chỉ có thước kẻ và bảng logarit, nên cần một thuật toán mà tay thực hiện được. Chính vì thế ông chọn chuỗi hội tụ rất nhanh: ông viết rằng hầu như không cần đi quá số hạng thứ hai, và ngay cả ở quỹ đạo Sao Hỏa — nơi phương trình trung tâm lớn nhất tới mười độ — sai số cũng khó vượt quá một giây.
+> Lời giải hình học dựng một bánh xe lăn không trượt trên đường thẳng — điểm trên vành bánh xe mô tả đường cycloid. Chọn bán kính bánh xe sao cho $OG:OA = OA:OS$, thì độ dài cung cycloid tính từ $O$ chính là thang đo thời gian. Câu hỏi "vật thể ở góc nào ứng với thời điểm này" trở thành "đọc bao nhiêu trên cung cycloid", tức một phép đo thước. Lời giải giải tích thì khai triển góc chuyển động trung bình thành chuỗi vô hạn, các số hạng mang $\sin(2T)$ và $\sin^3 T$.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay gọi đó là **phương trình Kepler dạng khai triển**, và nó vẫn là cách nhanh nhất để tính vị trí hành tinh khi không cần độ chính xác tuyệt đối. Khi cần độ chính xác cao, người ta dùng hàm elliptic; nhưng với sai số vài giây trong một vòng quay, chuỗi của Newton vẫn đúng và vẫn là nghiệm nhanh nhất. Điều đáng nói là chính ông đã đo trước sai số ấy bằng trường hợp khó nhất, tức Sao Hỏa, trước khi bất kỳ ai đặt vấn đề.
+> Cả hai lời giải đều nhắm một mục tiêu thực dụng: dựng lịch hành tinh bằng tay. Bảng số liệu của Tycho là nguồn, độ chính xác khoảng một phút vòng cung, còn lịch thì phải tính ra bằng thước kẻ và bảng logarit. Vì vậy ông chọn chuỗi hội tụ rất nhanh, tới mức ghi rõ hầu như không cần đi quá số hạng thứ hai — rồi đo sai số ngay ở trường hợp khó nhất, quỹ đạo Sao Hỏa, nơi phương trình trung tâm lớn nhất lên tới mười độ.
+>
+> Đối chiếu con số ấy với dữ liệu gốc mới thấy lời hứa mạnh đến đâu: một giây thời gian ứng với mười lăm giây vòng cung, tức chuỗi của Newton chính xác hơn nhiều lần so với chính những quan sát dùng để kiểm tra nó. Ngành thiên văn về sau vẫn phân hai lời giải này: chuỗi khai triển khi chấp nhận sai số vài giây trong một vòng, hàm elliptic khi cần độ chính xác cao.
 
 ## Phần VII. Chuyển động lên và xuống theo đường thẳng của các vật thể
 
@@ -293,12 +293,14 @@ $$
 
 Một vật thể quay trong đường tròn tại một khoảng cách đã cho từ tâm, nếu chuyển động của nó được biến thành chuyển động đi thẳng lên, sẽ lên tới khoảng cách gấp đôi khoảng cách của nó với tâm.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXII tìm quãng đường rơi thẳng vào tâm bằng cách cho các elip và hypebol **thoái lui** thành đường thẳng, giữ nguyên quan hệ "diện tích quét tỷ lệ với thời gian". Cùng kỹ thuật ấy, Proposition XXXIII liên hệ vận tốc của vật thể rơi với vận tốc của vật thể quay tròn.
+> **Cho conic tiến tới đường thẳng, bài toán rơi thẳng thu được về bài toán quay tròn**
 >
-> **Công thức.** Hệ quả 2 nói rằng một vật thể đang quay tròn ở khoảng cách $R$ từ tâm, nếu biến vận tốc ấy thành chuyển động thẳng đi lên, sẽ lên tới khoảng cách gấp đôi $R$. Kiểm bằng năng lượng: vận tốc quay tròn là $v^2 = \dfrac{\mu}{R}$, và $\tfrac{1}{2}v^2 = \mu\left(\dfrac{1}{R} - \dfrac{1}{2R}\right)$ — hai vế bằng nhau chính xác khi vật thể dừng ở $2R$.
+> Hai hình $RPB$ và $DEB$ cùng chia một đường kính $AB$. Khi bề rộng của $RPB$ co về không, tiêu điểm $S$ trượt vào đúng đỉnh $B$, cung $PB$ nằm thẳng trên $CB$ — còn mọi phép đo diện tích giữ nguyên quan hệ "diện tích quét tỷ lệ với thời gian". Nhờ đó một lập luận chứng minh duy nhất phục vụ cho cả ba: elip, hypebol và rơi thẳng vuông góc.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một công thức duy nhất cho mọi kiểu quỹ đạo, và cách cho elip thoái lui thành đường thẳng cho phép dùng chung một phép chứng minh cho cả elip, hypebol lẫn rơi thẳng. Cùng lý do ấy, ông liên hệ vận tốc rơi với vận tốc quay tròn — vì quỹ đạo tròn là trường hợp biên mà mọi tính toán đều dễ dàng hơn hết.
+> Proposition XXXIII đi theo đúng lối ấy để liên hệ vận tốc: vận tốc của vật thể rơi tại $C$ tỷ lệ với vận tốc của vật thể quay tròn quanh $B$ tại cùng khoảng cách, theo căn bậc hai của $\dfrac{AC}{AO}$. Với quỹ đạo tròn thì $A$ nằm trên chính đường tròn, nên $AO = \frac{1}{2}AB$ và hệ số còn lại là căn bậc hai của $\dfrac{2AC}{AB}$.
 >
-> **Hiện nay thì sao.** Hệ quả 2 chính là quan hệ $r_a = 2r_p$ của quỹ đạo parabol, và nó là tiền thân trực tiếp của khái niệm **vận tốc thoát**: để bay tới vô cùng cần vận tốc lớn hơn $\sqrt{2}$ lần vận tốc quay tròn cùng bán kính. Người đọc hôm nay còn thấy Hệ quả 2 ở dạng giới hạn của phương trình vis-viva khi $a \to \infty$: quỹ đạo parabol có điểm gần nhất $R$ thì có điểm xa nhất $2R$, và tốc độ ở điểm xa nhất bằng không. Cùng ý ấy giải thích vì sao tàu thăm bằng điện có thể dùng lực hút của Trái Đất để tăng tốc lên quỹ đạo thoát, thay vì chỉ dựa vào đẩy của động cơ.
+> Hệ quả 2 là một câu hỏi năng lượng thuần tuý, trả lời bằng một dòng. Vận tốc quay tròn ở khoảng cách $R$ cho $v^2 = \dfrac{\mu}{R}$, nên động năng là $\dfrac{\mu}{2R}$; đổi hết thành thế năng $\dfrac{\mu}{r}$ thì vật thể dừng ở $r = 2R$. Vậy một vật thể đang quay tròn ở $R$, nếu chuyển toàn bộ vận tốc thành chuyển động thẳng đi lên, sẽ dừng ở $2R$.
+>
+> Người đọc hôm nay nhận ra ngay $2R$ là khoảng cách dừng của hành động cấp tốc chuyển hướng: đó là **vận tốc thoát**, $v_{\text{esc}} = \sqrt{2}\,v_{\text{circ}}$. Đổi chiều lại, một vật thể bay nhanh hơn $\sqrt{2}\,v_{\text{circ}}$ sẽ không bao giờ quay lại. Cùng phép tính, nếu coi nó là giới hạn của phương trình vis-viva khi $a \to \infty$, ta được quan hệ $r_a = 2r_p$ của quỹ đạo parabol. Và cùng lập luận đó giải thích vì sao một tàu đẩy nhẹ leo thang hiệu quả bằng cách hạ sâu xuống rồi đốt mới bay lên: rơi sâu hơn thì lấy được nhiều năng lượng hơn trên mỗi nhát đốt. Người đọc hôm nay gọi tên đó là **hiệu ứng Oberth**, và nó giải thích vì sao một tàu đã tăng tốc lấy được nhiều năng lượng hơn từ một nhát đốt cùng độ lớn.

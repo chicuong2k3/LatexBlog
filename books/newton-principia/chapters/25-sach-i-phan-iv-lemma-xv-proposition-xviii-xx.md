@@ -5,8 +5,6 @@ slug: "sach-i-phan-iv-lemma-xv-proposition-xviii-xx"
 number: 25
 ---
 
-# Sách I, Phần IV. Lemma XV và Proposition XVIII–XX
-
 ## Tìm các quỹ đạo elip, parabol và hypebol khi đã biết tiêu điểm
 
 ![Cách dựng quỹ đạo elip, hypebol và parabol từ tiêu điểm](../assets/propositions-18-20-orbit-construction.svg)
@@ -19,15 +17,19 @@ Nếu từ hai tiêu điểm $S$, $H$ của một elip hoặc hypebol bất kỳ
 
 Cho đoạn vuông góc $TR$ cắt đường thẳng $HV$, kéo dài nếu cần, tại $R$, rồi nối $SR$. Vì $TS$, $TV$ bằng nhau, các đường thẳng $SR$, $VR$ và các góc $TRS$, $TRV$ cũng bằng nhau. Do đó, $R$ nằm trên hình cắt conic, và $TR$ chạm vào hình cắt conic ấy. Ngược lại, nếu $TR$ chạm vào hình cắt conic thì $HV$ bằng trục chính của hình.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma XV phát biểu tính chất **đường phân giác của tiếp tuyến**: tiếp tuyến tại một điểm của hình cắt conic là đường phân giác ngoài của góc tạo bởi hai bán kính kẻ tới hai tiêu điểm. Người đọc hôm nay đây chính là **tính chất phản xạ** của conic — cái làm cho kính viễn và gương parabol trở thành dụng cụ quang học.
+> **Tiếp tuyến của một conic là đường phân giác ngoài của góc hai tiêu điểm**
 >
-> **Công thức.** Với tiêu điểm $S$, $H$ và điểm $P$ trên hình cắt conic, Lemma XV nói $ST$ là trung trực của $SV$, tức $TS = TV$, và từ đó $\angle TRS = \angle TRV$. Nói cách khác, góc giữa tiếp tuyến và bán kính tới tiêu điểm này bằng góc giữa tiếp tuyến và bán kính tới tiêu điểm kia. Với parabol, tiêu điểm nằm ở vô cùng nên góc phản xạ trở thành phản xạ song song.
+> Đây chính là **tính chất phản xạ** của conic — cái làm cho kính viễn và gương parabol trở thành dụng cụ quang học.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một cách **dựng**, không chỉ một tính chất. Cách dựng mà ông chỉ ra — lấy trung trực của một đoạn nối tiêu điểm với một điểm thứ ba — chính là cách thực hành mà người thợ dùng hàng thế kỷ: kẻ một sợi dây giữa hai điểm cố định, căng thẳng, bút chạm sợi dây sẽ vẽ nên đường conic. Người đọc hôm nay gọi đó là **đường dây kéo**, và nó vẫn là cách nhanh nhất để dựng elip bằng tay.
+> Với tiêu điểm $S$, $H$ và điểm $P$ trên hình cắt conic, Lemma XV nói $ST$ là trung trực của $SV$, tức $TS = TV$, và từ đó $\angle TRS = \angle TRV$. Nói cách khác, góc giữa tiếp tuyến và bán kính tới tiêu điểm này bằng góc giữa tiếp tuyến và bán kính tới tiêu điểm kia. Với parabol, tiêu điểm nằm ở vô cùng nên góc phản xạ trở thành phản xạ song song.
 >
-> **Hiện nay thì sao.** Tính chất phản xạ giải thích vì sao kính viễn dùng parabol, vì sao đèn pha dùng gương parabol, và vì sao phòng đọng âm thanh dạng elip hoạt động: sóng âm từ một nguồn phản xạ đúng một lần rồi dồn về tiêu điểm. Nó cũng là lý do các conic xuất hiện trong thiết kế ống khuếch đại ánh sáng và trong nguyên lý truyền bức xạ vô tuyến. Người đọc hôm nay thấy đây là ví dụ đầu tiên của một ý tưởng rộng hơn nhiều: **một đường cong có thể mang chức năng quang học**, và chính hình học quyết định chức năng ấy.
+> **Một cách dựng, không chỉ một tính chất**
+>
+> Cách dựng mà ông chỉ ra — lấy trung trực của một đoạn nối tiêu điểm với một điểm thứ ba — chính là cách thực hành mà người thợ dùng hàng thế kỷ: kẻ một sợi dây giữa hai điểm cố định, căng thẳng, bút chạm sợi dây sẽ vẽ nên đường conic. Người đọc hôm nay gọi đó là **đường dây kéo**, và nó vẫn là cách nhanh nhất để dựng elip bằng tay.
+>
+> Tính chất phản xạ giải thích vì sao kính viễn dùng parabol, vì sao đèn pha dùng gương parabol, và vì sao phòng đọng âm thanh dạng elip hoạt động: sóng âm từ một nguồn phản xạ đúng một lần rồi dồn về tiêu điểm. Nó cũng là lý do các conic xuất hiện trong thiết kế ống khuếch đại ánh sáng và trong nguyên lý truyền bức xạ vô tuyến.
 
 ## Proposition XVIII. Bài toán X
 
@@ -149,12 +151,16 @@ Trục của hình cắt conic dựng có cùng tỷ số với khoảng cách t
 
 Vì tam giác $PSH$ đồng dạng với tam giác $psh$, hình này đi qua $P$. Vì $VH$ bằng trục chính, còn $VS$ bị $TR$ chia vuông góc, hình ấy chạm vào $TR$.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Các Bài toán X, XI và XII tạo thành một bộ **dựng hình bằng thước kẻ và com pa** hoàn chỉnh, và khi nhìn lại ta thấy chúng được điều khiển bởi một con số duy nhất: một hình cắt conic có đúng **năm** điều kiện độc lập.
+> **Một hình cắt conic có đúng năm điều kiện độc lập**
 >
-> **Công thức.** Một conic tổng quát có phương trình $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ với sáu hệ số, trừ đi một vì nhân cả hai vế với một hằng số không đổi hình, nên còn **năm** tham số. Mỗi điều kiện đi qua một điểm hay chạm một đường thẳng là một ràng buộc tuyến tính, tức mất đúng một tham số. Kiểm lại: Bài toán X cho trước tiêu điểm và độ dài trục chính, rồi một điểm và một tiếp tuyến — đủ năm. Ở Trường hợp 1 của Bài toán XII, có thêm điều kiện loại quỹ đạo đã biết, cộng tiêu điểm và hai điểm — cũng đủ năm.
+> Các Bài toán X, XI và XII tạo thành một bộ **dựng hình bằng thước kẻ và com pa** hoàn chỉnh, và khi nhìn lại ta thấy chúng được điều khiển bởi một con số duy nhất.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần đủ ca mọi bài toán thực tế mà kỹ thuật thời ông gặp: một hành tinh được quan sát ở vài vị trí và vài thời điểm, và ông phải dựng được conic khớp với tất cả. Ông không có máy tính, nên phải giải bằng thước kẻ và com pa — và ông liệt kê đủ từng tổ hợp: hai điểm, hai tiếp tuyến, một điểm và một tiếp tuyến, một tiếp tuyến tại một điểm đã biết, và cả trường hợp quỹ đạo đồng dạng với một hình cho trước.
+> Một conic tổng quát có phương trình $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ với sáu hệ số, trừ đi một vì nhân cả hai vế với một hằng số không đổi hình, nên còn **năm** tham số. Mỗi điều kiện đi qua một điểm hay chạm một đường thẳng là một ràng buộc tuyến tính, tức mất đúng một tham số. Kiểm lại: Bài toán X cho trước tiêu điểm và độ dài trục chính, rồi một điểm và một tiếp tuyến — đủ năm. Ở Trường hợp 1 của Bài toán XII, có thêm điều kiện loại quỹ đạo đã biết, cộng tiêu điểm và hai điểm — cũng đủ năm.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay vẫn làm đúng việc đếm ấy, chỉ khác là dùng ma trận thay cho thước kẻ. Bài toán dựng quỹ đạo từ các điểm và tiếp tuyến vẫn là bài toán chuẩn trong thiên văn học, và dạng tối ưu của nó ngày nay mang tên **Lambert**. Việc chọn đúng số lượng điều kiện vẫn là kỹ năng cốt lõi: lấy dư một điều kiện thì bài toán không xác định, lấy thiếu thì vô số nghiệm.
+> **Đủ ca cho mọi bài toán thực tế mà kỹ thuật thời ông gặp**
+>
+> Một hành tinh được quan sát ở vài vị trí và vài thời điểm, và ông phải dựng được conic khớp với tất cả. Ông không có máy tính, nên phải giải bằng thước kẻ và com pa — và ông liệt kê đủ từng tổ hợp: hai điểm, hai tiếp tuyến, một điểm và một tiếp tuyến, một tiếp tuyến tại một điểm đã biết, và cả trường hợp quỹ đạo đồng dạng với một hình cho trước.
+>
+> Người đọc hôm nay vẫn làm đúng việc đếm ấy, chỉ khác là dùng ma trận thay cho thước kẻ. Bài toán dựng quỹ đạo từ các điểm và tiếp tuyến vẫn là bài toán chuẩn trong thiên văn học, và dạng tối ưu của nó ngày nay mang tên **Lambert**. Việc chọn đúng số lượng điều kiện vẫn là kỹ năng cốt lõi: lấy dư một điều kiện thì bài toán không xác định, lấy thiếu thì vô số nghiệm.

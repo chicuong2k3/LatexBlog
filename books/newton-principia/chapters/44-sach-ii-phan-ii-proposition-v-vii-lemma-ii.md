@@ -5,8 +5,6 @@ slug: "sach-ii-phan-ii-proposition-v-vii-lemma-ii"
 number: 44
 ---
 
-# Sách II, Phần II. Proposition V–VII và Lemma II
-
 ![Minh họa chuyển động trong môi trường có lực cản](../assets/book-ii-section-i-motion.svg)
 
 *Hình 32. Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.*
@@ -83,14 +81,16 @@ Nếu thời gian được biểu diễn bằng một đoạn $AD$ của tiệm 
 
 Quãng đường đi trong môi trường có lực cản được xác định bằng cách lấy nó tỷ lệ với quãng đường đi với vận tốc đều $AB$ trong môi trường không có lực cản, như diện tích hyperbola $ABGD$ với hình chữ nhật $AB\cdot AD$.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Phần I vừa rồi lấy lực cản tỷ lệ với vận tốc, và kết quả là một **lũy thừa giảm**. Phần II đổi sang lực cản tỷ lệ với bình phương vận tốc, và bản chất nghiệm đổi hẳn: vận tốc không còn giảm theo lũy thừa nữa mà theo một **phân thức**. Hai chương kề nhau cho hai họ nghiệm khác hẳn nhau, và điều duy nhất đổi giữa chúng là số mũ của vận tốc trong lực cản.
+> **Lực cản nhị thừa: vận tốc là phân thức, quãng đường là logarit**
 >
-> **Công thức.** Với lực cản $F_{\text{cản}} = \gamma v^2$, phương trình chuyển động là $m\dfrac{dv}{dt} = -\gamma v^2$, và nghiệm là
+> Phần I lấy lực cản tỷ lệ với vận tốc, kết quả là một lũy thừa giảm. Phần II đổi sang lực cản tỷ lệ với bình phương vận tốc, và bản chất nghiệm đổi hẳn: vận tốc không còn giảm theo lũy thừa nữa mà theo một **phân thức**. Hai chương kề nhau cho hai họ nghiệm khác hẳn, và điều duy nhất đổi giữa chúng là số mũ của vận tốc trong lực cản.
+>
+> Với lực cản $F_{\text{cản}} = \gamma v^2$, phương trình chuyển động là $m\dfrac{dv}{dt} = -\gamma v^2$, và nghiệm là
 >
 > $$
-> v = \frac{v_0}{1 + \gamma v_0 t/m}.
+> v = \frac{v_0}{1 + \gamma v_0 t/m},
 > $$
 >
 > Tích phân cho quãng đường là
@@ -99,11 +99,11 @@ Quãng đường đi trong môi trường có lực cản được xác định 
 > x(t) = \frac{m v_0}{\gamma}\,\ln\!\left(1 + \frac{\gamma v_0 t}{m}\right),
 > $$
 >
-> tức là một **logarit**, không phải một hàm mũ. Hệ quả 1 và 2 chính là câu nói bằng hình học cho sự thật ấy: quãng đường tỷ lệ với diện tích hyperbola, mà diện tích dưới đường $1/t$ chính là logarit. Vận tốc trung bình theo thời gian vì thế là **trung bình logarit** của vận tốc đầu và vận tốc cuối, chứ không phải trung bình số học.
+> tức là một **logarit**, không phải một hàm mũ. Hệ quả 1 và 2 chính là câu nói bằng hình học cho sự thật ấy: quãng đường tỷ lệ với diện tích hyperbola, mà diện tích dưới đường $1/t$ chính là logarit.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không có tích phân. Ông không thể viết $\ln$, nên chỉ có thể chỉ ra rằng diện tích giữa các tiệm cận của một hyperbola là một đại lượng cần dùng, rồi để người đọc tự nhận ra nó là logarit khi đã có định nghĩa. Ông dùng hình học làm ngôn ngữ thay cho tích phân, và câu "diện tích hyperbola so với hình chữ nhật" chính là cách định nghĩa tỉ lệ logarithm mà không cần dùng chữ.
+> Hệ quả thực dụng nằm ngay trong hàm logarit ấy, và nó là lý do lực cản nhị thừa giới hạn tầm xa. Với $\tau = m/\gamma$, ta có $x(2t) - x(t) = \tau v_0\ln\dfrac{1 + 2u}{1 + u} \to \tau v_0\ln 2$ khi $u = v_0t/\tau$ ra vô hùng. Tức là khi thời gian tăng gấp đôi, quãng đường thêm được vẫn chỉ là một hằng số. Với lực cản tuyến tính thì khoảng ấy vẫn tăng theo tỷ lệ với thời gian, nên một vật thể chịu lực cản tuyến tínn vẫn đi được vô hạn; một vật thể chịu lực cản nhị thừa thì không.
 >
-> **Hiện nay thì sao.** Cặp lũy thừa và logarit này là cặp nghiệm kinh điển của hai chế độ lực cản, và nó quay lại ở quy mô lớn trong bài toán dự bị của tàu thuyền: khi ma sát nhỏ, quãng đường suy giảm theo lũy thừa; khi lực cản vuông với bình phương tốc độ, quãng đường là một logarit. Chính vì vậy đường cong mũ được dùng để thể hiện suy giảm theo lũy thừa, còn thang logarit cho trục lại được dùng khi muốn so sánh những đại lượng tỷ lệ nhân với nhau.
+> Ông viết bằng hình học chứ không bằng tích phân. Ông không thể viết $\ln$, nên chỉ có thể chỉ ra rằng diện tích giữa hai tiệm cận của một hyperbola là một đại lượng cần dùng, rồi để người đọc tự nhận ra nó là logarit khi đã có định nghĩa. Cụm từ "diện tích hyperbola so với hình chữ nhật" chính là cách định nghĩa tỉ lệ logarithm mà không cần dùng chữ.
 
 ### Hệ quả 3
 
@@ -381,11 +381,13 @@ Nếu hai trung bình của bốn đại lượng tỷ lệ đã cho, moment c�
 
 Nếu tổng hoặc hiệu của hai hình vuông đã cho, moment của các cạnh tỷ lệ nghịch với các cạnh.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma II chính là **quy tắc tích phân vi phân**, viết ra bằng một ngôn ngữ khác hẳn. Newton gọi những đại lượng sinh ra bằng phép nhân, chia, lấy căn là *genita*, và gọi phần tăng tức thời của chúng là *moments*. Với các moment $a$ và $b$ của $A$ và $B$, Lemma phát biểu: moment của $AB$ là $aB + bA$.
+> **Quy tắc tính moment của một tích: $aB + bA$**
 >
-> **Công thức.** Đối chiếu với cách viết hôm nay, với $A$ và $B$ là hai hàm của thời gian. Phép nhân $(A+a)(B+b) - (A-a)(B-b) = 2aB + 2bA$ cho thấy moment của tích là tổng của hai số hạng ấy, và các trường hợp còn lại của Lemma cho ra đúng hai quy tắc
+> Lemma II chính là quy tắc tích phân vi phân, viết bằng một ngôn ngữ khác hẳn. Newton gọi những đại lượng sinh ra bằng phép nhân, chia, lấy căn là *genita*, và gọi phần tăng tức thời của chúng là *moments*. Với các moment $a$ và $b$ của $A$ và $B$, Lemma phát biểu: moment của $AB$ là $aB + bA$.
+>
+> Đẳng thức đứng sau nó là $(A+a)(B+b) - (A-a)(B-b) = 2aB + 2bA$, và các trường hợp còn lại của Lemma cho ra đúng hai quy tắc
 >
 > $$
 > \frac{d}{dt}A^n = nA^{n-1}\,\dot A,
@@ -393,9 +395,11 @@ Nếu tổng hoặc hiệu của hai hình vuông đã cho, moment của các c�
 > \frac{d}{dt}\left(A^3 B^{-2}\right) = 3A^2 B^{-2}\,\dot A - 2A^3 B^{-3}\,\dot B.
 > $$
 >
-> **Vì sao Newton viết như vậy.** Vì ông cố tình không dùng ký hiệu vi phân. Cả *Principia* được viết bằng các "tỷ lệ đầu và cuối" của những đại lượng tự tiêu biến, chứ không bằng một hệ ký hiệu như $\dot A$ hay $dA$. Cách ấy đủ cho toàn bộ cơ học, nhưng nó khiến người đọc phải tự dịch từng phát biểu sang ngôn ngữ quen thuộc — và chính vì vậy Lemma phải được chứng minh từng trường hợp một, thay vì suy ra từ một định nghĩa duy nhất.
+> Ông cố tình không dùng ký hiệu vi phân. Cả *Principia* được viết bằng các "tỷ lệ đầu và cuối" của những đại lượng tự tiêu biến, chứ không bằng một hệ ký hiệu như $\dot A$ hay $dA$. Cách ấy đủ cho toàn bộ cơ học, nhưng nó khiến người đọc phải tự dịch từng phát biểu sang ngôn ngữ quen thuộc — và chính vì vậy Lemma phải được chứng minh từng trường hợp một, thay vì suy ra từ một định nghĩa duy nhất.
 >
-> **Hiện nay thì sao.** Lời cảnh báo trong chính Lemma rất đáng chú ý: các hạt hữu hạn không phải là moments, chúng là những đại lượng **được sinh ra bởi** moments, và moment phải được hiểu là những nguyên lý mới sinh khởi chứ không phải thứ gì chỉ ra được bằng phép trừ. Đó chính là lập trường sẽ bị tranh luận suốt thế kỷ XIX giữa hai phe: một bên coi vô cùng nhỏ là một thực thể, một bên coi nó là ký hiệu thuần tuý. Phe thứ hai thắng, nhưng phải chờ tới giữa thế kỷ XIX khi Dedekind và Weierstrass dựng lại nền tảng của giải tích theo định nghĩa giới hạn, thay cho mọi trực giác về vô cùng nhỏ. Cũng trong Học luận ngay sau, Newton tiết lộ ông đã ghép phương pháp này với khai triển thành chuỗi vô hạn — tức là ngay cuối thế kỷ XVII, ông đã có trong tay cả hai công cụ mà người ta còn đang tranh luận làm nên nền tảng của vi phân.
+> Lời cảnh báo trong chính Lemma mới là phần còn dùng được. Các hạt hữu hạn không phải là moments, chúng là những đại lượng **được sinh ra bởi** moments, và moment phải được hiểu là nguyên lý sinh khởi chứ không phải thứ gì chỉ ra được bằng phép trừ. Đó chính là lập trường bị tranh luận suốt thế kỷ XIX giữa hai phe: một bên coi vô cùng nhỏ là một thực thể, một bên coi nó là ký hiệu thuần tuý. Phe thứ hai thắng, nhưng phải chờ tới giữa thế kỷ XIX khi Dedekind và Weierstrass dựng lại nền tảng giải tích theo định nghĩa giới hạn, thay cho mọi trực giác về vô cùng nhỏ.
+>
+> Cùng trong Học luận ngay sau, Newton tiết lộ ông đã ghép phương pháp này với khai triển thành chuỗi vô hạn. Tức là ngay cuối thế kỷ XVII, ông đã có trong tay cả hai công cụ mà thế kỷ sau còn đang tranh luận về quan hệ giữa chúng.
 
 ## Học luận
 

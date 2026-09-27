@@ -5,8 +5,6 @@ slug: "sach-ii-phan-i-chuyen-dong-luc-can-tuy-le-van-toc"
 number: 43
 ---
 
-# Sách II, Phần I. Chuyển động của vật thể chịu lực cản tỷ lệ với vận tốc
-
 ![Minh họa chuyển động trong môi trường có lực cản](../assets/book-ii-section-i-motion.svg)
 
 *Hình 31. Sơ đồ được dựng lại để minh họa quỹ tích vận tốc theo thời gian; cần đối chiếu với các hình bản gốc.*
@@ -25,15 +23,17 @@ Trong mỗi phần thời gian bằng nhau, chuyển động mất đi tỷ lệ
 
 Nếu một vật thể không có trọng lực chuyển động trong không gian trống chỉ nhờ lực tiềm ẩn, và đã biết toàn bộ chuyển động ở đầu sơ la cũng như chuyển động còn lại sau khi đã đi một phần đường, thì cũng có thể biết toàn bộ quãng đường mà vật thể có thể mô tả trong thời gian vô hạn. Quãng đường ấy tỷ lệ với quãng đường đã đi như chuyển động ban đầu tỷ lệ với phần chuyển động đã mất.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition I nói một điều thoạt lạ nhưng cực kỳ đẹp: khi lực cản tỷ lệ với vận tốc, thì **chuyển động mất đi tỷ lệ với quãng đường đã đi**. Hệ quả ngay sau đó suy ra toàn bộ quãng đường vật thể có thể đi trong thời gian vô hạn, và nó chỉ tỷ lệ với tỷ lệ giữa vận tốc ban đầu và phần vận tốc đã mất.
+> **Lực cản tuyến tính: chuyển động mất đi tỷ lệ với quãng đường đã đi**
 >
-> **Công thức.** Đây chính là quy luật lũy thừa. Với lực cản $F_{\text{cản}} = \gamma v$, phương trình chuyển động là $m\dfrac{dv}{dt} = -\gamma v$, và nghiệm là $v(t) = v_0 e^{-t/\tau}$ với thời hằng $\tau = m/\gamma$. Tích phân của nó cho biên độ $x(t)$ cũng là tổng của một đường thẳng và một hàm mũ.
+> Proposition này nói một điều thoạt lạ nhưng cực kỳ đẹp. Khi lực cản tỷ lệ với vận tốc, chuyển động mất đi tỷ lệ với quãng đường đã đi. Hệ quả ngay sau đó suy ra toàn bộ quãng đường vật thể có thể đi trong thời gian vô hạn, và nó chỉ tỷ lệ với tỷ lệ giữa vận tốc ban đầu và phần vận tốc đã mất.
 >
-> **Vì sao Newton viết như vậy.** Vì lúc đó chưa có ký hiệu $e$. Euler mới chuẩn hoá cách viết hằng số mũ tự nhiên vào những năm 1740, gần một thế kỷ sau *Principia*. Nên Newton buộc phải diễn đạt bằng hình học: ông dùng một **cấp số nhân** cho các vận tốc ở đầu mỗi khoảng thời gian bằng nhau, và dùng một đường hyperbola làm quỹ tích. Proposition II chính là hình học của lũy thừa: một tiến trình liên tục được dựng lại từ những bước rời rạc.
+> Ở dạng hiện đại đây là quy luật lũy thừa. Với lực cản $F_{\text{cản}} = \gamma v$, phương trình chuyển động là $m\dfrac{dv}{dt} = -\gamma v$, và nghiệm là $v(t) = v_0 e^{-t/\tau}$ với thời hằng $\tau = \dfrac{m}{\gamma}$. Tích phân của nó cho biên độ $x(t)$ cũng là tổng của một đường thẳng và một hàm mũ.
 >
-> **Hiện nay thì sao.** Lũy thừa giảm là một trong những quy luật phổ biến nhất trong vật lí, và nó luôn cùng một dạng sau khi chia cho thời hằng. Mô hình tấm đệm không đàn hồi dùng đúng lực cản tuyến tính này, và nó giải thích vì sao đệm mềm lại tốt hơn đệm cứng: đệm không làm thay đổi dạng đường cong, chỉ kéo dài thời hằng, mà thời hằng chính là quãng đường dừng. Cùng dạng ấy xuất hiện ở tụ điện phóng điện, trong suy giảm phóng xạ, và trong các mô hình dịch dây của dân số.
+> Ông không có ký hiệu $e$ khi viết *Principia*. Euler mới chuẩn hoá cách viết hằng số mũ tự nhiên vào những năm 1740, gần một thế kỷ sau đó. Nên ông buộc phải diễn đạt bằng hình học: dùng một **cấp số nhân** cho các vận tốc ở đầu mỗi khoảng thời gian bằng nhau, và dùng một đường hyperbola làm quỹ tích. Proposition II chính là hình học của lũy thừa: một tiến trình liên tục được dựng lại từ những bước rời rạc.
+>
+> Lũy thừa giảm là một trong những quy luật phổ biến nhất trong vật lí, và nó luôn cùng một dạng sau khi chia cho thời hằng. Mô hình tấm đệm không đàn hồi dùng đúng lực cản tuyến tính này, và nó giải thích vì sao đệm mềm lại tốt hơn đệm cứng: đệm không làm thay đổi dạng đường cong, chỉ kéo dài thời hằng, mà thời hằng chính là quãng đường dừng. Cùng dạng ấy xuất hiện ở tụ điện phóng điện, trong suy giảm phóng xạ, và trong các mô hình dịch dây của dân số.
 
 ## Lemma I
 
@@ -371,12 +371,14 @@ Quy luật lực cản tỷ lệ với vận tốc là một giả thuyết toá
 
 Khi vật thể chuyển động nhanh hơn, nó truyền một lượng chuyển động lớn hơn cho cùng lượng môi trường trong thời gian ngắn hơn. Trong những thời gian bằng nhau, lượng môi trường bị khuấy động nhiều hơn, nên lượng chuyển động truyền cho nó tăng theo bình phương. Theo Định luật II và III, lực cản tỷ lệ với chuyển động đã truyền.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận kết thúc Phần I là một lời thú nhận hiếm hoi: quy luật lực cản tỷ lệ với vận tốc là **một giả thuyết toán học hơn là vật lý**, và trong những môi trường không có độ dẻo, lực cản thực ra tỷ lệ với bình phương vận tốc. Cả chương vừa rồi vì thế giải một bài toán mà chính Newton nói rằng không mô tả thế giới thật.
+> **Ông giả vờ một luật cản tuyến tính, và nói thẳng là giả vờ**
 >
-> **Công thức.** Lập luận của ông đưa ra số mũ 2: vật thể nhanh hơn thì truyền cho cùng một lượng môi trường một lượng chuyển động lớn hơn trong thời gian ngắn hơn, và trong những khoảng thời gian bằng nhau thì lượng môi trường bị khuấy động cũng tăng, nên lượng chuyển động truyền cho nó tăng theo bình phương.
+> Cả chương vừa rồi vì thế giải một bài toán mà chính Newton nói rằng không mô tả thế giới thật. Quy luật lực cản tỷ lệ với vận tốc là **một giả thuyết toán học hơn là vật lý**, và trong những môi trường không có độ dẻo, lực cản thực ra tỷ lệ với bình phương vận tốc.
 >
-> **Vì sao Newton viết như vậy.** Vì cả Phần I phục vụ một mục đích khác. Ông cần một lực cản **tuyến tính trong vận tốc** để những bài toán phía sau có nghiệm giải được bằng hình học thuần. Lực cản nhị thừa sẽ biến chúng thành những tích phân không có dạng, mà ông không có công cụ nào cho việc ấy. Vì vậy ông ghi rõ đây là giả thiết, để người đọc không tưởng ông đang mô tả không khí hay nước.
+> Phần I phục vụ một mục đích khác. Ông cần một lực cản **tuyến tính trong vận tốc** để những bài toán phía sau có nghiệm giải được bằng hình học thuần. Lực cản nhị thừa sẽ biến chúng thành những tích phân không có dạng, mà ông không có công cụ nào cho việc ấy. Vì vậy ông ghi rõ đây là giả thiết, để người đọc không tưởng ông đang mô tả không khí hay nước.
 >
-> **Hiện nay thì sao.** Ngành cơ học chất lỏng hôm nay gọi đây là hai chế độ lực cản, phân biệt bằng **số Reynolds**: lực cản nhị thừa theo vận tốc khi dòng chảy rối và số Reynolds lớn, lực cản tuyến tính theo Stokes khi chất lỏng đủ nhớt và số Reynolds nhỏ. Hệ quả cho hai vật thể cùng hình nhưng khác kích thước là hai công thức hoàn toàn khác nhau: vận tốc giới hạn trong chế độ Stokes tỷ lệ với **bình phương** đường kính, còn trong chế độ nhị thừa chỉ tỷ lệ với **căn bậc nhất** đường kính. Đó là lý do một giọt nước rất nhỏ rơi chậm hơn nhiều so với tỷ lệ dự đoán theo cách chia thông thường, và lý do hạt băng lớn rơi chậm bất ngờ so với một giọt mưa nhỏ.
+> Trước đó, ông đã dựng ra con số 2 bằng lập luận riêng: vật thể nhanh hơn thì truyền cho cùng một lượng môi trường một lượng chuyển động lớn hơn trong thời gian ngắn hơn, và trong những khoảng thời gian bằng nhau thì lượng môi trường bị khuấy động cũng tăng, nên lượng chuyển động truyền cho nó tăng theo bình phương. Cả hai dòng đều dùng đúng Định luật II và III.
+>
+> Ngành cơ học chất lỏng hôm nay gọi đây là hai chế độ lực cản, phân biệt bằng **số Reynolds**: lực cản nhị thừa theo vận tốc khi dòng chảy rối và số Reynolds lớn, lực cản tuyến tính theo Stokes khi chất lỏng đủ nhớt và số Reynolds nhỏ. Hệ quả cho hai vật thể cùng hình nhưng khác kích thước là hai công thức hoàn toàn khác nhau: vận tốc giới hạn trong chế độ Stokes tỷ lệ với **bình phương** đường kính, còn trong chế độ nhị thừa chỉ tỷ lệ với **căn bậc nhất** đường kính. Đó là lý do một giọt nước rất nhỏ rơi chậm hơn nhiều so với cách chia thông thường dự đoán, và lý do hạt băng lớn rơi chậm bất ngờ so với một giọt mưa nhỏ.

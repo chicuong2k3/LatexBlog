@@ -5,8 +5,6 @@ slug: "sach-i-phan-ii-proposition-ii-iii"
 number: 15
 ---
 
-# Sách I, Phần II. Proposition II–III
-
 ## Proposition II. Định lý II
 
 Mọi vật thể chuyển động trên một đường cong bất kỳ được mô tả trong một mặt phẳng, và bằng một bán kính kẻ tới một điểm bất động hoặc một điểm chuyển động về phía trước với chuyển động thẳng đều, mô tả những diện tích tỷ lệ với thời gian quanh điểm ấy, đều chịu một lực hướng tâm hướng về điểm ấy.
@@ -31,15 +29,19 @@ Trong những không gian hoặc môi trường không có sức cản, nếu c�
 
 Ngay cả trong những môi trường có sức cản, nếu việc mô tả diện tích được tăng tốc, phương hướng của các lực sẽ lệch khỏi điểm mà các bán kính gặp nhau, về phía những phần mà chuyển động có xu hướng đi tới.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition II là chiều ngược của Proposition I: không phải "lực hướng tâm sinh ra tốc độ quét diện tích không đổi", mà là "tốc độ quét diện tích không đổi kéo theo lực hằng hướng về tâm". Hệ quả 1 rồi định lượng phần sai lệch, và người đọc hôm nay tính được lực ấy rõ ràng: nó là một lực **nghịch đảo bậc ba**.
+> **Chiều ngược của Proposition I: tốc độ quét lệch thì lực tỉ lệ $1/r^3$**
 >
-> **Công thức.** Trong tọa độ cực, lực vuông góc với bán kính là $F_\theta = mr\ddot{\theta}$. Từ $h = r^2 \dot{\theta}$ không đổi suy ra $\ddot{\theta} = -\dfrac{2\dot{\theta}^2}{r}$, nên $F_\theta = -\dfrac{2m\dot{\theta}^2}{r} = -\dfrac{2mh^2}{r^3}$. Nói cách khác, chỉ cần tốc độ quét diện tích lệch khỏi hằng số là đã xuất hiện một lực tỉ lệ $1/r^3$ theo phương tiếp tuyến, không nhất thiết hướng về tâm.
+> Proposition I nói lực hướng tâm sinh ra tốc độ quét diện tích không đổi. Proposition II nói ngược lại: tốc độ quét diện tích không đổi kéo theo lực hằng hướng về tâm. Hệ quả 1 rồi định lượng phần sai lệch, và người đọc hôm nay tính được lực ấy rõ ràng.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang xây dựng lý thuyết theo hướng ngược: ông biết trước hành tinh quay quanh Mặt Trời, nên cần biết điều gì *bắt buộc* phải đúng. Việc ông viết Hệ quả 2 cho cả môi trường có sức cản cho thấy ông đang dò biên của lập luận. Học luận ngay sau đó nói thêm một điều hiện đại: lực vuông góc với mặt phẳng quỹ đạo không đổi lượng quét, nên có thể bỏ qua khi hợp các lực — đó chính là nguyên lý tách lực theo phương trong cơ học vectơ.
+> Trong tọa độ cực, lực vuông góc với bán kính là $F_\theta = mr\ddot{\theta}$. Từ $h = r^2 \dot{\theta}$ không đổi suy ra $\ddot{\theta} = -\dfrac{2\dot{\theta}^2}{r}$, nên $F_\theta = -\dfrac{2m\dot{\theta}^2}{r} = -\dfrac{2mh^2}{r^3}$. Nói cách khác, chỉ cần tốc độ quét diện tích lệch khỏi hằng số là đã xuất hiện một lực tỉ lệ $1/r^3$ theo phương tiếp tuyến, không nhất thiết hướng về tâm.
 >
-> **Hiện nay thì sao.** Lực tỉ lệ nghịch đảo bậc ba là một họ lực rất quen thuộc trong vật lí hiện đại: nó xuất hiện trong trường của dòng điện thẳng, trong thế năng từ, và trong lực hút giữa hai dây dẫn thẳng. Nó cũng cho thấy vì sao quỹ đạo bị kéo lệch khỏi hình elip rất nhanh khi có nhiễu: sai lệch nhỏ về tốc độ quét diện tích tự khuếch đại theo $1/r^3$. Người đọc hôm nay hiểu Hệ quả 1 như một lời cảnh báo rằng quỹ đạo đẹp không tự bảo vệ được nó.
+> **Ông xây lý thuyết theo hướng ngược**
+>
+> Ông biết trước hành tinh quay quanh Mặt Trời, nên cần biết điều gì *bắt buộc* phải đúng. Việc ông viết Hệ quả 2 cho cả môi trường có sức cản cho thấy ông đang dò biên của lập luận. Học luận ngay sau đó nói thêm một điều hiện đại: lực vuông góc với mặt phẳng quỹ đạo không đổi lượng quét, nên có thể bỏ qua khi hợp các lực — đó là nguyên lý tách lực theo phương trong cơ học vectơ.
+>
+> Lực tỉ lệ nghịch đảo bậc ba là một họ lực rất quen thuộc trong vật lí hiện đại: nó xuất hiện trong trường của dòng điện thẳng, trong thế năng từ, và trong lực hút giữa hai dây dẫn thẳng. Nó cũng cho thấy vì sao quỹ đạo bị kéo lệch khỏi hình elip rất nhanh khi có nhiễu: sai lệch nhỏ về tốc độ quét diện tích tự khuếch đại theo $1/r^3$. Hệ quả 1 vì vậy là một lời cảnh báo rằng quỹ đạo đẹp không tự bảo vệ được nó.
 
 ## Học luận
 
@@ -79,12 +81,16 @@ Toàn bộ lực tạo thành từ tất cả các lực ấy, nếu có nhiều
 
 Vì việc mô tả diện tích đều cho biết một tâm là nơi mà lực mạnh nhất tác dụng lên vật thể đang kéo nó trở lại từ chuyển động thẳng và giữ nó trong quỹ đạo, vì sao không được phép, trong phần trình bày tiếp theo, dùng việc mô tả diện tích đều như một dấu hiệu của một tâm, quanh đó mọi chuyển động tròn được thực hiện trong không gian trống?
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition III là bước giảm một hệ hai vật thể về **chuyển động tương đối**, và nó là nơi bắt đầu của toàn bộ cách tính quỹ đạo mà ngành cơ học thiên thể vẫn dùng. Ý tưởng của Newton: cấp một lực bằng và ngược với lực đang giữ vật thể $T$, thì $T$ trở nên chuyển động thẳng đều, và chỉ còn lại lực hướng tâm thật sự.
+> **Giảm một hệ hai vật thể về chuyển động tương đối**
 >
-> **Công thức.** Gia tốc tương đối là $\ddot{\vec{r}}_{L/T} = \ddot{\vec{r}}_L - \ddot{\vec{r}}_T = \dfrac{\vec{F}}{m_L} - \dfrac{\vec{F}}{m_T} = \vec{F}\left(\dfrac{1}{m_L} - \dfrac{1}{m_T}\right)$. Nếu $m_T \gg m_L$ thì hệ số còn lại xấp xỉ $1/m_L$, và bài toán hai vật thể trở thành bài toán một vật thể trong trường của $T$. Đó chính là cách Newton dùng Mặt Trời như một tâm bất độn gần đúng.
+> Ý tưởng của Newton: cấp một lực bằng và ngược với lực đang giữ vật thể $T$, thì $T$ trở nên chuyển động thẳng đều, và chỉ còn lại lực hướng tâm thật sự. Đây là cách tính quỹ đạo mà ngành cơ học thiên thể vẫn dùng.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một quỹ đạo có hình dạng, chứ không chỉ một quy luật về tốc độ. Với $T$ đứng yên, mọi lực đều hướng về nó, và đường quỹ đạo trở thành một đường cơ sở để so sánh. Học luận cuối chương còn nói một điều hiếm gặp trong lịch sử khoa học: ông cảnh báo rằng quy luật diện tích đều *không chứng minh* có lực hướng tâm, vì những lực khác cũng có thể tạo ra cùng một dấu hiệu. Ông từ chối coi một sự khớp tốt là bằng chứng.
+> Gia tốc tương đối là $\ddot{\vec{r}}_{L/T} = \ddot{\vec{r}}_L - \ddot{\vec{r}}_T = \dfrac{\vec{F}}{m_L} - \dfrac{\vec{F}}{m_T} = \vec{F}\left(\dfrac{1}{m_L} - \dfrac{1}{m_T}\right)$. Nếu $m_T \gg m_L$ thì hệ số còn lại xấp xỉ $1/m_L$, và bài toán hai vật thể trở thành bài toán một vật thể trong trường của $T$. Đó là cách Newton dùng Mặt Trời như một tâm bất độn gần đúng.
 >
-> **Hiện nay thì sao.** Cảnh báo ấy ngày nay gọi là nguy cơ **cơ sở thực nghiệm sai lầm**: cùng một bộ dữ liệu có thể được giải thích bởi nhiều mô hình khác nhau, và chọn sai mô hình thì mọi dự đoán ra ngoài phạm vi đo sẽ sai. Cùng lúc đó, việc trừ lực như Proposition III chính là cách ta tách *trường ngoại lực* khỏi chuyển động của chính tâm tham chiếu, và nó vẫn là bước khởi đầu của mọi bài toán quỹ đạo.
+> **Ông từ chối coi một sự khớp tốt là bằng chứng**
+>
+> Ông cần một quỹ đạo có hình dạng, chứ không chỉ một quy luật về tốc độ. Với $T$ đứng yên, mọi lực đều hướng về nó, và đường quỹ đạo trở thành một đường cơ sở để so sánh. Học luận cuối chương còn nói một điều đáng chú ý: ông cảnh báo rằng quy luật diện tích đều *không chứng minh* có lực hướng tâm, vì những lực khác cũng có thể tạo ra cùng một dấu hiệu.
+>
+> Cảnh báo ấy ngày nay gọi là nguy cơ **cơ sở thực nghiệm sai lầm**: cùng một bộ dữ liệu có thể được giải thích bởi nhiều mô hình khác nhau, và chọn sai mô hình thì mọi dự đoán ra ngoài phạm vi đo sẽ sai. Cùng lúc đó, việc trừ lực như Proposition III là cách ta tách *trường ngoại lực* khỏi chuyển động của chính tâm tham chiếu, và nó vẫn là bước khởi đầu của mọi bài toán quỹ đạo.

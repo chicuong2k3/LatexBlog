@@ -5,8 +5,6 @@ slug: "sach-i-phan-xiv-proposition-xciv-xcviii"
 number: 42
 ---
 
-# Sách I, Phần XIV. Proposition XCIV–XCVIII
-
 ![Sơ đồ chuyển động qua các mặt phẳng](../assets/section-xii-spherical-attraction.svg)
 
 *Hình 30. Sơ đồ được dùng lại từ Phần XII; cần đối chiếu với các hình bản gốc của Phần XIV.*
@@ -97,15 +95,19 @@ Trong hình, $S$ là cạnh của một con dao hoặc một nêm $AsB$. Các ti
 
 Vì có sự tương tự giữa sự truyền của tia sáng và chuyển động của vật thể, tôi thêm những Proposition sau cho các ứng dụng quang học. Ở đây không xét bản chất tia sáng, cũng không hỏi chúng có phải vật thể hay không; chỉ xác định quỹ tích của những vật thể có đường đi rất giống đường đi của tia sáng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận này là khoảnh khắc Newton rời bỏ vật lí và bước vào quang học: ông vừa chứng minh xong rằng một vật thể đi qua lớp môi trường bị đẩy giữa hai mặt phẳng song song tuân theo định luật $\sin\theta_{\text{tới}} : \sin\theta_{\text{lỗm}} = \text{hằng}$, rồi ngay sau đó tuyên bố định luật ấy **giống hệt** các định luật khúc xạ ánh sáng mà Snell tìm ra theo tỷ lệ đoạn secant, và Descartes trình bày theo tỷ lệ sin. Cơ học của ông vừa tái tạo lại quang học.
+> **Ánh sáng khúc xạ đúng bằng định luật của một vật thể đi qua lớp môi trường**
 >
-> **Công thức.** Giả thiết là các lớp môi trường ngày càng mỏng dần, lực trở thành liên tục, và tỷ lệ giữa sin góc tới mặt phẳng đầu với sin góc lỗm từ mặt phẳng cuối vẫn là hằng số đã cho. Từ đó suy ra tốc độ trước khi tới tỷ lệ với tốc độ sau khi lỗm theo đúng tỷ lệ sin ấy — cùng dạng với định luật Snell, trong đó tỷ lệ sin chính là tỷ lệ tốc độ.
+> Ông vừa chứng minh xong rằng một vật thể đi qua lớp môi trường bị đẩy giữa hai mặt phẳng song song tuân theo định luật $\sin\theta_{\text{tới}} : \sin\theta_{\text{lỗm}} = \text{hằng}$, rồi ngay sau đó tuyên bố định luật ấy **giống hệt** các định luật khúc xạ ánh sáng mà Snell tìm ra theo tỷ lệ đoạn secant, và Descartes trình bày theo tỷ lệ sin. Cơ học của ông vừa tái tạo lại quang học.
 >
-> **Vì sao Newton viết như vậy.** Vì ông coi ánh sáng là vật thể. Vật thể đi qua môi trường sẽ bị cong đường đi, giống hệt một viên đá bị bẻ trong nước. Ông còn giả định quanh vật thể trong suốt có một "không khí" hút, và vì vậy tia bị uốn **dần** trước khi chạm mặt — như ông quan sát được ở lưỡi dao: tia gần cạnh bị uốn nhiều hơn, tia xa hơn bị uốn ít hơn, và ba dải màu ở phía xa nhất chính là dấu vết của hiệu ứng ấy.
+> Giả thiết là các lớp môi trường ngày càng mỏng dần, lực trở thành liên tục, và tỷ lệ giữa sin góc tới mặt phẳng đầu với sin góc lỗm từ mặt phẳng cuối vẫn là hằng số đã cho. Từ đó suy ra tốc độ trước khi tới tỷ lệ với tốc độ sau khi lỗm theo đúng tỷ lệ sin ấy — cùng dạng với định luật Snell, trong đó tỷ lệ sin chính là tỷ lệ tốc độ.
 >
-> **Hiện nay thì sao.** Cơ chế mà Newton giả định là sai — ánh sáng không phải hạt, và nó không bị uốn bởi lực hút. Nhưng định luật ông suy ra thì đúng, và lý do sâu hơn cả: định luật khúc xạ chỉ phụ thuộc tính bất biến của tốc độ ánh sáng trong môi trường, chứ không phụ thuộc ánh sáng là gì. Nguyên lý đó, sau này Fermat phát biểu bằng cách khác hẳn, vẫn cho ra cùng một hệ số sin. Cùng trong Học luận này, Newton còn ghi nhận hiện tượng nhật thực vệ tinh Sao Mộc cho thấy ánh sáng mất khoảng bảy tới tám phút để đi từ Mặt Trời tới Trái Đất: đó là lần đầu tiên tốc độ ánh sáng được ước lượng từ quan sát thiên văn, và nó cho biết khoảng cách Mặt Trời–Trái Đất theo đúng tỷ lệ ấy.
+> Ông coi ánh sáng là vật thể. Vật thể đi qua môi trường sẽ bị cong đường đi, giống hệt một viên đá bị bẻ trong nước. Ông còn giả định quanh vật thể trong suốt có một "không khí" hút, và vì vậy tia bị uốn **dần** trước khi chạm mặt — như ông quan sát được ở lưỡi dao: tia gần cạnh bị uốn nhiều hơn, tia xa hơn bị uốn ít hơn, và ba dải màu ở phía xa nhất chính là dấu vết của hiệu ứng ấy.
+>
+> Cơ chế ông giả định là sai: ánh sáng không phải hạt, và nó không bị uốn bởi lực hút. Nhưng định luật ông suy ra thì đúng, và lý do sâu hơn cả: định luật khúc xạ chỉ phụ thuộc tính bất biến của tốc độ ánh sáng trong môi trường, chứ không phụ thuộc ánh sáng là gì. Nguyên lý đó, sau này Fermat phát biểu bằng một lập luận khác hẳn, vẫn cho ra cùng hệ số sin đó.
+>
+> Ngay trong Học luận này, Newton còn ghi nhận hiện tượng nhật thực vệ tinh Sao Mộc cho thấy ánh sáng mất khoảng bảy tới tám phút để đi từ Mặt Trời tới Trái Đất. Đó là lần đầu tiên tốc độ ánh sáng được ước lượng từ quan sát thiên văn, và nó cho biết khoảng cách Mặt Trời–Trái Đất theo đúng tỷ lệ ấy.
 
 ## Proposition XCVII. Bài toán XLVII
 
@@ -201,12 +203,14 @@ Những vật kính ấy nên được ưu tiên hơn kính elip và hyperbola: 
 
 Tuy nhiên, khả năng khúc xạ khác nhau của các tia sáng khác nhau vẫn là trở ngại lớn khiến quang học không thể hoàn thiện bằng mặt cầu hay bất kỳ hình dạng nào khác. Nếu không sửa được các sai số phát sinh từ khả năng khúc xạ ấy, mọi công sức dành cho việc sửa những sai số khác sẽ trở nên vô ích.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận cuối cùng này không phải kết quả toán học mà là tuyên bố về **giới hạn của công nghệ**. Newton vừa dựng xong phép dựng mặt khúc xạ chính xác nhất của mình, rồi nói thẳng: mặt cầu là hình dạng thích hợp nhất, và vật kính gồm hai mặt kính cầu với nước ở giữa có thể sửa đủ những sai số do khúc xạ ở các phần biên. Nhưng một sai số không sửa được bằng cách mài hay đổi hình dạng: **tán sắc**. Các màu khác nhau bị khúc xạ khác nhau, và chừng nào chưa xử lý nó, mọi công sức dồn vào sai số khác là vô ích.
+> **Sai số không sửa được bằng cách mài: tán sắc nằm ở bản chất vật liệu**
 >
-> **Công thức.** Ý tưởng đằng sau vật kính nước mà Newton gợi ý vẫn là nguyên lý dùng hôm nay: hai loại thủy tinh khác nhau có **độ tán khác nhau**. Một thứ kính chỉ khử được tán sắc bằng cách kết hợp hai thứ kính mà phần tán sắc của chúng triệt tiêu tầm bậc đầu tiên. Newton chỉ ra nước có thể thực hiện phần sửa này, và thành thật ghi rằng nó chỉ sửa được **đủ** phần lỗi ở rìa, không phải toàn bộ.
+> Ông vừa dựng xong phép dựng mặt khúc xạ chính xác nhất của mình, rồi nói thẳng một điều ít ai muốn nói: mặt cầu là hình dạng thích hợp nhất, và vật kính gồm hai mặt kính cầu với nước ở giữa có thể sửa đủ phần sai số do khúc xạ ở các phần biên. Nhưng có một sai số không sửa được bằng cách mài hay đổi hình dạng: **tán sắc**. Các màu khác nhau bị khúc xạ khác nhau, và chừng nào chưa xử lý nó, mọi công sức dồn vào sai số khác là vô ích.
 >
-> **Vì sao Newton viết như vậy.** Vì ông vừa dành trọn một chương để phân loại sai số, và biết rõ cái nào thuộc loại nào. Sai số do **hình dạng mặt** thì sửa được bằng cách gia công và đổi dạng. Sai số do **khác biệt khúc xạ giữa các màu** thì không thuộc loại đó: nó nằm ở bản chất vật liệu, không ở hình học. Chỉ ra đích danh sai số thứ hai mới là phần đáng giá: nó biến một bài toán mài giũa mở đuôi thành câu hỏi đơn, rõ ràng, có thể trả lời dứt khoát.
+> Ranh giới ấy ông nhìn rõ vì cả chương ông vừa phân loại sai số theo loại. Sai số do **hình dạng mặt** thì sửa được bằng gia công và đổi dạng. Sai số do **khác biệt khúc xạ giữa các màu** thì không thuộc loại đó: nó nằm ở bản chất vật liệu, không ở hình học. Chỉ ra đích danh sai số thứ hai mới là phần đáng giá, vì nó biến một bài toán mài giũa mở đuôi thành câu hỏi đơn, rõ ràng, có thể trả lời dứt khoát.
 >
-> **Hiện nay thì sao.** Câu hỏi ấy được trả lời vài chục năm sau: Chester Moor Hall dựng mắt kép khử tán sắc năm 1729, rồi John Dollond đưa vào sản xuất thương mại trong thập niên 1760, kết hợp kính crown và flint để hai màu hội tụ cùng chỗ. Kính thiên văn khúc xạ nhờ đó trở thành dụng cụ thực sự. Nhưng Newton đã nhìn thấy lối thoát thứ hai: **kính phản xạ**, nơi mọi màu sắc đều được phản chiếu theo cùng một luật, nên tán sắc biến mất hoàn toàn. Ông tự chế tạo loại kính ấy vào năm 1668 và mô tả nó trong *Opticks*. Cùng một nhận xét nhưng hai kết luận ngược nhau: ở *Principia* ông còn giữ kính, rồi bỏ hẳn kính.
+> Câu hỏi ấy được trả lời vài chục năm sau: Chester Moor Hall dựng mắt kép khử tán sắc năm 1729, rồi John Dollond đưa vào sản xuất thương mại trong thập niên 1760, kết hợp kính crown và flint để hai màu hội tụ cùng chỗ. Kính thiên văn khúc xạ nhờ đó trở thành dụng cụ thực sự. Ý tưởng đằng sau vật kính nước mà Newton gợi ý vẫn là nguyên lý dùng hôm nay: hai loại thủy tinh khác nhau có **độ tán khác nhau**, và một thứ kính chỉ khử được tán sắc khi kết hợp hai thứ kính mà phần tán sắc của chúng triệt tiêu tầm bậc đầu tiên.
+>
+> Nhưng ông đã nhìn thấy một lối thoát thứ hai, và ông không chọn. **Kính phản xạ** phản chiếu mọi màu theo cùng một luật, nên tán sắc biến mất hoàn toàn. Ông tự chế tạo loại kính ấy vào năm 1668 và mô tả nó trong *Opticks*. Cùng một nhận xét, hai kết luận ngược nhau: ở *Principia* ông còn giữ kính, rồi bỏ hẳn kính.

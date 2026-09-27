@@ -5,8 +5,6 @@ slug: "sach-i-phan-i-lemma-vi-x"
 number: 13
 ---
 
-# Sách I, Phần I. Lemma VI–X
-
 ![Các sơ đồ minh họa Lemma VI đến Lemma X](../assets/lemmas-vi-x-diagrams.svg)
 
 *Hình 4. Sơ đồ tổng hợp được dựng lại từ các hình trong bản gốc; cần đối chiếu từng ký hiệu với scan.*
@@ -39,15 +37,19 @@ Nếu qua $B$ và $A$ ta kẻ thêm những đường thẳng $BE$, $BD$, $AF$, 
 
 Vì vậy, trong mọi lập luận của chúng ta về các tỷ số giới hạn, ta có thể tùy ý dùng bất kỳ đường nào trong số đó thay cho bất kỳ đường nào khác.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma VI và VII là định nghĩa đạo hàm bằng **hình học** thay vì bằng đại số. Lemma VI nói góc giữa dây cung và tiếp tuyến biến mất khi hai điểm trùng nhau; Lemma VII nói cung, dây cung và tiếp tuyến có tỷ số giới hạn bằng nhau. Hệ quả 3 — tùy ý thay thế bất kỳ đường nào trong số đó — chính là tuyên bố rằng đây là ba cách tính cùng một vật. Người đọc hôm nay đọc lại thấy ngay: đạo hàm là giới hạn của tỷ số sai số, đồng thời là hệ số của đoạn thẳng nằm sát đường cong.
+> **Đạo hàm được định nghĩa bằng hình học, không bằng đại số**
 >
-> **Công thức.** Với $y = f(x)$, định nghĩa bằng dây cung cho $f'(x) = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}$; định nghĩa bằng tiếp tuyến cho cùng giá trị đó. Lemma VII còn định lượng quan hệ giữa cung và dây cung: nếu $s$ là độ dài cung và $c$ là dây cung trên cùng một đoạn thì $\lim c/s = 1$, tức hai đại lượng trùng nhau ở giới hạn và sai số là bậc cao hơn $c$. Hệ quả 2 cho phép thay mọi đoạn thẳng bằng mọi đoạn thẳng khác mà tỷ số giới hạn không đổi.
+> Lemma VI nói góc giữa dây cung và tiếp tuyến biến mất khi hai điểm trùng nhau; Lemma VII nói cung, dây cung và tiếp tuyến có tỷ số giới hạn bằng nhau. Hệ quả 3 — tùy ý thay thế bất kỳ đường nào trong số đó — chính là tuyên bố rằng đây là ba cách tính cùng một vật. Người đọc hôm nay đọc lại thấy ngay: đạo hàm là giới hạn của tỷ số sai số, đồng thời là hệ số của đoạn thẳng nằm sát đường cong.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một quy tắc thực hành để biết khi nào được phép thay một đường cong bằng thẳng trong khi tính. Trong hình học cổ điển, đường thẳng và đường cong là hai loại vật thể khác hẳn nhau, không thể lẫn. Newton ở đây xếp chúng vào cùng một họ rồi nói: khi hai điểm trùng nhau, chúng không còn khác nhau. Đó là một bước nhảy về phía phép tính, dù ông không hề dùng ngôn ngữ giới hạn mà ta dùng hôm nay.
+> Với $y = f(x)$, định nghĩa bằng dây cung cho $f'(x) = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}$; định nghĩa bằng tiếp tuyến cho cùng giá trị đó. Lemma VII còn định lượng quan hệ giữa cung và dây cung: nếu $s$ là độ dài cung và $c$ là dây cung trên cùng một đoạn thì $\lim c/s = 1$, tức hai đại lượng trùng nhau ở giới hạn và sai số là bậc cao hơn $c$. Hệ quả 2 cho phép thay mọi đoạn thẳng bằng mọi đoạn thẳng khác mà tỷ số giới hạn không đổi.
 >
-> **Hiện nay thì sao.** Ý này sống trong hình học vi phân: đường cong và đường thẳng giống nhau ở mức cục bộ, và bậc tiếp xúc là thứ định nghĩa độ cong. Nó cũng là điều giả định im lặng phía sau mọi phép xấp xỉ tuyến tính trong vật lí: gần một điểm, mọi trường đều thay bằng gradient của nó. Khi ta nói vật rơi gần mặt đất có gia tốc không đổi, ta đang dùng chính Lemma VI — sai số so với tiếp tuyến biến mất nhanh hơn bậc một.
+> **Khi nào được phép thay đường cong bằng thẳng**
+>
+> Trong hình học cổ điển, đường thẳng và đường cong là hai loại vật thể khác hẳn nhau, không thể lẫn. Newton ở đây xếp chúng vào cùng một họ rồi nói: khi hai điểm trùng nhau, chúng không còn khác nhau. Đó là bước nhảy về phía phép tính, dù ông không hề dùng ngôn ngữ giới hạn mà ta dùng hôm nay.
+>
+> Ý này sống trong hình học vi phân: đường cong và đường thẳng giống nhau ở mức cục bộ, và bậc tiếp xúc là thứ định nghĩa độ cong. Nó cũng là điều giả định im lặng phía sau mọi phép xấp xỉ tuyến tính trong vật lí: gần một điểm, mọi trường đều thay bằng gradient của nó. Khi ta nói vật rơi gần mặt đất có gia tốc không đổi, ta đang dùng chính Lemma VI — sai số so với tiếp tuyến biến mất nhanh hơn bậc một.
 
 ## Lemma VIII
 
@@ -107,12 +109,16 @@ Nếu ta nói một đại lượng này tỉ lệ trực tiếp hoặc nghịch
 
 Ví dụ, nếu ta nói $A$ tỉ lệ trực tiếp với $B$, trực tiếp với $C$, và nghịch với $D$, thì ý nghĩa là $A$ tăng hoặc giảm theo cùng tỷ số với $B \times C \times \frac{1}{D}$. Nói cách khác, $A$ và $\frac{1}{D}$ có tỷ số đã cho với nhau.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma X là mệnh đề đầu tiên của *kinh học* hiện đại: quãng đường đi được tỷ lệ với bình phương thời gian. Học luận ngay sau đó định nghĩa chính xác thứ nghĩa của "tỉ lệ trực tiếp" và "nghịch với". Người đọc hôm nay thấy đây chính là nơi bắt đầu của **phân tích thứ nguyên**: một đại lượng không tự nói lên mình, nó chỉ có nghĩa thông qua quan hệ tỉ lệ với những đại lượng khác.
+> **Quãng đường đi tỷ lệ với bình phương thời gian**
 >
-> **Công thức.** Lemma X cho $s \propto t^2$, và Hệ quả 4 suy ra từ đó gia tốc không đổi, vì $a \propto s/t^2$ là hằng số. Dạng chuẩn là $s = \tfrac{1}{2} a t^2$ và $v = at$, nên cả ba đại lượng $s, v, a$ thuộc cùng một họ tỉ lệ. Học luận phát biểu quy tắc tổng quát: nếu $A$ tỉ lệ trực tiếp với $B$ và $C$, nghịch với $D$, thì $A \propto B \times C / D$.
+> Đây là mệnh đề đầu tiên của *kinh học* hiện đại. Học luận ngay sau đó định nghĩa chính xác thứ nghĩa của "tỉ lệ trực tiếp" và "nghịch với". Người đọc hôm nay thấy đây là nơi bắt đầu của **phân tích thứ nguyên**: một đại lượng không tự nói lên mình, nó chỉ có nghĩa thông qua quan hệ tỉ lệ với những đại lượng khác.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần chứng minh lực hút phải nghịch với bình phương khoảng cách, mà chưa có khái niệm trường hấp dẫn. Chiến lược của ông là so sánh hai vật thể ở hai khoảng cách khác nhau: nếu lực tỉ lệ với không gian mà vật thể đi được trong một thời gian cố định, thì nó nghịch với bình phương thời gian đó; mà không gian lại tỉ lệ với bình phương thời gian; suy ra lực nghịch với bình phương khoảng cách. Toàn bộ Hệ quả 4 và 5 là bộ khung của bước suy luận đó.
+> Lemma X cho $s \propto t^2$, và Hệ quả 4 suy ra từ đó gia tốc không đổi, vì $a \propto s/t^2$ là hằng số. Dạng chuẩn là $s = \tfrac{1}{2} a t^2$ và $v = at$, nên cả ba đại lượng $s, v, a$ thuộc cùng một họ tỉ lệ. Học luận phát biểu quy tắc tổng quát: nếu $A$ tỉ lệ trực tiếp với $B$ và $C$, nghịch với $D$, thì $A \propto B \times C / D$.
 >
-> **Hiện nay thì sao.** Đây chính là mạch lập luận Galileo đã dùng để chứng minh vận tốc tăng theo thời gian, và Newton chỉ đường từ đó cho lực. Ngày nay nó là hệ quả trực tiếp của định luật II, gần như tầm thường — nhưng nó lịch sử về mặt lý trí, vì cho thấy quy luật lũy thừa bậc hai không rơi từ trời xuống mà được dựng lên từng bước. Nó cũng là phép thử tiêu chuẩn cho mọi mô hình: nếu dữ liệu ở một thời gian tỉ lệ với bình phương một thời gian khác, thì bạn đang ở trong vùng tỉ lệ bậc hai, và hằng số tỉ lệ chính là gia tốc.
+> **Bước suy luận để ra nghịch đảo bình phương**
+>
+> Ông cần chứng minh lực hút phải nghịch với bình phương khoảng cách, mà chưa có khái niệm trường hấp dẫn. Chiến lược của ông là so sánh hai vật thể ở hai khoảng cách khác nhau: nếu lực tỉ lệ với không gian mà vật thể đi được trong một thời gian cố định, thì nó nghịch với bình phương thời gian đó; mà không gian lại tỉ lệ với bình phương thời gian; suy ra lực nghịch với bình phương khoảng cách. Toàn bộ Hệ quả 4 và 5 là bộ khung của bước suy luận đó.
+>
+> Đây là mạch lập luận Galileo đã dùng để chứng minh vận tốc tăng theo thời gian, và Newton chỉ đường từ đó cho lực. Ngày nay nó là hệ quả trực tiếp của định luật II, gần như tầm thường. Nó cũng là phép thử tiêu chuẩn cho mọi mô hình: nếu dữ liệu ở một thời gian tỉ lệ với bình phương một thời gian khác, thì bạn đang ở trong vùng tỉ lệ bậc hai, và hằng số tỉ lệ chính là gia tốc.

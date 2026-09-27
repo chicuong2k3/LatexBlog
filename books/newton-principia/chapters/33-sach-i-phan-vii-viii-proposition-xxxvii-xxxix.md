@@ -5,8 +5,6 @@ slug: "sach-i-phan-vii-viii-proposition-xxxvii-xxxix"
 number: 33
 ---
 
-# Sách I, Phần VII–VIII. Proposition XXXVII–XXXIX
-
 ![Chuyển động rơi thẳng và so sánh với đường tròn](../assets/section-vii-rectilinear-motion.svg)
 
 *Hình 21. Sơ đồ dùng lại để đối chiếu các đường rơi, quỹ tích và thời gian.*
@@ -41,15 +39,17 @@ Vì vậy, các thời gian bằng nhau: thời gian một vật thể rơi từ
 
 Do đó, mọi thời gian để các vật thể rơi từ những nơi bất kỳ đến tâm đều bằng nhau. Mọi chu kỳ tuần hoàn của các vật thể quay đều bằng nhau, theo Hệ quả 3 của Proposition IV.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXVIII nói về trường hợp lực tỷ lệ **thuận với chiều cao**, và kết quả đằng sau nó là một tính chất gây ngạc nhiên: **mọi thời gian rơi từ bất kỳ độ cao nào xuống tâm đều bằng nhau**. Người đọc hôm nay đây là tính **đẳng kỳ** của dao động tử điều hòa, và cũng là cơ sở vật lý của con lắc đồng hồ.
+> **Lực thuận với khoảng cách: mọi thời gian rơi xuống tâm đều bằng nhau**
 >
-> **Công thức.** Với lực tuyến tính $F = -kx$, gọi $D$ là sin thẳng của một cung trên đường tròn bán kính $AS$, thì thời gian rơi từ $A$ đến $C$ tỷ lệ với $\widehat{AD}$ và vận tốc tại $C$ tỷ lệ với $CD$ — cả hai đều là lượng lượng giác, chứ không phải đại lượng tuyến tính. Hệ quả 2 nói thẳng: mọi thời gian rơi đều bằng nhau, và mọi chu kỳ quay tròn đều bằng nhau. Ở dạng hiện đại, chu kỳ ấy là $T = 2\pi\sqrt{\dfrac{m}{k}}$.
+> Với lực $F = -kx$, Newton dựng một góc phần tư trên cạnh $AS$ và chỉ ra rằng vật thể rơi với biên độ $A$ đi được góc đó trong đúng một phần tư chu kỳ. Hệ quả 2 nói thẳng: mọi thời gian rơi từ bất kỳ độ cao nào đều bằng nhau, và theo Hệ quả 3 của Proposition IV, mọi chu kỳ quay tròn cũng bằng nhau.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một tiêu chuẩn để so sánh: lực nghịch đảo bậc hai rất khó tính, nên ông lấy trường hợp lực tuyến tính làm thước đo. Việc ông chấp nhận rằng thời gian ở đây là hàm lượng giác chứ không phải hàm đại số là dấu hiệu ông hiểu rõ các bài toán này khác nhau bản chất ra sao.
+> Ở dạng hiện đại, đó chính là dao động điều hòa: $T = 2\pi\sqrt{m/k}$, độc lập với biên độ. Chu kỳ không chỉ độc lập với biên độ mà còn độc lập với việc dao động quanh điểm nào, miễn là lực vẫn tuyến tính — nên cả một hệ nhiều vật thể cũng cùng một tần số góc.
 >
-> **Hiện nay thì sao.** Tính đẳng kỳ này là lý do con lắc dùng được làm đồng hồ: chu kỳ không hề phụ thuộc vào biên độ. Nó cũng cho thấy mọi dao động quanh một điểm cân bằng dưới lực tuyến tính — dù của một vật thể hay của cả một hệ nhiều vật thể — đều có cùng tần số góc. Và vì nó suy ra từ lực tuyến tính, nó còn là phép thử nhanh để biết một dao động có đúng là điều hòa hay không: chỉ cần đo chu kỳ ở hai biên độ khác nhau.
+> Ông chọn trường hợp này không phải vì nó có giá trị vật lý, mà vì ông cần một thước đo. Lực nghịch đảo bậc hai thì rất khó tính, còn lực tuyến tính thì giải được bằng hình học thuần tuý; ông cần một trường hợp mà mọi thứ đều tính được, để đo những trường hợp không tính được. Và ông ghi rõ đây là một định đề phụ dùng làm đơn vị so sánh, không phải một lực đang tồn tại trong thiên nhiên.
+>
+> Tính đẳng kỳ ấy là lý do con lắc dùng được làm đồng hồ: kéo dài biên độ đến đâu thì nó vẫn đúng giờ. Nó cũng cho một phép thử rẻ — đo chu kỳ ở hai biên độ khác nhau, nếu không đổi thì lực chắc chắn là tuyến tính.
 
 ## Proposition XXXIX. Bài toán XXVII
 
@@ -174,14 +174,16 @@ $$
 (2PD\cdot DL):DLme.
 $$
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXIX là phương pháp tổng quát, và nó chính là **định lý công – năng lượng** trong hình thức nguyên thủy: dựng đồ thị lực dọc theo đường rơi, thì vận tốc bằng căn bậc hai của diện tích dưới đồ thị ấy.
+> **Đồ thị lực: vận tốc là căn bậc hai của diện tích, thời gian là diện tích của đồ thị nghịch đảo**
 >
-> **Công thức.** Với $E$ là nơi vật thể đang ở, $EG$ là ordinate tỷ lệ với lực hướng tâm tại $E$, và $BFG$ là quỹ tích của $G$, Newton chỉ ra $v_E = \sqrt{\text{diện tích }ABGE}$. Vì $\text{diện tích }ABGE = \int F\,dx$ chính là công của lực, ta có $v^2 = \dfrac{2}{m}\int F\,dx$ — đúng là định lý công – năng lượng. Thời gian cũng lấy được bằng cách dựng ordinate tỷ lệ nghịch với $v$ rồi lấy diện tích.
+> Với $E$ là vị trí hiện tại và $EG$ là ordinate tỷ lệ với lực hướng tâm tại $E$, Newton chỉ ra $v_E = \sqrt{\text{diện tích }ABGE}$. Vì $\text{diện tích }ABGE = \int F\,dx$ chính là công của lực, ta có $v^2 = \dfrac{2}{m}\int F\,dx$ — định lý công – năng lượng trong hình thức nguyên thủy.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một thuật toán dùng được cho **bất kỳ** quy luật lực nào, kể cả những quy luật không biết trước dạng công thức. Bằng cách quy mọi thứ về diện tích, ông biến một bài toán vật lý thành bài toán hình học, và bài toán hình học thì luôn dựng được bằng thước kẻ. Đó là điểm mấu chốt: ông không cần biết công thức của lực, chỉ cần biết lực trông như thế nào.
+> Thời gian cần một đồ thị thứ hai: dựng ordinate tỷ lệ nghịch với $v$, rồi lấy diện tích dưới đồ thị ấy. Đó là chỗ nhiều người đọc bỏ qua, và nó là ý mà Proposition XXXIX thật sự dạy — một đồ thị cho vận tốc, một đồ thị nữa cho thời gian.
 >
-> **Hiện nay thì sao.** Đây vẫn là cách dạy định lý công – năng lượng: vẽ đồ thị lực theo vị trí, lấy diện tích, đó là độ tăng động năng. Trong kỹ thuật, cùng cách ấy xuất hiện ở bài toán tối ưu năng lượng và trong thiết kế tấm pin mặt trời, nơi đường cong dòng của hai tấm phải trùng nhau để ghép nối được. Điểm mạnh bền của phương pháp Newton là nó **giả định rất ít**: không cần lực tác rời, không cần tính tích phân kính nhiều, và vẫn cho một phép kiểm tra bằng số hình học.
+> Ông cần một thuật toán dùng được cho **bất kỳ** quy luật lực nào, kể cả những quy luật chưa có công thức. Quy mọi thứ về diện tích biến một bài toán vật lý thành bài toán dựng hình, và bài toán dựng hình thì luôn làm được bằng thước kẻ. Điểm mấu chốt: ông không cần biết lực bằng công thức, chỉ cần biết lực trông như thế nào.
+>
+> Cách này vẫn là cách dạy định lý công – năng lượng, và nó giữ nguyên lợi thế ở kỹ thuật: khi ghép nhiều tấm pin mặt trời để lấy công suất lớn nhất, việc so sánh là so sánh **diện tích** dưới các đường cong dòng, chứ không phải so sánh công thức.
 
 ## Phần VIII. Sáng tạo các quỹ đạo mà vật thể quay dưới tác dụng của một lực hướng tâm bất kỳ

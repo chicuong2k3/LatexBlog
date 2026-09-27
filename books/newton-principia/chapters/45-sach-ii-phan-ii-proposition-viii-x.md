@@ -5,8 +5,6 @@ slug: "sach-ii-phan-ii-proposition-viii-x"
 number: 45
 ---
 
-# Sách II, Phần II. Proposition VIII–X
-
 ![Minh họa chuyển động trong môi trường có lực cản](../assets/book-ii-section-i-motion.svg)
 
 *Hình 33. Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.*
@@ -139,17 +137,19 @@ Từ thời gian đã cho, ta có thể xác định quãng đường đi lên h
 
 Đi ngược lại, từ quãng đường lên hoặc rơi đã cho, ta xác định thời gian tương ứng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition IX là phép **tích phân** đầu tiên của Sách II, và nó không dùng tích phân. Newton đo thời gian bằng **diện tích cung**: thời gian vật thể đi lên tới điểm cao nhất tỷ lệ với diện tích cung tròn, còn thời gian rơi từ điểm cao nhất tỷ lệ với diện tích cung hyperbola. Cùng một bài toán, hai hình học khác nhau.
+> **Thời gian đo bằng cung tròn khi đi lên, bằng cung hyperbola khi rơi**
 >
-> **Công thức.** Khi đi lên, vận tốc giảm theo $dv/dt = -\sqrt{g+\gamma v^2}$, nên thời gian tỷ lệ với
+> Proposition IX là phép tích phân đầu tiên của Sách II, và nó không dùng tích phân. Newton đo thời gian bằng diện tích cung: thời gian vật thể đi lên tới điểm cao nhất tỷ lệ với diện tích cung tròn, còn thời gian rơi từ điểm cao nhất tỷ lệ với diện tích cung hyperbola. Cùng một bài toán, hai hình học khác nhau.
+>
+> Khi đi lên, vận tốc giảm theo $dv/dt = -\sqrt{g+\gamma v^2}$, nên thời gian tỷ lệ với
 >
 > $$
-> \int \frac{dv}{\sqrt{g+\gamma v^2}} = \frac{1}{\sqrt{\gamma}}\,\arcsin\!\left(v\sqrt{\frac{\gamma}{g}}\right),
+> \int \frac{dv}{\sqrt{g+\gamma v^2}} = \frac{1}{\sqrt{\gamma}}\,\operatorname{arsinh}\!\left(v\sqrt{\frac{\gamma}{g}}\right),
 > $$
 >
-> mà $\arcsin$ chính là **góc ở tâm một cung tròn**. Khi rơi, khi đã gần vận tốc giới hạn $v_t=\sqrt{g/\gamma}$, ta có $dt = dv/\sqrt{\gamma v^2-g}$, và tích phân ra
+> mà $\operatorname{arsinh}$ chính là **góc ở tâm một cung tròn** — đó là cách Newton đọc nó, trước khi có tên gọi. Khi rơi, khi đã gần vận tốc giới hạn $v_t = \sqrt{g/\gamma}$, ta có $dt = dv/\sqrt{\gamma v^2 - g}$, và tích phân ra
 >
 > $$
 > \frac{1}{\sqrt{\gamma}}\,\operatorname{arcosh}\!\left(v\sqrt{\frac{\gamma}{g}}\right),
@@ -157,9 +157,9 @@ Từ thời gian đã cho, ta có thể xác định quãng đường đi lên h
 >
 > mà $\operatorname{arcosh}$ chính là **góc ở tâm một cung hyperbola**. Việc chọn cung tròn cho nhánh lên và cung hyperbola cho nhánh rơi là chính xác, và người đọc hôm nay có thể tự kiểm chứng bằng hai tích phân trên.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không có ký hiệu tích phân. Ông không hỏi "tích phân bằng bao nhiêu" mà hỏi "diện tích nào cộng lại thành nó", rồi dựng một hình có diện tích đúng tỷ lệ. Mọi hệ quả của Proposition IX đều xây trên phép so sánh diện tích ấy, và Hệ quả 5 dùng nó để trả lời một câu hỏi thực tế: để đạt một vận tốc đã cho trong môi trường có lực cản cần bao lâu so với không có lực cản.
+> Ông viết bằng hình học chứ không bằng tích phân. Ông không hỏi "tích phân bằng bao nhiêu" mà hỏi "diện tích nào cộng lại thành nó", rồi dựng một hình có diện tích đúng tỷ lệ. Mọi hệ quả của Proposition IX đều xây trên phép so sánh diện tích ấy, và Hệ quả 5 dùng nó để trả lời một câu hỏi thực tế: để đạt một vận tốc đã cho trong môi trường có lực cản cần bao lâu so với không có lực cản.
 >
-> **Hiện nay thì sao.** Góc hyperbola mà Newton dùng ở đây không phải hình học ẩn dụ cho một thứ khác: nó là cùng một đại lượng xuất hiện trong hình học hyperbolic, và cũng chính là độ nhanh trong chuyển động tương đối của thuyết tương đối hẹp. Điều đó không phải do Newton đoán trúng, mà là hệ quả của việc một phương trình vi phân bậc nhất, khi tách biến, luôn dẫn tới một hàm lập ngược. Nhưng việc ông tìm ra nó bằng hình học thuần, trước khi có bất kỳ ký hiệu tích phân nào, là minh hoạ rõ nhất cho việc ông đã sở hữu công cụ mà ký hiệu chỉ làm việc về sau.
+> Góc hyperbola mà Newton dùng ở đây không phải hình học ẩn dụ cho một thứ khác. Nó là cùng một đại lượng xuất hiện trong hình học hyperbolic, và nó cũng chính là độ nhanh trong chuyển động tương đối của thuyết tương đối hẹp. Điều đó không phải do Newton đoán trúng, mà là hệ quả của việc một phương trình vi phân bậc nhất, khi tách biến, luôn dẫn tới một hàm lập ngược.
 
 ## Proposition X. Bài toán III
 
@@ -226,11 +226,13 @@ Chuỗi này được gọi là chuỗi lũy thừa. Số hạng đầu tiên kh
 
 Số hạng đầu tiên $e$ biểu diễn chiều dài tung độ $CH$. Số hạng thứ hai biểu diễn phần nhỏ giữa tiếp tuyến và đường cong, và xác định vị trí của tiếp tuyến. Số hạng thứ ba biểu diễn đoạn nhỏ giữa tiếp tuyến và đường cong, xác định góc tiếp xúc hay độ cong tại $H$. Số hạng thứ tư xác định sự thay đổi của độ cong; số hạng thứ năm xác định sự thay đổi của sự thay đổi ấy.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Ngay giữa Bài toán III, trong lúc giải một bài toán ngược — suy ra mật độ môi trường từ một quỹ tích cho trước — Newton khai triển một chuỗi lũy thừa rồi giải thích **ý nghĩa của từng bậc**. Số hạng thứ nhất cho biết độ dài, số hạng thứ hai cho biết vị trí tiếp tuyến, số hạng thứ ba cho biết góc tiếp xúc tức là độ cong, số hạng thứ tư cho biết sự thay đổi của độ cong, số hạng thứ năm cho biết sự thay đổi của sự thay đổi ấy.
+> **Chuỗi lũy thừa: mỗi số hạng là một đạo hàm, lấy tại một điểm**
 >
-> **Công thức.** Chuỗi ông dùng là
+> Ngay giữa Bài toán III, trong lúc giải một bài toán ngược — suy ra mật độ môi trường từ một quỹ tích cho trước — Newton khai triển một chuỗi lũy thừa rồi giải thích ý nghĩa của từng bậc. Số hạng thứ nhất cho biết độ dài, số hạng thứ hai cho biết vị trí tiếp tuyến, số hạng thứ ba cho biết góc tiếp xúc tức là độ cong, số hạng thứ tư cho biết sự thay đổi của độ cong, số hạng thứ năm cho biết sự thay đổi của sự thay đổi ấy.
+>
+> Chuỗi ông dùng là
 >
 > $$
 > DI^2 = n^2-a^2-2ao-o^2,
@@ -242,11 +244,11 @@ Số hạng đầu tiên $e$ biểu diễn chiều dài tung độ $CH$. Số h�
 > DI = e-\frac{ao}{e}-\frac{ao^2}{2e^3}-\cdots .
 > $$
 >
-> Mỗi số hạng chứa một lũy thừa của lượng vô cùng nhỏ $o$, tăng dần mỗi bậc một, và mỗi số hạng là một **đạo hàm** của hàm cần tìm, lấy tại một điểm.
+> Mỗi số hạng chứa một lũy thừa của lượng vô cùng nhỏ $o$, tăng dần mỗi bậc một, và mỗi số hạng là một đạo hàm của hàm cần tìm, lấy tại một điểm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần đọc mật độ môi trường ra từ đường cong quỹ tích, mà một đường cong chỉ trao cho ta thông tin theo bậc: mỗi bậc một đạo hàm. Việc ông nói rõ bậc nào cho biết cái gì là cách tổ chức thông tin theo bậc một cách tường minh, cùng nguyên lý mà Taylor sẽ viết thành lý thuyết chuỗi chính thức hai mươi tám năm sau, trong năm 1715. Khác biệt chỉ ở chỗ người đọc hôm nay gọi tên những số hạng ấy ngay, còn Newton phải giải thích bằng hình học.
+> Ông cần đọc mật độ môi trường ra từ đường cong quỹ tích, mà một đường cong chỉ trao cho ta thông tin theo bậc: mỗi bậc một đạo hàm. Nói rõ bậc nào cho biết cái gì là cách tổ chức thông tin theo bậc một cách tường minh, cùng nguyên lý mà Taylor sẽ viết thành lý thuyết chuỗi chính thức hai mươi tám năm sau, trong năm 1715. Khác biệt chỉ ở chỗ người đọc hôm nay gọi tên những số hạng ấy ngay, còn Newton phải giải thích bằng hình học.
 >
-> **Hiện nay thì sao.** Hệ thống ý nghĩa này chính là hệ thống ý nghĩa của khai triển Taylor ngày nay: hệ số bậc không cho giá trị, hệ số bậc một cho tiếp tuyến, bậc hai cho độ cong, bậc ba cho tốc độ thay đổi của độ cong. Cũng trong bài này, ông dừng chuỗi của Ví dụ 2 ở bậc hai rồi kết luận mật độ bằng không: quỹ tích parabol chỉ xuất hiện ở nơi không có môi trường, đúng như Galileo đã chứng minh. Và ông còn nêu điều kiện dấu: nếu bắn theo hướng ngược lại thì mật độ ra âm, tức môi trường đẩy vật thể đi, chứ không phải môi trường cản trở.
+> Người đọc hôm nay nhìn thấy đúng hệ thống ý nghĩa ấy trong khai triển Taylor: hệ số bậc không cho giá trị, hệ số bậc một cho tiếp tuyến, bậc hai cho độ cong, bậc ba cho tốc độ thay đổi của độ cong. Cùng trong bài này, ông dừng chuỗi của Ví dụ 2 ở bậc hai rồi kết luận mật độ bằng không: quỹ tích parabol chỉ xuất hiện ở nơi không có môi trường, đúng như Galileo đã chứng minh. Và ông còn nêu điều kiện dấu — nếu bắn theo hướng ngược lại thì mật độ ra âm, tức môi trường đẩy vật thể đi, chứ không phải môi trường cản trở.
 
 So sánh chuỗi của bán kính với chuỗi chung, ta tìm được mật độ môi trường. Vận tốc tỷ lệ với $\sqrt{CH}$; lực cản tỷ lệ với tiếp tuyến $HT$. Nếu vật thể đi từ $F$ với vận tốc thích hợp theo phương song song với $PQ$, và mật độ tại $H$ tỷ lệ nghịch với tiếp tuyến $HT$, lực cản tại $H$ tỷ lệ với trọng lực như $AC$ với $PQ$, nó sẽ mô tả góc phần tư $FHQ$.
 

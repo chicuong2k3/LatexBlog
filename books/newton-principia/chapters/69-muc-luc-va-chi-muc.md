@@ -5,8 +5,6 @@ slug: "muc-luc-va-chi-muc"
 number: 69
 ---
 
-# Mục lục và chỉ mục
-
 <!-- Nguồn: PDF 579–587, các trang in 573–581. PDF 588–594 là trang trắng hoặc trang thư viện, không có nội dung sách cần dịch. -->
 
 ## Mục lục Hệ thống thế giới
@@ -124,15 +122,17 @@ number: 69
 - **Sao chổi năm 1682:** chuyển động của nó được so sánh với lý thuyết — 500.
 - Có vẻ như nó đã xuất hiện vào năm 1607, và có lẽ sẽ trở lại sau một chu kỳ 75 năm — 501, 502.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Dòng chỉ mục này ngắn đến mức gần như vô nghĩa nếu đọc một mình, nhưng nó lại là mốc thời gian quan trọng: đây là lần đầu tiên trong lịch sử một người ta đưa ra một **ngày dự kiến** cho một sự kiện thiên văn, chỉ từ một quy luật toán học.
+> **"Có vẻ như", "có lẽ", 75 năm: lần đầu tiên ai đó dự đoán được một ngày**
 >
-> **Công thức.** Văn bản ghi rằng sao chổi năm 1682 "có vẻ như nó đã xuất hiện vào năm 1607, và có lẽ sẽ trở lại sau một chu kỳ 75 năm". Nói cách khác, từ quỹ đạo mà ông vừa dựng được, ông rút ra một thời gian quay, rồi đưa thời gian ấy nhân lên. Đó là toàn bộ luận điểm của Sách III nén lại trong một dòng: nếu sao chổi tuân theo cùng định luật bình phương nghịch với các hành tinh, thì quỹ đạo của nó tính được, và từ quỹ đạo suy ra ngày trở lại.
+> Dòng chỉ mục này ngắn đến mức gần như vô nghĩa nếu đọc một mình, nhưng nó lại là mốc thời gian quan trọng: đây là lần đầu tiên trong lịch sử một người ta đưa ra một **ngày dự kiến** cho một sự kiện thiên văn, chỉ từ một quy luật toán học.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không dám nói chắc. Ông viết "có vẻ như" cho lần xuất hiện năm 1607 và "có lẽ" cho chu kỳ 75 năm, tức là ông vừa đưa ra dự đoán vừa nói thẳng độ tin cậy của nó. Đó là cách duy nhất để dự đoán mà không biến thành huyền thoại: một con số cụ thể kèm theo mức chắc chắn.
+> Văn bản ghi rằng sao chổi năm 1682 "có vẻ như nó đã xuất hiện vào năm 1607, và có lẽ sẽ trở lại sau một chu kỳ 75 năm". Nói cách khác, từ quỹ đạo mà ông vừa dựng được, ông rút ra một thời gian quay, rồi nhân lên. Đó là toàn bộ luận điểm của Sách III nén lại trong một dòng: nếu sao chổi tuân theo cùng định luật bình phương nghịch với các hành tinh, thì quỹ đạo của nó tính được, và từ quỹ đạo suy ra ngày trở lại.
 >
-> **Hiện nay thì sao.** Đây chính là sao chổi Halley. Chu kỳ thật của nó khoảng 76 năm, gần như đúng con số của Newton trong vòng một phần trăm. Halley dùng lý thuyết này để tiên đoán lần quay lại kế tiếp vào năm 1758, và nó đã xuất hiện đúng như vậy — lần đầu tiên trong lịch sử một vật thiên thể được tiên đoán thành công bằng toán học. Từ đó nó quay lại vào các năm 1835, 1861, 1909, 1910 và 1986, và lượt tới hạn tiếp theo rơi vào khoảng năm 2061. Có lẽ điểm sâu hơn cả con số 75 năm là thứ mà chỉ mục này tiết lộ: toàn bộ chương sách phía trước được viết để làm cho một câu hỏi duy nhất trở nên trả lời được, và câu hỏi đó là một ngôi sao sẽ quay lại vào năm nào.
+> Ông không dám nói chắc. Ông viết "có vẻ như" cho lần xuất hiện năm 1607 và "có lẽ" cho chu kỳ 75 năm, tức là ông vừa đưa ra dự đoán vừa nói thẳng độ tin cậy của nó. Đó là cách duy nhất để dự đoán mà không biến thành huyền thoại: một con số cụ thể kèm theo mức chắc chắn.
+>
+> Đây chính là sao chổi Halley. Chu kỳ thật của nó khoảng $76$ năm, gần như đúng con số của Newton trong vòng một phần trăm. Halley dùng lý thuyết này để tiên đoán lần quay lại kế tiếp vào năm 1758, và nó đã xuất hiện đúng như vậy — lần đầu tiên trong lịch sử một vật thiên thể được tiên đoán thành công bằng toán học. Từ đó nó quay lại vào các năm 1835, 1861, 1909, 1910 và 1986, và lượt tới hạn tiếp theo rơi vào khoảng năm 2061. Có lẽ điểm sâu hơn cả con số 75 năm là thứ mà chỉ mục này tiết lộ: toàn bộ chương sách phía trước được viết để làm cho một câu hỏi duy nhất trở nên trả lời được, và câu hỏi đó là một ngôi sao sẽ quay lại vào năm nào.
 - **Sao chổi năm 1683:** chuyển động của nó được so sánh với lý thuyết — 499.
 - **Sao chổi năm 1723:** chuyển động của nó được so sánh với lý thuyết — 501.
 - **Thiết diện conic.** Bằng quy luật lực hướng tâm nào, khi lực hướng về một điểm bất kỳ đã cho, chúng có thể được mô tả bởi vật thể quay — 125. Mô tả hình học của chúng khi đã cho tiêu điểm — 125; khi chưa cho tiêu điểm — 131; khi cho tâm hoặc đường tiệm cận — 147.
@@ -208,15 +208,17 @@ number: 69
 - **Các ngôi sao.** Ngôi sao cố định được chứng minh là đứng yên — 404. Sự nhấp nháy của chúng nên được quy cho điều gì — 487. Những ngôi sao mới có thể sinh ra từ đâu — 502.
 - **Các vật chất** của mọi sự vật chưa được biết — 507.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Chỉ mục này được sắp theo khái niệm và dẫn số trang, và chính cách sắp ấy khiến nó trở thành tấm gương phản chiếu cả cuốn sách. Đọc lướt, ta thấy ngay một ranh giới mà tác giả tự vẽ ra bằng chính ngón tay: ba mục gần như nói thẳng rằng ông **không** biết.
+> **Chỉ mục tự vẽ ra ranh giới giữa cái biết và cái chưa biết**
 >
-> **Công thức.** Mục Hấp dẫn ghi nó "được chứng minh" và "sự chắc chắn của phép chứng minh ấy được chỉ ra", rồi nói tiếp không một chỗ nào tác giả xác định nguyên nhân hay cách thức của nó. Mục Trọng lực viết gọn hơn: "Nguyên nhân của nó không được gán". Mục Giả thuyết hỏi mục nào bị loại khỏi triết học này. Ngay cạnh đó, hai mục chạng chạt phía bên kia: một thứ linh hồn xuyên suốt mọi vật thể và ẩn trong chúng, được gợi ý là điều cần thiết để giải nhiều hiện tượng, và các vật chất của mọi sự vật còn chưa được biết.
+> Chỉ mục này được sắp theo khái niệm và dẫn số trang, và chính cách sắp ấy khiến nó trở thành tấm gương phản chiếu cả cuốn sách. Đọc lướt, ta thấy ngay một ranh giới mà tác giả tự vẽ ra bằng chính ngón tay: ba mục gần như nói thẳng rằng ông **không** biết.
 >
-> **Vì sao Newton viết như vậy.** Vì ông coi việc phân biệt cái biết và cái chưa biết là một phần của công việc, chứ không phải điều xấu hổ cần giấu. Và sự căng thẳng hiện ra ngay trong chỉ mục: ông từ chối gán nguyên nhân cho trọng lực, rồi lại gợi ý một thần lý trí để giải thích những thứ còn lại, trong khi lại liệt kê giả thuyết là thứ không có chỗ đứng. Người đọc thời đó gặp mâu thuẫn ấy ngay ở trang 507 và 508.
+> Mục Hấp dẫn ghi nó "được chứng minh" và "sự chắc chắn của phép chứng minh ấy được chỉ ra", rồi nói tiếp không một chỗ nào tác giả xác định nguyên nhân hay cách thức của nó. Mục Trọng lực viết gọn hơn: "Nguyên nhân của nó không được gán". Mục Giả thuyết hỏi mục nào bị loại khỏi triết học này. Ngay cạnh đó, hai mục đứng ở phía bên kia: một thứ linh hồn xuyên suốt mọi vật thể và ẩn trong chúng, được gợi ý là điều cần thiết để giải nhiều hiện tượng, và các vật chất của mọi sự vật còn chưa được biết.
 >
-> **Hiện nay thì sao.** Chính sự phân biệt ấy là đóng góp bền vững nhất của cuốn sách: một định luật thì phải kiểm chứng được, còn cơ chế thì có thể còn chưa biết. Nhờ từ chối suy đoán, quy luật của ông mới trở thành thứ người ta thử kiểm và, thấy đúng, giữ lại. Ngành vật lý hiện đại vẫn vận hành đúng nguyên tắc ấy khi nói "ta biết hẳn là bao nhiêu, còn cơ chế thì chưa". Còn mục Vortex, chỉ ghi một dòng "bản chất và cấu tạo của chúng được xem xét", lại báo trước kết cục: vòng xoáy bị bác bỏ không phải vì thiếu dữ liệu, mà vì dữ liệu về sao chổi không còn chỗ nào cho nó.
+> Ông coi việc phân biệt cái biết và cái chưa biết là một phần của công việc, chứ không phải điều xấu hổ cần giấu. Sự căng thẳng hiện ra ngay trong chỉ mục: ông từ chối gán nguyên nhân cho trọng lực, rồi lại gợi ý một thần lý trí để giải thích những thứ còn lại, trong khi lại liệt kê giả thuyết là thứ không có chỗ đứng. Người đọc thời đó gặp mâu thuẫn ấy ngay ở trang 507 và 508.
+>
+> Chính sự phân biệt ấy là đóng góp bền vững nhất của cuốn sách: một định luật thì phải kiểm chứng được, còn cơ chế thì có thể còn chưa biết. Nhờ từ chối suy đoán, quy luật của ông mới trở thành thứ người ta thử kiểm và, thấy đúng, giữ lại. Ngành vật lý hiện đại vẫn vận hành đúng nguyên tắc ấy khi nói "ta biết hẳn là bao nhiêu, còn cơ chế thì chưa". Còn mục Vortex, chỉ ghi một dòng "bản chất và cấu tạo của chúng được xem xét", lại báo trước kết cục: vòng xoáy bị bác bỏ không phải vì thiếu dữ liệu, mà vì dữ liệu về sao chổi không còn chỗ nào cho nó.
 - **Mặt Trời** quay quanh tâm trọng lực chung của tất cả các hành tinh — 401. Thời gian quay quanh trục — 405. Đường kính biểu kiến trung bình — 453; đường kính thật — 398. Thị sai ngang — 398. Nó có thị sai kinh nguyệt — 403. Lực hút — 398. Trọng lượng các vật thể trên bề mặt — 399. Mật độ — 399. Lượng vật chất — 399. Lực làm nhiễu chuyển động Mặt Trăng — 391, 419. Lực làm biển chuyển động — 448.
 - **Thủy triều** của biển được suy ra từ nguyên nhân của chúng — 415, 448, 449.
 - **Thời gian** tuyệt đối và tương đối — 78, 79. Phương trình thiên văn của nó được chứng minh bằng đồng hồ con lắc và nhật thực các vệ tinh sao Mộc — 79.

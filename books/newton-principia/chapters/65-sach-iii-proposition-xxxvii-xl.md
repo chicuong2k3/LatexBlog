@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xxxvii-xl"
 number: 65
 ---
 
-# Sách III. Proposition XXXVII–XL
-
 ![Minh họa chuyển động Mặt Trăng, điểm xuân phân và quỹ đạo sao chổi](../assets/book-ii-section-i-motion.svg)
 
 *Hình 53. Sơ đồ được dùng lại từ Phần I; các sơ đồ dựng thủy triều, trục Trái Đất, node, quỹ đạo Mặt Trăng, quỹ đạo sao chổi và các phép chiếu trong Proposition XXXVII–XL cần được đối chiếu riêng với scan.*
@@ -109,15 +107,17 @@ $$
 1:2871400.
 $$
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXVII là lần đầu tiên trong lịch sử người ta **đo tỷ lệ lực triệu của Mặt Trăng và Mặt Trời bằng chính chiều cao thủy triều quan sát được**. Trước đó chỉ có suy luận định tính rằng Mặt Trăng mạnh hơn; ở đây Newton lấy hai cảng, hai số đo, rồi ra một con số.
+> **Tỷ lệ lực triệu của Mặt Trăng và Mặt Trời, đo bằng hai cái cảng**
 >
-> **Công thức.** Ông dùng hai bộ số liệu độc lập. Ở Bristol, thủy triều cao khoảng $45$ feet ở hội tế xuân thu và khoảng $25$ feet ở phần vuông, nên tỷ lệ tổng và hiệu của hai lực là $45:25=9:5$. Ở Plymouth, hai con số tương ứng cho tỷ lệ $41:23$. Hai kết quả gần nhau, và ông chọn của Bristol vì biên độ lớn hơn, nói rõ là sẽ đổi nếu có số liệu chắc hơn.
+> Proposition XXXVII là lần đầu tiên trong lịch sử người ta **đo** tỷ lệ lực triệu của Mặt Trăng và Mặt Trời bằng chính chiều cao thủy triều quan sát được. Trước đó chỉ có suy luận định tính rằng Mặt Trăng mạnh hơn; ở đây Newton lấy hai cảng, hai số đo, rồi ra một con số.
 >
-> **Vì sao Newton viết như vậy.** Vì phần đáng ghi nhất không phải con số mà là **ba hiệu chỉnh** ông áp trước khi lập tỷ lệ. Ông biết thủy triều lớn nhất không xảy ra đúng lúc hội tế mà trễ hơn, nên ông giảm lực Mặt Trời theo công thức $0{,}7986$. Ông biết Mặt Trăng lúc ấy đã lệch khỏi xích đạo, nên lực nó giảm còn $0{,}8570$. Ông biết khoảng cách Mặt Trăng lúc ấy chưa phải trung bình, nên dùng hai hệ số nữa. Ba hiệu chỉnh độc lập trên một tỷ lệ lấy từ hai cái phao cơ — năm 1687 — là mức chăm sóc sai số hiếm có.
+> Ông dùng hai bộ số liệu độc lập. Ở Bristol, thủy triều cao khoảng $45$ feet ở hội tế xuân thu và khoảng $25$ feet ở phần vuông, nên tỷ lệ tổng và hiệu của hai lực là $45:25=9:5$. Ở Plymouth, hai con số tương ứng cho tỷ lệ $41:23$. Hai kết quả gần nhau, và ông chọn của Bristol vì biên độ lớn hơn, nói rõ là sẽ đổi nếu có số liệu chắc hơn.
 >
-> **Hiện nay thì sao.** Tỷ lệ lực triệu đúng là khoảng $2{,}2$ lần, và con số của Newton **lớn hơn**. Nguyên nhân là có tính đến cả cấu trúc: ông lấy chiều cao triều quan sát tại một vịnh làm đại diện cho triều cân bằng, nhưng một vịnh phễu có cộng hưởng mạnh, khuếch đại phần triều bán ngày của Mặt Trăng nhiều hơn hẳn phần triều của Mặt Trời, nên dữ liệu cảng luôn nghiêng về phía Mặt Trăng. Ngày nay người ta tách phần cộng hưởng ấy ra bằng mô hình thuỷ động, hoặc đo trực tiếp bằng vệ tinh. Bài học ở đây không phải là con số sai, mà là việc ông nghĩ tới sai số từ khi còn chưa lập tỷ lệ.
+> Phần đáng ghi nhất không phải con số mà là ba hiệu chỉnh ông áp trước khi lập tỷ lệ. Ông biết thủy triều lớn nhất không xảy ra đúng lúc hội tế mà trễ hơn, nên ông giảm lực Mặt Trời theo công thức $0{,}7986$. Ông biết Mặt Trăng lúc ấy đã lệch khỏi xích đạo, nên lực nó giảm còn $0{,}8570$. Ông biết khoảng cách Mặt Trăng lúc ấy chưa phải trung bình, nên dùng hai hệ số nữa. Ba hiệu chỉnh độc lập trên một tỷ lệ lấy từ hai cái phao cơ — năm 1687 — là mức chăm sóc sai số hiếm có.
+>
+> Tỷ lệ lực triệu đúng là khoảng $2{,}2$ lần, và con số của Newton lớn hơn. Nguyên nhân là có tính đến cả cấu trúc: ông lấy chiều cao triều quan sát tại một vịnh làm đại diện cho triều cân bằng, nhưng một vịnh phễu có cộng hưởng mạnh, khuếch đại phần triều bán ngày của Mặt Trăng nhiều hơn hẳn phần triều của Mặt Trời, nên dữ liệu cảng luôn nghiêng về phía Mặt Trăng. Ngày nay người ta tách phần cộng hưởng ấy ra bằng mô hình thuỷ động, hoặc đo trực tiếp bằng vệ tinh. Bài học ở đây không phải là con số sai, mà là việc ông nghĩ tới sai số từ khi còn chưa lập tỷ lệ.
 
 ### Hệ quả 1
 
@@ -365,15 +365,17 @@ Bởi vậy, Mặt Trăng có dạng ấy, và phải có dạng ấy từ đầ
 
 Từ đây ta hiểu vì sao cùng một mặt của Mặt Trăng luôn hướng về Trái Đất. Thân Mặt Trăng không thể nằm yên ở bất kỳ vị trí nào khác, mà luôn trở lại vị trí này bằng một chuyển động dao động. Tuy nhiên, những dao động ấy phải vô cùng chậm, vì các lực gây ra chúng quá yếu. Vì vậy, mặt Mặt Trăng vốn phải luôn hướng về Trái Đất có thể, theo lý do đã nêu trong Proposition XVII, từ từ quay về phía tiêu điểm kia của quỹ đạo Mặt Trăng mà không lập tức bị kéo trở lại và hướng về Trái Đất.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXVIII đặt một câu hỏi táo bạo: nếu thân Mặt Trăng cũng lỏng như biển của ta, thì lực hút của Trái Đất sẽ làm dáng nó thành hình gì? Và từ đó ông suy ra một đẳng thức về dạng thân Mặt Trăng mà không cần quan sát bề mặt Mặt Trăng lần nào.
+> **Nếu Mặt Trăng lỏng, nó phải dẹt 186 feet theo hướng Trái Đất — và ta có thể nhìn thấy kết quả ấy**
 >
-> **Công thức.** Lực Trái Đất nâng chất lỏng ở hai phần gần và xa tỷ lệ với lực Mặt Trăng nâng biển ta ở hai phần dưới và đối xứng, theo tỷ lệ trọng lực gia tốc của hai bên cùng tỷ lệ đường kính Mặt Trăng với đường kính Trái Đất, tức $39788:1$ cùng $100:365$, hay $1081:100$. Vì biển ta dưới tác dụng của Mặt Trăng dâng lên tới $8$ feet $7\frac12$ inch, chất lỏng trên Mặt Trăng phải được nâng lên tới $93$ feet. Nên thân Mặt Trăng phải là một hình ellip, trong đó đường kính lớn nhất đi qua tâm Trái Đất dài hơn các đường kính vuông góc với nó $186$ feet, và phải có dạng ấy từ đầu.
+> Proposition XXXVIII đặt một câu hỏi táo bạo: nếu thân Mặt Trăng cũng lỏng như biển của ta, thì lực hút của Trái Đất sẽ làm dáng nó thành hình gì? Và từ đó ông suy ra một đẳng thức về dạng thân Mặt Trăng mà không cần quan sát bề mặt Mặt Trăng lần nào.
 >
-> **Vì sao Newton viết như vậy.** Vì ông biết mình đang dùng một giả định mạnh, rằng Mặt Trăng lỏng, và ông nói thẳng điều kiện đó thay vì giấu. Rồi ông không dừng ở dạng thân mà trả lời luôn câu hỏi vì sao cùng một mặt Mặt Trăng luôn quay về phía ta: thân nó không thể nằm yên ở vị trí nào khác, nên luôn trở lại bằng một dao động. Ông bổ sung rằng các dao động ấy phải vô cùng chậm, vì các lực gây ra chúng quá yếu, nên Mặt Trăng có thể quy chậm sang phía tiêu điểm kia mà không bị kéo lại ngay.
+> Lực Trái Đất nâng chất lỏng ở hai phần gần và xa tỷ lệ với lực Mặt Trăng nâng biển ta ở hai phần dưới và đối diện, theo tỷ lệ trọng lực gia tốc của hai bên cùng tỷ lệ đường kính Mặt Trăng với đường kính Trái Đất. Vì biển ta dưới tác dụng của Mặt Trăng dâng lên tới $8$ feet $7\frac{1}{2}$ inches, chất lỏng trên Mặt Trăng phải được nâng lên tới $93$ feet. Nên thân Mặt Trăng phải là một hình ellip, trong đó đường kính lớn nhất đi qua tâm Trái Đất dài hơn các đường kính vuông góc với nó $186$ feet, và phải có dạng ấy từ đầu.
 >
-> **Hiện nay thì sao.** Cơ chế ông nêu chính là cơ chế **khóa triều**, và nó đúng: Mặt Trăng quay đồng bộ với Trái Đất từ rất sớm, nên cùng một mặt luôn hướng về ta. Những dao động ông nói ấy ngày nay gọi là **thư viện** của Mặt Trăng, và chúng đo được rõ ràng: Mặt Trăng lắc về trước sau $6^\circ28'$ và sang hai bên $4^\circ39'$, đủ để ta nhìn thấy hơn nửa mặt Mặt Trăng. Con số $93$ feet của ông cũng đúng thứ tự: giá trị tĩnh ngày nay là khoảng $20$ mét, tức chừng $64$ feet, nên lớn hơn thực tế chừng một phần rưỡi. Chênh lệch ấy nhiều khả năng vì con số đầu vào của ông lấy từ thủy triều tại một vịnh, nơi triều bị khuếch đại mạnh như đã bàn ở trên.
+> Ông biết mình đang dùng một giả định mạnh, rằng Mặt Trăng lỏng, và ông nói thẳng điều kiện đó thay vì giấu. Rồi ông không dừng ở dạng thân mà trả lời luôn câu hỏi vì sao cùng một mặt Mặt Trăng luôn quay về phía ta: thân nó không thể nằm yên ở vị trí nào khác, nên luôn trở lại bằng một dao động. Ông bổ sung rằng các dao động ấy phải vô cùng chậm, vì các lực gây ra chúng quá yếu, nên Mặt Trăng có thể quy chậm sang phía tiêu điểm kia mà không bị kéo lại ngay.
+>
+> Cơ chế ông nêu chính là cơ chế khóa triều, và nó đúng: Mặt Trăng quay đồng bộ với Trái Đất từ rất sớm, nên cùng một mặt luôn hướng về ta. Những dao động ông nói ấy ngày nay gọi là thư viện của Mặt Trăng, và chúng đo được rõ ràng: Mặt Trăng lắc về trước sau $6^\circ28'$ và sang hai bên $4^\circ39'$, đủ để ta nhìn thấy hơn nửa mặt Mặt Trăng. Con số $93$ feet của ông cũng đúng thứ tự: giá trị tĩnh ngày nay là khoảng $20$ mét, tức chừng $64$ feet, nên lớn hơn thực tế chừng một phần rưỡi. Chênh lệch ấy nhiều khả năng vì con số đầu vào của ông lấy từ thủy triều tại một vịnh, nơi triều bị khuếch đại mạnh như đã bàn ở trên.
 
 ## Lemma I
 
@@ -926,15 +928,17 @@ $$
 240\text{ năm}.
 $$
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Đây là lần đầu tiên trong vật lý học, chuyển động của một thiên thể hoàn toàn khác loại — sao chổi — cũng được chứng minh tuân theo **cùng** định luật bình phương nghịch và quy tắc diện tích mà ông đã dùng cho các hành tinh. Không thêm lực nào, không cần giả thiết thần thú. Chỉ khác ở dạng quỹ đạo: các hành tinh chạy trong elip, còn sao chổi thường chạy trên parabol hay elip kéo dài gần như vô hạn.
+> **Sao chổi cũng tuân theo cùng định luật bình phương nghịch, và 240 năm là công thức chứ không phải dự đoán**
 >
-> **Công thức.** Ở hệ quả 1, nếu trục lớn của quỹ đạo sao chổi gấp bốn lần trục của quỹ đạo sao Thổ, thì thời gian tuần hoàn tỷ lệ với thời gian tuần hoàn của sao Thổ, tức với $30$ năm, theo $4^{3/2}:1=8:1$, cho nên là $240$ năm. Ở hệ quả 2, quỹ đạo chúng gần parabol đến mức có thể dùng parabol thay cho chúng mà không gây sai số cảm nhận được.
+> Đây là lần đầu tiên trong vật lí học, chuyển động của một thiên thể hoàn toàn khác loại — sao chổi — cũng được chứng minh tuân theo **cùng** định luật bình phương nghịch và quy tắc diện tích mà ông đã dùng cho các hành tinh. Không thêm lực nào, không cần giả thiết thần thú. Chỉ khác ở dạng quỹ đạo: các hành tinh chạy trong elip, còn sao chổi thường chạy trên parabol hay elip kéo dài gần như vô hạn.
 >
-> **Vì sao Newton viết như vậy.** Vì ông phân biệt rõ loại nào trong hai hệ quả ấy là điều có thể **kiểm tra**, và loại nào là thứ giúp người ta *làm việc được*. Nếu không có hệ quả 2, mỗi lần tính quỹ đạo sao chổi phải giải một bài toán conic đầy khó khăn. Còn khi quỹ đạo đã gần parabol, chỉ cần ba tham số, và việc dựng quỹ đạo trở thành một phép tính hình học đơn giản. Ông còn đưa sẵn một quy tắc vận tốc và một quy tắc số ở hai hệ quả sau, để người đọc dùng ngay mà không phải suy lại.
+> Ở Hệ quả 1, nếu trục lớn của quỹ đạo sao chổi gấp bốn lần trục của quỹ đạo sao Thổ, thì thời gian tuần hoàn tỷ lệ với thời gian tuần hoàn của sao Thổ, tức với $30$ năm, theo $4^{3/2}:1=8:1$, cho nên là $240$ năm. Ở Hệ quả 2, quỹ đạo chúng gần parabol đến mức có thể dùng parabol thay cho chúng mà không gây sai số cảm nhận được.
 >
-> **Hiện nay thì sao.** Hệ quả 1 là một quan hệ có thể đảo ngược. Ta có thể kiểm tra nó bằng chính sao chổi Halley: nó quay quanh Mặt Trời một vòng trong khoảng $76$ năm, mà thời gian tuần hoàn tỷ lệ với lũy thừa một phần hai của trục lớn, nên trục lớn quỹ đạo của nó phải gần bằng $(76/30)^{2/3}\approx1{,}9$ lần trục lớn quỹ đạo sao Thổ. Như vậy con số $240$ năm của Newton không phải dự đoán một sao chổi nào cả, mà là **công thức** để quy đổi giữa trục quỹ đạo và thời gian quay, và công thức ấy vẫn dùng nguyên vẹn. Còn việc chọn parabol làm xấp xỉ cho gần như mọi quỹ đạo sao chổi thì ngày nay vẫn là chuyện thường trong tính quỹ đạo.
+> Ông phân biệt rõ loại nào trong hai hệ quả ấy là điều có thể kiểm tra, và loại nào là thứ giúp người ta làm việc được. Nếu không có Hệ quả 2, mỗi lần tính quỹ đạo sao chổi phải giải một bài toán conic đầy khó khăn. Còn khi quỹ đạo đã gần parabol, chỉ cần ba tham số, và việc dựng quỹ đạo trở thành một phép tính hình học đơn giản. Ông còn đưa sẵn một quy tắc vận tốc và một quy tắc số ở hai hệ quả sau, để người đọc dùng ngay mà không phải suy lại.
+>
+> Hệ quả 1 là một quan hệ có thể đảo ngược. Ta có thể kiểm tra nó bằng chính sao chổi Halley: nó quay quanh Mặt Trời một vòng trong khoảng $76$ năm, mà thời gian tuần hoàn tỷ lệ với lũy thừa một phần hai của trục lớn, nên trục lớn quỹ đạo của nó phải gần bằng $(76/30)^{2/3}\approx1{,}9$ lần trục lớn quỹ đạo sao Thổ. Như vậy con số $240$ năm của Newton không phải dự đoán một sao chổi nào cả, mà là **công thức** để quy đổi giữa trục quỹ đạo và thời gian quay, và công thức ấy vẫn dùng nguyên vẹn. Còn việc chọn parabol làm xấp xỉ cho gần như mọi quỹ đạo sao chổi thì ngày nay vẫn là chuyện thường trong tính quỹ đạo.
 
 ### Hệ quả 2
 

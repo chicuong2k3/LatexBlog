@@ -5,8 +5,6 @@ slug: "sach-i-phan-xi-xii-he-qua-xii-xxii-proposition-lxvii-lxxxi"
 number: 38
 ---
 
-# Sách I, Phần XI–XII. Hệ quả XI–XXII; Proposition LXVII–LXXI
-
 ![Lực hút của các vật thể cầu](../assets/section-xii-spherical-attraction.svg)
 
 *Hình 26. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -69,15 +67,17 @@ Một cầu đồng nhất, hoàn hảo không thay đổi trục khi nhận xun
 
 Cách sửa chỉ có thể là đặt vật chất cân bằng ở cực, ở vùng xích đạo, hoặc ở phía bên kia của trục. Khi đó node đi tiến hoặc lùi tùy vị trí của vật chất.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Hệ quả 19 là dự đoán đầu tiên của cơ học về **thủy triều do một vật thể thứ ba**: không phải vì Mặt Trời hay Mặt Trăng quay quanh Trái Đất mà có thủy triều, mà vì lực của chúng kéo mặt nước ở phía gần lên và ở phía xa xuống, khiến nước dồn về hai mặt đối diện.
+> **Thủy triều: lực của Mặt Trời kéo nước ở phía gần lên, và ở phía xa thì kéo xuống**
 >
-> **Công thức.** Lực $KL$ kéo nước lên ở hội hợp và đối hợp, lực $LM$ kéo nước xuống ở góc phần tư — đúng hai đỉnh và hai chân trũng. Biên độ thủy triều tỷ lệ với lực tuyệt đối của vật thể hút chia cho bình phương khoảng cách tới nó, đúng như Hệ quả 14 nói, nên thủy triều của Mặt Trời chỉ bằng khoảng $0{,}46$ lần thủy triều của Mặt Trăng.
+> Đây là dự đoán đầu tiên của cơ học về thủy triều do một vật thể thứ ba, và nó không suy ra từ việc Mặt Trời hay Mặt Trăng quay quanh Trái Đất. Nó suy ra từ hình học của lực: phía gần bị nâng lên, phía xa bị kéo lùi, nên nước dồn về hai mặt đối diện.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang giải thích một hiện tượng quen thuộc bằng đúng cái cơ chế vừa dựng xong ở Phần XI. Nhưng điều đáng nói nằm ở Hệ quả 20. Ông chỉ ra rằng nếu Trái Đất rắn lại thì thủy triều dừng, nhưng trục quay vẫn trôi khi bị xung, và cách duy nhất để ổn định trục là **đặt vật chất cân bằng ở cực, ở xích đạo, hoặc ở phía đối diện**. Trong ba vị trí ấy, núi và bán đảo phải được phân bổ cân đối trước — đây là dự đoán mà khoa học sau này đã bác bỏ.
+> Lực $KL$ kéo nước lên ở hội hợp và đối hợp, lực $LM$ kéo nước xuống ở góc phần tư — đúng hai đỉnh và hai chân trũng. Biên độ thủy triều tỷ lệ với lực tuyệt đối của vật thể hút chia cho bình phương khoảng cách tới nó, đúng như Hệ quả 14 nói. Thế ra thủy triều của Mặt Trời chỉ bằng khoảng $0{,}46$ lần thủy triều của Mặt Trăng, dù khối lượng Mặt Trời lớn hơn $26$ triệu lần.
 >
-> **Hiện nay thì sao.** Newton đã đưa ra một phương thuốc và hỏng. Thứ thật sự giữ trục Trái Đất ổn định là **mô-men xoắn do thủy triều của Mặt Trăng**: nó làm chậm quay của Trái Đất và đồng thời đẩy trục ra xa. Và chính vì thủy triều có, Trái Đất không cần cân bằng vật liệu kiểu Newton nói. Bài học ở đây dễ bị bỏ qua: một mô hình vật lí đúng vẫn có thể dẫn tới một kết luận sai về thiên nhiên, vì khi lập mô hình người ta chỉ xét những lực mình đã biết.
+> Chỗ đáng nói nằm ở Hệ quả 20. Ông chỉ ra rằng nếu Trái Đất rắn lại thì thủy triều dừng, nhưng trục quay vẫn trôi khi bị xung, và cách duy nhất để ổn định trục là **đặt vật chất cân bằng ở cực, ở xích đạo, hoặc ở phía đối diện trục** — nghĩa là núi và bán đảo phải được phân bổ cân đối trước. Đó là một dự đoán về thiên nhiên, và khoa học sau này đã bác bỏ.
+>
+> Phương thuốc của ông hỏng, nhưng câu hỏi của ông thì đúng. Thứ thật sự giữ trục Trái Đất ổn định là **mô-men xoắn do thủy triều của Mặt Trăng**: nó làm chậm quay của Trái Đất và làm trục quay dao động. Và chính vì thủy triều có, Trái Đất không cần vật liệu cân bằng kiểu Newton nói. Bài học ở đây dễ bị bỏ qua: một mô hình vật lí đúng vẫn có thể dẫn tới một kết luận sai về thiên nhiên, vì khi lập mô hình người ta chỉ xét những lực mình đã biết.
 
 ## Proposition LXVII. Định lý XXVII
 
@@ -133,15 +133,17 @@ Các tam giác $HPI$, $LPK$ đồng dạng, nên các cung tỷ lệ với $HP$,
 
 Các lực ấy theo những phương ngược nhau triệt tiêu lẫn nhau. Cùng lập luận cho toàn bộ mặt cầu, nên $P$ không chịu lực hướng tâm nào.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition LXX và LXXI là **định lý vỏ cầu**, và đây là cặp kết quả biến toàn bộ cơ học thiên thể từ một bài toán không giải được thành một bài toán giải được. LXX nói một mặt cầu đồng nhất **không tác động gì lên** một hạt nằm bên trong nó; LXXI nói một khối cầu đồng nhất hút một hạt bên ngoài như thể toàn bộ khối lượng dồn tại tâm.
+> **Mỗi khối cầu đồng nhất thay thế được bằng một điểm — bên trong thì bằng không**
 >
-> **Công thức.** Chứng minh của LXX là lập luận đối xứng: hai cung nhỏ $HI$ và $KL$ ở hai đầu một dây đi qua $P$ nhìn thấy $P$ dưới những góc bằng nhau, nên lực hút của chúng bằng nhau và chúng triệt tiêu nhau. Lặp lại trên toàn mặt cầu thì tổng là không. LXXI dùng cùng cách, chỉ khác chỗ các lớp cầu đồng tâm được cộng lại và cho tỷ lệ nghịch với bình phương khoảng cách tới tâm.
+> Đây là cặp định lý vỏ cầu, và nó biến toàn bộ cơ học thiên thể từ một bài toán không giải được thành một bài toán giải được. Một mặt cầu đồng nhất **không tác động gì lên** một hạt nằm bên trong nó; một khối cầu đồng nhất hút một hạt bên ngoài như thể toàn bộ khối lượng dồn tại tâm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần biến "mỗi hạt hút mỗi hạt" thành "khối cầu hút như một điểm". Không có cặp định lý này, hành tinh không quay quanh Mặt Trời theo elip mà theo một đường cong khó đặt tên, và khái niệm trọng lực theo nghĩa hiện đại chưa tồn tại. Hệ quả 1 ngay sau đó là bằng chứng: các quỹ đạo quanh những khối cầu đồng nhất, có bán kính tỷ lệ với khoảng cách, đều có **cùng một chu kỳ** — đó là định luật Kepler thứ ba đã được chứng minh từ giả thiết đồng nhất.
+> Chứng minh của LXX là lập luận đối xứng: hai cung nhỏ $HI$ và $KL$ ở hai đầu một dây đi qua $P$ nhìn thấy $P$ dưới những góc bằng nhau, nên lực hút của chúng bằng nhau và chúng triệt tiêu nhau. Lặp lại trên toàn mặt cầu thì tổng là không. LXXI dùng cùng cách, chỉ khác chỗ các lớp cầu đồng tâm được cộng lại, và mỗi lớp hút theo tỷ lệ nghịch với bình phương khoảng cách tới tâm.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay vẫn dùng định lý vỏ cầu như một công cụ chẩn đoán: nó cho biết một thiên thể có thật sự là cầu đồng nhất hay không, vì trong thực tế mọi thiên thể đều lệch khỏi cầu ở bậc nhất. Nó cũng là lý do trọng lực bên trong Trái Đất giảm **tuyến tính** theo độ sâu chứ không phải theo bình phương: vỏ bên ngoài không góp gì, chỉ các vỏ bên trong mới đóng góp. Cùng cấu trúc toán ấy còn nằm sau Hệ quả 3 — hai vật thể rắn cùng hình cùng mật độ hút nhau theo tỷ lệ đường kính, nên từ lực hút có thể đo được tỷ số khối lượng mà không cần cân.
+> Không có cặp định lý này thì hành tinh không quay quanh Mặt Trời theo elip mà theo một đường cong khó đặt tên, và khái niệm trọng lực theo nghĩa hiện đại chưa tồn tại. Hệ quả 1 ngay sau đó là bằng chứng: các quỹ đạo quanh những khối cầu đồng nhất, có bán kính tỷ lệ với khoảng cách, đều có **cùng một chu kỳ** — định luật Kepler thứ ba, được chứng minh trực tiếp từ giả thiết đồng nhất.
+>
+> Người đọc hôm nay vẫn dùng cặp định lý này như một phép thử: nó cho biết một thiên thể có thật sự là cầu đồng nhất hay không, vì trong thực tế mọi thiên thể đều lệch khỏi cầu ngay ở bậc nhất. Nó cũng giải thích vì sao trọng lực bên trong Trái Đất giảm **tuyến tính** theo độ sâu chứ không phải theo bình phương: vỏ bên ngoài không góp gì, chỉ các vỏ bên trong mới đóng góp. Cùng cấu trúc toán ấy còn nằm sau Hệ quả 3 — hai vật thể rắn cùng hình cùng mật độ hút nhau theo tỷ lệ đường kính, nên từ lực hút đo được ta có tỷ số khối lượng mà không cần cân.
 
 ## Proposition LXXI. Định lý XXXI
 

@@ -5,8 +5,6 @@ slug: "sach-ii-phan-iv-lemma-iii-proposition-xv-xviii"
 number: 47
 ---
 
-# Sách II, Phần IV. Lemma III và Proposition XV–XVIII
-
 ![Minh họa chuyển động trong môi trường có lực cản](../assets/book-ii-section-i-motion.svg)
 
 *Hình 35. Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.*
@@ -53,21 +51,23 @@ $$
 PO^2=TO\cdot 2PS.
 $$
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Lemma III là phần hình học thuần của cả Phần IV, và nó xây trên một định nghĩa: đường **spiral cắt mọi bán kính kẻ từ tâm dưới những góc bằng nhau**. Đường cong ấy có tên quen thuộc là **spiral lô-garít**, và tính chất "cắt mọi bán kính dưới cùng một góc" chính là đặc trưng định danh của nó.
+> **Spiral cắt mọi bán kính kẻ từ tâm dưới cùng một góc**
 >
-> **Công thức.** Lemma lập ra quan hệ
+> Lemma III là phần hình học thuần của cả Phần IV, và nó xây trên một định nghĩa: đường **spiral cắt mọi bán kính kẻ từ tâm dưới những góc bằng nhau**. Đường cong ấy có tên quen thuộc là **spiral lô-garít**, và tính chất "cắt mọi bán kính dưới cùng một góc" chính là đặc trưng định danh của nó.
+>
+> Lemma lập ra quan hệ
 >
 > $$
 > PO^2 = TO\cdot 2PS,
 > $$
 >
-> trong đó $PT$ là tiếp tuyến của spiral tại $P$, $T$ là điểm mà tiếp tuyến ấy cắt bán kính kế, và $O$ là giao của hai đường vuông góc hạ từ $P$ và $Q$ xuống spiral. Vì các góc $OPQ$ và $OQR$ cùng vuông, trừ đi các góc bằng nhau, một đường tròn đi qua $O$, $S$, $P$ cũng đi qua $Q$; khi $P$ và $Q$ trùng nhau thì đường tròn ấy tiếp xúc với spiral, nên $OP$ là đường kính và tam giác $OSP$ vuông tại $S$. Quan hệ độ dài ở trên là cách Newton chuyển đặc trưng góc của spiral thành một quan hệ đo được, để cơ học chuyển sang hình học.
+> trong đó $PT$ là tiếp tuyến của spiral tại $P$, $T$ là điểm mà tiếp tuyến ấy cắt bán kính kế, và $O$ là giao của hai đường vuông góc hạ từ $P$ và $Q$ xuống spiral. Vì các góc $OPQ$ và $OQR$ cùng vuông, trừ đi các góc bằng nhau, một đường tròn đi qua $O$, $S$, $P$ cũng đi qua $Q$; khi $P$ và $Q$ trùng nhau thì đường tròn ấy tiếp xúc với spiral, nên $OP$ là đường kính và tam giác $OSP$ vuông tại $S$.
 >
-> **Vì sao Newton viết như vậy.** Vì góc mà đường đi cắt bán kính không đo trực tiếp được, còn độ dài thì đo được. Ông dựng một hình học phụ trợ gồm tiếp tuyến, hai đường vuông góc và một đường tròn tiếp xúc, rồi rút ra quan hệ ấy. Mọi Proposition sau trong Phần IV đều dùng lại đúng quan hệ này, nên Lemma là nền của cả phần.
+> Quan hệ độ dài ở trên là cách Newton chuyển đặc trưng góc của spiral thành một quan hệ đo được, để cơ học chuyển sang hình học. Ông viết vậy vì góc mà đường đi cắt bán kính không đo trực tiếp được, còn độ dài thì đo được: ông dựng một hình học phụ trợ gồm tiếp tuyến, hai đường vuông góc và một đường tròn tiếp xúc, rồi rút ra quan hệ ấy. Mọi Proposition sau trong Phần IV đều dùng lại đúng quan hệ này, nên Lemma là nền của cả phần.
 >
-> **Hiện nay thì sao.** Spiral lô-garít là đường cong duy nhất tự trùng lặp dưới phép co giãn quanh tâm: phóng to một phần của nó thì ta được chính nó. Vì vậy nó xuất hiện bất cứ khi nào một đại lượng phải đi qua những vòng lặp có tính tự tương tự — từ vỏ sò xoắn ốc, đến nhánh xoắn ốc của thiên hà, đến ống tai trong, nơi hình học ấy quyết định cách tai phân biệt tần số. Về mặt toán học, điều kiện "cắt mọi bán kính dưới cùng góc" chính là tiêu chí định danh: một đường cong cắt các bán kính dưới một góc không đổi thì phải là spiral lô-garít, và chỉ khi đó tính tự tương tự mới đúng.
+> Spiral lô-garít là đường cong duy nhất tự trùng lặp dưới phép co giãn quanh tâm: phóng to một phần của nó thì ta được chính nó. Vì vậy nó xuất hiện bất cứ khi một đại lượng phải đi qua những vòng lặp có tính tự tương tự — từ vỏ sò xoắn ốc, đến nhánh xoắn ốc của thiên hà, đến ống tai trong, nơi hình học ấy quyết định cách tai phân biệt tần số. Về mặt toán học, điều kiện "cắt mọi bán kính dưới cùng góc" chính là tiêu chí định danh: một đường cong cắt các bán kính dưới một góc không đổi thì phải là spiral lô-garít, và chỉ khi đó tính tự tương tự mới đúng.
 
 ## Proposition XV. Định lý XII
 
@@ -151,15 +151,17 @@ Vật thể chỉ có thể quay trong spiral này khi lực cản nhỏ hơn m�
 
 Thời gian rơi tỷ lệ nghịch với vận tốc, nên đã biết.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XV nói rằng vật thể quay trong một đường spiral cắt mọi bán kính dưới cùng một góc. Hệ quả 4 bổ sung một điều kiện cắt ngang, và đó là điều kiện thú vị nhất của cả Phần IV: vật thể chỉ quay được trong spiral ấy khi lực cản **nhỏ hơn một nửa** lực hướng tâm. Nếu lực cản đúng bằng một nửa lực hướng tâm, đường spiral trùng với **đường thẳng** $PS$.
+> **Đường spiral chỉ tồn tại khi lực cản nhỏ hơn một nửa lực hướng tâm**
 >
-> **Công thức.** Góc mà spiral cắt bán kính, theo Hệ quả 6, chính là cotang của góc ấy, và thời gian mỗi vòng quay tỷ lệ với secant của cùng góc đó. Khi lực cản tăng dần, cotang ấy giảm: số vòng quay trên mỗi đơn vị bán kính ít đi, và đường đi thẳng dần. Tới một giá trị lực cản, cotang về không, đường cong trở thành đường thẳng, và vật thể rơi thẳng vào tâm.
+> Proposition XV nói rằng vật thể quay trong một đường spiral cắt mọi bán kính dưới cùng một góc. Hệ quả 4 bổ sung một điều kiện cắt ngang, và đó là điều kiện thú vị nhất của cả Phần IV: chuyển động ấy chỉ xảy ra được khi lực cản **nhỏ hơn một nửa** lực hướng tâm. Nếu lực cản đúng bằng một nửa lực hướng tâm, đường spiral trùng với **đường thẳng** $PS$.
 >
-> **Vì sao Newton viết như vậy.** Vì ông muốn biết chính xác chỗ nào mô hình của ông ngừng có ý nghĩa. Một đường cong cắt các bán kính dưới cùng một góc là một hình học rất đặc biệt, và nó chỉ xuất hiện đúng khi lực cản đủ nhỏ để đường đi vẫn quay quanh tâm. Ông nêu đúng ngưỡng, rồi nói tiếp rằng ở ngưỡng ấy vận tốc rơi tỷ lệ với vận tốc rơi parabol ở Proposition X của Sách I theo căn bậc hai nghịch của tỷ lệ một với hai, nên cả đường quỹ tích lẫn vận tốc đều đã biết.
+> Cơ chế thì như sau. Theo Hệ quả 6, góc mà spiral cắt bán kính chính là cotang của góc ấy, và thời gian mỗi vòng quay tỷ lệ với secant của cùng góc đó. Khi lực cản tăng dần, cotang ấy giảm: số vòng quay trên mỗi đơn vị bán kính ít đi, và đường đi thẳng dần. Tới một giá trị lực cản, cotang về không, đường cong trở thành đường thẳng, và vật thể rơi thẳng vào tâm.
 >
-> **Hiện nay thì sao.** Ngưỡng "nhỏ hơn một nửa" mang tính chất một tham số tới hạn giống hệt ngưỡng số mũ bằng ba ở Hệ quả 3 của Proposition XVI, nơi lực cản dương hoá thành lực cản âm. Cả hai cùng nhắc một điều: phần lớn các bài toán vật lí chỉ có lời giải trong một vùng tham số hẹp, và ngay ngoài vùng đó mô hình phải đổi bản chất chứ không chỉ sai ở một hệ số. Ở đây, khi lực cản vượt ngưỡng, đường đi không còn là spiral nữa mà phải là một đường cong khác hẳn, và đó là lý do Newton viết kết quả bằng điều kiện chứ không phải bằng một công thức.
+> Ông nêu đúng ngưỡng, rồi nói tiếp rằng ở ngưỡng ấy vận tốc rơi tỷ lệ với vận tốc rơi parabol ở Proposition X của Sách I theo căn bậc hai nghịch của tỷ lệ một với hai, nên cả đường quỹ tích lẫn vận tốc đều đã biết. Ông muốn biết chính xác chỗ nào mô hình của ông ngừng có ý nghĩa: một đường cong cắt các bán kính dưới cùng một góc là một hình học rất đặc biệt, và nó chỉ xuất hiện đúng khi lực cản đủ nhỏ để đường đi vẫn quay quanh tâm.
+>
+> Ngưỡng "nhỏ hơn một nửa" mang tính chất một tham số tới hạn, giống hệt ngưỡng số mũ bằng ba ở Hệ quả 3 của Proposition XVI, nơi lực cản dương hoá thành lực cản âm. Cả hai cùng nhắc một điều: phần lớn bài toán vật lí chỉ có lời giải trong một vùng tham số hẹp, và ngay ngoài vùng đó mô hình phải đổi bản chất chứ không chỉ sai ở một hệ số. Ở đây, khi lực cản vượt ngưỡng, đường đi không còn là spiral nữa mà phải là một đường cong khác hẳn — và đó là lý do Newton viết kết quả bằng điều kiện chứ không phải bằng một công thức.
 
 ### Hệ quả 5
 

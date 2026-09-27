@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xvii-xx"
 number: 60
 ---
 
-# Sách III. Proposition XVII–XX
-
 ![Minh họa chuyển động quay của hành tinh và Mặt Trăng](../assets/book-ii-section-i-motion.svg)
 
 *Hình 48. Sơ đồ được dùng lại từ Phần I; các sơ đồ quỹ đạo, trục hành tinh, kênh nước và bảng số liệu của bản gốc cần được đối chiếu riêng.*
@@ -116,15 +114,17 @@ Như vậy, lý thuyết này phù hợp với các hiện tượng. Các hành 
 
 Ngoài ra, việc chuyển động quay ngày của Trái Đất làm giảm lực trọng lực, và vì thế Trái Đất ở đó cao hơn so với ở các cực, sẽ được chứng minh bằng các thí nghiệm con lắc nêu dưới Proposition tiếp theo.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XIX là lần đầu tiên trong lịch sử người ta **đo** độ dẹt của Trái Đất, thay vì chỉ giả thế nó là quả cầu. Newton dùng chính phép đo chu vi cung vĩ độ mà Picard, Cassini và người cha ông đã làm, cộng với tỷ lệ giữa lực trọng lực và lực ly tâm mà ông tính được ở vĩ độ Paris.
+> **Lần đầu tiên người ta đo độ dẹt của Trái Đất, và Newton tự ghi tên giới hạn của phương pháp**
 >
-> **Công thức.** Từ đó ông suy ra đường kính xích đạo so với đường kính giữa hai cực là $230:229$, tức Trái Đất cao hơn ở xích đạo khoảng $17$ dặm. Cũng bằng phép suy luận ấy ông dựng con số tương ứng cho Sao Mộc, rồi đối chiếu với đo đạc của Cassini năm 1691 và của Pound năm 1719. Rồi ông tự nêu giới hạn của mình: mọi thứ trên đây giả định hành tinh có **mật độ đều**; nếu vật chất đặc hơn ở xích đạo thì tỷ lệ thật sẽ dẫu dệt hơn, có thể là $12:11$, $13:12$ hay $14:13$.
+> Proposition XIX là lần đầu tiên trong lịch sử người ta **đo** độ dẹt của Trái Đất, thay vì chỉ giả thế nó là quả cầu. Newton dùng chính phép đo chu vi cung vĩ độ mà Picard, Cassini và người cha ông đã làm, cộng với tỷ lệ giữa lực trọng lực và lực ly tâm mà ông tính được ở vĩ độ Paris.
 >
-> **Vì sao Newton viết như vậy.** Vì ông biết phần nào mình chắc và phần nào không chắc. Dấu hiệu xích đạo phình ra là thứ ông tin, vì nó xuất hiện cả trong lý thuyết lẫn trong quan sát của Cassini. Còn con số định lượng thì ông đặt kèm điều kiện, để người đọc không tưởng đó là kết quả chắc chắn. Tự ghi tên giới hạn của phương pháp trước khi ai hỏi là một đức tính hiếm, và ở đây nó cứu cho ông: sai số lớn nhất của bài toán này đến từ chính giả thiết mật độ đều.
+> Từ đó ông suy ra đường kính xích đạo so với đường kính giữa hai cực là $230:229$, tức Trái Đất cao hơn ở xích đạo khoảng $17$ dặm. Cũng bằng phép suy luận ấy ông dựng con số tương ứng cho Sao Mộc, rồi đối chiếu với đo đạc của Cassini năm 1691 và của Pound năm 1719. Rồi ông tự nêu giới hạn của mình: mọi thứ trên đây giả định hành tinh có **mật độ đều**; nếu vật chất đặc hơn ở xích đạo thì tỷ lệ thật sẽ dẫu dệt hơn, có thể là $12:11$, $13:12$ hay $14:13$.
 >
-> **Hiện nay thì sao.** Dấu hiệu thì đúng, con số thì lệch. Độ dẹt thật của Trái Đất là $1:298$, tức con số của Newton nhỏ hơn thực tế khoảng hai mươi phần trăm. Nguyên nhân là giả thiết mật độ đều, cộng với việc dùng một số đo duy nhất cho toàn bộ chu kinh Trái Đất, trong khi Trái Đất thật không ở cân bằng thuỷ tĩnh. Với Sao Mộc thì dự đoán gần đúng: độ dẹt thật là $1:15{,}1$, và Cassini đã đo được khoảng một phần mười lăm ngay năm 1691. Còn với Trái Đất, cuộc tranh luận kéo dài gần một thế kỷ, từ những người theo Descartes cho rằng Trái Đất dẹt theo chiều ngược lại, đến hai cuộc khảo sát thực địa của Maupertuis và La Condamine năm 1737, rồi tới phép đo ở Schiehallion năm 1818. Chỉ đến thế kỷ XIX người ta mới chốt được $1:298$, và phần khó nhất hóa ra là kỹ thuật đo đạc địa lý chứ không phải lý thuyết.
+> Ông biết phần nào mình chắc và phần nào không chắc. Dấu hiệu xích đạo phình ra là thứ ông tin, vì nó xuất hiện cả trong lý thuyết lẫn trong quan sát của Cassini. Còn con số định lượng thì ông đặt kèm điều kiện, để người đọc không tưởng đó là kết quả chắc chắn. Tự ghi tên giới hạn của phương pháp trước khi ai hỏi là một đức tính hiếm, và ở đây nó cứu cho ông: sai số lớn nhất của bài toán này đến từ chính giả thiết mật độ đều.
+>
+> Dấu hiệu thì đúng, con số thì lệch. Độ dẹt thật của Trái Đất là $1:298$, nên phần phồng ra mà Newton tính ra lớn hơn thực tế khoảng ba mươi phần trăm, và con số $17$ dặm của ông so với khoảng $13$ dặm thật. Nguyên nhân là giả thiết mật độ đều, cộng với việc dùng một số đo duy nhất cho toàn bộ chu kinh Trái Đất, trong khi Trái Đất thật không ở cân bằng thuỷ tĩnh. Với Sao Mộc thì dự đoán gần đúng: độ dẹt thật là $1:15{,}1$, và Cassini đã đo được khoảng một phần mười lăm ngay năm 1691. Còn với Trái Đất, cuộc tranh luận kéo dài gần một thế kỷ, từ những người theo Descartes cho rằng Trái Đất dẹt theo chiều ngược lại, đến hai cuộc khảo sát thực địa của Maupertuis và La Condamine năm 1737, rồi tới phép đo ở Schiehallion năm 1818. Chỉ đến thế kỷ XIX người ta mới chốt được $1:298$, và phần khó nhất hóa ra là kỹ thuật đo đạc địa lý chứ không phải lý thuyết.
 
 ## Proposition XX. Bài toán IV
 
@@ -202,14 +202,16 @@ Tôi lấy một thanh sắt dài $3$ feet vào mùa đông ở nước Anh sẽ
 
 Sự cần cẩu và cẩn trọng này dường như thiếu ở những người quan sát khác. Nếu có thể tin vào các quan sát của ông Richer, Trái Đất cao hơn dưới xích đạo so với ở các cực, phần vượt khoảng $17$ dặm, như đã xuất hiện trước đó từ lý thuyết.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XX là cơ sở lý thuyết cho việc dùng **con lắc như một cái cân đo trọng lực**. Trọng lượng ở xích đạo nhẹ hơn ở cực, nên cùng một con lắc sẽ dao động chậm hơn ở xích đạo, và chiều dài chuẩn phải ngắn hơn.
+> **Con lắc như một cái cân đo trọng lực, và một phân tích sai số làm bằng phép đo**
 >
-> **Công thức.** Khi đi từ xích đạo tới cực, trọng lượng tăng gần đúng theo bình phương của sin vĩ độ, và người ta đo điều đó bằng cách so chiều dài con lắc đồng pha giữa các vĩ độ. Ông lập bảng dự đoán cho từng vĩ độ từ $0^\circ$ tới $90^\circ$, rồi đối chiếu với các chuyến đo ngoài đại lý: Richer ở Cayenne năm 1672, Halley ở St Helena năm 1677, Varin và des Hayes năm 1682, Couplet ở Lisbon và Paraiba năm 1697, des Hayes trở lại Cayenne năm 1699–1700, và Feuille ở Puerto Bello năm 1704.
+> Proposition XX là cơ sở lý thuyết cho việc dùng con lắc như một cái cân đo trọng lực. Trọng lượng ở xích đạo nhẹ hơn ở cực, nên cùng một con lắc sẽ dao động chậm hơn ở xích đạo, và chiều dài chuẩn phải ngắn hơn.
 >
-> **Vì sao Newton viết như vậy.** Vì các con số ấy **không khớp với nhau**, và ông chọn cách giải thích sự lệch thay vì giấu đi. Ông đo xem một thanh sắt dài một foot nung nóng giãn thêm bao nhiêu, rồi kết luận nhiệt độ giải thích được một phần chênh lệch. Ông cũng thẳng thắn bác bỏ số đo của Feuille là sai, và ghi rằng những quan sát của người khác quá thô sơ để tin. Sau cùng ông chấp nhận khoảng khác biệt nhỏ nhất mà mọi quan sát cùng chấp nhận, rồi trừ phần nhiệt. Đó là phân tích sai số thực sự, làm bằng dụng cụ và phép đo, chứ không phải bằng lý thuyết.
+> Khi đi từ xích đạo tới cực, trọng lượng tăng gần đúng theo bình phương của sin vĩ độ, và người ta đo điều đó bằng cách so chiều dài con lắc đồng pha giữa các vĩ độ. Ông lập bảng dự đoán cho từng vĩ độ từ $0^\circ$ tới $90^\circ$, rồi đối chiếu với các chuyến đo ngoài đại lý: Richer ở Cayenne năm 1672, Halley ở St Helena năm 1677, Varin và des Hayes năm 1682, Couplet ở Lisbon và Paraiba năm 1697, des Hayes trở lại Cayenne năm 1699–1700, và Feuille ở Puerto Bello năm 1704.
 >
-> **Hiện nay thì sao.** Nguyên lý ấy vẫn đúng, và giá trị hiện đại chính xác hơn hẳn bản gốc: trọng lực ở cực lớn hơn ở xích đạo khoảng nửa phần trăm, và vì chiều dài con lắc tỷ lệ thuận với nó, nên con lắc đồng pha ở xích đạo cũng ngắn hơn chừng nửa phần trăm. Kết quả đáng chú ý nhất là chuyến đi năm 1672 của Richer **đã xác nhận đúng dấu** — xích đạo phình ra, Trái Đất dẹt — nhưng đo độ lớn thì lớn hơn thực tế khoảng ba lần, nên kết quả ấy bị nghi ngờ suốt tám mươi năm. Chỉ khi des Hayes quay lại đo lại cẩn thận năm 1699–1700 thì con số mới nhỏ hơn nhiều và khớp với lý thuyết. Vì các nhà đo đạc địa lý cần biết trọng lực chính xác để suy ra độ cao, những số liệu con lắc thuộc loại ấy về sau trở thành nền tảng của trắc đạc.
+> Các con số ấy **không khớp với nhau**, và ông chọn cách giải thích sự lệch thay vì giấu đi. Ông đo xem một thanh sắt dài một foot nung nóng giãn thêm bao nhiêu, rồi kết luận nhiệt độ giải thích được một phần chênh lệch. Ông cũng thẳng thắn bác bỏ số đo của Feuille là sai, và ghi rằng những quan sát của người khác quá thô sơ để tin. Sau cùng ông chấp nhận khoảng khác biệt nhỏ nhất mà mọi quan sát cùng chấp nhận, rồi trừ phần nhiệt. Đó là phân tích sai số thực sự, làm bằng dụng cụ và phép đo, chứ không phải bằng lý thuyết.
+>
+> Nguyên lý ấy vẫn đúng, và giá trị hiện đại chính xác hơn hẳn bản gốc: trọng lực ở cực lớn hơn ở xích đạo khoảng nửa phần trăm, và vì chiều dài con lắc tỷ lệ thuận với nó, nên con lắc đồng pha ở xích đạo cũng ngắn hơn chừng nửa phần trăm. Kết quả đáng nói nhất là chuyến đi năm 1672 của Richer **đã xác nhận đúng dấu** — xích đạo phình ra, Trái Đất dẹt — nhưng đo độ lớn thì lớn hơn thực tế khoảng ba lần, nên kết quả ấy bị nghi ngờ suốt tám mươi năm. Chỉ khi des Hayes quay lại đo lại cẩn thận năm 1699–1700 thì con số mới nhỏ hơn nhiều và khớp với lý thuyết. Vì các nhà đo đạc địa lý cần biết trọng lực chính xác để suy ra độ cao, những số liệu con lắc thuộc loại ấy về sau trở thành nền tảng của trắc đạc.
 
 *Các số liệu, bảng và công thức của Proposition XIX–XX có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan từng trang trước khi đánh dấu là đã kiểm tra công thức. Hình kênh nước và các bảng số liệu của bản gốc cũng chưa được dựng lại.*

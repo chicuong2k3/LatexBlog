@@ -5,8 +5,6 @@ slug: "sach-i-phan-iii-proposition-xii"
 number: 22
 ---
 
-# Sách I, Phần III. Proposition XII
-
 ![Hypebol, hai tiêu điểm và lực hướng tâm](../assets/proposition-12-hyperbola-focus.svg)
 
 *Hình 12. Sơ đồ được dựng lại từ hình minh họa trong bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -79,26 +77,34 @@ $$
 
 Theo Hệ quả 1 và 5 của Proposition VI, lực hướng tâm tỷ lệ nghịch với $L \times SP^2$. Vì $L$ là hằng số, lực hướng tâm tỷ lệ nghịch với bình phương khoảng cách $SP$.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XII lặp lại đúng cách dựng của Proposition XI, chỉ thay elip bằng hypebol, và thu được **cùng một quy luật**: lực tỷ lệ nghịch với bình phương khoảng cách tới tiêu điểm. Đó là thông điệp quan trọng nhất của cả Phần III: elip, parabol và hypebol không phải ba hiện tượng khác nhau, mà là ba trường hợp của **cùng một lực**.
+> **Elip, parabol và hypebol là ba trường hợp của cùng một lực**
 >
-> **Công thức.** Lực vẫn là $F \propto \dfrac{1}{L \cdot SP^2}$ với $L = \dfrac{2BC^2}{AC}$. Khác biệt giữa ba conic nằm hoàn toàn trong **dấu của năng lượng riêng** $\mathcal{E} = \dfrac{v^2}{2} - \dfrac{\mu}{r}$: âm thì quỹ đạo khép kín là elip, bằng không thì parabol, dương thì hypebol. Cùng một hằng số $\mu$ cho cả ba, không cần thay đổi gì.
+> Proposition XII lặp lại đúng cách dựng của Proposition XI, chỉ thay elip bằng hypebol, và thu được **cùng một quy luật**: lực tỷ lệ nghịch với bình phương khoảng cách tới tiêu điểm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần chứng minh tính phổ quát chứ không chỉ một trường hợp. Nếu chỉ làm elip, người đọc có thể nghi ngờ đó là đặc tính riêng của hình elip. Việc cùng một phép dựng cho ra cùng một số mũ trên một hình khác là bằng chứng rằng nghịch đảo bậc hai thuộc về bản thân lực, không thuộc về hình dạng quỹ đạo. Newton cũng nói trước chi phí của việc này: ở cuối chương trước ông đã viết rằng sẽ chứng minh các trường hợp còn lại bằng những lập luận riêng.
+> Lực vẫn là $F \propto \dfrac{1}{L \cdot SP^2}$ với $L = \dfrac{2BC^2}{AC}$. Khác biệt giữa ba conic nằm hoàn toàn trong **dấu của năng lượng riêng** $\mathcal{E} = \dfrac{v^2}{2} - \dfrac{\mu}{r}$: âm thì quỹ đạo khép kín là elip, bằng không thì parabol, dương thì hypebol. Cùng một hằng số $\mu$ cho cả ba, không cần thay đổi gì.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay gọi đây là sự **thống nhất của lực nghịch đảo bậc hai**, và nó là nền của toàn bộ cơ học Kepler. Ý nghĩa thực tiễn rất lớn: cùng một phương trình $F = -\mu m/r^2$ vừa giải thích vì sao Mặt Trăng quay quanh Trái Đất, vừa giải thích vì sao một sao chổi bay tới rồi quay đi. Khác biệt giữa bị giữ và thoát không nằm ở bản chất lực, chỉ nằm ở năng lượng mà vật thể mang theo khi đến.
+> **Chứng minh tính phổ quát, không chỉ một trường hợp**
+>
+> Nếu chỉ làm elip, người đọc có thể nghi ngờ đó là đặc tính riêng của hình elip. Việc cùng một phép dựng cho ra cùng một số mũ trên một hình khác là bằng chứng rằng nghịch đảo bậc hai thuộc về bản thân lực, không thuộc về hình dạng quỹ đạo. Newton cũng nói trước chi phí của việc này: ở cuối chương trước ông đã viết rằng sẽ chứng minh các trường hợp còn lại bằng những lập luận riêng.
+>
+> Cùng một phương trình $F = -\mu m/r^2$ vừa giải thích vì sao Mặt Trăng quay quanh Trái Đất, vừa giải thích vì sao một sao chổi bay tới rồi quay đi. Khác biệt giữa bị giữ và thoát không nằm ở bản chất lực, chỉ nằm ở năng lượng mà vật thể mang theo khi đến.
 
 Có thể chứng minh cùng kết quả ấy theo cách khác. Lực hướng về tâm $C$ của hypebol tỷ lệ với khoảng cách $CP$. Nhưng từ đó, theo Hệ quả 3 của Proposition VII, lực hướng về tiêu điểm $S$ sẽ tỷ lệ với $\frac{PE^3}{PT^3}$; tức là, vì $PE$ tỷ lệ nghịch với $SP^2$, lực ấy tỷ lệ nghịch với bình phương khoảng cách $SP$.
 
 Cũng có thể chứng minh theo cùng cách rằng nếu lực hướng tâm của vật thể biến thành lực ly tâm, vật thể sẽ chuyển động trong hypebol liên hợp.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Câu cuối cùng nói một điều ít ai để ý: nếu đảo dấu lực, quỹ đạo hypebol biến thành **hypebol liên hợp** của nó. Đây không phải chi tiết kỹ thuật, mà là cách hình học tự nói lên tính chất của lực.
+> **Đảo dấu lực thì quỹ đạo hypebol thành hypebol liên hợp**
 >
-> **Công thức.** Hypebol ở tọa độ chuẩn có phương trình $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$, và hypebol liên hợp của nó là $\dfrac{y^2}{b^2} - \dfrac{x^2}{a^2} = 1$: chỉ đổi dấu trong phương trình, tức đổi vai trò của trục chính. Với quỹ đạo Kepler $r = \dfrac{p}{1 + e\cos\theta}$, việc đổi dấu lực biến biểu thức này thành $r = \dfrac{p}{e\cos\theta - 1}$, vẫn là một conic cùng họ.
+> Câu cuối cùng nói một điều ít ai để ý. Đây không phải chi tiết kỹ thuật, mà là cách hình học tự nói lên tính chất của lực.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang xử lý câu hỏi ngược: cho quỹ đạo đã biết, lực có nhất thiết là lực hướng tâm không? Ở Hệ quả 1 của Proposition III ở chương trước, ông đã cảnh báo rằng quy luật diện tích đều không chứng minh có lực hướng tâm. Ở đây ông trả lời thẳng: nếu lực là lực ly tâm, vật thể vẫn chạy trên một conic, chỉ là conic liên hợp. Hình học không đủ để phân biệt lực hút với lực đẩy — chỉ dấu của lực mới làm được.
+> Hypebol ở tọa độ chuẩn có phương trình $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$, và hypebol liên hợp của nó là $\dfrac{y^2}{b^2} - \dfrac{x^2}{a^2} = 1$: chỉ đổi dấu trong phương trình, tức đổi vai trò của trục chính. Với quỹ đạo Kepler $r = \dfrac{p}{1 + e\cos\theta}$, việc đổi dấu lực biến biểu thức này thành $r = \dfrac{p}{e\cos\theta - 1}$, vẫn là một conic cùng họ.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay gặp đúng cái bẫy này trong vật lí hạt: hai tương tác khác nhau về cơ chế nhưng có cùng phương trình quỹ đạo sẽ cho ra cùng một quỹ đạo, và chỉ quan sát quỹ đạo thì không phân biệt được. Đó là lý do vật lí thực nghiệm không bao giờ dừng ở phương trình chuyển động mà luôn đi tìm lực. Trong toán học, hypebol liên hợp còn là ví dụ đầu tiên của ý tưởng sau này trở thành **phép đối xứng**: hai hình không giống nhau nhưng gắn với nhau bằng một phép biến đổi giả dễ.
+> **Hình học không đủ để phân biệt lực hút với lực đẩy**
+>
+> Ông đang xử lý câu hỏi ngược: cho quỹ đạo đã biết, lực có nhất thiết là lực hướng tâm không? Ở Hệ quả 1 của Proposition III ở chương trước, ông đã cảnh báo rằng quy luật diện tích đều không chứng minh có lực hướng tâm. Ở đây ông trả lời thẳng: nếu lực là lực ly tâm, vật thể vẫn chạy trên một conic, chỉ là conic liên hợp. Chỉ dấu của lực mới làm được.
+>
+> Người đọc hôm nay gặp đúng cái bẫy này trong vật lí hạt: hai tương tác khác nhau về cơ chế nhưng có cùng phương trình quỹ đạo sẽ cho ra cùng một quỹ đạo, và chỉ quan sát quỹ đạo thì không phân biệt được. Đó là lý do vật lí thực nghiệm không bao giờ dừng ở phương trình chuyển động mà luôn đi tìm lực.

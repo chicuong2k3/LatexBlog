@@ -5,8 +5,6 @@ slug: "sach-i-phan-xii-xiii-proposition-lxxix-lxxxvi"
 number: 40
 ---
 
-# Sách I, Phần XII–XIII. Proposition LXXIX–LXXXVI
-
 ![Lực hút của các vật thể cầu](../assets/section-xii-spherical-attraction.svg)
 
 *Hình 28. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -347,15 +345,17 @@ Nếu có nhiều vật thể gồm các hạt thể bằng nhau, lực của ch
 
 Lập luận giống Proposition trước. Chuyển động của hạt thể bị hút cũng giống như khi các vật thể hút hợp nhất thành một quả cầu, với điều kiện trọng tâm chung đứng yên hoặc chuyển động thẳng đều.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition LXXXVIII là một trong những kết quả bất ngờ nhất của *Principia*: nếu các hạt thể của một vật thể hút nhau bằng lực **tỷ lệ thuận với khoảng cách** — tức là lực Hooke — thì vật thể ấy, dù có hình dạng gì, hút một hạt thể bên ngoài **đúng như một quả cầu** có cùng khối lượng đặt tại trọng tâm.
+> **Lực tuyến tính giữa các hạt thể: hình dạng vô tầm quan, chỉ cần tổng khối lượng**
 >
-> **Công thức.** Chứng minh làm việc trên từng cặp. Với hai hạt thể $A$, $B$ có khối lượng $a$, $b$ và trọng tâm chung $G$ thỏa $AG:BG = b:a$, lực $a\cdot GZ$ và $b\cdot GZ$ cùng hướng về $G$ nên hợp thành $(a+b)\cdot GZ$; còn hai số hạng $a\cdot AG$ và $b\cdot BG$ thì bằng nhau và ngược hướng nên triệt tiêu. Vậy **hai hạt thể hành xử như một hạt thể duy nhất** đặt tại $G$. Lặp lại với hạt thể thứ ba, rồi thứ tư, ta thu được toàn bộ vật thể.
+> Nếu các hạt thể của một vật thể hút nhau theo lực tỷ lệ thuận với khoảng cách — tức lực Hooke — thì vật thể ấy, dù có hình dạng gì, hút một hạt thể bên ngoài **đúng như một quả cầu** có cùng khối lượng đặt tại trọng tâm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đang trả lời chính câu hỏi ông đặt ra ở đầu Phần XIII: nếu vật thể **không** phải cầu thì bài toán còn giải được không. Kết quả là có, trong hai trường hợp được gọi tên rõ ràng: lực nghịch đảo bậc hai, và lực tuyến tính. Cả hai đều quy về một điểm.
+> Chứng minh làm việc trên từng cặp. Với hai hạt thể $A$, $B$ có khối lượng $a$, $b$ và trọng tâm chung $G$ thỏa $AG:BG = b:a$, lực $a\cdot GZ$ và $b\cdot GZ$ cùng hướng về $G$ nên hợp thành $(a+b)\cdot GZ$; còn hai số hạng $a\cdot AG$ và $b\cdot BG$ thì bằng nhau và ngược hướng nên triệt tiêu. Vậy **hai hạt thể hành xử như một hạt thể duy nhất** đặt tại $G$. Lặp lại với hạt thể thứ ba, rồi thứ tư, ta thu được toàn bộ vật thể.
 >
-> **Hiện nay thì sao.** Đây là nội dung của khái niệm **thế năng tuyến tính**: khi thế năng là hàm bậc nhất của khoảng cách, trường sinh ra chỉ phụ thuộc tổng khối lượng và vị trí trọng tâm, mọi chi tiết về hình dạng đều bị xoá. Hệ quả của Proposition LXXXIX nói rõ hơn: vật thể bị hút sẽ chạy trên **elip có tâm tại trọng tâm**, đúng như với một quả cầu. Người đọc hôm nay dùng đúng cơ chế này khi giả định một cụm thiên thể gần đều có thể thay bằng một khối lượng tương đương tại tâm khối lượng.
+> Đây chính là câu trả lời cho câu hỏi ông đặt ra ở đầu Phần XIII: nếu vật thể **không** phải cầu thì bài toán còn giải được không. Có, trong đúng hai trường hợp được đặt tên rõ ràng: lực nghịch đảo bậc hai, và lực tuyến tính. Cả hai đều quy về một điểm.
+>
+> Nội dung hôm nay gọi là **thế năng tuyến tính**: khi thế năng là hàm bậc nhất của khoảng cách thì trường sinh ra chỉ phụ thuộc tổng khối lượng và vị trí trọng tâm, mọi chi tiết về hình dạng bị xoá hẳn. Hệ quả của Proposition LXXXIX nói rõ hơn: vật thể bị hút sẽ chạy trên **elip có tâm tại trọng tâm**, đúng như với một quả cầu. Người đọc hôm nay dùng đúng cơ chế này mỗi khi thay một cụm thiên thể gần đều bằng một khối lượng tương đương tại trọng tâm khối lượng.
 
 ## Proposition XC. Bài toán XLIV
 
@@ -467,15 +467,17 @@ Nếu bỏ phần xa hơn vì lực của nó nhỏ không đáng kể so với 
 
 Nếu một vật thể hữu hạn, phẳng ở một mặt, hút một hạt thể đối diện với giữa mặt ấy, và khoảng cách giữa hạt thể với mặt rất nhỏ so với kích thước vật thể, thì lực toàn vật thể gần đúng giảm theo lũy thừa có số mũ nhỏ hơn số mũ lực hạt thể ba đơn vị. Điều này không đúng khi lực hạt thể giảm theo lũy thừa bậc ba, vì lực của phần xa trong Hệ quả 2 luôn lớn hơn vô hạn lực phần gần.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XCIII xử lý trường hợp mặt phẳng vô hạn, và kết quả có một **ngưỡng** rất đáng chú ý: lực của vật thể trải rộng vô hạn giảm theo $1/d^{n-3}$, nghĩa là số mũ **nhỏ hơn ba đơn vị** so với lực của một hạt thể đơn lẻ.
+> **Mặt phẳng vô hạn: số mũ lùi ba đơn vị, và có một ngưỡng không vượt được**
 >
-> **Công thức.** Với lực hạt thể tỷ lệ $1/r^n$, lực của toàn bộ mặt phẳng ở khoảng cách $CH$ tỷ lệ nghịch với $CH^{n-2}$; mặt phẳng được chia thành các dải song song, mỗi dải đóng góp tỷ lệ $HM/CH^{n-2}$, và tổng thành diện tích tỷ lệ nghịch với $CG^{n-3}$. Hệ quả 3 nêu trường hợp loại: với $n = 3$, số mũ trở về $0$, và tích phân trên toàn mặt phẳng **không hội tụ** về phía vô cùng — phần xa luôn lớn hơn vô hạn phần gần. Vậy $n = 3$ là đường biên đúng, không phải một trường hợp có thể suy rộng.
+> Với lực của một hạt thể tỷ lệ $1/r^n$, lực của toàn bộ mặt phẳng ở khoảng cách $d$ tỷ lệ nghịch với $d^{n-3}$. Số mũ lùi **ba đơn vị** so với lực của một hạt thể đơn lẻ, và đó là hệ quả trực tiếp của việc chia mặt phẳng thành các dải song song: một dải ở khoảng cách $x$, rộng $dx$, có diện tích tỷ lệ với $x\,dx$, nên nó hút với lực tỷ lệ với $x\,dx/x^n = x^{1-n}dx$. Tổng là $\int_0^\infty x^{1-n}\,dx$.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần biết quy luật lực khi vật thể bị hút **không** có hình cầu, và ông chọn hình hạn nhưng vẫn giải được. Việc ông nêu rõ điều kiện $n > 3$ cho thấy ông theo đúng tiêu chuẩn: một kết quả chỉ đúng trong một miền phải nói thẳng miền ấy, chứ không giả vờ đúng với mọi trường hợp.
+> Tích phân ấy chỉ hội tụ khi $n > 3$, và khi ấy nó bằng $\dfrac{1}{n-2}\dfrac{1}{d^{n-3}}$. Hệ quả 3 nêu trường hợp loại: với $n = 3$, số mũ trở về $0$, tích phân trên toàn mặt phẳng **không hội tụ** — phần xa lớn hơn vô hạn phần gần, và lực hút tổng thể không tồn tại. Vậy $n = 3$ là đường biên thật, không phải một trường hợp để suy rộng.
 >
-> **Hiện nay thì sao.** Bài toán mặt phẳng vô hạn vẫn là công cụ chuẩn trong trọng lực học và vật lí thiên thể: nó dùng để tính trường của các lớp đất gần như phẳng, và cũng là mô hình đơn giản nhất cho một thiên hà vô hạn. Cảnh báo về $n = 3$ chính là lý do các mô hình "vũ trụ phẳng vô hạn" bị xem là bệnh lý: tích phân không hội tụ, nên lực hút tổng thể không tồn tại. Người đọc hôm nay gặp lại đúng cái phép tích phân phân kỳ ấy dưới tên khác, trong các bài toán về tấm phẳng trải rộng vô hạn.
+> Ông viết vậy vì cần quy luật lực cho vật thể không có hình cầu, và ông chọn đúng hình hạn mà vẫn giải được. Việc nêu thẳng điều kiện $n > 3$ cho thấy ông giữ một tiêu chuẩn: một kết quả chỉ đúng trong một miền thì phải nói rõ miền ấy, thay vì giả vờ nó đúng với mọi trường hợp.
+>
+> Mặt phẳng vô hạn vẫn là công cụ chuẩn trong trọng lực học và vật lí thiên thể: nó tính được trường của các lớp đất gần như phẳng, và nó là mô hình đơn giản nhất cho một thiên hà vô hạn. Cảnh báo về $n = 3$ cũng chính là lý do các mô hình "vũ trụ phẳng vô hạn" bị xem là bệnh lý — tích phân không hội tụ, nên tổng lực hút không tồn tại để mà tính.
 
 ## Học luận
 

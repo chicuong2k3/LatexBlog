@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xiv"
 number: 59
 ---
 
-# Sách III. Proposition XIV
-
 ![Minh họa aphel, node và quỹ đạo hành tinh](../assets/book-ii-section-i-motion.svg)
 
 *Hình 47. Sơ đồ được dùng lại từ Phần I; các sơ đồ aphel, node và quỹ đạo của bản gốc cần được đối chiếu riêng.*
@@ -27,15 +25,17 @@ Các sao cố định là bất động, vì chúng giữ nguyên vị trí củ
 
 Vì các sao này không chịu parallax đáng cảm nhận nào từ chuyển động quanh năm của Trái Đất, nên chúng không thể có lực đủ lớn, vì khoảng cách vô cùng xa, để tạo ra bất kỳ tác dụng đáng cảm nhận nào trong hệ thống của chúng ta. Ngoài ra, các sao cố định phân tán khắp nơi trên thiên cầu; những lực hút ngược chiều của chúng triệt tiêu các lực hút lẫn nhau, theo Proposition LXX, Sách I.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Hệ quả 1 và 2 dựng một lập luận ngược rất lạ. Ta quen coi các sao là bất động; ở đây Newton suy ra sự bất động ấy **từ** chuyển động của chính các hành tinh.
+> **Sự bất động của các ngôi sao được suy ra từ chính chuyển động của các hành tinh**
 >
-> **Công thức.** Nếu aphel và node của các hành tinh đứng yên, thì bất kỳ vật thể nào giữ nguyên vị trí tương đối với chúng cũng phải đứng yên. Các sao đó vẹn mang đúng đặc điểm ấy, nên chúng bất động. Rồi ông dựngng tiếp một lập luận về lực: vì các sao không có parallax đáng kể từ chuyển động quanh năm của Trái Đất, nên ở khoảng cách cực xa ấy chúng không thể có lực nào đủ lớn để tác động tới hệ Mặt Trời. Ông còn thêm một lý do nữa: các sao phân tán khắp thiên cầu, nên lực hút của chúng triệt tiêu nhau.
+> Hệ quả 1 và 2 dựng một lập luận ngược rất lạ. Ta quen coi các sao là bất động; ở đây Newton suy ra sự bất động ấy **từ** chuyển động của chính các hành tinh.
 >
-> **Vì sao Newton viết như vậy.** Vì ông muốn một cách kiểm chứng dựa trên những gì quan sát được ngay từ Trái Đất, chứ không cần dụng cụ nào đo trực tiếp. Ông cũng biết chỗ yếu của lập luận: nó đứng trên tiền đề là các aphel và node bất động, mà chính ông vừa thừa nhận có nhiễu. Nên ông không giấu điều đó, mà nói thẳng — bất đẳng thức có tồn tại, chỉ là quá nhỏ để tính.
+> Nếu aphel và node của các hành tinh đứng yên, thì bất kỳ vật thể nào giữ nguyên vị trí tương đối với chúng cũng phải đứng yên. Các sao đó vẹn mang đúng đặc điểm ấy, nên chúng bất động. Rồi ông dựng tiếp một lập luận về lực: vì các sao không có parallax đáng kể từ chuyển động quanh năm của Trái Đất, nên ở khoảng cách cực xa ấy chúng không thể có lực nào đủ lớn để tác động tới hệ Mặt Trời. Ông còn thêm một lý do nữa: các sao phân tán khắp thiên cầu, nên lực hút của chúng triệt tiêu nhau.
 >
-> **Hiện nay thì sao.** Hai phần của lập luận ấy có kết cục khác nhau. Chỗ đúng là ý dùng khoảng cách cực xa để lập luận rằng lực không đáng kể: đó chính là cách giải quyết mọi nghịch lý chuyển động của Sao Mộc, hay của Trái Đất phẳng, chỉ bằng một suy luận duy nhất. Còn chỗ sai là kết luận về sự bất động. Năm 1718, chính Halley phát hiện các ngôi sao **không** đứng yên: ông so vị trí của chúng với bản Hipparchus cũ hơn nghìn năm và thấy cả đám đã dịch chuyển. Từ đó đi, kết luận còn đẹp hơn: các ngôi sao không đứng yên trước mặt ta, vì chính ta đang di chuyển. Mặt Trời bay với tốc độ khoảng $20\ \mathrm{km/s}$ về phía chòm sao Hercules, và phần lớn chuyển động mà Halley đo thấy bắt nguồn từ đó.
+> Ông muốn một cách kiểm chứng dựa trên những gì quan sát được ngay từ Trái Đất, chứ không cần dụng cụ nào đo trực tiếp. Và ông biết chỗ yếu của lập luận: nó đứng trên tiền đề là các aphel và node bất động, mà chính ông vừa thừa nhận có nhiễu. Nên ông không giấu điều đó, mà nói thẳng — bất đẳng thức có tồn tại, chỉ là quá nhỏ để tính.
+>
+> Hai phần của lập luận ấy có kết cục khác nhau. Chỗ đúng là ý dùng khoảng cách cực xa để lập luận rằng lực không đáng kể: đó chính là cách giải quyết mọi nghịch lý chuyển động của Sao Mộc, hay của Trái Đất phẳng, chỉ bằng một suy luận duy nhất. Còn chỗ sai là kết luận về sự bất động. Năm 1718, chính Halley phát hiện các ngôi sao **không** đứng yên: ông so vị trí của chúng với bản Hipparchus cũ hơn nghìn năm và thấy cả đám đã dịch chuyển. Từ đó đi, kết luận còn đẹp hơn: các ngôi sao không đứng yên trước mặt ta, vì chính ta đang di chuyển. Mặt Trời bay với tốc độ khoảng \(20\ \mathrm{km/s}\) về phía chòm sao Hercules, và phần lớn chuyển động mà Halley đo thấy bắt nguồn từ đó.
 
 ## Học luận
 
@@ -51,15 +51,17 @@ $$
 
 Những chuyển động này nhỏ đến mức chúng ta đã bỏ qua trong Proposition này.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận này là lần đầu tiên trong lịch sử vật lý, Newton **định lượng một hiệu ứng không quan sát trực tiếp**: aphel của các hành tinh phải trôi dần về phía tiến, và tốc độ trôi ấy tuân theo một quy luật riêng có thể kiểm tra.
+> **Aphel của Sao Hỏa trôi 33 giây cung mỗi trăm năm: dự đoán trước khi quan sát được**
 >
-> **Công thức.** Các hành tinh gần Mặt Trời rất nhỏ nên lực qua lại giữa chúng yếu, còn lực của Sao Mộc và sao Thổ thì đủ lớn để làm lệch aphel của chúng. Tốc độ dịch chuyển ấy tỷ lệ với **lũy thừa \(3/2\)** của các khoảng cách tới Mặt Trời. Nếu trong một trăm năm aphel của Sao Hỏa trôi \(33'20''\), thì aphel của Trái Đất, Sao Kim và Sao Thủy lần lượt trôi \(17'40''\), \(10'53''\) và \(4'16''\).
+> Học luận này là lần đầu tiên trong lịch sử vật lý, Newton định lượng một hiệu ứng không quan sát trực tiếp: aphel của các hành tinh phải trôi dần về phía tiến, và tốc độ trôi ấy tuân theo một quy luật riêng có thể kiểm tra.
 >
-> **Vì sao Newton viết như vậy.** Vì ông hiểu rằng một cơ chế ta không thấy trực tiếp chỉ đáng tin khi nó sinh ra một sai số **có thể đo**. Vì thế ông dẫn ra những con số nhỏ nhưng cụ thể, rồi thừa nhận thẳng rằng chúng nhỏ đến mức không thể dùng cho Proposition trước. Đó là cách ông kiểm tra lý thuyết mà vẫn giữ được sự khiêm tốn: đưa ra con số, rồi nói rõ nó chưa đủ lớn để dùng.
+> Các hành tinh gần Mặt Trời rất nhỏ nên lực qua lại giữa chúng yếu, còn lực của Sao Mộc và sao Thổ thì đủ lớn để làm lệch aphel của chúng. Tốc độ dịch chuyển ấy tỷ lệ với lũy thừa \(3/2\) của các khoảng cách tới Mặt Trời. Nếu trong một trăm năm aphel của Sao Hỏa trôi \(33'20''\), thì aphel của Trái Đất, Sao Kim và Sao Thủy lần lượt trôi \(17'40''\), \(10'53''\) và \(4'16''\). Ba con số sau kiểm được bằng chính định luật: \((1{,}52)^{3/2} \approx 1{,}88\), \((1{,}52/0{,}72)^{3/2} \approx 3{,}06\), và \((1{,}52/0{,}39)^{3/2} \approx 7{,}8\), nhân lần lượt vào \(33'20''\) cho ra đúng ba kết quả kia.
 >
-> **Hiện nay thì sao.** Quy luật \(a^{3/2}\) ấy vẫn đúng và giờ là công thức chuẩn của tiền tiến cận điểm. Nhưng con số tuyệt đối thì không giữ nguyên: giá trị hiện nay cho phần nhiễu hành tinh vào chuyển động cận điểm là khoảng \(49''\) **mỗi năm theo chiều lùi**, lớn hơn con số của Newton khoảng hai lần rưỡi và ngược chiều hẳn; chính Newton đã phải sửa lại kết luận ấy ở các ấn bản sau. Sự kiện được Laplace giải thích khoảng một trăm hai mươi năm sau, và đó là cột mốc quan trọng: nó cho thấy một dự đoán hằng số mà không ai quan sát được vẫn có thể được kiểm chứng.
+> Ông hiểu rằng một cơ chế ta không thấy trực tiếp chỉ đáng tin khi nó sinh ra một sai số có thể đo. Vì thế ông dẫn ra những con số nhỏ nhưng cụ thể, rồi thừa nhận thẳng rằng chúng nhỏ đến mức không thể dùng cho Proposition trước. Đó là cách ông kiểm tra lý thuyết mà vẫn giữ được sự khiêm tốn: đưa ra con số, rồi nói rõ nó chưa đủ lớn để dùng.
+>
+> Quy luật \(a^{3/2}\) ấy vẫn đúng và giờ là công thức chuẩn của tiền tiến cận điểm. Nhưng con số tuyệt đối thì không giữ nguyên: giá trị hiện nay cho phần nhiễu hành tinh vào chuyển động cận điểm là khoảng \(49''\) **mỗi năm theo chiều lùi**, lớn hơn con số của Newton khoảng hai lần rưỡi và ngược chiều hẳn; chính Newton đã phải sửa lại kết luận ấy ở các ấn bản sau. Sự kiện được Laplace giải thích khoảng một trăm hai mươi năm sau, và đó là một cột mốc quan trọng: nó cho thấy một dự đoán hằng số mà không ai quan sát được vẫn có thể được kiểm chứng.
 
 ## Proposition XV. Bài toán I
 

@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xlii"
 number: 67
 ---
 
-# Sách III. Proposition XLII
-
 ![Minh họa quỹ đạo sao chổi và các phép dựng quỹ đạo](../assets/book-ii-section-i-motion.svg)
 
 *Hình 55. Sơ đồ minh họa được dùng lại từ Phần I; các hình dựng quỹ đạo, node, độ nghiêng, tham số, đường kinh ngang và bảng so sánh trong Proposition XLII cần được đối chiếu riêng với scan.*
@@ -115,15 +113,17 @@ $$
 
 sẽ là đường kinh ngang thật của quỹ đạo mà sao chổi mô tả. Từ đường kinh ngang đã cho, thời gian tuần hoàn của sao chổi cũng được xác định. $\square$
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XLII sửa một quỹ đạo sao chổi đã dựng ở Proposition trước. Proposition trước đã cho ba điểm; Proposition này nói rõ ba điểm thì **chưa đủ**, vì mặt phẳng quỹ đạo còn hai mức tự do: kinh độ node và độ nghiêng. Ông thử ba cách, lần lượt dời node, dời độ nghiêng, rồi dùng tỷ lệ các khoảng thời gian để tách ba thử nghiệm ấy và ra đáp số.
+> **Ba điểm chưa đủ: mặt phẳng quỹ đạo còn hai mức tự do**
 >
-> **Công thức.** Giữ nguyên độ nghiêng, dời kinh độ node tăng thêm $20'$ hoặc $30'$ rồi tính lại, được thời gian $t$. Rồi giữ nguyên node, dời độ nghiêng tăng cùng lượng ấy, được thời gian $r$. Từ đó ông tìm hai số $m$ và $n$ sao cho các hiệu ấy triệt tiêu; khi đó độ nghiêng thật là $I+mQ$ còn kinh độ node thật là $K+mP$. Từ tham số quỹ đạo và đường kinh ngang, suy ra cả thời gian tuần hoàn.
+> Proposition XLII sửa một quỹ đạo sao chổi đã dựng ở Proposition trước. Proposition trước đã cho ba điểm; Proposition này nói rõ ba điểm thì **chưa đủ**, vì mặt phẳng quỹ đạo còn hai mức tự do: kinh độ node và độ nghiêng. Ông thử ba cách, lần lượt dời node, dời độ nghiêng, rồi dùng tỷ lệ các khoảng thời gian để tách ba thử nghiệm ấy và ra đáp số.
 >
-> **Vì sao Newton viết như vậy.** Vì ông biết một con sao chổi không đủ để biết chu kỳ thật, và nói thẳng điều ấy: độ lệch tâm và thời gian tuần hoàn bị ràng buộc vào nhau. Vì vậy ông đề nghị so sánh nhiều sao chổi thấy ở những thời điểm khác nhau, giả sách quỹ đạo là parabol, rồi xem con nào mô tả cùng một quỹ đạo thì chúng là một. Ông cũng nói các quỹ đạo parabol ấy gần như luôn khớp với hiện tượng, và bảng với sao chổi 1664–1665 cho thấy lý thuyết khớp "không kém chính xác hơn" các lý thuyết hành tinh. Ông thậm chí nêu một hiệu chỉnh còn phải làm: trừ đi chừng $12''$ ở chỗ sao chổi chạy nhanh nhất, và nhận ra đó là parallax thường niên.
+> Giữ nguyên độ nghiêng, dời kinh độ node tăng thêm $20'$ hoặc $30'$ rồi tính lại, được thời gian $t$. Rồi giữ nguyên node, dời độ nghiêng tăng cùng lượng ấy, được thời gian $r$. Từ đó ông tìm hai số $m$ và $n$ sao cho các hiệu ấy triệt tiêu; khi đó độ nghiêng thật là $I+mQ$ còn kinh độ node thật là $K+mP$. Từ tham số quỹ đạo và đường kinh ngang, suy ra cả thời gian tuần hoàn.
 >
-> **Hiện nay thì sao.** Node và độ nghiêng vẫn là hai tham số chuẩn của một quỹ đạo ngày nay; khác ở chỗ ta dùng hàng nghìn quan sát và tối ưu tổng thể. Nhận xét "không thể dùng một con sao chổi để biết chu kỳ" của ông sau này thành một ý tưởng nền của cái ngày nay gọi là **đám mây Oort**: sao chổi không đến từ một dải phẳng như hành tinh, mà từ một kho vựn cầu khổng lồ ở rìa hệ Mặt Trời, bị các ngôi sao trôi qua và thủy triều thiên hà đẩy vào phía trong. Nhờ vậy chúng tới từ mọi hướng và mọi độ nghiêng, đúng như ông quan sát.
+> Ông biết một con sao chổi không đủ để biết chu kỳ thật, và nói thẳng điều ấy: độ lệch tâm và thời gian tuần hoàn bị ràng buộc vào nhau. Vì vậy ông đề nghị so sánh nhiều sao chổi thấy ở những thời điểm khác nhau, giả sách quỹ đạo là parabol, rồi xem con nào mô tả cùng một quỹ đạo thì chúng là một. Ông cũng nói các quỹ đạo parabol ấy gần như luôn khớp với hiện tượng, và bảng với sao chổi 1664–1665 cho thấy lý thuyết khớp không kém chính xác hơn các lý thuyết hành tinh. Ông thậm chí nêu một hiệu chỉnh còn phải làm: trừ đi chừng $12''$ ở chỗ sao chổi chạy nhanh nhất, và nhận ra đó là parallax thường niên.
+>
+> Node và độ nghiêng vẫn là hai tham số chuẩn của một quỹ đạo ngày nay; khác ở chỗ ta dùng hàng nghìn quan sát và tối ưu tổng thể. Nhận xét "không thể dùng một con sao chổi để biết chu kỳ" của ông sau này thành một ý tưởng nền của cái ngày nay gọi là **đám mây Oort**: sao chổi không đến từ một dải phẳng như hành tinh, mà từ một kho vựn cầu khổng lồ ở rìa hệ Mặt Trời, bị các ngôi sao trôi qua và thủy triều thiên hà đẩy vào phía trong. Nhờ vậy chúng tới từ mọi hướng và mọi độ nghiêng, đúng như ông quan sát.
 
 ### So sánh các sao chổi
 
@@ -522,15 +522,17 @@ Người ta nói rằng một ngôi sao mới xuất hiện với sự rực r�
 
 Còn những sao cố định xuất hiện và biến mất luân phiên, tăng lên chậm rãi và dần dần, hiếm khi vượt quá các sao cấp ba, có lẽ thuộc một loại khác. Chúng quay quanh trục của mình, và vì có một mặt sáng cùng một mặt tối, chúng lần lượt cho ta thấy hai mặt khác nhau.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Chương này dành một đoạn dài cho những ngôi sao xuất hiện đột ngột rồi tắt dần, và đoạn ấy là bằng chứng sớm nhất trong lịch sử rằng **bầu trời không bất biến** — điều vũ trụ quan Aristotle giữ suốt hai nghìn năm.
+> **1572 và 1604: hai ngôi sao làm sụp đổ niềm tin bầu trời bất biến**
 >
-> **Công thức.** Về ngôi sao năm 1572: Cornelius Gemma không nhìn thấy nó ngày 8 tháng Mười một, dù đang quan sát đúng vùng trời ấy trong đêm đó với bầu trời hoàn toàn trong; sang đêm kế tiếp nó sáng hơn bất kỳ ngôi sao cố định nào. Tycho Brahe thấy nó ngày 11 tháng cùng tháng lúc sáng rực nhất, rồi nó tắt hẳn sau mười sáu tháng, và màu đổi từ trắng ngả sang hơi vàng rồi đỏ như sao Hỏa. Ngôi sao năm 1604 thì học trò Kepler phát hiện ngày 30 tháng Chín, sáng hơn sao Mộc, và biến mất sau mười lăm hay mười sáu tháng. Newton còn nói một ngôi sao mới sáng bất thường như thế đã khiến Hipparchus lập danh mục các sao cố định, tức ông nối hiện tượng 1604 với **khai sinh của thiên văn học**.
+> Chương này dành một đoạn dài cho những ngôi sao xuất hiện đột ngột rồi tắt dần, và đoạn ấy là bằng chứng sớm nhất trong lịch sử rằng bầu trời không bất biến — điều vũ trụ quan Aristotle giữ suốt hai nghìn năm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cẩn thận tách hai loại sao chứ không gộp. Những ngôi tự dưng xuất hiện rồi tắt, ông thậm chí còn thử giải thích: các sao cố định dần hao mòn bởi ánh sáng và hơi nước mà chúng phát ra, và có thể được cấp lại bởi sao chổi rơi vào chúng. Còn nhóm sao lên xuống chậm, hiếm khi sáng quá cấp ba, thì ông nói thuộc loại khác: chúng quay quanh trục, một mặt sáng một mặt tối.
+> Về ngôi sao năm 1572: Cornelius Gemma không nhìn thấy nó ngày 8 tháng Mười một, dù đang quan sát đúng vùng trời ấy trong đêm đó với bầu trời hoàn toàn trong; sang đêm kế tiếp nó sáng hơn bất kỳ ngôi sao cố định nào. Tycho Brahe thấy nó ngày 11 tháng cùng tháng lúc sáng rực nhất, rồi nó tắt hẳn sau mười sáu tháng, và màu đổi từ trắng ngả sang hơi vàng rồi đỏ như sao Hỏa. Ngôi sao năm 1604 thì học trò Kepler phát hiện ngày 30 tháng Chín, sáng hơn sao Mộc, và biến mất sau mười lăm hay mười sáu tháng. Newton còn nói một ngôi sao mới sáng bất thường như thế đã khiến Hipparchus lập danh mục các sao cố định, tức ông nối hiện tượng 1604 với khai sinh của thiên văn học.
 >
-> **Hiện nay thì sao.** Hai ngôi sao ấy là **siêu tân tinh**: 1572 là siêu tân tinh của Tycho, loại Ia, ở Thiên Xứng, cách ta chín tới mười một nghìn năm ánh sáng; 1604 là của Kepler, cũng loại Ia, ở Xà Bàng, cách ta hai mươi nghìn năm ánh sáng. Cả hai nổ trong thiên hà chúng ta, và chính chúng đã làm sụp đổ ý niệm bầu trời bất biến. Sự đổi màu cũng là dấu hiệu vật lý thật: siêu tân tinh loại Ia khởi đầu màu xanh trắng rồi đỏ dần khi nguội đi. Nhóm sao nhấp nháy mà ông nhận ra có biến thiên thì đúng là **sao biến quang**, chỉ có cơ chế là sai — chúng phồng xẹp co lại chứ không quay. Ý tưởng "sao được cấp thêm nhiên liệu" ấy có hậu duệ rất đẹp: siêu tân tinh chính là nguồn chủ yếu của các nguyên tố nặng.
+> Ông cẩn thận tách hai loại sao chứ không gộp. Những ngôi tự dưng xuất hiện rồi tắt, ông thậm chí còn thử giải thích: các sao cố định dần hao mòn bởi ánh sáng và hơi nước mà chúng phát ra, và có thể được cấp lại bởi sao chổi rơi vào chúng. Còn nhóm sao lên xuống chậm, hiếm khi sáng quá cấp ba, thì ông nói thuộc loại khác: chúng quay quanh trục, một mặt sáng một mặt tối.
+>
+> Cả hai ngôi sao ấy là siêu tân tinh: 1572 là siêu tân tinh của Tycho, loại Ia, ở Thiên Xứng, cách ta chín tới mười một nghìn năm ánh sáng; 1604 là của Kepler, cũng loại Ia, ở Xà Bàng, cách ta hai mươi nghìn năm ánh sáng. Cả hai nổ trong thiên hà chúng ta, và chính chúng đã làm sụp đổ ý niệm bầu trời bất biến. Sự đổi màu cũng là dấu hiệu vật lý thật: siêu tân tinh loại Ia khởi đầu màu xanh trắng rồi đỏ dần khi nguội đi. Nhóm sao nhấp nháy mà ông nhận ra có biến thiên thì đúng là sao biến quang, chỉ có cơ chế là sai — chúng phồng xẹp co lại chứ không quay. Ý tưởng "sao được cấp thêm nhiên liệu" ấy có hậu duệ rất đẹp: siêu tân tinh chính là nguồn chủ yếu của các nguyên tố nặng.
 
 Hơi nước từ Mặt Trời, các sao cố định và đuôi các sao chổi có thể cuối cùng gặp và rơi vào khí quyển các hành tinh nhờ lực hút của chúng. Ở đó, chúng ngưng tụ và biến thành nước cùng các hơi ẩm; rồi từ đó, dưới nhiệt chậm, chúng lần lượt chuyển thành muối, lưu huỳnh, chất lỏng chiết xuất, bùn, đất sét, cát, đá, san hô và những vật chất khác trên mặt đất.
 
@@ -608,14 +610,20 @@ Và giờ, chúng ta có thể nói thêm điều gì đó về một Thần xí
 
 Nhưng những điều ấy không thể được giải thích trong ít từ, và chúng ta cũng chưa có đủ những thí nghiệm cần thiết để xác định chính xác và chứng minh các quy luậh theo đó Thần điện và đàn hồi này tác dụng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Vài trang cuối này là đỉnh cao của sách, và cũng là chỗ Newton nói thẳng điều mà ông **không** biết. Ông vừa giải thích mọi hiện tượng trên trời và dưới biển bằng lực hút, rồi nói ông chưa biết nguyên nhân của lực ấy — và không đưa giả thuyết nào, vì điều gì không suy ra được từ hiện tượng thì gọi là giả thuyết, mà giả thuyết dù siêu hình hay vật lý đều không có chỗ đứng trong triết học thực nghiệm. Rồi ngay sau đó ông lại đặt một Thần xí cực kỳ tinh tế, thấm nhập trong mọi vật thể, để giải thích sự kết dính, tĩnh điện, ánh sáng và mọi cảm giác.
+> **Newton nói thẳng điều ông không biết**
 >
-> **Công thức.** Trước đó ông đã dựng lại cả ba nhóm lực, đều tỷ lệ nghịch với bình phương khoảng cách, và nêu rõ chúng **không** giống các nguyên nhân cơ học thường làm, tức là không tác dụng theo lượng bề mặt mà theo lượng vật chất rắn chúng chứa. Giả thuyết xoáy của Descartes thì bị bác: sao chổi với quỹ đạo hết sức lệch tâm phải xuyên qua xoáy hành tinh và bị đẩy với tốc độ rất lớn, điều mà xoáy không tạo ra.
+> Ông vừa giải thích mọi hiện tượng trên trời và dưới biển bằng lực hút, rồi nói ông chưa biết nguyên nhân của lực ấy — và không đưa giả thuyết nào, vì điều gì không suy ra được từ hiện tượng thì gọi là giả thuyết, mà giả thuyết dù siêu hình hay vật lý đều không có chỗ đứng trong triết học thực nghiệm. Rồi ngay sau đó ông lại đặt một Thần xí cực kỳ tinh tế, thấm nhập trong mọi vật thể, để giải thích sự kết dính, tĩnh điện, ánh sáng và mọi cảm giác.
 >
-> **Vì sao Newton viết như vậy.** Vì ở đây có hai việc xảy ra cùng lúc, và chỉ việc thứ nhất mới nổi tiếng. Từ chối dựng giả thuyết chính là quy tắc khai sinh của vật lý thực nghiệm, và ông nói nó như một nguyên lý chứ không phải như một nhận nhường. Còn việc thứ hai, ông đặt một thần lý trí ngay sau khi vừa từ chối giả thuyết, và chỉ ngoại trừ trọng lực. Nhưng lý do ông dừng ở trọng lực cũng sắc: ông đã chỉ ra nó đúng tới quỹ xa nhất của sao Thổ, nên không còn gì để ông bám vào.
+> Trước đó ông đã dựng lại cả ba nhóm lực, đều tỷ lệ nghịch với bình phương khoảng cách, và nêu rõ chúng **không** giống các nguyên nhân cơ học thường làm, tức là không tác dụng theo lượng bề mặt mà theo lượng vật chất rắn chúng chứa. Giả thuyết xoáy của Descartes thì bị bác: sao chổi với quỹ đạo hết sức lệch tâm phải xuyên qua xoáy hành tinh và bị đẩy với tốc độ rất lớn, điều mà xoáy không tạo ra.
 >
-> **Hiện nay thì sao.** Điều Newton từ chối đoán, chính là thứ đã được giải quyết, nhưng không phải bằng cách tìm ra một lực. Hai thế kỷ sau, thuyết tương đối tổng quát trả lời bằng cách bỏ luôn câu hỏi ấy: trọng lực không phải một lực hút giữa các vật thể mà là **hình học của không gian thời gian**. Còn Thần xí tinh tế kia là tổ tiên của khái niệm **trường**: các đường sức của Faraday, sự hợp nhất ánh sáng với điện của Maxwell. Lời cuối của ông, rằng ta còn thiếu thí nghiệm để xác định quy luật của Thần ấy, cũng là câu nói trung thực nhất của cả sách.
+> **Ông đặt một thần lý trí ngay sau khi vừa từ chối giả thuyết**
+>
+> Từ chối dựng giả thuyết chính là quy tắc khai sinh của vật lý thực nghiệm, và ông nói nó như một nguyên lý chứ không phải như một nhận nhường. Nhưng ngay sau đó ông đặt một thần lý trí, và chỉ ngoại trừ trọng lực. Lý do ông dừng ở trọng lực cũng sắc: ông đã chỉ ra nó đúng tới quỹ xa nhất của sao Thổ, nên không còn gì để ôn bám vào.
+>
+> **Còn lại thì sao**
+>
+> Trọng lực sau này được giải thích mà không cần coi nó là một lực hút giữa các vật thể. Thần xí tinh tế kia, với các đường sức dựng được từ nó, vẫn chưa có một lời giải thích dạng phương trình nào. Lời cuối của ông — rằng ta còn thiếu thí nghiệm để xác định quy luật của Thần ấy — là một thừa nhận về điều chưa làm được, và phần lớn những gì ông gọi bằng tên ấy vẫn còn ở tình trạng đó.
 
 *Hết Sách III.*

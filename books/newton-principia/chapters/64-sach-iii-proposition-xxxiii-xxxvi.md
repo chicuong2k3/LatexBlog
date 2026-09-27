@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xxxiii-xxxvi"
 number: 64
 ---
 
-# Sách III. Proposition XXXIII–XXXVI
-
 ![Minh họa node Mặt Trăng, nghiêng quỹ đạo và thủy triều](../assets/book-ii-section-i-motion.svg)
 
 *Hình 52. Sơ đồ được dùng lại từ Phần I; các sơ đồ dựng node, quỹ đạo, hình chiếu và các đường cong của bản gốc cần được đối chiếu riêng.*
@@ -65,15 +63,17 @@ $$
 
 Tất cả điều này hoàn toàn khớp với các hiện tượng của thiên cầu.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXXIII bỏ phép tính quá khó của Proposition trước, thay bằng một cách dựng hình đơn giản hơn, để có được **chuyển động thật** của node chứ không chỉ chuyển động trung bình. Kết quả là một cái ông gọi là phương trình nửa kinh nguyệt của node: trong các octant, node lệch khỏi vị trí trung bình một góc, rồi trở về.
+> **Phương trình nửa kinh nguyệt của node, và một cặp sai số triệt tiêu nhau**
 >
-> **Công thức.** Ở hội tế thì node đứng yên; ở phần vuông thì lùi, với chuyển động theo giờ khoảng $16''19''$, còn phương trình lớn nhất trong các octant vào khoảng $1^\circ30'$. Nhưng chi tiết thú vị nhất nằm ở một ghi chú thực hành: độ nghiêng quỹ đạo có phương trình **kinh nguyệt**, còn node có phương trình **nửa kinh nguyệt**, và hai cái triệt tiêu nhau gần như chính xác. Vì vậy, khi tính vĩ độ Mặt Trăng, ông nói thẳng là có thể bỏ cả hai.
+> Proposition XXXIII bỏ phép tính quá khó của Proposition trước, thay bằng một cách dựng hình đơn giản hơn, để có được **chuyển động thật** của node chứ không chỉ chuyển động trung bình. Kết quả là một cái ông gọi là phương trình nửa kinh nguyệt của node: trong các octant, node lệch khỏi vị trí trung bình một góc, rồi trở về.
 >
-> **Vì sao Newton viết như vậy.** Vì ông làm việc như một người làm lịch, không chỉ như một người lý thuyết. Những phương trình nhỏ ấy dù đẹp, nhưng nếu giữ lại thì mỗi lần tính vị trí Mặt Trăng lại phải giải thêm hai bài toán nữa. Việc ông chủ động chỉ ra một cặp sai số triệt tiêu nhau rồi dám bỏ cho thấy ông hiểu rõ cái giá của từng phép tính. Còn việc ông thêm rằng con số thu được khớp với hiện tượng thiên cầu là cách ông tự kiểm tra mà không cần ai xác nhận.
+> Ở hội tế thì node đứng yên; ở phần vuông thì lùi, với chuyển động theo giờ khoảng $16''19''$, còn phương trình lớn nhất trong các octant vào khoảng $1^\circ30'$. Nhưng chi tiết đáng nói nằm ở một ghi chú thực hành: độ nghiêng quỹ đạo có phương trình **kinh nguyệt**, còn node có phương trình **nửa kinh nguyệt**, và hai cái triệt tiêu nhau gần như chính xác. Vì vậy, khi tính vĩ độ Mặt Trăng, ông nói thẳng là có thể bỏ cả hai.
 >
-> **Hiện nay thì sao.** Cặp triệt tiêu ấy ngày nay vẫn là chuyện thường trong lý thuyết Mặt Trăng: các số hạng nhỏ được nhóm lại rồi bỏ đi khi tổng của chúng nhỏ hơn sai số cho phép. Còn Học luận ngay sau đó là một chi tiết đáng nhớ về lịch sử khoa học: ông ghi công cho ba người đã độc lập tìm ra chuyển động node bằng những phương pháp khác nhau, nói rõ bài của ai tới tay ông trước, rồi chèn vào sách mình đúng thứ tự ấy. Machin trong ba người đó chính là người nổi tiếng với công thức arctangent dùng tính số pi với hàng trăm chữ số, nên đây rất có thể chính là con đường đưa công thức ấy tới Newton.
+> Ông làm việc như một người làm lịch, không chỉ như một người lý thuyết. Những phương trình nhỏ ấy dù đẹp, nhưng nếu giữ lại thì mỗi lần tính vị trí Mặt Trăng lại phải giải thêm hai bài toán nữa. Việc ông chủ động chỉ ra một cặp sai số triệt tiêu nhau rồi dám bỏ cho thấy ông hiểu rõ cái giá của từng phép tính. Còn việc ông thêm rằng con số thu được khớp với hiện tượng thiên cầu là cách ông tự kiểm tra mà không cần ai xác nhận.
+>
+> Cặp triệt tiêu ấy ngày nay vẫn là chuyện thường trong lý thuyết Mặt Trăng: các số hạng nhỏ được nhóm lại rồi bỏ đi khi tổng của chúng nhỏ hơn sai số cho phép. Còn Học luận ngay sau đó là một chi tiết đáng nhớ về lịch sử khoa học: ông ghi công cho ba người đã độc lập tìm ra chuyển động node bằng những phương pháp khác nhau, nói rõ bài của ai tới tay ông trước, rồi chèn vào sách mình đúng thứ tự ấy. Machin trong ba người đó chính là người nổi tiếng với công thức arctangent dùng tính số pi với hàng trăm chữ số, nên đây rất có thể chính là con đường đưa công thức ấy tới Newton.
 
 ## Học luận
 
@@ -515,15 +515,17 @@ Thuyết lý Mặt Trăng nên được kiểm tra và chứng minh từ các hi
 
 Chuyển động trung bình của Mặt Trời là [OCR không rõ], và của apogee nó là [OCR không rõ]; chuyển động trung bình của Mặt Trăng là [OCR không rõ], của apogee là [OCR không rõ], và của node tăng là [OCR không rõ]. Hiệu số các đường kinh tuyến giữa Đài quan sát Greenwich và Đài quan sát Hoàng gia Paris là $0$ giờ $9'$ $20''$. Nhưng chuyển động trung bình của Mặt Trăng và apogee của nó chưa được xác định với độ chính xác đủ.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận này là đỉnh cao của toàn bộ Sách III. Trước đó mỗi chương chỉ giải một bài toán nhỏ; ở đây Newton làm điều lớn hơn: ông **ghép tất cả** thành một lý thuyết hình học hoàn chỉnh, tức một cái cơ chế dùng được để tính vị trí Mặt Trăng bất cứ lúc nào.
+> **Cái cơ chế dựng ra để tính vị trí Mặt Trăng bất cứ lúc nào**
 >
-> **Công thức.** Mặt Trăng chạy trên một elip có tâm ở tiêu điểm dưới, nhưng tâm elip ấy không đứng yên mà chạy trên đường tròn quanh Trái Đất, và ngay cả đường tròn ấy còn bị lệch bởi một đoạn nhỏ, theo tỷ lệ nghịch với lập phương khoảng cách Trái Đất tới Mặt Trời. Mỗi cái vòng xích ấy là cách biểu diễn cho một phương trình bất đẳng thức ông vừa tính ra: phương trình năm phút một, hai phương trình nửa năm, và phương trình nửa năm của apogee. Từ đây trở đi, biết chuyển động trung bình, vị trí apogee, độ lệch tâm và trục lớn của quỹ đạo là suy ra vị trí thật của Mặt Trăng.
+> Học luận này là đỉnh cao của toàn bộ Sách III. Trước đó mỗi chương chỉ giải một bài toán nhỏ; ở đây Newton làm điều lớn hơn: ông **ghép tất cả** thành một lý thuyết hình học hoàn chỉnh, tức một cái cơ chế dùng được để tính vị trí Mặt Trăng bất cứ lúc nào.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một thứ dùng được hơn là một phương trình: một cơ chế hình học có thể chỉ đường và bảo người ta dựng ra vị trí, nên lịch thiên văn làm được. Trong đoạn này ông kể lại dòng dõi: Horrocks là người đầu tiên cho rằng Mặt Trăng chạy trong elip quanh Trái Đất đặt ở tiêu điểm dưới, và Halley đã cải tiến bằng cách đặt tâm elip lên một epicycle quay đều. Newton đứng trên hai vai ấy. Ông còn đích danh gọi tên từng phương trình, rồi kết bằng lời mời người đọc thử lý thuyết ấy trên bầu trời thật.
+> Mặt Trăng chạy trên một elip có tâm ở tiêu điểm dưới, nhưng tâm elip ấy không đứng yên mà chạy trên đường tròn quanh Trái Đất, và ngay cả đường tròn ấy còn bị lệch bởi một đoạn nhỏ, theo tỷ lệ nghịch với lập phương khoảng cách Trái Đất tới Mặt Trời. Mỗi cái vòng xích ấy là cách biểu diễn cho một phương trình bất đẳng thức ông vừa tính ra: phương trình năm phút một, hai phương trình nửa năm, và phương trình nửa năm của apogee. Từ đây trở đi, biết chuyển động trung bình, vị trí apogee, độ lệch tâm và trục lớn của quỹ đạo là suy ra vị trí thật của Mặt Trăng.
 >
-> **Hiện nay thì sao.** Lý thuyết Mặt Trăng kiểu hình học mà Newton dựng ở đây là dòng trực tiếp của các tài liệu thời Halley và Horrocks, và là tiền thân của lý thuyết Mặt Trăng bằng phương trình vi phân của Euler rồi d'Alembert, dẫn tới lý thuyết chuyển động cả hệ Mặt Trời. Nó cũng lý giải vì sao phải mất hơn một trang văn xuôi cho Mặt Trăng, trong khi hành tinh khác chỉ cần vài dòng: người ta dựng cả một cơ chế hình học để điều tra một điểm sáng. Ông còn thêm ở cuối một chi tiết thực tế: khí quyển ở độ cao ba mươi lăm đến bốn mươi dặm làm khúc xạ và nhòe bóng Trái Đất, nên khi tính từ đường kính bóng trong nhật thực phải cộng thêm một đến một phân rưỡi phút.
+> Ông cần một thứ dùng được hơn là một phương trình: một cơ chế hình học có thể chỉ đường và bảo người ta dựng ra vị trí, nên lịch thiên văn làm được. Trong đoạn này ông kể lại dòng dõi: Horrocks là người đầu tiên cho rằng Mặt Trăng chạy trong elip quanh Trái Đất đặt ở tiêu điểm dưới, và Halley đã cải tiến bằng cách đặt tâm elip lên một epicycle quay đều. Newton đứng trên hai vai ấy. Ông còn đích danh gọi tên từng phương trình, rồi kết bằng lời mời người đọc thử lý thuyết ấy trên bầu trời thật.
+>
+> Lý thuyết Mặt Trăng kiểu hình học mà Newton dựng ở đây là dòng trực tiếp của các tài liệu thời Halley và Horrocks, và là tiền thân của lý thuyết Mặt Trăng bằng phương trình vi phân của Euler rồi d'Alembert, dẫn tới lý thuyết chuyển động cả hệ Mặt Trời. Nó cũng lý giải vì sao phải mất hơn một trang văn xuôi cho Mặt Trăng, trong khi hành tinh khác chỉ cần vài dòng: người ta dựng cả một cơ chế hình học để điều tra một điểm sáng. Ông còn thêm ở cuối một chi tiết thực tế: khí quyển ở độ cao ba mươi lăm đến bốn mươi dặm làm khúc xạ và nhòe bóng Trái Đất, nên khi tính từ đường kính bóng trong nhật thực phải cộng thêm một đến một phân rưỡi phút.
 
 ## Proposition XXXVI. Bài toán XVII
 

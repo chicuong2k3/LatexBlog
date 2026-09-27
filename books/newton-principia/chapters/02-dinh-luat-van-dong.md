@@ -5,8 +5,6 @@ slug: "dinh-luat-van-dong"
 number: 2
 ---
 
-# Định luật vận động
-
 ## Định luật I. Quán tính và chuyển động thẳng
 
 Mọi vật thể kiên trì trong trạng thái đứng yên, hoặc chuyển động đều theo một đường thẳng, trừ khi có lực tác dụng buộc nó phải thay đổi trạng thái ấy.
@@ -15,13 +13,17 @@ Các vật thể được bắn đi giữ nguyên chuyển động của chúng,
 
 Một con quay có các bộ phận luôn bị lực kết dính kéo ra khỏi chuyển động thẳng, nhưng nó không ngừng quay, trừ khi sự quay ấy bị không khí làm chậm lại. Những vật thể lớn hơn như các hành tinh và sao chổi, gặp sức cản ít hơn trong không gian rộng mở hơn, giữ được cả chuyển động tiến triển lẫn chuyển động tròn trong thời gian lâu hơn nhiều.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Định luật I là **định luật quán tính**. Cách viết chuẩn hôm nay là $\vec{F}_{net} = 0 \Rightarrow \vec{v}$ không đổi. Điểm mấu chốt nằm ở chữ *tổng*: điều kiện là **tổng** lực bằng không, chứ không phải là không có lực nào tác dụng. Một hòn đá trượt trên mặt phẳng ngang không ma sát chịu trọng lực và lực mặt phẳng triệt tiêu nhau, nên nó đi thẳng đều — vẫn thuộc định luật I dù có lực.
+> **Điều kiện là *tổng* lực bằng không, không phải không có lực**
 >
-> **Công thức.** Dạng tổng quát là $\vec{F}_{net} = \dfrac{d\vec{p}}{dt} = 0$, suy ra $\vec{p}$ không đổi. Với khối lượng không đổi thì $\vec{v}$ không đổi, tức cả **độ lớn** lẫn **hướng**. Kiểm tra: mặt phẳng nghiêng góc $\theta$ cho $F_{net} = mg\sin\theta$, nên $a = g\sin\theta$. Ở $\theta = 30^\circ$ thì $a \approx 4{,}9\ \mathrm{m/s^2}$, và đó là gia tốc hằng số suốt cả quãng trượt.
+> Định luật I là **định luật quán tính**. Cách viết chuẩn hôm nay là $\vec{F}_{net} = 0 \Rightarrow \vec{v}$ không đổi. Một hòn đá trượt trên mặt phẳng ngang không ma sát chịu trọng lực và lực mặt phẳng triệt tiêu nhau, nên nó đi thẳng đều — vẫn thuộc định luật I dù có lực.
 >
-> **Vì sao Newton viết như vậy.** Câu "trừ khi có lực tác dụng buộc nó phải thay đổi trạng thái ấy" đã nói sẵn về tổng lực, dù cách diễn đạt có thể khiến người đọc nghĩ chỉ cần một lực là đủ. Nhưng đoạn về con quay mới là chỗ sắc nhất. Newton nói các bộ phận của con quay luôn bị lực kết dính kéo ra khỏi chuyển động thẳng, **nhưng nó không ngừng quay**. Nghĩa là lực kết dính làm thay đổi hướng của vận tốc từng bộ phận mà không đổi độ lớn, nên toàn bộ vẫn giữ được chuyển động quay. Đó chính là ranh giới giữa quán tính và thay đổi tốc độ, và Newton đã vạch ra trước khi có khái niệm gia tốc hướng tâm.
+> Dạng tổng quát là $\vec{F}_{net} = \dfrac{d\vec{p}}{dt} = 0$, suy ra $\vec{p}$ không đổi. Với khối lượng không đổi thì $\vec{v}$ không đổi, tức cả **độ lớn** lẫn **hướng**. Kiểm tra: mặt phẳng nghiêng góc $\theta$ cho $F_{net} = mg\sin\theta$, nên $a = g\sin\theta$. Ở $\theta = 30^\circ$ thì $a \approx 4{,}9\ \mathrm{m/s^2}$, và đó là gia tốc hằng số suốt cả quãng trượt.
+>
+> **Con quay: ranh giới giữa quán tính và thay đổi tốc độ**
+>
+> Câu "trừ khi có lực tác dụng buộc nó phải thay đổi trạng thái ấy" đã nói sẵn về tổng lực, dù cách diễn đạt có thể khiến người đọc nghĩ chỉ cần một lực là đủ. Nhưng đoạn về con quay mới là chỗ sắc nhất. Newton nói các bộ phận của con quay luôn bị lực kết dính kéo ra khỏi chuyển động thẳng, **nhưng nó không ngừng quay**. Nghĩa là lực kết dính làm thay đổi hướng của vận tốc từng bộ phận mà không đổi độ lớn, nên toàn bộ vẫn giữ được chuyển động quay. Newton đã vạch ra ranh giới ấy trước khi có khái niệm gia tốc hướng tâm.
 >
 > Câu cuối về hành tinh và sao chổi nói một điều đúng về vật lí nhưng không phải lý do: các vật thể lớn không giữ chuyển động tốt hơn vì sức cản ít hơn tính theo tỉ lệ diện tích mặt cắt, mà vì chúng ở xa nguồn lực hấp dẫn và chuyển động trong gần như chân không. Về định luật, Newton đang dùng nó như một **tiên đề**: ông không suy ra được nó từ định nghĩa nào trước đó, mà phải chờ thực nghiệm xác nhận. Ngày nay nó được hiểu là hệ quả của nguyên lý tương đối tính Galile, chứ không phải một định luật độc lập.
 
@@ -35,17 +37,19 @@ Chuyển động này luôn được hướng theo cùng một phương với l�
 
 Khi hai chuyển động nghiêng theo những phương khác nhau, chúng sẽ hợp nhất để tạo ra một chuyển động mới, được xác định bởi cả hai.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Đây là $\vec{F} = m\vec{a}$, hay đúng hơn là $\vec{F}_{net} = \dfrac{d\vec{p}}{dt}$. Đây là định luật trung tâm của toàn bộ cơ học cổ điển.
+> **Hằng số tỉ lệ chính là khối lượng**
 >
-> **Công thức.** Chú ý cách Newton viết: ông nói sự thay đổi của chuyển động **tỉ lệ với** lực động, chứ không viết một đẳng thức. Hằng số tỉ lệ ấy chính là khối lượng. Kiểm tra: lực $10\ \mathrm{N}$ tác lên vật $m = 2\ \mathrm{kg}$ cho $a = 5\ \mathrm{m/s^2}$; lực gấp đôi cho gia tốc gấp đôi. Với lực và khối lượng không đổi, gia tốc không đổi, nên quỹ đạo là **parabol**. Nếu lực luôn vuông góc với vận tốc, $\vec{F} \cdot \vec{v} = 0$, năng lượng động không đổi và tốc độ không đổi — đó là chuyển động tròn đều, một trường hợp riêng mà sẽ gặp ở Phần I.
+> Đây là $\vec{F} = m\vec{a}$, hay đúng hơn là $\vec{F}_{net} = \dfrac{d\vec{p}}{dt}$. Chú ý cách Newton viết: ông nói sự thay đổi của chuyển động **tỉ lệ với** lực động, chứ không viết một đẳng thức. Kiểm tra: lực $10\ \mathrm{N}$ tác lên vật $m = 2\ \mathrm{kg}$ cho $a = 5\ \mathrm{m/s^2}$; lực gấp đôi cho gia tốc gấp đôi. Với lực và khối lượng không đổi, gia tốc không đổi, nên quỹ đạo là **parabol**. Nếu lực luôn vuông góc với vận tốc, $\vec{F} \cdot \vec{v} = 0$, năng lượng động không đổi và tốc độ không đổi — đó là chuyển động tròn đều, một trường hợp riêng mà sẽ gặp ở Phần I.
 >
-> **Vì sao Newton viết như vậy.** Đây là bước chuyển từ **định nghĩa** sang **định luật**. Năm định nghĩa trước đó chỉ đặt tên cho các đại lượng; chưa điều gì buộc chúng phải liên hệ với nhau theo cách này. Định luật II mới gắn tên ấy vào thực tế, và mọi định lý sau trong sách đều dựa trên đó.
+> **Dùng “tỉ lệ” thay vì đẳng thức là một dấu hiệu thận trọng**
 >
-> Việc ông dùng từ tỉ lệ thay vì đẳng thức là một dấu hiệu thận trọng, không phải sơ suất. Ông chưa chứng minh hằng số tỉ lệ ấy là nhất quán giữa mọi vật thể, và cũng chưa biết nó có đổi hay không khi vật thể chuyển động rất nhanh. Hôm nay ta biết rằng nó **có** đổi: khối lượng tính theo thuyết tương đối là $m_{rel} = \gamma m_0$, và năng lượng cũng mang quán tính với khối lượng tương đương $E/c^2$. Chính sự im lặng đó của Newton về giới hạn của định luật II đã dành chỗ cho thuyết tương đối hạn chế 300 năm sau.
+> Đây là bước chuyển từ **định nghĩa** sang **định luật**: năm định nghĩa trước đó chỉ đặt tên cho các đại lượng, chưa điều gì buộc chúng phải liên hệ với nhau theo cách này. Định luật II mới gắn tên ấy vào thực tế, và mọi định lý sau trong sách đều dựa trên đó. Ông chưa chứng minh hằng số tỉ lệ ấy là nhất quán giữa mọi vật thể, và cũng chưa biết nó có đổi hay không khi vật thể chuyển động rất nhanh. Hôm nay ta biết rằng nó **có** đổi: khối lượng tính theo thuyết tương đối là $m_{rel} = \gamma m_0$, và năng lượng cũng mang quán tính với khối lượng tương đương $E/c^2$.
 >
-> Câu "cho dù lực ấy được tác dụng tất cả cùng một lúc hay lần lượt từng phần" nói một tính chất quan trọng mà thường bị bỏ qua: các lực cộng độc lập với nhau và với thời gian. Đó là tính **tuyến tính** của phương trình chuyển động, và nhờ đó ta có thể giải bài toán bằng cách tách từng lực ra giải riêng rồi cộng kết quả. Câu về hai chuyển động nghiêng hợp nhất chính là phép cộng vector gia tống $\vec{a} = \vec{a}_1 + \vec{a}_2$.
+> **Tính tuyến tính cho phép tách từng lực**
+>
+> Câu "cho dù lực ấy được tác dụng tất cả cùng một lúc hay lần lượng từng phần" nói một tính chất quan trọng mà thường bị bỏ qua: các lực cộng độc lập với nhau và với thời gian. Đó là tính **tuyến tính** của phương trình chuyển động, và nhờ đó ta có thể giải bài toán bằng cách tách từng lực ra giải riêng rồi cộng kết quả. Câu về hai chuyển động nghiêng hợp nhất chính là phép cộng vector gia tống $\vec{a} = \vec{a}_1 + \vec{a}_2$.
 
 ## Định luật III. Tác dụng và phản tác dụng
 
@@ -63,15 +67,21 @@ Những thay đổi do các tác dụng ấy tạo ra là bằng nhau, không ph
 
 Vì các chuyển động thay đổi như nhau, nên những thay đổi của vận tốc theo các phía ngược nhau tỉ lệ nghịch với các vật thể. Định luật này cũng đúng với lực hút, như sẽ chứng minh trong học luận tiếp theo.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Định luật tác dụng và phản tác dụng, $\vec{F}_{A \to B} = -\vec{F}_{B \to A}$. Điểm dễ hiểu sai nhất: hai lực này **không triệt tiêu nhau**, vì chúng tác lên hai vật thể khác nhau. Người học thường nói "lực và phản lực cân bằng nhau" và đó là cách nói sai — cân bằng lực thì phải cùng tác lên **cùng một vật**.
+> **Lực và phản lực không triệt tiêu nhau**
 >
-> **Công thức.** Với con ngựa kéo hòn đá: nếu dây căng, lực dây tác lên ngựa và lực dây tác lên hòn đá bằng nhau. Người $70\ \mathrm{kg}$ đứng trên mặt đất chịu trọng lực $mg \approx 686\ \mathrm{N}$ chiếu xuống dưới và lực mặt đất chiếu lên trên cũng $686\ \mathrm{N}$. Hai lực đó triệt tiêu **trên người đó**, nên người đứng yên — đó là cân bằng lực, thuộc phần cân bằng, không phải định luật III.
+> Định luật tác dụng và phản tác dụng: $\vec{F}_{A \to B} = -\vec{F}_{B \to A}$. Điểm dễ hiểu sai nhất: hai lực này **không triệt tiêu nhau**, vì chúng tác lên hai vật thể khác nhau. Người học thường nói "lực và phản lực cân bằng nhau" và đó là cách nói sai — cân bằng lực thì phải cùng tác lên **cùng một vật**.
 >
-> **Vì sao Newton viết như vậy.** Lập luận mà ông dùng cho ví dụ con ngựa là một lập luận cân bằng rất gọn: dây bị kéo căng thì nó kéo con ngựa về phía hòn đá, và kéo hòn đá về phía con ngựa, hai lực bằng nhau. Nếu có ai thắng cân bằng ấy, con ngựa sẽ nhảy tới gần hòn đá — mà không ai thấy điều đó. Từ đó suy ra bằng bốn chữ: định luật này không cần giả định gì về trường, về hấp dẫn, hay về bản chất vật chất. Nó thuần tuý nói về sự đối xứng của tương tác, và đó là lý do nó có giá trị phổ quát.
+> Với con ngựa kéo hòn đá: nếu dây căng, lực dây tác lên ngựa và lực dây tác lên hòn đá bằng nhau. Người $70\ \mathrm{kg}$ đứng trên mặt đất chịu trọng lực $mg \approx 686\ \mathrm{N}$ chiếu xuống dưới và lực mặt đất chiếu lên trên cũng $686\ \mathrm{N}$. Hai lực đó triệt tiêu **trên người đó**, nên người đứng yên — đó là cân bằng lực, thuộc phần cân bằng, không phải định luật III.
 >
-> Câu "những thay đổi do các tác dụng ấy tạo ra là bằng nhau, không phải về vận tốc mà về chuyển động của vật thể" là nhận xét sắc nhất của định luật này. Hai vật thể khác nhau biến đổi lượng động lượng bằng nhau và ngược dấu, nên **tổng động lượng của cả hệ được giữ nguyên**. Đây chính là bảo toàn động lượng — không phải một định luật riêng, mà là kết quả tức thời của định luật III. Câu kế tiếp, "những thay đổi của vận tốc theo các phía ngược nhau tỉ lệ nghịch với các vật thể", chỉ là suy ra từ $m_1 \vec{a}_1 = -m_2 \vec{a}_2$ khi hai lực bằng nhau. Nói cách khác, vật thể nhẹ bị đẩy nhanh hơn vật thể nặng — đó là ý mà Einstein dùng khi chỉ ra rằng cả năng lượng cũng mang động lượng.
+> Lập luận mà ông dùng cho ví dụ con ngựa là một lập luận cân bằng rất gọn: dây bị kéo căng thì nó kéo con ngựa về phía hòn đá, và kéo hòn đá về phía con ngựa, hai lực bằng nhau. Nếu có ai thắng cân bằng ấy, con ngựa sẽ nhảy tới gần hòn đá — mà không ai thấy điều đó. Từ đó suy ra bằng bốn chữ: định luật này không cần giả định gì về trường, về hấp dẫn, hay về bản chất vật chất. Nó thuần tuý nói về sự đối xứng của tương tác, và đó là lý do nó có giá trị phổ quát.
+>
+> **“Không phải về vận tốc mà về chuyển động”**
+>
+> Đây là nhận xét sắc nhất của định luật này. Hai vật thể khác nhau biến đổi lượng động lượng bằng nhau và ngược dấu, nên **tổng động lượng của cả hệ được giữ nguyên** — bảo toàn động lượng không phải một định luật riêng, mà là kết quả tức thời của định luật III. Câu kế tiếp, "những thay đổi của vận tốc theo các phía ngược nhau tỉ lệ nghịch với các vật thể", chỉ là suy ra từ $m_1 \vec{a}_1 = -m_2 \vec{a}_2$ khi hai lực bằng nhau.
+>
+> **Cánh cửa mở sẵn cho lực hấp dẫn**
 >
 > Câu cuối, "định luật này cũng đúng với lực hút", là cánh cửa Newton mở sẵn cho lực hấp dẫn ở Sách III: mặt Trái Đất hút Mặt Trăng, Mặt Trăng hút Mặt Trái Đất, hai lực bằng nhau, và từ đó mới có thể nói về cặp hành tinh.
 
@@ -129,31 +139,45 @@ Sức mạnh và công dụng của máy móc chỉ nằm ở chỗ này: **bằ
 
 Vì nếu ta ước lượng tác dụng của tác nhân từ lực và vận tốc của nó một cách hợp thành, và cũng như vậy ước lượng phản tác dụng của vật cản một cách hợp thành, từ các vận tốc của các phần riêng lẻ của nó, và từ các lực cản sinh ra từ ma sát, sức dính, trọng lượng và gia tốc của những phần ấy, thì trong mọi cách dùng máy móc, tác dụng và phản tác dụng sẽ luôn bằng nhau. Và ở chừng mực mà tác dụng ấy được truyền qua những dụng cụ ở giữa, và cuối cùng ấn lên vật thể chịu cản, thì phương cuối cùng của tác dụng sẽ luôn ngược với phương của phản tác dụng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Câu mở đầu tiên đáng chú ý nhất: các nguyên lý tới đây là những cái "được các nhà toán học tiếp nhận và được xác nhận bằng thực nghiệm phong phú". Đó là tiêu chuẩn của Newton: không suy ra từ định nghĩa, mà từ thực tiễn đã được thừa nhận cộng với thực nghiệm. Ông không trình bày một chuỗi lập luận độc lập, mà đang tính xem một hệ đã có sẵn chịu được thực nghiệm đến đâu.
+> **Tiêu chuẩn của Newton: không suy ra từ định nghĩa, mà từ thực tiễn**
 >
-> **Công thức.** Kết luận về quỹ đạo ném có dạng đo kiểm được: Newton nói đường thẳng $AB$ là tiếp tuyến của parabol tại $A$, và $BD$ bằng bình phương $AB$. Với $AB$ là tầm ngang và $BD$ là độ cao, đó chính là $y = \dfrac{g}{2v_0^2}x^2$, tức độ cao tỉ lệ bình phương với tầm ngang. Kiểm tra với một phóng mục: $v_0 = 10\ \mathrm{m/s}$ ở góc $45^\circ$ thì $g/(2v_0^2) \approx 0{,}049$, nên ở tầm ngang $10\ \mathrm{m}$ vật lên cao khoảng $4{,}9\ \mathrm{m}$.
+> Câu mở đầu các nguyên lý tới đây là những cái "được các nhà toán học tiếp nhận và được xác nhận bằng thực nghiệm phong phú". Ông không trình bày một chuỗi lập luận độc lập, mà đang tính xem một hệ đã có sẵn chịu được thực nghiệm đến đâu.
 >
-> **Vì sao Newton viết như vậy.** Có hai việc ẩn trong đoạn này. Một là **ghi công**: Galileo được công cho định luật I, II và hai hệ quả đầu. Ba người khác — Wallis, Wren, Huygens — mỗi người **tự nghiên cứu riêng** quy tắc va chạm, công bố gần như cùng lúc và "hoàn toàn đồng ý với nhau"; Wallis sớm hơn, rồi Wren, rồi Huygens. Newton không xếp hạng theo tuổi tác hay công bố trước, mà nói rõ ai đã làm gì. Hai là **ai kiểm chứng bằng thí nghiệm**: ông ghi Wren đã "kiểm chứng chân lý trước Viện Hoàng gia bằng thí nghiệm với con lắc", và Mariotte đã viết cả một tác phẩm riêng. Một cuộc tranh cãi ưu tiên quyền phát minh đang diễn ra, và Newton đang trả lời lại ở đây.
+> Kết luận về quỹ đạo ném có dạng đo kiểm được: Newton nói đường thẳng $AB$ là tiếp tuyến của parabol tại $A$, và $BD$ bằng bình phương $AB$. Với $AB$ là tầm ngang và $BD$ là độ cao, đó chính là $y = \dfrac{g}{2v_0^2}x^2$, tức độ cao tỉ lệ bình phương với tầm ngang. Kiểm tra với một phóng mục: $v_0 = 10\ \mathrm{m/s}$ ở góc $45^\circ$ thì $g/(2v_0^2) \approx 0{,}049$, nên ở tầm ngang $10\ \mathrm{m}$ vật lên cao khoảng $4{,}9\ \mathrm{m}$.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay có câu hỏi mà người thời đó không có cách hỏi: vật nằm trong tay bao nhiêu thực nghiệm? Với con lắc dài mười feet và các khoảng rơi tám, mười hai, mười sáu foot, con số được nêu là sai số không quá ba inch trong phép đo. Đó là tiêu chuẩn bằng chứng thật của thế kỷ XVII, viết bằng đơn vị của họ. Nó thấp hơn nhiều so với một tỉ số $10^{-15}$, nhưng nó là con số có thật, nêu ra trong chính cuốn sách, chứ không phải một tuyên bố chung chung.
+> **Ghi công và ai kiểm chứng**
+>
+> Có hai việc ẩn trong đoạn này. Một là **ghi công**: Galileo được công cho định luật I, II và hai hệ quả đầu. Ba người khác — Wallis, Wren, Huygens — mỗi người **tự nghiên cứu riêng** quy tắc va chạm, công bố gần như cùng lúc và "hoàn toàn đồng ý với nhau"; Wallis sớm hơn, rồi Wren, rồi Huygens. Newton không xếp hạng theo tuổi tác hay công bố trước, mà nói rõ ai đã làm gì. Hai là **ai kiểm chứng bằng thí nghiệm**: ông ghi Wren đã "kiểm chứng chân lý trước Viện Hoàng gia bằng thí nghiệm với con lắc", và Mariotte đã viết cả một tác phẩm riêng. Một cuộc tranh cãi ưu tiên quyền phát minh đang diễn ra, và Newton đang trả lời lại ở đây.
+>
+> Người đọc hôm nay có câu hỏi mà người thời đó không có cách hỏi: vật nằm trong tay bao nhiêu thực nghiệm? Với con lắc dài mười feet và các khoảng rơi tám, mười hai, mười sáu foot, con số được nêu là sai số không quá ba inch trong phép đo. Đó là tiêu chuẩn bằng chứng thật của thế kỷ XVII, viết bằng đơn vị của họ. Nó thấp hơn nhiều so với một tỉ số $10^{-15}$, nhưng nó là con số có thật, nêu ra trong chính cuốn sách, chứ không phải một tuyên bố chung chung.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Câu in đậm "để thí nghiệm này khớp với lý thuyết một cách chính xác, ta phải tính đến cả sức cản của không khí và lực đàn hồi" là câu trung tâm của cả Học luận. Nó nói thẳng rằng thí nghiệm **không** xác nhận lý thuyết một cách trực tiếp; nó xác nhận lý thuyết *sau khi đã hiệu chỉnh*. Và Newton nói trước điều đó, trước khi đưa ra bất kỳ con số nào.
+> **Thí nghiệm không xác nhận lý thuyết một cách trực tiếp**
 >
-> **Công thức.** Cách hiệu chỉnh là một thủ pháp đo lường thực tế, không phải một lý thuyết. Người thực nghiệm không có chân không, nên ông dựng một phép chuẩn: thả vật từ $R$, nó chậm lại và trở về $V$, nên $RV$ đo sức cản; lấy $ST = RV/4$ đặt ở giữa, với $RS = TV$ và $RS:ST = 3:2$, để có $ST$ là độ chậm lại trong lúc rơi từ $S$ xuống $A$. Từ đó ông định nghĩa được vận tốc "như thể rơi trong chân không" như một đại lượng **đo được** — bằng dây độc của cung $TA$. Đây là một định nghĩa thao tác về vận tốc, thực hiện được trước khi ta có máy đo nào.
+> Câu in đậm "để thí nghiệm này khớp với lý thuyết một cách chính xác, ta phải tính đến cả sức cản của không khí và lực đàn hồi" là câu trung tâm của cả Học luận. Nó nói thẳng rằng thí nghiệm xác nhận lý thuyết *sau khi đã hiệu chỉnh*. Và Newton nói trước điều đó, trước khi đưa ra bất kỳ con số nào.
 >
-> **Vì sao Newton viết như vậy.** Hai con số đáng đọc kỹ. Một: sai số ba inch trên con lắc mười feet, tức khoảng $2{,}4$ cm — độ chính xác thật của kỹ thuật thời đó, nêu ra để định lượng mức đáng tin chứ không phải để khoe. Hai: quả bóng thuỷ tinh cho tỉ số $15:16$, trong khi va chạm đàn hồi hoàn hảo đòi hỏi $1:1$. **Newton báo cáo số đo của chính mình không khớp định luật sạch của ông**, rồi quy nó cho lực đàn hồi mà ông gọi là "chắc chắn và xác định". Nhưng ông đo lực ấy ra chứ không tính ra, rồi dùng nó để *dự đoán* các va chạm khác và đem dự đoán ấy ra đo tiếp. Đó là phép kiểm tra nghiêm: dùng dữ liệu đo lường để sinh dự đoán, rồi đem dự đoán ra đo tiếp.
+> Cách hiệu chỉnh là một thủ pháp đo lường thực tế, không phải một lý thuyết. Người thực nghiệm không có chân không, nên ông dựng một phép chuẩn: thả vật từ $R$, nó chậm lại và trở về $V$, nên $RV$ đo sức cản; lấy $ST = RV/4$ đặt ở giữa, với $RS = TV$ và $RS:ST = 3:2$, để có $ST$ là độ chậm lại trong lúc rơi từ $S$ xuống $A$. Từ đó ông định nghĩa được vận tốc "như thể rơi trong chân không" như một đại lượng **đo được** — bằng dây độc của cung $TA$. Đây là một định nghĩa thao tác về vận tốc, thực hiện được trước khi ta có máy đo nào.
 >
-> **Hiện nay thì sao.** Phần thiếu sót của Newton không phải là phép đo, mà là cơ chế. Ông đo độ lệch $15:16$ rồi quy nó cho lực đàn hồi, nhưng không có công thức nào cho lực ấy, và không tách được từng đóng góp của sức dãn, ma sát và biến dạng. Ngày nay cùng phép thử ấy được giải bằng cơ học vật liệu đàn hồi, nên tỉ số phụ thuộc hệ số hoàn lại và trở thành đại lượng dự đoán được trước. Điều đáng nói không phải giá trị tuyệt đối của con số ấy, mà là việc Newton đưa ra nó.
-> **[Ghi chú hiện đại]**
+> **Ông báo cáo số đo của chính mình không khớp định luật sạch**
 >
-> **Khái niệm tương ứng.** Trước khi tới Sách III, Newton đã kiểm tra định luật III cho lực hút bằng lập luận vật cản. Nếu $A$ bị hút về $B$ mạnh hơn $B$ bị hút về $A$, thì vật cản ở giữa sẽ bị $A$ ép mạnh hơn, cả hệ sẽ tăng tốc đi vô hạn, mà điều đó trái định luật I. Rồi ông viết: "Tôi đã làm thí nghiệm này với viên đá nam châm và sắt" — thả nổi trên mặt nước đứng yên, không vật nào đẩy vật nào, chúng cân bằng. Đây là một phép thử thực nghiệm cho định luật III trong lực hút, thực hiện ngay trong Phần I.
+> Hai con số đáng đọc kỹ. Một: sai số ba inch trên con lắc mười feet, tức khoảng $2{,}4$ cm — độ chính xác thật của kỹ thuật thời đó, nêu ra để định lượng mức đáng tin chứ không phải để khoe. Hai: quả bóng thuỷ tinh cho tỉ số $15:16$, trong khi va chạm đàn hồi hoàn hảo đòi hỏi $1:1$. Newton báo cáo độ lệch ấy, rồi quy nó cho lực đàn hồi mà ông gọi là "chắc chắn và xác định". Nhưng ông đo lực ấy ra chứ không tính ra, rồi dùng nó để *dự đoán* các va chạm khác và đem dự đoán ấy ra đo tiếp. Đó là phép kiểm tra nghiêm: dùng dữ liệu đo lường để sinh dự đoán, rồi đem dự đoán ra đo tiếp.
 >
-> **Công thức.** Nguyên lý chung của phần máy móc là: tốc độ tỉ lệ nghịch với lực. Ví dụ vít xoắn, lực ép của nó tỉ với lực của bàn tay bằng tốc độ tròn của tay cầm chia cho tốc độ tiến của vít. Cách viết hiện đại là bảo toàn công suất: giảm tốc độ theo hệ số $k$ thì lực tăng $k$ lần, và công suất không đổi. Riêng vị trí cân, Newton đưa vào đây điều kiện khi quả cân lệch: tỉ số phải lấy theo chiều cao vuông góc, vì trọng lực hướng xuống.
+> Phần thiếu sót của Newton không phải là phép đo, mà là cơ chế. Ông đo độ lệch $15:16$ rồi quy nó cho lực đàn hồi, nhưng không có công thức nào cho lực ấy, và không tách được từng đóng góp của sức dãn, ma sát và biến dạng. Ngày nay cùng phép thử ấy được giải bằng cơ học vật liệu đàn hồi, nên tỉ số phụ thuộc hệ số hoàn lại và trở thành đại lượng dự đoán được trước. Điều đáng nói không phải giá trị tuyệt đối của con số ấy, mà là việc Newton đưa ra nó.
+> **[Chú giải]**
 >
-> **Vì sao Newton viết như vậy.** Ông dừng lại đúng chỗ cần dừng: "Bàn về cơ học không phải việc tôi đang làm." Câu đó là một tuyên bố phạm vi, và nó còn nói lên mức tự tin vào chỗ đã làm: ông vừa nói định luật III có "phạm vi rộng lớn và chắc chắn", vừa nói sẽ không trình bày cơ học. Cùng đoạn ấy ông tự nêu điều kiện để định luật đúng: tác dụng phải được ước lượng "hợp thành" từ lực và vận tốc, còn phản tác dụng thì từ vận tốc các phần và từ các lực cản do ma sát, sức dính, trọng lượng và gia tốc. Tức định luật III chỉ đúng ở dạng phát biểu ấy.
+> **Kiểm tra sớm định luật III cho lực hút**
 >
-> **Lưu ý nguồn gốc.** Bản 1846 có thêm một đoạn dài lập luận lực hút giữa Trái Đất và từng bộ phận của nó, bằng cách cắt Trái Đất bởi một mặt phẳng thành hai phần $EGF$ và $EGI$. Đoạn ấy **không có** trong bản Latin 1687; nó được thêm vào ở ấn phẩm sau, và bản dịch của Motte mà cuốn sách này theo là dựa trên ấn phẩm thứ ba năm 1726. Chi tiết đáng lưu: lập luận cắt Trái Đất không dùng gì ngoài định luật I, nên nó đứng được ngay trong Phần I, và ông vẫn viết nó vào Học luận này thay vì chờ tới Sách III.
+> Trước khi tới Sách III, Newton đã kiểm tra định luật III cho lực hút bằng lập luận vật cản. Nếu $A$ bị hút về $B$ mạnh hơn $B$ bị hút về $A$, thì vật cản ở giữa sẽ bị $A$ ép mạnh hơn, cả hệ sẽ tăng tốc đi vô hạn, mà điều đó trái định luật I. Rồi ông viết: "Tôi đã làm thí nghiệm này với viên đá nam châm và sắt" — thả nổi trên mặt nước đứng yên, không vật nào đẩy vật nào, chúng cân bằng. Đây là một phép thử thực nghiệm cho định luật III trong lực hút, thực hiện ngay trong Phần I.
+>
+> Nguyên lý chung của phần máy móc là: tốc độ tỉ lệ nghịch với lực. Ví dụ vít xoắn, lực ép của nó tỉ với lực của bàn tay bằng tốc độ tròn của tay cầm chia cho tốc độ tiến của vít. Cách viết hiện đại là bảo toàn công suất: giảm tốc độ theo hệ số $k$ thì lực tăng $k$ lần, và công suất không đổi. Riêng vị trí cân, Newton đưa vào đây điều kiện khi quả cân lệch: tỉ số phải lấy theo chiều cao vuông góc, vì trọng lực hướng xuống.
+>
+> **Một tuyên bố phạm vi**
+>
+> Ông dừng lại đúng chỗ cần dừng: "Bàn về cơ học không phải việc tôi đang làm." Câu đó là một tuyên bố phạm vi, và nó còn nói lên mức tự tin vào chỗ đã làm: ông vừa nói định luật III có "phạm vi rộng lớn và chắc chắn", vừa nói sẽ không trình bày cơ học. Cùng đoạn ấy ông tự nêu điều kiện để định luật đúng: tác dụng phải được ước lượng "hợp thành" từ lực và vận tốc, còn phản tác dụng thì từ vận tốc các phần và từ các lực cản do ma sát, sức dính, trọng lượng và gia tốc. Tức định luật III chỉ đúng ở dạng phát biểu ấy.
+>
+> **Chỗ khác giữa các ấn phẩm**
+>
+> Bản 1846 có thêm một đoạn dài lập luận lực hút giữa Trái Đất và từng bộ phận của nó, bằng cách cắt Trái Đất bởi một mặt phẳng thành hai phần $EGF$ và $EGI$. Đoạn ấy **không có** trong bản Latin 1687; nó được thêm vào ở ấn phẩm sau, và bản dịch của Motte mà cuốn sách này theo là dựa trên ấn phẩm thứ ba năm 1726. Chi tiết đáng lưu: lập luận cắt Trái Đất không dùng gì ngoài định luật I, nên nó đứng được ngay trong Phần I, và ông vẫn viết nó vào Học luận này thay vì chờ tới Sách III.

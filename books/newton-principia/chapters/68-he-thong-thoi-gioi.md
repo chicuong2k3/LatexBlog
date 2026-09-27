@@ -5,8 +5,6 @@ slug: "he-thong-thoi-gioi"
 number: 68
 ---
 
-# Hệ thống thế giới
-
 <!-- Nguồn: PDF 515–578, trang in 611–?; các trang 515–516 là trang tiêu đề và trang trắng. -->
 
 Từ thời xa xưa, không ít người đã cho rằng các ngôi sao cố định đứng yên ở những vùng cao nhất của thế giới; các hành tinh ở dưới chúng được Mặt Trời mang đi; Trái Đất, cũng là một hành tinh, mỗi năm lại quanh Mặt Trời, đồng thời quay quanh trục của chính nó theo chuyển động quận chiều; còn Mặt Trời, như ngọn lửa chung để sưởi ấm tất cả, cố định ở tâm vũ trụ.
@@ -31,15 +29,17 @@ Các triết gia đời sau tưởng rằng có thể giải thích chuyện ấ
 
 Mục đích của chúng ta ở đây chỉ là truy tìm lượng và tính chất của lực ấy từ các hiện tượng, rồi dùng những gì tìm được trong những trường hợp đơn giản làm nguyên lý để ước tính bằng toán học các hiệu ứng của nó trong những trường hợp phức tạp hơn. Nếu không, sẽ không thể đem mọi điều riêng lẻ đến trực tiếp và tức thời với sự quan sát. Ta nói “bằng toán học” để tránh mọi câu hỏi về bản chất hay chất lượng của lực này; bởi ta không có ý định xác định bản chất ấy bằng bất kỳ giả thuyết nào. Vì vậy, ta gọi chung nó là lực hướng tâm, vì đó là một lực hướng về một tâm nào đó. Đặc biệt khi nói về một vật thể ở tâm, ta gọi lực ấy là lực quanh Mặt Trời, lực quanh Trái Đất, lực quanh sao Mộc, và tương tự đối với những tâm khác.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Mở đầu chương này là một cuộc rà soát lịch sử dài, và hai chi tiết trong đó đáng chú ý với người đọc hôm nay. Một là vòng số cổ: Anaximander, Philolaus, Aristarchus, Plato, cả trường phái Pythagore, rồi đến vị vua La Mã Numa Pompilius, người dựng đền thờ Vesta hình tròn và ra lệnh giữ lửa ở chính giữa ngôi đền. Từ các ý tưởng cổ ấy mà sinh ra mô hình **quả cầu rắc** của Eudoxus và Aristotle.
+> **Sao chổi không chỗ nào đứng trong mô hình quả cầu rắc**
 >
-> **Công thức.** Mô hình quả cầu rắc có một hệ quả buộc phải kiểm: sao chổi, từng được các nhà Thiên văn Chalđêa xếp vào số các thiên thể thời cổ như một loại hành tinh riêng với quỹ đạo hết sức lệch tâm, thì không thể nào ở trong hệ ấy được. Vậy nên khi giả thuyết quả cầu rắc còn thắng thế, sao chổi bị đẩy xuống dưới Mặt Trăng. Ngay khi những quan sát mới phục hồi vị trí cổ của sao chổi ở vùng trời cao hơn, các không gian ấy lập tức bị dọn sạch khỏi mọi quả cầu rắc, và những quan sát ấy làm vỡ vĩnh viễn chúng.
+> Mở đầu chương này là một cuộc rà soát lịch sử dài, và hai chi tiết trong đó đáng nói với người đọc hôm nay. Một là vòng số cổ: Anaximander, Philolaus, Aristarchus, Plato, cả trường phái Pythagore, rồi đến vị vua La Mã Numa Pompilius, người dựng đền thờ Vesta hình tròn và ra lệnh giữ lửa ở chính giữa ngôi đền. Từ các ý tưởng cổ ấy mà sinh ra mô hình quả cầu rắc của Eudoxus và Aristotle.
 >
-> **Vì sao Newton viết như vậy.** Vì ngay sau đó ông nói thẳng mục đích của cả công trình: tìm **lượng và tính chất** của lực từ các hiện tượng, rồi dùng nó như một nguyên lý để ước tính bằng toán học các hiệu ứng phức tạp hơn. Và ông chủ động tránh câu hỏi về bản chất của lực: ta nói "bằng toán học" để tránh mọi câu hỏi ấy, vì ông không có ý định xác định bản chất đó bằng bất kỳ giả thuyết nào, và vì thế ông gọi chung nó là **lực hướng tâm**.
+> Mô hình quả cầu rắc có một hệ quả buộc phải kiểm: sao chổi, từng được các nhà thiên văn Chalđêa xếp vào số các thiên thể thời cổ như một loại hành tinh riêng với quỹ đạo hết sức lệch tâm, thì không thể nào ở trong hệ ấy được. Vậy nên khi giả thuyết quả cầu rắc còn thắng thế, sao chổi bị đẩy xuống dưới Mặt Trăng. Ngay khi những quan sát mới phục hồi vị trí cổ của sao chổi ở vùng trời cao hơn, các không gian ấy lập tức bị dọn sạch khỏi mọi quả cầu rắc, và những quan sát ấy làm vỡ vĩnh viễn chúng.
 >
-> **Hiện nay thì sao.** Câu chuyện các quả cầu rắc là một trong những ví dụ đẹp nhất về cách một mô hình vũ trụ bị dữ liệu quan sát xoá sổ: không phải vì lý thuyết sai về rõ ràng, mà vì sao chổi không còn chỗ nào để đứng. Còn việc đặt tên một lực trước khi biết cơ chế vẫn là thông lệ chuẩn của vật lý: ta gọi tên một đại lượng để dùng trong phương trình mà không hứa rằng mình đã hiểu nó. Chỉ khác ở chỗ hôm nay ta còn phải đoán tên cho cả thứ mà ta **biết là không có cơ chế**, như "năng lượng tối" trong phương trình của vũ trụ học, mà vẫn chưa ai chỉ ra nó là cái gì.
+> Ngay sau đó ông nói thẳng mục đích của cả công trình: tìm lượng và tính chất của lực từ các hiện tượng, rồi dùng nó như một nguyên lý để ước tính bằng toán học các hiệu ứng phức tạp hơn. Nếu không, sẽ không thể đem mọi điều riêng lẻ đến trực tiếp và tức thời với sự quan sát. Và ông chủ động tránh câu hỏi về bản chất của lực: ta nói "bằng toán học" để tránh mọi câu hỏi ấy, vì ông không có ý định xác định bản chất đó bằng bất kỳ giả thuyết nào, và vì thế ông gọi chung nó là lực hướng tâm.
+>
+> Câu chuyện các quả cầu rắc là một trong những ví dụ đẹp nhất về cách một mô hình vũ trụ bị dữ liệu quan sát xoá sổ: không phải vì lý thuyết sai về rõ ràng, mà vì sao chổi không còn chỗ nào để đứng. Còn việc đặt tên một lực trước khi biết cơ chế vẫn là thông lệ chuẩn của vật lý: ta gọi tên một đại lượng để dùng trong phương trình mà không hứa rằng mình đã hiểu nó. Chỉ khác ở chỗ hôm nay ta còn phải đoán tên cho cả thứ mà ta **biết là không có cơ chế**, như "năng lượng tối" trong phương trình của vũ trụ học, mà vẫn chưa ai chỉ ra nó là cái gì.
 
 Ta có thể dễ dàng hiểu rằng các lực hướng tâm có thể giữ các hành tinh trong những quỹ đạo nhất định, nếu xét đến chuyển động của các vật thể bị ném. Một hòn đá bị ném sẽ bị sức nặng của chính nó làm lệch khỏi đường thẳng mà lực ném có thể khiến nó đi; trong không khí, nó mô tả một đường cong rồi cuối cùng rơi xuống đất. Vật thể được ném càng nhanh thì đi càng xa trước khi rơi xuống mặt đất.
 
@@ -562,15 +562,17 @@ Vì vậy, những ngôi sao cố định ở khoảng cách gấp đôi sẽ m�
 
 Vì các ngôi sao cố định ở những khoảng cách vô cùng lớn so với nhau (p. 460, 461), chúng không thể hút lẫn nhau một cách nhận thấy được, cũng không thể bị Mặt Trời của chúng ta hút một cách nhận thấy được. Nhưng các sao chổi tất yếu phải chịu tác dụng của lực quanh Mặt Trời, vì các nhà Thiên văn học đã đặt chúng ở phía trên Mặt Trăng khi thấy chúng không có thị sai quận chiều; vì thế, thị sai thường niên của chúng là bằng chứng thuyết phục rằng chúng đi xuống các vùng của các hành tinh.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Đoạn này trả lời một câu hỏi người đời đã mang từ lâu: các ngôi sao ở xa bao nhiêu, và vì sao chúng không rơi vào nhau? Cả hai ý đều được trả lời bằng quan sát, không bằng giả định.
+> **Các ngôi sao ở xa bao nhiêu, và vì sao ánh sáng không thể bị mất trên đường đi**
 >
-> **Công thức.** Trước hết là thị sai thường niên cực nhỏ của các sao: nó chứng minh chúng nằm ở khoảng cách vô cùng lớn so với hệ hành tinh, lớn hơn $360$ lần khoảng cách sao Thổ tới Mặt Trời; và nếu chuyển động ấy nhỏ hơn $20''$ thì các sao gần hơn vượt quá $2000$ lần khoảng cách trung bình của sao Thổ. Rồi đến phép đo ánh sáng: đĩa sao Thổ chỉ rộng $17''$ hay $18''$ nên chỉ nhận khoảng một phần $2100000000$ ánh sáng Mặt Trời; nếu Mặt Trời cách xa hơn sao Thổ $100000$ lần, nó sẽ trông sáng như một ngôi sao cỡ sao một, với đường kính biểu kiến $7'16''$ và thị sai thường niên là $13'''$.
+> Đoạn này trả lời một câu hỏi người đời đã mang từ lâu: các ngôi sao ở xa bao nhiêu, và vì sao chúng không rơi vào nhau? Cả hai ý đều được trả lời bằng quan sát, không bằng giả định.
 >
-> **Vì sao Newton viết như vậy.** Vì ông tự phản bác một cách giải thích nghe rất hợp lý: rằng phần lớn ánh sáng của các sao bị chặn và mất trên đường truyền, nên các sao thật ra ở gần hơn. Nhưng giả thiết ấy tự mâu thuẫn. Nếu phần tư ánh sáng mất trên quãng đường tới các sao gần nhất, thì trên quãng đường gấp đôi ánh sáng sẽ mất hai lần, gấp ba thì ba lần, và cứ thế. Kết quả là các sao ở khoảng cách gấp đôi sẽ mờ hơn $16$ lần, gấp ba thì $9\times4\times4$ lần, gấp bốn thì $16\times4\times4\times4$ lần. Một sự giảm sáng dữ dội như vậy không thể khớp với hiện tượng.
+> Trước hết là thị sai thường niên cực nhỏ của các sao: nó chứng minh chúng nằm ở khoảng cách vô cùng lớn so với hệ hành tinh, lớn hơn $360$ lần khoảng cách sao Thổ tới Mặt Trời; và nếu chuyển động ấy nhỏ hơn $20''$ thì các sao gần hơn vượt quá $2000$ lần khoảng cách trung bình của sao Thổ. Rồi đến phép đo ánh sáng: đĩa sao Thổ chỉ rộng $17''$ hay $18''$ nên chỉ nhận khoảng một phần $2100000000$ ánh sáng Mặt Trời; nếu Mặt Trời cách xa hơn sao Thổ $100000$ lần, nó sẽ trông sáng như một ngôi sao cỡ sao một, với đường kính biểu kiến $7'16''$ và thị sai thường niên là $13'''$.
 >
-> **Hiện nay thì sao.** Lập luận quang học của ông chính là quan hệ $1/r^{2}$ mà ngày nay ta dùng để suy ra khoảng cách từ độ sáng, và phần bác bỏ "suy mất ánh sáng" thì đúng về mặt cấu trúc. Bụi liên tinh chỉ được Trumpler chỉ ra năm 1930, nhưng nó chỉ tinh chỉnh chứ không lật ngược kết luận: mật độ bụi làm mờ vài phần trăm độ lớn sáng trên mỗi kiloparsec, chứ không phải ba phần tư trên mỗi đơn vị khoảng cách. Còn kết luận rằng các ngôi sao không thể hút lẫn nhau thì **gần đúng nhưng sai ở chỗ quan trọng**: lực giữa từng cặp sao ở quy mô hệ Mặt Trời nhỏ đến mức không đáng kể, đúng như ông nói; nhưng **lực hút tập hợp** của cả thiên hà lên hệ Mặt Trời thì không nhỏ, và chính thủy triều thiên hà ấy định hình đám mây Oort mà tôi đã bàn ở chương trước.
+> Ông tự phản bác một cách giải thích nghe rất hợp lý: rằng phần lớn ánh sáng của các sao bị chặn và mất trên đường truyền, nên các sao thật ra ở gần hơn. Nhưng giả thiết ấy tự mâu thuẫn. Nếu một phần tư ánh sáng mất trên quãng đường tới các sao gần nhất, thì trên quãng đường gấp đôi ánh sáng sẽ mất gấp đôi, gấp ba thì gấp ba, và cứ thế. Quy luật độ sáng sinh ra như vậy không giống bất cứ cái gì các ngôi sao thật sự tuân theo, và đó là điểm giết nó.
+>
+> Lập luận quang học của ông chính là quan hệ $1/r^{2}$ mà ngày nay ta dùng để suy ra khoảng cách từ độ sáng, và phần bác bỏ "suy mất ánh sáng" thì đúng về mặt cấu trúc. Bụi liên tinh chỉ được Trumpler chỉ ra năm 1930, nhưng nó chỉ tinh chỉnh chứ không lật ngược kết luận: mật độ bụi làm mờ vài phần trăm độ lớn sáng trên mỗi kiloparsec, chứ không phải ba phần tư trên mỗi đơn vị khoảng cách. Còn kết luận rằng các ngôi sao không thể hút lẫn nhau thì gần đúng nhưng sai ở chỗ quan trọng: lực giữa từng cặp sao ở quy mô hệ Mặt Trời nhỏ đến mức không đáng kể, đúng như ông nói; nhưng lực hút tập hợp của cả thiên hà lên hệ Mặt Trời thì không nhỏ, và chính thủy triều thiên hà ấy định hình đám mây Oort.
 
 Tất cả những sao chổi chuyển động theo chiều thẳng, đúng thứ tự các cung, vào gần cuối thời gian hiện ra sẽ trở nên chậm hơn bình thường, hoặc chuyển động nghịch, nếu Trái Đất nằm giữa chúng và Mặt Trời; và nhanh hơn bình thường nếu Trái Đất đang tiến đến vị trí phách hành heliocentric với chúng. Ngược lại, những sao chổi chuyển động ngược thứ tự các cung, vào gần cuối thời gian hiện ra, lại trông nhanh hơn đáng lẽ chúng phải có nếu Trái Đất nằm giữa chúng và Mặt Trời; và chậm hơn, thậm chí có thể chuyển động nghịch, nếu Trái Đất ở phía bên kia quỹ đạo của nó. Điều này do chuyển động của Trái Đất ở những vị trí khác nhau gây ra.
 
@@ -718,17 +720,19 @@ Kết quả tính ấy được ghi trong bảng sau. Cột thứ nhất là đ�
 
 Từ bảng này, ta thấy không khí, khi đi lên, loãng ra theo cách mà một quả cầu không khí gần Trái Đất nhất, chỉ có đường kính một inch, nếu được giãn ra với mức loãng mà nó sẽ có ở độ cao bằng một bán kính Trái Đất, sẽ lấp đầy tất cả các vùng hành tinh cho đến quả cầu sao Thổ, và còn xa hơn nữa; còn ở độ cao bằng mười bán kính Trái Đất, nó sẽ lấp đầy một không gian lớn hơn toàn bộ bầu trời ở phía này các ngôi sao cố định, theo phép tính trước về khoảng cách của chúng. Và dù do độ dày lớn hơn nhiều của khí quyển các sao chổi, cùng lượng lớn lực hướng tâm quanh Mặt Trời, không khí trong các không gian thiên thể và trong đuôi sao chổi có thể không loãng bằng, phép tính này vẫn cho thấy một lượng rất nhỏ không khí và hơi nước cũng đủ dư để tạo ra toàn bộ những hiện tượng của đuôi sao chổi. Bởi các ngôi sao thực sự tỏa sáng xuyên qua chúng với độ loãng đáng kể. Khí quyển của Trái Đất, dù chỉ dày vài dặm và được Mặt Trời chiếu sáng, vẫn che khuất và làm tắt ánh sáng không chỉ của tất cả các ngôi sao mà cả của chính Mặt Trăng; trong khi những ngôi sao nhỏ nhất vẫn tỏa sáng xuyên qua độ dày khổng lồ của đuôi sao chổi, cũng được Mặt Trời chiếu sáng, mà không bị giảm chút nào trong sự rực rỡ.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Cả bảng khí quyển và phép bác bỏ giả thuyết khúc xạ đều là một bài toán duy nhất: đuôi sao chổi có phải do không khí khúc xạ ánh sáng tạo ra không. Bảng khí quyển được lập để trả lời câu hỏi tiếp theo: nếu là khí quyển, liệu khí quyển có đủ loãng để tạo ra hiện tượng ấy không.
+> **Sao chổi 1680 lệch 4,5 độ về bắc, sao chổi 1577 lệch 21 độ về nam**
 >
-> **Công thức.** Cột thứ ba là độ loãng, tính từ công thức barometric $p(h) = p_0 \exp\!\left(-\frac{\mu g h}{RT}\right)$, với tỷ lệ lặp của khoảng cách từ tâm Trái Đất. Ở cao $1200$ feet, tỷ lệ nén là $33/32$.
+> Cả bảng khí quyển và phép bác bỏ giả thuyết khúc xạ đều là một bài toán duy nhất: đuôi sao chổi có phải do không khí khúc xạ ánh sáng tạo ra không. Bảng khí quyển được lập để trả lời câu hỏi tiếp theo: nếu là khí quyển, liệu khí quyển có đủ loãng để tạo ra hiện tượng ấy không.
 >
-> **Vì sao Newton viết như vậy.** Lập luận cốt lõi nằm ở hai đối chiếu cùng vị trí trời: sao chổi 1680 và sao chổi 1577 đều ở Pisces $8^\circ41'$, Mặt Trời đều ở Capricorn $18^\circ26'$. Nếu đuôi do khí quyển khúc xạ, hai đuôi phải lệch cùng một phía. Thực tế: năm 1680 lệch $4\frac12^\circ$ về bắc, năm 1577 lệch $21^\circ$ về nam. Dữ liệu tự bác bỏ giả thuyết.
+> Cột thứ ba là độ loãng, tính từ công thức barometric $p(h) = p_0 \exp\!\left(-\frac{\mu g h}{RT}\right)$, với tỷ lệ lặp của khoảng cách từ tâm Trái Đất. Ở cao $1200$ feet, tỷ lệ nén là $33/32$.
 >
-> **Hiện nay thì sao.** Kết luận của Newton đúng nhưng cơ chế thì sai thế kỷ XVII. Đuôi sao chổi có hai thành phần: đuôi ion màu xanh, gồm ion khí bị cắn mổ bởi tia cực tím Mặt Trời rồi bị gió Mặt Trời quét ngược; và đuôi bụi vàng trắng, gồm hạt bụi toàn vẹn hơn và bị áp lực bức xạ quay thành vệt cong. Phần mà Newton đoán đúng là vật liệu phải đến từ chính đầu sao chổi và bị đẩy ra phía đối diện Mặt Trời. Về bảng khí quyển, phương pháp thì vẫn chuẩn nhưng con số sai: Newton giả thiết nhiệt độ không đổi theo độ cao, trong khi khí quyển thật nguội dần, nên độ loãng thực tế giảm chậm hơn ông ấn định.
+> Lập luận cốt lõi nằm ở hai đối chiếu cùng vị trí trời: sao chổi 1680 và sao chổi 1577 đều ở Pisces $8^\circ41'$, Mặt Trời đều ở Capricorn $18^\circ26'$. Nếu đuôi do khí quyển khúc xạ, hai đuôi phải lệch cùng một phía. Thực tế: năm 1680 lệch $4\frac12^\circ$ về bắc, năm 1577 lệch $21^\circ$ về nam. Dữ liệu tự bác bỏ giả thuyết.
 >
-> **Lưu ý nguồn gốc.** Các chữ số La Mã trong bảng là cách Newton ghi số thập phân thời ấy, không phải lỗi kỹ thuật. Riêng chu vi Trái Đất, ông lấy $123249600$ feet Paris từ đo đạc Pháp, chứ không phải số liệu địa lý hiện đại.
+> Kết luận của Newton đúng nhưng cơ chế thì thuộc thế kỷ XVII. Đuôi sao chổi có hai thành phần: đuôi ion màu xanh, gồm ion khí bị cắn mổ bởi tia cực tím Mặt Trời rồi bị gió Mặt Trời quét ngược; và đuôi bụi vàng trắng, gồm hạt bụi toàn vẹn hơn và bị áp lực bức xạ quay thành vệt cong. Phần mà Newton đoán đúng là vật liệu phải đến từ chính đầu sao chổi và bị đẩy ra phía đối diện Mặt Trời. Về bảng khí quyển, phương pháp thì vẫn chuẩn nhưng con số sai: Newton giả thiết nhiệt độ không đổi theo độ cao, trong khi khí quyển thật nguội dần, nên độ loãng thực tế giảm chậm hơn ông ấn định.
+>
+> Về nguồn gốc: các chữ số La Mã trong bảng là cách Newton ghi số thập phân thời ấy, không phải lỗi kỹ thuật. Riêng chu vi Trái Đất, ông lấy $123249600$ feet Paris từ đo đạc Pháp, chứ không phải số liệu địa lý hiện đại.
 
 Kepler quy việc đuôi sao chổi bay lên cho khí quyển của đầu chúng, và việc chúng hướng về các phía đối diện Mặt Trời cho tác dụng của các tia ánh sáng mang theo vật chất tạo nên đuôi sao chổi. Và không có điều gì vô lý đáng kể nếu ta giả sử rằng, trong những không gian rộng lớn ấy, một loại vật chất mịn như vật chất của aether có thể bị tác dụng của các tia ánh sáng Mặt Trời làm cho
 
@@ -764,15 +768,17 @@ Nhưng nếu quy luật của các hành tinh được tuân theo, quỹ đạo 
 
 Việc chúng chuyển động trong các quỹ đạo gần parabol được suy ra từ vận tốc của chúng. Vận tốc mà một parabol được vẽ ra có ở mọi nơi tỷ lệ với vận tốc mà một sao chổi hoặc hành tinh có thể quay quanh Mặt Trời trong một đường tròn ở cùng khoảng cách ấy, theo tỷ lệ căn bậc hai của $2$ trên $1$, theo Hệ quả VII của Proposition XVI. Theo phép tính của tôi, vận tốc của sao chổi xấp xỉ bằng cùng. Tôi đã kiểm tra điều ấy bằng cách suy ra gần đúng các vận tốc từ các khoảng cách, và các khoảng cách ấy từ cả thị sai lẫn hiện tượng của đuôi; tôi không bao giờ tìm thấy sai số dư hay thiếu trong các vận tốc lớn hơn điều có thể phát sinh từ sai số trong các khoảng cách thu được theo cách ấy. Nhưng tôi cũng đã sử dụng lập luận sau đây.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** "Quỹ đạo gần parabol" là cách nói của thế kỷ XVII về một thứ mà ngày nay gọi là quỹ đạo có tổng năng lượng gần bằng không: vật thể tới từ xa với tốc độ vừa đủ để thoát, hoặc vừa đủ để rơi vào. Trong học thuyết Kepler hiện đại, đây là các quỹ đạo dài hạn của sao chổi, với hệ số lệch tâm $e$ gần $1$.
+> **Quỹ đạo gần parabol nghĩa là tổng năng lượng gần bằng không**
 >
-> **Công thức.** Tỷ lệ căn bậc hai của $2$ trên $1$ mà Newton nêu chính là quan hệ giữa tốc độ trên parabol và tốc độ quay tròn ở cùng khoảng cách: $v_{\text{parabol}} = \sqrt{2}\,v_{\text{tròn}}$. Tương đương, năng lượng toàn phần $\varepsilon = \frac{v^2}{2} - \frac{\mu}{r} \approx 0$.
+> "Quỹ đạo gần parabol" là cách nói của thế kỷ XVII về một thứ mà ngày nay gọi là quỹ đạo có tổng năng lượng gần bằng không: vật thể tới từ xa với tốc độ vừa đủ để thoát, hoặc vừa đủ để rơi vào. Trong học thuyết Kepler hiện đại, đây là các quỹ đạo dài hạn của sao chổi, với hệ số lệch tâm $e$ gần $1$.
 >
-> **Vì sao Newton viết như vậy.** Ông không suy ra điều này từ lý thuyết mà từ số liệu: ước lượng khoảng cách tới sao chổi từ cả thị sai lẫn hiện tượng đuôi, rồi tính ngược ra vận tốc, và thấy vận tốc ấy khớp với giá trị parabol. Ông nói rõ mình chưa từng thấy sai số nào lớn hơn sai số có thể do bản thân phép đo khoảng cách gây ra. Đó là tiêu chuẩn thử nghiệm mà người sau này vẫn dùng.
+> Tỷ lệ căn bậc hai của $2$ trên $1$ mà Newton nêu chính là quan hệ giữa tốc độ trên parabol và tốc độ quay tròn ở cùng khoảng cách: $v_{\text{parabol}} = \sqrt{2}\,v_{\text{tròn}}$. Tương đương, năng lượng toàn phần $\varepsilon = \dfrac{v^2}{2} - \dfrac{\mu}{r} \approx 0$.
 >
-> **Hiện nay thì sao.** Kết luận ấy vẫn đúng, và ngành thiên văn xác nhận nó hàng loạt: các sao chổi chu kỳ dài có $e$ thường từ $0{,}99$ trở lên, vào hệ Mặt Trời với tốc độ thoát cũng gần đúng từ phía Mặt Trời. Chỉ có một chi tiết đã đổi: Newton lẽ ra chỉ có thể nêu ba giả thuyết, còn ngày nay ta biết chúng đến từ đám mây Oort, lớp băng đá ở rìa hệ Mặt Trời. Còn *orbis magnus* trong Bảng I chỉ là cách đặt bán kính quỹ đạo chia làm $1000$ phần: một thiết bị số học, không phải một ranh giới vật lý.
+> Ông không suy ra điều này từ lý thuyết mà từ số liệu: ước lượng khoảng cách tới sao chổi từ cả thị sai lẫn hiện tượng của đuôi, rồi tính ngược ra vận tốc, và thấy vận tốc ấy khớp với giá trị parabol. Ông nói rõ mình chưa từng thấy sai số nào lớn hơn sai số có thể do bản thân phép đo khoảng cách gây ra. Đó là tiêu chuẩn thử nghiệm mà người sau này vẫn dùng.
+>
+> Kết luận ấy vẫn đúng, và ngành thiên văn xác nhận nó hàng loạt: các sao chổi chu kỳ dài có $e$ thường từ $0{,}99$ trở lên, vào hệ Mặt Trời với tốc độ thoát cũng gần đúng từ phía Mặt Trời. Chỉ có một chi tiết đã đổi: Newton lẽ ra chỉ có thể nêu ba giả thuyết, còn ngày nay ta biết chúng đến từ đám mây Oort, lớp băng đá ở rìa hệ Mặt Trời. Còn *orbis magnus* trong Bảng I chỉ là cách đặt bán kính quỹ đạo chia làm $1000$ phần: một thiết bị số học, không phải một ranh giới vật lý.
 
 <!-- Bảng I và Bảng II đã đối chiếu với ảnh scan PDF 569: khớp toàn bộ 44 số của Bảng I và 40 số của Bảng II. -->
 

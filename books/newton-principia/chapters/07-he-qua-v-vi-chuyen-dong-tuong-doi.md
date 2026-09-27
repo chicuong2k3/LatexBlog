@@ -5,8 +5,6 @@ slug: "he-qua-v-vi-chuyen-dong-tuong-doi"
 number: 7
 ---
 
-# Hệ quả V và VI. Chuyển động tương đối
-
 ## Hệ quả V
 
 Những chuyển động của các vật thể nằm trong một không gian đã cho vẫn giống nhau, dù không gian ấy đứng yên hay chuyển động đều về phía trước theo một đường thẳng mà không có chuyển động tròn nào.
@@ -23,12 +21,24 @@ Nếu các vật thể, dù được cử động ra sao trong quan hệ với n
 
 Bởi vì những lực ấy tác dụng như nhau, xét theo lượng của các vật thể cần chuyển động, và theo những phương song song. Vì vậy, theo Định luật II, chúng sẽ làm cho mọi vật thể chuyển động như nhau, xét theo vận tốc, và do đó sẽ không bao giờ làm thay đổi vị trí hoặc chuyển động của các vật thể trong quan hệ với nhau.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Hệ quả V là **tương đối tính Galile**: các định luật cơ học không đổi dưới phép biến đổi tịnh tiến với vận tốc không đổi. Ngôn ngữ hiện đại là $\vec{x}' = \vec{x} - \vec{V}t$, $\vec{v}' = \vec{v} - \vec{V}$, và **thời gian giữ nguyên** $t' = t$. Chính điểm cuối đó là nơi thuyết tương đối hạn chế sẽ phá vỡ: Einstein coi ánh sáng có vận tốc không đổi trong mọi hệ quy chiếu, nên phải bỏ $t' = t$ và thay bằng thời gian không đồng nhất. Hệ quả V là mốc đánh dấu chính xác chỗ ranh giới giữa vật lí Newton và vật lí Einstein.
+> **Hệ quả V là tương đối tính Galile**
 >
-> **Công thức.** Lập luận của Newton dựa trên điểm toán học gọn: các **hiệu** và các **tổng** của vận tốc không đổi khi dịch chuyển cả hệ quy chiếu với cùng một $\vec{V}$. Mọi va chạm đều là hệ quả của tổng và hiệu ấy, nên theo Định luật II chúng cho kết quả như nhau trong hai hệ quy chiếu. Kiểm tra: tàu chạy với $V = 20\ \mathrm{m/s}$, người trên tàu ném bóng với $20{,}5\ \mathrm{m/s}$ về phía mũi tàu. Người trên bờ thấy bóng bay $20{,}5\ \mathrm{m/s}$; người trên tàu thấy $0{,}5\ \mathrm{m/s}$. Hai người mô tả **cùng một sự kiện** giống hệt nhau.
+> Các định luật cơ học không đổi dưới phép biến đổi tịnh tiến với vận tốc không đổi. Theo ký hiệu ngày nay:
 >
-> **Vì sao Newton viết như vậy.** Thí nghiệm trên con tàu không phải ví dụ bổ sung, mà là cách ông chứng minh chuyển động đều không thể nhận ra bằng mắt hay bằng cơ học. Thuyết tương đối đặt câu hỏi mà Newton chỉ trả lời được một nửa: nếu mọi định luật vật lí đều như nhau trong mọi hệ quy chiếu chuyển động đều, thì làm sao nói được chuyển động là gì so với cái gì? Câu trả lời của Einstein hai trăm năm sau là: hãy đưa tốc độ ánh sáng vào, và bạn sẽ phải hy sinh quan niệm thời gian tuyệt đối mà Newton đã dựng ở Học luận.
+> $$\vec{x}' = \vec{x} - \vec{V}t, \qquad \vec{v}' = \vec{v} - \vec{V}, \qquad t' = t$$
 >
-> Hệ quả VI thì đi xa hơn và ít được nhắc hơn. Nó nói rằng nếu mọi vật thể cùng nhận một gia tốc như nhau, hệ quy chiếu ấy vẫn không nhận ra được. Ngành kỹ thuật gọi đây là **khung tăng tốc đều**, và suy ra ngay tính quán tính của gia tốc: từ bên trong một thang máy đang tăng tốc lên, mọi thứ trông như bị áp lực tăng thêm $ma$. Chính từ đây mà Einstein bắt đầu: trong thang máy, không thể phân biệt "tăng tốc lên" với "hấp dẫn mạnh hơn" — ông gọi đó là **nguyên lý tương đương**, mầm của thuyết hấp dẫn chung. Cả hai hệ quả đều được Newton chứng minh bằng vài dòng, và cả hai đều đủ sức nảy sinh một cuộc cách mạng.
+> **Thời gian giữ nguyên** là mấu chốt. Toán học đứng sau là: các hiệu và các tổng của vận tốc không đổi khi dịch chuyển cả hệ quy chiếu với cùng một $\vec{V}$. Mọi va chạm đều là hệ quả của tổng và hiệu ấy, nên theo Định luật II chúng cho kết quả như nhau trong hai hệ quy chiếu.
+>
+> Kiểm tra bằng một con số: tàu chạy với $V = 20\ \mathrm{m/s}$, người trên tàu ném bóng với $20{,}5\ \mathrm{m/s}$ về phía mũi tàu. Người trên bờ thấy bóng bay $20{,}5\ \mathrm{m/s}$; người trên tàu thấy $0{,}5\ \mathrm{m/s}$. Hai người mô tả **cùng một sự kiện** giống hệt nhau.
+>
+> Thí nghiệm trên con tàu không phải ví dụ bổ sung, mà là cách ông chứng minh chuyển động đều không thể nhận ra bằng mắt hay bằng cơ học.
+>
+> **Giới hạn rõ ràng của Hệ quả V**
+>
+> Phép biến đổi trên lấy $\vec{V}$ là bất kỳ. Nếu ta đòi hỏi ánh sáng có vận tốc không đổi trong mọi hệ quy chiếu, thì phải bỏ $t' = t$ và thời gian trở thành không đồng nhất. Hệ quả V chỉ đúng ở chỗ nó nói: với mọi vận tốc thường, không riêng ánh sáng.
+>
+> **Hệ quả VI: tăng tốc cũng không nhận ra được**
+>
+> Nếu mọi vật thể cùng nhận một gia tốc như nhau, hệ quy chiếu ấy vẫn không nhận ra được. Ngành kỹ thuật gọi đây là **khung tăng tốc đều**, và suy ra ngay tính quán tính của gia tốc: từ bên trong một thang máy đang tăng tốc lên, mọi thứ trông như bị áp lực tăng thêm $ma$. Trong thang máy như vậy không phân biệt được "tăng tốc lên" với "hấp dẫn mạnh hơn".

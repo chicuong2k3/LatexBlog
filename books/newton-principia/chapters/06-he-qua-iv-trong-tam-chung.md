@@ -5,8 +5,6 @@ slug: "he-qua-iv-trong-tam-chung"
 number: 6
 ---
 
-# Hệ quả IV. Trọng tâm chung
-
 ## Hệ quả IV
 
 Trọng tâm chung của hai hoặc nhiều vật thể không thay đổi trạng thái chuyển động hoặc đứng yên vì những tác dụng qua lại giữa các vật thể. Vì vậy, trọng tâm chung của tất cả những vật thể đang tác dụng lên nhau, ngoại trừ những tác dụng từ bên ngoài và những trở lực, hoặc đứng yên, hoặc chuyển động đều theo một đường thẳng.
@@ -35,16 +33,22 @@ Do đó, khi các vật thể không tác dụng qua lại lên nhau, trọng t�
 
 Vì vậy, cùng định luật ấy cũng đúng với một hệ thống gồm nhiều vật thể như với một vật thể duy nhất, xét việc chúng kiên trì trong trạng thái chuyển động hoặc đứng yên. Chuyển động tiến triển, dù của một vật thể duy nhất hay của cả một hệ thống các vật thể, luôn phải được ước lượng từ chuyển động của trọng tâm chung.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** "Trọng tâm chung" của Newton là **tâm khối**. Tuy nhiên từ này ở ông gộp cả hai khái niệm mà vật lí hôm nay tách bạch: tâm khối định nghĩa bằng **khối lượng**, tâm trọng lực định nghĩa bằng **trọng lượng**. Chúng chỉ trùng nhau khi trọng lực đều trên toàn bộ vật thể. Newton được phép giả thiết điều đó với vật thể nhỏ, nhưng chính ông sẽ chứng minh ở Sách III rằng trọng lực thay đổi theo khoảng cách và theo vị trí, nên ở đó hai tâm ấy tách ra.
+> **“Trọng tâm chung” gộp hai khái niệm mà ngày nay tách bạch**
 >
-> **Công thức.** Cách chia đoạn nối hai tâm mà Newton gọi là "tỉ lệ nghịch với các vật thể" chính là công thức tâm khối: $\dfrac{d_1}{d_2} = \dfrac{m_2}{m_1}$. Kiểm tra: hai vật thể có khối lượng $2$ và $6$ cách nhau $8$ đơn vị, tâm khối nằm cách vật thể thứ nhất $6$ và cách vật thể thứ hai $2$, vì $6 : 2 = 3$ đúng bằng tỉ lệ nghịch của hai khối lượng. Dạng đầy đủ là $\vec{r}_{CM} = \dfrac{\sum_i m_i \vec{r}_i}{M}$ và $M\vec{a}_{CM} = \sum_i \vec{F}_{ext,i}$.
+> Tâm khối định nghĩa bằng **khối lượng**, tâm trọng lực định nghĩa bằng **trọng lượng**. Chúng chỉ trùng nhau khi trọng lực đều trên toàn bộ vật thể. Newton được phép giả thiết điều đó với vật thể nhỏ, nhưng chính ông sẽ chứng minh ở Sách III rằng trọng lực thay đổi theo khoảng cách và theo vị trí, nên ở đó hai tâm ấy tách ra.
 >
-> Kiểm tra: hai vật thể khối lượng $2$ và $3$ chịu lực ngoài $10\ \mathrm{N}$ đặt vào vật thể thứ nhất thì $\vec{a}_{CM} = 10/5 = 2\ \mathrm{m/s^2}$. Nếu chỉ kéo nhau bằng lực nội tại $10\ \mathrm{N}$ thì $\vec{a}_1 = 5$, $\vec{a}_2 = -10/3$, và $\vec{a}_{CM} = (2 \cdot 5 + 3 \cdot (-10/3))/5 = 0$. Lực nội tại triệt tiêu đúng như Newton nói.
+> Cách chia đoạn nối hai tâm mà Newton gọi là "tỉ lệ nghịch với các vật thể" chính là công thức tâm khối: $\dfrac{d_1}{d_2} = \dfrac{m_2}{m_1}$. Kiểm tra: hai vật thể có khối lượng $2$ và $6$ cách nhau $8$ đơn vị, tâm khối nằm cách vật thể thứ nhất $6$ và cách vật thể thứ hai $2$, vì $6 : 2 = 3$ đúng bằng tỉ lệ nghịch của hai khối lượng. Dạng đầy đủ là $\vec{r}_{CM} = \dfrac{\sum_i m_i \vec{r}_i}{M}$ và $M\vec{a}_{CM} = \sum_i \vec{F}_{ext,i}$.
 >
-> **Vì sao Newton viết như vậy.** Cách chứng minh đặc trưng thời đại: ông làm cho hai điểm, rồi ba, rồi bốn, rồi kết bằng "và cứ tiếp như vậy trong vô tận" — quy nạp hình học thuần tuý. Người đọc hôm nay thấy gần như hiển nhiên, vì $\vec{r}_{CM}$ chỉ là trung bình trọng số nên tính được cho bao nhiêu vật thể cũng được. Nhưng thế kỷ XVII thì không, và quy nạp của Newton là một bước hợp lý chứ không phải điều hiển nhiên.
+> Kiểm tra tiếp: hai vật thể khối lượng $2$ và $3$ chịu lực ngoài $10\ \mathrm{N}$ đặt vào vật thể thứ nhất thì $\vec{a}_{CM} = 10/5 = 2\ \mathrm{m/s^2}$. Nếu chỉ kéo nhau bằng lực nội tại $10\ \mathrm{N}$ thì $\vec{a}_1 = 5$, $\vec{a}_2 = -10/3$, và $\vec{a}_{CM} = (2 \cdot 5 + 3 \cdot (-10/3))/5 = 0$. Lực nội tại triệt tiêu đúng như Newton nói.
 >
-> Câu cuối cùng mới là phần quan trọng nhất, và là ý sẽ được dùng lại suốt Phần I: **cùng một định luật đúng với một hệ nhiều vật thể như với một vật thể duy nhất**. Đây là nguyên lý giảm, và nó chính là thứ cho phép giải bài toán hành tinh bằng cách coi cả hệ Mặt Trời–Trái Đất–Mặt Trăng như một vật thể đặt tại tâm khối của nó.
+> **Quy nạp hình học thuần tuý**
+>
+> Ông làm cho hai điểm, rồi ba, rồi bốn, rồi kết bằng "và cứ tiếp như vậy trong vô tận". Người đọc hôm nay thấy gần như hiển nhiên, vì $\vec{r}_{CM}$ chỉ là trung bình trọng số nên tính được cho bao nhiêu vật thể cũng được. Nhưng thế kỷ XVII thì không, và quy nạp của Newton là một bước hợp lý chứ không phải điều hiển nhiên.
+>
+> **Cùng một định luật cho một hệ nhiều vật thể**
+>
+> Câu cuối cùng là phần quan trọng nhất, và là ý sẽ được dùng lại suốt Phần I. Đây là nguyên lý giảm, và nó chính là thứ cho phép giải bài toán hành tinh bằng cách coi cả hệ Mặt Trời–Trái Đất–Mặt Trăng như một vật thể đặt tại tâm khối của nó.
 >
 > Bổ sung cho đủ: chỉ **lực bên ngoài** mới làm thay đổi trạng thái của tâm khối. Mọi lực hấp dẫn đều là lực nội tại, nên tâm khối của một hệ sao bị khoá trong quả cầu bằng nhau ở đứng yên. Tính cả Mặt Trăng vào thì tâm khối Trái Đất–Mặt Trăng mới quay quanh Mặt Trời, và mỗi thành phần quay với bán kính tương ứng khối lượng của mình — chứ không quanh tâm của chính nó.

@@ -5,8 +5,6 @@ slug: "sach-i-phan-xi-proposition-lxiii-lxvi"
 number: 37
 ---
 
-# Sách I, Phần XI. Proposition LXIII–LXVI
-
 ![Chuyển động của các vật thể hút nhau](../assets/section-xi-mutual-attraction.svg)
 
 *Hình 25. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -39,15 +37,15 @@ Thêm vật thể thứ tư $V$. Cùng lập luận, $V$ và điểm $C$ mô t�
 
 Nếu các lực hút giữa mọi cặp vật thể tỷ lệ với khoảng cách nhân với khối lượng vật thể hút, tất cả sẽ mô tả các elip khác nhau với cùng chu kỳ quanh tâm trọng lực chung $B$ trong một mặt phẳng bất biến.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition LXIV mở rộng kết quả hai vật thể ở Proposition LXI ra **hệ nhiều vật thể**: nếu các lực hút tỷ lệ thuận với khoảng cách, thì mọi vật thể đều mô tả các elip **đồng dạng** quanh tâm trọng lực chung, và tất cả cùng có **một chu kỳ chung**.
+> **Lực tuyến tính giữa các vật thể: mọi vật thể cùng quay hết một vòng trong cùng một thời gian**
 >
-> **Công thức.** Mỗi lần thêm một vật thể mới, ông chỉ ra rằng các vật thể cũ vẫn mô tả elip quanh tâm riêng của chúng, nhưng với chu kỳ bị rút ngắn theo một tỷ lệ xác định, còn tâm ấy lại mô tả một elip tương tự quanh tâm lớn hơn. Với lực tuyến tính $F_{ij} = -k m_i(\vec{r}_i - \vec{r}_j)$ và tổng khối lượng $M$, đặt tâm trọng lực tại gốc thì $\ddot{\vec{r}}_i = -kM\vec{r}_i$ cho mọi $i$, nên mọi vật thể cùng tần số góc $\omega = \sqrt{kM}$ và cùng chu kỳ $T = 2\pi\sqrt{\dfrac{1}{kM}}$.
+> Với lực hút tuyến tính $F_{ij} = -k m_i(\vec{r}_i - \vec{r}_j)$ và tổng khối lượng $M$, đặt tâm trọng lực tại gốc thì $\ddot{\vec{r}}_i = -kM\vec{r}_i$ cho mọi $i$. Kết quả: mọi vật thể cùng tần số góc $\omega = \sqrt{kM}$, cùng chu kỳ $T = 2\pi\sqrt{\dfrac{1}{kM}}$, và mọi elip đều đồng dạng quanh một tâm chung. Tổng khối lượng xuất hiện ở đúng một chỗ, nên nó là đại lượng duy nhất quyết định nhịp của cả hệ.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần bằng chứng rằng kết quả hai vật thể không chỉ là một trường hợp riêng mà là thuộc tính chung của cả hệ. Ông cũng đang dựng cái mà ngày nay gọi là **phân rã thứ cấp** của bài toán nhiều vật thể: giải bài toán trên bằng cách đưa mọi vật thể về các hệ quy chiếu lồng nhau, mỗi hệ nhỏ hơn lại là một bài toán đã biết.
+> Từng bước trong cách ông làm, mỗi lần thêm một vật thể, các vật thể cũ vẫn mô tả elip quanh tâm riêng của chúng với chu kỳ bị rút ngắn theo một tỷ lệ xác định, còn tâm ấy lại mô tả một elip tương tự quanh tâm lớn hơn. Ông cần bằng chứng rằng kết quả hai vật thể không phải một trường hợp riêng mà là thuộc tính chung của cả hệ, và cách lặp lại đó chính là cái mà ngày nay gọi là **phân rã thứ cấp** của bài toán nhiều vật thể: giải bài toán trên bằng cách đưa mọi vật thể về các hệ quy chiếu lồng nhau, mỗi hệ nhỏ hơn lại là một bài toán đã biết.
 >
-> **Hiện nay thì sao.** Cấu trúc "elip đồng dạng, cùng chu kỳ, quanh tâm chung" chính là hình dạng mà lý thuyết dao động của hệ nhiều bậc dùng để giải thích tính ổn định của các cấu trúc như phân tử nguyên tử, còng quay của con lắc kép, hay các ion trong tinh thể rắn. Cùng lý do đó, lực tỷ lệ thuận với khoảng cách là lực duy nhất khiến mọi vật thể trong hệ dao động cùng một tần số — đó là ý nghĩa vật lý sâu của câu "mọi chu kỳ đều bằng nhau".
+> Người đọc hôm nay gặp đúng cấu trúc "elip đồng dạng, cùng chu kỳ, quanh một tâm" trong lý thuyết dao động bình thường của các hệ nhiều bậc: hai con lắc gắn cứng, dãy dao động gắn, hay mạng tinh thể ở gần vị trí cân bằng nơi đạt cứng lên gần đúng tuyến tính. Cùng lý do đó, lực tuyến tính là lực duy nhất khiến mọi vật thể trong một hệ dao động cùng một tần số — đó là ý nghĩa vật lý sâu của câu "mọi chu kỳ đều bằng nhau".
 
 ## Proposition LXV. Định lý XXV
 
@@ -164,12 +162,14 @@ Trong hệ $T$, $P$, $S$, tỷ lệ tăng giảm lực nhỏ nhất khi apsis �
 
 Khi vật thể đi từ góc phần tư tới syzygy, góc nghiêng giảm, rồi tăng trở lại khi đi từ syzygy tới góc phần tư kế tiếp. Vì vậy, góc nghiêng nhỏ nhất ở syzygy.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Các hệ quả 2 đến 10 của Proposition LXVI là mảng **nhiễu ba vật thể** đầu tiên trong vật lí: chúng mô tả chính xác điều gì xảy ra với quỹ đạo của một vật thể khi có thêm một vật thể thứ ba hút nó. Kết quả là: vật thể chạy **nhanh hơn ở hội hợp và đối hợp** so với góc phần tư, quỹ đạo **cong hơn** ở góc phần tư, mặt phẳng quỹ đạo **nghiêng ít nhất** ở hội hợp, và đường apsis **tiến ở hội hợp nhưng lùi ở góc phần tư**, tổng cộng là tiến.
+> **Thêm một hành tinh thứ ba: nhanh hơn ở hội hợp, cong hơn ở góc phần tư, apsis vẫn tiến**
 >
-> **Công thức.** Nhiễu dọc theo phương bán kính có hai thành phần: $KL$ ở hội hợp và $LM$ ở góc phần tư, với $KL$ gần gấp đôi $LM$. Vì vậy lực hướng tâm bị giảm nhiều ở hội hợp và chỉ tăng ít ở góc phần tư, nên chu kỳ dài ra ở hội hợp, quỹ đạo phồng ra ở góc phần tư, và chuyển động tiến của apsis thắng chuyển động lùi.
+> Nhiễu dọc theo phương bán kính có hai thành phần: $KL$ ở hội hợp và $LM$ ở góc phần tư, với $KL$ gần gấp đôi $LM$. Vì vậy lực hướng tâm bị giảm nhiều ở hội hợp và chỉ tăng ít ở góc phần tư: chu kỳ dài ra ở hội hợp, quỹ đạo phồng ra ở góc phần tư, và chuyển động tiến của apsis thắng chuyển động lùi. Đó là toàn bộ kết quả của các Hệ quả 2 đến 10, chỉ gói trong một câu: mọi thay đổi đều đổi dấu ở hội hợp, và vì thành phần ở hội hợp lớn hơn, phần còn lại là phần tiến.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần chứng minh các quy luật Kepler vẫn xấp xỉ đúng khi có nhiều hành tinh thay vì một, và ông chỉ có một cách: phân tích lực của vật thể thứ ba theo từng thành phần phương, rồi đọc xem thành phần nào làm sai lệch diện tích và thành phần nào làm lệch hình dạng. Đó chính là cách làm của **lý thuyết nhiễu** ngày nay, chỉ khác ở chỗ người ta dùng phép tính vi phân thay cho hình học thuần tuý.
+> Ông cần chứng minh các quy luật Kepler vẫn xấp xỉ đúng khi có nhiều hành tinh thay vì một, và ông chỉ có một đường: phân tích lực của vật thể thứ ba theo từng thành phần phương, rồi xem thành phần nào làm sai lệch diện tích và thành phần nào làm lệch hình dạng. Đó là cách làm của **lý thuyết nhiễu** ngày nay, chỉ khác ở chỗ người ta dùng phép tính vi phân thay cho hình học thuần tuý.
 >
-> **Hiện nay thì sao.** Đây là nền của **phương trình phẳng thứ Lagrange**, nơi tốc độ thay đổi dài hạn của quỹ đạo được biểu diễn theo trục elip. Cùng cấu trúc ấy giải thích hai sự kiện lịch sử của Mặt Trăng: nó chạy nhanh hơn ở hội hợp và đối hợp, và mặt phẳng quỹ đạo nghiêng ít nhất ở những vị trí ấy — đó là những bất đẳng thức thiên văn đã được ghi nhận từ lâu. Nó cũng giải thích vì sao đường apsis của Mặt Trăng tiến dần do Mặt Trời gây ra, và vì sao tốc độ ấy biến thiên theo chu kỳ 18,6 năm của mặt phẳng quỹ đạo.
+> Cùng cấu trúc ấy, ở dạng vi phân, chính là **phương trình phẳng thứ Lagrange**: tốc độ thay đổi dài hạn của quỹ đạo được biểu diễn theo trục elip, mỗi thành phần nhiễu sẽ đẩy một trục theo một tốc độ riêng. Đó là công thức mà ngành thiên văn vẫn dùng để theo dõi quỹ đạo vệ tinh và tiểu hành tinh.
+>
+> Hai sự kiện lịch sử của Mặt Trăng rơi thẳng ra từ đây. Nó chạy nhanh hơn ở hội hợp và đối hợp, và mặt phẳng quỹ đạo nghiêng ít nhất ở đúng những vị trí ấy — hai bất đẳng thức thiên văn đã được ghi nhận từ lâu. Nó cũng giải thích vì sao đường apsis của Mặt Trăng tiến dần do Mặt Trời gây ra, với tốc độ biến thiên theo chu kỳ 18,6 năm của mặt phẳng quỹ đạo.

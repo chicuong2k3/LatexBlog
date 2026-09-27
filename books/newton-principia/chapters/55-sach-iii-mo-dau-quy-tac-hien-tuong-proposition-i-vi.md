@@ -5,8 +5,6 @@ slug: "sach-iii-mo-dau-quy-tac-hien-tuong-proposition-i-vi"
 number: 55
 ---
 
-# Sách III. Mở đầu: quy tắc, hiện tượng và Proposition I–VI
-
 ![Minh họa chuyển động và lực hút](../assets/book-ii-section-i-motion.svg)
 
 *Hình 43. Sơ đồ được dùng lại từ Phần I; các bảng thiên văn và sơ đồ quỹ đạo của bản gốc cần được đối chiếu riêng.*
@@ -65,15 +63,17 @@ Lập luận từ các hiện tượng chứng minh lực hút phổ quát của
 
 Tôi không khẳng định trọng lực là bản chất cố hữu của vật thể. Khi tôi nói *vis insita* (lực quán tính), tôi chỉ muốn nói *vis inertia* (lực quán tính), cái mà không thay đổi. Trọng lực giảm khi vật thể rời xa Trái Đất.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Quy tắc III là "nguyên lý đồng nhất tính chất": bất cứ đặc tính nào ta luôn thấy đúng với mọi vật thể trong tầm thí nghiệm, thì phải coi là phổ quát. Chính quy tắc này, khi áp vào **hiện tượng thiên văn**, mới sinh ra hấp dẫn phổ quát.
+> **Quy tắc III: từ "biển của ta hướng về Mặt Trăng" đến hấp dẫn phổ quát**
 >
-> **Công thức.** Chuỗi bằng chứng ông liệt kê rất đẹp: mọi vật thể quanh Trái Đất đều hướng về Trái Đất theo tỷ lệ lượng vật chất của chúng; Mặt Trăng hướng về Trái Đất theo tỷ lệ lượng vật chất của nó; **biển của ta hướng về Mặt Trăng**; các hành tinh hướng lẫn nhau; và sao chổi cũng hướng về Mặt Trời. Mỗi mắt xích đều là một quan sát đo được, và tất cả cùng chỉ về một nguyên nhân chung.
+> Quy tắc III là nguyên lý đồng nhất tính chất: bất cứ đặc tính nào ta luôn thấy đúng với mọi vật thể trong tầm thí nghiệm thì phải coi là phổ quát. Chính quy tắc này, khi áp vào **hiện tượng thiên văn**, mới sinh ra hấp dẫn phổ quát.
 >
-> **Vì sao Newton viết như vậy.** Vì ông biết mắt xích nào yếu hơn mắt xích nào. Ông tự nói thẳng: lập luận chứng minh lực hút phổ quát **mạnh hơn** lập luận về tính không xuyên thủng, vì trong các vùng thiên thể ta không có thí nghiệm hay quan sát nào về tính không xuyên thủng. Đó là một tiêu chí suy luận rất tỉnh: độ chắc của một mệnh đề phụ thuộc vào việc ta có dữ liệu thực nghiệm ở đúng vùng đang nói hay không. Và ông còn từ chối nói quá: ông **không** khẳng định trọng lực là bản chất cố hữu của vật thể, và ông phân biệt rõ *vis insita* với *vis inertia* — chỉ khi nào thật cần, ông mới gán cho vật thể một lực cố hữu.
+> Chuỗi bằng chứng ông liệt kê rất đẹp: mọi vật thể quanh Trái Đất đều hướng về Trái Đất theo tỷ lệ lượng vật chất của chúng; Mặt Trăng hướng về Trái Đất theo tỷ lệ lượng vật chất của nó; **biển của ta hướng về Mặt Trăng**; các hành tinh hướng lẫn nhau; và sao chổi cũng hướng về Mặt Trời. Mỗi mắt xích đều là một quan sát đo được, và tất cả cùng chỉ về một nguyên nhân chung.
 >
-> **Hiện nay thì sao.** Mắt xích đáng chú ý nhất là "biển của ta hướng về Mặt Trăng": đó chính là thủy triều, và trước thời Newton nó được coi là một ảnh hưởng thiên thể tách rời, không gắn với lực hút. Việc Newton xếp nó cùng một hàng với rơi tự do và với lực giữ hành tinh trên quỹ tích là bước thống nhất đầu tiên, và phải chờ các Proposition về thủy triều ở cuối Sách III mới hoàn tất. Về mặt triết học khoa học, câu hỏi ông đặt ra ở đây vẫn còn sống: mọi suy luận về một vùng mà ta không thể thí nghiệm — vũ trụ, thế giới nano, thời gian sâu — đều phải trả lời chính câu đó.
+> Ông biết mắt xích nào yếu hơn mắt xích nào. Ông tự nói thẳng: lập luận chứng minh lực hút phổ quát **mạnh hơn** lập luận về tính không xuyên thủng, vì trong các vùng thiên thể ta không có thí nghiệm hay quan sát nào về tính không xuyên thủng. Đó là một tiêu chí suy luận rất tỉnh: độ chắc của một mệnh đề phụ thuộc vào việc ta có dữ liệu thực nghiệm ở đúng vùng đang nói hay không. Và ông còn từ chối nói quá: ông **không** khẳng định trọng lực là bản chất cố hữu của vật thể, và ông phân biệt rõ *vis insita* với *vis inertia* — chỉ khi nào thật cần, ông mới gán cho vật thể một lực cố hữu.
+>
+> Mắt xích "biển của ta hướng về Mặt Trăng" là thủy triều, và trước thời Newton nó được coi là một ảnh hưởng thiên thể tách rời, không gắn với lực hút. Việc Newton xếp nó cùng một hàng với rơi tự do và với lực giữ hành tinh trên quỹ tích là bước thống nhất đầu tiên, và phải chờ các Proposition về thủy triều ở cuối Sách III mới hoàn tất. Về mặt triết học khoa học, câu hỏi ông đặt ra ở đây vẫn còn sống: mọi suy luận về một vùng mà ta không thể thí nghiệm — vũ trụ, thế giới nano, thời gian sâu — đều phải trả lời chính câu đó.
 
 ### Quy tắc IV
 
@@ -197,15 +197,17 @@ Vì vậy, lực giữ Mặt Trăng trong quỹ đạo, ở bề mặt Trái Đ�
 
 Phép tính này giả sử Trái Đất đứng yên. Nếu cả Trái Đất và Mặt Trăng đều quanh Mặt Trời, đồng thời quanh tâm trọng lực chung, khoảng cách giữa tâm Mặt Trăng và Trái Đất sẽ là $60$ bán kính Trái Đất, như có thể tính từ Proposition LX, Sách I.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition IV là phép thử định lượng đầu tiên nối chuyển động quỹ tích của Mặt Trăng với trọng lực ở bề mặt Trái Đất. Trước đó, việc các vật thể rơi xuống và việc Mặt Trăng quay quanh Trái Đất là hai sự kiện riêng biệt, chưa có lý do chung nào được chỉ ra.
+> **Mặt Trăng rơi nhanh bằng một con lắc ở Paris: 15 feet, 1 inch, 1 line trong một giây**
 >
-> **Công thức.** Nếu Mặt Trăng bị tước mọi chuyển động và thả xuống, lực đang giữ nó trên quỹ tích sẽ làm nó rơi khoảng $15\frac12$ feet Paris trong một phút. Lực ấy tăng theo bình phương nghịch đảo khoảng cách, và Mặt Trăng ở khoảng cách bằng $60$ bán kính Trái Đất, nên ở bề mặt Trái Đất lực ấy lớn hơn $60^2 = 3600$ lần. Nhân với khoảng rơi ấy, một vật thể ở bề mặt phải rơi $15\frac12$ feet Paris trong một phút, tức **15 feet, 1 inch, 1 line trong một giây**. Mà Huygens đã quan sát một con lắc ở Paris dao động đúng một giây với chiều dài quy đổi ra đúng bằng khoảng ấy.
+> Proposition IV là phép thử định lượng đầu tiên nối chuyển động quỹ tích của Mặt Trăng với trọng lực ở bề mặt Trái Đất. Trước đó, việc các vật thể rơi xuống và việc Mặt Trăng quay quanh Trái Đất là hai sự kiện riêng biệt, chưa có lý do chung nào được chỉ ra.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không chỉ tìm sự khớp, ông còn dựng sẵn một phép thử để **loại** giả thuyết cạnh tranh. Ông viết rằng nếu trọng lực là một lực khác với lực giữ Mặt Trăng, thì vật thể rơi ở Trái Đất chịu đồng thời cả hai lực sẽ rơi nhanh gấp đôi, tức mỗi giây $30\frac12$ feet Paris, trái với kinh nghiệm. Ông cũng nói rõ mình đã bỏ qua cái gì: lực Mặt Trời làm nhiễu Mặt Trăng, vì nó chỉ bằng khoảng $1$ phần $178$ của lực hướng tâm, và ông đã sửa cả sai số khúc xạ mà Tycho và người theo ông ta gây ra.
+> Nếu Mặt Trăng bị tước mọi chuyển động và thả xuống, lực đang giữ nó trên quỹ tích sẽ làm nó rơi khoảng $15\frac12$ feet Paris trong một phút. Lực ấy tăng theo bình phương nghịch đảo khoảng cách, và Mặt Trăng ở khoảng cách bằng $60$ bán kính Trái Đất, nên ở bề mặt Trái Đất lực ấy lớn hơn $60^2 = 3600$ lần. Nhân với khoảng rơi ấy, một vật thể ở bề mặt phải rơi $15\frac12$ feet Paris trong một phút, tức **15 feet, 1 inch, 1 line trong một giây**. Mà Huygens đã quan sát một con lắc ở Paris dao động đúng một giây với chiều dài quy đổi ra đúng bằng khoảng ấy.
 >
-> **Hiện nay thì sao.** Con số $3600 = 60^2$ chính là quy luật nghịch đảo bậc hai đang làm việc. Nó cho ta một ước lượng độc lập về khoảng cách Mặt Trăng, và từ đó là khối lượng Trái Đất: vì lực ở bề mặt bằng $g$ còn lực ở Mặt Trăng bằng $g/3600$, ta tách được $GM/r^2$ ở hai nơi rồi ghép lại. Cùng cách lập luận ấy ngày nay dùng để đo khối lượng Trái Đất, khối lượng Mặt Trăng và hằng số hấp dẫn; sai số tốt hơn nhiều, nhưng cấu trúc thì y hệt.
+> Ông không chỉ tìm sự khớp, ông còn dựng sẵn một phép thử để **loại** giả thuyết cạnh tranh. Ông viết rằng nếu trọng lực là một lực khác với lực giữ Mặt Trăng, thì vật thể rơi ở Trái Đất chịu đồng thời cả hai lực sẽ rơi nhanh gấp đôi, tức mỗi giây $30\frac12$ feet Paris, trái với kinh nghiệm. Ông cũng nói rõ mình đã bỏ qua cái gì: lực Mặt Trời làm nhiễu Mặt Trăng, vì nó chỉ bằng khoảng $1$ phần $178$ của lực hướng tâm, và ông đã sửa cả sai số khúc xạ mà Tycho và người theo ông gây ra.
+>
+> Con số $3600 = 60^2$ chính là quy luật nghịch đảo bậc hai đang làm việc. Nó cho ta một ước lượng độc lập về khoảng cách Mặt Trăng, và từ đó là khối lượng Trái Đất: vì lực ở bề mặt bằng $g$ còn lực ở Mặt Trăng bằng $g/3600$, ta tách được $GM/r^2$ ở hai nơi rồi ghép lại. Cùng cách lập luận ấy ngày nay dùng để đo khối lượng Trái Đất, khối lượng Mặt Trăng và hằng số hấp dẫn; sai số tốt hơn nhiều, nhưng cấu trúc thì y hệt.
 
 ### Nhận xét
 

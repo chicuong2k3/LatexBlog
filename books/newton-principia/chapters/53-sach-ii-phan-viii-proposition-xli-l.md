@@ -5,8 +5,6 @@ slug: "sach-ii-phan-viii-proposition-xli-l"
 number: 53
 ---
 
-# Sách II, Phần VIII. Proposition XLI–L
-
 ![Minh họa truyền chuyển động qua chất lỏng](../assets/book-ii-section-i-motion.svg)
 
 *Hình 41. Sơ đồ được dùng lại từ Phần I; các hình kênh, sóng, mạch và bề mặt chất lỏng của bản gốc cần được đối chiếu riêng.*
@@ -147,21 +145,23 @@ Vận tốc của những sóng lớn hơn hoặc nhỏ hơn sẽ tăng hoặc g
 
 Những điều này đúng khi các phần nước lên hoặc xuống theo đường thẳng. Nhưng thực ra sự lên và xuống ấy được thực hiện theo một cung tròn. Vì vậy, thời gian xác định trong Proposition này chỉ gần đúng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XLV nói vận tốc của sóng nước tỷ lệ với căn bậc hai **bề rộng** của sóng, và Bài toán X dựng ra điều đó bằng cách thay sóng bằng một con lắc có chiều dài bằng bề rộng ấy. Đây là một trong những kết quả đẹp nhất của Phần VIII, vì nó cho ra đúng công thức tán sóng mà vật lí sóng ngày nay vẫn dùng.
+> **Vận tốc sóng nước tỷ lệ với căn bậc hai bước sóng**
 >
-> **Công thức.** Sóng đi hết một bề rộng trong thời gian một dao động của con lắc, nên với chu kỳ $T=2\pi\sqrt{\lambda/g}$ ta có
+> Proposition XLV nói vận tốc của sóng nước tỷ lệ với căn bậc hai **bề rộng** của sóng, và Bài toán X dựng ra điều đó bằng cách thay sóng bằng một con lắc có chiều dài bằng bề rộng ấy. Đây là một trong những kết quả đẹp nhất của Phần VIII, vì nó cho ra đúng công thức tán sóng mà vật lí sóng ngày nay vẫn dùng.
+>
+> Sóng đi hết một bề rộng trong thời gian một dao động của con lắc, nên với chu kỳ $T=2\pi\sqrt{\lambda/g}$ ta có
 >
 > $$
 > v=\frac{\lambda}{T}=\sqrt{\frac{g\lambda}{2\pi}}.
 > $$
 >
-> Đó chính là **quan hệ tán sóng nước sâu** trong vật lí sóng hiện đại: vận tốc tỷ lệ với căn bậc hai bước sóng. Newton không đặt tên cho nó, nhưng công thức thì đúng.
+> Đó chính là quan hệ tán sóng nước sâu trong vật lí sóng hiện đại: vận tốc tỷ lệ với căn bậc hai bước sóng. Newton không đặt tên cho nó, nhưng công thức thì đúng.
 >
-> **Vì sao Newton viết như vậy.** Vì ông đã dựng được ở Phần X rằng chuyển động lên xuống của nước trong một kênh tuân theo đúng quy luật thời gian của con lắc, nên ở đây ông chỉ việc dùng lại công cụ ấy. Đáng chú ý là ông **tự nói rõ giới hạn**: điều trên chỉ đúng khi các phần nước lên xuống theo đường thẳng, "nhưng thực ra sự lên và xuống ấy được thực hiện theo một cung tròn", nên thời gian chỉ gần đúng. Chính cái cung tròn ấy là mấu chốt của vật lí sóng hiện đại: khi nước sâu, quỹ tích của các phần nước là cung tròn và công thức trên đúng; khi nước nông, chúng gần thẳng và công thức phải đổi.
+> Ông đã dựng được ở Phần X rằng chuyển động lên xuống của nước trong một kênh tuân theo đúng quy luật thời gian của con lắc, nên ở đây ông chỉ việc dùng lại công cụ ấy. Điều đáng nói là ông **tự nói rõ giới hạn** ngay trong Proposition: điều trên chỉ đúng khi các phần nước lên xuống theo đường thẳng, "nhưng thực ra sự lên và xuống ấy được thực hiện theo một cung tròn", nên thời gian chỉ gần đúng.
 >
-> **Hiện nay thì sao.** Ông đã chạm đúng cái ranh giới mà ngành vật lí sóng phân loại hôm nay. Ở nước sâu, tốc độ không phụ thuộc độ sâu mà chỉ phụ thuộc bước sóng. Ở nước nông, tốc độ lại phụ thuộc cả độ sâu, và một sóng không còn truyền được khi độ sâu nhỏ hơn nhiều so với bước sóng. Hệ quả 3 của Proposition XLIV cũng nói đúng điều tương tự cho cột nước dao động: thời gian một lần lên xuống tỷ lệ với căn bậc hai chiều dài. Việc một bài toán về con lắc dẫn tới cả quan hệ tán sóng nước sâu là bằng chứng rõ nhất về giá trị của việc dùng đúng cấu trúc toán học.
+> Chính cái cung tròn ấy là mấu chốt của vật lí sóng hiện đại, và nó là ranh giới mà ngành vật lí sóng phân loại hôm nay. Ở nước sâu, quỹ tích của các phần nước là cung tròn, tốc độ không phụ thuộc độ sâu mà chỉ phụ thuộc bước sóng, và công thức trên đúng. Ở nước nông, các quỹ tích ấy gần thẳng, tốc độ phụ thuộc cả độ sâu, và một sóng không còn truyền được khi độ sâu nhỏ hơn nhiều so với bước sóng. Hệ quả 3 của Proposition XLIV nói đúng điều tương tự cho một cột nước dao động: thời gian một lần lên xuống tỷ lệ với căn bậc hai chiều dài.
 
 ## Proposition XLVII. Định lý XXXVII
 
@@ -313,11 +313,13 @@ Có thể suy ra rằng bề rộng các mạch trong mọi âm thanh tạo ra b
 
 Cũng từ các nguyên lý trên, ta thấy vì sao âm thanh được khuếch đại mạnh trong kèn nói. Mọi chuyển động qua lại được khuếch đại bởi nguyên nhân sinh ra nó ở mỗi lần quay lại. Trong một ống, nơi sự giãn nở của âm thanh bị hạn chế, chuyển động tắt dần chậm hơn và quay lại mạnh hơn. Vì vậy nó càng bị khuếch đại bởi chuyển động mới truyền vào ở mỗi lần quay lại.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Nhận xét cuối dùng chính các Proposition trên để **phân biệt âm thanh với ánh sáng**. Lập luận của Newton: âm thanh phải là các mạch của không khí truyền qua không khí, vì nó phát sinh từ vật thể rung và ta nghe được hiệu ứng rung của nó trên những dây đồng cùng tần số. Còn ánh sáng thì truyền theo đường thẳng, nên không thể chỉ là một mạch áp suất.
+> **Âm thanh là mạch áp suất, ánh sáng thì không — và vì sao kèn nói khuếch đại**
 >
-> **Công thức.** Từ Proposition XLVIII, vận tốc mạch tỷ lệ với căn bậc hai lực đàn hồi và nghịch với căn bậc hai mật độ, tức
+> Nhận xét cuối dùng chính các Proposition trên để phân biệt âm thanh với ánh sáng. Lập luận của Newton: âm thanh phải là các mạch của không khí truyền qua không khí, vì nó phát sinh từ vật thể rung và ta nghe được hiệu ứng rung của nó trên những dây đồng cùng tần số. Còn ánh sáng thì truyền theo đường thẳng, nên không thể chỉ là một mạch áp suất.
+>
+> Từ Proposition XLVIII, vận tốc mạch tỷ lệ với căn bậc hai lực đàn hồi và nghịch với căn bậc hai mật độ, tức
 >
 > $$
 > v=\sqrt{\frac{E}{\rho}}.
@@ -325,8 +327,8 @@ Cũng từ các nguyên lý trên, ta thấy vì sao âm thanh được khuếch
 >
 > Đây đúng là dạng của công thức ngày nay, nhưng phần hệ số thì Newton chưa có. Ông tính ra $979$ feet mỗi giây, rồi sửa ba lần: cộng thêm khoảng $109$ feet cho độ thô của các hạt không khí, được $1088$ feet; rồi tính đến hơi nước trong không khí, được $1142$ feet — khớp với thí nghiệm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không tin công thức của mình đã đúng, và ông **đi sửa nó bằng thí nghiệm** thay vì bảo vệ nó. Ông còn nêu một mệnh đề ngày nay vẫn đúng: vận tốc âm thanh **phụ thuộc mùa**, nhanh hơn vào mùa hè và chậm hơn vào mùa đông, vì không khí bị loãng hay bị nén theo nhiệt độ. Từ số mạch trong một không gian, ông cũng suy ra bước sóng của âm thanh, rồi kết luận nó bằng hai lần chiều dài của một ống hở.
+> Ông không tin công thức của mình đã đúng, và ông **đi sửa nó bằng thí nghiệm** thay vì bảo vệ nó. Ông còn nêu một mệnh đề ngày nay vẫn đúng: vận tốc âm thanh **phụ thuộc mùa**, nhanh hơn vào mùa hè và chậm hơn vào mùa đông, vì không khí bị loãng hay bị nén theo nhiệt độ. Từ số mạch trong một không gian, ông cũng suy ra bước sóng của âm thanh, rồi kết luận nó bằng hai lần chiều dài của một ống hở.
 >
-> **Hiện nay thì sao.** Ông đã có đúng **dạng** của công thức vận tốc âm thanh, chỉ thiếu hệ số mà vật lí lượng tử mới cho ra: với một khí lý tưởng, $v=\sqrt{\gamma p/\rho}$ với $\gamma$ là tỷ lệ nhiệt dung, và chính sự xuất hiện của $\gamma$ là lý do tốc độ âm thanh phụ thuộc nhiệt độ — đúng như ông đo được mà chưa giải thích được bằng cơ chế. Ông cũng là người đầu tiên giải thích vì sao **kèn nói** khuếch đại: mỗi lần sóng phản xạ trong ống, nó cộng thêm một chuyển động mới, nên biên độ tích luỹ dần.
+> Người đọc hôm nay nhìn thấy ngay hệ số mà ông thiếu: với một khí lý tưởng, $v=\sqrt{\gamma p/\rho}$ với $\gamma$ là tỷ lệ nhiệt dung, và chính sự xuất hiện của $\gamma$ là lý do tốc độ âm thanh phụ thuộc nhiệt độ — đúng thứ ông đo được mà chưa giải thích được bằng cơ chế. Ông cũng là người đầu tiên giải thích vì sao **kèn nói** khuếch đại: trong một ống, sự giãn nở của âm thanh bị hạn chế nên chuyển động tắt dần chậm hơn và quay lại mạnh hơn, và mỗi lần quay lại nó cộng thêm một chuyển động mới truyền vào, nên biên độ tích luỹ dần.
 
 *Các hệ số, ký hiệu và phép tính trong Phần VIII được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*

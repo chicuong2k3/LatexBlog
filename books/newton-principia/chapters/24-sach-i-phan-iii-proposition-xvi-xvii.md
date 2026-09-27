@@ -5,8 +5,6 @@ slug: "sach-i-phan-iii-proposition-xvi-xvii"
 number: 24
 ---
 
-# Sách I, Phần III. Proposition XVI–XVII
-
 ![Parabol, tiêu điểm, tiếp tuyến và lực hướng tâm](../assets/lemmas-13-14-parabola-focus.svg)
 
 *Hình 14. Sơ đồ dùng lại để đối chiếu tiếp tuyến, vuông góc và khoảng cách tới tiêu điểm.*
@@ -72,15 +70,19 @@ Vì vậy, vận tốc của một vật thể quay trong một hình cắt coni
 
 ## Proposition XVII. Bài toán IX
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XVI trả lời câu hỏi thứ hai của bài toán quỹ đạo: lực đã biết, quỹ đạo đã biết, nhưng **vận tốc ở mỗi điểm** là bao nhiêu? Người đọc hôm nay nhận ra toàn bộ chuỗi hệ quả này gói trong một dòng mà ngành cơ học thiên thể gọi là **phương trình vis-viva**.
+> **Vận tốc ở mỗi điểm của quỹ đạo: phương trình vis-viva**
 >
-> **Công thức.** Với $SY$ là đoạn vuông góc từ tiêu điểm xuống tiếp tuyến, Proposition XVI cho $v \propto \dfrac{1}{\sqrt{SY^2/(SP \cdot QT)}}$, và vì $SP \cdot QT$ tỷ lệ với diện tích quét nên $v^2 \propto \dfrac{SP \cdot QT}{SY^2}$. Dạng hiện đại là $v^2 = \mu\left(\dfrac{2}{r} - \dfrac{1}{a}\right)$, với $a$ là bán trục lớn và $\mu$ là tham số chuyển động. Hệ quả 6 chỉ là trường hợp riêng: parabol ứng với $a \to \infty$, nên $v^2 = 2\mu/r$ và $v \propto 1/\sqrt{r}$, đúng như điều Newton nêu.
+> Proposition XVI trả lời câu hỏi thứ hai của bài toán quỹ đạo: lực đã biết, quỹ đạo đã biết, nhưng **vận tốc ở mỗi điểm** là bao nhiêu?
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần vận tốc để hoàn tất bức tranh, chứ không chỉ hình dạng quỹ đạo. Nhưng ông diễn đạt nó bằng hình học thuần tuý: đo đoạn vuông góc từ tiêu điểm xuống tiếp tuyến rồi so với một đường tròn. Hệ quả 9 phát biểu điều đó bằng ngôn ngữ trung bình nhân — vận tốc trên conic bằng vận tốc trên đường tròn tại khoảng cách là trung bình nhân giữa khoảng cách ấy và nửa latus rectum, so với cùng đoạn vuông góc ấy.
+> Với $SY$ là đoạn vuông góc từ tiêu điểm xuống tiếp tuyến, Proposition XVI cho $v \propto \dfrac{1}{\sqrt{SY^2/(SP \cdot QT)}}$, và vì $SP \cdot QT$ tỷ lệ với diện tích quét nên $v^2 \propto \dfrac{SP \cdot QT}{SY^2}$. Dạng hiện đại là $v^2 = \mu\left(\dfrac{2}{r} - \dfrac{1}{a}\right)$, với $a$ là bán trục lớn và $\mu$ là tham số chuyển động. Hệ quả 6 chỉ là trường hợp riêng: parabol ứng với $a \to \infty$, nên $v^2 = 2\mu/r$ và $v \propto 1/\sqrt{r}$, đúng như điều Newton nêu.
 >
-> **Hiện nay thì sao.** Phương trình vis-viva là công cụ được dùng nhiều nhất trong thiên văn học, vì nó cho vận tốc ở **mọi** điểm của quỹ đạo chỉ từ hai đại lượng quen thuộc. Nó cũng giải thích trực quan vì sao trên quỹ đạo elip, vận tốc lớn nhất ở điểm gần tiêu điểm nhất: ở đó $r$ nhỏ nhất nên $2/r - 1/a$ lớn nhất. Cùng công thức ấy cũng cho một quy tắc lực: điểm nào có vận tốc cao nhất cũng là nơi lực đã thay đổi nhiều nhất tính theo quãng đường, tức là nơi độ cong lớn nhất — đúng như Hệ quả 4 của Proposition VI đã nói trước đó.
+> **Ông diễn đạt nó bằng hình học thuần tuý**
+>
+> Ông cần vận tốc để hoàn tất bức tranh, chứ không chỉ hình dạng quỹ đạo. Cách ông làm: đo đoạn vuông góc từ tiêu điểm xuống tiếp tuyến rồi so với một đường tròn. Hệ quả 9 phát biểu điều đó bằng ngôn ngữ trung bình nhân — vận tốc trên conic bằng vận tốc trên đường tròn tại khoảng cách là trung bình nhân giữa khoảng cách ấy và nửa latus rectum, so với cùng đoạn vuông góc ấy.
+>
+> Phương trình vis-viva cho vận tốc ở **mọi** điểm của quỹ đạo chỉ từ hai đại lượng quen thuộc. Nó cũng giải thích trực quan vì sao trên quỹ đạo elip, vận tốc lớn nhất ở điểm gần tiêu điểm nhất: ở đó $r$ nhỏ nhất nên $2/r - 1/a$ lớn nhất. Cùng công thức ấy cũng cho một quy tắc lực: điểm nào có vận tốc cao nhất cũng là nơi lực đã thay đổi nhiều nhất tính theo quãng đường, tức là nơi độ cong lớn nhất — đúng như Hệ quả 4 của Proposition VI đã nói trước đó.
 
 Giả sử lực hướng tâm tỷ lệ nghịch với bình phương các khoảng cách từ các nơi đến tâm, và lượng tuyệt đối của lực ấy đã biết. Hãy xác định đường mà vật thể sẽ mô tả khi được thả từ một nơi đã cho với một vận tốc đã cho theo phương của một đường thẳng đã cho.
 
@@ -124,12 +126,16 @@ Nếu vật thể liên tục bị nhiễu bởi một lực bên ngoài, ta có
 
 Nếu một vật thể $P$, nhờ lực hướng tâm hướng về một điểm $R$ đã cho, chuyển động trên chu vi của một hình cắt conh bất kỳ có tâm $C$, và cần tìm quy luật của lực hướng tâm, hãy kẻ $CG$ song song với bán kính $RP$ và cắt tiếp tuyến $PG$ của quỹ đạo tại $G$. Lực cần dùng sẽ tỷ lệ với $\frac{CG^3}{SP^2}$, theo Hệ quả 1 và Học luận của Proposition X, cùng Hệ quả 3 của Proposition VII.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XVII là **bài toán xác định quỹ đạo**: biết lực, biết vị trí, biết vận tốc ban đầu, hãy dựng conic mà vật thể sẽ đi. Đây là bài toán người ta gặp trước khi dùng bất kỳ phương trình vi phân nào, và nó tự nó đã chứa cả quy luật phân loại.
+> **Bài toán xác định quỹ đạo: biết lực, biết vị trí, biết vận tốc ban đầu**
 >
-> **Công thức.** Điều kiện phân loại nằm ở phép so sánh $L$ với $2SP + 2KP$: nhỏ hơn thì elip, bằng thì parabol, lớn hơn thì hypebol. Ở dạng hiện đại, cùng điều ấy là so sánh năng lượng riêng $\mathcal{E} = \dfrac{v^2}{2} - \dfrac{\mu}{r}$ với không, hay tương đương so sánh $v$ với vận tốc thoát $v_{\text{e}} = \sqrt{\dfrac{2\mu}{r}}$. Latus rectum suy ra từ vận tốc theo Hệ quả 1: $L$ tỷ lệ với bình phương vận tốc chia cho bình phương đoạn vuông góc từ tiêu điểm xuống tiếp tuyến.
+> Hãy dựng conic mà vật thể sẽ đi. Đây là bài toán người ta gặp trước khi dùng bất kỳ phương trình vi phân nào, và nó tự nó đã chứa cả quy luật phân loại.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần nối hai chiều của bài toán. Các Proposition XI–XIII đi từ lực ra quỹ đạo; Proposition XVII đi ngược lại, và dùng chính kết quả của ba Proposition ấy để khép vòng. Hệ quả 3 còn đi xa hơn một bước: nếu một cú đẩy bất kỳ đưa vật thể ra khỏi quỹ đạo, ta vẫn tìm được quỹ đạo mới, bằng cách cộng chuyển động riêng của vật thể với chuyển động do cú đẩy tạo ra.
+> Điều kiện phân loại nằm ở phép so sánh $L$ với $2SP + 2KP$: nhỏ hơn thì elip, bằng thì parabol, lớn hơn thì hypebol. Ở dạng hiện đại, cùng điều ấy là so sánh năng lượng riêng $\mathcal{E} = \dfrac{v^2}{2} - \dfrac{\mu}{r}$ với không, hay tương đương so sánh $v$ với vận tốc thoát $v_{\text{e}} = \sqrt{\dfrac{2\mu}{r}}$. Latus rectum suy ra từ vận tốc theo Hệ quả 1: $L$ tỷ lệ với bình phương vận tốc chia cho bình phương đoạn vuông góc từ tiêu điểm xuống tiếp tuyến.
 >
-> **Hiện nay thì sao.** Hệ quả 3 chính là thứ khiến quỹ đạo trở nên hữu ích trong kỹ thuật vũ trụ: một nhân vật xuất phát trên quỹ đạo quanh Trái Đất, dùng nhiên liệu để đổi hướng, rồi tính quỹ đạo mới — bằng đúng cách cộng vectơ vận tốc mà Newton mô tả ở đây. Hệ quả 4 thì tiên đoán một việc làm thực nghiệm quan trọng: từ một chuỗi số đo rời rạc, ta dựng được quỹ đạo bằng cách nội suy. Người đọc hôm nay gọi đó là **xác định quỹ đạo**, và nó là nền tảng của mọi kỹ thuật theo dõi vệ tinh và cảnh báo va chạm.
+> **Nối hai chiều của bài toán**
+>
+> Các Proposition XI–XIII đi từ lực ra quỹ đạo; Proposition XVII đi ngược lại, và dùng chính kết quả của ba Proposition ấy để khép vòng. Hệ quả 3 còn đi xa hơn một bước: nếu một cú đẩy bất kỳ đưa vật thể ra khỏi quỹ đạo, ta vẫn tìm được quỹ đạo mới, bằng cách cộng chuyển động riêng của vật thể với chuyển động do cú đẩy tạo ra.
+>
+> Hệ quả 3 là thứ khiến quỹ đạo trở nên hữu ích trong kỹ thuật vũ trụ: một nhân vật xuất phát trên quỹ đạo quanh Trái Đất, dùng nhiên liệu để đổi hướng, rồi tính quỹ đạo mới — bằng đúng cách cộng vectơ vận tốc mà Newton mô tả ở đây. Hệ quả 4 thì tiên đoán một việc làm thực nghiệm quan trọng: từ một chuỗi số đo rời rạc, ta dựng được quỹ đạo bằng cách nội suy. Người đọc hôm nay gọi đó là **xác định quỹ đạo**, và nó là nền tảng của mọi kỹ thuật theo dõi vệ tinh và cảnh báo va chạm.

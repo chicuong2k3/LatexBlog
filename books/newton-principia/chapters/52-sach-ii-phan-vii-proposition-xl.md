@@ -5,8 +5,6 @@ slug: "sach-ii-phan-vii-proposition-xl"
 number: 52
 ---
 
-# Sách II, Phần VII. Proposition XL
-
 ![Minh họa chuyển động rơi của các quả cầu trong chất lỏng](../assets/book-ii-section-i-motion.svg)
 
 *Hình 40. Sơ đồ được dùng lại từ Phần I; các hình bình chứa, quả cầu và bảng số liệu của bản gốc cần được đối chiếu riêng.*
@@ -384,15 +382,17 @@ chuyển động, nếu mật độ nước tỷ lệ với mật độ không k
 
 Vì vậy, các thí nghiệm với con lắc tìm thấy lực cản lớn hơn các thí nghiệm với quả cầu rơi, theo những nguyên nhân vừa nói, và lớn hơn theo tỷ lệ xấp xỉ $4$ với $3$. Nhưng vì lực cản của các con lắc dao động trong không khí, nước và thủy ngân đều tăng theo những nguyên nhân tương tự, tỷ lệ lực cản trong các môi trường ấy vẫn được trình bày đủ chính xác bởi cả thí nghiệm con lắc lẫn thí nghiệm vật thể rơi.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Ở cuối phần này, Newton đối chiếu hai bộ thí nghiệm đo cùng một hiệu ứng theo hai cách khác nhau, và chúng **không khớp**: thí nghiệm con lắc cho lực cản lớn hơn thí nghiệm quả cầu rơi, theo tỷ lệ xấp xỉ $4$ với $3$.
+> **Hai bộ thí nghiệm đo cùng một hiệu ứng, và chúng không khớp: tỷ lệ 4 với 3**
 >
-> **Công thức.** Với một quả cầu có cùng mật độ với nước, rơi trong không khí đi nửa đường kính, thí nghiệm con lắc đo được nó mất $\frac13$ chuyển động, còn lý thuyết Phần VII chỉ ra $\frac{\sqrt{3}-1}{2\sqrt{3}}$. Newton không sửa hằng số để hai số bằng nhau, mà đi tìm **cơ chế** của sự lệch.
+> Ở cuối phần này, Newton đối chiếu hai bộ thí nghiệm đo cùng một hiệu ứng theo hai cách khác nhau, và chúng **không khớp**: thí nghiệm con lắc cho lực cản lớn hơn thí nghiệm quả cầu rơi, theo tỷ lệ xấp xỉ $4$ với $3$.
 >
-> **Vì sao Newton viết như vậy.** Vì ông biết sự lệch ấy đến từ lực cản *cộng thêm*, chứ không phải vì mô hình sai. Lý do thứ nhất: con lắc luôn kích hoạt một chuyển động trong chất lỏng ngược với chuyển động quay trở lại của nó, nên nó phải đẩy chất lỏng đi theo cả hai phía. Lý do thứ hai: sợi dâi treo cũng có lực cản riêng. Cả hai đều nhân thêm một hệ số, nên chúng chỉ làm giá trị tuyệt đối tăng lên mà **không** đổi tỷ lệ giữa các môi trường.
+> Với một quả cầu có cùng mật độ với nước, rơi trong không khí đi nửa đường kính, thí nghiệm con lắc đo được nó mất $\frac13$ chuyển động, còn lý thuyết Phần VII chỉ ra $\frac{\sqrt{3}-1}{2\sqrt{3}}$. Newton không sửa hằng số để hai số bằng nhau, mà đi tìm **cơ chế** của sự lệch.
 >
-> **Hiện nay thì sao.** Cấu trúc lập luận này vẫn là cách xử lý chuẩn khi hai phép đo cùng một đại lượng cho hai giá trị khác nhau: tách sai số hệ thống khỏi tín hiệu, thay vì vặn con số cho khớp. Bước suy ra cũng quen thuộc — nếu sai số hệ thống là một hệ số nhân, nó tự triệt tiêu trong **tỷ lệ**. Người đọc hôm nay gặp đúng mẫu này khi so sánh lực cản đo bằng vận tốc giới hạn với lực cản đo bằng mô-men xoắn: hai con số tuyệt đối khác nhau, còn tỷ lệ giữa các môi trường vẫn khớp.
+> Ông biết sự lệch ấy đến từ lực cản cộng thêm, chứ không phải vì mô hình sai. Lý do thứ nhất: con lắc luôn kích hoạt một chuyển động trong chất lỏng ngược với chuyển động quay trở lại của nó, nên nó phải đẩy chất lỏng đi theo cả hai phía. Lý do thứ hai: sợi dâi treo cũng có lực cản riêng. Cả hai đều nhân thêm một hệ số, nên chúng chỉ làm giá trị tuyệt đối tăng lên mà **không** đổi tỷ lệ giữa các môi trường.
+>
+> Cấu trúc lập luận này vẫn là cách xử lý chuẩn khi hai phép đo cùng một đại lượng cho hai giá trị khác nhau: tách sai số hệ thống khỏi tín hiệu, thay vì vặn con số cho khớp. Bước suy ra cũng quen thuộc — nếu sai số hệ thống là một hệ số nhân, nó tự triệt tiêu trong **tỷ lệ**. Người đọc hôm nay gặp đúng mẫu này khi so sánh lực cản đo bằng vận tốc giới hạn với lực cản đo bằng mô-men xoắn: hai con số tuyệt đối khác nhau, còn tỷ lệ giữa các môi trường vẫn khớp.
 
 Từ đó có thể kết luận rằng lực cản của các vật thể chuyển động trong bất kỳ chất lỏng nào, dù chất lỏng có tính chảy cực kỳ cao, ceteris paribus, tỷ lệ với mật độ của chất lỏng.
 
@@ -430,14 +430,16 @@ Vật thể bị phóng kích hoạt một chuyển động trong chất lỏng 
 
 Phần áp suất dư ấy, tùy theo lượng của nó, không chỉ kích hoạt chuyển động trong chất lỏng mà còn tác dụng lên vật thể bị phóng, làm chậm chuyển động của nó. Vì vậy, lực cản trong mọi chất lỏng tỷ lệ với chuyển động mà vật thể bị phóng kích hoạt trong chất lỏng. Lực cản ấy không thể nhỏ hơn trong một ether tinh vi nhất, tỷ lệ với mật độ của ether, so với lực cản trong không khí, nước và thủy ngân tỷ lệ với mật độ của các chất lỏng ấy.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Sau mười bốn thí nghiệm, Newton đúc kết một mệnh đề rất mạnh: lực cản của vật thể chuyển động trong bất kỳ chất lỏng nào, dù chất lỏng có tính chảy cực kỳ cao, đều **tỷ lệ với mật độ** của chất lỏng. Và từ đó ông đi thêm một bước táo bạo hơn nhiều.
+> **Lực cản tỷ lệ với mật độ chất lỏng, và từ đó suy ra không gian phải trống**
 >
-> **Công thức.** Lực cản chỉ phụ thuộc lượng vật chất mà vật thể đẩy qua, chứ không phụ thuộc độ dẻo hay độ bền. Nếu chia chất lỏng thành vô hạn phần nhỏ hơn, lực cản do độ bền và ma sát giữa các phần giảm đi, nhưng **lượng vật chất vẫn không đổi**, nên lực quán tính giữ nguyên. Do đó kết quả bất biến: không khí, nước và thủy ngân dùng chung một công thức, chỉ khác ở hệ số mật độ.
+> Sau mười bốn thí nghiệm, Newton đúc kết một mệnh đề rất mạnh: lực cản của vật thể chuyển động trong bất kỳ chất lỏng nào, dù chất lỏng có tính chảy cực kỳ cao, đều **tỷ lệ với mật độ** của chất lỏng. Và từ đó ông đi thêm một bước táo bạo hơn nhiều.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một đại lượng **bất biến** để rút ra một kết luận về vũ trụ. Các hành tinh và ngôi sao bay trong không gian mà không mất chuyển động cảm nhận được; nếu nơi ấy có vật chất, lực cản — lớn hay nhỏ — sẽ phá hủy chuyển động quay của chúng. Không quan sát nào cho thấy chuyển động ấy bị mất, nên theo logic của ông, các không gian thiên thể phải **hoàn toàn không có chất lỏng**, ngoại trừ có lẽ là vài hơi nước cực hiếm và các tia ánh sáng.
+> Lực cản chỉ phụ thuộc lượng vật chất mà vật thể đẩy qua, chứ không phụ thuộc độ dẻo hay độ bền. Nếu chia chất lỏng thành vô hạn phần nhỏ hơn, lực cản do độ bền và ma sát giữa các phần giảm đi, nhưng **lượng vật chất vẫn không đổi**, nên lực quán tính giữ nguyên. Do đó kết quả bất biến: không khí, nước và thủy ngân dùng chung một công thức, chỉ khác ở hệ số mật độ.
 >
-> **Hiện nay thì sao.** Lập luận ấy chặt chẽ ở chỗ nó **không cần giả thiết** ether hay hạt nào; nó chỉ cần lực cản tỷ lệ với mật độ. Nhưng nó chỉ đứng vững trên giả thiết ấy, và Newton tự nói rõ hai chỗ hỏng. Ở chuyển động chậm, lực cản nhỏ hơn một chút, vì hình cầu thích hợp với chuyển động hơn hình trụ cùng đường kính. Ở chuyển động nhanh, lực cản lớn hơn, vì phần sau quả cầu bị ép ít hơn và cuối cùng hình thành một khoảng trống, nên lực cản không còn tỷ lệ bình phương vận tốc nữa. Cũng nhờ vậy mà kết luận "không gian trống" của ông là kết luận về **cơ chế**, không phải về thực thể.
+> Ông cần một đại lượng bất biến để rút ra một kết luận về vũ trụ. Các hành tinh và ngôi sao bay trong không gian mà không mất chuyển động cảm nhận được; nếu nơi ấy có vật chất, lực cản — lớn hay nhỏ — sẽ phá hủy chuyển động quay của chúng. Không quan sát nào cho thấy chuyển động ấy bị mất, nên theo logic của ông, các không gian thiên thể phải **hoàn toàn không có chất lỏng**, ngoại trừ có lẽ là vài hơi nước cực hiếm và các tia ánh sáng.
+>
+> Lập luận ấy chặt chẽ ở chỗ nó **không cần giả thiết** ether hay hạt nào; nó chỉ cần lực cản tỷ lệ với mật độ. Nhưng nó chỉ đứng vững trên giả thiết ấy, và Newton tự nói rõ hai chỗ hỏng. Ở chuyển động chậm, lực cản nhỏ hơn một chút, vì hình cầu thích hợp với chuyển động hơn hình trụ cùng đường kính. Ở chuyển động nhanh, lực cản lớn hơn, vì phần sau quả cầu bị ép ít hơn và cuối cùng hình thành một khoảng trống, nên lực cản không còn tỷ lệ bình phương vận tốc nữa. Cũng nhờ vậy mà kết luận "không gian trống" của ông là kết luận về **cơ chế**, không phải về thực thể.
 
 *Phần này kết thúc ở cuối Phần VII. Các số liệu thí nghiệm và công thức được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*

@@ -5,8 +5,6 @@ slug: "sach-ii-phan-iii-proposition-xi-xiv"
 number: 46
 ---
 
-# Sách II, Phần III. Proposition XI–XIV
-
 ![Minh họa chuyển động trong môi trường có lực cản](../assets/book-ii-section-i-motion.svg)
 
 *Hình 34. Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.*
@@ -83,15 +81,17 @@ sẽ xác định điểm $G$. Khi biết $G$, ta xác định được quãng �
 
 Vì Proposition XI cho vận tốc theo thời gian, còn Proposition XII cho quãng đường theo vận tốc, quãng đường có thể được xác định từ thời gian đã cho, và ngược lại.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XI và Proposition XII là một cặp song song, và cặp này nói lên điều gọn nhất về lực cản hỗn hợp: **đại lượng nào cộng thêm một hằng số rồi sẽ thành cấp số nhân, phụ thuộc vào việc ta chọn biến nào là độc lập**. Chọn thời gian, ta cộng hằng số vào nghịch đảo vận tốc. Chọn quãng đường, ta cộng hằng số vào chính vận tốc.
+> **Lực cản hỗn hợp: cộng thêm một hằng số, và biến nào sẽ trở thành cấp số nhân**
 >
-> **Công thức.** Với lực cản $F = \gamma_1 v + \gamma_2 v^2$, phương trình chuyển động là $m\dfrac{dv}{dt} = -(\gamma_1 v + \gamma_2 v^2)$. Chia cho $v^2$ rồi đổi biến $u = 1/v$ thì $\dfrac{du}{dt} = \dfrac{\gamma_1}{m} + \gamma_2 u$, nên $u + \dfrac{\gamma_2}{\gamma_1}$ tăng theo lũy thừa — đúng như Proposition XI. Còn nếu chia cho $v$ rồi dùng $x$ làm biến độc lập, ta có $m\dfrac{dv}{dx} = -(\gamma_1 + \gamma_2 v)$, nên $v + \dfrac{\gamma_1}{\gamma_2}$ tăng theo lũy thừa theo quãng đường — đúng như Proposition XII. Hằng số được cộng thêm chính là **tỷ lệ giữa hai hệ số lực cản**.
+> Proposition XI và Proposition XII là một cặp song ánh, và cặp này nói điều gọn nhất về lực cản hỗn hợp: **đại lượng nào cộng thêm một hằng số rồi sẽ thành cấp số nhân, tùy vào việc ta chọn biến nào là độc lập**. Chọn thời gian, ta cộng hằng số vào nghịch đảo vận tốc. Chọn quãng đường, ta cộng hằng số vào chính vận tốc.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không có phép thay biến. Ông không hỏi "nên biến đổi vận tốc ra sao" mà hỏi "đại lượng nào trên trục hyperbola, cộng thêm một đoạn cố định, sẽ tăng theo nhân". Câu trả lời ấy vừa đúng về hình học, vừa là biểu hiện của một hiểu biết sâu: mỗi số hạn của lực cản chi phối một biến khác nhau, và lực cản bậc cao hơn chỉ nổi lên khi ta viết phương trình theo quãng đường.
+> Với lực cản $F = \gamma_1 v + \gamma_2 v^2$, phương trình chuyển động là $m\dfrac{dv}{dt} = -(\gamma_1 v + \gamma_2 v^2)$. Chia cho $v^2$ rồi đổi biến $u = 1/v$ thì $\dfrac{du}{dt} = \dfrac{\gamma_1}{m} + \gamma_2 u$, nên $u + \dfrac{\gamma_2}{\gamma_1}$ tăng theo lũy thừa — đúng như Proposition XI. Còn nếu chia cho $v$ rồi dùng $x$ làm biến độc lập, ta có $m\dfrac{dv}{dx} = -(\gamma_1 + \gamma_2 v)$, nên $v + \dfrac{\gamma_1}{\gamma_2}$ tăng theo lũy thừa theo quãng đường — đúng như Proposition XII. Hằng số được cộng thêm chính là **tỷ lệ giữa hai hệ số lực cản**.
 >
-> **Hiện nay thì sao.** Đây chính là thủ thuật chuẩn của phương trình Riccati: thay biến bằng đại lượng làm cho số hạng chi phối trở thành hằng số, và bài toán rơi về dạng lũy thừa. Cùng cách ấy xuất hiện ở rất nhiều nơi khác, từ mô hình truyền nhiệt cho tới phương trình logistic trong sinh thái học. Ý tưởng cốt lõi vẫn là ý của Newton: hãy tìm đại lượng mà lực cản trở nên tầm thường.
+> Ông viết bằng hình học chứ không bằng phép thay biến. Ông không hỏi "nên biến đổi vận tốc ra sao" mà hỏi "đại lượng nào trên trục hyperbola, cộng thêm một đoạn cố định, sẽ tăng theo nhân". Câu trả lời ấy vừa đúng về hình học, vừa nêu ra một hiểu biết sâu: mỗi số hạng của lực cản chi phối một biến khác nhau, và lực cản bậc cao hơn chỉ nổi lên khi ta viết phương trình theo quãng đường.
+>
+> Người đọc hôm nay gọi đây là thủ thuật chuẩn của phương trình Riccati: thay biến bằng đại lượng làm cho số hạng chi phối trở thành hằng số, và bài toán rơi về dạng lũy thừa. Cùng cách ấy xuất hiện ở rất nhiều nơi khác, từ mô hình truyền nhiệt cho tới phương trình logistic trong sinh thái học. Ý tưởng cốt lõi vẫn là ý của Newton: hãy tìm đại lượng mà lực cản trở nên tầm thường.
 
 ## Proposition XIII. Định lý X
 
@@ -350,12 +350,14 @@ Khi vật thể đi lên theo đường thẳng, cộng lực cản đều vào 
 
 Tôi hãy chuyển sang những vấn đề khác.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận cuối cùng phân tích lực cản của một quả cầu trong chất lỏng thành ba phần: **độ dẻo**, **hao mòn**, và **mật độ môi trường**. Phần do mật độ tỷ lệ với bình phương vận tốc, còn phần do độ dẻo được lấy là đều, tức là tỷ lệ với moment của thời gian. Rồi ông làm một phép trao đổi lạ lùng: lực cản đều do độ dẻo tạo ra khi vật thể trôi tự do có thể **thay thế** cho lực cản đều do trọng lực tạo ra khi vật thể đi lên.
+> **Lực cản của một quả cầu trong chất lỏng: độ dẻo, hao mòn, mật độ**
 >
-> **Công thức.** Phép thay thế ấy trở nên đúng đắn nhờ một thủ thuật kính: lực cản hỗn hợp viết được $AP^2 + 2BAP$, mà cộng thêm $AB^2$ thì thành $(AP+AB)^2 = BP^2$, tức là một **bình phương hoàn hảo** trừ đi một hằng số. Một bình phương hoàn hảo chính là dạng khiến diện tích cung tròn hay cung hyperbola xuất hiện, nên cả hai thành phần tuyến tính và bậc hai dùng chung một bộ công cụ hình học.
+> Học luận cuối cùng phân tích lực cản của một quả cầu trong chất lỏng thành ba phần: **độ dẻo**, **hao mòn**, và **mật độ môi trường**. Phần do mật độ tỷ lệ với bình phương vận tốc, còn phần do độ dẻo được lấy là đều, tức là tỷ lệ với moment của thời gian. Rồi ông làm một phép trao đổi lạ lùng: lực cản đều do độ dẻo tạo ra khi vật thể trôi tự do có thể **thay thế** cho lực cản đều do trọng lực tạo ra khi vật thể đi lên.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần giữ cùng một ngôn ngữ hình học cho mọi trường hợp. Khi lực cản cộng với trọng lực gộp lại thành một bình phương hoàn hảo, bài toán trở về đúng dạng Proposition IX đã giải, nên ông không phải làm lại từ đầu. Sự trao đổi giữa "trọng lực khi đi lên" và "lực cản đều khi trôi" là hệ quả của một sự đối xứng đơn giản: cả hai đều là lực không đổi theo thời gian, chỉ khác dấu.
+> Phép thay thế ấy trở nên đúng đắn nhờ một thủ thuật kính: lực cản hỗn hợp viết được $AP^2 + 2BAP$, mà cộng thêm $AB^2$ thì thành $(AP+AB)^2 = BP^2$, tức là một **bình phương hoàn hảo** trừ đi một hằng số. Một bình phương hoàn hảo chính là dạng khiến diện tích cung tròn hay cung hyperbola xuất hiện, nên cả hai thành phần tuyến tính và bậc hai dùng chung một bộ công cụ hình học.
 >
-> **Hiện nay thì sao.** Cách phân tích ba nguồn lực cản ấy là sớm, và sự phân biệt giữa phần tuyến tính và phần bậc hai vẫn là trục của cơ học chất lỏng hiện đại. Có một điểm cần thận trọng: ở đây Newton lấy phần độ dẻo là lực không đổi, nên mới trao đổi được với trọng lực. Định luật Stokes hiện đại lại cho rằng lực cản nhớt ở tốc độ thấp tỷ lệ **với vận tốc**, đúng như lực cản ở Phần I. Vậy cái ông dùng để trao đổi ở đây là một lý tưởng hoá thuận tiện, còn lực cản tuyến tính ở Phần I mới là mô hình sát thực tế hơn cho dòng chảy chậm.
+> Ông viết vậy vì cần giữ cùng một ngôn ngữ hình học cho mọi trường hợp. Khi lực cản cộng với trọng lực gộp lại thành một bình phương hoàn hảo, bài toán trở về đúng dạng Proposition IX đã giải, nên ông không phải làm lại từ đầu. Sự trao đổi giữa "trọng lực khi đi lên" và "lực cản đều khi trôi" là hệ quả của một sự đối xứng đơn giản: cả hai đều là lực không đổi theo thời gian, chỉ khác dấu.
+>
+> Cách phân tích ba nguồn lực cản ấy là sớm, và sự phân biệt giữa phần tuyến tính và phần bậc hai vẫn là trục của cơ học chất lỏng hiện đại. Có một điểm cần thận trọng: ở đây Newton lấy phần độ dẻo là lực không đổi, nên mới trao đổi được với trọng lực. Định luật Stokes hiện đại lại cho rằng lực cản nhớt ở tốc độ thấp tỷ lệ **với vận tốc**, đúng như lực cản ở Phần I. Vậy cái ông dùng để trao đổi ở đây là một lý tưởng hoá thuận tiện, còn lực cản tuyến tính ở Phần I mới là mô hình sát thực tế hơn cho dòng chảy chậm.

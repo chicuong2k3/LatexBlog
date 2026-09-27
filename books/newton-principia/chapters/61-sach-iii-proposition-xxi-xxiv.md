@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xxi-xxiv"
 number: 61
 ---
 
-# Sách III. Proposition XXI–XXIV
-
 ![Minh họa chuyển động Mặt Trăng và thủy triều](../assets/book-ii-section-i-motion.svg)
 
 *Hình 49. Sơ đồ được dùng lại từ Phần I; các sơ đồ Mặt Trăng, mặt đất, ellipsoid và kênh nước của bản gốc cần được đối chiếu riêng.*
@@ -17,15 +15,17 @@ Các điểm xuân phân lùi về phía sau, và trục Trái Đất, do một 
 
 Proposition này xuất hiện từ Hệ quả 20 của Proposition LXVI, Sách I. Nhưng chuyển động nutation ấy phải rất nhỏ, và thật ra gần như không thể nhận thấy.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXI nói về **nutation của trục Trái Đất**: trong mỗi vòng quay hành năm, trục ấy dao động hai lần về phía hoàng đạo rồi hai lần trở về, và các điểm xuân phân vì thế lùi dần về phía sau. Ông nói thẳng: chuyển động ấy phải rất nhỏ, gần như không thể nhận thấy.
+> **Nutation: chín giây cung, và sự bắt buộc phải có của nó trong lý thuyết**
 >
-> **Công thức.** Kết quả ấy suy ra từ Hệ quả 20 của Proposition LXVI, Sách I, tức từ chính lý thuyết chuyển động Mặt Trăng mà ông vừa dựng. Cơ chế là Mặt Trăng hút vào phần "thắt lưng" của Trái Đất, tức khối cầu dẹt do quay tạo ra, và bẻo cong trục quay. Vì bản thân mặt phẳng quỹ đạo Mặt Trăng cũng đang lùi với chu kỳ riêng của nó, nên độ cong ấy lên xuống theo chu kỳ đó chứ không phải theo một năm.
+> Proposition XXI nói về nutation của trục Trái Đất: trong mỗi vòng quay hành năm, trục ấy dao động hai lần về phía hoàng đạo rồi hai lần trở về, và các điểm xuân phân vì thế lùi dần về phía sau. Ông nói thẳng: chuyển động ấy phải rất nhỏ, gần như không thể nhận thấy.
 >
-> **Vì sao Newton viết như vậy.** Vì ông nói trước độ lớn, và nói đúng thứ hậu quả quan trọng: nếu chuyển động ấy lớn, thì các quan sát thiên văn thông thường sẽ sai. Một hiện tượng nhỏ đến mức gần như vô hình mà vẫn **bắt buộc** phải có trong lý thuyết là dấu hiệu của bản chất của lý thuyết: nó không chỉ mô tả cái to lớn, mà còn phải đúng cả ở chi tiết nhỏ tới mức khó tin.
+> Kết quả ấy suy ra từ Hệ quả 20 của Proposition LXVI, Sách I, tức từ chính lý thuyết chuyển động Mặt Trăng mà ông vừa dựng. Cơ chế là Mặt Trăng hút vào phần "thắt lưng" của Trái Đất, tức khối cầu dẹt do quay tạo ra, và bẻo cong trục quay. Vì bản thân mặt phẳng quỹ đạo Mặt Trăng cũng đang lùi với chu kỳ riêng của nó, nên độ cong ấy lên xuống theo chu kỳ đó chứ không phải theo một năm.
 >
-> **Hiện nay thì sao.** Hiện tượng ấy giữ tên là nutation, và là bằng chứng nổi tiếng nhất cho một dự đoán thành công. Chỉ vài thập kỷ sau khi Newton qua đời, năm 1748, Bradley phát hiện ra nó trong lúc đo **lệch ánh sáng** của các sao, tức một hiện tượng khác mà chính ông cũng phát hiện và giải thích. Ông đặt tên cho nó là chuyển động của các điểm xuân phân, rồi năm 1754 dùng lý thuyết Newton để chỉ ra nguyên nhân đúng như dự đoán. Biên độ nhỏ thật sự: độ nghiêng của hoàng đạo dao động chỉ khoảng chín giây cung, theo chu kỳ mười tám phẩy sáu năm. Vì nhỏ như vậy mà phải mất công đo tới từng giây cung suốt nhiều thập kỷ, nên đây là bài học về công cụ đo hơn là về lý thuyết. Ngày nay nutation không còn là chi tiết lạ lùng: nó là sai số bắt buộc phải sửa trong mọi phép định vị sao chính xác, vì cùng một ngôi sao ở hai thời điểm khác nhau sẽ nằm ở hai vị trí khác nhau.
+> Ông nói trước độ lớn, và nói đúng thứ hậu quả quan trọng: nếu chuyển động ấy lớn, thì các quan sát thiên văn thông thường sẽ sai. Một hiện tượng nhỏ đến mức gần như vô hình mà vẫn **bắt buộc** phải có trong lý thuyết là dấu hiệu của bản chất của lý thuyết: nó không chỉ mô tả cái to lớn, mà còn phải đúng cả ở chi tiết nhỏ tới mức khó tin.
+>
+> Hiện tượng ấy giữ tên là nutation, và là bằng chứng nổi tiếng nhất cho một dự đoán thành công. Chỉ vài thập kỷ sau khi Newton qua đời, năm 1748, Bradley phát hiện ra nó trong lúc đo lệch ánh sáng của các sao, tức một hiện tượng khác mà chính ông cũng phát hiện và giải thích. Ông đặt tên cho nó là chuyển động của các điểm xuân phân, rồi năm 1754 dùng lý thuyết Newton để chỉ ra nguyên nhân đúng như dự đoán. Biên độ nhỏ thật sự: độ nghiêng của hoàng đạo dao động chỉ khoảng chín giây cung, theo chu kỳ mười tám phẩy sáu năm. Vì nhỏ như vậy mà phải mất công đo tới từng giây cung suốt nhiều thập kỷ, nên đây là bài học về công cụ đo hơn là về lý thuyết. Ngày nay nutation không còn là chi tiết lạ lùng: nó là sai số bắt buộc phải sửa trong mọi phép định vị sao chính xác, vì cùng một ngôi sao ở hai thời điểm khác nhau sẽ nằm ở hai vị trí khác nhau.
 
 ## Proposition XXII. Định lý XVIII
 
@@ -83,15 +83,17 @@ Tác dụng của mỗi thiên thể cũng phụ thuộc vào độ lệch của
 
 Nhưng trong các phần vuông solstitial, chúng lại gây thủy triều lớn hơn so với các phần vuông quanh điểm xuân phân, vì lúc ấy lực của Mặt Trăng, khi nằm ở xích đạo, vượt lực của Mặt Trời nhiều nhất. Vì vậy, các thủy triều lớn nhất xảy ra trong những hội tế, và các thủy triều nhỏ nhất trong những phần vuông, vào khoảng thời gian của cả hai điểm xuân phân. Thủy triều lớn nhất trong các hội tế luôn được theo sau bởi thủy triều nhỏ nhất trong các phần vuông, như kinh nghiệm cho thấy. Nhưng vì vào mùa đông Mặt Trời ở gần Trái Đất hơn vào mùa hè, các thủy triều lớn nhất và nhỏ nhất xuất hiện trước điểm xuân phân mùa xuân thường xuyên hơn sau đó, và sau điểm xuân phân mùa thu thường xuyên hơn trước đó.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXIV giải thích thủy triều lần đầu bằng trọng lực. Trước đó, không ít người coi thủy triều là sức bẩm linh; Newton đặt nó vào đúng khung lực hút đã dùng cho cả hệ Mặt Trời.
+> **Thủy triều lần đầu được giải thích bằng trọng lực, và độ trễ giữa lực với đỉnh triệu**
 >
-> **Công thức.** Ông lập luận nước dâng rồi rút hai lần mỗi ngày, theo cả chu kỳ Mặt Trăng lẫn chu kỳ Mặt Trời, và ở biển mở thì đỉnh đến chậm hơn sáu giờ sau khi thiên thể qua đường chân trời. Rồi đến mấu chốt: khi lực lớn nhất thì mực nước **chưa** cao nhất, vì lực ấy đã qua đỉnh; nó vẫn được một lực nhỏ hơn nhưng cùng chiều nâng thêm, tới khi quá yếu. Khi Mặt Trời và Mặt Trăng ở hội tế hoặc đối xứng, các lực cộng lại, cho triệu và triều lớn nhất; khi ở phần vuông, chúng triệt tiêu nhau phần lớn, cho thủy triều nhỏ nhất. Và ông bám vào một sự thật thực nghiệm: lực của Mặt Trăng mạnh hơn lực của Mặt Trời, nên đỉnh triệu rơi vào khoảng giờ thứ ba của ngày Mặt Trăng.
+> Proposition XXIV giải thích thủy triều lần đầu bằng trọng lực. Trước đó, không ít người coi thủy triều là sức bẩm linh; Newton đặt nó vào đúng khung lực hút đã dùng cho cả hệ Mặt Trời.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không chỉ nói *nguyên nhân* mà truy ra **hàng loạt hệ quả có thể kiểm tra**: khoảng cách càng gần thì thủy triều càng lớn, nên hai thủy triều cao nhất hiếm khi rơi vào hai hội tế liên tiếp; độ lệch so với xích đạo quyết định hội tế hay phần vuông, nên triệu lớn nhất xuất hiện quanh xuân phân. Ông còn làm một việc chưa ai làm trước đó: tính đến **quán tính** của nước, rồi chỉ ra nó làm độ trễ giữa triệu và triều ngắn lại, nên hai thủy triều xen kẽ không chênh nhau nhiều như lý thuyết "lý tưởng" dự báo.
+> Ông lập luận nước dâng rồi rút hai lần mỗi ngày, theo cả chu kỳ Mặt Trăng lẫn chu kỳ Mặt Trời, và ở biển mở thì đỉnh đến chậm hơn sáu giờ sau khi thiên thể qua đường chân trời. Rồi đến mấu chốt: khi lực lớn nhất thì mực nước **chưa** cao nhất, vì lực ấy đã qua đỉnh; nó vẫn được một lực nhỏ hơn nhưng cùng chiều nâng thêm, tới khi quá yếu. Khi Mặt Trời và Mặt Trăng ở hội tế hoặc đối xứng, các lực cộng lại, cho triệu và triều lớn nhất; khi ở phần vuông, chúng triệt tiêu nhau phần lớn, cho thủy triều nhỏ nhất. Và ông bám vào một sự thật thực nghiệm: lực của Mặt Trăng mạnh hơn lực của Mặt Trời, nên đỉnh triệu rơi vào khoảng giờ thứ ba của ngày Mặt Trăng.
 >
-> **Hiện nay thì sao.** Khung hình ấy vẫn là khung hình hôm nay: triệu là một dao động cưỡng bức, và độ trễ giữa lực với đỉnh triệu do chu kỳ tự nhiên của lưu vực quyết định. Một hệ quả rất đẹp: lực triệu của Mặt Trăng mạnh gấp khoảng hai lẻ rưỡi lần lực Mặt Trời, nên thủy triều do Mặt Trăng quyết định; tuổi thủy triều ở bờ biển trung bộ chỉ khoảng một giờ, còn ở cửa sông vịnh dài hơn nhiều, đúng như ông nói là gần bờ phải chờ ba giờ. Cảng mà Halley dẫn ra, cảng Batsham trong vương quốc Đông Kinh, thường được nhận là Đồng Hới: một vịnh nông nối biển bằng cửa hẹp, nơi thủy triều chỉ lên xuống **một lần** mỗi ngày.
+> Ông không chỉ nói nguyên nhân mà truy ra cả hàng loạt hệ quả có thể kiểm tra: khoảng cách càng gần thì thủy triều càng lớn, nên hai thủy triều cao nhất hiếm khi rơi vào hai hội tế liên tiếp; độ lệch so với xích đạo quyết định hội tế hay phần vuông, nên triệu lớn nhất xuất hiện quanh xuân phân. Ông còn làm một việc chưa ai làm trước đó: tính đến **quán tính** của nước, rồi chỉ ra nó làm độ trễ giữa triệu và triều ngắn lại, nên hai thủy triều xen kẽ không chênh nhau nhiều như lý thuyết lý tưởng dự báo.
+>
+> Khung hình ấy vẫn là khung hình hôm nay: triệu là một dao động cưỡng bức, và độ trễ giữa lực với đỉnh triệu do chu kỳ tự nhiên của lưu vực quyết định. Một hệ quả rất đẹp: lực triệu của Mặt Trăng mạnh gấp khoảng hai lẻ rưỡi lần lực Mặt Trời, nên thủy triều do Mặt Trăng quyết định; tuổi thủy triều ở bờ biển trung bộ chỉ khoảng một giờ, còn ở cửa sông vịnh dài hơn nhiều, đúng như ông nói là gần bờ phải chờ ba giờ. Cảng mà Halley dẫn ra, cảng Batsham trong vương quốc Đông Kinh, thường được nhận là Đồng Hới: một vịnh nông nối biển bằng cửa hẹp, nơi thủy triều chỉ lên xuống **một lần** mỗi ngày.
 
 Ngoài ra, tác dụng của các thiên thể còn phụ thuộc vào vĩ độ của các nơi. Hãy để $APBP$ đại diện cho Trái Đất được phủ bởi nước sâu; $C$ là tâm của nó; $P,p$ là các cực; $AE$ là xích đạo; $F$ là một nơi bất kỳ ngoài xích đạo; $F'$ là đường vĩ độ tương ứng với nơi ấy; $F'DD'$ là đường vĩ độ tương ứng ở phía bên kia xích đạo; $L$ là vị trí của Mặt Trăng ba giờ trước; $H$ là nơi của Trái Đất nằm thẳng dưới nó; $h$ là nơi đối diện; $K,k$ là các nơi cách nhau $90^\circ$; $CH,Ch$ là những chiều cao lớn nhất của biển tính từ tâm Trái Đất; $CK,Ck$ là những chiều cao nhỏ nhất.
 

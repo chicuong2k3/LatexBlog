@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-xxv-xxviii"
 number: 62
 ---
 
-# Sách III. Proposition XXV–XXVIII
-
 ![Minh họa lực Mặt Trời gây nhiễu quỹ đạo Mặt Trăng](../assets/book-ii-section-i-motion.svg)
 
 *Hình 50. Sơ đồ được dùng lại từ Phần I; các sơ đồ dựng lực, quỹ đạo Mặt Trăng, hình chiếu và đường cong của bản gốc cần được đối chiếu riêng.*
@@ -61,15 +59,17 @@ $$
 
 Từ đó, theo tỷ lệ giữa các đoạn $TM$ và $ML$, lực $TM$ cũng được xác định. Đó là các lực Mặt Trời dùng để làm nhiễu chuyển động của Mặt Trăng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXV trả lời câu hỏi mà ai cũng tò mò: lực nào của Mặt Trời làm méo quỹ đạo Mặt Trăng? Cách trả lời của Newton không phải là "lực Mặt Trời", mà là cách **tách** lực ấy thành hai phần và chỉ giữ lại một phần.
+> **Lực Mặt Trời phá méo quỹ đạo Mặt Trăng không phải vì nó lớn, mà vì nó lệch**
 >
-> **Công thức.** Mặt Trời hút cả Trái Đất lẫn Mặt Trăng, gần như bằng nhau vì chúng ở gần nhau so với khoảng cách tới Mặt Trời. Ông giả định hai vật thể ấy đứng yên, rồi dựng một hình học để tách lực lên Mặt Trăng thành hai đoạn, $TM$ và $ML$. Đoạn $ML$ mới là phần thật sự gây nhiễu; còn $TM$ chỉ kéo cả cặp Trái Đất–Mặt Trăng cùng đi, mà về mặt toán học chẳng khác gì việc bạn đặt hệ quy chiếu vào một điểm khác. Vì thế ông mới xét tổng lực và tổng chuyển động như trong trường hợp của Mặt Trăng, rồi thu được lực trung bình vào khoảng $1:638093$ so với trọng lực ở bề mặt Trái Đất.
+> Proposition XXV trả lời câu hỏi mà ai cũng tò mò: phần nào của lực Mặt Trời làm méo quỹ đạo Mặt Trăng? Cách trả lời của Newton không phải là "lực Mặt Trời", mà là cách **tách** lực ấy thành hai phần và chỉ giữ lại một phần.
 >
-> **Vì sao Newton viết như vậy.** Vì ông hiểu rằng trực giác thường sai ở đây. Ta dễ nghĩ lực Mặt Trời yếu thì vô hại, mạnh thì phá hỏng nặng. Thực ra lực Mặt Trời lên Mặt Trăng **cùng cỡ** với lực hút giữ Mặt Trăng ở quỹ đạo; thứ làm hỏng quỹ đạo không phải bản thân lực lớn hay nhỏ, mà là sự **chênh lệch** giữa lực lên Mặt Trăng và lực lên Trái Đất. Chênh lệch ấy nhỏ tới mức gần như bỏ được, nên quỹ đạo Mặt Trăng vẫn bám con elip của Kepler khá chặt. Đây cũng chính là lý do lực tạo thủy triều ở Proposition XXIV là **lực chênh lệch**, chứ không phải lực Mặt Trăng hay Mặt Trời tính riêng.
+> Mặt Trời hút cả Trái Đất lẫn Mặt Trăng, gần như bằng nhau vì chúng ở gần nhau so với khoảng cách tới Mặt Trời. Ông giả định hai vật thể ấy đứng yên, rồi dựng một hình học để tách lực lên Mặt Trăng thành hai đoạn, $TM$ và $ML$. Đoạn $ML$ mới là phần thật sự gây nhiễu; còn $TM$ chỉ kéo cả cặp Trái Đất–Mặt Trăng cùng đi, mà về mặt toán học chẳng khác gì việc bạn đặt hệ quy chiếu vào một điểm khác. Vì thế ông mới xét tổng lực và tổng chuyển động như trong trường hợp của Mặt Trăng, rồi thu được lực trung bình vào khoảng $1:638093$ so với trọng lực ở bề mặt Trái Đất.
 >
-> **Hiện nay thì sao.** Cách phân rã ấy vẫn là cách làm mọi ngày trong cơ học thiên thể: tách lực thành phần dùng chung và phần vi sai, rồi chỉ giữ lại phần vi sai. Nhờ đó các quỹ tinh nâng cao đủ chính xác để dùng cho điều hướng. Một hệ quả thực đo đáng chú ý là Mặt Trăng không chỉ đổi tốc độ mà còn đổi cả khoảng cách giữa hội tế và phần vuông: ở phần vuông, lực hướng tâm của Trái Đất mạnh nhất; ở hội tế, lực Mặt Trời kéo giãn ra nhiều nhất. Song chênh lệch ấy chỉ vài phần nghìn, nên quỹ đạo thật vẫn là một elip với độ lệch tâm chỉ khoảng $0{,}055$.
+> Trực giác thường sai ở đây. Ta dễ nghĩ lực Mặt Trời yếu thì vô hại, mạnh thì phá hỏng nặng. Thực ra lực Mặt Trời lên Mặt Trăng **cùng cỡ** với lực hút giữ Mặt Trăng ở quỹ tích; thứ làm hỏng quỹ đạo không phải bản thân lực lớn hay nhỏ, mà là sự chênh lệch giữa lực lên Mặt Trăng và lực lên Trái Đất. Chênh lệch ấy nhỏ tới mức gần như bỏ được, nên quỹ đạo Mặt Trăng vẫn bám con elip của Kepler khá chặt. Đây cũng chính là lý do lực tạo thủy triều ở Proposition XXIV là lực chênh lệch, chứ không phải lực Mặt Trăng hay Mặt Trời tính riêng.
+>
+> Cách phân rã ấy vẫn là cách làm mọi ngày trong cơ học thiên thể: tách lực thành phần dùng chung và phần vi sai, rồi chỉ giữ lại phần vi sai. Nhờ đó các quỹ tinh nâng cao đủ chính xác để dùng cho điều hướng. Một hệ quả thực đo đáng nói là Mặt Trăng không chỉ đổi tốc độ mà còn đổi cả khoảng cách giữa hội tế và phần vuông: ở phần vuông, lực hướng tâm của Trái Đất mạnh nhất; ở hội tế, lực Mặt Trời kéo giãn ra nhiều nhất. Song chênh lệch ấy chỉ vài phần nghìn, nên quỹ đạo thật vẫn là một elip với độ lệch tâm chỉ khoảng $0{,}055$.
 
 ## Proposition XXVI. Bài toán VII
 
@@ -135,15 +135,17 @@ Moment ấy tại một vị trí trung gian $P$ sẽ tỷ lệ với $10973+ P\
 
 Vì vậy, diện tích Mặt Trăng mô tả bằng bán kính kẻ từ nó đến Trái Đất trong các phần thời gian nhỏ bằng nhau gần bằng tổng của số [OCR không rõ] và giác vuông của khoảng cách kép từ Mặt Trăng đến phần vuông gần nhất, xét trong một đường tròn có bán kính bằng một. Đây là trường hợp biến thiên tại các octant bằng lượng trung bình của nó. Nếu biến thiên tại đó lớn hơn hoặc nhỏ hơn, giác vuông ấy phải tăng hoặc giảm theo cùng tỷ lệ.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XXVI tính thứ mà thời đó gọi là **sự bất bằng của moment**: diện tích Mặt Trăng quét trong những khoảng thời gian bằng nhau không hẳn bằng nhau, mà thay đổi theo vị trí của nó trên quỹ đạo. Đây là bước đầu của việc lượng hóa cái mà người xưa chỉ mô tả rằng "tác dụng của Mặt Trời lên Mặt Trăng là không đều".
+> **Bất bằng của moment: dao động nửa phần trăm, và tại sao nó thẳng với độ lệch tâm**
 >
-> **Công thức.** Ông phân tích quỹ đạo như một đường tròn và bỏ mọi bất đẳng thức trừ cái đang xét, rồi tách lực nhiễu thành hai thành phần: một thành phần dọc theo bán kính, vốn **không** làm thay đổi tốc độ quét diện tích, và một thành phần vuông góc, vốn làm thay đổi. Từ đó ông tìm ra moment lớn nhất ở hội tế và nhỏ nhất ở phần vuông theo tỷ lệ $11073:10973$, tức dao động quanh trung bình khoảng nửa phần trăm. Rồi ông nêu **dạng** của luật: diện tích quét trong các phần thời gian bằng nhau gần bằng một hằng số cộng với **bình phương** khoảng cách từ Mặt Trăng tới phần vuông gần nhất.
+> Proposition XXVI tính thứ mà thời đó gọi là **sự bất bằng của moment**: diện tích Mặt Trăng quét trong những khoảng thời gian bằng nhau không hẳn bằng nhau, mà thay đổi theo vị trí của nó trên quỹ đạo. Đây là bước đầu của việc lượng hóa cái mà người xưa chỉ mô tả rằng "tác dụng của Mặt Trời lên Mặt Trăng là không đều".
 >
-> **Vì sao Newton viết như vậy.** Vì đây là điều một lý thuyết mạnh buộc phải làm: không dừng ở câu "Mặt Trời làm nhiễu", mà viết ra cái **dạng** của cái nhiễu. Từ một dạng đã biết, người ta suy ngược được quỹ đạo, rồi từ đó đo được khoảng cách Mặt Trăng — đó chính là Hệ quả 1 và 2 ngay sau đây. Ông cũng nêu một lo lắng thực tiễn: bất đẳng thức ấy thường bị gộp nhầm vào phương trình tâm Mặt Trăng, và phải tách ra thì mới dùng được.
+> Ông phân tích quỹ đạo như một đường tròn và bỏ mọi bất đẳng thức trừ cái đang xét, rồi tách lực nhiễu thành hai thành phần: một thành phần dọc theo bán kính, vốn **không** làm thay đổi tốc độ quét diện tích, và một thành phần vuông góc, vốn làm thay đổi. Từ đó ông tìm ra moment lớn nhất ở hội tế và nhỏ nhất ở phần vuông theo tỷ lệ $11073:10973$, tức dao động quanh trung bình khoảng nửa phần trăm. Rồi ông nêu **dạng** của luật: diện tích quét trong các phần thời gian bằng nhau gần bằng một hằng số cộng với bình phương khoảng cách từ Mặt Trăng tới phần vuông gần nhất.
 >
-> **Hiện nay thì sao.** Bất đẳng thức theo chu kỳ nửa tháng giao hợp như thế vẫn là một trong những số hạng chủ đạo của lý thuyết chuyển động Mặt Trăng hiện đại, và được gọi là **biến thiên**. Biên độ của nó theo chiều dọc quỹ đạo vào khoảng $0{,}66^\circ$, nhỏ hơn nhiều so với bất đẳng thức lớn nhất, nhưng điều đáng nói là biên độ ấy **tỷ lệ thẳng với độ lệch tâm của quỹ đạo Trái Đất**. Nói cách khác, số hạng này chính là cách mà khoảng cách Trái Đất tới Mặt Trời ghi vào chuyển động Mặt Trăng. Nó nối thẳng với điều ở chương trước, rằng chuyển động trung bình của Mặt Trăng chậm hơn khi Trái Đất ở perihelion hơn là khi ở aphelion.
+> Đây là điều một lý thuyết mạnh buộc phải làm: không dừng ở câu "Mặt Trời làm nhiễu", mà viết ra cái **dạng** của cái nhiễu. Từ một dạng đã biết, người ta suy ngược được quỹ đạo, rồi từ đó đo được khoảng cách Mặt Trăng — đó chính là Hệ quả 1 và 2 ngay sau đây. Ông cũng nêu một lo lắng thực tiễn: bất đẳng thức ấy thường bị gộp nhầm vào phương trình tâm Mặt Trăng, và phải tách ra thì mới dùng được.
+>
+> Bất đẳng thức theo chu kỳ nửa tháng giao hợp như thế vẫn là một trong những số hạng chủ đạo của lý thuyết chuyển động Mặt Trăng hiện đại, và được gọi là **biến thiên**. Biên độ của nó theo chiều dọc quỹ đạo vào khoảng $0{,}66^\circ$, nhỏ hơn nhiều so với bất đẳng thức lớn nhất, nhưng điều đáng nói là biên độ ấy **tỷ lệ thẳng với độ lệch tâm của quỹ đạo Trái Đất**. Số hạng này chính là cách mà khoảng cách Trái Đất tới Mặt Trời ghi vào chuyển động Mặt Trăng, và nó nối thẳng với điều ở chương trước, rằng chuyển động trung bình của Mặt Trăng chậm hơn khi Trái Đất ở perihelion hơn là khi ở aphelion.
 
 ## Proposition XXVII. Bài toán VIII
 

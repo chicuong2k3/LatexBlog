@@ -5,8 +5,6 @@ slug: "sach-i-phan-xii-proposition-lxxii-lxxviii-lemma-xxix"
 number: 39
 ---
 
-# Sách I, Phần XII. Proposition LXXII–LXXVIII và Lemma XXIX
-
 ![Lực hút của các vật thể cầu](../assets/section-xii-spherical-attraction.svg)
 
 *Hình 27. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -33,15 +31,17 @@ Nếu các chu kỳ bằng nhau, các khoảng cách tỷ lệ với các đư�
 
 Nếu hai vật thể rắn cùng hình và cùng mật độ, lực hút giữa chúng tỷ lệ với đường kính của chúng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition LXXIII là định lý **vỏ cầu phía trong**, và nó nói điều đẹp nhất của cả Phần XII: bên trong một quả cầu đồng nhất, lực hướng tâm **tỷ lệ thuận với khoảng cách** tới tâm. Trọng lực bên trong Trái Đất không giảm như lực hút bên ngoài — nó tăng tuyến tính theo độ sâu, và bằng không ngay tại tâm.
+> **Bên trong một quả cầu đồng nhất, lực hút tỷ lệ thuận với khoảng cách tới tâm**
 >
-> **Công thức.** Chứng minh dùng đúng kỹ thuật của Proposition LXX: chia quả cầu thành vô số mặt cầu đồng tâm. Mọi mặt cầu nằm ngoài bán kính $SP$ đều không tác động lên $P$, theo Proposition LXX. Chỉ còn lại mặt cầu bán kính $SP$, và theo Proposition LXXII nó hút với lực tỷ lệ với bán kính. Vì vậy $F = k\,r$, và với Trái Đất mật độ đều bán kính $R$ thì $g(r) = g_0\dfrac{r}{R}$.
+> Trọng lực bên trong Trái Đất không giảm như lực hút bên ngoài — nó tăng tuyến tính theo độ sâu, và bằng không ngay tại tâm.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần biết lực ở **cả hai phía** của bề mặt cầu trước khi áp dụng vào hành tinh. Nhưng Học luận ngay sau đó còn đáng chú ý hơn: ông nhấn mạnh các mặt cầu chỉ là những lớp mỏng tới mức độ dày không đáng kể, và quả cầu được tạo thành khi số lớp tăng vô hạn còn độ dày giảm vô hạn. Đó là một lời cảnh báo về tính lý tưởng hoá, và nó cho thấy ông biết rõ mình đang chuyển từ hữu hạn sang liên tục.
+> Chứng minh dùng đúng kỹ thuật của Proposition LXX: chia quả cầu thành vô số mặt cầu đồng tâm. Mọi mặt cầu nằm ngoài bán kính $SP$ đều không tác động lên $P$, theo Proposition LXX. Chỉ còn lại mặt cầu bán kính $SP$, và theo Proposition LXXII nó hút với lực tỷ lệ với bán kính. Vì vậy $F = k\,r$, và với Trái Đất mật độ đều bán kính $R$ thì $g(r) = g_0\dfrac{r}{R}$.
 >
-> **Hiện nay thì sao.** Lực tuyến tính bên trong cầu nghĩa là một quả bóng thả trong lòng Trái Đất sẽ **dao động điều hòa**, với chu kỳ không phụ thuộc biên độ — đúng như Proposition XLVIII đã dựng bằng cycloid ở Phần X, và đó không phải là trùng hợp: cùng một lực tuyến tính ấy. Cùng kết quả ấy giải thích vì sao trọng lực ở sâu bên trong hành tinh lớn hơn ở bề mặt, và vì sao mô hình "Trái Đất là một quả cầu đồng nhất" cho ra kết quả sai ở độ sâu lớn. Ngành địa chấn hôm nay dùng chính quan hệ tuyến tính này để suy ra mật độ bên trong Trái Đất từ số liệu trọng lực đo được ở các độ sâu khác nhau.
+> Ông viết vậy vì cần lực ở **cả hai phía** của bề mặt cầu trước khi áp dụng vào hành tinh. Nhưng Học luận ngay sau đó còn đáng giữ hơn: ông nhấn mạnh các mặt cầu chỉ là những lớp mỏng tới mức độ dày không đáng kể, và quả cầu được tạo thành khi số lớp tăng vô hạn còn độ dày giảm vô hạn. Đó là một lời cảnh báo về tính lý tưởng hoá, và nó cho thấy ông biết rõ mình đang chuyển từ hữu hạn sang liên tục.
+>
+> Một hệ quả lý thúy hơn: vì lực bên trong là tuyến tính nên một quả bóng thả trong lòng Trái Đất dao động điều hòa, chu kỳ không phụ thuộc biên độ. Chu kỳ ấy bằng đúng chu kỳ của một vệ tinh quay sát bề mặt, vì cả hai đều ra $T = 2\pi\sqrt{\dfrac{3}{4\pi G\rho}}$. Cùng kết quả giải thích vì sao trọng lực ở sâu bên trong hành tinh lớn hơn ở bề mặt, và vì sao mô hình "Trái Đất là quả cầu đồng nhất" cho ra kết quả sai ở độ sâu lớn. Ngành địa chấn hôm nay dùng chính quan hệ tuyến tính này để suy ra mật độ bên trong Trái Đất từ số liệu trọng lực đo được ở các độ sâu khác nhau.
 
 ## Proposition LXXIII. Định lý XXXIII
 
@@ -191,15 +191,17 @@ Tôi đã giải thích hai trường hợp chính của lực hút: lực giả
 
 Các trường hợp còn lại có kết luận ít quan trọng hơn. Tôi sẽ dùng một phương pháp chung để xác định chúng.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Học luận này là **bản tổng kê cấu trúc** của cơ học Newton: toàn bộ *Principia* chỉ dựa trên hai quy luật lực — nghịch đảo bậc hai, và tuyến tính theo khoảng cách. Trường hợp đầu cho quỹ đạo conic; trường hợp sau cho các quả cầu, nơi lực hướng tâm tuân theo cùng quy luật tăng hay giảm.
+> **Hành tinh không cần phải đồng nhất: điều kiện thật sự chỉ là đối xứng cầu**
 >
-> **Công thức.** Điều mạnh nhất của Phần XII nằm ở Proposition LXXVI và LXXVIII: lực giữa hai quả cầu vẫn tỷ lệ nghịch với bình phương khoảng cách tâm, **ngay cả khi mật độ thay đổi tùy ý theo bán kính**, miễn là cả hai quả cầu có cùng một hồ sơ mật độ và đối xứng cầu. Newton còn nói thẳng rằng có thể thêm vật chất không hút để tạo hình dạng mong muốn, miễn tổng lực vẫn giữ tỷ lệ $1/r^2$.
+> Toàn bộ *Principia* dựa trên hai quy luật lực — nghịch đảo bậc hai, và tuyến tính theo khoảng cách. Quy luật thứ nhất cho quỹ đạo conic; quy luật thứ hai cho các quả cầu, nơi lực hướng tâm tuân theo cùng dạng tăng hay giảm. Học luận này là bản tổng kê cấu trúc ấy, và nó đứng đúng chỗ cần đọc sau khi đã đi hết Phần XII.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần câu trả lời cho câu hỏi dễ bị bỏ qua: hành tinh **không phải** quả cầu đồng nhất, vậy tại sao kết luận vẫn đúng? Proposition LXXVI chính là câu trả lời, và nó trao cho Newton sự tự do tuyệt đối: lý thuyết không quan tâm gì tới hình dạng, chỉ quan tâm tới tổng khối lượng và tới tính đối xứng cầu.
+> Kết quả mạnh nhất Phần XII nằm ở Proposition LXXVI và LXXVIII: lực giữa hai quả cầu vẫn tỷ lệ nghịch với bình phương khoảng cách tâm, **ngay cả khi mật độ thay đổi tùy ý theo bán kính**, miễn là cả hai quả cầu có cùng một hồ sơ mật độ và đối xứng cầu. Newton còn nói thẳng rằng có thể thêm vật chất không hút để tạo hình dạng mong muốn, miễn tổng lực vẫn giữ tỷ lệ $1/r^2$.
 >
-> **Hiện nay thì sao.** Chính điều kiện ấy là lý do dùng được định luật Newton trong thiên văn: mọi hành tinh và mọi ngôi sao đều bất đối xứng, nhưng sai lệch chỉ xuất hiện ở bậc cao hơn một, nên quy luật $F = Gm_1m_2/r^2$ chính xác đến bậc một trong khoảng cách. Người đọc hôm nay còn biết sai lệch phẳng của các thiên thể làm lực không hoàn toàn hướng về tâm, và đóng góp ấy đo được trong chuyển động của Mặt Trăng. Cũng chính trong Phần XII này, lần đầu tiên Newton nói rõ rằng cùng một phương pháp hình học xử lý được lực **tăng** theo khoảng cách, và điều đó mở đường cho toàn bộ Phần X về cycloid và con lắc đẳng thời gian.
+> Ông viết vậy để trả lời một câu hỏi dễ bị bỏ qua: hành tinh **không phải** quả cầu đồng nhất, vậy tại sao kết luận vẫn đúng? Proposition LXXVI chính là câu trả lời, và nó trao cho ông sự tự do tuyệt đối — lý thuyết không quan tâm gì tới hình dạng, chỉ quan tâm tới tổng khối lượng và tới tính đối xứng cầu.
+>
+> Chính điều kiện ấy là lý do dùng được định luật Newton trong thiên văn: mọi hành tinh và mọi ngôi sao đều bất đối xứng đến độ chính xác rất cao, nên quy luật $F = Gm_1m_2/r^2$ chính xác đến bậc một trong khoảng cách. Người đọc hôm nay còn biết sai lệch phẳng của các thiên thể làm lực không hoàn toàn hướng về tâm, và đóng góp ấy đo được trong chuyển động của Mặt Trăng. Cũng chính trong Phần XII này, lần đầu tiên ông nói rõ cùng một phương pháp hình học xử lý được lực **tăng** theo khoảng cách, và điều đó mở đường cho toàn bộ Phần X về cycloid và con lắc đẳng thời gian.
 
 ## Lemma XXIX
 

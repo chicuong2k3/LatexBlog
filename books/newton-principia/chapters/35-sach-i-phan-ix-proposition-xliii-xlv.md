@@ -5,8 +5,6 @@ slug: "sach-i-phan-ix-proposition-xliii-xlv"
 number: 35
 ---
 
-# Sách I, Phần IX. Proposition XLIII–XLV
-
 ![Quỹ đạo quay quanh tâm lực và chuyển động apsis](../assets/section-ix-moving-orbits.svg)
 
 *Hình 23. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
@@ -135,15 +133,17 @@ có một tỷ lệ đã cho, thì lực làm cho vật thể quay trên đườ
 
 Vật thể $P$, nếu không có lực khác ngoài quán tính, sẽ đi thẳng đều trên $VP$. Thêm một lực hướng tâm tới $C$, tỷ lệ nghịch với lập phương $CP$ hoặc $Cp$. Vật thể sẽ rời chuyển động thẳng và đi vào đường cong $Vpk$. Đây chính là đường cong $VPQ$ đã tìm trong Hệ quả 3 của Proposition XLI.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XLIII và XLIV là một cặp kết quả rất lạ: chúng nói rằng muốn làm cho một quỹ đạo bất biến **xoay** quanh tâm lực, ta không cần đổi lực, chỉ cần **xoay cách quét diện tích** — và phần lực phải thêm vào, thì tỷ lệ **nghịch với lập phương** khoảng cách.
+> **Làm cho một quỹ đạo bất biến quay quanh tâm lực: thêm một lực tỷ lệ $1/r^3$**
 >
-> **Công thức.** Định lý XIV cho hiệu của hai lực tỷ lệ với $1/Cp^3$. Kiểm bằng lý thuyết: thêm một số hạng dạng $\delta F = \gamma/r^3$ vào lực nghịch đảo bậc hai làm dịch chuyển tần số góc ổn định, và làm dịch chuyển tần số góc quét diện tích theo cùng tỷ lệ — sự trùng khớp ấy chính là lý do hiệu lực lại ra tỷ lệ $1/r^3$ chứ không phải một lũy thừa khác.
+> Giả thiết của ông rất gọn: vật thể đi thẳng đều nếu không có lực nào, thêm vào một lực hướng tâm tỷ lệ nghịch với lập phương $CP$ thì nó rời khỏi đường thẳng và bám theo một đường cong xoắn quanh $C$. Định lý XIV cho ra hiệu của hai lực là $1/Cp^3$.
 >
-> **Vì sao Newton viết như vậy.** Vì ông cần một **cách đặt vấn đề mới**: trước đó ông giả định quỹ đạo bất biến rồi tìm lực, ở đây ông giả sử quỹ đạo quay rồi tìm phần lực phải thêm. Đó là bước đầu tiên của tư duy **vô hướng nghịch đảo**. Hệ quả 4 còn chỉ ra rằng nếu chỉ có quán tính cộng lực tỷ lệ $1/Cp^3$ với vận tốc ban đầu đúng phương tiếp tuyến, quỹ đạo là một parabol.
+> Vì sao đúng là $1/r^3$ chứ không phải một lũy thừa khác? Vì thế năng của một lực $1/r^3$ tỷ lệ với $1/r^2$, và một số hạng tỷ lệ $1/r^2$ trong thế năng hiệu dụng chính là thứ làm tần số góc quét diện tích lệch khỏi tần số góc ổn định. Quỹ đạo đóng lại sau đúng một vòng khi và chỉ khi hai tần số ấy bằng nhau, nên điều kiện tiến của periapsis là một sự trùng khớp tần số, và hình thức của số hạng ra từ đó chứ không từ một phép thử thẩm mỹ nào.
 >
-> **Hiện nay thì sao.** Người đọc hôm nay nhận ra cấu trúc nghịch đảo lập phương này quay lại trong **thế năng hiệu dụng** của chuyển động quanh lỗ đen: nó có thêm một số hạng tỷ lệ $1/r^3$, và chính số hạng ấy làm dây chuyền của quỹ đạo. Newton đã tìm ra cấu trúc đó từ một lập luận thuần hình học vào năm 1687, gần ba trăm năm trước khi người ta hiểu vì sao nó quan trọng.
+> Đây cũng là lần đầu ông đảo chiều bài toán: trước đó ông giả sử quỹ đạo bất biến rồi tìm lực, ở đây ông giả sử quỹ đạo quay rồi tìm phần lực phải thêm. Một chỗ khác đáng lưu, Hệ quả 4 cho thấy nếu chỉ có quán tính cộng lực tỷ lệ $1/Cp^3$, không có lực hút trung tâm nào, thì quỹ tích cũng là một parabol khi vận tốc ban đầu đúng phương tiếp tuyến.
+>
+> Người đọc hôm nay gặp lại cấu trúc này ở thế năng hiệu dụng của chuyển động quanh lỗ đen, với đúng số hạng tỷ lệ $1/r^3$ ấy, và nó làm dây chuyền của quỹ đạo. Số hạng tương tự cũng xuất hiện trong trường hấp dẫn của thuyết tương đối tổng quát, và đó là lý do tốc độ tiến của periapsis trở thành phép thử tiêu chuẩn cho một trường hấp dẫn mới. Newton tìm ra cấu trúc đó từ một lập luận thuần hình học vào năm 1687, gần ba thế kỷ trước khi người ta hiểu vì sao nó quan trọng.
 
 ## Proposition XLV. Bài toán XXXI
 
@@ -298,12 +298,14 @@ Theo Ví dụ 3, nếu $c$ nhỏ hơn một phần của lực ban đầu, góc 
 
 Khi các mặt phẳng quỹ đạo đi qua tâm lực, đến đây ta đã xét đủ chuyển động của các vật thể trong các mặt phẳng đó. Phần sau xét các mặt phẳng lệch tâm.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition XLV là một cột mốc: lần đầu tiên trong lịch sử vật lí, người ta **đo** một sai lệch của quỹ đạo Trái Đất rồi suy ra sai lệch ấy đòi hỏi lực khác với lực nghịch đảo bậc hai thuần tuý, rồi tính ra sai lệch đó nhỏ đến mức nào.
+> **Sai lệch nhỏ đến mức nào thì đủ chỉ ra giới hạn**
 >
-> **Công thức.** Với lực $F = -k/r^m$, quỹ đạo gần tròn có góc giữa hai apsis liên tiếp là $\Delta\theta = \dfrac{2\pi}{\sqrt{3-m}}$. Ba trường hợp kiểm: $m = 2$ cho $\Delta\theta = 360^\circ$, tức quỹ đạo khép kín đúng như elip; lực không đổi độ lớn cho $\Delta\theta = 360^\circ/\sqrt{3} \approx 207{,}8^\circ$; lực tỷ lệ thuận với $r$ cho $\Delta\theta = 180^\circ$. Chương này dùng cách đánh số lũy thừa khác, nên khi đọc cần tự chọn một quy ước và giữ nhất quán.
+> Proposition XLV là lần đầu tiên trong lịch sử vật lí, người ta **đo** một sai lệch của quỹ đạo Trái Đất rồi suy ra sai lệch ấy đòi hỏi lực khác với lực nghịch đảo bậc hai thuần tuý, rồi tính ra sai lệch đó nhỏ đến mức nào.
 >
-> **Vì sao Newton viết như vậy.** Vì ông biết quy luật Kepler không khép kín tuyệt đối, mà ông không có hành tinh ngoài để đo. Ông buộc phải dùng chính quỹ đạo Trái Đất làm phép thử, và khi apsis không quay đúng $360^\circ$ thì ông gọi ra số chênh lệch. Bản dịch nói ở đây là "ba độ" mỗi vòng; con số trong bản gốc là vài **giây cung** mỗi năm, nên đây là chỗ cần đối chiếu với scan.
+> Với lực $F = -k/r^m$, quỹ đạo gần tròn có góc giữa hai apsis liên tiếp là $\Delta\theta = \dfrac{2\pi}{\sqrt{3-m}}$. Ba trường hợp kiểm: $m = 2$ cho $\Delta\theta = 360^\circ$, tức quỹ đạo khép kín đúng như elip; lực không đổi độ lớn cho $\Delta\theta = 360^\circ/\sqrt{3} \approx 207{,}8^\circ$; lực tỷ lệ thuận với $r$ cho $\Delta\theta = 180^\circ$. Chương này dùng cách đánh số lũy thừa khác, nên khi đọc cần tự chọn một quy ước và giữ nhất quán.
 >
-> **Hiện nay thì sao.** Sai lệch ở chữ số thứ năm của số mũ mà Newton tìm ra ấy là con đường dẫn tới cải cách lớn nhất của vật lí thế kỷ XX. Cùng cơ chế dây chuyền ấy, áp vào hành tinh gần Mặt Trời nhất, sai số quan sát vượt ra ngoài những gì lực hút Newton cùng nhiễu của các hành tinh khác giải thích được. Năm 1915 Einstein đưa ra lời giải thích bằng số hạng hiệu chỉnh cùng loại, và phần đóng góp của nó vào dây chuyền điểm gần nhất của Thủy Tinh vào khoảng 43 giây cung mỗi thế kỷ. Bài học không phải là Newton sai, mà là sai lệch nhỏ đến thế ấy đủ để chỉ ra giới hạn của lực hút Newton.
+> Ông biết quy luật Kepler không khép kín tuyệt đối, mà ông không có hành tinh ngoài để đo. Ông buộc phải dùng chính quỹ đạo Trái Đất làm phép thử, và khi apsis không quay đúng $360^\circ$ thì ông gọi ra số chênh lệch. Bản dịch nói ở đây là "ba độ" mỗi vòng; con số trong bản gốc là vài **giây cung** mỗi năm, nên đây là chỗ cần đối chiếu với scan.
+>
+> Cùng cơ chế dây chuyền ấy, áp vào hành tinh gần Mặt Trời nhất, sai số quan sát vượt ra ngoài những gì lực hút Newton cùng nhiễu của các hành tinh khác giải thích được. Hiện tượng ấy được giải thích bằng một số hạng hiệu chỉnh cùng loại, đóng góp khoảng $43$ giây cung mỗi thế kỷ vào dây chuyền điểm gần nhất. Bài học không phải là Newton sai, mà là sai lệch nhỏ đến thế ấy đủ để chỉ ra giới hạn của lực hút Newton.

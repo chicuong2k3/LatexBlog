@@ -5,8 +5,6 @@ slug: "sach-iii-proposition-ix-x"
 number: 57
 ---
 
-# Sách III. Proposition IX–X
-
 ![Minh họa chuyển động hành tinh trong không gian](../assets/book-ii-section-i-motion.svg)
 
 *Hình 45. Sơ đồ được dùng lại từ Phần I; các sơ đồ quỹ đạo, thiên thể và phương tiện hút của bản gốc cần được đối chiếu riêng.*
@@ -17,11 +15,13 @@ Xét lực trọng lực theo phương thẳng đứng từ bề mặt các hàn
 
 Nếu vật chất của hành tinh có mật độ đều, Proposition này sẽ đúng chính xác, theo Proposition LXXIII, Sách I. Vì vậy, sai số không thể lớn hơn sai số có thể phát sinh từ sự không đều của mật độ.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition IX hỏi lực hút ở **bên dưới** bề mặt hành tinh thay đổi thế nào khi ta đào sâu xuống, và câu trả lời là nó giảm gần đúng theo khoảng cách tới tâm. Đây không phải câu hỏi học thuật: đó là trọng lực trong hầm sâu, trong lòng hành tinh, và trong các tinh thể.
+> **Trọng lực dưới lớp vỏ hành tinh: g(r) = GM(r)/r², chỉ còn phần vật chất đã bị bao**
 >
-> **Công thức.** Nếu hành tinh có mật độ đều thì điều này đúng chính xác, vì bên trong một khối cầu đồng nhất lực hút tỷ lệ thuận với khoảng cách tới tâm — đúng kết quả Proposition LXXIII của Sách I mà chương 39 đã gặp. Trong trường hợp tổng quát thì công thức đúng là
+> Proposition IX hỏi lực hút ở **bên dưới** bề mặt hành tinh thay đổi thế nào khi ta đào sâu xuống, và câu trả lời là nó giảm gần đúng theo khoảng cách tới tâm. Đây không phải câu hỏi học thuật: đó là trọng lực trong hầm sâu, trong lòng hành tinh, và trong các tinh thể.
+>
+> Nếu hành tinh có mật độ đều thì điều này đúng chính xác, vì bên trong một khối cầu đồng nhất lực hút tỷ lệ thuận với khoảng cách tới tâm — đúng kết quả Proposition LXXIII của Sách I. Trong trường hợp tổng quát thì công thức đúng là
 >
 > $$
 > g(r)=G\frac{M(r)}{r^{2}},
@@ -29,9 +29,9 @@ Nếu vật chất của hành tinh có mật độ đều, Proposition này s�
 >
 > trong đó $M(r)$ là khối lượng nằm bên trong mặt cầu bán kính $r$. Nhờ định lý vỏ cầu, mọi lớp vật chất nằm ngoài bán kính $r$ đều triệt tiêu, nên trường bên trong chỉ còn phụ thuộc lượng vật chất **đã bị bao**.
 >
-> **Vì sao Newton viết như vậy.** Vì ông không tuyên bố điều đó tuyệt đối mà nói "gần đúng", rồi **chặn sai số** của nó bằng sai số do mật độ không đều gây ra. Đó là cách ông xử lý một kết luận gần đúng: nói rõ điều kiện để nó thành đúng tuyệt đối, rồi ước lượng độ lệch, thay vì giấu luôn cả hai.
+> Ông không tuyên bố điều đó tuyệt đối mà nói "gần đúng", rồi **chặn sai số** của nó bằng sai số do mật độ không đều gây ra. Đó là cách ông xử lý một kết luận gần đúng: nói rõ điều kiện để nó thành đúng tuyệt đối, rồi ước lượng độ lệch, thay vì giấu luôn cả hai.
 >
-> **Hiện nay thì sao.** Công thức $g(r)=GM(r)/r^{2}$ chính là công cụ để biết bên trong Trái Đất. Người ta đo trọng lực ở nhiều độ sâu và nhiều vĩ độ, suy ra $M(r)$, rồi dựng lại hồ sơ mật độ; đó là cách người ta biết Trái Đất có lõi đặc hơn vỏ bao. Cùng công thức ấy cũng giải thích một điều gây ngạc nhiên: trọng lực ở đỉnh núi cao lại **nhỏ hơn** ở mực nước biển, dù đỉnh núi cao hơn. Lý do là ta đứng xa tâm hơn, mà trong lớp vỏ mỏng ấy $M(r)$ tăng chậm hơn $r^{3}$.
+> Công thức ấy chính là công cụ để biết bên trong Trái Đất. Người ta đo trọng lực ở nhiều độ sâu và nhiều vĩ độ, suy ra $M(r)$, rồi dựng lại hồ sơ mật độ; đó là cách người ta biết Trái Đất có lõi đặc hơn vỏ bao. Cùng công thức ấy cũng giải thích một điều gây ngạc nhiên: trọng lực ở đỉnh núi cao lại **nhỏ hơn** ở mực nước biển, dù đỉnh núi cao hơn. Lý do là ta đứng xa tâm hơn, mà trong lớp vỏ mỏng ấy $M(r)$ tăng chậm hơn $r^{3}$.
 
 ## Proposition X. Định lý X
 
@@ -63,15 +63,17 @@ Trong các không gian gần Trái Đất, sức cản chỉ do không khí, hơ
 
 Các vùng trời hoàn toàn không có không khí và hơi thở. Vì vậy, các hành tinh và sao chổi không gặp sức cản đáng cảm nhận trong những khoảng không gian ấy, và sẽ tiếp tục chuyển động qua đó trong một khoảng thời gian vô cùng lớn.
 
-> **[Ghi chú hiện đại]**
+> **[Chú giải]**
 >
-> **Khái niệm tương ứng.** Proposition X trả lời một câu hỏi mà gần như ai đọc *Principia* cũng tự đặt ra: nếu mọi vật thể đều phải vượt qua sức cản của môi trường, thì tại sao các hành tinh vẫn quay mãi mãi mà không chậm dần?
+> **Vàng và lông tơ rơi cùng nhau, còn lực cản thì gần như biến mất trên thiên cầu**
 >
-> **Công thức.** Newton dùng chính kết quả của mình ở Sách II: một quả cầu đông thành băng, trượt trong không khí của ta, mất $\frac{1}{4586}$ phần chuyển động trong thời gian đi được một bán kính. Nhưng Trái Đất đặc hơn nước khoảng năm đến sáu lần, còn Sao Mộc chỉ đặc hơn nước một chút, nên lực cản phải nhỏ đi tương ứng. Rồi đến mấu chốt: sức cản tỷ lệ với mật độ môi trường, mà ở độ cao $200$ dặm trên Trái Đất, không khí loãng hơn mặt đất tới mức ông ước lượng cỡ $75000000000000$ lần. Trên thiên cầu, nơi mật độ môi trường giảm đi nữa, lực cản gần như biến mất.
+> Proposition X trả lời một câu hỏi mà gần như ai đọc *Principia* cũng tự đặt ra: nếu mọi vật thể đều phải vượt qua sức cản của môi trường, thì tại sao các hành tinh vẫn quay mãi mãi mà không chậm dần?
 >
-> **Vì sao Newton viết như vậy.** Vì ông không chỉ lập luận bằng lý thuyết mà còn làm một thí nghiệm để kiểm tra. Ông bơm hút sạch không khí khỏi một bình chân không, rồi thả các vật nặng cùng lúc. Kết quả: **vàng và lông tơ nhẹ nhất rơi cùng nhau và chạm đáy cùng lúc**, dù quãng rơi dài bốn, sáu hay tám foot. Chỉ còn sức cản thì mọi vật thể rơi như nhau — đó là tính phổ quát của rơi tự do, và là cơ sở thực nghiệm cho việc khối lượng quán tính bằng khối lượng hấp dẫn.
+> Newton dùng chính kết quả của mình ở Sách II: một quả cầu đông thành băng, trượt trong không khí của ta, mất $\frac{1}{4586}$ phần chuyển động trong thời gian đi được một bán kính. Nhưng Trái Đất đặc hơn nước khoảng năm đến sáu lần, còn Sao Mộc chỉ đặc hơn nước một chút, nên lực cản phải nhỏ đi tương ứng. Rồi đến mấu chốt: sức cản tỷ lệ với mật độ môi trường, mà ở độ cao $200$ dặm trên Trái Đất, không khí loãng hơn mặt đất tới mức ông ước lượng cỡ $75000000000000$ lần. Trên thiên cầu, nơi mật độ môi trường giảm đi nữa, lực cản gần như biến mất.
 >
-> **Hiện nay thì sao.** Câu trả lời của Newton đúng, nhưng chỉ đúng một nửa. Hành tinh quanh Mặt Trời quả thực không chịu sức cản khí đáng kể, song chúng **vẫn mất** năng lượng quỹ đạo — qua **ma sát thủy triều**, tức là do Mặt Trời và Mặt Trăng biến dạng hành tinh và bức xạ nhiệt, khiến quỹ tích xoáy chậm dần. Với Mặt Trăng, tác dụng này đủ lớn để đẩy nó ra xa Trái Đất khoảng vài centimet mỗi năm, và đó là điều ta đo được bằng laser. Với Sao Mộc, thời gian số của hệ quỹ đạo còn dài hơn tuổi của cả vũ trụ. Nghĩa là hành tinh không chậm lại không phải vì không mất gì, mà vì thứ mất đi chậm hơn nhiều so với thời gian vũ trụ đã trôi qua.
+> Ông không chỉ lập luận bằng lý thuyết mà còn làm một thí nghiệm để kiểm tra. Ông bơm hút sạch không khí khỏi một bình chân không, rồi thả các vật nặng cùng lúc. Kết quả: **vàng và lông tơ nhẹ nhất rơi cùng nhau và chạm đáy cùng lúc**, dù quãng rơi dài bốn, sáu hay tám foot. Chỉ còn sức cản thì mọi vật thể rơi như nhau — đó là tính phổ quát của rơi tự do, và là cơ sở thực nghiệm cho việc khối lượng quán tính bằng khối lượng hấp dẫn.
+>
+> Câu trả lời của Newton đúng, nhưng chỉ đúng một nửa. Hành tinh quanh Mặt Trời quả thực không chịu sức cản khí đáng kể, song chúng **vẫn mất** năng lượng quỹ đạo — qua **ma sát thủy triều**, tức là do Mặt Trời và Mặt Trăng biến dạng hành tinh và bức xạ nhiệt, khiến quỹ tích xoáy chậm dần. Với Mặt Trăng, tác dụng này đủ lớn để đẩy nó ra xa Trái Đất khoảng vài centimet mỗi năm, và đó là điều ta đo được bằng laser. Với Sao Mộc, thời gian số của hệ quỹ đạo còn dài hơn tuổi của cả vũ trụ. Nghĩa là hành tinh không chậm lại không phải vì không mất gì, mà vì thứ mất đi chậm hơn nhiều so với thời gian vũ trụ đã trôi qua.
 
 ## Giả thuyết I
 

@@ -1258,7 +1258,17 @@ Bổ sung trang 52 vào `chapters/01-sai-lech-huu-han.md`: EXEMPLUM IV (differen
 
 **Ký hiệu:** trang này Euler viết `cos` và `fin`; theo `KY_HIEU_EULER.md` hiển thị thành `$\cos$` và `$\sin$`.
 
-**Còn lại trong chương:** PDF 53–62 (tr. 25–34), gồm §23–§33. Câu mở đầu của §23 bắt đầu ngay cuối trang 52 bằng chữ `Cum`, nối sang trang 53.
+### 2026-09-28 — Chương I, Phần 10 (PDF 53, tr. 25, §23)
+
+Bổ sung trang 53 vào `chapters/01-sai-lech-huu-han.md`: §23, phần đảo ngược của §22 — từ các differentia đã biết suy ra ngược lại các giá trị liên tiếp của $y$. Không thêm callout. **Chưa niêm phong**; còn §24–§33 (PDF 54–62).
+
+**Đã soi bản scan:** toàn trang 53. Lớp OCR đọc được trang này; bốn dòng $y^1, y^{II}, y^{III}, y^{IV}$ và hai dòng cuối vẫn đối chiếu với ảnh.
+
+**Đã tự kiểm bằng công thức tổng quát, đều khớp.** Bốn dòng khôi phục là các hệ số nhị thức: $1$; $1, 1$; $1, 2, 1$; $1, 3, 3, 1$. Dòng $y + \frac{n}{1}\Delta y + \frac{n(n-1)}{1\cdot 2}\Delta^2y + \&c.$ là tổng nhị thức quen thuộc. Dòng cuối, thay $x$ bằng $x-\omega$ tức lấy $n=-1$, cho $y - \Delta y + \Delta^2y - \Delta^3y + \Delta^4y - \&c.$ — khớp đúng những gì trang in.
+
+**Chữ `y`, `y^II`, `y^III`, `y^IV` giữ nguyên kiểu chữ La Mã như bản in**, vì các bậc 2, 3, 4 ở đây được đánh số bằng chữ số La Mã, khác với `y^1`.
+
+**Còn lại trong chương:** PDF 54–62 (tr. 26–34), gồm §24–§33. Catchword ở cuối trang 53 là `sin`.
 
 
 

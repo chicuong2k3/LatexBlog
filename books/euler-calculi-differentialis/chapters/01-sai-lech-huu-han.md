@@ -984,8 +984,43 @@ sẽ không đủ.
 Còn những dạng differentia như thế này thì đáng chú ý, bởi chúng mang lại công dụng lớn
 nhất trong Phân tích vô hạn.
 
-<!-- Chưa dịch: PDF 53-62, tức trang in 25-34, gồm §23-§33. Câu mở đầu của §23 bắt đầu
-     ngay cuối trang 52 bằng chữ "Cum", nối sang trang 53. -->
+<!-- PDF 53, trang in 25 -->
+
+**23.** Vậy, sau khi đã trình bày cách để tìm differentia bậc nhất của một functio bất kỳ,
+và từ đó tìm được các differentia của những bậc kế tiếp — bởi vì chúng được tìm ra từ các
+giá trị liên tiếp của functio $y$, tức $y^1, y^{II}, y^{III}, y^{IV}$, &c. — thì ngược lại,
+từ các differentia đã biết của $y$ ở mọi bậc, ta cũng có thể suy ra các giá trị liên
+tiếp của chính $y$. Vì
+
+$$
+\begin{aligned}
+y^1 &= y + \Delta y\\
+y^{II} &= y + 2\Delta y + \Delta\Delta y\\
+y^{III} &= y + 3\Delta y + 3\Delta\Delta y + \Delta^3y\\
+y^{IV} &= y + 4\Delta y + 6\Delta\Delta y + 4\Delta^3y + \Delta^4y\\
+&\qquad + \text{\&c.}
+\end{aligned}
+$$
+
+trong đó những hệ số số học lại sinh ra từ khai triển nhị thức. Cũng vậy, $y^1, y^{II},
+y^{III}$, &c. chính là các giá trị của $y$, được lấy khi lần lượt đặt thay $x$ bằng các
+giá trị $x+\omega$, $x+2\omega$, $x+3\omega$, &c. Nên ta có thể lập tức gán giá trị cho
+$y^{(n)}$; giá trị ấy thu được khi thay $x$ bằng $x+n\omega$, tức là
+
+$$
+y + \frac{n}{1}\Delta y + \frac{n(n-1)}{1\cdot 2}\Delta^2y
+  + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\Delta^3y + \text{\&c.}
+$$
+
+Từ đó ta cũng có thể có được các giá trị của $y$ khi $n$ là một số âm. Chẳng hạn, nếu
+thay $x$ bằng $x-\omega$, functio $y$ sẽ trình ra dưới dạng
+
+$$
+y - \Delta y + \Delta^2y - \Delta^3y + \Delta^4y - \text{\&c.}
+$$
+
+<!-- Chưa dịch: PDF 54-62, tức trang in 26-34, gồm §24-§33. Catchword ở cuối trang 53
+     là "sin". -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

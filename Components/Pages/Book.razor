@@ -14,8 +14,9 @@ else
             <p class="lb-post-meta"><a href="/books">Dịch sách</a>@if (!string.IsNullOrWhiteSpace(BookItem.Author)) {<text> · @BookItem.Author</text>}</p>
             <h1>@BookItem.Title</h1>
             <p class="lb-post-meta">
+                <TranslationBadge Status="@BookItem.Status" />
                 @if (!string.IsNullOrWhiteSpace(BookItem.OriginalTitle)) {<text>Bản gốc: @BookItem.OriginalTitle · </text>}
-                @BookItem.Chapters.Length chương
+                @BookItem.Chapters.Length chương · @BookItem.CompletedChapterCount/@BookItem.Chapters.Length đã dịch xong
             </p>
         </header>
 
@@ -36,6 +37,9 @@ else
                                 <ItemTitle>@chapter.Title</ItemTitle>
                                 <ItemDescription>@(chapter.Number > 0 ? $"Chương {chapter.Number}" : "Phần mở đầu") · @chapter.Summary</ItemDescription>
                             </ItemContent>
+                            <ItemActions>
+                                <TranslationBadge Status="@chapter.Status" />
+                            </ItemActions>
                         </Item>
                     }
                 </ItemGroup>

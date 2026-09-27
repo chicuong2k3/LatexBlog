@@ -1,0 +1,11 @@
+@* Translation completion state. The label carries the meaning in text, so the
+   badge never relies on colour alone. *@
+<Badge Variant="@Variant" Class="@ClassValue">@BookStatus.Label(Status)</Badge>
+
+@code {
+    [Parameter] public string? Status { get; set; }
+
+    private bool Done => BookStatus.IsComplete(Status);
+    private string Variant => Done ? "outline" : "secondary";
+    private string ClassValue => Done ? "lb-badge--done" : "lb-badge--wip";
+}

@@ -15,7 +15,10 @@ else
         <header class="lb-post-head">
             <p class="lb-post-meta"><a href="/books">Dịch sách</a> · <a href="/books/@Book.Slug">@Book.Title</a></p>
             <h1>@Chapter.Title</h1>
-            <p class="lb-post-meta">@(Chapter.Number > 0 ? $"Chương {Chapter.Number}" : "Phần mở đầu") · @ReadMinutes phút đọc</p>
+            <p class="lb-post-meta">
+                <TranslationBadge Status="@Chapter.Status" />
+                @(Chapter.Number > 0 ? $"Chương {Chapter.Number}" : "Phần mở đầu") · @ReadMinutes phút đọc
+            </p>
         </header>
 
         @if (Toc.Count > 0)

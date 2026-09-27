@@ -5,7 +5,8 @@
         <p>@Book.Summary</p>
     </div>
     <div class="lb-post-meta">
-        <span class="lb-date">@Book.Chapters.Length chương</span>
+        <TranslationBadge Status="@Book.Status" />
+        <span class="lb-date">@Book.Chapters.Length chương · @Book.CompletedChapterCount/@Book.Chapters.Length xong</span>
     </div>
 </Card>
 

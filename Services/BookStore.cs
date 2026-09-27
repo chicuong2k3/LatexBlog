@@ -2,13 +2,37 @@ using System.Text.Json;
 
 namespace LatexBlog.Services;
 
+/// <summary>
+/// Translation completion state for a book or chapter. A book is complete only
+/// when every one of its chapters is, so the book value is derived at build time.
+/// </summary>
+public static class BookStatus
+{
+    public const string Complete = "hoan-thanh";
+    public const string Incomplete = "chua-hoan-thanh";
+
+    public const string CompleteLabel = "Đã dịch xong";
+    public const string IncompleteLabel = "Chưa hoàn thiện";
+
+    public static bool IsComplete(string? status) =>
+        string.Equals(status, Complete, StringComparison.Ordinal);
+
+    public static string Label(string? status) =>
+        IsComplete(status) ? CompleteLabel : IncompleteLabel;
+}
+
 public sealed record BookChapterMeta(
-    string Slug, int Number, string Title, string Summary, string HtmlPath);
+    string Slug, int Number, string Title, string Summary, string HtmlPath,
+    string Status = BookStatus.Incomplete);
 
 public sealed record BookMeta(
     string Slug, string Title, string? Author, string? OriginalTitle,
     string Language, string Summary, string[] Tags, string IntroPath,
-    BookChapterMeta[] Chapters);
+    BookChapterMeta[] Chapters, string Status = BookStatus.Incomplete)
+{
+    public int CompletedChapterCount =>
+        Chapters.Count(chapter => BookStatus.IsComplete(chapter.Status));
+}
 
 /// <summary>
 /// Translated books = generated files under wwwroot/generated/books only.

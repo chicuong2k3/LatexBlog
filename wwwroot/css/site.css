@@ -161,6 +161,23 @@ body::after {
 .lb-post-meta .lb-post-tags { justify-content: flex-end; margin-top: 8px; }
 .lb-tag { font-size: .78rem; background: var(--gradient); color: #fff; border-color: transparent; }
 .lb-tag--big { font-size: .95rem; }
+
+/* ---------- translation status (book / chapter) ---------- */
+/* The label already says "Đã dịch xong" / "Chưa hoàn thiện", so colour only
+   reinforces the state; it never carries it alone. */
+.lb-badge--done {
+  border-color: color-mix(in srgb, var(--neon-3) 45%, transparent);
+  color: color-mix(in srgb, var(--neon-3) 72%, var(--ink));
+  background: color-mix(in srgb, var(--neon-3) 12%, var(--surface));
+}
+.lb-badge--wip {
+  border-color: var(--line-strong);
+  color: var(--muted);
+  background: var(--surface-2);
+}
+.lb-post-meta .lb-badge--done, .lb-post-meta .lb-badge--wip { margin-right: 8px; }
+.lb-post-meta:has(.lb-badge--done), .lb-post-meta:has(.lb-badge--wip) { margin-top: 8px; }
+
 .lb-load-more { display: flex; justify-content: center; margin-top: 32px; }
 
 /* ---------- masonry (home, pretext-driven; JS adds the modifier) ---------- */

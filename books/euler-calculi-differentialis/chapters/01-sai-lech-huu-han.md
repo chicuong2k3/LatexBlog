@@ -1152,9 +1152,75 @@ $$
             - \omega^2\Sigma x - \frac{\omega^3}{4}\Sigma 1
 $$
 
-<!-- Chưa dịch: PDF 57-62, tức trang in 29-34, gồm §27 (nối tiếp) và §28-§33. Catchword
-     ở cuối trang 56 là "vbi". -->
+<!-- PDF 57, trang in 29 -->
 
+trong đó, nếu thay $\Sigma x^2$, $\Sigma x$ và $\Sigma 1$ bằng những giá trị đã tìm ra ở trên,
+ta sẽ được
+
+$$
+\Sigma x^3 = \frac{x^4}{4\omega} - \frac{x^3}{2} + \frac{\omega xx}{4}.
+$$
+
+Rồi, vì có
+
+$$
+\Sigma x^4 = \frac{x^5}{5\omega} - 2\omega\Sigma x^3 - 2\omega^2\Sigma x^2
+            - \omega^3\Sigma x - \frac{\omega^4}{5}\Sigma 1
+$$
+
+nên, sau khi thay thế, ta sẽ có
+
+$$
+\Sigma x^4 = \frac{x^5}{5\omega} - \frac{1}{2}x^4 + \frac{1}{3}\omega x^3
+            - \frac{1}{30}\omega^3x
+$$
+
+và theo cách tương tự, tiến triển thêm ta sẽ tìm được
+
+$$
+\Sigma x^5 = \frac{x^6}{6\omega} - \frac{1}{2}x^5 + \frac{5}{12}\omega x^4
+            - \frac{5}{12}\omega^3x^2
+$$
+
+&
+
+$$
+\Sigma x^6 = \frac{x^7}{7\omega} - \frac{1}{2}x^6 + \frac{1}{2}\omega x^5
+            - \frac{1}{6}\omega^3x^3 + \frac{1}{42}\omega^5x
+$$
+
+những biểu thức mà ở dưới ta sẽ dạy cách tìm dễ hơn.
+
+**28.** Vậy, nếu differentia đã cho là một functio rationalis nguyên của chính $x$, thì
+tổng của nó — tức là chính functio mà nó là differentia — sẽ dễ dàng tìm được từ những
+công thức này. Vì differentia ấy gồm một vài lũy thừa của chính $x$, nên ta tìm tổng của
+từng số hạng một, rồi cộng tất cả những tổng ấy lại.
+
+### Exemplum I
+
+*Hãy tìm functio mà differentia của nó là $= axx + bx + c$.*
+
+Ta tìm các tổng của từng số hạng riêng nhờ những công thức đã tìm ra ở trên; ta sẽ có
+
+$$
+\Sigma axx
+$$
+
+<!-- Chưa dịch: PDF 58-62, tức trang in 30-34, gồm EXEMPLUM I (nối tiếp) và §29-§33.
+     Catchword ở cuối trang 57 là "Σaxx", dấu hiệu chữ D 3. -->
+
+<!-- Ghi chú dịch giả: ở dòng Σx⁵, số hạng cuối in ra là -(5/12)ω³x². Đã tự kiểm lại
+     bằng cách lấy sai lệch: với F = x⁶/(6ω) - (1/2)x⁵ + (5/12)ωx⁴ - (1/12)ω³x² thì
+     ΔF = x⁵ đúng bằng 0, còn với hệ số 5/12 thì còn dư -(2/3)ω⁴x - (1/3)ω⁵. Vậy
+     tử số phải là 1, không phải 5. Đã soi bản in ở độ phóng 26 để chắc chắn: chữ số ở
+     đây là 5, khác hẳn chữ 1 ở 1/2 ngay cùng dòng. Giữ nguyên như in. -->
+
+<!-- Ghi chú dịch giả: ba dòng còn lại của trang này đã tự kiểm và đều đúng, tức lấy sai
+     lệch cho đúng x³, x⁴, x⁶:
+       Δ(x⁴/(4ω) - x³/2 + ωx²/4) = x³;
+       Δ(x⁵/(5ω) - x⁴/2 + (ω/3)x³ - (ω³/30)x) = x⁴;
+       Δ(x⁷/(7ω) - x⁶/2 + (ω/2)x⁵ - (ω³/6)x³ + (ω⁵/42)x) = x⁶.
+     Chỉ riêng dòng x⁵ là lệch, và lệch ở đúng một chữ số. -->
 <!-- Ghi chú dịch giả: ở dòng ngay trên dòng "và theo cách tương tự", bản in viết
      Σx³, trong khi dòng ngay trên nó (bắt đầu bằng chữ "hay") vẫn là Σx². Dòng "hay" ấy
      chỉ là phép thay thế của dòng trước nên phải là Σx², và đã tự kiểm lại:

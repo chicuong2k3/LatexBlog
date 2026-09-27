@@ -1302,7 +1302,23 @@ Bổ sung trang 56 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Quy ước nhân của Euler:** bản in viết `xx` nghĩa là $x^2$, `aa` là hằng số, `3ωxx` là $3\omega x^2$. Đã giữ nguyên dạng `xx` như ở §19, không đổi thành $x^2$.
 
-**Còn lại trong chương:** PDF 57–62 (tr. 29–34), gồm phần còn lại của §27 và §28–§33. Catchword ở cuối trang 56 là `vbi`.
+### 2026-09-28 — Chương I, Phần 14 (PDF 57, tr. 29, nối tiếp §27 và mở §28)
+
+Bổ sung trang 57 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §27 (thay thế vào dòng $\Sigma x^3$ đã mở ở trang trước, rồi $\Sigma x^4$, $\Sigma x^5$, $\Sigma x^6$ theo cùng một cách), toàn bộ §28 (tổng của một functio rationalis nguyên tìm được bằng cách cộng các tổng của từng lũy thừa), và mở đầu EXEMPLUM I của §28 (differentia $axx+bx+c$). Không thêm callout. **Chưa niêm phong**; còn EXEMPLUM I (nối tiếp) và §29–§33 (PDF 58–62).
+
+**Đã soi bản scan:** toàn trang 57, cộng một mức phóng cao cho dòng $\Sigma x^5$.
+
+**Một hệ số sai trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng $\Sigma x^5$, số hạng cuối in ra là $-\frac{5}{12}\omega^3x^2$. Đã tự kiểm bằng phép lấy sai lệch: với $F = \frac{x^6}{6\omega} - \frac{1}{2}x^5 + \frac{5}{12}\omega x^4 - \frac{1}{12}\omega^3x^2$ thì $\Delta F = x^5$ đúng bằng không; còn với hệ số $\frac{5}{12}$ thì còn dư $-\frac{2}{3}\omega^4x - \frac{1}{3}\omega^5$. Vậy tử số phải là 1. Đã soi bản in ở độ phóng 26: chữ số ở đây là 5, khác hẳn chữ 1 ở $\frac12$ ngay cùng dòng.
+
+**Ba dòng còn lại đã tự kiểm và đều đúng**, tức lấy sai lệch cho ra đúng $x^3$, $x^4$, $x^6$:
+$$\Delta\left(\frac{x^4}{4\omega} - \frac{x^3}{2} + \frac{\omega x^2}{4}\right) = x^3,\quad
+\Delta\left(\frac{x^5}{5\omega} - \frac{x^4}{2} + \frac{\omega}{3}x^3 - \frac{\omega^3}{30}x\right) = x^4,$$
+$$\Delta\left(\frac{x^7}{7\omega} - \frac{x^6}{2} + \frac{\omega}{2}x^5 - \frac{\omega^3}{6}x^3 + \frac{\omega^5}{42}x\right) = x^6.$$
+Đáng chú ý: dòng lỗi lệch đúng một chữ số, nên khó phát hiện nếu chỉ đọc lướt.
+
+**Bốn dòng cộng cả dòng lỗi đều dùng đúng quy luật** $\Delta F = x^n$ với $F$ là tổng cần tìm, nên đây là một hệ công thức đóng của $\sum x^n$ mà người đọc có thể tự kiểm. Ghi lại ở đây: các đa thức này sau này sẽ là các số Bernoulli khi chia cho $\omega$ và khai triển quanh $x$ — nhưng chưa xác minh trong chương này, nên chỉ ghi là nhận xét của người dịch, chưa đưa vào callout.
+
+**Còn lại trong chương:** PDF 58–62 (tr. 30–34), gồm phần còn lại của EXEMPLUM I và §29–§33. Catchword ở cuối trang 57 là `Σaxx`, dấu hiệu chữ D 3.
 
 
 

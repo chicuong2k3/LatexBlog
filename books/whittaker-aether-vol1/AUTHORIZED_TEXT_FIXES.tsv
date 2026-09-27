@@ -1,0 +1,9 @@
+# Sửa đổi đã được duyệt đối với bản dịch
+#
+# Định dạng: file<TAB>chuỗi_cũ<TAB>chuỗi_mới, phân tách bằng TAB.
+# tools/check_book_callouts.py --fidelity đọc file này để áp sửa lên bản HEAD
+# rồi mới so với bản làm việc. Không khai báo thì checker báo lỗi. Đó là chủ ý.
+# '\n' trong cột giá trị là ký tự thoát hai ký tự, không phải newline thật.
+chapters/01-chuong-i-ether-den-cai-dat-neuton.md	# Thuyết về ether cho tới cái chết của Newton\n\n	
+chapters/02-chuong-ii-dien-va-tu.md	# Khoa học điện và từ trước khi đưa thế vào\n\n	
+chapters/03-chuong-iii-dien-galvani-tu-galvani-toi-ohm.md	# Điện Galvani, từ Galvani tới Ohm\n\n	

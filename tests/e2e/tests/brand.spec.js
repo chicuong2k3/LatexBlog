@@ -75,3 +75,10 @@ test('trang về tôi: giữ câu về bình luận và trang cá nhân', async 
   await page.goto('/about');
   await expect(page.locator('.lb-about')).toContainText('thích những bài mình ưng');
 });
+
+test('nav có mục Về tôi dẫn tới /about', async ({ page }) => {
+  await page.goto('/');
+  const link = page.locator('.lb-nav-links a[href="/about"]');
+  await expect(link).toBeVisible();
+  await expect(link).toHaveText('Về tôi');
+});

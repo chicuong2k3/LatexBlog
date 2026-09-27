@@ -71,7 +71,7 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 58 | — | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 40 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 59 | 41 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 41 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 60 | 42 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 42 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 61 | 43 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 43 theo thứ tự |Hình 12, Hình 13 **chưa có plate**|**Đã dịch, đã đối chiếu scan**|
+| 61 | 43 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 43 theo thứ tự |Hình 12, Hình 13: plate ở trang in 44|**Đã dịch, đã đối chiếu scan**|
 | 62 | 44 | — | bài giảng, trang in 44 theo thứ tự | — | Chưa dịch |
 | 63 | 45 | — | bài giảng, trang in 45 theo thứ tự | — | Chưa dịch |
 | 64 | 46 | — | bài giảng, trang in 46 theo thứ tự | — | Chưa dịch |
@@ -272,7 +272,8 @@ dây, khớp với nhãn `Fig. 1.—Discharge Between Two Wires`.
 | Fig. 9 | 27 | 45 | `fig-p027-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 10 | 28 | 46 | `fig-p028-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 11 | 33 | 51 | `fig-p033-00.jpg` | Đã trích, chưa đối chiếu nhãn |
-| Fig. 14 | 44 | 62 | `fig-p044-00.jpg` | Đã trích, chưa đối chiếu nhãn |
+| Fig. 12 và 13 | 44 | 62 | `fig-p044-00.jpg` | **Đã trích, đã đối chiếu** |
+| Fig. 14 | 45 | 63 | `fig-p045-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | — | 45 | 63 | `fig-p045-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | — | 46 | 64 | `fig-p046-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | — | 55 | 73 | `fig-p055-00.jpg` | Đã trích, chưa đối chiếu nhãn |
@@ -302,8 +303,7 @@ plate trên đều xuất hiện đã dùng — phần lớn còn đợ vào ch�
 - **Đã xác định xong:** bản `fig-p025-01.jpg` trùng byte-for-byte với
   `fig-p025-00.jpg` (cùng SHA-256) — cùng một ảnh Hình 8, do trình trích
   plate chạy hai lần. Đã xoá bản thừa.
-- **Có nhãn trong lớp OCR nhưng chưa có plate:** `Fig. 7, 12, 13, 15, 16,
-  17, 20, 22`. Đây là đề để đợ trong bảng trên — không phải ốt thiếu.
+- **Có nhãn trong lớp OCR nhưng chưa có plate:** `Fig. 15, 16, 17, 20, 22`. Đây là đề để đợ trong bảng trên — không phải ốt thiếu.
 - **Hai lỗi OCR đã được chứng minh là bẫy:** `Fig. 83`
   (thực ra `Fig. 33`) và `Fig. 12` ở PDF 118 (thực ra `Fig. 25`).
 

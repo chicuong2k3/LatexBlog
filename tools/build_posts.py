@@ -137,17 +137,29 @@ def _pandoc_reader(source_name):
 UNPARSED_MATH_HINT_LINES = 12
 
 
+def _surviving_dollars(body_text, html):
+    """Count dollars in the HTML that no source construct accounts for.
+
+    An escaped ``\\$`` is meant to reach the reader as a literal dollar sign --
+    a price in a library notice, say -- so it is not a sign of dropped math.
+    Only the surplus over those escapes indicates a math span Pandoc gave up
+    on.
+    """
+    return html.count("$") - body_text.count("\\$")
+
+
 def _unparsed_math_report(source_name, body_text, html):
     """Explain why a dollar sign survived into the rendered HTML.
 
     Pandoc drops a math span it cannot parse, then lets ordinary Markdown eat
     the raw TeX, so the failure is invisible in the output: no error, just a
-    wrong formula. A '$' reaching the HTML is therefore the signature.
+    wrong formula. An unaccounted '$' reaching the HTML is therefore the
+    signature.
 
     Posts legitimately contain '$' (shell variables inside code blocks), so
     this is opt-in per call site rather than always on.
     """
-    count = html.count("$")
+    count = _surviving_dollars(body_text, html)
     lines = [
         f"  {i}: {line.strip()[:90]}"
         for i, line in enumerate(body_text.split("\n"), 1)
@@ -202,7 +214,7 @@ def render_pandoc(
         raise RuntimeError(
             f"pandoc failed for {source_name}:\n{proc.stderr[:2000]}"
         )
-    if reject_literal_dollars and "$" in proc.stdout:
+    if reject_literal_dollars and _surviving_dollars(body_text, proc.stdout) > 0:
         raise RuntimeError(
             _unparsed_math_report(source_name, body_text, proc.stdout)
         )

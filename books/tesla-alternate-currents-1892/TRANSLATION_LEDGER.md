@@ -48,7 +48,7 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 35 | 17 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 17 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 36 | 18 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 18 theo thứ tự |`fig-p018-00.jpg` (Hình 4)|**Đã dịch, đã đối chiếu scan**|
 | 37 | 10 | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 19 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
-| 38 | — | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 20 theo thứ tự |`fig-p020-00.jpg` (Hình 6); Hình 5 **chưa trích**|**Đã dịch, đã đối chiếu scan**|
+| 38 | — | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 20 theo thứ tự |`fig-p020-00.jpg` (Hình 5); `fig-p020-01.jpg` (Hình 6)|**Đã dịch, đã đối chiếu scan**|
 | 39 | — | `chapters/04-cau-tao-bo-phong-dien.md`| bài giảng, trang in 21 theo thứ tự |`fig-p021-00.jpg` (Hình 7)|**Đã dịch, đã đối chiếu scan**|
 | 40 | — | `chapters/05-khoang-cach-phong-dien-va-day-phat-sang.md`| bài giảng, trang in 22 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 41 | 23 | `chapters/05-khoang-cach-phong-dien-va-day-phat-sang.md`| bài giảng, trang in 23 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
@@ -258,10 +258,10 @@ dây, khớp với nhãn `Fig. 1.—Discharge Between Two Wires`.
 | Fig. 2 | 10 | 28 | `fig-p010-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 3 | 15 | 33 | `fig-p015-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 4 | 18 | 36 | `fig-p018-00.jpg` | Đã trích, chưa đối chiếu nhãn |
-| Fig. 6 | 20 | 38 | `fig-p020-00.jpg` | Đã trích, chưa đối chiếu nhãn |
+| Fig. 5 | 20 | 38 | `fig-p020-00.jpg` | **Đã trích, đã đối chiếu** |
+| Fig. 6 | 20 | 38 | `fig-p020-01.jpg` | **Đã trích, đã đối chiếu** |
 | Fig. 7 | 21 | 39 | `fig-p021-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 8 | 25 | 43 | `fig-p025-00.jpg` | Đã trích, chưa đối chiếu nhãn |
-| — | 25 | 43 | `fig-p025-01.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 9 | 27 | 45 | `fig-p027-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 10 | 28 | 46 | `fig-p028-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 11 | 33 | 51 | `fig-p033-00.jpg` | Đã trích, chưa đối chiếu nhãn |
@@ -291,12 +291,10 @@ plate trên đều xuất hiện đã dùng — phần lớn còn đợ vào ch�
 
 **Trạng thái thật của hình:**
 
-- **Thiếu thật duy nhất:** `Fig. 5` (trang in 20 / PDF 38). Trang đó có
-  `Fig. 5` và `Fig. 6`, nhưng chỉ có `fig-p020-00.jpg` (dành cho Hình 6).
-  Phần chữ về Hình 5 trong chương 04 đang ghi *chưa trích*.
-- **Cần mở nhãn in trên scan để xác nhận:** `fig-p025-01.jpg` —
-  plate thứ hai cùng trang in 25 (PDF 43), cách Hình 8 (`fig-p025-00.jpg`)
-  một trang, nhưng lớp OCR không bắt được nhãn.
+- - **Đã trích xong:** `Fig. 1`–`Fig. 11` đều đã có plate trong `assets/`.
+- **Đã xác định xong:** bản `fig-p025-01.jpg` trùng byte-for-byte với
+  `fig-p025-00.jpg` (cùng SHA-256) — cùng một ảnh Hình 8, do trình trích
+  plate chạy hai lần. Đã xoá bản thừa.
 - **Có nhãn trong lớp OCR nhưng chưa có plate:** `Fig. 7, 12, 13, 15, 16,
   17, 20, 22`. Đây là đề để đợ trong bảng trên — không phải ốt thiếu.
 - **Hai lỗi OCR đã được chứng minh là bẫy:** `Fig. 83`

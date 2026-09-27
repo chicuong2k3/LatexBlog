@@ -110,10 +110,9 @@ Khi dùng nam châm để ngắt cung lửa, tốt hơn là...
 dùng nam châm cho phép thay cung lửa bằng một ống chân không, nhưng tôi đã gặp rất
 nhiều khó khăn khi làm việc với một ống đã hút chân không.
 
-> **Hình 5. — Cách sắp đặt với máy phát xoay chiều tần số thấp và bộ phóng điện
-> cải tiến.**
->
-> *Ảnh chưa trích từ scan; xem ghi chú trong `TRANSLATION_LEDGER.md`.*
+![Máy phát xoay chiều tần số thấp, cuộn dây thường, các bình tụ và bộ phóng điện phá vỡ](../assets/fig-p020-00.jpg)
+
+*Hình 5. — Cách sắp đặt với máy phát xoay chiều tần số thấp và bộ phóng điện cải tiến.*
 
 Dạng bộ phóng điện thứ hai dùng trong những thí nghiệm này và những thí nghiệm
 tương tự được chỉ ra ở Hình 6 và Hình 7. Nó gồm một số mảnh đồng c c, mỗi mảnh
@@ -122,7 +121,7 @@ gồm một phần giữa hình cầu m, bên dưới có một phần chân e �
 một vành có ren f, bên trên là một thân có ren l mang theo đai ốc n, nhờ đó một sợi
 dây...
 
-![Bộ phóng điện nhiều khe](../assets/fig-p020-00.jpg)
+![Bộ phóng điện nhiều khe](../assets/fig-p020-01.jpg)
 
 *Hình 6. — Bộ phóng điện nhiều khe.*
 

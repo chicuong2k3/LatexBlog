@@ -328,4 +328,304 @@ constans $a$, thì $\Delta a = 0$, và differentia bậc nhất của functio $y
 $\Delta y = a\Delta q$; cũng theo cách ấy differentia bậc hai là
 $\Delta\Delta y = a\Delta\Delta q$, và bậc ba — bản in viết `Δ³q = aΔ³q`, xem sổ đối chiếu.
 
-<!-- Chưa dịch: PDF 39-62, tức trang in 11-34, gồm §13-§33 và các EXEMPLUM I-IV. -->
+<!-- PDF 39, trang in 11 -->
+
+**13.** Vì mọi functio rationalis nguyên là sự tổng hợp từ vài lũy thừa của chính $x$, nên
+ta sẽ có thể tìm được mọi differentia của các functio rationalis nguyên, nếu ta biết hiển
+thị differentia của các lũy thừa. Vì vậy, trong những ví dụ sau ta sẽ nghiên cứu differentia
+của từng lũy thừa của lượng biến thiên $x$. Và vì $x^0 = 1$ thì $\Delta x^0 = 0$;
+bởi vì $x^0$ không biến thiên, ngay cả khi $x$ trở thành $x + \omega$. Còn như ta đã thấy thì
+$\Delta x = \omega$ và $\Delta\Delta x = 0$, đồng thời các differentia của những bậc kế tiếp
+đều tan biến. Vì những điều ấy đã rõ ràng, ta bắt đầu từ bậc hai.
+
+### Exemplum I
+
+*Tìm các differentia của mọi bậc của lũy thừa $x^2$.*
+
+Vì ở đây $y = x^2$, nên $y^1 = (x + \omega)^2$, và do đó
+
+$$
+\Delta y = 2\omega x + \omega\omega;
+$$
+
+đây là differentia bậc nhất. Rồi vì $\omega$ là một lượng constans, ta có
+$\Delta\Delta y = 2\omega\omega$ và $\Delta^3 y = 0$, $\Delta^4 y = 0$; &c.
+
+### Exemplum II
+
+*Tìm các differentia của mọi bậc của lũy thừa $x^3$.*
+
+Hãy đặt $y = x^3$, và vì $y^1 = (x + \omega)^3$, ta có
+
+$$
+\Delta y = 3\omega x^2 + 3\omega^2x + \omega^3,
+$$
+
+đây là differentia bậc nhất. Rồi, vì
+
+$$
+\Delta.\omega x^2 = 2\omega^2x + \omega^3,
+$$
+
+ta có
+
+$$
+\Delta.3\omega x^2 = 6\omega^2x + 3\omega^3
+$$
+
+và
+
+$$
+\Delta.3\omega^2x = 3\omega^3; \qquad \Delta.\omega^3 = 0;
+$$
+
+gộp lại ta được
+
+$$
+\Delta\Delta y = 6\omega^2x + 6\omega^3
+$$
+
+và
+
+$$
+\Delta^3 y = 6\omega^3.
+$$
+
+Còn những differentia kế tiếp thì tan biến.
+
+<!-- PDF 40, trang in 12 -->
+
+### Exemplum III
+
+*Tìm các differentia của mọi bậc của lũy thừa $x^4$.*
+
+Đặt $y = x^4$; vì $y^1 = (x + \omega)^4$, ta có
+
+$$
+\Delta y = 4\omega x^3 + 6\omega^2x^2 + 4\omega^3x + \omega^4;
+$$
+
+đây là differentia bậc nhất. Rồi, từ những cái trước:
+
+$$
+\begin{aligned}
+\Delta.4\omega x^3 &= 12\omega^2x^2 + 12\omega^3x + 4\omega^4\\
+\Delta.6\omega^2x^2 &= 12\omega^3x + 6\omega^4\\
+\Delta.4\omega^3x &= 4\omega^4\\
+\Delta.\omega^4 &= 0
+\end{aligned}
+$$
+
+Gộp lại, differentia bậc hai là
+
+$$
+\Delta\Delta y = 12\omega^2x^2 + 24\omega^3x + 14\omega^4.
+$$
+
+Vì tiếp đó nữa,
+
+$$
+\begin{aligned}
+\Delta.12\omega^3x^2 &= 24\omega^3x + 12\omega^4\\
+\Delta.24\omega^3x &= 24\omega^4\\
+\Delta.14\omega^4 &= 0
+\end{aligned}
+$$
+
+<!-- PDF 41, trang in 13 -->
+
+sẽ sinh ra differentia bậc ba
+
+$$
+\Delta^3 y = 24\omega^3x + 36\omega^4
+$$
+
+và cuối cùng là differentia bậc tư
+
+$$
+\Delta^4 y = 24\omega^4,
+$$
+
+vì nó là constans, nên những differentia của các bậc tiếp theo tan biến.
+
+### Exemplum IV
+
+*Tìm các differentia của mọi bậc của lũy thừa bất kỳ $x^n$.*
+
+Hãy đặt $y = x^n$; và vì $y^1 = (x + \omega)^n$, $y^2 = (x + 2\omega)^n$,
+$y^3 = (x + 3\omega)^n$, &c. Các lũy thừa khai triển sẽ cho ta:
+
+$$
+\begin{aligned}
+y &= x^n\\
+y^1 &= x^n + \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\omega^2x^{n-2}
+      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\omega^3x^{n-3} + \text{\&c.}\\
+y^2 &= x^n + \frac{n}{1}\,2\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,4\omega^2x^{n-2}
+      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,8\omega^3x^{n-3} + \text{\&c.}\\
+y^3 &= x^n + \frac{n}{1}\,3\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,9\omega^2x^{n-2}
+      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,27\omega^3x^{n-3} + \text{\&c.}\\
+y^4 &= x^n + \frac{n}{1}\,4\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,16\omega^2x^{n-2}
+      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,64\omega^3x^{n-3} + \text{\&c.}
+\end{aligned}
+$$
+
+<!-- PDF 42, trang in 14 -->
+
+Từ đây, khi lấy sai lệch, ta được:
+
+$$
+\begin{aligned}
+\Delta y &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\omega^2x^{n-2}
+          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\omega^3x^{n-3} + \text{\&c.}\\
+\Delta y^1 &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,3\omega^2x^{n-2}
+          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,7\omega^3x^{n-3} + \text{\&c.}\\
+\Delta y^2 &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,5\omega^2x^{n-2}
+          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,19\omega^3x^{n-3} + \text{\&c.}\\
+\Delta y^3 &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,7\omega^2x^{n-2}
+          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,37\omega^3x^{n-3} + \text{\&c.}
+\end{aligned}
+$$
+
+Lại lấy sai lệch một lần nữa, ta sẽ được:
+
+$$
+\begin{aligned}
+\Delta\Delta y &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,6\omega^3x^{n-3}
+          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,14\omega^4x^{n-4} + \text{\&c.}\\
+\Delta\Delta y^1 &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,12\omega^3x^{n-3}
+          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,50\omega^4x^{n-4} + \text{\&c.}\\
+\Delta\Delta y^2 &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,18\omega^3x^{n-3}
+          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,110\omega^4x^{n-4} + \text{\&c.}
+\end{aligned}
+$$
+
+<!-- PDF 43, trang in 15 -->
+
+Từ những cái ấy, lấy sai lệch thêm nữa:
+
+$$
+\begin{aligned}
+\Delta^3 y &= n(n-1)(n-2)\omega^3x^{n-3}
+          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,36\omega^4x^{n-4} + \text{\&c.}\\
+\Delta^3 y^1 &= n(n-1)(n-2)\omega^3x^{n-3}
+          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,60\omega^4x^{n-4} + \text{\&c.}
+\end{aligned}
+$$
+
+và tiếp nữa:
+
+$$
+\Delta^4 y = n(n-1)(n-2)(n-3)\omega^4x^{n-4} + \text{\&c.}
+$$
+
+**14.** Nhờ đó, quy luật thứ hai theo đó những differentia này tiến triển, sẽ dễ dàng thấy
+hơn. Hãy lập trước, vì lý do ngắn gọn:
+
+$$
+\begin{aligned}
+A &= \frac{n}{1}\\
+B &= \frac{n(n-1)}{1\cdot 2}\\
+C &= \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\\
+D &= \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\\
+E &= \frac{n(n-1)(n-2)(n-3)(n-4)}{1\cdot 2\cdot 3\cdot 4\cdot 5}
+\end{aligned}$$
+
+và &c.
+
+<!-- PDF 44, trang in 16 -->
+
+Tiếp theo hãy lập Bảng sau, sẽ trích ra từng differentia:
+
+| | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|
+| $y$ | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | &c. |
+| $\Delta y$ | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | &c. |
+| $\Delta^2 y$ | 0 | 0 | 2 | 6 | 14 | 30 | 62 | 126 | 254 &c. |
+| $\Delta^3 y$ | 0 | 0 | 0 | 6 | 36 | 150 | 540 | 1806 | 5796 &c. |
+| $\Delta^4 y$ | 0 | 0 | 0 | 0 | 24 | 240 | 1560 | 8400 | 40824 &c. |
+| $\Delta^5 y$ | 0 | 0 | 0 | 0 | 0 | 120 | 1800 | 16800 | 126000 &c. |
+| $\Delta^6 y$ | 0 | 0 | 0 | 0 | 0 | 0 | 720 | 15120 | 191520 &c. |
+| $\Delta^7 y$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5040 | 141120 &c. |
+
+Trong Bảng này, số của mỗi chuỗi được tìm ra bằng cách lấy số đứng trước trong cùng chuỗi
+cộng với số ở trên, rồi nhân tổng ấy với chỉ số của ký tự $\Delta$. Vậy, trong chuỗi
+differentiae $\Delta^5 y$ ứng với, số 16800 được tìm ra khi ta lấy số đứng trước là 1800
+cộng với số 1560 đã viết ở trên, thành tổng 3360, rồi nhân với 5.
+
+> **[Chú giải]**
+>
+> **Bảng này là các số Stirling loại hai, nhân với giai thừa**
+>
+> Quy tắc Euler vừa nêu — cộng số đứng trước với số ở trên, rồi nhân với chỉ số $\Delta$ —
+> chính là truy hồi mà ngày nay dùng cho các số Stirling loại hai, chỉ khác ở chỗ các số
+> Stirling được nhân thêm $k!$ mỗi hàng.
+>
+> Kiểm lại bằng chính ví dụ của Euler ở ngay trên: ông lấy $1800$ (ở hàng $\Delta^5$) cộng
+> $1560$ (ở hàng $\Delta^4$) rồi nhân với 5, thu được $16800$. Cột thứ tư của hàng $\Delta^3$
+> cũng thỏa: $3!\cdot\left\{4 \atop 3\right\} = 6 \cdot 1 = 6$, và cột thứ năm
+> $3!\cdot\left\{5 \atop 3\right\} = 6 \cdot 10 = 60$, đúng như hàng ấy in ra.
+>
+> Nói cách khác, hàng $\Delta^2$ gồm $2, 6, 14, 30, 62, 126, 254$, tức là hai lần dãy
+> $1, 3, 7, 15, 31, 63, 127$; hàng $\Delta^4$ gồm $24, 240, 1560, \dots$, tức là $4!$ lần dãy
+> $1, 10, 65, 350, \dots$.
+>
+> Việc nhận diện này là của người viết chú giải, không phải điều Euler nói. Ông không đặt tên
+> cho bảng, chỉ nói nó là Bảng và cho quy tắc điền. Cũng nên nói thêm: bảng này được Euler in
+> năm 1755, còn bài báo của Stirling về dãy này ra năm 1733.
+
+**15.** Vậy, khi Bảng đã lập, từng differentia của lũy thừa $x^n = y$ sẽ có dạng sau:
+
+$$
+\begin{aligned}
+\Delta y &= A\omega x^{n-1} + B\omega^2x^{n-2} + C\omega^3x^{n-3} + D\omega^4x^{n-4} + \text{\&c.}\\
+\Delta^2 y &= 2B\omega^2x^{n-2} + 6C\omega^3x^{n-3} + 14D\omega^4x^{n-4} + \text{\&c.}\\
+\Delta^3 y &= 6C\omega^3x^{n-3} + 36D\omega^4x^{n-4} + 150E\omega^5x^{n-5} + \text{\&c.}\\
+\Delta^4 y &= 24D\omega^4x^{n-4} + 240E\omega^5x^{n-5} + 1560F\omega^6x^{n-6} + \text{\&c.}
+\end{aligned}
+$$
+
+<!-- PDF 45, trang in 17 -->
+
+**17.** Nói chung, differentia bậc $m$, tức $\Delta^m y$, của lũy thừa $x^n$, sẽ được biểu
+thị theo cách sau. Đặt
+
+$$
+I = \frac{n(n-1)(n-2)\cdots(n-m+1)}{1\cdot 2\cdot 3\cdots m};
+$$
+
+rồi
+
+$$
+K = \frac{n-m}{m+1}\,I; \qquad
+L = \frac{n-m-1}{m+2}\,K; \qquad
+M = \frac{n-m-2}{m+3}\,L; \qquad \text{\&c.}
+$$
+
+Tiếp theo hãy đặt:
+
+$$
+\begin{aligned}
+\alpha &= (m+1)^m - \frac{m}{1}m^m + \frac{m(m-1)}{1\cdot 2}(m-1)^m
+          - \frac{m(m-1)(m-2)}{1\cdot 2\cdot 3}(m-2)^m + \text{\&c.}\\
+\beta &= (m+1)^{m+1} - \frac{m}{1}m^{m+1} + \frac{m(m-1)}{1\cdot 2}(m-1)^{m+1}
+          - \frac{m(m-1)(m-2)}{1\cdot 2\cdot 3}(m-2)^{m+1} + \text{\&c.}\\
+\gamma &= (m+1)^{m+2} - \frac{m}{1}m^{m+2} + \frac{m(m-1)}{1\cdot 2}(m-1)^{m+2}
+          - \frac{m(m-1)(m-2)}{1\cdot 2\cdot 3}(m-2)^{m+2} + \text{\&c.}
+\end{aligned}
+$$
+
+Với những giá trị đã tìm ra ấy, ta sẽ có
+
+$$
+\Delta^m y = \alpha I\omega^mx^{n-m} + \beta K\omega^{m+1}x^{n-m-1}
+             + \gamma L\omega^{m+2}x^{n-m-2} + \text{\&c.},
+$$
+
+và tỉ lệ của biểu thức này tự nhiên đi theo từ cách mà từng differentia riêng lẻ được rút ra
+từ các giá trị $y$, $y^1$, $y^2$, $y^3$, &c.
+
+<!-- Chưa dịch: PDF 46-62, tức trang in 18-34, gồm §18-§33. -->
+
+<!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
+     510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
+     quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

@@ -10,7 +10,7 @@
     { "file": "00-loi-tua-va-muc-luc.md", "title": "Lời tựa và mục lục", "pdf": [5, 28], "printed": ["i", "xxiv"], "number": 0, "callouts": 2 }
   ],
   "pars_prior": [
-    { "file": "01-sai-lech-huu-han.md",           "chapter": 1,  "title": "De Differentiis finitis", "vn": "Sai lệch hữu hạn", "pdf": [31, 62],  "callouts": 4 },
+    { "file": "01-sai-lech-huu-han.md",           "chapter": 1,  "title": "De Differentiis finitis", "vn": "Sai lệch hữu hạn", "pdf": [31, 62],  "callouts": 5 },
     { "file": "02-dung-sai-lech-trong-ly-thuyet-chuoi.md", "chapter": 2,  "title": "De Usu Differentiarum in Doctrina serierum", "vn": "Dùng sai lệch trong lý thuyết chuỗi", "pdf": [63, 97],  "callouts": 4 },
     { "file": "03-vo-cung-nho-va-dieu-khong-han.md", "chapter": 3,  "title": "De Infinitis et infinite parvis", "vn": "Vô cùng nhỏ và điều không hạn", "pdf": [98, 125], "callouts": 4 },
     { "file": "04-ban-chat-cua-vi-phan-moi-bac.md", "chapter": 4,  "title": "De Differentialium cuiusque ordinis natura", "vn": "Bản chất của vi phân mọi bậc", "pdf": [126, 151], "callouts": 5 },

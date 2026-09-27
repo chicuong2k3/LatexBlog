@@ -1102,5 +1102,47 @@ viết chứ không phải phát biểu của Euler.
 II–IV và §14–§16, phần công thức dày nhất của chương. §14 có một bảng hệ số (tr. 16) và §15
 một bảng vi sai, cả hai sẽ phải dựng lại thay vì chép ảnh, giống sơ đồ ở tr. 7.
 
+### 2026-09-28 — Chương I, Phần 3 (PDF 39–45, tr. 11–17, §13–§17)
+
+Bổ sung §13–§17 vào `chapters/01-sai-lech-huu-han.md`, thêm 1 callout (tổng chương hiện có
+5; đã nâng hạn mức `callouts` của mục 01 trong `CHAPTER_PLAN.json` và band `"01"` trong
+`tools/check_book_callouts.py` từ 4 lên 5 cho khớp). **Chưa niêm phong**; còn §18–§33
+(PDF 46–62).
+
+**Đã soi bản scan từng trang:** PDF 39 (§13, EXEMPLUM I), PDF 40 (EXEMPLUM II và phần
+đầu EXEMPLUM III), PDF 41 (EXEMPLUM III và EXEMPLUM IV), PDF 42, PDF 43 (EXEMPLUM IV và
+khai báo §14), PDF 44 (bảng tr. 16 và §15), PDF 45 (§17).
+
+**Bốn chỗ bản scan nhòe, đã phân giải bằng cách soi ảnh phóng to rồi mới dịch:**
+
+1. **Exemplum II, PDF 40.** Lớp OCR đọc hỏng thành `2 W.V` và `6u)tj0X`. Bản in là
+   $\Delta.\omega x^2 = 2\omega^2x + \omega^3$ và $\Delta.3\omega x^2 = 6\omega^2x + 3\omega^3$.
+   Bản nháp đầu tiên ghi nhầm `6\omega x`; chỉ khi cộng lại mới đóng được với
+   $\Delta^2 y = 6\omega^2x + 6\omega^3$ mà biện minh được, nên số mũ 2 là bắt buộc.
+2. **§15, hàng $\Delta^2 y$, PDF 44.** Bản nháp ghi `x^{n-1}`, bản in là $x^{n-3}$.
+3. **§17, công thức $\alpha$, PDF 45.** Số mũ sau $(m-1)$ là một `m` đơn lẻ, **không** phải
+   `m-1`. Ảnh có vệt mực nhòe nối tiếp và ngay bên phải là bar phân số của số hạng kế
+   tiếp, nên nhìn dễ ra `m-`; số hạng cuối `(m-2)^m` cũng dùng số mũ `m`, và chỉ cách số mũ
+   đồng nhất mới ra $\alpha = m!$ ($m=4$: $625 - 1024 + 486 - 64 + 1 = 24 = 4!$; nếu dùng
+   `m-1` thì ra 416, sai). Đã sửa.
+4. **§17, ký tự Greek giữa $\alpha$ và $\gamma$.** Là $\beta$ (bóng kín ở trên, móc dưới),
+   không phải $\zeta$ như lớp OCR và một bản đọc hờ gợi ý.
+
+**Bảng ở tr. 16 (PDF 44), phần khó nhất của đợt này.** Lớp OCR hỏng gần hết các số
+(`1 Jo`, `0524`, `84°°`, `*26000`, `ij12pi`, `151520`). Số đọc từ bản in: hàng $\Delta^2$ là
+2, 6, 14, 30, 62, 126, 254; $\Delta^3$ là 6, 36, 150, 540, 1806, 5796; $\Delta^4$ là
+24, 240, 1560, 8400, 40824; $\Delta^5$ là 120, 1800, 16800, 126000; $\Delta^6$ là
+720, 15120, 191520; $\Delta^7$ là 5040, 141120. Đã kiểm lại bằng đúng quy tắc mà Euler nêu
+ngay dưới bảng: số đứng trước cộng số ở trên, nhân với chỉ số $\Delta$ — $5(1800+1560) =
+16800$ khớp cột bảy. Hai hàng nữa cũng khớp: hàng $\Delta^2$ bằng 2 lần dãy 1, 3, 7, 15,
+31, 63, 127; hàng $\Delta^4$ bằng $4!$ lần dãy 1, 10, 65, 350.
+
+**Callout mới.** Nhận diện bảng ấy là các số Stirling loại hai nhân với giai thừa. Trong
+callout đã ghi rõ đây là nhận diện của người viết chứ giải, không phải phát biểu của Euler —
+ông không đặt tên cho bảng, chỉ gọi là *Tabula* và cho quy tắc điền. Cũng ghi rõ bài của
+Stirling ra năm 1733, trước lần in 1755 này.
+
+**Còn lại trong chương:** PDF 46–62 (tr. 18–34), gồm §18–§33.
+
 
 

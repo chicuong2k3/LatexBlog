@@ -80,6 +80,19 @@ BOOK_DENSITY_BANDS: dict[str, dict[str, tuple[int, int]]] = {
         "00": (0, 3),
         **{f"{n:02d}": (0, 1) for n in range(1, 18)},
     },
+    # Hạn mức trùng "callouts" trong CHAPTER_PLAN.json. Đây chỉ chặn trần, không chặn
+    # đáy, vì hạn mức thuộc về sổ đối chiếu còn chương đang soạn dở chưa đủ callout.
+    "euler-calculi-differentialis": {
+        "00": (0, 2),
+        "01": (0, 4), "02": (0, 4), "03": (0, 4), "04": (0, 5),
+        "05": (0, 5), "06": (0, 5), "07": (0, 4), "08": (0, 5),
+        "09": (0, 4),
+        "10": (0, 4), "11": (0, 4), "12": (0, 4), "13": (0, 4),
+        "14": (0, 4), "15": (0, 4), "16": (0, 3), "17": (0, 4),
+        "18": (0, 4), "19": (0, 5), "20": (0, 4), "21": (0, 4),
+        "22": (0, 3), "23": (0, 3), "24": (0, 3), "25": (0, 4),
+        "26": (0, 4), "27": (0, 4),
+    },
 }
 
 # Ngưỡng cảnh báo mỗi callout.

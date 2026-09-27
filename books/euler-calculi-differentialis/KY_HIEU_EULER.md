@@ -6,23 +6,59 @@ khi tới chương chứa nó.
 
 Quy ước: $V$ là hàm vô hướng, $v$ là vi phân của nó — viết $dV$ cho rõ.
 
-## 1. Vi phân và đạo hàm
+## 1. Vi phân, sai lệch hữu hạn, và đạo hàm
 
 | Bản in | Nghĩa | Ký hiệu hiện đại |
 |---|---|---|
 | `dx` | vi phân của $x$ | $dx$ |
 | `dy` | vi phân của $y$ | $dy$ |
 | `dV` | vi phân của hàm $V(x,y)$ | $dV$ |
+| `Δy`, `ΔΔy`, `Δ³y` | sai lệch hữu hạn bậc 1, 2, 3 của $y$ | $\Delta^n y$ |
+| `ω` | bước nhảy, một số tùy ý | $h$ hoặc $\Delta x$ |
+| `y¹`, `y^I` | giá trị của $y$ khi $x$ được thay bằng $x+\omega$ | $y(x+h)$ |
+| `p¹ = p + Δp` | cũng vậy, cho một functio bất kỳ | |
 | `y'x` | đạo hàm của hàm $y$ tại $x$ | $\frac{dy}{dx}$ |
 | `y''x` | đạo hàm cấp hai | $\frac{d^2y}{dx^2}$ |
-| `y'''x` | đạo hàm cấp ba | $\frac{d^3y}{dx^3}$ |
 | `d²y`, `d³y` | vi phân cấp hai, cấp ba **của hàm** | $y'\,d^2x$ |
 | `ddx` | vi phân của chính $dx$ | không có hằng cố định |
 | `d³x` | vi phân cấp ba của $x$ | không có hằng cố định |
 
+### Bước nhảy ω là tự do
+
+Euler nói thẳng ở trang in 6: trong lý thuyết chuỗi người ta lấy $\omega = 1$, "verum hic ad
+nostrum institutum, valore generali uti, qui pro arbitrio augeri diminuique queat" — ở đây
+dùng một giá trị tổng quát, có thể tùy ý tăng lên hay giảm xuống. Cần nhớ điều này khi đọc
+mọi công thức trong Chương I.
+
+### Chỉ số trên ký hiệu: La Mã và Ả Rập trộn lẫn
+
+Ở sơ đồ trang in 7, chỉ số trên $y$ là số La Mã ($y^{\mathrm{I}}$, $y^{\mathrm{II}}$,
+$y^{\mathrm{III}}$) trong khi chỉ số trên $\Delta y$ là số Ả Rập ($\Delta y^1$,
+$\Delta y^2$, $\Delta y^3$). Ngay ở §4 cùng chương, Euler viết $\Delta y^1$ rồi
+$\Delta y^{\mathrm{II}}$ — trộn hai kiểu trong cùng một công thức. Bản dịch giữ nguyên từng
+chỗ, không thống nhất lại.
+
+Chỉ số `1` đánh dấu "ở điểm kế tiếp", không phải đạo hàm. Ở trang in 11 Euler viết
+$y^1 = p^1q^1$ với $p^1 = p + \Delta p$, $q^1 = q + \Delta q$, rồi suy ra
+$\Delta y = p\Delta q + q\Delta p + \Delta p\,\Delta q$. Đây là sai lệch hữu hạn của tích
+$p q$, được tính đúng như tích vi phân.
+
+### Sai lệch bậc hai: `ΔΔy` không phải `Δ²y`
+
+Euler viết `ΔΔy` cho sai lệch bậc hai rồi chuyển sang `Δ³y`, `Δ⁴y` cho các bậc cao hơn.
+Bản dịch giữ đúng cách viết này.
+
+### Lỗi của Euler đã phát hiện
+
+Ở trang in 11, dòng tính sai lệch bậc ba của $y = aq$ khi $a$ là hằng, bản in viết
+`Δ³q = aΔ³q`; vế trái phải là `Δ³y`. Giữ nguyên như in, xem `TRANSLATION_LEDGER.md`.
+
+Euler đảo chiều tỷ lệ ở hai trang liền kề trong lời tựa: trang in VII viết `1 ad 2x+ω`,
+trang in VIII viết `2x ad 1`. Cùng một quan hệ, viết ngược. Cũng giữ nguyên.
+
 Euler viết `ddx` và `d²x` cho cùng một thứ, ngay trong cùng một công thức (trang in 205:
-`ddV = V ddx + P dx²`, rồi `d³V = V d³x + 3P dx ddx + Q dx³`). Bản dịch giữ nguyên cách
-viết của từng chỗ, không thống nhất lại.
+`ddV = V ddx + P dx²`, rồi `d³V = V d³x + 3P dx ddx + Q dx³`).
+
 
 **Điểm cốt lõi, và là chỗ dễ hiểu sai nhất:** `ddx` **không phải** là $d^2x/dx^2$. Trong
 Euler, $dx$ là một biến độc lập, nên vi phân của nó là một vi phân mới. Công thức

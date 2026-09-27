@@ -120,38 +120,38 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 28 | xxiv | `chapters/00-loi-tua-va-muc-luc.md` | Đang dịch |  |
 | 29 | 1 | `—` | Ngoài sách | Trang nửa tên Pars Prior (tr. 1) và trang trống (tr. 2). |
 | 30 | 2 | `—` | Ngoài sách |  |
-| 31 | 3 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 32 | 4 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 33 | 5 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 34 | 6 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 35 | 7 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 36 | 8 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 37 | 9 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 38 | 10 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 39 | 11 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 40 | 12 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 41 | 13 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 42 | 14 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 43 | 15 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 44 | 16 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 45 | 17 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 46 | 18 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 47 | 19 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 48 | 20 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 49 | 21 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 50 | 22 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 51 | 23 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 52 | 24 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 53 | 25 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 54 | 26 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 55 | 27 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 56 | 28 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 57 | 29 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 58 | 30 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 59 | 31 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 60 | 32 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 61 | 33 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
-| 62 | 34 | `chapters/01-sai-lech-huu-han.md` | Chưa dịch |  |
+| 31 | 3 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 32 | 4 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 33 | 5 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 34 | 6 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 35 | 7 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 36 | 8 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 37 | 9 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 38 | 10 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 39 | 11 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 40 | 12 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 41 | 13 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 42 | 14 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 43 | 15 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 44 | 16 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 45 | 17 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 46 | 18 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 47 | 19 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 48 | 20 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 49 | 21 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 50 | 22 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 51 | 23 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 52 | 24 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 53 | 25 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 54 | 26 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 55 | 27 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 56 | 28 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 57 | 29 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 58 | 30 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 59 | 31 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 60 | 32 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 61 | 33 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 62 | 34 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
 | 63 | 35 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
 | 64 | 36 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
 | 65 | 37 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
@@ -1054,4 +1054,34 @@ mục lục hai phần, và trang lỗi in. Chưa niêm phong.
 ở trang VIII lại viết `2x ad 1`. Không sửa.
 
 **Chưa làm:** chưa đối chiếu hình — lời tựa và mục lục không có hình. Chưa trích hình nào.
+
+### 2026-09-28 — Chương I, Phần 1 (PDF 31–35, tr. 3–7, §1–§7)
+
+Đã dịch `chapters/01-sai-lech-huu-han.md` tới hết §7, gồm trích hình và 2 callout. **Chưa
+niêm phong**; còn §8–§34 và EXEMPLUM I–IV (PDF 36–62) chưa dịch.
+
+**Đã soi bản scan:** PDF 31 (mở đầu chương + §1), PDF 33 (§3, §4), PDF 35 (§6, §7 — sơ đồ các
+sai lệch), PDF 39 (§12, §13 — tham chiếu để kiểm tra ký hiệu). Văn xuôi ở PDF 32 và 34 lấy
+từ lớp OCR, vì không chứa công thức nào mang tính quyết định.
+
+**Lỗi của Euler phát hiện thêm, giữ nguyên như in:**
+
+| Trang in | PDF | Chỗ | Ghi chú |
+|---|---:|---|---|
+| 11 | 39 | §12, dòng "tertia" | Bản in viết `Δ³q = aΔ³q`. Vế trái phải là `Δ³y`; ngữ cảnh là sai lệch bậc ba của $y = aq$ khi $a$ là hằng. OCR đọc thành `$3>' ΓÇö y`. |
+| 5 | 33 | §3 | Chỉ số trên $y$ ở đây dùng số La Mã, sang §4 lại trộn số Ả Rập (`Δy^1` rồi `Δy^II`) trong cùng công thức. Giữ nguyên từng chỗ. |
+| 7 | 35 | §6 | `Δ³y = Δ³y¹ = &c.` — bản in viết vậy; lẽ ra phải là `Δ³y = ΔΔy¹ − ΔΔy`. |
+
+**Hình:** trang mở đầu Chương I có một vignette khắc đồng (vòng cột đổ nát, bóng đổ, quả địa
+cầu, dụng cụ đo, tường đá vỡ). Đã trích vào `assets/cap01-vignette.png` và khai trong
+`EXTRACTED_FIGURES.tsv`.
+
+**Sơ đồ các sai lệch** (tr. 7) dựng thành bảng Markdown chứ không chép ảnh, vì nội dung của nó
+là thuật ngữ và ký hiệu chứ không phải hình vẽ; tra cứu được và render được.
+
+**Ngưỡng callout:** đã thêm entry cho `euler-calculi-differentialis` vào
+`BOOK_DENSITY_BANDS` trong `tools/check_book_callouts.py`, theo hạn mức trong
+`CHAPTER_PLAN.json`. Chương dùng ngưỡng chung của Newton (`01` phải có 8 callout) sẽ báo sai
+cho cuốn này.
+
 

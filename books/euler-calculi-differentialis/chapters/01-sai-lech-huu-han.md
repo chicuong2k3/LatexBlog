@@ -1339,13 +1339,52 @@ $$
 \Sigma\frac{1}{xx}
 $$
 
-<!-- Chưa dịch: PDF 61-62, tức trang in 33-34, gồm §30 (nối tiếp) và §31-§33. Catchword
-     ở cuối trang 60 là "Σ 1/xx". -->
-
 <!-- Ghi chú dịch giả: bốn hệ số cuối của trang này cũng khớp quy luật đã ghi ở trang 59.
      1181820455/546 = B24·25, 76977927/2 = B26·27, 23749461029/30 = B28·29,
      8615841276005/462 = B30·31. Quy luật vậy là hệ số in ra bằng |B2m|·(2m+1), dấu
      luân phiên; Euler không nói tới số Bernoulli. -->
+
+<!-- PDF 61, trang in 33 -->
+
+$$
+= C - \frac{1}{\omega x} - \frac{1}{2xx} - \frac{1}{2}\cdot\frac{\omega}{3x^3} + \frac{1}{6}\cdot\frac{\omega^3}{5x^5}
+$$
+
+$$
+- \frac{1}{6}\cdot\frac{\omega^5}{7x^7} + \frac{3}{10}\cdot\frac{\omega^7}{9x^9} - \frac{5}{6}\cdot\frac{\omega^9}{11x^{11}} + \frac{691}{210}\cdot\frac{\omega^{11}}{13x^{13}}
+$$
+
+$$
+- \frac{35}{2}\cdot\frac{\omega^{13}}{15x^{15}} + \frac{3617}{30}\cdot\frac{\omega^{15}}{17x^{17}} \text{\&c.}
+$$
+
+<!-- Ghi chú dịch giả: tám hệ số của trang này cũng theo đúng quy luật |B2m|·(2m+1) đã
+     ghi ở trang 59, với mẫu số (2m+1) nối vào mỗi số hạng: 1/2 = B2·3, 1/6 = B4·5,
+     1/6 = B6·7, 3/10 = B8·9, 5/6 = B10·11, 691/210 = B12·13, 35/2 = B14·15,
+     3617/30 = B16·17. Bản in ở đây không sai; chỉ là nét chữ trong scan mờ, dễ đọc
+     nhầm số 1/2 thành 1/4 và số 3/10 thành 7/6. Đã đối chiếu lại bằng cách bắt sai khác
+     của dãy này, cả tám hệ số khớp với 1/x^2 tới sai số do cắt cụt. -->
+
+**31.** Vậy thì, nếu differentia đã cho là một lũy thừa bất kỳ của chính $x$, thì tổng của
+nó từ đây có thể luôn được chỉ định, hay nói cách khác là một functio mà differentia của
+nó chính là đại lượng đã cho.
+
+Nhưng nếu differentia đã cho mang một dạng khác, như không thể chia ra được thành các
+lũy thừa của chính $x$, xem chúng như những thành phần, thì tổng của nó rất khó, và thường
+hoàn toàn không tìm ra được bằng số: trừ khi may mà ta biết nó phát sinh từ một functio nào
+đó. Vì lý do ấy, cần khảo sát differentia của nhiều functio và ghi nhớ chúng cho chuẩn
+xác, để khi một dạng differentia như vậy được đưa ra, tổng của nó, hay functio mà nó phát
+sinh, có thể lập tức được trình ra. Tuy vậy, trong lúc chờ đó, phương pháp vô cùng sẽ cung
+cấp không ít quy tắc, nhờ đó việc tìm tổng được nâng đỡ một cách lạ thường.
+
+**32.** Tuy nhiên, tổng cần tìm thường dễ tìm thấy hơn, nếu differentia đã cho là tích của
+những thừa số giản dị nào đó, hợp thành một cấp số cộng, mà differentia của chính nó là
+đại lượng $\omega$. Chẳng hạn, nếu functio đã cho là $(x+\omega)(x+2\omega)$ và ta cần
+differentia của nó: bởi khi đặt $x+\omega$ vào chỗ của $x$, functio này trở thành
+$(x+2\omega)(x+\dots$
+
+<!-- Chưa dịch: PDF 62, tức trang in 34, gồm §32 (nối tiếp) và §33. Catchword ở cuối
+     trang 61 là "(x+". -->
 
 <!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4, ...)
      vì hệ số bằng 0 — đúng với công thức: số mũ của các số hạng là n+1, n, n-1, n-3,

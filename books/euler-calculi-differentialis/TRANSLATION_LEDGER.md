@@ -1356,5 +1356,17 @@ Bổ sung trang 60 vào `chapters/01-sai-lech-huu-han.md`: bốn số hạng cu�
 
 **Còn lại trong chương:** PDF 61–62 (tr. 33–34), gồm phần còn lại của §30 và §31–§33. Catchword ở cuối trang 60 là `Σ 1/xx`.
 
+### 2026-09-28 — Chương I, Phần 18 (PDF 61, tr. 33, hết §30, trọn §31, mở §32)
+
+Bổ sung trang 61 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §30 (dãy tám số hạng cho $\Sigma\frac{1}{xx}$), toàn bộ §31 (khi differentia đã cho là một lũy thừa của $x$ thì tổng tìm được ngay; nếu không phân bố được thành các lũy thừa của $x$ thì tổng rất khó, thường không tìm được bằng số; vì vậy cần khảo sát differentia của nhiều functio; phương pháp vô cùng sẽ cung cấp quy tắc), rồi mở đầu §32 (tổng dễ tìm hơn khi differentia là tích các thừa số giản dị hợp thành cấp số cộng; ví dụ $(x+\omega)(x+2\omega)$). Không thêm callout. **Chưa niêm phong**; còn §32 (nối tiếp) và §33 (PDF 62).
+
+**Đã soi bản scan:** toàn trang 61, cộng năm mức phóng (14, 24, 26, 40, 44) lên cột tử số của dãy công thức. Lớp OCR hỏng ở tất cả các phân số nhỏ, nên toàn bộ cột hệ số phải đọc từ ảnh.
+
+**Tám hệ số của dãy $\Sigma\frac{1}{xx}$ đã xác nhận là đúng, bản in không sai.** Số in ra là $\frac12, \frac16, \frac16, \frac3{10}, \frac56, \frac{691}{210}, \frac{35}{2}, \frac{3617}{30}$, mỗi số nhân với $\frac{\omega^{2m-1}}{(2m+1)x^{2m+1}}$. Cả tám đều theo đúng quy luật $|B_{2m}|\cdot(2m+1)$ đã ghi ở trang 59: $\frac12=B_2\cdot3$, $\frac16=B_4\cdot5$, $\frac16=B_6\cdot7$, $\frac3{10}=B_8\cdot9$, $\frac56=B_{10}\cdot11$, $\frac{691}{210}=B_{12}\cdot13$, $\frac{35}{2}=B_{14}\cdot15$, $\frac{3617}{30}=B_{16}\cdot17$. Quy luật vậy đã được xác nhận trên 23 hệ số liên tiếp, từ $B_2$ đến $B_{30}$ rồi quay lại $B_2$ ở trang này.
+
+**Một chỗ dễ bị ghi nhầm là lỗi của Euler, đã loại trừ.** Nét chữ trong scan rất mờ, nên lượt đọc đầu cho ra $\frac14$ ở số hạng $\omega/(3x^3)$ và $\frac76$ ở số hạng $\omega^7/(9x^9)$; cả hai đều sai, và nếu chép theo thì sẽ thành hai lỗi không có trong sách. Đã đối chiếu lại bằng cách bắt sai khác của cả dãy: với $\omega=1$, $x=100$ và đủ tám số hạng thì $\Delta F - \frac1{x^2}$ có sai số tương đối $9.5\times10^{-34}$, tức chỉ còn sai số do cắt cụt; còn hai bản $\frac14$ và $\frac76$ cho sai số lớn hơn nhiều bậc. Ngoài ra công thức tổng quát $a_k = -(2k+1)B_{2k}$ với $B_{14}=\frac76$ cho $a_7 = -15\cdot\frac76 = -\frac{35}{2}$, khớp đúng số $\frac{35}{2}$ đã in.
+
+**Dấu ở chân trang:** dưới cùng trang 61 có một chữ `E` ở giữa, là dấu hiệu trang của người in; chữ catchword ở mép phải là `(x+`. Đầu trang là `CAPUT I.` kèm số trang `33`.
+
 
 

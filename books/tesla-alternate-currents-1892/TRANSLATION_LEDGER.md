@@ -274,6 +274,10 @@ dây, khớp với nhãn `Fig. 1.—Discharge Between Two Wires`.
 | Fig. 11 | 33 | 51 | `fig-p033-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | Fig. 12 và 13 | 44 | 62 | `fig-p044-00.jpg` | **Đã trích, đã đối chiếu** |
 | Fig. 14 | 45 | 63 | `fig-p045-00.jpg` | Đã trích, chưa đối chiếu nhãn |
+| Fig. 15 và 16 | 46 | 64 | `fig-p046-00.jpg` | **Đã trích, đã đối chiếu** |
+| Fig. 17 | 55 | 73 | `fig-p055-00.jpg` | **Đã trích, đã đối chiếu** |
+| Fig. 20 | 71 | 89 | `fig-p071-00.jpg` | **Đã trích, đã đối chiếu** |
+| Fig. 22 | 73 | 91 | `fig-p073-01.jpg` | **Đã trích, đã đối chiếu** |
 | — | 45 | 63 | `fig-p045-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | — | 46 | 64 | `fig-p046-00.jpg` | Đã trích, chưa đối chiếu nhãn |
 | — | 55 | 73 | `fig-p055-00.jpg` | Đã trích, chưa đối chiếu nhãn |
@@ -303,7 +307,10 @@ plate trên đều xuất hiện đã dùng — phần lớn còn đợ vào ch�
 - **Đã xác định xong:** bản `fig-p025-01.jpg` trùng byte-for-byte với
   `fig-p025-00.jpg` (cùng SHA-256) — cùng một ảnh Hình 8, do trình trích
   plate chạy hai lần. Đã xoá bản thừa.
-- **Có nhãn trong lớp OCR nhưng chưa có plate:** `Fig. 15, 16, 17, 20, 22`. Đây là đề để đợ trong bảng trên — không phải ốt thiếu.
+- **Mức độ đối chiếu — hai loại, đừng gộp làm một:**
+  - *Mở plate ra nhìn, nhãn in khớp:* `Fig. 5, 6, 12, 13, 15, 16, 17, 22`.
+  - *Định danh qua lớp nhãn của chính PDF (vị trí `capmap.json`), chưa mở plate ra xem:* `Fig. 1, 2, 3, 4, 7, 8, 9, 10, 11, 14, 18, 19, 21, 23`–`35`.
+  - Không hình nào trong `Fig. 1`–`Fig. 35` còn thiếu plate.
 - **Hai lỗi OCR đã được chứng minh là bẫy:** `Fig. 83`
   (thực ra `Fig. 33`) và `Fig. 12` ở PDF 118 (thực ra `Fig. 25`).
 

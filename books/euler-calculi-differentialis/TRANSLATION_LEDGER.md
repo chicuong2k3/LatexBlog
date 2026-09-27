@@ -1102,16 +1102,23 @@ viết chứ không phải phát biểu của Euler.
 II–IV và §14–§16, phần công thức dày nhất của chương. §14 có một bảng hệ số (tr. 16) và §15
 một bảng vi sai, cả hai sẽ phải dựng lại thay vì chép ảnh, giống sơ đồ ở tr. 7.
 
-### 2026-09-28 — Chương I, Phần 3 (PDF 39–45, tr. 11–17, §13–§17)
+### 2026-09-28 — Chương I, Phần 3 (PDF 39–46, tr. 11–18, §13–§17)
 
 Bổ sung §13–§17 vào `chapters/01-sai-lech-huu-han.md`, thêm 1 callout (tổng chương hiện có
 5; đã nâng hạn mức `callouts` của mục 01 trong `CHAPTER_PLAN.json` và band `"01"` trong
 `tools/check_book_callouts.py` từ 4 lên 5 cho khớp). **Chưa niêm phong**; còn §18–§33
-(PDF 46–62).
+(PDF 47–62).
 
 **Đã soi bản scan từng trang:** PDF 39 (§13, EXEMPLUM I), PDF 40 (EXEMPLUM II và phần
 đầu EXEMPLUM III), PDF 41 (EXEMPLUM III và EXEMPLUM IV), PDF 42, PDF 43 (EXEMPLUM IV và
-khai báo §14), PDF 44 (bảng tr. 16 và §15), PDF 45 (§17).
+khai báo §14), PDF 44 (bảng tr. 16 và §15), PDF 45 (nối tiếp §15), PDF 46 (§16 và §17).
+
+**Lỗi cấu trúc đã phát hiện và sửa trong cùng đợt.** Bản commit đầu đánh số khối ở trang 45
+là §17 và bỏ hẳn §16. Nguyên nhân: con dấu trang ở lề trên bản in là **17** (đúng số trang),
+không phải số mục; lúc đó lại đọc lướt qua catchword `16. Ex` ở chân trang 45 nên tưởng §16
+nằm ở đó. Thực tế cả §16 lẫn §17 đều nằm trên trang 46. Đã sửa lại: khối trang 45 gộp vào
+§15 (nó là phần *Generatim autem* nối tiếp công thức $\Delta^m y$), rồi bổ sung §16 và §17
+từ trang 46.
 
 **Bốn chỗ bản scan nhòe, đã phân giải bằng cách soi ảnh phóng to rồi mới dịch:**
 
@@ -1120,12 +1127,12 @@ khai báo §14), PDF 44 (bảng tr. 16 và §15), PDF 45 (§17).
    Bản nháp đầu tiên ghi nhầm `6\omega x`; chỉ khi cộng lại mới đóng được với
    $\Delta^2 y = 6\omega^2x + 6\omega^3$ mà biện minh được, nên số mũ 2 là bắt buộc.
 2. **§15, hàng $\Delta^2 y$, PDF 44.** Bản nháp ghi `x^{n-1}`, bản in là $x^{n-3}$.
-3. **§17, công thức $\alpha$, PDF 45.** Số mũ sau $(m-1)$ là một `m` đơn lẻ, **không** phải
+3. **§15, công thức $\alpha$, PDF 45.** Số mũ sau $(m-1)$ là một `m` đơn lẻ, **không** phải
    `m-1`. Ảnh có vệt mực nhòe nối tiếp và ngay bên phải là bar phân số của số hạng kế
    tiếp, nên nhìn dễ ra `m-`; số hạng cuối `(m-2)^m` cũng dùng số mũ `m`, và chỉ cách số mũ
    đồng nhất mới ra $\alpha = m!$ ($m=4$: $625 - 1024 + 486 - 64 + 1 = 24 = 4!$; nếu dùng
    `m-1` thì ra 416, sai). Đã sửa.
-4. **§17, ký tự Greek giữa $\alpha$ và $\gamma$.** Là $\beta$ (bóng kín ở trên, móc dưới),
+4. **§15, ký tự Greek giữa $\alpha$ và $\gamma$.** Là $\beta$ (bóng kín ở trên, móc dưới),
    không phải $\zeta$ như lớp OCR và một bản đọc hờ gợi ý.
 
 **Bảng ở tr. 16 (PDF 44), phần khó nhất của đợt này.** Lớp OCR hỏng gần hết các số
@@ -1142,7 +1149,16 @@ callout đã ghi rõ đây là nhận diện của người viết chứ giải,
 ông không đặt tên cho bảng, chỉ gọi là *Tabula* và cho quy tắc điền. Cũng ghi rõ bài của
 Stirling ra năm 1733, trước lần in 1755 này.
 
-**Còn lại trong chương:** PDF 46–62 (tr. 18–34), gồm §18–§33.
+**§17, số mũ không có dấu trừ.** Phần dẫn của §17 nói phép tính còn trải tới cả số mũ âm,
+phân số và vô tỉ, nhưng danh sách Euler in ngay dưới chỉ gồm differentia bậc nhất của
+$x, x^2, x^3, x^4$ — tức số mũ dương. Đã phóng to cột số mũ trên scan trang 46 để kiểm:
+không có dấu trừ nào, và các biểu thức vế phải ($2\omega x + \omega^2$,
+$3\omega x^2 + 3\omega^2 x + \omega^3$, $4\omega x^3 + 6\omega^2 x^2 + 4\omega^3 x +
+\omega^4$) đúng là differentia bậc nhất của các lũy thừa dương ấy. Đã chép đúng như in,
+không sửa cho khớp phần dẫn, và ghi rõ điều này trong chú thích dịch giả ở cuối chương.
+
+**Còn lại trong chương:** PDF 47–62 (tr. 19–34), gồm §18–§33. Câu mở đầu của mục tiếp theo
+bắt đầu ngay cuối trang 46 bằng chữ `Si-`, nối sang trang 47.
 
 
 

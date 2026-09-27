@@ -586,8 +586,8 @@ $$
 
 <!-- PDF 45, trang in 17 -->
 
-**17.** Nói chung, differentia bậc $m$, tức $\Delta^m y$, của lũy thừa $x^n$, sẽ được biểu
-thị theo cách sau. Đặt
+Tổng quát hơn, differentia bậc $m$ của lũy thừa $x^n$ sẽ được biểu thị theo cách sau.
+Đặt
 
 $$
 I = \frac{n(n-1)(n-2)\cdots(n-m+1)}{1\cdot 2\cdot 3\cdots m};
@@ -624,8 +624,58 @@ $$
 và tỉ lệ của biểu thức này tự nhiên đi theo từ cách mà từng differentia riêng lẻ được rút ra
 từ các giá trị $y$, $y^1$, $y^2$, $y^3$, &c.
 
-<!-- Chưa dịch: PDF 46-62, tức trang in 18-34, gồm §18-§33. -->
+<!-- PDF 46, trang in 18 -->
+
+**16.** Từ những điều trên dễ thấy rằng, nếu số mũ $n$ là một số nguyên dương, thì ta
+cuối cùng sẽ đi tới những differentia là hằng số, và mọi differentia bậc cao hơn đều bằng
+$0$. Như thế ta sẽ có
+
+$$
+\begin{aligned}
+\Delta x &= \omega\\
+\Delta^2 x^2 &= 2\omega^2\\
+\Delta^3 x^3 &= 6\omega^3\\
+\Delta^4 x^4 &= 24\omega^4
+\end{aligned}
+$$
+
+và cuối cùng là
+
+$$
+\Delta^n x^n = 1\cdot 2\cdot 3\cdots n\cdot\omega^n.
+$$
+
+Vì thế mọi functio rationalis nguyên cuối cùng sẽ quy được về những differentia là hằng số.
+Cụ thể, functio bậc nhất của chính $x$, $ax+b$, đã có differentia bậc nhất là hằng số
+$= a\omega$. Functio bậc hai $ax^2+bx+c$ sẽ có differentia bậc hai là hằng số $= 2a\omega\omega$.
+Còn differentia bậc ba của một functio bậc ba sẽ là hằng số; bậc bốn thì bậc bốn, &c. cứ
+như vậy.
+
+**17.** Cách ta đã dùng để tìm differentia của lũy thừa $x^n$ cũng còn mở rộng xa hơn nữa,
+và trải được tới cả những lũy thừa mà số mũ $n$ là số âm, là phân số, hay thậm chí là số vô
+tỉ. Để việc ấy hiện ra rõ ràng hơn, ta chỉ trích ra những differentia bậc nhất của loại
+lũy thừa quan trọng nhất, bởi vì quy luật của những differentia bậc hai và các bậc tiếp theo
+thì không dễ nhận ra bằng mắt. Ta sẽ có:
+
+$$
+\begin{aligned}
+\Delta x &= \omega\\
+\Delta x^2 &= 2\omega x + \omega^2\\
+\Delta x^3 &= 3\omega x^2 + 3\omega^2x + \omega^3\\
+\Delta x^4 &= 4\omega x^3 + 6\omega^2x^2 + 4\omega^3x + \omega^4 \quad \text{\&c.}
+\end{aligned}
+$$
+
+<!-- Chưa dịch: PDF 47-62, tức trang in 19-34, gồm §18-§33. Câu mở đầu của mục kế tiếp
+     bắt đầu ngay cuối trang 46 bằng chữ "Si-", nối sang trang 47. -->
 
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->
+
+<!-- Ghi chú dịch giả: ở §17, phần dẫn nói phép tính trải tới cả số mũ âm, phân số và
+     vô tỉ, nhưng danh sách Euler in ra ngay dưới chỉ liệt kê differentia bậc nhất của
+     x, x², x³, x⁴, tức là số mũ dương. Đã phóng to cột số mũ trên bản scan để kiểm:
+     không có dấu trừ nào, và các biểu thức bên phải (2ωx + ω², 3ωx² + 3ω²x + ω³,
+     4ωx³ + 6ω²x² + 4ω³x + ω⁴) đúng là differentia bậc nhất của các lũy thừa dương ấy.
+     Chép đúng như in, không sửa theo phần dẫn. -->

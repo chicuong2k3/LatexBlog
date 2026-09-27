@@ -90,9 +90,9 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 77 | 59 | `chapters/13-kich-thuoc-bong-den-va-su-nong-cua-day-nung.md`| bài giảng, trang in 59 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 78 | 60 | `chapters/13-kich-thuoc-bong-den-va-su-nong-cua-day-nung.md`| bài giảng, trang in 60 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 79 | 61 | `chapters/13-kich-thuoc-bong-den-va-su-nong-cua-day-nung.md`| bài giảng, trang in 61 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 80 | 62 | — | bài giảng, trang in 62 theo thứ tự | — | Chưa dịch |
-| 81 | 63 | — | bài giảng, trang in 63 theo thứ tự | — | Chưa dịch |
-| 82 | 64 | — | bài giảng, trang in 64 theo thứ tự | — | Chưa dịch |
+| 80 | 62 | `chapters/14-hinh-dang-bong-den-tieu-diem-va-ong-nhom-chan-ton-hao.md`| bài giảng, trang in 62 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 81 | 63 | `chapters/14-hinh-dang-bong-den-tieu-diem-va-ong-nhom-chan-ton-hao.md`| bài giảng, trang in 63 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 82 | 64 | `chapters/14-hinh-dang-bong-den-tieu-diem-va-ong-nhom-chan-ton-hao.md`| bài giảng, trang in 64 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 83 | — | — | bài giảng, trang in 65 theo thứ tự | — | Chưa dịch |
 | 84 | 66 | — | bài giảng, trang in 66 theo thứ tự | — | Chưa dịch |
 | 85 | — | — | bài giảng, trang in 67 theo thứ tự | — | Chưa dịch |

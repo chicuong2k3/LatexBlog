@@ -72,11 +72,11 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 59 | 41 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 41 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 60 | 42 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 42 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 61 | 43 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 43 theo thứ tự |Hình 12, Hình 13: plate ở trang in 44|**Đã dịch, đã đối chiếu scan**|
-| 62 | 44 | — | bài giảng, trang in 44 theo thứ tự | — | Chưa dịch |
-| 63 | 45 | — | bài giảng, trang in 45 theo thứ tự | — | Chưa dịch |
-| 64 | 46 | — | bài giảng, trang in 46 theo thứ tự | — | Chưa dịch |
-| 65 | 47 | — | bài giảng, trang in 47 theo thứ tự | — | Chưa dịch |
-| 66 | 48 | — | bài giảng, trang in 48 theo thứ tự | — | Chưa dịch |
+| 62 | 44 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 44 theo thứ tự |`fig-p044-00.jpg` (Hình 12, 13)|**Đã dịch, đã đối chiếu scan**|
+| 63 | 45 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 45 theo thứ tự |`fig-p045-00.jpg` (Hình 14)|**Đã dịch, đã đối chiếu scan**|
+| 64 | 46 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 46 theo thứ tự |`fig-p046-00.jpg` (Hình 15, 16)|**Đã dịch, đã đối chiếu scan**|
+| 65 | 47 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 47 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 66 | 48 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 48 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 67 | 49 | — | bài giảng, trang in 49 theo thứ tự | — | Chưa dịch |
 | 68 | 50 | — | bài giảng, trang in 50 theo thứ tự | — | Chưa dịch |
 | 69 | 51 | — | bài giảng, trang in 51 theo thứ tự | — | Chưa dịch |

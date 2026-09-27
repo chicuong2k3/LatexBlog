@@ -92,7 +92,8 @@ Các chương đã dịch:
 | 05 | `chapters/05-khoang-cach-phong-dien-va-day-phat-sang.md` | 22–27 | Khoảng cách phóng điện và những dây phát sáng. **Đã dịch, đã đối chiếu scan.** |
 | 06 | `chapters/06-tam-sang-lien-tuc-cuc-quang-va-luong-sang-ma.md` | 28–35 | Tấm sáng liên tục, cực quang và luồng sáng ma. **Đã dịch, đã đối chiếu scan.** |
 | 07 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md` | 36–43 | Cách điện bằng dầu, phóng điện chổi lông và tự cảm. **Đã dịch, đã đối chiếu scan.** |
-| 08–17 | — | 44–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 08 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md` | 44–48 | Chổi lông quay, sự nhạy cảm tĩnh điện và từ tính. **Đã dịch, đã đối chiếu scan.** |
+| 09–17 | — | 49–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 

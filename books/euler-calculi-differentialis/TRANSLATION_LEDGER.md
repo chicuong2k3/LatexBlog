@@ -1185,8 +1185,25 @@ toàn bộ (`2 CO`, `5to3`, `2 »`, `1Oto3`, `4»J`) nên mọi công thức đ�
 $1/2, -1/8, 1/16$; $x^{1/3}$ với $1/3, -1/9, 5/81$; $x^{-1/2}$ với $-1/2, 3/8, -5/16$;
 $x^{-2}$ với $-2, 3, -4$.
 
-**Còn lại trong chương:** PDF 48–62 (tr. 20–34), gồm §18–§33. Câu mở đầu của §18 bắt đầu
-ngay cuối trang 47 bằng chữ `Si-`, nối sang trang 48.
+### 2026-09-28 — Chương I, Phần 5 (PDF 48, tr. 20, §18–§19)
+
+Bổ sung trang 48 vào `chapters/01-sai-lech-huu-han.md`: §18 (vì sao dãy khai triển của các
+lũy thừa không nguyên dương là vô hạn, nhưng cũng biểu thị được bằng biểu thức hữu hạn)
+và §19 (differentia bậc nhất của một phân số cụ thể). Không thêm callout. **Chưa niêm
+phong**; còn §19 (nối tiếp) và §20–§33 (PDF 49–62).
+
+**Đã soi bản scan:** toàn trang 48, cộng thêm hai mức phóng lên vùng công thức cuối trang.
+Lớp OCR hỏng ở các mẫu số (`1 (a+te ~"~x`, `f,`, `(a-+w)a`), nên phân số phải đọc từ ảnh.
+
+**Một bất nhất về kiểu chữ của Euler, đã soi và giữ nguyên.** Ở §19, dòng $y^1$ in
+$aa+xx+2\omega x+\omega^2$ nhưng dòng $\Delta y$ ngay dưới in $aa+xx+2\omega x+\omega\omega$
+— hai chỗ cùng một biểu thức mà viết khác kiểu. Đã phóng to cả hai dòng để kiểm: đúng
+như vậy. Cùng kiểu bất nhất đã thấy ở EXEMPLUM I (dòng $2\omega x + \omega\omega$ rồi
+$\Delta\Delta y = 2\omega\omega$), trong khi EXEMPLUM II và III dùng $\omega^2, \omega^3$.
+Giữ nguyên, không thống nhất hoá; đã ghi chú trong chương.
+
+**Còn lại trong chương:** PDF 49–62 (tr. 21–34), gồm phần còn lại của §19 và §20–§33. Câu
+mở đầu của mục tiếp theo bắt đầu ngay cuối trang 48 bằng chữ `Pona-`, nối sang trang 49.
 
 
 

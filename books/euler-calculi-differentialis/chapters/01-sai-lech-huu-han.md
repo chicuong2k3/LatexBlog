@@ -712,8 +712,52 @@ $$
                           - \frac{14\omega^3}{81x^{\frac{10}{3}}} + \text{\&c.}
 $$
 
-<!-- Chưa dịch: PDF 48-62, tức trang in 20-34, gồm §18-§33. Câu mở đầu của §18 bắt đầu
-     ngay cuối trang 47 bằng chữ "Si-", nối sang trang 48. -->
+<!-- PDF 48, trang in 20 -->
+
+**18.** Do đó dễ thấy rằng những differentia này, nếu số mũ của chính $x$ không phải là một
+số nguyên dương, thì tiến triển vô hạn, tức là gồm vô số số hạng. Tuy nhiên những
+differentia ấy cũng có thể được biểu thị bằng một biểu thức hữu hạn. Vì khi đặt
+$y = x^{-1} = \frac{1}{x}$, ta có $y^1 = \frac{1}{x+\omega}$, nên
+
+$$
+\Delta x^{-1} = \Delta\frac{1}{x} = \frac{1}{x+\omega} - \frac{1}{x};
+$$
+
+từ đó, nếu ta khai triển phân số $\frac{1}{x+\omega}$ thành một chuỗi, ta sẽ thu được
+biểu thức ở trên. Tương tự ta sẽ có
+
+$$
+\Delta x^{-2} = \Delta\frac{1}{xx} = \frac{1}{(x+\omega)^2} - \frac{1}{xx},
+$$
+
+và với các lượng vô tỉ thì sẽ là
+
+$$
+\Delta\sqrt{x} = \sqrt{x+\omega} - \sqrt{x}, \qquad
+\Delta\frac{1}{\sqrt{x}} = \frac{1}{\sqrt{x+\omega}} - \frac{1}{\sqrt{x}};
+$$
+
+những công thức này, nếu được khai triển thành chuỗi theo lối thường, sẽ cho ra những
+biểu thức ở trên.
+
+**19.** Theo cách ấy thì differentia của các functio, dù là phân số hay vô tỉ, cũng có
+thể tìm được. Chẳng hạn, nếu muốn tìm differentia bậc nhất của phân số
+$\frac{1}{aa+xx}$, hãy đặt
+
+$$
+y = \frac{1}{aa+xx}; \qquad \&, \quad \text{vì } y^1 = \frac{1}{aa+xx+2\omega x+\omega^2}
+$$
+
+nên
+
+$$
+\Delta y = \Delta\frac{1}{aa+xx} = \frac{1}{aa+xx+2\omega x+\omega\omega} - \frac{1}{aa+xx},
+$$
+
+biểu thức này cũng có thể chuyển thành một chuỗi vô hạn.
+
+<!-- Chưa dịch: PDF 49-62, tức trang in 21-34, gồm §19 (nối tiếp) và §20-§33. Câu mở
+     đầu của mục kế tiếp bắt đầu ngay cuối trang 48 bằng chữ "Pona-", nối sang trang 49. -->
 
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
@@ -732,3 +776,9 @@ $$
 
 <!-- Ghi chú dịch giả: danh sách ở cuối trang 46 chỉ nêu số mũ dương; phần mở rộng sang
      số mũ âm và phân số mà §17 hứa ở phần dẫn nằm ngay ở trang 47, ngay sau đó. -->
+
+<!-- Ghi chú dịch giả: ở §19, Euler viết ω² ở dòng y¹ (aa+xx+2ωx+ω²) rồi lại viết ωω
+     ở dòng Δy ngay dưới (aa+xx+2ωx+ωω), dù hai chỗ này cùng một biểu thức. Đã soi ảnh
+     phóng to để kiểm cả hai: đúng như vậy. Giữ nguyên, không thống nhất hoá. Cùng kiểu
+     bất nhất này đã xuất hiện ở EXEMPLUM I (dòng 2ωx + ωω rồi ΔΔy = 2ωω), trong khi
+     EXEMPLUM II và III dùng ω², ω³. -->

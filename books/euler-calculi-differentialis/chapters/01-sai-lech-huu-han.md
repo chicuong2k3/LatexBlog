@@ -756,9 +756,58 @@ $$
 
 biểu thức này cũng có thể chuyển thành một chuỗi vô hạn.
 
-<!-- Chưa dịch: PDF 49-62, tức trang in 21-34, gồm §19 (nối tiếp) và §20-§33. Câu mở
-     đầu của mục kế tiếp bắt đầu ngay cuối trang 48 bằng chữ "Pona-", nối sang trang 49. -->
+<!-- PDF 49, trang in 21 -->
 
+Hãy đặt $aa+xx = P$ và $2\omega x + \omega\omega = Q$; khi đó ta sẽ có
+
+$$
+\frac{1}{P+Q} = \frac{1}{P} - \frac{Q}{P^2} + \frac{Q^2}{P^3} - \frac{Q^3}{P^4}
+              + \text{\&c.}
+$$
+
+&
+
+$$
+\Delta y = -\frac{Q}{P^2} + \frac{Q^2}{P^3} - \frac{Q^3}{P^4} + \text{\&c.}
+$$
+
+Thay lại các giá trị của $P$ và $Q$ vào chỗ, ta sẽ có
+
+$$
+\Delta y = \Delta\frac{1}{aa+xx}
+= -\frac{2\omega x+\omega\omega}{(aa+xx)^2}
+  + \frac{4\omega\omega\,xx + 4\omega^3x + \omega^4}{(aa+xx)^3}
+  - \frac{8\omega^3x^3 + 12\omega^4x^2 + 6\omega^5x + \omega^6}{(aa+xx)^4}
+  + \text{\&c.}
+$$
+
+mà nếu các số hạng này được sắp xếp theo lũy thừa của chính $\omega$, ta sẽ có
+
+$$
+\Delta\frac{1}{aa+xx}
+= -\frac{2\omega x}{(aa+xx)^2}
+  + \frac{2\omega^2(xx-aa)}{(aa+xx)^3}
+  - \frac{4\omega^3(x^3-aax)}{(aa+xx)^4} + \text{\&c.}
+$$
+
+**20.** Cũng bằng những chuỗi vô hạn tương tự, differentia của các functio vô tỉ cũng
+có thể được biểu thị. Hãy lấy functio đã cho này:
+
+$$
+y = \sqrt{aa+xx};
+$$
+
+và, vì $y^1 = \sqrt{aa+xx+2\omega x+\omega\omega}$, hãy đặt $aa+xx = P$ và
+$2\omega x + \omega\omega = Q$, ta sẽ có
+
+$$
+\Delta y = \sqrt{P+Q} - \sqrt{P}
+= \frac{Q}{2\sqrt{P}} - \frac{QQ}{8P\sqrt{P}} + \frac{Q^3}{16P^2\sqrt{P}}
+- \text{\&c.}
+$$
+
+<!-- Chưa dịch: PDF 50-62, tức trang in 22-34, gồm §20 (nối tiếp) và §21-§33. Câu mở
+     đầu của mục kế tiếp bắt đầu ngay cuối trang 49 bằng chữ "vnde", nối sang trang 50. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->
@@ -782,3 +831,9 @@ biểu thức này cũng có thể chuyển thành một chuỗi vô hạn.
      phóng to để kiểm cả hai: đúng như vậy. Giữ nguyên, không thống nhất hoá. Cùng kiểu
      bất nhất này đã xuất hiện ở EXEMPLUM I (dòng 2ωx + ωω rồi ΔΔy = 2ωω), trong khi
      EXEMPLUM II và III dùng ω², ω³. -->
+
+<!-- Ghi chú dịch giả: ở trang 49, dòng sắp xếp các số hạng theo lũy thừa của ω, số hạng
+     bậc ω² in ra là 2ω²(xx-aa)/(aa+xx)³. Đã phóng to hệ số để kiểm: chữ số là 2.
+     Nhưng khai triển đúng của 1/(aa+xx+2ωx+ωω) cho số hạng ω² là ω²(3xx-aa)/(aa+xx)³,
+     nên số hạng đã in ra sai. Số hạng ω³ ngay cạnh, -4ω³(x³-aax)/(aa+xx)⁴, thì đúng.
+     Đã chép nguyên như in. -->

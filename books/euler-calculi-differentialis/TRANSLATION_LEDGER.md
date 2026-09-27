@@ -1202,8 +1202,30 @@ như vậy. Cùng kiểu bất nhất đã thấy ở EXEMPLUM I (dòng $2\omega
 $\Delta\Delta y = 2\omega\omega$), trong khi EXEMPLUM II và III dùng $\omega^2, \omega^3$.
 Giữ nguyên, không thống nhất hoá; đã ghi chú trong chương.
 
-**Còn lại trong chương:** PDF 49–62 (tr. 21–34), gồm phần còn lại của §19 và §20–§33. Câu
-mở đầu của mục tiếp theo bắt đầu ngay cuối trang 48 bằng chữ `Pona-`, nối sang trang 49.
+### 2026-09-28 — Chương I, Phần 6 (PDF 49, tr. 21, nối tiếp §19 và mở §20)
+
+Bổ sung trang 49 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại của §19 (đặt
+$P = aa+xx$, $Q = 2\omega x + \omega\omega$, rồi thay lại giá trị) và §20 (differentia của
+$\sqrt{aa+xx}$). Không thêm callout. **Chưa niêm phong**; còn §20 (nối tiếp) và §21–§33
+(PDF 50–62).
+
+**Đã soi bản scan:** toàn trang 49, cộng bốn mức phóng cho các mẫu số. Lớp OCR hỏng nặp
+(`8i^`, `2*1`, `6.*-t= J-4--7-`), nên toàn bộ phân số phải đọc từ ảnh.
+
+**Một số hạng sai trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng cuối của §19, các
+số hạng được sắp xếp theo lũy thừa của $\omega$; số hạng bậc $\omega^2$ in ra là
+$\frac{2\omega^2(xx-aa)}{(aa+xx)^3}$. Đã phóng to hệ số để kiểm: chữ số là `2`. Nhưng khai
+triển đúng của $\frac{1}{aa+xx+2\omega x+\omega\omega}$ cho số hạng $\omega^2$ là
+$\frac{\omega^2(3xx-aa)}{(aa+xx)^3}$, nên số hạng đã in sai. Ngay cạnh, số hạng
+$-\frac{4\omega^3(x^3-aax)}{(aa+xx)^4}$, lại đúng — đã tự kiểm lại bằng khai triển nhị thức.
+
+**Ba mẫu số đã soi kỹ và đều đúng như đọc:** mẫu số bậc bốn là $(aa+xx)^4$ (dấu ngoặc
+đóng trước số mũ, không phải $(aa+xx^4)$); trong §20, dòng
+$\frac{Q}{2\sqrt{P}} - \frac{QQ}{8P\sqrt{P}} + \frac{Q^3}{16P^2\sqrt{P}}$ đúng với khai
+triển nhị thức của $\sqrt{1+t}$.
+
+**Còn lại trong chương:** PDF 50–62 (tr. 22–34), gồm phần còn lại của §20 và §21–§33. Câu
+mở đầu của mục tiếp theo bắt đầu ngay cuối trang 49 bằng chữ `vnde`, nối sang trang 50.
 
 
 

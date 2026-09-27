@@ -856,8 +856,65 @@ $$
           + \frac{\omega^3}{3x^3} - \frac{\omega^4}{4x^4} + \text{\&c.}
 $$
 
-<!-- Chưa dịch: PDF 51-62, tức trang in 23-34, gồm §21 (nối tiếp) và §22-§33. Câu mở
-     đầu của mục kế tiếp bắt đầu ngay cuối trang 50 bằng chữ "Ex-", nối sang trang 51. -->
+<!-- PDF 51, trang in 23 -->
+
+### Exemplum II
+
+*Tìm differentia bậc nhất của lượng exponentialis $a^x$.*
+
+Đặt $y = a^x$, ta sẽ có $y^1 = a^{x+\omega} = a^x\cdot a^\omega$:
+
+ở trên ta đã dạy rằng
+
+$$
+a^\omega = 1 + \frac{\omega\ln a}{1} + \frac{\omega^2(\ln a)^2}{1\cdot 2}
+          + \frac{\omega^3(\ln a)^3}{1\cdot 2\cdot 3} + \text{\&c.}
+$$
+
+thay giá trị này vào, ta sẽ có
+
+$$
+\Delta a^x = y^1 - y = \Delta y
+= \frac{a^x\omega\ln a}{1} + \frac{a^x\omega^2(\ln a)^2}{1\cdot 2}
+  + \frac{a^x\omega^3(\ln a)^3}{1\cdot 2\cdot 3} + \text{\&c.}
+$$
+
+### Exemplum III
+
+*Trong đường tròn có bán kính bằng $1$, hãy tìm differentia của sin của cung $x$.*
+
+Đặt $\sin x = y$, ta sẽ có $y^1 = \sin(x+\omega)$, từ đó
+
+$$
+\Delta y = y^1 - y = \sin(x+\omega) - \sin x.
+$$
+
+Mà ta có $\sin(x+\omega) = \cos\omega\cdot\sin x + \sin\omega\cdot\cos x$, và qua các
+chuỗi vô hạn ta đã dạy rằng
+
+$$
+\cos\omega = 1 - \frac{\omega^2}{1\cdot 2} + \frac{\omega^4}{1\cdot 2\cdot 3\cdot 4}
+             - \frac{\omega^6}{1\cdot 2\cdot 3\cdot 4\cdot 5\cdot 6} + \text{\&c.}
+$$
+
+&
+
+$$
+\sin\omega = \omega - \frac{\omega^3}{1\cdot 2\cdot 3}
+             + \frac{\omega^5}{1\cdot 2\cdot 3\cdot 4\cdot 5}
+             - \frac{\omega^7}{1\cdot 2\cdot 3\cdot 4\cdot 5\cdot 6\cdot 7}
+             + \text{\&c.}
+$$
+
+thay các chuỗi này vào, ta sẽ có
+
+$$
+\Delta\sin x = \omega\cos x - \frac{\omega^2}{2}\sin x - \frac{\omega^3}{6}\cos x
+             + \frac{\omega^4}{24}\sin x + \frac{\omega^5}{120}\cos x - \text{\&c.}
+$$
+
+<!-- Chưa dịch: PDF 52-62, tức trang in 24-34, gồm §22-§33. Câu mở đầu của EXEMPLUM kế
+     tiếp bắt đầu ngay cuối trang 51 bằng chữ "Ex-", nối sang trang 52. -->
 <!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
      510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
      quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->

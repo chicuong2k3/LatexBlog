@@ -1236,7 +1236,17 @@ Bổ sung trang 50 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Ký hiệu `l`:** theo `KY_HIEU_EULER.md`, chữ `l` (logarithmus hyperbolicus) hiển thị thành `$\ln$`. Đã dùng `\ln` trong EXEMPLUM I, khớp với quy ước sẵn có của sổ.
 
-**Còn lại trong chương:** PDF 51–62 (tr. 23–34), gồm phần còn lại của §21 và §22–§33. Câu mở đầu của mục tiếp theo bắt đầu ngay cuối trang 50 bằng chữ `Ex-`, nối sang trang 51.
+### 2026-09-28 — Chương I, Phần 8 (PDF 51, tr. 23, EXEMPLUM II và III của §21)
+
+Bổ sung trang 51 vào `chapters/01-sai-lech-huu-han.md`: EXEMPLUM II (differentia bậc nhất của $a^x$) và EXEMPLUM III (differentia của $\sin x$ trong đường tròn bán kính $1$). Không thêm callout. **Chưa niêm phong**; còn §22–§33 (PDF 52–62).
+
+**Đã soi bản scan:** toàn trang 51. Trang này ít công thức hơn các trang trước nên lớp OCR đọc được phần lớn, nhưng các mẫu số giai thừa vẫn phải đối chiếu với ảnh.
+
+**Hai dòng đã tự kiểm bằng khai triển, đều khớp:** $\Delta a^x = a^x\left(\omega\ln a + \frac{\omega^2(\ln a)^2}{1\cdot 2} + \&c.\right)$ là khai triển $a^\omega = 1 + \omega\ln a + \frac{(\omega\ln a)^2}{1\cdot 2}+\&c.$; và $\Delta\sin x = \omega\cos x - \frac{\omega^2}{2}\sin x - \frac{\omega^3}{6}\cos x + \frac{\omega^4}{24}\sin x + \frac{\omega^5}{120}\cos x - \&c.$ là $\Delta\sin x = (\cos\omega - 1)\sin x + \sin\omega\cos x$ thay bằng hai chuỗi Euler in ngay trên.
+
+**Ký hiệu:** theo `KY_HIEU_EULER.md`, `fin` → `$\sin$`, `cof`/`cos` → `$\cos$`, và `l` → `$\ln$` (nên `la` viết thành `$\ln a$`).
+
+**Còn lại trong chương:** PDF 52–62 (tr. 24–34), gồm §22–§33. Câu mở đầu của EXEMPLUM kế tiếp bắt đầu ngay cuối trang 51 bằng chữ `Ex-`, nối sang trang 52.
 
 
 

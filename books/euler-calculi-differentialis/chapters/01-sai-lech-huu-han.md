@@ -1267,9 +1267,56 @@ $$
 Vì nếu ở đây ta thay $x$ bằng $x+\omega$, rồi lấy lượng thu được trừ đi số đã tìm ra
 này, thì sẽ còn lại đúng differentia đã cho là $x^4-2\omega^2x^2+\omega^4$.
 
-<!-- Chưa dịch: PDF 59-62, tức trang in 31-34, gồm §29-§33. Câu mở đầu của §29 bắt đầu
-     ngay cuối trang 58 bằng chữ "Si", nối sang trang 59. -->
+<!-- PDF 59, trang in 31 -->
 
+**29.** Nếu ta xem kỹ hơn những tổng mà ta đã tìm được cho các lũy thừa của chính $x$,
+thì ở những số hạng thứ nhất, thứ hai và thứ ba, ta sẽ lập tức thấy quy luật mà chúng tiến
+triển theo từng lũy thừa một; nhưng quy luật của những số hạng còn lại thì không rõ ràng
+như thế, nên chưa thể suy ra được tổng của lũy thừa $x^n$ nói chung từ đó. Tuy nhiên, ở
+những điều tiếp theo ta sẽ được dạy rằng:
+
+$$
+\Sigma x^n =
+\frac{x^{n+1}}{(n+1)\omega}
+- \frac{1}{2}x^n
++ \frac{1}{2}\cdot\frac{n\omega}{2\cdot 3}\,x^{n-1}
+- \frac{1}{6}\cdot\frac{n(n-1)(n-2)\omega^3}{2\cdot 3\cdot 4\cdot 5}\,x^{n-3}
+$$
+
+$$
++ \frac{1}{6}\cdot\frac{n(n-1)(n-2)(n-3)(n-4)\omega^5}{2\cdot 3\cdot 4\cdot 5\cdot 6\cdot 7}\,x^{n-5}
+- \frac{3}{10}\cdot\frac{n(n-1)\cdots(n-6)\omega^7}{2\cdot 3\cdots 8\cdot 9}\,x^{n-7}
++ \frac{5}{6}\cdot\frac{n(n-1)\cdots(n-8)\omega^9}{2\cdot 3\cdots 10\cdot 11}\,x^{n-9}
+$$
+
+$$
+- \frac{691}{210}\cdot\frac{n(n-1)\cdots(n-10)\omega^{11}}{2\cdot 3\cdots 12\cdot 13}\,x^{n-11}
++ \frac{35}{2}\cdot\frac{n(n-1)\cdots(n-12)\omega^{13}}{2\cdot 3\cdots 14\cdot 15}\,x^{n-13}
+- \frac{3617}{30}\cdot\frac{n(n-1)\cdots(n-14)\omega^{15}}{2\cdot 3\cdots 16\cdot 17}\,x^{n-15}
+$$
+
+$$
++ \frac{43867}{42}\cdot\frac{n(n-1)\cdots(n-16)\omega^{17}}{2\cdot 3\cdots 18\cdot 19}\,x^{n-17}
+- \frac{1222277}{110}\cdot\frac{n(n-1)\cdots(n-18)\omega^{19}}{2\cdot 3\cdots 20\cdot 21}\,x^{n-19}
++ \frac{854513}{6}\cdot\frac{n(n-1)\cdots(n-20)\omega^{21}}{2\cdot 3\cdots 22\cdot 23}\,x^{n-21}
+$$
+
+---
+
+<!-- Chưa dịch: PDF 60-62, tức trang in 32-34, gồm §29 (nối tiếp) và §30-§33. Công thức
+     trên còn tiếp sang trang 60. -->
+
+<!-- Ghi chú dịch giả: các hệ số 691/210, 35/2, 3617/30, 43867/42, 1222277/110,
+     854513/6 đúng là các số Bernoulli B12, B14, B16, B18, B20, B22 nhân với hệ số
+     (2m+1) và dấu luân phiên. Cụ thể, chia mỗi hệ số in ra cho (2m)(2m+1) thì thu được
+     đúng 1/6, 1/30, 1/42, 1/30, 5/66, 691/2730, 7/6, 3617/510, 43867/798, 174611/330,
+     854513/138, tức |B2|, |B4|, ..., |B22|. Nhận xét này là của người dịch; ở §29 Euler
+     không nói tới số Bernoulli. Cùng nhận xét đã được ghi ở kỳ trước (Phần 14) theo
+     dự đoán, nay đã xác nhận. -->
+
+<!-- Ghi chú dịch giả: đã thử công thức với n = 3, 4, 5, 6 và thấy khớp đúng những dòng
+     đã in ở các trang trước. Với n = 5, số hạng cuối in ra ở trang 57 là 5/12, trong
+     khi công thức ở đây cho đúng 1/12 — xem ghi chú ở trang 57. -->
 <!-- Ghi chú dịch giả: ở dòng trung gian của EXEMPLUM II, số hạng cuối in ra là
      -(1/30)ωx³, trong khi phải là -(1/30)ω³x. Cùng công thức ở trang 57 đã in đúng là
      -(1/30)ω³x. Đã soi bản in ở độ phóng 26: sau ω không có số mũ, rồi đến x³. Giữ

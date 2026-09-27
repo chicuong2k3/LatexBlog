@@ -1330,7 +1330,21 @@ Bổ sung trang 58 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Chữ "..." trong bản in:** ở các dòng $\Sigma bx$, $\Sigma c$, $-\Sigma 2\omega^2x^2$ và $+\Sigma\omega^4$, Euler dùng những chấm thưa để chừa chỗ cho các số hạng đã bỏ đi. Đã giữ nguyên những chấm ấy, không lấp đầy.
 
-**Còn lại trong chương:** PDF 59–62 (tr. 31–34), gồm §29–§33. Câu mở đầu của §29 bắt đầu ngay cuối trang 58 bằng chữ `Si`, nối sang trang 59.
+### 2026-09-28 — Chương I, Phần 16 (PDF 59, tr. 31, mở §29)
+
+Bổ sung trang 59 vào `chapters/01-sai-lech-huu-han.md`: mở đầu §29 và công thức tổng quát cho $\Sigma x^n$, gồm mười một số hạng. Không thêm callout. **Chưa niêm phong**; còn §29 (nối tiếp) và §30–§33 (PDF 60–62).
+
+**Đã soi bản scan:** toàn trang 59. Lớp OCR đọc khá được trang này vì phần lớn là con số; mọi tử số trong mười một hệ số vẫn được đối chiếu với ảnh.
+
+**Nhận xét của người dịch, không phải của Euler:** các hệ số in ra là số Bernoulli nhân với $(2m+1)$ và dấu luân phiên. Kiểm: chia mỗi hệ số in ra cho $(2m)(2m+1)$, ta thu được đúng $1/6$, $1/30$, $1/42$, $1/30$, $5/66$, $691/2730$, $7/6$, $3617/510$, $43867/798$, $174611/330$, $854513/138$ — tức $|B_2|, |B_4|, \dots, |B_{22}|$. Nhận xét này đã được ghi theo dự đoán ở Phần 14; nay trang này xác nhận. §29 của Euler không nhắc tới số Bernoulli.
+
+**Đã tự kiểm công thức với $n=3,4,5,6$:** cho đúng những dòng đã in ở các trang trước. Với $n=6$ chẳng hạn, ba số hạng đầu cho $x^7/(7\omega)$, $-\frac12 x^6$, $+\frac12\omega x^5$ và hai số hạng kế cho $-\frac16\omega^3x^3$, $+\frac1{42}\omega^5x$ — đúng bằng dòng đã in ở trang 57.
+
+**Hệ quả đã ghi ở trang 57 được xác nhận lần nữa:** với $n=5$, số hạng cuối theo công thức này là $1/12$, đúng như đã kết luận khi sửa lỗi trang 57 (bản in ở đó là $5/12$).
+
+**Dấu chấm lửng ở cuối trang:** bản in kết thúc cột công thức bằng một vạch dài, báo hiệu công thức còn tiếp sang trang 60.
+
+**Còn lại trong chương:** PDF 60–62 (tr. 32–34), gồm phần còn lại của §29 và §30–§33.
 
 
 

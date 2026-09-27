@@ -1303,9 +1303,53 @@ $$
 
 ---
 
-<!-- Chưa dịch: PDF 60-62, tức trang in 32-34, gồm §29 (nối tiếp) và §30-§33. Công thức
-     trên còn tiếp sang trang 60. -->
+<!-- PDF 60, trang in 32 -->
 
+$$
+- \frac{1181820455}{546}\cdot\frac{n(n-1)\cdots(n-22)\omega^{23}}{2\cdot 3\cdots 24\cdot 25}\,x^{n-23}
++ \frac{76977927}{2}\cdot\frac{n(n-1)\cdots(n-24)\omega^{25}}{2\cdot 3\cdots 26\cdot 27}\,x^{n-25}
+$$
+
+$$
+- \frac{23749461029}{30}\cdot\frac{n(n-1)\cdots(n-26)\omega^{27}}{2\cdot 3\cdots 28\cdot 29}\,x^{n-27}
++ \frac{8615841276005}{462}\cdot\frac{n(n-1)\cdots(n-28)\omega^{29}}{2\cdot 3\cdots 30\cdot 31}\,x^{n-29}
+$$
+
+$$
+\text{\&c.} + C
+$$
+
+Điều đáng chú ý nhất trong dãy tiến triển này nằm ở những hệ số thuần số học; còn cách
+chúng được tạo ra thì ở đây chưa phải chỗ để trình bày.
+
+**30.** Tuy nhiên dễ thấy rằng, nếu $n$ không phải là một số nguyên dương, thì biểu thức
+của tổng này tiến triển vô hạn, và cũng không thể trình tổng ra dưới dạng hữu hạn theo
+cách này.
+
+Cần lưu ý ở đây rằng không phải lũy thừa nào của $x$ thấp hơn lũy thừa đã cho $x^n$ cũng
+xuất hiện: các số hạng $x^{n-2}$, $x^{n-4}$, $x^{n-6}$, $x^{n-8}$, &c. đều thiếu, vì hệ số
+của chúng bằng $0$; và điều này vẫn đúng khi hệ số của số hạng thứ hai là $x^n$ không tuân
+theo quy luật ấy mà bằng $-\frac{1}{2}$.
+
+Do đó, nhờ biểu thức này, các tổng của những lũy thừa mà số mũ là âm hoặc phân số có thể
+được trình ra ở dạng vô hạn, chỉ trừ một trường hợp là $n=-1$, vì khi đó số hạng
+$\frac{x^{n+1}}{(n+1)\omega}$ trở thành vô hạn, bởi $n+1=0$. Như vậy, đặt $n=-2$; ta sẽ có
+
+$$
+\Sigma\frac{1}{xx}
+$$
+
+<!-- Chưa dịch: PDF 61-62, tức trang in 33-34, gồm §30 (nối tiếp) và §31-§33. Catchword
+     ở cuối trang 60 là "Σ 1/xx". -->
+
+<!-- Ghi chú dịch giả: bốn hệ số cuối của trang này cũng khớp quy luật đã ghi ở trang 59.
+     1181820455/546 = B24·25, 76977927/2 = B26·27, 23749461029/30 = B28·29,
+     8615841276005/462 = B30·31. Quy luật vậy là hệ số in ra bằng |B2m|·(2m+1), dấu
+     luân phiên; Euler không nói tới số Bernoulli. -->
+
+<!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4, ...)
+     vì hệ số bằng 0 — đúng với công thức: số mũ của các số hạng là n+1, n, n-1, n-3,
+     n-5, ... nên không có số mũ n-2, n-4, n-6. -->
 <!-- Ghi chú dịch giả: các hệ số 691/210, 35/2, 3617/30, 43867/42, 1222277/110,
      854513/6 đúng là các số Bernoulli B12, B14, B16, B18, B20, B22 nhân với hệ số
      (2m+1) và dấu luân phiên. Cụ thể, chia mỗi hệ số in ra cho (2m)(2m+1) thì thu được

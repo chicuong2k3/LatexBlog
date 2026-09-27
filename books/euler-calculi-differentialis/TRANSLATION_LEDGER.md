@@ -1344,7 +1344,17 @@ Bổ sung trang 59 vào `chapters/01-sai-lech-huu-han.md`: mở đầu §29 và 
 
 **Dấu chấm lửng ở cuối trang:** bản in kết thúc cột công thức bằng một vạch dài, báo hiệu công thức còn tiếp sang trang 60.
 
-**Còn lại trong chương:** PDF 60–62 (tr. 32–34), gồm phần còn lại của §29 và §30–§33.
+### 2026-09-28 — Chương I, Phần 17 (PDF 60, tr. 32, hết §29 và mở §30)
+
+Bổ sung trang 60 vào `chapters/01-sai-lech-huu-han.md`: bốn số hạng cuối của công thức §29 cùng dấu `&c. + C`, lời bình của Euler về các hệ số thuần số học, rồi toàn bộ phần dẫn của §30 (công thức chỉ dùng được khi $n$ là số nguyên dương; các bậc chẵn bị thiếu vì hệ số bằng 0; các mũ âm và phân số vẫn dùng được, trừ $n=-1$; bắt đầu ví dụ $n=-2$). Không thêm callout. **Chưa niêm phong**; còn §30 (nối tiếp) và §31–§33 (PDF 61–62).
+
+**Đã soi bản scan:** toàn trang 60.
+
+**Bốn hệ số cuối cũng khớp quy luật đã ghi ở trang 59:** $\frac{1181820455}{546} = B_{24}\cdot 25$, $\frac{76977927}{2} = B_{26}\cdot 27$, $\frac{23749461029}{30} = B_{28}\cdot 29$, $\frac{8615841276005}{462} = B_{30}\cdot 31$. Như vậy quy luật đã được xác nhận trên 15 hệ số liên tiếp, từ $B_2$ đến $B_{30}$.
+
+**Đã kiểm lý do §30 nêu về các số hạng bị thiếu:** các số mũ xuất hiện trong công thức là $n+1$, $n$, $n-1$, $n-3$, $n-5$, $n-7$, &c. — quả thật không có $n-2$, $n-4$, $n-6$, $n-8$, nên hệ số của chúng bằng 0 như Euler nói. Lưu ý ông còn nói hệ số của số hạng $x^n$ không tuân theo quy luật ấy mà bằng $-\frac12$.
+
+**Còn lại trong chương:** PDF 61–62 (tr. 33–34), gồm phần còn lại của §30 và §31–§33. Catchword ở cuối trang 60 là `Σ 1/xx`.
 
 
 

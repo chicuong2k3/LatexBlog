@@ -102,7 +102,8 @@ Các chương đã dịch:
 | 15 | `chapters/15-tam-chan-nhom-va-vi-sao-no-tiet-kiem-nang-luong.md` | 65–67 | Tấm chắn nhôm, và vì sao nó tiết kiệm năng lượng. **Đã dịch, đã đối chiếu scan.** |
 | 16 | `chapters/16-khi-nao-tam-chan-con-ich-va-khi-nao-no-thanh-tro-ngai.md` | 68–70 | Khi nào tấm chắn còn ích, và khi nào nó thành trở ngại. **Đã dịch, đã đối chiếu scan.** |
 | 17 | `chapters/17-ba-kieu-bong-den-va-su-phong-boi-vao-cuong-thuy-tinh.md` | 71–73 | Ba kiểu bóng đèn, và sự phóng bội vào cuống thuỷ tinh. **Đã dịch, đã đối chiếu scan.** |
-| 18 | — | 74–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 18 | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md` | 74–76 | Khi thủy tinh nứt, và vật thể không dẫn điện vẫn sáng được. **Đã dịch, đã đối chiếu scan.** |
+| 19–22 | — | 77–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 

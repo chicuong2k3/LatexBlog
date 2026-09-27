@@ -102,9 +102,9 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 89 | 71 | `chapters/17-ba-kieu-bong-den-va-su-phong-boi-vao-cuong-thuy-tinh.md`| bài giảng, trang in 71 theo thứ tự |`fig-p071-00.jpg` (Hình 20)|**Đã dịch, đã đối chiếu scan**|
 | 90 | 72 | `chapters/17-ba-kieu-bong-den-va-su-phong-boi-vao-cuong-thuy-tinh.md`| bài giảng, trang in 72 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 91 | 73 | `chapters/17-ba-kieu-bong-den-va-su-phong-boi-vao-cuong-thuy-tinh.md`| bài giảng, trang in 73 theo thứ tự |`fig-p073-00.jpg` (Hình 21); `fig-p073-01.jpg` (Hình 22)|**Đã dịch, đã đối chiếu scan**|
-| 92 | — | — | bài giảng, trang in 74 theo thứ tự | — | Chưa dịch |
-| 93 | 75 | — | bài giảng, trang in 75 theo thứ tự | — | Chưa dịch |
-| 94 | 76 | — | bài giảng, trang in 76 theo thứ tự | — | Chưa dịch |
+| 92 | — | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md`| bài giảng, trang in 74 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 93 | 75 | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md`| bài giảng, trang in 75 theo thứ tự |`fig-p075-00.jpg` (Hình 23)|**Đã dịch, đã đối chiếu scan**|
+| 94 | 76 | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md`| bài giảng, trang in 76 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 95 | 77 | — | bài giảng, trang in 77 theo thứ tự | — | Chưa dịch |
 | 96 | 78 | — | bài giảng, trang in 78 theo thứ tự | — | Chưa dịch |
 | 97 | 79 | — | bài giảng, trang in 79 theo thứ tự | — | Chưa dịch |

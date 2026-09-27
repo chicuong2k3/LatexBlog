@@ -7,9 +7,11 @@ number: 1
 status: chua-hoan-thanh
 ---
 
-<!-- Nguồn: PDF 31-35, tức trang in 3-7. Đã đọc trực tiếp ảnh scan ở PDF 31, 33, 35;
-     phần văn xuôi ở PDF 32 và 34 lấy từ lớp OCR, xem TRANSLATION_LEDGER.md.
-     Bản dịch đang được soạn; các đoạn chưa dịch được đánh dấu ở cuối từng trang. -->
+<!-- Nguồn: PDF 31-62, tức trang in 3-34, hết CAPUT I gồm §1-§33. Mọi trang đã đọc
+     trực tiếp từ ảnh scan; lớp OCR chỉ dùng làm bản nháp để đối chiếu, và ở các
+     vùng công thức nó hỏng nặng nên toàn bộ phân số phải đọc từ ảnh. Các chỗ đã
+     soi kỹ, chỗ lỗi của bản in và chỗ đọc chưa chắc đều ghi ở TRANSLATION_LEDGER.md
+     và trong các ghi chú dịch giả ngay tại chỗ. -->
 
 # Caput I
 

@@ -93,7 +93,8 @@ Các chương đã dịch:
 | 06 | `chapters/06-tam-sang-lien-tuc-cuc-quang-va-luong-sang-ma.md` | 28–35 | Tấm sáng liên tục, cực quang và luồng sáng ma. **Đã dịch, đã đối chiếu scan.** |
 | 07 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md` | 36–43 | Cách điện bằng dầu, phóng điện chổi lông và tự cảm. **Đã dịch, đã đối chiếu scan.** |
 | 08 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md` | 44–48 | Chổi lông quay, sự nhạy cảm tĩnh điện và từ tính. **Đã dịch, đã đối chiếu scan.** |
-| 09–17 | — | 49–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 09 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md` | 49–51 | Vì sao chổi lông hình thành, và lời hứa về điện tín. **Đã dịch, đã đối chiếu scan.** |
+| 10–17 | — | 52–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 

@@ -77,9 +77,9 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 64 | 46 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 46 theo thứ tự |`fig-p046-00.jpg` (Hình 15, 16)|**Đã dịch, đã đối chiếu scan**|
 | 65 | 47 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 47 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 66 | 48 | `chapters/08-choi-long-quay-sen-nhay-cam-tinh-dien-va-tu-tinh.md`| bài giảng, trang in 48 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
-| 67 | 49 | — | bài giảng, trang in 49 theo thứ tự | — | Chưa dịch |
-| 68 | 50 | — | bài giảng, trang in 50 theo thứ tự | — | Chưa dịch |
-| 69 | 51 | — | bài giảng, trang in 51 theo thứ tự | — | Chưa dịch |
+| 67 | 49 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md`| bài giảng, trang in 49 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 68 | 50 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md`| bài giảng, trang in 50 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 69 | 51 | `chapters/09-vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin.md`| bài giảng, trang in 51 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
 | 70 | — | — | bài giảng, trang in 52 theo thứ tự | — | Chưa dịch |
 | 71 | — | — | bài giảng, trang in 53 theo thứ tự | — | Chưa dịch |
 | 72 | 54 | — | bài giảng, trang in 54 theo thứ tự | — | Chưa dịch |

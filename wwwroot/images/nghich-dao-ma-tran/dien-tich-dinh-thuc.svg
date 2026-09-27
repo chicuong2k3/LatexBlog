@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+    <marker id="bl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+  </defs>
+
+  <!-- ================= PANEL 1 : det = 2 ================= -->
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="26" y1="74" x2="26" y2="250"/>
+    <line x1="70" y1="74" x2="70" y2="250"/>
+    <line x1="114" y1="74" x2="114" y2="250"/>
+    <line x1="158" y1="74" x2="158" y2="250"/>
+    <line x1="202" y1="74" x2="202" y2="250"/>
+    <line x1="246" y1="74" x2="246" y2="250"/>
+    <line x1="70" y1="250" x2="246" y2="250"/>
+    <line x1="70" y1="206" x2="246" y2="206"/>
+    <line x1="70" y1="162" x2="246" y2="162"/>
+    <line x1="70" y1="118" x2="246" y2="118"/>
+    <line x1="70" y1="74" x2="246" y2="74"/>
+  </g>
+  <line x1="20" y1="250" x2="272" y2="250" stroke="#64748b" stroke-width="2" marker-end="url(#ax)"/>
+  <line x1="70" y1="256" x2="70" y2="52" stroke="#64748b" stroke-width="2" marker-end="url(#ax)"/>
+  <text x="276" y="255" fill="#64748b" font-style="italic">x</text>
+  <text x="54" y="48" fill="#64748b" font-style="italic">y</text>
+  <text x="54" y="267" fill="#64748b" font-style="italic">O</text>
+
+  <polygon points="70,250 114,250 114,206 70,206" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="80" y="243" fill="#64748b" font-size="13">ô vuông đơn vị</text>
+
+  <polygon points="70,250 158,250 202,206 114,206" fill="#e63e8f" fill-opacity="0.16" stroke="#e63e8f" stroke-width="2.5"/>
+  <line x1="70" y1="250" x2="158" y2="250" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+  <line x1="70" y1="250" x2="114" y2="206" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+  <text x="150" y="272" text-anchor="middle" fill="#2563eb">(2, 0)</text>
+  <text x="86" y="200" fill="#2563eb">(1, 1)</text>
+  <text x="164" y="232" fill="#e63e8f" font-weight="bold">diện tích = 2</text>
+
+  <text x="158" y="306" text-anchor="middle" fill="#0f172a" font-weight="bold">ad − bc = 2·1 − 1·0 = 2</text>
+  <text x="158" y="326" text-anchor="middle" fill="#475569" font-size="14">diện tích nhân lên 2 lần</text>
+
+  <!-- ================= PANEL 2 : det = 0 ================= -->
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="426" y1="74" x2="426" y2="250"/>
+    <line x1="470" y1="74" x2="470" y2="250"/>
+    <line x1="514" y1="74" x2="514" y2="250"/>
+    <line x1="558" y1="74" x2="558" y2="250"/>
+    <line x1="602" y1="74" x2="602" y2="250"/>
+    <line x1="646" y1="74" x2="646" y2="250"/>
+    <line x1="470" y1="250" x2="646" y2="250"/>
+    <line x1="470" y1="206" x2="646" y2="206"/>
+    <line x1="470" y1="162" x2="646" y2="162"/>
+    <line x1="470" y1="118" x2="646" y2="118"/>
+    <line x1="470" y1="74" x2="646" y2="74"/>
+  </g>
+  <line x1="420" y1="250" x2="672" y2="250" stroke="#64748b" stroke-width="2" marker-end="url(#ax)"/>
+  <line x1="470" y1="256" x2="470" y2="52" stroke="#64748b" stroke-width="2" marker-end="url(#ax)"/>
+  <text x="676" y="255" fill="#64748b" font-style="italic">x</text>
+  <text x="454" y="48" fill="#64748b" font-style="italic">y</text>
+  <text x="454" y="267" fill="#64748b" font-style="italic">O</text>
+
+  <polygon points="470,250 514,250 514,206 470,206" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <line x1="470" y1="250" x2="558" y2="162" stroke="#e63e8f" stroke-width="4" stroke-linecap="round"/>
+  <line x1="470" y1="250" x2="514" y2="206" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+  <text x="566" y="164" fill="#e63e8f" font-weight="bold">cả mặt phẳng bị ép</text>
+  <text x="566" y="184" fill="#e63e8f" font-weight="bold">xuống một đường thẳng</text>
+  <text x="490" y="222" fill="#2563eb" font-size="13">cột 1 = cột 2 = (1, 1)</text>
+  <text x="470" y="240" fill="#64748b" font-size="13">diện tích = 0</text>
+
+  <text x="558" y="306" text-anchor="middle" fill="#0f172a" font-weight="bold">ad − bc = 1·1 − 1·1 = 0</text>
+  <text x="558" y="326" text-anchor="middle" fill="#475569" font-size="14">hình bình hành biến thành một đoạn</text>
+</svg>

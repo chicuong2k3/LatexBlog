@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" font-family="'Segoe UI',Arial,sans-serif" font-size="15">
+  <defs>
+    <marker id="bl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+  </defs>
+
+  <!-- boxes -->
+  <rect x="40" y="44" width="300" height="88" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="430" y="44" width="300" height="88" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="430" y="188" width="300" height="88" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="188" width="300" height="88" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- box text -->
+  <text x="190" y="68" text-anchor="middle" fill="#e63e8f" font-size="14" font-weight="bold">(a)</text>
+  <text x="190" y="94" text-anchor="middle" fill="#0f172a">A khả nghịch</text>
+  <text x="190" y="116" text-anchor="middle" fill="#475569" font-size="14">tồn tại A⁻¹ với AA⁻¹ = A⁻¹A = I</text>
+
+  <text x="580" y="68" text-anchor="middle" fill="#e63e8f" font-size="14" font-weight="bold">(b)</text>
+  <text x="580" y="94" text-anchor="middle" fill="#0f172a">Ax = 0 chỉ có</text>
+  <text x="580" y="116" text-anchor="middle" fill="#0f172a">nghiệm tầm thường</text>
+
+  <text x="580" y="212" text-anchor="middle" fill="#e63e8f" font-size="14" font-weight="bold">(c)</text>
+  <text x="580" y="238" text-anchor="middle" fill="#0f172a">dạng bậc thang rút gọn</text>
+  <text x="580" y="260" text-anchor="middle" fill="#0f172a">của A là ma trận không</text>
+
+  <text x="190" y="212" text-anchor="middle" fill="#e63e8f" font-size="14" font-weight="bold">(d)</text>
+  <text x="190" y="238" text-anchor="middle" fill="#0f172a">A là tích của</text>
+  <text x="190" y="260" text-anchor="middle" fill="#0f172a">các ma trận sơ cấp</text>
+
+  <!-- cycle arrows -->
+  <line x1="352" y1="88" x2="416" y2="88" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+  <line x1="580" y1="142" x2="580" y2="178" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+  <line x1="416" y1="232" x2="352" y2="232" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+  <line x1="190" y1="178" x2="190" y2="142" stroke="#2563eb" stroke-width="2.5" marker-end="url(#bl)"/>
+
+  <text x="390" y="310" text-anchor="middle" fill="#475569" font-size="14">một vòng khép kín, nên bốn điều kiện này tương đương nhau</text>
+</svg>

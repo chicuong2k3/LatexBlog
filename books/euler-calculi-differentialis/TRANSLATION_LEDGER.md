@@ -1413,5 +1413,21 @@ Bằng chứng cho từng mốc đã sửa, đều là trang tiêu đề có ti�
 
 **Trạng thái Chương I, lần này đã đối chiếu:** đủ 36 trang nguồn, PDF 31–66, tức trang in 3–38, §1–§36 và EXEMPLUM I–VI. **Chưa niêm phong**; chỉ chủ sở hữu mới ghi `status: hoan-thanh`.
 
+### 2026-09-28 — Chương II, Phần 1 (PDF 67–71, tr. 39–43, §37–§43)
+
+Mở đầu CAPUT II trong `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: trang tiêu đề `CAPUT II. DE VSV DIFFERENTIARVM IN DOCTRINA SERIERVM.` cùng §37 (phân loại chuỗi theo bậc của differentia) và §38 (không phải chuỗi nào cũng quy về các loại ấy, vì cấp số nhân không cho differentia hằng); rồi §39 (số hạng tổng quát và số hạng tổng kết), §40 (chỉ số và cách đối chiếu chuỗi với dãy differentia), §41 (bậc nhất: cấp số cộng), §42 (bậc hai, kèm bảng) và mở §43 (bậc ba). Chưa thêm callout. **Chưa niêm phong**; còn PDF 72–97 (tr. 44–69).
+
+**Đã soi bản scan:** toàn trang 67, 68, 69, 70, 71, cộng sáu mức phóng (18, 20, 22, 26) cho các dòng chữ số nhỏ ở §43 và dòng `aut denique`. Lớp OCR hỏng ở mọi số mũ La-tinh, nên các bảng INDICES / TERMINI / DIFFER phải đọc từ ảnh.
+
+**Bốn số hạng tổng quát của §42 đã tự kiểm.** Dãy `a; a+b; a+2b+c; a+3b+3c; a+4b+6c; a+5b+10c; a+6b+15c` khớp đúng khi cộng dồn các differentia bậc nhất `b; b+c; b+2c; ...`; và `a + (x-1)b + (x-1)(x-2)/2 · c` là số hạng tổng quát đúng. Số hạng tổng kết `2.10000 - 100 = 19900` cũng đúng, và tổng `2x³/3 - x²/2` lấy sai khác cho ra `x² - x`, đúng differentia bậc hai của chuỗi các số bình phương.
+
+**Ba số hạng tổng quát khác nhau ở §42, trong đó một dạng in sai, đã chép nguyên văn.** Dạng `qui reducitur` và dạng `vel etiam` đều đúng và là cùng một biểu thức. Dạng `aut denique` in ra sai ở hai chỗ: trong ngoặc phải dùng `a^II` chứ không phải `a^III` (số hạng tổng quát của chuỗi bậc hai chỉ liên quan tới ba số hạng đầu `a, a^I, a^II`, đúng như câu ngay dưới nói nó được định nghĩa bởi ba số hạng ấy), và hệ số `1/4` phải là `1/2`. Kiểm bằng phân tỉch với chuỗi `1, 4, 9, 16, 25, &c.` (tức `a=1, b=3, c=2`): số hạng thứ 4 đúng là 16, dạng `vel etiam` cho 16, dạng bản in cho 37/2; nếu chỉ sửa `1/4` thành `1/2` mà vẫn để `a^III` thì ra 37, vẫn sai. Sửa cả hai mới ra đúng. Cùng phép ấy đã thử trên bốn chuỗi khác nhau và nhiều chỉ số: hai dạng đầu luôn khớp, dạng bản in luôn lệch.
+
+**Một số mũ bị mất trong bản in, đã chép nguyên văn.** Ở §43, câu liệt kê differentia bậc ba in ra là `d, d^I, d, &c.`: chữ `d` thứ ba không có số mũ, trong khi hai dòng ngay trên có đủ (`b, b^I, b^II, b^III` và `c, c^I, c^II, c^III`). Đúng phải là `d^II`. Trong bảng, dòng DIFFER. III. có cả ba số mũ mòn đến mức không đọc được, nên chép ba chữ `d` trần và đã ghi rõ sự nghi vấn này trong chương.
+
+**Chỗ đọc không chắc đã ghi, không dám chắc.** Số `7` ở dòng INDICES của trang 69 bị bào mòn gần hết, chỉ còn vỏ ngoài; vẫn đọc là 7 vì khớp với dòng TERMINI ngay dưới.
+
+**Dấu ở chân trang:** trang 67 có hoa văn trang trí và catchword `1, 2,`; trang 68 cắt ở `40. In-`; trang 69 có catchword `Ex`; trang 70 cắt ở `vti ex natura` với catchword `tura`; trang 71 có catchword `Quia`. Số trang xen kẽ bên trái và bên phải như mọi chương khác.
+
 
 

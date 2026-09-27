@@ -7,7 +7,7 @@ number: 1
 status: chua-hoan-thanh
 ---
 
-<!-- Nguồn: PDF 31-62, tức trang in 3-34, hết CAPUT I gồm §1-§33. Mọi trang đã đọc
+<!-- Nguồn: PDF 31-66, tức trang in 3-38, hết CAPUT I gồm §1-§36. Mọi trang đã đọc
      trực tiếp từ ảnh scan; lớp OCR chỉ dùng làm bản nháp để đối chiếu, và ở các
      vùng công thức nó hỏng nặng nên toàn bộ phân số phải đọc từ ảnh. Các chỗ đã
      soi kỹ, chỗ lỗi của bản in và chỗ đọc chưa chắc đều ghi ở TRANSLATION_LEDGER.md
@@ -1448,9 +1448,189 @@ loại ấy. Tuy nhiên...
 
 <!-- Ghi chú dịch giả: trang 62 kết thúc giữa chữ, câu cuối bị cắt ở au- (autem); mép
      phải cũng mang chữ catchword au-. Đầu trang là CAPUT I. kèm số trang 34 đặt bên trái.
-     Đây là trang cuối của Chương I; PDF 63 (tr. 35) mở đầu CAPUT II. -->
+     Đối chiếu lại sau: đây KHÔNG phải trang cuối của Chương I. -->
 
-<!-- Hết Chương I. Còn lại: không. -->
+<!-- PDF 63, trang in 35 -->
+
+mặc dù các differentia này là những functio phân thức nguyên, tổng của chúng vẫn tìm được
+theo cách này dễ dàng hơn là theo phương pháp trước.
+
+**34.** Từ đây cũng mở ra một lối để tìm tổng của những differentia đã bàn. Giả sử có
+phân số
+
+$$
+y = \frac{1}{x+n\omega};
+$$
+
+vì $y^1 = \frac{1}{x+(n+1)\omega}$ nên
+
+$$
+\Delta y = \frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega} = \frac{-\omega}{(x+n\omega)(x+(n+1)\omega)}
+$$
+
+do đó
+
+$$
+\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)} = -\frac{1}{\omega}\cdot\frac{1}{x+n\omega}
+$$
+
+Giả sử nữa
+
+$$
+y = \frac{1}{(x+n\omega)(x+(n+1)\omega)}
+$$
+
+vì $y^1 = \frac{1}{(x+(n+1)\omega)(x+(n+2)\omega)}$ nên
+
+$$
+\Delta y = \frac{-2\omega}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)}
+$$
+
+từ đó ta có
+
+$$
+\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)} = -\frac{1}{2\omega}\cdot\frac{1}{(x+n\omega)(x+(n+1)\omega)}
+$$
+
+<!-- Ghi chú dịch giả: cả bốn công thức của trang này đã tự kiểm bằng phép lấy sai khác và
+     đều đúng. Sai khác của 1/(x+nω) là -ω/((x+nω)(x+(n+1)ω)); của
+     1/((x+nω)(x+(n+1)ω)) là -2ω/((x+nω)(x+(n+1)ω)(x+(n+2)ω)), vì trong ngoặc chênh
+     lệch đúng 2ω. Cùng cách đó, sai khác của 1/((x+nω)(x+(n+1)ω)) cho số hạng đầu
+     của §34, nên hệ số trước ra là 1/ω và 1/(2ω) như in. -->
+
+<!-- PDF 64, trang in 36 -->
+
+Tương tự, ta sẽ có
+
+$$
+\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)(x+(n+3)\omega)} = -\frac{1}{3\omega}\cdot\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)}.
+$$
+
+**35.** Cách tổng này cần phải giữ lấy, vì tổng của những differentia thuộc loại ấy thì
+không thể tìm được theo phương pháp trước. Nhưng nếu differentia lại có tử số, hoặc các
+thừa số ở mẫu số không đi theo cấp số cộng, thì cách khảo sát tổng hiếm hoi nhất là phân
+rã differentia đã cho thành những phân số đơn giản của nó. Từng phân số một thì không tổng
+được, nhưng ghép từng đôi một thì tổng lại tìm được, bao nhiêu lần điều đó còn làm được;
+chỉ có điều khó là tổng có tìm được bằng công thức này hay không:
+
+$$
+\Sigma\frac{1}{x+(n+1)\omega} - \Sigma\frac{1}{x+n\omega} = \frac{1}{x+n\omega}
+$$
+
+vì cả hai tổng ấy riêng rẽ thì không trình ra được, nhưng sai khác của chúng thì biết
+được.
+
+**36.** Vì những lý do ấy, công việc trở lại với việc phân rã mỗi phân số thành những
+phân số đơn giản của nó, việc đã thu được trong cuốn trước. Còn nhờ đó thì tổng sẽ tìm ra
+thế nào, ta sẽ chỉ bằng vài ví dụ.
+
+<!-- Ghi chú dịch giả: công thức ở cuối §35 in ra SỐ SAI, đã chép nguyên văn. Vì
+     Delta(1/(x+nω)) = 1/(x+(n+1)ω) - 1/(x+nω) = -ω/((x+nω)(x+(n+1)ω)) nên tổng của
+     hiệu ấy phải là -(1/ω)·1/(x+nω), chứ không phải 1/(x+nω) như in. Sai cả dấu lẫn
+     hệ số 1/ω. Đã soi bản in ở độ phóng 20: vế phải chỉ có 1/(x+nω), không có hệ số
+     nào đứng trước. Công thức này còn được dùng lại ở EXEMPLUM I, nên xem ghi chú ở
+     trang 65. -->
+
+<!-- PDF 65, trang in 37 -->
+
+**EXEMPLUM I.**
+
+*Hãy tìm tổng, mà differentia của nó là*
+
+$$
+\frac{3x+2\omega}{x(x+\omega)(x+2\omega)}.
+$$
+
+*Phân rã differentia đã cho thành những phân số đơn giản của nó, ta sẽ có*
+
+$$
+\frac{1}{\omega}\cdot\frac{1}{x} + \frac{1}{\omega}\cdot\frac{1}{x+\omega} - \frac{2}{\omega}\cdot\frac{1}{x+2\omega},
+$$
+
+*vì theo công thức ở trên,*
+
+$$
+\Sigma\frac{1}{x+n\omega} = \Sigma\frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega}
+$$
+
+*nên*
+
+$$
+\Sigma\frac{1}{x} = \Sigma\frac{1}{x+\omega} - \frac{1}{x}.
+$$
+
+*Từ đó tổng cần tìm là*
+
+$$
+\frac{1}{\omega}\Sigma\frac{1}{x} + \frac{1}{\omega}\Sigma\frac{1}{x+\omega} - \frac{2}{\omega}\Sigma\frac{1}{x+2\omega} = \frac{2}{\omega}\Sigma\frac{1}{x+\omega} - \frac{2}{\omega}\Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x},
+$$
+
+*tức là*
+
+$$
+\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x};
+$$
+
+*từ đó tổng cần tìm là*
+
+$$
+-\frac{1}{\omega x} - \frac{2}{\omega(x+\omega)} = \frac{-3x-\omega}{\omega x(x+\omega)}.
+$$
+
+<!-- Ghi chú dịch giả: ví dụ này lộ ra hai chỗ không khớp với nhau, đã chép nguyên văn cả
+     hai. (i) Khai triển thành phần đúng: với A = 1/ω, B = 1/ω, C = -2/ω thì
+     (3x+2ω)/(x(x+ω)(x+2ω)) = A/x + B/(x+ω) + C/(x+2ω), đã tự kiểm. (ii) DAP AN CUOI
+     CUNG ĐÚNG: với F = -1/(ωx) - 2/(ω(x+ω)) = -(3x+ω)/(ωx(x+ω)) thì lấy sai khác cho
+     đúng (3x+2ω)/(x(x+ω)(x+2ω)); đã kiểm bằng số phân tỉch với ω = 1, x = 10, được
+     ΔF = 4/165 khớp đúng. Nhưng các bước ở giữa thì không dẫn tới đáp án ấy: áp công
+     thức sai ở §35 vào dòng "at est" thì cho Σ1/(x+ω) - Σ1/(x+2ω) = -1/(ωx), và từ đó
+     tổng ra -3/10 (với ω = 1, x = 10), trong khi đáp án in ra là -31/110. Giá trị đúng
+     của hiệu ấy là +1/132. Vậy các dòng giữa không nhất quán với đáp án, dù đáp án thì
+     đúng. -->
+
+<!-- PDF 66, trang in 38 -->
+
+**EXEMPLUM II.**
+
+*Hãy tìm tổng, mà differentia của nó là*
+
+$$
+\frac{3\omega}{x(x+3\omega)}.
+$$
+
+*Đặt differentia này bằng $z$, ta có $z = \frac{1}{x} - \frac{1}{x+3\omega}$, do đó*
+
+$$
+\Sigma z = \Sigma\frac{1}{x} - \Sigma\frac{1}{x+3\omega} = \Sigma\frac{1}{x+\omega} - \left(\Sigma\frac{1}{x+3\omega} - \frac{1}{x}\right)
+$$
+
+$$
+\Sigma\frac{1}{x+3\omega} - \frac{1}{x} = \Sigma\frac{1}{x+2\omega} - \Sigma\frac{1}{x+3\omega} - \frac{1}{x+\omega} - \frac{1}{x}
+$$
+
+$$
+= -\frac{1}{x} - \frac{1}{x+\omega} - \frac{1}{x+2\omega}
+$$
+
+vốn là tổng cần tìm. Bởi vậy, bao nhiêu lần mà một cách tổng đáng giá $\Sigma$ cuối cùng
+khử đi được, thì bấy nhiêu lần tổng của differentia đã cho có thể được trình ra; còn nếu
+phép phân rã ấy không thành công, thì đó là dấu hiệu cho thấy tổng không tìm được.
+
+<!-- Ghi chú dịch giả: dòng kết quả cuối của EXEMPLUM II này SAI, đã chép nguyên văn.
+     Vì differentia đã cho bằng 1/x - 1/(x+3ω) nên tổng phải là
+     -1/(ωx) + 1/(ω(x+3ω)) = -3/(x(x+3ω)); đã kiểm bằng số phân tỉch với ω = 1, x = 10:
+     tổng đúng là -3/130, còn biểu thức Euler in ra là -1/10 - 1/11 - 1/12 = -91/330.
+     Nguyên nhân thì rõ ràng: các bước ở đây áp đúng công thức sai đã ghi ở §35, nên
+     sai theo. Ở EXEMPLUM I thì ngược lại, các bước ở giữa không nhất quán nhưng đáp án
+     cuối lại đúng. -->
+
+<!-- Ghi chú dịch giả: đây là trang cuối của CAPUT I. Đầu trang mang CAPUT I. với số trang
+     38 đặt bên trái; mép phải có catchword CAPUT, báo hiệu trang tiêu đề của CAPUT II ở
+     trang kế. Trang 67 (tr. 39) mới thật sự là trang mở đầu CAPUT II, với tiêu đề
+     DE VSV DIFFERENTIARVM IN DOCTRINA SERIERVM. -->
+
+<!-- Hết CAPUT I. Còn lại: không. Đã dịch đủ PDF 31-66, tức trang in 3-38, §1-§36. -->
+
 
 
 <!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4, ...)

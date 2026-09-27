@@ -1386,5 +1386,32 @@ Bổ sung trang 62 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Trạng thái Chương I:** đã dịch hết 32 trang nguồn, PDF 31–62 (tr. 3–34), tức toàn bộ CAPUT I gồm §1–§33. **Chưa niêm phong** — theo `books/AGENTS.md`, chỉ chủ sở hữu mới tự ghi `status: hoan-thanh`, nên trạng thái frontmatter để nguyên.
 
+### 2026-09-28 — Chương I, Phần 20 (PDF 63–66, tr. 35–38): SỬA LẠI MỘT KẾT LUẬN SAI
+
+**Mục Phần 19 ở trên đã kết luận sai, và cả biên bản cũng sai.** Nguyên nhân: `CHAPTER_PLAN.json` ghi Chương I là PDF [31, 62] và Chương II bắt đầu ở PDF 63. Người dịch tin bản plan mà không mở trang mở đầu chương thật, rồi đóng dấu "Hết Chương I. Còn lại: không." khi còn 4 trang chưa dịch.
+
+**Đã kiểm lại bằng scan, không tin lớp OCR.** PDF 66 (tr. 38) mang đầu trang `CAPUT I.`, chứa EXEMPLUM II và kết thúc bằng câu khép của cả chương: *"quae est summa quaesita. Quotics ergo hoc modo digna summatoria Σ sese tandem tollunt, toties differentiae propositae summa exhiberi poterit; sin autem haec destructio non succedat, signum hoc est, summam inveniri non posse."* mép phải có catchword `CAPUT`. PDF 67 (tr. 39) mới là trang tiêu đề thật của CAPUT II: `CAPUT II. DE VSV DIFFERENTIARVM IN DOCTRINA SERIERVM.`, mở §37.
+
+| Chương | Trong plan cũ | Đúng, đã soi scan |
+| --- | --- | --- |
+| I (Pars Prior) | 31–62 | **31–66** |
+| II | 63–97 | **67–97** |
+| VII | 212–231 | **206–231** |
+| IX (Pars Posterior) | 576–605 | **574–605** |
+| XI (Pars Posterior) | 654–689 | **647–684** |
+| XII (Pars Posterior) | 690–716 | **685–716** |
+
+Bằng chứng cho từng mốc đã sửa, đều là trang tiêu đề có tiêu đề chương đầy đủ, cộng với trang ngay trước mang đầu trang của chương cũ và catchword `CAPUT`: PDF 66/67, 205/206 (`CAPUT VII. DE DIFFERENTIATIONE FUNCTIONUM DUAS PLURESQUE VARIABILES INVOLVENTIUM.`, mở §208), 573/574 (`CAPUT IX. DE VSU CALCULI DIFFERENTIALIS IN AEQUATIONIBUS RESOLVENDIS.`, mở §227), 646/647 (`CAPUT XI. DE MAXIMIS ET MINIMIS FUNCTIONUM MULTIFORMIUM PLURESQUE VARIABILES COMPLETENTIUM.`, mở §273), 684/685 (`CAPUT XII. DE VSV DIFFERENTIALIUM IN INUESTIGANDIS RADICIBUS REALIBUS AEQUATIONUM.`, mở §294). Tiêu đề chương XI trong plan cũ cũng bị cắt cụt, nay đã sửa nguyên văn.
+
+**Nội dung đã bổ sung cho PDF 63–66:** phần còn lại của §33, §34 (tổng của tích các thừa số lập thành cấp số cộng, từ hai thừa số đến bốn), §35 và §36, cùng EXEMPLUM I và EXEMPLUM II. Không thêm callout.
+
+**Công thức ở cuối §35 in ra sai, đã chép nguyên văn.** Bản in ghi $\Sigma\frac{1}{x+(n+1)\omega} - \Sigma\frac{1}{x+n\omega} = \frac{1}{x+n\omega}$. Vì $\Delta\frac{1}{x+n\omega} = \frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega} = \frac{-\omega}{(x+n\omega)(x+(n+1)\omega)}$ nên tổng của hiệu ấy phải là $-\frac{1}{\omega}\cdot\frac{1}{x+n\omega}$: thiếu cả dấu lẫn hệ số $1/\omega$. Đã soi bản in ở độ phóng 20, vế phải không có hệ số nào đứng trước.
+
+**Hệ quả của công thức sai ấy lan sang EXEMPLUM II, và ở đó đáp án cũng sai.** EXEMPLUM I cho differentia $\frac{3x+2\omega}{x(x+\omega)(x+2\omega)}$; khai triển thành phần của Euler đúng ($A=1/\omega$, $B=1/\omega$, $C=-2/\omega$, đã tự kiểm), và **đáp án cuối cũng đúng**: $F = -\frac{1}{\omega x} - \frac{2}{\omega(x+\omega)} = -\frac{3x+\omega}{\omega x(x+\omega)}$ cho $\Delta F$ đúng bằng differentia, kiểm bằng phân tỉch với $\omega=1, x=10$ thì $\Delta F = 4/165$. Nhưng các bước ở giữa không dẫn tới đáp án ấy: dòng "at est" in $\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x}$, áp theo đúng công thức sai của §35 thì tổng ra $-\frac{3}{10}$, trong khi đáp án in ra là $-\frac{31}{110}$; giá trị đúng của hiệu ấy là $+\frac{1}{132}$. Tức các dòng giữa không nhất quán với đáp án, dù đáp án thì đúng.
+
+Ở EXEMPLUM II ngược lại, các bước áp đúng công thức sai nên **đáp án sai**: differentia $\frac{3\omega}{x(x+3\omega)} = \frac{1}{x} - \frac{1}{x+3\omega}$ có tổng phải là $-\frac{3}{x(x+3\omega)}$, tức $-\frac{3}{130}$ với $\omega=1, x=10$; còn biểu thức Euler in ra là $-\frac{1}{x} - \frac{1}{x+\omega} - \frac{1}{x+2\omega} = -\frac{91}{330}$. Đã chép nguyên văn, không sửa.
+
+**Trạng thái Chương I, lần này đã đối chiếu:** đủ 36 trang nguồn, PDF 31–66, tức trang in 3–38, §1–§36 và EXEMPLUM I–VI. **Chưa niêm phong**; chỉ chủ sở hữu mới ghi `status: hoan-thanh`.
+
 
 

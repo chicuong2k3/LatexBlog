@@ -64,14 +64,14 @@ số dùng cho `pdftoppm -f N`. Cột **Trang in** là số trang in trên bản
 | 51 | 33 | `chapters/06-tam-sang-lien-tuc-cuc-quang-va-luong-sang-ma.md`| bài giảng, trang in 33 theo thứ tự |`fig-p033-00.jpg` (Hình 11)|**Đã dịch, đã đối chiếu scan**|
 | 52 | — | `chapters/06-tam-sang-lien-tuc-cuc-quang-va-luong-sang-ma.md`| bài giảng, trang in 34 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
 | 53 | 35 | `chapters/06-tam-sang-lien-tuc-cuc-quang-va-luong-sang-ma.md`| bài giảng, trang in 35 theo thứ tự | — |**Đã dịch, đã đối chiếu scan**|
-| 54 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 36 theo thứ tự | — | Chưa dịch |
-| 55 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 37 theo thứ tự | — | Chưa dịch |
-| 56 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 38 theo thứ tự | — | Chưa dịch |
-| 57 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 39 theo thứ tự | — | Chưa dịch |
-| 58 | — | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 40 theo thứ tự | — | Chưa dịch |
-| 59 | 41 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 41 theo thứ tự | — | Chưa dịch |
-| 60 | 42 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 42 theo thứ tự | — | Chưa dịch |
-| 61 | 43 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 43 theo thứ tự | — | Chưa dịch |
+| 54 | — | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 36 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 55 | — | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 37 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 56 | — | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 38 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 57 | — | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 39 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 58 | — | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 40 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 59 | 41 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 41 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 60 | 42 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 42 theo thứ tự |—|**Đã dịch, đã đối chiếu scan**|
+| 61 | 43 | `chapters/07-cach-dien-bang-dau-phong-dien-choi-long-va-tu-cam.md`| bài giảng, trang in 43 theo thứ tự |Hình 12, Hình 13 **chưa có plate**|**Đã dịch, đã đối chiếu scan**|
 | 62 | 44 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 44 theo thứ tự | — | Chưa dịch |
 | 63 | 45 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 45 theo thứ tự | — | Chưa dịch |
 | 64 | 46 | `chapters/01-thi-nghiem-voi-dong-dien-xoay-chieu.md` | bài giảng, trang in 46 theo thứ tự | — | Chưa dịch |

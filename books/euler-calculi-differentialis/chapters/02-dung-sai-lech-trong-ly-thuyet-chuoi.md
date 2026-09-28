@@ -628,7 +628,180 @@ sinh ra từ functio $X$ nào làm số hạng tổng quát sẽ thuộc cùng b
      phóng 8 và xác nhận đúng là "§1. Hanc", không có chữ số 5 mất mà chỉ là "§1.", dù
      mục tiếp theo hợp lý ra phải là §51. Số trang 49 đặt bên phải đầu trang. -->
 
-<!-- Chưa dịch: PDF 78-97, tức trang in 50-69, gồm phần còn lại của §50, rồi §51 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 77 là "§1. Hanc". -->
+<!-- PDF 78, trang in 50 -->
+
+**51.** Vì thế mà các chuỗi lũy thừa của những số tự nhiên dẫn tới differentia hằng, như
+có thể thấy rõ từ bảng sau đây.
+
+**POTEST. I.**
+
+$$
+1,\quad 2,\quad 3,\quad 4,\quad 5,\quad 6,\quad 7,\quad 8,\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\quad \&c.
+$$
+
+**POTEST. II.**
+
+$$
+1,\quad 4,\quad 9,\quad 16,\quad 25,\quad 36,\quad 49,\quad 64,\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+3,\quad 5,\quad 7,\quad 9,\quad 11,\quad 13,\quad 15,\quad \&c.
+$$
+
+**DIFFER. II.**
+
+$$
+2,\qquad 2,\qquad 2,\qquad 2,\qquad 2,\qquad 2,\quad \&c.
+$$
+
+**POTEST. III.**
+
+$$
+1,\quad 8,\quad 27,\quad 64,\quad 125,\quad 216,\quad 343,\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+7,\quad 19,\quad 37,\quad 61,\quad 91,\quad 127,\quad \&c.
+$$
+
+**DIFFER. II.**
+
+$$
+12,\quad 18,\quad 24,\quad 30,\quad 36,\quad \&c.
+$$
+
+**DIFFER. III.**
+
+$$
+6,\qquad 6,\qquad 6,\qquad 6,\quad \&c.
+$$
+
+**POTEST. IV.**
+
+$$
+1,\quad 16,\quad 81,\quad 256,\quad 625,\quad 1296,\quad 2401,\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+15,\quad 65,\quad 175,\quad 369,\quad 671,\quad 1105,\quad \&c.
+$$
+
+**DIFFER. II.**
+
+$$
+50,\quad 110,\quad 194,\quad 302,\quad 434,\quad \&c.
+$$
+
+**DIFFER. III.**
+
+$$
+60,\quad 84,\quad 108,\quad 132,\quad \&c.
+$$
+
+**DIFFER. IV.**
+
+$$
+24,\qquad 24,\qquad 24,\quad \&c.
+$$
+
+<!-- Ghi chú dịch giả: toàn bộ hai mươi dòng số ở trang này đã tự kiểm bằng cách dựng
+     chuỗi 1^k, 2^k, 3^k, ... rồi lấy hiệu từng bậc, và cả hai mươi dòng đều khớp đúng
+     với bản in, không riêng số hạng nào sai. Chẳng hạn với k=2, hiệu bậc nhất là
+     3, 5, 7, 9, 11, 13, 15 và hiệu bậc hai là 2, 2, 2, 2, 2, 2; với k=3, hiệu bậc nhất là
+     7, 19, 37, 61, 91, 127, hiệu bậc hai là 12, 18, 24, 30, 36 và hiệu bậc ba là
+     6, 6, 6, 6; với k=4, hiệu bậc nhất là 15, 65, 175, 369, 671, 1105, hiệu bậc hai là
+     50, 110, 194, 302, 434, hiệu bậc ba là 60, 84, 108, 132, và hiệu bậc bốn là
+     24, 24, 24. Chuỗi POTEST. I. là 1, 2, 3, ... nên hiệu bậc nhất là dãy toàn một. -->
+
+<!-- Ghi chú dịch giả: mỗi dòng DIFFER. mất đúng một số hạng so với dòng ngay trên, vì
+     lấy hiệu một lần thì số số hạng giảm đi một; các dòng ở đây đều bị cắt cụt ở cùng
+     chỗ nên không thấy rõ điều đó, nhưng vẫn khớp với cách in. Số trang 50 đặt bên trái
+     đầu trang. Trang này không có dấu hiệu chữ ở giữa chân trang, khác với các trang
+     trước. Mép phải chân trang mang chữ bắt Quae, mở đầu câu của trang kế. -->
+
+<!-- PDF 79, trang in 51 -->
+
+Vậy những điều đã dạy ở chương trước về cách tìm differentia của mọi bậc, nay được áp dụng
+vào đây để tìm các số hạng tổng quát của differentia bậc thứ tư, vốn sinh ra từ các chuỗi.
+
+**52.** Nếu số hạng tổng quát của một chuỗi bất kỳ đã biết, thì nhờ đó không chỉ mọi số
+hạng của nó vô hạn đều tìm được, mà còn có thể kéo dài chuỗi ngược lại, và trình bày được
+cả những số hạng mà số mũ của chúng là những số âm, bằng cách thay $x$ bằng các số âm.
+Chẳng hạn, nếu số hạng tổng quát là
+
+$$
+\frac{xx + 3x}{2},
+$$
+
+thì khi lấy $x$ làm chỉ số, vừa âm vừa dương, chuỗi sẽ được kéo dài cả hai phía như sau.
+
+**INDICES.**
+
+$$
+\&c.\ -5,\ -4,\ -3,\ -2,\ -1,\quad 0,\quad 1,\quad 2,\quad 3,\quad 4,\quad 5,\quad 6,\quad \&c.
+$$
+
+**SERIES.**
+
+$$
+\&c.\ +5,\ +2,\quad 0,\ -1,\ -1,\quad 0,\quad 2,\quad 5,\quad 9,\ 14,\ 20,\ 27,\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+-3,\ -2,\ -1,\quad 0,\quad 1,\quad 2,\quad 3,\quad 4,\quad 5,\quad 6,\quad 7,\quad \&c.
+$$
+
+**DIFFER. II.**
+
+$$
+1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1\quad \&c.
+$$
+
+Vì vậy, khi số hạng tổng quát được lập ra từ các differentia, thì bất kỳ chuỗi nào cũng có
+thể kéo dài ngược lại từ các differentia ấy; tuy vậy, nếu các differentia cuối cùng là
+hằng thì những số hạng ấy chỉ có thể được trình bày hữu hạn, còn trong trường hợp ngược
+lại thì chúng có thể được gán bằng một biểu thức vô hạn. Hơn nữa, từ số hạng tổng quát
+
+<!-- Ghi chú dịch giả: bản in viết "differentiarum quartumus", đáng lẽ phải là
+     "differentiarum quartorum" để chữ quảng hòa với "differentiarum". Đã soi và xác nhận
+     đúng là "quartumus", không phải chữ mòn. Giữ nguyên như in. -->
+
+<!-- Ghi chú dịch giả: bản in viết "loco x numeros negatius substituendo", đáng lẽ phải là
+     "negativos" để chữ quảng hòa với "numeros". Đã soi ở độ phóng 11 và xác nhận chỉ có
+     bảy chữ negatius, không có chữ v. Giữ nguyên như in. -->
+
+<!-- Ghi chú dịch giả: hai mươi số hạng ở bốn dòng bảng của trang này đã tự kiểm và đều
+     đúng. Với số hạng tổng quát (x^2+3x)/2, các chỉ số -5, -4, -3, -2, -1, 0, 1, 2, 3,
+     4, 5, 6 cho các số hạng 5, 2, 0, -1, -1, 0, 2, 5, 9, 14, 20, 27, đúng như dòng
+     SERIES. Hiệu bậc nhất là -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, đúng như dòng DIFFER. I.
+     Hiệu bậc hai là toàn một, đúng như dòng DIFFER. II., cho thấy differentia bậc hai của
+     số hạng tổng quát bậc hai này là hằng, tức chuỗi thuộc bậc hai, đúng như §50 nói.
+     Dòng DIFFER. II. có mười chữ 1, ít hơn dòng SERIES mười hai số hạng đúng hai, và ít
+     hơn dòng DIFFER. I. mười một số hạng đúng một, khớp với quy luật mỗi bậc mất một
+     số hạng. -->
+
+<!-- Ghi chú dịch giả: trang 51 kết thúc giữa chữ ở "ex termino gene-", mép phải chân trang
+     mang chữ bắt "rali" nối sang trang kế, nơi câu đó mở đầu bằng "rali". Dấu hiệu trang
+     ở giữa chân trang là "G 2". Số trang 51 đặt bên phải đầu trang. -->
+
+<!-- Chưa dịch: PDF 80-97, tức trang in 52-69, gồm phần còn lại của §52, rồi §53 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 79 là "rali". -->
+
+
 
 

@@ -1144,7 +1144,7 @@ $$
 $$
 
 $$
-\Sigma x^{3} = \frac{1}{4}x^{4} - \frac{1}{2}x^{3} + \frac{1}{2}x^{2}
+\Sigma x^{3} = \frac{1}{4}x^{4} - \frac{1}{2}x^{3} + \frac{1}{4}x^{2}
 $$
 
 $$
@@ -1152,7 +1152,7 @@ $$
 $$
 
 $$
-\Sigma x^{5} = \frac{1}{6}x^{6} - \frac{1}{2}x^{5} + \frac{2}{5}x^{4} - \frac{1}{12}x^{2}
+\Sigma x^{5} = \frac{1}{6}x^{6} - \frac{1}{2}x^{5} + \frac{5}{12}x^{4} - \frac{1}{12}x^{2}
 $$
 
 $$
@@ -1164,10 +1164,11 @@ $\omega$ thành đơn vị ở mọi chỗ. Nhờ vậy, nhờ những công th�
 chuỗi mà số hạng tổng quát là functio phân thức nguyên của chính $x$ đều có thể tìm được mau
 chóng.
 
-<!-- Ghi chú dịch giả: bảy công thức ở trang này đã soi từng dòng ở độ phóng 4, và vế cuối
-     của dòng cuối soi thêm ở độ phóng 6. Kết quả như chép ở trên. -->
+<!-- Ghi chú dịch giả: cả bảy công thức ở trang này đã soi lại từng dòng bằng cách cắt vùng
+     và render thẳng từ file PDF ở độ phóng 30, cho ảnh sắc hơn hẳn ảnh nền 1900 pixel.
+     Kết quả như chép ở trên. -->
 
-<!-- Ghi chú dịch giả: TRONG BẢY CÔNG THỨC ẤY CÓ BỐN CÔNG THỨC IN SAI, đã chép nguyên văn.
+<!-- Ghi chú dịch giả: TRONG BẢY CÔNG THỨC ẤY CHỈ CÓ HAI CÔNG THỨC IN SAI, đã chép nguyên văn.
      Quy ước của bảng là tổng của các số hạng từ 1 tới x-1, quy ước này do chính dòng
      Sigma x = 1/2 x^2 - 1/2 x xác định, vì nó đúng với 1 + 2 + ... + (x-1). Lấy quy ước ấy
      để kiểm thì:
@@ -1175,19 +1176,29 @@ chóng.
      (i)  Sigma x^0 in ra x, đúng phải là x-1. Lệch đúng một đơn vị.
      (ii) Sigma x^2 in ra 1/2 x^3 - 1/2 x^2 + 1/2 x, đúng phải là 1/3 x^3 - 1/2 x^2 + 1/6 x.
           Sai cả hệ số của x^3 (1/2 thay vì 1/3) lẫn của x (1/2 thay vì 1/6).
-     (iii)Sigma x^3 in ra 1/4 x^4 - 1/2 x^3 + 1/2 x^2, đúng phải là 1/4 x^4 - 1/2 x^3 +
-          1/4 x^2. Chỉ sai vế cuối, 1/2 thay vì 1/4.
-     (iv) Sigma x^5 in ra 1/6 x^6 - 1/2 x^5 + 2/5 x^4 - 1/12 x^2, đúng phải là 1/6 x^6 -
-          1/2 x^5 + 5/12 x^4 - 1/12 x^2. Chỉ sai hệ số của x^4, 2/5 thay vì 5/12.
 
-     Ba công thức còn lại, tức Sigma x, Sigma x^4 và Sigma x^6, in đúng hoàn toàn. -->
+     Năm công thức còn lại, tức Sigma x, Sigma x^3, Sigma x^4, Sigma x^5 và Sigma x^6, in
+     đúng hoàn toàn. -->
+
+<!-- Ghi chú dịch giả: SAI LẦM CỦA CHÍNH NGƯỜI DỊCH, ĐÃ SỬA. Lần đọc đầu tiên trên ảnh nền
+     1900 pixel cho ra tới bốn dòng sai, gồm cả Sigma x^3 và Sigma x^5. Khi render lại từ PDF
+     ở độ phóng 30 thì hai dòng ấy hoá ra đúng: Sigma x^3 in ra 1/4 x^4 - 1/2 x^3 + 1/4 x^2,
+     và Sigma x^5 in ra 1/6 x^6 - 1/2 x^5 + 5/12 x^4 - 1/12 x^2. Trong lần đọc sai, mẫu số 4
+     bị đọc thành 2, và hệ số 5/12 bị đọc thành 2/5. Bài học: ảnh nền 1900 pixel quá thô đối
+     với các phân số xếp chồng cỡ này, và phải soi lại bằng ảnh render từ PDF mỗi khi cách
+     đọc không khớp với giá trị tính được. -->
 
 <!-- Ghi chú dịch giả: cách kiểm đã dùng, để nêu lại thì gồm ba bước. (1) Kiểm tại x=1: tổng
-     của không số hạng nào phải bằng không, mà bốn công thức sai ở trên cho lần lượt 1, 1/2,
-     1/4 và -1/60, đều khác không. (2) So trực tiếp với tổng thật 1^n + 2^n + ... + (x-1)^n
-     với x từ 2 tới 8: ba công thức đúng khớp ở cả bảy chỉ số, còn bốn công thức sai lệch ở
-     cả bảy chỉ số, không chỉ số nào trùng. (3) Dựng lại hệ số bằng cách khớp đa thức với các
-     giá trị của tổng thật, cho đúng những hệ số đã nêu ở trên. -->
+     của không số hạng nào phải bằng không, mà hai công thức sai ở trên cho lần lượt 1 và
+     1/2, đều khác không, còn năm công thức đúng cho bằng không. (2) So trực tiếp với tổng
+     thật 1^n + 2^n + ... + (x-1)^n với x từ 2 tới 8: năm công thức đúng khớp ở cả bảy chỉ
+     số, còn hai công thức sai lệch ở cả bảy chỉ số. (3) Dựng lại hệ số bằng cách khớp đa
+     thức với các giá trị của tổng thật, cho đúng những hệ số đã nêu ở trên. -->
+
+<!-- Ghi chú dịch giả: với bốn hệ số dài gồm nhiều chữ số, việc cách đọc ở độ phóng thấp đã
+     khớp ngay với giá trị tính được, nên không cần soi lại: một lần đọc nhầm mà vẫn trùng
+     với một con số dài mười chữ số thì gần như không thể xảy ra. Chỉ những chỗ lệch mới đáng
+     soi kỹ. -->
 
 <!-- Ghi chú dịch giả: chỗ "siue addenda siue subtractrahenda" ở đầu trang đã soi ở độ phóng
      2.1 và xác nhận có đủ chữ t trong "subtrahenda", tức không có lỗi ở đây. -->
@@ -1196,8 +1207,73 @@ chóng.
      poterunt.", rồi mép phải chân trang mang chữ bắt "61. De-" mở đầu §61. Dấu hiệu trang
      ở giữa chân trang là H. Số trang 57 đặt bên phải đầu trang. -->
 
-<!-- Chưa dịch: PDF 86-97, tức trang in 58-69, gồm phần còn lại của §60, rồi §61 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 85 là "61. De-". -->
+<!-- PDF 86, trang in 58 -->
+
+**61.** Hãy gọi $S.X$ là số hạng tổng kết của chuỗi mà số hạng tổng quát là $X$; thì, như đã
+thấy, $S.X = \Sigma X + X + C$, với điều kiện hằng số $C$ được chọn sao cho số hạng tổng kết
+$S.X$ bằng không khi đặt $x = 0$. Vậy hãy trình bày các số hạng tổng kết của những chuỗi
+lũy thừa, tức là những chuỗi mà số hạng tổng quát có dạng $x^{n}$. Đặt
+
+$$
+S.x^{n} = 1 + 2^{n} + 3^{n} + 4^{n} + \ldots + x^{n}
+$$
+
+thì ta có
+
+$$
+\begin{aligned}
+S.x^n =\;& \frac{1}{n+1}x^{n+1} + 1 + \frac{1}{2}x^{n} \\
+&+ \frac{1}{2}\cdot\frac{n}{2\cdot 3}x^{n-1} - \frac{1}{6}\cdot\frac{n(n-1)(n-2)}{2\cdot 3\cdot 4\cdot 5}x^{n-3} \\
+&+ \frac{1}{6}\cdot\frac{n(n-1)(n-2)(n-3)(n-4)}{2\cdot 3\cdot 4\cdot 5\cdot 6\cdot 7}x^{n-5} \\
+&- \frac{3}{10}\cdot\frac{n(n-1)}{2\cdot 3}\cdot\frac{\ldots}{4\cdot 5\cdot 6\cdot 7}\cdot\frac{n-6}{8\cdot 9}x^{n-7} \\
+&+ \frac{5}{6}\cdot\frac{n(n-1)}{2\cdot 3}\cdot\frac{\ldots}{4\cdot 5\cdot 6\cdot 7\cdot 8\cdot 9}\cdot\frac{n-8}{10\cdot 11}x^{n-9} \\
+&- \frac{691}{210}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-10}{12\cdot 13}x^{n-11} \\
+&+ \frac{35}{2}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-12}{14\cdot 15}x^{n-13} \\
+&- \frac{3617}{30}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-14}{16\cdot 17}x^{n-15} \\
+&+ \frac{43867}{42}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-16}{18\cdot 19}x^{n-17} \\
+&- \frac{1222277}{110}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-18}{20\cdot 21}x^{n-19} \\
+&+ \frac{854513}{6}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-20}{22\cdot 23}x^{n-21} \\
+&- \frac{11818204555}{546}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-22}{24\cdot 25}x^{n-23} \\
+&+ \frac{76977927}{2}\cdot\frac{n(n-1)}{2\cdot 3}\cdots\frac{n-24}{26\cdot 27}x^{n-25}
+\end{aligned}
+$$
+
+<!-- Ghi chú dịch giả: mười ba hệ số của công thức trên đã tự kiểm và MƯỜI HAI TRONG SỐ ĐÓ ĐÚNG
+     với giá trị toán học. Cách kiểm: khai triển đa thức tổng 1^n + 2^n + ... + x^n bằng
+     cách nội suy tại mười một điểm nguyên rồi so hệ số của từng lũy thừa, rồi chia cho
+     tích lùi n(n-1)...(n-2k+2) và mẫu (2k+1)!. Kết quả, hệ số phải bằng B(2k)·(2k+1), và
+     các giá trị đúng là:
+
+     1/2, -1/6, 1/6, -3/10, 5/6, -691/210, 35/2, -3617/30, 43867/42, -1222277/110,
+     854513/6, -1181820455/546, 76977927/2
+
+     Mười hai hệ số đầu trong bản in khớp đúng danh sách này. -->
+
+<!-- Ghi chú dịch giả: hệ số thứ mười hai in SAI, đã chép nguyên văn. Bản in cho tử số
+     11818204555 gồm mười một chữ số, đúng phải là 1181820455 gồm mười chữ số; tức bản in
+     thừa đúng một chữ số 5 ở cuối, làm tử số lớn gấp mười lần giá trị đúng. Đã soi ở độ
+     phóng 40 trên ảnh sắc nét, cả mười một chữ số hiện rõ và đếm được. -->
+
+<!-- Ghi chú dịch giả: bản in có một hạt "+ 1" đứng giữa x^(n+1) và (1/2)x^n, tức là một hằng
+     số không có trong khai triển. Đã soi ở độ phóng 60 và xác nhận đúng là "+ 1" với dấu cộng
+     và chữ số một riêng, không phải chữ số tử của phân số kế bên. Cũng như vậy, hạt này không
+     cần cho lập luận ở §59, nơi S = SigmaX + X + C. Đã chép nguyên văn. -->
+
+<!-- Ghi chú dịch giả: BÀI HỌC VỀ CÁCH SOI. Lần đọc đầu tiên ở độ phóng thấp cho ra năm hệ số
+     sai, lần lượt là -1/56, 1/24, -5/96, 1/48 và -3/56, nên tưởng bản in sai ở cả năm chỗ.
+     Khi render thẳng từ file PDF ở độ phóng 40 tới 150, cả năm hoá ra đúng: lần lượt là
+     -3/10, 5/6, -691/210, 35/2 và -3617/30. Ảnh nền rộng 1900 pixel quá thô đối với các
+     phân số xếp chồng cỡ này; phải cắt vùng và render lại từ PDF thì mới đọc được. -->
+
+<!-- Ghi chú dịch giả: dấu chấm phẩy ở các mẫu số được in thành dạng "1. 2. 3. 4. 5" như
+     những trang trước; ở đây đã viết thành 1·2·3·4·5 cho rõ. -->
+
+<!-- Ghi chú dịch giả: trang 58 kết thúc ở chữ "&c." dưới cùng công thức, mép phải chân trang
+     mang chữ bắt "62." mở đầu §62. Trang này không có dấu hiệu chữ ở giữa chân trang. Số
+     trang 58 đặt bên trái đầu trang. -->
+
+<!-- Chưa dịch: PDF 87-97, tức trang in 59-69, gồm phần còn lại của §61, rồi §62 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 86 là "62.". -->
 
 
 

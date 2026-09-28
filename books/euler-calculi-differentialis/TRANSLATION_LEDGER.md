@@ -1463,6 +1463,20 @@ Bổ sung trang 74–77 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md
 
 **Soi lại hai chỗ trang 42–43 sau khi sửa, và kết quả khớp bản in.** Ở trang 42, dòng DIFFER. II. in đúng năm chữ `c` (khớp năm chỉ số ở dòng INDICES ngay trên), mẫu số của số hạng cuối viết bằng `1.` trên `2` tức $1\cdot 2$, trang kết thúc giữa chữ ở `vti ex na-`, số trang 42 đặt bên trái. Ở trang 43, dòng INDICES chỉ liệt kê sáu chỉ số (1 tới 6) trong khi các dòng TERMINI, DIFFER. I. và DIFFER. II. chứa bảy số hạng — đã giữ nguyên sáu như in và ghi chú; số trang 43 đặt bên phải, dấu hiệu trang ở giữa là `F 2`, chữ bắt `Quia`.
 
+### 2026-09-28 — Chương II, Phần 4 (PDF 78–86, tr. 50–58, §51–§61)
+
+Bổ sung trang 78–86 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: §51 (chuỗi lũy thừa của các số tự nhiên có differentia hằng, kèm bảng tổng của bậc I–IV), §52 (từ số hạng tổng quát đã biết thì tìm được mọi số hạng của chuỗi, kèm bảng), §53 (chuyển từ số hạng tổng quát sang tổng), §54 (cho chuỗi đã cho, tìm tổng), §55 (lấy differentia bậc nhất của tổng), §56–§57 (tiếp theo dạng tổng của một chuỗi cho trước), §58–§59 (cách tìm số hạng tổng kết qua differentia của chuỗi), §60 (bảy công thức tổng các lũy thừa của chính $x$) và mở §61 (công thức chung của Faulhaber với mười ba hệ số). Chưa thêm callout. **Chưa niêm phong**; còn PDF 87–97 (tr. 59–69).
+
+**Bài học về phương pháp soi, ghi lại vì nó đã tạo ra hai lần suýt chép sai.** Ở trang 85, lần đọc đầu trên ảnh nền 1900 pixel cho ra tới bốn dòng lệch với giá trị tính được, gồm `Sigma x^3` và `Sigma x^5`. Khi cắt vùng và render thẳng từ file PDF ở độ phóng 30 thì hai dòng ấy hoá ra đúng; mẫu số `4` bị đọc thành `2`, và hệ số `5/12` bị đọc thành `2/5`. Ảnh nền 1900 pixel quá thô đối với phân số xếp chồng cỡ này. Quy tắc rút ra và dùng từ đây: **chỗ nào cách đọc khớp với giá trị tính được thì thôi, chỗ nào lệch thì phải soi lại bằng ảnh render từ PDF trước khi kết luận là lỗi in.** Chiều ngược lại cũng dùng được: ở trang 86, bốn hệ số dài gồm nhiều chữ số được đọc ở độ phóng thấp đã khớp ngay với giá trị tính được, nên không cần soi lại, vì một lần đọc nhầm mà vẫn trùng với một con số dài mười chữ số thì gần như không thể xảy ra.
+
+**Trang 85, bảy công thức tổng lũy thừa: chỉ hai công thức in sai, đã chép nguyên văn.** Quy ước của bảng là tổng từ $1$ tới $x-1$, quy ước này do chính dòng `Sigma x = 1/2 x^2 - 1/2 x` xác định vì nó đúng với $1+2+\dots+(x-1)$. Lấy quy ước ấy để kiểm thì `Sigma x^0` in ra $x$, đúng phải là $x-1$; và `Sigma x^2` in ra $1/2 x^3 - 1/2 x^2 + 1/2 x`, đúng phải là $1/3 x^3 - 1/2 x^2 + 1/6 x$, sai cả hệ số của $x^3$ lẫn của $x$. Năm công thức còn lại in đúng hoàn toàn, đã soi từng dòng ở độ phóng 30. Cách kiếm chứng gồm ba bước: kiểm tại $x=1$ thì tổng của không số hạng phải bằng không; so trực tiếp với tổng thật $1^n+2^n+\dots+(x-1)^n$ với $x$ từ 2 tới 8; và dựng lại hệ số bằng cách khớp đa thức.
+
+**Trang 86, công thức chung của Faulhaber: mười hai trong mười ba hệ số đúng, một hệ số in sai.** Riêng hệ số của $k=12$ in ra là $11818204555/546$ với mười một chữ số ở tử số, đúng phải là $1181820455/546$ với mười chữ số, tức thừa đúng một chữ số `5`. Đã soi tử số ở độ phóng 50, các chữ số sắc và tách bạch. Ngoài ra có một dấu cộng `+1` lạc chỗ nằm giữa $x^{n+1}$ và $\frac{1}{2}x^n$, đã soi ở độ phóng 60 và xác nhận là có thật trong bản in, đã chép nguyên văn.
+
+**Các lỗi in nhỏ ở những trang khác, đều đã chép nguyên văn và ghi chú tại chương.** Trang 79 có `quartumus` (đúng phải là `quartorum`) và `negatius` (đúng phải là `negativos`). Trang 82 có dấu chấm phẩy đặt lạc ngay sau chữ `d` đầu tiên trong khi các chữ `d` còn lại cùng loại đều có dấu phẩy. Trang 84 có `offterminum`. Ở trang 80, cách đọc `ii termini` trong một danh sách chỉ số còn chưa chắc, đã ghi rõ sự nghi vấn thay vì chốt.
+
+**Dấu ở chân trang:** trang 85 kết thúc ở chữ bắt `&c.`, trang 86 kết thúc ở chữ bắt `62.`. Trang 83 kết thúc giữa chữ ở `Hic` mở §58, và §58 trải qua chỗ ngắt trang nên số mục 58 xuất hiện hai lần trong file, ở cuối trang 83 và ở đầu trang 84; đây là hiện mệu, không phải lỗi.
+
 
 
 

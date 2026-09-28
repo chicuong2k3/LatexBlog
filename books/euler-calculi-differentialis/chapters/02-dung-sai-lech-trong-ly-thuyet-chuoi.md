@@ -799,8 +799,411 @@ lại thì chúng có thể được gán bằng một biểu thức vô hạn. 
      mang chữ bắt "rali" nối sang trang kế, nơi câu đó mở đầu bằng "rali". Dấu hiệu trang
      ở giữa chân trang là "G 2". Số trang 51 đặt bên phải đầu trang. -->
 
-<!-- Chưa dịch: PDF 80-97, tức trang in 52-69, gồm phần còn lại của §52, rồi §53 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 79 là "rali". -->
+<!-- PDF 80, trang in 52 -->
+
+…số hạng tổng quát ấy, những số hạng mà chỉ số của chúng là phân số, cũng được định nghĩa;
+và trong đó có chứa phép INTERPOLATIO của các chuỗi.
+
+**53.** Đã được thông tri về số hạng tổng quát của các chuỗi, ta hãy tiến tới tổng, tức là
+việc tìm số hạng tổng kết của các chuỗi thuộc mọi bậc. Đã cho trước một chuỗi bất kỳ thì
+**TERMINUS** *summatorius* là một functio của chính $x$, bằng với tổng của những số hạng
+trong chuỗi mà số $x$ chứa bao nhiêu đơn vị. Vậy số hạng tổng kết được so sánh như sau: nếu
+đặt $x = 1$ thì ra số hạng thứ nhất của chuỗi; còn nếu đặt $x = 2$ thì ra tổng của số hạng
+thứ nhất và thứ hai; đặt $x = 3$ thì ra tổng của ba số hạng đầu; và cứ thế. Do đó, nếu từ
+chuỗi đã cho lập ra một chuỗi mới, mà số hạng thứ nhất của nó bằng số hạng thứ nhất của chuỗi
+kia, số hạng thứ hai bằng tổng của hai số hạng đầu, số hạng thứ ba bằng tổng của ba số hạng
+đầu, và cứ thế nữa, thì chuỗi mới ấy được gọi là *summatrix* của chuỗi kia, và số hạng tổng
+quát của chuỗi *summatrix* ấy chính là số hạng tổng kết của chuỗi đã cho: từ đó, việc tìm
+số hạng tổng kết quy về việc tìm số hạng tổng quát.
+
+**54.** Giả sử chuỗi đã cho là
+
+$$
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad \&c.
+$$
+
+và *summatrix* của chuỗi ấy là
+
+$$
+A,\quad A^{\mathrm{I}},\quad A^{\mathrm{II}},\quad A^{\mathrm{III}},\quad A^{\mathrm{IV}},\quad A^{\mathrm{V}},\quad \&c.
+$$
+
+thì, theo bản chất của nó như vừa trình bày:
+
+$$
+A =
+$$
+
+<!-- Ghi chú dịch giả: đầu trang nối từ chữ "gene-" và chữ bắt "rali" ở cuối trang 51, nên
+     câu đầu trang này là "Quin etiam ex termino generali ii termini, quorum indices sunt
+     fracti, definiuntur". Bản in viết "ii" bằng hai chữ i có dấu chấm riêng; đã soi ở độ
+     phóng 4 và xác nhận đúng là "ii", không phải chữ "in" bị mòn. Cụm "generali ii
+     termini" không cho nghĩa rõ ràng, nhưng đây là chỗ đọc chắc chắn về hình thức, nên
+     giữ nguyên như in và ghi sự nghi vấn thay vì tự sửa. -->
+
+<!-- Ghi chú dịch giả: hai dòng số hạng ở §54 đã soi và xác nhận đều có đủ sáu số hạng với
+     số mũ I, II, III, IV, V rõ ràng, không chỗ nào mòn. Cả hai dòng cùng dài, đúng như
+     lập luận ở §53 rằng chuỗi mới lấy số hạng thứ nhất của chuỗi cũ làm số hạng thứ nhất. -->
+
+<!-- Ghi chú dịch giả: trang 52 kết thúc giữa chừng một công thức, chỉ mới in được "A =", nên
+     vế phải nằm ở trang kế. Vì trang kết thúc bằng công thức chứ không phải bằng chữ của
+     văn xuôi nên trang này không có chữ bắt, cũng không có dấu hiệu chữ ở giữa chân
+     trang; đã kiểm bằng cách dò dải chữ in trên ảnh, không có dải nào nữa dưới dòng "A =".
+     Số trang 52 đặt bên trái đầu trang. -->
+
+<!-- PDF 81, trang in 53 -->
+
+$$
+A = a
+$$
+
+$$
+A^{\mathrm{I}} = a + a^{\mathrm{I}}
+$$
+
+$$
+A^{\mathrm{II}} = a + a^{\mathrm{I}} + a^{\mathrm{II}}
+$$
+
+$$
+A^{\mathrm{III}} = a + a^{\mathrm{I}} + a^{\mathrm{II}} + a^{\mathrm{III}}
+$$
+
+$$
+A^{\mathrm{IV}} = a + a^{\mathrm{I}} + a^{\mathrm{II}} + a^{\mathrm{III}} + a^{\mathrm{IV}}
+$$
+
+$$
+\&c.
+$$
+
+Nên differentia của chuỗi *summatrix* sẽ là:
+
+$$
+A^{\mathrm{I}} - A = a^{\mathrm{I}};\quad A^{\mathrm{II}} - A^{\mathrm{I}} = a^{\mathrm{II}};\quad A^{\mathrm{III}} - A^{\mathrm{II}} = a^{\mathrm{III}};\quad \&c.
+$$
+
+Từ đó, chuỗi đã cho, bớt đi số hạng thứ nhất, chính là chuỗi differentia bậc nhất của chuỗi
+*summatrix* ấy. Nếu ta gán cho chuỗi *summatrix* một số hạng đầu $= 0$ để có được
+
+$$
+0,\quad A,\quad A^{\mathrm{I}},\quad A^{\mathrm{II}},\quad A^{\mathrm{III}},\quad A^{\mathrm{IV}},\quad A^{\mathrm{V}},\quad \&c.
+$$
+
+thì chuỗi differentia bậc nhất của nó chính là chuỗi đã cho:
+
+$$
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad \&c.
+$$
+
+**55.** Vì thế, differentia bậc nhất của chuỗi đã cho chính là differentia bậc hai của chuỗi
+*summatrix*; còn differentia bậc hai của nó là differentia bậc ba của chuỗi đã cho; và
+differentia bậc ba của nó là bậc bốn của chuỗi đã cho, và cứ thế. Vậy nếu chuỗi đã cho
+cuối cùng có differentia hằng, thì *summatrix* của nó cũng sẽ dẫn tới differentia hằng,
+và do đó là một chuỗi cùng bản chất, chỉ ở bậc cao hơn một bậc. Với loại chuỗi như thế, số
+hạng tổng kết sẽ luôn có thể được trình bày bằng một biểu thức hữu hạn. Vì số hạng tổng quát
+của chuỗi
+
+$$
+0,\quad A,\quad A^{\mathrm{I}},\quad A^{\mathrm{II}},\quad A^{\mathrm{III}},\quad A^{\mathrm{IV}},\quad \&c.
+$$
+
+tức là số hạng ứng với chỉ số $x$, sẽ trình bày tổng của $x - 1$
+
+<!-- Ghi chú dịch giả: năm dòng định nghĩa A, A^I, A^II, A^III, A^IV ở đầu trang đã soi và
+     xác nhận đủ số mũ, không chỗ nào mòn. Dòng differentia ở giữa trang cũng đã soi ở độ
+     phóng 2.2 và xác nhận đủ số mũ: A^I - A = a^I, A^II - A^I = a^II, A^III - A^II =
+     a^III. Trang này không có lỗi in. -->
+
+<!-- Ghi chú dịch giả: toàn bộ lập luận đã tự kiểm và đúng. Từ định nghĩa A = a và
+     A^I = a + a^I thì A^I - A = a^I; tương tự A^II - A^I = a^II và A^III - A^II = a^III,
+     đúng như dòng in. Với dãy 0, A, A^I, ..., A^V, lấy hiệu bậc nhất cho a, a^I, a^II,
+     a^III, a^IV, a^V, tức chính là chuỗi đã cho, đúng như Euler nói. Dãy bậc nhất ấy có sáu
+     số hạng cùng số lượng với chuỗi đã cho, còn dãy gốc có bảy số hạng, đúng vì mỗi lần
+     lấy hiệu mất một số hạng. -->
+
+<!-- Ghi chú dịch giả: trang 53 kết thúc giữa chừng câu, ở chữ "x - 1", và mép phải chân
+     trang mang chữ bắt "ter-", nối sang trang kế thành "terminorum". Dấu hiệu trang ở giữa
+     chân trang là "G 3". Số trang 53 đặt bên phải đầu trang. -->
+
+<!-- PDF 82, trang in 54 -->
+
+…số hạng của chuỗi này là $a,\ a^{\mathrm{I}},\ a^{\mathrm{II}},\ a^{\mathrm{III}},\ a^{\mathrm{IV}},\ \&c.$;
+và nếu thay $x$ bằng $x+1$ thì sẽ có tổng của $x$ số hạng, tức là chính số hạng tổng kết.
+
+**56.** Giả sử chuỗi đã cho là
+
+**Seriei propositae**
+
+$$
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad a^{\mathrm{VI}},\quad \&c.
+$$
+
+**Series differentiarum primarum**
+
+$$
+b,\quad b^{\mathrm{I}},\quad b^{\mathrm{II}},\quad b^{\mathrm{III}},\quad b^{\mathrm{IV}},\quad b^{\mathrm{V}},\quad b^{\mathrm{VI}},\quad \&c.
+$$
+
+**Series differentiarum secundarum**
+
+$$
+c,\quad c^{\mathrm{I}},\quad c^{\mathrm{II}},\quad c^{\mathrm{III}},\quad c^{\mathrm{IV}},\quad c^{\mathrm{V}},\quad c^{\mathrm{VI}},\quad \&c.
+$$
+
+**Series differentiarum tertiarum**
+
+$$
+d,\quad d^{\mathrm{I}},\quad d^{\mathrm{II}},\quad d^{\mathrm{III}},\quad d^{\mathrm{IV}},\quad d^{\mathrm{V}},\quad d^{\mathrm{VI}},\quad \&c.
+$$
+
+và cứ thế cho tới khi tới differentia hằng. Sau đó hãy lập chuỗi *summatrix*, mà khi đã gán
+cho nó số hạng đầu là $0$ thay cho số hạng thứ nhất, sẽ cùng với các chuỗi differentia liên
+tiếp của nó có dạng sau đây:
+
+**INDICES.**
+
+$$
+1,\quad 2,\quad 3,\quad 4,\quad 5,\quad 6,\quad 7,\quad \&c.
+$$
+
+**SUMMATRIX.**
+
+$$
+0,\quad A,\quad A^{\mathrm{I}},\quad A^{\mathrm{II}},\quad A^{\mathrm{III}},\quad A^{\mathrm{IV}},\quad A^{\mathrm{V}},\quad \&c.
+$$
+
+**SERIES PROPOSITA.**
+
+$$
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad a^{\mathrm{VI}},\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+b,\quad b^{\mathrm{I}},\quad b^{\mathrm{II}},\quad b^{\mathrm{III}},\quad b^{\mathrm{IV}},\quad b^{\mathrm{V}},\quad b^{\mathrm{VI}},\quad \&c.
+$$
+
+**DIFFER. II.**
+
+$$
+c,\quad c^{\mathrm{I}},\quad c^{\mathrm{II}},\quad c^{\mathrm{III}},\quad c^{\mathrm{IV}},\quad c^{\mathrm{V}},\quad c^{\mathrm{VI}},\quad \&c.
+$$
+
+**DIFFER. III.**
+
+$$
+d;\quad d^{\mathrm{I}},\quad d^{\mathrm{II}},\quad d^{\mathrm{III}},\quad d^{\mathrm{IV}},\quad d^{\mathrm{V}},\quad d^{\mathrm{VI}},\quad \&c.
+$$
+
+<!-- Ghi chú dịch giả: trong dòng DIFFER. III. bản in dùng dấu chấm phẩy trên sau chữ d đầu
+     tiên, trong khi các dấu còn lại trong dòng đều là phẩy. Đã soi ở độ phóng 6: dấu ấy có
+     chấm trên rõ ràng, khác hẳn phẩy thường chỉ có đuôi, nên đây là dấu chấm phẩy thật, giữ
+     nguyên như in. -->
+
+<!-- Ghi chú dịch giả: số số hạng ở bảng cuối trang đáng để lưu ý, chép nguyên văn. Dòng
+     INDICES in bảy chỉ số 1 tới 7; dòng SUMMATRIX in bảy số hạng (0, A, A^I, A^II, A^III,
+     A^IV, A^V); dòng SERIES PROPOSITA in bảy số hạng (a tới a^VI); và cả ba dòng DIFFER.
+     I, II, III. cũng in bảy số hạng, tức bằng đúng số số hạng của dòng ngay trên. Nhưng lấy
+     hiệu một lần thì số số hạng phải giảm đi một, nên về hình thức các dòng DIFFER. ở đây
+     dài hơn số lẽ ra phải có. Bảng tương ứng ở trang 43 lại rút ngắn dần (dòng cuối chỉ
+     còn ba chữ d), nên hai chỗ không cùng một cách làm. Có thể đây chỉ là cách sắp bố trí
+     để các dòng nhìn thẳng nhau, nhưng chưa đủ căn cứ để khẳng định, nên ở đây chỉ ghi
+     nhận xét chứ không sửa. -->
+
+<!-- Ghi chú dịch giả: trang 54 kết thúc ở đúng dòng DIFFER. III., mép phải chân trang mang
+     chữ bắt "erit". Trang này không có dấu hiệu chữ ở giữa chân trang. Số trang 54 đặt
+     bên trái đầu trang. -->
+
+<!-- PDF 83, trang in 55 -->
+
+…sẽ là số hạng tổng quát của chuỗi *summatrix*, tức là số hạng ứng với chỉ số $x$:
+
+$$
+0 + (x-1)a + \frac{(x-1)(x-2)}{1\cdot 2}b + \frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3}c + \&c.
+$$
+
+Công thức này đồng thời trình bày tổng của $x - 1$ số hạng của chuỗi đã cho, tức là
+$a,\ a^{\mathrm{I}},\ a^{\mathrm{II}},\ a^{\mathrm{III}},\ a^{\mathrm{IV}},\ \&c.$
+
+**57.** Vậy nếu trong tổng ấy, thay $x - 1$ bằng $x$, thì sẽ có số hạng tổng kết của chuỗi đã
+cho, bao gồm tổng của $x$ số hạng:
+
+$$
+= xa + \frac{x(x-1)}{1\cdot 2}b + \frac{x(x-1)(x-2)}{1\cdot 2\cdot 3}c + \frac{x(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3\cdot 4}d + \&c.
+$$
+
+Do đó, nếu các chữ $b,\ c,\ d,\ e$ giữ nguyên những giá trị đã gán cho chúng, thì:
+
+**SERIEI.**
+
+$$
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad \&c.
+$$
+
+**TERMINUS GENERALIS.**
+
+$$
+a + (x-1)b + \frac{(x-1)(x-2)}{1\cdot 2}c + \frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3}d + \frac{(x-1)(x-2)(x-3)(x-4)}{1\cdot 2\cdot 3\cdot 4}e + \&c.
+$$
+
+**ET TERMINUS SUMMATORIUS.**
+
+$$
+xa + \frac{x(x-1)}{1\cdot 2}b + \frac{x(x-1)(x-2)}{1\cdot 2\cdot 3}c + \frac{x(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3\cdot 4}d + \&c.
+$$
+
+Vậy, khi đã biết số hạng tổng quát của một chuỗi thuộc bậc nào, chẳng khó gì tìm được số
+hạng tổng kết từ đó, vì số hạng tổng kết ấy cũng dựng được từ chính những differentia ấy.
+
+**58.** Hic
+
+<!-- Ghi chú dịch giả: ba công thức ở trang này đã tự kiểm và cả ba đều đúng. Với
+     a=5, b=2, c=3, d=7 thì số hạng tổng quát là 5, 7, 12, 27, 59, &c. Công thức ở §56 cho
+     tổng của x-1 số hạng: với x=5 cho 51, đúng bằng 5+7+12+27. Công thức ở §57 cho tổng
+     của x số hạng: với x=5 cho 110, đúng bằng 5+7+12+27+59. Công thức TERMINUS
+     GENERALIS cho số hạng có chỉ số x: với x=5 cho 59, đúng. Cũng đã thử lặp lại với mười
+     chỉ số khác, đều khớp. -->
+
+<!-- Ghi chú dịch giả: các mẫu số trên trang này cũng viết theo kiểu "1." trên "2", "1. 2. 3"
+     như ở các trang trước; ở đây đã viết thành 1·2, 1·2·3, 1·2·3·4 cho rõ. -->
+
+<!-- Ghi chú dịch giả: trang 55 kết thúc ở chữ "58. Hic", tức số mục và chữ đầu tiên của §58
+     được đặt sẵn ở mép phải chân trang, đúng chỗ của chữ bắt, rồi §58 nối tiếp ở trang
+     kế. Trang này không có dấu hiệu chữ ở giữa chân trang. Số trang 55 đặt bên phải đầu
+     trang. -->
+
+<!-- PDF 84, trang in 56 -->
+
+**58.** Cách tìm số hạng tổng kết qua differentia của chuỗi này, trước hết thích hợp với
+những chuỗi cuối cùng dẫn tới differentia hằng; vì ở những trường hợp khác thì không tìm
+được biểu thức hữu hạn. Nhưng nếu ta xét kỹ những điều đã nói ở trước về bản chất của số hạng
+tổng kết, thì có một cách khác để tìm trực tiếp số hạng tổng kết từ số hạng tổng quát, cách
+này rộng hơn nhiều, và trong vô số trường hợp dẫn tới biểu thức hữu hạn, trong khi cách trước
+dẫn tới vô hạn. Giả sử cho một chuỗi bất kỳ:
+
+$$
+a,\quad b,\quad c,\quad d,\quad e,\quad f,\quad \&c.
+$$
+
+mà số hạng tổng quát của nó, tức là số hạng ứng với chỉ số $x$, là $X$; còn số hạng tổng kết
+là $S$, thì vì $S$ trình bày tổng của tất cả những số hạng tính từ đầu mà số $x$ chứa bao
+nhiêu đơn vị, nên tổng của $x - 1$ số hạng sẽ là $S - X$; và do đó $X$ chính là differentia
+của biểu thức $S - X$, vì biểu thức này còn lại khi lấy $S$ ở trên trừ nó đi.
+
+**59.** Vậy, vì $X = \Delta(S - X)$ là differentia lấy theo đúng cách đã dạy ở chương trước,
+chỉ khác ở một điểm là đại lượng hằng $\omega$ ở đây được đặt bằng $1$. Do đó, nếu trở lại với
+các tổng, ta có $\Sigma X = S - X$, và do đó số hạng tổng kết cần tìm là
+
+$$
+S = \Sigma X + X + C.
+$$
+
+Vậy cần tìm tổng của functio $X$ theo cách đã dạy trước đây, rồi cộng thêm chính số hạng tổng
+quát $X$ vào đó, và tổng ấy chính là số hạng tổng kết. Nhưng vì
+
+<!-- Ghi chú dịch giả: bản in dính chữ "offterminum", thiếu khoảng trắng giữa "offert" và
+     "terminum". Đã soi và xác nhận: trong cùng dòng đó, các cặp "modus se", "terminum
+     summatorium", "summatorium immediate", "immediate ex" đều có khoảng trắng rõ, chỉ riêng
+     "offterminum" dính liền. Giữ nguyên như in. -->
+
+<!-- Ghi chú dịch giả: đẳng thức ở §59 đã tự kiểm và đúng. Với a=5, b=2, c=3, d=7 thì số
+     hạng tổng quát X là 5, 7, 12, 27, 59, &c. và số hạng tổng kết S là 5, 12, 24, 51, 110,
+     &c. Kiểm S - X với tổng của x-1 số hạng đầu, cả hai cho 0, 5, 12, 24, 51 ở các chỉ số
+     1 tới 5, đều khớp. Còn C thì bằng không, vì ở §56 chuỗi summatrix được lập với số hạng
+     đầu bằng 0, tức đã chọn sẵn hằng số của nguyên hàm; với chuẩn hóa ấy thì S =
+     SigmaX + X + 0. C là hằng số tùy ý của nguyên hàm, nên vẫn được giữ trong công thức. -->
+
+<!-- Ghi chú dịch giả: trang 56 kết thúc giữa chữ ở "Quoniam autem", mép phải chân trang mang
+     chữ bắt "in". Trang này không có dấu hiệu chữ ở giữa chân trang. Số trang 56 đặt bên trái
+     đầu trang. -->
+
+<!-- PDF 85, trang in 57 -->
+
+…trong các tổng phải lấy có một đại lượng hằng ở đó, hoặc phải cộng vào hoặc phải trừ đi; và
+nó phải được điều chỉnh cho trường hợp đang xét. Nhưng rõ ràng là, nếu đặt $x = 0$ thì trong
+trường hợp ấy số số hạng phải cộng bằng không, và tổng cũng bằng không; từ đó đại lượng hằng
+$C$ ấy phải được xác định sao cho khi đặt $x = 0$ thì $S$ cũng bằng $0$. Đặt cả $S = 0$ lẫn
+$x = 0$ vào phương trình $S = \Sigma X + X + C$ ấy, ta sẽ tìm được giá trị của $C$.
+
+**60.** Vậy cả công việc này còn dễ hơn nữa, vì toàn bộ đã quy về việc cộng các functio như đã
+chỉ ra ở trên; do đó, khi đặt $\omega = 1$, ta lấy ra được những công thức cộng đã biết. Trước
+hết, với các lũy thừa của chính $x$, ta có
+
+$$
+\Sigma x^{0} = \Sigma 1 = x
+$$
+
+$$
+\Sigma x = \frac{1}{2}x^{2} - \frac{1}{2}x
+$$
+
+$$
+\Sigma x^{2} = \frac{1}{2}x^{3} - \frac{1}{2}x^{2} + \frac{1}{2}x
+$$
+
+$$
+\Sigma x^{3} = \frac{1}{4}x^{4} - \frac{1}{2}x^{3} + \frac{1}{2}x^{2}
+$$
+
+$$
+\Sigma x^{4} = \frac{1}{5}x^{5} - \frac{1}{2}x^{4} + \frac{1}{3}x^{3} - \frac{1}{30}x
+$$
+
+$$
+\Sigma x^{5} = \frac{1}{6}x^{6} - \frac{1}{2}x^{5} + \frac{2}{5}x^{4} - \frac{1}{12}x^{2}
+$$
+
+$$
+\Sigma x^{6} = \frac{1}{7}x^{7} - \frac{1}{2}x^{6} + \frac{1}{2}x^{5} - \frac{1}{6}x^{3} + \frac{1}{42}x
+$$
+
+cộng thêm công thức chung cho lũy thừa bậc $x^{n}$ đã dạy ở § 29, với điều kiện ở đó phải viết
+$\omega$ thành đơn vị ở mọi chỗ. Nhờ vậy, nhờ những công thức này, số hạng tổng kết của mọi
+chuỗi mà số hạng tổng quát là functio phân thức nguyên của chính $x$ đều có thể tìm được mau
+chóng.
+
+<!-- Ghi chú dịch giả: bảy công thức ở trang này đã soi từng dòng ở độ phóng 4, và vế cuối
+     của dòng cuối soi thêm ở độ phóng 6. Kết quả như chép ở trên. -->
+
+<!-- Ghi chú dịch giả: TRONG BẢY CÔNG THỨC ẤY CÓ BỐN CÔNG THỨC IN SAI, đã chép nguyên văn.
+     Quy ước của bảng là tổng của các số hạng từ 1 tới x-1, quy ước này do chính dòng
+     Sigma x = 1/2 x^2 - 1/2 x xác định, vì nó đúng với 1 + 2 + ... + (x-1). Lấy quy ước ấy
+     để kiểm thì:
+
+     (i)  Sigma x^0 in ra x, đúng phải là x-1. Lệch đúng một đơn vị.
+     (ii) Sigma x^2 in ra 1/2 x^3 - 1/2 x^2 + 1/2 x, đúng phải là 1/3 x^3 - 1/2 x^2 + 1/6 x.
+          Sai cả hệ số của x^3 (1/2 thay vì 1/3) lẫn của x (1/2 thay vì 1/6).
+     (iii)Sigma x^3 in ra 1/4 x^4 - 1/2 x^3 + 1/2 x^2, đúng phải là 1/4 x^4 - 1/2 x^3 +
+          1/4 x^2. Chỉ sai vế cuối, 1/2 thay vì 1/4.
+     (iv) Sigma x^5 in ra 1/6 x^6 - 1/2 x^5 + 2/5 x^4 - 1/12 x^2, đúng phải là 1/6 x^6 -
+          1/2 x^5 + 5/12 x^4 - 1/12 x^2. Chỉ sai hệ số của x^4, 2/5 thay vì 5/12.
+
+     Ba công thức còn lại, tức Sigma x, Sigma x^4 và Sigma x^6, in đúng hoàn toàn. -->
+
+<!-- Ghi chú dịch giả: cách kiểm đã dùng, để nêu lại thì gồm ba bước. (1) Kiểm tại x=1: tổng
+     của không số hạng nào phải bằng không, mà bốn công thức sai ở trên cho lần lượt 1, 1/2,
+     1/4 và -1/60, đều khác không. (2) So trực tiếp với tổng thật 1^n + 2^n + ... + (x-1)^n
+     với x từ 2 tới 8: ba công thức đúng khớp ở cả bảy chỉ số, còn bốn công thức sai lệch ở
+     cả bảy chỉ số, không chỉ số nào trùng. (3) Dựng lại hệ số bằng cách khớp đa thức với các
+     giá trị của tổng thật, cho đúng những hệ số đã nêu ở trên. -->
+
+<!-- Ghi chú dịch giả: chỗ "siue addenda siue subtractrahenda" ở đầu trang đã soi ở độ phóng
+     2.1 và xác nhận có đủ chữ t trong "subtrahenda", tức không có lỗi ở đây. -->
+
+<!-- Ghi chú dịch giả: trang 57 kết thúc ở câu "...termini summatorii expedite inveniri
+     poterunt.", rồi mép phải chân trang mang chữ bắt "61. De-" mở đầu §61. Dấu hiệu trang
+     ở giữa chân trang là H. Số trang 57 đặt bên phải đầu trang. -->
+
+<!-- Chưa dịch: PDF 86-97, tức trang in 58-69, gồm phần còn lại của §60, rồi §61 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 85 là "61. De-". -->
+
+
+
+
+
+
 
 
 

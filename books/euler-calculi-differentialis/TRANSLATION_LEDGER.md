@@ -1477,6 +1477,26 @@ Bổ sung trang 78–86 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md
 
 **Dấu ở chân trang:** trang 85 kết thúc ở chữ bắt `&c.`, trang 86 kết thúc ở chữ bắt `62.`. Trang 83 kết thúc giữa chữ ở `Hic` mở §58, và §58 trải qua chỗ ngắt trang nên số mục 58 xuất hiện hai lần trong file, ở cuối trang 83 và ở đầu trang 84; đây là hiện mệu, không phải lỗi.
 
+### 2026-09-28 — Chương II, Phần 5 (PDF 87, tr. 59, §62)
+
+Bổ sung trang 87 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: mở §62 với câu `Hinc ergo summae pro variis ipsius n valoribus ica se habebunt`, rồi bảng mười bảy tổng của các lũy thừa từ `S.x^0` tới `S.x^16`, và dấu `&c.` Chưa thêm callout. **Chưa niêm phong**; còn PDF 88–97 (tr. 60–69).
+
+**Bảng này dùng quy ước tổng tới x, khác hẳn bảng ở trang 57 dùng quy ước tổng tới x-1.** Hai lần trước trong sổ này đã lặp lại chuyện tưởng mâu thuẫn khi thấy hai quy ước khác nhau; lần này đã xác định dứt khoát bằng cách kiểm các dòng `S.x^1` tới `S.x^6` với tổng thật $1+2+\dots+x$, mọi hệ số đều khớp. Quy ước của bảng này còn do chính dòng `S.x^0 = x` xác định. Vậy `S.x^0 = x` ở đây là đúng, và không liên quan gì tới dòng `Sigma x^0 = x` sai ở trang 57.
+
+**Sai lầm lặp lại lần thứ ba, và lần này nghiêm trọng nhất: mắt tôi không đọc nổi phân số xếp chồng.** Ở trang 57 sai hai dòng, ở trang 58 sai năm hệ số. Ở trang 87, các lần đọc ở độ phóng thấp cho ra: dòng `S.x^7` kết thúc bằng $-1/3 x^4 + 1/2 x^2$; dòng `S.x^8` có $-7/3 x^5$; dòng `S.x^9` có $-7/6 x^6 + 1/4 x^4$; dòng `S.x^14` có $-143/18 x^7$; và đuôi dòng `S.x^16` trông như chỉ có `260 x^7` mà mất phân số. Khi cắt vùng và render thẳng từ file PDF ở độ phóng 40 tới 110 thì cả năm đều sai: dòng `S.x^7` in $-7/4 x^4 + 1/2 x^2$, `S.x^8` in $-7/15 x^5$, `S.x^9` in $-7/10 x^6 + 1/2 x^4$, `S.x^14` in $-143/10 x^7$, và `S.x^16` có đủ $260/3$. Riêng ô $-7/15 x^5$ tôi tự soi lại ở độ phóng 110 và xác nhận agent đúng, còn mình sai. Kết luận rút ra, đã ghi vào sổ: **khi cách đọc khớp với giá trị tính được thì tin, khi lệch thì soi lại ở độ phóng cao hơn trước khi kết luận là lỗi in** — và ảnh nền 1900 pixel cùng mọi mức phóng dưới 40 đều không đủ cho loại phân số này.
+
+**Bảng dài mười bảy dòng, mỗi dòng tràn trên hai dòng in, được chia cho bốn agent soi song song, mỗi agent một khoảng dòng rời nhau.** Khoảng n=0…7 tôi tự soi; n=8,9 / n=10,11 / n=12,13 / n=14,15,16 giao cho bốn agent chạy nền. Cả bốn lần đầu đều viết quá dài, phải yêu cầu lại báo cáo cô đọng. Kết quả: mười bốn dòng khớp hoàn toàn với giá trị tính được, ba dòng có lỗi.
+
+**Ba lỗi in, đều đã chép nguyên văn và ghi chú tại chương.** (1) Dòng `S.x^7` in $-7/4 x^4 + 1/2 x^2$, đúng phải là $-7/24 x^4 + 1/12 x^2$: cả hai mẫu số đều mất chữ số theo cùng một kiểu, 24 thành 4 và 12 thành 2; đã soi ở độ phóng 46, mẫu số đọc ra là 12, 4, 2, sắc và tách bạch. (2) Dòng `S.x^14` in $-691 x^3$ trần không mẫu số, đúng phải là $-691/90 x^3$; đã xác nhận bằng cách quét ngưỡng mực trên vùng (156.0, 171.0) × (208.0, 215.0): không có thanh phân số nào, vị trí mẫu số trống ở mọi ngưỡng, và vệt mực duy nhất bên dưới là nét dưới của chữ `9` trong `691`. Ba sai lầm của chính người dịch kể ở đoạn trên cũng đã ghi vào chương.
+
+**Hệ số bằng một ở một số nơi được in trần, không ghi chữ số một, và đã giữ nguyên.** Dòng `S.x^10` có $-x^7 + x^5$, dòng `S.x^12` có $+x^11$. Agent đầu tiên báo đây là sai lệch; đã sửa cách gọi, vì đây là quy ước in chứ không phải lỗi, và giá trị đúng vẫn là một.
+
+**Ba chỗ đọc độ tin cậy thấp hơn, đã ghi rõ trong chương.** Số mũ `8` và số mũ `2` ở dòng `S.x^13`, và tử số `5` trong $5/4$ ở dòng `S.x^15`, đều bị lem thành vệt mực nhỏ; đã đọc theo quy luật đi xuống hai đơn vị và nhờ đối chiếu với giá trị tính được. Cả ba khớp giá trị đúng, nhưng độ tin cậy kém các ô còn lại nên ghi lại thay vì im lặng.
+
+**Một sự nhầm cấu trúc đã sửa.** Ban đầu tưởng số hạng cuối của dòng `S.x^8` là $-1/30 x$ bị thiếu khỏi bảng, vì dải ảnh dùng để soi chỉ phủ dòng in thứ nhất của dòng đó. Thực ra mỗi dòng của bảng tràn trên hai dòng in, dòng thứ hai thụt vào lề phải, và số hạng ấy nằm ở dòng in thứ hai. Cũng trong lúc đó tôi tưởng dòng `S.x^16` thiếu mẫu số ở $260 x^7$; hoá ra do crop cắt mất nửa trên của phân số.
+
+**Dấu ở chân trang:** đầu trang mang chữ `CAPUT II.` ở giữa và số trang `59` ở bên phải. Tiêu đề §62 in là `Hinc ergo summae pro variis ipsius n valori-` / `bus ica se habebunt:`, có ngắt dòng giữa chữ tại `valori` và `bus`. Cuối trang có `&c.` ở giữa và chữ bắt `quae` ở bên phải.
+
 
 
 

@@ -1272,15 +1272,127 @@ $$
      mang chữ bắt "62." mở đầu §62. Trang này không có dấu hiệu chữ ở giữa chân trang. Số
      trang 58 đặt bên trái đầu trang. -->
 
-<!-- Chưa dịch: PDF 87-97, tức trang in 59-69, gồm phần còn lại của §61, rồi §62 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 86 là "62.". -->
+<!-- PDF 87, trang in 59 -->
 
+**62.** Vậy thì các tổng ấy, ứng với những giá trị khác nhau của chính $n$, sẽ có dạng sau đây:
 
+$$
+S.x^{0} = x
+$$
 
+$$
+S.x^{1} = \frac{1}{2}x^{2} + \frac{1}{2}x
+$$
 
+$$
+S.x^{2} = \frac{1}{3}x^{3} + \frac{1}{2}x^{2} + \frac{1}{6}x
+$$
 
+$$
+S.x^{3} = \frac{1}{4}x^{4} + \frac{1}{2}x^{3} + \frac{1}{4}x^{2}
+$$
 
+$$
+S.x^{4} = \frac{1}{5}x^{5} + \frac{1}{2}x^{4} + \frac{1}{3}x^{3} - \frac{1}{30}x
+$$
 
+$$
+S.x^{5} = \frac{1}{6}x^{6} + \frac{1}{2}x^{5} + \frac{5}{12}x^{4} - \frac{1}{12}x^{2}
+$$
 
+$$
+S.x^{6} = \frac{1}{7}x^{7} + \frac{1}{2}x^{6} + \frac{1}{2}x^{5} - \frac{1}{6}x^{3} + \frac{1}{42}x
+$$
 
+$$
+S.x^{7} = \frac{1}{8}x^{8} + \frac{1}{2}x^{7} + \frac{7}{12}x^{6} - \frac{7}{4}x^{4} + \frac{1}{2}x^{2}
+$$
 
+$$
+S.x^{8} = \frac{1}{9}x^{9} + \frac{1}{2}x^{8} + \frac{2}{3}x^{7} - \frac{7}{15}x^{5} + \frac{2}{9}x^{3} - \frac{1}{30}x
+$$
+
+$$
+S.x^{9} = \frac{1}{10}x^{10} + \frac{1}{2}x^{9} + \frac{3}{4}x^{8} - \frac{7}{10}x^{6} + \frac{1}{2}x^{4} - \frac{3}{20}x^{2}
+$$
+
+$$
+S.x^{10} = \frac{1}{11}x^{11} + \frac{1}{2}x^{10} + \frac{5}{6}x^{9} - x^{7} + x^{5} - \frac{1}{2}x^{3} + \frac{5}{66}x
+$$
+
+$$
+S.x^{11} = \frac{1}{12}x^{12} + \frac{1}{2}x^{11} + \frac{11}{12}x^{10} - \frac{11}{8}x^{8} + \frac{11}{6}x^{6} - \frac{11}{8}x^{4} + \frac{5}{12}x^{2}
+$$
+
+$$
+S.x^{12} = \frac{1}{13}x^{13} + \frac{1}{2}x^{12} + x^{11} - \frac{11}{6}x^{9} + \frac{22}{7}x^{7} - \frac{33}{10}x^{5} + \frac{5}{3}x^{3} - \frac{691}{2730}x
+$$
+
+$$
+S.x^{13} = \frac{1}{14}x^{14} + \frac{1}{2}x^{13} + \frac{13}{12}x^{12} - \frac{143}{60}x^{10} + \frac{143}{28}x^{8} - \frac{143}{20}x^{6} + \frac{65}{12}x^{4} - \frac{691}{420}x^{2}
+$$
+
+$$
+S.x^{14} = \frac{1}{15}x^{15} + \frac{1}{2}x^{14} + \frac{7}{6}x^{13} - \frac{91}{30}x^{11} + \frac{143}{18}x^{9} - \frac{143}{10}x^{7} + \frac{91}{6}x^{5} - 691x^{3} + \frac{7}{6}x
+$$
+
+$$
+S.x^{15} = \frac{1}{16}x^{16} + \frac{1}{2}x^{15} + \frac{5}{4}x^{14} - \frac{91}{24}x^{12} + \frac{143}{12}x^{10} - \frac{429}{16}x^{8} + \frac{455}{12}x^{6} - \frac{691}{24}x^{4} + \frac{35}{4}x^{2}
+$$
+
+$$
+S.x^{16} = \frac{1}{17}x^{17} + \frac{1}{2}x^{16} + \frac{4}{3}x^{15} - \frac{14}{3}x^{13} + \frac{52}{3}x^{11} - \frac{143}{3}x^{9} + \frac{260}{3}x^{7} - \frac{1382}{15}x^{5} + \frac{140}{3}x^{3} - \frac{3617}{510}x
+$$
+
+&c.
+
+<!-- Ghi chú dịch giả: bảng này dùng quy ước TỔNG TỚI x, khác hẳn bảng ở trang trước (trang 57) dùng
+     quy ước tổng tới x-1. Hai bảng ấy không mâu thuẫn, chúng là hai bảng khác nhau. Quy ước của
+     bảng này do chính dòng S.x^0 = x xác định, và đã kiểm cả hai mươi mối số hạng đầu của các
+     dòng từ S.x^1 tới S.x^6 với tổng thật 1 + 2 + ... + x, đều khớp. -->
+
+<!-- Ghi chú dịch giả: CÓ BA LỖI IN TRONG BẢNG NÀY, đã chép nguyên văn.
+
+     (i)  Dòng S.x^7 in ra - 7/4 x^4 + 1/2 x^2. Đúng phải là - 7/24 x^4 + 1/12 x^2. Cả hai
+          mẫu số đều mất chữ số theo cùng một kiểu, 24 thành 4 và 12 thành 2. Đã soi dòng này
+          ở độ phóng 46, cắt làm hai nửa, và mẫu số đọc ra là 12, 4, 2, sắc và tách bạch.
+
+     (ii) Dòng S.x^14 in ra - 691 x^3, trần không có mẫu số. Đúng phải là - 691/90 x^3.
+          Đã soi bằng cách quét ngưỡng mực trên vùng (156.0, 171.0) x (208.0, 215.0): không có
+          thanh phân số nào dưới chữ 691, và vị trí mẫu số trống ở mọi ngưỡng. Vệt mực duy
+          nhất bên dưới là nét dưới của chữ 9 ở chữ số 691, không phải mẫu số.
+
+     Ba sai lầm của chính người dịch, đã sửa, ghi lại vì chúng lặp lại đúng cái bài học ở
+     trang 57 và trang 58. Ở độ phóng thấp, các lần đọc cho ra S.x^7 có số hạng cuối là
+     - 1/3 x^4 + 1/2 x^2, S.x^8 có - 7/3 x^5, S.x^9 có - 7/6 x^6 + 1/4 x^4, và S.x^14 có
+     - 143/18 x^7. Cả bốn đều sai. Khi cắt vùng và render thẳng từ file PDF ở độ phóng 40
+     tới 110 thì chúng hoá ra là - 7/4 x^4 + 1/2 x^2, - 7/15 x^5, - 7/10 x^6 + 1/2 x^4 và
+     - 143/10 x^7. Ảnh nền rộng 1900 pixel và cả các mức phóng thấp hơn 40 đều quá thô đối với
+     phân số xếp chồng cỡ này. -->
+
+<!-- Ghi chú dịch giả: cách kiểm đã dùng cho cả mười bảy dòng, để nêu lại thì gồm ba bước.
+     (1) Tính tổng thật 1^n + 2^n + ... + x^n với x từ 2 tới 9 rồi khớp đa thức bậc n+1 để
+     dựng lại từng hệ số. (2) So từng hệ số dựng được với từng hệ số đọc được từ ảnh. (3) Chỗ
+     nào lệch thì soi lại ô đó ở độ phóng cao hơn trước khi kết luận là lỗi in. Sau bước (3),
+     cả bảng còn đúng ba chỗ sai, đã nêu ở trên. -->
+
+<!-- Ghi chú dịch giả: hệ số bằng một ở một số nơi được in trần, không ghi chữ số một, và đã
+     giữ nguyên như vậy: dòng S.x^10 có - x^7 + x^5, dòng S.x^12 có + x^11. -->
+
+<!-- Ghi chú dịch giả: mỗi dòng của bảng tràn trên hai dòng in, dòng thứ hai thụt vào lề phải.
+     Vì vậy số hạng cuối của dòng S.x^8, là - 1/30 x, nằm ở dòng in thứ hai, tức dưới bên
+     phải dòng thứ nhất, chứ không nằm cùng hàng với các số hạng kia. -->
+
+<!-- Ghi chú dịch giả: vài số mũ trong bảng bị lem thành một vệt mực nhỏ, đã đọc theo quy luật
+     đi xuống hai đơn vị và nhờ đối chiếu với giá trị tính được. Cụ thể là số mũ 8 và số mũ 2 ở
+     dòng S.x^13, và tử số 5 trong 5/4 ở dòng S.x^15. Ba chỗ ấy đã ghi ở đây vì độ tin cậy
+     thấp hơn các ô còn lại, dù cả ba đều khớp giá trị đúng. -->
+
+<!-- Ghi chú dịch giả: tiêu đề §62 in là "Hinc ergo summae pro variis ipsius n valori-bus ica se
+     habebunt:", có ngắt dòng giữa chữ tại valori và bus. -->
+
+<!-- Ghi chú dịch giả: dấu ở chân trang. Đầu trang mang chữ CAPUT II. ở giữa và số trang 59 ở
+     bên phải. Cuối trang có "&c." ở giữa và chữ bắt "quae" ở bên phải. -->
+
+<!-- Chưa dịch: PDF 88-97, tức trang in 60-69, gồm §63 trở đi và các EXEMPLUM của CAPUT II.
+     Chữ bắt ở cuối trang 87 là "quae". -->

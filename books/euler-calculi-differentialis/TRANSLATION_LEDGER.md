@@ -1443,5 +1443,26 @@ Bổ sung trang 72–73 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md
 
 **Dấu ở chân trang:** trang 72 có catchword `DIF`; trang 73 kết thúc ở chữ `vnde` vốn là catchword, dấu hiệu trang ở giữa là `F 3`.
 
+### 2026-09-28 — Chương II, Phần 3 (PDF 74–77, tr. 46–49, hết §45, §46–§50)
+
+Bổ sung trang 74–77 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: hết §45 với dòng nối các bậc sinh theo quy luật, rồi §46 (số hạng tổng quát của chuỗi bậc $n$ là functio phân thức nguyên bậc $n$ và các quan hệ hồi quy giữa $a^{\mathrm{I}}, a^{\mathrm{II}}, a^{\mathrm{III}}, a^{\mathrm{IV}}$), §47 (khi số hạng tổng quát là nhân tử của $(1-y)^n$ thì differentia có dạng nhị thức với dấu luân phiên), §48 (mọi chuỗi sinh từ functio phân thức nguyên đều có differentia hằng, và ngược lại), hết §49 (cách lấy số hạng tổng quát của cả chuỗi differentia chỉ bằng cách thay $x$ bằng $x+1$ rồi trừ) và trọn §50 (mỗi lần lấy hiệu làm bậc giảm đúng một, nên bậc của chuỗi trùng bậc của functio sinh ra nó). Chưa thêm callout. **Chưa niêm phong**; còn PDF 78–97 (tr. 50–69).
+
+**Đã soi bản scan:** toàn trang 74, 75, 76, 77; riêng chân trang trang 77 phóng tới mức 8× để đọc chữ bắt. Các bảng đều phải đọc từ ảnh vì lớp OCR hỏng ở mọi số mũ La-tinh.
+
+**Các quan hệ ở §46 và §47 đã tự kiểm và đều đúng.** Quan hệ hồi quy `a^III = 3a^II - 3a^I + a` và `a^IV = 4a^III - 6a^II + 4a^I - a` chính là hiệu bậc ba và bậc bốn bằng không. Dãy thang nhị thức có dấu luân phiên ở §47 đúng với $\binom{n}{k}$: $n=3$ cho $3, -3, +1$; $n=4$ cho $4, -6, +4, -1$; $n=5$ cho $5, -10, +10, -5, +1$; và dãy công thức chung $n/1 = \binom{n}{1}$, $n(n-1)/(1\cdot 2) = \binom{n}{2}$ cho tới $\binom{n}{4}$ cũng đúng.
+
+**Ba dạng functio ở §48 đã tự kiểm bằng phép lấy hiệu sai hữu hạn, cả ba đều đúng như Euler nói.** Với số hạng tổng quát $ax+b$ thì hiệu bậc nhất bằng $a$, hằng; với $axx+bx+c$ thì hiệu bậc nhất là $3a+b, 5a+b, 7a+b, 9a+b$, tức cấp số cộng sai $2a$, nên hiệu bậc hai bằng $2a$ và không đổi; với $ax^3+bx^2+cx+d$ thì hiệu bậc ba bằng $6a$ và không đổi. Kiểm số với $a=3, b=5, c=7, d=11$: trường hợp bậc hai cho các số hạng $15, 29, 49, 75, 107, 145$ với hiệu bậc hai đều bằng 6; trường hợp bậc ba cho hiệu bậc ba đều bằng 18.
+
+**Mệnh đề cốt lõi của §50 cũng đã kiểm, và nó đúng.** Với functio phân thức nguyên bậc $n$ có hệ số dẫn đầu $c_n$, lấy hiệu một lần cho hệ số dẫn đầu mới là $n c_n$ ở bậc $n-1$, nên bậc giảm đúng một chừng nào $c_n$ khác không. Đã dựng hiệu bằng hệ số nhị thức trên sáu functio ngẫu nhiên bậc 1, 3 và 4, đều cho đúng bậc $n-1$ và đúng hệ số $n c_n$. Ba trường hợp cụ thể cũng khớp: $X = ax+b$ cho $\Delta X = a$; $X = ax^2+bx+c$ cho $\Delta\Delta X = 2a$; $X = ax^3+bx^2+cx+d$ cho $\Delta^3X = 6a$.
+
+**Chữ bắt ở cuối trang 77 là `§1. Hanc`, đã soi ở độ phóng 8 và xác nhận không có chữ số nào bị mòn.** Ở trang này mục tiếp theo hợp lý ra phải là §51, nên lẽ ra chữ bắt phải là `§51. Hanc`; bản in chỉ có `§1. Hanc`. Đã chép nguyên văn và ghi rõ sự nghi vấn trong chương, không tự sửa thành §51.
+
+**Dấu ở chân trang:** trang 74 kết thúc giữa chữ ở `in seriebus secundi ordi-`; trang 75 kết thúc ở chữ `dum` vốn là catchword; trang 76 kết thúc ở chữ `minus,` vốn là catchword, số trang đặt bên trái; trang 77 kết thúc đúng ở câu `erit series ex eo nata.`, dấu hiệu trang ở giữa là `G`, chữ bắt `§1. Hanc`, số trang 49 đặt bên phải.
+
+**Sửa cấu trúc chương II, phát hiện khi đối chiếu lại trước khi chép trang 77.** File bị dồn bốn marker `Chưa dịch` chồng lên nhau (lần thêm trang nào lại nối thêm một marker mà không xoá marker cũ), nên chỉ còn một marker là đúng; ba marker cũ đã xoá. Thiếu hẳn marker trang cho PDF 71: phần cuối §42 nằm nhầm dưới marker trang 70, trong khi câu `uti ex natura differentiarum (§. 10.) intelligitur, erit terminus generalis` thực ra bắt đầu ở trang 42 và nối sang trang 43 với chữ `tura`; nay đã chèn marker `PDF 71, trang in 43` tại đúng chỗ ngắt trang, không sửa văn. Ghi chú dịch giả về trang 42 từng nằm bỏ lạc ở cuối file, sau marker `Chưa dịch`, đã chuyển về cuối trang 42 của nó; bốn ghi chú về trang 43 từng nằm *trước* nội dung của trang 43, đã chuyển xuống sau bảng §43 và sắp lại theo đúng thứ tự văn bản trên trang.
+
+**Soi lại hai chỗ trang 42–43 sau khi sửa, và kết quả khớp bản in.** Ở trang 42, dòng DIFFER. II. in đúng năm chữ `c` (khớp năm chỉ số ở dòng INDICES ngay trên), mẫu số của số hạng cuối viết bằng `1.` trên `2` tức $1\cdot 2$, trang kết thúc giữa chữ ở `vti ex na-`, số trang 42 đặt bên trái. Ở trang 43, dòng INDICES chỉ liệt kê sáu chỉ số (1 tới 6) trong khi các dòng TERMINI, DIFFER. I. và DIFFER. II. chứa bảy số hạng — đã giữ nguyên sáu như in và ghi chú; số trang 43 đặt bên phải, dấu hiệu trang ở giữa là `F 2`, chữ bắt `Quia`.
+
+
 
 

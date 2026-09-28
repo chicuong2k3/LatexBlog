@@ -190,6 +190,15 @@ $$
 vậy đó là số hạng tổng quát của chuỗi đã cho. Còn nếu đặt số hạng thứ hai của chính chuỗi là
 $a^{\mathrm{I}}$, số hạng thứ ba là $a^{\mathrm{II}}$, vì $b = a^{\mathrm{I}} - a$ và
 $c = a^{\mathrm{II}} - 2a^{\mathrm{I}} + a$, thì như đã hiểu từ bản chất của các differentia (§ 10),
+
+<!-- Ghi chú dịch giả: trang in 42 kết thúc giữa chữ ở "vti ex na-", mép phải chân trang mang
+     chữ catchword "tura" nối sang trang kế, nơi câu đó mở đầu bằng "tura differentiarum
+     (§. 10.) intelligitur". Mẫu số của số hạng cuối trong bản in viết bằng "1." trên "2",
+     tức 1·2; ở đây đã viết thành 1·2 cho rõ. Dòng DIFFER. II. chỉ in đúng năm chữ c, khớp
+     với năm chỉ số ở dòng INDICES. Số trang 42 đặt bên trái đầu trang. -->
+
+<!-- PDF 71, trang in 43 -->
+
 số hạng tổng quát sẽ là
 
 $$
@@ -215,29 +224,6 @@ $$
 $$
 
 tức là số hạng tổng quát cũng được xác định bởi ba số hạng của chính chuỗi ấy.
-
-<!-- Ghi chú dịch giả: hai dạng đầu đã tự kiểm và đúng: khai triển biểu thức ở §42 với
-     b = a^I - a, c = a^II - 2a^I + a thì thu được đúng dạng "qui reducitur", còn "vel
-     etiam" chỉ là cách viết lại cùng một biểu thức. -->
-
-<!-- Ghi chú dịch giả: dạng "aut denique" in ra SAI, đã chép nguyên văn. Sai ở hai chỗ.
-     (i) Trong ngoặc phải dùng a^II chứ không phải a^III: số hạng tổng quát của chuỗi bậc
-     hai chỉ liên quan tới ba số hạng đầu a, a^I, a^II, đúng như câu ngay dưới nói nó
-     được định nghĩa bởi ba số hạng ấy. (ii) Hệ số 1/4 phải là 1/2. Đã kiểm bằng phân
-     tỉch với chuỗi 1, 4, 9, 16, 25, &c. (tức a=1, b=3, c=2): số hạng thứ 4 đúng là 16,
-     dạng "vel etiam" cho 16, còn dạng bản in cho 37/2. Nếu chỉ sửa 1/4 thành 1/2 mà
-     vẫn để a^III thì ra 37, vẫn sai. Sửa cả hai mới ra đúng 16. Cùng phép ấy đã thử trên
-     bốn chuỗi khác nhau và nhiều chỉ số: hai dạng đầu luôn khớp, dạng bản in luôn lệch. -->
-
-<!-- Ghi chú dịch giả: trong câu về differentia bậc ba, bản in viết "d, d^I, d, &c.": chữ d
-     thứ ba không có số mũ, trong khi hai dòng ngay trên có đủ (b, b^I, b^II, b^III và
-     c, c^I, c^II, c^III). Đã soi ở độ phóng 22 để chắc chắn. Đúng phải là d^II. Giữ
-     nguyên như in. -->
-
-<!-- Ghi chú dịch giả: ở dòng DIFFER. III. trong bảng, số mũ trên cả ba chữ d đều mòn đến
-     mức không đọc được; ở đây chép ba chữ d trần, và đã ghi chú ở trên rằng chỗ này có
-     lẽ phải là d, d^I, d^II. Số trang 43 đặt bên phải; mép phải chân trang mang chữ
-     catchword Quia, mở đầu câu của trang kế. -->
 
 **43.** Giả sử có một chuỗi bậc ba $a,\ a^{\mathrm{I}},\ a^{\mathrm{II}},\ a^{\mathrm{III}},\ a^{\mathrm{IV}},\ \&c.$;
 differentia bậc nhất của nó là $b,\ b^{\mathrm{I}},\ b^{\mathrm{II}},\ b^{\mathrm{III}},\ \&c.$; differentia bậc
@@ -274,8 +260,30 @@ $$
 d,\qquad d,\qquad d,\quad \&c,
 $$
 
-<!-- Chưa dịch: PDF 72-97, tức trang in 43-69, gồm phần còn lại của §43, rồi §44 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 71 là "Quia". -->
+<!-- Ghi chú dịch giả: hai dạng đầu ở §42 đã tự kiểm và đúng: khai triển biểu thức với
+     b = a^I - a, c = a^II - 2a^I + a thì thu được đúng dạng "qui reducitur", còn "vel
+     etiam" chỉ là cách viết lại cùng một biểu thức. -->
+
+<!-- Ghi chú dịch giả: dạng "aut denique" in ra SAI, đã chép nguyên văn. Sai ở hai chỗ.
+     (i) Trong ngoặc phải dùng a^II chứ không phải a^III: số hạng tổng quát của chuỗi bậc
+     hai chỉ liên quan tới ba số hạng đầu a, a^I, a^II, đúng như câu ngay dưới nói nó
+     được định nghĩa bởi ba số hạng ấy. (ii) Hệ số 1/4 phải là 1/2. Đã kiểm bằng phân
+     tỉch với chuỗi 1, 4, 9, 16, 25, &c. (tức a=1, b=3, c=2): số hạng thứ 4 đúng là 16,
+     dạng "vel etiam" cho 16, còn dạng bản in cho 37/2. Nếu chỉ sửa 1/4 thành 1/2 mà
+     vẫn để a^III thì ra 37, vẫn sai. Sửa cả hai mới ra đúng 16. Cùng phép ấy đã thử trên
+     bốn chuỗi khác nhau và nhiều chỉ số: hai dạng đầu luôn khớp, dạng bản in luôn lệch. -->
+
+<!-- Ghi chú dịch giả: trong câu mở đầu §43, bản in viết "d, d^I, d, &c.": chữ d thứ ba
+     không có số mũ, trong khi hai dòng ngay trên có đủ (b, b^I, b^II, b^III và
+     c, c^I, c^II, c^III). Đã soi ở độ phóng 22 để chắc chắn. Đúng phải là d^II. Giữ
+     nguyên như in. -->
+
+<!-- Ghi chú dịch giả: ở dòng DIFFER. III. trong bảng, số mũ trên cả ba chữ d đều mòn đến
+     mức không đọc được; ở đây chép ba chữ d trần, và đã ghi chú ở trên rằng chỗ này có
+     lẽ phải là d, d^I, d^II. Dòng INDICES ở trang này chỉ liệt kê sáu chỉ số, 1 tới 6,
+     trong khi các dòng TERMINI, DIFFER. I. và DIFFER. II. lại chứa bảy số hạng; đã giữ
+     nguyên sáu như in. Số trang 43 đặt bên phải đầu trang; dấu hiệu trang ở giữa chân
+     trang là F 2; mép phải chân trang mang chữ catchword Quia, mở đầu câu của trang kế. -->
 
 <!-- PDF 72, trang in 44 -->
 
@@ -408,9 +416,6 @@ $$
 <!-- Ghi chú dịch giả: trang 73 kết thúc ở chữ "vnde", vốn là catchword ở mép phải chân
      trang, nối sang trang kế. Dấu hiệu trang ở giữa chân trang là F 3. Số trang 45 đặt
      bên phải đầu trang. -->
-
-<!-- Chưa dịch: PDF 74-97, tức trang in 46-69, gồm phần còn lại của §45, rồi §46 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 73 là "vnde". -->
 
 <!-- PDF 74, trang in 46 -->
 
@@ -552,18 +557,78 @@ trong khi...
 <!-- Ghi chú dịch giả: trang 75 kết thúc ở chữ "dum", vốn là catchword ở mép phải chân
      trang, nối sang trang kế. Số trang 47 đặt bên phải đầu trang. -->
 
-<!-- Chưa dịch: PDF 76-97, tức trang in 48-69, gồm phần còn lại của §47, rồi §48 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 75 là "dum". -->
+<!-- PDF 76, trang in 48 -->
 
+…trong khi $n$ là một số nguyên lớn hơn số chỉ bậc ấy. Vậy chuỗi này cũng sinh ra từ khai
+triển của một phân số mà mẫu số là $(1-y)^n$, như đã trình bày đầy đủ hơn trong cuốn trước
+về những chuỗi truy hồi.
 
+**48.** Như đã thấy, số hạng tổng quát của mọi chuỗi thuộc lớp này, thuộc bậc nào bất kỳ,
+đều là những functio phân thức nguyên của chính $x$; ngược lại, ta sẽ thấy mọi chuỗi mà
+số hạng tổng quát là những functio thuộc dạng ấy đều thuộc về lớp này, và cuối cùng dẫn
+tới differentia hằng. Và rõ ràng là: nếu số hạng tổng quát là functio bậc nhất $ax + b$,
+thì chuỗi sinh ra từ đó sẽ là chuỗi bậc nhất, tức cấp số cộng, và sẽ có differentia bậc
+nhất là hằng. Còn nếu số hạng tổng quát là functio bậc hai ở dạng $axx + bx + c$ thì chuỗi
+sinh ra từ nó, khi lần lượt thay $x$ bằng các số $1, 2, 3, 4, 5$, &c., sẽ là chuỗi bậc hai,
+và sẽ có differentia bậc hai là hằng. Cũng thế, số hạng tổng quát bậc ba
+$ax^3 + bx^2 + cx + d$ sẽ cho một chuỗi bậc ba, và cứ thế.
 
+**49.** Bởi từ số hạng tổng quát, không chỉ mọi số hạng của chuỗi tìm được, mà cả các
+chuỗi differentia, cả bậc nhất lẫn những bậc kế tiếp, cũng đều suy ra được. Bởi nếu
+lấy số hạng thứ nhất của chuỗi trừ đi số hạng thứ hai thì thu được số hạng thứ nhất của
+chuỗi differentia; còn lấy số hạng thứ hai của chính chuỗi ấy trừ đi số hạng thứ ba thì
+số hạng ấy của chuỗi differentia cũng sẽ thu được,...
 
+<!-- Ghi chú dịch giả: ba dạng functio ở §48 đã tự kiểm bằng phép lấy hiệu sai hữu hạn và
+     cả ba đều đúng như Euler nói. (i) Với số hạng tổng quát ax + b, các số hạng là
+     a+b, 2a+b, 3a+b, &c.; hiệu bậc nhất bằng a, hằng. (ii) Với axx + bx + c, các số hạng
+     là a+b+c, 4a+2b+c, 9a+3b+c, 16a+4b+c, &c.; hiệu bậc nhất là 3a+b, 5a+b, 7a+b, 9a+b,
+     tức một cấp số cộng sai 2a, nên hiệu bậc hai bằng 2a và không đổi. (iii) Với
+     ax^3 + bx^2 + cx + d, hiệu bậc ba bằng 6a và không đổi. Kiểm số với a=3, b=5, c=7,
+     d=11: trường hợp (ii) cho các số hạng 15, 29, 49, 75, 107, 145 với hiệu bậc hai đều
+     bằng 6; trường hợp (iii) cho hiệu bậc ba đều bằng 18. -->
 
+<!-- Ghi chú dịch giả: trang 76 kết thúc ở chữ "minus,", vốn là catchword ở mép phải chân
+     trang; trang này mở đầu bằng chính chữ đó nên câu nối liền, không có dấu phẩy báo
+     trang trước. Số trang 48 đặt bên trái đầu trang. -->
 
-<!-- Ghi chú dịch giả: mẫu số của số hạng cuối trong bản in viết là "1." trên "2", tức
-     1·2; ở đây đã viết thành 1·2 cho rõ. Dòng DIFFER. II. chỉ in năm chữ c, đúng với
-     năm chỉ số đã liệt kê ở dòng INDICES. Trang kết thúc giữa chữ ở "vti ex natura";
-     mép phải mang chữ catchword tura. Số trang 42 đặt bên trái. -->
+<!-- PDF 77, trang in 49 -->
 
+…trừ đi, mà chỉ số của nó là $x$; tức lấy số hạng của chuỗi có chỉ số là $x$ trừ đi số hạng
+kế tiếp có chỉ số là $x+1$. Vậy nếu trong số hạng tổng quát của chuỗi, thay $x$ bằng $x+1$,
+rồi lấy số hạng tổng quát ấy trừ đi số hạng tổng quát đã cho, thì còn lại số hạng tổng quát
+của chuỗi differentia. Nếu $X$ là số hạng tổng quát của chuỗi, thì differentia của nó là
+$\Delta X$ (điều vừa tìm thấy ở chương trước, khi đặt $\omega = 1$), tức là số hạng tổng quát
+của chuỗi differentia bậc nhất. Cũng theo cách ấy, $\Delta\Delta X$ là số hạng tổng quát
+của chuỗi differentia bậc hai; $\Delta^3X$ là của bậc ba, và cứ thế.
+
+**50.** Nhưng nếu số hạng tổng quát $X$ là một functio phân thức nguyên, trong đó số mũ lớn
+nhất của lũy thừa của chính $x$ là $n$; thì từ chương trước ta suy ra differentia $\Delta X$
+của nó sẽ là một functio thấp hơn một bậc, tức là bậc $n-1$. Và do đó $\Delta\Delta X$ sẽ là
+functio bậc $n-2$, còn $\Delta^3X$ là functio bậc $n-3$, và cứ thế. Vậy nếu $X$ là functio
+bậc nhất, như $ax + b$, thì differentia $\Delta X$ của nó sẽ là hằng $= a$; mà đó chính là
+số hạng tổng quát của chuỗi differentia bậc nhất, nên thấy rõ rằng chuỗi có số hạng tổng
+quát $X$ là functio bậc nhất sẽ là cấp số cộng, tức là chuỗi bậc nhất. Cũng thế, nếu số hạng
+tổng quát $X$ là functio bậc hai, tức là $\Delta\Delta X$ không đổi, thì chuỗi sinh ra từ nó
+sẽ có differentia bậc hai là hằng, và do đó thuộc bậc hai; và cứ như vậy mãi mãi: chuỗi
+sinh ra từ functio $X$ nào làm số hạng tổng quát sẽ thuộc cùng bậc với nó.
+
+<!-- Ghi chú dịch giả: luận điểm ở §50 đã tự kiểm và đúng. Với X bậc nhất ax+b thì ΔX = a,
+     hằng. Với X bậc hai axx+bx+c thì ΔX là bậc nhất còn ΔΔX = 2a, hằng. Với X bậc ba
+     ax^3+bx^2+cx+d thì ΔX bậc hai, ΔΔX = 6ax+3b+2c bậc nhất, Δ^3X = 6a, hằng. Cứ thế,
+     mỗi lần lấy hiệu thì bậc giảm đúng một. Kiểm số với a=3, b=5, c=7, d=11 cho Δ^3X = 18
+     = 6a, đúng bằng hằng. Cũng đã kiểm câu "số mũ lớn nhất của lũy thừa của chính x là n"
+     với một functio phân thức nguyên tổng quát, bằng cách dựng hiệu bằng hệ số nhị thức:
+     nếu X = c_n x^n + ... thì ΔX = n c_n x^(n-1) + ..., nên hệ số dẫn đầu là n c_n, khác
+     không khi c_n khác không, và bậc vì thế giảm đúng một. Đã thử với sáu functio ngẫu nhiên
+     bậc 1, 3 và 4, đều cho đúng bậc n-1 và đúng hệ số n c_n. -->
+
+<!-- Ghi chú dịch giả: trang 49 kết thúc ở đúng câu cuối "erit series ex eo nata." Dấu hiệu
+     trang ở giữa chân trang là G. Mép phải chân trang mang chữ bắt "§1. Hanc"; đã soi ở độ
+     phóng 8 và xác nhận đúng là "§1. Hanc", không có chữ số 5 mất mà chỉ là "§1.", dù
+     mục tiếp theo hợp lý ra phải là §51. Số trang 49 đặt bên phải đầu trang. -->
+
+<!-- Chưa dịch: PDF 78-97, tức trang in 50-69, gồm phần còn lại của §50, rồi §51 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 77 là "§1. Hanc". -->
 
 

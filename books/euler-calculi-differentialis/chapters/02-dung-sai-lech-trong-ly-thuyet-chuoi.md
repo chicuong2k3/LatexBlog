@@ -412,6 +412,80 @@ $$
 <!-- Chưa dịch: PDF 74-97, tức trang in 46-69, gồm phần còn lại của §45, rồi §46 trở đi
      và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 73 là "vnde". -->
 
+<!-- PDF 74, trang in 46 -->
+
+từ đó quy luật, theo đó các số hạng tổng quát của những bậc kế tiếp được lập ra, thì thấy
+dễ dàng. Nhưng từ đây cũng thấy rằng, với bậc nào bất kỳ, số hạng tổng quát sẽ là một
+functio phân thức nguyên của chính $x$, trong đó số chiều lớn nhất của $x$ phải ngang với
+bậc mà chuỗi ấy thuộc về. Như vậy số hạng tổng quát của các chuỗi bậc nhất sẽ là functio
+bậc nhất, của các chuỗi bậc hai sẽ là functio bậc hai, và cứ thế.
+
+**46.** Còn các differentia, như đã thấy ở trên, thì phát sinh từ chính các số hạng của
+chuỗi theo cách sau:
+
+$$
+b = a^{\mathrm{I}} - a
+$$
+
+$$
+b^{\mathrm{I}} = a^{\mathrm{II}} - a^{\mathrm{I}}
+$$
+
+$$
+b^{\mathrm{II}} = a^{\mathrm{III}} - a^{\mathrm{II}}
+$$
+
+&c.
+
+$$
+c = a^{\mathrm{II}} - 2a^{\mathrm{I}} + a
+$$
+
+$$
+c^{\mathrm{I}} = a^{\mathrm{III}} - 2a^{\mathrm{II}} + a^{\mathrm{I}}
+$$
+
+$$
+c^{\mathrm{II}} = a^{\mathrm{IV}} - 2a^{\mathrm{III}} + a^{\mathrm{II}}
+$$
+
+&c.
+
+$$
+d = a^{\mathrm{III}} - 3a^{\mathrm{II}} + 3a^{\mathrm{I}} - a
+$$
+
+$$
+d^{\mathrm{I}} = a^{\mathrm{IV}} - 3a^{\mathrm{III}} + 3a^{\mathrm{II}} - a^{\mathrm{I}}
+$$
+
+$$
+d^{\mathrm{II}} = a^{\mathrm{V}} - 3a^{\mathrm{IV}} + 3a^{\mathrm{III}} - a^{\mathrm{II}}
+$$
+
+&c.
+
+Vì thế, do trong các chuỗi bậc nhất mọi giá trị của $c$ đều bằng $0$, ta sẽ có
+
+$$
+a^{\mathrm{II}} = 2a^{\mathrm{I}} - a;\quad a^{\mathrm{III}} = 2a^{\mathrm{II}} - a^{\mathrm{I}};\quad a^{\mathrm{IV}} = 2a^{\mathrm{III}} - a^{\mathrm{II}};\quad \&c.
+$$
+
+từ đó thấy các chuỗi này đồng thời là các chuỗi truy hồi, và thang quan hệ của chúng là
+$2,\ -1$. Còn khi trong các chuỗi bậc hai...
+
+<!-- Ghi chú dịch giả: cả chín công thức ở trang này đã đối chiếu với định nghĩa differentia
+     đã dùng ở §42 và §43 và đều đúng; đây là hiệu sai hữu hạn tiêu chuẩn. Dòng
+     a^II = 2a^I - a cũng đúng: khi differentia bậc hai bằng 0 thì a^II = 2a^I - a, đúng
+     với cấp số cộng. -->
+
+<!-- Ghi chú dịch giả: trang 74 kết thúc giữa chữ ở "in seriebus secundi ordi-"; mép phải
+     mang chữ catchword ordi-. Số trang 46 đặt bên trái đầu trang. -->
+
+<!-- Chưa dịch: PDF 75-97, tức trang in 47-69, gồm phần còn lại của §46, rồi §47 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 74 là "ordi-". -->
+
+
 
 
 

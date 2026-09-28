@@ -1429,5 +1429,19 @@ Mở đầu CAPUT II trong `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`:
 
 **Dấu ở chân trang:** trang 67 có hoa văn trang trí và catchword `1, 2,`; trang 68 cắt ở `40. In-`; trang 69 có catchword `Ex`; trang 70 cắt ở `vti ex natura` với catchword `tura`; trang 71 có catchword `Quia`. Số trang xen kẽ bên trái và bên phải như mọi chương khác.
 
+### 2026-09-28 — Chương II, Phần 2 (PDF 72–73, tr. 44–45, §44 và mở §45)
+
+Bổ sung trang 72–73 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: các năm số hạng đầu của chuỗi bậc ba, số hạng tổng quát theo dãy differentia, hai dạng rút gọn của nó; rồi bảng các bậc DIFFER. III–V, số hạng tổng quát theo dãy differentia, nhận xét về trường hợp không có differentia hằng, và mở §45 với dạng rút gọn cho bậc bốn. Chưa thêm callout. **Chưa niêm phong**; còn PDF 74–97 (tr. 46–69).
+
+**Đã soi bản scan:** toàn trang 72 và 73. Các bảng đều phải đọc từ ảnh vì lớp OCR hỏng ở mọi số mũ La-tinh.
+
+**Trang 72 không có lỗi in; đã tự kiểm toàn bộ.** Với `a=1, b=2, c=3, d=4` thì dựng chuỗi từ differentia bậc ba hằng cho `1, 3, 8, 20, 43, 81, &c.`, đúng như năm số hạng Euler in ở đầu trang: `a+b`, `a+2b+c`, `a+3b+3c+d`, `a+4b+6c+4d`. Cả hai dạng rút gọn của số hạng tổng quát cũng khớp số hạng tổng quát `a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d`. Lưu ý khác biệt quan trọng so với bậc hai: ở bậc ba, differentia bậc hai không hằng mà lập thành cấp số cộng, nên số hạng thứ năm là `a+4b+6c+4d`, không phải `a+4b+6c+2d`. Dạng có nhân tử chỉ đúng khi `x` khác `1, 2, 3, 4`, vì các mẫu `x-1, x-2, x-3, x-4` nằm ở mẫu số.
+
+**Dạng có nhân tử ở cuối §45 in sai, đã chép nguyên văn; lỗi chỉ ở mẫu số.** Bản in dùng mẫu `1·2·3·4·5`; đúng phải là `1·2·3·4`. Cách xác định: lập trực tiếp trọng số của từng số hạng `a, a^I, a^II, a^III, a^IV` trong số hạng tổng quát, bằng cách thay `b = a^I - a`, `c = a^II - 2a^I + a`, `d = a^III - 3a^II + 3a^I - a`, `e = a^IV - 4a^III + 6a^II - 4a^I + a` vào rồi so với trọng số mà bản in cho. Kết quả: **cả năm trọng số của bản in đều nhỏ hơn giá trị đúng đúng một lần 5**, không riêng số hạng nào, ở mọi giá trị `x` đã thử. Chẳng hạn trọng số của `a^IV` đúng là `(x-1)(x-2)(x-3)(x-4)/24` còn bản in là `(x-1)(x-2)(x-3)(x-4)/120`, và `24/120 = 1/5`. Vậy chỉ cần đổi mẫu số `120` thành `24` thì cả năm trọng số cùng khớp. Kiểm số: với `a=5, b=2, c=d=e=0` (chuỗi `5, 7, 9, 11, 13, 15, &c.`) thì số hạng thứ 6 đúng là 15, dạng bản in cho 3, dạng sửa mẫu số cho đúng 15.
+
+**Một chỗ đã soi và xác nhận, không phải lỗi.** Ở bảng trang 73, dòng DIFFER. III. có số mũ `II` trên chữ `d` thứ ba rất mờ; đã phóng và xác nhận là `II`, khớp quy luật số mũ La-tinh của các dòng trên. (Ngược lại, ở trang 71 chữ `d` thứ ba trong phần văn xuôi thật sự không có số mũ — đó mới là lỗi in, đã ghi ở Phần 1.)
+
+**Dấu ở chân trang:** trang 72 có catchword `DIF`; trang 73 kết thúc ở chữ `vnde` vốn là catchword, dấu hiệu trang ở giữa là `F 3`.
+
 
 

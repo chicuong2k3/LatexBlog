@@ -277,6 +277,143 @@ $$
 <!-- Chưa dịch: PDF 72-97, tức trang in 43-69, gồm phần còn lại của §43, rồi §44 trở đi
      và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 71 là "Quia". -->
 
+<!-- PDF 72, trang in 44 -->
+
+Vì $a^{\mathrm{I}} = a + b$, $a^{\mathrm{II}} = a + 2b + c$, $a^{\mathrm{III}} = a + 3b + 3c + d$,
+$a^{\mathrm{IV}} = a + 4b + 6c + 4d$, &c., nên số hạng tổng quát, tức số hạng có chỉ số là $x$, sẽ là
+
+$$
+a + \frac{(x-1)}{1}b + \frac{(x-1)(x-2)}{1\cdot 2}c + \frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3}d
+$$
+
+thế là số hạng tổng quát lập được từ các differentia.
+
+Còn khi đặt
+
+$$
+b = a^{\mathrm{I}} - a;\qquad c = a^{\mathrm{II}} - 2a^{\mathrm{I}} + a;\qquad d = a^{\mathrm{III}} - 3a^{\mathrm{II}} + 3a^{\mathrm{I}} - a
+$$
+
+thì thay các giá trị ấy vào, số hạng tổng quát sẽ là
+
+$$
+a^{\mathrm{III}}\frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3} - 3a^{\mathrm{II}}\frac{(x-1)(x-2)(x-4)}{1\cdot 2\cdot 3} + 3a^{\mathrm{I}}\frac{(x-1)(x-3)(x-4)}{1\cdot 2\cdot 3} - a\frac{(x-2)(x-3)(x-4)}{1\cdot 2\cdot 3}
+$$
+
+mà cũng có thể biểu thị theo cách sau, để thành
+
+$$
+= \frac{(x-1)(x-2)(x-3)(x-4)}{1\cdot 2\cdot 3}\left(\frac{a^{\mathrm{III}}}{x-4} - \frac{3a^{\mathrm{II}}}{x-3} + \frac{3a^{\mathrm{I}}}{x-2} - \frac{a}{x-1}\right).
+$$
+
+<!-- Ghi chú dịch giả: mọi công thức của trang này đã tự kiểm và đều đúng, không có lỗi in.
+     Với a=1, b=2, c=3, d=4 thì dựng chuỗi từ differentia bậc ba hằng cho
+     1, 3, 8, 20, 43, 81, &c., đúng như a^I = a+b, a^II = a+2b+c, a^III = a+3b+3c+d,
+     a^IV = a+4b+6c+4d mà bản in nêu. Cả hai dạng rút gọn của số hạng tổng quát cũng khớp
+     số hạng tổng quát a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d. Lưu ý dạng
+     có nhân tử ở chỉ đúng khi x khác 1, 2, 3, 4, vì các mẫu x-1, x-2, x-3, x-4 nằm ở
+     mẫu số. Cũng lưu ý khác với bậc hai: ở bậc ba, differentia bậc hai không hằng mà
+     lập thành một cấp số cộng, nên số hạng thứ năm là a+4b+6c+4d chứ không phải a+4b+6c+2d. -->
+
+**44.** Hãy giả sử đã cho một chuỗi thuộc bậc nào bất kỳ:
+
+**INDICES**
+
+$$
+1,\qquad 2,\qquad 3,\quad 4,\qquad 5,\qquad 6,
+$$
+
+**TERMINI.**
+
+$$
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad \&c.
+$$
+
+**DIFFER. I.**
+
+$$
+b,\quad b^{\mathrm{I}},\quad b^{\mathrm{II}},\quad b^{\mathrm{III}},\quad b^{\mathrm{IV}},\quad \&c.
+$$
+
+**DIFFER. II.**
+
+$$
+c,\quad c^{\mathrm{I}},\quad c^{\mathrm{II}},\quad c^{\mathrm{III}},\quad \&c.
+$$
+
+<!-- Ghi chú dịch giả: trang 72 kết thúc ở đây, mép phải chân trang mang chữ catchword DIF,
+     nối sang dòng DIFFER. III. ở trang kế. Số trang 44 đặt bên trái đầu trang. -->
+
+<!-- PDF 73, trang in 45 -->
+
+**DIFFER. III.**
+
+$$
+d,\quad d^{\mathrm{I}},\quad d^{\mathrm{II}},\quad \&c.
+$$
+
+**DIFFER. IV.**
+
+$$
+e,\quad e^{\mathrm{I}},\quad \&c.
+$$
+
+**DIFFER. V.**
+
+$$
+f,\quad \&c.
+$$
+
+Từ số hạng thứ nhất của chính chuỗi, cùng từ các số hạng đầu tiên của các dãy differentia
+$b,\ c,\ d,\ e,\ f,\ \&c.$, số hạng tổng quát sẽ biểu thị như sau:
+
+$$
+a + \frac{(x-1)}{1}b + \frac{(x-1)(x-2)}{1\cdot 2}c + \frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3}d + \frac{(x-1)(x-2)(x-3)(x-4)}{1\cdot 2\cdot 3\cdot 4}e + \&c.
+$$
+
+cho tới khi ta đi tới những differentia hằng. Từ đó thấy rằng, nếu các differentia hằng
+không bao giờ xuất hiện, thì số hạng tổng quát phải được trình bày bằng một biểu thức vô
+hạn.
+
+**45.** Vì các differentia được lập thành từ chính các số hạng của chuỗi, nên nếu thay các
+giá trị ấy vào, ta sẽ thu được số hạng tổng quát ở dạng tương tự như dạng đã trình bày cho
+các chuỗi bậc nhất, bậc hai và bậc ba. Cụ thể, với các chuỗi thuộc bậc bốn, số hạng tổng
+quát sẽ là
+
+$$
+\frac{(x-1)(x-2)(x-3)(x-4)(x-5)}{1\cdot 2\cdot 3\cdot 4\cdot 5}\left(\frac{a^{\mathrm{IV}}}{x-5} - \frac{4a^{\mathrm{III}}}{x-4} + \frac{6a^{\mathrm{II}}}{x-3} - \frac{4a^{\mathrm{I}}}{x-2} + \frac{a}{x-1}\right)
+$$
+
+<!-- Ghi chú dịch giả: trong bảng các bậc, dòng DIFFER. III. ở đây có đủ ba số mũ (d, d^I,
+     d^II); số mũ II trên chữ d thứ ba rất mờ, đã soi và xác nhận là II, khớp với quy luật
+     dãy số mũ La-tinh đã thấy ở các dòng bên trên. Ở dòng DIFFER. V. bản in chỉ có f, &c. -->
+
+<!-- Ghi chú dịch giả: số hạng tổng quát viết bằng dãy differentia ở đầu trang này đã tự
+     kiểm và đúng: với a=1, b=2, c=3, d=4, e=0 thì dựng chuỗi cho 1, 3, 8, 20, 43, 81, &c.,
+     đúng với công thức a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d + (x-1)(x-2)(x-3)(x-4)/24·e. -->
+
+<!-- Ghi chú dịch giả: dạng có nhân tử ở cuối §45 in SAI, đã chép nguyên văn; lỗi nằm ở
+     mẫu số, phải là 1·2·3·4 chứ không phải 1·2·3·4·5. Cách xác định: trọng số đúng của
+     từng số hạng trong ngoặc khi rút ra ngoài đã lập được trực tiếp từ số hạng tổng quát
+     a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d + (x-1)(x-2)(x-3)(x-4)/24·e bằng
+     cách thay b = a^I - a, c = a^II - 2a^I + a, d = a^III - 3a^II + 3a^I - a,
+     e = a^IV - 4a^III + 6a^II - 4a^I + a rồi so trọng số của a, a^I, a^II, a^III, a^IV
+     với trọng số mà bản in cho. Kết quả: cả năm trọng số của bản in đều nhỏ hơn đúng một
+     lần 5, không riêng số hạng nào, ở mọi giá trị x đã thử. Chẳng hạn trọng số của a^IV
+     phải là (x-1)(x-2)(x-3)(x-4)/24 còn bản in là (x-1)(x-2)(x-3)(x-4)/120, và 24/120 = 1/5.
+     Vậy chỉ cần đổi mẫu số 120 thành 24 là cả năm trọng số cùng khớp. Kiểm số: với
+     a=5, b=2, c=d=e=0 (chuỗi 5, 7, 9, 11, 13, 15, &c.) thì số hạng thứ 6 đúng là 15, còn
+     dạng bản in cho 3; với mẫu 24 thì cho đúng 15. -->
+
+<!-- Ghi chú dịch giả: trang 73 kết thúc ở chữ "vnde", vốn là catchword ở mép phải chân
+     trang, nối sang trang kế. Dấu hiệu trang ở giữa chân trang là F 3. Số trang 45 đặt
+     bên phải đầu trang. -->
+
+<!-- Chưa dịch: PDF 74-97, tức trang in 46-69, gồm phần còn lại của §45, rồi §46 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 73 là "vnde". -->
+
+
+
 
 <!-- Ghi chú dịch giả: mẫu số của số hạng cuối trong bản in viết là "1." trên "2", tức
      1·2; ở đây đã viết thành 1·2 cho rõ. Dòng DIFFER. II. chỉ in năm chữ c, đúng với

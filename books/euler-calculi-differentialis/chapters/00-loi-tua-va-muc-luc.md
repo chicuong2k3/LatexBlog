@@ -1,6 +1,6 @@
 ---
 title: "Lời tựa, mục lục và lỗi in"
-summary: "Lời tựa của Euler giải thích vì sao Calculus Differentialis không thể bắt đầu bằng định nghĩa, dựng nên khái niệm lượng constans và lượng variabilis từ ví dụ quả cầu bắn ra từ khẩu pháo, rồi định nghĩa vi phân là sai lệch xuất hiện vô cùng nhỏ mà tỉ lệ giữa chúng vẫn xác định được. Kèm mục lục hai phần của sách và danh sách lỗi in do chính Euler ghi."
+summary: "Lời tựa của Euler dẫn từ đại lượng biến thiên và hàm đến số gia tiêu biến, vi phân và các phép tính vi phân, tích phân; kèm mục lục hai phần cùng danh sách lỗi in."
 tags: [dich-sach, toan, giai-tich]
 slug: "loi-tua-va-muc-luc"
 status: chua-hoan-thanh
@@ -9,15 +9,17 @@ status: chua-hoan-thanh
 <!-- Nguồn: PDF 5-28, tức trang in i-xxiv. Bản dịch đã đối chiếu ảnh scan từng trang PDF 5-28;
      xem TRANSLATION_LEDGER.md, mục "Ghi chú dịch". -->
 
-# Nền tảng phép tính vi phân
+# Cơ sở của Phép tính Vi phân
 
-*Cùng ứng dụng của nó trong phân tích hữu hạn và lý thuyết chuỗi*
+*Cùng ứng dụng của nó trong Phân tích Hữu hạn và Lý thuyết Chuỗi*
+
+[Chú thích thuật ngữ: *Analysis finitorum* (Phân tích Hữu hạn) ở nhan đề không mang nghĩa “finite analysis” hiện đại; ở đây chỉ phép phân tích các biểu thức hữu hạn. *Analysis infinitorum* (Phân tích Vô hạn) là lĩnh vực rộng hơn, bao gồm chuỗi vô hạn và các phương pháp vi phân, tích phân.]
 
 **Tác giả: LEONHARD EULER**
 
-Giám đốc Viện Hàn lâm Khoa học và Văn chương Hoàng gia Phổ, giáo sư danh dự của Viện Hàn lâm Khoa học Đế quốc Petropolis, hội viên các Viện Hàn lâm Hoàng gia Paris và London.
+Giám đốc Viện Hàn lâm Khoa học và Văn chương Hoàng gia Phổ, giáo sư danh dự của Viện Hàn lâm Khoa học Đế quốc tại Sankt-Peterburg, hội viên các Viện Hàn lâm Hoàng gia Paris và London.
 
-Viện Hàn lâm Khoa học Đế quốc Petropolis (Sankt-Peterburg) chịu phí tổn in, năm 1755.
+Sankt-Peterburg, do Viện Hàn lâm Khoa học Đế quốc xuất bản, năm 1755.
 
 <!-- PDF 6: trang lót, chỉ có dấu thư viện BIBLIOTHECA REGIA MONACENSIS; không có chữ nào của sách. -->
 
@@ -32,153 +34,70 @@ cách thuận tiện. Không phải là calculus này hoàn toàn không có đ�
 định nghĩa ấy thì cần tới những khái niệm ít quen dùng không chỉ trong đời sống thường ngày,
 mà ngay cả trong chính Analysis finitorum, những khái niệm mà rốt cuộc chỉ được khai triển
 và giải thích trong khi trình bày Calculus Differentialis; vì thế định nghĩa của nó không thể
-nắm được trước khi các nguyên lý của nó đã được nhìn thấu đủ rõ ràng. Vậy trước hết, calculus
-này xoay quanh các lượng variabiles: vì tuy mọi lượng, theo bản chất của nó, đều có thể tăng
-và giảm tới vô hạn;
+nắm được trước khi các nguyên lý của nó đã được nhìn thấu đủ rõ ràng. Vậy trước hết, phép tính này xoay quanh các đại lượng biến thiên (quantitates variabiles): tuy mọi đại lượng, về bản chất, đều có thể được tăng lên hoặc giảm xuống không giới hạn,
 
 <!-- PDF 8, trang in IV -->
 
-nhưng khi calculus được hướng tới một mục đích nhất định nào đó, thì có những lượng được hình
-dung là luôn giữ nguyên một độ lớn, còn những lượng khác thì biến thiên qua mọi mức tăng và
-giảm. Để đánh dấu sự phân biệt ấy, những lượng trước thường được gọi là *constantes*, những
-lượng sau là *variabiles*; thành thử sự khác biệt này nằm không phải ở bản chất của sự vật cho
-bằng ở tính chất của câu hỏi mà calculus được áp vào.
+nhưng khi phép tính được hướng tới một mục đích nhất định, có những đại lượng được xem là luôn giữ nguyên độ lớn, còn những đại lượng khác thì thay đổi qua mọi mức tăng giảm. Để đánh dấu sự phân biệt ấy, các đại lượng trước thường được gọi là hằng lượng (*quantitates constantes*), các đại lượng sau là đại lượng biến thiên (*quantitates variabiles*). Vậy sự khác biệt này không nằm ở bản chất của sự vật, mà ở câu hỏi đang khảo sát.
 
-Vì sự khác biệt giữa lượng constans và lượng variabilis sẽ được minh họa rõ nhất bằng một ví
-dụ, ta hãy xét cú bắn một quả cầu ra từ một khẩu pháo chiến nhờ sức nổ của thuốc súng; bởi ví
-dụ này có vẻ đặc biệt thích hợp để làm sáng tỏ vấn đề. Vậy ở đây xuất hiện nhiều lượng mà
-quan hệ giữa chúng phải được tính đến trong cuộc khảo sát này: thứ nhất là lượng thuốc súng;
-rồi độ nâng của nòng pháo so với đường chân trời; thứ ba là tầm xa của cú bắn trên mặt phẳng
-nằm ngang; thứ tư là thời gian quả cầu đã bắn ra còn ở trong không khí. Và nếu các thí nghiệm
-không được tiến hành với cùng một khẩu pháo, thì còn phải đưa thêm vào tính toán chiều dài của
-nó cùng trọng lượng quả cầu. Nhưng ở đây ta hãy gạt sang bên sự khác nhau về pháo và về quả
-cầu, để khỏi rơi vào những câu hỏi quá rối rắm. Vậy nếu, giữ mãi cùng một
+Có thể thấy rõ nhất sự khác nhau giữa hằng lượng và đại lượng biến thiên qua một ví dụ. Xét một quả cầu được bắn ra từ đại bác nhờ sức nổ của thuốc súng; ví dụ này đặc biệt thích hợp để làm sáng tỏ vấn đề. Ta cần tính đến vài đại lượng có liên hệ với nhau: lượng thuốc súng, góc nâng nòng pháo so với đường chân trời, tầm bắn trên mặt phẳng ngang và thời gian quả cầu ở trên không. Nếu thí nghiệm dùng những khẩu pháo khác nhau, còn phải tính cả chiều dài nòng pháo và trọng lượng quả cầu. Nhưng tạm gác sự khác nhau giữa các khẩu pháo và quả cầu để khỏi sa vào những câu hỏi quá rắc rối. Giả sử ta giữ nguyên
 
 <!-- PDF 9, trang in V -->
 
-lượng thuốc súng, độ nâng của pháo liên tục thay đổi, và cần tìm tầm xa của cú bắn cùng thời
-gian quả cầu bay qua không khí, thì trong câu hỏi này lượng thuốc súng, hay lực đẩy, sẽ là một
-lượng constans, còn độ nâng của pháo cùng tầm xa của cú bắn và thời gian của nó sẽ phải xếp
-vào các lượng variabiles; bởi ta muốn xác định những điều này cho mọi mức độ nâng, để từ đó
-biết được những thay đổi lớn đến đâu trong tầm xa và thời gian của cú bắn nảy sinh từ mọi biến
-đổi của độ nâng. Nhưng sẽ là một câu hỏi khác nếu, giữ nguyên độ nâng của pháo, lượng thuốc
-súng liên tục thay đổi, và phải xác định những thay đổi do đó dội sang cú bắn: vì khi ấy độ
-nâng của pháo sẽ là lượng constans, còn ngược lại lượng thuốc súng, cùng tầm xa và thời gian
-của cú bắn, là những lượng variabiles. Như vậy rõ ràng là khi trạng thái của câu hỏi thay đổi
-thì cùng một lượng có thể lúc được kể vào hàng *constantes*, lúc vào hàng *variabiles*. Đồng
-thời từ đây cũng hiểu được điều cần chú ý nhất trong việc này: các lượng variabiles phụ thuộc
-vào nhau như thế nào, sao cho khi một lượng thay đổi thì những lượng còn lại tất yếu nhận lấy
-những thay đổi. Chẳng hạn trong trường hợp trước, trong đó lượng thuốc súng
+Giữ nguyên lượng thuốc súng và thay đổi góc nâng liên tục, ta muốn tìm tầm bắn cùng thời gian quả cầu bay trong không khí. Trong câu hỏi này, lượng thuốc súng, hay lực đẩy, là hằng lượng; góc nâng, tầm bắn và thời gian bay là các đại lượng biến thiên, vì ta muốn biết chúng thay đổi ra sao ở mọi góc nâng. Một câu hỏi khác là giữ nguyên góc nâng, thay đổi lượng thuốc súng và tìm xem cú bắn biến đổi thế nào. Khi ấy góc nâng là hằng lượng, còn lượng thuốc súng, tầm bắn và thời gian bay là các đại lượng biến thiên. Cùng một đại lượng có thể là hằng lượng trong câu hỏi này nhưng thành đại lượng biến thiên trong câu hỏi khác. Điều cần chú ý là các đại lượng biến thiên phụ thuộc vào nhau ra sao: một đại lượng thay đổi thì những đại lượng khác cũng thay đổi theo. Chẳng hạn, trong trường hợp đầu, lượng thuốc súng
 
 <!-- PDF 10, trang in VI -->
 
-vẫn giữ nguyên, khi độ nâng của pháo thay đổi thì tầm xa và thời gian của cú bắn cũng thay
-đổi; vậy tầm xa và thời gian của cú bắn là những lượng variabiles phụ thuộc vào độ nâng của
-pháo, và khi độ nâng thay đổi thì chúng đồng thời chịu những thay đổi nhất định. Còn trong
-trường hợp sau, chúng phụ thuộc vào lượng thuốc súng, mà sự thay đổi của lượng này phải sinh
-ra những thay đổi nhất định nơi chúng.
+vẫn giữ nguyên, góc nâng thay đổi thì tầm bắn và thời gian bay cũng thay đổi. Chúng là những hàm của góc nâng: khi góc nâng đổi, cả hai cũng đổi theo. Ở trường hợp sau, tầm bắn và thời gian bay phụ thuộc vào lượng thuốc súng, nên lượng thuốc súng thay đổi thì chúng cũng thay đổi.
 
-Những lượng phụ thuộc vào các lượng khác theo cách này, tức là khi những lượng kia thay đổi
-thì chính chúng cũng chịu thay đổi, thường được gọi là *functiones* của những lượng kia; danh
-xưng ấy có phạm vi rất rộng, và bao hàm trong nó mọi cách mà một lượng có thể được xác định
-qua các lượng khác. Vậy nếu $x$ biểu thị một lượng variabilis, thì mọi lượng phụ thuộc vào $x$
-theo bất cứ cách nào, hay được xác định qua nó, đều gọi là *functiones* của nó. Thuộc loại
-này là bình phương $xx$ của nó, hay bất kỳ lũy thừa nào khác, cũng như những lượng được ghép
-từ chúng theo bất cứ cách nào; thậm chí cả những lượng *transcendentes*, và nói chung mọi lượng
-phụ thuộc vào $x$ đến mức khi $x$ tăng hay giảm thì chính chúng cũng nhận lấy thay đổi. Từ đây
-nảy sinh câu hỏi, trong đó người ta hỏi: nếu lượng $x$ được tăng hay giảm đi một lượng cho
-trước, thì mỗi functio của nó do đó thay đổi bao nhiêu,
+Những đại lượng phụ thuộc vào đại lượng khác theo cách ấy, nghĩa là chúng cũng thay đổi khi đại lượng kia thay đổi, thường được gọi là hàm (*functiones*) của đại lượng kia. Tên gọi này có phạm vi rộng: nó bao gồm mọi cách một đại lượng được xác định qua những đại lượng khác. Theo cách hiểu của Euler, $x^2$, $x^3$, $\sqrt{x}$, $\sin x$ và $\log x$ đều là những hàm của $x$. Nếu $x$ là một đại lượng biến thiên, thì mọi đại lượng phụ thuộc vào $x$ hay được xác định qua $x$ theo bất kỳ cách nào đều là hàm của $x$. Chẳng hạn, bình phương $xx$, các lũy thừa khác, những biểu thức ghép từ chúng, cả các hàm siêu việt (*functiones transcendentes*), nói chung mọi đại lượng thay đổi theo $x$ khi $x$ tăng hoặc giảm, đều thuộc loại này. Euler viết $xx$ để chỉ $x^2$ (và $xxx$ để chỉ $x^3$); ký hiệu ấy được giữ lại ở đây theo nguyên bản. Vậy nếu tăng hoặc giảm $x$ một lượng cho trước, mỗi hàm của nó thay đổi bao nhiêu,
 
 <!-- PDF 11, trang in VII -->
 
-tức là nhận lấy một lượng tăng hay lượng giảm bao nhiêu. Trong những trường hợp đơn giản hơn,
-câu hỏi này quả dễ giải: vì nếu lượng $x$ được tăng thêm lượng $\omega$, thì bình phương $xx$
-của nó do đó nhận lượng tăng
+tức là tăng hay giảm bao nhiêu. Với những trường hợp đơn giản, câu hỏi này dễ trả lời. Nếu tăng $x$ thêm $\omega$, bình phương $xx$ tăng thêm
 
 $$
 2x\omega + \omega\omega;
 $$
 
-và như vậy lượng tăng của $x$ sẽ có tỷ lệ với lượng tăng của $xx$ như $\omega$ với
-$2x\omega + \omega\omega$, tức là như $1$ với $2x + \omega$. Tương tự, trong những trường hợp
-khác người ta thường xét tỷ lệ giữa lượng tăng của $x$ với lượng tăng, hay lượng giảm, mà mỗi
-functio của nó do đó nhận được. Mà việc khảo sát tỷ lệ của những lượng tăng như thế không chỉ
-có tầm quan trọng lớn nhất, mà toàn bộ Analysis infinitorum còn dựa trên nó.
+Do đó, số gia của $x$ và số gia của $xx$ có tỷ lệ $\omega:(2x\omega + \omega\omega)$, hay $1:(2x+\omega)$. Với các hàm khác, ta cũng xét tỷ lệ giữa số gia của $x$ với số gia mà mỗi hàm nhận được. Việc khảo sát những tỷ lệ ấy có ý nghĩa căn bản: toàn bộ Phân tích Vô hạn (Analysis infinitorum) dựa trên đó.
 
 <!-- PDF 11, trang in VII (tiếp) -->
 
-Để điều này hiện ra rõ hơn, ta hãy lấy ví dụ bình phương $xx$ ở trên: lượng tăng
-$2x\omega + \omega\omega$ của nó, nhận được khi chính lượng $x$ tăng thêm lượng tăng $\omega$,
-ta đã thấy là có tỷ lệ với lượng tăng ấy như $2x + \omega$ với $1$. Từ đó rõ ràng là lượng tăng
-$\omega$ được lấy càng nhỏ thì tỷ lệ ấy càng tiến gần tới tỷ lệ $2x$ với $1$; tuy nhiên nó
-không hoàn toàn chuyển thành tỷ lệ này trước khi lượng tăng $\omega$ ấy tan biến hẳn. Từ đây
-ta hiểu rằng, nếu lượng tăng $\omega$ của lượng variabilis $x$ trở thành không, thì lượng tăng
-của bình phương $xx$ của nó
+Xét lại bình phương $xx$. Khi $x$ tăng thêm số gia $\omega$, số gia của nó là $2x\omega+\omega\omega$, có tỷ lệ với $\omega$ là $(2x+\omega):1$. Số gia $\omega$ càng nhỏ, tỷ lệ ấy càng gần $2x:1$; nhưng chỉ khi $\omega$ tiêu biến hẳn thì tỷ lệ mới đạt đúng giá trị đó. Vì vậy, nếu số gia $\omega$ của đại lượng biến thiên $x$ trở thành không, số gia của bình phương $xx$
 
 <!-- PDF 12, trang in VIII -->
 
-sinh ra từ đó tuy cũng tan biến, nhưng vẫn giữ với lượng tăng kia tỷ lệ như $2x$ với $1$; và
-điều đã nói ở đây về bình phương phải được hiểu cho mọi functio khác của $x$: bởi các lượng
-tăng tan biến mà chúng nhận được, khi chính lượng $x$ nhận một lượng tăng tan biến, sẽ giữ với
-lượng tăng ấy một tỷ lệ nhất định và gán được.
+cũng tiêu biến, nhưng vẫn giữ tỷ lệ $2x:1$ với số gia kia. Điều vừa nói về bình phương cũng đúng với mọi hàm khác của $x$: khi $x$ nhận một số gia tiêu biến, số gia mà mỗi hàm nhận được vẫn giữ với nó một tỷ lệ xác định.
 
-Và theo cách ấy ta đã được dẫn tới định nghĩa của Calculus Differentialis: nó là **phương pháp
-xác định tỷ lệ của các lượng tăng tan biến mà các functio bất kỳ nhận được, khi lượng
-variabilis mà chúng là functio của nó được gán một lượng tăng tan biến**. Rằng định nghĩa này
-chứa đựng, và hơn thế nữa vét cạn, bản chất thật của calculus differentialis, thì những ai không
-phải là người lạ trong lĩnh vực này sẽ dễ dàng thấy rõ.
+Ta đến được định nghĩa của phép tính vi phân (Calculus Differentialis): đó là **phương pháp xác định tỷ lệ giữa các số gia tiêu biến của những hàm bất kỳ với số gia tiêu biến được gán cho đại lượng biến thiên mà chúng phụ thuộc vào**. Ai đã quen với lĩnh vực này sẽ thấy định nghĩa ấy bao hàm trọn vẹn bản chất của phép tính vi phân.
 
 <!-- PDF 12, trang in VIII (tiếp) -->
 
-Vậy calculus differentialis không bận tâm vào việc truy tìm chính những lượng tăng tan biến
-ấy, vì chúng là không, cho bằng vào việc xem xét tỷ lệ và tỷ số giữa chúng với nhau; và vì
-những tỷ lệ này được biểu thị bằng các lượng hữu hạn, nên cũng phải coi calculus này là xoay
-quanh các lượng hữu hạn. Vì tuy các quy tắc, như chúng thường được truyền dạy, có vẻ được
-thiết kế để xác định
+Phép tính vi phân không nhằm tìm chính các số gia tiêu biến ấy, vì chúng bằng không; điều nó khảo sát là tỷ lệ giữa chúng. Những tỷ lệ này được biểu thị bằng các đại lượng hữu hạn, nên phép tính cũng phải được xem là xoay quanh các đại lượng hữu hạn. Dù các quy tắc thường được dạy có vẻ nhằm xác định những số gia tiêu biến ấy, kết luận không bao giờ dựa vào bản thân chúng mà luôn dựa vào tỷ lệ giữa chúng.
+
+[Chú giải hiện đại: Với $y=f(x)$, cách viết hiện nay diễn đạt phép tính này bằng $dy=f'(x)\,dx$. Phép tính vi phân đi từ hàm $y$ tới vi phân $dy$; phép tính tích phân đi ngược lại, từ quan hệ giữa $dy$ và $dx$ để khôi phục hàm $y$, sai khác một hằng số.]
 
 <!-- PDF 13, trang in IX -->
 
-những lượng tăng tan biến ấy, song chưa bao giờ các kết luận được rút ra từ chúng khi xét một
-cách tuyệt đối, mà luôn luôn từ tỷ lệ giữa chúng.
-
-Còn calculus integralis thì cũng có tình trạng tương tự; định nghĩa thích hợp nhất cho nó là
-nói rằng nó là **phương pháp, từ tỷ lệ đã biết của các lượng tăng tan biến, tìm ra chính những
-functio mà chúng là lượng tăng**. Nhưng để các tỷ lệ này dễ thu thập hơn và dễ biểu diễn trong
-phép tính hơn, chính những lượng tăng tan biến ấy, dù là không, vẫn thường được ký hiệu bằng
-những dấu nhất định; và khi đã dùng các dấu ấy thì chẳng có gì ngăn việc đặt cho chúng những
-tên gọi nhất định. Vậy chúng được gọi là *differentialia*; và vì chúng không có độ lớn, chúng
-cũng được gọi là *infinite parva*; do đó, theo bản chất của chúng, chúng phải được hiểu sao cho
-được coi là hoàn toàn không, hay bằng không. Như vậy, nếu gán cho lượng $x$ lượng tăng $\omega$
-để nó thành $x + \omega$, thì bình phương $xx$ của nó sẽ thành
+Phép tính tích phân cũng vậy. Euler định nghĩa nó là **phương pháp tìm những hàm mà các số gia tiêu biến ấy thuộc về, khi đã biết tỷ lệ giữa các số gia**. Để những tỷ lệ ấy dễ thu thập và biểu diễn hơn, ông ký hiệu các số gia tiêu biến, dù chúng bằng không, bằng những dấu riêng; từ đó có thể đặt tên cho chúng. Ông gọi chúng là vi phân (*differentialia*); vì không có độ lớn, chúng còn được gọi là đại lượng vô cùng bé (*infinite parva*). Theo bản chất, chúng phải được hiểu là hoàn toàn không, tức bằng không. Nếu gán cho $x$ số gia $\omega$, để nó thành $x+\omega$, thì bình phương $xx$ trở thành
 
 $$
 xx + 2x\omega + \omega\omega,
 $$
 
-và do đó nhận lượng tăng
+nên số gia của nó là
 
 $$
-2x\omega + \omega\omega;
+2x\omega + \omega\omega.
 $$
 
-vì thế lượng tăng của $x$, tức $\omega$, sẽ có tỷ lệ với lượng tăng của bình phương, tức
-$2x\omega + \omega\omega$, như $1$ với $2x + \omega$; tỷ lệ này chuyển thành $1$ với $2x$ chỉ
-khi $\omega$ tan biến. Vậy hãy cho
+Vì thế số gia của $x$, tức $\omega$, có tỷ lệ với số gia của bình phương như $1:(2x+\omega)$. Tỷ lệ ấy chỉ trở thành $1:2x$ khi $\omega$ tiêu biến. Theo Euler,
 
 <!-- PDF 14, trang in X -->
 
-$\omega = 0$, thì tỷ lệ của các lượng tăng tan biến ấy, là thứ duy nhất được xét trong calculus
-differentialis, quả thật là như $1$ với $2x$; và ngược lại, tỷ lệ này sẽ không phù hợp với sự
-thật nếu lượng tăng $\omega$ ấy không thật sự tan biến và trở nên hoàn toàn bằng không. Vậy nếu
-cái không được chỉ bởi $\omega$ này biểu thị lượng tăng của lượng $x$, thì vì lượng tăng ấy có
-tỷ lệ với lượng tăng của bình phương $xx$ như $1$ với $2x$, lượng tăng của bình phương $xx$ sẽ
-là $= 2x\omega$, và do đó cũng bằng không; từ đó đồng thời thấy rõ rằng việc triệt tiêu các
-lượng tăng này không ngăn cản tỷ lệ giữa chúng, là như $1$ với $2x$, được xác định. Cái không
-mà ở đây được biểu diễn bằng chữ $\omega$ thì trong calculus differentialis, vì nó được xét như
-lượng tăng của lượng $x$, thường được biểu diễn bằng dấu $dx$ và gọi là differentiale của nó;
-và khi đặt $dx$ thay cho $\omega$, differentiale của $xx$ sẽ là $2x\,dx$. Tương tự, chứng minh
-được rằng differentiale của lập phương $x^3$ sẽ là $= 3xx\,dx$, và nói chung differentiale của
-mọi lũy thừa $x^n$ sẽ là $= nx^{n-1}\,dx$.
+Khi đặt $\omega=0$, tỷ lệ giữa các số gia tiêu biến ấy — đối tượng duy nhất mà phép tính vi phân khảo sát — quả thật là $1:2x$. Nếu $\omega$ không tiêu biến hoàn toàn, tỷ lệ đó sẽ không đúng. Vì $\omega$ biểu thị số gia của $x$, số gia của bình phương $xx$ theo tỷ lệ $1:2x$ là $2x\omega$, nên nó cũng bằng không. Việc cả hai số gia triệt tiêu không ngăn ta xác định tỷ lệ giữa chúng là $1:2x$. Trong phép tính vi phân, số không $\omega$ được ký hiệu là $dx$ khi biểu thị số gia của $x$, và được gọi là vi phân của $x$.
+Khi thay $\omega$ bằng $dx$, vi phân của $xx$ là $2x\,dx$. Tương tự, vi phân của $x^3$ là $3xx\,dx$, và nói chung vi phân của $x^n$ là $nx^{n-1}\,dx$.
 
 <!-- PDF 14, trang in X (tiếp) -->
 
@@ -203,56 +122,28 @@ bị triệt tiêu hoàn toàn.
 > Đây là chỗ khó nhất của toàn bộ lời tựa, và cũng là chỗ tách calculus của Euler khỏi cách
 > dạy vi phân ngày nay.
 >
-> Euler đặt $\omega = 0$ rồi nói tỷ lệ của các lượng tăng ấy là $1 : 2x$. Ở đây không có
-> phép chia nào cả: tử số và mẫu số đều bằng không. Cái được xác định ở đây không phải tỷ lệ
-> của hai số không, mà là **giới hạn của họ tỷ lệ** khi $\omega \to 0$:
+> Euler thật sự đặt $\omega=0$ rồi nói tỷ lệ giữa các số gia tiêu biến là $1:2x$. Ông không xem đây là phép chia số học $0/0$; theo lập luận của ông, dù hai số gia đều bằng không, tỷ lệ hình học giữa chúng vẫn xác định được. Đây là nền tảng mà Euler chủ trương cho phép tính vi phân, không phải một cách viết khác của định nghĩa đạo hàm hiện đại.
+>
+> Nếu diễn đạt phép tính ấy bằng giải tích hiện đại, ta không đặt $\omega=0$ bên trong phân thức mà lấy giới hạn:
 >
 > $$
-> \lim_{\omega \to 0} \frac{\omega}{2x\omega + \omega^2} = \frac{1}{2x}
+> \lim_{\omega\to0}\frac{(x+\omega)^2-x^2}{\omega}
+> =\lim_{\omega\to0}(2x+\omega)=2x.
 > $$
 >
-> Chính Euler đã viết lời này ở trang in VII, chỉ dùng chữ mà không dùng phép giới hạn: lượng
-> tăng $\omega$ càng nhỏ thì tỷ lệ ấy càng gần $2x$ với $1$. Ông cũng nói thẳng rằng tỷ lệ
-> ấy "không đi tới hẳn" cho tới khi $\omega$ tan biến — nghĩa là bản thân tỷ lệ $1 : 2x$ chỉ
-> là cái được xác định *qua* quá trình đó.
->
-> Khác biệt về sau nằm ở chỗ Euler không cần định nghĩa giới hạn, vì ông không dùng giới hạn ở
-> đâu cả. Ông dựng cả calculus trên quan hệ thuần số học giữa những đại lượng hữu hạn, và coi
-> tỷ lệ giữa hai lượng cùng tan biến là một vật thể hoàn toàn xác định. Đổi lại, ông phải
-> trả lời bằng văn bản mọi phản biện, vì không có định nghĩa nào để đỡ — đó chính là
-> ba trang in XI–XIII mà ta vừa dịch.
+> Euler chưa xây dựng lý thuyết giới hạn theo định nghĩa $\varepsilon$–$\delta$ của thế kỷ XIX. Tuy nhiên, ông có nói rõ đến một tỷ lệ tiến gần một giới hạn xác định: ngay trong lời tựa này, ông gọi giới hạn ấy là đối tượng thật sự của phép tính vi phân. Cách biện minh của ông và cách định nghĩa đạo hàm hiện đại cho kết quả tương ứng, nhưng không cùng một nền tảng logic.
 
 <!-- PDF 15, trang in XI (tiếp) -->
 
-Tuy vậy, nhiều người đã truyền dạy các quy tắc của Calculus differentialis lại thấy nên tách
-differentialia khỏi cái không tuyệt đối, và lập ra một hạng riêng những lượng infinite parva,
-không tan biến hẳn mà giữ lại một độ lớn nào đó, tuy nhỏ hơn mọi lượng gán được. Vậy người ta
-có lý khi phản bác họ rằng sự chặt chẽ hình học bị xem nhẹ, và các kết luận rút ra từ đó, vì đã
-bỏ qua những infinite parva như thế, đáng bị ngờ vực: bởi dù những infinite parva ấy được hình
-dung nhỏ bé đến đâu, thì khi không chỉ từng cái riêng lẻ mà cả nhiều, thậm chí vô số cái cùng
-lúc bị vứt bỏ, rốt cuộc có thể sinh ra một sai số khổng lồ. Họ cố bẻ gãy phản bác này, nhưng
-là sai lầm, bằng những ví dụ trong đó người ta rút ra bằng Calculus differentialis cùng những
-kết luận như bằng Hình học
+Tuy vậy, một số người dạy phép tính vi phân lại tách các vi phân khỏi số không tuyệt đối, đặt chúng vào một hạng riêng gồm những đại lượng vô cùng bé không tiêu biến hẳn mà vẫn giữ một độ lớn nào đó, dù nhỏ hơn mọi đại lượng có thể chỉ ra. Euler cho rằng người ta có lý khi trách họ xem nhẹ tính nghiêm ngặt của hình học và nghi ngờ các kết luận của phép tính ấy: dù những đại lượng vô cùng bé được hình dung nhỏ đến đâu, việc bỏ qua không chỉ từng lượng riêng lẻ mà cả nhiều, thậm chí vô số lượng như thế vẫn có thể gây ra sai số rất lớn. Những người ấy tìm cách bác bỏ lời phê bình bằng cách nêu các ví dụ trong đó phép tính vi phân cho cùng kết luận với hình học sơ cấp, nhưng lập luận ấy sai.
 
 <!-- PDF 16, trang in XII -->
 
-sơ cấp: vì nếu những infinite parva bị bỏ qua trong phép tính không phải là không, thì tất
-yếu phải sinh ra sai số, và sai số càng lớn khi chúng càng dồn đống lại; và nếu điều ấy mà
-không xảy ra, thì đúng hơn phải quy cho một khuyết tật của phép tính, khiến đôi khi các sai số
-được bù trừ bởi những sai số khác, hơn là coi chính phép tính được giải thoát khỏi mối ngờ sai
-số. Còn nếu sự bù trừ như thế diễn ra mà không nhờ một sai số mới nào, thì những ví dụ như vậy
-chứng minh sáng tỏ chính điều tôi muốn nói: những gì đã bị bỏ qua phải được coi là hoàn toàn và
-tuyệt đối bằng không; và những infinite parva được xử lý trong calculus differentialis không
-khác gì cái không tuyệt đối.
+Nếu các đại lượng vô cùng bé bị bỏ qua mà không thực sự bằng không, thì tất yếu phải sinh ra sai số; càng nhiều lượng bị gộp lại, sai số càng lớn. Nếu điều đó không xảy ra, ta nên quy cho khuyết điểm của phép tính, khiến sai số này đôi khi bù trừ sai số khác, chứ không thể cho rằng phép tính đã thoát khỏi nguy cơ sai lệch. Còn nếu sự bù trừ xảy ra mà không cần thêm một sai số mới nào, thì chính những ví dụ ấy chứng minh điều Euler muốn nói: những gì bị bỏ qua phải được coi là hoàn toàn, tuyệt đối bằng không. Các đại lượng vô cùng bé trong phép tính vi phân chẳng khác nào số không tuyệt đối.
 
 <!-- PDF 16, trang in XII (tiếp) -->
 
-Cũng chẳng giải quyết được gì khi một số người mô tả infinite parva sao cho chúng phải được xem
-như những hạt bụi nhỏ so với một ngọn núi khổng lồ, hay thậm chí so với cả quả địa cầu: vì tuy
-người nào nhận lấy việc xác định bằng tính toán độ lớn của cả quả địa cầu thường dễ được tha
-thứ cho sai số không phải của một mà của nhiều nghìn hạt bụi, song sự chặt chẽ hình học ghê sợ
-cả một sai số nhỏ đến thế, và phản bác này sẽ quá nặng nếu nó còn giữ chút sức nặng nào. Hơn
-nữa cũng khó nói những người
+Cũng chẳng ích gì khi mô tả các đại lượng vô cùng bé như hạt bụi so với một ngọn núi khổng lồ, thậm chí so với cả Trái Đất. Người tính toán kích thước Trái Đất có thể được tha thứ nếu sai số không chỉ bằng một mà bằng hàng nghìn hạt bụi; nhưng tính nghiêm ngặt của hình học không dung thứ ngay cả sai số nhỏ đến thế. Nếu lập luận này còn chút sức nặng nào thì nó cũng đủ bác bỏ cách biện hộ kia. Hơn nữa, khó hiểu những người
 
 <!-- PDF 17, trang in XIII -->
 
@@ -265,10 +156,7 @@ mà dựa vào đó thiết lập sự so sánh; nhưng họ buộc phải chấ
 dám gán cho nó một độ lớn nhất định và xác định, dù nhỏ tới mức không thể hình dung; vì nếu họ
 giả thiết nó nhỏ hơn hai hay ba lần, thì các so sánh vẫn luôn y như cũ. Từ đó rõ ràng là chính
 độ lớn ấy chẳng góp gì vào việc thiết lập sự so sánh, và vì thế sự so sánh không bị xóa bỏ, ngay
-cả khi độ lớn ấy tan biến hoàn toàn. Mà từ những điều đã nói ở trên thì hiển nhiên sự so sánh
-được xét trong calculus differentialis thậm chí không có chỗ đứng, trừ khi các lượng tăng ấy
-tan biến hẳn: vì lượng tăng của lượng $x$, mà ta đã ký hiệu chung bằng $\omega$, với lượng tăng
-của bình phương $xx$, tức $2x\omega + \omega\omega$, có tỷ lệ
+cả khi độ lớn ấy tan biến hoàn toàn. Từ những điều trên, rõ ràng tỷ lệ được xét trong phép tính vi phân chỉ có nghĩa khi các số gia tiêu biến hoàn toàn. Số gia $\omega$ của $x$ và số gia $2x\omega + \omega\omega$ của bình phương $xx$ có tỷ lệ
 
 <!-- PDF 18, trang in XIV -->
 
@@ -276,19 +164,7 @@ $$
 \text{như } 1 \text{ với } 2x + \omega;
 $$
 
-tỷ lệ này luôn khác tỷ lệ $1$ với $2x$, trừ khi $\omega = 0$; còn nếu ta đặt $\omega = 0$ thì
-khi ấy ta mới có thể khẳng định thật sự rằng tỷ lệ này đúng là như $1$ với $2x$. Tuy vậy, trong
-khi đó ta cũng thấy rằng lượng tăng $\omega$ được lấy càng nhỏ thì càng tiến gần tới tỷ lệ này;
-do đó không những được phép, mà còn hợp với bản chất sự vật, là trước hết xét các lượng tăng
-này như hữu hạn, và cả trong các hình vẽ, nếu cần hình vẽ để minh họa vấn đề, cũng biểu diễn
-chúng như hữu hạn; rồi sau đó hình dung trong ý nghĩ rằng các lượng tăng này liên tục trở nên
-nhỏ hơn, và như vậy sẽ thấy tỷ lệ giữa chúng ngày càng tiến gần tới một giới hạn nhất định nào
-đó, nhưng chỉ chạm tới nó khi chúng đã hoàn toàn trở thành không. Chính giới hạn này, cái như
-thể tạo thành tỷ lệ cuối cùng của các lượng tăng ấy, là đối tượng thật sự của Calculus
-differentialis; vì vậy phải coi người đã đặt những nền móng đầu tiên của nó là người đầu tiên
-nảy ra ý chiêm nghiệm những tỷ lệ cuối cùng này, những tỷ lệ mà lượng tăng của các lượng
-variabiles tiến gần tới khi chúng ngày càng giảm đi, và chỉ chạm tới khi chúng tan biến. Dấu
-vết của sự chiêm nghiệm này ta bắt gặp ở những tác giả cổ xưa nhất,
+tỷ lệ này khác $1:2x$ nếu $\omega\ne0$; chỉ khi đặt $\omega=0$ ta mới có thể khẳng định tỷ lệ ấy đúng bằng $1:2x$. Ta cũng thấy số gia $\omega$ càng nhỏ thì tỷ lệ càng tiến gần giá trị đó. Vì vậy, trước hết có thể xét các số gia như những lượng hữu hạn và biểu diễn chúng như thế trong hình vẽ; sau đó hình dung chúng nhỏ dần. Khi ấy, tỷ lệ giữa chúng tiến gần tới một giới hạn xác định, giới hạn mà chúng chỉ đạt tới khi các số gia tiêu biến hoàn toàn. Euler gọi giới hạn này, như thể nó là tỷ lệ cuối cùng của các số gia tiêu biến, là đối tượng thật sự của phép tính vi phân. Người đầu tiên đặt nền móng cho phép tính ấy hẳn là người đầu tiên suy ngẫm về những tỷ lệ cuối cùng mà số gia của các đại lượng biến thiên tiến gần tới khi chúng ngày càng nhỏ đi và chỉ đạt tới khi tiêu biến. Dấu vết của cách suy ngẫm này đã có ở những tác giả cổ xưa nhất,
 
 <!-- PDF 19, trang in XV -->
 
@@ -297,43 +173,19 @@ Analysis infinitorum. Rồi dần dần môn khoa học này nhận được nh�
 không phải đột ngột được đưa lên tới đỉnh cao mà ngày nay người ta thấy; tuy thật ra trong nó
 vẫn còn nhiều điều ẩn giấu hơn những điều đã được đưa ra ánh sáng.
 
-Vì Calculus differentialis mở rộng tới các functio thuộc mọi loại, dù chúng được ghép lại thế
-nào, nên phương pháp so sánh với nhau các lượng tăng tan biến của mọi functio không trở nên
-được biết đến một cách đột ngột; mà phát minh này tiến dần tới những functio ngày càng phức tạp
-hơn. Chẳng hạn, đối với các functio *rationales*, tỷ lệ cuối cùng mà các lượng tăng tan biến
-của chúng giữ với nhau đã có thể được xác định từ rất lâu trước thời NEWTON và LEIBNIZ; thành
-thử Calculus differentialis, xét trong chừng mực chỉ áp dụng cho các functio rationales, phải
-được coi là đã được phát minh từ lâu trước thời ấy. Còn thì không có gì phải nghi ngờ rằng ta
-phải ghi công cho NEWTON phần của Calculus differentialis xoay quanh các functio
-*irrationales*; phần mà ông đã may mắn được dẫn tới nhờ Định lý xuất sắc của mình về khai triển
-tổng quát các lũy thừa của nhị thức; và nhờ phát minh xuất sắc ấy, các giới hạn của calculus
+Phép tính vi phân áp dụng cho đủ loại hàm, nhưng phương pháp so sánh số gia tiêu biến của chúng không xuất hiện cùng một lúc; nó được phát triển dần cho những hàm ngày càng phức tạp. Với các hàm hữu tỷ (*functiones rationales*), tỷ lệ cuối cùng giữa các số gia tiêu biến đã được xác định từ lâu trước thời NEWTON và LEIBNIZ. Vì thế, phép tính vi phân trong phạm vi các hàm hữu tỷ hẳn đã được phát minh trước thời họ. Phần phép tính vi phân áp dụng cho các hàm vô tỷ (*functiones irrationales*) phải được ghi công cho NEWTON. Ông đã phát triển phần này nhờ định lý tổng quát khai triển lũy thừa của nhị thức; phát minh ấy mở rộng đáng kể phạm vi của phép tính vi phân.
 
 <!-- PDF 20, trang in XVI -->
 
-differentialis đã được mở rộng một cách tuyệt vời. Còn đối với LEIBNIZ, ta cũng mang ơn không
-kém, vì ông đã đưa calculus này, trước đó chỉ được xem như một mẹo kỹ thuật riêng lẻ, vào hình
-thức một môn học, gom các quy tắc của nó lại như thành một hệ thống, và giải thích chúng rõ
-ràng. Bởi từ đó đã gợi ra những trợ lực lớn nhất để trau dồi calculus này thêm nữa, và để rút
-ra từ những nguyên lý chắc chắn những gì cho tới lúc ấy còn thiếu. Vậy chẳng bao lâu, nhờ công
-sức của chính LEIBNIZ, rồi của các BERNOULLI được ông khích lệ vào việc này, phạm vi của
-Calculus differentialis được đẩy tới cả các functio *transcendentes*, phần cho tới lúc ấy còn
-bỏ hoang, và đồng thời những nền móng vững chắc nhất của Calculus integralis cũng được xác
-lập; dựa trên đó, những người về sau làm việc trong lĩnh vực này đã liên tục bổ sung những
-bước tiến lớn hơn.
+Ta cũng mang ơn LEIBNIZ: ông biến phép tính này, trước đó chỉ được xem như một kỹ thuật riêng biệt, thành một môn học, hệ thống hóa các quy tắc và giải thích chúng rõ ràng. Nhờ vậy, người ta có thêm phương tiện để phát triển phép tính và rút ra từ những nguyên lý chắc chắn những điều trước đó còn thiếu. Chẳng bao lâu, nhờ công của LEIBNIZ và các BERNOULLI mà ông khích lệ tham gia, phép tính vi phân mở rộng sang các hàm siêu việt (*functiones transcendentes*), lĩnh vực đến khi ấy còn bị bỏ ngỏ. Những nền tảng vững chắc nhất của phép tính tích phân cũng được xác lập; các nhà toán học về sau tiếp tục xây dựng trên đó.
 
 <!-- PDF 20, trang in XVI (tiếp) -->
 
-NEWTON thì cũng đã đưa ra những mẫu mực rất phong phú về Calculus integralis; mà vì phát minh
-đầu tiên của nó khó lòng tách khỏi nguồn gốc đầu tiên của calculus differentialis, nên không
-thể xác định dứt khoát được như vậy; và vì phần lớn nhất của nó vẫn còn phải trau dồi, nên ngay
-cả bây giờ calculus này cũng không thể coi là đã được phát minh trọn vẹn; mà đúng hơn, mỗi
-người đã được góp phần bao nhiêu, theo sức mình, vào sự hoàn thiện của nó,
+NEWTON cũng đưa ra nhiều mẫu mực phong phú về phép tính tích phân. Vì sự ra đời của phép tính này khó tách khỏi nguồn gốc của phép tính vi phân, không thể xác định rạch ròi ai là người phát minh đầu tiên. Hơn nữa, phần lớn phép tính tích phân vẫn còn cần được phát triển; ngay cả ngày nay cũng chưa thể xem nó đã hoàn thiện. Ta nên biết ơn tất cả những ai, tùy sức mình, góp phần hoàn thiện nó.
 
 <!-- PDF 21, trang in XVII -->
 
-thì ta phải ghi nhận điều đó với lòng biết ơn. Và đó là điều tôi cho rằng phải giữ về vinh
-quang của việc phát minh ra calculus này, vinh quang mà trước đây quả đã bị tranh cãi dữ dội
-đến thế.
+Đó là điều cần ghi nhận về công lao phát minh phép tính này, vốn từng bị tranh cãi dữ dội.
 
 Còn về những tên gọi khác nhau mà các nhà Toán học thuộc nhiều dân tộc khác nhau thường đặt cho
 calculus này, thì tất cả đều quy về chỗ phù hợp tốt với định nghĩa đã nêu ở đây: vì dù những

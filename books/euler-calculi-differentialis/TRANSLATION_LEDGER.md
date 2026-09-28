@@ -1526,6 +1526,21 @@ Bổ sung trang 87 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: m�
 
 **Dấu ở chân trang:** đầu trang mang chữ `CAPUT II.` ở giữa và số trang `59` ở bên phải. Tiêu đề §62 in là `Hinc ergo summae pro variis ipsius n valori-` / `bus ica se habebunt:`, có ngắt dòng giữa chữ tại `valori` và `bus`. Cuối trang có `&c.` ở giữa và chữ bắt `quae` ở bên phải.
 
+### 2026-09-28 — Chương II, Phần 6 (PDF 88, tr. 60, hết §62, §63)
+
+Bổ sung trang 88 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`: vế văn xuôi nối từ trang trước (các tổng còn tiếp diễn được tới lũy thừa thứ mười chín, và có thể đi xa hơn nếu các hệ số được trích ra thêm), rồi §63 với quy luật chuyển tổng bậc $n$ sang tổng bậc $n+1$, hai công thức hiển thị, cuối cùng là phần bàn về việc số hạng chót khi $n$ lẻ và cách trích ra hằng số $\varphi$. Chưa thêm callout. **Chưa niêm phong**; còn PDF 89–97 (tr. 61–69).
+
+**Hệ số trong hai công thức là chữ Hy Lạp, không phải chữ Latin.** Cụ thể là $\alpha, \beta, \gamma, \delta, \varepsilon, \zeta, \eta$, đúng thứ tự bảng chữ cái Hy Lạp nên không thể ngẫu nhiên. Lần đọc đầu của tôi cho ra `a, b, c, d, e`, vì trong crop của chính tôi đã thấy ký hiệu `γ` mà không nhận ra nó là gamma. Đã soi từng chữ ở độ phóng 250 tới 450; riêng chữ $\beta$ vẫn có thể lẫn với `b` và với số 6, nhưng vì đã xác nhận được $\gamma$ trong cùng công thức nên dãi Hy Lạp là cách đọc nhất quán. Đã ghi chú tại chương để người đọc không sửa nhầm thành chữ Latin.
+
+**Không có lỗi in nào ở trang này, và đã kiểm bằng số chứ không chỉ bằng mắt.** Công thức thứ nhất có các số mũ $n{+}1, n, n{-}1, n{-}3, n{-}5, n{-}7, n{-}9$; các số mũ $n{-}2, n{-}4, n{-}6, n{-}8$ vắng mặt là đúng, vì hệ số của chúng bằng không. Công thức thứ hai có số mũ $n{+}2, n{+}1, n, n{-}2, n{-}4, n{-}6, n{-}8$, tức mẫu số của dãy phân số lùi từng hai đơn vị. Số mũ của số hạng $\delta$ trong công thức thứ hai là $n{-}2$, đã kiểm lại bằng cách lấy $n=7$ trong bảng ở trang 87: $\delta = 7/24$ và $(n{+}1)/(n{-}2) = 8/5$, tích lại là $7/15$, đúng bằng hệ số của $x^5$ trong $S.x^8$. Nếu số mũ là $n{-}3$ thì số hạng ấy sẽ rơi xuống $x^4$, mà $x^4$ có hệ số bằng không trong $S.x^8$. Lần đọc đầu của tôi cho $n{-}3$ ở đây, sai lần thứ tư trên hai trang liên tiếp; đã ghi bài học vào chương.
+
+**Lỗi in ở phần văn xuôi, đã chép nguyên văn.** Sau chữ `possunt` ở dòng đầu trang có hai dấu chấm, `possunt.  .`. Cùng trang đó, chữ `coefficientes` in bằng ligature, thành `cœfficientes`. Cả hai đều đã ghi chú. Chữ `fine` trong câu `Interim tamen hic fine aliis subsidiis` là danh từ nghĩa là "rốt cuộc", không phải trạng từ, đã dịch theo nghĩa ấy và ghi chú.
+
+**Dấu ở chân trang:** số trang `60` đặt bên trái đầu trang, chữ `CAPUT II.` ở giữa. Chữ bắt ở cuối trang là `S. x^5`, mở đầu trang kế tiếp. Trang này không có dấu ở chân trang.
+
+**Sửa ba chỗ trong kịch bản kiểm của chính người dịch, vì chúng báo sai.** (1) Kịch bản tìm dấu `&` chưa escape bằng regex quét thẳng từ `$$` tới `$$`, nên bắt nhầm cả dấu `\&` đã escape và cả ký tự canh dòng `&` bên trong một khối `\begin{aligned}` của trang trước, vốn hợp lệ và đã build tốt; đã sửa thành tách từng khối `$$` rồi bỏ qua khối nào chứa `\begin{aligned}`. (2) Lần soát đầu tiên dùng mẫu ASCII `2/5 x^4` để dò mã cũ, trong khi thân file dùng LaTeX `\frac{2}{5}x^{4}`, nên báo "không còn mẫu sai" một cách sai lệch. (3) Lần dò vị trí dòng chữ đầu tiên dùng ngưỡng quá cao, tách rời các dòng có phân số và bỏ sót số hạng cuối của dòng $S.x^6$; đã hạ ngưỡng và nối rộng hơn rồi soi lại.
+
+
 ### 2026-09-28 — Rà soát độ trung thành: Lời tựa (PDF 5–28, tr. i–xxiv)
 
 Soi bằng mắt từng trang PDF 5–28, không dùng lớp OCR. Bản dịch cũ lệch nghĩa ở hầu hết các

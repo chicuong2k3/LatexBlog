@@ -1405,5 +1405,61 @@ $$
 <!-- Ghi chú dịch giả: dấu ở chân trang. Đầu trang mang chữ CAPUT II. ở giữa và số trang 59 ở
      bên phải. Cuối trang có "&c." ở giữa và chữ bắt "quae" ở bên phải. -->
 
-<!-- Chưa dịch: PDF 88-97, tức trang in 60-69, gồm §63 trở đi và các EXEMPLUM của CAPUT II.
-     Chữ bắt ở cuối trang 87 là "quae". -->
+<!-- PDF 88, trang in 60 -->
+
+…những tổng ấy, từ công thức chung, còn tiếp diễn được cho tới lũy thừa thứ mười chín. Và ta
+còn có thể đi xa hơn nữa, nếu những hệ số số ấy được trích ra thêm.
+
+**63.** Nhưng trong các công thức này có nhận ra một quy luật nào đó, nhờ đó mọi số hạng đều dễ
+dàng tìm được từ số hạng đứng trước, chỉ trừ riêng số hạng chót, trong trường hợp số hạng chót
+ấy chứa lũy thừa bậc nhất của chính $x$; khi ấy thì trong tổng kế tiếp lại phải thêm một số hạng
+nữa. Nhưng bỏ qua điều đó, nếu là
+
+$$
+S.x^{n} = \alpha x^{n+1} + \beta x^{n} + \gamma x^{n-1} - \delta x^{n-3} + \varepsilon x^{n-5} - \zeta x^{n-7} + \eta x^{n-9} - \&c.
+$$
+
+sẽ là tổng kế tiếp:
+
+$$
+S.x^{n+1} = \frac{n+1}{n+2}\alpha x^{n+2} + \frac{n+1}{n+1}\beta x^{n+1} + \frac{n+1}{n}\gamma x^{n} - \frac{n+1}{n-2}\delta x^{n-2} + \frac{n+1}{n-4}\varepsilon x^{n-4} - \frac{n+1}{n-6}\zeta x^{n-6} + \frac{n+1}{n-8}\eta x^{n-8} - \&c.
+$$
+
+Từ đó, nếu $n$ là số chẵn thì tổng kế tiếp đã đúng như thật; còn nếu $n$ là số lẻ thì trong tổng
+kế tiếp còn thiếu thêm một số hạng chót, và dạng của nó là $\pm\varphi x$. Tuy vậy, chỗ ấy vẫn
+có thể được tìm ra bằng những cách khác. Vì nếu đặt $x = 1$ thì tổng phải bằng số hạng đơn
+nhất, tức là số hạng thứ nhất, và số hạng ấy bằng $1$; hãy đặt $x = 1$ vào mọi số hạng đã tìm
+được, rồi đặt cả tổng bằng $1$, thế là ra giá trị của chính $\varphi$, và đã có nó thì đi tiếp
+được. Cứ thế, mọi tổng loại ấy đều có thể tìm ra được. Như vậy, khi
+
+<!-- Ghi chú dịch giả: hệ số trong hai công thức này là CHỮ HY LẠP, lần lượt alpha, beta, gamma,
+     delta, epsilon, zeta, eta, không phải chữ Latin a, b, c, d, e. Dãy ấy đúng là thứ tự của
+     bảng chữ cái Hy Lạp, nên không thể là ngẫu nhiên. Đã soi từng chữ ở độ phóng 250 tới 450;
+     riêng chữ beta vẫn có thể lẫn với b và với số 6, nhưng vì trong cùng công thức đã xác nhận
+     được chữ gamma thì dãi Hy Lạp là cách đọc nhất quán. Đã ghi ý ở đây để người đọc không
+     sửa nhầm thành chữ Latin. -->
+
+<!-- Ghi chú dịch giả: công thức thứ nhất có các số mũ n+1, n, n-1, rồi n-3, n-5, n-7, n-9. Các
+     số mũ n-2, n-4, n-6, n-8 vắng mặt là đúng, vì hệ số của chúng bằng không. Trong công thức
+     thứ hai, số mũ đi xuống n+2, n+1, n, n-2, n-4, n-6, n-8, tức mẫu số của dãy phân số lùi
+     từng hai đơn vị: n+2, n+1, n, n-2, n-4, n-6, n-8. Cả hai đều đã soi từng số mũ riêng ở độ
+     phóng từ 300 tới 450, không chỗ nào chưa chắc. -->
+
+<!-- Ghi chú dịch giả: số mũ của số hạng delta trong công thức thứ hai là n-2, và điều này đã
+     kiểm lại bằng số. Lấy n=7 trong bảng ở trang trước, ta có delta = 7/24, và (n+1)/(n-2) =
+     8/5, tích lại là 7/15, đúng bằng hệ số của x^5 trong S.x^8 mà bảng ấy in ra. Nếu số mũ
+     là n-3 thì số hạng ấy sẽ rơi xuống x^4, mà x^4 có hệ số bằng không trong S.x^8. -->
+
+<!-- Ghi chú dịch giả: sau chữ possunt ở dòng đầu trang có HAI dấu chấm, "possunt.  .", dấu thứ
+     nhìn là dấu chấm cũng nhưng tách riêng; đã giữ nguyên, không sửa thành một dấu. Cùng trang
+     đó, chữ coefficients in bằng ligature, làm thành cœfficientes. -->
+
+<!-- Ghi chú dịch giả: chữ fine trong câu "Interim tamen hic fine aliis subsidiis" là danh từ,
+     nghĩa là "rốt cuộc", không phải trạng từ. Đã dịch theo nghĩa ấy. -->
+
+<!-- Ghi chú dịch giả: dấu ở chân trang. Số trang 60 đặt bên trái đầu trang, chữ CAPUT II. ở giữa.
+     Chữ bắt ở cuối trang là "S. x^5", mở đầu trang kế tiếp. Trang này không có dấu ở chân
+     trang. -->
+
+<!-- Chưa dịch: PDF 89-97, tức trang in 61-69, gồm phần còn lại của §63 và các EXEMPLUM của
+     CAPUT II. Chữ bắt ở cuối trang 88 là "S. x^5". -->

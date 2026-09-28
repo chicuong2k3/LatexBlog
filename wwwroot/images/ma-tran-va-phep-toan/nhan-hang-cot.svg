@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+<title id="title">Nhân hàng với cột trong phép nhân ma trận</title>
+<desc id="desc">Hàng thứ hai của ma trận A ghép với cột thứ ba của ma trận B để tạo phần tử ở hàng hai cột ba của AB.</desc>
+<style>
+  .bg{fill:#0f172a}.grid{fill:#111827;stroke:#475569;stroke-width:2}.hi{fill:#2563eb;opacity:.75}.hi2{fill:#f97316;opacity:.75}.out{fill:#16a34a;opacity:.85}.txt{font:24px system-ui,Segoe UI,sans-serif;fill:#e5e7eb}.small{font:18px system-ui,Segoe UI,sans-serif;fill:#cbd5e1}.num{font:22px ui-monospace,Menlo,monospace;fill:#f8fafc;text-anchor:middle;dominant-baseline:middle}.op{font:30px ui-monospace,Menlo,monospace;fill:#f8fafc;text-anchor:middle;dominant-baseline:middle}
+</style>
+<rect class="bg" width="920" height="360" rx="18"/>
+<text class="txt" x="80" y="52">A</text><text class="txt" x="408" y="52">B</text><text class="txt" x="710" y="52">AB</text>
+<g transform="translate(70 90)">
+  <rect class="grid" x="0" y="0" width="210" height="140" rx="8"/>
+  <path d="M70 0v140M140 0v140M0 70h210" stroke="#475569" stroke-width="2"/>
+  <rect class="hi" x="0" y="70" width="210" height="70"/>
+  <text class="num" x="35" y="35">1</text><text class="num" x="105" y="35">2</text><text class="num" x="175" y="35">4</text>
+  <text class="num" x="35" y="105">2</text><text class="num" x="105" y="105">6</text><text class="num" x="175" y="105">0</text>
+</g>
+<text class="op" x="320" y="162">×</text>
+<g transform="translate(380 55)">
+  <rect class="grid" x="0" y="0" width="280" height="210" rx="8"/>
+  <path d="M70 0v210M140 0v210M210 0v210M0 70h280M0 140h280" stroke="#475569" stroke-width="2"/>
+  <rect class="hi2" x="140" y="0" width="70" height="210"/>
+  <text class="num" x="35" y="35">4</text><text class="num" x="105" y="35">1</text><text class="num" x="175" y="35">4</text><text class="num" x="245" y="35">3</text>
+  <text class="num" x="35" y="105">0</text><text class="num" x="105" y="105">-1</text><text class="num" x="175" y="105">3</text><text class="num" x="245" y="105">1</text>
+  <text class="num" x="35" y="175">2</text><text class="num" x="105" y="175">7</text><text class="num" x="175" y="175">5</text><text class="num" x="245" y="175">2</text>
+</g>
+<text class="op" x="690" y="162">=</text>
+<g transform="translate(735 90)">
+  <rect class="grid" x="0" y="0" width="120" height="140" rx="8"/>
+  <path d="M60 0v140M0 70h120" stroke="#475569" stroke-width="2"/>
+  <rect class="out" x="60" y="70" width="60" height="70"/>
+  <text class="num" x="30" y="35">?</text><text class="num" x="90" y="35">?</text><text class="num" x="30" y="105">?</text><text class="num" x="90" y="105">26</text>
+</g>
+<text class="small" x="226" y="305" text-anchor="middle">hàng 2: (2, 6, 0)</text>
+<text class="small" x="520" y="305" text-anchor="middle">cột 3: (4, 3, 5)</text>
+<text class="small" x="460" y="335" text-anchor="middle">(2)(4)+(6)(3)+(0)(5)=26</text>
+</svg>

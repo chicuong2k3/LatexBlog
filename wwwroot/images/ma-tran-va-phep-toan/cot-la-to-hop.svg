@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">Cột của tích là tổ hợp tuyến tính các cột của A</title>
+<desc id="desc">Lấy a một bằng (1,0), a hai bằng (0,1), a ba bằng (1,1). Hai lần a một trừ a hai cộng ba lần a ba bằng (5,2). Các mũi tên nét đứt ghép đầu đuôi đi đến đúng điểm (5,2).</desc>
+<style>
+.bg{fill:#0f172a}.axis{stroke:#64748b;stroke-width:2}.step1{stroke:#38bdf8}.step2{stroke:#f97316}.step3{stroke:#a78bfa}.sum{stroke:#22c55e}.vec{stroke-width:4;fill:none;marker-end:url(#arrow)}.step{stroke-width:3;stroke-dasharray:7 5;fill:none;marker-end:url(#arrow)}.txt{font:20px system-ui,Segoe UI,sans-serif;fill:#e5e7eb}.small{font:17px system-ui,Segoe UI,sans-serif;fill:#cbd5e1}.box{fill:#111827;stroke:#475569;stroke-width:2}.num{font:20px ui-monospace,Menlo,monospace;fill:#f8fafc;text-anchor:middle;dominant-baseline:middle}
+</style>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="#e5e7eb"/></marker></defs>
+<rect class="bg" width="900" height="420" rx="18"/>
+<g transform="translate(95 300)">
+  <line class="axis" x1="-25" y1="0" x2="270" y2="0"/><line class="axis" x1="0" y1="35" x2="0" y2="-210"/>
+  <path class="vec step1" d="M0 0 L40 0"/><text class="small" x="42" y="25">a₁=(1,0)</text>
+  <path class="vec step2" d="M0 0 L0 -40"/><text class="small" x="10" y="-48">a₂=(0,1)</text>
+  <path class="vec step3" d="M0 0 L40 -40"/><text class="small" x="49" y="-53">a₃=(1,1)</text>
+  <path class="step step1" d="M0 0 L80 0"/><path class="step step2" d="M80 0 L80 40"/><path class="step step3" d="M80 40 L200 -80"/>
+  <path class="vec sum" d="M0 0 L200 -80"/><text class="txt" x="207" y="-84">Ab=(5,2)</text>
+  <text class="small" x="45" y="-13">2a₁</text><text class="small" x="90" y="36">−a₂</text><text class="small" x="145" y="-5">3a₃</text>
+</g>
+<g transform="translate(515 68)">
+  <rect class="box" x="0" y="0" width="285" height="194" rx="10"/>
+  <text class="txt" x="18" y="42">A = [ a₁  a₂  a₃ ]</text>
+  <rect class="box" x="75" y="70" width="80" height="105" rx="8"/>
+  <path d="M75 105h80M75 140h80" stroke="#475569" stroke-width="2"/>
+  <text class="num" x="115" y="87">2</text><text class="num" x="115" y="122">−1</text><text class="num" x="115" y="157">3</text>
+  <text class="txt" x="180" y="128">= b</text>
+</g>
+<text class="txt" x="515" y="311">Ab = 2a₁ − a₂ + 3a₃</text>
+<text class="small" x="515" y="345">(2,0) − (0,1) + (3,3) = (5,2)</text>
+</svg>

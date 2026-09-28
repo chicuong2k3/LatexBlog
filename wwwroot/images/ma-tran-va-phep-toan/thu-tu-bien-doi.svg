@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">Đổi thứ tự hai phép biến đổi ma trận cho hai điểm cuối khác nhau</title>
+<desc id="desc">Trong mặt phẳng tọa độ, từ u bằng (1,1), làm Q trước rồi P đi qua (1,2) đến (4,2); làm P trước rồi Q đi qua (3,1) đến (3,4).</desc>
+<style>
+.bg{fill:#0f172a}.grid{stroke:#334155;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:2}.blue{stroke:#38bdf8;fill:#38bdf8}.orange{stroke:#fb923c;fill:#fb923c}.txt{font:19px system-ui,Segoe UI,sans-serif;fill:#e5e7eb}.small{font:16px system-ui,Segoe UI,sans-serif;fill:#cbd5e1}.label{font:18px system-ui,Segoe UI,sans-serif;fill:#e5e7eb}.path{fill:none;stroke-width:3;marker-end:url(#arrow)}
+</style>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0 L0 8 L9 4 z" fill="#e5e7eb"/></marker></defs>
+<rect class="bg" width="900" height="420" rx="18"/>
+<g transform="translate(90 345)">
+  <path class="grid" d="M60 0V-290M120 0V-290M180 0V-290M240 0V-290M0 -60H300M0 -120H300M0 -180H300M0 -240H300"/>
+  <path class="axis" d="M0 -300V5H310" fill="none"/>
+  <text class="small" x="300" y="25">x</text><text class="small" x="-23" y="-288">y</text>
+  <path class="path blue" d="M60 -60 L60 -120"/><path class="path blue" d="M60 -120 L240 -120"/>
+  <path class="path orange" d="M60 -60 L180 -60"/><path class="path orange" d="M180 -60 L180 -240"/>
+  <circle cx="60" cy="-60" r="5" fill="#e5e7eb"/>
+  <circle cx="60" cy="-120" r="5" fill="#38bdf8"/><circle cx="240" cy="-120" r="6" fill="#38bdf8"/>
+  <circle cx="180" cy="-60" r="5" fill="#fb923c"/><circle cx="180" cy="-240" r="6" fill="#fb923c"/>
+  <text class="label" x="16" y="-44">u=(1,1)</text>
+  <text class="label" x="4" y="-144">Qu=(1,2)</text>
+  <text class="label" x="208" y="-139">PQu=(4,2)</text>
+  <text class="label" x="175" y="-35">Pu=(3,1)</text>
+  <text class="label" x="188" y="-241">QPu=(3,4)</text>
+</g>
+<g transform="translate(495 92)">
+  <text class="txt" x="0" y="0">P = [ 2  1 ; 0  1 ]</text>
+  <text class="txt" x="0" y="40">Q = [ 1  0 ; 1  1 ]</text>
+  <rect x="0" y="76" width="340" height="118" rx="10" fill="#111827" stroke="#475569"/>
+  <text class="txt" x="18" y="110" fill="#38bdf8">Qu=(1,2) → PQu=(4,2)</text>
+  <text class="txt" x="18" y="155" fill="#fb923c">Pu=(3,1) → QPu=(3,4)</text>
+</g>
+</svg>

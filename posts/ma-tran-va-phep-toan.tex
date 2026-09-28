@@ -16,9 +16,7 @@
 
 \begin{document}
 
-Hai kì trước, ma trận xuất hiện đúng một lần và làm đúng một việc: gói hệ phương trình vào một bảng số để khỏi phải chép lại \(x,y,z\) sau mỗi phép biến đổi. Ta dùng nó như một cách ghi tắt, và không hơn thế.
-
-Nhưng hãy nhìn bảng số sau. Một học sinh ghi lại số giờ học ba môn trong một tuần.
+Hai kì trước, ta xếp hệ số thành bảng rồi khử trên các hàng. Lúc ấy ma trận chủ yếu giúp ta khỏi chép lại \(x,y,z\) sau mỗi bước. Nhưng một bảng số không nhất thiết phải đi kèm phương trình. Đây là số giờ một học sinh dành cho ba môn trong một tuần:
 
 $$
 \begin{array}{c|ccccccc} & \text{T2} & \text{T3} & \text{T4} & \text{T5} & \text{T6} & \text{T7} & \text{CN}\\ \hline
@@ -28,54 +26,55 @@ $$
 \end{array}
 $$
 
-Bỏ các tiêu đề đi, còn lại một bảng chữ nhật ba hàng bảy cột.
+Bỏ tên môn và tên ngày, ta còn lại một bảng chữ nhật:
 
 $$
-\left[ \begin{array}{ccccccc} 2 & 3 & 2 & 4 & 1 & 4 & 2\\ 0 & 3 & 1 & 4 & 3 & 2 & 2\\ 4 & 1 & 3 & 1 & 0 & 0 & 2 \end{array} \right]
+\left[ \begin{array}{ccccccc}
+2 & 3 & 2 & 4 & 1 & 4 & 2\\
+0 & 3 & 1 & 4 & 3 & 2 & 2\\
+4 & 1 & 3 & 1 & 0 & 0 & 2
+\end{array} \right].
 $$
 
-Bảng này không có ẩn, không có phương trình, không cần khử gì cả. Nhưng nó vẫn đáng giữ, vì ta còn muốn cộng hai bảng học của hai tuần để xem tuần nào học nhiều hơn, hoặc lấy trung bình mỗi môn trong cả tháng.
-
-Vậy ta muốn cộng và nhân với số, trên một bảng số.
-
-Bảng số có làm được phép cộng và phép nhân như số thật không? Và nếu làm được, thì phép nhân sẽ phải là phép nhân nào --- vì có một cách rất dễ nghĩ tới, và cách đó không dùng được.
+Bảng giờ học không có ẩn hay nghiệm. Có bảng của tuần sau thì cộng hai bảng để biết số giờ trong hai tuần. Đổi từ giờ sang nửa giờ thì nhân mỗi ô với \(2\). Còn nếu gán cho mỗi ngày một trọng số riêng, ta cần tính tổng của bảy tích trên từng hàng. Phép tính ấy sẽ dẫn tới cách nhân ma trận với vector.
 
 \subsection{Ma trận là gì}
 
-\textbf{Định nghĩa 1.} Một \textbf{ma trận} (\emph{matrix}) là một bảng chữ nhật gồm các số. Các số nằm trong bảng được gọi là các \textbf{phần tử} của ma trận.
+\textbf{Định nghĩa 1.} Một \textbf{ma trận} (\emph{matrix}) là một bảng chữ nhật gồm các số. Các số nằm trong bảng gọi là các \textbf{phần tử} của ma trận.
 
-Kích thước của một ma trận được tính theo số hàng và số cột. Bảng ở trên có ba hàng và bảy cột, nên kích thước của nó là \(3\times 7\), đọc là ``ba nhân bảy''. Trong cách ghi kích thước, số trước luôn là số hàng và số sau là số cột.
+Bảng giờ học có ba hàng, bảy cột: ma trận cỡ \(3\times7\). Ta luôn ghi số hàng trước, số cột sau.
 
-Chỉ có một hàng thì gọi là \textbf{vector hàng} (\emph{row vector}), chỉ có một cột thì gọi là \textbf{vector cột} (\emph{column vector}). Ma trận cỡ \(1\times1\) vừa là vector hàng vừa là vector cột.
+Chỉ có một hàng thì gọi là \textbf{vector hàng} (\emph{row vector}); chỉ có một cột thì gọi là \textbf{vector cột} (\emph{column vector}). Chẳng hạn, hàng Toán của bảng giờ học là một vector hàng gồm bảy số. Ma trận cỡ \(1\times1\) vừa là vector hàng vừa là vector cột. Với ma trận chỉ có một phần tử, người ta thường bỏ luôn ngoặc, nên \([4]\) được viết thành \(4\). Ngữ cảnh sẽ cho biết \(4\) đang là số hay là ma trận \(1\times1\).
 
-Ta dùng chữ hoa để chỉ ma trận, chữ thường cho các số. Riêng vector thì dùng chữ thường in đậm: ở kì trước, khi số tọa độ nhiều đến mức không vẽ nổi mũi tên, ta đã viết \(\mathbf{x}=(x_1,\ldots,x_n)\). Giờ thêm quy ước: vector là chữ thường in đậm, ma trận là chữ hoa.
+Ta dùng chữ hoa cho ma trận, chữ thường cho số. Vector sẽ được viết bằng chữ thường in đậm, chẳng hạn \(\mathbf{x}\). Các số nằm trong ma trận gọi là \textbf{số vô hướng} (\emph{scalar}); trong bài này, nếu không nói gì thêm, chúng là số thực.
 
-Các số nằm trong ma trận được gọi là \textbf{số vô hướng} (\emph{scalar}). Nếu không nói gì thêm, chúng là số thực.
+Phần tử ở hàng \(i\), cột \(j\) của ma trận \(A\) được kí hiệu là \(a_{ij}\). Kì trước ta đã dùng \(a_{ij}\) cho hệ số của ẩn thứ \(j\) trong phương trình thứ \(i\). Bây giờ chỉ số \(i\) thật sự là số hàng, còn \(j\) là số cột.
 
-Phần tử nằm ở hàng \(i\), cột \(j\) của ma trận \(A\) được ký hiệu là \(a_{ij}\). Ở kì trước ta đã dùng ký hiệu \(a_{ij}\) cho hệ số của ẩn thứ \(j\) trong phương trình thứ \(i\), và nói rằng chỉ số \(i\) trở thành số hàng còn \(j\) thành số cột. Ở đây hai ý ấy trở thành định nghĩa.
-
-Một ma trận bất kỳ có thể viết
+Nếu bảng có \(m\) hàng, \(n\) cột, ta viết
 $$
-\left[ \begin{array}{cccc} a_{11} & a_{12} & \cdots & a_{1n}\\ a_{21} & a_{22} & \cdots & a_{2n}\\ \vdots & \vdots & & \vdots\\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{array} \right].
+A=\left[ \begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{array} \right].
 $$
-Khi không cần nhấn mạnh kích thước, ta viết gọn là \([a_{ij}]\), và cũng hay dùng cách ghi \((A)_{ij}=a_{ij}\).
+Khi không cần viết toàn bộ bảng, ta ghi gọn \(A=[a_{ij}]\), hoặc \((A)_{ij}=a_{ij}\).
 
-Ma trận có số hàng bằng số cột, tức cỡ \(n\times n\), gọi là \textbf{ma trận vuông} cấp \(n\). Các phần tử \(a_{11},a_{22},\ldots,a_{nn}\) nằm trên \textbf{đường chéo chính} của nó.
-
-Với ma trận chỉ có một phần tử, người ta thường bỏ luôn ngoặc, nên \([4]\) được viết thành \(4\). Khi đó chữ \(4\) có thể là số bốn cũng có thể là ma trận \(1\times1\). Hiếm khi điều này gây rắc rối, vì thường ngữ cảnh đã nói rõ.
+Ma trận có số hàng bằng số cột, tức cỡ \(n\times n\), gọi là \textbf{ma trận vuông} cấp \(n\). Các phần tử \(a_{11},a_{22},\ldots,a_{nn}\) nằm trên \textbf{đường chéo chính}.
 
 \begin{quote}
-\textbf{Ghi chú lịch sử.} Chữ ``ma trận'' do nhà toán học người Anh James Joseph Sylvester đặt ra năm 1850, trong một bài mang tên \emph{On a New Class of Theorems}. Trước đó, những bảng số kiểu ta vừa gặp vẫn chỉ được gọi là hệ số của hệ phương trình, và được dùng như công cụ để tính, chứ chưa phải một thứ đáng tìm hiểu riêng.
+\textbf{Ghi chú lịch sử.} Chữ ``ma trận'' do nhà toán học người Anh James Joseph Sylvester đặt ra năm 1850, trong bài \emph{On a New Class of Theorems}. Trước đó, những bảng số kiểu này thường chỉ được xem như bảng hệ số để tính toán, chưa phải một đối tượng đáng nghiên cứu riêng.
 
 \blogfig{\includegraphics{/images/ma-tran-va-phep-toan/sylvester.jpg}}
 
 \emph{Ảnh chụp thế kỷ 19 của James Joseph Sylvester. Nguồn: Wikimedia Commons, phạm vi công cộng.}
 
-Sylvester là người Do Thái. Ở Anh thế kỷ 19, muốn nhận bằng từ một trường đại học, sinh viên phải ký vào Bộ Điều 39 Điểm của Giáo hội Anh (\emph{Thirty-Nine Articles}). Sylvester không ký. Ông thi đỗ kỳ Tripos ở Cambridge năm 1837, rồi không bao giờ có được bằng. Phải chờ thêm mười bốn năm, ông mới nhận được bằng B.A. và M.A. ở Trinity College Dublin, nơi một đạo luật dành cho người Công giáo lại mở đường cho người Do Thái.
+Sylvester là người Do Thái. Ở Anh thế kỷ 19, muốn nhận bằng từ một trường đại học, sinh viên phải ký vào Bộ Điều 39 Điểm của Giáo hội Anh (\emph{Thirty-Nine Articles}). Sylvester không ký. Ông thi đỗ kỳ Tripos ở Cambridge năm 1837, rồi không bao giờ có được bằng. Phải chờ thêm mười bốn năm, ông mới nhận bằng B.A. và M.A. ở Trinity College Dublin, nơi một đạo luật dành cho người Công giáo lại mở đường cho người Do Thái.
 
-Ông cũng không phải nhà toán học chuyên nghiệp. Ông học luật, rồi đi làm luật, và chính trong những năm ấy ông bắt đầu quan tâm tới ma trận, cùng với người bạn học luật cùng thời là Arthur Cayley. Hai người gặp nhau ở tòa án Lincoln's Inn tại London và bàn toán quanh giờ làm việc.
+Ông học luật, đi làm luật, và trong những năm ấy bắt đầu quan tâm tới ma trận cùng Arthur Cayley. Hai người gặp nhau ở tòa án Lincoln's Inn tại London và bàn toán quanh giờ làm việc.
 
-Cayley thì nghiêm túc hơn nhiều. Ông nhận quyền hành nghề luật sư năm 1849 và giữ nghề đó suốt mười bốn năm, công bố khoảng 250 bài toán học.
+Cayley nhận quyền hành nghề luật sư năm 1849, giữ nghề đó suốt mười bốn năm, và vẫn công bố khoảng 250 bài toán học.
 
 \blogfig{\includegraphics{/images/ma-tran-va-phep-toan/cayley.jpg}}
 
@@ -94,13 +93,11 @@ A=\left[ \begin{array}{cc} 2 & 1\\ 3 & x \end{array} \right],\qquad
 B=\left[ \begin{array}{cc} 2 & 1\\ 3 & 5 \end{array} \right],\qquad
 C=\left[ \begin{array}{ccc} 2 & 1 & 0\\ 3 & 4 & 0 \end{array} \right].
 $$
-Khi \(x=5\) thì \(A=B\). Với mọi giá trị khác của \(x\), \(A\) và \(B\) không bằng nhau, vì có phần tử ở cùng vị trí mà khác nhau. Còn không có giá trị nào của \(x\) làm \(A=C\), vì \(A\) cỡ \(2\times2\) còn \(C\) cỡ \(2\times3\).
+Khi \(x=5\) thì \(A=B\). Với mọi giá trị khác của \(x\), hai ma trận khác nhau ở ô hàng hai cột hai. Còn \(A\) không thể bằng \(C\), vì một bên là \(2\times2\), bên kia là \(2\times3\).
 
-\textbf{Định nghĩa 3.} Nếu \(A\) và \(B\) cùng kích thước thì \(A+B\) là ma trận thu được bằng cách cộng phần tử của \(B\) vào phần tử tương ứng của \(A\), và \(A-B\) là ma trận thu được bằng cách trừ như vậy. Hai ma trận khác kích thước không cộng hay trừ được với nhau.
+\textbf{Định nghĩa 3.} Nếu \(A\) và \(B\) cùng kích thước, thì \(A+B\) là ma trận thu được bằng cách cộng từng ô tương ứng. Tương tự, \(A-B\) là ma trận thu được bằng cách trừ từng ô tương ứng. Hai ma trận khác kích thước không cộng hay trừ được.
 
-Định nghĩa này không có gì mới. Nó chỉ là phép cộng các số thật, làm trên từng vị trí một. Ở kì trước ta đã cộng hai vector bằng cách cộng từng tọa độ; ở đây chỉ có nhiều tọa độ hơn, và cũng chỉ vậy.
-
-Chẳng hạn, với
+Với
 $$
 A=\left[ \begin{array}{rrr} 2 & 1 & 3\\ -1 & 2 & 4 \end{array} \right],\qquad
 B=\left[ \begin{array}{rrr} 1 & 2 & 0\\ 3 & -1 & 5 \end{array} \right],
@@ -111,79 +108,113 @@ A+B=\left[ \begin{array}{rrr} 3 & 3 & 3\\ 2 & 1 & 9 \end{array} \right],\qquad
 A-B=\left[ \begin{array}{rrr} 1 & -1 & 3\\ -4 & 3 & -1 \end{array} \right].
 $$
 
-Điều kiện cùng kích thước không phải thủ tục. Cộng là phép gộp hai đối tượng lại thành một, nên hai đối tượng phải cùng kiểu. Một bảng \(2\times3\) có sáu ô, một bảng \(2\times2\) có bốn ô, và không có cách nào ghép sáu ô với bốn ô mà vẫn ra một bảng.
+Một bảng \(2\times3\) có sáu ô, một bảng \(2\times2\) có bốn ô. Không thể cộng từng ô tương ứng khi có hai ô không tìm được ô để ghép.
 
-Với một số \(c\) bất kỳ, nhân mọi phần tử của \(A\) với \(c\) ta được ma trận \(cA\), gọi là một \textbf{bội vô hướng} của \(A\). Kích thước không đổi. Người ta viết \(-A\) thay cho \((-1)A\).
+Với một số \(c\), nhân mọi phần tử của \(A\) với \(c\) ta được ma trận \(cA\), gọi là một \textbf{bội vô hướng} của \(A\). Kích thước không đổi. Người ta viết \(-A\) thay cho \((-1)A\). Ví dụ
+$$
+-2\left[ \begin{array}{rrr} 2 & 1 & 3\\ -1 & 2 & 4 \end{array} \right]
+=
+\left[ \begin{array}{rrr} -4 & -2 & -6\\ 2 & -4 & -8 \end{array} \right].
+$$
 
 \subsection{Phép nhân không phải cách hiển nhiên}
 
-Cộng rồi trừ thì xong. Còn phép nhân thì sao?
+Vừa cộng từng ô xong, có lẽ ta sẽ thử nhân từng ô tương ứng. Phép ấy gọi là tích Hadamard và đòi hai bảng cùng kích thước. Nó không nhân được hai bảng dưới đây:
 
-Cách tự nhiên nhất, sau khi vừa học xong phép cộng, là nhân từng phần tử tương ứng với nhau. Hãy xem cách ấy có dùng được không.
-
-Lấy hai ma trận cỡ \(2\times3\) và \(3\times4\):
+Lấy
 $$
 A=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right],\qquad
 B=\left[ \begin{array}{rrrr} 4 & 1 & 4 & 3\\ 0 & -1 & 3 & 1\\ 2 & 7 & 5 & 2 \end{array} \right].
 $$
-\(A\) có ba cột, \(B\) có bốn cột. Câu hỏi ``phần tử tương ứng nào ứng với phần tử nào?'' không có câu trả lời, vì hai bảng không cùng số cột. Phép nhân kiểu ấy đôi khi không cho ra một đối tượng mới.
+\(A\) cỡ \(2\times3\), \(B\) cỡ \(3\times4\). Hàng đầu của \(B\) có ô thứ tư, còn hàng đầu của \(A\) thì không. Ta phải tìm một cách nhân khác, nhưng chọn quy tắc nào? Quay lại hệ phương trình ở kì trước.
 
-Ta cần phép nhân để làm gì? Nhớ lại kì trước: một hệ phương trình tuyến tính là
+Kì trước, một hệ tuyến tính tổng quát có dạng
 $$
 \begin{cases}
-a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
-a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
-\vdots \\
-a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m.
+a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=b_1,\\
+a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2,\\
+\vdots\\
+a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n=b_m.
 \end{cases}
 $$
-Mỗi dòng ứng với một hàm
+Mỗi dòng có vế trái
 $$
-L_i(\mathbf{x})=a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n,
+L_i(\mathbf{x})=a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n.
 $$
-và hệ phương trình là điều kiện \(L_i(\mathbf{x})=b_i\) với mọi \(i\).
-
-Ta muốn một phép tính duy nhất trả lời câu hỏi: với bộ số \(\mathbf{x}\) này, mỗi phương trình cho ra số bao nhiêu? Tức là đánh giá cả \(m\) hàm \(L_1,\ldots,L_m\) tại cùng một điểm, trong một lần.
-
-Lấy ví dụ bài bó lúa ở kì trước, \(L_1(\mathbf{x})=3x+2y+z\) và \(L_2(\mathbf{x})=2x+3y+z\). Mỗi phép tính là một tổ hợp tuyến tính của ba tọa độ của \(\mathbf{x}\), và các hệ số lấy từ một hàng nào đó.
-
-Hàng nào? Hàng thứ nhất cho \(L_1\), hàng thứ hai cho \(L_2\), hàng thứ \(i\) cho \(L_i\). Vậy phép tính ta muốn buộc phải là: lấy hàng thứ \(i\) của bảng hệ số, nhân từng phần tử với tọa độ thứ tương ứng, rồi cộng lại. Tổng quát,
+Với một bộ số \(\mathbf{x}=(x_1,\ldots,x_n)\), ta muốn biết đồng thời \(m\) giá trị
 $$
-L_i(\mathbf{x})=\sum_{j=1}^{n}a_{ij}x_j. \tag{1}
+L_1(\mathbf{x}),\ L_2(\mathbf{x}),\ \ldots,\ L_m(\mathbf{x}).
 $$
-Và đây chính là tích số của hàng thứ \(i\) với vector \(\mathbf{x}\).
 
-Không có cách nào khác. Hệ số của \(x_j\) trong tổng ở (1) phải là hệ số của \(x_j\) trong \(L_i\), tức là \(a_{ij}\), tức là ô nằm ở hàng \(i\) cột \(j\). Chọn hệ số khác đi là đang tính một hàm khác chứ không phải \(L_i\).
+Bài bó lúa ở kì 1 có hai dòng đầu
+$$
+L_1(x,y,z)=3x+2y+z,\qquad L_2(x,y,z)=2x+3y+z.
+$$
+Hàng thứ nhất của bảng hệ số phải tạo ra \(L_1\); hàng thứ hai phải tạo ra \(L_2\). Vì thế hàng thứ \(i\) phải được ghép với vector ẩn theo đúng cách
+$$
+L_i(\mathbf{x})=a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n=
+\sum_{j=1}^{n}a_{ij}x_j. \tag{1}
+$$
+Hệ số của \(x_j\) trong \(L_i\) là \(a_{ij}\), ô ở hàng \(i\), cột \(j\). Nếu lấy ô khác, ta đang tính một phương trình khác.
 
-Xếp ba kết quả ấy lên nhau, ta được một vector cột ba phần tử.
+Xếp \(m\) kết quả ấy thành một vector cột, ta có phép nhân giữa ma trận hệ số và vector ẩn:
+$$
+\left[ \begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{array} \right]
+\left( \begin{array}{c} x_1\\ x_2\\ \vdots\\ x_n \end{array} \right)
+=
+\left( \begin{array}{c}
+L_1(\mathbf{x})\\ L_2(\mathbf{x})\\ \vdots\\ L_m(\mathbf{x})
+\end{array} \right).
+$$
 
-Đó là lý do phép nhân ma trận phải có dạng nó có. Không phải để tính nhanh hơn. Nó là cách duy nhất để một đối tượng duy nhất đảm nhiệm cả công việc của \(m\) phương trình.
+Nếu gọi ma trận hệ số là \(A\), vector các vế phải là \(\mathbf{b}\), thì hệ phương trình trở thành \(A\mathbf{x}=\mathbf{b}\). Mỗi hàng của \(A\) cho đúng vế trái của một phương trình.
+
+Bảng giờ học ở đầu bài cũng nhân được với vector bảy số. Nếu cả bảy trọng số đều bằng \(1\), mỗi hàng cho tổng số giờ của một môn:
+$$
+\left[ \begin{array}{rrrrrrr}
+2&3&2&4&1&4&2\\
+0&3&1&4&3&2&2\\
+4&1&3&1&0&0&2
+\end{array} \right]
+\left(\begin{array}{r}1\\1\\1\\1\\1\\1\\1\end{array}\right)
+=\left(\begin{array}{r}18\\15\\11\end{array}\right).
+$$
+Muốn ngày nào nặng hơn trong tổng, chỉ cần thay số \(1\) ứng với ngày đó bằng một trọng số khác.
 
 \subsection{Luật nhân và quy tắc kích thước}
 
-Giờ mở rộng từ một vector cột thành một ma trận. Cột thứ \(j\) của ma trận \(B\) là một vector cột. Áp dụng đúng cách tính vừa rồi cho \(A\) với vector cột ấy, ta được một vector cột, và đó chính là cột thứ \(j\) của tích.
+Thay một vector đầu vào bằng nhiều vector đặt cạnh nhau, ta được ma trận \(B\). Cho \(A\) nhân từng cột của \(B\), rồi đặt các kết quả cạnh nhau. Ta gọi ma trận thu được là \(AB\).
 
-\textbf{Định nghĩa 4.} Cho \(A\) là ma trận cỡ \(m\times r\) và \(B\) là ma trận cỡ \(r\times n\). Tích \(AB\) là ma trận cỡ \(m\times n\) mà phần tử ở hàng \(i\), cột \(j\) là
+\textbf{Định nghĩa 4.} Cho \(A\) cỡ \(m\times r\) và \(B\) cỡ \(r\times n\). Tích \(AB\) là ma trận cỡ \(m\times n\) mà phần tử ở hàng \(i\), cột \(j\) là
 $$
-(AB)_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{ir}b_{rj}. \tag{2}
+(AB)_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{ir}b_{rj}
+=\sum_{k=1}^{r}a_{ik}b_{kj}. \tag{2}
 $$
-Nói cách khác, lấy hàng thứ \(i\) của \(A\) và cột thứ \(j\) của \(B\), nhân từng phần tử tương ứng rồi cộng lại. Đây là định nghĩa duy nhất của phép nhân ma trận.
+Nói ngắn hơn: lấy hàng thứ \(i\) của \(A\), lấy cột thứ \(j\) của \(B\), nhân từng cặp rồi cộng lại.
 
-Tính lại tích ở mục trên.
+\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/nhan-hang-cot.svg}}
+
+Với hai ma trận vừa xét,
 $$
 (AB)_{23}=(2)(4)+(6)(3)+(0)(5)=26,
 $$
-$$
-(AB)_{14}=(1)(3)+(2)(1)+(4)(2)=13.
-$$
-Sáu phần tử còn lại:
+vì ta lấy hàng thứ hai của \(A\), \((2,6,0)\), ghép với cột thứ ba của \(B\), \((4,3,5)\).
+
+Tính đủ tám ô:
 $$
 \begin{aligned}
 (AB)_{11}&=(1)(4)+(2)(0)+(4)(2)=12, &
-(AB)_{12}&=(1)(1)-(2)(1)+(4)(7)=27,\\
-(AB)_{21}&=(2)(4)+(6)(0)+(0)(2)=8, &
-(AB)_{22}&=(2)(1)-(6)(1)+(0)(7)=-4,\\
+(AB)_{12}&=(1)(1)+(2)(-1)+(4)(7)=27,\\
 (AB)_{13}&=(1)(4)+(2)(3)+(4)(5)=30, &
+(AB)_{14}&=(1)(3)+(2)(1)+(4)(2)=13,\\
+(AB)_{21}&=(2)(4)+(6)(0)+(0)(2)=8, &
+(AB)_{22}&=(2)(1)+(6)(-1)+(0)(7)=-4,\\
+(AB)_{23}&=26, &
 (AB)_{24}&=(2)(3)+(6)(1)+(0)(2)=12.
 \end{aligned}
 $$
@@ -192,19 +223,15 @@ $$
 AB=\left[ \begin{array}{rrrr} 12 & 27 & 30 & 13\\ 8 & -4 & 26 & 12 \end{array} \right].
 $$
 
-Có một điều rất dễ sót trong định nghĩa 4: số cột của \(A\) phải bằng số hàng của \(B\). Ở ví dụ vừa rồi, \(A\) có ba cột và \(B\) có ba hàng, nên tích tồn tại.
-
-Quy tắc nhớ: viết kích thước của hai ma trận cạnh nhau, thành
+Hàng của \(A\) có ba số, cột của \(B\) cũng có ba số. Tổng trong (2) cần các cặp số ấy, nên số cột của \(A\) phải bằng số hàng của \(B\):
 $$
-(m\times r)\cdot(r\times n)=(m\times n).
+(m\times r)\cdot(r\times n)=(m\times n). \tag{3}
 $$
-Hai số ở giữa phải bằng nhau thì tích mới tồn tại. Khi chúng bằng nhau rồi, số ngoài cùng cho ra kích thước của tích. Trong ba ma trận ở định nghĩa 4, số \(r\) xuất hiện hai lần và phải bằng nhau.
+Tích có một hàng cho mỗi hàng của \(A\), một cột cho mỗi cột của \(B\).
 
-Ví dụ, cho \(A\), \(B\), \(C\) cỡ \(3\times4\), \(4\times7\), \(7\times3\). Khi đó \(AB\) tồn tại và có cỡ \(3\times7\); \(BC\) tồn tại và có cỡ \(4\times3\); \(CA\) tồn tại và có cỡ \(7\times4\). Ba tích \(AC\), \(CB\), \(BA\) đều không tồn tại.
+Ví dụ, nếu \(A\), \(B\), \(C\) lần lượt có cỡ \(3\times4\), \(4\times7\), \(7\times3\), thì \(AB\) tồn tại và có cỡ \(3\times7\); \(BC\) tồn tại và có cỡ \(4\times3\); \(CA\) tồn tại và có cỡ \(7\times4\). Ba tích \(AC\), \(CB\), \(BA\) không tồn tại.
 
-Có một điều cần để ý ngay từ bây giờ, vì nó sẽ quay lại làm phiền ta. \(AB\) tồn tại không bảo đảm \(BA\) tồn tại: với \(A\) cỡ \(2\times3\) và \(B\) cỡ \(3\times4\) ở trên, \(AB\) có cỡ \(2\times4\), còn \(BA\) thì không tồn tại vì \(B\) có bốn cột trong khi \(A\) chỉ có hai hàng.
-
-Ngay cả khi cả hai tích đều tồn tại và cùng cỡ, chúng vẫn có thể khác nhau.
+Ngay cả khi cả \(AB\) và \(BA\) đều tồn tại, chúng không nhất thiết bằng nhau. Chẳng hạn
 $$
 A=\left[ \begin{array}{rr} -1 & 0\\ 2 & 3 \end{array} \right],\qquad
 B=\left[ \begin{array}{rr} 1 & 2\\ 3 & 0 \end{array} \right],
@@ -213,47 +240,73 @@ $$
 AB=\left[ \begin{array}{rr} -1 & -2\\ 11 & 4 \end{array} \right],\qquad
 BA=\left[ \begin{array}{rr} 3 & 6\\ -3 & 0 \end{array} \right].
 $$
-\(AB\neq BA\). Người ta nói hai ma trận ấy không giao hoán.
+Cả hai tích đều cỡ \(2\times2\), nhưng \(AB\neq BA\). Phép nhân ma trận không giao hoán.
 
-\subsection{Ba cách tính cùng một tích}
+Có thể nhìn chuyện này qua hai phép biến đổi của mặt phẳng. Lấy
+$$
+P=\left[ \begin{array}{rr} 2 & 1\\ 0 & 1 \end{array} \right],\qquad
+Q=\left[ \begin{array}{rr} 1 & 0\\ 1 & 1 \end{array} \right],\qquad
+\mathbf{u}=\left(\begin{array}{r}1\\1\end{array}\right).
+$$
+Với \((x,y)^T\), phép \(P\) trả ra \((2x+y,y)^T\), còn \(Q\) trả ra \((x,x+y)^T\). Nếu làm \(Q\) trước, \(Q\mathbf{u}=(1,2)^T\), rồi \(P(Q\mathbf{u})=(4,2)^T\). Đổi thứ tự, \(P\mathbf{u}=(3,1)^T\), rồi \(Q(P\mathbf{u})=(3,4)^T\). Cùng xuất phát từ \((1,1)\), hai đường đi kết thúc ở hai điểm khác nhau.
 
-Vừa rồi ta tính \(AB\) bằng cách lần lượt lấy từng ô. Có hai cách nữa, và điều đáng chú ý là cả ba cho ra cùng một ma trận.
+\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/thu-tu-bien-doi.svg}}
 
-\textbf{Cách theo cột.} Cột thứ \(j\) của \(AB\) bằng \(A\) nhân với cột thứ \(j\) của \(B\). Ghi \(\mathbf{b}_j\) là cột thứ \(j\) của \(B\):
+Ta còn có thể gộp hai phép biến đổi thành một phép nhân \(PQ\). Tại sao \((PQ)\mathbf{u}\) lại bằng \(P(Q\mathbf{u})\)? Xét tọa độ thứ \(i\):
 $$
-AB=A[\,\mathbf{b}_1\ \mathbf{b}_2\ \cdots\ \mathbf{b}_n\,]=[\,A\mathbf{b}_1\ A\mathbf{b}_2\ \cdots\ A\mathbf{b}_n\,]. \tag{3}
+\bigl(P(Q\mathbf{u})\bigr)_i
+=\sum_k p_{ik}\Bigl(\sum_j q_{kj}u_j\Bigr)
+=\sum_j\Bigl(\sum_k p_{ik}q_{kj}\Bigr)u_j
+=\bigl((PQ)\mathbf{u}\bigr)_i.
 $$
-Đây chính là cách ta dùng để suy ra định nghĩa 4, nên nó không phải điều mới.
+Tổng \(\sum_k p_{ik}q_{kj}\) là ô hàng \(i\), cột \(j\) của \(PQ\). Trong \(PQ\), \(Q\) tác động trước, rồi mới đến \(P\).
 
-\textbf{Cách theo hàng.} Hàng thứ \(i\) của \(AB\) bằng hàng thứ \(i\) của \(A\) nhân với \(B\). Phép nhân một vector hàng với một ma trận được hiểu y hệt: lấy từng cột của ma trận, nhân từng phần tử của hàng đó với phần tử tương ứng của cột, rồi cộng lại.
+\subsection{Ba cách nhìn cùng một tích}
 
-Hai cách này không mâu thuẫn, và việc chúng khớp nhau là một kiểm tra đáng tin. Phần tử ở hàng \(i\), cột \(j\) của tích mà ta tính theo hàng là
-$$
-\sum_{k=1}^{r}a_{ik}b_{kj},
-$$
-đúng bằng phần tử mà ta tính theo cột, vì (2) nói chính là thế.
+Công thức (2) tính từng ô. Đôi khi ta cần nhìn cả một cột hoặc một hàng của tích.
 
-\textbf{Khai triển cột--hàng.} Có một cách viết nữa, mà ta sẽ dùng để chứng minh một đẳng thức ở mục chuyển vị. Chia \(A\) thành \(r\) vector cột \(\mathbf{c}_1,\ldots,\mathbf{c}_r\), mỗi cái cỡ \(m\times1\), và chia \(B\) thành \(r\) vector hàng \(\mathbf{r}_1,\ldots,\mathbf{r}_r\), mỗi cái cỡ \(1\times n\). Khi đó
+\textbf{Cách theo cột.} Ghi \(\mathbf{b}_j\) là cột thứ \(j\) của \(B\). Khi đó
 $$
-AB=\mathbf{c}_1\mathbf{r}_1+\mathbf{c}_2\mathbf{r}_2+\cdots+\mathbf{c}_r\mathbf{r}_r. \tag{4}
+AB=A[\,\mathbf{b}_1\ \mathbf{b}_2\ \cdots\ \mathbf{b}_n\,]
+=[\,A\mathbf{b}_1\ A\mathbf{b}_2\ \cdots\ A\mathbf{b}_n\,]. \tag{4}
 $$
-Từng số hạng đều có cỡ \(m\times n\), nên tổng cũng vậy. Mà phần tử ở hàng \(i\), cột \(j\) của tổng bên phải là
+Khi nhân tiếp với \(\mathbf{x}\), ta cũng có \((AB)\mathbf{x}=A(B\mathbf{x})\), như phép tính tọa độ với \(P,Q,\mathbf{u}\) ở trên: \(B\) tác động trước, rồi đến \(A\).
+
+\textbf{Cách theo hàng.} Hàng thứ \(i\) của \(AB\) bằng hàng thứ \(i\) của \(A\) nhân với \(B\). Một vector hàng nhân với một ma trận nghĩa là lấy vector hàng ấy ghép lần lượt với từng cột của ma trận.
+
+Dù lấy theo cột hay theo hàng, ô \((i,j)\) vẫn là
+$$
+\sum_{k=1}^{r}a_{ik}b_{kj}.
+$$
+
+\textbf{Khai triển cột và hàng.} Chia \(A\) thành \(r\) vector cột \(\mathbf{c}_1,\ldots,\mathbf{c}_r\), và chia \(B\) thành \(r\) vector hàng \(\mathbf{r}_1,\ldots,\mathbf{r}_r\). Khi đó
+$$
+AB=\mathbf{c}_1\mathbf{r}_1+\mathbf{c}_2\mathbf{r}_2+\cdots+\mathbf{c}_r\mathbf{r}_r. \tag{5}
+$$
+Nhân một vector cột với một vector hàng nghĩa là lấy mỗi số ở cột nhân với cả hàng. Chẳng hạn
+$$
+\left(\begin{array}{r}u\\v\end{array}\right)(p\ q\ s)
+=\left[\begin{array}{rrr}up&uq&us\\vp&vq&vs\end{array}\right].
+$$
+Vì thế mỗi \(\mathbf{c}_k\mathbf{r}_k\) là một ma trận cỡ \(m\times n\). Phần tử hàng \(i\), cột \(j\) của tổng bên phải là
 $$
 \sum_{k=1}^{r}\mathbf{c}_k(i)\,\mathbf{r}_k(j)=\sum_{k=1}^{r}a_{ik}b_{kj},
 $$
-đúng bằng \((AB)_{ij}\). Không phải ta đoán ra (4); nó là cách duy nhất khớp với định nghĩa 4.
+đúng bằng \((AB)_{ij}\).
 
-Chẳng hạn, với
+Với
 $$
 A=\left[ \begin{array}{rr} 1 & 3\\ 2 & -1 \end{array} \right],\qquad
 B=\left[ \begin{array}{rrr} 2 & 0 & 4\\ -3 & 5 & 1 \end{array} \right],
 $$
-ta có \(\mathbf{c}_1=(1,2)\), \(\mathbf{c}_2=(3,-1)\), \(\mathbf{r}_1=(2,0,4)\), \(\mathbf{r}_2=(-3,5,1)\), nên
+ta có
 $$
 AB=
 \left( \begin{array}{c} 1\\ 2 \end{array} \right)(2\ 0\ 4)
 +
 \left( \begin{array}{c} 3\\ -1 \end{array} \right)(-3\ 5\ 1)
+$$
+$$
 =
 \left[ \begin{array}{rrr} 2 & 0 & 4\\ 4 & 0 & 8 \end{array} \right]
 +
@@ -271,163 +324,216 @@ Nhiều sách giáo trình ghi công cho nhà toán học Đức Gotthold Eisens
 
 \emph{Bản in Gotthold Eisenstein khoảng năm 1850, tác giả không rõ. Nguồn: Wikimedia Commons, phạm vi công cộng.}
 
-Công trình có tài liệu rõ ràng là của Cayley. Bài giới thiệu đầu tiên của ông về ma trận ra năm 1855, viết bằng tiếng Pháp và đăng trong một tạp chí Đức, trong đó ông đưa ra --- rất sơ lược --- cả ý tưởng ma trận nghịch đảo lẫn phép nhân, mà ông gọi là ``compounding'' (hợp thành). Một bài nữa năm 1858 trình bày lại những tính chất cơ bản một cách đầy đủ hơn. Muốn tìm ma trận nghịch đảo thì năm 1858 Cayley đã viết về nó, dù chỉ nói thoáng qua.
+Công trình có tài liệu rõ ràng là của Cayley. Bài giới thiệu đầu tiên của ông về ma trận ra năm 1855, viết bằng tiếng Pháp và đăng trong một tạp chí Đức, trong đó ông đưa ra rất sơ lược cả ý tưởng ma trận nghịch đảo lẫn phép nhân, mà ông gọi là ``compounding'' (hợp thành). Một bài nữa năm 1858 trình bày lại những tính chất cơ bản đầy đủ hơn. Trong bài năm 1858, Cayley cũng viết về ma trận nghịch đảo, dù chỉ nói thoáng qua.
 
-\emph{Nguồn:} J. J. O'Connor và E. F. Robertson, ``Arthur Cayley'' và ``Gotthold Eisenstein'', \emph{MacTutor History of Mathematics Archive}, Đại học St Andrews; R. W. Feldmann Jr., ``Arthur Cayley --- founder of matrix theory'', \emph{The Mathematics Teacher} 55(6), 1962.
+\emph{Nguồn:} J. J. O'Connor và E. F. Robertson, ``Arthur Cayley'' và ``Gotthold Eisenstein'', \emph{MacTutor History of Mathematics Archive}, Đại học St Andrews; R. W. Feldmann Jr., ``Arthur Cayley, founder of matrix theory'', \emph{The Mathematics Teacher} 55(6), 1962.
 \end{quote}
 
 \subsection{Cột của tích là tổ hợp tuyến tính}
 
-Áp dụng (1) vào (3). Cột thứ \(j\) của \(AB\) là \(A\) nhân với cột thứ \(j\) của \(B\), tức là một tổ hợp tuyến tính các cột của \(A\), với hệ số lấy từ chính cột đó.
-
-\textbf{Định lý 1.} Cho \(A\) cỡ \(m\times r\) và \(B\) cỡ \(r\times n\). Cột thứ \(j\) của \(AB\) là một tổ hợp tuyến tính của các cột của \(A\), với hệ số của tổ hợp là các phần tử của cột thứ \(j\) của \(B\).
-
-\emph{Chứng minh.} Gọi \(\mathbf{b}_j\) là cột thứ \(j\) của \(B\), và \(\mathbf{a}_k\) là cột thứ \(k\) của \(A\). Theo (3) và (1), cột thứ \(j\) của \(AB\) là
+Viết các cột của \(A\) là \(\mathbf{a}_1,\ldots,\mathbf{a}_r\), cột thứ \(j\) của \(B\) là \(\mathbf{b}_j\). Ta có
 $$
-A\mathbf{b}_j=\sum_{k=1}^{r}b_{kj}\mathbf{a}_k.
+\mathbf{b}_j=
+\left( \begin{array}{c} b_{1j}\\ b_{2j}\\ \vdots\\ b_{rj} \end{array} \right)
 $$
-Phần tử thứ \(i\) của tổng bên phải là \(\sum_{k=1}^{r}b_{kj}a_{ik}\), và tổng các phần tử là nhân với số thì không đổi, nên bằng
+và
 $$
-\sum_{k=1}^{r}a_{ik}b_{kj}=(AB)_{ij}.
+A\mathbf{b}_j=b_{1j}\mathbf{a}_1+b_{2j}\mathbf{a}_2+\cdots+b_{rj}\mathbf{a}_r. \tag{6}
 $$
-Mà đó chính là phần tử thứ \(i\) của cột thứ \(j\) của \(AB\). Hai vector cột cùng cỡ mà có từng phần tử tương ứng bằng nhau thì bằng nhau, theo định nghĩa 2. \(\square\)
+Muốn tìm cột thứ \(j\) của \(AB\), lấy các số trong cột thứ \(j\) của \(B\) làm hệ số nhân các cột tương ứng của \(A\), rồi cộng lại.
 
-\textbf{Hệ quả một.} Nếu cột thứ \(j\) của \(B\) toàn số \(0\) thì cột thứ \(j\) của \(AB\) cũng toàn số \(0\). Đúng theo định lý 1, vì tổ hợp tuyến tính với hệ số toàn \(0\) thì bằng vector \(0\).
+\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/cot-la-to-hop.svg}}
 
-Ở chỗ nào đầu vào không có thông tin thì đầu ra không có. Ma trận không tự sinh ra thứ gì.
+Trong hình, \(\mathbf{a}_1=(1,0)^T\), \(\mathbf{a}_2=(0,1)^T\), \(\mathbf{a}_3=(1,1)^T\). Lấy cột \(\mathbf{b}=(2,-1,3)^T\) thì \(A\mathbf{b}=2\mathbf{a}_1-\mathbf{a}_2+3\mathbf{a}_3=(5,2)^T\). Đường nét đứt ghép ba vector đã nhân hệ số theo quy tắc đầu đuôi; mũi tên xanh lá đi thẳng tới cùng điểm cuối.
 
-\textbf{Hệ quả hai.} Nếu các cột của \(B\) phụ thuộc tuyến tính thì các cột của \(AB\) cũng phụ thuộc tuyến tính.
+\textbf{Định lý 1.} Cho \(A\) cỡ \(m\times r\) và \(B\) cỡ \(r\times n\). Cột thứ \(j\) của \(AB\) là một tổ hợp tuyến tính của các cột của \(A\), với hệ số là các phần tử trong cột thứ \(j\) của \(B\).
 
-Xét một tổ hợp tuyến tính của các cột của \(AB\) với hệ số \(\lambda_1,\ldots,\lambda_n\). Phần tử thứ \(i\) của tổng đó là
+\emph{Chứng minh.} Gọi \(\mathbf{a}_k\) là cột thứ \(k\) của \(A\). Phần tử thứ \(i\) của vế phải trong (6) là
 $$
-\sum_{j=1}^{n}\lambda_j(AB)_{ij}
-=\sum_{j=1}^{n}\lambda_j\sum_{k=1}^{r}a_{ik}b_{kj}
-=\sum_{k=1}^{r}\left(\sum_{j=1}^{n}\lambda_j b_{kj}\right)a_{ik}.
+b_{1j}a_{i1}+b_{2j}a_{i2}+\cdots+b_{rj}a_{ir}
+=\sum_{k=1}^{r}a_{ik}b_{kj}=(AB)_{ij}.
 $$
-Nếu các cột của \(B\) phụ thuộc tuyến tính thì có các \(\lambda_j\) không toàn bằng \(0\) mà \(\sum_{j=1}^{n}\lambda_j b_{kj}=0\) với mọi \(k\). Tổng trên khi đó bằng \(0\) với mọi \(i\), tức tổng đó là vector \(0\). Các cột của \(AB\) phụ thuộc tuyến tính.
+Đây đúng là phần tử thứ \(i\) của cột thứ \(j\) trong \(AB\). Hai vector cột có cùng mọi phần tử thì bằng nhau. \(\square\)
 
-Nhân với một ma trận bên phải không thêm thông tin nào vào các cột của \(A\), chỉ trộn lại chúng theo hệ số lấy từ \(B\).
+Nếu cột thứ \(j\) của \(B\) toàn số \(0\), thì cột thứ \(j\) của \(AB\) cũng toàn số \(0\). Không có hệ số nào để trộn các cột của \(A\).
+
+Nếu các cột của \(B\) phụ thuộc tuyến tính, thì các cột của \(AB\) cũng phụ thuộc tuyến tính. Thật vậy, giả sử có các số \(\lambda_1,\ldots,\lambda_n\), không toàn bằng \(0\), sao cho
+$$
+\lambda_1\mathbf{b}_1+\cdots+\lambda_n\mathbf{b}_n=\mathbf{0}.
+$$
+Nhân cả hai vế với \(A\):
+$$
+A(\lambda_1\mathbf{b}_1+\cdots+\lambda_n\mathbf{b}_n)=A\mathbf{0}.
+$$
+Tính tuyến tính ấy vẫn là phép phá ngoặc ở kì 1: hàng thứ \(i\) của \(A(\mathbf{u}+\mathbf{v})\) bằng
+$$
+\sum_k a_{ik}(u_k+v_k)=\sum_k a_{ik}u_k+\sum_k a_{ik}v_k,
+$$
+tức bằng hàng thứ \(i\) của \(A\mathbf{u}+A\mathbf{v}\). Tương tự, \(A(c\mathbf{u})=cA\mathbf{u}\). Do đó
+$$
+\lambda_1A\mathbf{b}_1+\cdots+\lambda_nA\mathbf{b}_n=\mathbf{0}.
+$$
+Nhưng \(A\mathbf{b}_j\) chính là cột thứ \(j\) của \(AB\). Vậy các cột của \(AB\) phụ thuộc tuyến tính.
+
+Nếu các cột của \(B\) đã có một quan hệ phụ thuộc, phép nhân bên trái với \(A\) không xóa được quan hệ ấy.
 
 \subsection{Hệ phương trình dưới dạng ma trận}
 
-Lấy hệ ba ẩn của kì trước,
+Quay lại hệ bó lúa:
 $$
 \begin{cases}
-3x+2y+z=39\\
-2x+3y+z=34\\
+3x+2y+z=39,\\
+2x+3y+z=34,\\
 x+2y+3z=26.
 \end{cases}
 $$
-Xếp ba hàng hệ số vào một bảng, và ba vế phải vào một vector cột.
+Xếp hệ số vào ma trận \(A\), các ẩn vào vector \(\mathbf{x}\), vế phải vào vector \(\mathbf{b}\):
 $$
 \underbrace{\left[ \begin{array}{rrr} 3 & 2 & 1\\ 2 & 3 & 1\\ 1 & 2 & 3 \end{array} \right]}_{A}
 \underbrace{\left( \begin{array}{c} x\\ y\\ z \end{array} \right)}_{\mathbf{x}}
 =
 \underbrace{\left( \begin{array}{c} 39\\ 34\\ 26 \end{array} \right)}_{\mathbf{b}}.
 $$
-Kiểm tra lại vế trái, dùng đúng luật ở (2).
+Vế trái đúng là
 $$
 \left[ \begin{array}{rrr} 3 & 2 & 1\\ 2 & 3 & 1\\ 1 & 2 & 3 \end{array} \right]
 \left( \begin{array}{c} x\\ y\\ z \end{array} \right)
 =
-\left( \begin{array}{c} (3)(x)+(2)(y)+(1)(z)\\ (2)(x)+(3)(y)+(1)(z)\\ (1)(x)+(2)(y)+(3)(z) \end{array} \right)
-=
-\left( \begin{array}{c} 3x+2y+z\\ 2x+3y+z\\ x+2y+3z \end{array} \right).
+\left( \begin{array}{c}
+3x+2y+z\\ 2x+3y+z\\ x+2y+3z
+\end{array} \right).
 $$
-Ba phần tử của kết quả, theo thứ tự từ trên xuống, chính là ba phương trình của hệ.
+Cho \(\mathbf{x}=(1,2,3)^T\), ba vế trái lần lượt bằng \(10,11,14\); đây chưa phải nghiệm vì vector nhận được khác \((39,34,26)^T\).
 
-Vậy toàn bộ hệ phương trình chỉ còn là một đẳng thức
+Cả ba phương trình viết gọn thành
 $$
-A\mathbf{x}=\mathbf{b}. \tag{5}
+A\mathbf{x}=\mathbf{b}. \tag{7}
 $$
-Ma trận \(A\) trong (5) gọi là \textbf{ma trận hệ số} của hệ. Còn \(\mathbf{x}\) là vector ẩn và \(\mathbf{b}\) là vector vế phải.
+Ma trận \(A\) gọi là \textbf{ma trận hệ số}; \(\mathbf{x}\) là vector ẩn; \(\mathbf{b}\) là vector vế phải.
 
-Đặt \(\mathbf{b}\) thành cột cuối cạnh \(A\), ta được
+Đặt \(\mathbf{b}\) làm cột cuối cạnh \(A\), ta lấy lại ma trận bổ sung của kì trước:
 $$
-[A\mid \mathbf{b}]=\left[ \begin{array}{ccc|c} 3 & 2 & 1 & 39\\ 2 & 3 & 1 & 34\\ 1 & 2 & 3 & 26 \end{array} \right],
+[A\mid \mathbf{b}]=\left[ \begin{array}{ccc|c} 3 & 2 & 1 & 39\\ 2 & 3 & 1 & 34\\ 1 & 2 & 3 & 26 \end{array} \right].
 $$
-đúng là ma trận bổ sung ta đã dùng suốt hai kì qua. Vạch thẳng ở giữa không bắt buộc phải có, nhưng nó giúp mắt tách \(A\) khỏi \(\mathbf{b}\).
+Vạch đứng tách các hệ số khỏi vế phải; khi khử phải biến đổi cả hai phần theo cùng một phép.
 
-Một điều đến giờ mới thấy rõ. Ở kì trước ta đã chứng minh ba phép biến đổi hàng không đổi tập nghiệm của hệ. Bây giờ, hàng thứ \(i\) của \(A\mathbf{x}\) chính là phương trình thứ \(i\). Nên phép biến đổi hàng trên ma trận hệ số chính là cách viết lại các phương trình của hệ, và lý do nó giữ được tập nghiệm cũng là lý do ở kì trước.
-
-Khử một hệ là biến đổi \(A\) bằng một dãi phép biến đổi hàng, đồng thời biến đổi \(\mathbf{b}\) theo đúng dãi ấy.
+Kì 2 ta đã khử từng hàng của \([A\mid\mathbf{b}]\). Hàng thứ \(i\) chứa cả các hệ số làm ra phần tử thứ \(i\) của \(A\mathbf{x}\) lẫn vế phải \(b_i\). Vì thế đổi hai hàng là đổi thứ tự phương trình; nhân một hàng với số khác \(0\) là nhân cả hai vế của phương trình với số ấy; cộng bội một hàng vào hàng khác là cộng bội của một phương trình vào phương trình kia. Ta đã chứng minh các thao tác này giữ nguyên tập nghiệm ở kì trước. Khi khử, không được sửa \(A\) mà để nguyên \(\mathbf{b}\).
 
 \subsection{Chuyển vị}
 
-\textbf{Định nghĩa 5.} Nếu \(A\) là ma trận cỡ \(m\times n\) thì \textbf{chuyển vị} của \(A\), ký hiệu \(A^{T}\), là ma trận cỡ \(n\times m\) thu được bằng cách đổi chỗ hàng với cột: cột thứ nhất của \(A^{T}\) là hàng thứ nhất của \(A\), cột thứ hai của \(A^{T}\) là hàng thứ hai của \(A\), và cứ thế.
+\textbf{Định nghĩa 5.} Nếu \(A\) là ma trận cỡ \(m\times n\), \textbf{chuyển vị} của \(A\), kí hiệu \(A^T\), là ma trận cỡ \(n\times m\) thu được bằng cách đổi hàng thành cột.
 
+Ví dụ
 $$
-A=\left[ \begin{array}{rr} 2 & -3\\ 7 & 0 \end{array} \right],
-\qquad
-A^{T}=\left[ \begin{array}{rr} 2 & 7\\ -3 & 0 \end{array} \right].
+A=\left[ \begin{array}{rrr} 2 & -3 & 1\\ 7 & 0 & 4\\ 5 & 6 & -1 \end{array} \right],\qquad
+A^T=\left[ \begin{array}{rrr} 2 & 7 & 5\\ -3 & 0 & 6\\ 1 & 4 & -1 \end{array} \right].
 $$
-Phần tử ở hàng \(i\), cột \(j\) của \(A^{T}\) là phần tử ở hàng \(j\), cột \(i\) của \(A\), tức là
+
+\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/chuyen-vi.svg}}
+
+Phần tử ở hàng \(i\), cột \(j\) của \(A^T\) là phần tử ở hàng \(j\), cột \(i\) của \(A\):
 $$
-(A^{T})_{ij}=a_{ji}. \tag{6}
+(A^T)_{ij}=a_{ji}. \tag{8}
 $$
-Hai chỉ số đã đảo chỗ.
+Hai chỉ số đổi chỗ.
 
-Với ma trận vuông, ta có thể lấy \(A^{T}\) bằng cách đổi chỗ các phần tử nằm đối xứng nhau qua đường chéo chính: \(A^{T}\) chính là \(A\) được soi lại qua đường chéo ấy.
+Với ma trận vuông, chuyển vị giống như soi qua đường chéo chính. Các phần tử trên đường chéo chính đứng yên; các cặp nằm đối xứng qua đường chéo thì đổi chỗ.
 
-Từ (6) và định nghĩa 3, ta có ngay
+Từ (8) suy ra ngay
 $$
-(A+B)^{T}=A^{T}+B^{T},\qquad (kA)^{T}=kA^{T},\qquad (A^{T})^{T}=A.
+(A+B)^T=A^T+B^T,\qquad (kA)^T=kA^T,\qquad (A^T)^T=A.
 $$
-Riêng đẳng thức cuối chỉ nói rằng soi qua đường chéo chính hai lần thì trở lại nguyên dạng.
+Đẳng thức cuối chỉ nói rằng đổi hàng-cột hai lần thì trở lại ma trận ban đầu.
 
-Còn đẳng thức sau thì không đúng với \(A\) và \(B\) tùy ý.
+Phép nhân thì có một chỗ dễ nhầm.
 
-\textbf{Định lý 2.} Nếu \(A\) cỡ \(m\times r\) và \(B\) cỡ \(r\times n\) thì \((AB)^{T}=B^{T}A^{T}\).
-
-\emph{Chứng minh.} Soi qua đường chéo chính hai lần, dùng (6) và (2):
+\textbf{Định lý 2.} Nếu \(A\) cỡ \(m\times r\) và \(B\) cỡ \(r\times n\), thì
 $$
-\begin{aligned}
-(AB)^{T}_{ij} &= (AB)_{ji} = \sum_{k=1}^{r}a_{jk}b_{ki} \\
-             &= \sum_{k=1}^{r}(B^{T})_{ik}(A^{T})_{kj} = (B^{T}A^{T})_{ij}.
-\end{aligned}
+(AB)^T=B^TA^T. \tag{9}
 $$
-Hai ma trận cùng cỡ mà phần tử ở cùng vị trí bằng nhau thì bằng nhau. \(\square\)
 
-Chú ý thứ tự đã đảo. Phải là \(B^{T}A^{T}\), không phải \(A^{T}B^{T}\).
+\emph{Chứng minh.} Phần tử hàng \(i\), cột \(j\) của \((AB)^T\) là
+$$
+((AB)^T)_{ij}=(AB)_{ji}=\sum_{k=1}^{r}a_{jk}b_{ki}.
+$$
+Còn phần tử hàng \(i\), cột \(j\) của \(B^TA^T\) là
+$$
+\sum_{k=1}^{r}(B^T)_{ik}(A^T)_{kj}
+=\sum_{k=1}^{r}b_{ki}a_{jk}.
+$$
+Hai tổng bằng nhau. Vậy hai ma trận bằng nhau. \(\square\)
 
-Khai triển cột--hàng ở (4) cho thấy chuyện đó có nghĩa gì. Ta có \(AB=\sum_{k}\mathbf{c}_k\mathbf{r}_k\), và \((AB)^{T}=\sum_{k}(\mathbf{c}_k\mathbf{r}_k)^{T}=\sum_{k}\mathbf{r}_k^{T}\mathbf{c}_k^{T}\). Với hai ma trận tích đơn giản thì chuyển vị cũng đảo thứ tự, và kết quả là tổng với hai nhân tố đã đổi chỗ. Đó chính là \(B^{T}A^{T}\).
-
-Còn một điều chưa dùng đến. \((A\mathbf{x})^{T}=\mathbf{x}^{T}A^{T}\). Vế phải là một vector hàng, và phép nhân chạy từ phía bên kia. Chuyển vị đảo chiều.
+Phải viết \(B^TA^T\), không phải \(A^TB^T\). Với vector cũng vậy:
+$$
+(A\mathbf{x})^T=\mathbf{x}^TA^T.
+$$
 
 \subsection{Vết}
 
-\textbf{Định nghĩa 6.} Nếu \(A\) là ma trận vuông thì \textbf{vết} của \(A\), ký hiệu \(\mathrm{tr}(A)\), là tổng các phần tử trên đường chéo chính. Ma trận không vuông không có vết.
+\textbf{Định nghĩa 6.} Nếu \(A\) là ma trận vuông cấp \(n\), \textbf{vết} của \(A\), kí hiệu \(\mathrm{tr}(A)\), là tổng các phần tử trên đường chéo chính:
 $$
 \mathrm{tr}(A)=a_{11}+a_{22}+\cdots+a_{nn}.
 $$
+Ma trận không vuông không có vết.
 
-Vết không đổi khi ta chuyển vị, tức \(\mathrm{tr}(A^{T})=\mathrm{tr}(A)\), vì đường chéo chính của \(A^{T}\) chính là đường chéo chính của \(A\), chỉ đọc theo chiều ngược lại.
+Ví dụ
+$$
+A=\left[ \begin{array}{rrr} 2 & -3 & 1\\ 7 & 0 & 4\\ 5 & 6 & -1 \end{array} \right]
+$$
+thì
+$$
+\mathrm{tr}(A)=2+0+(-1)=1.
+$$
 
-Và vết của hai tích không cần cùng cỡ:
+Chuyển vị giữ nguyên các ô trên đường chéo chính, nên
 $$
-\mathrm{tr}(AB)=\mathrm{tr}(BA).
+\mathrm{tr}(A^T)=\mathrm{tr}(A).
 $$
-Để thấy, khai triển hai vế rồi đổi vai hai chỉ số.
-$$
-\begin{aligned}
-\mathrm{tr}(AB) &= \sum_{i}(AB)_{ii}=\sum_{i}\sum_{k}a_{ik}b_{ki},\\
-\mathrm{tr}(BA) &= \sum_{i}(BA)_{ii}=\sum_{i}\sum_{k}b_{ik}a_{ki}
-               =\sum_{k}\sum_{i}a_{ki}b_{ik}=\mathrm{tr}(AB).
-\end{aligned}
-$$
-Cũng dễ thấy \(\mathrm{tr}(kA)=k\,\mathrm{tr}(A)\).
 
-Vết là thứ duy nhất trong bài này đọc được từ ma trận mà không phải làm phép tính nào. Ở kì sau sẽ xuất hiện \(ad-bc\): cùng bảng số ấy, vết là tổng hai phần tử trên đường chéo chính, còn \(ad-bc\) là tích chúng trừ đi tích hai phần tử ngoài đường chéo.
+Một tính chất nhỏ nhưng hay dùng:
+$$
+\mathrm{tr}(AB)=\mathrm{tr}(BA), \tag{10}
+$$
+miễn là cả hai vết đều có nghĩa. Chẳng hạn \(A\) cỡ \(m\times n\) và \(B\) cỡ \(n\times m\) thì \(AB\) cỡ \(m\times m\), còn \(BA\) cỡ \(n\times n\), nên cả hai đều là ma trận vuông.
+
+Khai triển hai vế:
+$$
+\mathrm{tr}(AB)=\sum_i(AB)_{ii}=\sum_i\sum_k a_{ik}b_{ki},
+$$
+$$
+\mathrm{tr}(BA)=\sum_k(BA)_{kk}=\sum_k\sum_i b_{ki}a_{ik}.
+$$
+Hai tổng chỉ khác thứ tự viết các số hạng, nên bằng nhau.
+
+Có một con số khác gắn với ma trận \(2\times2\). Nếu
+$$
+A=\left[ \begin{array}{cc} a & b\\ c & d \end{array} \right],
+$$
+thì vết là \(a+d\), còn định thức là \(ad-bc\). Vết cộng hai ô trên đường chéo; vì sao định thức lại lấy \(ad-bc\), và khi nào nó bằng \(0\), ta sẽ xét ở kì sau.
 
 \subsection{Còn thiếu gì}
 
-Ta mới có phép cộng, phép trừ, phép nhân với một số và phép nhân hai ma trận. Thiếu hẳn một phép: chia.
+Ta đã có phép cộng, phép trừ, phép nhân với một số và phép nhân hai ma trận. Còn phép chia thì sao?
 
-Với số thật thì không có gì phải bàn. Mọi \(a\neq0\) đều có số nghịch đảo \(1/a\), và ta luôn có \(a\cdot\frac{1}{a}=1\).
+Với số thật, mọi \(a\neq0\) đều có nghịch đảo \(1/a\), và
+$$
+a\cdot\frac1a=\frac1a\cdot a=1.
+$$
 
-Với hai ma trận vuông cùng cỡ thì tình hình khó chịu hơn ta tưởng. Cả \(AB\) và \(BA\) đều tồn tại, và ở mục phép nhân ta đã thấy chúng có thể khác nhau. Nên câu hỏi ``chia \(A\) cho \(B\)'' không có nghĩa gì rõ ràng. Có lẽ phải nghĩ theo hướng khác: tìm ma trận \(B\) sao cho \(AB=BA=I\), với \(I\) là ma trận toàn số \(0\), trừ số \(1\) ở đường chéo chính. Chỉ khi đó một ma trận vuông mới tự phân biệt được với ma trận vuông khác.
+Với ma trận vuông, không thể nói ``chia \(A\) cho \(B\)'' một cách vô tư. Phép nhân ma trận không giao hoán, nên nếu muốn bắt chước số thật, ta phải tìm một ma trận \(B\) thỏa cả hai điều kiện
+$$
+AB=BA=I,
+$$
+trong đó
+$$
+I=\left[ \begin{array}{cccc}
+1 & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 1
+\end{array} \right]
+$$
+là ma trận đơn vị: toàn số \(0\), trừ các số \(1\) trên đường chéo chính.
 
-Và còn một việc nữa. Kì trước ta khử một hệ bằng cách biến đổi hàng trên ma trận bổ sung, rồi đọc nghiệm từ dạng rút gọn. Kì này ta mới thấy những phép biến đổi hàng ấy, xếp lại, chính là những phép nhân đặt ở bên trái \(A\). Khi gom được cả dãi biến đổi ấy thành một phép nhân duy nhất, ta sẽ tìm được \(B\) mà không cần giải hệ nào cả.
-
-Kì sau.
+Ta cũng còn dãy phép khử của kì 2. Mỗi phép biến đổi hàng có thể được viết thành phép nhân ma trận đặt bên trái \(A\). Nếu gom cả dãy phép biến đổi thành một phép nhân, ma trận nghịch đảo sẽ xuất hiện. Kì sau ta sẽ tính nó từ chính các phép khử ấy.
 \end{document}

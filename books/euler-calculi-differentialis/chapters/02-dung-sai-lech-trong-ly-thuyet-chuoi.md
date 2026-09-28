@@ -482,8 +482,79 @@ $2,\ -1$. Còn khi trong các chuỗi bậc hai...
 <!-- Ghi chú dịch giả: trang 74 kết thúc giữa chữ ở "in seriebus secundi ordi-"; mép phải
      mang chữ catchword ordi-. Số trang 46 đặt bên trái đầu trang. -->
 
-<!-- Chưa dịch: PDF 75-97, tức trang in 47-69, gồm phần còn lại của §46, rồi §47 trở đi
-     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 74 là "ordi-". -->
+<!-- PDF 75, trang in 47 -->
+
+…bậc hai thì mọi giá trị của $d$ đều bằng $0$, ta sẽ có
+
+$$
+a^{\mathrm{III}} = 3a^{\mathrm{II}} - 3a^{\mathrm{I}} + a;\quad a^{\mathrm{IV}} = 3a^{\mathrm{III}} - 3a^{\mathrm{II}} + a^{\mathrm{I}};\quad \&c.
+$$
+
+Vậy chúng cũng là những chuỗi truy hồi, với thang quan hệ là $3,\ -3,\ +1$.
+
+Cũng theo cách ấy, ta thấy mọi chuỗi thuộc loại này, thuộc bậc nào bất kỳ, đều cùng
+thuộc về lớp các chuỗi truy hồi; và điều ấy đúng như vậy, tức là thang quan hệ gồm những
+hệ số của lũy thừa nhị thức, mỗi hệ số cao hơn một bậc so với bậc mà chuỗi ấy thuộc về.
+
+**47.** Vì trong các chuỗi bậc nhất, mọi giá trị của $d$ và $e$, và của tất cả các
+differentia kế tiếp, đều bằng $0$, nên trong những chuỗi ấy ta cũng có
+
+$$
+a^{\mathrm{III}} = 3a^{\mathrm{II}} - 3a^{\mathrm{I}} + a
+$$
+
+$$
+a^{\mathrm{IV}} = 3a^{\mathrm{III}} - 3a^{\mathrm{II}} + a^{\mathrm{I}}
+$$
+
+&c.
+
+hoặc
+
+$$
+a^{\mathrm{IV}} = 4a^{\mathrm{III}} - 6a^{\mathrm{II}} + 4a^{\mathrm{I}} - a
+$$
+
+$$
+a^{\mathrm{V}} = 4a^{\mathrm{IV}} - 6a^{\mathrm{III}} + 4a^{\mathrm{II}} - a^{\mathrm{I}}
+$$
+
+&c.
+
+Vậy chúng cũng thuộc về các chuỗi truy hồi, và do đó theo vô hạn cách, khi các thang quan hệ
+có thể là
+
+$$
+3,\ -3,\ +1;\quad 4,\ -6,\ +4,\ -1;\quad 5,\ -10,\ +10,\ -5,\ +1;
+$$
+
+&c.
+
+Cũng theo cách ấy, ta hiểu rằng mỗi chuỗi trong loại mà ta đang bàn, đồng thời cũng là một
+chuỗi truy hồi theo vô hạn cách: bởi thang quan hệ sẽ là
+
+$$
+\frac{n}{1},\quad \frac{n(n-1)}{1\cdot 2},\quad +\frac{n(n-1)(n-2)}{1\cdot 2\cdot 3},\quad -\frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4},
+$$
+
+&c.
+
+trong khi...
+
+<!-- Ghi chú dịch giả: ba thang quan hệ Euler liệt kê ở §47 đã tự kiểm và đều đúng với các
+     hệ số nhị thức C(n,k) mang dấu luân phiên: n=3 cho 3, -3, +1; n=4 cho 4, -6, +4, -1;
+     n=5 cho 5, -10, +10, -5, +1. Dãy công thức chung ở cuối trang cũng đúng, vì
+     n/1 = C(n,1), n(n-1)/(1·2) = C(n,2), n(n-1)(n-2)/(1·2·3) = C(n,3),
+     n(n-1)(n-2)(n-3)/(1·2·3·4) = C(n,4). Các quan hệ truy hồi ở đầu trang cũng đúng:
+     a^III = 3a^II - 3a^I + a là hiệu bậc ba bằng 0, còn a^IV = 4a^III - 6a^II + 4a^I - a
+     là hiệu bậc bốn bằng 0. -->
+
+<!-- Ghi chú dịch giả: trang 75 kết thúc ở chữ "dum", vốn là catchword ở mép phải chân
+     trang, nối sang trang kế. Số trang 47 đặt bên phải đầu trang. -->
+
+<!-- Chưa dịch: PDF 76-97, tức trang in 48-69, gồm phần còn lại của §47, rồi §48 trở đi
+     và các EXEMPLUM của CAPUT II. Catchword ở cuối trang 75 là "dum". -->
+
 
 
 

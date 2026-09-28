@@ -16,33 +16,33 @@
 
 \begin{document}
 
-Kì trước ta dừng ở một câu hỏi. Có phép cộng, có phép trừ, có phép nhân. Thiếu hẳn một phép: chia.
+Kì trước dừng lại ở một câu hỏi. Với ma trận, ta đã có phép cộng, phép trừ và phép nhân, nhưng còn thiếu phép chia.
 
-Với số thật thì không có gì phải bàn. Mọi \(a\neq0\) đều có số nghịch đảo.
+Với số thực thì không có gì phải bàn: mọi \(a\neq0\) đều có số nghịch đảo.
 
-Với hai ma trận vuông cùng cỡ thì tình hình khó chịu hơn. Kì trước ta đã thấy cả \(AB\) và \(BA\) đều tồn tại và có thể khác nhau. Nên câu hỏi ``chia \(A\) cho \(B\)'' không có nghĩa gì rõ ràng.
+Với hai ma trận vuông cùng cỡ thì khó hơn. Kì trước ta đã thấy \(AB\) và \(BA\) đều tồn tại nhưng có thể khác nhau, nên câu hỏi ``chia \(A\) cho \(B\)'' không có nghĩa rõ ràng.
 
-Kì này ta đi theo hướng kia. Thay vì hỏi làm sao chia, ta hỏi thứ gì có thể \textbf{hoàn tác} phép nhân.
+Vì vậy kì này ta hỏi theo hướng khác. Thay vì hỏi chia thế nào, ta tìm thứ có thể \textbf{hoàn tác} phép nhân.
 
-\subsection{Ma trận không}
+\subsection{Ma trận đơn vị}
 
-Muốn có một thứ không làm thay đổi gì cả, ta thử đặt số \(1\) ở đường chéo chính và số \(0\) ở mọi chỗ khác. Ma trận cỡ \(n\times n\) như vậy gọi là \textbf{ma trận không} (\emph{identity matrix}), ký hiệu \(I_n\):
+Muốn có một ma trận nhân vào mà không làm thay đổi gì, ta thử đặt số \(1\) trên đường chéo chính và số \(0\) ở mọi chỗ khác. Ma trận cỡ \(n\times n\) như vậy gọi là \textbf{ma trận đơn vị} (\emph{identity matrix}), ký hiệu \(I_n\):
 $$
 I_2=\left[ \begin{array}{cc} 1 & 0\\ 0 & 1 \end{array} \right],\qquad
 I_3=\left[ \begin{array}{rrr} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right].
 $$
-Nhân nó vào một ma trận bất kỳ, hai bên bằng nhau. Với \(A=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]\):
+Nhân nó vào bên trái hay bên phải một ma trận, ta đều nhận lại đúng ma trận ấy. Chẳng hạn với \(A=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]\):
 $$
 I_2A=\left[ \begin{array}{rr} 1 & 0\\ 0 & 1 \end{array} \right]\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]=A,
 $$
 $$
 AI_3=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]\left[ \begin{array}{rrr} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right]=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]=A.
 $$
-Lý do thì nằm ngay trong luật hàng--cột ở kì trước. Hàng thứ \(i\) của \(I_n\) có đúng một số không nằm ở vị trí \(i\), nên tích số của hàng ấy với cột \(j\) của \(A\) chính là \(a_{ij}\), và tổng cũng chỉ có một số hạng.
+Lý do nằm ngay trong luật hàng--cột ở kì trước. Hàng thứ \(i\) của \(I_n\) chỉ có đúng một số khác không, là số \(1\) ở vị trí \(i\). Nhân hàng ấy với cột \(j\) của \(A\), tổng chỉ còn một số hạng, và số hạng đó là \(a_{ij}\).
 
-Ma trận không cũng là duy nhất. Nếu một ma trận \(J\) cũng để yên mọi thứ, thì lấy \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,i)\) ta được \(j_{ii}=1\); lấy \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,j)\) với \(i\neq j\) ta được \(j_{ij}=0\). Nên \(J=I_n\).
+Ma trận đơn vị cũng là duy nhất. Giả sử một ma trận \(J\) cũng để yên mọi ma trận khi nhân vào. Lấy \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,i)\), ta được \(j_{ii}=1\); lấy \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,j)\) với \(i\neq j\), ta được \(j_{ij}=0\). Vậy \(J=I_n\).
 
-Vì thế ta có thể đặt \(A^0=I\) cho mọi ma trận vuông, và điều ấy đúng với số thật.
+Vì thế với mọi ma trận vuông, ta có thể đặt \(A^0=I\), giống như với số thực.
 
 \subsection{Nghịch đảo, và nó là duy nhất}
 
@@ -52,9 +52,9 @@ AB=BA=I, \tag{1}
 $$
 thì \(A\) được gọi là \textbf{ma trận khả nghịch} (\emph{invertible}), và \(B\) là một \textbf{nghịch đảo} của \(A\).
 
-Điều kiện trong (1) không đổi khi đảo tên hai ma trận. Nó vẫn là \(BA=AB=I\). Nên \(A\) cũng là nghịch đảo của \(B\), và ta gọi chúng là hai ma trận nghịch đảo của nhau.
+Đổi vai hai ma trận cho nhau, điều kiện (1) vẫn thế: \(BA=AB=I\). Nên \(A\) cũng là nghịch đảo của \(B\), và ta gọi chúng là hai ma trận nghịch đảo của nhau.
 
-Nếu \(A\) khả nghịch thì nghịch đảo của nó là duy nhất, và ta ký hiệu nó bằng \(A^{-1}\). Chứng minh cũng ngắn.
+Nếu \(A\) khả nghịch thì nghịch đảo của nó là duy nhất, và ta ký hiệu nó là \(A^{-1}\). Chứng minh khá ngắn.
 
 \textbf{Định lý 1.} Nếu \(B\) và \(C\) đều là nghịch đảo của \(A\) thì \(B=C\).
 
@@ -62,9 +62,9 @@ Nếu \(A\) khả nghịch thì nghịch đảo của nó là duy nhất, và ta
 $$
 (BA)C=IC.
 $$
-Dồn ngoặc bằng luật kết hợp ở mục sau thì vế trái là \(B(AC)=BI=B\), còn vế phải là \(C\). Vậy \(B=C\). \(\square\)
+Chuyển ngoặc theo luật kết hợp (sẽ nói ở mục sau), vế trái thành \(B(AC)=BI=B\), còn vế phải là \(C\). Vậy \(B=C\). \(\square\)
 
-Đã có một nghịch đảo duy nhất thì dùng nó không còn phải bận tâm về lựa chọn. Ta viết
+Vì nghịch đảo là duy nhất, ta không phải bận tâm đang dùng nghịch đảo nào, và viết gọn
 $$
 AA^{-1}=A^{-1}A=I. \tag{2}
 $$
@@ -85,23 +85,23 @@ $$
 $$
 BA=\left[ \begin{array}{rr} 3 & 5\\ 1 & 2 \end{array} \right]\left[ \begin{array}{rr} 2 & -5\\ -1 & 3 \end{array} \right]=\left[ \begin{array}{rr} 1 & 0\\ 0 & 1 \end{array} \right]=I.
 $$
-Vậy hai ma trận này nghịch đảo của nhau.
+Vậy hai ma trận này là nghịch đảo của nhau.
 
 \subsection{Ma trận nào không có nghịch đảo}
 
-Không phải ma trận vuông nào cũng tìm được ma trận \(B\) thỏa (1). Xét
+Không phải ma trận vuông nào cũng có một ma trận \(B\) thỏa (1). Xét
 $$
 A=\left[ \begin{array}{rrr} 1 & 4 & 0\\ 2 & 5 & 0\\ 3 & 6 & 0 \end{array} \right].
 $$
-Cột thứ ba của \(A\) toàn số \(0\). Gọi \(\mathbf{c}_1,\mathbf{c}_2,\mathbf{0}\) là ba cột của \(A\). Với bất kỳ ma trận \(3\times3\) nào, công thức (3) ở kì trước cho
+Cột thứ ba của \(A\) toàn số \(0\). Gọi \(\mathbf{c}_1,\mathbf{c}_2,\mathbf{0}\) là ba cột của \(A\). Với mọi ma trận \(B\) cỡ \(3\times3\), công thức (3) ở kì trước cho
 $$
 BA=B[\,\mathbf{c}_1\ \mathbf{c}_2\ \mathbf{0}\,]=[\,B\mathbf{c}_1\ B\mathbf{c}_2\ \mathbf{0}\,].
 $$
-Cột thứ ba của \(BA\) bằng vector \(0\), nên \(BA\neq I\). Không có \(B\) nào thoả (1).
+Cột thứ ba của \(BA\) là vector \(0\), nên \(BA\neq I\). Không có \(B\) nào thỏa (1).
 
 Ma trận như thế gọi là \textbf{ma trận suy biến} (\emph{singular}).
 
-Lập luận này dùng đúng công thức tính tích theo cột học ở kì trước, không cần điều gì mới. Một ma trận vuông có một hàng hoặc một cột toàn số \(0\) thì luôn suy biến.
+Lập luận trên chỉ dùng công thức tính tích theo cột ở kì trước, không cần gì mới. Một ma trận vuông có một hàng hoặc một cột toàn số \(0\) thì luôn suy biến.
 
 \subsection{Ma trận cỡ hai và định thức}
 
@@ -109,13 +109,13 @@ Xét
 $$
 A=\left[ \begin{array}{cc} a & b\\ c & d \end{array} \right].
 $$
-Thay vì nhận công thức, ta tự tìm. Theo (1), ta cần ma trận \(X\) sao cho \(AX=I\), tức là cần
+Thay vì nhận công thức có sẵn, ta tự tìm. Theo (1), cần một ma trận \(X\) sao cho \(AX=I\), tức là
 $$
 \left[ \begin{array}{cc} a & b\\ c & d \end{array} \right]\left[ \begin{array}{cc} x_{11} & x_{12}\\ x_{21} & x_{22} \end{array} \right]=\left[ \begin{array}{cc} 1 & 0\\ 0 & 1 \end{array} \right].
 $$
-Bốn phương trình, tách ra thành hai hệ hai ẩn, mỗi hệ cho một cột của \(X\).
+Nhân ra, ta được bốn phương trình. Chúng tách thành hai hệ hai ẩn, mỗi hệ cho một cột của \(X\).
 
-Hệ thứ nhất, lấy cột thứ nhất:
+Hệ thứ nhất ứng với cột thứ nhất:
 $$
 \begin{cases} ax_{11}+bx_{21}=1\\ cx_{11}+dx_{21}=0. \end{cases}
 $$
@@ -128,7 +128,7 @@ $$
 (ad-bc)x_{21}=-c.
 $$
 
-Hệ thứ hai cho cột thứ hai làm y hệt, ra
+Với hệ thứ hai, ứng với cột thứ hai, làm y hệt thì được
 $$
 (ad-bc)x_{12}=-b,\qquad (ad-bc)x_{22}=a.
 $$
@@ -137,19 +137,19 @@ Vậy nếu \(ad-bc\neq0\) thì
 $$
 X=\frac{1}{ad-bc}\left[ \begin{array}{rr} d & -b\\ -c & a \end{array} \right]. \tag{3}
 $$
-Bốn phương trình vừa rồi chính là bốn phần tử của \(AX-I\) bằng không. Nên ma trận \(X\) ở trên thỏa \(AX=I\). Ta chưa kiểm \(XA=I\), nhưng Định lý 1 nói nghịch đảo là duy nhất, nên khi \(AX=I\) thì \(X\) là nghịch đảo của \(A\).
+Bốn phương trình vừa giải nói rằng bốn phần tử của \(AX-I\) đều bằng \(0\), nên ma trận \(X\) ở trên thỏa \(AX=I\). Ta chưa kiểm \(XA=I\), nhưng Định lý 1 nói nghịch đảo là duy nhất, nên khi \(AX=I\) thì \(X\) là nghịch đảo của \(A\).
 
-Ngược lại, nếu \(ad-bc=0\) thì bốn phương trình trên không giải được, và ta sẽ thấy ở mục sau rằng ma trận ấy ép cả mặt phẳng xuống một đường thẳng.
+Ngược lại, nếu \(ad-bc=0\) thì bốn phương trình trên không giải được. Mục sau sẽ cho thấy khi đó ma trận ép cả mặt phẳng xuống một đường thẳng.
 
-Cái tổng \(ad-bc\) xuất hiện đủ nhiều lần, nên ta đặt tên cho nó.
+Biểu thức \(ad-bc\) xuất hiện ở cả bốn phương trình, nên ta đặt tên cho nó.
 
 \textbf{Định nghĩa 2.} Với \(A=\left[ \begin{array}{cc} a & b\\ c & d \end{array} \right]\), ta gọi
 $$
 \det(A)=ad-bc \tag{4}
 $$
-là \textbf{định thức} của \(A\). Ma trận vuông cỡ \(n\times n\) thì định thức được định nghĩa tổng quát sau này, còn với cỡ hai thì (4) là tất cả.
+là \textbf{định thức} của \(A\). Với ma trận vuông cỡ \(n\times n\), định thức sẽ được định nghĩa tổng quát sau này; với cỡ hai thì (4) là tất cả.
 
-Từ cách tìm trên, ta có ngay kết luận. Ma trận \(A\) cỡ \(2\times2\) khả nghịch khi và chỉ khi \(\det(A)\neq0\), và khi đó (3) là công thức nghịch đảo.
+Cách tìm ở trên cho ngay kết luận: ma trận \(A\) cỡ \(2\times2\) khả nghịch khi và chỉ khi \(\det(A)\neq0\), và khi đó (3) là công thức nghịch đảo.
 
 \textbf{Ví dụ 2.} (a) Với \(A=\left[ \begin{array}{rr} 6 & 1\\ 5 & 2 \end{array} \right]\) thì \(\det(A)=6\cdot2-1\cdot5=7\neq0\), nên
 $$
@@ -160,25 +160,25 @@ $$
 
 \subsection{Định thức đo diện tích}
 
-Cách tìm ở trên cho ta công thức, nhưng chưa cho ta ý nghĩa. Câu hỏi tự nhiên hơn nhiều, và là câu hỏi mà kì trước đã bỏ ngỏ: phép biến đổi mà ma trận \(A\) mô tả làm diện tích thay đổi bao nhiêu lần?
+Cách tìm ở trên cho ta công thức, nhưng chưa cho biết \(ad-bc\) có nghĩa gì. Kì trước còn bỏ ngỏ một câu hỏi tự nhiên hơn nhiều: phép biến đổi mà ma trận \(A\) mô tả làm diện tích thay đổi bao nhiêu lần?
 
-Với \(A=\left[ \begin{array}{cc} a & b\\ c & d \end{array} \right]\), hai cột của \(A\) là \((a,c)\) và \((b,d)\). Theo cách xếp cột học ở kì trước, ma trận này biến vector \((x,y)\) thành \((ax+by,\;cx+dy)\), tức là nó ghép vector ấy thành tổng
+Với \(A=\left[ \begin{array}{cc} a & b\\ c & d \end{array} \right]\), hai cột của \(A\) là \((a,c)\) và \((b,d)\). Theo cách xếp cột ở kì trước, ma trận này biến vector \((x,y)\) thành \((ax+by,\;cx+dy)\), tức là thành tổng
 $$
 x(a,c)+y(b,d).
 $$
-Nên nó kéo ô vuông đơn vị ở góc phần tư thứ nhất thành hình bình hành có hai cạnh \((a,c)\) và \((b,d)\).
+Vì vậy ô vuông đơn vị ở góc phần tư thứ nhất bị kéo thành hình bình hành có hai cạnh \((a,c)\) và \((b,d)\).
 
-Diện tích của hình bình hành ấy bằng \(|ad-bc|\). Chọn \((a,c)\) làm đáy thì chiều cao là phần hướng lên trục \(Oy\) của cạnh \((b,d)\), và tích đáy với cao cho ra đúng \(|ad-bc|\).
+Hình bình hành ấy có diện tích \(|ad-bc|\). Chọn \((a,c)\) làm đáy thì chiều cao là phần hướng lên trục \(Oy\) của cạnh \((b,d)\), và tích đáy với cao cho ra đúng \(|ad-bc|\).
 
 \blogfig{\includegraphics{/images/nghich-dao-ma-tran/dien-tich-dinh-thuc.svg}}
 
-Với \(A=\left[ \begin{array}{rr} 2 & 1\\ 0 & 1 \end{array} \right]\) thì \(\det(A)=2\): hình bình hành có cạnh \((2,0)\) và \((1,1)\), diện tích bằng \(2\) lần ô vuông đơn vị.
+Với \(A=\left[ \begin{array}{rr} 2 & 1\\ 0 & 1 \end{array} \right]\) thì \(\det(A)=2\). Hình bình hành có cạnh \((2,0)\) và \((1,1)\), diện tích gấp \(2\) lần ô vuông đơn vị.
 
-Với \(A=\left[ \begin{array}{rr} 1 & 1\\ 1 & 1 \end{array} \right]\) thì \(\det(A)=0\), vì hai cột bằng nhau. Hình bình hành có hai cạnh cùng hướng nên gộp thành một đoạn thẳng, diện tích bằng \(0\).
+Với \(A=\left[ \begin{array}{rr} 1 & 1\\ 1 & 1 \end{array} \right]\) thì \(\det(A)=0\), vì hai cột bằng nhau. Hai cạnh cùng hướng nên hình bình hành bẹp thành một đoạn thẳng, diện tích bằng \(0\).
 
-Vậy \(\det(A)=0\) không phải một kỹ thuật rút gọn gì cả. Nó nói một điều rất cụ thể. Ma trận ấy không giữ được mặt phẳng, nó nén nó xuống một đường thẳng. Mọi điểm khác nhau trên mặt phẳng đều bị đưa về cùng một chỗ, và thông tin về vị trí bị mất.
+Như vậy \(\det(A)=0\) có một nghĩa rất cụ thể, chứ không chỉ là một bước rút gọn: ma trận ấy không giữ được mặt phẳng mà nén nó xuống một đường thẳng. Mọi điểm khác nhau trên mặt phẳng đều bị đưa về cùng một chỗ, và thông tin về vị trí bị mất.
 
-Đây cũng là lý do \(\det(A)\neq0\) đi kèm với việc \(A\) khả nghịch. Ma trận không nénp mặt phẳng thì còn thông tin để dựng lại, nên còn tìm được ma trận hoàn tác nó.
+Nó cũng giải thích vì sao \(\det(A)\neq0\) đi cùng với việc \(A\) khả nghịch. Ma trận nào không ép dẹt mặt phẳng thì còn đủ thông tin để dựng lại, nên còn tìm được ma trận hoàn tác nó.
 
 \subsection{Giải hệ phương trình bằng nghịch đảo}
 
@@ -200,28 +200,28 @@ $$
 x=\frac{du-bv}{ad-bc},\qquad y=\frac{av-cu}{ad-bc}. \tag{5}
 $$
 
-Giờ hãy hỏi thẳng: ta cần cách này không, khi đã có khử Gauss--Jordan từ hai kì trước?
+Đã có khử Gauss--Jordan từ hai kì trước, ta có cần thêm cách này không?
 
-Với một hệ hai ẩn có hệ số bằng số, thì không. Khử nhanh hơn, và không phải chia gì cả. Chỗ phép nghịch đảo thắng là khi hệ số là ký hiệu, như ở (5). Chạy khử trên ký hiệu thì mỗi bước phải mang theo ba chữ \(a,b,c,d\) và một mẫu số, và rất dễ rơi nhầm. Còn (5) thì đã xong.
+Với một hệ hai ẩn có hệ số là những con số cụ thể thì không. Khử nhanh hơn, và không phải chia gì cả. Nghịch đảo có lợi khi hệ số là chữ, như ở (5). Chạy khử trên chữ thì bước nào cũng phải mang theo bốn chữ \(a,b,c,d\) cùng một mẫu số, rất dễ nhầm. Còn (5) thì đã có sẵn.
 
-Và lợi thế thật nằm ở chỗ khác. Với hệ vuông \(n\) ẩn, giải hệ không phải là một thuật toán nữa, mà là một phép nhân: nghiệm là \(A^{-1}\mathbf{b}\). Một đối tượng duy nhất biến mọi vế phải thành nghiệm. Ta sẽ dùng điều đó ở những kì sau, khi phải xử lý hàng trăm phương trình cùng lúc.
+Lợi thế lớn hơn nằm ở chỗ khác. Với hệ vuông \(n\) ẩn, giải hệ không còn là chạy một thuật toán mà chỉ là một phép nhân: nghiệm là \(A^{-1}\mathbf{b}\). Cùng một ma trận \(A^{-1}\) biến mọi vế phải thành nghiệm. Những kì sau sẽ dùng điều đó, khi phải xử lý hàng trăm phương trình cùng lúc.
 
 \subsection{Nghịch đảo của một tích}
 
-Giả sử \(A\) và \(B\) đều khả nghịch. Tích \(AB\) cũng khả nghịch, và nghịch đảo của nó là \(B^{-1}A^{-1}\).
+Giả sử \(A\) và \(B\) đều khả nghịch. Khi đó tích \(AB\) cũng khả nghịch, và nghịch đảo của nó là \(B^{-1}A^{-1}\).
 
 \textbf{Định lý 2.} Nếu \(A\) và \(B\) là hai ma trận vuông khả nghịch cùng cỡ thì \(AB\) khả nghịch và
 $$
 (AB)^{-1}=B^{-1}A^{-1}. \tag{6}
 $$
 
-\emph{Chứng minh.} Ta cho thấy một lần là cả hai chiều, bằng cách nhân:
+\emph{Chứng minh.} Chỉ cần nhân thử theo cả hai chiều:
 $$
 (AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=AIA^{-1}=AA^{-1}=I.
 $$
 Chiều kia, $(B^{-1}A^{-1})(AB)=B^{-1}(A^{-1}A)B=B^{-1}IB=B^{-1}B=I$. Vậy (6) đúng. \(\square\)
 
-Chú ý thứ tự đã đảo, y như ở mục chuyển vị của kì trước. Hai ma trận khả nghịch không giao hoán, và vì thế không thể đảo thứ tự trong (6).
+Thứ tự đã bị đảo, y như công thức ở mục chuyển vị của kì trước. Hai ma trận khả nghịch nói chung không giao hoán, nên không thể đảo thứ tự trong (6).
 
 \textbf{Ví dụ 3.} Với
 $$
@@ -246,7 +246,7 @@ B^{-1}A^{-1}
 $$
 đúng bằng \((AB)^{-1}\).
 
-Đảo lại thì ra:
+Nhân theo thứ tự ngược lại thì ra một ma trận khác:
 $$
 A^{-1}B^{-1}
 =\left[ \begin{array}{rr} 3 & -2\\ -1 & 1 \end{array} \right]\left[ \begin{array}{rr} 1 & -1\\ -1 & \frac32 \end{array} \right]
@@ -255,15 +255,15 @@ $$
 
 \textbf{Định lý 3.} Nếu \(AB\) là ma trận suy biến thì \(A\) hoặc \(B\) là ma trận suy biến.
 
-\emph{Chứng minh.} Chứng minh bằng phản chứng. Nếu cả \(A\) và \(B\) đều khả nghịch thì theo Định lý 2, \(AB\) khả nghịch. Mà \(AB\) đang suy biến. Mâu thuẫn. \(\square\)
+\emph{Chứng minh.} Phản chứng. Nếu cả \(A\) và \(B\) đều khả nghịch thì theo Định lý 2, \(AB\) khả nghịch, trái với giả thiết \(AB\) suy biến. \(\square\)
 
-Nói cách khác, một tích suy biến không bao giờ có được từ hai ma trận khả nghịch. Muốn tích ra một thứ hỏng thì phải có một thứ hỏng.
+Nói cách khác, nhân hai ma trận khả nghịch không bao giờ ra một ma trận suy biến. Tích đã suy biến thì ít nhất một thừa số phải suy biến.
 
 \subsection{Những luật còn giữ, và bốn luật không}
 
-Ở kì trước, phép cộng và phép nhân với một số chỉ làm trên từng phần tử. Còn phép nhân hai ma trận thì là tổng các tích. Nghĩa là mọi luật nào đúng với số thật mà chỉ dùng hai phép đó, thì vẫn đúng với ma trận.
+Ở kì trước, phép cộng hai ma trận và phép nhân ma trận với một số đều làm trên từng phần tử, còn mỗi phần tử của tích hai ma trận là một tổng các tích. Nghĩa là luật nào đúng với số thực mà chỉ dùng hai phép cộng và nhân thì vẫn đúng với ma trận.
 
-Sách giáo trình liệt kê hơn hai mốt luật như vậy. Tất cả đều cùng một cơ chế, và xem cơ chế đó một lần là đủ. Với ba ma trận \(A,B,C\) cùng cỡ và các số \(a,b\), ta có
+Sách giáo trình liệt kê hơn hai mốt luật như vậy. Tất cả đều đúng theo cùng một cơ chế, nên xem cơ chế ấy một lần là đủ. Với ba ma trận \(A,B,C\) cùng cỡ và các số \(a,b\), ta có
 $$
 \begin{aligned}
 A(B+C)_{ij} &= \sum_{k}a_{ik}(b_{kj}+c_{kj})\\
@@ -271,7 +271,7 @@ A(B+C)_{ij} &= \sum_{k}a_{ik}(b_{kj}+c_{kj})\\
             &= (AB)_{ij}+(AC)_{ij}
 \end{aligned}
 $$
-nên \(A(B+C)=AB+AC\). Đó chỉ là phá ngoặc và gom lại, giống hệt với số thật. Từ đây suy ra ngay
+nên \(A(B+C)=AB+AC\). Ta chỉ phá ngoặc rồi gom lại, giống hệt với số thực. Các luật sau được kiểm tra theo đúng cách ấy:
 $$
 \begin{gathered}
 A+B=B+A,\qquad A+(B+C)=(A+B)+C,\\
@@ -281,11 +281,11 @@ a(bC)=(ab)C,\qquad a(BC)=(aB)C=B(aC).
 \end{gathered}
 $$
 
-Có bốn luật thì không giữ, và mỗi cái hỏng theo một kiểu khác nhau.
+Có bốn luật không còn đúng, mỗi luật hỏng theo một kiểu.
 
-\textbf{Phép nhân không giao hoán.} Mục này đã làm ở kì trước, với hai ma trận cụ thể.
+\textbf{Phép nhân không giao hoán.} Kì trước đã chỉ ra điều này bằng hai ma trận cụ thể.
 
-\textbf{Quy tắc giải bỏ hỏng.} Với số thật, \(ab=ac\) và \(a=0\) kéo theo \(b=c\). Với ma trận thì không.
+\textbf{Quy tắc giải bỏ hỏng.} Với số thực, \(ab=ac\) và \(a\neq0\) kéo theo \(b=c\). Với ma trận thì không.
 $$
 A=\left[ \begin{array}{rr} 0 & 1\\ 0 & 2 \end{array} \right],\qquad
 B=\left[ \begin{array}{rr} 1 & 0\\ 3 & 4 \end{array} \right],\qquad
@@ -296,7 +296,7 @@ $$
 AB=\left[ \begin{array}{rr} 3 & 4\\ 6 & 8 \end{array} \right],\qquad
 AC=\left[ \begin{array}{rr} 3 & 4\\ 6 & 8 \end{array} \right],
 $$
-trong khi \(B\neq C\). Giải bỏ \(A\) ở hai vế sẽ dẫn tới kết luận sai.
+trong khi \(B\neq C\). Nếu giải bỏ \(A\) ở hai vế, ta sẽ đi tới kết luận sai.
 
 \begin{quote}
 Chỗ hỏng nằm ở chỗ khác. Với số thật, điều kiện \(a\neq0\) là đủ để giải bỏ, vì \(a\) là một số: nhân hai vế với cùng một số khác không thì không thể làm hai vế khác nhau trở thành bằng nhau. Với ma trận thì \(A\neq0\) không đủ. Ma trận \(A\) ở trên khác không, nhưng nó biến hai ma trận khác nhau thành cùng một ma trận.
@@ -304,17 +304,17 @@ Chỗ hỏng nằm ở chỗ khác. Với số thật, điều kiện \(a\neq0\)
 Nên muốn một luật giải bỏ đúng với ma trận, ta phải đòi một điều mạnh hơn nhiều so với ``khác không''. Điều đó là khả nghịch.
 \end{quote}
 
-\textbf{Tích bằng không mà hai thừa số khác không.} Với số thật, \(ab=0\) thì \(a=0\) hoặc \(b=0\). Ở đây cả hai đều khác không mà tích vẫn bằng không.
+\textbf{Tích bằng không mà hai thừa số khác không.} Với số thực, \(ab=0\) thì \(a=0\) hoặc \(b=0\). Với ma trận, hai thừa số dưới đây đều khác không mà tích vẫn bằng không.
 $$
 \left[ \begin{array}{rr} 0 & 1\\ 0 & 2 \end{array} \right]\left[ \begin{array}{rr} 3 & 7\\ 0 & 0 \end{array} \right]=\left[ \begin{array}{rr} 0 & 0\\ 0 & 0 \end{array} \right].
 $$
-Hai cột của ma trận bên phải đều là bội của \((1,0)\), nên tích ra một ma trận mà mỗi hàng là một bội của hàng kia. Định lý 3 nói vậy là không tránh được: ma trận bên phải suy biến, vì nó có cột thứ hai toàn số \(0\).
+Hai cột của ma trận bên phải đều là bội của \((1,0)\), nên tích ra một ma trận mà mỗi hàng là một bội của hàng kia. Định lý 3 cho biết chuyện này không tránh được: tích suy biến thì phải có thừa số suy biến, và ở đây ma trận bên phải suy biến vì có hàng thứ hai toàn số \(0\).
 
-\textbf{Bình phương của tổng.} Với số thật, \((a+b)^2=a^2+2ab+b^2\), vì \(ab=ba\). Với ma trận thì ta chỉ viết được
+\textbf{Bình phương của tổng.} Với số thực, \((a+b)^2=a^2+2ab+b^2\), vì \(ab=ba\). Với ma trận thì ta chỉ viết được
 $$
 (A+B)^2=A^2+AB+BA+B^2,
 $$
-và chỉ khi \(AB=BA\) thì mới rút gọn được thành \(A^2+2AB+B^2\).
+và chỉ rút gọn được thành \(A^2+2AB+B^2\) khi \(AB=BA\).
 
 Với hai ma trận ở Ví dụ 3:
 $$
@@ -340,13 +340,13 @@ Và nếu \(A\) khả nghịch thì các lũy thừa âm là
 $$
 A^{-1}=A^{-1},\qquad A^{-2}=A^{-1}A^{-1},\qquad A^{-n}=\left(A^{-1}\right)^n.
 $$
-Các luật lũy thừa quen thuộc vẫn đúng, và lần này chúng đúng vì lý do tệ hơn bình thường:
+Các luật lũy thừa quen thuộc vẫn đúng, và lý do lần này đơn giản hơn thường lệ:
 $$
 A^{r}A^{s}=A^{r+s},\qquad (A^{r})^{s}=A^{rs}. \tag{7}
 $$
-Chúng đúng vì tất cả các lũy thừa của một ma trận đều là những tích của chính nó với nhau, theo cùng một thứ tự. Ta có \(A^rA^s=AA\cdots A\,AA\cdots A\), gộp lại thành một dãy \(A\) dài \(r+s\) hằng số.
+Mọi lũy thừa của một ma trận đều là tích của chính nó với nhau, theo cùng một thứ tự. Chẳng hạn \(A^rA^s=AA\cdots A\,AA\cdots A\), gộp lại thành một dãy gồm \(r+s\) thừa số \(A\).
 
-Với mọi đa thức \(p,q\), ta có \(p(A)q(A)=q(A)p(A)\). Muốn hiểu vì sao, định nghĩa đa thức ma trận trước đã.
+Với mọi đa thức \(p,q\), ta có \(p(A)q(A)=q(A)p(A)\). Muốn hiểu vì sao, trước hết cần định nghĩa đa thức ma trận.
 
 Với \(A\) vuông và
 $$
@@ -356,9 +356,9 @@ ta đặt
 $$
 p(A)=a_0I+a_1A+a_2A^2+\cdots+a_mA^m. \tag{8}
 $$
-Hằng số \(a_0\) được thay bằng ma trận không \(a_0I\), vì phép cộng giữa số và ma trận không định nghĩa được. Cách này cũng giữ được quy ước \(A^0=I\) cho bậc không.
+Hằng số \(a_0\) được thay bằng ma trận \(a_0I\), vì phép cộng một số với một ma trận chưa được định nghĩa. Cách viết này cũng khớp với quy ước \(A^0=I\) cho số hạng bậc không.
 
-Vì mọi lũy thừa của \(A\) đều giao hoán, nên các đa thức của \(A\) cũng giao hoán. Giữa chúng có tất cả những thứ mà với ma trận tùy ý thì không có.
+Các lũy thừa của \(A\) giao hoán với nhau, nên các đa thức của \(A\) cũng giao hoán với nhau. Giữa các đa thức của cùng một ma trận, ta có lại những điều mà hai ma trận tùy ý không có.
 
 \textbf{Ví dụ 4.} Với \(p(x)=x^2-2x-3\) và
 $$
@@ -371,7 +371,7 @@ A^2-2A-3I
 =\left[ \begin{array}{rr} 1 & 4\\ 0 & 9 \end{array} \right]-\left[ \begin{array}{rr} -2 & 4\\ 0 & 6 \end{array} \right]-\left[ \begin{array}{rr} 3 & 0\\ 0 & 3 \end{array} \right]
 =\left[ \begin{array}{rr} 0 & 0\\ 0 & 0 \end{array} \right].
 $$
-Vậy \(p(A)\) bằng ma trận không, dù \(p(x)=x^2-2x-3=(x-3)(x+1)\) không bằng không ở bất kỳ số nào. Điều đó không có nghĩa \(p\) bị sai. Nó vì ở đây ta trừ các ma trận, mà trừ thì làm trên từng phần tử; và các phần tử của \(A^2\), của \(2A\) và của \(3I\) đều nằm đúng chỗ của nó.
+Vậy \(p(A)\) bằng ma trận không, dù \(p(x)=x^2-2x-3=(x-3)(x+1)\) không bằng không ở bất kỳ số nào. Điều đó không có nghĩa \(p\) bị sai. Ở đây ta trừ các ma trận, mà phép trừ làm trên từng phần tử; các phần tử của \(A^2\), của \(2A\) và của \(3I\) đều nằm đúng chỗ của chúng.
 
 \subsection{Chuyển vị và nghịch đảo}
 
@@ -382,28 +382,28 @@ $$
 \left(A^{-1}\right)^{T}=\left(A^{T}\right)^{-1}. \tag{9}
 $$
 
-\emph{Chứng minh.} Chuyển vị hai vế của \(A^{-1}A=IA\), rồi dùng \((AB)^T=B^TA^T\):
+\emph{Chứng minh.} Chuyển vị hai vế của \(A^{-1}A=I\), rồi dùng \((AB)^T=B^TA^T\):
 $$
 A^{T}\left(A^{-1}\right)^{T}=\left(A^{-1}A\right)^{T}=I^{T}=I.
 $$
 Tương tự, $\left(A^{-1}\right)^{T}A^{T}=\left(AA^{-1}\right)^{T}=I^{T}=I$. Vậy $\left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}$. \(\square\)
 
-Với ma trận cỡ hai, hẳn điều này không còn gì để ngạc nhiên. Ta có
+Với ma trận cỡ hai, điều này kiểm tra được bằng mắt. Ta có
 $$
 \left(\left[ \begin{array}{rr} a & b\\ c & d \end{array} \right]\right)^{T}
 =\left[ \begin{array}{rr} a & c\\ b & d \end{array} \right],
 $$
-và định thức của hai ma trận bằng nhau, còn nghịch đảo thì cũng chỉ đổi chỗ hai số \(-b\) và \(-c\).
+hai ma trận có cùng định thức, còn nghịch đảo tính theo (3) cũng chỉ đổi chỗ hai số \(-b\) và \(-c\).
 
 \subsection{Còn thiếu gì}
 
 Ta đã có định nghĩa nghịch đảo, định lý tính duy nhất, và một công thức tường minh cho ma trận cỡ hai.
 
-Nhưng công thức ấy chỉ chạy được với cỡ hai. Một ma trận \(10\times10\) thì sao? Còn ở đây, việc ta làm với nó là cố sắp xếp bốn con số trên đường chéo chính để quyết định tất cả. Với một ma trận lớn, ta cần một cách khác để biết nó có khả nghịch hay không.
+Nhưng công thức ấy chỉ dùng được cho cỡ hai. Một ma trận \(10\times10\) thì sao? Ở cỡ hai, ta chỉ việc sắp xếp lại bốn con số quanh đường chéo chính là quyết định được tất cả. Với một ma trận lớn, cần một cách khác để biết nó có khả nghịch hay không.
 
-Cách ấy đã nằm ngay trong tay ta mà chưa dùng tới. Ở kì trước, ta thấy hàng thứ \(i\) của \(A\mathbf{x}\) chính là phương trình thứ \(i\) của hệ. Vậy khử một hệ bằng phép biến đổi hàng, theo đúng nghĩa của nó, là biến đổi chính ma trận hệ số \(A\).
+Cách ấy thật ra đã có sẵn trong tay mà ta chưa dùng tới. Ở kì trước, ta thấy hàng thứ \(i\) của \(A\mathbf{x}\) chính là phương trình thứ \(i\) của hệ. Vậy khử một hệ bằng phép biến đổi hàng, theo đúng nghĩa của nó, là biến đổi chính ma trận hệ số \(A\).
 
-Câu hỏi tự nhiên: khử \(A\) về dạng bậc thang rút gọn rồi đọc nghiệm, có phải là khử \(A\) về ma trận không được không? Nếu đúng vậy thì chỉ cần một phép biến đổi hàng duy nhất là biến \(A\) thành \(I\), và phép biến đổi ấy chính là nghịch đảo của \(A\).
+Khi khử \(A\) về dạng bậc thang rút gọn để đọc nghiệm, có phải ta đang khử \(A\) về ma trận đơn vị không? Nếu đúng vậy thì chỉ cần một phép biến đổi hàng duy nhất là biến \(A\) thành \(I\), và phép biến đổi ấy chính là nghịch đảo của \(A\).
 
-Chứng minh điều đó cần thêm một việc: gom cả một dãi phép biến đổi hàng thành một phép nhân duy nhất đặt ở bên trái. Đó là kì sau.
+Chứng minh điều đó cần thêm một việc: gom cả một dãy phép biến đổi hàng thành một phép nhân duy nhất đặt ở bên trái. Việc ấy để dành cho kì sau.
 \end{document}

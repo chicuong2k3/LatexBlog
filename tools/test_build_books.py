@@ -61,6 +61,15 @@ a+b
 \\]
 """
 
+CHAPTER_INVALID_DOLLAR_IN_COMMENT = """---
+title: "Chương Một"
+summary: "Nội dung chương đầu tiên."
+slug: chapter-one
+---
+
+<!-- Ghi chú dịch giả: sai số là $2a$ -->
+"""
+
 CHAPTER_COMPLETE = CHAPTER.replace(
     'slug: chapter-one', 'slug: chapter-one\nstatus: hoan-thanh'
 )
@@ -241,6 +250,13 @@ class BuildBooksTest(unittest.TestCase):
         self._write_book(chapter=CHAPTER_INVALID_DISPLAY_CLOSER)
 
         with self.assertRaisesRegex(RuntimeError, "unparsed math"):
+            build_all(self.books, self.out, self.index, pandoc)
+
+    @unittest.skipUnless(pandoc, "pandoc not installed")
+    def test_dollar_inside_html_comment_fails_the_build(self):
+        self._write_book(chapter=CHAPTER_INVALID_DOLLAR_IN_COMMENT)
+
+        with self.assertRaisesRegex(RuntimeError, "HTML comment"):
             build_all(self.books, self.out, self.index, pandoc)
 
     def test_duplicate_book_slug_raises(self):

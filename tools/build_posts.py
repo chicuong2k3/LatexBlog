@@ -148,6 +148,26 @@ def _surviving_dollars(body_text, html):
     return html.count("$") - body_text.count("\\$")
 
 
+def _dollars_inside_html_comments(body_text):
+    """Line numbers of '$' characters sitting inside an HTML comment.
+
+    Pandoc emits ``<!-- ... -->`` as raw HTML yet still scans the comment body
+    for math, so a note written as ``<!-- ... $x$ ... -->`` splits the
+    surrounding math and the stray '$' survives into the output.
+    """
+    hits = []
+    in_comment = False
+    for i, line in enumerate(body_text.split("\n"), 1):
+        stripped = line.strip()
+        if not in_comment and stripped.startswith("<!--"):
+            in_comment = True
+        if in_comment and "$" in line:
+            hits.append((i, line.strip()[:90]))
+        if stripped.endswith("-->"):
+            in_comment = False
+    return hits
+
+
 def _unparsed_math_report(source_name, body_text, html):
     """Explain why a dollar sign survived into the rendered HTML.
 
@@ -197,6 +217,17 @@ def render_pandoc(
     want it: every '$' there is meant as math. Posts must leave it off, since
     shell snippets legitimately contain '$env:'-style variables.
     """
+    if reject_literal_dollars:
+        comment_dollars = _dollars_inside_html_comments(body_text)
+        if comment_dollars:
+            found = "\n".join(f"  {i}: {t}" for i, t in comment_dollars)
+            raise RuntimeError(
+                f"unparsed math in {source_name}: '$' inside an HTML comment on "
+                f"{len(comment_dollars)} line(s).\n"
+                f"Pandoc scans HTML comment bodies for math, so a '$' written in a "
+                f"note breaks the math around it. Write the note without '$'.\n"
+                f"Lines:\n{found}"
+            )
     cmd = [
         pandoc,
         "--from", _pandoc_reader(source_name),

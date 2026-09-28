@@ -15,8 +15,8 @@ Quy ước: $V$ là hàm vô hướng, $v$ là vi phân của nó — viết $dV
 | `dV` | vi phân của hàm $V(x,y)$ | $dV$ |
 | `Δy`, `ΔΔy`, `Δ³y` | sai lệch hữu hạn bậc 1, 2, 3 của $y$ | $\Delta^n y$ |
 | `ω` | bước nhảy, một số tùy ý | $h$ hoặc $\Delta x$ |
-| `y¹`, `y^I` | giá trị của $y$ khi $x$ được thay bằng $x+\omega$ | $y(x+h)$ |
-| `p¹ = p + Δp` | cũng vậy, cho một functio bất kỳ | |
+| `y^I` | giá trị của $y$ khi $x$ được thay bằng $x+\omega$ (bản in dùng số La Mã, không phải `y¹`) | $y(x+h)$ |
+| `p^I = p + Δp` | cũng vậy, cho một functio bất kỳ | |
 | `y'x` | đạo hàm của hàm $y$ tại $x$ | $\frac{dy}{dx}$ |
 | `y''x` | đạo hàm cấp hai | $\frac{d^2y}{dx^2}$ |
 | `d²y`, `d³y` | vi phân cấp hai, cấp ba **của hàm** | $y'\,d^2x$ |
@@ -30,16 +30,19 @@ nostrum institutum, valore generali uti, qui pro arbitrio augeri diminuique quea
 dùng một giá trị tổng quát, có thể tùy ý tăng lên hay giảm xuống. Cần nhớ điều này khi đọc
 mọi công thức trong Chương I.
 
-### Chỉ số trên ký hiệu: La Mã và Ả Rập trộn lẫn
+### Chỉ số trên ký hiệu: đều là số La Mã
 
-Ở sơ đồ trang in 7, chỉ số trên $y$ là số La Mã ($y^{\mathrm{I}}$, $y^{\mathrm{II}}$,
-$y^{\mathrm{III}}$) trong khi chỉ số trên $\Delta y$ là số Ả Rập ($\Delta y^1$,
-$\Delta y^2$, $\Delta y^3$). Ngay ở §4 cùng chương, Euler viết $\Delta y^1$ rồi
-$\Delta y^{\mathrm{II}}$ — trộn hai kiểu trong cùng một công thức. Bản dịch giữ nguyên từng
-chỗ, không thống nhất lại.
+~~Ở sơ đồ trang in 7, chỉ số trên $\Delta y$ là số Ả Rập ($\Delta y^1$, $\Delta y^2$,
+$\Delta y^3$); ở §4 Euler trộn $\Delta y^1$ với $\Delta y^{\mathrm{II}}$.~~ → sửa ngày
+2026-09-28: đối chiếu lại scan Chương I cho thấy chỉ số trên của các giá trị
+($y^{\mathrm{I}}$, $y^{\mathrm{II}}$, …, $\Delta y^{\mathrm{I}}$, $x^{\mathrm{I}}$) **đều là
+số La Mã**, kể cả chỗ chữ `I` nhìn giống số `1`. Chỉ số dưới ($y_{\mathrm{I}}$,
+$y_{\mathrm{II}}$, §25) cũng là La Mã. Riêng câu cuối §15 in $y, y', y'', y'''$ (dấu phẩy
+trên), giữ như in.
 
-Chỉ số `1` đánh dấu "ở điểm kế tiếp", không phải đạo hàm. Ở trang in 11 Euler viết
-$y^1 = p^1q^1$ với $p^1 = p + \Delta p$, $q^1 = q + \Delta q$, rồi suy ra
+Chỉ số `I` đánh dấu "ở điểm kế tiếp", không phải đạo hàm. Ở trang in 11 Euler viết
+$y^{\mathrm{I}} = p^{\mathrm{I}}q^{\mathrm{I}}$ với $p^{\mathrm{I}} = p + \Delta p$,
+$q^{\mathrm{I}} = q + \Delta q$, rồi suy ra
 $\Delta y = p\Delta q + q\Delta p + \Delta p\,\Delta q$. Đây là sai lệch hữu hạn của tích
 $p q$, được tính đúng như tích vi phân.
 
@@ -53,8 +56,11 @@ Bản dịch giữ đúng cách viết này.
 Ở trang in 11, dòng tính sai lệch bậc ba của $y = aq$ khi $a$ là hằng, bản in viết
 `Δ³q = aΔ³q`; vế trái phải là `Δ³y`. Giữ nguyên như in, xem `TRANSLATION_LEDGER.md`.
 
-Euler đảo chiều tỷ lệ ở hai trang liền kề trong lời tựa: trang in VII viết `1 ad 2x+ω`,
-trang in VIII viết `2x ad 1`. Cùng một quan hệ, viết ngược. Cũng giữ nguyên.
+~~Euler đảo chiều tỷ lệ ở hai trang liền kề trong lời tựa: trang in VII viết `1 ad 2x+ω`,
+trang in VIII viết `2x ad 1`. Cùng một quan hệ, viết ngược. Cũng giữ nguyên.~~ → sửa ngày
+2026-09-28: **ở đây không có lỗi.** Trang in VII viết cả hai chiều: lượng tăng của $x$ so với
+lượng tăng của $xx$ là `1 ad 2x+ω`, còn lượng tăng của $xx$ so với lượng tăng của $x$ là
+`2x+ω ad 1`. Trang in VIII viết theo chiều thứ hai (`2x ad 1`). Bản in không mâu thuẫn.
 
 Euler viết `ddx` và `d²x` cho cùng một thứ, ngay trong cùng một công thức (trang in 205:
 `ddV = V ddx + P dx²`, rồi `d³V = V d³x + 3P dx ddx + Q dx³`).

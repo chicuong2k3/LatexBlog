@@ -17,19 +17,19 @@ status: chua-hoan-thanh
 
 ## DE VSV DIFFERENTIARVM IN DOCTRINA SERIERUM
 
-**37.** Ngay từ những điều sơ khai nhất, người ta đã biết rằng bản chất của các chuỗi được
-minh họa rõ nhất bằng differentia. Bởi đặc tính chủ yếu của cấp số cộng — thứ được xét đến
-trước tiên — nằm ở chỗ các differentia bậc nhất của nó bằng nhau; từ đó các differentia
-bậc hai và mọi bậc cao hơn nữa đều bằng không. Sau đó có những chuỗi mà chỉ các differentia
-bậc hai mới bằng nhau; vì lý do ấy người ta tiện lợi gọi chúng là những chuỗi *bậc hai*,
-còn cấp số cộng thì gọi là các chuỗi *bậc nhất*. Như vậy còn có những chuỗi *bậc ba*, tức
-là những chuỗi mà các differentia bậc ba là hằng; và về tới bậc bốn cùng những bậc kế tiếp,
-ta quy chúng về những chuỗi mà các differentia bậc bốn, và những bậc cao hơn nữa, mới là hằng.
+**37.** Ngay từ những điều sơ khai nhất, người ta đã biết khá rõ rằng bản chất của các chuỗi
+được soi sáng nhiều nhất nhờ differentia. Bởi đặc tính chủ yếu của cấp số cộng, thứ thường
+được xét đến trước tiên, nằm ở chỗ các differentia bậc nhất của nó bằng nhau; do đó các
+differentia bậc hai và mọi bậc còn lại sẽ đều bằng không. Kế đến có những chuỗi mà phải tới
+differentia bậc hai mới bằng nhau; vì lý do ấy người ta tiện gọi chúng là những chuỗi *bậc
+hai*, còn các cấp số cộng thì gọi là các chuỗi *bậc nhất*. Vậy tiếp theo, chuỗi *bậc ba* sẽ
+là những chuỗi mà các differentia bậc ba là hằng; và vào *bậc bốn* cùng các bậc sau sẽ được
+xếp những chuỗi mà phải tới các differentia bậc bốn, và các bậc xa hơn nữa, mới là hằng.
 
-**38.** Trong cách phân chia vô hạn ấy thì bao hàm được các loại chuỗi; nhưng không phải
-chuỗi nào cũng quy về được những loại ấy. Bởi có vô số chuỗi mà, khi lấy differentia, không
-bao giờ dẫn tới những hạng hằng: thuộc loại ấy, ngoài vô số trường hợp khác, có các cấp số
-nhân, chúng không bao giờ cho ra differentia hằng, như ta thấy được từ ví dụ sau đây.
+**38.** Cách phân chia này bao hàm vô số loại chuỗi, nhưng không phải chuỗi nào cũng quy về
+được những loại ấy. Bởi ta gặp vô số chuỗi mà lấy differentia mãi cũng không bao giờ dẫn tới
+những số hạng hằng: thuộc loại ấy, ngoài vô số chuỗi khác, có các cấp số nhân, chúng không
+bao giờ cho ra differentia hằng, như ta thấy được từ ví dụ sau đây.
 
 <!-- Ghi chú dịch giả: trang mở đầu chương, trang in 39. Đầu trang có hoa văn trang trí
      (❦ ° ❦) và số trang 39 đặt bên phải; dưới tiêu đề có một dấu trang trí nhỏ. Mép phải
@@ -49,48 +49,50 @@ $$
 1,\ 2,\ 4,\ 8,\ 16,\ 32,\ \&c.
 $$
 
-Bởi vậy, nếu chuỗi đã cho thì các differentia thuộc cùng một bậc sẽ bằng nhau, thì các
-differentia của chuỗi ấy có thể bị loại bỏ. Vì thế người ta còn phân nhiều loại chuỗi, trong
-đó chỉ có một loại thuộc về những bậc ấy, tức là những loại mà differentia của nó quy về
-hằng; và chúng ta sẽ xét kỹ nhất những loại ấy trong chương này.
+Bởi vì chuỗi các differentia thuộc bậc nào cũng bằng chính chuỗi đã cho, nên sự bằng nhau
+của các differentia bị loại trừ hoàn toàn. Vì thế sẽ phải lập ra nhiều lớp chuỗi, trong đó
+chỉ một lớp được chia nhỏ thành những bậc này, tức những bậc rốt cuộc quy về differentia
+hằng; và trong chương này ta sẽ chủ yếu xét lớp ấy.
 
-**39.** Nhưng có hai điều cần thiết cho việc nhận ra bản chất của các chuỗi, đó là *số hạng
-tổng quát* và *số hạng tổng kết*. Số hạng tổng quát là một biểu thức vô hạn, xác định số hạng
-thứ $n$ của bất kỳ chuỗi nào; và điều ấy còn đúng khi biểu thức ấy chứa bao nhiêu biến tuỳ ý
-cũng được, chẳng hạn khi đặt $x = 1$ thì nó cho số hạng thứ nhất của chuỗi, đặt $x = 2$ thì
-số hạng thứ hai, đặt $x = 3$ thì số hạng thứ ba, đặt $x = 4$ thì số hạng thứ bốn, và cứ
-thế. Đã có số hạng tổng quát thì số hạng thứ $n$ của một chuỗi nào đó sẽ tìm được, dù quy
-luật của một số hạng riêng lẻ có phức tạp đến đâu; số hạng ấy không cần phải lặp lại. Chẳng
-hạn nếu đặt $x = 1000$ thì số hạng lớn nhất của chuỗi sẽ nhận ra. Ta thấy các số hạng của
-chuỗi này là
+**39.** Để nhận biết bản chất của các chuỗi, người ta thường cần trước hết hai thứ: *Số hạng
+tổng quát* và *Tổng*, tức *Số hạng tổng kết*. Số hạng tổng quát là một biểu thức bất định
+bao quát mọi số hạng của chuỗi, và vì thế nó là một functio của lượng biến thiên $x$ sao
+cho khi đặt $x = 1$ thì nó cho số hạng thứ nhất của chuỗi; còn đặt $x = 2$ thì cho số hạng
+thứ hai; đặt $x = 3$ thì số hạng thứ ba; đặt $x = 4$ thì số hạng thứ tư; và cứ thế. Vậy khi
+đã biết số hạng tổng quát thì tìm được số hạng thứ bao nhiêu tùy ý của chuỗi, dù không cần
+để ý tới quy luật nối các số hạng riêng lẻ với nhau. Chẳng hạn, đặt $x = 1000$ thì biết ngay
+số hạng thứ một nghìn. Như với chuỗi này
 
 $$
 1,\ 6,\ 15,\ 28,\ 45,\ 66,\ 91,\ 120,\ \&c.
 $$
 
-Số hạng tổng quát là $2xx - x$; bởi đặt $x = 1$ thì công thức ấy cho số hạng thứ nhất là $1$;
-đặt $x = 2$ thì số hạng thứ hai là $6$; nếu đặt $x = 3$ thì số hạng thứ ba là $15$, &c. Ta
-thấy số hạng tổng kết của chuỗi này, khi đặt $x = 100$, sẽ là $2.10000 - 100 = 19900$.
+số hạng tổng quát là $2xx - x$; bởi đặt $x = 1$ thì công thức ấy cho số hạng thứ nhất là $1$;
+đặt $x = 2$ thì ra số hạng thứ hai là $6$; nếu đặt $x = 3$ thì ra số hạng thứ ba là $15$; &c.
+Từ đó rõ rằng số hạng thứ một trăm của chuỗi này, khi đặt $x = 100$, sẽ là
+$= 2.10000 - 100 = 19900$.
 
-<!-- Ghi chú dịch giả: dãy số hạng 1, 6, 15, 28, 45, 66, 91, 120, &c. in ở đầu trang này
-     thuộc về cuộc bàn ở trang trước; dòng thứ hai và dòng thứ ba in ngắn hơn, lần lượt
-     dừng ở 64 và 32, đúng như các cấp số nhân mà §38 vừa nhắc tới. Vì nằm ở mép trên
-     trang, ba dãy này được giữ nguyên vị trí. -->
+<!-- Ghi chú dịch giả: ba dãy ở đầu trang này là ví dụ mà §38 báo trước: dòng đầu là cấp
+     số nhân 1, 2, 4, 8, ..., dòng thứ hai và thứ ba là các chuỗi differentia bậc nhất và
+     bậc hai của nó, in ngắn dần (dừng ở 64 rồi 32) vì mỗi lần lấy differentia mất một
+     số hạng. Chúng trùng với chính chuỗi đã cho, đúng như câu ngay sau nói. -->
 
-<!-- Ghi chú dịch giả: số hạng tổng kết 2.10000 - 100 = 19900 đúng với 2xx - x tại
-     x = 100: 2·10000 - 100 = 19900. Tổng của chuỗi 1+6+15+...+19900 cũng đúng bằng
-     2x³/3 - x²/2, kiểm bằng phép lấy sai khác cho ra x² - x, đúng differentia bậc hai
-     của chuỗi các số bình phương. -->
+<!-- Ghi chú dịch giả: bản in viết "terminum centesimum", tức số hạng thứ một trăm, không
+     phải số hạng tổng kết. 2xx - x tại x = 100 cho 2·10000 - 100 = 19900, đúng. -->
+
+<!-- Ghi chú dịch giả: câu "Ita huius seriei 1, 6, 15, ... Terminus generalis est 2xx - x"
+     của bản in bắt đầu bằng "Ita" và viết hoa "Terminus" sau dãy số; bản dịch nối thành
+     một câu. -->
 
 <!-- Ghi chú dịch giả: trang 68 kết thúc giữa chữ, câu cuối bị cắt ở "40. In-"; mép
      phải mang chữ catchword In-. Số trang 40 đặt bên trái đầu trang. -->
 
 <!-- PDF 69, trang in 41 -->
 
-**40.** Các chỉ số, tức là số mũ, trong bất kỳ chuỗi nào cũng được gọi là *các số*, chúng
-chỉ ra mỗi số hạng đứng ở vị trí thứ mấy: chẳng hạn số hạng thứ nhất có chỉ số là $1$, số hạng
-thứ hai là $2$, số hạng thứ ba là $3$, và cứ thế. Vì thế chỉ số của từng số hạng của một
-chuỗi cũng thường được viết vào, theo cách sau
+**40.** Trong một chuỗi bất kỳ, chỉ số hay số mũ là tên gọi những số chỉ ra mỗi số hạng
+đứng thứ mấy theo thứ tự: như vậy chỉ số của số hạng thứ nhất sẽ là $1$, của số hạng thứ
+hai là $2$, của số hạng thứ ba là $3$, và cứ thế. Vì thế người ta thường ghi chỉ số lên
+từng số hạng của mỗi chuỗi, theo cách sau
 
 **INDICES.**
 
@@ -104,21 +106,20 @@ $$
 A,\quad B,\quad C,\quad D,\quad E,\quad F,\quad G,\quad \&c.
 $$
 
-từ đó thấy ngay $G$ là số hạng thứ bảy của chuỗi đã cho, vì chỉ số của nó là $7$. Còn số hạng
-tổng quát thì chẳng qua là số hạng của chuỗi mà chỉ số hay số mũ của nó là một số vô hạn $x$.
-Như vậy, trong bậc nào của các chuỗi mà các differentia hoặc bậc nhất, hoặc bậc hai, hoặc
-những bậc thường nào khác là hằng, thì số hạng tổng quát cần tìm trước; ta sẽ chỉ ra điều
-đó sau. Còn về việc khảo sát tổng thì ta sẽ đi tiếp theo thứ tự.
+từ đó thấy ngay $G$ là số hạng thứ bảy của chuỗi đã cho, vì chỉ số của nó là $7$. Do đó số
+hạng tổng quát chẳng qua là số hạng của chuỗi mà chỉ số hay số mũ của nó là một số bất định
+$x$. Vậy trước hết ta sẽ chỉ ra phải tìm số hạng tổng quát như thế nào trong mỗi bậc chuỗi,
+tức những chuỗi mà differentia hoặc bậc nhất, hoặc bậc hai, hoặc các bậc tiếp theo khác là
+hằng; rồi sau đó ta sẽ tiến sang việc tìm tổng.
 
-**41.** Hãy bắt đầu từ bậc thứ nhất, tức là bậc gồm các cấp số cộng, mà differentia bậc
-nhất của chúng là hằng; nếu $a$ là số hạng thứ nhất của chuỗi và $b$ là số hạng đầu tiên
-của dãy differentia của nó, thì tất cả các differentia đều bằng nhau. Nhờ vậy chuỗi ấy sẽ
-được so sánh như sau
+**41.** Ta bắt đầu từ bậc thứ nhất, bậc chứa các cấp số cộng, mà differentia bậc nhất của
+chúng là hằng; gọi $a$ là số hạng thứ nhất của chuỗi, và $b$ là số hạng thứ nhất của chuỗi
+differentia, mà mọi số hạng tiếp theo đều bằng nó: vậy chuỗi sẽ có dạng như sau.
 
 **INDICES.**
 
 $$
-1,\quad 2,\quad 3,\quad 4,\quad 5,\quad 6,\quad \&c.
+1,\quad 2,\quad 3,\quad 4,\quad 5,\quad 6,
 $$
 
 **TERMINI.**
@@ -130,32 +131,32 @@ $$
 **DIFFERENTIAE.**
 
 $$
-b,\quad b,\quad b,\quad b,\quad b,\quad b,\quad \&c.
+b,\quad b,\quad b,\quad b,\quad b,\quad \&c.
 $$
 
-<!-- Ghi chú dịch giả: ở dòng INDICES cuối trang, số 7 bị bản in bào mòn gần hết, chỉ còn
-     vỏ ngoài. Đã soi và vẫn đọc là 7, đúng với dòng TERMINI ngay dưới (a, a+b, a+2b,
-     a+3b, a+4b, a+5b) và với dòng DIFFERENTIAE gồm toàn những b. Mép phải chân trang có
-     chữ catchword Ex, báo sang EXEMPLUM ở trang kế. Số trang 41 đặt bên phải. -->
+<!-- Ghi chú dịch giả: đã soi phóng to bảng cuối trang. Dòng INDICES in đúng sáu chỉ số
+     1 tới 6 (có dấu phẩy sau 6, không có 7 và không có &c.); dòng TERMINI có sáu số hạng
+     a tới a+5b rồi &c.; dòng DIFFERENTIAE in năm chữ b rồi &c. Giữ nguyên như in. Giữa
+     chân trang có dấu hiệu trang F; mép phải chân trang có chữ catchword Ex, mở đầu câu
+     "Ex qua statim patet" ở trang kế. Số trang 41 đặt bên phải. -->
 
 <!-- PDF 70, trang in 42 -->
 
-Từ đó thấy ngay rằng số hạng có chỉ số $x$ sẽ là $a + (x-1)b$; và vậy số hạng tổng quát là
-$bx + a - b$, tức gồm hai số hạng đầu của chính chuỗi ấy và của chuỗi differentia của nó.
-
-Nhưng nếu số hạng thứ hai $a+b$ của chuỗi được gọi là $a^{\mathrm{I}}$, thì vì $b = a^{\mathrm{I}} - a$,
+Từ đó thấy ngay rằng số hạng có chỉ số $= x$ sẽ là $a + (x-1)b$, và vậy số hạng tổng quát sẽ
+là $= bx + a - b$, được lập từ các số hạng đầu, cả của chính chuỗi lẫn của chuỗi differentia.
+Còn nếu số hạng thứ hai $a+b$ của chuỗi được gọi là $a^{\mathrm{I}}$, thì vì $b = a^{\mathrm{I}} - a$,
 số hạng tổng quát sẽ là
 
 $$
 (a^{\mathrm{I}} - a)x + 2a - a^{\mathrm{I}} = a^{\mathrm{I}}(x-1) - a(x-2)
 $$
 
-từ đó, khi đã biết số hạng thứ nhất và thứ hai của cấp số cộng, ta lập được số hạng tổng quát
-của nó.
+từ đó, khi đã biết số hạng thứ nhất và thứ hai của cấp số cộng, số hạng tổng quát của nó sẽ
+được lập ra.
 
-**42.** Giả sử trong một chuỗi bậc hai, số hạng thứ nhất của chính chuỗi là $a$; số hạng đầu
-tiên của dãy differentia bậc nhất là $b$; số hạng đầu tiên của dãy differentia bậc hai là $c$;
-ta sẽ so sánh chính chuỗi ấy với các differentia của nó như sau.
+**42.** Giả sử trong một chuỗi bậc hai, các số hạng thứ nhất là: của chính chuỗi $= a$; của
+các differentia bậc nhất $= b$; của các differentia bậc hai $= c$; khi ấy chính chuỗi cùng
+các differentia của nó sẽ có dạng như sau.
 
 **INDICES.**
 
@@ -166,7 +167,7 @@ $$
 **TERMINI.**
 
 $$
-a;\ a+b;\ a+2b+c;\ a+3b+3c;\ a+4b+6c;\ a+5b+10c;\ a+6b+15c;
+a;\ a+b;\ a+2b+c;\ a+3b+3c;\ a+4b+6c;\ a+5b+10c;\ a+6b+15c;\quad \&c.
 $$
 
 **DIFFER. I.**
@@ -181,21 +182,22 @@ $$
 c,\quad c,\qquad c,\qquad c,\qquad c,
 $$
 
-Từ việc xét bảng này thấy rõ số hạng có chỉ số $x$ sẽ là
+Xét bảng này thì thấy rõ số hạng có chỉ số $= x$ sẽ là
 
 $$
 a + (x-1)b + \frac{(x-1)(x-2)}{1\cdot 2}c
 $$
 
-vậy đó là số hạng tổng quát của chuỗi đã cho. Còn nếu đặt số hạng thứ hai của chính chuỗi là
-$a^{\mathrm{I}}$, số hạng thứ ba là $a^{\mathrm{II}}$, vì $b = a^{\mathrm{I}} - a$ và
-$c = a^{\mathrm{II}} - 2a^{\mathrm{I}} + a$, thì như đã hiểu từ bản chất của các differentia (§ 10),
+vậy đó là số hạng tổng quát của chuỗi đã cho. Còn nếu đặt số hạng thứ hai của chính chuỗi
+$= a^{\mathrm{I}}$, số hạng thứ ba $= a^{\mathrm{II}}$, thì vì $b = a^{\mathrm{I}} - a$ và
+$c = a^{\mathrm{II}} - 2a^{\mathrm{I}} + a$, như hiểu được từ bản chất của các differentia (§. 10.),
 
 <!-- Ghi chú dịch giả: trang in 42 kết thúc giữa chữ ở "vti ex na-", mép phải chân trang mang
      chữ catchword "tura" nối sang trang kế, nơi câu đó mở đầu bằng "tura differentiarum
      (§. 10.) intelligitur". Mẫu số của số hạng cuối trong bản in viết bằng "1." trên "2",
-     tức 1·2; ở đây đã viết thành 1·2 cho rõ. Dòng DIFFER. II. chỉ in đúng năm chữ c, khớp
-     với năm chỉ số ở dòng INDICES. Số trang 42 đặt bên trái đầu trang. -->
+     tức 1·2; ở đây đã viết thành 1·2 cho rõ. Dòng DIFFER. II. chỉ in đúng năm chữ c (dòng
+     INDICES có bảy chỉ số); chữ "&c." của dòng TERMINI in lệch xuống, ngang dòng tiêu đề
+     DIFFER. I. Số trang 42 đặt bên trái đầu trang. -->
 
 <!-- PDF 71, trang in 43 -->
 
@@ -223,12 +225,12 @@ $$
 \frac{1}{4}(x-1)(x-2)(x-3)\left(\frac{a^{\mathrm{III}}}{x-3} - \frac{2a^{\mathrm{I}}}{x-2} + \frac{a}{x-1}\right);
 $$
 
-tức là số hạng tổng quát cũng được xác định bởi ba số hạng của chính chuỗi ấy.
+và vì thế nó được xác định bởi ba số hạng của chính chuỗi.
 
-**43.** Giả sử có một chuỗi bậc ba $a,\ a^{\mathrm{I}},\ a^{\mathrm{II}},\ a^{\mathrm{III}},\ a^{\mathrm{IV}},\ \&c.$;
-differentia bậc nhất của nó là $b,\ b^{\mathrm{I}},\ b^{\mathrm{II}},\ b^{\mathrm{III}},\ \&c.$; differentia bậc
-hai là $c,\ c^{\mathrm{I}},\ c^{\mathrm{II}},\ c^{\mathrm{III}},\ \&c.$; và bậc ba là
-$d,\ d^{\mathrm{I}},\ d,\ \&c.$ — bởi chúng đều là hằng.
+**43.** Giả sử có chuỗi bậc ba $a,\ a^{\mathrm{I}},\ a^{\mathrm{II}},\ a^{\mathrm{III}},\ a^{\mathrm{IV}},\ \&c.$;
+các differentia bậc nhất của nó là $b,\ b^{\mathrm{I}},\ b^{\mathrm{II}},\ b^{\mathrm{III}},\ \&c.$; các differentia
+bậc hai là $c,\ c^{\mathrm{I}},\ c^{\mathrm{II}},\ c^{\mathrm{III}},\ \&c.$; và bậc ba là
+$d,\ d,\ d,\ \&c.$, vì chúng là hằng.
 
 **INDICES.**
 
@@ -239,13 +241,13 @@ $$
 **TERMINI.**
 
 $$
-a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad \&c.
+a,\quad a^{\mathrm{I}},\quad a^{\mathrm{II}},\quad a^{\mathrm{III}},\quad a^{\mathrm{IV}},\quad a^{\mathrm{V}},\quad \&c.
 $$
 
 **DIFFER. I.**
 
 $$
-b,\quad b^{\mathrm{I}},\quad b^{\mathrm{II}},\quad b^{\mathrm{III}},\quad \&c.
+b,\quad b^{\mathrm{I}},\quad b^{\mathrm{II}},\quad b^{\mathrm{III}},\quad b^{\mathrm{IV}},\quad \&c.
 $$
 
 **DIFFER. II.**
@@ -257,33 +259,29 @@ $$
 **DIFFER. III.**
 
 $$
-d,\qquad d,\qquad d,\quad \&c,
+d,\qquad d,\qquad d,\quad \&c.
 $$
 
 <!-- Ghi chú dịch giả: hai dạng đầu ở §42 đã tự kiểm và đúng: khai triển biểu thức với
      b = a^I - a, c = a^II - 2a^I + a thì thu được đúng dạng "qui reducitur", còn "vel
      etiam" chỉ là cách viết lại cùng một biểu thức. -->
 
-<!-- Ghi chú dịch giả: dạng "aut denique" in ra SAI, đã chép nguyên văn. Sai ở hai chỗ.
-     (i) Trong ngoặc phải dùng a^II chứ không phải a^III: số hạng tổng quát của chuỗi bậc
-     hai chỉ liên quan tới ba số hạng đầu a, a^I, a^II, đúng như câu ngay dưới nói nó
-     được định nghĩa bởi ba số hạng ấy. (ii) Hệ số 1/4 phải là 1/2. Đã kiểm bằng phân
-     tỉch với chuỗi 1, 4, 9, 16, 25, &c. (tức a=1, b=3, c=2): số hạng thứ 4 đúng là 16,
-     dạng "vel etiam" cho 16, còn dạng bản in cho 37/2. Nếu chỉ sửa 1/4 thành 1/2 mà
-     vẫn để a^III thì ra 37, vẫn sai. Sửa cả hai mới ra đúng 16. Cùng phép ấy đã thử trên
-     bốn chuỗi khác nhau và nhiều chỉ số: hai dạng đầu luôn khớp, dạng bản in luôn lệch. -->
+<!-- Ghi chú dịch giả: dạng "aut denique" nằm ở giới hạn đọc được của bản scan. Hệ số
+     đứng đầu là một phân số in rất nhỏ, còn số mũ trên chữ a ở phân thức đầu trong ngoặc
+     có nét giống số mũ III ở các trang lân cận; bản dịch giữ cách đọc 1/4 và a^III, nhưng
+     cả hai chưa xác nhận được bằng mắt. Nếu đúng như vậy thì dạng này sai ở hai chỗ:
+     trong ngoặc phải là a^II (số hạng tổng quát chỉ phụ thuộc a, a^I, a^II, đúng như câu
+     ngay dưới nói), và hệ số phải là 1/2. Kiểm với chuỗi 1, 4, 9, 16, 25, &c. (a=1,
+     b=3, c=2): số hạng thứ 4 đúng là 16, dạng "vel etiam" cho 16, dạng 1/4 với a^III
+     cho 37/2; chỉ khi có cả 1/2 lẫn a^II mới ra 16. -->
 
-<!-- Ghi chú dịch giả: trong câu mở đầu §43, bản in viết "d, d^I, d, &c.": chữ d thứ ba
-     không có số mũ, trong khi hai dòng ngay trên có đủ (b, b^I, b^II, b^III và
-     c, c^I, c^II, c^III). Đã soi ở độ phóng 22 để chắc chắn. Đúng phải là d^II. Giữ
-     nguyên như in. -->
-
-<!-- Ghi chú dịch giả: ở dòng DIFFER. III. trong bảng, số mũ trên cả ba chữ d đều mòn đến
-     mức không đọc được; ở đây chép ba chữ d trần, và đã ghi chú ở trên rằng chỗ này có
-     lẽ phải là d, d^I, d^II. Dòng INDICES ở trang này chỉ liệt kê sáu chỉ số, 1 tới 6,
-     trong khi các dòng TERMINI, DIFFER. I. và DIFFER. II. lại chứa bảy số hạng; đã giữ
-     nguyên sáu như in. Số trang 43 đặt bên phải đầu trang; dấu hiệu trang ở giữa chân
-     trang là F 2; mép phải chân trang mang chữ catchword Quia, mở đầu câu của trang kế. -->
+<!-- Ghi chú dịch giả: trong câu mở đầu §43 và trong dòng DIFFER. III. của bảng, bản in
+     đều viết ba chữ d trần "d, d, d, &c." (đã soi phóng to). Điều này đúng ý Euler: câu
+     nói rõ "quippe quae sunt constantes", các differentia bậc ba là hằng nên đều bằng d.
+     Không có lỗi in ở đây. Dòng INDICES in sáu chỉ số, 1 tới 6 (không có dấu phẩy sau số 1),
+     khớp với sáu số hạng a tới a^V ở dòng TERMINI. Số trang 43 đặt bên phải đầu trang;
+     dấu hiệu trang ở giữa chân trang là F 2; mép phải chân trang mang chữ catchword Quia,
+     mở đầu câu của trang kế. -->
 
 <!-- PDF 72, trang in 44 -->
 
@@ -296,13 +294,13 @@ $$
 
 thế là số hạng tổng quát lập được từ các differentia.
 
-Còn khi đặt
+Hơn nữa, vì
 
 $$
 b = a^{\mathrm{I}} - a;\qquad c = a^{\mathrm{II}} - 2a^{\mathrm{I}} + a;\qquad d = a^{\mathrm{III}} - 3a^{\mathrm{II}} + 3a^{\mathrm{I}} - a
 $$
 
-thì thay các giá trị ấy vào, số hạng tổng quát sẽ là
+nên nếu thay các giá trị ấy vào, số hạng tổng quát sẽ là
 
 $$
 a^{\mathrm{III}}\frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3} - 3a^{\mathrm{II}}\frac{(x-1)(x-2)(x-4)}{1\cdot 2\cdot 3} + 3a^{\mathrm{I}}\frac{(x-1)(x-3)(x-4)}{1\cdot 2\cdot 3} - a\frac{(x-2)(x-3)(x-4)}{1\cdot 2\cdot 3}
@@ -323,7 +321,7 @@ $$
      mẫu số. Cũng lưu ý khác với bậc hai: ở bậc ba, differentia bậc hai không hằng mà
      lập thành một cấp số cộng, nên số hạng thứ năm là a+4b+6c+4d chứ không phải a+4b+6c+2d. -->
 
-**44.** Hãy giả sử đã cho một chuỗi thuộc bậc nào bất kỳ:
+**44.** Bây giờ giả sử đã cho một chuỗi thuộc bậc bất kỳ:
 
 **INDICES**
 
@@ -372,16 +370,15 @@ $$
 f,\quad \&c.
 $$
 
-Từ số hạng thứ nhất của chính chuỗi, cùng từ các số hạng đầu tiên của các dãy differentia
-$b,\ c,\ d,\ e,\ f,\ \&c.$, số hạng tổng quát sẽ biểu thị như sau:
+thì từ số hạng thứ nhất của chính chuỗi, cùng từ các số hạng thứ nhất của các differentia
+$b,\ c,\ d,\ e,\ f,\ \&c.$, số hạng tổng quát sẽ được biểu thị sao cho nó là:
 
 $$
 a + \frac{(x-1)}{1}b + \frac{(x-1)(x-2)}{1\cdot 2}c + \frac{(x-1)(x-2)(x-3)}{1\cdot 2\cdot 3}d + \frac{(x-1)(x-2)(x-3)(x-4)}{1\cdot 2\cdot 3\cdot 4}e + \&c.
 $$
 
-cho tới khi ta đi tới những differentia hằng. Từ đó thấy rằng, nếu các differentia hằng
-không bao giờ xuất hiện, thì số hạng tổng quát phải được trình bày bằng một biểu thức vô
-hạn.
+cho tới khi đi tới những differentia hằng. Từ đó thấy rằng, nếu các differentia hằng
+không bao giờ xuất hiện, thì số hạng tổng quát được trình bày bằng một biểu thức vô hạn.
 
 **45.** Vì các differentia được lập thành từ chính các số hạng của chuỗi, nên nếu thay các
 giá trị ấy vào, ta sẽ thu được số hạng tổng quát ở dạng tương tự như dạng đã trình bày cho
@@ -389,29 +386,23 @@ các chuỗi bậc nhất, bậc hai và bậc ba. Cụ thể, với các chuỗ
 quát sẽ là
 
 $$
-\frac{(x-1)(x-2)(x-3)(x-4)(x-5)}{1\cdot 2\cdot 3\cdot 4\cdot 5}\left(\frac{a^{\mathrm{IV}}}{x-5} - \frac{4a^{\mathrm{III}}}{x-4} + \frac{6a^{\mathrm{II}}}{x-3} - \frac{4a^{\mathrm{I}}}{x-2} + \frac{a}{x-1}\right)
+\frac{(x-1)(x-2)(x-3)(x-4)(x-5)}{1\cdot 2\cdot 3\cdot 4}\times\left(\frac{a^{\mathrm{IV}}}{x-5} - \frac{4a^{\mathrm{III}}}{x-4} + \frac{6a^{\mathrm{II}}}{x-3} - \frac{4a^{\mathrm{I}}}{x-2} + \frac{a}{x-1}\right)
 $$
 
-<!-- Ghi chú dịch giả: trong bảng các bậc, dòng DIFFER. III. ở đây có đủ ba số mũ (d, d^I,
-     d^II); số mũ II trên chữ d thứ ba rất mờ, đã soi và xác nhận là II, khớp với quy luật
-     dãy số mũ La-tinh đã thấy ở các dòng bên trên. Ở dòng DIFFER. V. bản in chỉ có f, &c. -->
+<!-- Ghi chú dịch giả: trong bảng các bậc, dòng DIFFER. III. ở đây in chữ d thứ hai và thứ
+     ba đều có số mũ, nhưng mực mờ; số mũ trên chữ d thứ hai trông gần giống số mũ trên chữ
+     d thứ ba (II), nên cách đọc d^I cho chữ thứ hai chưa chắc chắn. Bản dịch giữ d, d^I,
+     d^II theo quy luật các dòng bên trên. Ở dòng DIFFER. V. bản in chỉ có f, &c. -->
 
 <!-- Ghi chú dịch giả: số hạng tổng quát viết bằng dãy differentia ở đầu trang này đã tự
      kiểm và đúng: với a=1, b=2, c=3, d=4, e=0 thì dựng chuỗi cho 1, 3, 8, 20, 43, 81, &c.,
      đúng với công thức a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d + (x-1)(x-2)(x-3)(x-4)/24·e. -->
 
-<!-- Ghi chú dịch giả: dạng có nhân tử ở cuối §45 in SAI, đã chép nguyên văn; lỗi nằm ở
-     mẫu số, phải là 1·2·3·4 chứ không phải 1·2·3·4·5. Cách xác định: trọng số đúng của
-     từng số hạng trong ngoặc khi rút ra ngoài đã lập được trực tiếp từ số hạng tổng quát
-     a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d + (x-1)(x-2)(x-3)(x-4)/24·e bằng
-     cách thay b = a^I - a, c = a^II - 2a^I + a, d = a^III - 3a^II + 3a^I - a,
-     e = a^IV - 4a^III + 6a^II - 4a^I + a rồi so trọng số của a, a^I, a^II, a^III, a^IV
-     với trọng số mà bản in cho. Kết quả: cả năm trọng số của bản in đều nhỏ hơn đúng một
-     lần 5, không riêng số hạng nào, ở mọi giá trị x đã thử. Chẳng hạn trọng số của a^IV
-     phải là (x-1)(x-2)(x-3)(x-4)/24 còn bản in là (x-1)(x-2)(x-3)(x-4)/120, và 24/120 = 1/5.
-     Vậy chỉ cần đổi mẫu số 120 thành 24 là cả năm trọng số cùng khớp. Kiểm số: với
-     a=5, b=2, c=d=e=0 (chuỗi 5, 7, 9, 11, 13, 15, &c.) thì số hạng thứ 6 đúng là 15, còn
-     dạng bản in cho 3; với mẫu 24 thì cho đúng 15. -->
+<!-- Ghi chú dịch giả: dạng có nhân tử ở cuối §45 in mẫu số 1. 2. 3. 4 (bốn thừa số, đã soi
+     phóng to; không có thừa số 5) và dấu nhân × ở cuối dòng tử số. Dạng này đúng: với
+     a=5, b=2, c=d=e=0 (chuỗi 5, 7, 9, 11, 13, 15, &c.) nó cho số hạng thứ 6 đúng bằng 15,
+     và trọng số của a^IV là (x-1)(x-2)(x-3)(x-4)/24, khớp với số hạng tổng quát viết theo
+     các differentia. -->
 
 <!-- Ghi chú dịch giả: trang 73 kết thúc ở chữ "vnde", vốn là catchword ở mép phải chân
      trang, nối sang trang kế. Dấu hiệu trang ở giữa chân trang là F 3. Số trang 45 đặt
@@ -419,14 +410,14 @@ $$
 
 <!-- PDF 74, trang in 46 -->
 
-từ đó quy luật, theo đó các số hạng tổng quát của những bậc kế tiếp được lập ra, thì thấy
-dễ dàng. Nhưng từ đây cũng thấy rằng, với bậc nào bất kỳ, số hạng tổng quát sẽ là một
-functio phân thức nguyên của chính $x$, trong đó số chiều lớn nhất của $x$ phải ngang với
-bậc mà chuỗi ấy thuộc về. Như vậy số hạng tổng quát của các chuỗi bậc nhất sẽ là functio
-bậc nhất, của các chuỗi bậc hai sẽ là functio bậc hai, và cứ thế.
+từ đó dễ nhận ra quy luật theo đó các số hạng tổng quát của những bậc kế tiếp được lập nên.
+Còn từ những điều này thấy rõ rằng, với bậc bất kỳ, số hạng tổng quát sẽ là một functio
+phân thức nguyên của chính $x$, trong đó số chiều lớn nhất của $x$ trùng với bậc mà chuỗi
+ấy thuộc về. Như vậy số hạng tổng quát của các chuỗi bậc nhất sẽ là functio bậc nhất, của
+các chuỗi bậc hai là functio bậc hai, và cứ thế.
 
-**46.** Còn các differentia, như đã thấy ở trên, thì phát sinh từ chính các số hạng của
-chuỗi theo cách sau:
+**46.** Còn các differentia, như ta đã thấy ở trên, thì phát sinh từ chính các số hạng của
+chuỗi sao cho:
 
 $$
 b = a^{\mathrm{I}} - a
@@ -476,8 +467,8 @@ $$
 a^{\mathrm{II}} = 2a^{\mathrm{I}} - a;\quad a^{\mathrm{III}} = 2a^{\mathrm{II}} - a^{\mathrm{I}};\quad a^{\mathrm{IV}} = 2a^{\mathrm{III}} - a^{\mathrm{II}};\quad \&c.
 $$
 
-từ đó thấy các chuỗi này đồng thời là các chuỗi truy hồi, và thang quan hệ của chúng là
-$2,\ -1$. Còn khi trong các chuỗi bậc hai...
+từ đó rõ rằng các chuỗi này đồng thời là chuỗi truy hồi, và thang quan hệ là
+$2,\ -1$. Tiếp theo, vì trong các chuỗi bậc hai...
 
 <!-- Ghi chú dịch giả: cả chín công thức ở trang này đã đối chiếu với định nghĩa differentia
      đã dùng ở §42 và §43 và đều đúng; đây là hiệu sai hữu hạn tiêu chuẩn. Dòng
@@ -495,14 +486,14 @@ $$
 a^{\mathrm{III}} = 3a^{\mathrm{II}} - 3a^{\mathrm{I}} + a;\quad a^{\mathrm{IV}} = 3a^{\mathrm{III}} - 3a^{\mathrm{II}} + a^{\mathrm{I}};\quad \&c.
 $$
 
-Vậy chúng cũng là những chuỗi truy hồi, với thang quan hệ là $3,\ -3,\ +1$.
+và vì thế chúng cũng sẽ là chuỗi truy hồi, với thang quan hệ là $3,\ -3,\ +1$.
 
-Cũng theo cách ấy, ta thấy mọi chuỗi thuộc loại này, thuộc bậc nào bất kỳ, đều cùng
-thuộc về lớp các chuỗi truy hồi; và điều ấy đúng như vậy, tức là thang quan hệ gồm những
-hệ số của lũy thừa nhị thức, mỗi hệ số cao hơn một bậc so với bậc mà chuỗi ấy thuộc về.
+Cũng theo cách ấy sẽ thấy rằng mọi chuỗi thuộc lớp này, dù thuộc bậc nào, đồng thời cũng
+thuộc về lớp các chuỗi truy hồi, và cụ thể là thang quan hệ gồm các hệ số của lũy thừa nhị
+thức có số mũ cao hơn một bậc so với bậc mà chuỗi ấy thuộc về.
 
-**47.** Vì trong các chuỗi bậc nhất, mọi giá trị của $d$ và $e$, và của tất cả các
-differentia kế tiếp, đều bằng $0$, nên trong những chuỗi ấy ta cũng có
+**47.** Nhưng vì với các chuỗi bậc nhất, mọi giá trị của $d$ và $e$, và của tất cả các
+differentia tiếp theo, cũng đều $= 0$, nên trong những chuỗi ấy cũng sẽ có
 
 $$
 a^{\mathrm{III}} = 3a^{\mathrm{II}} - 3a^{\mathrm{I}} + a
@@ -526,8 +517,8 @@ $$
 
 &c.
 
-Vậy chúng cũng thuộc về các chuỗi truy hồi, và do đó theo vô hạn cách, khi các thang quan hệ
-có thể là
+Vậy từ đây chúng cũng thuộc về các chuỗi truy hồi, và thuộc theo vô hạn cách, vì thang quan
+hệ có thể là
 
 $$
 3,\ -3,\ +1;\quad 4,\ -6,\ +4,\ -1;\quad 5,\ -10,\ +10,\ -5,\ +1;
@@ -535,16 +526,16 @@ $$
 
 &c.
 
-Cũng theo cách ấy, ta hiểu rằng mỗi chuỗi trong loại mà ta đang bàn, đồng thời cũng là một
-chuỗi truy hồi theo vô hạn cách: bởi thang quan hệ sẽ là
+Cũng theo cách ấy, ta hiểu rằng mỗi chuỗi thuộc lớp mà ta đang bàn đồng thời là một chuỗi
+truy hồi theo vô số cách: bởi thang quan hệ sẽ là
 
 $$
-\frac{n}{1},\quad \frac{n(n-1)}{1\cdot 2},\quad +\frac{n(n-1)(n-2)}{1\cdot 2\cdot 3},\quad -\frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4},
+\frac{n}{1},\quad -\frac{n(n-1)}{1\cdot 2},\quad +\frac{n(n-1)(n-2)}{1\cdot 2\cdot 3},\quad -\frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4},
 $$
 
 &c.
 
-trong khi...
+miễn là...
 
 <!-- Ghi chú dịch giả: ba thang quan hệ Euler liệt kê ở §47 đã tự kiểm và đều đúng với các
      hệ số nhị thức C(n,k) mang dấu luân phiên: n=3 cho 3, -3, +1; n=4 cho 4, -6, +4, -1;
@@ -559,25 +550,25 @@ trong khi...
 
 <!-- PDF 76, trang in 48 -->
 
-…trong khi $n$ là một số nguyên lớn hơn số chỉ bậc ấy. Vậy chuỗi này cũng sinh ra từ khai
-triển của một phân số mà mẫu số là $(1-y)^n$, như đã trình bày đầy đủ hơn trong cuốn trước
-về những chuỗi truy hồi.
+…miễn là $n$ là một số nguyên lớn hơn số chỉ bậc. Vậy chuỗi này cũng sẽ sinh ra từ khai
+triển của một phân số mà mẫu số là $(1-y)^n$, như đã trình bày đầy đủ hơn trong cuốn trước,
+ở phần về các chuỗi truy hồi.
 
-**48.** Như đã thấy, số hạng tổng quát của mọi chuỗi thuộc lớp này, thuộc bậc nào bất kỳ,
-đều là những functio phân thức nguyên của chính $x$; ngược lại, ta sẽ thấy mọi chuỗi mà
-số hạng tổng quát là những functio thuộc dạng ấy đều thuộc về lớp này, và cuối cùng dẫn
-tới differentia hằng. Và rõ ràng là: nếu số hạng tổng quát là functio bậc nhất $ax + b$,
-thì chuỗi sinh ra từ đó sẽ là chuỗi bậc nhất, tức cấp số cộng, và sẽ có differentia bậc
+**48.** Như ta đã thấy số hạng tổng quát của mọi chuỗi thuộc lớp này, dù thuộc bậc nào,
+đều là những functio phân thức nguyên của $x$, thì ngược lại cũng sẽ thấy mọi chuỗi mà
+số hạng tổng quát là những functio như thế của $x$ đều thuộc về lớp này, và rốt cuộc được
+đưa tới differentia hằng. Thật vậy, nếu số hạng tổng quát là functio bậc nhất $ax + b$,
+thì vì chuỗi sinh ra từ đó sẽ là chuỗi bậc nhất, tức cấp số cộng, nó sẽ có differentia bậc
 nhất là hằng. Còn nếu số hạng tổng quát là functio bậc hai ở dạng $axx + bx + c$ thì chuỗi
 sinh ra từ nó, khi lần lượt thay $x$ bằng các số $1, 2, 3, 4, 5$, &c., sẽ là chuỗi bậc hai,
 và sẽ có differentia bậc hai là hằng. Cũng thế, số hạng tổng quát bậc ba
 $ax^3 + bx^2 + cx + d$ sẽ cho một chuỗi bậc ba, và cứ thế.
 
-**49.** Bởi từ số hạng tổng quát, không chỉ mọi số hạng của chuỗi tìm được, mà cả các
-chuỗi differentia, cả bậc nhất lẫn những bậc kế tiếp, cũng đều suy ra được. Bởi nếu
-lấy số hạng thứ nhất của chuỗi trừ đi số hạng thứ hai thì thu được số hạng thứ nhất của
-chuỗi differentia; còn lấy số hạng thứ hai của chính chuỗi ấy trừ đi số hạng thứ ba thì
-số hạng ấy của chuỗi differentia cũng sẽ thu được,...
+**49.** Bởi từ số hạng tổng quát không chỉ tìm được mọi số hạng của chuỗi, mà còn suy ra
+được các chuỗi differentia, cả bậc nhất lẫn các bậc tiếp theo. Thật vậy, vì nếu lấy số
+hạng thứ hai của chuỗi trừ đi số hạng thứ nhất thì ra số hạng thứ nhất của chuỗi
+differentia, còn số hạng thứ hai thì ra khi lấy số hạng thứ ba của chính chuỗi trừ đi số
+hạng thứ hai, nên cũng thế, số hạng của chuỗi differentia...
 
 <!-- Ghi chú dịch giả: ba dạng functio ở §48 đã tự kiểm bằng phép lấy hiệu sai hữu hạn và
      cả ba đều đúng như Euler nói. (i) Với số hạng tổng quát ax + b, các số hạng là
@@ -594,24 +585,25 @@ số hạng ấy của chuỗi differentia cũng sẽ thu được,...
 
 <!-- PDF 77, trang in 49 -->
 
-…trừ đi, mà chỉ số của nó là $x$; tức lấy số hạng của chuỗi có chỉ số là $x$ trừ đi số hạng
-kế tiếp có chỉ số là $x+1$. Vậy nếu trong số hạng tổng quát của chuỗi, thay $x$ bằng $x+1$,
-rồi lấy số hạng tổng quát ấy trừ đi số hạng tổng quát đã cho, thì còn lại số hạng tổng quát
-của chuỗi differentia. Nếu $X$ là số hạng tổng quát của chuỗi, thì differentia của nó là
-$\Delta X$ (điều vừa tìm thấy ở chương trước, khi đặt $\omega = 1$), tức là số hạng tổng quát
-của chuỗi differentia bậc nhất. Cũng theo cách ấy, $\Delta\Delta X$ là số hạng tổng quát
-của chuỗi differentia bậc hai; $\Delta^3X$ là của bậc ba, và cứ thế.
+…mà chỉ số là $x$ sẽ thu được nếu lấy số hạng kế tiếp của chính chuỗi, có chỉ số là $x+1$,
+trừ đi số hạng có chỉ số là $x$. Vì vậy, nếu trong số hạng tổng quát của chuỗi đặt $x+1$ vào
+chỗ $x$, rồi lấy giá trị ấy trừ đi số hạng tổng quát, thì còn lại số hạng tổng quát của chuỗi
+differentia: vậy nếu $X$ là số hạng tổng quát của chuỗi, thì differentia $\Delta X$ của nó
+(differentia này sẽ tìm được theo cách đã chỉ ra ở chương trước, nếu ở đó đặt $\omega = 1$)
+sẽ là số hạng tổng quát của chuỗi differentia bậc nhất. Vậy cũng theo cách ấy,
+$\Delta\Delta X$ sẽ là số hạng tổng quát của chuỗi differentia bậc hai; $\Delta^3X$ của
+chuỗi differentia bậc ba, và cứ thế tiếp theo.
 
-**50.** Nhưng nếu số hạng tổng quát $X$ là một functio phân thức nguyên, trong đó số mũ lớn
-nhất của lũy thừa của chính $x$ là $n$; thì từ chương trước ta suy ra differentia $\Delta X$
-của nó sẽ là một functio thấp hơn một bậc, tức là bậc $n-1$. Và do đó $\Delta\Delta X$ sẽ là
-functio bậc $n-2$, còn $\Delta^3X$ là functio bậc $n-3$, và cứ thế. Vậy nếu $X$ là functio
-bậc nhất, như $ax + b$, thì differentia $\Delta X$ của nó sẽ là hằng $= a$; mà đó chính là
-số hạng tổng quát của chuỗi differentia bậc nhất, nên thấy rõ rằng chuỗi có số hạng tổng
-quát $X$ là functio bậc nhất sẽ là cấp số cộng, tức là chuỗi bậc nhất. Cũng thế, nếu số hạng
-tổng quát $X$ là functio bậc hai, tức là $\Delta\Delta X$ không đổi, thì chuỗi sinh ra từ nó
-sẽ có differentia bậc hai là hằng, và do đó thuộc bậc hai; và cứ như vậy mãi mãi: chuỗi
-sinh ra từ functio $X$ nào làm số hạng tổng quát sẽ thuộc cùng bậc với nó.
+**50.** Còn nếu số hạng tổng quát $X$ là một functio phân thức nguyên, trong đó số mũ lớn
+nhất của lũy thừa của $x$ là $n$, thì từ chương trước ta suy ra differentia $\Delta X$ của
+nó sẽ là một functio thấp hơn một bậc, tức bậc $n-1$. Và từ đó tiếp theo, $\Delta\Delta X$
+sẽ là functio bậc $n-2$, còn $\Delta^3X$ là functio bậc $n-3$, và cứ thế. Vì vậy nếu $X$ là
+functio bậc nhất, như $ax + b$, thì differentia $\Delta X$ của nó sẽ là hằng $= a$; và vì
+đó là số hạng tổng quát của chuỗi các differentia bậc nhất, nên thấy rõ rằng chuỗi có số
+hạng tổng quát $X$ là functio bậc nhất sẽ là cấp số cộng, tức chuỗi bậc nhất. Cũng thế, nếu
+số hạng tổng quát $X$ là functio bậc hai, thì vì $\Delta\Delta X$ là hằng, chuỗi sinh ra từ
+nó sẽ có differentia bậc hai là hằng, và do đó sẽ thuộc bậc hai; và cứ thế mãi: functio $X$
+làm số hạng tổng quát thuộc bậc nào thì chuỗi sinh ra từ nó cũng thuộc cùng bậc ấy.
 
 <!-- Ghi chú dịch giả: luận điểm ở §50 đã tự kiểm và đúng. Với X bậc nhất ax+b thì ΔX = a,
      hằng. Với X bậc hai axx+bx+c thì ΔX là bậc nhất còn ΔΔX = 2a, hằng. Với X bậc ba
@@ -624,9 +616,9 @@ sinh ra từ functio $X$ nào làm số hạng tổng quát sẽ thuộc cùng b
      bậc 1, 3 và 4, đều cho đúng bậc n-1 và đúng hệ số n c_n. -->
 
 <!-- Ghi chú dịch giả: trang 49 kết thúc ở đúng câu cuối "erit series ex eo nata." Dấu hiệu
-     trang ở giữa chân trang là G. Mép phải chân trang mang chữ bắt "§1. Hanc"; đã soi ở độ
-     phóng 8 và xác nhận đúng là "§1. Hanc", không có chữ số 5 mất mà chỉ là "§1.", dù
-     mục tiếp theo hợp lý ra phải là §51. Số trang 49 đặt bên phải đầu trang. -->
+     trang ở giữa chân trang là G. Mép phải chân trang mang chữ bắt "51. Hanc": chữ số 5 in
+     kiểu cổ, trông giống chữ s dài, nên dễ đọc nhầm thành "§1."; đó là số 51, đúng số mục
+     ở trang kế. Số trang 49 đặt bên phải đầu trang. -->
 
 <!-- PDF 78, trang in 50 -->
 
@@ -734,19 +726,20 @@ $$
 
 <!-- PDF 79, trang in 51 -->
 
-Vậy những điều đã dạy ở chương trước về cách tìm differentia của mọi bậc, nay được áp dụng
-vào đây để tìm các số hạng tổng quát của differentia bậc thứ tư, vốn sinh ra từ các chuỗi.
+Vậy những quy tắc đã dạy ở chương trước về cách tìm differentia của mọi bậc sẽ dùng ở đây
+để tìm số hạng tổng quát của bất kỳ differentia nào sinh ra từ các chuỗi.
 
-**52.** Nếu số hạng tổng quát của một chuỗi bất kỳ đã biết, thì nhờ đó không chỉ mọi số
-hạng của nó vô hạn đều tìm được, mà còn có thể kéo dài chuỗi ngược lại, và trình bày được
-cả những số hạng mà số mũ của chúng là những số âm, bằng cách thay $x$ bằng các số âm.
-Chẳng hạn, nếu số hạng tổng quát là
+**52.** Nếu số hạng tổng quát của một chuỗi bất kỳ đã biết, thì nhờ nó không chỉ tìm được
+mọi số hạng của chuỗi cho tới vô hạn, mà còn có thể kéo dài chuỗi ngược lại và trình bày
+được các số hạng mà số mũ là những số âm, bằng cách thay $x$ bằng các số âm. Như vậy, nếu
+số hạng tổng quát là
 
 $$
 \frac{xx + 3x}{2},
 $$
 
-thì khi lấy $x$ làm chỉ số, vừa âm vừa dương, chuỗi sẽ được kéo dài cả hai phía như sau.
+thì khi đặt vào chỗ $x$ các chỉ số cả âm lẫn dương, chuỗi kéo dài về cả hai phía sẽ như
+sau.
 
 **INDICES.**
 
@@ -772,18 +765,15 @@ $$
 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1,\qquad 1\quad \&c.
 $$
 
-Vì vậy, khi số hạng tổng quát được lập ra từ các differentia, thì bất kỳ chuỗi nào cũng có
-thể kéo dài ngược lại từ các differentia ấy; tuy vậy, nếu các differentia cuối cùng là
-hằng thì những số hạng ấy chỉ có thể được trình bày hữu hạn, còn trong trường hợp ngược
-lại thì chúng có thể được gán bằng một biểu thức vô hạn. Hơn nữa, từ số hạng tổng quát
+Vậy vì số hạng tổng quát được lập ra từ các differentia, nên chuỗi nào cũng có thể kéo dài
+ngược lại nhờ các differentia; cụ thể là nếu các differentia rốt cuộc trở thành hằng thì
+những số hạng ấy trình bày được ở dạng hữu hạn, còn trong trường hợp ngược lại thì có thể
+gán cho chúng một biểu thức vô hạn. Hơn thế nữa, từ số hạng tổng quát
 
-<!-- Ghi chú dịch giả: bản in viết "differentiarum quartumus", đáng lẽ phải là
-     "differentiarum quartorum" để chữ quảng hòa với "differentiarum". Đã soi và xác nhận
-     đúng là "quartumus", không phải chữ mòn. Giữ nguyên như in. -->
-
-<!-- Ghi chú dịch giả: bản in viết "loco x numeros negatius substituendo", đáng lẽ phải là
-     "negativos" để chữ quảng hòa với "numeros". Đã soi ở độ phóng 11 và xác nhận chỉ có
-     bảy chữ negatius, không có chữ v. Giữ nguyên như in. -->
+<!-- Ghi chú dịch giả: câu đầu trang 51 in là "ad terminos generales differentiarum
+     quarumuis" (quarumvis, "bất kỳ"), không phải một chữ chỉ "bậc bốn"; và "loco x
+     numeros negatiuos substituendo" in đầy đủ "negatiuos" (negativos, với u thay v theo
+     lối in thời ấy). Cả hai đã soi trên ảnh scan, không có lỗi in. -->
 
 <!-- Ghi chú dịch giả: hai mươi số hạng ở bốn dòng bảng của trang này đã tự kiểm và đều
      đúng. Với số hạng tổng quát (x^2+3x)/2, các chỉ số -5, -4, -3, -2, -1, 0, 1, 2, 3,

@@ -7,7 +7,7 @@ Tác giả: Leonhard Euler. Ngôn ngữ nguồn: Latin.
 Bản OCR đối chiếu: [Internet Archive OCR](https://archive.org/download/bub_gb_sYE_AAAAcAAJ/bub_gb_sYE_AAAAcAAJ_djvu.txt).
 
 Cách tra số trang giữa PDF và trang in, cảnh báo về khối 10 trang bị lặp trong bản scan, và
-danh sách chỗ mục lục của chính Euler sai: xem `PAGE_MAP.md`.
+đối chiếu mục lục in với trang mở đầu chương: xem `PAGE_MAP.md`.
 Ký hiệu của Euler: xem `KY_HIEU_EULER.md`. Quy ước lớp chú giải: xem `ANNOTATION_GUIDE.md`.
 
 Bản dịch đang được soạn theo từng trang scan; chưa được xem là hoàn tất khi còn trang chưa dịch
@@ -20,8 +20,8 @@ hoặc chưa đối chiếu.
 | Chương | Tác phẩm | Tác giả viết | PDF | Trang in | File | Số callout | Trạng thái |
 |---|---|---|---:|---:|---|---:|---|
 | — | Lời tựa, mục lục, lỗi in | *Praefatio* | 5–28 | i–xxiv | `chapters/00-loi-tua-va-muc-luc.md` | 2 | Chưa dịch |
-| I | Sai lệch hữu hạn | *De Differentiis finitis* | 31–62 | 3–34 | `chapters/01-sai-lech-huu-han.md` | 4 | Chưa dịch |
-| II | Dùng sai lệch trong lý thuyết chuỗi | *De Usu Differentiarum in Doctrina serierum* | 63–97 | 35–69 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | 4 | Chưa dịch |
+| I | Sai lệch hữu hạn | *De Differentiis finitis* | 31–66 | 3–38 | `chapters/01-sai-lech-huu-han.md` | 4 | Chưa dịch |
+| II | Dùng sai lệch trong lý thuyết chuỗi | *De Usu Differentiarum in Doctrina serierum* | 67–97 | 39–69 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | 4 | Chưa dịch |
 | III | Vô cùng nhỏ và điều không hạn | *De Infinitis et infinite parvis* | 98–125 | 70–97 | `chapters/03-vo-cung-nho-va-dieu-khong-han.md` | 4 | Chưa dịch |
 | IV | Bản chất của vi phân mọi bậc | *De Differentialium cuiusque ordinis natura* | 126–151 | 98–123 | `chapters/04-ban-chat-cua-vi-phan-moi-bac.md` | 5 | Chưa dịch |
 | V | Đạo hàm hàm đại số một biến | *De Differentiatione functionum algebraicarum unicam variabilem involventium* | 152–178 | 124–150 | `chapters/05-dao-ham-ham-dai-so-mot-bien.md` | 5 | Chưa dịch |
@@ -53,27 +53,35 @@ Tổng thân sách: trang in 1–896. Tổng kèm lời tựa: 920 trang in, 934
 
 ## Những chỗ đã xác định là khác với mục lục
 
-Mục lục in ở PDF 25–27 có bốn số trang sai. Ranh giới chương đã lấy từ chính trang mở đầu
-chương, đã đối chiếu ảnh scan:
+~~Mục lục in ở PDF 25–27 có bốn số trang sai.~~ → sửa ngày 2026-09-28: cột "Mục lục ghi" dưới
+đây lấy từ lớp OCR đọc hỏng. Soi bằng mắt trang mục lục (PDF 25), bản in ghi 39, 98, 151, 241,
+khớp đúng trang mở đầu chương. **Mục lục in không sai ở bốn dòng này**; hiện không còn dòng nào
+của mục lục được biết là sai (xem `PAGE_MAP.md` §5). Ranh giới chương vẫn lấy từ chính trang
+mở đầu chương:
 
-| Chương | Mục lục ghi | Thực tế | Bằng chứng |
+| Chương | ~~Mục lục ghi~~ (OCR hỏng) | Mục lục in = thực tế | Bằng chứng |
 |---|---|---|---|
-| Pars Prior II | 35 | 39 | PDF 67 mở đầu *Caput II*; PDF 65 (tr. 37) và PDF 66 (tr. 38) vẫn còn là *Caput I* với EXEMPLUM |
-| Pars Prior IV | 121 | 98 | PDF 126 mở đầu *Caput IV. De differentialium cuiusque ordinis natura* |
-| Pars Prior VI | 149 | 151 | PDF 179 mở đầu *Caput VI*; PDF 178 (tr. 150) vẫn là *Caput V* |
-| Pars Prior IX | 341 | 241 | PDF 269 mở đầu *Caput IX. De aequationibus differentialibus* |
+| Pars Prior II | ~~35~~ | 39 | PDF 67 mở đầu *Caput II*; PDF 65 (tr. 37) và PDF 66 (tr. 38) vẫn còn là *Caput I* với EXEMPLUM |
+| Pars Prior IV | ~~121~~ | 98 | PDF 126 mở đầu *Caput IV. De differentialium cuiusque ordinis natura* |
+| Pars Prior VI | ~~149~~ | 151 | PDF 179 mở đầu *Caput VI*; PDF 178 (tr. 150) vẫn là *Caput V* |
+| Pars Prior IX | ~~341~~ | 241 | PDF 269 mở đầu *Caput IX. De aequationibus differentialibus* |
 
 ## Những chỗ mà Euler tự ghi là lỗi in
 
 Trang *Errores Typographici* (PDF 28, trang in xxiv) liệt kê hai lỗi. Cả hai được giữ nguyên
 như bản trong phần dịch, theo `ANNOTATION_GUIDE.md` mục 2bis:
 
+~~`pag. 509. lin 3. loco 2ZZxx lege 2xx+2x`~~ / ~~`pag. 513. lin 14. loco (x^4−a) lege …`~~
+(bản đọc từ OCR) → sửa ngày 2026-09-28, đọc bằng mắt trên scan PDF 28:
+
 ```text
-pag. 509. lin 3. loco 2ZZxx lege 2xx+2x
-pag. 513. lin 14. loco (x^4−a) lege …
+pag. 509. lin 3. loco z = xx lege z = xx + x
+pag. 513. lin 14. loco (z′−z)/(a^x (a−1)^2) lege (z′−az)/(a^x (a−1)^2)
 ```
 
-Dòng thứ hai bị OCR cắt mất vế sau `lege`; sẽ điền khi dịch tới trang in 513 (PDF 541).
+Số mũ của $(a-1)$ ở vế `lege` dòng 2 in mờ, đọc là 2; đã kiểm chéo ở trang in 513 (PDF 541,
+§192): $Q = a(P'-P)/(a-1) = (z'-az)/(a^x(a-1)^2)$. Thân sách ở đó in $(z'-z)$, bên trên có
+chữ "ax" viết tay chữa. Bản in dùng dấu `=`, không phải `≡`.
 
 ## Đối chiếu từng trang
 
@@ -152,10 +160,10 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 60 | 32 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
 | 61 | 33 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
 | 62 | 34 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
-| 63 | 35 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 64 | 36 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 65 | 37 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 66 | 38 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
+| 63 | 35 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 64 | 36 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 65 | 37 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
+| 66 | 38 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
 | 67 | 39 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
 | 68 | 40 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
 | 69 | 41 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
@@ -1042,16 +1050,17 @@ mục lục hai phần, và trang lỗi in. Chưa niêm phong.
 | Trang in | PDF | Chỗ | Kết luận sau khi soi |
 |---|---:|---|---|
 | V | 9 | `...variabiles referri debebunt; ___idem pro omnibus elevationis gradibus...` | OCR đọc `Jiquidem`; trên giấy là `siquidem`. Dịch "nếu muốn định nghĩa các điều này ở mọi bậc độ cao". |
-| VII | 11 | tỉ lệ `ut ω ad 2xω+ωω, hoc est, ut 1 ad 2x+ω` | Giữ nguyên. Euler dùng `ωω` cho $\omega^2$; bản dịch ghi $\omega^2$. |
-| VIII | 12 | `verumtamen ad id rationem tenere ut 2x ad 1` | OCR đọc `ut ax ad i`, tức sai thành một phát biểu khác. Trên giấy là `2x ad 1`. **Euler đảo chiều tỷ lệ so với trang VII** — cùng một quan hệ, viết ngược. Giữ nguyên cả hai, ghi chú. |
+| VII | 11 | tỉ lệ `ut ω ad 2xω+ωω, hoc est, ut 1 ad 2x+ω` | Giữ nguyên. Euler dùng `ωω` cho $\omega^2$; ~~bản dịch ghi $\omega^2$~~ → từ 2026-09-28 bản dịch giữ `\omega\omega` như in. |
+| VIII | 12 | `verumtamen ad id rationem tenere ut 2x ad 1` | OCR đọc `ut ax ad i`, tức sai thành một phát biểu khác. Trên giấy là `2x ad 1`. ~~**Euler đảo chiều tỷ lệ so với trang VII** — cùng một quan hệ, viết ngược.~~ → sửa ngày 2026-09-28: không có đảo chiều; trang VII viết cả `1 ad 2x+ω` (lượng tăng của x so với của xx) lẫn `2x+ω ad 1` (của xx so với của x), trang VIII theo chiều thứ hai. |
 | IX | 13 | `(x+ω)² = xx + 2xω + ωω` | Giữ nguyên. Sai lệch $\omega^2$ xuất hiện đúng một lần, không phải hai. |
-| XXIV | 28 | cả hai dòng `Errores Typographici` | OCR cắt mất vế sau `lege` ở dòng 2. Đã đọc trực tiếp: dòng 1 là `z ≡ xx` → `z ≡ xx + x`; dòng 2 là $\frac{x^7-x}{a^x(a-1)^2}$ → $\frac{x^7-ax}{a^x(a-1)^3}$. Mẫu số đổi từ $(a-1)^2$ sang $(a-1)^3$, **không** chỉ đổi tử số. |
+| XXIV | 28 | cả hai dòng `Errores Typographici` | OCR cắt mất vế sau `lege` ở dòng 2. Đã đọc trực tiếp: ~~dòng 1 là `z ≡ xx` → `z ≡ xx + x`; dòng 2 là $\frac{x^7-x}{a^x(a-1)^2}$ → $\frac{x^7-ax}{a^x(a-1)^3}$. Mẫu số đổi từ $(a-1)^2$ sang $(a-1)^3$, **không** chỉ đổi tử số.~~ → sửa ngày 2026-09-28: dòng 1 là `z = xx` → `z = xx + x` (dấu `=`, không phải `≡`); dòng 2 là loco $\frac{(z'-z)}{a^x(a-1)^2}$ lege $\frac{(z'-az)}{a^x(a-1)^2}$ — chỉ đổi tử số, mẫu số giữ $(a-1)^2$ (số mũ vế lege in mờ, đọc là 2, kiểm chéo ở tr. in 513, §192). |
 
 **Chỗ OCR sai nhưng đủ tin để dịch, không cần soi lại:** các lỗi hệ thống `ſ`→`f`
 (`fummere`=`sumere`, `finus`=`sinus`), `ſt`→`ft`, `q`→`g`, `Sec.`→`§.`, `muf`→`n`.
 
-**Chỗ bản in không nhất quán, giữ nguyên như in:** ở trang VII Euler viết tỷ lệ `1 ad 2x+ω`,
-ở trang VIII lại viết `2x ad 1`. Không sửa.
+~~**Chỗ bản in không nhất quán, giữ nguyên như in:** ở trang VII Euler viết tỷ lệ `1 ad 2x+ω`,
+ở trang VIII lại viết `2x ad 1`. Không sửa.~~ → sửa ngày 2026-09-28: bản in nhất quán, xem dòng
+VIII ở bảng trên.
 
 **Chưa làm:** chưa đối chiếu hình — lời tựa và mục lục không có hình. Chưa trích hình nào.
 
@@ -1069,8 +1078,8 @@ từ lớp OCR, vì không chứa công thức nào mang tính quyết định.
 | Trang in | PDF | Chỗ | Ghi chú |
 |---|---:|---|---|
 | 11 | 39 | §12, dòng "tertia" | Bản in viết `Δ³q = aΔ³q`. Vế trái phải là `Δ³y`; ngữ cảnh là sai lệch bậc ba của $y = aq$ khi $a$ là hằng. OCR đọc thành `$3>' ΓÇö y`. |
-| 5 | 33 | §3 | Chỉ số trên $y$ ở đây dùng số La Mã, sang §4 lại trộn số Ả Rập (`Δy^1` rồi `Δy^II`) trong cùng công thức. Giữ nguyên từng chỗ. |
-| 7 | 35 | §6 | `Δ³y = Δ³y¹ = &c.` — bản in viết vậy; lẽ ra phải là `Δ³y = ΔΔy¹ − ΔΔy`. |
+| 5 | 33 | §3 | ~~Chỉ số trên $y$ ở đây dùng số La Mã, sang §4 lại trộn số Ả Rập (`Δy^1` rồi `Δy^II`) trong cùng công thức.~~ → sửa ngày 2026-09-28: không trộn; mọi chỉ số trên đều là số La Mã, kể cả chỗ `I` trông như `1`. |
+| 7 | 35 | §6 | ~~`Δ³y = Δ³y¹ = &c.` — bản in viết vậy; lẽ ra phải là `Δ³y = ΔΔy¹ − ΔΔy`.~~ → sửa ngày 2026-09-28: đọc nhầm dấu `;` thành `=`; bản in là `Δ³y; Δ³y^I; &c.`, không có lỗi in. |
 
 **Hình:** trang mở đầu Chương I có một vignette khắc đồng (vòng cột đổ nát, bóng đổ, quả địa
 cầu, dụng cụ đo, tường đá vỡ). Đã trích vào `assets/cap01-vignette.png` và khai trong
@@ -1122,8 +1131,10 @@ từ trang 46.
 
 **Bốn chỗ bản scan nhòe, đã phân giải bằng cách soi ảnh phóng to rồi mới dịch:**
 
-1. **Exemplum II, PDF 40.** Lớp OCR đọc hỏng thành `2 W.V` và `6u)tj0X`. Bản in là
-   $\Delta.\omega x^2 = 2\omega^2x + \omega^3$ và $\Delta.3\omega x^2 = 6\omega^2x + 3\omega^3$.
+1. **Exemplum II, PDF 40.** Lớp OCR đọc hỏng thành `2 W.V` và `6u)tj0X`. ~~Bản in là
+   $\Delta.\omega x^2 = 2\omega^2x + \omega^3$ và $\Delta.3\omega x^2 = 6\omega^2x + 3\omega^3$.~~
+   → sửa ngày 2026-09-28: bản in là $\Delta.xx = 2\omega x + \omega\omega$ và
+   $\Delta.3\omega xx = 6\omega\omega x + 3\omega^3$.
    Bản nháp đầu tiên ghi nhầm `6\omega x`; chỉ khi cộng lại mới đóng được với
    $\Delta^2 y = 6\omega^2x + 6\omega^3$ mà biện minh được, nên số mũ 2 là bắt buộc.
 2. **§15, hàng $\Delta^2 y$, PDF 44.** Bản nháp ghi `x^{n-1}`, bản in là $x^{n-3}$.
@@ -1167,14 +1178,17 @@ $x^{1/3}$, $x^{-1/2}$, $x^{-2/3}$). Không thêm callout. **Chưa niêm phong**;
 **Đã soi bản scan:** toàn trang 47 ở nhiều mức phóng. Lớp OCR của trang này hỏng gần như
 toàn bộ (`2 CO`, `5to3`, `2 »`, `1Oto3`, `4»J`) nên mọi công thức đều phải đọc từ ảnh.
 
-**Hai chỗ bản in có vẻ sai; cả hai đã chép nguyên văn và ghi chú, không sửa:**
+~~**Hai chỗ bản in có vẻ sai; cả hai đã chép nguyên văn và ghi chú, không sửa:**~~ → sửa ngày
+2026-09-28: **cả hai kết luận dưới đây là đọc sai, bản in đúng.** Dòng $x^{-4}$ in
+$\frac{10\omega^2}{x^6}$ (không phải $\omega^3$); dòng cuối in $x^{-1/3}$ (tử số là `1` kiểu
+chữ `I`, không phải `2`). Hai ghi chú "lỗi in" trong chương đã xoá.
 
-1. **Dòng $x^{-4}$.** Bản in viết $-\frac{4\omega}{x^5} + \frac{10\omega^3}{x^6} -
+1. ~~**Dòng $x^{-4}$.**~~ Bản in viết $-\frac{4\omega}{x^5} + \frac{10\omega^3}{x^6} -
    \frac{20\omega^3}{x^7}$, tức hai số hạng sau cùng mang số mũ 3. Dãi khai triển bắt buộc
    số mũ tăng dần $\omega, \omega^2, \omega^3$, nên số hạng giữa phải là
    $10\omega^2/x^6$. Ba dòng trước đã đối chiếu khớp hoàn toàn với khai triển nhị thức
    ($x^{-2}$: $2,3,4$; $x^{-3}$: $3,6,10$), nên đây nhiều khả năng là lỗi của người chữ.
-2. **Dòng cuối, số mũ $x$.** Bản in ghi số mũ là $-2/3$, nhưng hệ số và số mũ của $x$ bên
+2. ~~**Dòng cuối, số mũ $x$.**~~ Bản in ghi số mũ là $-2/3$, nhưng hệ số và số mũ của $x$ bên
    phải, $-\frac{\omega}{3x^{4/3}} + \frac{2\omega^2}{9x^{7/3}} -
    \frac{14\omega^3}{81x^{10/3}}$, lại là differentia bậc nhất của $x^{-1/3}$. Với
    $x^{-2/3}$ phải là $-\frac{2\omega}{3x^{5/3}} + \frac{5\omega^2}{9x^{8/3}} -
@@ -1214,13 +1228,16 @@ $\sqrt{aa+xx}$). Không thêm callout. **Chưa niêm phong**; còn §20 (nối t
 
 **Một số hạng sai trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng cuối của §19, các
 số hạng được sắp xếp theo lũy thừa của $\omega$; số hạng bậc $\omega^2$ in ra là
-$\frac{2\omega^2(xx-aa)}{(aa+xx)^3}$. Đã phóng to hệ số để kiểm: chữ số là `2`. Nhưng khai
+$\frac{2\omega^2(xx-aa)}{(aa+xx)^3}$. Đã phóng to hệ số để kiểm: chữ số là `2`. → sửa ngày
+2026-09-28: hệ số ấy nhòe, lần soi lại đọc là `3` nhưng **không chắc**; đã ghi chú trong
+chương và đưa vào mục nghi vấn còn mở. Nhưng khai
 triển đúng của $\frac{1}{aa+xx+2\omega x+\omega\omega}$ cho số hạng $\omega^2$ là
 $\frac{\omega^2(3xx-aa)}{(aa+xx)^3}$, nên số hạng đã in sai. Ngay cạnh, số hạng
 $-\frac{4\omega^3(x^3-aax)}{(aa+xx)^4}$, lại đúng — đã tự kiểm lại bằng khai triển nhị thức.
 
-**Ba mẫu số đã soi kỹ và đều đúng như đọc:** mẫu số bậc bốn là $(aa+xx)^4$ (dấu ngoặc
-đóng trước số mũ, không phải $(aa+xx^4)$); trong §20, dòng
+**Ba mẫu số đã soi kỹ và đều đúng như đọc:** ~~mẫu số bậc bốn là $(aa+xx)^4$ (dấu ngoặc
+đóng trước số mũ, không phải $(aa+xx^4)$);~~ → sửa ngày 2026-09-28: bản in là `(aa+xx⁴`, thiếu
+ngoặc đóng; giữ như in và ghi chú; trong §20, dòng
 $\frac{Q}{2\sqrt{P}} - \frac{QQ}{8P\sqrt{P}} + \frac{Q^3}{16P^2\sqrt{P}}$ đúng với khai
 triển nhị thức của $\sqrt{1+t}$.
 
@@ -1294,7 +1311,9 @@ Bổ sung trang 56 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Đã soi bản scan:** toàn trang 56. Lớp OCR đọc được; riêng khối cuối trang phải soi lại ở độ phóng cao.
 
-**Một chữ bên vế trái sai trong bản in, đã chép nguyên văn và ghi chú.** Trong §27, dòng bắt đầu bằng chữ `hay` in $\Sigma x^3 = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}$, trong khi dòng ngay trên nó (`ergo`) in $\Sigma x^2$. Dòng `hay` chỉ là phép thay thế của dòng `ergo` nên phải là $\Sigma x^2$. Đã tự kiểm: $\frac{x^3}{3\omega} - \omega\left(\frac{x^2}{2\omega} - \frac{x}{2}\right) - \frac{\omega^2}{3}\cdot\frac{x}{\omega} = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}$, đúng bằng vế phải in ra. Như vậy vế trái đã in sai, và nó trùng với vế trái của dòng kế tiếp.
+**Một chữ bên vế trái sai trong bản in, đã chép nguyên văn và ghi chú.** Trong §27, dòng bắt đầu bằng chữ `hay` in $\Sigma x^3 = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}$, trong khi dòng ngay trên nó (`ergo`) in $\Sigma x^2$. Dòng `hay` chỉ là phép thay thế của dòng `ergo` nên phải là $\Sigma x^2$. Đã tự kiểm: $\frac{x^3}{3\omega} - \omega\left(\frac{x^2}{2\omega} - \frac{x}{2}\right) - \frac{\omega^2}{3}\cdot\frac{x}{\omega} = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}$, đúng bằng vế phải in ra. Như vậy vế trái đã in sai, và nó trùng với vế trái của dòng kế tiếp. → ghi thêm ngày
+2026-09-28: lần soi lại thấy số mũ vế trái dòng `seu` nhòe; vẫn giữ $x^3$ theo lần soi này
+nhưng trong chương đã đánh `[OCR không rõ]`, xem mục nghi vấn còn mở.
 
 **Cách soi:** lần đầu cắt ảnh bitmap đã bị lệch vị trí (vùng trắng, hoặc dải chữ quá mờ) nên chuyển sang render trực tiếp từ PDF bằng `tools/euler_scan.py --zoom 26 --crop ...`; ở mức này hai số mũ phân biệt rõ — dòng `ergo` là 2, dòng `hay` là 3. Ghi lại ở đây vì các lần sau nên dùng ngay `--zoom` cao thay vì phóng to ảnh bitmap.
 
@@ -1308,7 +1327,7 @@ Bổ sung trang 57 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Đã soi bản scan:** toàn trang 57, cộng một mức phóng cao cho dòng $\Sigma x^5$.
 
-**Một hệ số sai trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng $\Sigma x^5$, số hạng cuối in ra là $-\frac{5}{12}\omega^3x^2$. Đã tự kiểm bằng phép lấy sai lệch: với $F = \frac{x^6}{6\omega} - \frac{1}{2}x^5 + \frac{5}{12}\omega x^4 - \frac{1}{12}\omega^3x^2$ thì $\Delta F = x^5$ đúng bằng không; còn với hệ số $\frac{5}{12}$ thì còn dư $-\frac{2}{3}\omega^4x - \frac{1}{3}\omega^5$. Vậy tử số phải là 1. Đã soi bản in ở độ phóng 26: chữ số ở đây là 5, khác hẳn chữ 1 ở $\frac12$ ngay cùng dòng.
+~~**Một hệ số sai trong bản in, đã chép nguyên văn và ghi chú.** Ở dòng $\Sigma x^5$, số hạng cuối in ra là $-\frac{5}{12}\omega^3x^2$.~~ → sửa ngày 2026-09-28: **bản in là $-\frac{1}{12}\omega^3x^2$, đúng**; không có lỗi in, ghi chú "lỗi in" trong chương đã xoá. Đoạn lập luận dưới đây (và câu "đã soi ... chữ số ở đây là 5") là đọc sai: Đã tự kiểm bằng phép lấy sai lệch: với $F = \frac{x^6}{6\omega} - \frac{1}{2}x^5 + \frac{5}{12}\omega x^4 - \frac{1}{12}\omega^3x^2$ thì $\Delta F = x^5$ đúng bằng không; còn với hệ số $\frac{5}{12}$ thì còn dư $-\frac{2}{3}\omega^4x - \frac{1}{3}\omega^5$. Vậy tử số phải là 1. Đã soi bản in ở độ phóng 26: chữ số ở đây là 5, khác hẳn chữ 1 ở $\frac12$ ngay cùng dòng.
 
 **Ba dòng còn lại đã tự kiểm và đều đúng**, tức lấy sai lệch cho ra đúng $x^3$, $x^4$, $x^6$:
 $$\Delta\left(\frac{x^4}{4\omega} - \frac{x^3}{2} + \frac{\omega x^2}{4}\right) = x^3,\quad
@@ -1340,7 +1359,7 @@ Bổ sung trang 59 vào `chapters/01-sai-lech-huu-han.md`: mở đầu §29 và 
 
 **Đã tự kiểm công thức với $n=3,4,5,6$:** cho đúng những dòng đã in ở các trang trước. Với $n=6$ chẳng hạn, ba số hạng đầu cho $x^7/(7\omega)$, $-\frac12 x^6$, $+\frac12\omega x^5$ và hai số hạng kế cho $-\frac16\omega^3x^3$, $+\frac1{42}\omega^5x$ — đúng bằng dòng đã in ở trang 57.
 
-**Hệ quả đã ghi ở trang 57 được xác nhận lần nữa:** với $n=5$, số hạng cuối theo công thức này là $1/12$, đúng như đã kết luận khi sửa lỗi trang 57 (bản in ở đó là $5/12$).
+**Hệ quả đã ghi ở trang 57 được xác nhận lần nữa:** với $n=5$, số hạng cuối theo công thức này là $1/12$, ~~đúng như đã kết luận khi sửa lỗi trang 57 (bản in ở đó là $5/12$)~~ → sửa ngày 2026-09-28: khớp đúng bản in trang 57, vốn in $1/12$.
 
 **Dấu chấm lửng ở cuối trang:** bản in kết thúc cột công thức bằng một vạch dài, báo hiệu công thức còn tiếp sang trang 60.
 
@@ -1374,13 +1393,15 @@ Bổ sung trang 62 vào `chapters/01-sai-lech-huu-han.md`: phần còn lại c�
 
 **Đã soi bản scan:** toàn trang 62, cộng ba mức phóng (18, 20) cho dòng định nghĩa $y$ ở §33 và cho hai dòng văn cuối trang. Đầu trang đặt số trang `34` bên trái, khác với trang 61 đặt bên phải — chỉ là xen kẽ trang chẵn/lẻ.
 
-**Một lỗi thật của bản in, đã chép nguyên văn.** Trong dòng định nghĩa $y$ ở §33, thừa số thứ ba bị in thiếu: bản in ghi $(x+(n-1)\omega)(x+n\omega)\times(n+1)\omega$, thiếu luôn chữ $x+$ trước $(n+1)\omega$. Đúng phải là $(x+(n+1)\omega)$: dòng ngay dưới là $y^1 = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$, và công thức $\Delta y$ ngay sau cũng chỉ khớp với ba thừa số dạng ấy. Đã soi ở độ phóng 20, nét chữ rõ và dấu nhân thì có; đây là lỗi của bản in chứ không phải đọc nhầm.
+~~**Một lỗi thật của bản in, đã chép nguyên văn.**~~ → sửa ngày 2026-09-28: **không phải lỗi
+in.** Thừa số thứ ba chỉ nhòe/in chồng, nhưng đọc được là $(x+(n+1)\omega)$; công thức và ghi
+chú trong chương đã sửa. Đoạn dưới là kết luận cũ, sai: Trong dòng định nghĩa $y$ ở §33, thừa số thứ ba bị in thiếu: bản in ghi $(x+(n-1)\omega)(x+n\omega)\times(n+1)\omega$, thiếu luôn chữ $x+$ trước $(n+1)\omega$. Đúng phải là $(x+(n+1)\omega)$: dòng ngay dưới là $y^1 = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$, và công thức $\Delta y$ ngay sau cũng chỉ khớp với ba thừa số dạng ấy. Đã soi ở độ phóng 20, nét chữ rõ và dấu nhân thì có; đây là lỗi của bản in chứ không phải đọc nhầm.
 
 **Đã tự kiểm cả bốn công thức của trang này bằng phép lấy sai khác.** Với $F=\frac{1}{2\omega}(x+(n-1)\omega)(x+n\omega)$ thì $\Delta F = (x+n\omega)$; với $F=\frac{1}{3\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)$ thì $\Delta F = (x+n\omega)(x+(n+1)\omega)$; với $F=\frac{1}{4\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$ thì $\Delta F = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$. Ở cả ba, chênh lệch trong ngoặc bằng đúng $2\omega$, $3\omega$, $4\omega$, nên hệ số trước ra chính là $\frac{1}{k\omega}$ với $k$ là số thừa số — đây là quy luật mà Euler chưa nói thẳng ở đây nhưng §33 dẫn tới. Cũng đã kiểm $\Sigma(x+2\omega)=\frac{1}{2\omega}(x+\omega)(x+2\omega)$.
 
 **Biểu thức bị ngắt giữa hai trang:** $(x+2\omega)(x+$ ở cuối trang 61, còn $(x+3\omega)$ sang trang 62. Trong bản dịch đã viết trọn một biểu thức; việc ngắt chỗ ấy đã ghi trong chương.
 
-**Một chữ đọc không chắc, đã giữ theo cách đọc khả dĩ nhất.** Ở câu `vnde lex inveniendi summas, si differentia ex pluribus huiusmodi factoribus constet, fonte pateat`, nét chữ cho phép đọc hoặc là `f` hoặc là `s` (dấu ſ), nên chỗ này có thể là `fonte` hay `sonte`. Vì câu nói về nguồn của quy luật nên `fonte` hợp lý hơn, nhưng đây là chỗ nghi vấn chứ không phải chỗ chắc; đã ghi rõ sự nghi vấn trong chương thay vì khẳng định.
+~~**Một chữ đọc không chắc, đã giữ theo cách đọc khả dĩ nhất.**~~ → sửa ngày 2026-09-28: bản in là `sponte patet` (không phải `fonte pateat`); ghi chú nghi vấn f/s trong chương đã xoá. Kết luận cũ: Ở câu `vnde lex inveniendi summas, si differentia ex pluribus huiusmodi factoribus constet, fonte pateat`, nét chữ cho phép đọc hoặc là `f` hoặc là `s` (dấu ſ), nên chỗ này có thể là `fonte` hay `sonte`. Vì câu nói về nguồn của quy luật nên `fonte` hợp lý hơn, nhưng đây là chỗ nghi vấn chứ không phải chỗ chắc; đã ghi rõ sự nghi vấn trong chương thay vì khẳng định.
 
 **Trang kết thúc giữa chữ:** câu cuối bị cắt ở `au-` (`autem`), mép phải cũng mang chữ catchword `au-`. Câu nối sang PDF 63.
 
@@ -1405,11 +1426,19 @@ Bằng chứng cho từng mốc đã sửa, đều là trang tiêu đề có ti�
 
 **Nội dung đã bổ sung cho PDF 63–66:** phần còn lại của §33, §34 (tổng của tích các thừa số lập thành cấp số cộng, từ hai thừa số đến bốn), §35 và §36, cùng EXEMPLUM I và EXEMPLUM II. Không thêm callout.
 
-**Công thức ở cuối §35 in ra sai, đã chép nguyên văn.** Bản in ghi $\Sigma\frac{1}{x+(n+1)\omega} - \Sigma\frac{1}{x+n\omega} = \frac{1}{x+n\omega}$. Vì $\Delta\frac{1}{x+n\omega} = \frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega} = \frac{-\omega}{(x+n\omega)(x+(n+1)\omega)}$ nên tổng của hiệu ấy phải là $-\frac{1}{\omega}\cdot\frac{1}{x+n\omega}$: thiếu cả dấu lẫn hệ số $1/\omega$. Đã soi bản in ở độ phóng 20, vế phải không có hệ số nào đứng trước.
+> **Sửa ngày 2026-09-28 — ba kết luận dưới đây đều sai; Euler đúng.** Ký hiệu $\Sigma$ theo
+> §26 không kèm $1/\omega$: $\Delta(\Sigma z) = z$, nên công thức cuối §35 đúng. EXEMPLUM I:
+> dòng "at est" thực in $\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{x+\omega}$
+> (không phải $-\frac{1}{\omega x}$), mọi bước nhất quán. EXEMPLUM II: đáp án
+> $-\frac1x - \frac1{x+\omega} - \frac1{x+2\omega}$ đúng
+> ($\Delta F = \frac{3\omega}{x(x+3\omega)}$). Các ghi chú "in sai" / "không nhất quán" /
+> "đáp án sai" trong chương đã xoá. Phần bên dưới giữ lại để lưu vết.
 
-**Hệ quả của công thức sai ấy lan sang EXEMPLUM II, và ở đó đáp án cũng sai.** EXEMPLUM I cho differentia $\frac{3x+2\omega}{x(x+\omega)(x+2\omega)}$; khai triển thành phần của Euler đúng ($A=1/\omega$, $B=1/\omega$, $C=-2/\omega$, đã tự kiểm), và **đáp án cuối cũng đúng**: $F = -\frac{1}{\omega x} - \frac{2}{\omega(x+\omega)} = -\frac{3x+\omega}{\omega x(x+\omega)}$ cho $\Delta F$ đúng bằng differentia, kiểm bằng phân tỉch với $\omega=1, x=10$ thì $\Delta F = 4/165$. Nhưng các bước ở giữa không dẫn tới đáp án ấy: dòng "at est" in $\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x}$, áp theo đúng công thức sai của §35 thì tổng ra $-\frac{3}{10}$, trong khi đáp án in ra là $-\frac{31}{110}$; giá trị đúng của hiệu ấy là $+\frac{1}{132}$. Tức các dòng giữa không nhất quán với đáp án, dù đáp án thì đúng.
+~~**Công thức ở cuối §35 in ra sai, đã chép nguyên văn.**~~ Bản in ghi $\Sigma\frac{1}{x+(n+1)\omega} - \Sigma\frac{1}{x+n\omega} = \frac{1}{x+n\omega}$. Vì $\Delta\frac{1}{x+n\omega} = \frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega} = \frac{-\omega}{(x+n\omega)(x+(n+1)\omega)}$ nên tổng của hiệu ấy phải là $-\frac{1}{\omega}\cdot\frac{1}{x+n\omega}$: thiếu cả dấu lẫn hệ số $1/\omega$. Đã soi bản in ở độ phóng 20, vế phải không có hệ số nào đứng trước.
 
-Ở EXEMPLUM II ngược lại, các bước áp đúng công thức sai nên **đáp án sai**: differentia $\frac{3\omega}{x(x+3\omega)} = \frac{1}{x} - \frac{1}{x+3\omega}$ có tổng phải là $-\frac{3}{x(x+3\omega)}$, tức $-\frac{3}{130}$ với $\omega=1, x=10$; còn biểu thức Euler in ra là $-\frac{1}{x} - \frac{1}{x+\omega} - \frac{1}{x+2\omega} = -\frac{91}{330}$. Đã chép nguyên văn, không sửa.
+~~**Hệ quả của công thức sai ấy lan sang EXEMPLUM II, và ở đó đáp án cũng sai.**~~ EXEMPLUM I cho differentia $\frac{3x+2\omega}{x(x+\omega)(x+2\omega)}$; khai triển thành phần của Euler đúng ($A=1/\omega$, $B=1/\omega$, $C=-2/\omega$, đã tự kiểm), và **đáp án cuối cũng đúng**: $F = -\frac{1}{\omega x} - \frac{2}{\omega(x+\omega)} = -\frac{3x+\omega}{\omega x(x+\omega)}$ cho $\Delta F$ đúng bằng differentia, kiểm bằng phân tỉch với $\omega=1, x=10$ thì $\Delta F = 4/165$. Nhưng các bước ở giữa không dẫn tới đáp án ấy: dòng "at est" in $\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x}$, áp theo đúng công thức sai của §35 thì tổng ra $-\frac{3}{10}$, trong khi đáp án in ra là $-\frac{31}{110}$; giá trị đúng của hiệu ấy là $+\frac{1}{132}$. Tức các dòng giữa không nhất quán với đáp án, dù đáp án thì đúng.
+
+~~Ở EXEMPLUM II ngược lại, các bước áp đúng công thức sai nên **đáp án sai**:~~ differentia $\frac{3\omega}{x(x+3\omega)} = \frac{1}{x} - \frac{1}{x+3\omega}$ có tổng phải là $-\frac{3}{x(x+3\omega)}$, tức $-\frac{3}{130}$ với $\omega=1, x=10$; còn biểu thức Euler in ra là $-\frac{1}{x} - \frac{1}{x+\omega} - \frac{1}{x+2\omega} = -\frac{91}{330}$. Đã chép nguyên văn, không sửa.
 
 **Trạng thái Chương I, lần này đã đối chiếu:** đủ 36 trang nguồn, PDF 31–66, tức trang in 3–38, §1–§36 và EXEMPLUM I–VI. **Chưa niêm phong**; chỉ chủ sở hữu mới ghi `status: hoan-thanh`.
 
@@ -1419,13 +1448,13 @@ Mở đầu CAPUT II trong `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md`:
 
 **Đã soi bản scan:** toàn trang 67, 68, 69, 70, 71, cộng sáu mức phóng (18, 20, 22, 26) cho các dòng chữ số nhỏ ở §43 và dòng `aut denique`. Lớp OCR hỏng ở mọi số mũ La-tinh, nên các bảng INDICES / TERMINI / DIFFER phải đọc từ ảnh.
 
-**Bốn số hạng tổng quát của §42 đã tự kiểm.** Dãy `a; a+b; a+2b+c; a+3b+3c; a+4b+6c; a+5b+10c; a+6b+15c` khớp đúng khi cộng dồn các differentia bậc nhất `b; b+c; b+2c; ...`; và `a + (x-1)b + (x-1)(x-2)/2 · c` là số hạng tổng quát đúng. Số hạng tổng kết `2.10000 - 100 = 19900` cũng đúng, và tổng `2x³/3 - x²/2` lấy sai khác cho ra `x² - x`, đúng differentia bậc hai của chuỗi các số bình phương.
+**Bốn số hạng tổng quát của §42 đã tự kiểm.** Dãy `a; a+b; a+2b+c; a+3b+3c; a+4b+6c; a+5b+10c; a+6b+15c` khớp đúng khi cộng dồn các differentia bậc nhất `b; b+c; b+2c; ...`; và `a + (x-1)b + (x-1)(x-2)/2 · c` là số hạng tổng quát đúng. ~~Số hạng tổng kết `2.10000 - 100 = 19900` cũng đúng, và tổng `2x³/3 - x²/2` lấy sai khác cho ra `x² - x`, đúng differentia bậc hai của chuỗi các số bình phương.~~ → sửa ngày 2026-09-28: bản in nói 19900 là **số hạng thứ một trăm** (terminum centesimum), không phải số hạng tổng kết; công thức tổng `2x³/3 − x²/2` không đúng cho chuỗi `2xx − x`, đã bỏ khỏi chương.
 
-**Ba số hạng tổng quát khác nhau ở §42, trong đó một dạng in sai, đã chép nguyên văn.** Dạng `qui reducitur` và dạng `vel etiam` đều đúng và là cùng một biểu thức. Dạng `aut denique` in ra sai ở hai chỗ: trong ngoặc phải dùng `a^II` chứ không phải `a^III` (số hạng tổng quát của chuỗi bậc hai chỉ liên quan tới ba số hạng đầu `a, a^I, a^II`, đúng như câu ngay dưới nói nó được định nghĩa bởi ba số hạng ấy), và hệ số `1/4` phải là `1/2`. Kiểm bằng phân tỉch với chuỗi `1, 4, 9, 16, 25, &c.` (tức `a=1, b=3, c=2`): số hạng thứ 4 đúng là 16, dạng `vel etiam` cho 16, dạng bản in cho 37/2; nếu chỉ sửa `1/4` thành `1/2` mà vẫn để `a^III` thì ra 37, vẫn sai. Sửa cả hai mới ra đúng. Cùng phép ấy đã thử trên bốn chuỗi khác nhau và nhiều chỉ số: hai dạng đầu luôn khớp, dạng bản in luôn lệch.
+**Ba số hạng tổng quát khác nhau ở §42, trong đó một dạng in sai, đã chép nguyên văn.** (Ghi thêm ngày 2026-09-28: lần soi lại thấy hệ số và số mũ của chữ `a` đầu trong ngoặc ở dạng `aut denique` nằm ở giới hạn đọc được; vẫn giữ cách đọc `1/4` và `a^III` nhưng **chưa xác nhận**, xem mục nghi vấn còn mở. Kết luận "lỗi in" dưới đây chỉ đứng nếu cách đọc ấy đúng.) Dạng `qui reducitur` và dạng `vel etiam` đều đúng và là cùng một biểu thức. Dạng `aut denique` in ra sai ở hai chỗ: trong ngoặc phải dùng `a^II` chứ không phải `a^III` (số hạng tổng quát của chuỗi bậc hai chỉ liên quan tới ba số hạng đầu `a, a^I, a^II`, đúng như câu ngay dưới nói nó được định nghĩa bởi ba số hạng ấy), và hệ số `1/4` phải là `1/2`. Kiểm bằng phân tỉch với chuỗi `1, 4, 9, 16, 25, &c.` (tức `a=1, b=3, c=2`): số hạng thứ 4 đúng là 16, dạng `vel etiam` cho 16, dạng bản in cho 37/2; nếu chỉ sửa `1/4` thành `1/2` mà vẫn để `a^III` thì ra 37, vẫn sai. Sửa cả hai mới ra đúng. Cùng phép ấy đã thử trên bốn chuỗi khác nhau và nhiều chỉ số: hai dạng đầu luôn khớp, dạng bản in luôn lệch.
 
-**Một số mũ bị mất trong bản in, đã chép nguyên văn.** Ở §43, câu liệt kê differentia bậc ba in ra là `d, d^I, d, &c.`: chữ `d` thứ ba không có số mũ, trong khi hai dòng ngay trên có đủ (`b, b^I, b^II, b^III` và `c, c^I, c^II, c^III`). Đúng phải là `d^II`. Trong bảng, dòng DIFFER. III. có cả ba số mũ mòn đến mức không đọc được, nên chép ba chữ `d` trần và đã ghi rõ sự nghi vấn này trong chương.
+~~**Một số mũ bị mất trong bản in, đã chép nguyên văn.** Ở §43, câu liệt kê differentia bậc ba in ra là `d, d^I, d, &c.`: chữ `d` thứ ba không có số mũ, trong khi hai dòng ngay trên có đủ (`b, b^I, b^II, b^III` và `c, c^I, c^II, c^III`). Đúng phải là `d^II`. Trong bảng, dòng DIFFER. III. có cả ba số mũ mòn đến mức không đọc được, nên chép ba chữ `d` trần và đã ghi rõ sự nghi vấn này trong chương.~~ → sửa ngày 2026-09-28: bản in là `d, d, d, &c.` — ba chữ `d` trần, **đúng** vì differentia bậc ba là hằng (*quippe quae sunt constantes*). Không có lỗi in.
 
-**Chỗ đọc không chắc đã ghi, không dám chắc.** Số `7` ở dòng INDICES của trang 69 bị bào mòn gần hết, chỉ còn vỏ ngoài; vẫn đọc là 7 vì khớp với dòng TERMINI ngay dưới.
+~~**Chỗ đọc không chắc đã ghi, không dám chắc.** Số `7` ở dòng INDICES của trang 69 bị bào mòn gần hết, chỉ còn vỏ ngoài; vẫn đọc là 7 vì khớp với dòng TERMINI ngay dưới.~~ → sửa ngày 2026-09-28: không có số 7; dòng INDICES trang 41 (PDF 69) in 1–6, không có `&c.`.
 
 **Dấu ở chân trang:** trang 67 có hoa văn trang trí và catchword `1, 2,`; trang 68 cắt ở `40. In-`; trang 69 có catchword `Ex`; trang 70 cắt ở `vti ex natura` với catchword `tura`; trang 71 có catchword `Quia`. Số trang xen kẽ bên trái và bên phải như mọi chương khác.
 
@@ -1437,9 +1466,9 @@ Bổ sung trang 72–73 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md
 
 **Trang 72 không có lỗi in; đã tự kiểm toàn bộ.** Với `a=1, b=2, c=3, d=4` thì dựng chuỗi từ differentia bậc ba hằng cho `1, 3, 8, 20, 43, 81, &c.`, đúng như năm số hạng Euler in ở đầu trang: `a+b`, `a+2b+c`, `a+3b+3c+d`, `a+4b+6c+4d`. Cả hai dạng rút gọn của số hạng tổng quát cũng khớp số hạng tổng quát `a + (x-1)b + (x-1)(x-2)/2·c + (x-1)(x-2)(x-3)/6·d`. Lưu ý khác biệt quan trọng so với bậc hai: ở bậc ba, differentia bậc hai không hằng mà lập thành cấp số cộng, nên số hạng thứ năm là `a+4b+6c+4d`, không phải `a+4b+6c+2d`. Dạng có nhân tử chỉ đúng khi `x` khác `1, 2, 3, 4`, vì các mẫu `x-1, x-2, x-3, x-4` nằm ở mẫu số.
 
-**Dạng có nhân tử ở cuối §45 in sai, đã chép nguyên văn; lỗi chỉ ở mẫu số.** Bản in dùng mẫu `1·2·3·4·5`; đúng phải là `1·2·3·4`. Cách xác định: lập trực tiếp trọng số của từng số hạng `a, a^I, a^II, a^III, a^IV` trong số hạng tổng quát, bằng cách thay `b = a^I - a`, `c = a^II - 2a^I + a`, `d = a^III - 3a^II + 3a^I - a`, `e = a^IV - 4a^III + 6a^II - 4a^I + a` vào rồi so với trọng số mà bản in cho. Kết quả: **cả năm trọng số của bản in đều nhỏ hơn giá trị đúng đúng một lần 5**, không riêng số hạng nào, ở mọi giá trị `x` đã thử. Chẳng hạn trọng số của `a^IV` đúng là `(x-1)(x-2)(x-3)(x-4)/24` còn bản in là `(x-1)(x-2)(x-3)(x-4)/120`, và `24/120 = 1/5`. Vậy chỉ cần đổi mẫu số `120` thành `24` thì cả năm trọng số cùng khớp. Kiểm số: với `a=5, b=2, c=d=e=0` (chuỗi `5, 7, 9, 11, 13, 15, &c.`) thì số hạng thứ 6 đúng là 15, dạng bản in cho 3, dạng sửa mẫu số cho đúng 15.
+~~**Dạng có nhân tử ở cuối §45 in sai, đã chép nguyên văn; lỗi chỉ ở mẫu số.** Bản in dùng mẫu `1·2·3·4·5`; đúng phải là `1·2·3·4`.~~ → sửa ngày 2026-09-28: bản in là `1. 2. 3. 4` (bốn thừa số, có dấu ×), **đúng**; không có lỗi in. Phép kiểm dưới đây chỉ xác nhận rằng mẫu `1·2·3·4` là đúng: Cách xác định: lập trực tiếp trọng số của từng số hạng `a, a^I, a^II, a^III, a^IV` trong số hạng tổng quát, bằng cách thay `b = a^I - a`, `c = a^II - 2a^I + a`, `d = a^III - 3a^II + 3a^I - a`, `e = a^IV - 4a^III + 6a^II - 4a^I + a` vào rồi so với trọng số mà bản in cho. Kết quả: **cả năm trọng số của bản in đều nhỏ hơn giá trị đúng đúng một lần 5**, không riêng số hạng nào, ở mọi giá trị `x` đã thử. Chẳng hạn trọng số của `a^IV` đúng là `(x-1)(x-2)(x-3)(x-4)/24` còn bản in là `(x-1)(x-2)(x-3)(x-4)/120`, và `24/120 = 1/5`. Vậy chỉ cần đổi mẫu số `120` thành `24` thì cả năm trọng số cùng khớp. Kiểm số: với `a=5, b=2, c=d=e=0` (chuỗi `5, 7, 9, 11, 13, 15, &c.`) thì số hạng thứ 6 đúng là 15, dạng bản in cho 3, dạng sửa mẫu số cho đúng 15.
 
-**Một chỗ đã soi và xác nhận, không phải lỗi.** Ở bảng trang 73, dòng DIFFER. III. có số mũ `II` trên chữ `d` thứ ba rất mờ; đã phóng và xác nhận là `II`, khớp quy luật số mũ La-tinh của các dòng trên. (Ngược lại, ở trang 71 chữ `d` thứ ba trong phần văn xuôi thật sự không có số mũ — đó mới là lỗi in, đã ghi ở Phần 1.)
+**Một chỗ đã soi và xác nhận, không phải lỗi.** Ở bảng trang 73, dòng DIFFER. III. có số mũ `II` trên chữ `d` thứ ba rất mờ; đã phóng và xác nhận là `II`, khớp quy luật số mũ La-tinh của các dòng trên. ~~(Ngược lại, ở trang 71 chữ `d` thứ ba trong phần văn xuôi thật sự không có số mũ — đó mới là lỗi in, đã ghi ở Phần 1.)~~ → sửa ngày 2026-09-28: ở PDF 71 cả ba chữ `d` đều trần và đúng, xem Phần 1. Còn ở dòng DIFFER. III. của PDF 73 nói trên, lần soi lại thấy số mũ trên chữ `d` **thứ hai** mờ, trông giống `II`; bản dịch giữ `d^I` theo quy luật, xem mục nghi vấn còn mở.
 
 **Dấu ở chân trang:** trang 72 có catchword `DIF`; trang 73 kết thúc ở chữ `vnde` vốn là catchword, dấu hiệu trang ở giữa là `F 3`.
 
@@ -1455,14 +1484,159 @@ Bổ sung trang 74–77 vào `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md
 
 **Mệnh đề cốt lõi của §50 cũng đã kiểm, và nó đúng.** Với functio phân thức nguyên bậc $n$ có hệ số dẫn đầu $c_n$, lấy hiệu một lần cho hệ số dẫn đầu mới là $n c_n$ ở bậc $n-1$, nên bậc giảm đúng một chừng nào $c_n$ khác không. Đã dựng hiệu bằng hệ số nhị thức trên sáu functio ngẫu nhiên bậc 1, 3 và 4, đều cho đúng bậc $n-1$ và đúng hệ số $n c_n$. Ba trường hợp cụ thể cũng khớp: $X = ax+b$ cho $\Delta X = a$; $X = ax^2+bx+c$ cho $\Delta\Delta X = 2a$; $X = ax^3+bx^2+cx+d$ cho $\Delta^3X = 6a$.
 
-**Chữ bắt ở cuối trang 77 là `§1. Hanc`, đã soi ở độ phóng 8 và xác nhận không có chữ số nào bị mòn.** Ở trang này mục tiếp theo hợp lý ra phải là §51, nên lẽ ra chữ bắt phải là `§51. Hanc`; bản in chỉ có `§1. Hanc`. Đã chép nguyên văn và ghi rõ sự nghi vấn trong chương, không tự sửa thành §51.
+~~**Chữ bắt ở cuối trang 77 là `§1. Hanc`, đã soi ở độ phóng 8 và xác nhận không có chữ số nào bị mòn.** Ở trang này mục tiếp theo hợp lý ra phải là §51, nên lẽ ra chữ bắt phải là `§51. Hanc`; bản in chỉ có `§1. Hanc`. Đã chép nguyên văn và ghi rõ sự nghi vấn trong chương, không tự sửa thành §51.~~ → sửa ngày 2026-09-28: chữ bắt là `51. Hanc`; chữ số 5 in kiểu cổ, giống chữ s dài, bị đọc nhầm thành `§`. Không có lỗi in.
 
-**Dấu ở chân trang:** trang 74 kết thúc giữa chữ ở `in seriebus secundi ordi-`; trang 75 kết thúc ở chữ `dum` vốn là catchword; trang 76 kết thúc ở chữ `minus,` vốn là catchword, số trang đặt bên trái; trang 77 kết thúc đúng ở câu `erit series ex eo nata.`, dấu hiệu trang ở giữa là `G`, chữ bắt `§1. Hanc`, số trang 49 đặt bên phải.
+**Dấu ở chân trang:** trang 74 kết thúc giữa chữ ở `in seriebus secundi ordi-`; trang 75 kết thúc ở chữ `dum` vốn là catchword; trang 76 kết thúc ở chữ `minus,` vốn là catchword, số trang đặt bên trái; trang 77 kết thúc đúng ở câu `erit series ex eo nata.`, dấu hiệu trang ở giữa là `G`, chữ bắt ~~`§1. Hanc`~~ `51. Hanc` (sửa ngày 2026-09-28), số trang 49 đặt bên phải.
 
 **Sửa cấu trúc chương II, phát hiện khi đối chiếu lại trước khi chép trang 77.** File bị dồn bốn marker `Chưa dịch` chồng lên nhau (lần thêm trang nào lại nối thêm một marker mà không xoá marker cũ), nên chỉ còn một marker là đúng; ba marker cũ đã xoá. Thiếu hẳn marker trang cho PDF 71: phần cuối §42 nằm nhầm dưới marker trang 70, trong khi câu `uti ex natura differentiarum (§. 10.) intelligitur, erit terminus generalis` thực ra bắt đầu ở trang 42 và nối sang trang 43 với chữ `tura`; nay đã chèn marker `PDF 71, trang in 43` tại đúng chỗ ngắt trang, không sửa văn. Ghi chú dịch giả về trang 42 từng nằm bỏ lạc ở cuối file, sau marker `Chưa dịch`, đã chuyển về cuối trang 42 của nó; bốn ghi chú về trang 43 từng nằm *trước* nội dung của trang 43, đã chuyển xuống sau bảng §43 và sắp lại theo đúng thứ tự văn bản trên trang.
 
-**Soi lại hai chỗ trang 42–43 sau khi sửa, và kết quả khớp bản in.** Ở trang 42, dòng DIFFER. II. in đúng năm chữ `c` (khớp năm chỉ số ở dòng INDICES ngay trên), mẫu số của số hạng cuối viết bằng `1.` trên `2` tức $1\cdot 2$, trang kết thúc giữa chữ ở `vti ex na-`, số trang 42 đặt bên trái. Ở trang 43, dòng INDICES chỉ liệt kê sáu chỉ số (1 tới 6) trong khi các dòng TERMINI, DIFFER. I. và DIFFER. II. chứa bảy số hạng — đã giữ nguyên sáu như in và ghi chú; số trang 43 đặt bên phải, dấu hiệu trang ở giữa là `F 2`, chữ bắt `Quia`.
+**Soi lại hai chỗ trang 42–43 sau khi sửa, và kết quả khớp bản in.** Ở trang 42, dòng DIFFER. II. in đúng năm chữ `c` (khớp năm chỉ số ở dòng INDICES ngay trên), mẫu số của số hạng cuối viết bằng `1.` trên `2` tức $1\cdot 2$, trang kết thúc giữa chữ ở `vti ex na-`, số trang 42 đặt bên trái. Ở trang 43, dòng INDICES chỉ liệt kê sáu chỉ số (1 tới 6) ~~trong khi các dòng TERMINI, DIFFER. I. và DIFFER. II. chứa bảy số hạng — đã giữ nguyên sáu như in và ghi chú~~ → sửa ngày 2026-09-28: dòng TERMINI có đúng sáu số hạng `a`–`a^V`, khớp sáu chỉ số; không có chỗ lệch; số trang 43 đặt bên phải, dấu hiệu trang ở giữa là `F 2`, chữ bắt `Quia`.
 
+### 2026-09-28 — Rà soát độ trung thành: Lời tựa (PDF 5–28, tr. i–xxiv)
 
+Soi bằng mắt từng trang PDF 5–28, không dùng lớp OCR. Bản dịch cũ lệch nghĩa ở hầu hết các
+trang, nên lời tựa (PDF 7–24) được dịch lại theo từng câu; marker trang và ngắt đoạn tiếng Việt
+giữ như cũ (bản Latin chỉ có 2 đoạn, III–XIX và XIX–XX). Thuật ngữ Latin giữ nguyên (functio,
+constans/variabilis, differentialia, infinite parva); *Analysis* viết ở cách chủ ngữ. `ωω` giữ
+là `\omega\omega`, `3xxdx` giữ là `3xx\,dx`. Chưa niêm phong.
 
+| Trang in | PDF | Đã sửa |
+|---|---:|---|
+| (tiêu đề) | 5 | "Nhân văn" → "Văn chương"; "Nga" → "Petropolis"; "học viện danh tiếng" → "Viện Hàn lâm Hoàng gia"; "In tại" → "chịu phí tổn in" |
+| — | 6 | ghi nhận trang lót chỉ có dấu thư viện |
+| III | 7 | khôi phục câu hỏi mở đầu `Quid sit Calculus Differentialis...?`; `neque hic... licet` bị dịch ngược nghĩa |
+| IV–V | 8–9 | `ad certum quoddam institutum` = mục đích nhất định; `elevatio tormenti` = độ nâng của nòng pháo (góc nâng); `siquidem` = "bởi" |
+| VI | 10 | `ex his utcunque compositae` = ghép từ chúng theo bất cứ cách nào |
+| VII | 11 | **công thức:** "tỷ lệ $\omega+\omega$ với $1$" → "như $2x+\omega$ với $1$" |
+| VIII–IX | 12–13 | định nghĩa Calculus Differentialis dịch sát, in đậm như bản in; `non sunt hospites`, `exhauriri`, `uti vulgo tradi solent` dịch lại; định nghĩa calculus integralis thêm "tỷ lệ" (ratio); `quantitate destituantur` = không có độ lớn |
+| X | 14 | khôi phục vế "lượng tăng của $xx$ sẽ là $=2x\omega$"; $3x^2\,dx$ → $3xx\,dx$ như in |
+| XI–XIII | 15–17 | `iure est obiectum`, `perperam ... infringere conantur`, cấu trúc `potius... quam`, `pulvisculorum respectu vasti montis`, `metuunt autem` dịch lại; bỏ "tia sáng" (không có trong Latin) |
+| XIV | 18 | **công thức hiển thị:** `ω với 2xω+ω²` → `như 1 với 2x+ω` (bản in `ut 1 ad 2x+ω`); câu về người đặt nền móng dịch lại |
+| XV–XVII | 19–21 | `neque subito ... evecta` (ngược nghĩa), `non repente methodus innotuit`, `incitatorum` = được khích lệ, `specimina Calculi integralis`, `diversarum nationum`, `per se aeque evanescant` |
+| XVIII–XX | 22–24 | `species illa arcana ... haud plus polliceatur` (ngược nghĩa); "khoảng thời gian" → "quãng đường" (3 chỗ); `puncto temporis`; `accuratius`; `eo minus desiderabitur` (ngược nghĩa); `cum vix satis essent evoluta` |
+| XXI | 25 | **số trang mục lục Phần I:** bản dịch cũ chép sai 35, 121, 149, 184, 341 → bản in 39, 98, 151, 178, 241; `pluresve` |
+| XXII–XXIII | 26–27 | Phần II: tên chương I *Transformatione*, III *finitarum*, V *Serierum ex Termino generali*, VII *superior ulterius promota*, XIV *in certis tantum casibus*, XV *De Valoribus functionum, qui certis casibus videntur indeterminati*, XVI *inexplicabilium*, XVIII *Resolutione*; số trang 332, 546, 619, 657, 689, 712 (bản cũ 333, 548, 615, 617, 680); *differentiatio* = phép lấy vi phân, *progressiones* = cấp số, *radices reales* = nghiệm thực |
+| XXIV | 28 | **errata:** dòng 1 `z = xx` → `z = xx + x` (dấu `=`, không phải `≡`); dòng 2 loco $\frac{(z'-z)}{a^x(a-1)^2}$ lege $\frac{(z'-az)}{a^x(a-1)^2}$, kiểm chéo ở tr. in 513 (PDF 541, §192); "thay A bằng B" → "thay A, đọc là B" (loco/lege); câu "Hai lỗi này được giữ nguyên..." chuyển thành comment HTML vì không có trong bản in |
 
+**Quyết định về lỗi in:** không có lỗi in nào trong lời tựa và mục lục; các "lỗi" cũ đều do
+đọc OCR hoặc chép sai. Hai dòng errata của Euler giữ nguyên như bản in.
+
+**Callout:** giữ nguyên nội dung; sửa hai chỗ sai sự thật mà người rà soát đã chỉ ra: câu
+"ω càng nhỏ thì tỷ lệ càng gần 2x với 1" nằm ở trang in VII (callout cũ ghi IX); "hai trang
+trang in XI–XIII" → "ba trang in XI–XIII".
+
+**Đã sửa theo trong các file dùng chung:** mục "Những chỗ đã xác định là khác với mục lục",
+mục "Những chỗ mà Euler tự ghi là lỗi in" và mục Lời tựa ở trên (gạch bỏ, ghi "sửa ngày
+2026-09-28"); `PAGE_MAP.md` §5; `KY_HIEU_EULER.md` §1; ví dụ errata trong
+`ANNOTATION_GUIDE.md` §2bis.
+
+### 2026-09-28 — Rà soát độ trung thành: Chương I (PDF 31–66, tr. 3–38, §1–§36)
+
+Soi toàn bộ 36 trang từ ảnh scan (từng nửa trang, phóng to chỗ nghi vấn). Chưa niêm phong.
+
+**Quy ước chung:** chỉ số trên của các giá trị ($y^{\mathrm{I}}$, $y^{\mathrm{II}}$, …,
+$\Delta y^{\mathrm{I}}$, $x^{\mathrm{I}}$) trên bản in đều là **số La Mã**, kể cả chỗ `I` trông
+như `1`; bản dịch cũ viết $y^1$, $\Delta y^1$ đã đổi hết sang `y^{\mathrm{I}}`. Chỉ số dưới
+($y_{\mathrm{I}}$, §25) cũng La Mã. Câu cuối §15 in $y, y', y'', y'''$, giữ như in. Callout sau
+§7 sửa hai câu sai sự thật (chỉ số Ả Rập / §4 "trộn hai kiểu"; §6 "Δ³y = Δ³y¹ = &c.").
+
+| PDF | tr. | § | Đã sửa |
+|---|---|---|---|
+| 31–32 | 3–4 | §1 | bỏ dòng $x^4$ bịa thêm; thêm dòng $(a+x)/(aa+xx) \to (a+x+\omega)/(aa+xx+2x\omega+\omega\omega)$ bị sót; `Sic`, `actu`, `utcunque immutetur`; $3xx\omega$, $3x\omega\omega$ như in |
+| 32 | 4 | §2 | dịch lại câu đầu (sai hoàn toàn); bảng $x \dots x+5\omega$ / $y \dots y^{\mathrm{V}}$ |
+| 33 | 5 | §3 | bản in `ex certa functione ipsius y` (lẽ ra x); bản cũ sửa lặng lẽ thành x — nay giữ "của y" + ghi chú |
+| 34 | 6 | §5–§6 | §5 dịch lại (bản cũ nói "Δy sinh ra từ y khi viết x+2ω"; đúng là $y^{\mathrm{II}}$); §6 lấy hạng sau trừ hạng trước; bảng $\Delta\Delta y^{\mathrm{I}} \dots \Delta\Delta y^{\mathrm{III}}$; bản in là `Δ³y; Δ³y^I; &c.` (không phải `=`); bỏ câu thêm; `quousque libuerit` |
+| 35 | 7 | "§7" | bản in đánh số đoạn này là **5.** (trùng §5) — giữ + ghi chú; bảng sơ đồ bỏ các ô bịa ($\Delta y^5$, $\Delta\Delta y^4$, $\Delta\Delta y^5$, $\Delta^3y^3$, $\Delta^4y^2$, $\Delta^5y^1$); `sine labore`; "phép hợp thành đã biết" |
+| 36–38 | 8–10 | §8–§12 | "triệt tiêu"; `maxime`; `ex terminis primae seriei`; §11 chiều phép trừ bị đảo hai chỗ; §12 `non parum facilior` = dễ hơn không ít (bản cũ ngược nghĩa) |
+| 39 | 11 | §12–§13 | "Δ³q = aΔ³q" giữ như in, chuyển thành ghi chú dịch giả; `tantum` |
+| 40 | 12 | Ex. II–III | bản in $\Delta.xx = 2\omega x + \omega\omega$, $\Delta.3\omega xx = 6\omega\omega x + 3\omega^3$; Ex. III in $\Delta.12\omega^3x^2$ (lẽ ra $\omega^2$) — giữ + ghi chú mới; thêm dấu chấm chừa chỗ như in |
+| 41–42 | 13–14 | Ex. IV | `cuiusvis ordinis` = bậc bất kỳ; thêm dòng $y^{\mathrm{IV}}$; hệ số viết như in $n(n-1)/1.2 \cdot (n-2)/3$; $\Delta\Delta y^{\mathrm{II}}$ số hạng hai in `18ω³ ⁿ⁻³` thiếu x — giữ + ghi chú |
+| 43–44 | 15–16 | §14 | `Quo … perspiciatur`; E có $(n-3)(n-3)$ trong tử số — giữ + ghi chú; bảng dựng lại đủ 9 cột |
+| 45 | 17 | §15 | `seu Δ^m y`; `ratio` = lý do; số mũ cuối dòng $\beta$ nhòe — `[OCR không rõ]` |
+| 46–48 | 18–20 | §16–§19 | $axx+bx+c$, `Δ.x` như in; **§17:** dòng $x^{-4}$ in $10\omega^2/x^6$, dòng cuối in $x^{-1/3}$ — xoá hai ghi chú "lỗi in" sai |
+| 49 | 21 | §19–§20 | mẫu số in `(aa+xx⁴` thiếu ngoặc — giữ; hệ số $\omega^2$ nhòe, đọc là 3 (không chắc; bản cũ ghi 2); §20 vế trái in `Δv` — giữ + ghi chú |
+| 50–54 | 22–26 | §20–§24 | "những functio xác định"; dấu $-P\omega$; `utor` = "tôi dùng" (ngôi thứ nhất); §22 dịch sát; `exposuerim`; `methodo inversa` = phương pháp ngược |
+| 55 | 27 | §25 | câu đặt tên giá trị lùi: $y_{\mathrm{I}}$ ứng $x-\omega$, $y_{\mathrm{II}}$ đứng trước nó … (bản cũ ghi "y_n", "y^III") |
+| 56–58 | 28–30 | §26–§28 | dòng `seu Σx…` số mũ vế trái nhòe — giữ $x^3$, `[OCR không rõ]`; **$\Sigma x^5$ số hạng cuối in $\frac{1}{12}\omega^3x^2$** (không phải 5/12), xoá ghi chú "lỗi in"; bỏ dòng "Σaxx" bịa từ catchword; Ex. I $\Sigma axx$ số hạng cuối là $a\omega x/6$ (bản cũ thiếu ω) |
+| 59–61 | 31–33 | §29–§32 | "n−12)" thiếu ngoặc như in — ghi chú; §30 `etiamsi…` dịch lại; $\Sigma 1/xx$ kết thúc "− &c." như in; §31 bỏ "bằng số", "nhiều quy tắc" |
+| 62–63 | 34–35 | §33–§34 | bản in `sponte patet` (không phải `fonte pateat`); **dòng $y$ §33: thừa số thứ ba là $(x+(n+1)\omega)$, chỉ nhòe/in chồng — không phải lỗi in**; "functio rationalis nguyên"; §34 `fractarum` = dạng phân thức |
+| 64–66 | 36–38 | §35–§36, Ex. I–II | `tutissimus` = chắc chắn nhất; `tantum dispiciendum`; **công thức cuối §35 đúng** ($\Delta\Sigma z = z$); Ex. I dòng "at est" in $\Sigma\frac1{x+\omega} = \Sigma\frac1{x+2\omega} - \frac1{x+\omega}$, các bước nhất quán; Ex. II dòng hai dựng lại như in, **đáp án đúng**; xoá ba ghi chú "in sai"; câu kết dịch lại |
+
+**Quyết định về lỗi in (giữ như in + ghi chú):** §3 `ipsius y`; đoạn "§7" in số `5.`; §12
+`Δ³q = aΔ³q`; Ex. III `12ω³x²`; Ex. IV `18ω³ ⁿ⁻³` thiếu x; §14 E `(n−3)(n−3)`; §19 `(aa+xx⁴`;
+§20 `Δv`; §29 `n−12)`.
+**Rút lại (bản in đúng):** §6 `Δ³y = Δ³y¹`; trộn La Mã–Ả Rập ở §3/§4; §17 $x^{-4}$ và
+$x^{-2/3}$; §27 $\Sigma x^5$ 5/12; §33 dòng $y$; `fonte/sonte`; §35 công thức cuối; Ex. I và
+Ex. II của §36. Các mục Phần 1, 3, 4, 6, 13, 14, 16, 19, 20 ở trên đã gạch bỏ và ghi "sửa ngày
+2026-09-28".
+
+**Bảng kế hoạch và bảng sinh tự động:** Chương I là PDF 31–66 (tr. 3–38), Chương II là PDF
+67–97 (tr. 39–69), khớp frontmatter và `CHAPTER_PLAN.json`; đã sửa bảng kế hoạch và bốn dòng
+PDF 63–66 của bảng đối chiếu từng trang (trước ghi thuộc Chương II).
+
+### 2026-09-28 — Rà soát độ trung thành: Chương II (PDF 67–79, tr. 39–51, §37–đầu §52)
+
+Soát lại toàn bộ phần đã dịch với ảnh scan (render lại 13 trang, phóng to các bảng và công
+thức nghi vấn). Không dịch thêm. Chương chưa có callout. Chưa niêm phong.
+
+**Văn dịch:**
+- PDF 67, §37–§38: `quae primum considerari solet` (thường được xét trước); câu `atque ad
+  quartum ordinem …` bị đảo chủ ngữ, dịch lại; `satis`; *bậc bốn* in nghiêng như in;
+  `infinita serierum genera comprehenduntur` = bao hàm vô số loại chuỗi; `terminos constantes`
+  = số hạng hằng.
+- PDF 68: câu sau ba dãy sai nghĩa hoàn toàn, dịch lại; §39 dịch lại gần như toàn đoạn
+  (`expressio indefinita` = biểu thức bất định; thêm `functio quantitatis variabilis x`; bỏ câu
+  bịa; `quotuscunque terminus`; `etiamsi lex … non respiciatur`; `terminus millesimus` = số hạng
+  thứ một nghìn; `terminum centesimum` = số hạng thứ một trăm; `Summa seu`).
+- PDF 69–72: §40 `Indices seu exponentes … vocantur numeri, qui indicant`, `numerus
+  indefinitus x` = số bất định, câu `Quemadmodum ergo … progressuri` dịch lại; §41–§42
+  `ita (erit) comparata` = có dạng như sau; `(§. 10.)` như in; bỏ "cũng" thừa; `Cum autem porro
+  sit`, `si hi valores substituantur`.
+- PDF 73–75: `Sit nunc`, `exhiberi`; `congruat` = trùng với; `Deinde, cum`; §46 `ex
+  coefficientibus potestatis binomii, uno gradu superioris` = hệ số của lũy thừa nhị thức có số
+  mũ cao hơn một bậc; §47 `Quia vero`, `cum` = vì.
+- PDF 76–77: `dummodo` = miễn là; `Et quidem` = Thật vậy; **§49 phép trừ bị đảo ở ba chỗ**
+  (`primus subtrahatur a secundo`, `secundus a tertio auferatur`, `terminus cuius index est x
+  subtrahatur a sequente`) — đã sửa; `si statuatur ibi ω = 1`; §50 `ob ΔΔX constantem` = vì
+  ΔΔX là hằng; `Quodsi autem`.
+- PDF 79: `differentiarum quarumvis` = differentia bất kỳ (bản cũ đọc `quartumus`, dịch "bậc
+  thứ tư"); §52 `ita quidem, ut` = cụ thể là; `Quin etiam` = Hơn thế nữa.
+
+**Công thức / bảng:**
+- PDF 69, §41: INDICES in 1–6, không có `&c.`; DIFFERENTIAE in năm chữ `b` rồi `&c.` (bản cũ sáu).
+- PDF 70, §42: dòng TERMINI có `&c.` ở cuối (in lệch xuống ngang DIFFER. I.).
+- PDF 71, §43: câu mở in `d, d, d, &c.` — đúng vì là hằng; bảng TERMINI thêm $a^{\mathrm{V}}$,
+  DIFFER. I. thêm $b^{\mathrm{IV}}$; DIFFER. III. `&c,` → `&c.` như in.
+- PDF 73, §45: mẫu số in `1. 2. 3. 4` (bốn thừa số, có dấu ×), đúng (chuỗi 5, 7, 9, … cho số
+  hạng thứ 6 = 15).
+- PDF 75, §47: thang quan hệ tổng quát in $\frac{n}{1}, -\frac{n(n-1)}{1\cdot2}, +\dots, -\dots$
+  — bản cũ thiếu dấu trừ ở số hạng thứ hai.
+
+**Quyết định về lỗi in:** trong phần đã soát không còn lỗi in nào được xác nhận. **Rút lại
+(đọc sai, bản in đúng):** `d, d^I, d` ở §43; mẫu `1·2·3·4·5` ở §45; số `7` mòn ở INDICES trang
+41; "bảy số hạng" ở bảng trang 43; chữ bắt `§1. Hanc` (thật là `51. Hanc`, số 5 kiểu cổ giống
+s dài); `quartumus` và `negatius` ở trang 51 (thật là `quarumuis`, `negatiuos`); 19900 là "số
+hạng tổng kết" và tổng $2x^3/3 - x^2/2$ (bản in nói số hạng thứ một trăm; công thức tổng không
+đúng cho chuỗi $2xx - x$). Các mục Phần 1–3 ở trên đã gạch bỏ; hai mục `quartumus`/`negatius`
+chỉ có trong ghi chú dịch giả của chương (thuộc đợt §51, chưa có mục ledger riêng), đã viết lại
+ở đó. Dạng `aut denique` ở §42 chưa xác nhận, xem dưới.
+
+### Nghi vấn còn mở sau đợt rà soát 2026-09-28
+
+Chưa đóng; cần soi lại ở độ phóng cao hơn hoặc bằng bản scan khác:
+
+1. **Lời tựa, PDF 28 (tr. xxiv), errata dòng 2:** số mũ của $(a-1)$ ở vế *lege* in mờ; đọc là
+   2, khớp phép tính ở tr. in 513 (PDF 541, §192). Xác nhận lại khi dịch tới trang 513.
+2. **Chương I, PDF 45 (tr. 17), §15:** số mũ cuối dòng $\beta$ nhòe, ghi `[OCR không rõ]`.
+3. **Chương I, PDF 49 (tr. 21), §19:** hệ số của số hạng $\omega^2$ nhòe, đọc là 3 nhưng không
+   chắc (bản cũ ghi 2). Kết luận "số hạng này in sai" ở Phần 6 phụ thuộc vào cách đọc này.
+4. **Chương I, PDF 56 (tr. 28), §26–§27:** số mũ vế trái dòng `seu Σx…` nhòe; giữ $x^3$ theo lần
+   soi trước, ghi `[OCR không rõ]`. Kết luận "vế trái in sai" ở Phần 13 phụ thuộc vào cách đọc này.
+5. **Chương II, PDF 71 (tr. 43), §42, dạng `aut denique`:** hệ số in rất nhỏ và số mũ của chữ
+   `a` đầu trong ngoặc ở giới hạn đọc được. Giữ cách đọc `1/4` và $a^{\mathrm{III}}$, chưa xác
+   nhận; nếu đúng thì đây là lỗi in (đúng phải là `1/2` và $a^{\mathrm{II}}$).
+6. **Chương II, PDF 73 (tr. 45), §44, dòng DIFFER. III.:** số mũ trên chữ `d` thứ hai mờ, trông
+   giống số mũ `II` của chữ thứ ba; giữ $d^{\mathrm{I}}$ theo quy luật, đã ghi chú trong chương.
+7. **Chương II, PDF 75 (tr. 47), §47:** bản in viết `pro seriebus primi ordinis`. Đúng về toán
+   (với chuỗi bậc nhất thì $d$, $e$ cũng bằng 0), giữ nguyên; ghi lại để người soát sau khỏi
+   tưởng là lỗi.

@@ -33,9 +33,12 @@ Euler in nhiều chỗ sai, và ông tự liệt kê một danh sách ở trang 
 in xxiv):
 
 ```text
-pag. 509. lin 3. loco 2ZZxx lege 2xx+2x
-pag. 513. lin 14. loco (x^4−a) lege …
+pag. 509. lin 3. loco z = xx lege z = xx + x
+pag. 513. lin 14. loco (z′−z)/(a^x (a−1)^2) lege (z′−az)/(a^x (a−1)^2)
 ```
+
+(Đọc bằng mắt trên scan PDF 28 ngày 2026-09-28; số mũ của $(a-1)$ ở vế *lege* in mờ, đọc là
+2, khớp phép tính ở trang in 513, §192. Xem mục lời tựa trong `TRANSLATION_LEDGER.md`.)
 
 Cách xử lý:
 

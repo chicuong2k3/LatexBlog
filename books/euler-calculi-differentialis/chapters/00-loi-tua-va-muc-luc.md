@@ -6,8 +6,8 @@ slug: "loi-tua-va-muc-luc"
 status: chua-hoan-thanh
 ---
 
-<!-- Nguồn: PDF 5-28, tức trang in i-xxiv. Bản dịch đã đối chiếu ảnh scan ở mọi chỗ mang
-     công thức tỉ lệ; xem TRANSLATION_LEDGER.md, mục "Ghi chú dịch". -->
+<!-- Nguồn: PDF 5-28, tức trang in i-xxiv. Bản dịch đã đối chiếu ảnh scan từng trang PDF 5-28;
+     xem TRANSLATION_LEDGER.md, mục "Ghi chú dịch". -->
 
 # Nền tảng phép tính vi phân
 
@@ -15,186 +15,186 @@ status: chua-hoan-thanh
 
 **Tác giả: LEONHARD EULER**
 
-Giám đốc Viện Hàn lọm Khoa học và Hệ nữ văn lớn vực Vương quốc Phổ, giáo sư danh dực Viện
-Hàn lọm Khoa học Đế quốc thiên vĩ, ủy viên của các học viện danh tiếng ở Paris và London.
+Giám đốc Viện Hàn lâm Khoa học và Văn chương Hoàng gia Phổ, giáo sư danh dự của Viện Hàn lâm Khoa học Đế quốc Petropolis, hội viên các Viện Hàn lâm Hoàng gia Paris và London.
 
-In tại Viện Hàn lọm Khoa học Đế quốc thiên vĩ, Sankt-Pêtêrbơng. Năm 1755.
+Viện Hàn lâm Khoa học Đế quốc Petropolis (Sankt-Peterburg) chịu phí tổn in, năm 1755.
 
-# Praefatio
+<!-- PDF 6: trang lót, chỉ có dấu thư viện BIBLIOTHECA REGIA MONACENSIS; không có chữ nào của sách. -->
+
+# Lời tựa
 
 <!-- PDF 7, trang in III -->
 
-Cho nên Calculus Differentialis, và nói chung là cả Analysin Infinitorum, việc trình bày cho
-những ai chưa được trang bị đủ về kiến thức này là điều khó khăn đến mức gần như không thể
-làm được: cho đến tận đây, như thường thấy ở những môn học khác, người ta vẫn có thể tiện lợi
-bắt đầu phần trình bày bằng các định nghĩa. Không phải là calculus này hoàn toàn không có
-định nghĩa nào; nhưng vì để hiểu được định nghĩa ấy thì cần tới những khái niệm vừa không
-quen thuộc trong đời sống thường, vừa ít được dùng ngay cả trong Analysi finitorum, mà
-chỉ được khai triển và giải thích dần trong phần trình bày Calculus Differentialis. Do đó
-định nghĩa của nó không thể thấy rõ trước khi các nguyên lý của nó đã được trình bày thật sự
-rõ ràng. Trước hết, calculus này xoay quanh các lượng biến thiên: dù cho mọi lượng theo bản
-chất đều có thể tăng và giảm vô hạn.
+Calculus Differentialis là gì, và nói chung Analysis Infinitorum là gì? Với những ai chưa hề
+có chút hiểu biết nào về nó thì điều ấy khó lòng giải thích được; và ở đây không thể, như
+thường làm ở các môn học khác, lấy một định nghĩa làm điểm khởi đầu cho phần trình bày một
+cách thuận tiện. Không phải là calculus này hoàn toàn không có định nghĩa; nhưng muốn hiểu
+định nghĩa ấy thì cần tới những khái niệm ít quen dùng không chỉ trong đời sống thường ngày,
+mà ngay cả trong chính Analysis finitorum, những khái niệm mà rốt cuộc chỉ được khai triển
+và giải thích trong khi trình bày Calculus Differentialis; vì thế định nghĩa của nó không thể
+nắm được trước khi các nguyên lý của nó đã được nhìn thấu đủ rõ ràng. Vậy trước hết, calculus
+này xoay quanh các lượng variabiles: vì tuy mọi lượng, theo bản chất của nó, đều có thể tăng
+và giảm tới vô hạn;
 
 <!-- PDF 8, trang in IV -->
 
-tuy nhiên, vì calculus hướng tới một cái vô cùng nhất định nào đó, người ta hình dung rằng có
-những lượng giữ nguyên một độ lớn không đổi, còn những lượng khác thì biến thiên qua mọi bậc
-tăng và giảm. Để gọi tên sự phân biệt này, những lượng trước gọi là *constantes*, những lượng
-sau gọi là *variabiles*; và thế sự phân biệt ấy không nằm ở bản chất của sự vật, mà ở bản chất
-của câu hỏi mà calculus ám tới.
+nhưng khi calculus được hướng tới một mục đích nhất định nào đó, thì có những lượng được hình
+dung là luôn giữ nguyên một độ lớn, còn những lượng khác thì biến thiên qua mọi mức tăng và
+giảm. Để đánh dấu sự phân biệt ấy, những lượng trước thường được gọi là *constantes*, những
+lượng sau là *variabiles*; thành thử sự khác biệt này nằm không phải ở bản chất của sự vật cho
+bằng ở tính chất của câu hỏi mà calculus được áp vào.
 
-Vì sự phân biệt giữa lượng constans và lượng variabilis được minh họa rõ nhất bằng một ví
-dụ, ta hãy xét việc một quả cầu bắn ra từ một khẩu pháo chiến đánh bằng thuốc nổ; và ví dụ
-này có vẻ đặc biệt thích hợp để làm sáng vẻn đẹp ở đây. Có nhiều lượng xuất hiện trong đó,
-và tỷ lệ giữa chúng là điều cần giữ trong cuộc nghiên cứu này: thứ nhất là lượng thuốc nổ;
-thứ hai là độ cao của khẩu pháo trên mặt phẳng ngang; thứ ba là chiều dài đạn trên mặt
-phẳng ngang; thứ tư là thời gian trong suốt quá trình quả cầu bay trong không khí. Và nếu
-không thực hiện thí nghiệm với chính cái khẩu pháo ấy, còn phải tính thêm chiều dài của nó
-cùng trọng lượng quả cầu vào nữa. Nhưng ở đây ta hãy tránh bận tâm tới sự khác nhau giữa
-các loại pháo và các loại cầu, kẻo rơi vào những câu hỏi quá rắc rối. Vậy nếu giữ mãi không
-đổi
+Vì sự khác biệt giữa lượng constans và lượng variabilis sẽ được minh họa rõ nhất bằng một ví
+dụ, ta hãy xét cú bắn một quả cầu ra từ một khẩu pháo chiến nhờ sức nổ của thuốc súng; bởi ví
+dụ này có vẻ đặc biệt thích hợp để làm sáng tỏ vấn đề. Vậy ở đây xuất hiện nhiều lượng mà
+quan hệ giữa chúng phải được tính đến trong cuộc khảo sát này: thứ nhất là lượng thuốc súng;
+rồi độ nâng của nòng pháo so với đường chân trời; thứ ba là tầm xa của cú bắn trên mặt phẳng
+nằm ngang; thứ tư là thời gian quả cầu đã bắn ra còn ở trong không khí. Và nếu các thí nghiệm
+không được tiến hành với cùng một khẩu pháo, thì còn phải đưa thêm vào tính toán chiều dài của
+nó cùng trọng lượng quả cầu. Nhưng ở đây ta hãy gạt sang bên sự khác nhau về pháo và về quả
+cầu, để khỏi rơi vào những câu hỏi quá rối rắm. Vậy nếu, giữ mãi cùng một
 
 <!-- PDF 9, trang in V -->
 
-lượng thuốc nổ, còn độ cao của khẩu pháo thì liên tục thay đổi, và độ dài phóng tới cùng với
-thời gian quả cầu đi qua không khí đều phải xác định; trong câu hỏi này, lượng thuốc nổ hay
-lực xung kích sẽ là một lượng constans, còn độ cao của khẩu pháo, cùng độ dài phóng tới và
-thời lượng của nó, thì phải quy về những lượng variabiles. Nếu ta muốn định nghĩa những điều
-này ở mọi bậc độ cao, thì từ đó sẽ thấy rõ những biến đổi lớn nhỏ nào trong độ dài và thời
-lượng phóng tới phát sinh ra từ mọi sự biến thiên của độ cao. Sẽ có một câu hỏi khác nữa, nếu
-giữ nguyên độ cao của khẩu pháo, còn lượng thuốc nổ thì liên tục thay đổi, và những biến đổi
-do đó mà sinh ra trong phóng tới thì phải xác định: ở đây độ cao của khẩu pháo là một lượng
-constans, trái lại lượng thuốc nổ, cùng độ dài và thời lượng phóng tới, là những lượng
-variabiles. Như vậy thấy rõ, khi cách đặt câu hỏi thay đổi thì cùng một lượng ấy lại được
-xếp vào *constantes* lúc này, vào *variabiles* lúc khác. Đồng thời, từ đây cũng hiểu ra điều
-đáng chú ý nhất trong việc này, là các lượng variabiles phải phụ thuộc vào nhau như thế nào, để
-khi một lượng thay đổi thì những lượng còn lại tất yếu phải chịu biến đổi theo. Chẳng hạn
-trong trường hợp trước, khi lượng thuốc nổ
+lượng thuốc súng, độ nâng của pháo liên tục thay đổi, và cần tìm tầm xa của cú bắn cùng thời
+gian quả cầu bay qua không khí, thì trong câu hỏi này lượng thuốc súng, hay lực đẩy, sẽ là một
+lượng constans, còn độ nâng của pháo cùng tầm xa của cú bắn và thời gian của nó sẽ phải xếp
+vào các lượng variabiles; bởi ta muốn xác định những điều này cho mọi mức độ nâng, để từ đó
+biết được những thay đổi lớn đến đâu trong tầm xa và thời gian của cú bắn nảy sinh từ mọi biến
+đổi của độ nâng. Nhưng sẽ là một câu hỏi khác nếu, giữ nguyên độ nâng của pháo, lượng thuốc
+súng liên tục thay đổi, và phải xác định những thay đổi do đó dội sang cú bắn: vì khi ấy độ
+nâng của pháo sẽ là lượng constans, còn ngược lại lượng thuốc súng, cùng tầm xa và thời gian
+của cú bắn, là những lượng variabiles. Như vậy rõ ràng là khi trạng thái của câu hỏi thay đổi
+thì cùng một lượng có thể lúc được kể vào hàng *constantes*, lúc vào hàng *variabiles*. Đồng
+thời từ đây cũng hiểu được điều cần chú ý nhất trong việc này: các lượng variabiles phụ thuộc
+vào nhau như thế nào, sao cho khi một lượng thay đổi thì những lượng còn lại tất yếu nhận lấy
+những thay đổi. Chẳng hạn trong trường hợp trước, trong đó lượng thuốc súng
 
 <!-- PDF 10, trang in VI -->
 
-giữ nguyên không đổi, thì độ dài và thời lượng phóng tới thay đổi theo khi độ cao của khẩu
-pháo thay đổi; do đó chúng là những lượng variabiles phụ thuộc vào độ cao của khẩu pháo, và
-khi lượng này thay đổi thì chúng cũng chịu những biến đổi nhất định. Còn trong trường hợp
-sau, chúng phụ thuộc vào lượng thuốc nổ, và sự thay đổi của lượng này phải sinh ra trong chúng
-những biến đổi tương ứng.
+vẫn giữ nguyên, khi độ nâng của pháo thay đổi thì tầm xa và thời gian của cú bắn cũng thay
+đổi; vậy tầm xa và thời gian của cú bắn là những lượng variabiles phụ thuộc vào độ nâng của
+pháo, và khi độ nâng thay đổi thì chúng đồng thời chịu những thay đổi nhất định. Còn trong
+trường hợp sau, chúng phụ thuộc vào lượng thuốc súng, mà sự thay đổi của lượng này phải sinh
+ra những thay đổi nhất định nơi chúng.
 
-Những lượng mà theo cách này phụ thuộc vào những lượng khác, tức là phải nhận lấy những biến
-đổi khi những lượng kia thay đổi, thường được gọi là *functiones* của chúng. Danh xưng ấy rất
-phổ biến và bao hàm mọi cách, theo đó một lượng có thể được xác định bởi những lượng khác.
-Vậy nếu $x$ biểu thị một lượng variabilis, thì mọi lượng nào tùy thuộc vào $x$, hay được
-$x$ xác định, đều gọi là các *functiones* của nó. Những thứ thuộc loại ấy là bình phương của nó
-$xx$, mọi lũy thừa bất kỳ của nó, cũng như những lượng tùy thuộc vào những lượng này. Thậm
-chí cả những lượng *transcendentes* nữa, nói chung là mọi thứ gì tùy thuộc vào $x$ theo cách
-mà khi $x$ tăng hay giảm thì chúng cũng biến đổi theo. Từ đây sinh ra câu hỏi, điều cần tìm
-là: nếu lượng $x$ đã cho được tăng hoặc giảm bởi một lượng nào đó, thì mỗi functio của nó
-nhận lấy tăng hay giảm bao nhiêu.
+Những lượng phụ thuộc vào các lượng khác theo cách này, tức là khi những lượng kia thay đổi
+thì chính chúng cũng chịu thay đổi, thường được gọi là *functiones* của những lượng kia; danh
+xưng ấy có phạm vi rất rộng, và bao hàm trong nó mọi cách mà một lượng có thể được xác định
+qua các lượng khác. Vậy nếu $x$ biểu thị một lượng variabilis, thì mọi lượng phụ thuộc vào $x$
+theo bất cứ cách nào, hay được xác định qua nó, đều gọi là *functiones* của nó. Thuộc loại
+này là bình phương $xx$ của nó, hay bất kỳ lũy thừa nào khác, cũng như những lượng được ghép
+từ chúng theo bất cứ cách nào; thậm chí cả những lượng *transcendentes*, và nói chung mọi lượng
+phụ thuộc vào $x$ đến mức khi $x$ tăng hay giảm thì chính chúng cũng nhận lấy thay đổi. Từ đây
+nảy sinh câu hỏi, trong đó người ta hỏi: nếu lượng $x$ được tăng hay giảm đi một lượng cho
+trước, thì mỗi functio của nó do đó thay đổi bao nhiêu,
 
 <!-- PDF 11, trang in VII -->
 
-Ở những trường hợp đơn giản, câu hỏi này dễ giải ngay: nếu lượng $x$ được tăng bởi lượng
-$\omega$, thì bình phương của nó $xx$ sẽ nhận lấy tăng thêm
-
-$$
-2x\omega + \omega^2;
-$$
-
-do đó lượng tăng của chính $x$ sẽ có tỷ lệ với lượng tăng của $xx$ là $\omega$ với
-$2x\omega + \omega\omega$, tức là $1$ với $2x + \omega$. Cũng theo cách ấy, trong những
-trường hợp khác, tỷ lệ giữa lượng tăng của $x$ với lượng tăng hay giảm mà functio nào đó nhận
-lấy từ đó thường được xem là đã biết. Nhưng việc nghiên cứu tỷ lệ của những lượng tăng như
-thế không chỉ có tầm quan trọng lớn nhất, mà còn là nền tảng của toàn bộ Analysin
-Infinitorum.
-
-<!-- PDF 11, trang in VII (tiếp) -->
-
-Để điều này hiện ra rõ hơn, hãy lấy ví dụ bình phương $xx$ đã nói trên, lượng tăng của nó
-là $2x\omega + \omega^2$; lượng này, như ta đã thấy khi bản thân lượng $x$ tăng thêm $\omega$,
-tuân theo tỷ lệ $\omega + \omega$ với $1$. Từ đó thấy rõ, lượng tăng $\omega$ càng nhỏ thì tỷ
-lệ ấy càng tiến gần tới tỷ lệ $2x$ với $1$; dù vậy nó không đi tới hẳn tỷ lệ ấy trước khi
-chính lượng tăng $\omega$ hoàn toàn tan biến. Như vậy ta hiểu rằng nếu lượng tăng $\omega$
-của lượng variabilis $x$ đi tới không, thì lượng tăng do đó sinh ra ở bình phương $xx$ của nó
-cũng tan biến, và lượng tăng ấy giữ với độ lớn vô cùng nhỏ một tỷ lệ nhất định, tức là $2x$
-với $1$; và điều đã nói ở đây về bình phương thì cũng phải hiểu là nói về mọi functio khác
-của $x$. Quả thật, lượng tăng xuất hiện trong chúng, khi bản thân lượng $x$ nhận lấy một lượng
-tăng tan biến, sẽ giữ một tỷ lệ nhất định và ấn định đối với chính lượng tăng ấy.
-
-<!-- PDF 12, trang in VIII -->
-
-Và chính theo cách ấy ta được dẫn tới định nghĩa của Calculus Differentialis, tức là phương
-pháp xác định tỷ lệ của các lượng tăng tan biến mà các functio bất kỳ nhận lấy, khi cho lượng
-biến thiên — lượng mà chúng là các functio của nó — nhận lấy một lượng tăng tan biến. Như
-vậy, sau khi có định nghĩa ấy thì bản chất đích thực của calculus differentialis sẽ dễ dàng
-bộc lộ, và sẽ dễ dàng lắp ghép lại cho tất cả những ai không lạ gì trong lĩnh vực này, để
-những người ấy dễ dàng nhận ra điều đó.
-
-<!-- PDF 12, trang in VIII (tiếp) -->
-
-Vậy calculus differentialis không phải bận tâm tới việc tìm kiếm chính những lượng tăng tan
-biến ấy, dù chúng bằng không, mà bận tâm tới tỷ lệ và tỷ số giữa chúng. Và vì những tỷ lệ
-ấy được biểu thị bằng các lượng hữu hạn, nên ở đây calculus cũng phải xét tới các lượng
-hữu hạn. Dù sao, dù theo thói lệ thường được truyền tụng, các lượng tăng tan biến ấy tưởng
-như
-
-<!-- PDF 13, trang in IX -->
-
-phải được xác định và đã được cho trước, chúng thì chưa bao giờ được xét một cách tuyệt đối,
-mà các kết luận luôn luôn được suy ra từ tỷ lệ giữa chúng.
-
-Cũng theo cách tương tự, calculus integralis được so sánh như sau, và sẽ thuận lợi hơn nếu
-định nghĩa rằng nó là phương pháp tìm các functio mà lượng tăng tan biến của chúng đã biết.
-Nhưng để những tỷ lệ ấy dễ thu thập hơn, và dễ được biểu thị trong calculus, chính những lượng
-tăng tan biến đó, dù bằng không, vẫn thường được biểu thị bằng những dấu hiệu nhất định; và
-khi đã dùng chúng thì không còn lý do gì để không đặt cho chúng những cái tên nhất định. Vậy
-chúng được gọi là *differentialia*; chúng cũng được gọi là *infinite parua* khi cùng đi với
-lượng mà chúng được lấy ra. Chúng vì thế phải được hiểu theo bản chất là không, để bị xem
-ngang bằng với không hay với cái rỗng. Vậy nếu lượng $x$ được ban cho lượng tăng $\omega$ để
-trở thành $x + \omega$, thì bình phương của nó $xx$ sẽ trở thành
-
-$$
-xx + 2x\omega + \omega\omega,
-$$
-
-và do đó lượng tăng mà nó nhận lấy là
+tức là nhận lấy một lượng tăng hay lượng giảm bao nhiêu. Trong những trường hợp đơn giản hơn,
+câu hỏi này quả dễ giải: vì nếu lượng $x$ được tăng thêm lượng $\omega$, thì bình phương $xx$
+của nó do đó nhận lượng tăng
 
 $$
 2x\omega + \omega\omega;
 $$
 
-nên lượng tăng của chính $x$, tức là $\omega$, sẽ có tỷ lệ với lượng tăng bậc hai ấy, tức là
-$2x\omega + \omega^2$, như $1$ với $2x + \omega$; tỷ lệ này đi tới tỷ lệ $1$ với $2x$, và
-chỉ khi $\omega$ tan biến thì mới đi tới. Vậy hãy đặt
+và như vậy lượng tăng của $x$ sẽ có tỷ lệ với lượng tăng của $xx$ như $\omega$ với
+$2x\omega + \omega\omega$, tức là như $1$ với $2x + \omega$. Tương tự, trong những trường hợp
+khác người ta thường xét tỷ lệ giữa lượng tăng của $x$ với lượng tăng, hay lượng giảm, mà mỗi
+functio của nó do đó nhận được. Mà việc khảo sát tỷ lệ của những lượng tăng như thế không chỉ
+có tầm quan trọng lớn nhất, mà toàn bộ Analysis infinitorum còn dựa trên nó.
+
+<!-- PDF 11, trang in VII (tiếp) -->
+
+Để điều này hiện ra rõ hơn, ta hãy lấy ví dụ bình phương $xx$ ở trên: lượng tăng
+$2x\omega + \omega\omega$ của nó, nhận được khi chính lượng $x$ tăng thêm lượng tăng $\omega$,
+ta đã thấy là có tỷ lệ với lượng tăng ấy như $2x + \omega$ với $1$. Từ đó rõ ràng là lượng tăng
+$\omega$ được lấy càng nhỏ thì tỷ lệ ấy càng tiến gần tới tỷ lệ $2x$ với $1$; tuy nhiên nó
+không hoàn toàn chuyển thành tỷ lệ này trước khi lượng tăng $\omega$ ấy tan biến hẳn. Từ đây
+ta hiểu rằng, nếu lượng tăng $\omega$ của lượng variabilis $x$ trở thành không, thì lượng tăng
+của bình phương $xx$ của nó
+
+<!-- PDF 12, trang in VIII -->
+
+sinh ra từ đó tuy cũng tan biến, nhưng vẫn giữ với lượng tăng kia tỷ lệ như $2x$ với $1$; và
+điều đã nói ở đây về bình phương phải được hiểu cho mọi functio khác của $x$: bởi các lượng
+tăng tan biến mà chúng nhận được, khi chính lượng $x$ nhận một lượng tăng tan biến, sẽ giữ với
+lượng tăng ấy một tỷ lệ nhất định và gán được.
+
+Và theo cách ấy ta đã được dẫn tới định nghĩa của Calculus Differentialis: nó là **phương pháp
+xác định tỷ lệ của các lượng tăng tan biến mà các functio bất kỳ nhận được, khi lượng
+variabilis mà chúng là functio của nó được gán một lượng tăng tan biến**. Rằng định nghĩa này
+chứa đựng, và hơn thế nữa vét cạn, bản chất thật của calculus differentialis, thì những ai không
+phải là người lạ trong lĩnh vực này sẽ dễ dàng thấy rõ.
+
+<!-- PDF 12, trang in VIII (tiếp) -->
+
+Vậy calculus differentialis không bận tâm vào việc truy tìm chính những lượng tăng tan biến
+ấy, vì chúng là không, cho bằng vào việc xem xét tỷ lệ và tỷ số giữa chúng với nhau; và vì
+những tỷ lệ này được biểu thị bằng các lượng hữu hạn, nên cũng phải coi calculus này là xoay
+quanh các lượng hữu hạn. Vì tuy các quy tắc, như chúng thường được truyền dạy, có vẻ được
+thiết kế để xác định
+
+<!-- PDF 13, trang in IX -->
+
+những lượng tăng tan biến ấy, song chưa bao giờ các kết luận được rút ra từ chúng khi xét một
+cách tuyệt đối, mà luôn luôn từ tỷ lệ giữa chúng.
+
+Còn calculus integralis thì cũng có tình trạng tương tự; định nghĩa thích hợp nhất cho nó là
+nói rằng nó là **phương pháp, từ tỷ lệ đã biết của các lượng tăng tan biến, tìm ra chính những
+functio mà chúng là lượng tăng**. Nhưng để các tỷ lệ này dễ thu thập hơn và dễ biểu diễn trong
+phép tính hơn, chính những lượng tăng tan biến ấy, dù là không, vẫn thường được ký hiệu bằng
+những dấu nhất định; và khi đã dùng các dấu ấy thì chẳng có gì ngăn việc đặt cho chúng những
+tên gọi nhất định. Vậy chúng được gọi là *differentialia*; và vì chúng không có độ lớn, chúng
+cũng được gọi là *infinite parva*; do đó, theo bản chất của chúng, chúng phải được hiểu sao cho
+được coi là hoàn toàn không, hay bằng không. Như vậy, nếu gán cho lượng $x$ lượng tăng $\omega$
+để nó thành $x + \omega$, thì bình phương $xx$ của nó sẽ thành
+
+$$
+xx + 2x\omega + \omega\omega,
+$$
+
+và do đó nhận lượng tăng
+
+$$
+2x\omega + \omega\omega;
+$$
+
+vì thế lượng tăng của $x$, tức $\omega$, sẽ có tỷ lệ với lượng tăng của bình phương, tức
+$2x\omega + \omega\omega$, như $1$ với $2x + \omega$; tỷ lệ này chuyển thành $1$ với $2x$ chỉ
+khi $\omega$ tan biến. Vậy hãy cho
 
 <!-- PDF 14, trang in X -->
 
-$\omega = 0$; thì tỷ lệ của những lượng tăng tan biến ấy, mà calculator differentialis nhắm
-tới, chắc chắn là $1$ với $2x$; và ngược lại, tỷ lệ này cũng sẽ không tương ứng với sự thật,
-nếu lượng tăng ấy là $\omega$ thật sự không tan biến, mà hoàn toàn trở nên ngang bằng với
-không. Vậy cái rỗng ấy mà ký hiệu bằng $\omega$, vì nó biểu thị lượng tăng của lượng $x$ (nó
-có tỷ lệ với lượng tăng của bình phương $xx$ là $1$ với $2x$), thì nó là lượng tăng của bình
-phương $xx$ ấy, và do đó cũng ngang bằng không; từ đó cùng lúc thấy rõ việc triệt tiêu những
-lượng tăng này không ngăn cản việc tỷ lệ giữa chúng — vốn là $1$ với $2x$ — được xác định.
-Cái rỗng ấy, giờ đã được biểu thị bằng chữ $\omega$ trong calculus differentialis, vì ở đó nó
-được nhắm tới như lượng tăng của lượng $x$, thì được gọi là $dx$, và differentiale của nó
-được gọi như vậy; và do đó, thay $\omega$ bằng $dx$, differentiale của $xx$ sẽ là $2x\,dx$. Cũng
-theo cách ấy, chứng minh được rằng differentiale của lũy thừa ba $x^3$ là $3x^2\,dx$, và
-nói chung differentiale của lũy thừa bậc $n$ là $nx^{n-1}\,dx$.
+$\omega = 0$, thì tỷ lệ của các lượng tăng tan biến ấy, là thứ duy nhất được xét trong calculus
+differentialis, quả thật là như $1$ với $2x$; và ngược lại, tỷ lệ này sẽ không phù hợp với sự
+thật nếu lượng tăng $\omega$ ấy không thật sự tan biến và trở nên hoàn toàn bằng không. Vậy nếu
+cái không được chỉ bởi $\omega$ này biểu thị lượng tăng của lượng $x$, thì vì lượng tăng ấy có
+tỷ lệ với lượng tăng của bình phương $xx$ như $1$ với $2x$, lượng tăng của bình phương $xx$ sẽ
+là $= 2x\omega$, và do đó cũng bằng không; từ đó đồng thời thấy rõ rằng việc triệt tiêu các
+lượng tăng này không ngăn cản tỷ lệ giữa chúng, là như $1$ với $2x$, được xác định. Cái không
+mà ở đây được biểu diễn bằng chữ $\omega$ thì trong calculus differentialis, vì nó được xét như
+lượng tăng của lượng $x$, thường được biểu diễn bằng dấu $dx$ và gọi là differentiale của nó;
+và khi đặt $dx$ thay cho $\omega$, differentiale của $xx$ sẽ là $2x\,dx$. Tương tự, chứng minh
+được rằng differentiale của lập phương $x^3$ sẽ là $= 3xx\,dx$, và nói chung differentiale của
+mọi lũy thừa $x^n$ sẽ là $= nx^{n-1}\,dx$.
 
 <!-- PDF 14, trang in X (tiếp) -->
 
-Còn những functio khác bất kỳ của $x$ nào được đưa ra, thì trong calculus differentialis
-người ta theo đúng quy tắc đã dạy để tìm differentialia của chúng; nhưng phải nhớ rằng, vì
-những differentia này tuyệt đối
+Còn dù đưa ra những functio nào khác của $x$ đi nữa, trong calculus differentialis đều có
+truyền dạy các quy tắc để tìm differentialia của chúng; nhưng phải luôn ghi nhớ rằng, vì những
+differentialia này tuyệt đối là
 
 <!-- PDF 15, trang in XI -->
 
-bằng không, nên không thể suy ra từ chúng điều gì khác, trừ khi bằng tỷ lệ giữa chúng, tỷ lệ
-mà dĩ dẩu rằng luôn quy về được với các lượng hữu hạn.
+không, nên từ chúng không kết luận được gì khác ngoài tỷ lệ giữa chúng với nhau, những tỷ lệ
+quả thật quy về được các lượng hữu hạn.
 
-Vậy, khi các nguyên lý của Calculus differentialis đã được xác lập theo cách này — cách duy
-nhất tương ứng với lý trí — thì mọi phản biện thường được đưa ra chống lại calculus này tự
-động sụp đổ. Dù vậy chúng vẫn giữ được toàn bộ sức lực, nếu các differentialia hay các lượng
-vô cùng nhỏ không bị hủy hoàn toàn.
+Mà khi các nguyên lý của Calculus differentialis được xác lập theo cách này, là cách duy nhất
+phù hợp với lý trí, thì mọi lời chê bai thường được đưa ra chống lại calculus này tự sụp đổ;
+song chúng hẳn sẽ giữ nguyên toàn bộ sức nặng nếu các differentialia, hay infinite parva, không
+bị triệt tiêu hoàn toàn.
 
 > **[Chú giải]**
 >
@@ -211,7 +211,7 @@ vô cùng nhỏ không bị hủy hoàn toàn.
 > \lim_{\omega \to 0} \frac{\omega}{2x\omega + \omega^2} = \frac{1}{2x}
 > $$
 >
-> Chính Euler đã viết lời này ở trang in IX, chỉ dùng chữ mà không dùng phép giới hạn: lượng
+> Chính Euler đã viết lời này ở trang in VII, chỉ dùng chữ mà không dùng phép giới hạn: lượng
 > tăng $\omega$ càng nhỏ thì tỷ lệ ấy càng gần $2x$ với $1$. Ông cũng nói thẳng rằng tỷ lệ
 > ấy "không đi tới hẳn" cho tới khi $\omega$ tan biến — nghĩa là bản thân tỷ lệ $1 : 2x$ chỉ
 > là cái được xác định *qua* quá trình đó.
@@ -219,190 +219,189 @@ vô cùng nhỏ không bị hủy hoàn toàn.
 > Khác biệt về sau nằm ở chỗ Euler không cần định nghĩa giới hạn, vì ông không dùng giới hạn ở
 > đâu cả. Ông dựng cả calculus trên quan hệ thuần số học giữa những đại lượng hữu hạn, và coi
 > tỷ lệ giữa hai lượng cùng tan biến là một vật thể hoàn toàn xác định. Đổi lại, ông phải
-> trả lời bằng văn bản mọi phản biện, vì không có định nghĩa nào để đỡ — đó chính là hai
-> trang trang in XI–XIII mà ta vừa dịch.
+> trả lời bằng văn bản mọi phản biện, vì không có định nghĩa nào để đỡ — đó chính là
+> ba trang in XI–XIII mà ta vừa dịch.
 
 <!-- PDF 15, trang in XI (tiếp) -->
 
-Nhiều người đã trước đây trình bày về Calculus differentialis thì thấy rằng nên tách
-differentialia khỏi cái rỗng tuyệt đối, và lập ra một thứ tự riêng biệt của các lượng vô cùng
-nhỏ, vốn không hoàn toàn tan biến, mà giữ lại một lượng nào đó tuy nhỏ đến mức nhỏ hơn mọi
-lượng có thể gán được. Vậy thì có lý do mà nên bỏ qua sự chặt chẽ hình học, và coi những kết
-luận ở đây là đáng ngờ, bởi vì những lượng vô cùng nhỏ dạng ấy đã bị bỏ qua. Quả thật, dù
-những lượng vô cùng nhỏ tưởng chừng nhỏ đến mức tốt xa kia, thì khi bị loại bỏ, không chỉ
-riêng lẻ mà cả nhiều lượng, thậm chí vô số lượng cùng lúc, sai số từ đó cuối cùng có thể trở
-nên khổng lồ.
+Tuy vậy, nhiều người đã truyền dạy các quy tắc của Calculus differentialis lại thấy nên tách
+differentialia khỏi cái không tuyệt đối, và lập ra một hạng riêng những lượng infinite parva,
+không tan biến hẳn mà giữ lại một độ lớn nào đó, tuy nhỏ hơn mọi lượng gán được. Vậy người ta
+có lý khi phản bác họ rằng sự chặt chẽ hình học bị xem nhẹ, và các kết luận rút ra từ đó, vì đã
+bỏ qua những infinite parva như thế, đáng bị ngờ vực: bởi dù những infinite parva ấy được hình
+dung nhỏ bé đến đâu, thì khi không chỉ từng cái riêng lẻ mà cả nhiều, thậm chí vô số cái cùng
+lúc bị vứt bỏ, rốt cuộc có thể sinh ra một sai số khổng lồ. Họ cố bẻ gãy phản bác này, nhưng
+là sai lầm, bằng những ví dụ trong đó người ta rút ra bằng Calculus differentialis cùng những
+kết luận như bằng Hình học
 
 <!-- PDF 16, trang in XII -->
 
-Còn phản biện này thì những ví dụ mà ta dùng để dựng cùng kết luận ấy qua Calculus
-differentialis và qua hình học đều cố ý làm sai lệch nó: vì nếu những lượng vô cùng nhỏ mà
-trong calculus bị bỏ qua không phải là cái rỗng, thì sai số tất yếu phải sinh ra, và lớn dần
-theo những gì bị bỏ qua. Điều này còn xảy ra nữa, thì sai số phải quy cho lỗi của chính
-calculus, vì đôi khi các sai số này được các sai số khác bù lại; và như vậy thì chính calculus
-đó mới được giải thoát khỏi mọi nghi ngờ về sai số. Nhưng nếu sự bù lẫn nhau thành lập bởi
-một sai số mới thuộc loại ấy, thì chính những ví dụ dạng đó đã chứng minh rõ điều tôi muốn
-nói: những gì đã bị bỏ qua phải được coi là hoàn toàn và tuyệt đối bằng cái rỗng. Vậy những
-lượng vô cùng nhỏ mà được truyền qua trong calculus differentialis không khác gì cái rỗng
-tuyệt đối.
+sơ cấp: vì nếu những infinite parva bị bỏ qua trong phép tính không phải là không, thì tất
+yếu phải sinh ra sai số, và sai số càng lớn khi chúng càng dồn đống lại; và nếu điều ấy mà
+không xảy ra, thì đúng hơn phải quy cho một khuyết tật của phép tính, khiến đôi khi các sai số
+được bù trừ bởi những sai số khác, hơn là coi chính phép tính được giải thoát khỏi mối ngờ sai
+số. Còn nếu sự bù trừ như thế diễn ra mà không nhờ một sai số mới nào, thì những ví dụ như vậy
+chứng minh sáng tỏ chính điều tôi muốn nói: những gì đã bị bỏ qua phải được coi là hoàn toàn và
+tuyệt đối bằng không; và những infinite parva được xử lý trong calculus differentialis không
+khác gì cái không tuyệt đối.
 
 <!-- PDF 16, trang in XII (tiếp) -->
 
-Người ta cũng còn bàn một việc nữa, khi nhiều người mô tả những lượng vô cùng nhỏ sao cho
-chúng như những hạt bụi nhỏ của các tia sáng, hoặc thậm chí như cả quả địa cầu; dù người
-ta có xác định được trong calculus độ lớn của cả quả địa cầu, thì sai số ấy không phải
-của một hạt bụi mà của hàng triệu hạt bụi, nên có thể dễ dàng bỏ qua được. Dù vậy, sự chặt
-chẽ hình học cũng ghê tởm một sai số dù nhỏ đến đâu, và phản biện này sẽ rất nặng nếu còn
-giữ lại bất cứ điều gì. Do đó cũng khó nói xem người ta mong đợi điều gì ở những người muốn
+Cũng chẳng giải quyết được gì khi một số người mô tả infinite parva sao cho chúng phải được xem
+như những hạt bụi nhỏ so với một ngọn núi khổng lồ, hay thậm chí so với cả quả địa cầu: vì tuy
+người nào nhận lấy việc xác định bằng tính toán độ lớn của cả quả địa cầu thường dễ được tha
+thứ cho sai số không phải của một mà của nhiều nghìn hạt bụi, song sự chặt chẽ hình học ghê sợ
+cả một sai số nhỏ đến thế, và phản bác này sẽ quá nặng nếu nó còn giữ chút sức nặng nào. Hơn
+nữa cũng khó nói những người
 
 <!-- PDF 17, trang in XIII -->
 
-phân biệt lượng vô cùng nhỏ với cái rỗng. Họ hãy sợ rằng, nếu những lượng ấy hoàn toàn tan
-biến, thì cả việc so sánh chúng với các lượng đã biết cũng sẽ bị loại bỏ, và mọi so sánh
-như vậy sẽ bị dẫn tới cực hạn, bởi vì hai cái rỗng tuyệt đối không thể so sánh với nhau
-theo bất cứ cách nào. Vậy họ buộc phải để lại cho những lượng ấy một độ lớn nào đó, để
-chúng có cái gì đó mà so sánh; nhưng họ lại buộc phải thừa nhận độ lớn ấy nhỏ đến mức như
-thể nó bằng không, có thể bị nghi ngờ và bị bỏ qua trong calculus mà không sợ sai số nào.
-Dù vậy họ không dám chỉ định một độ lớn nhất định và xác định cho nó, dù nhỏ đến mức không
-thể nắm bắt được; vì luôn luôn nếu họ lấy độ lớn ấy nhỏ hơn hai ba lần, thì các so sánh sẽ
-hoàn toàn giống hệt nhau. Từ đó thấy rõ rằng bản thân độ lớn ấy không đủ để thiết lập sự
-so sánh, và độ lớn ấy thậm chí không bị loại bỏ, ngay cả khi nó hoàn toàn tan biến. Còn như
-đã nói ở trên thì rõ ràng, sự so sánh mà calculator differentialis nhắm tới, không thể tồn tại
-ngay cả khi chưa cho lượng tăng của nó tan biến hẳn: lượng tăng của lượng $x$, mà nói chung
-ta đã thấy nó bằng $\omega$, có tỷ lệ
+muốn phân biệt infinite parva với cái không hy vọng thu được lợi gì từ đó. Họ sợ rằng nếu
+chúng tan biến hẳn thì cả sự so sánh giữa chúng, mà họ cảm thấy toàn bộ vấn đề được quy về,
+cũng bị xóa bỏ: vì họ tuyên bố rằng không cách nào hình dung được những cái không tuyệt đối
+có thể so sánh với nhau. Vậy họ cho là cần để lại cho chúng một độ lớn nào đó, để có cái gì đó
+mà dựa vào đó thiết lập sự so sánh; nhưng họ buộc phải chấp nhận độ lớn ấy nhỏ tới mức có thể
+được coi như không có, và được bỏ qua trong phép tính mà không sinh sai số. Tuy vậy họ không
+dám gán cho nó một độ lớn nhất định và xác định, dù nhỏ tới mức không thể hình dung; vì nếu họ
+giả thiết nó nhỏ hơn hai hay ba lần, thì các so sánh vẫn luôn y như cũ. Từ đó rõ ràng là chính
+độ lớn ấy chẳng góp gì vào việc thiết lập sự so sánh, và vì thế sự so sánh không bị xóa bỏ, ngay
+cả khi độ lớn ấy tan biến hoàn toàn. Mà từ những điều đã nói ở trên thì hiển nhiên sự so sánh
+được xét trong calculus differentialis thậm chí không có chỗ đứng, trừ khi các lượng tăng ấy
+tan biến hẳn: vì lượng tăng của lượng $x$, mà ta đã ký hiệu chung bằng $\omega$, với lượng tăng
+của bình phương $xx$, tức $2x\omega + \omega\omega$, có tỷ lệ
 
 <!-- PDF 18, trang in XIV -->
 
-với lượng tăng của bình phương $xx$, tức là $2x\omega + \omega^2$, tỷ lệ
-
 $$
-\omega \text{ với } 2x\omega + \omega^2;
+\text{như } 1 \text{ với } 2x + \omega;
 $$
 
-tỷ lệ này luôn khác với tỷ lệ $1$ với $2x$, trừ khi $\omega$ bằng không. Nhưng nếu ta đặt nó
-bằng không, thì chỉ khi đó mới thật sự khẳng định được rằng tỷ lệ ấy chính xác là $1$ với $2x$.
-Nhưng dù sao cũng thấy rõ, lượng tăng $\omega$ càng nhỏ thì tỷ lệ ấy càng gần tới tỷ lệ này.
-Do đó không chỉ được phép, mà còn đúng với bản chất của sự vật, là trước hết xét những lượng
-tăng như những lượng hữu hạn, và ngay cả trong những hình vẽ mà việc làm sáng vẻn đẹp đòi
-hỏi, cũng biểu thị chúng thành những lượng hữu hạn; và do đó những lượng tăng này, khi được
-hình dung là liên tục nhỏ đi, thì tỷ lệ giữa chúng sẽ liên tục tiến gần hơn nữa tới một giới
-hạn xác định nào đó, mà chúng sẽ chỉ chạm tới khi đã hoàn toàn đi tới cái rỗng. Và giới hạn
-này, tức là cái cấu thành tỷ lệ sau cùng của những lượng tăng ấy, đúng là đối tượng của
-Calculus differentialis. Vậy nền tảng đầu tiên phải có của nó, là người đầu tiên nghĩ tới,
-đã suy ngẫm về những tỷ lệ cuối cùng mà các lượng tăng của các lượng biến thiên tiến tới khi
-liên tục nhỏ đi, và chỉ khi chúng tan biến thì mới chạm tới. Và dấu vết của sự suy ngẫm ấy
-thì ta tìm thấy ở những nhà toán học cổ đại
+tỷ lệ này luôn khác tỷ lệ $1$ với $2x$, trừ khi $\omega = 0$; còn nếu ta đặt $\omega = 0$ thì
+khi ấy ta mới có thể khẳng định thật sự rằng tỷ lệ này đúng là như $1$ với $2x$. Tuy vậy, trong
+khi đó ta cũng thấy rằng lượng tăng $\omega$ được lấy càng nhỏ thì càng tiến gần tới tỷ lệ này;
+do đó không những được phép, mà còn hợp với bản chất sự vật, là trước hết xét các lượng tăng
+này như hữu hạn, và cả trong các hình vẽ, nếu cần hình vẽ để minh họa vấn đề, cũng biểu diễn
+chúng như hữu hạn; rồi sau đó hình dung trong ý nghĩ rằng các lượng tăng này liên tục trở nên
+nhỏ hơn, và như vậy sẽ thấy tỷ lệ giữa chúng ngày càng tiến gần tới một giới hạn nhất định nào
+đó, nhưng chỉ chạm tới nó khi chúng đã hoàn toàn trở thành không. Chính giới hạn này, cái như
+thể tạo thành tỷ lệ cuối cùng của các lượng tăng ấy, là đối tượng thật sự của Calculus
+differentialis; vì vậy phải coi người đã đặt những nền móng đầu tiên của nó là người đầu tiên
+nảy ra ý chiêm nghiệm những tỷ lệ cuối cùng này, những tỷ lệ mà lượng tăng của các lượng
+variabiles tiến gần tới khi chúng ngày càng giảm đi, và chỉ chạm tới khi chúng tan biến. Dấu
+vết của sự chiêm nghiệm này ta bắt gặp ở những tác giả cổ xưa nhất,
 
 <!-- PDF 19, trang in XV -->
 
-mà vì thế không thể phủ nhận rằng họ đã có một ý tưởng nào đó, dù nhẹ, về Analysin
-Infinitorum. Rồi dần dần môn học này nhận được những mức tăng lớn hơn, cho tới khi bất ngờ
-đạt tới đỉnh cao mà ngày nay ta thấy, dù trong đó vẫn còn nhiều khuất mờ hơn những gì đã
-được kéo ra ánh sáng.
+những người vì thế không thể bị phủ nhận là đã có một ý niệm nào đó và một hiểu biết sơ sài về
+Analysis infinitorum. Rồi dần dần môn khoa học này nhận được những bước tiến lớn hơn, và nó
+không phải đột ngột được đưa lên tới đỉnh cao mà ngày nay người ta thấy; tuy thật ra trong nó
+vẫn còn nhiều điều ẩn giấu hơn những điều đã được đưa ra ánh sáng.
 
-Vì Calculus differentialis được trang bị cho mọi loại functio, dù chúng phức tạp đến đâu, đã
-có từ lâu một phương pháp không mới lắm để so sánh các lượng tăng tan biến của mọi functio
-với nhau; nhưng sự phát minh ấy dần dần đã tiến tới những functio ngày càng phức tạp hơn.
-Xét riêng các functio *rationales*: tỷ lệ cuối cùng mà lượng tăng tan biến của chúng giữ với
-nhau có thể gán cho một thời đại xa trước thời Newton và Leibniz; nên Calculus differentialis,
-xét theo nghĩa chỉ áp dụng cho các functio rationales, phải được coi là đã phát minh ra từ
-trước thời đại ấy khá lâu. Còn không có nghi ngờ gì phải nói rằng phần của Calculus
-differentialis mà Newton xử lý các functio *irrationales* thì phải quy cho ông; và phần
-đó, nhờ định lý nổi tiếng của ông về khai triển tổng quát các lũy thừa nhị thức, đã được
-suy ra dễ dàng. Qua phát minh xuất sắc ấy, các ranh giới của calculus differentialis đã được
-mở rộng, và
+Vì Calculus differentialis mở rộng tới các functio thuộc mọi loại, dù chúng được ghép lại thế
+nào, nên phương pháp so sánh với nhau các lượng tăng tan biến của mọi functio không trở nên
+được biết đến một cách đột ngột; mà phát minh này tiến dần tới những functio ngày càng phức tạp
+hơn. Chẳng hạn, đối với các functio *rationales*, tỷ lệ cuối cùng mà các lượng tăng tan biến
+của chúng giữ với nhau đã có thể được xác định từ rất lâu trước thời NEWTON và LEIBNIZ; thành
+thử Calculus differentialis, xét trong chừng mực chỉ áp dụng cho các functio rationales, phải
+được coi là đã được phát minh từ lâu trước thời ấy. Còn thì không có gì phải nghi ngờ rằng ta
+phải ghi công cho NEWTON phần của Calculus differentialis xoay quanh các functio
+*irrationales*; phần mà ông đã may mắn được dẫn tới nhờ Định lý xuất sắc của mình về khai triển
+tổng quát các lũy thừa của nhị thức; và nhờ phát minh xuất sắc ấy, các giới hạn của calculus
 
 <!-- PDF 20, trang in XVI -->
 
-Leibniz cũng không phải ít công, vì ông đã đưa calculus này — dù xét như một kỹ thuật riêng
-biệt — vào một môn học trở thành, thu thập các mệnh đề của nó như thể thành một hệ thống,
-và giải thích chúng rõ ràng. Từ đó mới có thể thấy ra những trợ giúp lớn nhất còn thiếu
-để nghiên cứu sâu hơn môn này, và những gì từ trước tới nay còn mong muốn đều phải rút ra
-từ các nguyên lý đã vững. Với sự cố gắng lớn nhất của chính Leibniz, và của những
-Bernoulli mà ông đã thuê mướn cho việc này, các thành tựu của Calculus differentialis đã
-lan sang cả những functio *transcendentes*, phần trước đây còn chưa được khai phá, và từ đó
-cả những nền tảng vững nhất của Calculus integralis cũng đã được xác lập. Và những người sau
-đó bám lấy những nền tảng ấy để lao tới trong lĩnh vực này đã liên tục thêm vào những mức
-tăng lớn hơn nữa.
+differentialis đã được mở rộng một cách tuyệt vời. Còn đối với LEIBNIZ, ta cũng mang ơn không
+kém, vì ông đã đưa calculus này, trước đó chỉ được xem như một mẹo kỹ thuật riêng lẻ, vào hình
+thức một môn học, gom các quy tắc của nó lại như thành một hệ thống, và giải thích chúng rõ
+ràng. Bởi từ đó đã gợi ra những trợ lực lớn nhất để trau dồi calculus này thêm nữa, và để rút
+ra từ những nguyên lý chắc chắn những gì cho tới lúc ấy còn thiếu. Vậy chẳng bao lâu, nhờ công
+sức của chính LEIBNIZ, rồi của các BERNOULLI được ông khích lệ vào việc này, phạm vi của
+Calculus differentialis được đẩy tới cả các functio *transcendentes*, phần cho tới lúc ấy còn
+bỏ hoang, và đồng thời những nền móng vững chắc nhất của Calculus integralis cũng được xác
+lập; dựa trên đó, những người về sau làm việc trong lĩnh vực này đã liên tục bổ sung những
+bước tiến lớn hơn.
 
 <!-- PDF 20, trang in XVI (tiếp) -->
 
-Newton cũng đã phát triển những ý tưởng rất lớn về phần đầu của Calculus integralis, mà
-phần khởi đầu ấy, vì khó tách rời khỏi nguồn gốc đầu tiên của calculus differentialis, không
-thể nói là đã hoàn tất một cách tuyệt đối; và vì phần lớn nhất của nó vẫn còn để mở rộng,
-nên calculus này, ngay cả giờ, cũng không thể được coi là đã phát minh ra một cách tuyệt
-đối; mà chỉ nên thừa nhận với lòng biết ơn rằng mỗi người đã góp phần xứng đáng với sự hoàn
-tất của nó, theo sức mình. Và đây cũng là điều tôi cho rằng phải ghi nhận là vinh dựng của
-phát minh calculus này — vinh dựng mà trước đây đã bị tranh luận gay gắt đến mức ấy.
+NEWTON thì cũng đã đưa ra những mẫu mực rất phong phú về Calculus integralis; mà vì phát minh
+đầu tiên của nó khó lòng tách khỏi nguồn gốc đầu tiên của calculus differentialis, nên không
+thể xác định dứt khoát được như vậy; và vì phần lớn nhất của nó vẫn còn phải trau dồi, nên ngay
+cả bây giờ calculus này cũng không thể coi là đã được phát minh trọn vẹn; mà đúng hơn, mỗi
+người đã được góp phần bao nhiêu, theo sức mình, vào sự hoàn thiện của nó,
 
 <!-- PDF 21, trang in XVII -->
 
-Còn về những cái tên khác nhau mà các nhà toán học từng đặt cho calculus này, thì tất cả
-đều quy về điều này, là chúng phải hòa hợp tốt đẹp với định nghĩa đã nêu ở đây. Bởi vì
-chính những lượng tăng tan biến ấy, mà tỷ lệ giữa chúng là điều được xét đến, dù được gọi
-là *differentialia* hay *fluxiones*, thì vẫn luôn phải được hiểu là bằng không; và trong ấy
-chính là nơi cần dựng lên khái niệm đúng đắn về những lượng vô cùng nhỏ.
+thì ta phải ghi nhận điều đó với lòng biết ơn. Và đó là điều tôi cho rằng phải giữ về vinh
+quang của việc phát minh ra calculus này, vinh quang mà trước đây quả đã bị tranh cãi dữ dội
+đến thế.
 
-Từ đó, mọi điều tò mò nhưng ít hữu ích được nói về các differentialia bậc hai và các bậc cao
-hơn trở nên hoàn toàn rõ ràng, khi biết rằng tất cả chúng đều bằng không theo bản thân chúng,
-và không bao giờ có thể bằng không theo bản thân chúng, mà chỉ có thể xét tới trong mối quan
-hệ giữa chúng với nhau. Vì nếu tỷ lệ mà lượng tăng tan biến của hai functio giữ được lại
-được biểu thị nữa bằng một functio nào đó, và nếu lượng tăng tan biến của functio ấy lại được
-so với các functio khác, thì việc ấy phải được quy về các differentialia bậc hai; và như thế
-tiến thêm nữa, sự đi xa lên các differentialia bậc cao hơn được hiểu ra, sao cho các lượng
-hữu hạn luôn luôn được bảo toàn, và dấu hiệu của chúng chỉ được dùng để biểu thị cho chúng.
+Còn về những tên gọi khác nhau mà các nhà Toán học thuộc nhiều dân tộc khác nhau thường đặt cho
+calculus này, thì tất cả đều quy về chỗ phù hợp tốt với định nghĩa đã nêu ở đây: vì dù những
+lượng tăng tan biến ấy, mà người ta xét tỷ lệ giữa chúng, được gọi là *differentialia* hay
+*fluxiones*, thì chúng luôn phải được hiểu là bằng không; và khái niệm đúng về infinite parva
+phải được xác lập ở chính điều này.
+
+Từ đây, mọi điều người ta đã tranh luận, tò mò hơn là hữu ích, về các differentialia bậc hai
+và các bậc cao hơn cũng sẽ trở nên hết sức rõ ràng, vì tất cả chúng tự thân đều tan biến như
+nhau, và người ta không bao giờ xét chúng tự thân, mà đúng hơn là xét quan hệ tương hỗ giữa
+chúng. Vì khi tỷ lệ mà các lượng tăng tan biến của hai functio giữ với nhau lại được biểu thị
+bằng một functio nào đó, nếu cả lượng tăng tan biến của functio này được đem so với các lượng
+khác, thì vấn đề phải coi là quy về các differentialia bậc hai; và cứ thế, bước tiến tới các
+differentialia bậc cao hơn phải được hiểu sao cho trong tâm trí thật ra luôn luôn là
 
 <!-- PDF 22, trang in XVIII -->
 
-Trong cái nhìn đầu tiên, cách mô tả Analysin Infinitorum này có vẻ nhẹ nhàng và gần như
-không sinh kết quả gì cho nhiều người, dù nó giải thích rất nhiều điều huyền diệu của các
-lượng vô cùng nhỏ. Nhưng nếu ta hiểu rõ những tỷ lệ nằm giữa các lượng tăng tan biến của
-mọi functio bất kỳ, thì kiến thức này thường tự nó đã có tầm quan trọng lớn nhất; và trong
-phần lớn những cuộc nghiên cứu khó khăn nhất, nó lại là điều cần thiết, không có nó thì không
-thể hiểu được điều gì. Chẳng hạn, nếu có một functio nào đó về chuyển động của quả cầu bắn
-từ khẩu pháo, đồng thời phải biết tỷ lệ sức cản của không khí, thì chuyển động trong một
-khoảng thời gian hữu hạn không thể nào xác định được, bởi cả hướng đi của quả cầu lẫn tốc
-độ của nó, mà tốc độ thì lại phụ thuộc vào sức cản, đều thay đổi ở mọi khoảnh khắc. Nhưng
-càng xét khoảng thời gian mà chuyển động xảy ra càng nhỏ, thì sự biến thiên ấy càng nhỏ, và
-càng dễ đi tới nhận thức về sự thật; và nếu ta coi khoảng ấy là hoàn toàn tan biến, vì mọi
-sự bất bình đẳng, dù về hướng đi hay về tốc độ, đều đã bị loại bỏ, thì sức cản sẽ được xác
-định chính xác theo các quy tắc về chuyển động, và sự biến thiên của chuyển động sẽ có thể
-gán cho một khoảng thời gian bất kỳ.
+các lượng hữu hạn, còn các dấu của differentialia chỉ được dùng để biểu diễn chúng cho tiện.
+
+Thoạt nhìn, lối mô tả Analysis infinitorum như thế có vẻ với nhiều người là nhẹ nhõm và quá
+cằn cỗi, dù cái vẻ bí ẩn kia của infinite parva thực chất cũng chẳng hứa hẹn gì hơn: nhưng nếu
+ta nhận biết rõ các tỷ lệ tồn tại giữa những lượng tăng tan biến của bất kỳ functio nào, thì
+hiểu biết này thường tự nó đã có tầm quan trọng lớn nhất; hơn nữa trong rất nhiều cuộc khảo
+sát, mà lại là những cuộc khảo sát gian nan nhất, nó cần thiết tới mức không có sự trợ giúp của
+nó thì hoàn toàn chẳng hiểu được gì. Chẳng hạn nếu câu hỏi là về chuyển động của một quả cầu
+bắn ra từ khẩu pháo, và đồng thời phải tính tới sức cản của không khí, thì không cách nào xác
+định ngay được chuyển động qua một quãng đường hữu hạn sẽ ra sao, vì cả hướng của đường đi mà
+quả cầu theo lẫn tốc độ của nó, thứ mà sức cản phụ thuộc vào, đều thay đổi ở mọi khoảnh khắc.
+Nhưng ta xét quãng đường mà chuyển động diễn ra càng nhỏ thì sự biến thiên ấy càng nhỏ, và càng
+dễ đạt tới nhận thức về sự thật; còn nếu ta làm cho quãng đường ấy tan biến hẳn, thì vì mọi sự
+không đều, cả về hướng đường đi lẫn về tốc độ, lúc ấy đều bị loại bỏ, ta sẽ có thể xác định
+chính xác theo các quy luật chuyển động
 
 <!-- PDF 23, trang in XIX -->
 
-Đã biết những biến thiên tức thời ấy, hay đúng hơn là đã biết chúng bằng không, cùng với
-tỷ lệ giữa chúng với nhau, thì ta thu được lợi ích rất lớn; và đó chính là công trình của
-calculus integralis, từ đó suy ra chuyển động trong một khoảng không gian hữu hạn từ độ đi
-đã thay đổi. Tôi không cho là cần thiết phải chỉ ra thêm nữa công dụng của Calculus
-differentialis và của Analysin Infinitorum nói chung; bởi vì ngay bây giờ, khi ta muốn tiến
-hành ngay cả một cuộc nghiên cứu nhẹ nhất mà chuyển động của các vật thể, cứng hay chất lỏng,
-đều có mặt, thì điều đó không chỉ không nằm ngoài khả năng của Analysin Infinitorum, mà
-còn thường là chưa được khai phá đủ, để có thể giải thích trọn vẹn vấn đề. Bởi vì trong tất
-cả các phần của Toán học, môn Toán học cấp cao này đã lan tỏa rộng đến mức mọi thứ mà
-không có nó thì ngày nay đã dễ dàng làm được, gần như phải coi như không tồn tại.
+tác dụng của sức cản, và gán được sự thay đổi của chuyển động sinh ra trong một khoảnh khắc thời
+gian. Mà khi đã biết những thay đổi tức thời này, hay đúng hơn, vì chính chúng là không, biết
+quan hệ tương hỗ giữa chúng, thì ta đã thu được rất nhiều; và việc của calculus integralis là
+từ đó suy ra chuyển động đã biến đổi qua một quãng đường hữu hạn. Tôi cho rằng hoàn toàn không
+cần phải chỉ ra dài dòng hơn công dụng của Calculus differentialis và của Analysis infinitorum
+nói chung; vì giờ đây đã đủ rõ rằng, nếu ta muốn tiến hành chính xác hơn dù là cuộc khảo sát
+nhẹ nhàng nhất mà trong đó có chuyển động của các vật thể, cả rắn lẫn lỏng, thì việc ấy không
+những không thể làm được nếu không có Analysis infinitorum, mà chính môn khoa học này nhiều khi
+còn chưa được trau dồi đủ để ta có thể giải thích vấn đề đến tận cùng. Quả thật, công dụng của
+môn Analysis cao cấp này lan tỏa qua mọi phần của Toán học tới mức mọi thứ mà cho tới nay có
+thể giải quyết được không cần tới nó gần như phải coi là chẳng đáng gì.
 
-Vậy tôi dự định trong cuốn sách này dựng một Calculus differentialis toàn diện từ những nguyên
-lý đúng đắn, rồi trình bày nó một cách phong phú, sao cho không bỏ sót điều gì thuộc về nó
-mà từ trước tới nay đã được phát minh. Cuốn sách chia làm hai phần. Ở phần trước, trên nền
-tảng
+Vậy tôi đã quyết định trong cuốn sách này rút ra toàn bộ Calculus differentialis từ những nguyên
+lý đúng, và trình bày nó phong phú đến mức không bỏ sót điều gì trong số những điều thuộc về nó
+đã được phát minh cho tới nay. Tôi chia tác phẩm làm hai phần; trong phần trước, sau khi đặt
+nền móng
 
 <!-- PDF 24, trang in XX -->
 
-của calculus differentialis, tôi đã trình bày phương pháp khai triển mọi loại functio theo
-nguyên lý lượng biến thiên, không chỉ các differentialia bậc nhất mà cả các bậc cao hơn; dù
-functio liên quan tới một lượng biến thiên, hay tới hai hay nhiều lượng biến thiên. Còn ở
-phần kia, tôi đã trình bày công dụng rộng nhất của calculus này ngay trong Analysi
-finitorum và trong lý thuyết chuỗi; ở đó tôi cũng đã giải thích rõ ràng nhất Lý thuyết các
-cực trị và cực tiểu. Còn về công dụng của calculus này trong Hình học các đường thẳng cong
-thì tôi chưa nói gì ở đây, và sẽ càng cần đến nó hơn nữa, vì trong những tác phẩm lớn
-hơn, phần ấy đã được trình bày đầy đủ đến mức chính những nguyên lý đầu tiên của Calculus
-differentialis dường như đã được mượn từ Hình học, và lĩnh vực ấy, vì nó vừa mới được
-khai triển tới mức chưa đủ, lại đang đòi hỏi sự chú ý tối đa. Ở đây mọi thứ đều nằm trong
-giới hạn của Analysin thuần túy, tới mức không cần tới bất kỳ hình vẽ nào để giải thích
-mọi mệnh đề của calculus này.
+cho calculus differentialis, tôi đã trình bày phương pháp lấy vi phân các functio thuộc mọi
+loại, và tìm không chỉ các differentialia bậc nhất mà cả các bậc cao hơn, dù các functio chỉ
+chứa một lượng variabilis duy nhất hay chứa hai hay nhiều hơn. Còn trong phần kia, tôi đã trình
+bày công dụng rất rộng của calculus này trong chính Analysis finitorum và lý thuyết chuỗi; ở đó
+tôi cũng đặc biệt đã giải thích rõ ràng Lý thuyết cực đại và cực tiểu. Còn về công dụng của
+calculus này trong Hình học các đường cong thì ở đây tôi chưa đưa ra gì cả; điều này sẽ ít bị
+mong đợi hơn, vì trong những tác phẩm khác phần này đã được trình bày phong phú tới mức thậm chí
+các nguyên lý đầu tiên của calculus differentialis gần như đã được lấy từ Hình học, và, khi
+chúng còn chưa được khai triển đủ, đã được áp dụng vào môn khoa học này với sự chăm chút tối
+đa. Còn ở đây mọi thứ đều nằm trong giới hạn của Analysis thuần túy, tới mức không cần tới một
+hình vẽ nào để giải thích mọi quy tắc của calculus này.
 
-<!-- PDF 25-27, trang in XXI-XXIII: mục lục -->
+<!-- PDF 25-27, trang in XXI-XXIII: mục lục. Số trang chép đúng như bản in; chỗ lệch so với
+     trang mở đầu chương thực tế xem PAGE_MAP.md. -->
 
 # Mục lục
 
@@ -410,38 +409,45 @@ mọi mệnh đề của calculus này.
 
 | Chương | Nhan đề | Trang |
 |---|---|---:|
-| I | *De Differentiis finitis* — Về sai lệch hữu hạn | 3 |
-| II | *De Usu Differentiarum in Doctrina serierum* — Về công dụng của sai lệch trong lý thuyết chuỗi | 35 |
-| III | *De Infinitis et infinite parvis* — Về cái vô cùng và lượng vô cùng nhỏ | 70 |
-| IV | *De Differentialium cuiusque ordinis natura* — Về bản chất của vi phân mọi bậc | 121 |
-| V | *De Differentiatione functionum algebraicarum unamque variabilem involventium* — Về đạo hàm các functio đại số có một lượng biến thiên | 124 |
-| VI | *De Differentiatione functionum transcendentium* — Về đạo hàm các functio transcendentes | 149 |
-| VII | *De Differentiatione functionum duas pluresque variabiles involventium* — Về đạo hàm các functio có hai hay nhiều lượng biến thiên | 184 |
-| VIII | *De Formularum Differentialium ulteriori differentiatione* — Về đạo hàm tiếp trên các biểu thức vi phân | 204 |
-| IX | *De Aequationibus Differentialibus* — Về các phương trình vi phân | 341 |
+| I | *De Differentiis finitis* — Về các sai lệch hữu hạn | 3 |
+| II | *De Usu Differentiarum in Doctrina serierum* — Về công dụng của các sai lệch trong lý thuyết chuỗi | 39 |
+| III | *De Infinitis et infinite parvis* — Về các lượng vô cùng lớn và vô cùng nhỏ | 70 |
+| IV | *De Differentialium cuiusque ordinis natura* — Về bản chất của các differentialia mọi bậc | 98 |
+| V | *De Differentiatione functionum algebraicarum unicam variabilem involventium* — Về phép lấy vi phân các functio đại số chứa một lượng variabilis duy nhất | 124 |
+| VI | *De Differentiatione functionum transcendentium* — Về phép lấy vi phân các functio transcendentes | 151 |
+| VII | *De Differentiatione functionum duas pluresve variabiles involventium* — Về phép lấy vi phân các functio chứa hai hay nhiều lượng variabiles | 178 |
+| VIII | *De Formularum Differentialium ulteriori differentiatione* — Về việc lấy vi phân tiếp các biểu thức vi phân | 204 |
+| IX | *De Aequationibus Differentialibus* — Về các phương trình vi phân | 241 |
+
+<!-- PDF 26, trang in XXII -->
 
 ## Phần thứ hai
 
 | Chương | Nhan đề | Trang |
 |---|---|---:|
-| I | *De Transformationibus Serierum* — Về các phép biến đổi chuỗi | 281 |
-| II | *De Investigatione serierum summabilium* — Về nghiên cứu các chuỗi có thể tổng | 304 |
-| III | *De Inventione Differentiarum similarium* — Về tìm ra các sai lệch tương tự | 333 |
-| IV | *De Conversione Functionum in Series* — Về chuyển các functio thành chuỗi | 359 |
-| V | *Investigatio summae seriei ex termino generali* — Nghiên cứu tổng của một chuỗi từ công thức tổng quát của hạng tổng quát | 403 |
-| VI | *De Summatione Progressionum per Series Infinitas* — Về tính tổng các cấp số nhân bằng các chuỗi vô hạn | 441 |
-| VII | *Methodus summandi superior suggesta* — Phương pháp tính tổng ở mức cao hơn được gợi ý | 479 |
-| VIII | *De Usu Calculi Differentialis in formandis seriebus* — Về công dụng của Calculus differentialis trong việc lập các chuỗi | 515 |
-| IX | *De Usu Calculi Differentialis in aequationibus resolvendis* — Về công dụng của Calculus differentialis trong việc giải các phương trình | 548 |
-| X | *De Maximis et Minimis* — Về cực trị và cực tiểu | 578 |
-| XI | *De Maximis & Minimis functionum multiformium pluresque variabiles complectentium* — Về cực trị và cực tiểu các functio nhiều dạng, chứa nhiều lượng biến thiên | 615 |
-| XII | *De Usu differentialium in investigandis radicibus realibus aequationum* — Về công dụng của differentialia trong việc tìm các nghiệm thật của phương trình | 617 |
-| XIII | *De Criteriis radicum imaginariarum* — Về các tiêu chuẩn của nghiệm ảo | 680 |
-| XIV | *De Differentialibus functionum incertarum statum* — Về vi phân của các functio có trạng thái không xác định | 714 |
-| XV | *De Determinatione numerorum et summarum in aequationibus, quae certis casibus videntur* — Về xác định các con số và các tổng trong những phương trình dường như chỉ xuất hiện ở những trường hợp nhất định | 738 |
-| XVI | *De Differentiatione Functionum implicitarum* — Về đạo hàm các functio ẩn | 769 |
-| XVII | *De Interpolatione Serierum* — Về nội suy chuỗi | 808 |
-| XVIII | *De Usu Calculi Differentialis in Rejunctione Fractionum* — Về công dụng của Calculus differentialis trong việc ghép các phân thức | 843 |
+| I | *De Transformatione Serierum* — Về phép biến đổi chuỗi | 281 |
+| II | *De Investigatione serierum summabilium* — Về việc tìm các chuỗi tính được tổng | 304 |
+| III | *De Inventione Differentiarum finitarum* — Về việc tìm các sai lệch hữu hạn | 332 |
+| IV | *De Conversione Functionum in Series* — Về việc chuyển các functio thành chuỗi | 359 |
+| V | *Investigatio summae Serierum ex Termino generali* — Tìm tổng của các chuỗi từ số hạng tổng quát | 403 |
+| VI | *De Summatione Progressionum per Series Infinitas* — Về việc tính tổng các cấp số bằng chuỗi vô hạn | 441 |
+| VII | *Methodus summandi superior ulterius promota* — Phương pháp tính tổng ở trên, được đẩy xa thêm | 479 |
+| VIII | *De usu Calculi Differentialis in formandis seriebus* — Về công dụng của Calculus Differentialis trong việc lập chuỗi | 515 |
+| IX | *De usu Calculi Differentialis in aequationibus resolvendis* — Về công dụng của Calculus Differentialis trong việc giải phương trình | 546 |
+| X | *De Maximis & Minimis* — Về cực đại và cực tiểu | 578 |
+| XI | *De Maximis & Minimis functionum multiformium pluresque variabiles complectentium* — Về cực đại và cực tiểu của các functio multiformes và các functio chứa nhiều lượng variabiles | 619 |
+| XII | *De Usu differentialium in investigandis radicibus realibus aequationum* — Về công dụng của differentialia trong việc tìm các nghiệm thực của phương trình | 657 |
+
+<!-- PDF 27, trang in XXIII -->
+
+| Chương | Nhan đề | Trang |
+|---|---|---:|
+| XIII | *De Criteriis radicum imaginariarum* — Về các dấu hiệu nhận biết nghiệm ảo | 689 |
+| XIV | *De Differentialibus functionum in certis tantum casibus* — Về differentialia của các functio chỉ trong những trường hợp nhất định | 712 |
+| XV | *De Valoribus functionum, qui certis casibus videntur indeterminati* — Về các giá trị của functio, những giá trị trong một số trường hợp có vẻ bất định | 738 |
+| XVI | *De Differentiatione Functionum inexplicabilium* — Về phép lấy vi phân các functio inexplicabiles | 769 |
+| XVII | *De Interpolatione Serierum* — Về phép nội suy chuỗi | 808 |
+| XVIII | *De Usu Calculi Differentialis in Resolutione Fractionum* — Về công dụng của Calculus Differentialis trong việc phân tích các phân thức | 843 |
 
 <!-- PDF 28, trang in XXIV -->
 
@@ -449,10 +455,12 @@ mọi mệnh đề của calculus này.
 
 *Errores Typographici*
 
-1. Trang 509, dòng 3: thay $z \equiv xx$ bằng $z \equiv xx + x$.
+1. Trang 509, dòng 3: thay $z = xx$, đọc là $z = xx + x$.
 2. Trang 513, dòng 14: thay
-   $$\frac{x^7 - x}{a^x (a-1)^2}$$
-   bằng
-   $$\frac{x^7 - ax}{a^x (a-1)^3}.$$
+   $$\frac{(z' - z)}{a^x (a-1)^2}$$
+   đọc là
+   $$\frac{(z' - az)}{a^x (a-1)^2}.$$
 
-Hai lỗi này được giữ nguyên trong phần dịch, không sửa lặng lẽ, theo `ANNOTATION_GUIDE.md`.
+<!-- Hai lỗi này được giữ nguyên như bản in trong phần dịch thân sách, không sửa lặng lẽ, theo
+     ANNOTATION_GUIDE.md. Số mũ của (a-1) ở vế "lege" in hơi mờ; đọc là 2, khớp với phép tính
+     Q = a(P'-P)/(a-1) ở trang 513 (PDF 541). -->

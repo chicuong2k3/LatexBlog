@@ -41,13 +41,21 @@ python tools/build_djvu_paged_ocr.py <đường-dẫn>_djvu.xml <thư-mục-đí
 python tools/euler_page.py <ocr-paged.txt> <pdf-lo> <pdf-hi>
 ```
 
-## 5. Những chỗ mục lục của chính Euler sai
+## 5. Mục lục in của Euler khớp ranh giới chương
 
-Mục lục in ở PDF 25–27 có vài số trang sai. Mục lục chỉ dùng làm gợi ý; **ranh giới chương lấy từ chính trang mở đầu chương**, đã đối chiếu bản scan:
+Mục lục in ở PDF 25–27 (trang in xxi–xxiii) **không** sai ở chỗ nào đã kiểm. Bản trước của mục
+này có bảng "Mục lục ghi / Thực tế" với bốn số 35, 121, 149, 341; bốn số ấy lấy từ lớp OCR đọc
+hỏng, không phải từ bản in. Đối chiếu lại bằng mắt ngày 2026-09-28 (xem mục lời tựa trong
+`TRANSLATION_LEDGER.md`), mục lục in đúng như trang mở đầu chương:
 
-| Chương | Mục lục ghi | Thực tế |
-|---|---|---|
-| Pars Prior II | 35 | 39 |
-| Pars Prior IV | 121 | 98 |
-| Pars Prior VI | 149 | 151 |
-| Pars Prior IX | 341 | 241 |
+| Chương | OCR cũ đọc ra (sai) | Mục lục in | Trang mở đầu chương thật |
+|---|---|---|---|
+| Pars Prior II | ~~35~~ | 39 | 39 (PDF 67) |
+| Pars Prior IV | ~~121~~ | 98 | 98 (PDF 126) |
+| Pars Prior VI | ~~149~~ | 151 | 151 (PDF 179) |
+| Pars Prior IX | ~~341~~ | 241 | 241 (PDF 269) |
+
+Các số khác mà bản dịch cũ của mục lục chép sai (Phần I: 184 thay cho 178; Phần II: 548, 615,
+617, 680 thay cho 546, 619, 657, 689, cùng vài tên chương) cũng là lỗi chép, bản in đúng.
+Hiện không còn dòng nào của mục lục được biết là sai so với trang mở đầu chương. Dù vậy, ranh
+giới chương vẫn **lấy từ chính trang mở đầu chương**, không lấy từ mục lục.

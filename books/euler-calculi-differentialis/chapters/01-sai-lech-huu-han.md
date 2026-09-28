@@ -23,76 +23,85 @@ status: chua-hoan-thanh
 
 <!-- PDF 31, trang in 3 -->
 
-**1.** Những điều đã được trình bày trong Quyển trên về lượng biến thiên và functio thì hiển
-nhiên, rằng tùy theo lượng biến thiên ấy thay đổi thế nào, mọi functio của nó cũng biến đổi
-theo. Vậy nếu lượng biến thiên $x$ nhận lượng tăng $\omega$, sao cho ở chỗ của $x$ ta viết
-$x + \omega$, thì mọi functio của $x$ — như $xx$, $x^3$, $\dfrac{a+x}{xx+aa}$ — đều nhận
-những giá trị mới; cụ thể là $xx$ sẽ trở thành
+**1.** Từ những điều đã trình bày trong Quyển trước về lượng biến thiên và functio, rõ ràng
+là khi lượng biến thiên thực sự biến đổi thì mọi functio của nó cũng chịu biến đổi theo.
+Chẳng hạn, nếu lượng biến thiên $x$ nhận lượng tăng $\omega$, sao cho ở chỗ của $x$ ta viết
+$x + \omega$, thì mọi functio của $x$, như $xx$; $x^3$; $\dfrac{a+x}{xx+aa}$, đều nhận
+những giá trị khác: cụ thể là $xx$ sẽ chuyển thành
 
 $$
 xx + 2x\omega + \omega\omega;
 $$
 
-$x^3$ sẽ trở thành
+<!-- PDF 32, trang in 4 -->
+
+$x^3$ sẽ chuyển thành
 
 $$
-x^3 + 3x^2\omega + 3x\omega\omega + \omega^3;
+x^3 + 3xx\omega + 3x\omega\omega + \omega^3;
 $$
 
-$x^4$ sẽ trở thành
+và $\dfrac{a+x}{aa+xx}$ sẽ biến thành
 
 $$
-x^4 + 4x^3\omega + 6x^2\omega\omega + 4x\omega^3 + \omega^4.
+\frac{a+x+\omega}{aa+xx+2x\omega+\omega\omega}.
 $$
 
-Thế nên sự thay đổi như vậy luôn xảy ra, trừ khi functio chỉ có hình dạng của lượng biến thiên
-mà không mang dấu hiệu của nó, tức là nó thật sự là một lượng constans, như $x^0$; trong
-trường hợp đó một functio như vậy không đổi, dù $x$ tăng lên bao nhiêu.
+Vậy một sự biến đổi như thế sẽ luôn xảy ra, trừ khi functio chỉ mang giả dáng của một lượng
+biến thiên, còn thực ra là một lượng constans, như $x^0$: trong trường hợp ấy functio như
+vậy giữ nguyên không đổi, dù lượng $x$ thay đổi thế nào đi nữa.
 
-**2.** Những điều vừa trình bày còn quá xa so với các hệ thống của functio mà toàn bộ Analysin
-Infinitorum dựng trên đó. Vậy nếu $y$ là một functio bất kỳ của lượng biến thiên $x$, và ta
-thay những giá trị liên tiếp trong cấp số cộng trước đó, nghĩa là lấy $x$, $x+\omega$,
-$x+2\omega$, $x+3\omega$, $x+4\omega$, &c., thì functio $y$ sẽ cho ra những giá trị liên
-tiếp tương ứng; cụ thể nếu ở chỗ của $x$ ta viết $x+\omega$, functio $y$ sẽ nhận giá trị
-$y^1$; theo cùng cách ấy nếu ở chỗ của $x$ ta viết $x+2\omega$, nó sẽ nhận giá trị $y^2$;
-và cứ thế, những giá trị $y$, $y^1$, $y^2$, $y^3$, &c., sinh ra khi lần lượt đặt
-$x+\omega$, $x+2\omega$, $x+3\omega$, $x+4\omega$, &c., sẽ ứng với nhau theo kiểu này:
+**2.** Những điều ấy đã được trình bày đủ, nên ta hãy tiến lại gần hơn những tính chất của
+functio mà toàn bộ giải tích vô hạn (analysis infinitorum) dựa vào. Vậy giả sử $y$ là một
+functio bất kỳ của lượng biến thiên $x$; ở chỗ của $x$ ta lần lượt thay những giá trị tiến
+theo cấp số cộng, cụ thể là: $x$; $x+\omega$; $x+2\omega$; $x+3\omega$; $x+4\omega$;
+&c. Gọi $y^{\mathrm{I}}$ là giá trị mà functio $y$ nhận khi trong nó ở chỗ của $x$ ta thay
+$x+\omega$; tương tự, gọi $y^{\mathrm{II}}$ là giá trị của chính $y$ khi ở chỗ của $x$ ta
+viết $x+2\omega$; và theo cùng lẽ ấy, $y^{\mathrm{III}}$; $y^{\mathrm{IV}}$;
+$y^{\mathrm{V}}$; &c. chỉ các giá trị của $y$ hiện ra khi ở chỗ của $x$ ta đặt $x+3\omega$;
+$x+4\omega$; $x+5\omega$; &c., sao cho các giá trị khác nhau ấy của $x$ và $y$ tương ứng
+với nhau theo cách sau:
 
 $$
-\begin{array}{cccccc}
-x & x+\omega & x+2\omega & x+3\omega & x+4\omega & \text{\&c.}\\
-y & y^1 & y^2 & y^3 & y^4 & \text{\&c.}
+\begin{array}{ccccccc}
+x; & x+\omega; & x+2\omega; & x+3\omega; & x+4\omega; & x+5\omega; & \text{\&c.}\\
+y; & y^{\mathrm{I}}; & y^{\mathrm{II}}; & y^{\mathrm{III}}; & y^{\mathrm{IV}}; & y^{\mathrm{V}}; & \text{\&c.}
 \end{array}
 $$
 
-**3.** Cũng như cấp số cộng $x$, $x+\omega$, $x+2\omega$, &c. có thể kéo dài vô hạn, thì
-chuỗi $y$, $y^1$, $y^2$, &c. sinh ra từ functio $y$ cũng tiến tới vô hạn, và bản chất của nó
-phụ thuộc vào cái dạng của functio $y$. Vậy nếu chuỗi $y$, $y^1$, $y^2$, &c. sinh ra từ
-$y = x$ hay từ $y = ax+b$ thì nó cũng là cấp số cộng; nếu sinh ra từ $y = \dfrac{a}{bx+c}$
-thì chuỗi đó là điều hòa; còn nếu $y = a^x$ thì ta có một chuỗi nhân. Và không thể nghĩ ra
-được một chuỗi nào mà không thể sinh ra theo cách ấy từ một functio xác định nào đó của
-$x$. Thường thì một functio của $x$ như vậy, xét theo chuỗi sinh ra từ nó, được gọi là
-*terminus generalis* của chuỗi; và vì mọi chuỗi lập theo một quy luật xác định đều có
-*terminus generalis*, nên nó ngược lại sinh ra từ một functio xác định nào đó của $x$, như
-đã được giải thích dài hơn trong lý thuyết chuỗi.
+**3.** Cũng như cấp số cộng $x$; $x+\omega$; $x+2\omega$; &c. có thể kéo dài vô hạn, chuỗi
+$y$; $y^{\mathrm{I}}$; $y^{\mathrm{II}}$; &c. sinh ra từ functio $y$ cũng sẽ tiến ra vô hạn,
+và bản chất của nó sẽ tùy thuộc vào tính cách của functio $y$. Chẳng hạn, nếu $y = x$ hoặc
+$y = ax+b$, thì chuỗi $y$; $y^{\mathrm{I}}$; $y^{\mathrm{II}}$; &c. cũng sẽ là cấp số cộng;
+nếu $y = \dfrac{a}{bx+c}$, chuỗi sinh ra sẽ là chuỗi điều hòa; còn nếu $y = a^x$, ta sẽ có
+một cấp số nhân. Và không thể nghĩ ra được chuỗi nào lại không thể sinh ra theo cách ấy từ
+một functio xác định của $y$; người ta thường gọi một functio như vậy của $x$, xét trong
+quan hệ với chuỗi sinh ra từ nó, là TERMINUS GENERALIS của chuỗi ấy; vì vậy, do mọi chuỗi
+lập theo một quy luật xác định đều có terminus generalis, nên ngược lại nó sinh ra từ một
+functio xác định của $x$, như trong lý thuyết chuỗi người ta vẫn thường giải thích kỹ hơn.
+
+<!-- Ghi chú dịch giả: ở §3 bản in viết "ex certa functione ipsius y oriri queat" (từ một
+     functio xác định của y), trong khi ngay sau đó là "functio ipsius x" và cả câu nói về
+     functio của x. Nhiều khả năng là lỗi sắp chữ, lẽ ra là "ipsius x". Đã giữ nguyên "của
+     y" như bản in. -->
 
 <!-- PDF 33, trang in 5 (tiếp) -->
 
-**4.** Ở đây đáng chú ý nhất là những sai lệch qua đó các hạng của chuỗi $y$, $y^1$, $y^2$,
-$y^3$, &c. khác nhau, và ta sẽ chú ý tới chúng. Để phục vụ cho bản chất của các vi phân, ta
-biểu thị chúng bằng những dấu hiệu sau đây, sao cho
+**4.** Nhưng ở đây ta chủ yếu để ý tới những sai lệch mà các hạng của chuỗi $y$,
+$y^{\mathrm{I}}$, $y^{\mathrm{II}}$, $y^{\mathrm{III}}$, &c. chênh nhau; và để cho chúng
+khớp với bản chất của các vi phân, ta ký hiệu chúng bằng những dấu sau, sao cho
 
 $$
-y^1 - y = \Delta y; \quad y^2 - y^1 = \Delta y^1; \quad y^3 - y^2 = \Delta y^2; \quad \text{\&c.}
+y^{\mathrm{I}} - y = \Delta y; \quad y^{\mathrm{II}} - y^{\mathrm{I}} = \Delta y^{\mathrm{I}}; \quad y^{\mathrm{III}} - y^{\mathrm{II}} = \Delta y^{\mathrm{II}}; \quad \text{\&c.}
 $$
 
-Vậy $\Delta y$ biểu thị lượng tăng mà functio $y$ nhận lấy khi ở chỗ của $x$ ta đặt
-$x+\omega$, với $\omega$ là một số bất kỳ tùy ý chọn. Trong lý thuyết chuỗi thường lấy
-$\omega = 1$; nhưng ở đây, với mục đích của chúng ta, thì tiện hơn là dùng một giá trị
-tổng quát, giá trị có thể tùy ý tăng lên hay giảm xuống. Lượng tăng $\Delta y$ này cũng
-thường được gọi là *differentia* của functio $y$: giá trị kế tiếp $y^1$ vượt quá $y$ bao
-nhiêu, và luôn được coi là một lượng tăng — dù nó thường xuyên thật ra là một lượng giảm,
-điều mà ta nhận ra được từ giá trị âm của nó.
+Vậy $\Delta y$ sẽ biểu thị lượng tăng mà functio $y$ nhận khi trong nó ở chỗ của $x$ ta đặt
+$x+\omega$, với $\omega$ là một số bất kỳ, lấy tùy ý. Trong lý thuyết chuỗi người ta thường
+lấy $\omega = 1$; nhưng ở đây, cho mục đích của chúng ta, nên dùng một giá trị tổng quát, có
+thể tùy ý tăng lên hay giảm xuống. Lượng tăng $\Delta y$ này của functio $y$ cũng thường
+được gọi là DIFFERENTIA của nó, tức lượng mà giá trị kế tiếp $y^{\mathrm{I}}$ vượt giá trị
+đầu $y$, và luôn được coi như một lượng tăng, dù thực ra nó thường biểu thị một lượng giảm,
+điều nhận ra được từ giá trị âm của nó.
 
 > **[Chú giải]**
 >
@@ -120,67 +129,71 @@ nhiêu, và luôn được coi là một lượng tăng — dù nó thường xu
 
 <!-- PDF 34, trang in 6 -->
 
-**5.** Vì $\Delta y$ sinh ra từ $y$, nếu ở chỗ của $x$ ta viết $x+2\omega$ thì rõ ràng
-cũng chỉ là $y$ sinh ra; nhưng nếu trước hết ở chỗ của $x$ ta đặt $x+\omega$, rồi lại đặt
-$x+\omega$ ở chỗ của $x$ lần nữa, thì $\Delta y$ sẽ sinh ra từ $\Delta y^1$: bởi nếu ở
-chỗ của $x$ trong biểu thức ấy ta viết $x+\omega$ thì ta được đúng lượng tăng mà $y^2$ nhận
-lấy khi $x+\omega$ được thay bằng $x+2\omega$, và nó được gọi cùng cách gọi như *differentia*
-của $y^1$. Theo cùng lý do ấy, $\Delta y^2$ là *differentia* của $y^2$, tức là lượng tăng mà
-nó nhận lấy khi ở chỗ của $x$ ta đặt $x+\omega$; và $\Delta y^3$ là *differentia* của
-$y^3$, v.v. Như vậy, từ chuỗi những giá trị của nó là $y$, $y^1$, $y^2$, $y^3$, &c., ta có
-được chuỗi những sai lệch $\Delta y$, $\Delta y^1$, $\Delta y^2$, &c. — chúng được tìm ra
-bằng cách lấy mỗi hạng của chuỗi kia trừ đi hạng đứng ngay trước nó.
+**5.** Vì $y^{\mathrm{II}}$ sinh ra từ $y$ khi ở chỗ của $x$ ta viết $x+2\omega$, rõ ràng
+cũng chính lượng ấy sẽ sinh ra nếu trước hết ở chỗ của $x$ ta đặt $x+\omega$, rồi lại một lần
+nữa đặt $x+\omega$ vào chỗ của $x$. Do đó $y^{\mathrm{II}}$ sẽ sinh ra từ $y^{\mathrm{I}}$ nếu
+trong $y^{\mathrm{I}}$, ở chỗ của $x$, ta viết $x+\omega$; và vì thế $\Delta y^{\mathrm{I}}$ sẽ
+là lượng tăng của $y^{\mathrm{I}}$ mà nó nhận khi đặt $x+\omega$ vào chỗ của $x$; và như vậy
+$\Delta y^{\mathrm{I}}$, theo cách tương tự, được gọi là *Differentia* của $y^{\mathrm{I}}$.
+Theo cùng lẽ ấy, $\Delta y^{\mathrm{II}}$ sẽ là differentia của $y^{\mathrm{II}}$, tức lượng
+tăng mà nó nhận nếu ở chỗ của $x$ ta đặt $x+\omega$; và $\Delta y^{\mathrm{III}}$ sẽ là
+differentia, tức lượng tăng, của $y^{\mathrm{III}}$, và cứ thế tiếp. Theo cách này, từ chuỗi
+các giá trị của $y$, tức $y$; $y^{\mathrm{I}}$; $y^{\mathrm{II}}$; $y^{\mathrm{III}}$; &c., ta
+sẽ có chuỗi các sai lệch $\Delta y$; $\Delta y^{\mathrm{I}}$; $\Delta y^{\mathrm{II}}$; &c.,
+tìm được bằng cách lấy hạng đứng sau trừ đi mỗi hạng của chuỗi kia.
 
-**6.** Đã tìm ra chuỗi các sai lệch, nếu ta lại lấy sai lệch của chính những sai lệch ấy, mỗi
-sai lệch trừ đi cái đứng sau nó, thì sẽ có những sai lệch của các sai lệch, được gọi là
-*differentiae secundae*, và thuận tiện nhất là biểu thị chúng bằng các ký tự sao cho:
+**6.** Tìm được chuỗi các sai lệch rồi, nếu từ nó ta lại lấy sai lệch, bằng cách lấy hạng đứng
+sau trừ đi mỗi hạng, thì sẽ sinh ra những sai lệch của các sai lệch, được gọi là
+*Differentiae secundae*; và theo cách sau, chúng được biểu thị bằng ký tự một cách tiện lợi
+nhất, sao cho:
 
 $$
-\begin{array}{rclcrcl}
-\Delta\Delta y &=& \Delta y^1 - \Delta y, &\qquad& \Delta\Delta y^1 &=& \Delta y^2 - \Delta y^1,\\
-\Delta\Delta y^2 &=& \Delta y^3 - \Delta y^2, && \Delta\Delta y^3 &=& \Delta y^4 - \Delta y^3,\\
-&&\text{\&c.}
+\begin{array}{rcl}
+\Delta\Delta y &=& \Delta y^{\mathrm{I}} - \Delta y\\
+\Delta\Delta y^{\mathrm{I}} &=& \Delta y^{\mathrm{II}} - \Delta y^{\mathrm{I}}\\
+\Delta\Delta y^{\mathrm{II}} &=& \Delta y^{\mathrm{III}} - \Delta y^{\mathrm{II}}\\
+\Delta\Delta y^{\mathrm{III}} &=& \Delta y^{\mathrm{IV}} - \Delta y^{\mathrm{III}}\\
+&\text{\&c.}&
 \end{array}
 $$
 
-Vậy $\Delta\Delta y$ là differentia secunda của $y$; $\Delta\Delta y^1$ là differentia secunda
-của $y^1$; và cứ thế. Cũng theo cách ấy, nếu từ các differentia secunda lại lấy sai lệch,
-thì sẽ có differentiae tertiae, viết
-
-$$
-\Delta^3 y = \Delta^3 y^1 = \text{\&c.}
-$$
-
-hàm ý là $\Delta^3 y = \Delta\Delta y^1 - \Delta\Delta y$. Từ đó, các differentiae quartae
-là $\Delta^4 y$, $\Delta^4 y^1$, &c., và cứ tiến mãi cho tới bao giờ.
+Vậy $\Delta\Delta y$ được gọi là differentia secunda của $y$; $\Delta\Delta y^{\mathrm{I}}$ là
+differentia secunda của $y^{\mathrm{I}}$, và cứ thế tiếp. Tương tự, nếu từ các differentia
+secunda ta lại lấy sai lệch của chúng, sẽ sinh ra các differentiae tertiae, viết theo cách
+này: $\Delta^3 y$; $\Delta^3 y^{\mathrm{I}}$; &c.; rồi từ đó tiếp nữa là các differentiae
+quartae $\Delta^4 y$; $\Delta^4 y^{\mathrm{I}}$; &c.; và cứ thế xa hơn, bao xa tùy thích.
 
 <!-- PDF 35, trang in 7 -->
 
-**7.** Hãy biểu thị riêng từng chuỗi các sai lệch này theo cách sơ đồ mà trong đó mối liên
-hệ giữa chúng dễ dàng lọt vào mắt hơn:
+**5.** Ta hãy biểu thị từng chuỗi sai lệch này trong một sơ đồ, để mối liên hệ giữa chúng dễ
+đập vào mắt hơn:
 
 | | | | | | | |
 |---|---|---|---|---|---|---|
 | *Progressio arithmetica* | | | | | | |
-| $x$ | $x+\omega$ | $x+2\omega$ | $x+3\omega$ | $x+4\omega$ | $x+5\omega$ | &c. |
+| $x$; | $x+\omega$; | $x+2\omega$; | $x+3\omega$; | $x+4\omega$; | $x+5\omega$; | &c. |
 | *Valores functionis* | | | | | | |
-| $y$ | $y^{\mathrm{I}}$ | $y^{\mathrm{II}}$ | $y^{\mathrm{III}}$ | $y^{\mathrm{IV}}$ | $y^{\mathrm{V}}$ | &c. |
+| $y$; | $y^{\mathrm{I}}$; | $y^{\mathrm{II}}$; | $y^{\mathrm{III}}$; | $y^{\mathrm{IV}}$; | $y^{\mathrm{V}}$; | &c. |
 | *Differentiae primae* | | | | | | |
-| $\Delta y$ | $\Delta y^1$ | $\Delta y^2$ | $\Delta y^3$ | $\Delta y^4$ | $\Delta y^5$ | &c. |
+| $\Delta y$; | $\Delta y^{\mathrm{I}}$; | $\Delta y^{\mathrm{II}}$; | $\Delta y^{\mathrm{III}}$; | $\Delta y^{\mathrm{IV}}$; | &c. | |
 | *Differentiae secundae* | | | | | | |
-| $\Delta\Delta y$ | $\Delta\Delta y^1$ | $\Delta\Delta y^2$ | $\Delta\Delta y^3$ | $\Delta\Delta y^4$ | $\Delta\Delta y^5$ | &c. |
+| $\Delta\Delta y$; | $\Delta\Delta y^{\mathrm{I}}$; | $\Delta\Delta y^{\mathrm{II}}$; | $\Delta\Delta y^{\mathrm{III}}$; | &c. | | |
 | *Differentiae tertiae* | | | | | | |
-| $\Delta^3 y$ | $\Delta^3 y^1$ | $\Delta^3 y^2$ | $\Delta^3 y^3$ | | | &c. |
+| $\Delta^3 y$; | $\Delta^3 y^{\mathrm{I}}$; | $\Delta^3 y^{\mathrm{II}}$; | &c. | | | |
 | *Differentiae quartae* | | | | | | |
-| $\Delta^4 y$ | $\Delta^4 y^1$ | $\Delta^4 y^2$ | | | | &c. |
+| $\Delta^4 y$; | $\Delta^4 y^{\mathrm{I}}$; | &c. | | | | |
 | *Differentiae quintae* | | | | | | |
-| $\Delta^5 y$ | $\Delta^5 y^1$ | | | | | &c. |
+| $\Delta^5 y$; | &c. | | | | | |
 | &c. | | | | | | |
 
-Trong đó mỗi hạng nào cũng sinh ra từ hạng trước nó, bằng cách lấy hạng kia trừ đi cái đứng
-sau nó. Vậy nếu ta thay $y$ ở chỗ của nó bằng một functio bất kỳ nào của $x$, thì các giá
-trị $y$, $y^1$, $y^2$, $y^3$, &c. sẽ dễ dàng tạo thành qua những phép cộng, và từ đó, với
-một ít công sức, sẽ tìm ra những chuỗi sai lệch.
+trong đó mỗi chuỗi sinh ra từ chuỗi đứng trước, bằng cách lấy các hạng đứng sau trừ đi từng
+hạng. Vậy, bất kể functio nào của $x$ được thay vào chỗ của $y$, vì các giá trị
+$y^{\mathrm{I}}$, $y^{\mathrm{II}}$, $y^{\mathrm{III}}$, &c. dễ dàng lập được bằng những phép
+hợp thành đã biết, nên từ chúng sẽ tìm ra từng chuỗi sai lệch mà không tốn công.
+
+<!-- Ghi chú dịch giả: đoạn này trên bản in mang số "5." (PDF 35, trang in 7), trùng với
+     số của đoạn "Quoniam" ở trang 6; theo thứ tự thì đây là §7, và đoạn kế tiếp in là
+     "8.". Đã giữ số "5." như bản in. -->
 
 > **[Chú giải]**
 >
@@ -196,41 +209,43 @@ một ít công sức, sẽ tìm ra những chuỗi sai lệch.
 > hoặc dùng một đa thức Taylor — cả hai đều là trường hợp riêng của bảng trên khi
 > $\Delta y \approx \omega\,\frac{dy}{dx}$.
 >
-> Một chi tiết cần để mắt: chỉ số trên $y$ ở đây là số La Mã ($y^{\mathrm{I}}$,
-> $y^{\mathrm{II}}$), còn chỉ số trên $\Delta y$ là số Ả Rập ($\Delta y^1$, $\Delta y^2$).
-> Ở §4 ngay trên, Euler lại viết $\Delta y^1$ rồi $\Delta y^{\mathrm{II}}$, tức trộn lẫn hai
-> kiểu trong cùng một công thức. Bản dịch giữ nguyên từng chỗ.
->
-> Về $\Delta^3 y$ ở §6: bản in viết `Δ³y = Δ³y¹ = Δ³y² =` &c., mà lẽ ra phải là
-> $\Delta^3 y = \Delta\Delta y^1 - \Delta\Delta y$. Giữ nguyên như in.
+> Một chi tiết cần để mắt: chỉ số trên $y$ và trên $\Delta y$ ở đây là số La Mã
+> ($y^{\mathrm{I}}$, $\Delta y^{\mathrm{II}}$), chỉ vị trí của giá trị trong chuỗi, không
+> phải số mũ. Còn chỉ số Ả Rập trên $\Delta$ ($\Delta^3 y$, $\Delta^4 y$) mới là bậc của
+> sai lệch.
 
 <!-- PDF 36, trang in 8 -->
 
-**8.** Hãy đặt $y = x$; khi ấy $y^1 = x^1 = x + \omega$, $y^2 = x^2 = x + 2\omega$, và cứ thế.
-Khi lấy sai lệch, ta sẽ có $\Delta x = \omega$, $\Delta x^1 = \omega$, $\Delta x^2 = \omega$, &c.
-Do đó mọi differentia bậc nhất của $x$ đều là hằng, và hệ quả là mọi differentia bậc hai đều
-tan biến; cũng như vậy, mọi differentia bậc ba và của các bậc cao hơn. Vậy, vì
-$\Delta x = \omega$, nên theo cách tương tự, thay cho chữ $\omega$, ký tự $\Delta x$ được
-dùng một cách tiện lợi. Do đó, với lượng biến thiên $x$ mà các giá trị liên tiếp $x$,
-$x^1$, $x^2$, $x^3$, &c. được giả thiết lập thành một cấp số cộng, các differentia
-$\Delta x$, $\Delta x^1$, $\Delta x^2$, &c. sẽ là hằng và bằng nhau; và hệ quả là
+**8.** Ta đặt $y = x$; khi ấy $y^{\mathrm{I}} = x^{\mathrm{I}} = x + \omega$;
+$y^{\mathrm{II}} = x^{\mathrm{II}} = x + 2\omega$: và cứ thế tiếp. Từ đó, lấy các sai lệch, ta
+sẽ có $\Delta x = \omega$; $\Delta x^{\mathrm{I}} = \omega$; $\Delta x^{\mathrm{II}} = \omega$;
+&c.; vì vậy mọi differentia bậc nhất của $x$ sẽ là hằng, và do đó mọi differentia bậc hai
+sẽ triệt tiêu; các differentia bậc ba, và mọi differentia của các bậc tiếp theo, cũng vậy.
+Vậy vì $\Delta x = \omega$, nên theo phép tương tự, ở chỗ của chữ $\omega$ ta sẽ dùng ký tự
+$\Delta x$ cho tiện. Như vậy, với lượng biến thiên $x$ mà các giá trị liên tiếp $x$,
+$x^{\mathrm{I}}$, $x^{\mathrm{II}}$, $x^{\mathrm{III}}$, &c. được giả thiết lập thành một cấp
+số cộng, các differentia $\Delta x$, $\Delta x^{\mathrm{I}}$, $\Delta x^{\mathrm{II}}$, &c. sẽ
+là hằng và bằng nhau; và vì thế sẽ có
 
 $$
 \Delta\Delta x = 0, \qquad \Delta^3 x = 0, \qquad \Delta^4 x = 0,
 $$
 
-và cứ thế.
+và cứ thế tiếp.
 
-**9.** Với các giá trị của chính $x$, lần lượt được ban cho, ta ở đây giả thiết một cấp số
-cộng, sao cho differentia bậc nhất của chúng là hằng, còn differentia bậc hai và tất cả
-những bậc còn lại đều tan biến. Điều này còn tuỳ thuộc vào ý chúng ta, vì lẽ ra ta có thể
-dùng bất kỳ cấp số nào khác; dù vậy, cấp số cộng được dùng thuận lợi hơn tất cả những
-cái khác, vì nó vừa đơn giản nhất và dễ hiểu nhất, vừa — điều này mới là tối đa — vì nó
-mở ra được mọi giá trị mà $x$ nói chung có thể nhận. Quả thật, khi ban cho $\omega$ cả những
-giá trị âm lẫn dương, thì trong chuỗi giá trị của $x$ này chứa đựng mọi lượng thực có thể
-đứng ở chỗ của $x$; trái lại, nếu ta chọn một chuỗi nhân, thì sẽ không có lối nào tới các giá
-trị âm. Vì lý do đó, tính biến thiên của các functio $y$ được phán đoán chính xác nhất khi
-chúng được thiết lập từ các giá trị của $x$ theo cấp số cộng.
+**9.** Ở đây, cho các giá trị lần lượt gán cho $x$, ta đã giả thiết một cấp số cộng, sao cho
+các differentia bậc nhất của những giá trị ấy là hằng, còn các differentia bậc hai và mọi bậc
+còn lại đều triệt tiêu. Dù điều này tùy thuộc vào ý muốn của ta, vì ta cũng có thể dùng bất
+kỳ cấp số nào khác, nhưng cấp số cộng thường được dùng thuận tiện nhất, hơn mọi cấp số khác:
+một là vì nó đơn giản nhất và dễ hiểu nhất, hai là, và đây là lý do chính, vì nó mở lối tới
+mọi giá trị mà $x$ có thể nhận. Quả vậy, khi gán cho $\omega$ các giá trị âm cũng như dương,
+thì trong chuỗi giá trị này của $x$ chứa đủ mọi lượng thực có thể thay vào chỗ của $x$:
+
+<!-- PDF 37, trang in 9 -->
+
+trái lại, nếu ta chọn một cấp số nhân, thì không có lối nào tới các giá trị âm. Vì lẽ ấy,
+tính biến thiên của các functio $y$ được xét đoán thích đáng nhất từ những giá trị của $x$
+lập thành cấp số cộng.
 
 > **[Chú giải]**
 >
@@ -248,191 +263,203 @@ chúng được thiết lập từ các giá trị của $x$ theo cấp số c�
 > Điều cần chú ý về sau: chính vì $\omega$ phải tùy ý đi tới vô cùng nhỏ, thế giới hữu hạn ở
 > đây mới không bị khóa cứng. Cấp số cộng với một bước cố định sẽ không đủ cho việc đó.
 
-**10.** Vì $\Delta y = y^1 - y$, nên những sai lệch cao hơn cũng có thể được định nghĩa từ
-các hạng đầu tiên của chuỗi $y$, $y^1$, $y^2$, $y^3$, &c. Vì $\Delta y^1 = y^2 - y^1$, ta có
+**10.** Cũng như $\Delta y = y^{\mathrm{I}} - y$, các differentia cao hơn cũng có thể được xác
+định từ các hạng của chuỗi thứ nhất $y$, $y^{\mathrm{I}}$, $y^{\mathrm{II}}$,
+$y^{\mathrm{III}}$, &c. Vì
 
 $$
-\Delta\Delta y = y^2 - 2y^1 + y
-$$
-
-và
-
-$$
-\Delta\Delta y^1 = y^3 - 2y^2 + y^1,
+\Delta y^{\mathrm{I}} = y^{\mathrm{II}} - y^{\mathrm{I}}
 $$
 
 nên
 
 $$
-\Delta^3 y = \Delta\Delta y^1 - \Delta\Delta y = y^3 - 3y^2 + 3y^1 - y.
-$$
-
-Cũng theo cách ấy,
-
-$$
-\Delta^4 y = y^4 - 4y^3 + 6y^2 - 4y^1 + y
+\Delta\Delta y = y^{\mathrm{II}} - 2y^{\mathrm{I}} + y
 $$
 
 và
 
 $$
-\Delta^5 y = y^5 - 5y^4 + 10y^3 - 10y^2 + 5y^1 - y,
+\Delta\Delta y^{\mathrm{I}} = y^{\mathrm{III}} - 2y^{\mathrm{II}} + y^{\mathrm{I}}
 $$
 
-trong những công thức ấy các hệ số thuần số tuân theo cùng một quy luật, quy luật quan
-sát được trong các lũy thừa của Nhị thức. Như vậy, cũng như differentia bậc nhất được xác
-định từ hai hạng ($y$, $y^1$, $y^2$, $y^3$, &c.), differentia bậc hai được xác định từ ba
-hạng, bậc ba từ bốn hạng, và cứ thế. Và khi đã biết các differentia của mọi bậc của $y$ thì
-theo cùng cách ấy, các differentia của mọi bậc của $y^1$, $y^2$, &c. cũng được xác định.
+và do đó
+
+$$
+\Delta^3 y = \Delta\Delta y^{\mathrm{I}} - \Delta\Delta y = y^{\mathrm{III}} - 3y^{\mathrm{II}} + 3y^{\mathrm{I}} - y;
+$$
+
+tương tự sẽ có
+
+$$
+\Delta^4 y = y^{\mathrm{IV}} - 4y^{\mathrm{III}} + 6y^{\mathrm{II}} - 4y^{\mathrm{I}} + y
+$$
+
+và
+
+$$
+\Delta^5 y = y^{\mathrm{V}} - 5y^{\mathrm{IV}} + 10y^{\mathrm{III}} - 10y^{\mathrm{II}} + 5y^{\mathrm{I}} - y;
+$$
+
+các hệ số bằng số của những công thức này theo cùng một quy luật như quy luật thấy ở các lũy
+thừa của Nhị thức. Vậy cũng như differentia bậc nhất được xác định từ hai hạng của chuỗi
+$y$; $y^{\mathrm{I}}$; $y^{\mathrm{II}}$; $y^{\mathrm{III}}$; &c., differentia bậc hai được xác
+định từ ba hạng, bậc ba từ bốn hạng, và các bậc còn lại cũng thế. Còn khi đã biết các
+differentia mọi bậc của $y$, thì theo cách tương tự các differentia mọi bậc của
+$y^{\mathrm{I}}$; $y^{\mathrm{II}}$; &c. cũng sẽ được xác định.
 
 <!-- PDF 38, trang in 10 -->
 
-**11.** Vậy, khi một functio $y$ bất kỳ được đưa ra, thì từng differentia của nó — cả bậc
-nhất lẫn những bậc sau, ít nhất là những cái ứng với bước nhảy $\omega$ mà các giá trị của
-$x$ tiến theo — đều có thể được tìm ra. Và việc này không đòi hỏi phải kéo dài chuỗi giá
-trị của $y$ đi xa hơn nữa. Quả thật, differentia bậc nhất $\Delta y$ được tìm ra bằng cách
-viết $x + \omega$ ở chỗ của $x$ trong $y$, rồi lấy functio $y$ trừ đi cái giá trị $y^1$ sinh
-ra; và cũng theo cách ấy, differentia bậc hai $\Delta\Delta y$ được tìm ra nếu trong
-differentia bậc nhất $\Delta y$ ta đặt $x + \omega$ ở chỗ của $x$, để sinh ra $\Delta y^1$,
-rồi lấy $\Delta y^1$ trừ $\Delta y$. Cũng theo cách ấy, nếu lấy sai lệch của differentia
-bậc hai $\Delta\Delta y$, rồi lấy nó trừ đi cái giá trị mà nó sinh ra khi ở chỗ của $x$ ta
-đặt $x + \omega$, thì sẽ có differentia bậc ba $\Delta^3 y$; và từ đó, theo cùng cách ấy, là
-differentia bậc tư $\Delta^4 y$, &c. Vậy chỉ cần biết cách tìm differentia bậc nhất của
-mỗi functio là ta cũng có thể tìm được differentia bậc hai, bậc ba, và tất cả những bậc
-sau nó; bởi vì differentia bậc hai của $y$ chẳng qua là differentia bậc nhất của $\Delta y$;
-và differentia bậc ba của $y$ chẳng qua là differentia bậc nhất của $\Delta\Delta y$; và cứ
-thế cho những cái còn lại.
+**11.** Vậy, cho một Functio $y$ bất kỳ, thì mọi differentia của nó, cả bậc nhất lẫn các bậc
+tiếp theo, tức những differentia ứng với sai lệch $\omega$ mà theo đó các giá trị của $x$ tiến
+lên, đều có thể tìm được. Và muốn vậy thì không cần phải kéo dài chuỗi giá trị của $y$ thêm
+nữa: vì cũng như differentia bậc nhất $\Delta y$ tìm được nếu trong $y$, ở chỗ của $x$, ta viết
+$x + \omega$, rồi lấy giá trị $y^{\mathrm{I}}$ vừa sinh ra trừ đi chính functio $y$; thì
+differentia bậc hai $\Delta\Delta y$ sẽ có được nếu trong differentia bậc nhất $\Delta y$, ở
+chỗ của $x$, ta đặt $x + \omega$ để sinh ra $\Delta y^{\mathrm{I}}$, rồi lấy
+$\Delta y^{\mathrm{I}}$ trừ đi $\Delta y$. Tương tự, nếu lấy Differentia của differentia bậc
+hai $\Delta\Delta y$, bằng cách lấy giá trị mà nó nhận khi ở chỗ của $x$ ta đặt $x + \omega$
+trừ đi nó, thì sẽ ra differentia bậc ba $\Delta^3 y$; và từ đó, cũng theo cách ấy, là
+differentia bậc bốn $\Delta^4 y$, &c. Vậy hễ ai biết cách tìm differentia bậc nhất của một
+functio bất kỳ thì đồng thời cũng tìm được differentia bậc hai, bậc ba và mọi bậc tiếp theo:
+bởi differentia bậc hai của $y$ chẳng gì khác hơn là differentia bậc nhất của $\Delta y$; và
+differentia bậc ba của $y$ chẳng gì khác hơn là differentia bậc nhất của $\Delta\Delta y$; và
+các bậc còn lại cũng thế.
 
-**12.** Nếu functio $y$ được ghép từ hai hay nhiều thành phần, như là
-$y = p + q + r + \text{\&c.}$, thì vì $y^1 = p^1 + q^1 + r^1 + \text{\&c.}$, ta có
-differentia
+**12.** Nếu functio $y$ gồm hai hay nhiều phần hợp lại, sao cho $y = p + q + r + \text{\&c.}$,
+thì vì $y^{\mathrm{I}} = p^{\mathrm{I}} + q^{\mathrm{I}} + r^{\mathrm{I}} + \text{\&c.}$, ta
+sẽ có differentia
 
 $$
 \Delta y = \Delta p + \Delta q + \Delta r + \text{\&c.},
 $$
 
-và cũng theo cách ấy
+và tương tự, tiếp nữa,
 
 $$
 \Delta\Delta y = \Delta\Delta p + \Delta\Delta q + \Delta\Delta r + \text{\&c.};
 $$
 
-nên việc tìm các differentia, khi functio đã cho là sự ghép của các thành phần, trở nên
-không khó hơn là bao. Nhưng nếu functio $y$ lại là tích của hai functio $p$ và $q$, tức là
-$y = pq$, thì vì $y^1 = p^1q^1$, $p^1 = p + \Delta p$ và $q^1 = q + \Delta q$, ta có
-
-$$
-p^1q^1 = pq + p\Delta q + q\Delta p + \Delta p\,\Delta q,
-$$
-
-nên $\Delta y = p\Delta q + q\Delta p + \Delta p\,\Delta q$. Vậy nếu $p$ là một lượng
-constans $a$, thì $\Delta a = 0$, và differentia bậc nhất của functio $y = aq$ là
-$\Delta y = a\Delta q$; cũng theo cách ấy differentia bậc hai là
-$\Delta\Delta y = a\Delta\Delta q$, và bậc ba — bản in viết `Δ³q = aΔ³q`, xem sổ đối chiếu.
+nhờ đó việc tìm các differentia, khi functio đã cho gồm nhiều phần hợp lại, trở nên dễ hơn
+không ít. Còn nếu functio $y$ là tích của hai functio $p$ và $q$, tức là
 
 <!-- PDF 39, trang in 11 -->
 
-**13.** Vì mọi functio rationalis nguyên là sự tổng hợp từ vài lũy thừa của chính $x$, nên
-ta sẽ có thể tìm được mọi differentia của các functio rationalis nguyên, nếu ta biết hiển
-thị differentia của các lũy thừa. Vì vậy, trong những ví dụ sau ta sẽ nghiên cứu differentia
-của từng lũy thừa của lượng biến thiên $x$. Và vì $x^0 = 1$ thì $\Delta x^0 = 0$;
-bởi vì $x^0$ không biến thiên, ngay cả khi $x$ trở thành $x + \omega$. Còn như ta đã thấy thì
-$\Delta x = \omega$ và $\Delta\Delta x = 0$, đồng thời các differentia của những bậc kế tiếp
-đều tan biến. Vì những điều ấy đã rõ ràng, ta bắt đầu từ bậc hai.
+$y = pq$, thì vì $y^{\mathrm{I}} = p^{\mathrm{I}}q^{\mathrm{I}}$, và
+$p^{\mathrm{I}} = p + \Delta p$ cùng $q^{\mathrm{I}} = q + \Delta q$, ta sẽ có
+
+$$
+p^{\mathrm{I}}q^{\mathrm{I}} = pq + p\Delta q + q\Delta p + \Delta p\,\Delta q,
+$$
+
+và từ đó $\Delta y = p\Delta q + q\Delta p + \Delta p\,\Delta q$. Do đó, nếu $p$ là một lượng
+constans $= a$, thì vì $\Delta a = 0$, differentia bậc nhất của functio $y = aq$ sẽ là
+$\Delta y = a\Delta q$, và tương tự differentia bậc hai là $\Delta\Delta y = a\Delta\Delta q$,
+bậc ba là $\Delta^3 q = a\Delta^3 q$, và cứ thế tiếp.
+
+<!-- Ghi chú dịch giả: vế trái "Δ³q" ở cuối §12 đúng như bản in (PDF 39); theo mạch hai
+     dòng trước thì lẽ ra là Δ³y. Đã giữ nguyên như in. -->
+
+**13.** Vì mọi functio rationalis nguyên là một tổng gồm vài lũy thừa của $x$, nên ta sẽ tìm
+được mọi differentia của các functio rationalis nguyên, miễn là ta biết cách biểu thị
+differentia của riêng các lũy thừa. Vì thế, trong các ví dụ sau, ta hãy khảo sát differentia
+của từng lũy thừa của lượng biến thiên $x$.
+
+Vì $x^0 = 1$, nên $\Delta x^0 = 0$; bởi $x^0$ không biến đổi, dù $x$ chuyển thành
+$x + \omega$.
+
+Còn ta đã thấy rằng $\Delta x = \omega$; và $\Delta\Delta x = 0$, đồng thời các differentia của
+những bậc tiếp theo đều triệt tiêu. Những điều ấy đã rõ, nên ta hãy bắt đầu từ Lũy thừa bậc
+hai:
 
 ### Exemplum I
 
-*Tìm các differentia của mọi bậc của lũy thừa $x^2$.*
+*Tìm các differentia mọi bậc của lũy thừa $x^2$.*
 
-Vì ở đây $y = x^2$, nên $y^1 = (x + \omega)^2$, và do đó
-
-$$
-\Delta y = 2\omega x + \omega\omega;
-$$
-
-đây là differentia bậc nhất. Rồi vì $\omega$ là một lượng constans, ta có
-$\Delta\Delta y = 2\omega\omega$ và $\Delta^3 y = 0$, $\Delta^4 y = 0$; &c.
+Vì ở đây $y = x^2$, nên $y^{\mathrm{I}} = (x + \omega)^2$; và do đó
+$\Delta y = 2\omega x + \omega\omega$; đó là differentia bậc nhất. Giờ vì $\omega$ là lượng
+constans, nên $\Delta\Delta y = 2\omega\omega$, và $\Delta^3 y = 0$; $\Delta^4 y = 0$; &c.
 
 ### Exemplum II
 
-*Tìm các differentia của mọi bậc của lũy thừa $x^3$.*
+*Tìm các differentia mọi bậc của lũy thừa $x^3$.*
 
-Hãy đặt $y = x^3$, và vì $y^1 = (x + \omega)^3$, ta có
-
-$$
-\Delta y = 3\omega x^2 + 3\omega^2x + \omega^3,
-$$
-
-đây là differentia bậc nhất. Rồi, vì
-
-$$
-\Delta.\omega x^2 = 2\omega^2x + \omega^3,
-$$
-
-ta có
-
-$$
-\Delta.3\omega x^2 = 6\omega^2x + 3\omega^3
-$$
-
-và
-
-$$
-\Delta.3\omega^2x = 3\omega^3; \qquad \Delta.\omega^3 = 0;
-$$
-
-gộp lại ta được
-
-$$
-\Delta\Delta y = 6\omega^2x + 6\omega^3
-$$
-
-và
-
-$$
-\Delta^3 y = 6\omega^3.
-$$
-
-Còn những differentia kế tiếp thì tan biến.
+Đặt $y = x^3$; và vì $y^{\mathrm{I}} = (x + \omega)^3$,
 
 <!-- PDF 40, trang in 12 -->
 
+ta sẽ có
+
+$$
+\Delta y = 3\omega xx + 3\omega^2x + \omega^3
+$$
+
+đó là differentia bậc nhất. Kế đó, vì
+
+$$
+\Delta.\,xx = 2\omega x + \omega\omega
+$$
+
+nên
+
+$$
+\Delta.\,3\omega xx = 6\omega\omega x + 3\omega^3
+$$
+
+và
+
+$$
+\Delta.\,3\omega^2x = 3\omega^3; \qquad \Delta.\,\omega^3 = 0:
+$$
+
+gộp những cái này lại, ta sẽ có
+
+$$
+\Delta\Delta y = 6\omega^2x + 6\omega^3: \qquad \Delta^3 y = 6\omega^3:
+$$
+
+Còn các differentia tiếp theo sẽ triệt tiêu.
+
 ### Exemplum III
 
-*Tìm các differentia của mọi bậc của lũy thừa $x^4$.*
+*Tìm các differentia mọi bậc của lũy thừa $x^4$.*
 
-Đặt $y = x^4$; vì $y^1 = (x + \omega)^4$, ta có
+Đặt $y = x^4$; vì $y^{\mathrm{I}} = (x + \omega)^4$, ta sẽ có
 
 $$
 \Delta y = 4\omega x^3 + 6\omega^2x^2 + 4\omega^3x + \omega^4;
 $$
 
-đây là differentia bậc nhất. Rồi, từ những cái trước:
+đó là differentia bậc nhất. Rồi từ những điều trước, ta có:
 
 $$
 \begin{aligned}
-\Delta.4\omega x^3 &= 12\omega^2x^2 + 12\omega^3x + 4\omega^4\\
-\Delta.6\omega^2x^2 &= 12\omega^3x + 6\omega^4\\
-\Delta.4\omega^3x &= 4\omega^4\\
-\Delta.\omega^4 &= 0
+\Delta.\,4\omega x^3 &= 12\omega^2x^2 + 12\omega^3x + 4\omega^4\\
+\Delta.\,6\omega^2x^2 &= \;.\;.\;.\;.\;\; 12\omega^3x + 6\omega^4\\
+\Delta.\,4\omega^3x &= \;.\;.\;.\;.\;.\;.\;.\;.\;.\;\; + 4\omega^4\\
+\Delta.\,\omega^4 &= \;.\;.\;.\;.\;.\;.\;.\;.\;.\;.\;\; 0
 \end{aligned}
 $$
 
-Gộp lại, differentia bậc hai là
+Gộp những cái này lại, differentia bậc hai sẽ là:
 
 $$
-\Delta\Delta y = 12\omega^2x^2 + 24\omega^3x + 14\omega^4.
+\Delta\Delta y = 12\omega^2x^2 + 24\omega^3x + 14\omega^4:
 $$
 
-Vì tiếp đó nữa,
+Vì tiếp theo nữa ta có:
 
 $$
 \begin{aligned}
-\Delta.12\omega^3x^2 &= 24\omega^3x + 12\omega^4\\
-\Delta.24\omega^3x &= 24\omega^4\\
-\Delta.14\omega^4 &= 0
+\Delta.\,12\omega^3x^2 &= 24\omega^3x + 12\omega^4\\
+\Delta.\,24\omega^3x &= \;.\;.\;.\;\; 24\omega^4\\
+\Delta.\,14\omega^4 &= \;.\;.\;.\;.\;.\;\; 0
 \end{aligned}
 $$
+
+<!-- Ghi chú dịch giả: dòng đầu của khối này bản in ghi "Δ. 12ω³x²" (PDF 40, đã phóng to
+     để kiểm), trong khi hạng tương ứng của ΔΔy ngay trên là 12ω²x² và vế phải
+     24ω³x + 12ω⁴ đúng là differentia của 12ω²x². Đã giữ ω³ như bản in. -->
 
 <!-- PDF 41, trang in 13 -->
 
@@ -448,69 +475,72 @@ $$
 \Delta^4 y = 24\omega^4,
 $$
 
-vì nó là constans, nên những differentia của các bậc tiếp theo tan biến.
+và vì nó là hằng, các differentia của những bậc tiếp theo sẽ triệt tiêu.
 
 ### Exemplum IV
 
-*Tìm các differentia của mọi bậc của lũy thừa bất kỳ $x^n$.*
+*Tìm các differentia bậc bất kỳ của lũy thừa $x^n$.*
 
-Hãy đặt $y = x^n$; và vì $y^1 = (x + \omega)^n$, $y^2 = (x + 2\omega)^n$,
-$y^3 = (x + 3\omega)^n$, &c. Các lũy thừa khai triển sẽ cho ta:
+Đặt $y = x^n$; và vì $y^{\mathrm{I}} = (x + \omega)^n$; $y^{\mathrm{II}} = (x + 2\omega)^n$;
+$y^{\mathrm{III}} = (x + 3\omega)^n$; &c., các Lũy thừa khai triển ra sẽ cho:
 
 $$
 \begin{aligned}
 y &= x^n\\
-y^1 &= x^n + \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\omega^2x^{n-2}
-      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\omega^3x^{n-3} + \text{\&c.}\\
-y^2 &= x^n + \frac{n}{1}\,2\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,4\omega^2x^{n-2}
-      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,8\omega^3x^{n-3} + \text{\&c.}\\
-y^3 &= x^n + \frac{n}{1}\,3\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,9\omega^2x^{n-2}
-      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,27\omega^3x^{n-3} + \text{\&c.}\\
-y^4 &= x^n + \frac{n}{1}\,4\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,16\omega^2x^{n-2}
-      + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,64\omega^3x^{n-3} + \text{\&c.}
+y^{\mathrm{I}} &= x^n + \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\omega^2x^{n-2}
+      + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\omega^3x^{n-3} + \text{\&c.}\\
+y^{\mathrm{II}} &= x^n + \frac{n}{1}\,2\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,4\omega^2x^{n-2}
+      + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,8\omega^3x^{n-3} + \text{\&c.}\\
+y^{\mathrm{III}} &= x^n + \frac{n}{1}\,3\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,9\omega^2x^{n-2}
+      + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,27\omega^3x^{n-3} + \text{\&c.}\\
+y^{\mathrm{IV}} &= x^n + \frac{n}{1}\,4\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,16\omega^2x^{n-2}
+      + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,64\omega^3x^{n-3} + \text{\&c.}
 \end{aligned}
 $$
 
 <!-- PDF 42, trang in 14 -->
 
-Từ đây, khi lấy sai lệch, ta được:
+Từ đây, lấy các sai lệch, sẽ ra:
 
 $$
 \begin{aligned}
 \Delta y &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\omega^2x^{n-2}
-          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\omega^3x^{n-3} + \text{\&c.}\\
-\Delta y^1 &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,3\omega^2x^{n-2}
-          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,7\omega^3x^{n-3} + \text{\&c.}\\
-\Delta y^2 &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,5\omega^2x^{n-2}
-          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,19\omega^3x^{n-3} + \text{\&c.}\\
-\Delta y^3 &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,7\omega^2x^{n-2}
-          + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,37\omega^3x^{n-3} + \text{\&c.}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\omega^3x^{n-3} + \text{\&c.}\\
+\Delta y^{\mathrm{I}} &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,3\omega^2x^{n-2}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,7\omega^3x^{n-3} + \text{\&c.}\\
+\Delta y^{\mathrm{II}} &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,5\omega^2x^{n-2}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,19\omega^3x^{n-3} + \text{\&c.}\\
+\Delta y^{\mathrm{III}} &= \frac{n}{1}\omega x^{n-1} + \frac{n(n-1)}{1\cdot 2}\,7\omega^2x^{n-2}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,37\omega^3x^{n-3} + \text{\&c.}
 \end{aligned}
 $$
 
-Lại lấy sai lệch một lần nữa, ta sẽ được:
+lại lấy các sai lệch, và sẽ có:
 
 $$
 \begin{aligned}
-\Delta\Delta y &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,6\omega^3x^{n-3}
-          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,14\omega^4x^{n-4} + \text{\&c.}\\
-\Delta\Delta y^1 &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,12\omega^3x^{n-3}
-          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,50\omega^4x^{n-4} + \text{\&c.}\\
-\Delta\Delta y^2 &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\,18\omega^3x^{n-3}
-          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,110\omega^4x^{n-4} + \text{\&c.}
+\Delta\Delta y &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,6\omega^3x^{n-3}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\cdot\frac{(n-3)}{4}\,14\omega^4x^{n-4} + \text{\&c.}\\
+\Delta\Delta y^{\mathrm{I}} &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,12\omega^3x^{n-3}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\cdot\frac{(n-3)}{4}\,50\omega^4x^{n-4} + \text{\&c.}\\
+\Delta\Delta y^{\mathrm{II}} &= n(n-1)\omega^2x^{n-2} + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\,18\omega^{3}{}^{n-3}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\cdot\frac{(n-3)}{4}\,110\omega^4x^{n-4} + \text{\&c.}
 \end{aligned}
 $$
 
+<!-- Ghi chú dịch giả: ở dòng ΔΔy^II, số hạng thứ hai bản in ghi "18 ω³ ⁿ⁻³", thiếu chữ x
+     trước số mũ n−3 (PDF 42). Đã giữ như bản in. -->
+
 <!-- PDF 43, trang in 15 -->
 
-Từ những cái ấy, lấy sai lệch thêm nữa:
+Từ những cái này, bằng phép trừ, rút ra tiếp:
 
 $$
 \begin{aligned}
 \Delta^3 y &= n(n-1)(n-2)\omega^3x^{n-3}
-          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,36\omega^4x^{n-4} + \text{\&c.}\\
-\Delta^3 y^1 &= n(n-1)(n-2)\omega^3x^{n-3}
-          + \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\,60\omega^4x^{n-4} + \text{\&c.}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\cdot\frac{(n-3)}{4}\,36\omega^4x^{n-4} + \text{\&c.}\\
+\Delta^3 y^{\mathrm{I}} &= n(n-1)(n-2)\omega^3x^{n-3}
+          + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\cdot\frac{(n-3)}{4}\,60\omega^4x^{n-4} + \text{\&c.}
 \end{aligned}
 $$
 
@@ -520,8 +550,8 @@ $$
 \Delta^4 y = n(n-1)(n-2)(n-3)\omega^4x^{n-4} + \text{\&c.}
 $$
 
-**14.** Nhờ đó, quy luật thứ hai theo đó những differentia này tiến triển, sẽ dễ dàng thấy
-hơn. Hãy lập trước, vì lý do ngắn gọn:
+**14.** Để quy luật mà theo đó các differentia này của lũy thừa $x^n$ tiến triển được thấy rõ
+hơn, trước hết, cho gọn, ta đặt:
 
 $$
 \begin{aligned}
@@ -529,30 +559,33 @@ A &= \frac{n}{1}\\
 B &= \frac{n(n-1)}{1\cdot 2}\\
 C &= \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\\
 D &= \frac{n(n-1)(n-2)(n-3)}{1\cdot 2\cdot 3\cdot 4}\\
-E &= \frac{n(n-1)(n-2)(n-3)(n-4)}{1\cdot 2\cdot 3\cdot 4\cdot 5}
-\end{aligned}$$
+E &= \frac{n(n-1)(n-2)(n-3)(n-3)}{1\cdot 2\cdot 3\cdot 4\cdot 5}\\
+&\text{\&c.}
+\end{aligned}
+$$
 
-và &c.
+<!-- Ghi chú dịch giả: thừa số cuối ở tử số của E bản in ghi (n−3) lần thứ hai (PDF 43);
+     theo quy luật của A, B, C, D thì phải là (n−4). Đã giữ như bản in. -->
 
 <!-- PDF 44, trang in 16 -->
 
-Tiếp theo hãy lập Bảng sau, sẽ trích ra từng differentia:
+Kế đó lập Bảng sau, dùng cho từng differentia:
 
-| | | | | | | | | |
-|---|---|---|---|---|---|---|---|---|
-| $y$ | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | &c. |
-| $\Delta y$ | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | &c. |
-| $\Delta^2 y$ | 0 | 0 | 2 | 6 | 14 | 30 | 62 | 126 | 254 &c. |
-| $\Delta^3 y$ | 0 | 0 | 0 | 6 | 36 | 150 | 540 | 1806 | 5796 &c. |
-| $\Delta^4 y$ | 0 | 0 | 0 | 0 | 24 | 240 | 1560 | 8400 | 40824 &c. |
-| $\Delta^5 y$ | 0 | 0 | 0 | 0 | 0 | 120 | 1800 | 16800 | 126000 &c. |
-| $\Delta^6 y$ | 0 | 0 | 0 | 0 | 0 | 0 | 720 | 15120 | 191520 &c. |
-| $\Delta^7 y$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5040 | 141120 &c. |
+| | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|
+| $y$ | 1; | 0; | 0; | 0; | 0; | 0; | 0; | 0; | 0; | &c. |
+| $\Delta y$ | 0; | 1; | 1; | 1; | 1; | 1; | 1; | 1; | 1; | &c. |
+| $\Delta^2 y$ | 0; | 0; | 2; | 6; | 14; | 30; | 62; | 126; | 254; | &c. |
+| $\Delta^3 y$ | 0; | 0; | 0; | 6; | 36; | 150; | 540; | 1806; | 5796; | &c. |
+| $\Delta^4 y$ | 0; | 0; | 0; | 0; | 24; | 240; | 1560; | 8400; | 40824; | &c. |
+| $\Delta^5 y$ | 0; | 0; | 0; | 0; | 0; | 120; | 1800; | 16800; | 126000; | &c. |
+| $\Delta^6 y$ | 0; | 0; | 0; | 0; | 0; | 0; | 720; | 15120; | 191520; | &c. |
+| $\Delta^7 y$ | 0; | 0; | 0; | 0; | 0; | 0; | 0; | 5040; | 141120; | &c. |
 
-Trong Bảng này, số của mỗi chuỗi được tìm ra bằng cách lấy số đứng trước trong cùng chuỗi
-cộng với số ở trên, rồi nhân tổng ấy với chỉ số của ký tự $\Delta$. Vậy, trong chuỗi
-differentiae $\Delta^5 y$ ứng với, số 16800 được tìm ra khi ta lấy số đứng trước là 1800
-cộng với số 1560 đã viết ở trên, thành tổng 3360, rồi nhân với 5.
+trong Bảng này, một số của chuỗi bất kỳ tìm được bằng cách lấy số đứng trước nó trong cùng
+chuỗi cộng với số đặt ở trên, rồi nhân tổng với chỉ số gắn vào ký tự $\Delta$. Chẳng hạn,
+trong chuỗi ứng với differentia $\Delta^5 y$, số hạng 16800 tìm được nếu lấy số đứng trước là
+1800 cộng với số 1560 viết ở trên, rồi nhân Tổng 3360 với 5.
 
 > **[Chú giải]**
 >
@@ -575,7 +608,7 @@ cộng với số 1560 đã viết ở trên, thành tổng 3360, rồi nhân v�
 > cho bảng, chỉ nói nó là Bảng và cho quy tắc điền. Cũng nên nói thêm: bảng này được Euler in
 > năm 1755, còn bài báo của Stirling về dãy này ra năm 1733.
 
-**15.** Vậy, khi Bảng đã lập, từng differentia của lũy thừa $x^n = y$ sẽ có dạng sau:
+**15.** Vậy, khi đã lập Bảng này, từng differentia của Lũy thừa $x^n = y$ sẽ như sau:
 
 $$
 \begin{aligned}
@@ -588,22 +621,20 @@ $$
 
 <!-- PDF 45, trang in 17 -->
 
-Tổng quát hơn, differentia bậc $m$ của lũy thừa $x^n$ sẽ được biểu thị theo cách sau.
-Đặt
+Còn một cách tổng quát, differentia bậc $m$ của lũy thừa $x^n$, tức $\Delta^m y$, sẽ được biểu
+thị theo cách sau. Đặt
 
 $$
-I = \frac{n(n-1)(n-2)\cdots(n-m+1)}{1\cdot 2\cdot 3\cdots m};
+\begin{aligned}
+I &= \frac{n(n-1)(n-2)\;.\;.\;.\;.\;.\;(n-m+1)}{1\cdot 2\cdot 3\;.\;.\;.\;.\;.\;.\;m};\\
+K &= \frac{n-m}{m+1}\,I;\\
+L &= \frac{n-m-1}{m+2}\,K;\\
+M &= \frac{n-m-2}{m+3}\,L;\\
+&\text{\&c.}
+\end{aligned}
 $$
 
-rồi
-
-$$
-K = \frac{n-m}{m+1}\,I; \qquad
-L = \frac{n-m-1}{m+2}\,K; \qquad
-M = \frac{n-m-2}{m+3}\,L; \qquad \text{\&c.}
-$$
-
-Tiếp theo hãy đặt:
+Rồi đặt tiếp:
 
 $$
 \begin{aligned}
@@ -616,61 +647,69 @@ $$
 \end{aligned}
 $$
 
-Với những giá trị đã tìm ra ấy, ta sẽ có
+<!-- Ghi chú dịch giả: ở dòng β, số mũ của (m−2) trên bản in (PDF 45) nhòe, nét cuối
+     trông gần như "2" hơn "1"; đã để m+1 theo các số hạng cùng dòng, nhưng chữ số này
+     chưa đọc chắc được [OCR không rõ]. -->
+
+Tìm được các giá trị ấy rồi, ta sẽ có
 
 $$
 \Delta^m y = \alpha I\omega^mx^{n-m} + \beta K\omega^{m+1}x^{n-m-1}
-             + \gamma L\omega^{m+2}x^{n-m-2} + \text{\&c.},
+             + \gamma L\omega^{m+2}x^{n-m-2}\ \text{\&c.}
 $$
 
-và tỉ lệ của biểu thức này tự nhiên đi theo từ cách mà từng differentia riêng lẻ được rút ra
-từ các giá trị $y$, $y^1$, $y^2$, $y^3$, &c.
+lý do của biểu thức này tự nó suy ra từ cách mà từng differentia được rút ra từ các giá trị
+$y$, $y'$, $y''$, $y'''$, &c.
+
+<!-- Ghi chú dịch giả: ở câu cuối §15, bản in viết các giá trị bằng dấu phẩy trên
+     (y, y′, y″, y‴), khác với chỉ số La Mã y^I, y^II dùng ở những chỗ khác. Đã giữ như
+     bản in. -->
 
 <!-- PDF 46, trang in 18 -->
 
-**16.** Từ những điều trên dễ thấy rằng, nếu số mũ $n$ là một số nguyên dương, thì ta
-cuối cùng sẽ đi tới những differentia là hằng số, và mọi differentia bậc cao hơn đều bằng
-$0$. Như thế ta sẽ có
+**16.** Từ những điều này rõ ràng là, nếu số mũ $n$ là một số nguyên dương, thì cuối cùng
+ta sẽ đi tới những differentia là hằng, và mọi differentia sau chúng đều $= 0$. Như thế ta
+sẽ có
 
 $$
 \begin{aligned}
-\Delta x &= \omega\\
-\Delta^2 x^2 &= 2\omega^2\\
-\Delta^3 x^3 &= 6\omega^3\\
-\Delta^4 x^4 &= 24\omega^4
+\Delta.\,x &= \omega\\
+\Delta^2.\,x^2 &= 2\omega^2\\
+\Delta^3.\,x^3 &= 6\omega^3\\
+\Delta^4.\,x^4 &= 24\omega^4
 \end{aligned}
 $$
 
-và cuối cùng là
+và cuối cùng
 
 $$
-\Delta^n x^n = 1\cdot 2\cdot 3\cdots n\cdot\omega^n.
+\Delta^n.\,x^n = 1\cdot 2\cdot 3\;.\;.\;.\;n\cdot\omega^n.
 $$
 
-Vì thế mọi functio rationalis nguyên cuối cùng sẽ quy được về những differentia là hằng số.
-Cụ thể, functio bậc nhất của chính $x$, $ax+b$, đã có differentia bậc nhất là hằng số
-$= a\omega$. Functio bậc hai $ax^2+bx+c$ sẽ có differentia bậc hai là hằng số $= 2a\omega\omega$.
-Còn differentia bậc ba của một functio bậc ba sẽ là hằng số; bậc bốn thì bậc bốn, &c. cứ
-như vậy.
+Vậy mọi functio rationalis nguyên cuối cùng sẽ dẫn tới những differentia là hằng. Cụ thể,
+functio bậc nhất của $x$, $ax + b$, ngay differentia bậc nhất đã là hằng $= a\omega$.
+Functio bậc hai $axx + bx + c$ sẽ có differentia bậc hai là hằng $= 2a\omega\omega$; còn
+của functio bậc ba thì differentia bậc ba sẽ là hằng; của bậc bốn thì differentia bậc bốn,
+và cứ thế tiếp.
 
-**17.** Cách ta đã dùng để tìm differentia của lũy thừa $x^n$ cũng còn mở rộng xa hơn nữa,
-và trải được tới cả những lũy thừa mà số mũ $n$ là số âm, là phân số, hay thậm chí là số vô
-tỉ. Để việc ấy hiện ra rõ ràng hơn, ta chỉ trích ra những differentia bậc nhất của loại
-lũy thừa quan trọng nhất, bởi vì quy luật của những differentia bậc hai và các bậc tiếp theo
-thì không dễ nhận ra bằng mắt. Ta sẽ có:
+**17.** Còn cách mà ta đã dùng để tìm các differentia của lũy thừa $x^n$ cũng áp dụng được
+rộng hơn, và mở rộng tới những lũy thừa có số mũ $n$ là số âm, hay phân số, hay thậm chí vô
+tỉ. Để điều đó hiện ra rõ hơn, ta sẽ chỉ nêu các differentia bậc nhất của những lũy thừa
+chủ yếu thuộc loại này, vì quy luật của các differentia bậc hai và các bậc sau không dễ
+nhận ra như thế. Vậy ta sẽ có
 
 $$
 \begin{aligned}
-\Delta x &= \omega\\
-\Delta x^2 &= 2\omega x + \omega^2\\
-\Delta x^3 &= 3\omega x^2 + 3\omega^2x + \omega^3\\
-\Delta x^4 &= 4\omega x^3 + 6\omega^2x^2 + 4\omega^3x + \omega^4 \quad \text{\&c.}
+\Delta.\,x &= \omega\\
+\Delta.\,x^2 &= 2\omega x + \omega^2\\
+\Delta.\,x^3 &= 3\omega x^2 + 3\omega^2x + \omega^3\\
+\Delta.\,x^4 &= 4\omega x^3 + 6\omega^2x^2 + 4\omega^3x + \omega^4 \quad \text{\&c.}
 \end{aligned}
 $$
 
 <!-- PDF 47, trang in 19 -->
 
-Tương tự, ta sẽ có
+Còn theo cách tương tự sẽ có
 
 $$
 \Delta x^{-1} = -\frac{\omega}{x^2} + \frac{\omega^2}{x^3} - \frac{\omega^3}{x^4}
@@ -688,11 +727,11 @@ $$
 $$
 
 $$
-\Delta x^{-4} = -\frac{4\omega}{x^5} + \frac{10\omega^3}{x^6} - \frac{20\omega^3}{x^7}
+\Delta x^{-4} = -\frac{4\omega}{x^5} + \frac{10\omega^2}{x^6} - \frac{20\omega^3}{x^7}
                + \text{\&c.}
 $$
 
-Và từ đó, với những lũy thừa còn lại. Tương tự, ta sẽ có:
+Và từ đó cho những lũy thừa còn lại. Cũng vậy, sẽ có
 
 $$
 \Delta x^{\frac{1}{2}} = \frac{\omega}{2x^{\frac{1}{2}}} - \frac{\omega^2}{8x^{\frac{3}{2}}}
@@ -710,57 +749,55 @@ $$
 $$
 
 $$
-\Delta x^{-\frac{2}{3}} = -\frac{\omega}{3x^{\frac{4}{3}}} + \frac{2\omega^2}{9x^{\frac{7}{3}}}
+\Delta x^{-\frac{1}{3}} = -\frac{\omega}{3x^{\frac{4}{3}}} + \frac{2\omega^2}{9x^{\frac{7}{3}}}
                           - \frac{14\omega^3}{81x^{\frac{10}{3}}} + \text{\&c.}
 $$
 
 <!-- PDF 48, trang in 20 -->
 
-**18.** Do đó dễ thấy rằng những differentia này, nếu số mũ của chính $x$ không phải là một
-số nguyên dương, thì tiến triển vô hạn, tức là gồm vô số số hạng. Tuy nhiên những
-differentia ấy cũng có thể được biểu thị bằng một biểu thức hữu hạn. Vì khi đặt
-$y = x^{-1} = \frac{1}{x}$, ta có $y^1 = \frac{1}{x+\omega}$, nên
+**18.** Vậy rõ là các differentia này, nếu số mũ của $x$ không phải là một số nguyên dương,
+thì tiến ra vô hạn, tức gồm vô số số hạng. Tuy vậy, chính những differentia ấy cũng có thể
+biểu thị bằng một biểu thức hữu hạn. Vì khi đặt $y = x^{-1} = \frac{1}{x}$, ta có
+$y^{\mathrm{I}} = \frac{1}{x+\omega}$, nên
 
 $$
-\Delta x^{-1} = \Delta\frac{1}{x} = \frac{1}{x+\omega} - \frac{1}{x};
+\Delta.x^{-1} = \Delta.\frac{1}{x} = \frac{1}{x+\omega} - \frac{1}{x};
 $$
 
-từ đó, nếu ta khai triển phân số $\frac{1}{x+\omega}$ thành một chuỗi, ta sẽ thu được
-biểu thức ở trên. Tương tự ta sẽ có
+từ đó, nếu chuyển phân số $\frac{1}{x+\omega}$ thành chuỗi, sẽ ra biểu thức ở trên. Tương tự
+sẽ có
 
 $$
-\Delta x^{-2} = \Delta\frac{1}{xx} = \frac{1}{(x+\omega)^2} - \frac{1}{xx},
+\Delta.x^{-2} = \Delta.\frac{1}{xx} = \frac{1}{(x+\omega)^2} - \frac{1}{xx},
 $$
 
-và với các lượng vô tỉ thì sẽ là
+và với các lượng vô tỉ sẽ có
 
 $$
-\Delta\sqrt{x} = \sqrt{x+\omega} - \sqrt{x}, \qquad
-\Delta\frac{1}{\sqrt{x}} = \frac{1}{\sqrt{x+\omega}} - \frac{1}{\sqrt{x}};
+\Delta.\sqrt{x} = \sqrt{(x+\omega)} - \sqrt{x}, \qquad
+\Delta.\frac{1}{\sqrt{x}} = \frac{1}{\sqrt{(x+\omega)}} - \frac{1}{\sqrt{x}};
 $$
 
-những công thức này, nếu được khai triển thành chuỗi theo lối thường, sẽ cho ra những
-biểu thức ở trên.
+những công thức này, nếu khai triển thành chuỗi theo lối thường, sẽ cho các biểu thức ở trên.
 
-**19.** Theo cách ấy thì differentia của các functio, dù là phân số hay vô tỉ, cũng có
-thể tìm được. Chẳng hạn, nếu muốn tìm differentia bậc nhất của phân số
-$\frac{1}{aa+xx}$, hãy đặt
+**19.** Theo cách này cũng có thể tìm được differentia của các functio, dù là phân thức hay
+vô tỉ: chẳng hạn, nếu cần tìm differentia bậc nhất của phân thức $\frac{1}{aa+xx}$, ta đặt
 
 $$
-y = \frac{1}{aa+xx}; \qquad \&, \quad \text{vì } y^1 = \frac{1}{aa+xx+2\omega x+\omega^2}
+y = \frac{1}{aa+xx}; \qquad \&, \quad \text{vì } y^{\mathrm{I}} = \frac{1}{aa+xx+2\omega x+\omega^2}
 $$
 
 nên
 
 $$
-\Delta y = \Delta\frac{1}{aa+xx} = \frac{1}{aa+xx+2\omega x+\omega\omega} - \frac{1}{aa+xx},
+\Delta y = \Delta.\frac{1}{aa+xx} = \frac{1}{aa+xx+2\omega x+\omega\omega} - \frac{1}{aa+xx},
 $$
 
 biểu thức này cũng có thể chuyển thành một chuỗi vô hạn.
 
 <!-- PDF 49, trang in 21 -->
 
-Hãy đặt $aa+xx = P$ và $2\omega x + \omega\omega = Q$; khi đó ta sẽ có
+Đặt $aa+xx = P$ và $2\omega x + \omega\omega = Q$; ta sẽ có
 
 $$
 \frac{1}{P+Q} = \frac{1}{P} - \frac{Q}{P^2} + \frac{Q^2}{P^3} - \frac{Q^3}{P^4}
@@ -773,47 +810,56 @@ $$
 \Delta y = -\frac{Q}{P^2} + \frac{Q^2}{P^3} - \frac{Q^3}{P^4} + \text{\&c.}
 $$
 
-Thay lại các giá trị của $P$ và $Q$ vào chỗ, ta sẽ có
+Vậy thay lại các giá trị vào chỗ của $P$ và $Q$, ta sẽ có:
 
 $$
-\Delta y = \Delta\frac{1}{aa+xx}
+\Delta y = \Delta.\frac{1}{aa+xx}
 = -\frac{2\omega x+\omega\omega}{(aa+xx)^2}
   + \frac{4\omega\omega\,xx + 4\omega^3x + \omega^4}{(aa+xx)^3}
-  - \frac{8\omega^3x^3 + 12\omega^4x^2 + 6\omega^5x + \omega^6}{(aa+xx)^4}
+  - \frac{8\omega^3x^3 + 12\omega^4x^2 + 6\omega^5x + \omega^6}{(aa+xx^4}
   + \text{\&c.}
 $$
 
-mà nếu các số hạng này được sắp xếp theo lũy thừa của chính $\omega$, ta sẽ có
+nếu sắp các số hạng này theo lũy thừa của $\omega$, sẽ có:
 
 $$
-\Delta\frac{1}{aa+xx}
+\Delta.\frac{1}{aa+xx}
 = -\frac{2\omega x}{(aa+xx)^2}
-  + \frac{2\omega^2(xx-aa)}{(aa+xx)^3}
+  + \frac{3\omega^2(xx-aa)}{(aa+xx)^3}
   - \frac{4\omega^3(x^3-aax)}{(aa+xx)^4} + \text{\&c.}
 $$
 
-**20.** Cũng bằng những chuỗi vô hạn tương tự, differentia của các functio vô tỉ cũng
-có thể được biểu thị. Hãy lấy functio đã cho này:
+<!-- Ghi chú dịch giả: hai chỗ trên PDF 49 giữ như bản in. (1) Mẫu số của số hạng thứ ba ở
+     dòng trên in là "(aa+xx⁴", thiếu dấu ngoặc đóng. (2) Ở dòng dưới, số hạng bậc ω² in
+     là "…ω²(xx−aa)" với một chữ số nhỏ đứng trước ω²; chữ số này nhòe, đọc là 3 nhưng
+     không chắc (có thể là 2). Khai triển đúng cho ω²(3xx−aa)/(aa+xx)³, nên dù đọc là 2
+     hay 3 thì bản in cũng lệch với khai triển. -->
+
+**20.** Bằng những chuỗi vô hạn tương tự, differentia của các functio vô tỉ cũng có thể được
+biểu thị. Cho functio
 
 $$
 y = \sqrt{aa+xx};
 $$
 
-và, vì $y^1 = \sqrt{aa+xx+2\omega x+\omega\omega}$, hãy đặt $aa+xx = P$ và
+và, vì $y^{\mathrm{I}} = \sqrt{aa+xx+2\omega x+\omega\omega}$, đặt $aa+xx = P$ và
 $2\omega x + \omega\omega = Q$, ta sẽ có
 
 $$
-\Delta y = \sqrt{P+Q} - \sqrt{P}
+\Delta v = \sqrt{P+Q} - \sqrt{P}
 = \frac{Q}{2\sqrt{P}} - \frac{QQ}{8P\sqrt{P}} + \frac{Q^3}{16P^2\sqrt{P}}
 - \text{\&c.}
 $$
 
+<!-- Ghi chú dịch giả: vế trái của dòng này bản in ghi "Δv" (PDF 49), không phải Δy như
+     ở dòng tiếp theo. Đã giữ như bản in. -->
+
 <!-- PDF 50, trang in 22 -->
 
-từ đó ta sẽ có
+từ đó sẽ có
 
 $$
-\Delta y = \Delta\sqrt{aa+xx}
+\Delta y = \Delta.\sqrt{aa+xx}
 = \frac{2\omega x+\omega\omega}{2\sqrt{aa+xx}}
   - \frac{4\omega^2x^2 - 4\omega^3x - \omega^4}{8(aa+xx)\sqrt{aa+xx}}
   + \text{\&c.}
@@ -824,37 +870,40 @@ hoặc
 $$
 = \frac{\omega x}{\sqrt{aa+xx}}
   + \frac{aa\omega^2}{2(aa+xx)\sqrt{aa+xx}}
-  - \frac{aa\omega^3x}{2(aa+xx)^2\sqrt{aa+xx}} + \text{\&c.}
+  - \frac{aa\omega^3x}{2(aa+xx)^2\sqrt{aa+xx}}\ \text{\&c.}
 $$
 
-Từ đó ta còn thu được rằng differentia của một functio bất kỳ trong chính $x$, gọi là $y$,
-có thể được biểu thị theo dạng sau, rằng
+Và từ đây ta rút ra rằng differentia của một functio bất kỳ của $x$, gọi là $y$, có thể biểu
+thị theo dạng sau, sao cho
 
 $$
 \Delta y = -P\omega + Q\omega^2 + R\omega^3 + S\omega^4 + \text{\&c.}
 $$
 
-với $P, Q, R, S$, &c. là các hàm số nào đó của chính $x$, tùy theo từng trường hợp mà có
-thể định nghĩa được từ functio $y$.
+trong đó $P$, $Q$, $R$, $S$, &c. là những functio xác định của $x$, mà trong mỗi trường hợp
+đều có thể xác định từ functio $y$.
 
-**21.** Cũng không phải differentia của các functio siêu việt bị loại trừ khỏi dạng thức
-này; điều đó sẽ hiện ra rõ hơn qua các ví dụ sau.
+<!-- Ghi chú dịch giả: dấu trừ trước Pω là đúng như bản in (PDF 50); ở §22 cùng dạng này
+     được in với +Pω. -->
+
+**21.** Các differentia của những functio siêu việt cũng không bị loại khỏi dạng này; điều ấy
+sẽ hiện ra rõ hơn qua các ví dụ sau.
 
 ### Exemplum I
 
-*Tìm differentia bậc nhất của logarithmus hyperbolicus của chính $x$.*
+*Tìm differentia bậc nhất của logarithmus hyperbolicus của $x$.*
 
-Hãy đặt $y = \ln x$; và vì $y^1 = \ln(x+\omega)$, ta sẽ có
-
-$$
-\Delta y = y^1 - y = \ln(x+\omega) - \ln x = \ln\left(1 + \frac{\omega}{x}\right).
-$$
-
-Logarithmus loại này, ở trên ta đã dạy là có thể biểu thị bằng một chuỗi vô hạn; dùng nó
-vào đây, ta sẽ có
+Đặt $y = \ln x$; và vì $y^{\mathrm{I}} = \ln(x+\omega)$, ta sẽ có
 
 $$
-\Delta y = \Delta\ln x = \frac{\omega}{x} - \frac{\omega^2}{2xx}
+\Delta y = y^{\mathrm{I}} - y = \ln(x+\omega) - \ln x = \ln\left(1 + \frac{\omega}{x}\right).
+$$
+
+Mà ở trên ta đã chỉ cách biểu thị một logarithmus như thế bằng một chuỗi vô hạn; dùng chuỗi
+ấy, ta sẽ có
+
+$$
+\Delta y = \Delta.\ln x = \frac{\omega}{x} - \frac{\omega^2}{2xx}
           + \frac{\omega^3}{3x^3} - \frac{\omega^4}{4x^4} + \text{\&c.}
 $$
 
@@ -864,9 +913,9 @@ $$
 
 *Tìm differentia bậc nhất của lượng exponentialis $a^x$.*
 
-Đặt $y = a^x$, ta sẽ có $y^1 = a^{x+\omega} = a^x\cdot a^\omega$:
+Đặt $y = a^x$, ta sẽ có $y^{\mathrm{I}} = a^{x+\omega} = a^x.a^\omega$:
 
-ở trên ta đã dạy rằng
+nhưng ở trên ta đã chỉ ra rằng
 
 $$
 a^\omega = 1 + \frac{\omega\ln a}{1} + \frac{\omega^2(\ln a)^2}{1\cdot 2}
@@ -876,23 +925,23 @@ $$
 thay giá trị này vào, ta sẽ có
 
 $$
-\Delta a^x = y^1 - y = \Delta y
+\Delta.a^x = y^{\mathrm{I}} - y = \Delta y
 = \frac{a^x\omega\ln a}{1} + \frac{a^x\omega^2(\ln a)^2}{1\cdot 2}
   + \frac{a^x\omega^3(\ln a)^3}{1\cdot 2\cdot 3} + \text{\&c.}
 $$
 
 ### Exemplum III
 
-*Trong đường tròn có bán kính bằng $1$, hãy tìm differentia của sin của cung $x$.*
+*Trong đường tròn có bán kính $= 1$, tìm differentia của sin của cung $x$.*
 
-Đặt $\sin x = y$, ta sẽ có $y^1 = \sin(x+\omega)$, từ đó
+Đặt $\sin x = y$, ta sẽ có $y^{\mathrm{I}} = \sin(x+\omega)$, từ đó
 
 $$
-\Delta y = y^1 - y = \sin(x+\omega) - \sin x.
+\Delta y = y^{\mathrm{I}} - y = \sin(x+\omega) - \sin x.
 $$
 
-Mà ta có $\sin(x+\omega) = \cos\omega\cdot\sin x + \sin\omega\cdot\cos x$, và qua các
-chuỗi vô hạn ta đã dạy rằng
+Mà $\sin(x+\omega) = \cos\omega.\sin x + \sin\omega.\cos x$, và bằng các chuỗi vô hạn ta đã
+chỉ ra rằng
 
 $$
 \cos\omega = 1 - \frac{\omega^2}{1\cdot 2} + \frac{\omega^4}{1\cdot 2\cdot 3\cdot 4}
@@ -908,10 +957,10 @@ $$
              + \text{\&c.}
 $$
 
-thay các chuỗi này vào, ta sẽ có
+thay các chuỗi này vào, ta sẽ có:
 
 $$
-\Delta\sin x = \omega\cos x - \frac{\omega^2}{2}\sin x - \frac{\omega^3}{6}\cos x
+\Delta.\sin x = \omega.\cos x - \frac{\omega^2}{2}\sin x - \frac{\omega^3}{6}\cos x
              + \frac{\omega^4}{24}\sin x + \frac{\omega^5}{120}\cos x - \text{\&c.}
 $$
 
@@ -919,49 +968,48 @@ $$
 
 ### Exemplum IV
 
-*Trong đường tròn có bán kính bằng $1$, hãy tìm differentia của cos của cung $x$.*
+*Trong đường tròn có bán kính $= 1$, tìm differentia của cosin của cung $x$.*
 
-Đặt $y = \cos x$, vì $y^1 = \cos(x+\omega)$, ta sẽ có
+Đặt $y = \cos x$; vì $y^{\mathrm{I}} = \cos(x+\omega)$, ta sẽ có
 
 $$
-y^1 = \cos\omega\cdot\cos x - \sin\omega\cdot\sin x
+y^{\mathrm{I}} = \cos\omega.\cos x - \sin\omega.\sin x
 $$
 
 &
 
 $$
-\Delta y = \cos\omega\cdot\cos x - \sin\omega\cdot\sin x - \cos x
+\Delta y = \cos\omega.\cos x - \sin\omega.\sin x - \cos x
 $$
 
-Dùng các chuỗi đã nêu ở trên, ta thu được:
+Vậy dùng các chuỗi đã trình bày ở trên, sẽ ra:
 
 $$
-\Delta\cos x = -\omega\sin x - \frac{\omega^2}{2}\cos x
+\Delta.\cos x = -\omega\sin x - \frac{\omega^2}{2}\cos x
              + \frac{\omega^3}{6}\sin x + \frac{\omega^4}{24}\cos x
              - \frac{\omega^5}{120}\sin x - \text{\&c.}
 $$
 
-**22.** Vậy, nếu có một functio bất kỳ nào đó của chính $x$, dù là đại số hay siêu việt,
-gọi là $y$, và differentia bậc nhất của nó có dạng
+**22.** Vậy vì, với một functio bất kỳ của $x$, dù đại số hay siêu việt, gọi là $y$,
+differentia bậc nhất của nó có dạng sao cho
 
 $$
 \Delta y = P\omega + Q\omega^2 + R\omega^3 + S\omega^4 + \text{\&c.}
 $$
 
-thì khi lấy tiếp differentia của chính differentia ấy, ta sẽ thấy differentia bậc hai
-của $y$ cũng có dạng thức:
+nên nếu lại lấy differentia của nó, sẽ rõ là differentia bậc hai của $y$ sẽ có dạng như sau:
 
 $$
 \Delta\Delta y = P\omega^2 + Q\omega^3 + R\omega^4 + \text{\&c.}
 $$
 
-và cũng theo cách ấy, differentia bậc ba của $y$ sẽ có dạng
+và tương tự, differentia bậc ba của $y$ sẽ có dạng
 
 $$
 \Delta^3 y = P\omega^3 + Q\omega^4 + R\omega^5 + \text{\&c.}
 $$
 
-cứ như vậy.
+và cứ thế tiếp.
 
 > **[Chú giải]**
 >
@@ -978,44 +1026,44 @@ cứ như vậy.
 > Nói cách khác, ký hiệu ở đây được dùng như chỗ trống để điền, chứ không phải như
 > một hằng số cố định. Đọc theo cách của ký hiệu quen thuộc sẽ ra một kết quả sai.
 
-Ở đây cần lưu ý rằng các chữ $P, Q, R$, &c. ở đây không được dùng cho những giá trị
-đã định trước, và cùng một chữ ở những differentia khác nhau không biểu thị cùng một
-functio của $x$; ông chỉ dùng lại những chữ ấy vì nếu không thì số chữ cái khác nhau
-sẽ không đủ.
+Ở đây cần lưu ý rằng các chữ $P$, $Q$, $R$, &c. ở đây không được dùng cho những giá trị
+xác định, và cùng một chữ trong những differentia khác nhau không biểu thị cùng một functio
+của $x$: tôi dùng cùng những chữ ấy chỉ vì để khỏi thiếu đủ số chữ cái khác nhau.
 
-Còn những dạng differentia như thế này thì đáng chú ý, bởi chúng mang lại công dụng lớn
-nhất trong Phân tích vô hạn.
+Ngoài ra, *những dạng differentia này* cần được *ghi nhận kỹ*, vì chúng có công dụng rất lớn
+trong Giải tích vô hạn.
 
 <!-- PDF 53, trang in 25 -->
 
-**23.** Vậy, sau khi đã trình bày cách để tìm differentia bậc nhất của một functio bất kỳ,
-và từ đó tìm được các differentia của những bậc kế tiếp — bởi vì chúng được tìm ra từ các
-giá trị liên tiếp của functio $y$, tức $y^1, y^{II}, y^{III}, y^{IV}$, &c. — thì ngược lại,
-từ các differentia đã biết của $y$ ở mọi bậc, ta cũng có thể suy ra các giá trị liên
-tiếp của chính $y$. Vì
+**23.** Vậy vì tôi đã trình bày cách tìm differentia bậc nhất của một functio bất kỳ, rồi từ
+nó tìm tiếp các differentia của những bậc sau, là những differentia được tìm ra từ các giá
+trị liên tiếp của functio $y$, tức $y^{\mathrm{I}}$, $y^{\mathrm{II}}$, $y^{\mathrm{III}}$,
+$y^{\mathrm{IV}}$, &c., thì ngược lại, khi đã cho các differentia mọi bậc của $y$, cũng có
+thể rút ra chính những giá trị biến đổi ấy của $y$. Vì ta sẽ có
 
 $$
 \begin{aligned}
-y^1 &= y + \Delta y\\
-y^{II} &= y + 2\Delta y + \Delta\Delta y\\
-y^{III} &= y + 3\Delta y + 3\Delta\Delta y + \Delta^3y\\
-y^{IV} &= y + 4\Delta y + 6\Delta\Delta y + 4\Delta^3y + \Delta^4y\\
-&\qquad + \text{\&c.}
+y^{\mathrm{I}} &= y + \Delta y\\
+y^{\mathrm{II}} &= y + 2\Delta y + \Delta\Delta y\\
+y^{\mathrm{III}} &= y + 3\Delta y + 3\Delta\Delta y + \Delta^3y\\
+y^{\mathrm{IV}} &= y + 4\Delta y + 6\Delta\Delta y + 4\Delta^3y + \Delta^4y\\
+&\text{\&c.}
 \end{aligned}
 $$
 
-trong đó những hệ số số học lại sinh ra từ khai triển nhị thức. Cũng vậy, $y^1, y^{II},
-y^{III}$, &c. chính là các giá trị của $y$, được lấy khi lần lượt đặt thay $x$ bằng các
-giá trị $x+\omega$, $x+2\omega$, $x+3\omega$, &c. Nên ta có thể lập tức gán giá trị cho
-$y^{(n)}$; giá trị ấy thu được khi thay $x$ bằng $x+n\omega$, tức là
+trong đó các hệ số bằng số lại sinh ra từ khai triển của nhị thức. Vậy cũng như
+$y^{\mathrm{I}}$, $y^{\mathrm{II}}$, $y^{\mathrm{III}}$, &c. là những giá trị của $y$ sinh ra
+khi ở chỗ của $x$ ta lần lượt đặt các giá trị $x+\omega$, $x+2\omega$, $x+3\omega$, &c., ta
+có thể lập tức chỉ ra giá trị của $y^{(n)}$, tức giá trị sinh ra khi ở chỗ của $x$ ta viết
+$x+n\omega$; cụ thể, giá trị ấy sẽ là:
 
 $$
 y + \frac{n}{1}\Delta y + \frac{n(n-1)}{1\cdot 2}\Delta^2y
-  + \frac{n(n-1)(n-2)}{1\cdot 2\cdot 3}\Delta^3y + \text{\&c.}
+  + \frac{n(n-1)}{1\cdot 2}\cdot\frac{(n-2)}{3}\Delta^3y + \text{\&c.}
 $$
 
-Từ đó ta cũng có thể có được các giá trị của $y$ khi $n$ là một số âm. Chẳng hạn, nếu
-thay $x$ bằng $x-\omega$, functio $y$ sẽ trình ra dưới dạng
+Và từ đây cũng có thể cho được các giá trị của $y$ nếu $n$ là số âm. Chẳng hạn, nếu ở chỗ của
+$x$ ta đặt $x-\omega$, functio $y$ sẽ chuyển thành dạng này:
 
 $$
 y - \Delta y + \Delta^2y - \Delta^3y + \Delta^4y - \text{\&c.}
@@ -1023,107 +1071,101 @@ $$
 
 <!-- PDF 54, trang in 26 -->
 
-còn nếu thay $x$ bằng $x-2\omega$, functio $y$ sẽ trình ra ở dạng
+còn nếu ở chỗ của $x$ ta đặt $x-2\omega$, functio $y$ sẽ chuyển thành:
 
 $$
 y - 2\Delta y + 3\Delta^2y - 4\Delta^3y + 5\Delta^4y - \text{\&c.}
 $$
 
-**24.** Ta hãy thêm vài điều về phương pháp nghiên cứu, theo đó: nếu đã cho differentia,
-thì từ chính nó phải tìm ra được functio mà nó là differentia của. Vì việc này vô cùng
-khó, và thường đòi hỏi chính phân tích vô hạn, nên ta chỉ triển khai một vài trường hợp
-dễ hơn.
+**24.** Ta hãy thêm vài điều về phương pháp ngược, theo đó, nếu đã cho một differentia, thì
+từ nó phải tìm ra chính functio mà nó là differentia. Nhưng vì việc này rất khó và nhiều khi
+đòi hỏi chính giải tích vô hạn, ta chỉ khai triển một vài trường hợp dễ hơn. Vậy trước hết,
+đi ngược lại: nếu ta đã tìm được differentia của một functio nào đó, thì ngược lại, khi cho
+differentia ấy, có thể chỉ ra chính functio đã sinh ra nó. Chẳng hạn, vì differentia của
+functio $ax + b$ là $a\omega$, nếu hỏi $a\omega$ là differentia của functio nào, thì câu trả
+lời có sẵn: functio ấy là $ax + b$. Vậy trong đó có một lượng constans $b$ vốn không có mặt
+trong differentia, và vì thế tùy thuộc vào ý muốn của ta. Mà luôn luôn, nếu differentia của
+một functio bất kỳ $P$ là $Q$, thì differentia của functio $P + A$ (với $A$ là một lượng
+constans bất kỳ) cũng sẽ là $Q$. Do đó, nếu cho differentia $Q$ ấy, thì functio đã sinh ra
+nó sẽ là $P + A$, và vì thế nó không có giá trị xác định, bởi hằng $A$ tùy ý.
 
-Trước hết, hãy đi ngược lại: nếu ta đã tìm được differentia của một functio nào đó, thì
-ngược lại, khi differentia ấy đã được đưa ra, chính functio mà nó sinh ra cũng có thể được
-trình ra. Chẳng hạn, khi differentia của functio $ax+b$ là $a\omega$, nếu muốn biết
-differentia của functio nào là $a\omega$, thì câu trả lời có ngay: đó là $ax+b$. Trong đó
-ta tìm được một lượng không đổi $b$, vốn không có mặt trong differentia, và vì thế nó phụ
-thuộc vào ý chọn của ta. Luôn luôn, nếu differentia của functio $P$ là $Q$, thì differentia
-của $P+A$ cũng là $Q$, trong đó $A$ chỉ là một lượng không đổi bất kỳ. Từ đó, nếu differentia
-$Q$ ấy được đưa ra, thì functio mà nó sinh ra sẽ là $P+A$, và do đó nó không có một giá trị
-xác định, bởi lượng không đổi $A$ còn phụ thuộc vào ý chọn.
-
-**25.** Ta hãy gọi functio đang được tìm, tức là functio mà differentia của nó đã được đưa
-ra, là $\mathrm{SUMMAM}$; tên gọi ấy được dùng tiện lợi, vì một lượng tổng thường được đặt
-đối với differentia, và cũng vì trong thực tế functio đang tìm quả thật là tổng của tất cả
-những giá trị đứng trước differentiae. Cũng như
+**25.** Ta hãy gọi functio cần tìm, tức functio mà differentia của nó được cho, là
+$\mathrm{SUMMAM}$; tên này dùng tiện, một là vì tổng thường được đặt đối lập với
+differentia, hai là vì functio cần tìm thực sự là tổng của mọi giá trị đứng trước của
+differentia. Vì cũng như
 
 <!-- PDF 55, trang in 27 -->
 
-Cũng như, vì $y^1 = y + \Delta y$ và $y^{II} = y + \Delta y + \Delta y^1$, nên nếu các giá trị
-của $y$ được tiếp tục đi ngược lại, và ta gọi $y_1$ là giá trị ứng với $x-\omega$, $y_n$ là
-giá trị ứng với $x-n\omega$, còn $y^{III}, y^{IV}, y^V$, &c. là những giá trị ở trước nữa,
-thì từ đó hãy lập một chuỗi đi ngược, kèm theo các differentia của nó:
+$y^{\mathrm{I}} = y + \Delta y$, và $y^{\mathrm{II}} = y + \Delta y + \Delta y^{\mathrm{I}}$,
+nếu ta kéo dài các giá trị của $y$ về phía sau, sao cho giá trị ứng với $x-\omega$ được viết là
+$y_{\mathrm{I}}$, giá trị đứng trước nó là $y_{\mathrm{II}}$, và các giá trị đứng trước xa hơn
+nữa là $y_{\mathrm{III}}$, $y_{\mathrm{IV}}$, $y_{\mathrm{V}}$, &c., rồi từ đó lập chuỗi đi
+ngược, cùng với các differentia của nó:
 
 $$
-y_V\,;\quad y_{IV}\,;\quad y_{III}\,;\quad y_{II}\,;\quad y_I\,;\quad y
-$$
-
-&
-
-$$
-\Delta y_V\,;\quad \Delta y_{IV}\,;\quad \Delta y_{III}\,;\quad
-\Delta y_{II}\,;\quad \Delta y_I
-$$
-
-ta sẽ có
-
-$$
-y = \Delta y_I + y_I
+y_{\mathrm{V}}\,;\quad y_{\mathrm{IV}}\,;\quad y_{\mathrm{III}}\,;\quad y_{\mathrm{II}}\,;\quad y_{\mathrm{I}}\,;\quad y
 $$
 
 &
 
-vì $y_I = \Delta y_{II} + y_{II}$, và tiếp nữa $y_{II} = \Delta y_{III} + y_{III}$, nên
-chắc chắn là
-
 $$
-y = \Delta y_I + \Delta y_{II} + \Delta y_{III} + \Delta y_{IV} + \Delta y_V
+\Delta y_{\mathrm{V}}\,;\quad \Delta y_{\mathrm{IV}}\,;\quad \Delta y_{\mathrm{III}}\,;\quad
+\Delta y_{\mathrm{II}}\,;\quad \Delta y_{\mathrm{I}}
 $$
 
-&c.
+thì sẽ có
 
-Vậy functio $y$, có differentia là $\Delta y$, chính là tổng của tất cả những giá trị
-đứng trước differentia $\Delta y$, những giá trị sinh ra khi thay $x$ bằng các giá trị
+$$
+y = \Delta y_{\mathrm{I}} + y_{\mathrm{I}}
+$$
+
+&, vì $y_{\mathrm{I}} = \Delta y_{\mathrm{II}} + y_{\mathrm{II}}$, và tiếp nữa
+$y_{\mathrm{II}} = \Delta y_{\mathrm{III}} + y_{\mathrm{III}}$, nên hẳn sẽ có
+
+$$
+y = \Delta y_{\mathrm{I}} + \Delta y_{\mathrm{II}} + \Delta y_{\mathrm{III}} + \Delta y_{\mathrm{IV}} + \Delta y_{\mathrm{V}}
+\quad \text{\&c.}
+$$
+
+và như vậy functio $y$, có differentia là $\Delta y$, sẽ là tổng của mọi giá trị đứng trước
+của differentia $\Delta y$, tức những giá trị sinh ra khi ở chỗ của $x$ ta viết các giá trị
 đứng trước $x-\omega$; $x-2\omega$; $x-3\omega$; &c.
 
-**26.** Cũng như ta đã dùng ký hiệu $\Delta$ để chỉ differentia, ta sẽ dùng ký hiệu
-$\Sigma$ để chỉ tổng: cụ thể, nếu differentia của functio $y$ là $z$, thì $z = \Delta y$;
-từ đó, nếu đã cho $y$, ta đã dạy cách tìm differentia $z$ ở trên. Nhưng nếu đã cho
-differentia $z$ và cần tìm tổng $y$ của nó, thì ta sẽ có $y = \Sigma z$; và do đó, từ
-phương trình $z = \Delta y$ mà đi ngược lại, sẽ lập được phương trình $y = \Sigma z$; vào
-đó có thể thêm vào một lượng không đổi bất kỳ, vì những lý do
+**26.** Cũng như để chỉ differentia ta đã dùng dấu $\Delta$, ta sẽ chỉ tổng bằng dấu
+$\Sigma$: cụ thể, nếu differentia của functio $y$ là $z$, thì $z = \Delta y$; từ đó, nếu cho
+$y$, ở trên ta đã chỉ cách tìm differentia $z$. Còn nếu cho differentia $z$ và phải tìm tổng
+$y$ của nó, thì sẽ có $y = \Sigma z$; và như vậy, đi ngược từ phương trình $z = \Delta y$, ta
+lập được phương trình $y = \Sigma z$; ở đó có thể cộng thêm một lượng constans bất kỳ, vì những
 
 <!-- PDF 56, trang in 28 -->
 
-đã nêu ở trên; từ đó, nếu tìm được phương trình $z = \Delta y$, thì ta cũng sẽ có
-$y = \Sigma z + C$. Rồi, vì differentia của lượng $ay$ là $a\Delta y = az$, nên ta sẽ có
-$\Sigma az = ay$, nếu $a$ là một lượng không đổi. Vì $\Delta x = \omega$, ta sẽ có
-$\Sigma\omega = x + C$ và $\Sigma a\omega = ax + C$; và vì $\omega$ là một lượng không đổi,
-ta sẽ có $\Sigma\omega^2 = \omega x + C$; $\Sigma\omega^3 = \omega^2x + C$; và cứ như vậy.
+lý do đã nêu ở trên; bởi thế phương trình $z = \Delta y$, nếu đảo lại, cũng sẽ cho
+$y = \Sigma z + C$. Kế đó, vì differentia của lượng $ay$ là $a\Delta y = az$, nên sẽ có
+$\Sigma az = ay$, miễn là $a$ là lượng constans. Vậy vì $\Delta x = \omega$, nên sẽ có
+$\Sigma\omega = x + C$ và $\Sigma a\omega = ax + C$; và vì $\omega$ là lượng constans, sẽ có
+$\Sigma\omega^2 = \omega x + C$; $\Sigma\omega^3 = \omega^2x + C$; và cứ thế tiếp.
 
-**27.** Vậy, nếu ta đảo ngược các differentia của các lũy thừa của chính $x$ đã tìm được
-ở trên, ta sẽ có
+**27.** Vậy nếu ta đảo ngược các differentia của các lũy thừa của $x$ đã tìm được ở trên, sẽ
+có
 
 $$
 \Sigma\omega = x; \quad \text{hincque} \quad \Sigma 1 = \frac{x}{\omega};
 $$
 
-Rồi ta có
+Kế đó ta có
 
 $$
 \Sigma(2\omega x + \omega^2) = x^2;
 $$
 
-từ đó suy ra
+từ đó thành
 
 $$
 \Sigma x = \frac{x^2}{2\omega} - \Sigma\frac{\omega}{2}
          = \frac{x^2}{2\omega} - \frac{x}{2}.
 $$
 
-Tiếp theo là
+Tiếp nữa ta có
 
 $$
 \Sigma(3\omega xx + 3\omega^2x + \omega^3) = x^3
@@ -1135,7 +1177,7 @@ $$
 3\omega\Sigma x^2 + 3\omega^2\Sigma x + \omega^3\Sigma 1 = x^3
 $$
 
-nên
+vậy
 
 $$
 \Sigma x^2 = \frac{x^3}{3\omega} - \omega\Sigma x - \frac{\omega^2}{3}\Sigma 1
@@ -1147,7 +1189,11 @@ $$
 \Sigma x^3 = \frac{x^3}{3\omega} - \frac{x^2}{2} + \frac{\omega x}{6}
 $$
 
-và theo cách tương tự ta sẽ có
+<!-- Ghi chú dịch giả: số mũ ở vế trái dòng "seu" này (PDF 56) nhòe; một lần soi trước đọc
+     là 3, lần soi này không phân biệt chắc được 2 hay 3 [OCR không rõ]. Theo mạch thì
+     phải là Σx². Đã giữ cách đọc x³ của lần soi trước. -->
+
+tương tự sẽ có
 
 $$
 \Sigma x^3 = \frac{x^4}{4\omega} - \frac{3\omega}{2}\Sigma x^2
@@ -1181,7 +1227,7 @@ và theo cách tương tự, tiến triển thêm ta sẽ tìm được
 
 $$
 \Sigma x^5 = \frac{x^6}{6\omega} - \frac{1}{2}x^5 + \frac{5}{12}\omega x^4
-            - \frac{5}{12}\omega^3x^2
+            - \frac{1}{12}\omega^3x^2
 $$
 
 &
@@ -1191,27 +1237,23 @@ $$
             - \frac{1}{6}\omega^3x^3 + \frac{1}{42}\omega^5x
 $$
 
-những biểu thức mà ở dưới ta sẽ dạy cách tìm dễ hơn.
+những biểu thức mà ở phần dưới ta sẽ chỉ cách tìm dễ hơn.
 
-**28.** Vậy, nếu differentia đã cho là một functio rationalis nguyên của chính $x$, thì
-tổng của nó — tức là chính functio mà nó là differentia — sẽ dễ dàng tìm được từ những
-công thức này. Vì differentia ấy gồm một vài lũy thừa của chính $x$, nên ta tìm tổng của
-từng số hạng một, rồi cộng tất cả những tổng ấy lại.
+**28.** Vậy nếu differentia đã cho là một functio rationalis nguyên của $x$, thì tổng của nó
+(tức functio mà nó là differentia) dễ dàng tìm được từ những công thức này. Vì differentia
+gồm một vài lũy thừa của $x$, nên hãy tìm tổng của từng số hạng, rồi cộng tất cả các tổng ấy
+lại.
 
 ### Exemplum I
 
 *Hãy tìm functio mà differentia của nó là $= axx + bx + c$.*
 
-Ta tìm các tổng của từng số hạng riêng nhờ những công thức đã tìm ra ở trên; ta sẽ có
-
-$$
-\Sigma axx
-$$
+Tìm tổng của từng số hạng nhờ các công thức đã tìm ra trước đây, ta sẽ có
 
 <!-- PDF 58, trang in 30 -->
 
 $$
-\Sigma axx = \frac{ax^3}{3\omega} - \frac{axx}{2} + \frac{ax}{6}
+\Sigma axx = \frac{ax^3}{3\omega} - \frac{axx}{2} + \frac{a\omega x}{6}
 $$
 
 &
@@ -1229,8 +1271,8 @@ $$
 Từ đó, cộng các tổng này lại, ta sẽ có
 
 $$
-\Sigma(axx+bx+c) = \frac{a}{3\omega}x^3 - \frac{(aw-b)}{2\omega}x^2
-                 + \frac{(aw^2-3bw+6c)}{6\omega}x + C
+\Sigma(axx+bx+c) = \frac{a}{3\omega}x^3 - \frac{(a\omega-b)}{2\omega}x^2
+                 + \frac{(a\omega^2-3b\omega+6c)}{6\omega}x + C
 $$
 
 đó chính là functio đang tìm, có differentia là $axx+bx+c$.
@@ -1239,7 +1281,7 @@ $$
 
 *Hãy tìm functio mà differentia của nó là $x^4-2\omega^2xx+\omega^4$.*
 
-Ta sẽ lập cùng một phép tính như trên, và sẽ có
+Làm phép tính theo cách tương tự, sẽ có
 
 $$
 \Sigma x^4 = \frac{1}{5\omega}x^5 - \frac{1}{2}x^4 + \frac{1}{3}\omega x^3
@@ -1266,16 +1308,15 @@ $$
 + \frac{19}{30}\omega^3x + C
 $$
 
-Vì nếu ở đây ta thay $x$ bằng $x+\omega$, rồi lấy lượng thu được trừ đi số đã tìm ra
-này, thì sẽ còn lại đúng differentia đã cho là $x^4-2\omega^2x^2+\omega^4$.
+Vì nếu ở đây, ở chỗ của $x$, ta đặt $x+\omega$, rồi lấy lượng thu được trừ đi biểu thức
+vừa tìm ra này, thì sẽ còn lại differentia đã cho $x^4-2\omega^2x^2+\omega^4$.
 
 <!-- PDF 59, trang in 31 -->
 
-**29.** Nếu ta xem kỹ hơn những tổng mà ta đã tìm được cho các lũy thừa của chính $x$,
-thì ở những số hạng thứ nhất, thứ hai và thứ ba, ta sẽ lập tức thấy quy luật mà chúng tiến
-triển theo từng lũy thừa một; nhưng quy luật của những số hạng còn lại thì không rõ ràng
-như thế, nên chưa thể suy ra được tổng của lũy thừa $x^n$ nói chung từ đó. Tuy nhiên, ở
-những điều tiếp theo ta sẽ được dạy rằng:
+**29.** Nếu xem xét kỹ hơn những tổng mà ta đã tìm được cho các lũy thừa của $x$, thì ở các
+số hạng thứ nhất, thứ hai và thứ ba, ta sẽ sớm nhận ra quy luật mà chúng tiến theo từng lũy
+thừa một: còn quy luật của các số hạng còn lại thì không rõ đến mức từ đó có thể rút ra tổng
+của lũy thừa $x^n$ nói chung. Tuy vậy, ở phần sau sẽ chỉ ra rằng:
 
 $$
 \Sigma x^n =
@@ -1287,69 +1328,64 @@ $$
 
 $$
 + \frac{1}{6}\cdot\frac{n(n-1)(n-2)(n-3)(n-4)\omega^5}{2\cdot 3\cdot 4\cdot 5\cdot 6\cdot 7}\,x^{n-5}
-- \frac{3}{10}\cdot\frac{n(n-1)\cdots(n-6)\omega^7}{2\cdot 3\cdots 8\cdot 9}\,x^{n-7}
-+ \frac{5}{6}\cdot\frac{n(n-1)\cdots(n-8)\omega^9}{2\cdot 3\cdots 10\cdot 11}\,x^{n-9}
+- \frac{3}{10}\cdot\frac{n(n-1)\;.\;.\;.\;(n-6)\omega^7}{2\cdot 3\;.\;.\;.\;8\cdot 9}\,x^{n-7}
++ \frac{5}{6}\cdot\frac{n(n-1)\;.\;.\;.\;(n-8)\omega^9}{2\cdot 3\;.\;.\;.\;10\cdot 11}\,x^{n-9}
 $$
 
 $$
-- \frac{691}{210}\cdot\frac{n(n-1)\cdots(n-10)\omega^{11}}{2\cdot 3\cdots 12\cdot 13}\,x^{n-11}
-+ \frac{35}{2}\cdot\frac{n(n-1)\cdots(n-12)\omega^{13}}{2\cdot 3\cdots 14\cdot 15}\,x^{n-13}
-- \frac{3617}{30}\cdot\frac{n(n-1)\cdots(n-14)\omega^{15}}{2\cdot 3\cdots 16\cdot 17}\,x^{n-15}
+- \frac{691}{210}\cdot\frac{n(n-1)\;.\;.\;.\;(n-10)\omega^{11}}{2\cdot 3\;.\;.\;.\;12\cdot 13}\,x^{n-11}
++ \frac{35}{2}\cdot\frac{n(n-1)\;.\;.\;.\;n-12)\omega^{13}}{2\cdot 3\;.\;.\;.\;14\cdot 15}\,x^{n-13}
+- \frac{3617}{30}\cdot\frac{n(n-1)\;.\;.\;.\;(n-14)\omega^{15}}{2\cdot 3\;.\;.\;.\;16\cdot 17}\,x^{n-15}
 $$
 
 $$
-+ \frac{43867}{42}\cdot\frac{n(n-1)\cdots(n-16)\omega^{17}}{2\cdot 3\cdots 18\cdot 19}\,x^{n-17}
-- \frac{1222277}{110}\cdot\frac{n(n-1)\cdots(n-18)\omega^{19}}{2\cdot 3\cdots 20\cdot 21}\,x^{n-19}
-+ \frac{854513}{6}\cdot\frac{n(n-1)\cdots(n-20)\omega^{21}}{2\cdot 3\cdots 22\cdot 23}\,x^{n-21}
++ \frac{43867}{42}\cdot\frac{n(n-1)\;.\;.\;.\;(n-16)\omega^{17}}{2\cdot 3\;.\;.\;.\;18\cdot 19}\,x^{n-17}
+- \frac{1222277}{110}\cdot\frac{n(n-1)\;.\;.\;.\;(n-18)\omega^{19}}{2\cdot 3\;.\;.\;.\;20\cdot 21}\,x^{n-19}
++ \frac{854513}{6}\cdot\frac{n(n-1)\;.\;.\;.\;(n-20)\omega^{21}}{2\cdot 3\;.\;.\;.\;22\cdot 23}\,x^{n-21}
 $$
 
 ---
 
+<!-- Ghi chú dịch giả: ở số hạng 35/2, bản in viết "n−12)" không có dấu mở ngoặc (PDF 59).
+     Đã giữ như bản in. -->
+
 <!-- PDF 60, trang in 32 -->
 
 $$
-- \frac{1181820455}{546}\cdot\frac{n(n-1)\cdots(n-22)\omega^{23}}{2\cdot 3\cdots 24\cdot 25}\,x^{n-23}
-+ \frac{76977927}{2}\cdot\frac{n(n-1)\cdots(n-24)\omega^{25}}{2\cdot 3\cdots 26\cdot 27}\,x^{n-25}
+- \frac{1181820455}{546}\cdot\frac{n(n-1)\;.\;.\;.\;(n-22)\omega^{23}}{2\cdot 3\;.\;.\;.\;24\cdot 25}\,x^{n-23}
++ \frac{76977927}{2}\cdot\frac{n(n-1)\;.\;.\;.\;(n-24)\omega^{25}}{2\cdot 3\;.\;.\;.\;26\cdot 27}\,x^{n-25}
 $$
 
 $$
-- \frac{23749461029}{30}\cdot\frac{n(n-1)\cdots(n-26)\omega^{27}}{2\cdot 3\cdots 28\cdot 29}\,x^{n-27}
-+ \frac{8615841276005}{462}\cdot\frac{n(n-1)\cdots(n-28)\omega^{29}}{2\cdot 3\cdots 30\cdot 31}\,x^{n-29}
+- \frac{23749461029}{30}\cdot\frac{n(n-1)\;.\;.\;.\;(n-26)\omega^{27}}{2\cdot 3\;.\;.\;.\;28\cdot 29}\,x^{n-27}
++ \frac{8615841276005}{462}\cdot\frac{n(n-1)\;.\;.\;.\;(n-28)\omega^{29}}{2\cdot 3\;.\;.\;.\;30\cdot 31}\,x^{n-29}
 $$
 
 $$
 \text{\&c.} + C
 $$
 
-Điều đáng chú ý nhất trong dãy tiến triển này nằm ở những hệ số thuần số học; còn cách
-chúng được tạo ra thì ở đây chưa phải chỗ để trình bày.
+trọng tâm của dãy này nằm ở các hệ số thuần túy bằng số; còn chúng được lập ra thế nào thì
+đây chưa phải chỗ có thể trình bày.
 
-**30.** Tuy nhiên dễ thấy rằng, nếu $n$ không phải là một số nguyên dương, thì biểu thức
-của tổng này tiến triển vô hạn, và cũng không thể trình tổng ra dưới dạng hữu hạn theo
-cách này.
-
-Cần lưu ý ở đây rằng không phải lũy thừa nào của $x$ thấp hơn lũy thừa đã cho $x^n$ cũng
-xuất hiện: các số hạng $x^{n-2}$, $x^{n-4}$, $x^{n-6}$, $x^{n-8}$, &c. đều thiếu, vì hệ số
-của chúng bằng $0$; và điều này vẫn đúng khi hệ số của số hạng thứ hai là $x^n$ không tuân
-theo quy luật ấy mà bằng $-\frac{1}{2}$.
-
-Do đó, nhờ biểu thức này, các tổng của những lũy thừa mà số mũ là âm hoặc phân số có thể
-được trình ra ở dạng vô hạn, chỉ trừ một trường hợp là $n=-1$, vì khi đó số hạng
-$\frac{x^{n+1}}{(n+1)\omega}$ trở thành vô hạn, bởi $n+1=0$. Như vậy, đặt $n=-2$; ta sẽ có
-
-$$
-\Sigma\frac{1}{xx}
-$$
-
-<!-- Ghi chú dịch giả: bốn hệ số cuối của trang này cũng khớp quy luật đã ghi ở trang 59.
+<!-- Ghi chú dịch giả: bốn hệ số của trang này cũng khớp quy luật đã ghi ở trang 59.
      1181820455/546 = B24·25, 76977927/2 = B26·27, 23749461029/30 = B28·29,
      8615841276005/462 = B30·31. Quy luật vậy là hệ số in ra bằng |B2m|·(2m+1), dấu
      luân phiên; Euler không nói tới số Bernoulli. -->
 
+**30.** Còn rõ là, nếu $n$ không phải số nguyên dương, thì biểu thức này của tổng tiến ra vô
+hạn, và theo cách này không thể biểu thị tổng ở dạng hữu hạn. Ngoài ra, cần lưu ý ở đây rằng
+không phải mọi lũy thừa của $x$ thấp hơn lũy thừa đã cho $x^n$ đều xuất hiện; vì thiếu các số
+hạng $x^{n-2}$, $x^{n-4}$, $x^{n-6}$, $x^{n-8}$, &c., bởi hệ số của chúng $= 0$, dù hệ số của
+số hạng thứ hai $x^n$ không theo quy luật ấy mà $= -\frac{1}{2}$. Vậy nhờ biểu thức này, tổng
+của những lũy thừa có số mũ âm hoặc phân số có thể được biểu thị ở dạng vô hạn, chỉ trừ
+trường hợp $n = -1$, vì khi ấy số hạng $\frac{x^{n+1}}{(n+1)\omega}$ trở thành vô hạn do
+$n + 1 = 0$. Chẳng hạn, đặt $n = -2$; sẽ có
+
 <!-- PDF 61, trang in 33 -->
 
 $$
-= C - \frac{1}{\omega x} - \frac{1}{2xx} - \frac{1}{2}\cdot\frac{\omega}{3x^3} + \frac{1}{6}\cdot\frac{\omega^3}{5x^5}
+\Sigma\frac{1}{xx} = C - \frac{1}{\omega x} - \frac{1}{2xx} - \frac{1}{2}\cdot\frac{\omega}{3x^3} + \frac{1}{6}\cdot\frac{\omega^3}{5x^5}
 $$
 
 $$
@@ -1357,42 +1393,40 @@ $$
 $$
 
 $$
-- \frac{35}{2}\cdot\frac{\omega^{13}}{15x^{15}} + \frac{3617}{30}\cdot\frac{\omega^{15}}{17x^{17}} \text{\&c.}
+- \frac{35}{2}\cdot\frac{\omega^{13}}{15x^{15}} + \frac{3617}{30}\cdot\frac{\omega^{15}}{17x^{17}} - \text{\&c.}
 $$
 
 <!-- Ghi chú dịch giả: tám hệ số của trang này cũng theo đúng quy luật |B2m|·(2m+1) đã
-     ghi ở trang 59, với mẫu số (2m+1) nối vào mỗi số hạng: 1/2 = B2·3, 1/6 = B4·5,
-     1/6 = B6·7, 3/10 = B8·9, 5/6 = B10·11, 691/210 = B12·13, 35/2 = B14·15,
-     3617/30 = B16·17. Bản in ở đây không sai; chỉ là nét chữ trong scan mờ, dễ đọc
-     nhầm số 1/2 thành 1/4 và số 3/10 thành 7/6. Đã đối chiếu lại bằng cách bắt sai khác
-     của dãy này, cả tám hệ số khớp với 1/x^2 tới sai số do cắt cụt. -->
+     ghi ở trang 59: 1/2 = B2·3, 1/6 = B4·5, 1/6 = B6·7, 3/10 = B8·9, 5/6 = B10·11,
+     691/210 = B12·13, 35/2 = B14·15, 3617/30 = B16·17. Nét chữ các phân số nhỏ ở đây
+     rất mờ, dễ đọc nhầm 1/2 thành 1/4. -->
 
-**31.** Vậy thì, nếu differentia đã cho là một lũy thừa bất kỳ của chính $x$, thì tổng của
-nó từ đây có thể luôn được chỉ định, hay nói cách khác là một functio mà differentia của
-nó chính là đại lượng đã cho.
+**31.** Vậy nếu differentia đã cho là một lũy thừa bất kỳ của $x$, thì từ đây luôn có thể chỉ
+ra tổng của nó, tức có thể biểu thị functio mà nó là differentia. Còn nếu differentia đã cho
+có dạng khác, đến mức không thể chia nó thành các lũy thừa của $x$ như thành các phần, thì
+tổng rất khó tìm, và nhiều khi hoàn toàn không thể tìm được: trừ khi tình cờ thấy rõ nó sinh
+ra từ một functio nào đó. Vì lẽ ấy, nên khảo sát differentia của nhiều functio và ghi nhận
+chúng cẩn thận, để hễ khi nào một differentia như thế được cho, thì tổng của nó, tức functio
+đã sinh ra nó, có thể được chỉ ra ngay. Tuy vậy, phương pháp vô hạn sẽ cung cấp nhiều quy
+tắc, nhờ đó việc tìm tổng sẽ được trợ giúp một cách lạ lùng.
 
-Nhưng nếu differentia đã cho mang một dạng khác, như không thể chia ra được thành các
-lũy thừa của chính $x$, xem chúng như những thành phần, thì tổng của nó rất khó, và thường
-hoàn toàn không tìm ra được bằng số: trừ khi may mà ta biết nó phát sinh từ một functio nào
-đó. Vì lý do ấy, cần khảo sát differentia của nhiều functio và ghi nhớ chúng cho chuẩn
-xác, để khi một dạng differentia như vậy được đưa ra, tổng của nó, hay functio mà nó phát
-sinh, có thể lập tức được trình ra. Tuy vậy, trong lúc chờ đó, phương pháp vô cùng sẽ cung
-cấp không ít quy tắc, nhờ đó việc tìm tổng được nâng đỡ một cách lạ thường.
+**32.** Còn tổng cần tìm thường tìm được dễ hơn nếu differentia đã cho gồm những thừa số đơn
+giản lập thành một cấp số cộng có công sai chính là lượng $\omega$. Chẳng hạn, cho functio
+$(x+\omega)(x+2\omega)$ và cần tìm differentia của nó: vì khi đặt $x+\omega$ vào chỗ của $x$,
+functio này chuyển thành $(x+2\omega)$
 
-**32.** Tuy nhiên, tổng cần tìm thường dễ tìm thấy hơn, nếu differentia đã cho là tích của
-những thừa số giản dị nào đó, hợp thành một cấp số cộng, mà differentia của chính nó là
-đại lượng $\omega$. Chẳng hạn, nếu functio đã cho là $(x+\omega)(x+2\omega)$ và ta cần
-differentia của nó: bởi khi đặt $x+\omega$ vào chỗ của $x$, functio này trở thành
-$(x+2\omega)(x+3\omega)$, differentia của nó là $2\omega(x+2\omega)$. Ngược lại, nếu
-differentia đã cho là $2\omega(x+2\omega)$ thì tổng của nó sẽ là $(x+\omega)(x+2\omega)$,
-và do đó ta có
+<!-- PDF 62, trang in 34 -->
+
+$(x+3\omega)$, differentia của nó sẽ là $2\omega(x+2\omega)$. Vì thế ngược lại, nếu cho
+differentia $2\omega(x+2\omega)$, thì tổng của nó sẽ là $(x+\omega)(x+2\omega)$, và vậy nên sẽ
+có
 
 $$
 \Sigma(x+2\omega) = \frac{1}{2\omega}(x+\omega)(x+2\omega).
 $$
 
-Tương tự, nếu functio đã cho là $(x+n\omega)(x+(n+1)\omega)$, và differentia của nó là
-$2\omega(x+(n+1)\omega)$ thì
+Tương tự, nếu cho functio $(x+n\omega)(x+(n+1)\omega)$, thì vì differentia của nó là
+$2\omega(x+(n+1)\omega)$, sẽ có
 
 $$
 \Sigma(x+(n+1)\omega) = \frac{1}{2\omega}(x+n\omega)(x+(n+1)\omega)
@@ -1404,236 +1438,197 @@ $$
 \Sigma(x+n\omega) = \frac{1}{2\omega}(x+(n-1)\omega)(x+n\omega).
 $$
 
-<!-- PDF 62, trang in 34 -->
+**33.** Nếu functio gồm nhiều thừa số, sao cho
+$y = (x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)$, thì vì
 
-**33.** Nếu functio lập thành từ nhiều thừa số, chẳng hạn
-$y = (x+(n-1)\omega)(x+n\omega)\times(n+1)\omega$, và
-$y^1 = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)$, thì
-$\Delta y = 3\omega(x+n\omega)(x+(n+1)\omega)$; do đó
+$$
+y^{\mathrm{I}} = (x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega),
+$$
+
+sẽ có
+
+$$
+\Delta y = 3\omega(x+n\omega)(x+(n+1)\omega)
+$$
+
+và do đó
 
 $$
 \Sigma(x+n\omega)(x+(n+1)\omega) = \frac{1}{3\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)
 $$
 
-Cũng sẽ tìm được, bằng lý do ấy:
+Theo cùng cách sẽ tìm được:
 
 $$
 \Sigma(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega) = \frac{1}{4\omega}(x+(n-1)\omega)(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega).
 $$
 
-Từ đó quy luật tìm các tổng sẽ lộ ra, nếu differentia lập thành từ nhiều thừa số thuộc
-loại ấy. Tuy nhiên...
+từ đó quy luật tìm tổng, khi differentia gồm nhiều thừa số loại này, tự nó hiện ra. Còn
+mặc dù
 
-<!-- Ghi chú dịch giả: trong dòng định nghĩa y ở §33, thừa số thứ ba bị in thiếu: bản in
-     ghi (x+(n-1)ω)(x+nω)×(n+1)ω, thiếu luôn chữ x+ trước (n+1)ω. Đã soi ở độ phóng 20,
-     nét chữ rõ và dấu nhân thì có; đây là lỗi của bản in. Đúng phải là (x+(n+1)ω), như
-     dòng ngay dưới là y^1 = (x+nω)(x+(n+1)ω)(x+(n+2)ω), và như công thức Δy ở ngay sau.
-     Đã chép nguyên văn, không tự sửa. -->
+<!-- Ghi chú dịch giả: ở dòng định nghĩa y của §33 (PDF 62), chỗ giữa "(x+nω)" và
+     "(n+1)ω)" bị in chồng/nhòe, trông như một dấu nhân; nhưng dấu ngoặc đóng kép ở cuối
+     và dòng y^I ngay dưới cho thấy đó là thừa số (x+(n+1)ω). Đã ghi theo cách đọc ấy. -->
 
-<!-- Ghi chú dịch giả: đã tự kiểm cả bốn công thức của trang này bằng phép lấy sai khác.
+<!-- Ghi chú dịch giả: đã tự kiểm các công thức của trang này bằng phép lấy sai lệch.
      Với F = (1/(2ω))(x+(n-1)ω)(x+nω) thì ΔF = (x+nω); với
      F = (1/(3ω))(x+(n-1)ω)(x+nω)(x+(n+1)ω) thì ΔF = (x+nω)(x+(n+1)ω); với
      F = (1/(4ω))(x+(n-1)ω)(x+nω)(x+(n+1)ω)(x+(n+2)ω) thì
-     ΔF = (x+nω)(x+(n+1)ω)(x+(n+2)ω). Ở cả ba, chênh lệch trong ngoặc bằng đúng 2ω, 3ω,
-     4ω nên hệ số trước ra chính là 1/(kω) với k số thừa số. Cùng cách đó đã kiểm
-     Σ(x+2ω) = (1/(2ω))(x+ω)(x+2ω). -->
-
-<!-- Ghi chú dịch giả: biểu thức (x+2ω)(x+3ω) bị bản in ngắt giữa chừng, nửa (x+2ω)(x+ ở
-     cuối trang 61 còn nửa (x+3ω) sang trang 62. Ở đây đã viết trọn vẹn một biểu thức. -->
-
-<!-- Ghi chú dịch giả: chữ gần cuối trang đọc không chắc. Nét có thể là f hoặc s, cho
-     nên chỗ này đọc được hoặc là fonte hay sonte; trong câu vnde lex inveniendi summas ...
-     pateat thì fonte (từ nguồn) hợp lý hơn, song đây là chỗ nghi vấn, không dám chắc.
-     Giữ theo cách đọc fonte. -->
-
-<!-- Ghi chú dịch giả: trang 62 kết thúc giữa chữ, câu cuối bị cắt ở au- (autem); mép
-     phải cũng mang chữ catchword au-. Đầu trang là CAPUT I. kèm số trang 34 đặt bên trái.
-     Đối chiếu lại sau: đây KHÔNG phải trang cuối của Chương I. -->
+     ΔF = (x+nω)(x+(n+1)ω)(x+(n+2)ω). -->
 
 <!-- PDF 63, trang in 35 -->
 
-mặc dù các differentia này là những functio phân thức nguyên, tổng của chúng vẫn tìm được
-theo cách này dễ dàng hơn là theo phương pháp trước.
+các differentia này là những functio rationalis nguyên, tổng của chúng tìm theo cách này vẫn
+dễ hơn là theo phương pháp trước.
 
-**34.** Từ đây cũng mở ra một lối để tìm tổng của những differentia đã bàn. Giả sử có
-phân số
+**34.** Từ đây cũng mở ra lối tìm tổng của các differentia dạng phân thức. Cho phân thức
 
 $$
 y = \frac{1}{x+n\omega};
 $$
 
-vì $y^1 = \frac{1}{x+(n+1)\omega}$ nên
+vì $y^{\mathrm{I}} = \frac{1}{x+(n+1)\omega}$, nên sẽ có
 
 $$
 \Delta y = \frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega} = \frac{-\omega}{(x+n\omega)(x+(n+1)\omega)}
 $$
 
-do đó
+và do đó
 
 $$
 \Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)} = -\frac{1}{\omega}\cdot\frac{1}{x+n\omega}
 $$
 
-Giả sử nữa
+Lại cho
 
 $$
 y = \frac{1}{(x+n\omega)(x+(n+1)\omega)}
 $$
 
-vì $y^1 = \frac{1}{(x+(n+1)\omega)(x+(n+2)\omega)}$ nên
+vì $y^{\mathrm{I}} = \frac{1}{(x+(n+1)\omega)(x+(n+2)\omega)}$, nên sẽ có
 
 $$
 \Delta y = \frac{-2\omega}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)}
 $$
 
-từ đó ta có
+Vì thế sẽ thành
 
 $$
-\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)} = -\frac{1}{2\omega}\cdot\frac{1}{(x+n\omega)(x+(n+1)\omega)}
+\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)} = \frac{-1}{2\omega}\cdot\frac{1}{(x+n\omega)(x+(n+1)\omega)}
 $$
-
-<!-- Ghi chú dịch giả: cả bốn công thức của trang này đã tự kiểm bằng phép lấy sai khác và
-     đều đúng. Sai khác của 1/(x+nω) là -ω/((x+nω)(x+(n+1)ω)); của
-     1/((x+nω)(x+(n+1)ω)) là -2ω/((x+nω)(x+(n+1)ω)(x+(n+2)ω)), vì trong ngoặc chênh
-     lệch đúng 2ω. Cùng cách đó, sai khác của 1/((x+nω)(x+(n+1)ω)) cho số hạng đầu
-     của §34, nên hệ số trước ra là 1/ω và 1/(2ω) như in. -->
 
 <!-- PDF 64, trang in 36 -->
 
-Tương tự, ta sẽ có
+Tương tự, tiếp nữa sẽ có
 
 $$
-\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)(x+(n+3)\omega)} = -\frac{1}{3\omega}\cdot\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)}.
+\Sigma\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)(x+(n+3)\omega)} = \frac{-1}{3\omega}\cdot\frac{1}{(x+n\omega)(x+(n+1)\omega)(x+(n+2)\omega)}.
 $$
 
-**35.** Cách tổng này cần phải giữ lấy, vì tổng của những differentia thuộc loại ấy thì
-không thể tìm được theo phương pháp trước. Nhưng nếu differentia lại có tử số, hoặc các
-thừa số ở mẫu số không đi theo cấp số cộng, thì cách khảo sát tổng hiếm hoi nhất là phân
-rã differentia đã cho thành những phân số đơn giản của nó. Từng phân số một thì không tổng
-được, nhưng ghép từng đôi một thì tổng lại tìm được, bao nhiêu lần điều đó còn làm được;
-chỉ có điều khó là tổng có tìm được bằng công thức này hay không:
+**35.** Cách lấy tổng này cần được nắm vững, vì tổng của những differentia loại này không thể
+tìm được bằng phương pháp trước. Còn nếu differentia lại có thêm tử số, hoặc các thừa số của
+mẫu số không tiến theo cấp số cộng, thì cách chắc chắn nhất để tìm tổng là phân tích
+differentia đã cho thành các phân thức đơn giản của nó; từng phân thức ấy tuy không lấy tổng
+được, nhưng ghép chúng từng đôi một thì tìm được tổng bao nhiêu lần việc ấy làm được; vì chỉ
+cần xét xem tổng có tìm được nhờ công thức này hay không:
 
 $$
 \Sigma\frac{1}{x+(n+1)\omega} - \Sigma\frac{1}{x+n\omega} = \frac{1}{x+n\omega}
 $$
 
-vì cả hai tổng ấy riêng rẽ thì không trình ra được, nhưng sai khác của chúng thì biết
-được.
+bởi tuy không tổng nào trong hai tổng này tự nó biểu thị được, nhưng hiệu của chúng thì biết.
 
-**36.** Vì những lý do ấy, công việc trở lại với việc phân rã mỗi phân số thành những
-phân số đơn giản của nó, việc đã thu được trong cuốn trước. Còn nhờ đó thì tổng sẽ tìm ra
-thế nào, ta sẽ chỉ bằng vài ví dụ.
-
-<!-- Ghi chú dịch giả: công thức ở cuối §35 in ra SỐ SAI, đã chép nguyên văn. Vì
-     Delta(1/(x+nω)) = 1/(x+(n+1)ω) - 1/(x+nω) = -ω/((x+nω)(x+(n+1)ω)) nên tổng của
-     hiệu ấy phải là -(1/ω)·1/(x+nω), chứ không phải 1/(x+nω) như in. Sai cả dấu lẫn
-     hệ số 1/ω. Đã soi bản in ở độ phóng 20: vế phải chỉ có 1/(x+nω), không có hệ số
-     nào đứng trước. Công thức này còn được dùng lại ở EXEMPLUM I, nên xem ghi chú ở
-     trang 65. -->
+**36.** Vậy trong những trường hợp này, công việc quy về việc phân tích mỗi phân thức thành
+các phân thức đơn giản của nó, điều đã được trình bày kỹ hơn ở quyển trước. Còn nhờ đó mà tìm
+được tổng như thế nào, ta sẽ chỉ ra bằng vài ví dụ.
 
 <!-- PDF 65, trang in 37 -->
 
 **EXEMPLUM I.**
 
-*Hãy tìm tổng, mà differentia của nó là*
+*Tìm tổng mà differentia của nó là*
 
 $$
 \frac{3x+2\omega}{x(x+\omega)(x+2\omega)}.
 $$
 
-*Phân rã differentia đã cho thành những phân số đơn giản của nó, ta sẽ có*
+Phân tích differentia đã cho thành các phân thức đơn giản của nó, chúng sẽ là
 
 $$
-\frac{1}{\omega}\cdot\frac{1}{x} + \frac{1}{\omega}\cdot\frac{1}{x+\omega} - \frac{2}{\omega}\cdot\frac{1}{x+2\omega},
+\frac{1}{\omega}\cdot\frac{1}{x} + \frac{1}{\omega}\cdot\frac{1}{x+\omega} - \frac{2}{\omega}\cdot\frac{1}{x+2\omega}.
 $$
 
-*vì theo công thức ở trên,*
+Giờ vì theo công thức ở trên ta có:
 
 $$
 \Sigma\frac{1}{x+n\omega} = \Sigma\frac{1}{x+(n+1)\omega} - \frac{1}{x+n\omega}
 $$
 
-*nên*
+nên sẽ có
 
 $$
 \Sigma\frac{1}{x} = \Sigma\frac{1}{x+\omega} - \frac{1}{x}.
 $$
 
-*Từ đó tổng cần tìm là*
+Do đó tổng cần tìm sẽ là
 
 $$
 \frac{1}{\omega}\Sigma\frac{1}{x} + \frac{1}{\omega}\Sigma\frac{1}{x+\omega} - \frac{2}{\omega}\Sigma\frac{1}{x+2\omega} = \frac{2}{\omega}\Sigma\frac{1}{x+\omega} - \frac{2}{\omega}\Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x},
 $$
 
-*tức là*
+mà
 
 $$
-\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{\omega x};
+\Sigma\frac{1}{x+\omega} = \Sigma\frac{1}{x+2\omega} - \frac{1}{x+\omega};
 $$
 
-*từ đó tổng cần tìm là*
+nên tổng cần tìm sẽ là
 
 $$
 -\frac{1}{\omega x} - \frac{2}{\omega(x+\omega)} = \frac{-3x-\omega}{\omega x(x+\omega)}.
 $$
 
-<!-- Ghi chú dịch giả: ví dụ này lộ ra hai chỗ không khớp với nhau, đã chép nguyên văn cả
-     hai. (i) Khai triển thành phần đúng: với A = 1/ω, B = 1/ω, C = -2/ω thì
-     (3x+2ω)/(x(x+ω)(x+2ω)) = A/x + B/(x+ω) + C/(x+2ω), đã tự kiểm. (ii) DAP AN CUOI
-     CUNG ĐÚNG: với F = -1/(ωx) - 2/(ω(x+ω)) = -(3x+ω)/(ωx(x+ω)) thì lấy sai khác cho
-     đúng (3x+2ω)/(x(x+ω)(x+2ω)); đã kiểm bằng số phân tỉch với ω = 1, x = 10, được
-     ΔF = 4/165 khớp đúng. Nhưng các bước ở giữa thì không dẫn tới đáp án ấy: áp công
-     thức sai ở §35 vào dòng "at est" thì cho Σ1/(x+ω) - Σ1/(x+2ω) = -1/(ωx), và từ đó
-     tổng ra -3/10 (với ω = 1, x = 10), trong khi đáp án in ra là -31/110. Giá trị đúng
-     của hiệu ấy là +1/132. Vậy các dòng giữa không nhất quán với đáp án, dù đáp án thì
-     đúng. -->
+<!-- Ghi chú dịch giả: đã tự kiểm ví dụ này: với A = 1/ω, B = 1/ω, C = -2/ω thì
+     (3x+2ω)/(x(x+ω)(x+2ω)) = A/x + B/(x+ω) + C/(x+2ω); và với
+     F = -1/(ωx) - 2/(ω(x+ω)) thì ΔF đúng bằng differentia đã cho (thử số với ω = 1,
+     x = 10: ΔF = 4/165). Mọi bước trung gian, kể cả dòng "at est", đều khớp với công
+     thức của §35. -->
 
 <!-- PDF 66, trang in 38 -->
 
 **EXEMPLUM II.**
 
-*Hãy tìm tổng, mà differentia của nó là*
+*Tìm tổng mà differentia của nó là*
 
 $$
 \frac{3\omega}{x(x+3\omega)}.
 $$
 
-*Đặt differentia này bằng $z$, ta có $z = \frac{1}{x} - \frac{1}{x+3\omega}$, do đó*
+Đặt differentia này $= z$, sẽ có $z = \frac{1}{x} - \frac{1}{x+3\omega}$, và do đó
 
 $$
-\Sigma z = \Sigma\frac{1}{x} - \Sigma\frac{1}{x+3\omega} = \Sigma\frac{1}{x+\omega} - \left(\Sigma\frac{1}{x+3\omega} - \frac{1}{x}\right)
-$$
-
-$$
-\Sigma\frac{1}{x+3\omega} - \frac{1}{x} = \Sigma\frac{1}{x+2\omega} - \Sigma\frac{1}{x+3\omega} - \frac{1}{x+\omega} - \frac{1}{x}
+\Sigma z = \Sigma\frac{1}{x} - \Sigma\frac{1}{x+3\omega} = \Sigma\frac{1}{x+\omega} -
+\Sigma\frac{1}{x+3\omega} - \frac{1}{x} = \Sigma\frac{1}{x+2\omega} - \Sigma\frac{1}{x+3\omega} - \frac{1}{x} - \frac{1}{x+\omega}
 $$
 
 $$
-= -\frac{1}{x} - \frac{1}{x+\omega} - \frac{1}{x+2\omega}
+= -\frac{1}{x} - \frac{1}{x+\omega} - \frac{1}{x+2\omega}.
 $$
 
-vốn là tổng cần tìm. Bởi vậy, bao nhiêu lần mà một cách tổng đáng giá $\Sigma$ cuối cùng
-khử đi được, thì bấy nhiêu lần tổng của differentia đã cho có thể được trình ra; còn nếu
-phép phân rã ấy không thành công, thì đó là dấu hiệu cho thấy tổng không tìm được.
+đó là tổng cần tìm. Vậy hễ khi nào theo cách này các dấu tổng $\Sigma$ cuối cùng triệt tiêu
+lẫn nhau, thì khi ấy tổng của differentia đã cho có thể biểu thị được; còn nếu sự triệt tiêu
+ấy không thành, thì đó là dấu hiệu cho thấy tổng không thể tìm được.
 
-<!-- Ghi chú dịch giả: dòng kết quả cuối của EXEMPLUM II này SAI, đã chép nguyên văn.
-     Vì differentia đã cho bằng 1/x - 1/(x+3ω) nên tổng phải là
-     -1/(ωx) + 1/(ω(x+3ω)) = -3/(x(x+3ω)); đã kiểm bằng số phân tỉch với ω = 1, x = 10:
-     tổng đúng là -3/130, còn biểu thức Euler in ra là -1/10 - 1/11 - 1/12 = -91/330.
-     Nguyên nhân thì rõ ràng: các bước ở đây áp đúng công thức sai đã ghi ở §35, nên
-     sai theo. Ở EXEMPLUM I thì ngược lại, các bước ở giữa không nhất quán nhưng đáp án
-     cuối lại đúng. -->
+<!-- Ghi chú dịch giả: đã tự kiểm: với F = -1/x - 1/(x+ω) - 1/(x+2ω) thì
+     ΔF = 1/x - 1/(x+3ω) = 3ω/(x(x+3ω)), đúng differentia đã cho. -->
 
-<!-- Ghi chú dịch giả: đây là trang cuối của CAPUT I. Đầu trang mang CAPUT I. với số trang
-     38 đặt bên trái; mép phải có catchword CAPUT, báo hiệu trang tiêu đề của CAPUT II ở
-     trang kế. Trang 67 (tr. 39) mới thật sự là trang mở đầu CAPUT II, với tiêu đề
-     DE VSV DIFFERENTIARVM IN DOCTRINA SERIERVM. -->
+<!-- Ghi chú dịch giả: đây là trang cuối của CAPUT I. Dưới đoạn cuối có hai gạch ngang
+     trang trí; mép phải có catchword CAPUT, báo hiệu trang tiêu đề của CAPUT II ở trang kế
+     (PDF 67, tr. 39: DE VSV DIFFERENTIARVM IN DOCTRINA SERIERVM). -->
 
-<!-- Hết CAPUT I. Còn lại: không. Đã dịch đủ PDF 31-66, tức trang in 3-38, §1-§36. -->
+<!-- Hết CAPUT I. Đã dịch đủ PDF 31-66, tức trang in 3-38, §1-§36. -->
 
-
-
-<!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4, ...)
+<!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4), ...)
      vì hệ số bằng 0 — đúng với công thức: số mũ của các số hạng là n+1, n, n-1, n-3,
      n-5, ... nên không có số mũ n-2, n-4, n-6. -->
 <!-- Ghi chú dịch giả: các hệ số 691/210, 35/2, 3617/30, 43867/42, 1222277/110,
@@ -1641,72 +1636,35 @@ phép phân rã ấy không thành công, thì đó là dấu hiệu cho thấy 
      (2m+1) và dấu luân phiên. Cụ thể, chia mỗi hệ số in ra cho (2m)(2m+1) thì thu được
      đúng 1/6, 1/30, 1/42, 1/30, 5/66, 691/2730, 7/6, 3617/510, 43867/798, 174611/330,
      854513/138, tức |B2|, |B4|, ..., |B22|. Nhận xét này là của người dịch; ở §29 Euler
-     không nói tới số Bernoulli. Cùng nhận xét đã được ghi ở kỳ trước (Phần 14) theo
-     dự đoán, nay đã xác nhận. -->
+     không nói tới số Bernoulli. -->
 
-<!-- Ghi chú dịch giả: đã thử công thức với n = 3, 4, 5, 6 và thấy khớp đúng những dòng
-     đã in ở các trang trước. Với n = 5, số hạng cuối in ra ở trang 57 là 5/12, trong
-     khi công thức ở đây cho đúng 1/12 — xem ghi chú ở trang 57. -->
-<!-- Ghi chú dịch giả: ở dòng trung gian của EXEMPLUM II, số hạng cuối in ra là
+<!-- Ghi chú dịch giả: đã thử công thức §29 với n = 3, 4, 5, 6 và thấy khớp đúng những
+     dòng đã in ở §27 (PDF 57), kể cả hệ số 1/12 của số hạng cuối dòng Σx⁵. -->
+<!-- Ghi chú dịch giả: ở dòng trung gian của EXEMPLUM II của §28, số hạng cuối in ra là
      -(1/30)ωx³, trong khi phải là -(1/30)ω³x. Cùng công thức ở trang 57 đã in đúng là
-     -(1/30)ω³x. Đã soi bản in ở độ phóng 26: sau ω không có số mũ, rồi đến x³. Giữ
-     nguyên như in. Dòng kết quả cuối cùng ở trang này thì đúng, nên sự sai chỉ nằm ở
-     dòng làm trung gian. -->
+     -(1/30)ω³x. Giữ nguyên như in. Dòng kết quả cuối cùng thì đúng, nên sự sai chỉ nằm ở
+     dòng trung gian. -->
 
-<!-- Ghi chú dịch giả: đã tự kiểm dòng kết quả của EXEMPLUM II: lấy sai lệch của
-     F = x⁵/(5ω) - x⁴/2 - (ω/3)x³ + ω²x² + (19/30)ω³x cho đúng x⁴ - 2ω²x² + ω⁴, đúng
-     như differentia đã cho. Ba dòng tổng ở EXEMPLUM I cũng đã kiểm và đều khớp với các
-     tổng đã tìm ở §27. -->
-<!-- Ghi chú dịch giả: ở dòng Σx⁵, số hạng cuối in ra là -(5/12)ω³x². Đã tự kiểm lại
-     bằng cách lấy sai lệch: với F = x⁶/(6ω) - (1/2)x⁵ + (5/12)ωx⁴ - (1/12)ω³x² thì
-     ΔF = x⁵ đúng bằng 0, còn với hệ số 5/12 thì còn dư -(2/3)ω⁴x - (1/3)ω⁵. Vậy
-     tử số phải là 1, không phải 5. Đã soi bản in ở độ phóng 26 để chắc chắn: chữ số ở
-     đây là 5, khác hẳn chữ 1 ở 1/2 ngay cùng dòng. Giữ nguyên như in. -->
+<!-- Ghi chú dịch giả: đã tự kiểm dòng kết quả của EXEMPLUM II của §28: lấy sai lệch của
+     F = x⁵/(5ω) - x⁴/2 - (ω/3)x³ + ω²x² + (19/30)ω³x cho đúng x⁴ - 2ω²x² + ω⁴. Ba dòng
+     tổng ở EXEMPLUM I cũng đã kiểm và đều khớp với các tổng đã tìm ở §27. -->
 
-<!-- Ghi chú dịch giả: ba dòng còn lại của trang này đã tự kiểm và đều đúng, tức lấy sai
-     lệch cho đúng x³, x⁴, x⁶:
-       Δ(x⁴/(4ω) - x³/2 + ωx²/4) = x³;
-       Δ(x⁵/(5ω) - x⁴/2 + (ω/3)x³ - (ω³/30)x) = x⁴;
-       Δ(x⁷/(7ω) - x⁶/2 + (ω/2)x⁵ - (ω³/6)x³ + (ω⁵/42)x) = x⁶.
-     Chỉ riêng dòng x⁵ là lệch, và lệch ở đúng một chữ số. -->
-<!-- Ghi chú dịch giả: ở dòng ngay trên dòng "và theo cách tương tự", bản in viết
-     Σx³, trong khi dòng ngay trên nó (bắt đầu bằng chữ "hay") vẫn là Σx². Dòng "hay" ấy
-     chỉ là phép thay thế của dòng trước nên phải là Σx², và đã tự kiểm lại:
-     x³/(3ω) - ω(x²/(2ω) - x/2) - (ω²/3)(x/ω) = x³/(3ω) - x²/2 + ωx/6, đúng như
-     vế phải in ra. Như vậy vế trái đã in sai. Đã soi ảnh ở độ phóng 26 để chắc chắn số
-     mũ của dòng "hay" là 3, còn dòng trên là 2. Giữ nguyên như in. -->
-<!-- Ghi chú dịch giả: số 16 của bảng ở §14 (hàng Δ³y) đọc trên scan là 150, không phải
-     510 như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng
-     quy tắc truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng cột bảy. -->
+<!-- Ghi chú dịch giả: các dòng Σx³, Σx⁴, Σx⁵, Σx⁶ ở trang 57 đã tự kiểm và đều đúng, tức
+     lấy sai lệch cho đúng x³, x⁴, x⁵, x⁶. -->
 
-<!-- Ghi chú dịch giả: ở dòng x⁻⁴, trang in viết số mũ của số hạng giữa là ω³, trong khi
-     số hạng cuối cũng là ω³. Dãy khai triển bắt buộc số mũ tăng dần ω, ω², ω³, nên số
-     hạng giữa phải là 10ω²/x⁶. Đây nhiều khả năng là lỗi của người chữ. Đã chép đúng
-     như in, không sửa. -->
-
-<!-- Ghi chú dịch giả: ở dòng cuối, số mũ trên x là -2/3, nhưng hệ số và số mũ của x bên
-     phải (-ω/(3x^{4/3}) + 2ω²/(9x^{7/3}) - 14ω³/(81x^{10/3})) lại là differentia bậc
-     nhất của x^{-1/3}. Differentia bậc nhất của x^{-2/3} phải là
-     -2ω/(3x^{5/3}) + 5ω²/(9x^{8/3}) - 40ω³/(81x^{11/3}). Cũng giữ nguyên như in.
-     Lưu ý dòng liền trên, x^{-1/2}, đã đúng; chỉ dòng này lệch. -->
+<!-- Ghi chú dịch giả: bảng ở §14: số 150 ở hàng Δ³y đọc trên scan là 150, không phải 510
+     như lớp OCR gợi ý. Số 5796 ở hàng Δ³y và 40824 ở hàng Δ⁴y đã đối chiếu bằng quy tắc
+     truy hồi của chính Euler: 5·(1800+1560) = 16800 khớp đúng. -->
 
 <!-- Ghi chú dịch giả: danh sách ở cuối trang 46 chỉ nêu số mũ dương; phần mở rộng sang
-     số mũ âm và phân số mà §17 hứa ở phần dẫn nằm ngay ở trang 47, ngay sau đó. -->
+     số mũ âm và phân số mà §17 hứa ở phần dẫn nằm ngay ở trang 47. Các dòng ở trang 47
+     (kể cả x⁻⁴ với 10ω²/x⁶ và dòng cuối x^(−1/3)) đều khớp với khai triển nhị thức. -->
 
-<!-- Ghi chú dịch giả: ở §19, Euler viết ω² ở dòng y¹ (aa+xx+2ωx+ω²) rồi lại viết ωω
-     ở dòng Δy ngay dưới (aa+xx+2ωx+ωω), dù hai chỗ này cùng một biểu thức. Đã soi ảnh
-     phóng to để kiểm cả hai: đúng như vậy. Giữ nguyên, không thống nhất hoá. Cùng kiểu
-     bất nhất này đã xuất hiện ở EXEMPLUM I (dòng 2ωx + ωω rồi ΔΔy = 2ωω), trong khi
-     EXEMPLUM II và III dùng ω², ω³. -->
-
-<!-- Ghi chú dịch giả: ở trang 49, dòng sắp xếp các số hạng theo lũy thừa của ω, số hạng
-     bậc ω² in ra là 2ω²(xx-aa)/(aa+xx)³. Đã phóng to hệ số để kiểm: chữ số là 2.
-     Nhưng khai triển đúng của 1/(aa+xx+2ωx+ωω) cho số hạng ω² là ω²(3xx-aa)/(aa+xx)³,
-     nên số hạng đã in ra sai. Số hạng ω³ ngay cạnh, -4ω³(x³-aax)/(aa+xx)⁴, thì đúng.
-     Đã chép nguyên như in. -->
+<!-- Ghi chú dịch giả: ở §19, Euler viết ω² ở dòng y^I (aa+xx+2ωx+ω²) rồi lại viết ωω
+     ở dòng Δy ngay dưới (aa+xx+2ωx+ωω), dù hai chỗ này cùng một biểu thức. Giữ nguyên,
+     không thống nhất hoá. -->
 
 <!-- Ghi chú dịch giả: ở trang 50, dòng đầu của phần nối §20, tử số in ra là
-     4ω2x² - 4ω3x - ω4, tức hai số hạng sau mang dấu trừ. Nhưng -(2ωx+ω²)²
-     = -(4ω2x² + 4ω3x + ω4), nên hai dấu ấy phải là dấu cộng. Đã soi ảnh phóng
-     to: đúng như in. Dòng 'hoặc' ngay dưới, sắp xếp lại theo lũy thừa của ω, thì hoàn toàn
-     đúng, nên sự sai nằm ở dòng trên. Đã chép nguyên như in. -->
+     4ω²x² - 4ω³x - ω⁴, tức hai số hạng sau mang dấu trừ. Nhưng -(2ωx+ω²)²
+     = -(4ω²x² + 4ω³x + ω⁴), nên hai dấu ấy phải là dấu cộng. Dòng "hoặc" ngay dưới thì
+     đúng. Đã chép nguyên như in. -->

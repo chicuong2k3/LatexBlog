@@ -26,7 +26,7 @@ status: chua-hoan-thanh
 **1.** Từ những điều đã trình bày trong Quyển trước về lượng biến thiên và functio, rõ ràng
 là khi lượng biến thiên thực sự biến đổi thì mọi functio của nó cũng chịu biến đổi theo.
 Chẳng hạn, nếu lượng biến thiên $x$ nhận lượng tăng $\omega$, sao cho ở chỗ của $x$ ta viết
-$x + \omega$, thì mọi functio của $x$, như $xx$; $x^3$; $\dfrac{a+x}{xx+aa}$, đều nhận
+$x + \omega$, thì mọi functio của $x$, như $xx$; $x^3$; $\dfrac{a+x}{aa+xx}$, đều nhận
 những giá trị khác: cụ thể là $xx$ sẽ chuyển thành
 
 $$
@@ -804,7 +804,7 @@ $$
               + \text{\&c.}
 $$
 
-&
+và
 
 $$
 \Delta y = -\frac{Q}{P^2} + \frac{Q^2}{P^3} - \frac{Q^3}{P^4} + \text{\&c.}
@@ -948,7 +948,7 @@ $$
              - \frac{\omega^6}{1\cdot 2\cdot 3\cdot 4\cdot 5\cdot 6} + \text{\&c.}
 $$
 
-&
+và
 
 $$
 \sin\omega = \omega - \frac{\omega^3}{1\cdot 2\cdot 3}
@@ -976,7 +976,7 @@ $$
 y^{\mathrm{I}} = \cos\omega.\cos x - \sin\omega.\sin x
 $$
 
-&
+và
 
 $$
 \Delta y = \cos\omega.\cos x - \sin\omega.\sin x - \cos x
@@ -1106,7 +1106,7 @@ $$
 y_{\mathrm{V}}\,;\quad y_{\mathrm{IV}}\,;\quad y_{\mathrm{III}}\,;\quad y_{\mathrm{II}}\,;\quad y_{\mathrm{I}}\,;\quad y
 $$
 
-&
+và
 
 $$
 \Delta y_{\mathrm{V}}\,;\quad \Delta y_{\mathrm{IV}}\,;\quad \Delta y_{\mathrm{III}}\,;\quad
@@ -1230,7 +1230,7 @@ $$
             - \frac{1}{12}\omega^3x^2
 $$
 
-&
+và
 
 $$
 \Sigma x^6 = \frac{x^7}{7\omega} - \frac{1}{2}x^6 + \frac{1}{2}\omega x^5
@@ -1256,7 +1256,7 @@ $$
 \Sigma axx = \frac{ax^3}{3\omega} - \frac{axx}{2} + \frac{a\omega x}{6}
 $$
 
-&
+và
 
 $$
 \Sigma bx = \quad\ldots\quad \frac{bxx}{2\omega} - \frac{bx}{2}
@@ -1288,7 +1288,7 @@ $$
             - \frac{1}{30}\omega x^3
 $$
 
-&
+và
 
 $$
 - \Sigma 2\omega^2 x^2 = \quad\ldots - \frac{2\omega}{3}x^3 + \omega^2x^2
@@ -1314,7 +1314,7 @@ vừa tìm ra này, thì sẽ còn lại differentia đã cho $x^4-2\omega^2x^2+
 <!-- PDF 59, trang in 31 -->
 
 **29.** Nếu xem xét kỹ hơn những tổng mà ta đã tìm được cho các lũy thừa của $x$, thì ở các
-số hạng thứ nhất, thứ hai và thứ ba, ta sẽ sớm nhận ra quy luật mà chúng tiến theo từng lũy
+số hạng thứ nhất, thứ hai và một số số hạng nữa, ta sẽ sớm nhận ra quy luật mà chúng tiến theo từng lũy
 thừa một: còn quy luật của các số hạng còn lại thì không rõ đến mức từ đó có thể rút ra tổng
 của lũy thừa $x^n$ nói chung. Tuy vậy, ở phần sau sẽ chỉ ra rằng:
 
@@ -1432,7 +1432,7 @@ $$
 \Sigma(x+(n+1)\omega) = \frac{1}{2\omega}(x+n\omega)(x+(n+1)\omega)
 $$
 
-&
+và
 
 $$
 \Sigma(x+n\omega) = \frac{1}{2\omega}(x+(n-1)\omega)(x+n\omega).

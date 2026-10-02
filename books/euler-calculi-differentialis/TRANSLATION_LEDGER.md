@@ -15,37 +15,37 @@ hoặc chưa đối chiếu.
 
 ## Bảng kế hoạch
 
-`Trang in` tính theo quan hệ `PDF = trang in + 28` (xem `PAGE_MAP.md`).
+`Trang in` lấy từ `page_numbers` của metadata archive.org, **không** tự trừ 28: từ PDF 871 trở đi quan hệ là `+38` vì bản scan lặp khối 10 trang in 833–842 (xem `PAGE_MAP.md` §2).
 
 | Chương | Tác phẩm | Tác giả viết | PDF | Trang in | File | Số callout | Trạng thái |
 |---|---|---|---:|---:|---|---:|---|
-| — | Lời tựa, mục lục, lỗi in | *Praefatio* | 5–28 | i–xxiv | `chapters/00-loi-tua-va-muc-luc.md` | 2 | Chưa dịch |
-| I | Sai lệch hữu hạn | *De Differentiis finitis* | 31–66 | 3–38 | `chapters/01-sai-lech-huu-han.md` | 4 | Chưa dịch |
-| II | Dùng sai lệch trong lý thuyết chuỗi | *De Usu Differentiarum in Doctrina serierum* | 67–97 | 39–69 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | 4 | Chưa dịch |
+| — | Lời tựa, mục lục, lỗi in | *Praefatio* | 5–28 | i–xxiv | `chapters/00-loi-tua-va-muc-luc.md` | 2 | Đang dịch |
+| I | Sai lệch hữu hạn | *De Differentiis finitis* | 31–66 | 3–38 | `chapters/01-sai-lech-huu-han.md` | 6 | Đang dịch |
+| II | Dùng sai lệch trong lý thuyết chuỗi | *De Usu Differentiarum in Doctrina serierum* | 67–97 | 39–69 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | 4 | Đang dịch |
 | III | Vô cùng nhỏ và điều không hạn | *De Infinitis et infinite parvis* | 98–125 | 70–97 | `chapters/03-vo-cung-nho-va-dieu-khong-han.md` | 4 | Chưa dịch |
 | IV | Bản chất của vi phân mọi bậc | *De Differentialium cuiusque ordinis natura* | 126–151 | 98–123 | `chapters/04-ban-chat-cua-vi-phan-moi-bac.md` | 5 | Chưa dịch |
 | V | Đạo hàm hàm đại số một biến | *De Differentiatione functionum algebraicarum unicam variabilem involventium* | 152–178 | 124–150 | `chapters/05-dao-ham-ham-dai-so-mot-bien.md` | 5 | Chưa dịch |
-| VI | Đạo hàm hàm giao hieu | *De Differentiatione functionum transcendentium* | 179–211 | 151–183 | `chapters/06-dao-ham-ham-giao-hieu.md` | 5 | Chưa dịch |
-| VII | Đạo hàm hàm nhiều biến | *De Differentiatione functionum duas pluresque variabiles involventium* | 212–231 | 184–203 | `chapters/07-dao-ham-ham-nhieu-bien.md` | 4 | Chưa dịch |
-| VIII | Đạo hàm tiếp trên vi phân | *De Formulae Differentialium ulteriori differentiatione* | 232–268 | 204–240 | `chapters/08-dao-ham-tiep-tren-vi-phan.md` | 5 | Chưa dịch |
+| VI | Đạo hàm hàm giao hieu | *De Differentiatione functionum transcendentium* | 179–205 | 151–177 | `chapters/06-dao-ham-ham-giao-hieu.md` | 5 | Chưa dịch |
+| VII | Đạo hàm hàm nhiều biến | *De Differentiatione functionum duas pluresque variabiles involventium* | 206–231 | 178–203 | `chapters/07-dao-ham-ham-nhieu-bien.md` | 4 | Chưa dịch |
+| VIII | Đạo hàm tiếp trên vi phân | *De Formularum Differentialium ulteriori differentiatione* | 232–268 | 204–240 | `chapters/08-dao-ham-tiep-tren-vi-phan.md` | 5 | Chưa dịch |
 | IX | Phương trình vi phân | *De Aequationibus Differentialibus* | 269–306 | 241–278 | `chapters/09-phuong-trinh-vi-phan.md` | 4 | Chưa dịch |
 | — | Nửa tên Pars Posterior | *Pars Posterior* | 307–308 | 279–280 | — | — | Ngoài sách |
 | I | Các phép biến đổi chuỗi | *De Transformationibus Serierum* | 309–331 | 281–303 | `chapters/10-cac-phep-bien-doi-chuoi.md` | 4 | Chưa dịch |
 | II | Nghiên cứu chuỗi có thể tổng | *De Investigatione serierum summabilium* | 332–359 | 304–331 | `chapters/11-chuoi-co-the-tong.md` | 4 | Chưa dịch |
-| III | Tìm sai lệch tương tự | *De Inventione Differentiarum similarium* | 360–386 | 332–358 | `chapters/12-sai-lech-tuong-tu.md` | 4 | Chưa dịch |
+| III | Tìm sai lệch hữu hạn | *De Inventione Differentiarum finitarium* | 360–386 | 332–358 | `chapters/12-sai-lech-tuong-tu.md` | 4 | Chưa dịch |
 | IV | Chuyển hàm thành chuỗi | *De Conversione Functionum in Series* | 387–430 | 359–402 | `chapters/13-chuyen-ham-thanh-chuoi.md` | 4 | Chưa dịch |
 | V | Tổng chuỗi từ công thức tổng quát | *Investigatio summae seriei ex termino generali* | 431–468 | 403–440 | `chapters/14-tong-chuoi-tu-cong-thuc-tong-quat.md` | 4 | Chưa dịch |
 | VI | Tổng cho chuỗi vô hạn | *De Summatione Progressionum per Series Infinitas* | 469–506 | 441–478 | `chapters/15-tong-cho-chuoi-vo-han.md` | 4 | Chưa dịch |
-| VII | Phương pháp tổng cấp cao hơn | *Methodus summandi superior suggesta* | 507–542 | 479–514 | `chapters/16-phuong-phap-tong-cap-cao-hon.md` | 3 | Chưa dịch |
-| VIII | Dùng vi phân để lập chuỗi | *De Usu Calculi Differentialis in formandis seriebus* | 543–575 | 515–547 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | 4 | Chưa dịch |
-| IX | Giải phương trình bằng vi phân | *De Usu Calculi Differentialis in aequationibus resolvendis* | 576–605 | 548–577 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | 4 | Chưa dịch |
-| X | Cực trị | *De Maximis et Minimis* | 606–653 | 578–625 | `chapters/19-cuc-tri.md` | 5 | Chưa dịch |
-| XI | Cực trị hàm nhiều dạng | *De Maximis & Minimis functionum multiformium* | 654–689 | 626–661 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | 4 | Chưa dịch |
-| XII | Tìm nghiệm thật của phương trình | *De Usu differentialium in investigandis radicibus realibus aequationum* | 690–716 | 662–688 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | 4 | Chưa dịch |
+| VII | Phương pháp tổng cấp cao hơn | *Methodus summandi superior ulterius promota* | 507–542 | 479–514 | `chapters/16-phuong-phap-tong-cap-cao-hon.md` | 3 | Chưa dịch |
+| VIII | Dùng vi phân để lập chuỗi | *De Usu Calculi Differentialis in formandis seriebus* | 543–573 | 515–545 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | 4 | Chưa dịch |
+| IX | Giải phương trình bằng vi phân | *De Usu Calculi Differentialis in aequationibus resolvendis* | 574–605 | 546–577 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | 4 | Chưa dịch |
+| X | Cực trị | *De Maximis et Minimis* | 606–646 | 578–618 | `chapters/19-cuc-tri.md` | 5 | Chưa dịch |
+| XI | Cực trị hàm nhiều dạng | *De Maximis et Minimis Functionum Multiformium Pluresque Variabiles Complerentium* | 647–684 | 619–656 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | 4 | Chưa dịch |
+| XII | Tìm nghiệm thật của phương trình | *De Usu differentialium in investigandis radicibus realibus aequationum* | 685–716 | 657–688 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | 4 | Chưa dịch |
 | XIII | Dấu hiệu nghiệm ảo | *De Criteriis radicum imaginariarum* | 717–739 | 689–711 | `chapters/22-dau-hieu-nghiem-ao.md` | 3 | Chưa dịch |
 | XIV | Trạng thái mở động của hàm | *De Differentialibus functionum incertarum statum* | 740–765 | 712–737 | `chapters/23-trang-thai-mo-dong-cua-ham.md` | 3 | Chưa dịch |
 | XV | Giá trị đặc biệt của hàm | *De Valoribus functionum, qui certis casibus videntur* | 766–796 | 738–768 | `chapters/24-gia-tri-dac-biet-cua-ham.md` | 3 | Chưa dịch |
-| XVI | Đạo hàm hàm ẩn | *De Differentiatione Functionum implicitarum* | 797–835 | 769–807 | `chapters/25-dao-ham-ham-an.md` | 4 | Chưa dịch |
+| XVI | Đạo hàm functio inexplicabilis | *De Differentiatione Functionum inexplicabilium* | 797–835 | 769–807 | `chapters/25-dao-ham-ham-an.md` | 4 | Chưa dịch |
 | XVII | Nội suy chuỗi | *De Interpolatione Serierum* | 836–880 | 808–842 | `chapters/26-noi-suy-chuoi.md` | 4 | Chưa dịch |
 | XVIII | Ghép phân thức | *De Usu Calculi Differentialis in Rejunctione Fractionum* | 881–934 | 843–896 | `chapters/27-ghep-phan-thuc.md` | 4 | Chưa dịch |
 
@@ -164,37 +164,37 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 64 | 36 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
 | 65 | 37 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
 | 66 | 38 | `chapters/01-sai-lech-huu-han.md` | Đang dịch |  |
-| 67 | 39 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 68 | 40 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 69 | 41 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 70 | 42 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 71 | 43 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 72 | 44 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 73 | 45 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 74 | 46 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 75 | 47 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 76 | 48 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 77 | 49 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 78 | 50 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 79 | 51 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 80 | 52 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 81 | 53 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 82 | 54 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 83 | 55 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 84 | 56 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 85 | 57 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 86 | 58 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 87 | 59 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 88 | 60 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 89 | 61 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 90 | 62 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 91 | 63 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 92 | 64 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 93 | 65 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 94 | 66 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 95 | 67 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 96 | 68 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
-| 97 | 69 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Chưa dịch |  |
+| 67 | 39 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 68 | 40 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 69 | 41 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 70 | 42 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 71 | 43 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 72 | 44 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 73 | 45 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 74 | 46 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 75 | 47 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 76 | 48 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 77 | 49 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 78 | 50 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 79 | 51 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 80 | 52 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 81 | 53 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 82 | 54 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 83 | 55 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 84 | 56 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 85 | 57 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 86 | 58 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 87 | 59 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 88 | 60 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 89 | 61 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 90 | 62 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 91 | 63 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 92 | 64 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 93 | 65 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 94 | 66 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 95 | 67 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 96 | 68 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
+| 97 | 69 | `chapters/02-dung-sai-lech-trong-ly-thuyet-chuoi.md` | Đang dịch |  |
 | 98 | 70 | `chapters/03-vo-cung-nho-va-dieu-khong-han.md` | Chưa dịch |  |
 | 99 | 71 | `chapters/03-vo-cung-nho-va-dieu-khong-han.md` | Chưa dịch |  |
 | 100 | 72 | `chapters/03-vo-cung-nho-va-dieu-khong-han.md` | Chưa dịch |  |
@@ -303,12 +303,12 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 203 | 175 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
 | 204 | 176 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
 | 205 | 177 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
-| 206 | 178 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
-| 207 | 179 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
-| 208 | 180 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
-| 209 | 181 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
-| 210 | 182 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
-| 211 | 183 | `chapters/06-dao-ham-ham-giao-hieu.md` | Chưa dịch |  |
+| 206 | 178 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
+| 207 | 179 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
+| 208 | 180 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
+| 209 | 181 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
+| 210 | 182 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
+| 211 | 183 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
 | 212 | 184 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
 | 213 | 185 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
 | 214 | 186 | `chapters/07-dao-ham-ham-nhieu-bien.md` | Chưa dịch |  |
@@ -671,8 +671,8 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 571 | 543 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | Chưa dịch |  |
 | 572 | 544 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | Chưa dịch |  |
 | 573 | 545 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | Chưa dịch |  |
-| 574 | 546 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | Chưa dịch |  |
-| 575 | 547 | `chapters/17-dung-vi-phan-de-lap-chuoi.md` | Chưa dịch |  |
+| 574 | 546 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | Chưa dịch |  |
+| 575 | 547 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | Chưa dịch |  |
 | 576 | 548 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | Chưa dịch |  |
 | 577 | 549 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | Chưa dịch |  |
 | 578 | 550 | `chapters/18-giai-phuong-trinh-bang-vi-phan.md` | Chưa dịch |  |
@@ -744,13 +744,13 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 644 | 616 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
 | 645 | 617 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
 | 646 | 618 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 647 | 619 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 648 | 620 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 649 | 621 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 650 | 622 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 651 | 623 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 652 | 624 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
-| 653 | 625 | `chapters/19-cuc-tri.md` | Chưa dịch |  |
+| 647 | 619 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 648 | 620 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 649 | 621 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 650 | 622 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 651 | 623 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 652 | 624 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 653 | 625 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
 | 654 | 626 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
 | 655 | 627 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
 | 656 | 628 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
@@ -782,11 +782,11 @@ python tools/euler_ledger.py --pagemap /tmp/euler-pagemap.json
 | 682 | 654 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
 | 683 | 655 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
 | 684 | 656 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
-| 685 | 657 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
-| 686 | 658 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
-| 687 | 659 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
-| 688 | 660 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
-| 689 | 661 | `chapters/20-cuc-tri-ham-nhieu-dang.md` | Chưa dịch |  |
+| 685 | 657 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
+| 686 | 658 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
+| 687 | 659 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
+| 688 | 660 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
+| 689 | 661 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
 | 690 | 662 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
 | 691 | 663 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |
 | 692 | 664 | `chapters/21-tim-nghiem-that-phuong-trinh.md` | Chưa dịch |  |

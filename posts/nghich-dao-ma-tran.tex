@@ -38,15 +38,33 @@ $$
 $$
 AI_3=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]\left[ \begin{array}{rrr} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right]=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]=A.
 $$
-Lý do nằm ngay trong luật hàng--cột ở kì trước. Hàng thứ \(i\) của \(I_n\) chỉ có đúng một số khác không, là số \(1\) ở vị trí \(i\). Nhân hàng ấy với cột \(j\) của \(A\), tổng chỉ còn một số hạng, và số hạng đó là \(a_{ij}\).
+Lý do nằm ngay trong luật hàng--cột ở kì trước. Ô ở hàng \(i\), cột \(j\) của \(I_nA\) là hàng thứ \(i\) của \(I_n\) nhân với cột thứ \(j\) của \(A\), tức tổng
+$$
+(I_nA)_{ij}=\sum_{k=1}^{n}(I_n)_{ik}\,a_{kj}.
+$$
+Trong hàng thứ \(i\) của \(I_n\), chỉ có \((I_n)_{ii}=1\), còn \((I_n)_{ik}=0\) với mọi \(k\neq i\). Vậy trong tổng, chỉ số hạng ứng với \(k=i\) là khác \(0\), và nó bằng \(1\cdot a_{ij}=a_{ij}\). Nên \((I_nA)_{ij}=a_{ij}\) với mọi \(i,j\), tức \(I_nA=A\). Làm y hệt cho \(AI_n\), vì cột thứ \(j\) của \(I_n\) cũng chỉ có một số \(1\), ở vị trí \(j\).
 
-Ma trận đơn vị cũng là duy nhất. Giả sử một ma trận \(J\) cũng để yên mọi ma trận khi nhân vào. Lấy \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,i)\), ta được \(j_{ii}=1\); lấy \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,j)\) với \(i\neq j\), ta được \(j_{ij}=0\). Vậy \(J=I_n\).
+Ma trận đơn vị cũng là duy nhất. Giả sử \(J\) cỡ \(n\times n\) cũng để yên mọi ma trận khi nhân vào bên trái, tức \(JA=A\) với mọi ma trận \(A\) cỡ \(n\times n\). Ta xác định từng phần tử của \(J\).
+
+Trước hết là các ô trên đường chéo. Cho \(A\) là ma trận chỉ có số \(1\) ở vị trí \((i,i)\), mọi chỗ khác bằng \(0\). Ô \((i,i)\) của \(JA\) là
+$$
+(JA)_{ii}=\sum_{k=1}^{n}j_{ik}a_{ki}=j_{ii}\cdot 1=j_{ii},
+$$
+vì trong \(A\), chỉ có \(a_{ii}=1\) còn mọi \(a_{ki}\) với \(k\neq i\) đều bằng \(0\). Mà \(JA=A\), nên ô ấy phải bằng \(1\). Vậy \(j_{ii}=1\).
+
+Rồi các ô ngoài đường chéo. Cho \(A\) là ma trận chỉ có số \(1\) ở vị trí \((j,j)\), mọi chỗ khác bằng \(0\), và xét ô \((i,j)\) với \(i\neq j\). Ô ấy của \(JA\) là
+$$
+(JA)_{ij}=\sum_{k=1}^{n}j_{ik}a_{kj}=j_{ij}\cdot 1=j_{ij},
+$$
+vì trong \(A\), chỉ có \(a_{jj}=1\). Còn ô \((i,j)\) của chính \(A\) bằng \(0\), vì \(A\) chỉ khác \(0\) ở ô \((j,j)\) mà \(i\neq j\). Mà \(JA=A\), nên \(j_{ij}=0\).
+
+Vậy \(j_{ii}=1\) với mọi \(i\), và \(j_{ij}=0\) với mọi \(i\neq j\). Đó đúng là các phần tử của \(I_n\), nên \(J=I_n\).
 
 Vì thế với mọi ma trận vuông, ta có thể đặt \(A^0=I\), giống như với số thực.
 
-\subsection{Nghịch đảo, và nó là duy nhất}
+\subsection{Ma trận nghịch đảo}
 
-\textbf{Định nghĩa 1.} Nếu \(A\) là ma trận vuông và tồn tại ma trận \(B\) cùng cỡ sao cho
+\textbf{Định nghĩa 1.} Nếu \(A\) là ma trận vuông và tồn tại ma trận \(B\) cùng kích thước sao cho
 $$
 AB=BA=I, \tag{1}
 $$
@@ -54,7 +72,7 @@ thì \(A\) được gọi là \textbf{ma trận khả nghịch} (\emph{invertibl
 
 Đổi vai hai ma trận cho nhau, điều kiện (1) vẫn thế, tức \(BA=AB=I\). Nên \(A\) cũng là nghịch đảo của \(B\), và ta gọi chúng là hai ma trận nghịch đảo của nhau.
 
-Nếu \(A\) khả nghịch thì nghịch đảo của nó là duy nhất, và ta kí hiệu nó là \(A^{-1}\). Chứng minh khá ngắn.
+Nếu \(A\) khả nghịch thì nghịch đảo của nó là duy nhất, và ta kí hiệu nó là \(A^{-1}\). 
 
 \textbf{Định lý 1.} Nếu \(B\) và \(C\) đều là nghịch đảo của \(A\) thì \(B=C\).
 

@@ -2273,3 +2273,32 @@ bước đầu tiên của một thuật toán;
 chỗ chuyển từ trực giác sang định nghĩa.
 
 Đây khác hẳn ``giải thích mọi thứ''. Không cần giải thích \(2+3=5\), nhưng cần giải thích tại sao \(R_2\leftarrow R_2-2R_1\) không đổi nghiệm, vì đó chính là nền móng của cả Gaussian elimination.
+
+## 86. Mọi khái niệm phải có lý do tồn tại
+
+Với mỗi đối tượng được đưa vào bài, người đọc phải thấy được **vì sao nó cần đến**, chứ không chỉ biết nó là gì. Câu trả lời phải nằm trong chính văn bản:
+
+* Bài toán nào buộc đối tượng này phải xuất hiện?
+* Có việc gì làm được với nó mà ký hiệu cũ không làm được?
+* Nếu bỏ nó đi thì việc gì trở nên bất khả hoặc rối?
+
+``Ghi cho gọn'' không đủ. Một cách viết tắt chỉ đáng trở thành một đối tượng riêng khi chính nó trở thành thứ ta đem ra tính toán. Nếu đối tượng chỉ rút ngắn ký hiệu mà không mở ra phép toán nào mới, hãy nói thẳng điều đó, hoặc tìm cho nó một việc làm thật, hoặc bỏ nó khỏi bài.
+
+### Trả lời bằng việc làm, không bằng lời tuyên bố
+
+Đây là chỗ dễ sinh văn AI nhất. Người viết hay biến câu trả lời thành một lời tuyên bố *về* khái niệm thay vì đưa ra việc làm cụ thể với nó. Bản sai: ``Nhưng nếu công dụng của ma trận chỉ dừng ở đó thì ta chẳng cần coi nó là một đối tượng riêng: hệ phương trình vẫn viết được mà không cần bảng nào. Lý do thật để ma trận tách ra thành một đối tượng riêng là...''. Bản đúng: ``Hai kì trước, ta dùng ma trận để giải hệ phương trình tuyến tính. Hồi đó ma trận chỉ là chỗ ghi các hệ số cho gọn... Nhưng còn những bảng số khác, không phải hệ số của hệ phương trình nào. Số giờ một học sinh dành cho ba môn trong tuần, chẳng hạn:''
+
+Khác biệt: bản sai nói *về* ma trận, bản đúng đưa ra một bảng số và việc làm với nó. Người đọc tự rút ra kết luận.
+
+Cấm các khuôn sau, vì chúng tuyên bố tầm quan trọng thay vì chứng minh:
+
+* ``Nếu X chỉ là Y thì ta chẳng cần Z'' — dựng điều kiện rồi lật, chỉ để tạo kịch tính.
+* ``Lý do thật để ... là ...'', ``Sự thật là ...'', ``Đây mới là lý do ...'' — nhấn mạnh rỗng.
+* ``X không phải là A, mà là B'', ``không chỉ A mà còn B'' — đối lập máy móc; nói thẳng B.
+* ``đối tượng riêng'', ``tầm quan trọng'', ``vai trò'', ``bản chất'' khi câu chỉ nhằm khen khái niệm.
+* ``Đây chính là ...'', ``Và đây chính là ...`` — mở màn kèn trống.
+* **Dấu hai chấm kiểu tiết lộ ý** — ``Kì trước dừng ở chỗ: ...``, ``giấu mất một chuyện: ...``, ``Thứ tự bị đảo: ...``, ``không phải một quy tắc mới để học thuộc: ...``. Tách thành hai câu, hoặc đổi thành dấu phẩy / ``gồm`` / ``tức là``, hoặc bỏ vế dẫn. Dấu hai chấm chỉ còn dùng cho nhãn thư mục (``Nguồn:``) và dòng dẫn ngay trước một công thức hiển thị; mật độ trong cả bài phải rất thấp.
+
+**Ví dụ bắt buộc: ma trận.** Không được để người đọc hiểu rằng ma trận tồn tại để giải hệ phương trình. Phải cho thấy ít nhất một việc làm được với bảng số mà không dính tới hệ phương trình nào: lưu một bảng dữ liệu, cộng hai bảng cùng cỡ, nhân cả bảng với một số, nhân bảng với một vector trọng số. Viết các việc ấy ra và làm luôn, đừng kèm câu tuyên bố rằng nhờ vậy ma trận mới đáng là một đối tượng riêng.
+
+Áp dụng cùng tiêu chuẩn cho mọi khái niệm khác: định thức, vector, không gian con, trị riêng. Không có bài toán nào cần nó thì chưa được định nghĩa nó.

@@ -1,35 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
-<title id="title">Nhân hàng với cột trong phép nhân ma trận</title>
-<desc id="desc">Hàng thứ hai của ma trận A ghép với cột thứ ba của ma trận B để tạo phần tử ở hàng hai cột ba của AB.</desc>
-<style>
-  .bg{fill:#0f172a}.grid{fill:#111827;stroke:#475569;stroke-width:2}.hi{fill:#2563eb;opacity:.75}.hi2{fill:#f97316;opacity:.75}.out{fill:#16a34a;opacity:.85}.txt{font:24px system-ui,Segoe UI,sans-serif;fill:#e5e7eb}.small{font:18px system-ui,Segoe UI,sans-serif;fill:#cbd5e1}.num{font:22px ui-monospace,Menlo,monospace;fill:#f8fafc;text-anchor:middle;dominant-baseline:middle}.op{font:30px ui-monospace,Menlo,monospace;fill:#f8fafc;text-anchor:middle;dominant-baseline:middle}
-</style>
-<rect class="bg" width="920" height="360" rx="18"/>
-<text class="txt" x="80" y="52">A</text><text class="txt" x="408" y="52">B</text><text class="txt" x="710" y="52">AB</text>
-<g transform="translate(70 90)">
-  <rect class="grid" x="0" y="0" width="210" height="140" rx="8"/>
-  <path d="M70 0v140M140 0v140M0 70h210" stroke="#475569" stroke-width="2"/>
-  <rect class="hi" x="0" y="70" width="210" height="70"/>
-  <text class="num" x="35" y="35">1</text><text class="num" x="105" y="35">2</text><text class="num" x="175" y="35">4</text>
-  <text class="num" x="35" y="105">2</text><text class="num" x="105" y="105">6</text><text class="num" x="175" y="105">0</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="t1 d1"
+     font-family="'Space Grotesk','Be Vietnam Pro','Segoe UI',Arial,sans-serif">
+<title id="t1">Nhân hàng với cột trong phép nhân ma trận</title>
+<desc id="d1">Hàng thứ hai của ma trận A ghép với cột thứ ba của ma trận B để cho phần tử ở hàng hai, cột ba của tích AB.</desc>
+
+<defs>
+  <marker id="mGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,0 L10,5 L0,10 z" fill="#059669"/>
+  </marker>
+</defs>
+
+<!-- ============ A ============ -->
+<text x="70" y="86" font-size="17" font-weight="600" fill="#475569">A</text>
+<rect x="70" y="100" width="186" height="124" rx="4" fill="#f8fafc"/>
+<path d="M132 100V224M194 100V224M70 162H256" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
+<rect x="70" y="162" width="186" height="62" fill="#e63e8f" fill-opacity="0.13"/>
+<rect x="70" y="162" width="186" height="62" fill="none" stroke="#e63e8f" stroke-opacity="0.45" stroke-width="1.5"/>
+<path d="M68 100h-10M58 100V224M58 224h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+<path d="M258 100h10M268 100V224M268 224h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
+  <text x="101" y="131">1</text><text x="163" y="131">2</text><text x="225" y="131">4</text>
+  <text x="101" y="193">2</text><text x="163" y="193">6</text><text x="225" y="193">0</text>
 </g>
-<text class="op" x="320" y="162">×</text>
-<g transform="translate(380 55)">
-  <rect class="grid" x="0" y="0" width="280" height="210" rx="8"/>
-  <path d="M70 0v210M140 0v210M210 0v210M0 70h280M0 140h280" stroke="#475569" stroke-width="2"/>
-  <rect class="hi2" x="140" y="0" width="70" height="210"/>
-  <text class="num" x="35" y="35">4</text><text class="num" x="105" y="35">1</text><text class="num" x="175" y="35">4</text><text class="num" x="245" y="35">3</text>
-  <text class="num" x="35" y="105">0</text><text class="num" x="105" y="105">-1</text><text class="num" x="175" y="105">3</text><text class="num" x="245" y="105">1</text>
-  <text class="num" x="35" y="175">2</text><text class="num" x="105" y="175">7</text><text class="num" x="175" y="175">5</text><text class="num" x="245" y="175">2</text>
+
+<!-- ============ Â ============ -->
+<text x="292" y="170" font-size="24" fill="#94a3b8" text-anchor="middle">×</text>
+
+<!-- ============ B ============ -->
+<text x="320" y="62" font-size="17" font-weight="600" fill="#475569">B</text>
+<rect x="320" y="75" width="232" height="174" rx="4" fill="#f8fafc"/>
+<path d="M378 75V249M436 75V249M494 75V249M320 133H552M320 191H552" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
+<rect x="436" y="75" width="58" height="174" fill="#7a5cff" fill-opacity="0.13"/>
+<rect x="436" y="75" width="58" height="174" fill="none" stroke="#7a5cff" stroke-opacity="0.45" stroke-width="1.5"/>
+<path d="M318 75h-10M308 75V249M308 249h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+<path d="M554 75h10M564 75V249M564 249h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
+  <text x="349" y="104">4</text><text x="407" y="104">1</text><text x="465" y="104">4</text><text x="523" y="104">3</text>
+  <text x="349" y="162">0</text><text x="407" y="162">-1</text><text x="465" y="162">3</text><text x="523" y="162">1</text>
+  <text x="349" y="220">2</text><text x="407" y="220">7</text><text x="465" y="220">5</text><text x="523" y="220">2</text>
 </g>
-<text class="op" x="690" y="162">=</text>
-<g transform="translate(735 90)">
-  <rect class="grid" x="0" y="0" width="120" height="140" rx="8"/>
-  <path d="M60 0v140M0 70h120" stroke="#475569" stroke-width="2"/>
-  <rect class="out" x="60" y="70" width="60" height="70"/>
-  <text class="num" x="30" y="35">?</text><text class="num" x="90" y="35">?</text><text class="num" x="30" y="105">?</text><text class="num" x="90" y="105">26</text>
+
+<!-- ============ = ============ -->
+<text x="570" y="170" font-size="24" fill="#94a3b8" text-anchor="middle">=</text>
+
+<!-- ============ AB ============ -->
+<text x="590" y="86" font-size="17" font-weight="600" fill="#475569">AB</text>
+<rect x="590" y="100" width="208" height="124" rx="4" fill="#f8fafc"/>
+<path d="M642 100V224M694 100V224M746 100V224M590 162H798" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
+<rect x="694" y="162" width="52" height="62" fill="#059669" fill-opacity="0.14"/>
+<rect x="694" y="162" width="52" height="62" fill="none" stroke="#059669" stroke-width="2"/>
+<path d="M588 100h-10M578 100V224M578 224h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+<path d="M800 100h10M810 100V224M810 224h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
+  <text x="616" y="131" fill="#94a3b8">?</text><text x="668" y="131" fill="#94a3b8">?</text>
+  <text x="720" y="131" fill="#94a3b8">?</text><text x="772" y="131" fill="#94a3b8">?</text>
+  <text x="616" y="193" fill="#94a3b8">?</text><text x="668" y="193" fill="#94a3b8">?</text>
+  <text x="720" y="193" fill="#059669" font-weight="600">26</text>
+  <text x="772" y="193" fill="#94a3b8">?</text>
 </g>
-<text class="small" x="226" y="305" text-anchor="middle">hàng 2: (2, 6, 0)</text>
-<text class="small" x="520" y="305" text-anchor="middle">cột 3: (4, 3, 5)</text>
-<text class="small" x="460" y="335" text-anchor="middle">(2)(4)+(6)(3)+(0)(5)=26</text>
+<text x="822" y="196" font-size="14" fill="#059669" dominant-baseline="central">(AB)₂₃</text>
+
+<!-- ============ chú thích ============ -->
+<text x="163" y="284" font-size="15" fill="#e63e8f" text-anchor="middle">hàng 2 của A: (2, 6, 0)</text>
+<text x="436" y="284" font-size="15" fill="#7a5cff" text-anchor="middle">cột 3 của B: (4, 3, 5)</text>
+
+<text x="430" y="342" font-size="17" fill="#059669" text-anchor="middle" font-weight="600">26 = (2)(4) + (6)(3) + (0)(5)</text>
 </svg>

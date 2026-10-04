@@ -6,6 +6,12 @@
       "sourceType": "github",
       "skillPath": "skills/translate-book/SKILL.md",
       "computedHash": "8975e99b6c378dc19670aa0de8fc848c8349bc074c79bab813387e103656dd83"
+    },
+    "vietnamese-writer": {
+      "source": "thanhan-a17/vietnamese-writer-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "23881ca78086c5fcc3378d552b2a9964d3dad9df2eae5353570bab2f75aa81fe"
     }
   }
 }

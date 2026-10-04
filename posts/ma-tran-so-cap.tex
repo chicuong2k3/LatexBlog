@@ -16,13 +16,13 @@
 
 \begin{document}
 
-Kì trước ta đã có ma trận nghịch đảo: có định nghĩa, có công thức cho ma trận cỡ hai. Còn lại một chỗ chưa giải được. Với một ma trận lớn hơn, làm sao biết nó có khả nghịch hay không, và nếu có thì tính nghịch đảo bằng cách nào?
+Kì trước ta đã có ma trận nghịch đảo, với định nghĩa và công thức cho ma trận cỡ hai. Còn lại một chỗ chưa giải được. Với một ma trận lớn hơn, làm sao biết nó có khả nghịch hay không, và nếu có thì tính nghịch đảo bằng cách nào?
 
-Câu trả lời nằm ở thuật toán khử mà ta đã dùng suốt ba kì. Nhưng muốn dùng nó vào việc này, trước hết cần biết một điều các kì trước chưa nói tới: mỗi phép biến đổi hàng cũng là một phép nhân ma trận.
+Câu trả lời nằm ở thuật toán khử mà ta đã dùng suốt ba kì. Nhưng muốn dùng nó vào việc này, trước hết cần biết một điều các kì trước chưa nói tới. Mỗi phép biến đổi hàng cũng là một phép nhân ma trận.
 
 \subsection{Một phép biến đổi hàng là một phép nhân}
 
-Nhắc lại ba phép biến đổi hàng sơ cấp đã dùng từ kì một:
+Nhắc lại ba phép biến đổi hàng sơ cấp đã dùng từ kì 1.
 
 \begin{enumerate}
   \item nhân một hàng với một số khác \(0\);
@@ -30,9 +30,9 @@ Nhắc lại ba phép biến đổi hàng sơ cấp đã dùng từ kì một:
   \item cộng một bội của hàng này vào hàng khác.
 \end{enumerate}
 
-Xét phép thứ ba, cộng \(3\) lần hàng thứ nhất vào hàng thứ ba của một ma trận \(A\) bất kỳ cỡ \(3\times n\). Hàng thứ ba mới bằng ba lần hàng thứ nhất cộng với hàng thứ ba cũ. Nói cách khác, nó là một tổ hợp tuyến tính của các hàng của \(A\) với bộ hệ số cố định \((3,0,1)\), và bộ hệ số ấy không phụ thuộc vào \(A\) là gì.
+Xét phép thứ ba, cộng \(3\) lần hàng thứ nhất vào hàng thứ ba của một ma trận \(A\) bất kì cỡ \(3\times n\). Hàng thứ ba mới bằng ba lần hàng thứ nhất cộng với hàng thứ ba cũ. Nói cách khác, nó là một tổ hợp tuyến tính của các hàng của \(A\) với bộ hệ số cố định \((3,0,1)\), và bộ hệ số ấy không phụ thuộc vào \(A\) là gì.
 
-Giờ dùng quy tắc hàng--cột của kì ba cho tích \(EA\), với
+Giờ dùng quy tắc hàng--cột của kì 3 cho tích \(EA\), với
 $$
 E=\left[ \begin{array}{rrr} 1 & 0 & 0\\ 0 & 1 & 0\\ 3 & 0 & 1 \end{array} \right].
 $$
@@ -42,27 +42,27 @@ Vậy \(EA\) đúng là ma trận thu được từ \(A\) bằng phép cộng \(
 
 Để ý rằng \(E\) được viết ra mà không cần biết \(A\) là gì. Cùng một ma trận \(E\) ấy dùng được cho mọi \(A\).
 
-\textbf{Định nghĩa 1.} Ma trận thu được bằng cách thực hiện một phép biến đổi hàng sơ cấp trên ma trận đơn vị được gọi là \textbf{ma trận sơ cấp} (\emph{elementary matrix}).
+\textbf{Định nghĩa 1.} Ma trận thu được bằng cách làm một phép biến đổi hàng sơ cấp trên ma trận đơn vị được gọi là \textbf{ma trận sơ cấp} (\emph{elementary matrix}).
 
-Ba loại phép biến đổi cho ba dạng ma trận sơ cấp, ứng với ba cách lấy hàng thứ \(i\) của ma trận đơn vị rồi sửa nó:
+Ba loại phép biến đổi cho ba dạng ma trận sơ cấp, ứng với ba cách lấy hàng thứ \(i\) của ma trận đơn vị rồi sửa nó.
 $$
 \left[ \begin{array}{rrr} 1 & 0 & 0\\ 0 & -3 & 0\\ 0 & 0 & 1 \end{array} \right],\qquad
 \left[ \begin{array}{rrrr} 1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1\\ 0 & 0 & 1 & 0\\ 0 & 1 & 0 & 0 \end{array} \right],\qquad
 \left[ \begin{array}{rrr} 1 & 0 & 3\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right].
 $$
 
-\textbf{Định lý 1.} Nếu \(E\) là ma trận sơ cấp thu được từ một phép biến đổi hàng trên \(I_m\), và \(A\) là ma trận cỡ \(m\times n\) bất kỳ, thì \(EA\) là ma trận thu được từ \(A\) bằng đúng phép biến đổi hàng ấy.
+\textbf{Định lý 1.} Nếu \(E\) là ma trận sơ cấp thu được từ một phép biến đổi hàng trên \(I_m\), và \(A\) là ma trận cỡ \(m\times n\) bất kì, thì \(EA\) là ma trận thu được từ \(A\) bằng đúng phép biến đổi hàng ấy.
 
 Lập luận ở trên dùng được cho cả ba loại. Hàng thứ \(i\) của \(E\) chỉ khác hàng thứ \(i\) của \(I_m\) ở đúng chỗ mà phép biến đổi sửa, nên trong tích \(EA\), phép biến đổi rơi đúng vào hàng thứ \(i\) và làm đúng việc của nó, còn các hàng khác giữ nguyên.
 
 \subsection{Cả một dãy biến đổi gộp thành một phép nhân}
 
-Mỗi phép biến đổi hàng là một phép nhân bên trái. Làm liên tiếp \(k\) phép biến đổi thì cũng là nhân liên tiếp \(k\) lần, và các phép nhân ấy dồn lại được thành một:
+Mỗi phép biến đổi hàng là một phép nhân bên trái. Làm liên tiếp \(k\) phép biến đổi thì cũng là nhân liên tiếp \(k\) lần, và các phép nhân ấy dồn lại được thành một.
 $$
 E_k\left(\cdots\left(E_2\left(E_1A\right)\right)\cdots\right)=E_k\cdots E_2E_1A.
 $$
 
-Đặc biệt, nếu khử được \(A\) về \(I_n\) bằng dãy phép biến đổi \(E_1,E_2,\ldots,E_k\) theo thứ tự ấy, thì
+Nếu khử được \(A\) về \(I_n\) bằng dãy phép biến đổi \(E_1,E_2,\ldots,E_k\) theo thứ tự ấy, thì
 $$
 E_k\cdots E_2E_1A=I_n.
 $$
@@ -71,7 +71,7 @@ $$
 A=\left(E_k\cdots E_2E_1\right)^{-1}=E_1^{-1}E_2^{-1}\cdots E_k^{-1}. \tag{1}
 $$
 
-Vế phải của (1) là một tích các ma trận sơ cấp, vì mỗi \(E_i\) là ma trận sơ cấp, mà ma trận sơ cấp thì khả nghịch và nghịch đảo của nó cũng là ma trận sơ cấp. Kiểm tra điều này không khó: \(E\) sinh ra từ \(I_m\) bởi phép biến đổi hàng nào thì phép biến đổi ngược lại sẽ đưa \(E\) về \(I_m\). Bảng ở dưới ghi cụ thể từng trường hợp.
+Vế phải của (1) là một tích các ma trận sơ cấp, vì mỗi \(E_i\) là ma trận sơ cấp, mà ma trận sơ cấp thì khả nghịch và nghịch đảo của nó cũng là ma trận sơ cấp. Kiểm tra điều này không khó. \(E\) sinh ra từ \(I_m\) bởi phép biến đổi hàng nào thì phép biến đổi ngược lại sẽ đưa \(E\) về \(I_m\). Bảng ở dưới ghi cụ thể từng trường hợp.
 
 \textbf{Định nghĩa 2.} Hai ma trận \(A\) và \(B\) được gọi là \textbf{tương đương hàng} (\emph{row equivalent}) nếu đi được từ ma trận này sang ma trận kia bằng một dãy phép biến đổi hàng sơ cấp.
 
@@ -91,18 +91,18 @@ Nhìn cột phải là thấy ma trận sơ cấp nào cũng khả nghịch, và
 
 \subsection{Nghịch đảo đọc ra từ dãy phép biến đổi}
 
-Từ (1), lấy nghịch đảo hai vế:
+Từ (1), lấy nghịch đảo hai vế.
 $$
 A^{-1}=E_k\cdots E_2E_1. \tag{2}
 $$
 
-Đọc (2) từ phải sang trái: \(A^{-1}\) thu được bằng cách làm trên ma trận đơn vị \(I_n\) \textbf{đúng dãy phép biến đổi ấy, theo đúng thứ tự ấy}.
+Đọc (2) từ phải sang trái, ta thấy \(A^{-1}\) thu được bằng cách làm trên ma trận đơn vị \(I_n\) \textbf{đúng dãy phép biến đổi ấy, theo đúng thứ tự ấy}.
 
 Nói cách khác, dãy phép biến đổi hàng nào đã đưa \(A\) về \(I_n\) thì chạy y hệt dãy đó trên \(I_n\) sẽ ra \(A^{-1}\). Không phải tìm dãy phép biến đổi lần thứ hai, và cũng không cần viết ra ma trận sơ cấp nào.
 
 \subsection{Bốn điều kiện tương đương}
 
-Giờ quay lại câu hỏi đầu bài: làm sao biết một ma trận vuông có khả nghịch hay không?
+Giờ quay lại câu hỏi đầu bài. Làm sao biết một ma trận vuông có khả nghịch hay không?
 
 \textbf{Định lý 2.} Với \(A\) là ma trận vuông cỡ \(n\times n\), bốn điều sau tương đương nhau, tức cùng đúng hoặc cùng sai.
 \begin{enumerate}
@@ -116,7 +116,7 @@ Ta chứng minh theo một vòng. Mỗi mũi tên trong hình dưới là một 
 
 \blogfig{\includegraphics{/images/nghich-dao-ma-tran/dong-tuong-duong.svg}}
 
-\emph{(a) kéo theo (b).} Giả sử \(A\) khả nghịch và \(\mathbf{x}_0\) là một nghiệm của \(A\mathbf{x}=0\). Nhân hai vế với \(A^{-1}\):
+\emph{(a) kéo theo (b).} Giả sử \(A\) khả nghịch và \(\mathbf{x}_0\) là một nghiệm của \(A\mathbf{x}=0\). Nhân hai vế với \(A^{-1}\).
 $$
 A^{-1}(A\mathbf{x}_0)=A^{-1}\mathbf{0},
 $$
@@ -132,37 +132,37 @@ tức dạng rút gọn của \(A\) là \(I_n\).
 
 \emph{(d) kéo theo (a).} Giả sử \(A\) là tích của các ma trận sơ cấp. Mỗi ma trận sơ cấp đều khả nghịch, mà theo định lý 2 của kì trước, tích của các ma trận khả nghịch thì khả nghịch.
 
-Như vậy (a) suy ra (b), (b) suy ra (c), (c) suy ra (d), và (d) lại suy ra (a). Bốn điều kiện tương đương nhau: chỉ cần một điều đúng thì ba điều kia cũng đúng.
+Như vậy (a) suy ra (b), (b) suy ra (c), (c) suy ra (d), và (d) lại suy ra (a). Bốn điều kiện tương đương nhau, nghĩa là chỉ cần một điều đúng thì ba điều kia cũng đúng.
 
-Khi cần kiểm tra một ma trận cụ thể có khả nghịch không, điều kiện (c) tiện nhất, vì thuật toán khử ta đã có từ kì hai. Điều kiện (b) cho biết thêm một chuyện. Khi \(A\) không khả nghịch thì hệ \(A\mathbf{x}=0\) có nghiệm không tầm thường, và những nghiệm ấy lập thành một họ vô số nghiệm.
+Khi cần kiểm tra một ma trận cụ thể có khả nghịch không, điều kiện (c) tiện nhất, vì thuật toán khử ta đã có từ kì 2. Điều kiện (b) cho biết thêm một chuyện. Khi \(A\) không khả nghịch thì hệ \(A\mathbf{x}=0\) có nghiệm không tầm thường, và những nghiệm ấy lập thành một họ vô số nghiệm.
 
 \subsection{Thuật toán tìm nghịch đảo}
 
 Công thức (2) cho ta cách làm. Muốn tìm \(A^{-1}\), tìm một dãy phép biến đổi hàng đưa \(A\) về \(I_n\), rồi chạy y hệt dãy đó trên \(I_n\).
 
-Hai việc này làm cùng lúc được. Ghép ma trận đơn vị \(I_n\) vào bên phải \(A\), rồi biến đổi hàng trên cả hai nửa:
+Hai việc này làm cùng lúc được. Ghép ma trận đơn vị \(I_n\) vào bên phải \(A\), rồi biến đổi hàng trên cả hai nửa.
 $$
 [\,A\mid I_n\,]\;\longrightarrow\;[\,I_n\mid A^{-1}\,].
 $$
-Mỗi phép biến đổi hàng tác động lên cả hai nửa cùng lúc, nên ở bất kỳ bước nào, nửa phải cũng là kết quả của những phép biến đổi đã làm, áp lên \(I_n\).
+Mỗi phép biến đổi hàng tác động lên cả hai nửa cùng lúc, nên ở bất kì bước nào, nửa phải cũng là kết quả của những phép biến đổi đã làm, áp lên \(I_n\).
 
 \textbf{Ví dụ 1.} Tìm nghịch đảo của
 $$
 A=\left[ \begin{array}{rrr} 1 & 2 & 3\\ 2 & 5 & 3\\ 1 & 0 & 8 \end{array} \right].
 $$
-Bắt đầu từ \([\,A\mid I_3\,]\). Lấy hàng hai trừ hai lần hàng một, và hàng ba trừ hàng một:
+Bắt đầu từ \([\,A\mid I_3\,]\). Lấy hàng hai trừ hai lần hàng một, và hàng ba trừ hàng một.
 $$
 \left[ \begin{array}{rrr|rrr} 1 & 2 & 3 & 1 & 0 & 0\\ 0 & 1 & -3 & -2 & 1 & 0\\ 0 & -2 & 5 & -1 & 0 & 1 \end{array} \right].
 $$
-Lấy hàng ba cộng hai lần hàng hai, rồi nhân hàng ba với \(-1\):
+Lấy hàng ba cộng hai lần hàng hai, rồi nhân hàng ba với \(-1\).
 $$
 \left[ \begin{array}{rrr|rrr} 1 & 2 & 3 & 1 & 0 & 0\\ 0 & 1 & -3 & -2 & 1 & 0\\ 0 & 0 & 1 & 5 & -2 & -1 \end{array} \right].
 $$
-Khử các số phía trên số \(1\) đầu ở cột ba. Lấy hàng hai cộng ba lần hàng ba, và hàng một trừ ba lần hàng ba:
+Khử các số phía trên số \(1\) đầu ở cột ba. Lấy hàng hai cộng ba lần hàng ba, và hàng một trừ ba lần hàng ba.
 $$
 \left[ \begin{array}{rrr|rrr} 1 & 2 & 0 & -14 & 6 & 3\\ 0 & 1 & 0 & 13 & -5 & -3\\ 0 & 0 & 1 & 5 & -2 & -1 \end{array} \right].
 $$
-Cuối cùng lấy hàng một trừ hai lần hàng hai:
+Cuối cùng lấy hàng một trừ hai lần hàng hai.
 $$
 \left[ \begin{array}{rrr|rrr} 1 & 0 & 0 & -40 & 16 & 9\\ 0 & 1 & 0 & 13 & -5 & -3\\ 0 & 0 & 1 & 5 & -2 & -1 \end{array} \right].
 $$
@@ -170,7 +170,7 @@ Nửa trái đã là \(I_3\), nên
 $$
 A^{-1}=\left[ \begin{array}{rrr} -40 & 16 & 9\\ 13 & -5 & -3\\ 5 & -2 & -1 \end{array} \right].
 $$
-Kiểm lại bằng cách nhân:
+Kiểm lại bằng cách nhân.
 $$
 AA^{-1}=\left[ \begin{array}{rrr} 1 & 2 & 3\\ 2 & 5 & 3\\ 1 & 0 & 8 \end{array} \right]\left[ \begin{array}{rrr} -40 & 16 & 9\\ 13 & -5 & -3\\ 5 & -2 & -1 \end{array} \right]=\left[ \begin{array}{rrr} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right]=I.
 $$
@@ -183,11 +183,11 @@ Thuật toán trên không phải lúc nào cũng chạy được tới cuối. 
 $$
 A=\left[ \begin{array}{rrr} 1 & 2 & 3\\ 4 & 5 & 6\\ 2 & 3 & 4 \end{array} \right].
 $$
-Từ \([\,A\mid I_3\,]\), lấy hàng hai trừ bốn lần hàng một, và hàng ba trừ hai lần hàng một:
+Từ \([\,A\mid I_3\,]\), lấy hàng hai trừ bốn lần hàng một, và hàng ba trừ hai lần hàng một.
 $$
 \left[ \begin{array}{rrr|rrr} 1 & 2 & 3 & 1 & 0 & 0\\ 0 & -3 & -6 & -4 & 1 & 0\\ 0 & -1 & -2 & -2 & 0 & 1 \end{array} \right].
 $$
-Nhân hàng ba với \(3\), rồi lấy hàng ba trừ hàng hai:
+Nhân hàng ba với \(3\), rồi lấy hàng ba trừ hàng hai.
 $$
 \left[ \begin{array}{rrr|rrr} 1 & 2 & 3 & 1 & 0 & 0\\ 0 & -3 & -6 & -4 & 1 & 0\\ 0 & 0 & 0 & -2 & -1 & 3 \end{array} \right].
 $$
@@ -203,9 +203,9 @@ Khi hàng toàn số \(0\) xuất hiện thì dừng. Có thể xóa hàng đó 
 
 \subsection{Hệ thuần nhất}
 
-Hệ thuần nhất ta đã gặp ở kì hai, và biết ngay nó luôn có nghiệm tầm thường. Câu hỏi còn lại là ngoài nghiệm ấy ra, hệ còn nghiệm nào khác không.
+Hệ thuần nhất ta đã gặp ở kì 2, và biết ngay nó luôn có nghiệm tầm thường. Câu hỏi còn lại là ngoài nghiệm ấy ra, hệ còn nghiệm nào khác không.
 
-Với hệ vuông, định lý 2 trả lời câu hỏi này: hệ thuần nhất chỉ có nghiệm tầm thường khi và chỉ khi ma trận hệ số khả nghịch.
+Với hệ vuông, định lý 2 trả lời câu hỏi này. Hệ thuần nhất chỉ có nghiệm tầm thường khi và chỉ khi ma trận hệ số khả nghịch.
 
 Xét hai hệ sau. Cả hai cùng có ba phương trình, ba ẩn, và chỉ khác nhau ở hệ số.
 $$
@@ -223,7 +223,7 @@ x_1+2x_2+3x_3=0\\
 $$
 Ma trận hệ số của hệ thứ nhất là ma trận ở Ví dụ 1, và ta đã biết nó khả nghịch. Vậy hệ thứ nhất chỉ có nghiệm tầm thường.
 
-Ma trận hệ số của hệ thứ hai là ma trận suy biến ở Ví dụ 2, nên hệ này có nghiệm không tầm thường. Muốn tìm một nghiệm như vậy, khử \([A\mid0]\) bằng đúng những phép biến đổi ở Ví dụ 2. Cột vế phải toàn số \(0\) nên suốt quá trình vẫn giữ nguyên là \(0\):
+Ma trận hệ số của hệ thứ hai là ma trận suy biến ở Ví dụ 2, nên hệ này có nghiệm không tầm thường. Muốn tìm một nghiệm như vậy, khử \([A\mid0]\) bằng đúng những phép biến đổi ở Ví dụ 2. Cột vế phải toàn số \(0\) nên suốt quá trình vẫn giữ nguyên là \(0\).
 $$
 \left[ \begin{array}{rrr} 1 & 2 & 3\\ 0 & -3 & -6\\ 0 & 0 & 0 \end{array} \right].
 $$
@@ -239,7 +239,7 @@ Chẳng hạn \(t=1\) cho \((1,-2,1)\). Bộ số này thỏa cả ba phương t
 
 Phép tính ở đây và ở Ví dụ 2 là một, chỉ có câu hỏi đổi đi. Cùng một dãy phép biến đổi hàng ấy, áp lên \([A\mid I_3]\) để tìm nghịch đảo, áp lên \([A\mid0]\) để tìm nghiệm.
 
-\subsection{Còn thiếu gì}
+\subsection{Hệ không vuông thì sao}
 
 Cả bài này chỉ làm với ma trận vuông. Điều kiện (c) của định lý 2 đòi dạng rút gọn của ma trận vuông phải là \(I_n\), và mọi lập luận ở trên đều dựa vào điều đó.
 

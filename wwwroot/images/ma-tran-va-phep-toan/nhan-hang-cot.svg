@@ -1,67 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="t1 d1"
-     font-family="'Space Grotesk','Be Vietnam Pro','Segoe UI',Arial,sans-serif">
-<title id="t1">Nhân hàng với cột trong phép nhân ma trận</title>
-<desc id="d1">Hàng thứ hai của ma trận A ghép với cột thứ ba của ma trận B để cho phần tử ở hàng hai, cột ba của tích AB.</desc>
-
-<defs>
-  <marker id="mGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-    <path d="M0,0 L10,5 L0,10 z" fill="#059669"/>
-  </marker>
-</defs>
-
-<!-- ============ A ============ -->
-<text x="70" y="86" font-size="17" font-weight="600" fill="#475569">A</text>
-<rect x="70" y="100" width="186" height="124" rx="4" fill="#f8fafc"/>
-<path d="M132 100V224M194 100V224M70 162H256" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
-<rect x="70" y="162" width="186" height="62" fill="#e63e8f" fill-opacity="0.13"/>
-<rect x="70" y="162" width="186" height="62" fill="none" stroke="#e63e8f" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M68 100h-10M58 100V224M58 224h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<path d="M258 100h10M268 100V224M268 224h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
-  <text x="101" y="131">1</text><text x="163" y="131">2</text><text x="225" y="131">4</text>
-  <text x="101" y="193">2</text><text x="163" y="193">6</text><text x="225" y="193">0</text>
-</g>
-
-<!-- ============ Â ============ -->
-<text x="292" y="170" font-size="24" fill="#94a3b8" text-anchor="middle">×</text>
-
-<!-- ============ B ============ -->
-<text x="320" y="62" font-size="17" font-weight="600" fill="#475569">B</text>
-<rect x="320" y="75" width="232" height="174" rx="4" fill="#f8fafc"/>
-<path d="M378 75V249M436 75V249M494 75V249M320 133H552M320 191H552" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
-<rect x="436" y="75" width="58" height="174" fill="#7a5cff" fill-opacity="0.13"/>
-<rect x="436" y="75" width="58" height="174" fill="none" stroke="#7a5cff" stroke-opacity="0.45" stroke-width="1.5"/>
-<path d="M318 75h-10M308 75V249M308 249h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<path d="M554 75h10M564 75V249M564 249h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
-  <text x="349" y="104">4</text><text x="407" y="104">1</text><text x="465" y="104">4</text><text x="523" y="104">3</text>
-  <text x="349" y="162">0</text><text x="407" y="162">-1</text><text x="465" y="162">3</text><text x="523" y="162">1</text>
-  <text x="349" y="220">2</text><text x="407" y="220">7</text><text x="465" y="220">5</text><text x="523" y="220">2</text>
-</g>
-
-<!-- ============ = ============ -->
-<text x="570" y="170" font-size="24" fill="#94a3b8" text-anchor="middle">=</text>
-
-<!-- ============ AB ============ -->
-<text x="590" y="86" font-size="17" font-weight="600" fill="#475569">AB</text>
-<rect x="590" y="100" width="208" height="124" rx="4" fill="#f8fafc"/>
-<path d="M642 100V224M694 100V224M746 100V224M590 162H798" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
-<rect x="694" y="162" width="52" height="62" fill="#059669" fill-opacity="0.14"/>
-<rect x="694" y="162" width="52" height="62" fill="none" stroke="#059669" stroke-width="2"/>
-<path d="M588 100h-10M578 100V224M578 224h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<path d="M800 100h10M810 100V224M810 224h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
-  <text x="616" y="131" fill="#94a3b8">?</text><text x="668" y="131" fill="#94a3b8">?</text>
-  <text x="720" y="131" fill="#94a3b8">?</text><text x="772" y="131" fill="#94a3b8">?</text>
-  <text x="616" y="193" fill="#94a3b8">?</text><text x="668" y="193" fill="#94a3b8">?</text>
-  <text x="720" y="193" fill="#059669" font-weight="600">26</text>
-  <text x="772" y="193" fill="#94a3b8">?</text>
-</g>
-<text x="822" y="196" font-size="14" fill="#059669" dominant-baseline="central">(AB)₂₃</text>
-
-<!-- ============ chú thích ============ -->
-<text x="163" y="284" font-size="15" fill="#e63e8f" text-anchor="middle">hàng 2 của A: (2, 6, 0)</text>
-<text x="436" y="284" font-size="15" fill="#7a5cff" text-anchor="middle">cột 3 của B: (4, 3, 5)</text>
-
-<text x="430" y="342" font-size="17" fill="#059669" text-anchor="middle" font-weight="600">26 = (2)(4) + (6)(3) + (0)(5)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" role="img" aria-labelledby="t d" font-family="'Space Grotesk','Be Vietnam Pro','Segoe UI',Arial,sans-serif">
+<title id="t">Ô hàng i, cột j của AB là tổng các tích a_ik b_kj theo k</title>
+<desc id="d">Hàng thứ i của A ghép với cột thứ j của B. Hai phần tử cùng chỉ số k nhân với nhau, rồi cộng theo k, cho ô hàng i cột j của AB.</desc>
+<defs><marker id="arG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker><marker id="arB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="arV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a5cff"/></marker><marker id="arM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="29.0" y="108.0" width="178.0" height="26.0" rx="4" fill="#2563eb" fill-opacity="0.15"/>
+<path d="M26.0 46.0H22.0V196.0H26.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<path d="M210.0 46.0H214.0V196.0H210.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<text x="58.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">11</tspan></text>
+<text x="118.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="178.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">1r</tspan></text>
+<text x="58.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="118.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="178.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="58.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">i1</tspan></text>
+<text x="118.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="178.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">ir</tspan></text>
+<text x="58.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="118.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="178.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="58.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">m1</tspan></text>
+<text x="118.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="178.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">mr</tspan></text>
+<text x="118.0" y="216.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >A</tspan></text>
+<text x="148.0" y="30.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >hàng i</tspan></text>
+<rect x="387.0" y="78.0" width="58.0" height="86.0" rx="4" fill="#d97706" fill-opacity="0.15"/>
+<path d="M264.0 76.0H260.0V166.0H264.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<path d="M508.0 76.0H512.0V166.0H508.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<text x="296.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="10.4" dy="3.6">11</tspan></text>
+<text x="356.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="416.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="10.4" dy="3.6">1j</tspan></text>
+<text x="476.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="296.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="356.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="416.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="476.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="296.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="10.4" dy="3.6">r1</tspan></text>
+<text x="356.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="416.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="10.4" dy="3.6">rj</tspan></text>
+<text x="476.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="386.0" y="186.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >B</tspan></text>
+<text x="416.0" y="46.0" font-size="13" fill="#d97706" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >cột j</tspan></text>
+<text x="237.0" y="121.0" font-size="22" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >·</tspan></text>
+<rect x="693.0" y="108.0" width="58.0" height="26.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<path d="M570.0 46.0H566.0V196.0H570.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<path d="M814.0 46.0H818.0V196.0H814.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<text x="602.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">11</tspan></text>
+<text x="662.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="722.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">1j</tspan></text>
+<text x="782.0" y="61.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="602.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="662.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="722.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="782.0" y="91.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="602.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">i1</tspan></text>
+<text x="662.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="722.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">ij</tspan></text>
+<text x="782.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="602.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="662.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="722.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="782.0" y="151.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="602.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">m1</tspan></text>
+<text x="662.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="722.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">mj</tspan></text>
+<text x="782.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="692.0" y="216.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >AB</tspan></text>
+<text x="539.0" y="121.0" font-size="22" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >=</tspan></text>
+<text x="832.0" y="121.0" font-size="13" fill="#059669" text-anchor="start" dominant-baseline="central" font-weight="600"><tspan >ô (i, j)</tspan></text>
+<line x1="20.0" y1="216.0" x2="960.0" y2="216.0" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="490.0" y="240.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >Ghép hàng i của A với cột j của B, theo từng chỉ số k</tspan></text>
+<text x="200.0" y="292.0" font-size="13" fill="#2563eb" text-anchor="end" dominant-baseline="central" font-weight="600"><tspan >hàng i của A</tspan></text>
+<text x="200.0" y="356.0" font-size="13" fill="#d97706" text-anchor="end" dominant-baseline="central" font-weight="600"><tspan >cột j của B</tspan></text>
+<text x="284.0" y="292.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="11.8" dy="4.2">i1</tspan></text>
+<text x="284.0" y="356.0" font-size="16" fill="#d97706" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="11.8" dy="4.2">1j</tspan></text>
+<line x1="295.0" y1="306.0" x2="295.0" y2="314.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<line x1="295.0" y1="336.0" x2="295.0" y2="344.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<text x="295.0" y="325.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >·</tspan></text>
+<line x1="284.0" y1="368.0" x2="284.0" y2="386.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<text x="284.0" y="402.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan font-style="italic">a</tspan><tspan font-size="11.1" dy="3.9">i1</tspan><tspan dy="-3.9" font-style="italic">b</tspan><tspan font-size="11.1" dy="3.9">1j</tspan></text>
+<text x="344.0" y="402.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >+</tspan></text>
+<text x="404.0" y="292.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="11.8" dy="4.2">i2</tspan></text>
+<text x="404.0" y="356.0" font-size="16" fill="#d97706" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="11.8" dy="4.2">2j</tspan></text>
+<line x1="415.0" y1="306.0" x2="415.0" y2="314.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<line x1="415.0" y1="336.0" x2="415.0" y2="344.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<text x="415.0" y="325.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >·</tspan></text>
+<line x1="404.0" y1="368.0" x2="404.0" y2="386.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<text x="404.0" y="402.0" font-size="15" fill="#d97706" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan font-style="italic">a</tspan><tspan font-size="11.1" dy="3.9">i2</tspan><tspan dy="-3.9" font-style="italic">b</tspan><tspan font-size="11.1" dy="3.9">2j</tspan></text>
+<text x="464.0" y="402.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >+</tspan></text>
+<text x="524.0" y="292.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="524.0" y="356.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="644.0" y="292.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="11.8" dy="4.2">ir</tspan></text>
+<text x="644.0" y="356.0" font-size="16" fill="#d97706" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">b</tspan><tspan font-size="11.8" dy="4.2">rj</tspan></text>
+<line x1="655.0" y1="306.0" x2="655.0" y2="314.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<line x1="655.0" y1="336.0" x2="655.0" y2="344.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<text x="655.0" y="325.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >·</tspan></text>
+<line x1="644.0" y1="368.0" x2="644.0" y2="386.0" stroke="#e2e8f0" stroke-width="1.6" data-link="1"/>
+<text x="644.0" y="402.0" font-size="15" fill="#059669" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan font-style="italic">a</tspan><tspan font-size="11.1" dy="3.9">ir</tspan><tspan dy="-3.9" font-style="italic">b</tspan><tspan font-size="11.1" dy="3.9">rj</tspan></text>
+<text x="708.0" y="402.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >=</tspan></text>
+<text x="742.0" y="402.0" font-size="16" fill="#059669" text-anchor="start" dominant-baseline="central" font-weight="700"><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="11.8" dy="4.2">ij</tspan></text>
+<text x="490.0" y="444.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >k chạy từ 1 đến r. Số cột của A phải bằng số hàng của B, và cùng bằng r.</tspan></text>
 </svg>

@@ -1,59 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" role="img" aria-labelledby="t2 d2"
-     font-family="'Space Grotesk','Be Vietnam Pro','Segoe UI',Arial,sans-serif">
-<title id="t2">Chuyển vị đổi hàng thành cột</title>
-<desc id="d2">Ma trận A soi qua đường chéo chính thành A chuyển vị. Ba ô trên đường chéo đứng yên, hai ô -3 và 7 đổi chỗ cho nhau.</desc>
-
-<defs>
-  <marker id="mSlate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-    <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
-  </marker>
-</defs>
-
-<!-- ============ A ============ -->
-<text x="90" y="80" font-size="17" font-weight="600" fill="#475569">A</text>
-<rect x="90" y="95" width="186" height="186" rx="4" fill="#f8fafc"/>
-<path d="M152 95V281M214 95V281M90 157H276M90 219H276" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
-<rect x="90" y="95" width="62" height="62" fill="#059669" fill-opacity="0.10"/>
-<rect x="152" y="157" width="62" height="62" fill="#059669" fill-opacity="0.10"/>
-<rect x="214" y="219" width="62" height="62" fill="#059669" fill-opacity="0.10"/>
-<rect x="152" y="95" width="62" height="62" fill="#7a5cff" fill-opacity="0.20"/>
-<rect x="90" y="157" width="62" height="62" fill="#2563eb" fill-opacity="0.18"/>
-<path d="M88 95h-10M78 95V281M78 281h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<path d="M278 95h10M288 95V281M288 281h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
-  <text x="121" y="126">2</text><text x="183" y="126" fill="#7a5cff" font-weight="600">-3</text><text x="245" y="126">1</text>
-  <text x="121" y="188" fill="#2563eb" font-weight="600">7</text><text x="183" y="188">0</text><text x="245" y="188">4</text>
-  <text x="121" y="250">5</text><text x="183" y="250">6</text><text x="245" y="250">-1</text>
-</g>
-
-<!-- ============ mũi tên ============ -->
-<line x1="316" y1="188" x2="544" y2="188" stroke="#94a3b8" stroke-width="2" marker-end="url(#mSlate)"/>
-<text x="430" y="176" font-size="15" fill="#475569" text-anchor="middle">đổi hàng thành cột</text>
-
-<!-- ============ A^T ============ -->
-<text x="580" y="80" font-size="17" font-weight="600" fill="#475569">Aᵀ</text>
-<rect x="580" y="95" width="186" height="186" rx="4" fill="#f8fafc"/>
-<path d="M642 95V281M704 95V281M580 157H766M580 219H766" stroke="#e2e8f0" stroke-width="1.5" fill="none"/>
-<rect x="580" y="95" width="62" height="62" fill="#059669" fill-opacity="0.10"/>
-<rect x="642" y="157" width="62" height="62" fill="#059669" fill-opacity="0.10"/>
-<rect x="704" y="219" width="62" height="62" fill="#059669" fill-opacity="0.10"/>
-<rect x="642" y="95" width="62" height="62" fill="#2563eb" fill-opacity="0.18"/>
-<rect x="580" y="157" width="62" height="62" fill="#7a5cff" fill-opacity="0.20"/>
-<path d="M578 95h-10M568 95V281M568 281h10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<path d="M768 95h10M778 95V281M778 281h-10" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
-<g font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="central">
-  <text x="611" y="126">2</text><text x="673" y="126" fill="#2563eb" font-weight="600">7</text><text x="735" y="126">5</text>
-  <text x="611" y="188" fill="#7a5cff" font-weight="600">-3</text><text x="673" y="188">0</text><text x="735" y="188">6</text>
-  <text x="611" y="250">1</text><text x="673" y="250">4</text><text x="735" y="250">-1</text>
-</g>
-
-<!-- ============ chú thích ============ -->
-<text x="430" y="322" font-size="15" fill="#475569" text-anchor="middle">
-  <tspan fill="#059669">ba ô trên đường chéo đứng yên</tspan>
-  <tspan>; hai ô </tspan>
-  <tspan fill="#7a5cff" font-weight="600">-3</tspan>
-  <tspan> và </tspan>
-  <tspan fill="#2563eb" font-weight="600">7</tspan>
-  <tspan> đổi chỗ cho nhau</tspan>
-</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="t d" font-family="'Space Grotesk','Be Vietnam Pro','Segoe UI',Arial,sans-serif">
+<title id="t">Ô (i, j) của ma trận chuyển vị là ô (j, i) của ma trận gốc</title>
+<desc id="d">Chuyển vị đổi hàng thành cột. Ô a_ij ở hàng i cột j chuyển sang hàng j cột i. Hai ô đối xứng qua đường chéo chính đổi chỗ cho nhau, các ô trên đường chéo đứng yên.</desc>
+<defs><marker id="arG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker><marker id="arB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="arV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a5cff"/></marker><marker id="arM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="143.0" y="98.0" width="62.0" height="30.0" rx="4" fill="#7a5cff" fill-opacity="0.22"/>
+<rect x="79.0" y="132.0" width="62.0" height="30.0" rx="4" fill="#2563eb" fill-opacity="0.22"/>
+<rect x="79.0" y="98.0" width="62.0" height="30.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<rect x="143.0" y="132.0" width="62.0" height="30.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<rect x="207.0" y="166.0" width="62.0" height="30.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<path d="M76.0 96.0H72.0V198.0H76.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<path d="M272.0 96.0H276.0V198.0H272.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<text x="110.0" y="113.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">11</tspan></text>
+<text x="174.0" y="113.0" font-size="14" fill="#7a5cff" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">12</tspan></text>
+<text x="238.0" y="113.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">1n</tspan></text>
+<text x="110.0" y="147.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">21</tspan></text>
+<text x="174.0" y="147.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">22</tspan></text>
+<text x="238.0" y="147.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">2n</tspan></text>
+<text x="110.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">m1</tspan></text>
+<text x="174.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">m2</tspan></text>
+<text x="238.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">mn</tspan></text>
+<text x="174.0" y="74.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >A</tspan></text>
+<text x="174.0" y="220.0" font-size="13" fill="#7a5cff" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >ô a_12 ở hàng i, cột j</tspan></text>
+<text x="174.0" y="242.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >ô a_21 ở hàng j, cột i</tspan></text>
+<rect x="483.0" y="98.0" width="62.0" height="30.0" rx="4" fill="#2563eb" fill-opacity="0.22"/>
+<rect x="419.0" y="132.0" width="62.0" height="30.0" rx="4" fill="#7a5cff" fill-opacity="0.22"/>
+<rect x="419.0" y="98.0" width="62.0" height="30.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<rect x="483.0" y="132.0" width="62.0" height="30.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<rect x="547.0" y="166.0" width="62.0" height="30.0" rx="4" fill="#059669" fill-opacity="0.22"/>
+<path d="M416.0 96.0H412.0V198.0H416.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<path d="M612.0 96.0H616.0V198.0H612.0" stroke="#94a3b8" stroke-width="2.2" fill="none"/>
+<text x="450.0" y="113.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">11</tspan></text>
+<text x="514.0" y="113.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">21</tspan></text>
+<text x="578.0" y="113.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">m1</tspan></text>
+<text x="450.0" y="147.0" font-size="14" fill="#7a5cff" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">12</tspan></text>
+<text x="514.0" y="147.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">22</tspan></text>
+<text x="578.0" y="147.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">m2</tspan></text>
+<text x="450.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">1n</tspan></text>
+<text x="514.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">2n</tspan></text>
+<text x="578.0" y="181.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">mn</tspan></text>
+<text x="514.0" y="74.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan font-style="italic">A</tspan><tspan font-size="11.1" dy="-5.7">T</tspan></text>
+<text x="514.0" y="220.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >ô a_21 ở hàng i, cột j</tspan></text>
+<text x="514.0" y="242.0" font-size="13" fill="#7a5cff" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >ô a_12 ở hàng j, cột i</tspan></text>
+<text x="344.0" y="129.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >đổi hàng thành cột</tspan></text>
+<line x1="318.0" y1="151.0" x2="378.0" y2="151.0" stroke="#475569" stroke-width="1.8" marker-end="url(#arM)"/>
+<text x="450.0" y="274.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >Hai ô a_12 và a_21 đổi chỗ cho nhau; ba ô trên đường chéo đứng yên</tspan></text>
 </svg>

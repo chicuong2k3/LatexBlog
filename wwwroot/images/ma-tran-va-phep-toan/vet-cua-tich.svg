@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 460" role="img" aria-labelledby="t d" font-family="'Space Grotesk','Be Vietnam Pro','Segoe UI',Arial,sans-serif">
+<title id="t">Vết của AB và vết của BA cộng cùng một bảng các tích a_ik b_ki</title>
+<desc id="d">Mỗi ô của bảng là một số hạng a_ik b_ki. Cộng theo hàng được các phần tử trên đường chéo của AB, rồi cộng theo i ra vết của AB. Cộng theo cột được các phần tử trên đường chéo của BA, rồi cộng theo k ra vết của BA. Hai cách cộng cho cùng một tổng.</desc>
+<defs><marker id="arG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker><marker id="arB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="arV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a5cff"/></marker><marker id="arM" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<text x="490.0" y="26.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan >tr(</tspan><tspan font-style="italic">AB</tspan><tspan >) = </tspan><tspan >∑</tspan><tspan font-size="11.8" dy="4.2">i</tspan><tspan dy="-4.2">(</tspan><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="11.8" dy="4.2">ii</tspan><tspan dy="-4.2">)</tspan><tspan > = </tspan><tspan >∑</tspan><tspan font-size="11.8" dy="4.2">i</tspan><tspan dy="-4.2">∑</tspan><tspan font-size="11.8" dy="4.2">k</tspan><tspan dy="-4.2" font-style="italic">a</tspan><tspan font-size="11.8" dy="4.2">ik</tspan><tspan dy="-4.2" font-style="italic">b</tspan><tspan font-size="11.8" dy="4.2">ki</tspan><tspan dy="-4.2">        tr(</tspan><tspan font-style="italic">BA</tspan><tspan >) = </tspan><tspan >∑</tspan><tspan font-size="11.8" dy="4.2">k</tspan><tspan dy="-4.2">∑</tspan><tspan font-size="11.8" dy="4.2">i</tspan><tspan dy="-4.2" font-style="italic">b</tspan><tspan font-size="11.8" dy="4.2">ki</tspan><tspan dy="-4.2" font-style="italic">a</tspan><tspan font-size="11.8" dy="4.2">ik</tspan></text>
+<text x="174.0" y="141.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="central"><tspan font-style="italic">i</tspan><tspan > = 1</tspan></text>
+<text x="174.0" y="233.0" font-size="13" fill="#475569" text-anchor="end" dominant-baseline="central"><tspan font-style="italic">i</tspan><tspan > = m</tspan></text>
+<text x="174.0" y="187.0" font-size="15" fill="#475569" text-anchor="end" dominant-baseline="central"><tspan >⋮</tspan></text>
+<text x="242.0" y="96.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">k</tspan><tspan > = 1</tspan></text>
+<text x="450.0" y="96.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan font-style="italic">k</tspan><tspan > = n</tspan></text>
+<text x="346.0" y="96.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >⋯</tspan></text>
+<text x="346.0" y="70.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >mỗi ô là một số hạng</tspan></text>
+<rect x="190.0" y="118.0" width="312.0" height="138.0" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+<line x1="190.0" y1="164.0" x2="502.0" y2="164.0" stroke="#e2e8f0" stroke-width="1.2"/>
+<line x1="190.0" y1="210.0" x2="502.0" y2="210.0" stroke="#e2e8f0" stroke-width="1.2"/>
+<line x1="294.0" y1="118.0" x2="294.0" y2="256.0" stroke="#e2e8f0" stroke-width="1.2"/>
+<line x1="398.0" y1="118.0" x2="398.0" y2="256.0" stroke="#e2e8f0" stroke-width="1.2"/>
+<rect x="296.0" y="166.0" width="100.0" height="42.0" rx="5" fill="#7a5cff" fill-opacity="0.22"/>
+<text x="346.0" y="187.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="central" font-weight="600"><tspan font-style="italic">a</tspan><tspan font-size="11.1" dy="3.9">ik</tspan><tspan dy="-3.9" font-style="italic">b</tspan><tspan font-size="11.1" dy="3.9">ki</tspan></text>
+<circle cx="242.0" cy="141.0" r="3" fill="#cbd5e1"/>
+<circle cx="346.0" cy="141.0" r="3" fill="#cbd5e1"/>
+<circle cx="450.0" cy="141.0" r="3" fill="#cbd5e1"/>
+<circle cx="242.0" cy="187.0" r="3" fill="#cbd5e1"/>
+<circle cx="450.0" cy="187.0" r="3" fill="#cbd5e1"/>
+<circle cx="242.0" cy="233.0" r="3" fill="#cbd5e1"/>
+<circle cx="346.0" cy="233.0" r="3" fill="#cbd5e1"/>
+<circle cx="450.0" cy="233.0" r="3" fill="#cbd5e1"/>
+<path d="M524.0 122.0h-6v130.0h6" stroke="#7a5cff" stroke-width="2" fill="none"/>
+<text x="542.0" y="128.0" font-size="13" fill="#7a5cff" text-anchor="start" dominant-baseline="central" font-weight="600"><tspan >cộng theo hàng, tức theo k</tspan></text>
+<text x="542.0" y="160.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="central"><tspan >∑</tspan><tspan font-size="10.4" dy="3.6">k</tspan><tspan dy="-3.6" font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">ik</tspan><tspan dy="-3.6" font-style="italic">b</tspan><tspan font-size="10.4" dy="3.6">ki</tspan><tspan dy="-3.6"> = </tspan><tspan >(</tspan><tspan font-style="italic">AB</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">ii</tspan></text>
+<text x="542.0" y="192.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="central"><tspan >rồi cộng theo i, được tr(AB)</tspan></text>
+<path d="M194.0 284.0v6h304.0v-6" stroke="#059669" stroke-width="2" fill="none"/>
+<text x="190.0" y="302.0" font-size="13" fill="#059669" text-anchor="start" dominant-baseline="central" font-weight="600"><tspan >cộng theo cột, tức theo i</tspan></text>
+<text x="190.0" y="332.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="central"><tspan >∑</tspan><tspan font-size="10.4" dy="3.6">i</tspan><tspan dy="-3.6" font-style="italic">a</tspan><tspan font-size="10.4" dy="3.6">ik</tspan><tspan dy="-3.6" font-style="italic">b</tspan><tspan font-size="10.4" dy="3.6">ki</tspan><tspan dy="-3.6"> = </tspan><tspan >(</tspan><tspan font-style="italic">BA</tspan><tspan >)</tspan><tspan font-size="10.4" dy="3.6">kk</tspan></text>
+<text x="490.0" y="302.0" font-size="13" fill="#475569" text-anchor="start" dominant-baseline="central"><tspan >rồi cộng theo k, được tr(BA)</tspan></text>
+<text x="490.0" y="376.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="central"><tspan >Hai tổng chỉ khác thứ tự viết các số hạng, nên bằng nhau</tspan></text>
+</svg>

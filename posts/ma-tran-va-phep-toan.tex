@@ -272,27 +272,29 @@ $$
 \sum_{k=1}^{r}a_{ik}b_{kj}.
 $$
 
-\textbf{Khai triển cột và hàng.} Viết \(A\) thành \(r\) vector cột \(\mathbf{c}_1,\ldots,\mathbf{c}_r\), và \(B\) thành \(r\) vector hàng \(\mathbf{r}_1,\ldots,\mathbf{r}_r\). Khi đó
+\textbf{Khai triển cột và hàng.} Viết \(A\) thành \(r\) vector cột \(\mathbf{c}_1,\ldots,\mathbf{c}_r\), và \(B\) thành \(r\) vector hàng \(\mathbf{d}_1,\ldots,\mathbf{d}_r\). Chữ \(\mathbf{c}\) là cột, chữ \(\mathbf{d}\) là dòng. Khi đó
 $$
-AB=\mathbf{c}_1\mathbf{r}_1+\mathbf{c}_2\mathbf{r}_2+\cdots+\mathbf{c}_r\mathbf{r}_r. \tag{5}
+AB=\mathbf{c}_1\mathbf{d}_1+\mathbf{c}_2\mathbf{d}_2+\cdots+\mathbf{c}_r\mathbf{d}_r. \tag{5}
 $$
-Với một vector cột và một vector hàng, ta lấy mỗi phần tử của cột nhân với cả hàng. Ví dụ
+Vế phải của (5) nhân một vector cột với một vector hàng, nên trước hết phải biết tích ấy là gì. Định nghĩa của nó sẽ được chọn sao cho thỏa mãn hai điều kiện. Thứ nhất, kết quả phải là một ma trận, vì ta còn phải cộng \(r\) kết quả với nhau. Thứ hai, ô ở hàng \(i\), cột \(j\) của nó phải bằng tích của phần tử thứ \(i\) trong cột với phần tử thứ \(j\) trong hàng, vì đó là số mà (5) cần.
 $$
 \left(\begin{array}{r}u\\v\end{array}\right)(p\ q\ s)
 =\left[\begin{array}{rrr}up&uq&us\\vp&vq&vs\end{array}\right].
 $$
-Mỗi tích \(\mathbf{c}_k\mathbf{r}_k\) làm theo đúng cách ấy, nên có cỡ \(m\times n\), vì \(\mathbf{c}_k\) có \(m\) thành phần và \(\mathbf{r}_k\) có \(n\) thành phần. Ô ở hàng \(i\), cột \(j\) của tích là tích của thành phần thứ \(i\) trong \(\mathbf{c}_k\) với thành phần thứ \(j\) trong \(\mathbf{r}_k\).
+Tích được định nghĩa này gọi là \textbf{tích ngoài} (\emph{outer product}). Đọc theo hàng thì số \(u\) nhân với cả hàng \((p\ q\ s)\) cho hàng thứ nhất, còn số \(v\) nhân với cả hàng ấy cho hàng thứ hai. Cũng có thể đọc theo ô. Ô ở hàng \(i\), cột \(j\) là tích của số thứ \(i\) trong cột với số thứ \(j\) trong hàng, chẳng hạn ô hàng hai, cột một là \(vp\).
+
+Bây giờ áp vào \(\mathbf{c}_k\mathbf{d}_k\). Ma trận \(A\) cỡ \(m\times r\), nên cột \(\mathbf{c}_k\) có \(m\) thành phần. Ma trận \(B\) cỡ \(r\times n\), nên hàng \(\mathbf{d}_k\) có \(n\) thành phần. Nhân một cột \(m\) thành phần với một hàng \(n\) thành phần cho một ma trận cỡ \(m\times n\), và ô ở hàng \(i\), cột \(j\) của nó là tích của thành phần thứ \(i\) trong \(\mathbf{c}_k\) với thành phần thứ \(j\) trong \(\mathbf{d}_k\).
 $$
-(\mathbf{c}_k\mathbf{r}_k)_{ij}=\mathbf{c}_k(i)\,\mathbf{r}_k(j).
+(\mathbf{c}_k\mathbf{d}_k)_{ij}=\mathbf{c}_k(i)\,\mathbf{d}_k(j).
 $$
 Vế phải của (5) là tổng của \(r\) ma trận như thế. Ô ở hàng \(i\), cột \(j\) của một tổng là tổng các ô cùng vị trí của các số hạng, nên
 $$
-\left(\sum_{k=1}^{r}\mathbf{c}_k\mathbf{r}_k\right)_{ij}
-=\sum_{k=1}^{r}\mathbf{c}_k(i)\,\mathbf{r}_k(j).
+\left(\sum_{k=1}^{r}\mathbf{c}_k\mathbf{d}_k\right)_{ij}
+=\sum_{k=1}^{r}\mathbf{c}_k(i)\,\mathbf{d}_k(j).
 $$
-Bây giờ thay hai thừa số bằng các phần tử của \(A\) và \(B\). Vector \(\mathbf{c}_k\) là cột thứ \(k\) của \(A\), mà cột thứ \(k\) gồm \(a_{1k},a_{2k},\ldots,a_{mk}\), nên thành phần thứ \(i\) của nó là \(a_{ik}\). Vector \(\mathbf{r}_k\) là hàng thứ \(k\) của \(B\), mà hàng thứ \(k\) gồm \(b_{k1},b_{k2},\ldots,b_{kn}\), nên thành phần thứ \(j\) của nó là \(b_{kj}\). Thay vào,
+Bây giờ thay hai thừa số bằng các phần tử của \(A\) và \(B\). Vector \(\mathbf{c}_k\) là cột thứ \(k\) của \(A\), mà cột thứ \(k\) gồm \(a_{1k},a_{2k},\ldots,a_{mk}\), nên thành phần thứ \(i\) của nó là \(a_{ik}\). Vector \(\mathbf{d}_k\) là hàng thứ \(k\) của \(B\), mà hàng thứ \(k\) gồm \(b_{k1},b_{k2},\ldots,b_{kn}\), nên thành phần thứ \(j\) của nó là \(b_{kj}\). Thay vào,
 $$
-\mathbf{c}_k(i)\,\mathbf{r}_k(j)=a_{ik}b_{kj}.
+\mathbf{c}_k(i)\,\mathbf{d}_k(j)=a_{ik}b_{kj}.
 $$
 Vậy ô ở hàng \(i\), cột \(j\) của vế phải bằng
 $$
@@ -300,7 +302,7 @@ $$
 $$
 đúng bằng \((AB)_{ij}\) theo (2). Hai ma trận cùng cỡ \(m\times n\) và có mọi ô tương ứng bằng nhau, nên
 $$
-AB=\mathbf{c}_1\mathbf{r}_1+\mathbf{c}_2\mathbf{r}_2+\cdots+\mathbf{c}_r\mathbf{r}_r.
+AB=\mathbf{c}_1\mathbf{d}_1+\mathbf{c}_2\mathbf{d}_2+\cdots+\mathbf{c}_r\mathbf{d}_r.
 $$
 
 Với
@@ -326,7 +328,6 @@ $$
 
 Hình dưới vẽ một số hạng của tổng ấy. Cột \(k\) của \(A\) và hàng \(k\) của \(B\) nhân với nhau thành một ma trận cỡ \(m\times n\), và ô \((i,j)\) của nó là tích \(a_{ik}b_{kj}\). Cộng \(r\) ma trận như vậy, theo \(k\) từ \(1\) đến \(r\), ta được \(AB\).
 
-\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/khai-trien-cot-hang.svg}}
 
 \begin{quote}
 \textbf{Ghi chú lịch sử.} Nhiều sách giáo trình ghi công cho nhà toán học Đức Gotthold Eisenstein, cho rằng ông nghĩ ra phép nhân này khoảng năm 1844 để gom gọn thao tác thế biến trong hệ tuyến tính. Trang tiểu sử của Eisenstein trên MacTutor, cũng là nguồn được dẫn ở đây, không nhắc tới công trình nào về ma trận. Những đóng góp được ghi nhận của ông là lý thuyết dạng nhị phân và bậc ba, các định luật tương hỗ bậc cao hơn, và hàm elliptic. Ông mắc lao phổi năm 1852 khi mới 29 tuổi, và phần lớn đóng góp của ông thuộc về mười năm hoạt động đó.
@@ -342,67 +343,75 @@ Theo J. J. O'Connor và E. F. Robertson, ``Arthur Cayley'' và ``Gotthold Eisens
 
 \subsection{Mỗi cột của tích được ghép từ các cột của ma trận đầu}
 
-Ở Định nghĩa 4, ta tính tích \(AB\) theo từng ô. Nhìn theo cột, ta sẽ thấy mỗi cột của \(AB\) được tạo bằng cách cộng các bội của những cột trong \(A\). Liên hệ với kì 2, ta đã biết các cột chốt cho biết những ẩn nào là ẩn chính.
+Công thức (2) tính tích \(AB\) theo từng ô. Còn một cách nhìn khác, nhìn cả một cột một lúc. Cách nhìn ấy sẽ dùng nhiều về sau, vì chính các cột mới là thứ quyết định ẩn nào là ẩn chính, như ta đã thấy ở kì 2.
 
-Viết các cột của \(A\) là \(\mathbf{a}_1,\ldots,\mathbf{a}_r\), cột thứ \(j\) của \(B\) là \(\mathbf{b}_j\). Ta có
+Muốn nhìn theo cột, trước hết cần một quan sát phép nhân ma trận với vector. Viết các cột của \(A\) là \(\mathbf{a}_1,\ldots,\mathbf{a}_r\), và lấy một vector bất kỳ \(\mathbf{w}=(w_1,\ldots,w_r)^T\). Khi đó
+$$
+A\mathbf{w}=w_1\mathbf{a}_1+w_2\mathbf{a}_2+\cdots+w_r\mathbf{a}_r. \tag{6}
+$$
+
+Ta chứng minh đẳng thức này bằng cách so phần tử thứ \(i\) của hai vế. Theo (1), vế trái có phần tử thứ \(i\) là
+$$
+\sum_{k=1}^{r}a_{ik}w_k.
+$$
+Cột \(\mathbf{a}_k\) có phần tử thứ \(i\) là \(a_{ik}\), nên vế phải có phần tử thứ \(i\) là
+$$
+\sum_{k=1}^{r}w_k a_{ik}.
+$$
+Hai tổng chỉ khác thứ tự hai thừa số trong mỗi số hạng, nên bằng nhau. Vậy hai vế bằng nhau ở mọi vị trí, tức hai vector bằng nhau.
+
+Bây giờ lấy \(\mathbf{w}\) là cột thứ \(j\) của \(B\). Cột ấy có \(r\) phần tử,
 $$
 \mathbf{b}_j=
-\left( \begin{array}{c} b_{1j}\\ b_{2j}\\ \vdots\\ b_{rj} \end{array} \right)
+\left( \begin{array}{c} b_{1j}\\ b_{2j}\\ \vdots\\ b_{rj} \end{array} \right),
 $$
-và
+nên \(w_1=b_{1j},w_2=b_{2j},\ldots,w_r=b_{rj}\). Thay vào (6),
 $$
-A\mathbf{b}_j=b_{1j}\mathbf{a}_1+b_{2j}\mathbf{a}_2+\cdots+b_{rj}\mathbf{a}_r. \tag{6}
+A\mathbf{b}_j=b_{1j}\mathbf{a}_1+b_{2j}\mathbf{a}_2+\cdots+b_{rj}\mathbf{a}_r.
 $$
-Để tìm cột thứ \(j\) của \(AB\), ta lấy các phần tử trong cột thứ \(j\) của \(B\) làm hệ số. Nhân từng cột của \(A\) với hệ số tương ứng rồi cộng các vector lại.
 
-\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/cot-la-to-hop.svg}}
-
-Trong hình, ba cột của ma trận là \(\mathbf{a}_1=(1,0)^T\), \(\mathbf{a}_2=(0,1)^T\) và \(\mathbf{a}_3=(1,1)^T\). Chọn \(\mathbf{b}=(2,-1,3)^T\), ta tính được \(A\mathbf{b}=2\mathbf{a}_1-\mathbf{a}_2+3\mathbf{a}_3=(5,2)^T\).
-
-Các đoạn nét đứt nối ba vector đã nhân hệ số theo quy tắc đầu đuôi. Mũi tên xanh lá biểu diễn tổng của chúng, đi từ gốc đến cùng điểm cuối.
-
-Cách ghép này có tên riêng. Cho các vector \(\mathbf{a}_1,\ldots,\mathbf{a}_r\) cùng cỡ và các số \(c_1,\ldots,c_r\). Vector
+Cho các vector \(\mathbf{a}_1,\ldots,\mathbf{a}_r\) cùng cỡ và các số \(c_1,\ldots,c_r\). Vector
 $$
 c_1\mathbf{a}_1+c_2\mathbf{a}_2+\cdots+c_r\mathbf{a}_r
 $$
-gọi là một \textbf{tổ hợp tuyến tính} (\emph{linear combination}) của \(\mathbf{a}_1,\ldots,\mathbf{a}_r\), còn \(c_1,\ldots,c_r\) là các \textbf{hệ số} của tổ hợp. Trong hình, \((5,2)^T\) là tổ hợp tuyến tính của \(\mathbf{a}_1,\mathbf{a}_2,\mathbf{a}_3\) với các hệ số \(2,-1,3\).
+gọi là một \textbf{tổ hợp tuyến tính} (\emph{linear combination}) của \(\mathbf{a}_1,\ldots,\mathbf{a}_r\), còn \(c_1,\ldots,c_r\) là các \textbf{hệ số} của tổ hợp. 
+
+Theo (6) thì với \(\mathbf{w}=\mathbf{b}_j\), \(A\mathbf{b}_j\) là tổ hợp tuyến tính của các cột của \(A\), với hệ số lấy từ cột \(j\) của \(B\). Theo (4) thì cột thứ \(j\) của \(AB\) đúng bằng \(A\mathbf{b}_j\). Từ hai điều trên ta kết luận được là cột thứ \(j\) của \(AB\) cũng là tổ hợp tuyến tính ấy, chính là định lý sau.
 
 \textbf{Định lý 1.} Cho \(A\) cỡ \(m\times r\) và \(B\) cỡ \(r\times n\). Cột thứ \(j\) của \(AB\) là một tổ hợp tuyến tính của các cột của \(A\), với hệ số là các phần tử trong cột thứ \(j\) của \(B\).
 
-Hình dưới vẽ cột thứ \(j\) của \(AB\) được dựng lên như thế nào. Phần tử thứ \(k\) của cột \(j\) trong \(B\) nhân với cả cột thứ \(k\) của \(A\), và các cột đã nhân hệ số ấy cộng lại thành cột \(j\) của \(AB\).
-
-Thử trên ví dụ ở mục nhân ma trận. Cột thứ ba của \(B\) là \((4,3,5)^T\), nên cột thứ ba của \(AB\) là \(4\) lần cột một, cộng \(3\) lần cột hai, cộng \(5\) lần cột ba của \(A\).
-
-\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/cot-cua-tich.svg}}
-
-\emph{Chứng minh.} Gọi \(\mathbf{a}_k\) là cột thứ \(k\) của \(A\). Phần tử thứ \(i\) của vế phải trong (6) là
+Kiểm lại bằng ví dụ ở mục nhân ma trận. Ở đó \(A=\left[ \begin{array}{rrr} 1 & 2 & 4\\ 2 & 6 & 0 \end{array} \right]\), ba cột là \((1,2)^T\), \((2,6)^T\), \((4,0)^T\), và cột thứ ba của \(B\) là \((4,3,5)^T\). Vậy cột thứ ba của \(AB\) phải là
 $$
-b_{1j}a_{i1}+b_{2j}a_{i2}+\cdots+b_{rj}a_{ir}
-=\sum_{k=1}^{r}a_{ik}b_{kj}=(AB)_{ij}.
+4\left(\begin{array}{r}1\\2\end{array}\right)
++3\left(\begin{array}{r}2\\6\end{array}\right)
++5\left(\begin{array}{r}4\\0\end{array}\right)
+=\left(\begin{array}{r}4+6+20\\8+18+0\end{array}\right)
+=\left(\begin{array}{r}30\\26\end{array}\right),
 $$
-Kết quả trùng với phần tử thứ \(i\) của cột thứ \(j\) trong \(AB\). Mọi phần tử tương ứng của hai vector cột đều bằng nhau, nên hai vector bằng nhau. \(\square\)
+đúng bằng cột thứ ba của \(AB\) đã tính ở mục nhân ma trận.
 
-Nếu cột thứ \(j\) của \(B\) toàn số \(0\), mọi hệ số dùng để nhân các cột của \(A\) trong tổng (6) đều bằng \(0\). Cột thứ \(j\) của \(AB\) vì thế cũng toàn số \(0\).
+Nếu cột thứ \(j\) của \(B\) toàn số \(0\), mọi hệ số dùng để nhân các cột của \(A\) trong (6) đều bằng \(0\). Cột thứ \(j\) của \(AB\) vì thế cũng toàn số \(0\).
 
-Tổ hợp tuyến tính có thể cho ra vector \(\mathbf{0}\) dù các hệ số không toàn bằng \(0\). Chẳng hạn \(1\cdot(1,2)^T-2\cdot(\tfrac12,1)^T=\mathbf{0}\). Khi đó ta nói các vector ấy \textbf{phụ thuộc tuyến tính} (\emph{linearly dependent}). Cụ thể, \(\mathbf{b}_1,\ldots,\mathbf{b}_n\) phụ thuộc tuyến tính nếu có các số \(\lambda_1,\ldots,\lambda_n\), không toàn bằng \(0\), sao cho
+Nhận xét thêm. Tổ hợp tuyến tính có thể cho ra vector \(\mathbf{0}\) dù các hệ số không toàn bằng \(0\). Chẳng hạn \(1\cdot(1,2)^T-2\cdot(\tfrac12,1)^T=\mathbf{0}\). Khi đó ta nói các vector ấy \textbf{phụ thuộc tuyến tính} (\emph{linearly dependent}). Cụ thể, \(\mathbf{b}_1,\ldots,\mathbf{b}_n\) phụ thuộc tuyến tính nếu có các số \(\lambda_1,\ldots,\lambda_n\), không toàn bằng \(0\), sao cho
 $$
 \lambda_1\mathbf{b}_1+\cdots+\lambda_n\mathbf{b}_n=\mathbf{0}.
 $$
-Nếu các cột của \(B\) phụ thuộc tuyến tính, thì các cột của \(AB\) cũng phụ thuộc tuyến tính. Thật vậy, lấy đúng các số \(\lambda_1,\ldots,\lambda_n\) ấy rồi nhân cả hai vế của đẳng thức trên với \(A\).
+
+Nếu các cột của \(B\) phụ thuộc tuyến tính, thì các cột của \(AB\) cũng phụ thuộc tuyến tính. Thật vậy, lấy đúng các số \(\lambda_1,\ldots,\lambda_n\) ấy rồi nhân cả hai vế với \(A\).
 $$
 A(\lambda_1\mathbf{b}_1+\cdots+\lambda_n\mathbf{b}_n)=A\mathbf{0}.
 $$
-Để đưa các hệ số ra ngoài ở vế trái, ta dùng tính tuyến tính của phép nhân với \(A\). Có thể kiểm tra tính chất này bằng phép phá ngoặc. Phần tử ở hàng thứ \(i\) của \(A(\mathbf{u}+\mathbf{v})\) được tính như sau.
+Muốn đưa các hệ số ra ngoài ở vế trái, ta cần hai tính chất của phép nhân với \(A\). Tính chất thứ nhất là \(A(\mathbf{u}+\mathbf{v})=A\mathbf{u}+A\mathbf{v}\). Kiểm bằng phép phá ngoặc, phần tử thứ \(i\) của \(A(\mathbf{u}+\mathbf{v})\) là
 $$
 \sum_k a_{ik}(u_k+v_k)=\sum_k a_{ik}u_k+\sum_k a_{ik}v_k,
 $$
-Đó là phần tử ở hàng thứ \(i\) của \(A\mathbf{u}+A\mathbf{v}\). Với phép nhân một vector với số, ta cũng có \(A(c\mathbf{u})=cA\mathbf{u}\). Áp dụng hai tính chất này vào vế trái ở trên, ta được
+đúng bằng phần tử thứ \(i\) của \(A\mathbf{u}+A\mathbf{v}\). Tính chất thứ hai là \(A(c\mathbf{u})=cA\mathbf{u}\), cũng kiểm bằng cách so từng phần tử. Áp dụng hai tính chất này, vế trái trở thành
 $$
 \lambda_1A\mathbf{b}_1+\cdots+\lambda_nA\mathbf{b}_n=\mathbf{0}.
 $$
-Nhưng \(A\mathbf{b}_j\) chính là cột thứ \(j\) của \(AB\). Vậy các cột của \(AB\) phụ thuộc tuyến tính.
+Nhưng \(A\mathbf{b}_j\) chính là cột thứ \(j\) của \(AB\) theo (4). Vậy các cột của \(AB\) phụ thuộc tuyến tính.
 
-Như vậy, một quan hệ phụ thuộc tuyến tính giữa các cột của \(B\) vẫn được giữ lại khi ta nhân \(B\) với \(A\) ở bên trái.
+Nói gọn lại, một quan hệ phụ thuộc tuyến tính giữa các cột của \(B\) vẫn còn nguyên khi ta nhân \(B\) với \(A\) ở bên trái.
 
 \subsection{Hệ phương trình dưới dạng ma trận}
 

@@ -328,7 +328,6 @@ $$
 
 Hình dưới vẽ một số hạng của tổng ấy. Cột \(k\) của \(A\) và hàng \(k\) của \(B\) nhân với nhau thành một ma trận cỡ \(m\times n\), và ô \((i,j)\) của nó là tích \(a_{ik}b_{kj}\). Cộng \(r\) ma trận như vậy, theo \(k\) từ \(1\) đến \(r\), ta được \(AB\).
 
-
 \begin{quote}
 \textbf{Ghi chú lịch sử.} Nhiều sách giáo trình ghi công cho nhà toán học Đức Gotthold Eisenstein, cho rằng ông nghĩ ra phép nhân này khoảng năm 1844 để gom gọn thao tác thế biến trong hệ tuyến tính. Trang tiểu sử của Eisenstein trên MacTutor, cũng là nguồn được dẫn ở đây, không nhắc tới công trình nào về ma trận. Những đóng góp được ghi nhận của ông là lý thuyết dạng nhị phân và bậc ba, các định luật tương hỗ bậc cao hơn, và hàm elliptic. Ông mắc lao phổi năm 1852 khi mới 29 tuổi, và phần lớn đóng góp của ông thuộc về mười năm hoạt động đó.
 
@@ -401,11 +400,34 @@ Nếu các cột của \(B\) phụ thuộc tuyến tính, thì các cột của 
 $$
 A(\lambda_1\mathbf{b}_1+\cdots+\lambda_n\mathbf{b}_n)=A\mathbf{0}.
 $$
-Muốn đưa các hệ số ra ngoài ở vế trái, ta cần hai tính chất của phép nhân với \(A\). Tính chất thứ nhất là \(A(\mathbf{u}+\mathbf{v})=A\mathbf{u}+A\mathbf{v}\). Kiểm bằng phép phá ngoặc, phần tử thứ \(i\) của \(A(\mathbf{u}+\mathbf{v})\) là
+Muốn đưa các hệ số ra ngoài ở vế trái, ta cần hai tính chất của phép nhân với \(A\).
+
+Tính chất thứ nhất là \(A(\mathbf{u}+\mathbf{v})=A\mathbf{u}+A\mathbf{v}\), với \(\mathbf{u}\) và \(\mathbf{v}\) là hai vector cùng cỡ \(r\). Trước hết, \(\mathbf{u}+\mathbf{v}\) là vector có thành phần thứ \(k\) bằng \(u_k+v_k\), vì cộng hai vector là cộng từng thành phần. Bây giờ áp công thức (1) cho vector \(\mathbf{x}=\mathbf{u}+\mathbf{v}\). Phần tử thứ \(i\) của \(A\mathbf{x}\) là \(\sum_k a_{ik}x_k\), mà ở đây \(x_k=u_k+v_k\), nên phần tử thứ \(i\) của \(A(\mathbf{u}+\mathbf{v})\) là
 $$
-\sum_k a_{ik}(u_k+v_k)=\sum_k a_{ik}u_k+\sum_k a_{ik}v_k,
+\sum_{k=1}^{r}a_{ik}(u_k+v_k).
 $$
-đúng bằng phần tử thứ \(i\) của \(A\mathbf{u}+A\mathbf{v}\). Tính chất thứ hai là \(A(c\mathbf{u})=cA\mathbf{u}\), cũng kiểm bằng cách so từng phần tử. Áp dụng hai tính chất này, vế trái trở thành
+Phá ngoặc trong từng số hạng rồi tách tổng làm hai.
+$$
+\sum_{k=1}^{r}a_{ik}u_k+\sum_{k=1}^{r}a_{ik}v_k.
+$$
+Theo (1), tổng thứ nhất là phần tử thứ \(i\) của \(A\mathbf{u}\), tổng thứ hai là phần tử thứ \(i\) của \(A\mathbf{v}\). Vậy phần tử thứ \(i\) của \(A(\mathbf{u}+\mathbf{v})\) bằng phần tử thứ \(i\) của \(A\mathbf{u}+A\mathbf{v}\), với mọi \(i\), nên hai vector bằng nhau.
+
+Tính chất thứ hai là \(A(c\mathbf{u})=cA\mathbf{u}\), với \(c\) là một số. Cũng theo (1), phần tử thứ \(i\) của \(A(c\mathbf{u})\) là
+$$
+\sum_{k=1}^{r}a_{ik}(cu_k)=c\sum_{k=1}^{r}a_{ik}u_k,
+$$
+vì \(c\) giống nhau ở mọi số hạng nên đưa ra ngoài được. Đó đúng là \(c\) lần phần tử thứ \(i\) của \(A\mathbf{u}\).
+
+Áp dụng tính chất thứ nhất liên tiếp cho \(n\) số hạng, ta được \(A\) của một tổng bằng tổng các \(A\).
+$$
+A(\lambda_1\mathbf{b}_1+\cdots+\lambda_n\mathbf{b}_n)
+=A(\lambda_1\mathbf{b}_1)+\cdots+A(\lambda_n\mathbf{b}_n),
+$$
+Rồi áp dụng tính chất thứ hai cho từng số hạng.
+$$
+=\lambda_1A\mathbf{b}_1+\cdots+\lambda_nA\mathbf{b}_n.
+$$
+Còn \(A\mathbf{0}\) bằng \(\mathbf{0}\), vì thành phần thứ \(i\) của nó là \(\sum_k a_{ik}\cdot 0=0\). Ghép hai vế lại,
 $$
 \lambda_1A\mathbf{b}_1+\cdots+\lambda_nA\mathbf{b}_n=\mathbf{0}.
 $$
@@ -558,18 +580,41 @@ $$
 \mathrm{tr}(AB)=\mathrm{tr}(BA). \tag{10}
 $$
 
-Khai triển hai vế theo định nghĩa phép nhân và vết.
-$$
-\mathrm{tr}(AB)=\sum_i(AB)_{ii}=\sum_i\sum_k a_{ik}b_{ki},
-$$
-$$
-\mathrm{tr}(BA)=\sum_k(BA)_{kk}=\sum_k\sum_i b_{ki}a_{ik}.
-$$
-Hai tổng chỉ khác thứ tự viết các số hạng, nên bằng nhau.
+Chứng minh.
 
-Hình dưới xếp các số hạng \(a_{ik}b_{ki}\) thành một bảng, với \(i\) đánh số hàng và \(k\) đánh số cột. Cộng theo hàng được các phần tử trên đường chéo của \(AB\), rồi cộng theo \(i\) ra \(\mathrm{tr}(AB)\). Cộng theo cột được các phần tử trên đường chéo của \(BA\), rồi cộng theo \(k\) ra \(\mathrm{tr}(BA)\). Hai cách cộng cho cùng một tổng.
+Trước hết khai triển \(\mathrm{tr}(AB)\). Ma trận \(AB\) cỡ \(m\times m\), nên đường chéo chính của nó gồm \(m\) ô, là \((AB)_{11},(AB)_{22},\ldots,(AB)_{mm}\). Vết là tổng của chúng.
+$$
+\mathrm{tr}(AB)=\sum_{i=1}^{m}(AB)_{ii}.
+$$
+Mỗi ô trên đường chéo là một ô của tích, lấy theo công thức (2) với \(j=i\). Ở tích \(AB\), ma trận thứ nhất là \(A\) cỡ \(m\times n\), nên tổng bên trong chạy theo \(k\) từ \(1\) đến \(n\).
+$$
+(AB)_{ii}=\sum_{k=1}^{n}a_{ik}b_{ki}.
+$$
+Thay vào,
+$$
+\mathrm{tr}(AB)=\sum_{i=1}^{m}\sum_{k=1}^{n}a_{ik}b_{ki}.
+$$
 
-\blogfig{\includegraphics{/images/ma-tran-va-phep-toan/vet-cua-tich.svg}}
+Rồi \(\mathrm{tr}(BA)\), làm y hệt. Ma trận \(BA\) cỡ \(n\times n\), nên đường chéo của nó gồm \(n\) ô, và ta đánh số chúng bằng \(k\).
+$$
+\mathrm{tr}(BA)=\sum_{k=1}^{n}(BA)_{kk}.
+$$
+Ô \((BA)_{kk}\) cũng lấy theo (2), nhưng lần này ma trận thứ nhất là \(B\) cỡ \(n\times m\), nên tổng bên trong chạy theo \(i\) từ \(1\) đến \(m\).
+$$
+(BA)_{kk}=\sum_{i=1}^{m}b_{ki}a_{ik}.
+$$
+Thay vào,
+$$
+\mathrm{tr}(BA)=\sum_{k=1}^{n}\sum_{i=1}^{m}b_{ki}a_{ik}.
+$$
+
+Bây giờ so hai tổng vừa được. Cả hai cộng trên cùng một bộ số hạng. Mỗi cặp chỉ số \((i,k)\), với \(i\) chạy từ \(1\) đến \(m\) và \(k\) chạy từ \(1\) đến \(n\), cho đúng một số hạng. Hai tổng chỉ khác nhau ở hai chỗ.
+
+Chỗ thứ nhất là thứ tự hai thừa số trong từng số hạng. Một bên viết \(a_{ik}b_{ki}\), bên kia viết \(b_{ki}a_{ik}\). Vì \(a_{ik}\) và \(b_{ki}\) là số thực, \(a_{ik}b_{ki}=b_{ki}a_{ik}\).
+
+Chỗ thứ hai là thứ tự cộng. Tổng thứ nhất cộng theo \(i\) trước rồi theo \(k\), tổng thứ hai cộng theo \(k\) trước rồi theo \(i\). Nhưng cả hai đều cộng hết mọi cặp \((i,k)\) đúng một lần, nên tổng như nhau.
+
+Vậy \(\mathrm{tr}(AB)=\mathrm{tr}(BA)\).
 
 Với ma trận \(2\times2\), ta còn xét một số khác gọi là định thức. Nếu
 $$

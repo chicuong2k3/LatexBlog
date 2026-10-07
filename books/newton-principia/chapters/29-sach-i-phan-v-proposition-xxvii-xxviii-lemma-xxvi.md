@@ -49,7 +49,7 @@ Còn các Lemma khác, nhờ đó quỹ đạo đã biết loại có thể đư
 >
 > **Ông cần tâm để hoàn tất việc dựng, và chỉ có thước kẻ và com pa**
 >
-> Câu cuối Học luận mới là điều đáng chú ý nhất chương: sau khi nêu một định lý đẹp — trung điểm của các dây cung đi qua một điểm cố định nằm trên một hình cắt conh khác cùng loại, có các trục song song — ông viết thẳng "nhưng tôi vội chuyển sang những điều hữu ích hơn". Newton tự bỏ qua một kết quả vì nó không phục vụ mục đích ông đang theo đuổi.
+> Câu cuối Học luận mới là điều đáng chú ý nhất chương: sau khi nêu một định lý đẹp - trung điểm của các dây cung đi qua một điểm cố định nằm trên một hình cắt conh khác cùng loại, có các trục song song - ông viết thẳng "nhưng tôi vội chuyển sang những điều hữu ích hơn". Newton tự bỏ qua một kết quả vì nó không phục vụ mục đích ông đang theo đuổi.
 >
 > Hình học đồng phẳng về sau đã coi định lý ấy là cơ sở của cả **đường tròn đường kính** và **cặp đường chân tròn liên hợp**, và nó xuất hiện trong hình học tính tục. Người đọc hôm nay rút ra được hai điều: một kết quả đẹp không tự động là một kết quả quan trọng, và sự phân biệt ấy phụ thuộc vào câu hỏi bạn đang trả lời.
 
@@ -92,7 +92,7 @@ Theo cách dựng, tỷ số ấy bằng $Ga:AB$. Vì vậy $ab=AB$, và do đó
 >
 > Ông cần dựng conic đã biết **cả loại lẫn độ lớn**, với các đoạn cho trước bị chặn giữa ba đường thẳng đã cho. Đó đúng là dạng bài toán mà người thực địa phải giải, và nó đòi hỏi phép đặt tam giác chứ không chỉ phép dựng conic qua điểm và tiếp tuyến.
 >
-> Phép đồng dạng trực tiếp là công cụ nền của cả hình học phẳng và cơ học: nó cho biết một điểm sẽ ra đâu khi ta vừa xoay vừa phóng, và nó chính là cách dựng điểm thứ ba của một tam giác khi biết hai cạnh và góc ở giữa. Hệ quả ở cuối Lemma — dựng một đường thẳng có các đoạn cho trước bị chặn giữa ba đường thẳng — liên quan tới **định lý chặn** của hình học giải tích, và đó là công cụ để tính nhanh trong tọa độ mỗi khi phải quy một bài toán hình học về đại số.
+> Phép đồng dạng trực tiếp là công cụ nền của cả hình học phẳng và cơ học: nó cho biết một điểm sẽ ra đâu khi ta vừa xoay vừa phóng, và nó chính là cách dựng điểm thứ ba của một tam giác khi biết hai cạnh và góc ở giữa. Hệ quả ở cuối Lemma - dựng một đường thẳng có các đoạn cho trước bị chặn giữa ba đường thẳng - liên quan tới **định lý chặn** của hình học giải tích, và đó là công cụ để tính nhanh trong tọa độ mỗi khi phải quy một bài toán hình học về đại số.
 
 ## Hệ quả
 

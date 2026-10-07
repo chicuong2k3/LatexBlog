@@ -199,7 +199,7 @@ Do đó các hành tinh không thể được giải thích bằng vortex. Nhữ
 >
 > **Mô hình vortex của chính Newton, bị chính ông công bố là sai**
 >
-> Ở hai Nhận xét cuối, Newton làm điều mà ít người dám làm: ông dựng một mô hình vật lí cho cả hệ Mặt Trời, rồi **tự kiểm tra nó và công bố nó sai**. Mô hình ấy là vortex — các hành tinh được mang bởi dòng chất lỏng xoáy quanh Mặt Trời và quanh Sao Mộc. Đây là lý thuyết cạnh tranh chính với lực hút của Newton, và nó từng rất hấp dẫn vì giải thích được quy luật của Kepler mà không cần tới lực tác động từ khoảng cách.
+> Ở hai Nhận xét cuối, Newton làm điều mà ít người dám làm: ông dựng một mô hình vật lí cho cả hệ Mặt Trời, rồi **tự kiểm tra nó và công bố nó sai**. Mô hình ấy là vortex - các hành tinh được mang bởi dòng chất lỏng xoáy quanh Mặt Trời và quanh Sao Mộc. Đây là lý thuyết cạnh tranh chính với lực hút của Newton, và nó từng rất hấp dẫn vì giải thích được quy luật của Kepler mà không cần tới lực tác động từ khoảng cách.
 >
 > Phép kiểm tra đầu tiên là định luật Kepler thứ ba. Thời gian tuần hoàn của các hành tinh tỷ lệ với khoảng cách của chúng theo "tỷ lệ sesquiplicate", tức $T\propto r^{3/2}$, hay $T^2\propto r^3$. Nhưng mô hình vortex cho ra $T\propto r^2$. Hai số mũ ấy không thể cùng đúng.
 >

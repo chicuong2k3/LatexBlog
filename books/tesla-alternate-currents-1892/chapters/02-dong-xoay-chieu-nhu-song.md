@@ -6,8 +6,8 @@ slug: "dong-xoay-chieu-nhu-song"
 
 <!-- PDF 22 · trang in 4 -->
 
-...mà trong mọi ngành công nghiệp, dòng điện xoay chiều — chuyển động sóng
-điện — sẽ thống trị.
+...mà trong mọi ngành công nghiệp, dòng điện xoay chiều - chuyển động sóng
+điện - sẽ thống trị.
 
 Có lẽ một lý do khiến nhánh khoa học này phát triển nhanh đến thế là nằm ở sức
 hấp dẫn của việc nghiên cứu thí nghiệm về nó. Ta quấn một vòng sắt đơn giản bằng
@@ -15,21 +15,21 @@ cuộn dây; ta nối nó với máy phát, và với sự kinh ngạc lẫn th�
 những hiệu ứng của các lực lạ lùng mà ta đưa vào chơi, lực cho phép ta biến
 đổi, truyền tải và hướng năng lượng tùy ý. Ta sắp đặt mạch điện cho đúng, và ta
 thấy khối sắt cùng dây dẫn hành xử như thể được phú cho sự sống, quay một càu
-cực nặng, qua những liên kết vô hình, với tốc độ và sức mạnh lớn — với năng
+cực nặng, qua những liên kết vô hình, với tốc độ và sức mạnh lớn - với năng
 lượng có thể được truyền từ một khoảng cách rất xa. Ta quan sát năng lượng của một
-dòng điện xoay chiều chạy trong dây biểu hiện ra thế nào — không phải nhiều
-bằng trong dây, mà trong không gian quanh nó — theo cách đáng ngạc nhiên nhất, đeo
+dòng điện xoay chiều chạy trong dây biểu hiện ra thế nào - không phải nhiều
+bằng trong dây, mà trong không gian quanh nó - theo cách đáng ngạc nhiên nhất, đeo
 những hình thức của nhiệt, ánh sáng, năng lượng cơ, và, đáng ngạc nhiên nhất, cả
 sức hút hóa. Tất cả những quan sát ấy mê hoặc chúng ta, và lấp đầy chúng ta một
 khao khát cháy bỏng muốn biết thêm về bản chất của các hiện tượng ấy. Ngày nào
-chúng ta cũng đi làm với hy vọng khám phá ra điều gì đó — với hy vọng rằng ai
-đó, dù là ai, sẽ tìm được lời giải cho một trong những vấn đề lớn còn dang dở —
+chúng ta cũng đi làm với hy vọng khám phá ra điều gì đó - với hy vọng rằng ai
+đó, dù là ai, sẽ tìm được lời giải cho một trong những vấn đề lớn còn dang dở -
 và ngày hôm sau chúng ta lại trở về công việc với lòng hăng hái mới; và ngay cả
 khi không thành công, công việc của chúng ta cũng không uổng, vì trong những
 cố gắng ấy, trong những nỗ lực ấy, chúng ta đã tìm được những giờ thư thái chưa
 từng có, và chúng ta đã hướng năng lực của mình vào lợi ích của loài người.
 
-Chúng ta có thể — tùy ý, nếu các ngài muốn — cầm bất kỳ thí nghiệm nào trong số
+Chúng ta có thể - tùy ý, nếu các ngài muốn - cầm bất kỳ thí nghiệm nào trong số
 rất nhiều thí nghiệm có thể thực hiện với dòng điện xoay chiều; chỉ một vài thí
 nghiệm trong số đó, và không phải những cái nổi bật nhất, là đối tượng của buổi
 trình diễn tối nay; chúng đều thú vị như nhau, đều khơi gợi tư tưởng như nhau.
@@ -49,12 +49,12 @@ chân đỡ cách điện, tôi nắm lấy nó, và một nút bạch kim gắn
 Đây, gắn vào một dây dẫn, là một bóng đèn khác, khi tôi chạm vào đế kim loại của
  nó, nó đầy tràn những màu phát quang tuyệt đẹp.
 
-Đây lại một bóng nữa, khi ngón tay tôi chạm vào, nó hắt ra một bóng tối — bóng tối
+Đây lại một bóng nữa, khi ngón tay tôi chạm vào, nó hắt ra một bóng tối - bóng tối
 Crookes, của thanh điện cực bên trong nó.
 
 Đây, một lần nữa, khi tôi đứng trên bệ cách điện này, tôi đưa cơ thể vào tiếp xúc
-với một trong hai đầu cuộn thứ cấp của cuộn cảm ứng này — với đầu một sợi dây dài
-nhiều dặm — và các ngài thấy những luồng sáng bật ra từ đầu kia xa xôi, đầu đang
+với một trong hai đầu cuộn thứ cấp của cuộn cảm ứng này - với đầu một sợi dây dài
+nhiều dặm - và các ngài thấy những luồng sáng bật ra từ đầu kia xa xôi, đầu đang
 bị rung mạnh.
 
 Đây, một lần nữa nữa, tôi nối hai tấm lưới dây này vào hai đầu cuộn cảm ứng, đặt
@@ -72,10 +72,10 @@ Tôi xin hỏi, liệu có thể có một môn nghiên cứu nào thú vị hơ
 điện xoay chiều không?
 
 Trong tất cả những cuộc nghiên cứu ấy, trong tất cả những thí nghiệm ấy, thú vị
-quá, quá thú vị, suốt nhiều năm trở lại đây — kể từ khi nhà thí nghiệm vĩ đại nhất
-từng giảng bài trong hội trường này khám phá ra nguyên lý của nó — chúng ta luôn có
+quá, quá thú vị, suốt nhiều năm trở lại đây - kể từ khi nhà thí nghiệm vĩ đại nhất
+từng giảng bài trong hội trường này khám phá ra nguyên lý của nó - chúng ta luôn có
 một người bạn đồng hành, một thiết bị quen thuộc với tất cả mọi người, một món
-đồ chơi ngày trước, giờ là một thứ mang tầm quan trọng to lớn — cuộn cảm ứng. Không
+đồ chơi ngày trước, giờ là một thứ mang tầm quan trọng to lớn - cuộn cảm ứng. Không
 có thiết bị nào mà người làm điện học yêu quý hơn. Tôi dám nói, từ những người
 giỏi nhất trong các ngài xuống tới sinh viên chưa có kinh nghiệm, tới người thầy
 của các ngài, tất cả chúng ta đã trải qua nhiều giờ thú vị khi thí nghiệm với cuộn
@@ -133,14 +133,14 @@ hình thức những chổi lửa mạnh mẽ và những luồng sáng phát ra
 sợi dây thẳng gắn vào hai đầu của cuộn thứ cấp. (Hình 1.)
 
 Bây giờ hãy so sánh hiện tượng các ngài vừa chứng kiến này với phóng điện của máy
-Holtz hay máy Wimshurst — thiết bị thú vị khác, được nhà thí nghiệm yêu quý ấy.
+Holtz hay máy Wimshurst - thiết bị thú vị khác, được nhà thí nghiệm yêu quý ấy.
 Giữa các hiện tượng này có sự khác biệt như thế nào! Vậy mà nếu tôi đã bố trí
-đầy đủ những thứ cần thiết — điều mà lẽ ra rất dễ làm, nếu không phải vì chúng sẽ
-cản trở những thí nghiệm khác — thì tôi đã có thể tạo ra bằng cuộn dây này những
+đầy đủ những thứ cần thiết - điều mà lẽ ra rất dễ làm, nếu không phải vì chúng sẽ
+cản trở những thí nghiệm khác - thì tôi đã có thể tạo ra bằng cuộn dây này những
 tia lửa mà, nếu tôi giấu cuộn dây khỏi tầm nhìn của các ngài và chỉ để lộ hai núm
 điều khiển, thì ngay cả nhà quan sát tinh tế nhất trong các ngài cũng khó, nếu
 không phải là không thể, phân biệt với những tia lửa của máy cảm ứng tĩnh điện
-hay máy ma sát. Điều này có thể làm theo nhiều cách — chẳng hạn, bằng cách vận
+hay máy ma sát. Điều này có thể làm theo nhiều cách - chẳng hạn, bằng cách vận
 hành cuộn cảm ứng nạp tụ điện từ...
 
 <!-- PDF 27 · trang in 9 -->
@@ -154,7 +154,7 @@ từ máy ma sát hoặc máy cảm ứng tĩnh điện.
 
 ![Phóng điện giữa hai dây với tần số vài trăm nghìn mỗi giây](../assets/fig-p009-00.jpg)
 
-*Hình 1. — Phóng điện giữa hai dây, với tần số vài trăm nghìn mỗi giây.*
+*Hình 1. - Phóng điện giữa hai dây, với tần số vài trăm nghìn mỗi giây.*
 
 <!-- PDF 28 · trang in 10 -->
 
@@ -172,7 +172,7 @@ nghiệm hiện tại được chỉ ra ở Hình 2.
 
 ![Bắt chước tia lửa của máy Holtz](../assets/fig-p010-00.jpg)
 
-*Hình 2. — Bắt chước tia lửa của máy Holtz.*
+*Hình 2. - Bắt chước tia lửa của máy Holtz.*
 
 G là một máy phát xoay chiều chế tạc thông thường, cấp điện cho cuộn sơ cấp P của
 một cuộn cảm ứng, cuộn thứ cấp S của cuộn dây ấy...

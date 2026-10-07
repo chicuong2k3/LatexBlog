@@ -3,6 +3,7 @@ title: "Định luật vận động"
 summary: "Ba định luật nền tảng điều khiển cách vật thể giữ nguyên, thay đổi hoặc truyền chuyển động."
 slug: "dinh-luat-van-dong"
 number: 2
+status: hoan-thanh
 ---
 
 # Định luật I. Quán tính và chuyển động thẳng
@@ -10,17 +11,21 @@ Mọi vật thể kiên trì trong trạng thái đứng yên, hoặc chuyển �
 
 Các vật thể được bắn đi giữ nguyên chuyển động của chúng, trừ khi chuyển động ấy bị sức cản của không khí làm chậm lại hoặc bị trọng lực kéo xuống dưới.
 
-Một con quay có các bộ phận luôn bị lực kết dính kéo lệch khỏi chuyển động thẳng, nhưng nó không ngừng quay, trừ khi sự quay ấy bị không khí làm chậm lại. Những vật thể lớn hơn như các hành tinh và sao chổi, chuyển động trong những vùng có sức cản nhỏ hơn, giữ được cả chuyển động tiến triển lẫn chuyển động quay quanh trong thời gian lâu hơn nhiều.
+Một con quay có các bộ phận luôn bị lực kết dính kéo lệch khỏi chuyển động thẳng, nhưng nó không ngừng quay, trừ khi sự quay ấy bị không khí làm chậm lại. Những vật thể lớn hơn như các hành tinh và sao chổi, chuyển động trong những vùng có sức cản nhỏ hơn, giữ được cả chuyển động tiến triển lẫn chuyển động theo vòng tròn trong thời gian lâu hơn nhiều.
 
 > **[Chú giải]**
+>
 > **Không có gì làm thay đổi thì chuyển động không tự thay đổi**
+>
 > Đây là điều đã xuất hiện ở Định nghĩa III dưới tên *vis insita* hay quán tính. Một vật đang đứng yên sẽ tiếp tục đứng yên; một vật đang chuyển động thẳng đều sẽ tiếp tục như vậy, trừ khi có lực làm nó tăng tốc, chậm lại hoặc đổi hướng.
 > Theo cách viết hiện đại, nếu nhiều lực cùng tác dụng lên một vật thì điều cần xét là tổng của chúng:
 > $$
 > \sum \vec F=0\qquad\Rightarrow\qquad \vec v=\text{không đổi}.
 > $$
 > Vì vậy "không thay đổi chuyển động" không nhất thiết có nghĩa là hoàn toàn không có lực. Một cuốn sách nằm yên trên bàn vẫn chịu trọng lực kéo xuống và lực của mặt bàn đẩy lên; hai lực cân bằng nên trạng thái chuyển động không thay đổi.
+>
 > **Vì sao con quay không mâu thuẫn với định luật này?**
+>
 > Mỗi phần của con quay không đi theo đường thẳng: các phần của vật giữ chúng lại trong chuyển động quay. Newton đưa ví dụ này để cho thấy lực có thể liên tục **đổi hướng** chuyển động mà không nhất thiết làm vật lập tức ngừng chuyển động.
 > Còn sức cản của không khí làm con quay quay chậm dần. Nếu giảm những tác động cản trở ấy, chuyển động được duy trì lâu hơn. Đó cũng là ý của ví dụ hành tinh và sao chổi ở câu cuối.
 
@@ -32,7 +37,9 @@ Nếu một lực sinh ra một lượng chuyển động nào đó, thì lực 
 Lượng chuyển động mới luôn hướng theo cùng phương với lực sinh ra nó. Nếu vật thể đã chuyển động từ trước, lượng chuyển động mới sẽ được cộng vào chuyển động cũ nếu cùng hướng, trừ đi nếu ngược hướng; còn nếu hai chuyển động theo những hướng xiên nhau, chúng sẽ kết hợp để tạo thành một chuyển động mới được xác định bởi cả hai.
 
 > **[Chú giải]**
+>
 > **"Chuyển động" ở đây là động lượng, không chỉ là vận tốc**
+>
 > Ở Định nghĩa II, Newton đã gọi
 > $$
 > \vec p=m\vec v
@@ -47,12 +54,14 @@ Lượng chuyển động mới luôn hướng theo cùng phương với lực s
 > \vec F_{\text{net}}=m\vec a.
 > $$
 > Cần để ý rằng $F=ma$ không phải nguyên văn điều Newton vừa viết. Nó là cách viết hiện đại thu được khi động lượng là $m\vec v$ và khối lượng không đổi.
+>
 > **Lực lớn hơn làm động lượng thay đổi nhiều hơn**
+>
 > Nếu cùng tác dụng trong một khoảng thời gian, lực gấp đôi tạo ra độ thay đổi động lượng gấp đôi. Ta có thể viết điều này ngày nay dưới dạng
 > $$
 > \Delta\vec p=\int \vec F\,dt.
 > $$
-> Vì vậy một lực yếu tác dụng lâu cũng có thể tạo ra cùng độ thay đổi động lượng như một lực mạnh tác dụng trong thời gian ngắn hơn.
+> Nếu lực không đổi suốt khoảng thời gian $\Delta t$ thì tích phân ấy rút lại thành $\Delta\vec p=\vec F\,\Delta t$. Lực gấp đôi thì độ thay đổi động lượng gấp đôi trong cùng một khoảng thời gian.
 > Câu cuối còn nói thêm về **hướng**. Nếu lực cùng hướng với chuyển động hiện có, vật tăng động lượng theo hướng ấy; nếu ngược hướng, nó giảm; nếu lực nghiêng sang một bên, chuyển động mới là kết quả của việc ghép hai hướng lại với nhau.
 > Chính vì vậy lực không chỉ có thể làm một vật nhanh hơn hoặc chậm hơn. Nó còn có thể làm vật **đổi hướng**.
 
@@ -61,18 +70,20 @@ Mọi tác dụng luôn có một phản tác dụng bằng và ngược lại. 
 
 Bất cứ vật thể nào ép hoặc kéo một vật thể khác cũng bị vật thể kia ép hoặc kéo ngược lại với cùng một lực.
 
-Nếu bạn dùng ngón tay ấn một hòn đá, ngón tay cũng bị hòn đá ấn ngược lại. Nếu một con ngựa kéo một hòn đá được buộc bằng dây, con ngựa cũng bị kéo ngược về phía hòn đá.
+Nếu ta dùng ngón tay ấn một hòn đá thì ngón tay cũng bị hòn đá ấn ngược lại. Nếu một con ngựa kéo một hòn đá được buộc bằng dây, con ngựa (nếu tôi được phép nói vậy) cũng bị kéo ngược về phía hòn đá.
 
-Dây bị kéo căng kéo con ngựa về phía hòn đá đúng bằng mức độ mà nó kéo hòn đá về phía con ngựa. Nó cản trở sự tiến lên của vật này đúng bằng mức độ nó thúc đẩy vật kia tiến lên.
+Dây bị kéo căng, do cùng một nỗ lực tự giãn ra, kéo con ngựa về phía hòn đá đúng bằng mức độ mà nó kéo hòn đá về phía con ngựa. Nó cản trở sự tiến lên của vật này đúng bằng mức độ nó thúc đẩy vật kia tiến lên.
 
-Nếu một vật thể va vào một vật thể khác và bằng lực của mình làm thay đổi chuyển động của vật ấy, thì chính nó cũng chịu một sự thay đổi bằng như vậy trong chuyển động của mình nhưng theo hướng ngược lại, do lực của vật kia.
+Nếu một vật thể va vào một vật thể khác và bằng lực của mình làm thay đổi chuyển động của vật ấy, thì chính nó cũng chịu một sự thay đổi bằng như vậy trong chuyển động của mình nhưng theo hướng ngược lại, vì hai áp lực tương hỗ bằng nhau.
 
 Những thay đổi do hai tác dụng ấy tạo ra bằng nhau, không phải về vận tốc mà về lượng chuyển động, với điều kiện các vật thể không bị cản trở bởi những tác động khác.
 
 Vì lượng chuyển động thay đổi bằng nhau, nên những thay đổi vận tốc theo hai hướng ngược nhau sẽ tỉ lệ nghịch với lượng vật chất của các vật thể. Định luật này cũng đúng đối với lực hút, như sẽ được trình bày trong Học luận sau đây.
 
 > **[Chú giải]**
+>
 > **Tác dụng và phản tác dụng nằm trên hai vật khác nhau**
+>
 > Cách viết quen thuộc ngày nay là
 > $$
 > \vec F_{A\to B}=-\vec F_{B\to A}.
@@ -80,7 +91,9 @@ Vì lượng chuyển động thay đổi bằng nhau, nên những thay đổi 
 > Nếu ngón tay đẩy hòn đá sang phải, hòn đá đồng thời đẩy ngón tay sang trái với lực bằng như vậy.
 > Vì hai lực tác dụng lên **hai vật khác nhau** nên chúng không "triệt tiêu nhau" trên một vật. Đây là chỗ rất dễ nhầm với cân bằng lực.
 > Chẳng hạn, một người đứng yên trên sàn chịu trọng lực kéo xuống và lực của sàn đẩy lên. Hai lực ấy cùng tác dụng lên **người** nên có thể cân bằng nhau. Chúng không phải cặp tác dụng–phản tác dụng của nhau.
+>
 > **"Bằng nhau không phải về vận tốc mà về lượng chuyển động"**
+>
 > Đây là lý do một vật nhẹ có thể thay đổi vận tốc nhiều hơn một vật nặng khi chúng tương tác với nhau.
 > Newton nói sự thay đổi lượng chuyển động của hai vật bằng nhau và ngược hướng. Theo ký hiệu ngày nay:
 > $$
@@ -92,8 +105,6 @@ Vì lượng chuyển động thay đổi bằng nhau, nên những thay đổi 
 > $$
 > cùng một độ thay đổi động lượng sẽ làm vật có khối lượng nhỏ thay đổi vận tốc nhiều hơn.
 > Từ đây Newton sẽ suy ra rằng khi chỉ xét các tương tác bên trong một hệ, lượng chuyển động mất đi ở vật này được truyền sang vật kia. Trong nguyên bản, kết quả ấy được trình bày thành một hệ quả riêng ngay sau ba định luật.
-> **[Ghi chú bản thảo]**
-> Trong *Principia* nguyên bản, giữa Định luật III và Học luận dưới đây còn có sáu hệ quả. Hai hệ quả đầu nói về việc ghép và phân tích các chuyển động/lực theo hình bình hành. Vì phần hiện tại chưa chép lại các hệ quả ấy, khi Newton nhắc đến "hai hệ quả đầu" trong Học luận, ông đang nói tới phần bị lược ở đây.
 
 # Học luận sau các định luật
 Cho đến đây tôi đã trình bày những nguyên lý được các nhà toán học công nhận và được nhiều thực nghiệm xác nhận.
@@ -102,7 +113,7 @@ Nhờ hai định luật đầu và hai hệ quả đầu, Galileo đã tìm ra 
 
 Khi một vật thể rơi, trọng lực đều tác dụng như nhau trong những khoảng thời gian bằng nhau và sinh ra những phần vận tốc bằng nhau; vì vậy sau toàn bộ thời gian, vận tốc sinh ra tỉ lệ với thời gian.
 
-Quãng đường đi được là kết quả của vận tốc và thời gian kết hợp với nhau, vì thế nó tăng theo bình phương của thời gian.
+Quãng đường đi được trong những khoảng thời gian tỉ lệ là kết quả của vận tốc và thời gian kết hợp với nhau, vì thế nó tăng theo bình phương của thời gian.
 
 Khi một vật thể được ném lên trên, trọng lực đều lấy đi những phần vận tốc tỉ lệ với thời gian. Thời gian cần để lên tới độ cao lớn nhất vì vậy tỉ lệ với vận tốc ban đầu bị lấy đi, còn độ cao đạt được tăng theo bình phương của vận tốc ấy.
 
@@ -110,29 +121,39 @@ Nếu một vật thể được ném theo một phương bất kỳ, chuyển �
 
 Ví dụ, nếu vật thể $A$, chỉ với chuyển động do cú ném, có thể đi từ $A$ tới $B$ trong một thời gian đã cho, và chỉ với chuyển động rơi có thể đi từ $A$ tới $C$ trong cùng thời gian ấy, hãy hoàn thành hình bình hành $ABDC$.
 
-Với hai chuyển động kết hợp, cuối khoảng thời gian vật thể sẽ ở $D$. Đường cong $AED$ mà nó vạch ra là một parabol; $AB$ là tiếp tuyến của đường ấy tại $A$, còn $BD$ tỉ lệ với bình phương của $AB$.
+Với hai chuyển động kết hợp, cuối khoảng thời gian vật thể sẽ ở $D$. Đường cong $AED$ mà nó vạch ra là một parabol; $AB$ là tiếp tuyến của đường ấy tại $A$, còn tung độ $BD$ tỉ lệ với bình phương của $AB$.
+
+![Hình bình hành $ABDC$ và đường parabol $AED$](../assets/principia-090a-parabola.png)
+
+*Hình 1. Hình bình hành $ABDC$ dựng trên hai chuyển động thành phần. Vật thể ném từ $A$ vạch đường parabol $AED$ tới $D$; $AB$ là tiếp tuyến tại $A$, còn tung độ $BD$ tỉ lệ với bình phương của $AB$. (trích từ bản scan 1846, trang 90)*
 
 Những kết quả đã được chứng minh về thời gian dao động của con lắc cũng dựa trên chính các định luật và hệ quả ấy, và được thực nghiệm hằng ngày của đồng hồ quả lắc xác nhận.
 
-Trên cùng những nguyên lý ấy, cộng thêm Định luật III, Christopher Wren, John Wallis và Christiaan Huygens — những nhà hình học hàng đầu thời đó — đã độc lập tìm ra các quy tắc về va chạm và phản xạ của những vật thể cứng, rồi gần như đồng thời thông báo các kết quả ấy cho Hội Hoàng gia và hoàn toàn thống nhất với nhau về những quy tắc này.
+Trên cùng những nguyên lý ấy, cộng thêm Định luật III, Christopher Wren, John Wallis và Christiaan Huygens - những nhà hình học hàng đầu thời đó - đã độc lập tìm ra các quy tắc về va chạm và phản xạ của những vật thể cứng, rồi gần như đồng thời thông báo các kết quả ấy cho Hội Hoàng gia và hoàn toàn thống nhất với nhau về những quy tắc này.
 
 Wallis là người công bố trước, sau đó tới Wren và cuối cùng là Huygens.
 
 Wren cũng đã kiểm chứng kết quả trước Hội Hoàng gia bằng thí nghiệm con lắc, và Mariotte sau đó dành cả một tác phẩm để trình bày đầy đủ chủ đề ấy.
 
 > **[Chú giải]**
+>
 > **"Tỉ số kép của thời gian" nghĩa là bình phương của thời gian**
-> Cách nói này cổ. Newton đang nói kết quả quen thuộc của sự rơi với gia tốc không đổi:
+>
+> Newton đang nói kết quả quen thuộc của sự rơi với gia tốc không đổi:
 > $$
 > s\propto t^2.
 > $$
 > Nếu thời gian rơi tăng gấp đôi thì quãng đường rơi tăng gấp bốn; thời gian gấp ba thì quãng đường tăng gấp chín.
 > Đoạn về vật bị ném cũng chỉ là việc ghép hai chuyển động: chuyển động theo hướng ném và chuyển động rơi do trọng lực. Với trọng lực đều và bỏ qua sức cản không khí, kết quả là một parabol.
-> Đây cũng giải thích tại sao Newton nhắc tới "hai hệ quả đầu": trước Học luận, ông đã dùng hình bình hành để trình bày cách hai chuyển động theo hai hướng khác nhau kết hợp với nhau.
+> Đây cũng giải thích tại sao Newton nhắc tới "hai hệ quả đầu". Trong bản in 1846, sáu hệ quả nằm ngay giữa Định luật III và Học luận, nên lúc viết Học luận, quy tắc hình bình hành ghép hai chuyển động vừa được trình bày xong. Bản dịch này tách sáu hệ quả thành chương 03 đến 07, tức là sau chương này, nên quy tắc ấy sẽ gặp ở Hệ quả I, chương 03.
 
 Nhưng để thí nghiệm va chạm khớp chính xác với lý thuyết, phải tính đến cả sức cản của không khí lẫn tính đàn hồi của những vật thể va chạm.
 
-Cho hai vật thể hình cầu $A$, $B$ treo bằng hai dây song song và dài bằng nhau $AC$, $BD$, từ hai tâm $C$, $D$. Với các tâm và bán kính ấy, hãy vẽ hai nửa đường tròn $EAF$, $GBH$.
+Cho hai vật thể hình cầu $A$, $B$ treo bằng hai dây song song và dài bằng nhau $AC$, $BD$, từ hai tâm $C$, $D$. Với các tâm và bán kính ấy, hãy vẽ hai nửa đường tròn $EAF$, $GBH$, bị chia đôi bởi hai bán kính $CA$, $DB$.
+
+![Hai con lắc $A$ và $B$, với hai nửa đường tròn $EAF$ và $GBH$](../assets/principia-090b-pendulum.png)
+
+*Hình 2. Hai vật thể cầu $A$, $B$ treo bằng hai dây song song và dài bằng nhau từ hai tâm $C$, $D$; hai nửa đường tròn $EAF$, $GBH$ là đường đi của chúng. Các mốc $R$, $S$, $T$, $V$ ghi vị trí của $A$ trong lần thả đầu; các mốc $l$, $k$, $v$, $s$ ghi vị trí của $B$ và các điểm hiệu chỉnh sau va chạm. (trích từ bản scan 1846, trang 90)*
 
 Đưa vật thể $A$ tới một điểm $R$ bất kỳ trên cung $EAF$ rồi, sau khi đưa vật thể $B$ sang bên, thả nó xuống. Sau một lần dao động, giả sử nó trở lại điểm $V$.
 
@@ -160,7 +181,7 @@ Bằng cách tương tự, phải hiệu chỉnh điểm $k$ mà $B$ đi tới v
 
 Bằng cách này, ta có thể xử lý thí nghiệm gần như thể nó thực sự được tiến hành trong chân không.
 
-Cuối cùng, lấy lượng vật chất của $A$ nhân với dây cung $TA$, đại diện cho vận tốc của nó, để có lượng chuyển động của $A$ ngay trước va chạm; rồi nhân với dây cung $tA$ để có lượng chuyển động ngay sau va chạm.
+Cuối cùng, lấy tích (nếu tôi được phép nói vậy) của lượng vật chất $A$ với dây cung $TA$, đại diện cho vận tốc của nó, để có lượng chuyển động của $A$ ngay trước va chạm; rồi nhân với dây cung $tA$ để có lượng chuyển động ngay sau va chạm.
 
 Tương tự, lấy lượng vật chất của $B$ nhân với dây cung $Bl$ để có lượng chuyển động của nó ngay sau va chạm.
 
@@ -172,7 +193,7 @@ Tôi luôn nhận thấy, trong giới hạn sai số không quá ba inch trong 
 
 Ví dụ, nếu vật thể $A$ va vào vật thể $B$ đang đứng yên với chín phần lượng chuyển động, rồi mất bảy phần và tiếp tục đi với hai phần, thì $B$ nhận đúng bảy phần ấy.
 
-Nếu hai vật đi ngược chiều nhau, $A$ với mười hai phần và $B$ với sáu phần, rồi sau va chạm $A$ bật ngược lại với hai phần và $B$ bật ngược lại với tám phần, thì lượng thay đổi ở mỗi bên là mười bốn phần.
+Nếu hai vật đi ngược chiều nhau, $A$ với mười hai phần và $B$ với sáu phần, rồi sau va chạm $A$ bật ngược lại với hai phần và $B$ bật ngược lại với tám phần, thì lượng thay đổi ở mỗi bên là mười bốn phần. Vì từ chuyển động của $A$, lấy đi mười hai phần thì không còn gì; lấy đi thêm hai phần nữa thì sinh ra một chuyển động hai phần theo chiều ngược lại. Còn từ chuyển động sáu phần của $B$, lấy đi mười bốn phần thì sinh ra tám phần theo chiều ngược lại.
 
 Nếu cả hai cùng đi theo một hướng, $A$ nhanh hơn với mười bốn phần, $B$ chậm hơn với năm phần, rồi sau va chạm $A$ đi với năm phần và $B$ với mười bốn phần, thì chín phần lượng chuyển động đã được truyền từ $A$ sang $B$.
 
@@ -184,13 +205,13 @@ Sai số một hoặc hai inch trong các phép đo có thể dễ dàng xuất 
 
 Mật độ không đều và cấu tạo không hoàn toàn đồng nhất của chính các vật thể cũng có thể gây sai số.
 
-Để tránh phản biện rằng quy tắc đang được kiểm tra giả định các vật thể tuyệt đối cứng hoặc ít nhất hoàn toàn đàn hồi — những vật thể không tồn tại trong tự nhiên — tôi nói thêm rằng những thí nghiệm trên thành công với vật mềm cũng như vật cứng và không phụ thuộc vào độ cứng tuyệt đối.
+Để tránh phản biện rằng quy tắc đang được kiểm tra giả định các vật thể tuyệt đối cứng hoặc ít nhất hoàn toàn đàn hồi - những vật thể không tồn tại trong tự nhiên - tôi nói thêm rằng những thí nghiệm trên thành công với vật mềm cũng như vật cứng và không phụ thuộc vào độ cứng tuyệt đối.
 
 Với những vật thể không hoàn toàn đàn hồi, chỉ cần giảm mức bật trở lại theo lượng đàn hồi của chúng.
 
-Theo lý thuyết của Wren và Huygens, những vật thể hoàn toàn đàn hồi rời nhau với vận tốc tương đối bằng vận tốc tương đối khi chúng tiến lại gần.
+Theo lý thuyết của Wren và Huygens, những vật thể tuyệt đối cứng rời nhau với đúng vận tốc mà chúng gặp nhau. Điều ấy còn chắc chắn hơn với những vật thể hoàn toàn đàn hồi.
 
-Đối với vật thể không hoàn toàn đàn hồi, vận tốc tách ra nhỏ hơn.
+Đối với vật thể không hoàn toàn đàn hồi, vận tốc tách ra nhỏ hơn, giảm đi cùng với lực đàn hồi. Lực ấy, trừ khi các phần của vật thể bị bầm dập do va chạm hoặc bị giãn ra đôi chút như khi chịu nhát búa, là xác định và không đổi, theo như tôi nhận thấy; và nó làm cho hai vật rời nhau với một vận tốc tương đối, mà vận tốc ấy có một tỉ số cho trước với vận tốc tương đối lúc chúng gặp nhau.
 
 Tôi đã thử điều này với những quả bóng bằng len được cuộn và nén chặt. Trước tiên, bằng cách thả chúng như con lắc và đo độ bật lại, tôi xác định mức đàn hồi của chúng; sau đó dùng nó để dự đoán độ bật trong những va chạm khác, và các thí nghiệm sau phù hợp với những dự đoán ấy.
 
@@ -199,7 +220,9 @@ Các quả bóng len tách khỏi nhau với vận tốc tương đối khoảng
 Bằng cách ấy, Định luật III, xét đối với va chạm và phản xạ, được kiểm tra bằng một lý thuyết phù hợp với thực nghiệm.
 
 > **[Chú giải]**
+>
 > **Newton không bỏ qua sai số của thí nghiệm**
+>
 > Ông không nói con lắc thực tế hành xử đúng hệt mô hình lý tưởng. Ngay từ đầu, ông phải hiệu chỉnh hai thứ: sức cản của không khí và độ đàn hồi của vật va chạm.
 > Cách làm khá thực dụng: trước tiên đo con lắc khi chưa cho nó va vào vật khác để ước lượng phần chuyển động mất do không khí, rồi dùng kết quả ấy để hiệu chỉnh thí nghiệm va chạm.
 > Con số "sai số không quá ba inch" cũng là con số Newton tự báo cáo. Ba inch vào khoảng $7{,}6\ \mathrm{cm}$. Ông còn tự liệt kê các nguồn sai số như không thả được hai con lắc hoàn toàn đồng thời, khó đánh dấu điểm cao nhất sau va chạm và vật thể không đồng nhất.
@@ -229,16 +252,22 @@ Hãy dùng một mặt phẳng $EG$ cắt Trái Đất $FI$ thành hai phần $E
 
 Nếu dùng một mặt phẳng $HK$, song song với $EG$, chia phần lớn hơn $EGI$ thành $EGKH$ và $HKI$, sao cho $HKI$ bằng phần $EFG$ đã cắt ra trước đó, thì phần giữa $EGKH$ sẽ không có xu hướng do trọng lượng riêng nghiêng về phía nào mà sẽ ở cân bằng giữa hai phần ngoài.
 
+![Trái Đất bị hai mặt phẳng $EG$ và $HK$ cắt thành ba phần](../assets/principia-093-earth-parts.png)
+
+*Hình 3. Trái Đất $FI$ bị mặt phẳng $EG$ cắt thành hai phần $EGF$ và $EGI$; mặt phẳng $HK$, song song với $EG$, chia phần lớn hơn $EGI$ thành $EGKH$ và $HKI$. (trích từ bản scan 1846, trang 93)*
+
 Phần ngoài $HKI$ sẽ dùng toàn bộ trọng lượng của mình ép phần giữa về phía phần ngoài bên kia $EGF$.
 
 Vì vậy lực mà tổng $EGI=HKI+EGKH$ hướng về $EGF$ bằng trọng lượng của $HKI$, tức bằng trọng lượng tương hỗ của $EGF$.
 
-Do đó hai phần $EGI$ và $EGF$ hút nhau bằng nhau.
+Do đó hai phần $EGI$ và $EGF$ hút nhau bằng nhau, như điều tôi cần chứng minh.
 
 Nếu không như vậy, toàn bộ Trái Đất trôi tự do trong aether không cản sẽ phải tự chạy khỏi phía có trọng lượng lớn hơn và tăng tốc mãi mãi.
 
 > **[Chú giải]**
+>
 > **Newton đang mở rộng Định luật III từ va chạm sang lực hút**
+>
 > Với va chạm, hai vật trực tiếp ép nhau nên "tác dụng và phản tác dụng" khá dễ hình dung. Với lực hút thì hai vật không nhất thiết chạm nhau, vì vậy Newton dành riêng đoạn này để lập luận rằng hai phía vẫn phải tác dụng lên nhau bằng nhau.
 > Thí nghiệm nam châm và sắt là phép thử trực tiếp hơn: ông cho cả hai nổi để hệ có thể chuyển động tự do. Nếu một phía thật sự hút mạnh hơn phía kia, cả hệ có thể tự tăng tốc theo một hướng. Newton nói ông không quan sát thấy điều đó.
 > Đoạn chia Trái Đất thành $EGF$ và $EGI$ cũng theo cùng một ý: lực hút tương hỗ giữa hai phần phải bằng nhau.
@@ -256,9 +285,9 @@ Tương tự, với một ròng rọc hay hệ ròng rọc, lực của bàn tay
 
 Trong đồng hồ và những dụng cụ cấu tạo từ các bánh răng, các lực thúc và cản chuyển động có thể cân bằng nhau khi chúng tỉ lệ nghịch với vận tốc của những phần bánh răng mà chúng tác dụng lên.
 
-Lực ép của vít so với lực tay quay tay cầm có cùng tỉ số với vận tốc chuyển động tròn của tay cầm so với vận tốc tiến về phía trước của vít.
+Lực ép của vít so với lực tay quay tay cầm có cùng tỉ số với vận tốc chuyển động tròn của tay cầm, ở chỗ tay đè lên, so với vận tốc tiến về phía trước của vít.
 
-Lực mà một cái nêm ép hai phần gỗ ra xa nhau so với lực của búa tác dụng lên nêm có cùng quan hệ với quãng chuyển động của nêm và chuyển động của hai phần gỗ theo phương vuông góc với hai mặt của nêm.
+Lực mà một cái nêm ép hai phần gỗ ra xa nhau so với lực của búa tác dụng lên nêm có cùng quan hệ với quãng tiến của nêm theo hướng của lực do búa ấn vào nó, và vận tốc mà hai phần gỗ nhường theo phương vuông góc với hai mặt của nêm.
 
 Và cách xét tương tự áp dụng cho các máy móc khác.
 
@@ -279,7 +308,9 @@ Nếu tác dụng của tác nhân được đánh giá từ lực và vận t�
 Và trong chừng mực tác dụng được truyền qua dụng cụ ở giữa rồi cuối cùng tác dụng lên vật cản, hướng cuối cùng của tác dụng luôn ngược với hướng của phản tác dụng.
 
 > **[Chú giải]**
+>
 > **Máy đổi lực lấy chuyển động**
+>
 > Ý trực giác của đoạn dài này khá đơn giản. Một máy có thể giúp ta dùng **lực nhỏ hơn** để thắng một lực lớn hơn, nhưng đổi lại phần ta tác dụng phải chuyển động **nhanh hơn hoặc xa hơn**.
 > Ví dụ quen thuộc là tay đòn: đặt tay xa trục quay hơn thì cần ít lực hơn để nâng vật, nhưng bàn tay phải đi qua một quãng đường lớn hơn.
 > Hay với vít, tay cầm đi một vòng khá dài trong khi con vít chỉ tiến về phía trước một đoạn rất nhỏ. Chính sự chênh lệch chuyển động ấy cho phép lực ép của vít lớn hơn lực tay.

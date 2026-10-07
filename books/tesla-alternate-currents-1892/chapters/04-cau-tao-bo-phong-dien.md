@@ -31,8 +31,8 @@ nối với nhau, và điểm nối giữa hai nửa được đặt bên trên 
 
 <!-- PDF 35 · trang in 17 -->
 
-...— tức là khi cả hai đầu T₁ T₁ của nó được nối với những vật hay thiết bị có
-dung tích bằng nhau — thì rất ít khi xảy ra hiện tượng phá qua sang cuộn sơ cấp, và
+...- tức là khi cả hai đầu T₁ T₁ của nó được nối với những vật hay thiết bị có
+dung tích bằng nhau - thì rất ít khi xảy ra hiện tượng phá qua sang cuộn sơ cấp, và
 lớp cách điện giữa cuộn sơ cấp với cuộn thứ cấp không cần dày. Khi dùng cuộn dây,
 nên gắn vào cả hai đầu những thiết bị có dung tích gần bằng nhau, bởi nếu dung
 tích của hai đầu không bằng nhau thì tia lửa dễ nhảy sang cuộn sơ cấp. Để tránh điều
@@ -74,7 +74,7 @@ với đường nối hai núm A và B, và tạo ra một từ trường mạnh
 
 ![Cách sắp đặt bộ phóng điện cải tiến và nam châm](../assets/fig-p018-00.jpg)
 
-*Hình 4. — Cách sắp đặt của bộ phóng điện cải tiến và nam châm.*
+*Hình 4. - Cách sắp đặt của bộ phóng điện cải tiến và nam châm.*
 
 <!-- PDF 37 · trang in 19 -->
 
@@ -112,18 +112,18 @@ nhiều khó khăn khi làm việc với một ống đã hút chân không.
 
 ![Máy phát xoay chiều tần số thấp, cuộn dây thường, các bình tụ và bộ phóng điện phá vỡ](../assets/fig-p020-00.jpg)
 
-*Hình 5. — Cách sắp đặt với máy phát xoay chiều tần số thấp và bộ phóng điện cải tiến.*
+*Hình 5. - Cách sắp đặt với máy phát xoay chiều tần số thấp và bộ phóng điện cải tiến.*
 
 Dạng bộ phóng điện thứ hai dùng trong những thí nghiệm này và những thí nghiệm
 tương tự được chỉ ra ở Hình 6 và Hình 7. Nó gồm một số mảnh đồng c c, mỗi mảnh
-gồm một phần giữa hình cầu m, bên dưới có một phần chân e — phần chân này chỉ dùng
-để kẹp mảnh ấy vào mỏ cưa khi đánh bóng bề mặt phóng điện — và một thân trên, gồm
+gồm một phần giữa hình cầu m, bên dưới có một phần chân e - phần chân này chỉ dùng
+để kẹp mảnh ấy vào mỏ cưa khi đánh bóng bề mặt phóng điện - và một thân trên, gồm
 một vành có ren f, bên trên là một thân có ren l mang theo đai ốc n, nhờ đó một sợi
 dây...
 
 ![Bộ phóng điện nhiều khe](../assets/fig-p020-01.jpg)
 
-*Hình 6. — Bộ phóng điện nhiều khe.*
+*Hình 6. - Bộ phóng điện nhiều khe.*
 
 <!-- PDF 39 · trang in 21 -->
 
@@ -135,7 +135,7 @@ thấy một cái) xuyên qua hai đầu của dải.
 
 ![Bộ phóng điện cải tiến với các rãnh phóng điện](../assets/fig-p021-00.jpg)
 
-*Hình 7. — Bộ phóng điện cải tiến, cho thấy cách kẹp và các rãnh phóng điện.*
+*Hình 7. - Bộ phóng điện cải tiến, cho thấy cách kẹp và các rãnh phóng điện.*
 
 Trong khi dùng loại bộ phóng điện này, tôi đã tìm ra ba ưu điểm chính so với dạng
 thông thường. **Thứ nhất**, độ bền cách điện của một tổng chiều rộng không khí xác

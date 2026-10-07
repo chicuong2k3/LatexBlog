@@ -47,7 +47,7 @@ Bài toán Lemma này cũng được Apollonius giải trong sách *Tactions*, �
 >
 > **Ông dẫn lại công trình cổ của Apollonius**
 >
-> Ông cần giải bài toán dựng quỹ đạo từ ba điểm quan sát, và ông nhận ra nó quy về một bài toán hình học thuần tuý về hiệu khoảng cách. Công trình của Apollonius — được Vieta khôi phục — cho thấy ông làm việc trong một truyền thống toán học còn sống, chứ không phải khám phá từ chỗ trống.
+> Ông cần giải bài toán dựng quỹ đạo từ ba điểm quan sát, và ông nhận ra nó quy về một bài toán hình học thuần tuý về hiệu khoảng cách. Công trình của Apollonius - được Vieta khôi phục - cho thấy ông làm việc trong một truyền thống toán học còn sống, chứ không phải khám phá từ chỗ trống.
 >
 > Đây là nguyên lý của **định vị bằng sai khác thời gian đến**: máy thu đo thời gian tín hiệu từ các trạm phát đã biết, lấy hiệu thời gian đến, nhân với tốc độ sóng, rồi giải hệ hypebol. Hình học năm thế kỷ XVII vẫn là phần lõi của một công nghệ dùng hằng ngày.
 
@@ -95,7 +95,7 @@ Nhà hình học xuất sắc M. de la Hire cũng đã giải bài toán này g�
 >
 > Lý do: **quỹ đạo là một đường liên tục**. Một vật thể không thể nhảy từ nhánh này sang nhánh kia. Câu đó là một lập luận về tính liên thông, viết bằng ngôn ngữ thời kỳ XVII.
 >
-> Cách dựng trong Học luận chỉ cần một tỷ số duy nhất để phân loại: so sánh $GA$ với $AS$. Lớn hơn thì elip, bằng thì parabol, nhỏ hơn thì hypebol — và điểm $a$ đổi phía qua đường thẳng $GP$ đúng khi hình chuyển từ elip sang hypebol. Đó là cách Newton phân biệt ba loại quỹ đạo mà không cần vẽ hình.
+> Cách dựng trong Học luận chỉ cần một tỷ số duy nhất để phân loại: so sánh $GA$ với $AS$. Lớn hơn thì elip, bằng thì parabol, nhỏ hơn thì hypebol - và điểm $a$ đổi phía qua đường thẳng $GP$ đúng khi hình chuyển từ elip sang hypebol. Đó là cách Newton phân biệt ba loại quỹ đạo mà không cần vẽ hình.
 >
 > **Ông đang nghĩ về tính liên tục của chuyển động**
 >

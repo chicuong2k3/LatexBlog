@@ -75,6 +75,6 @@ Nếu nước ấy trở lại thành chất lỏng, nó sẽ làm lực cản t
 >
 > Ông cần một bài toán có lời giải bằng hình học thuần, nên ông đóng băng phần chất lỏng bị đẩy phía trước để nó thành một vật thể rắn đã biết. Ông còn tự đánh giá: nếu để nguyên là chất lỏng thì lực cản lớn hơn một chút, nhưng chênh lệch rất nhỏ, vì bề mặt lồi của quả cầu tạo ra gần như cùng một tác dụng với việc đóng băng.
 >
-> Cách làm này cho ta đúng các quy luật tỷ lệ — $F\propto\rho v^2 d^2$ — nhưng không cho **hằng số**. Và đó đúng là giới hạn của lý lẽ hình học: hệ số lực cản của một quả cầu trong không khí là con số thực nghiệm, phụ thuộc số Reynolds, tức phụ thuộc đúng những thuộc tính chất lỏng mà Newton đã đóng băng. Nói cách khác, hình học quyết định **tỷ lệ**, còn vật lí quyết định **con số**.
+> Cách làm này cho ta đúng các quy luật tỷ lệ - $F\propto\rho v^2 d^2$ - nhưng không cho **hằng số**. Và đó đúng là giới hạn của lý lẽ hình học: hệ số lực cản của một quả cầu trong không khí là con số thực nghiệm, phụ thuộc số Reynolds, tức phụ thuộc đúng những thuộc tính chất lỏng mà Newton đã đóng băng. Nói cách khác, hình học quyết định **tỷ lệ**, còn vật lí quyết định **con số**.
 
 *Các hệ số và ký hiệu trong Proposition XXXVIII–XXXIX được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*

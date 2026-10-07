@@ -12,7 +12,7 @@ quả cầu ấy có một cổ n, được trang bị...
 
 ![Hai kiểu bóng đèn: Hình 12 và Hình 13](../assets/fig-p044-00.jpg)
 
-*Hình 12 và Hình 13. — Bóng đèn dùng để tạo ra chổi lông quay.*
+*Hình 12 và Hình 13. - Bóng đèn dùng để tạo ra chổi lông quay.*
 
 ...với một dải ống, một quả cầu nhỏ s được hàn kín vào đó, sao cho tạo thành hai khoang
 hoàn toàn độc lập, như hình vẽ chỉ ra. Khi bóng đèn được dùng, cổ n được phủ một lớp
@@ -29,12 +29,12 @@ quan trọng nhất là quả cầu s phải được đặt ở tâm quả cầ
 
 ![Các dạng và các giai đoạn của chổi lông quay](../assets/fig-p045-00.jpg)
 
-*Hình 14. — Các dạng và các giai đoạn của chổi lông quay.*
+*Hình 14. - Các dạng và các giai đoạn của chổi lông quay.*
 
 Hình 14, 15 và 16 chỉ ra những dạng khác nhau, hay các giai đoạn khác nhau, của chổi
 lông. Hình 14 cho thấy chổi lông lúc nó xuất hiện đầu tiên trong một bóng đèn có sẵn
-đầu dẫn dẫn điện; nhưng vì trong một bóng đèn như thế nó rất nhanh chóng biến mất —
-thường chỉ sau vài phút — nên tôi sẽ chỉ giới hạn sự mô tả của mình vào hiện tượng
+đầu dẫn dẫn điện; nhưng vì trong một bóng đèn như thế nó rất nhanh chóng biến mất -
+thường chỉ sau vài phút - nên tôi sẽ chỉ giới hạn sự mô tả của mình vào hiện tượng
 như quan sát được trong một bóng đèn không có điện cực dẫn điện. Hiện tượng ấy được
 quan sát dưới những điều kiện sau đây:
 
@@ -51,7 +51,7 @@ khi dòng điện chạy trong một thời gian...
 
 ![Hai giai đoạn của chổi lông: Hình 15 và Hình 16](../assets/fig-p046-00.jpg)
 
-*Hình 15 và Hình 16. — Hai giai đoạn khác nhau của chổi lông.*
+*Hình 15 và Hình 16. - Hai giai đoạn khác nhau của chổi lông.*
 
 <!-- PDF 65 · trang in 47 -->
 

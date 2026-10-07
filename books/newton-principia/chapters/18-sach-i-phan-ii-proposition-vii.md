@@ -57,7 +57,7 @@ Vì vậy, theo Hệ quả 3 và 5 của Proposition VI, lực hướng tâm t�
 >
 > **Thay đổi vị trí tâm lực có thể đổi cả số mũ**
 >
-> Ông cần một bài học về **cách đặt câu hỏi**, không chỉ về kết quả. Bằng việc cho tâm lực ở một vị trí bất kỳ, ông buộc người đọc thấy rằng thay đổi *vị trí của nguồn lực* đôi khi làm đổi cả *số mũ* của quy luật. Lực hút về một tâm ở xa và lực hút về một tâm nằm trên chính quỹ đạo không phải hai trường hợp nhỏ của cùng một thứ — chúng là hai trường khác hẳn nhau.
+> Ông cần một bài học về **cách đặt câu hỏi**, không chỉ về kết quả. Bằng việc cho tâm lực ở một vị trí bất kỳ, ông buộc người đọc thấy rằng thay đổi *vị trí của nguồn lực* đôi khi làm đổi cả *số mũ* của quy luật. Lực hút về một tâm ở xa và lực hút về một tâm nằm trên chính quỹ đạo không phải hai trường hợp nhỏ của cùng một thứ - chúng là hai trường khác hẳn nhau.
 >
 > Lực $1/r^5$ ứng với thế năng tỷ lệ $1/r^4$, dốc hơn hẳn lực hút vô cùng xa và lực Coulomb. Bằng chứng toán học mà Hệ quả 1 cung cấp vẫn là bằng chứng hữu dụng: **cấp của lực phụ thuộc vào hình học của tình huống, không chỉ vào khoảng cách**.
 
@@ -89,6 +89,6 @@ Lực trong quỹ đạo bất kỳ tại điểm $P$ cũng giống lực trong 
 >
 > **Một nguyên tắc giảm thiểu để làm việc được**
 >
-> Nếu quỹ đạo không tròn, việc tính lực sẽ đòi hỏi xét toàn bộ hình dạng đường. Nguyên tắc osculating cho phép ông thay mọi quỹ đạo bằng một đường tròn duy nhất, đúng tại chỗ đang xét, và mọi bài toán quỹ đạo về sau — từ quỹ đạo elip tới quỹ đạo hyperbol — đều xây trên nền này.
+> Nếu quỹ đạo không tròn, việc tính lực sẽ đòi hỏi xét toàn bộ hình dạng đường. Nguyên tắc osculating cho phép ông thay mọi quỹ đạo bằng một đường tròn duy nhất, đúng tại chỗ đang xét, và mọi bài toán quỹ đạo về sau - từ quỹ đạo elip tới quỹ đạo hyperbol - đều xây trên nền này.
 >
 > Nguyên tắc này là hình học của tính cục bộ: ở mỗi điểm, trạng thái chuyển động cùng với trường tại điểm ấy đã đủ để xác định chuyển động tiếp theo, không cần biết quỹ đạo trước. Đó là lý do các phương trình vi phân mô tả được vật lí. Người đọc hôm nay còn thấy nó nơi khác nữa: trong hình học phẳng cong, và trong cơ học Lagrange, nơi toạ độ cong chính là cách viết lại toàn bộ vấn đề trong từ ngữ ấy.

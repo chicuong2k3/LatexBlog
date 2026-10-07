@@ -55,8 +55,14 @@ MUST:
   (e.g. `Nhận ra được điểm chung này, coi như các em đã bước sang đại số tuyến tính`).
 - Writing skills (MANDATORY): ALWAYS run `no-ai-slop` (detect, then edit) and `stop-slop`
   (quick checks + 5-dimension scoring, revise if below 35/50) on every `posts/*.{tex,md}` draft
-  before delivering. Repo conventions in this file override skill defaults on conflict:
-  `---` is normal Vietnamese punctuation (not an em-dash crutch); bilingual glosses and
+  before delivering.
+- Punctuation (MANDATORY): NEVER use the em dash character `—` (U+2014) in prose. Write `-`
+  instead. In `.tex` posts, `---` also renders as an em dash, so write `-` there too; the
+  `%---` frontmatter delimiters are the only exception. The same rule applies to the book
+  chapters under `books/*/chapters/` and the book intros `books/*/book.md`, on both sides of
+  a clause. `tools/check_book_callouts.py --fidelity` normalizes dashes before comparing, so
+  changing them never shows up as a translation deviation.
+- Repo conventions in this file override skill defaults on conflict: bilingual glosses and
   quoted historical notes are content, never clutter.
 
 NEVER shrink scope silently, and NEVER invent new content.

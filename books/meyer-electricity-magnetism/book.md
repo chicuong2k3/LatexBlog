@@ -15,7 +15,7 @@ Bản dịch này theo đúng bản in:
 - **Burndy Library Publication No. 27**, Norwalk, Connecticut, **1972**.
 - Thiết kế bởi *The MIT Press Design Department*, đóng chữ *IBM Composer Bodoni*
   bởi Science Press, in trên giấy Mohawk Neotext Offset và khắc số LCCN
-  **70-137473**, ISBN **0-262-13070-X** (bìa cứng) — xem trang quyền ở PDF 4.
+  **70-137473**, ISBN **0-262-13070-X** (bìa cứng) - xem trang quyền ở PDF 4.
 - Lời tựa do **Bern Dibner** viết (PDF 11–14, trang in xi–xiv).
 
 Đây là cuốn sử liệu viết tay, không phải giáo trình: Meyer kể lịch sử khám phá
@@ -27,7 +27,7 @@ Tóm lược về nguồn:
 
 - Nguồn chính: bản scan trong
   `C:\Users\nguye\Downloads\A History of Electricity and Magnetism (Herbert W. Meyer) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
-  — **343 trang PDF**.
+  - **343 trang PDF**.
 - Lớp OCR trong PDF là **bản nháp để đối chiếu, không phải nguồn chuẩn**. Nó
   hỏng nặng ở ba chỗ: dấu nháy đơn (`?` thay cho `'`), chữ `g`/`q` trong tên
   riêng và nơi xuất xứ (`Burndy` → `Bumdy`, `Gilbert` → `Gịlbert`), và số hiệu
@@ -53,9 +53,9 @@ Tóm lược về nguồn:
   hình trên trang). Chú thích hình phải dịch và đặt ngay dưới ảnh.
 - Bảng (`Table 7.1`, `Table 7.2`, `Table 7.3`, `Table 14.1`) được dựng lại thành
   bảng Markdown, giữ nguyên **tất cả** hàng và cột, kể cả hàng mà bản in ghi
-  không rõ — ghi `[không rõ trong scan]` thay vì tự bịa.
+  không rõ - ghi `[không rõ trong scan]` thay vì tự bịa.
 - Công thức và ký hiệu viết bằng LaTeX. Trong sách chỉ có vài chỗ (định luật
-  Coulomb, định luật Ampère, định luật Ohm, đơn vị đo, `h`, `c`, `e`) — không
+  Coulomb, định luật Ampère, định luật Ohm, đơn vị đo, `h`, `c`, `e`) - không
   có phép tính dài. Chỉ số dưới phải đọc lại trên scan: lớp OCR hay trải phẳng
   chỉ số.
 - Văn bản lịch sử khoa học: tên riêng, năm, kết quả thực nghiệm và trích dẫn thư

@@ -31,11 +31,11 @@ Từ lực mà các vật thể giống nhau hút các hạt thể được đ�
 >
 > Proposition này nói về **gia tốc** chứ không phải về lực, và Hệ quả 1 biến nó thành một bảng đối chiếu: với hai vật thể cùng hình đặt ở những vị trí tương ứng, cách gia tốc tỷ lệ với kích thước, tùy theo số mũ của quy luật lực. Với lực giảm theo bình phương khoảng cách, gia tốc hút hai vật thể có cạnh $A$ và $B$ tỷ lệ với $A^3$ và $B^3$. Với lực giảm theo lập phương, hai gia tốc **bằng nhau**. Với lực giảm theo lũy thừa bốn, gia tốc tỷ lệ nghịch với $A^3$ và $B^3$.
 >
-> Cách dùng bảng này là điểm đáng chú ý, chứ không phải các con số trong đó. Nếu một thí nghiệm cho thấy gia tốc không đổi khi ta thay một vật thể nhỏ bằng một vật thể lớn, thì quy luật lực không thể là nghịch đảo bậc hai — vì dòng $1/r^2$ của bảng bắt buộc gia tốc phải thay đổi. Dòng giữa là một tiêu chí loại trừ, và nó loại được đúng cái quy luật mà người ta dễ tưởng là chắc chắn nhất.
+> Cách dùng bảng này là điểm đáng chú ý, chứ không phải các con số trong đó. Nếu một thí nghiệm cho thấy gia tốc không đổi khi ta thay một vật thể nhỏ bằng một vật thể lớn, thì quy luật lực không thể là nghịch đảo bậc hai - vì dòng $1/r^2$ của bảng bắt buộc gia tốc phải thay đổi. Dòng giữa là một tiêu chí loại trừ, và nó loại được đúng cái quy luật mà người ta dễ tưởng là chắc chắn nhất.
 >
 > Chứng minh của Proposition cho thấy vì sao phép so sánh ấy hợp lệ: chia mỗi vật thể thành các hạt thể tương ứng, cùng cân nặng và đặt ở những vị trí tương ứng, thì lực hút của một hạt thể thứ nhất so với hạt thể tương ứng thứ hai tỷ lệ với lực hút của các hạt thể tương ứng khác, nên khi cộng lại thì cả hai tổng cũng giữ tỷ lệ ấy.
 >
-> Hệ quả 2 là phép đo trực tiếp số mũ $n$: giữ nguyên khoảng cách, thay kích thước vật thể hút, rồi đọc tỷ lệ gia tốc. Đó là nguyên lý của cân xoắn — Cavendish dùng nó năm 1798 để đo hằng số hấp dẫn, và các thí nghiệm Eötvös sau đó dùng cùng nguyên lý để kiểm tra xem lực hút có đúng nghịch đảo bình phương hay không. Ngày nay các phép đo siêu nhạy dùng giao thoa nguyên tử, nhưng nguyên lý không đổi: thay kích thước nguồn hấp dẫn, rồi đọc số mũ từ đáp ứng đo được.
+> Hệ quả 2 là phép đo trực tiếp số mũ $n$: giữ nguyên khoảng cách, thay kích thước vật thể hút, rồi đọc tỷ lệ gia tốc. Đó là nguyên lý của cân xoắn - Cavendish dùng nó năm 1798 để đo hằng số hấp dẫn, và các thí nghiệm Eötvös sau đó dùng cùng nguyên lý để kiểm tra xem lực hút có đúng nghịch đảo bình phương hay không. Ngày nay các phép đo siêu nhạy dùng giao thoa nguyên tử, nhưng nguyên lý không đổi: thay kích thước nguồn hấp dẫn, rồi đọc số mũ từ đáp ứng đo được.
 
 ## Proposition LXXXVIII. Định lý XLV
 
@@ -169,7 +169,7 @@ $$
 >
 > Chứng minh dựng hai spheroid trong đồng tâm và đồng dạng với spheroid ngoài, sao cho một spheroid trong đi qua đúng $P$. Các hạt thể của hai nón đối diện $DPF$ và $EPG$ có khoảng cách từ $P$ tỷ lệ với bình phương khoảng cách, nên hút $P$ như nhau; chia thành các lớp spheroid đồng tâm thì lực của nón triệt tiêu từng lớp. Lặp lại, mọi lực của vật chất nằm ngoài spheroid trong $PCBM$ cũng triệt tiêu. Chỉ còn spheroid trong, mà lực của nó tỷ lệ với lực của toàn spheroid theo tỷ lệ $PS:AS$.
 >
-> Ông viết vậy vì đang truy tìm hình dạng nào vẫn cho lực hút đơn giản khi hạt thể rơi vào bên trong. Ở Hệ quả 2 ngay trước, ông vừa chỉ ra lực bên ngoài của spheroid có một công thức riêng, phức tạp hơn hình cầu; bên trong thì nó trở về dạng tuyến tính gọn gàng. Ông không né tránh hình dẹt — ông đang lập công thức cho nó, vì chính Trái Đất của ông là một hình cầu dẹt.
+> Ông viết vậy vì đang truy tìm hình dạng nào vẫn cho lực hút đơn giản khi hạt thể rơi vào bên trong. Ở Hệ quả 2 ngay trước, ông vừa chỉ ra lực bên ngoài của spheroid có một công thức riêng, phức tạp hơn hình cầu; bên trong thì nó trở về dạng tuyến tính gọn gàng. Ông không né tránh hình dẹt - ông đang lập công thức cho nó, vì chính Trái Đất của ông là một hình cầu dẹt.
 >
 > Người đọc hôm nay dùng đúng tính chất này để suy ra cấu trúc bên trong hành tinh từ dữ liệu trọng lực, và sự bất đối xứng ấy là lý do kỹ thuật phải đổi hướng. Hình cầu đồng nhất có trường **bên ngoài** đúng như một điểm, nên trọng lực bên ngoài không nói được gì về cấu trúc bên trong. Ellipsoid thì ngược lại: trường bên ngoài lệch khỏi một điểm một cách có hệ thống, và chính cái sai lệch ấy, đo được từ vệ tinh, cho biết hành tinh dẹt bao nhiêu cùng mật độ bên trong phân bổ ra sao. Độ dẹt đo được của Sao Mộc và Sao Thổ được đọc ra theo đúng cách ấy.
 

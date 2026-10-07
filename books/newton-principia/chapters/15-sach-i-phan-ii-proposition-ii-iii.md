@@ -39,7 +39,7 @@ Ngay cả trong những môi trường có sức cản, nếu việc mô tả di
 >
 > **Ông xây lý thuyết theo hướng ngược**
 >
-> Ông biết trước hành tinh quay quanh Mặt Trời, nên cần biết điều gì *bắt buộc* phải đúng. Việc ông viết Hệ quả 2 cho cả môi trường có sức cản cho thấy ông đang dò biên của lập luận. Học luận ngay sau đó nói thêm một điều hiện đại: lực vuông góc với mặt phẳng quỹ đạo không đổi lượng quét, nên có thể bỏ qua khi hợp các lực — đó là nguyên lý tách lực theo phương trong cơ học vectơ.
+> Ông biết trước hành tinh quay quanh Mặt Trời, nên cần biết điều gì *bắt buộc* phải đúng. Việc ông viết Hệ quả 2 cho cả môi trường có sức cản cho thấy ông đang dò biên của lập luận. Học luận ngay sau đó nói thêm một điều hiện đại: lực vuông góc với mặt phẳng quỹ đạo không đổi lượng quét, nên có thể bỏ qua khi hợp các lực - đó là nguyên lý tách lực theo phương trong cơ học vectơ.
 >
 > Lực tỉ lệ nghịch đảo bậc ba là một họ lực rất quen thuộc trong vật lí hiện đại: nó xuất hiện trong trường của dòng điện thẳng, trong thế năng từ, và trong lực hút giữa hai dây dẫn thẳng. Nó cũng cho thấy vì sao quỹ đạo bị kéo lệch khỏi hình elip rất nhanh khi có nhiễu: sai lệch nhỏ về tốc độ quét diện tích tự khuếch đại theo $1/r^3$. Hệ quả 1 vì vậy là một lời cảnh báo rằng quỹ đạo đẹp không tự bảo vệ được nó.
 

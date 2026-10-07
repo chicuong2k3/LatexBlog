@@ -45,11 +45,11 @@ Do đó, mọi thời gian để các vật thể rơi từ những nơi bất k
 >
 > Với lực $F = -kx$, Newton dựng một góc phần tư trên cạnh $AS$ và chỉ ra rằng vật thể rơi với biên độ $A$ đi được góc đó trong đúng một phần tư chu kỳ. Hệ quả 2 nói thẳng: mọi thời gian rơi từ bất kỳ độ cao nào đều bằng nhau, và theo Hệ quả 3 của Proposition IV, mọi chu kỳ quay tròn cũng bằng nhau.
 >
-> Ở dạng hiện đại, đó chính là dao động điều hòa: $T = 2\pi\sqrt{m/k}$, độc lập với biên độ. Chu kỳ không chỉ độc lập với biên độ mà còn độc lập với việc dao động quanh điểm nào, miễn là lực vẫn tuyến tính — nên cả một hệ nhiều vật thể cũng cùng một tần số góc.
+> Ở dạng hiện đại, đó chính là dao động điều hòa: $T = 2\pi\sqrt{m/k}$, độc lập với biên độ. Chu kỳ không chỉ độc lập với biên độ mà còn độc lập với việc dao động quanh điểm nào, miễn là lực vẫn tuyến tính - nên cả một hệ nhiều vật thể cũng cùng một tần số góc.
 >
 > Ông chọn trường hợp này không phải vì nó có giá trị vật lý, mà vì ông cần một thước đo. Lực nghịch đảo bậc hai thì rất khó tính, còn lực tuyến tính thì giải được bằng hình học thuần tuý; ông cần một trường hợp mà mọi thứ đều tính được, để đo những trường hợp không tính được. Và ông ghi rõ đây là một định đề phụ dùng làm đơn vị so sánh, không phải một lực đang tồn tại trong thiên nhiên.
 >
-> Tính đẳng kỳ ấy là lý do con lắc dùng được làm đồng hồ: kéo dài biên độ đến đâu thì nó vẫn đúng giờ. Nó cũng cho một phép thử rẻ — đo chu kỳ ở hai biên độ khác nhau, nếu không đổi thì lực chắc chắn là tuyến tính.
+> Tính đẳng kỳ ấy là lý do con lắc dùng được làm đồng hồ: kéo dài biên độ đến đâu thì nó vẫn đúng giờ. Nó cũng cho một phép thử rẻ - đo chu kỳ ở hai biên độ khác nhau, nếu không đổi thì lực chắc chắn là tuyến tính.
 
 ## Proposition XXXIX. Bài toán XXVII
 
@@ -178,9 +178,9 @@ $$
 >
 > **Đồ thị lực: vận tốc là căn bậc hai của diện tích, thời gian là diện tích của đồ thị nghịch đảo**
 >
-> Với $E$ là vị trí hiện tại và $EG$ là ordinate tỷ lệ với lực hướng tâm tại $E$, Newton chỉ ra $v_E = \sqrt{\text{diện tích }ABGE}$. Vì $\text{diện tích }ABGE = \int F\,dx$ chính là công của lực, ta có $v^2 = \dfrac{2}{m}\int F\,dx$ — định lý công – năng lượng trong hình thức nguyên thủy.
+> Với $E$ là vị trí hiện tại và $EG$ là ordinate tỷ lệ với lực hướng tâm tại $E$, Newton chỉ ra $v_E = \sqrt{\text{diện tích }ABGE}$. Vì $\text{diện tích }ABGE = \int F\,dx$ chính là công của lực, ta có $v^2 = \dfrac{2}{m}\int F\,dx$ - định lý công – năng lượng trong hình thức nguyên thủy.
 >
-> Thời gian cần một đồ thị thứ hai: dựng ordinate tỷ lệ nghịch với $v$, rồi lấy diện tích dưới đồ thị ấy. Đó là chỗ nhiều người đọc bỏ qua, và nó là ý mà Proposition XXXIX thật sự dạy — một đồ thị cho vận tốc, một đồ thị nữa cho thời gian.
+> Thời gian cần một đồ thị thứ hai: dựng ordinate tỷ lệ nghịch với $v$, rồi lấy diện tích dưới đồ thị ấy. Đó là chỗ nhiều người đọc bỏ qua, và nó là ý mà Proposition XXXIX thật sự dạy - một đồ thị cho vận tốc, một đồ thị nữa cho thời gian.
 >
 > Ông cần một thuật toán dùng được cho **bất kỳ** quy luật lực nào, kể cả những quy luật chưa có công thức. Quy mọi thứ về diện tích biến một bài toán vật lý thành bài toán dựng hình, và bài toán dựng hình thì luôn làm được bằng thước kẻ. Điểm mấu chốt: ông không cần biết lực bằng công thức, chỉ cần biết lực trông như thế nào.
 >

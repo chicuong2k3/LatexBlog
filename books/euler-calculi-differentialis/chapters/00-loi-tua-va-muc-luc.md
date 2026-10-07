@@ -96,7 +96,7 @@ Vì thế số gia của $x$, tức $\omega$, có tỷ lệ với số gia của
 
 <!-- PDF 14, trang in X -->
 
-Khi đặt $\omega=0$, tỷ lệ giữa các số gia tiêu biến ấy — đối tượng duy nhất mà phép tính vi phân khảo sát — quả thật là $1:2x$. Nếu $\omega$ không tiêu biến hoàn toàn, tỷ lệ đó sẽ không đúng. Vì $\omega$ biểu thị số gia của $x$, số gia của bình phương $xx$ theo tỷ lệ $1:2x$ là $2x\omega$, nên nó cũng bằng không. Việc cả hai số gia triệt tiêu không ngăn ta xác định tỷ lệ giữa chúng là $1:2x$. Trong phép tính vi phân, số không $\omega$ được ký hiệu là $dx$ khi biểu thị số gia của $x$, và được gọi là vi phân của $x$.
+Khi đặt $\omega=0$, tỷ lệ giữa các số gia tiêu biến ấy - đối tượng duy nhất mà phép tính vi phân khảo sát - quả thật là $1:2x$. Nếu $\omega$ không tiêu biến hoàn toàn, tỷ lệ đó sẽ không đúng. Vì $\omega$ biểu thị số gia của $x$, số gia của bình phương $xx$ theo tỷ lệ $1:2x$ là $2x\omega$, nên nó cũng bằng không. Việc cả hai số gia triệt tiêu không ngăn ta xác định tỷ lệ giữa chúng là $1:2x$. Trong phép tính vi phân, số không $\omega$ được ký hiệu là $dx$ khi biểu thị số gia của $x$, và được gọi là vi phân của $x$.
 Khi thay $\omega$ bằng $dx$, vi phân của $xx$ là $2x\,dx$. Tương tự, vi phân của $x^3$ là $3xx\,dx$, và nói chung vi phân của $x^n$ là $nx^{n-1}\,dx$.
 
 <!-- PDF 14, trang in X (tiếp) -->
@@ -261,15 +261,15 @@ hình vẽ nào để giải thích mọi quy tắc của calculus này.
 
 | Chương | Nhan đề | Trang |
 |---|---|---:|
-| I | *De Differentiis finitis* — Về các sai lệch hữu hạn | 3 |
-| II | *De Usu Differentiarum in Doctrina serierum* — Về công dụng của các sai lệch trong lý thuyết chuỗi | 39 |
-| III | *De Infinitis et infinite parvis* — Về các lượng vô cùng lớn và vô cùng nhỏ | 70 |
-| IV | *De Differentialium cuiusque ordinis natura* — Về bản chất của các differentialia mọi bậc | 98 |
-| V | *De Differentiatione functionum algebraicarum unicam variabilem involventium* — Về phép lấy vi phân các functio đại số chứa một lượng variabilis duy nhất | 124 |
-| VI | *De Differentiatione functionum transcendentium* — Về phép lấy vi phân các functio transcendentes | 151 |
-| VII | *De Differentiatione functionum duas pluresve variabiles involventium* — Về phép lấy vi phân các functio chứa hai hay nhiều lượng variabiles | 178 |
-| VIII | *De Formularum Differentialium ulteriori differentiatione* — Về việc lấy vi phân tiếp các biểu thức vi phân | 204 |
-| IX | *De Aequationibus Differentialibus* — Về các phương trình vi phân | 241 |
+| I | *De Differentiis finitis* - Về các sai lệch hữu hạn | 3 |
+| II | *De Usu Differentiarum in Doctrina serierum* - Về công dụng của các sai lệch trong lý thuyết chuỗi | 39 |
+| III | *De Infinitis et infinite parvis* - Về các lượng vô cùng lớn và vô cùng nhỏ | 70 |
+| IV | *De Differentialium cuiusque ordinis natura* - Về bản chất của các differentialia mọi bậc | 98 |
+| V | *De Differentiatione functionum algebraicarum unicam variabilem involventium* - Về phép lấy vi phân các functio đại số chứa một lượng variabilis duy nhất | 124 |
+| VI | *De Differentiatione functionum transcendentium* - Về phép lấy vi phân các functio transcendentes | 151 |
+| VII | *De Differentiatione functionum duas pluresve variabiles involventium* - Về phép lấy vi phân các functio chứa hai hay nhiều lượng variabiles | 178 |
+| VIII | *De Formularum Differentialium ulteriori differentiatione* - Về việc lấy vi phân tiếp các biểu thức vi phân | 204 |
+| IX | *De Aequationibus Differentialibus* - Về các phương trình vi phân | 241 |
 
 <!-- PDF 26, trang in XXII -->
 
@@ -277,29 +277,29 @@ hình vẽ nào để giải thích mọi quy tắc của calculus này.
 
 | Chương | Nhan đề | Trang |
 |---|---|---:|
-| I | *De Transformatione Serierum* — Về phép biến đổi chuỗi | 281 |
-| II | *De Investigatione serierum summabilium* — Về việc tìm các chuỗi tính được tổng | 304 |
-| III | *De Inventione Differentiarum finitarum* — Về việc tìm các sai lệch hữu hạn | 332 |
-| IV | *De Conversione Functionum in Series* — Về việc chuyển các functio thành chuỗi | 359 |
-| V | *Investigatio summae Serierum ex Termino generali* — Tìm tổng của các chuỗi từ số hạng tổng quát | 403 |
-| VI | *De Summatione Progressionum per Series Infinitas* — Về việc tính tổng các cấp số bằng chuỗi vô hạn | 441 |
-| VII | *Methodus summandi superior ulterius promota* — Phương pháp tính tổng ở trên, được đẩy xa thêm | 479 |
-| VIII | *De usu Calculi Differentialis in formandis seriebus* — Về công dụng của Calculus Differentialis trong việc lập chuỗi | 515 |
-| IX | *De usu Calculi Differentialis in aequationibus resolvendis* — Về công dụng của Calculus Differentialis trong việc giải phương trình | 546 |
-| X | *De Maximis & Minimis* — Về cực đại và cực tiểu | 578 |
-| XI | *De Maximis & Minimis functionum multiformium pluresque variabiles complectentium* — Về cực đại và cực tiểu của các functio multiformes và các functio chứa nhiều lượng variabiles | 619 |
-| XII | *De Usu differentialium in investigandis radicibus realibus aequationum* — Về công dụng của differentialia trong việc tìm các nghiệm thực của phương trình | 657 |
+| I | *De Transformatione Serierum* - Về phép biến đổi chuỗi | 281 |
+| II | *De Investigatione serierum summabilium* - Về việc tìm các chuỗi tính được tổng | 304 |
+| III | *De Inventione Differentiarum finitarum* - Về việc tìm các sai lệch hữu hạn | 332 |
+| IV | *De Conversione Functionum in Series* - Về việc chuyển các functio thành chuỗi | 359 |
+| V | *Investigatio summae Serierum ex Termino generali* - Tìm tổng của các chuỗi từ số hạng tổng quát | 403 |
+| VI | *De Summatione Progressionum per Series Infinitas* - Về việc tính tổng các cấp số bằng chuỗi vô hạn | 441 |
+| VII | *Methodus summandi superior ulterius promota* - Phương pháp tính tổng ở trên, được đẩy xa thêm | 479 |
+| VIII | *De usu Calculi Differentialis in formandis seriebus* - Về công dụng của Calculus Differentialis trong việc lập chuỗi | 515 |
+| IX | *De usu Calculi Differentialis in aequationibus resolvendis* - Về công dụng của Calculus Differentialis trong việc giải phương trình | 546 |
+| X | *De Maximis & Minimis* - Về cực đại và cực tiểu | 578 |
+| XI | *De Maximis & Minimis functionum multiformium pluresque variabiles complectentium* - Về cực đại và cực tiểu của các functio multiformes và các functio chứa nhiều lượng variabiles | 619 |
+| XII | *De Usu differentialium in investigandis radicibus realibus aequationum* - Về công dụng của differentialia trong việc tìm các nghiệm thực của phương trình | 657 |
 
 <!-- PDF 27, trang in XXIII -->
 
 | Chương | Nhan đề | Trang |
 |---|---|---:|
-| XIII | *De Criteriis radicum imaginariarum* — Về các dấu hiệu nhận biết nghiệm ảo | 689 |
-| XIV | *De Differentialibus functionum in certis tantum casibus* — Về differentialia của các functio chỉ trong những trường hợp nhất định | 712 |
-| XV | *De Valoribus functionum, qui certis casibus videntur indeterminati* — Về các giá trị của functio, những giá trị trong một số trường hợp có vẻ bất định | 738 |
-| XVI | *De Differentiatione Functionum inexplicabilium* — Về phép lấy vi phân các functio inexplicabiles | 769 |
-| XVII | *De Interpolatione Serierum* — Về phép nội suy chuỗi | 808 |
-| XVIII | *De Usu Calculi Differentialis in Resolutione Fractionum* — Về công dụng của Calculus Differentialis trong việc phân tích các phân thức | 843 |
+| XIII | *De Criteriis radicum imaginariarum* - Về các dấu hiệu nhận biết nghiệm ảo | 689 |
+| XIV | *De Differentialibus functionum in certis tantum casibus* - Về differentialia của các functio chỉ trong những trường hợp nhất định | 712 |
+| XV | *De Valoribus functionum, qui certis casibus videntur indeterminati* - Về các giá trị của functio, những giá trị trong một số trường hợp có vẻ bất định | 738 |
+| XVI | *De Differentiatione Functionum inexplicabilium* - Về phép lấy vi phân các functio inexplicabiles | 769 |
+| XVII | *De Interpolatione Serierum* - Về phép nội suy chuỗi | 808 |
+| XVIII | *De Usu Calculi Differentialis in Resolutione Fractionum* - Về công dụng của Calculus Differentialis trong việc phân tích các phân thức | 843 |
 
 <!-- PDF 28, trang in XXIV -->
 

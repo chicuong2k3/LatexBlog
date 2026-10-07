@@ -319,7 +319,7 @@ Vận tốc của nước chảy ra như nhau, dù hình dạng của lỗ là t
 >
 > Bài toán VIII là thí nghiệm **Torricelli**: nước chảy ra khỏi một lỗ ở đáy bình với vận tốc bằng vận tốc mà một vật nặng có khi rơi tự do từ chiều cao của cột nước. Trường hợp 5 nói thêm một điều mạnh: vận tốc ấy **không phụ thuộc hình dạng của lỗ**, nó chỉ phụ thuộc diện tích lỗ và độ sâu dưới mặt phẳng $KL$.
 >
-> Vận tốc ở lỗ là $v = \sqrt{2gh}$ với $h$ là chiều cao cột nước — đúng định luật rơi tự do của Galileo. Nhưng phần đáng chú ý nằm ở chỗ nước **không** chảy thẳng: nó hội tụ về lỗ từ mọi phía nên dòng nước bị co lại ngay dưới lỗ. Newton đo đúng điều đó: lỗ tròn đường kính $\frac58$ inch, còn dòng nước cách lỗ nửa inch chỉ còn $\frac{21}{50}$ inch, tức tỷ lệ $25$ với $21$. Vì diện tích tỷ lệ bình phương, nước ngoài lỗ phải nhanh hơn trong lỗ khoảng
+> Vận tốc ở lỗ là $v = \sqrt{2gh}$ với $h$ là chiều cao cột nước - đúng định luật rơi tự do của Galileo. Nhưng phần đáng chú ý nằm ở chỗ nước **không** chảy thẳng: nó hội tụ về lỗ từ mọi phía nên dòng nước bị co lại ngay dưới lỗ. Newton đo đúng điều đó: lỗ tròn đường kính $\frac58$ inch, còn dòng nước cách lỗ nửa inch chỉ còn $\frac{21}{50}$ inch, tức tỷ lệ $25$ với $21$. Vì diện tích tỷ lệ bình phương, nước ngoài lỗ phải nhanh hơn trong lỗ khoảng
 >
 > $$
 > \frac{25^2}{21^2}\approx\frac{17}{12},

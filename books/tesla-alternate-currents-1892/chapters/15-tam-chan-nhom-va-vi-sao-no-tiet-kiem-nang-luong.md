@@ -9,12 +9,12 @@ slug: "tam-chan-nhom-va-vi-sao-no-tiet-kiem-nang-luong"
 ...tấm nhôm cỡ thích hợp, siết chặt tấm ấy bằng da dê sạch hoặc giấy thấm, và quay thanh trái
 rất nhanh. Tấm ấy được cuộn chặt quanh thanh trái, và thu được một ống rất bóng loáng gồm
 một hoặc ba lớp của tấm ấy. Khi luồn lên cuống, áp lực thường đủ để ngăn nó trượt khỏi, nhưng,
-để an toàn, có thể gấp mép dưới của tấm ấy vào trong. Góc trên bên trong của tấm ấy — tức là
-góc gần vật liệu chịu nhiệt nung đỏ nhất — nên cắt vát chéo, bởi thường xảy ra rằng, do nhiệt
+để an toàn, có thể gấp mép dưới của tấm ấy vào trong. Góc trên bên trong của tấm ấy - tức là
+góc gần vật liệu chịu nhiệt nung đỏ nhất - nên cắt vát chéo, bởi thường xảy ra rằng, do nhiệt
 độ dữ dội, góc này quay vào phía trong và đến rất gần, hoặc chạm tiếp xúc, với dây, hay dây
 nung, nâng đỡ vật liệu chịu nhiệt. Phần lớn năng lượng được cung cấp cho bóng đèn khi ấy bị
 dùng hết vào việc nung nóng ống kim loại, và bóng đèn trở nên vô dụng với mục đích ấy. Tấm
-nhôm nên nhô lên trên cuống thuỷ tinh một đoạn — khoảng một inch — hoặc nếu không, nếu thủy
+nhôm nên nhô lên trên cuống thuỷ tinh một đoạn - khoảng một inch - hoặc nếu không, nếu thủy
 tinh ở quá gần vật thể nung đỏ, nó có thể bị nóng mạnh và trở nên dẫn điện đôi chút, khi ấy
 nó có thể bị vỡ, hoặc có thể, nhờ tính dẫn điện, tạo ra một liên kết điện tốt giữa ống kim
 loại và dây dẫn vào, và trong trường hợp ấy, phần lớn năng lượng lại mất vào việc nung nóng
@@ -57,8 +57,8 @@ truyền dẫn. Trong tất cả những phần tựa đã dùng, tôi thấy m�
 thường là tốt nhất, chủ yếu vì giữa các chất dẫn điện nó chịu được những mức nhiệt cao nhất.
 
 Hiệu quả của ống kim loại với tư cách là một tấm chắn tĩnh điện phụ thuộc phần lớn vào mức
-hút chân không. Ở những mức hút chân không quá cao — vốn đạt được bằng cách dùng hết sự cẩn
-trọng và những phương tiện đặc biệt cùng với bơm Sprengel — khi vật chất trong quả cầu ở
+hút chân không. Ở những mức hút chân không quá cao - vốn đạt được bằng cách dùng hết sự cẩn
+trọng và những phương tiện đặc biệt cùng với bơm Sprengel - khi vật chất trong quả cầu ở
 trạng thái siêu bức xạ, nó tác động một cách hoàn hảo nhất. Khi ấy bóng của mép trên ống được
 vẽ rõ nét trên thành bóng đèn.
 

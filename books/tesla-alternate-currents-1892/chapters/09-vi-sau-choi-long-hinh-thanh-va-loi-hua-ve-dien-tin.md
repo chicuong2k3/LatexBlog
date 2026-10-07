@@ -1,6 +1,6 @@
 ---
 title: "Vì sao chổi lông hình thành, và lời hứa về điện tín"
-summary: "Chổi lông chỉ xuất hiện khi có sự bất đối xứng, và độ nhạy cảm của nó có thể lớn đến mức soi thấy bất kỳ chuyển động nào trong không gian. Tesla đề xuất dùng nó để gửi điện tin, rồi thử dựng một cánh quạt mica để xem luồng sáng có thật sự quay hay không — và không thấy."
+summary: "Chổi lông chỉ xuất hiện khi có sự bất đối xứng, và độ nhạy cảm của nó có thể lớn đến mức soi thấy bất kỳ chuyển động nào trong không gian. Tesla đề xuất dùng nó để gửi điện tin, rồi thử dựng một cánh quạt mica để xem luồng sáng có thật sự quay hay không - và không thấy."
 slug: "vi-sau-choi-long-hinh-thanh-va-loi-hua-ve-dien-tin"
 ---
 
@@ -52,7 +52,7 @@ và sự quay trông thấy được của nó trong trường hợp này không
 nên thí nghiệm không tỏ ra mang tính kết luận.
 
 Tôi không thể tạo ra hiện tượng này bằng cuộn dây phóng điện phá vỡ, mặc dù mọi hiện
-tượng khác trong số này đều có thể tạo ra tốt bằng nó — nhiều hiện tượng thực ra còn tốt
+tượng khác trong số này đều có thể tạo ra tốt bằng nó - nhiều hiện tượng thực ra còn tốt
 hơn nhiều so với khi dùng những cuộn dây vận hành từ máy phát xoay chiều.
 
 Có lẽ có thể tạo ra chổi lông bằng các xung chỉ theo một hướng, hoặc thậm chí bằng một

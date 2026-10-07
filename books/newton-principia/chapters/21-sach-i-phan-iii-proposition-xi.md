@@ -87,9 +87,9 @@ Theo Hệ quả 1 và 5 của Proposition VI, lực hướng tâm tỷ lệ ngh�
 >
 > **Vì sao chọn $L$ làm đại lượng xuất hiện trong kết quả**
 >
-> Ông cần một kết quả đủ mạnh để giải thích cả ba định luật Kepler cùng lúc. Lực nghịch đảo bậc hai vừa cho quy luật diện tích đều, vừa cho quỹ đạo là conic, vừa cho $T^2 \propto a^3$. $L$ là **thang đo tự nhiên** của elip, đặt tại tiêu điểm, và là thang đo duy nhất không phụ thuộc vào điểm đang xét — nên phương trình quỹ đạo viết được dưới dạng $r = \dfrac{p}{1 + e\cos\theta}$ với mọi hằng số đều gắn với tâm thay vì với vị trí.
+> Ông cần một kết quả đủ mạnh để giải thích cả ba định luật Kepler cùng lúc. Lực nghịch đảo bậc hai vừa cho quy luật diện tích đều, vừa cho quỹ đạo là conic, vừa cho $T^2 \propto a^3$. $L$ là **thang đo tự nhiên** của elip, đặt tại tiêu điểm, và là thang đo duy nhất không phụ thuộc vào điểm đang xét - nên phương trình quỹ đạo viết được dưới dạng $r = \dfrac{p}{1 + e\cos\theta}$ với mọi hằng số đều gắn với tâm thay vì với vị trí.
 >
-> $p = h^2/\mu$ tách bạch hai thứ quyết định quỹ đạo: **hình dạng** do moment động lượng quyết định, còn **khoảng cách** do tổng năng lượng quyết định. Vì $a = \mu/(2|\mathcal{E}|)$, một hệ không mất năng lượng sẽ bay ra xa vô hạn, và cùng một lực vẫn cho những quỹ đạo khác nhau — đó là lý do một hệ nghiêng lệch phải có năng lượng riêng khác đi mới quay được quanh sao trung tâm.
+> $p = h^2/\mu$ tách bạch hai thứ quyết định quỹ đạo: **hình dạng** do moment động lượng quyết định, còn **khoảng cách** do tổng năng lượng quyết định. Vì $a = \mu/(2|\mathcal{E}|)$, một hệ không mất năng lượng sẽ bay ra xa vô hạn, và cùng một lực vẫn cho những quỹ đạo khác nhau - đó là lý do một hệ nghiêng lệch phải có năng lượng riêng khác đi mới quay được quanh sao trung tâm.
 
 Có thể chứng minh cùng kết quả ấy theo cách khác. Lực hướng về tâm $C$ của elip, nhờ đó vật thể $P$ có thể quay trong elip, tỷ lệ với khoảng cách $CP$. Kẻ $CE$ song song với tiếp tuyến $PR$ của elip. Nếu $CE$ và $PS$ cắt nhau tại $E$, lực để vật thể $P$ quay quanh điểm bất kỳ khác $S$ sẽ tỷ lệ với $\frac{PE^3}{PT^3}$, theo Hệ quả 3 của Proposition VII.
 

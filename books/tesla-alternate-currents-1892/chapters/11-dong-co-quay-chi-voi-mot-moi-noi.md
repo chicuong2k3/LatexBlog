@@ -1,6 +1,6 @@
 ---
 title: "Động cơ quay chỉ với một mối nối"
-summary: "Cùng một cái động cơ, nhưng nếu ta nối nó với máy phát bằng một dây thay vì hai, thì nó vẫn quay — miễn là đầu tự do kia được chạm vào một vật thể cách điện. Tesla giải thích vì sao một cuộn dây quấn trên lõi, tự cảm lớn, lại là lựa chọn đúng cho thí nghiệm này."
+summary: "Cùng một cái động cơ, nhưng nếu ta nối nó với máy phát bằng một dây thay vì hai, thì nó vẫn quay - miễn là đầu tự do kia được chạm vào một vật thể cách điện. Tesla giải thích vì sao một cuộn dây quấn trên lõi, tự cảm lớn, lại là lựa chọn đúng cho thí nghiệm này."
 slug: "dong-co-quay-chi-voi-mot-moi-noi"
 ---
 
@@ -11,8 +11,8 @@ tôi sẽ giải thích. Khi hai đầu cuộn dây được nối vào các đ�
 xoay chiều thì đĩa được đặt vào quay. Nhưng đó không phải là thí nghiệm, nay đã khá rõ,
 mà tôi muốn thực hiện. Điều tôi muốn chỉ cho các ngài là động cơ này quay chỉ với một mối
 nối duy nhất giữa nó và máy phát; nghĩa là một đầu điện cực của động cơ được nối với một
-đầu điện cực của máy phát — trong trường hợp này là cuộn thứ cấp của một cuộn cảm ứng điện
-áp cao — còn các đầu điện cực khác của động cơ và máy phát cách điện trong không gian.
+đầu điện cực của máy phát - trong trường hợp này là cuộn thứ cấp của một cuộn cảm ứng điện
+áp cao - còn các đầu điện cực khác của động cơ và máy phát cách điện trong không gian.
 
 <!-- PDF 74 · trang in 56 -->
 
@@ -35,4 +35,4 @@ làm cho mô-men xoắn giảm đi đáng kể.
 
 Cần nhận xét rằng khi dùng một động cơ như thế có cuộn thứ cấp kín, việc thu được sự
 quay ở những tần số quá cao không hề dễ dàng, vì cuộn thứ cấp cắt gần như hoàn toàn các
-đường sức của cuộn sơ cấp — và điều này, của...
+đường sức của cuộn sơ cấp - và điều này, của...

@@ -80,9 +80,9 @@ Vì vậy, vận tốc của một vật thể quay trong một hình cắt coni
 >
 > **Ông diễn đạt nó bằng hình học thuần tuý**
 >
-> Ông cần vận tốc để hoàn tất bức tranh, chứ không chỉ hình dạng quỹ đạo. Cách ông làm: đo đoạn vuông góc từ tiêu điểm xuống tiếp tuyến rồi so với một đường tròn. Hệ quả 9 phát biểu điều đó bằng ngôn ngữ trung bình nhân — vận tốc trên conic bằng vận tốc trên đường tròn tại khoảng cách là trung bình nhân giữa khoảng cách ấy và nửa latus rectum, so với cùng đoạn vuông góc ấy.
+> Ông cần vận tốc để hoàn tất bức tranh, chứ không chỉ hình dạng quỹ đạo. Cách ông làm: đo đoạn vuông góc từ tiêu điểm xuống tiếp tuyến rồi so với một đường tròn. Hệ quả 9 phát biểu điều đó bằng ngôn ngữ trung bình nhân - vận tốc trên conic bằng vận tốc trên đường tròn tại khoảng cách là trung bình nhân giữa khoảng cách ấy và nửa latus rectum, so với cùng đoạn vuông góc ấy.
 >
-> Phương trình vis-viva cho vận tốc ở **mọi** điểm của quỹ đạo chỉ từ hai đại lượng quen thuộc. Nó cũng giải thích trực quan vì sao trên quỹ đạo elip, vận tốc lớn nhất ở điểm gần tiêu điểm nhất: ở đó $r$ nhỏ nhất nên $2/r - 1/a$ lớn nhất. Cùng công thức ấy cũng cho một quy tắc lực: điểm nào có vận tốc cao nhất cũng là nơi lực đã thay đổi nhiều nhất tính theo quãng đường, tức là nơi độ cong lớn nhất — đúng như Hệ quả 4 của Proposition VI đã nói trước đó.
+> Phương trình vis-viva cho vận tốc ở **mọi** điểm của quỹ đạo chỉ từ hai đại lượng quen thuộc. Nó cũng giải thích trực quan vì sao trên quỹ đạo elip, vận tốc lớn nhất ở điểm gần tiêu điểm nhất: ở đó $r$ nhỏ nhất nên $2/r - 1/a$ lớn nhất. Cùng công thức ấy cũng cho một quy tắc lực: điểm nào có vận tốc cao nhất cũng là nơi lực đã thay đổi nhiều nhất tính theo quãng đường, tức là nơi độ cong lớn nhất - đúng như Hệ quả 4 của Proposition VI đã nói trước đó.
 
 Giả sử lực hướng tâm tỷ lệ nghịch với bình phương các khoảng cách từ các nơi đến tâm, và lượng tuyệt đối của lực ấy đã biết. Hãy xác định đường mà vật thể sẽ mô tả khi được thả từ một nơi đã cho với một vận tốc đã cho theo phương của một đường thẳng đã cho.
 
@@ -138,4 +138,4 @@ Nếu một vật thể $P$, nhờ lực hướng tâm hướng về một đi�
 >
 > Các Proposition XI–XIII đi từ lực ra quỹ đạo; Proposition XVII đi ngược lại, và dùng chính kết quả của ba Proposition ấy để khép vòng. Hệ quả 3 còn đi xa hơn một bước: nếu một cú đẩy bất kỳ đưa vật thể ra khỏi quỹ đạo, ta vẫn tìm được quỹ đạo mới, bằng cách cộng chuyển động riêng của vật thể với chuyển động do cú đẩy tạo ra.
 >
-> Hệ quả 3 là thứ khiến quỹ đạo trở nên hữu ích trong kỹ thuật vũ trụ: một nhân vật xuất phát trên quỹ đạo quanh Trái Đất, dùng nhiên liệu để đổi hướng, rồi tính quỹ đạo mới — bằng đúng cách cộng vectơ vận tốc mà Newton mô tả ở đây. Hệ quả 4 thì tiên đoán một việc làm thực nghiệm quan trọng: từ một chuỗi số đo rời rạc, ta dựng được quỹ đạo bằng cách nội suy. Người đọc hôm nay gọi đó là **xác định quỹ đạo**, và nó là nền tảng của mọi kỹ thuật theo dõi vệ tinh và cảnh báo va chạm.
+> Hệ quả 3 là thứ khiến quỹ đạo trở nên hữu ích trong kỹ thuật vũ trụ: một nhân vật xuất phát trên quỹ đạo quanh Trái Đất, dùng nhiên liệu để đổi hướng, rồi tính quỹ đạo mới - bằng đúng cách cộng vectơ vận tốc mà Newton mô tả ở đây. Hệ quả 4 thì tiên đoán một việc làm thực nghiệm quan trọng: từ một chuỗi số đo rời rạc, ta dựng được quỹ đạo bằng cách nội suy. Người đọc hôm nay gọi đó là **xác định quỹ đạo**, và nó là nền tảng của mọi kỹ thuật theo dõi vệ tinh và cảnh báo va chạm.

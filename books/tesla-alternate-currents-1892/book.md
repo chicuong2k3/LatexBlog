@@ -11,7 +11,7 @@ language: "vi"
 ## Ấn phẩm nào đang được dịch
 
 Bản dịch này theo **ấn phẩm New York: The W. J. Johnston Company, Ltd., 167–176
-Times Building, 1892** — đúng bản gốc của bài giảng, không phải ấn phẩm in lại
+Times Building, 1892** - đúng bản gốc của bài giảng, không phải ấn phẩm in lại
 sau này. Trang quyền (PDF 9) ghi:
 
 > With a Portrait and Biographical Sketch of the Author.
@@ -30,7 +30,7 @@ tục, không chia thành mục đánh số. Chính Tesla nói ở đầu bài r
 ### Đừng nhầm với tuyển tập năm 1909
 
 Bản dịch này **không phải** cuốn *Experiments of Nikola Tesla* do Doubleday,
-Page & Co. xuất bản năm 1909, in tại London — tuyển tập sáu bài giảng mà nhiều
+Page & Co. xuất bản năm 1909, in tại London - tuyển tập sáu bài giảng mà nhiều
 người quen thuộc hơn. Sáu bài ấy gồm "Experiments with Alternate Currents of
 High Potential and High Frequency" **cùng năm 1892**, nhưng bản in ở đây chỉ có
 **một** bài giảng đó, không kèm năm bài còn lại, và không có phần tiểu sử dài
@@ -39,7 +39,7 @@ của tuyển tập. Khi tra cứu hoặc trích dẫn, phải phân biệt hai 
 ## Nguồn
 
 - Nguồn chính: bản scan
-  `C:\Users\nguye\Downloads\tesla-src\experimentswitha00tesl_0.pdf` — **177 trang
+  `C:\Users\nguye\Downloads\tesla-src\experimentswitha00tesl_0.pdf` - **177 trang
   PDF**.
 - Bản scan gốc: [Internet Archive,
   `experimentswitha00tesl_0`](https://archive.org/details/experimentswitha00tesl_0),
@@ -48,7 +48,7 @@ của tuyển tập. Khi tra cứu hoặc trích dẫn, phải phân biệt hai 
   chiếu, không phải nguồn chuẩn**. Nó hỏng nặng ở ba chỗ:
   1. **Dấu gạch nối cuối dòng** bị giữ thành ký tự lạ (`pro¬ duced`, `insulat¬
      ing`, `cir¬ cuit`). Phải bỏ và nối lại thành từ.
-  2. **Số trang in đọc sai** — `folio=182` ở PDF 149 là trang in 132; `Fig. 83`
+  2. **Số trang in đọc sai** - `folio=182` ở PDF 149 là trang in 132; `Fig. 83`
      ở PDF 150 là `Fig. 33`; `Fig. 12` ở PDF 118 là `Fig. 25`. Số trang in phải
      đọc lại từ scan, không tin lớp OCR.
   3. **Chữ và ký hiệu hỏng không phát hiện được bằng mắt**: `CUBRENTS` (Currents),
@@ -68,11 +68,11 @@ khớp với số trang mà `pdftoppm -f N` dùng.
 
 | PDF | Trang in | Nội dung |
 |---|---|---|
-| 1–10 | — | Lớp thư viện, trang tựa, quảng cáo nhà xuất bản, trang trắng lưu trữ |
+| 1–10 | - | Lớp thư viện, trang tựa, quảng cáo nhà xuất bản, trang trắng lưu trữ |
 | 11–17 | III–IX | **Tiểu sử tóm tắt của Nikola Tesla** (7 trang, đánh số La Mã) |
 | 18–163 | 1–146 | **Bài giảng** `EXPERIMENTS WITH Alternate Currents of High Potential and High Frequency` |
-| 164–167 | — | Quảng cáo sách khác của nhà xuất bản ở cuối sách |
-| 168–176 | — | Trang trắng |
+| 164–167 | - | Quảng cáo sách khác của nhà xuất bản ở cuối sách |
+| 168–176 | - | Trang trắng |
 
 Bản dịch chia theo **18 chương**: chương 0 là lời dẫn nhập cộng tiểu sử, chương
 01–17 là bài giảng. Bản in không có mục lục, nên **ranh giới chương do người dịch
@@ -84,7 +84,7 @@ Các chương đã dịch:
 
 | Chương | File | Trang in | Nội dung |
 |---|---|---|---|
-| 00 | `chapters/00-loi-dan-nhap-va-tieu-de-khoi.md` | —, III–IX | Lời dẫn nhập + tiểu sử tóm tắt tác giả. **Đã dịch, đã đối chiếu scan.** |
+| 00 | `chapters/00-loi-dan-nhap-va-tieu-de-khoi.md` | -, III–IX | Lời dẫn nhập + tiểu sử tóm tắt tác giả. **Đã dịch, đã đối chiếu scan.** |
 | 01 | `chapters/01-mo-dau-ke-hoach-cong-trinh.md` | 1–3 | Mở đầu: Crookes và kế hoạch của buổi nói chuyện. **Đã dịch, đã đối chiếu scan.** |
 | 02 | `chapters/02-dong-xoay-chieu-nhu-song.md` | 4–10 | Dòng xoay chiều như một sóng, nguồn cao tần. **Đã dịch, đã đối chiếu scan.** |
 | 03 | `chapters/03-nhung-dang-phong-dien.md` | 11–15 | Những dạng phóng điện. **Đã dịch, đã đối chiếu scan.** |
@@ -104,7 +104,7 @@ Các chương đã dịch:
 | 17 | `chapters/17-ba-kieu-bong-den-va-su-phong-boi-vao-cuong-thuy-tinh.md` | 71–73 | Ba kiểu bóng đèn, và sự phóng bội vào cuống thuỷ tinh. **Đã dịch, đã đối chiếu scan.** |
 | 18 | `chapters/18-khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc.md` | 74–76 | Khi thủy tinh nứt, và vật thể không dẫn điện vẫn sáng được. **Đã dịch, đã đối chiếu scan.** |
 | 19 | `chapters/19-diem-nong-tren-dien-cuc-va-nut-chiu-nhiet-ben-nhat.md` | 77–79 | Điểm nóng trên điện cực, và nút chịu nhiệt bền nhất. **Đã dịch, đã đối chiếu scan.** |
-| 20–22 | — | 80–146 | Còn lại của bài giảng. **Chưa dịch.** |
+| 20–22 | - | 80–146 | Còn lại của bài giảng. **Chưa dịch.** |
 
 ### Trang in trong bài giảng
 
@@ -130,7 +130,7 @@ Tiểu sử nằm ngoài công thức này, dùng số La Mã I–IX ở PDF 11�
   giữ nguyên quy ước của sách: `Fig.`, ký hiệu cơ (`C`, `C'`, `L`, `T`, `S`, `R`, `s`,
   `a`, `b`, `m`, `r`), đơn vị (`cm`, `mm`, `volts`, `amperes`).
 - Bản in dùng chữ nghiêng cho ký hiệu; giữ bằng `*…*`. Sai số lịch sử của tác giả
-  giữ nguyên, chỉ ghi chú ở chỗ cần — không sửa trong bản dịch.
+  giữ nguyên, chỉ ghi chú ở chỗ cần - không sửa trong bản dịch.
 - Chỗ scan hoặc OCR không đủ rõ sẽ được ghi `[không rõ trong scan]`; không tự suy
   đoán số liệu hoặc ký hiệu chưa kiểm chứng.
 - Trạng thái đối chiếu từng trang nằm trong `TRANSLATION_LEDGER.md`.

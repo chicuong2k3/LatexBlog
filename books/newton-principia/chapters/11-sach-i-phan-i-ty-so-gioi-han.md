@@ -19,15 +19,15 @@ Nếu phủ nhận điều ấy, hãy giả sử chúng cuối cùng không bằ
 >
 > **Lemma I là định nghĩa giới hạn theo kiểu epsilon-delta**
 >
-> Cấu trúc "với mọi sai khác đã cho $\varepsilon > 0$, tồn tại một thời điểm $N$ mà từ đó trở đi thì sai khác nhỏ hơn $\varepsilon$" chính là cách phân tích giới hạn vẫn được dùng nguyên vẹn sau ba trăm năm. Nhánh phản chứng của Newton — giả sử sai khác cuối cùng bằng $D \ne 0$, rồi mâu thuẫn với giả thiết — là cách chứng minh tiêu chuẩn: nếu hai dãy hội tụ về cùng một giá trị thì sai khác của chúng phải hội tụ về 0.
+> Cấu trúc "với mọi sai khác đã cho $\varepsilon > 0$, tồn tại một thời điểm $N$ mà từ đó trở đi thì sai khác nhỏ hơn $\varepsilon$" chính là cách phân tích giới hạn vẫn được dùng nguyên vẹn sau ba trăm năm. Nhánh phản chứng của Newton - giả sử sai khác cuối cùng bằng $D \ne 0$, rồi mâu thuẫn với giả thiết - là cách chứng minh tiêu chuẩn: nếu hai dãy hội tụ về cùng một giá trị thì sai khác của chúng phải hội tụ về 0.
 >
-> Điều Lemma I khẳng định là $\forall \varepsilon > 0, \exists N \in \mathbb{N}$ sao cho $\forall n \ge N: |a_n - b_n| < \varepsilon$. Tương đương với $\lim_{n \to \infty} a_n = \lim_{n \to \infty} b_n \Rightarrow \lim_{n \to \infty} (a_n - b_n) = 0$. Chú ý cách Newton nói "trong một khoảng thời gian hữu hạn" chứ không nói tại một điểm — đó là ý cốt lõi, vì giới hạn là một tuyên bố về đuôi của dãy chứ không phải về một khoảnh khắc.
+> Điều Lemma I khẳng định là $\forall \varepsilon > 0, \exists N \in \mathbb{N}$ sao cho $\forall n \ge N: |a_n - b_n| < \varepsilon$. Tương đương với $\lim_{n \to \infty} a_n = \lim_{n \to \infty} b_n \Rightarrow \lim_{n \to \infty} (a_n - b_n) = 0$. Chú ý cách Newton nói "trong một khoảng thời gian hữu hạn" chứ không nói tại một điểm - đó là ý cốt lõi, vì giới hạn là một tuyên bố về đuôi của dãy chứ không phải về một khoảnh khắc.
 >
 > **Vì sao ông gọi đây là “tỷ số giới hạn”**
 >
 > Ông cần nền tảng để rồi mới chứng minh được định luật I và II mà không bị mắc kẹt. Ông hiểu rõ các nghịch lý của Zeno về vận động, và các đối thủ của ông sẽ tấn công ông ngay lập tức nếu ông dùng "vô hạn nhỏ" như một vật thể. Bằng cách chỉ nói về **tỷ số đầu và cuối** của các đại lượng đang biến đổi, ông tránh hẳn câu hỏi về cái vô hạn nhỏ có tồn tại hay không.
 >
-> Bản chất của Lemma I không thay đổi, nhưng ngôn ngữ trình bày thì đã thay đổi hoàn toàn. Toán học hiện đại dùng ngôn ngữ hệ quân vì nó tránh được mọi trực giác sai lệch: nó không nói gì về "điểm cuối cùng", chỉ nói từ ngưỡng nào trở đi thì đúng. Trực giác của Newton — còn tồn tại sai khác nào không — vẫn có giá trị khi phân tích, và người học vẫn dùng nó để trực giác hoá. Điều ngày nay không còn chấp nhận là coi các đại lượng vô hạn nhỏ như thể chúng có thật.
+> Bản chất của Lemma I không thay đổi, nhưng ngôn ngữ trình bày thì đã thay đổi hoàn toàn. Toán học hiện đại dùng ngôn ngữ hệ quân vì nó tránh được mọi trực giác sai lệch: nó không nói gì về "điểm cuối cùng", chỉ nói từ ngưỡng nào trở đi thì đúng. Trực giác của Newton - còn tồn tại sai khác nào không - vẫn có giá trị khi phân tích, và người học vẫn dùng nó để trực giác hoá. Điều ngày nay không còn chấp nhận là coi các đại lượng vô hạn nhỏ như thể chúng có thật.
 
 ## Lemma II
 
@@ -49,7 +49,7 @@ Nhưng hình chữ nhật này, vì bề rộng $AB$ của nó được giảm v
 >
 > **Vì sao ông tỉ mỉ so sánh phần giữa hai lớp**
 >
-> Newton không hề dùng ký hiệu tích phân; ông dùng các tỷ số đầu và cuối. Việc ông so sánh diện tích phần giữa hai lớp — thay vì chỉ nói "phần dư nhỏ đi" — là để chứng minh **phần dư** nhỏ lại tuyến tính theo bề rộng đáy, và nhờ đó phần dư bị kiểm soát chặt. Ý ấy sau này được gọi là ước lượng sai số, và nó là phần cứng nhất về mặt toán học trong toàn bộ cơ học của ông.
+> Newton không hề dùng ký hiệu tích phân; ông dùng các tỷ số đầu và cuối. Việc ông so sánh diện tích phần giữa hai lớp - thay vì chỉ nói "phần dư nhỏ đi" - là để chứng minh **phần dư** nhỏ lại tuyến tính theo bề rộng đáy, và nhờ đó phần dư bị kiểm soát chặt. Ý ấy sau này được gọi là ước lượng sai số, và nó là phần cứng nhất về mặt toán học trong toàn bộ cơ học của ông.
 >
 > Hình học này vẫn sống trong hai nơi. Một là trong giải tích: tổng Riemann mà ngày nay dùng để định nghĩa tích phân chính là các hình chữ nhật nội tiếp và ngoại tiếp mà Newton vẽ ở đây, và bước ước lượng phần dư ông đòi hỏi chính là điều kiện để tổng Riemann hội tụ. Hai là trong lý thuyết độ đo và xác suất, nơi cách kẹp giữa một tổng dưới và một tổng trên là cách chuẩn để định nghĩa một đại lượng mà chưa có công thức tích phân. Nếu bỏ bước ước lượng phần dư này đi, thì phép tích thế kỷ XVII chưa đủ sức chứng minh định luật Kepler.
 

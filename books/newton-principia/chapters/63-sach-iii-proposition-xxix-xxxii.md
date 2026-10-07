@@ -145,7 +145,7 @@ Mỗi khi sin của một góc chuyển từ dương sang âm, hoặc từ âm s
 >
 > Ông biết dấu hiệu của chuyển động ấy thay đổi theo vị trí, nên phải trả lời câu hỏi khó: node đi tiến hay lùi? Công thức cho thấy ba giao số ấy đổi dấu, nên ông rà lại từng trường hợp: mỗi tháng node **tiến** trong một khoảng ngắn, đúng khi Mặt Trăng nằm giữa một phần vuông và node nằm gần phần vuông ấy; ngoài ra thì node lùi. Vì phần lùi lớn hơn hẳn phần tiến, trung bình cả tháng node lùi.
 >
-> Chuyển động ấy ngày nay gọi là lùi node, và nó không phải chi tiết lý thuyết mà là thứ quyết định lịch nhật thực. Node Mặt Trăng lùi hết một vòng hoàng đạo trong khoảng mười tám phẩy sáu năm. Vì Mặt Trăng phải trở lại đúng node cũ mới tái lập hiện tượng ấy, tháng trăng tính theo node — tháng rằm, dài khoảng $27{,}21$ ngày — ngắn hơn tháng tính theo sao, vốn dài $27{,}32$ ngày. Hệ quả thực tế nhất là nhật thực: Mặt Trăng chỉ có thể che Mặt Trời hay bị Mặt Trời che khi nó nằm gần một node. Do đó các nhật thực không tới rải rác, mà đến từng mùa, cách nhau khoảng $173$ ngày, mỗi mùa có từ hai đến năm lần.
+> Chuyển động ấy ngày nay gọi là lùi node, và nó không phải chi tiết lý thuyết mà là thứ quyết định lịch nhật thực. Node Mặt Trăng lùi hết một vòng hoàng đạo trong khoảng mười tám phẩy sáu năm. Vì Mặt Trăng phải trở lại đúng node cũ mới tái lập hiện tượng ấy, tháng trăng tính theo node - tháng rằm, dài khoảng $27{,}21$ ngày - ngắn hơn tháng tính theo sao, vốn dài $27{,}32$ ngày. Hệ quả thực tế nhất là nhật thực: Mặt Trăng chỉ có thể che Mặt Trời hay bị Mặt Trời che khi nó nằm gần một node. Do đó các nhật thực không tới rải rác, mà đến từng mùa, cách nhau khoảng $173$ ngày, mỗi mùa có từ hai đến năm lần.
 
 ### Hệ quả 1
 

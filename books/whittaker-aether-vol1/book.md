@@ -24,7 +24,7 @@ Vì vậy: **không được ghi trong ghi chú rằng một đoạn thuộc ấ
 đã đối chiếu đúng ấn phẩm đó. Tác giả viết lời tựa ở PDF 9 xác nhận trực tiếp
 điều này: *"The volume of 1910 has been to a considerable extent rewritten, with
 the incorporation of much additional material"*. Phần thân sách vì thế phản ánh
-tình hình vật lý tính đến khoảng 1951 — các mục như điện tử của Lorentz, lý thuyết
+tình hình vật lý tính đến khoảng 1951 - các mục như điện tử của Lorentz, lý thuyết
 tương đối hạn và lý thuyết lượng tử đều được viết theo cách chỉ có thể có sau
 1900.
 
@@ -32,7 +32,7 @@ Tóm lược về nguồn:
 
 - Nguồn chính: bản scan trong `C:\Users\nguye\Downloads\A History of the Theories
   of Aether  Electricity, Vol. 1 The Classical Theories (Edmund Taylor Whittaker)
-  (z-library.sk, 1lib.sk, z-lib.sk).pdf` — 452 trang PDF.
+  (z-library.sk, 1lib.sk, z-lib.sk).pdf` - 452 trang PDF.
 - Bản scan gốc: [Internet Archive, `historyoftheorie0001edmu`](https://archive.org/details/historyoftheorie0001edmu).
 - Lớp OCR trong PDF là bản nháp để đối chiếu, **không** phải nguồn chuẩn. Nó
   làm hỏng nặng ký hiệu toán: chỉ số dưới bị trải phẳng, mũ trên bị mất, và các
@@ -51,11 +51,11 @@ Tóm lược về nguồn:
 - Chú thích dùng footnote Markdown (`[^…]`), vì sách có hàng trăm chú thích trích
   dẫn thư mục. Nhãn mang số trang nguồn, ví dụ `[^p27n1]` là chú thích 1 ở PDF
   trang 27, để còn truy vết được về bản in. `tools/test_build_books.py` kiểm tra
-  rằng mọi chú thích đều có định nghĩa và không định nghĩa nào bị bỏ rơi — Pandoc
+  rằng mọi chú thích đều có định nghĩa và không định nghĩa nào bị bỏ rơi - Pandoc
   im lặng bỏ cả hai lỗi đó.
 - **Sách có hình minh họa, nhưng không hình nào được đánh số.** Chúng được gọi tới
   bằng danh từ trần ("the figure"). Vì vậy không được dò hình bằng cách tìm
-  `Fig.`/`figure` kèm số — cách đó báo nhầm rằng sách không có hình. Phải dò theo
+  `Fig.`/`figure` kèm số - cách đó báo nhầm rằng sách không có hình. Phải dò theo
   nhãn chữ cái cạnh nhau và các cụm `the figure` / `in the first Figure`. Hình
   trích từ scan sang `assets/`. Xem bảng hình trong `TRANSLATION_LEDGER.md`.
 - Vì phần thân sách là toán vật lý, công thức được viết bằng LaTeX. Ký hiệu

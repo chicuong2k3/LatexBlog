@@ -149,7 +149,7 @@ Từ thời gian đã cho, ta có thể xác định quãng đường đi lên h
 > \int \frac{dv}{\sqrt{g+\gamma v^2}} = \frac{1}{\sqrt{\gamma}}\,\operatorname{arsinh}\!\left(v\sqrt{\frac{\gamma}{g}}\right),
 > $$
 >
-> mà $\operatorname{arsinh}$ chính là **góc ở tâm một cung tròn** — đó là cách Newton đọc nó, trước khi có tên gọi. Khi rơi, khi đã gần vận tốc giới hạn $v_t = \sqrt{g/\gamma}$, ta có $dt = dv/\sqrt{\gamma v^2 - g}$, và tích phân ra
+> mà $\operatorname{arsinh}$ chính là **góc ở tâm một cung tròn** - đó là cách Newton đọc nó, trước khi có tên gọi. Khi rơi, khi đã gần vận tốc giới hạn $v_t = \sqrt{g/\gamma}$, ta có $dt = dv/\sqrt{\gamma v^2 - g}$, và tích phân ra
 >
 > $$
 > \frac{1}{\sqrt{\gamma}}\,\operatorname{arcosh}\!\left(v\sqrt{\frac{\gamma}{g}}\right),
@@ -230,7 +230,7 @@ Số hạng đầu tiên $e$ biểu diễn chiều dài tung độ $CH$. Số h�
 >
 > **Chuỗi lũy thừa: mỗi số hạng là một đạo hàm, lấy tại một điểm**
 >
-> Ngay giữa Bài toán III, trong lúc giải một bài toán ngược — suy ra mật độ môi trường từ một quỹ tích cho trước — Newton khai triển một chuỗi lũy thừa rồi giải thích ý nghĩa của từng bậc. Số hạng thứ nhất cho biết độ dài, số hạng thứ hai cho biết vị trí tiếp tuyến, số hạng thứ ba cho biết góc tiếp xúc tức là độ cong, số hạng thứ tư cho biết sự thay đổi của độ cong, số hạng thứ năm cho biết sự thay đổi của sự thay đổi ấy.
+> Ngay giữa Bài toán III, trong lúc giải một bài toán ngược - suy ra mật độ môi trường từ một quỹ tích cho trước - Newton khai triển một chuỗi lũy thừa rồi giải thích ý nghĩa của từng bậc. Số hạng thứ nhất cho biết độ dài, số hạng thứ hai cho biết vị trí tiếp tuyến, số hạng thứ ba cho biết góc tiếp xúc tức là độ cong, số hạng thứ tư cho biết sự thay đổi của độ cong, số hạng thứ năm cho biết sự thay đổi của sự thay đổi ấy.
 >
 > Chuỗi ông dùng là
 >
@@ -248,7 +248,7 @@ Số hạng đầu tiên $e$ biểu diễn chiều dài tung độ $CH$. Số h�
 >
 > Ông cần đọc mật độ môi trường ra từ đường cong quỹ tích, mà một đường cong chỉ trao cho ta thông tin theo bậc: mỗi bậc một đạo hàm. Nói rõ bậc nào cho biết cái gì là cách tổ chức thông tin theo bậc một cách tường minh, cùng nguyên lý mà Taylor sẽ viết thành lý thuyết chuỗi chính thức hai mươi tám năm sau, trong năm 1715. Khác biệt chỉ ở chỗ người đọc hôm nay gọi tên những số hạng ấy ngay, còn Newton phải giải thích bằng hình học.
 >
-> Người đọc hôm nay nhìn thấy đúng hệ thống ý nghĩa ấy trong khai triển Taylor: hệ số bậc không cho giá trị, hệ số bậc một cho tiếp tuyến, bậc hai cho độ cong, bậc ba cho tốc độ thay đổi của độ cong. Cùng trong bài này, ông dừng chuỗi của Ví dụ 2 ở bậc hai rồi kết luận mật độ bằng không: quỹ tích parabol chỉ xuất hiện ở nơi không có môi trường, đúng như Galileo đã chứng minh. Và ông còn nêu điều kiện dấu — nếu bắn theo hướng ngược lại thì mật độ ra âm, tức môi trường đẩy vật thể đi, chứ không phải môi trường cản trở.
+> Người đọc hôm nay nhìn thấy đúng hệ thống ý nghĩa ấy trong khai triển Taylor: hệ số bậc không cho giá trị, hệ số bậc một cho tiếp tuyến, bậc hai cho độ cong, bậc ba cho tốc độ thay đổi của độ cong. Cùng trong bài này, ông dừng chuỗi của Ví dụ 2 ở bậc hai rồi kết luận mật độ bằng không: quỹ tích parabol chỉ xuất hiện ở nơi không có môi trường, đúng như Galileo đã chứng minh. Và ông còn nêu điều kiện dấu - nếu bắn theo hướng ngược lại thì mật độ ra âm, tức môi trường đẩy vật thể đi, chứ không phải môi trường cản trở.
 
 So sánh chuỗi của bán kính với chuỗi chung, ta tìm được mật độ môi trường. Vận tốc tỷ lệ với $\sqrt{CH}$; lực cản tỷ lệ với tiếp tuyến $HT$. Nếu vật thể đi từ $F$ với vận tốc thích hợp theo phương song song với $PQ$, và mật độ tại $H$ tỷ lệ nghịch với tiếp tuyến $HT$, lực cản tại $H$ tỷ lệ với trọng lực như $AC$ với $PQ$, nó sẽ mô tả góc phần tư $FHQ$.
 

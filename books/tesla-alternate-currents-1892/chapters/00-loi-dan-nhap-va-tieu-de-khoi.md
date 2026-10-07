@@ -8,11 +8,11 @@ slug: "loi-dan-nhap-va-tieu-de-khoi"
 
 <!-- PDF 2 · bìa lưu trữ -->
 
-UNIVERSITY OF ILLINOIS LIBRARY — URL ANA-CHAMPAIGN
+UNIVERSITY OF ILLINOIS LIBRARY - URL ANA-CHAMPAIGN
 
 <!-- PDF 3 · phiếu thư viện -->
 
-> **UNIVERSITY LIBRARY — UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN**
+> **UNIVERSITY LIBRARY - UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN**
 >
 > Người mượn tài liệu này chịu trách nhiệm gia hạn hoặc trả trước hoặc
 > trong ngày đến hạn. Khoản phí tối thiểu cho một tài liệu thất lạc là
@@ -88,10 +88,10 @@ Trong khi một phần lớn của gia đình người châu Âu suốt ba hay b
 dồn từ hướng tây, lấp đầy những châu lục rộng lớn của châu Mỹ, thì một phần
 khác, nhỏ hơn nhiều, vẫn làm công việc tiền tuyến ở thế giới cũ, che chở
 phe sau bằng cách đẩy lùi "thổ phi vô danh" và từ từ giành lại những vùng đất
-tốt đẹp còn chịu lời nguyền của chế độ Mô-ha-mét. Người Slavic — sau trận Kosovo
+tốt đẹp còn chịu lời nguyền của chế độ Mô-ha-mét. Người Slavic - sau trận Kosovo
 Polje, nơi quân Ottoman đánh bại người Serb, rút về các vùng biên của nước
 Montenegro, Dalmatia, Herzegovina và Bosnia ngày nay, cùng vùng "Vùng biên" của
-Áo — lâu nay hiểu rõ mình phải đối diện với điều gì, cũng như những người tiên
+Áo - lâu nay hiểu rõ mình phải đối diện với điều gì, cũng như những người tiên
 phong miền Tây của chúng ta: những kẻ địch không ngừng gặm gỡ bờ cương của họ.
 Và các dân tộc ở những nước này, qua cuộc tranh đấu gay gắt chống lại đạo quân
 của Trăng Lưỡi Liềm, đã rèn luyện nên những phẩm chất đáng chú ý về lòng dũng
@@ -107,7 +107,7 @@ danh dự bất ngờ, y như của việc theo đuổi điện học, lẫn c�
 <!-- PDF 12 · trang in IV -->
 
 Quê hương của ông là Smiljan, thuộc vùng Lika, nơi cha ông là một mục sư tài
-tài ăn nói hay của Giáo hội Hy Lạp — theo lời ông, gia đình ông cho đến nay
+tài ăn nói hay của Giáo hội Hy Lạp - theo lời ông, gia đình ông cho đến nay
 vẫn có tiếng rõ trong đó. Mẹ ông nổi tiếng khắp vùng quê về tài khéo tay và
 sự tinh tế trong thêu phối, và chắc đã truyền tài năng ấy cho Nikola, dù tài
 năng ấy tất nhiên đã đi theo một hướng khác, nam tính hơn.
@@ -120,7 +120,7 @@ cậu biến thành tội phạm theo cách riêng: bị nhốt trong một nhà
 núi, nơi hiếm khi có người đến dự lễ. Lần khác, cậu ngã đầu xuống một chiếc
 nồi sữa bò sôi sục lớn vừa mới vắt từ bầu báu của cha. Câu chuyện kỳ lạ thứ
 ba liên quan đến nỗ lực bay của cậu: khi dùng một chiếc dù cũ để lèo lài
-trên không trung, cậu — như có thể đoán trước — ngã rất tệ, phải nằm liệt sáu
+trên không trung, cậu - như có thể đoán trước - ngã rất tệ, phải nằm liệt sáu
 tuần.
 
 Khoảng thời gian đó, cậu bắt đầu thích thú với số học và vật lý. Một ý tưởng

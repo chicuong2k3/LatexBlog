@@ -21,7 +21,7 @@ Thời gian tương đối, có vẻ như và thông thường, là một thư�
 >
 > **Ở đây Newton tuyên bố, chứ không định nghĩa**
 >
-> Ông không mô tả thời gian là gì. Ông nói nó tự trôi đều và không cần gì bên ngoài. Trong thuật ngữ triết học đó là thuyết **chất thể** về thời gian, và Leibniz giữ quan điểm đối lập: thời gian chỉ là thứ tự của các sự kiện, không phải một thực thể. Lập luận của Leibniz, tranh luận với Newton gián tiếp qua thư từ với Clarke: nếu thời gian là thực thể độc lập thì khoảng thời gian không có sự vật, không có chuyển động, không có ý nghĩ nào vẫn phải tồn tại — tức vũ trụ từng chứa vô hạn thời gian rỗng, mà thời gian rỗng không khác gì hư vô.
+> Ông không mô tả thời gian là gì. Ông nói nó tự trôi đều và không cần gì bên ngoài. Trong thuật ngữ triết học đó là thuyết **chất thể** về thời gian, và Leibniz giữ quan điểm đối lập: thời gian chỉ là thứ tự của các sự kiện, không phải một thực thể. Lập luận của Leibniz, tranh luận với Newton gián tiếp qua thư từ với Clarke: nếu thời gian là thực thể độc lập thì khoảng thời gian không có sự vật, không có chuyển động, không có ý nghĩ nào vẫn phải tồn tại - tức vũ trụ từng chứa vô hạn thời gian rỗng, mà thời gian rỗng không khác gì hư vô.
 >
 > Cùng ý ấy, ngày nay phát biểu bằng toán học: nếu các định luật vật lí không đổi dưới phép dịch chuyển không gian thì phải tồn tại một đại lượng bất biến dưới phép dịch đó. Mệnh đề "thời gian trôi đều" không phải điều Newton tự bịa ra, mà là điều bắt buộc phải có nếu vật lí tồn tại.
 >
@@ -49,9 +49,9 @@ Ví dụ, nếu Trái Đất chuyển động, một không gian thuộc không 
 >
 > Đây là mệnh đề triết học nặng nhất trong *Principia*. Mọi thứ ta gọi là "không gian" trong đời thường chỉ là phép đo kích thước của không gian tuyệt đối ấy, và phép đo ấy thay đổi theo vật thể dùng làm mốc.
 >
-> Ví dụ không khí rất tinh tế. Một thể tích không khí trên đầu chúng ta luôn giữ nguyên vị trí **tương đối với Trái Đất**, nhưng vì không khí chảy qua nó, thể tích ấy luôn thuộc về **những vùng khác nhau của không gian tuyệt đối** từ thời điểm này sang thời điểm khác. Cùng một vị trí tương đối ứng với nhiều vị trí tuyệt đối khác nhau — đó là lý do hai khái niệm phải tách bạch. Nếu không có gió, hai cách gọi ấy sẽ trùng nhau.
+> Ví dụ không khí rất tinh tế. Một thể tích không khí trên đầu chúng ta luôn giữ nguyên vị trí **tương đối với Trái Đất**, nhưng vì không khí chảy qua nó, thể tích ấy luôn thuộc về **những vùng khác nhau của không gian tuyệt đối** từ thời điểm này sang thời điểm khác. Cùng một vị trí tương đối ứng với nhiều vị trí tuyệt đối khác nhau - đó là lý do hai khái niệm phải tách bạch. Nếu không có gió, hai cách gọi ấy sẽ trùng nhau.
 >
-> Trong vật lí hôm nay, không gian tuyệt đối của Newton được thay bằng phép tịnh tiến trong không gian ba chiều: $\vec{x}' = \vec{x} - \vec{V}t$. Phép biến đổi này **bảo toàn khoảng cách giữa hai sự kiện cùng lúc** ($\Delta t' = \Delta t$) — đó là nội dung của không gian ba chiều bất biến dưới tịnh tiến. Khi phép tịnh tiến trộn lẫn không gian và thời gian, bất biến thật sự phải là khoảng cách không gian–thời gian.
+> Trong vật lí hôm nay, không gian tuyệt đối của Newton được thay bằng phép tịnh tiến trong không gian ba chiều: $\vec{x}' = \vec{x} - \vec{V}t$. Phép biến đổi này **bảo toàn khoảng cách giữa hai sự kiện cùng lúc** ($\Delta t' = \Delta t$) - đó là nội dung của không gian ba chiều bất biến dưới tịnh tiến. Khi phép tịnh tiến trộn lẫn không gian và thời gian, bất biến thật sự phải là khoảng cách không gian–thời gian.
 >
 > Newton cần không gian tuyệt đối vì các định luật ông viết bằng cách nói về vị trí **tuyệt đối**: khi ông viết "vật thể chuyển động theo một đường thẳng", đường thẳng ấy phải tồn tại độc lập với việc ta lấy vật thể khác làm mốc. Nếu không có phông nền đó, mọi định luật ông đã chứng minh chỉ còn đúng tương đối với từng cặp vật thể, và cả cuốn sách sụp đổ.
 >
@@ -91,7 +91,7 @@ Khi ấy, thủy thủ sẽ thật sự chuyển động trong không gian bất
 >
 > Đây là phép cộng vận tốc, và bộ số Newton dùng là ví dụ kinh điển: $\vec{v}_{thuy\,thu} = \vec{v}_{Trái\,Đất} + \vec{v}_{tàu/Trái\,Đất} + \vec{v}_{thuy\,thủ/tàu}$. Tôi kiểm lại từng bước: $10010 - 10 = 10000$ là vận tốc của con tàu so với không gian bất động; thủy thủ đi về phía đông $1$ phần trên tàu đang chạy về phía tây, nên so với Trái Đất ông đi về phía tây $10 - 1 = 9$ phần; và $10010 - 9 = 10001$ là chuyển động thật của thủy thủ. Cả ba con số Newton đưa ra đều đúng.
 >
-> Con tàu không chỉ là hình ảnh quen thuộc, mà là **thí nghiệm duy nhất người đời khi đó có thể thực hiện**. Trước khi có tàu chạy hơi nước, một con tàu buồm trên biển khá gần với đứng yên, nên cảm giác "đứng yên trên tàu" chưa từng bị nghi ngờ. Newton cần một tình huống mà kết quả hợp lý lại đến mức vô lý — thủy thủ bước đi một bước thì bị đẩy lùi $9$ phần — để ép người đọc thừa nhận rằng "đứng yên" không phải khái niệm tuyệt đối.
+> Con tàu không chỉ là hình ảnh quen thuộc, mà là **thí nghiệm duy nhất người đời khi đó có thể thực hiện**. Trước khi có tàu chạy hơi nước, một con tàu buồm trên biển khá gần với đứng yên, nên cảm giác "đứng yên trên tàu" chưa từng bị nghi ngờ. Newton cần một tình huống mà kết quả hợp lý lại đến mức vô lý - thủy thủ bước đi một bước thì bị đẩy lùi $9$ phần - để ép người đọc thừa nhận rằng "đứng yên" không phải khái niệm tuyệt đối.
 >
 > **Một chỗ ông không nói**
 >
@@ -115,4 +115,4 @@ Thời lượng, hay sự tồn tại bền vững của sự tồn tại của 
 >
 > Ông cần thời gian tuyệt đối để làm việc với Định luật II, nên ông thừa nhận rằng không tồn tại cách đo nào hoàn hảo và mọi thước đo đều phải hiệu chỉnh. Đây là một bước lùi rất thực dụng so với hình ảnh thường gán cho ông: ông không tuyên bố có thể đo thời gian tuyệt đối, chỉ nói rằng thời gian tuyệt đối tồn tại và mọi phép đo là xấp xỉ có hiệu chỉnh.
 >
-> Cả ý "tiến trình đều không chịu thay đổi nào" thì sai. Cơ chế thay đổi không nằm ở ánh sáng mà ở trường hấp dẫn: **gia tốc bản toàn cục** làm chậm đồng hồ đang rơi, đo được bằng thí nghiệm Pound–Rebka năm 1959 ở mức vài phần nghìn. Trường hấp dẫn không phân biệt được với gia tốc — đúng như Hệ quả VI của chương trước đã gợi ý.
+> Cả ý "tiến trình đều không chịu thay đổi nào" thì sai. Cơ chế thay đổi không nằm ở ánh sáng mà ở trường hấp dẫn: **gia tốc bản toàn cục** làm chậm đồng hồ đang rơi, đo được bằng thí nghiệm Pound–Rebka năm 1959 ở mức vài phần nghìn. Trường hấp dẫn không phân biệt được với gia tốc - đúng như Hệ quả VI của chương trước đã gợi ý.

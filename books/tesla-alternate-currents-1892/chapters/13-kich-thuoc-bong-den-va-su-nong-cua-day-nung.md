@@ -64,7 +64,7 @@ Trên mỗi cuống thuỷ tinh ở bên trong bóng, người ta luồn vào m�
 tấm nhôm, ống ấy vừa khít với cuống và được giữ trên đó bằng lực lò xo. Chức năng của ống
 nhôm ấy sẽ được giải thích sau. Trong mỗi bóng, một đoạn dây nung dài bằng nhau thò ra phía
 trên ống kim loại. Chỉ cần nói rằng bây giờ, dưới những điều kiện ấy, những đoạn dây nung
-dài bằng nhau và cùng độ dày — nói cách khác, những vật thể có thể tích bằng nhau — đã được
+dài bằng nhau và cùng độ dày - nói cách khác, những vật thể có thể tích bằng nhau - đã được
 đưa tới trạng thái nóng đỏ. Ba bóng đèn được hàn vào một ống thuỷ tinh, và ống ấy nối với
 một bơm Sprengel. Khi đã đạt được chân không rất cao, ống thuỷ tinh mang theo các bóng đèn
 được hàn kín lại. Rồi lần lượt bật dòng điện vào từng bóng, và người ta thấy các dây nung

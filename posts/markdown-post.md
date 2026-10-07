@@ -2,7 +2,7 @@
 title: "Viết bài bằng Markdown"
 date: 2026-09-23
 tags: [meta, markdown]
-summary: "Bài mẫu minh hoạ pipeline .md — frontmatter YAML, math, code, quote, table, footnote."
+summary: "Bài mẫu minh hoạ pipeline .md - frontmatter YAML, math, code, quote, table, footnote."
 slug: markdown-post
 ---
 
@@ -41,7 +41,7 @@ Inline code: `print("hello")`.
 
 > Đây là blockquote.
 > 
-> — Tác giả
+> - Tác giả
 
 ## Lists
 

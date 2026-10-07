@@ -349,7 +349,7 @@ Lập luận giống Proposition trước. Chuyển động của hạt thể b�
 >
 > **Lực tuyến tính giữa các hạt thể: hình dạng vô tầm quan, chỉ cần tổng khối lượng**
 >
-> Nếu các hạt thể của một vật thể hút nhau theo lực tỷ lệ thuận với khoảng cách — tức lực Hooke — thì vật thể ấy, dù có hình dạng gì, hút một hạt thể bên ngoài **đúng như một quả cầu** có cùng khối lượng đặt tại trọng tâm.
+> Nếu các hạt thể của một vật thể hút nhau theo lực tỷ lệ thuận với khoảng cách - tức lực Hooke - thì vật thể ấy, dù có hình dạng gì, hút một hạt thể bên ngoài **đúng như một quả cầu** có cùng khối lượng đặt tại trọng tâm.
 >
 > Chứng minh làm việc trên từng cặp. Với hai hạt thể $A$, $B$ có khối lượng $a$, $b$ và trọng tâm chung $G$ thỏa $AG:BG = b:a$, lực $a\cdot GZ$ và $b\cdot GZ$ cùng hướng về $G$ nên hợp thành $(a+b)\cdot GZ$; còn hai số hạng $a\cdot AG$ và $b\cdot BG$ thì bằng nhau và ngược hướng nên triệt tiêu. Vậy **hai hạt thể hành xử như một hạt thể duy nhất** đặt tại $G$. Lặp lại với hạt thể thứ ba, rồi thứ tư, ta thu được toàn bộ vật thể.
 >
@@ -473,11 +473,11 @@ Nếu một vật thể hữu hạn, phẳng ở một mặt, hút một hạt t
 >
 > Với lực của một hạt thể tỷ lệ $1/r^n$, lực của toàn bộ mặt phẳng ở khoảng cách $d$ tỷ lệ nghịch với $d^{n-3}$. Số mũ lùi **ba đơn vị** so với lực của một hạt thể đơn lẻ, và đó là hệ quả trực tiếp của việc chia mặt phẳng thành các dải song song: một dải ở khoảng cách $x$, rộng $dx$, có diện tích tỷ lệ với $x\,dx$, nên nó hút với lực tỷ lệ với $x\,dx/x^n = x^{1-n}dx$. Tổng là $\int_0^\infty x^{1-n}\,dx$.
 >
-> Tích phân ấy chỉ hội tụ khi $n > 3$, và khi ấy nó bằng $\dfrac{1}{n-2}\dfrac{1}{d^{n-3}}$. Hệ quả 3 nêu trường hợp loại: với $n = 3$, số mũ trở về $0$, tích phân trên toàn mặt phẳng **không hội tụ** — phần xa lớn hơn vô hạn phần gần, và lực hút tổng thể không tồn tại. Vậy $n = 3$ là đường biên thật, không phải một trường hợp để suy rộng.
+> Tích phân ấy chỉ hội tụ khi $n > 3$, và khi ấy nó bằng $\dfrac{1}{n-2}\dfrac{1}{d^{n-3}}$. Hệ quả 3 nêu trường hợp loại: với $n = 3$, số mũ trở về $0$, tích phân trên toàn mặt phẳng **không hội tụ** - phần xa lớn hơn vô hạn phần gần, và lực hút tổng thể không tồn tại. Vậy $n = 3$ là đường biên thật, không phải một trường hợp để suy rộng.
 >
 > Ông viết vậy vì cần quy luật lực cho vật thể không có hình cầu, và ông chọn đúng hình hạn mà vẫn giải được. Việc nêu thẳng điều kiện $n > 3$ cho thấy ông giữ một tiêu chuẩn: một kết quả chỉ đúng trong một miền thì phải nói rõ miền ấy, thay vì giả vờ nó đúng với mọi trường hợp.
 >
-> Mặt phẳng vô hạn vẫn là công cụ chuẩn trong trọng lực học và vật lí thiên thể: nó tính được trường của các lớp đất gần như phẳng, và nó là mô hình đơn giản nhất cho một thiên hà vô hạn. Cảnh báo về $n = 3$ cũng chính là lý do các mô hình "vũ trụ phẳng vô hạn" bị xem là bệnh lý — tích phân không hội tụ, nên tổng lực hút không tồn tại để mà tính.
+> Mặt phẳng vô hạn vẫn là công cụ chuẩn trong trọng lực học và vật lí thiên thể: nó tính được trường của các lớp đất gần như phẳng, và nó là mô hình đơn giản nhất cho một thiên hà vô hạn. Cảnh báo về $n = 3$ cũng chính là lý do các mô hình "vũ trụ phẳng vô hạn" bị xem là bệnh lý - tích phân không hội tụ, nên tổng lực hút không tồn tại để mà tính.
 
 ## Học luận
 

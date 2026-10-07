@@ -206,7 +206,7 @@ hợp thành đã biết, nên từ chúng sẽ tìm ra từng chuỗi sai lệc
 >
 > Đây là cách tính bằng thực hành mà thành phép tính giải tích: bắt đầu từ cấp số cộng, rồi
 > liên tiếp trừ đi. Trong cách viết ngày nay, điều tương đương là lấy đạo hàm rồi tích phân,
-> hoặc dùng một đa thức Taylor — cả hai đều là trường hợp riêng của bảng trên khi
+> hoặc dùng một đa thức Taylor - cả hai đều là trường hợp riêng của bảng trên khi
 > $\Delta y \approx \omega\,\frac{dy}{dx}$.
 >
 > Một chi tiết cần để mắt: chỉ số trên $y$ và trên $\Delta y$ ở đây là số La Mã
@@ -249,7 +249,7 @@ lập thành cấp số cộng.
 
 > **[Chú giải]**
 >
-> **"Chứa đựng mọi lượng thực" — câu này chỉ đúng nếu ω hiểu được là biến**
+> **"Chứa đựng mọi lượng thực" - câu này chỉ đúng nếu ω hiểu được là biến**
 >
 > Euler lập luận: cấp số cộng với $\omega$ thì nhận cả giá trị âm lẽ cả dương, nên nó chạm
 > tới được mọi lượng thực, còn chuỗi nhân thì không. Lập luận ấy là lý do ông chọn cấp số
@@ -257,7 +257,7 @@ lập thành cấp số cộng.
 >
 > Nhưng nếu $\omega$ là một số cố định thì các giá trị $x + n\omega$ với $n$ nguyên tạo thành
 > một dãy rời rạc, không phải mọi số thực. Điều đó không thành vấn đề, vì Euler không bao giờ
-> định $\omega$; ông nói ở §4 là $\omega$ "pro arbitrio augeri diminuique queat" — tùy ý tăng
+> định $\omega$; ông nói ở §4 là $\omega$ "pro arbitrio augeri diminuique queat" - tùy ý tăng
 > hay giảm. Chỉ khi đọc $\omega$ là một lượng biến thiên liên tục thì câu ấy mới thành lời.
 >
 > Điều cần chú ý về sau: chính vì $\omega$ phải tùy ý đi tới vô cùng nhỏ, thế giới hữu hạn ở
@@ -591,7 +591,7 @@ trong chuỗi ứng với differentia $\Delta^5 y$, số hạng 16800 tìm đư�
 >
 > **Bảng này là các số Stirling loại hai, nhân với giai thừa**
 >
-> Quy tắc Euler vừa nêu — cộng số đứng trước với số ở trên, rồi nhân với chỉ số $\Delta$ —
+> Quy tắc Euler vừa nêu - cộng số đứng trước với số ở trên, rồi nhân với chỉ số $\Delta$ -
 > chính là truy hồi mà ngày nay dùng cho các số Stirling loại hai, chỉ khác ở chỗ các số
 > Stirling được nhân thêm $k!$ mỗi hàng.
 >
@@ -1629,7 +1629,7 @@ lẫn nhau, thì khi ấy tổng của differentia đã cho có thể biểu th�
 <!-- Hết CAPUT I. Đã dịch đủ PDF 31-66, tức trang in 3-38, §1-§36. -->
 
 <!-- Ghi chú dịch giả: ý ở §30 rằng các số hạng bậc chẵn bị thiếu (x^(n-2), x^(n-4), ...)
-     vì hệ số bằng 0 — đúng với công thức: số mũ của các số hạng là n+1, n, n-1, n-3,
+     vì hệ số bằng 0 - đúng với công thức: số mũ của các số hạng là n+1, n, n-1, n-3,
      n-5, ... nên không có số mũ n-2, n-4, n-6. -->
 <!-- Ghi chú dịch giả: các hệ số 691/210, 35/2, 3617/30, 43867/42, 1222277/110,
      854513/6 đúng là các số Bernoulli B12, B14, B16, B18, B20, B22 nhân với hệ số

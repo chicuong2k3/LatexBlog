@@ -145,13 +145,13 @@ Lemma này hữu ích khi giải những bài toán khó: những hình phức t
 >
 > Nếu $G$ chạy trên một đường bậc ba thì $g$ cũng chạy trên một đường bậc ba; đường thẳng thì ra đường thẳng, hình cắt conic thì ra hình cắt conic.
 >
-> Mấu chốt nằm ở việc **cả hai toạ độ cũ và mới đều biến đổi theo cùng một tỷ lệ**, nên khi thay cả hai vào phương trình của đường cũ thì bậc của phương trình được giữ nguyên. Đường thẳng, ở đó $AD$ và $DG$ chỉ xuất hiện bậc nhất, biến thành một phương trình bậc nhất trong $ad$ và $dg$ — tức vẫn là đường thẳng; lặp lại với bậc hai rồi bậc ba thì suy ra hai đường luôn cùng bậc. Tính chạm tiếp tuyến cũng được bảo toàn, vì nó chỉ phụ thuộc điểm và đường thẳng, mà cả hai đều được chuyển theo cùng cách.
+> Mấu chốt nằm ở việc **cả hai toạ độ cũ và mới đều biến đổi theo cùng một tỷ lệ**, nên khi thay cả hai vào phương trình của đường cũ thì bậc của phương trình được giữ nguyên. Đường thẳng, ở đó $AD$ và $DG$ chỉ xuất hiện bậc nhất, biến thành một phương trình bậc nhất trong $ad$ và $dg$ - tức vẫn là đường thẳng; lặp lại với bậc hai rồi bậc ba thì suy ra hai đường luôn cùng bậc. Tính chạm tiếp tuyến cũng được bảo toàn, vì nó chỉ phụ thuộc điểm và đường thẳng, mà cả hai đều được chuyển theo cùng cách.
 >
 > **Một chiến lược giải, không chỉ là một kỹ thuật vẽ**
 >
-> Bài toán dựng quỹ đạo từ các điểm và tiếp tuyến rất dễ bế tắc nếu cứ giữ nguyên hình dạng. Bằng Lemma này, ông biến các đường thẳng hội tụ thành đường song song — một cấu hình dễ vẽ hơn nhiều — giải bài toán trong hình đã biến, rồi chuyển ngược lại bằng phép nghịch đảo.
+> Bài toán dựng quỹ đạo từ các điểm và tiếp tuyến rất dễ bế tắc nếu cứ giữ nguyên hình dạng. Bằng Lemma này, ông biến các đường thẳng hội tụ thành đường song song - một cấu hình dễ vẽ hơn nhiều - giải bài toán trong hình đã biến, rồi chuyển ngược lại bằng phép nghịch đảo.
 >
-> Người đọc hôm nay gọi đây là **chuẩn hoá phương trình bằng phép đổi biến**, và nó vẫn là cách chuẩn để giải bài toán conic ngoài mặt phẳng. Cùng ý bảo toàn bậc ấy xuất hiện trong lý thuyết đại số hình học hiện đại dưới tên phép biến đổi song ánh xạ, và nó là cơ sở để gọi hai đường cong là "chung lớp". Chi tiết đáng chú ý: Newton chứng minh bằng cách thay trực tiếp vào phương trình, tức đã làm công việc của kẻ phân tích chứ không chỉ của kẻ dựng hình — dù ông vẫn khẳng định mình đang dùng hình học thuần tuý.
+> Người đọc hôm nay gọi đây là **chuẩn hoá phương trình bằng phép đổi biến**, và nó vẫn là cách chuẩn để giải bài toán conic ngoài mặt phẳng. Cùng ý bảo toàn bậc ấy xuất hiện trong lý thuyết đại số hình học hiện đại dưới tên phép biến đổi song ánh xạ, và nó là cơ sở để gọi hai đường cong là "chung lớp". Chi tiết đáng chú ý: Newton chứng minh bằng cách thay trực tiếp vào phương trình, tức đã làm công việc của kẻ phân tích chứ không chỉ của kẻ dựng hình - dù ông vẫn khẳng định mình đang dùng hình học thuần tuý.
 
 Lemma cũng dùng được cho các bài toán không gian. Khi có hai hình cắt conh, một trong chúng, nếu là hypebol hoặc parabol, có thể biến thành elip, rồi elip dễ dàng biến thành đường tròn.
 

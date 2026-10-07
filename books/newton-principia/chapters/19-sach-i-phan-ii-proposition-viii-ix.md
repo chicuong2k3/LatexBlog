@@ -45,7 +45,7 @@ Lập luận tương tự cho thấy một vật thể sẽ chuyển động tro
 >
 > Đây là lần đầu tiên trong *Principia*, lực được mô tả bằng cách đó thay vì bằng quan hệ với tâm. Với tâm lực ở vô cùng xa, các đường $PS$ trở thành đường song song, và đại lượng quyết định là khoảng cách $PM$. Học luận mở rộng: cùng cách dựng ấy cho ra một bảng tra đối chiếu giữa số mũ của lực và hình dạng quỹ đạo.
 >
-> Kết quả là $F \propto \dfrac{1}{PM^3}$, với $\dfrac{2SP^2}{CP^2}$ là hằng số. Dạng tổng quát mà Học luận chỉ ra là $F \propto \dfrac{1}{y^n}$, và vì $F = -\dfrac{dU}{dy}$ nên thế năng tương ứng là $U \propto \dfrac{1}{y^{n-1}}$. Với $n = 2$ ta ra parabol, và lực hút vô cùng xa tỷ lệ nghịch với bình phương khoảng cách chính là gia tốc không đổi theo một phương — bài toán ném ngang quen thuộc.
+> Kết quả là $F \propto \dfrac{1}{PM^3}$, với $\dfrac{2SP^2}{CP^2}$ là hằng số. Dạng tổng quát mà Học luận chỉ ra là $F \propto \dfrac{1}{y^n}$, và vì $F = -\dfrac{dU}{dy}$ nên thế năng tương ứng là $U \propto \dfrac{1}{y^{n-1}}$. Với $n = 2$ ta ra parabol, và lực hút vô cùng xa tỷ lệ nghịch với bình phương khoảng cách chính là gia tốc không đổi theo một phương - bài toán ném ngang quen thuộc.
 >
 > **Hạ tâm lực ra vô cùng để giảm bài toán về bài toán đã biết**
 >

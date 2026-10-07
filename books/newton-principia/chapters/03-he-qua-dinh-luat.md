@@ -27,7 +27,7 @@ Lập luận tương tự cho ta biết vào cuối cùng khoảng thời gian �
 >
 > **Hệ quả I là quy tắc hình bình hành của lực**
 >
-> $\vec{F}_{net} = \vec{M} + \vec{N}$, tức hợp lực là đường chéo của hình bình hành dựng trên hai lực. Đây là phép cộng vector — nhưng với hai lực thay cho hai đại lượng.
+> $\vec{F}_{net} = \vec{M} + \vec{N}$, tức hợp lực là đường chéo của hình bình hành dựng trên hai lực. Đây là phép cộng vector - nhưng với hai lực thay cho hai đại lượng.
 >
 > Độ lớn của hợp lực suy ra bằng định lý cosin: $F = \sqrt{M^2 + N^2 + 2MN\cos\theta}$. Kiểm tra ba trường hợp: hai lực $10\ \mathrm{N}$ vuông góc nhau cho $F = 10\sqrt{2} \approx 14{,}1\ \mathrm{N}$; hai lực $10\ \mathrm{N}$ ngược hướng nhau cho $F = 0$; hai lực $10\ \mathrm{N}$ hợp ở $60^\circ$ cho $F = \sqrt{300} \approx 17{,}3\ \mathrm{N}$.
 >

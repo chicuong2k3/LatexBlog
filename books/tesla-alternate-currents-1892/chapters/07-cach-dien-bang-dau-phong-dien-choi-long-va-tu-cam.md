@@ -42,7 +42,7 @@ làm cho các mối nối kín không khí. Một trong hai ống được nối
 ống kia nối với một bình chứa một lượng dầu đã nấu kỹ đủ dùng. Ống sau có một lỗ
 rất nhỏ ở đáy, và được trang bị một van khóa. Khi đã hút được một khoảng chân không
 khá tốt, van khóa được mở ra và dầu được cho chảy vào từ từ. Tiến hành theo cách ấy,
-không thể có bọt khí lớn nào — mối nguy hiểm chính — còn sót lại giữa các vòng dây.
+không thể có bọt khí lớn nào - mối nguy hiểm chính - còn sót lại giữa các vòng dây.
 Không khí bị loại trừ một cách triệt để nhất, có lẽ tốt hơn cả việc nấu kỹ, dù việc
 nấu kỹ khi dùng dây bọc gutta-percha thì không thực hiện được.
 
@@ -92,7 +92,7 @@ xảy ra. Đặc tính này có thể dễ dàng quan sát bằng một cuộn c
 cuộn sơ cấp ra, bịt kín đầu ống có cuộn thứ cấp quấn quanh, rồi đổ đầy vào một chất
 cách điện khá trong suốt, chẳng hạn dầu paraffine. Có thể nhét một cuộn sơ cấp có
 đường kính nhỏ hơn bên trong ống khoảng sáu milimét. Khi cuộn dây chạy, ta có thể thấy,
-nhìn từ trên xuống qua lớp dầu, nhiều điểm sáng — đó là các bọt khí bị mắc kẹt khi
+nhìn từ trên xuống qua lớp dầu, nhiều điểm sáng - đó là các bọt khí bị mắc kẹt khi
 nhét cuộn sơ cấp vào, và trở nên sáng lên do sự phóng bội dữ dội. Không khí
 bị nhốt ấy, khi va vào dầu, làm nóng nó; dầu bắt đầu lưu động, mang theo một phần
 không khí, cho đến khi các bọt khí được phân tán và các điểm sáng biến mất. Theo cách
@@ -185,7 +185,7 @@ Tôi thấy rằng vào lúc này, thích hợp nhất là đưa trước các n
 kết quả nào mà tôi có vinh dự trình bày tối nay.
 
 Ta có thể xếp hiện tượng này một cách hoàn toàn xác đáng vào loại các hiện tượng
-chổi lông — thực ra nó là một chổi lông, hình thành tại, hoặc gần, một đầu điện cực
+chổi lông - thực ra nó là một chổi lông, hình thành tại, hoặc gần, một đầu điện cực
 đơn lẻ trong chân không rất cao.
 
 Ở những bóng đèn có sẵn một đầu dẫn dẫn điện, dù nó là nhôm, chổi lông chỉ tồn tại

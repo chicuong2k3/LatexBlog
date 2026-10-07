@@ -49,7 +49,7 @@ rằng phải có nhiệt năng sinh ra từ va chạm của các phân tử và
 vào nhau. Quả thật, chúng ta thấy chổi lông ấy nóng, và chỉ cần suy nghĩ một chút
 là ta đi tới kết luận rằng nếu ta đạt được tần số đủ cao, ta sẽ tạo được một chổi
 lông cho ra ánh sáng và nhiệt cực mạnh, và giống hệt một ngọn lửa thường, chỉ có
-thể là cả hai hiện tượng ấy không cùng do một tác nhân gây ra — có thể là sức hút
+thể là cả hai hiện tượng ấy không cùng do một tác nhân gây ra - có thể là sức hút
 hóa không mang bản chất điện.
 
 <!-- PDF 31 · trang in 13 -->
@@ -69,8 +69,8 @@ không phải vì những xung đột ngột ấy, vốn tương đối ít về
 tia lửa nào lấp ló, ngay cả ở khoảng cách rất nhỏ. Tuy nhiên, với những tần số cao
 hơn không gì bằng, cao đến mức ta còn có thể tìm ra cách tạo ra một cách hiệu quả,
 và với điều kiện những xung điện tần số cao như thế có thể truyền được qua một vật
-dẫn, thì những đặc trưng điện của phóng điện chổi lông sẽ hoàn toàn biến mất —
-không có tia lửa nào lấp ló, không cảm giác điện giật nào — nhưng ta vẫn còn phải
+dẫn, thì những đặc trưng điện của phóng điện chổi lông sẽ hoàn toàn biến mất -
+không có tia lửa nào lấp ló, không cảm giác điện giật nào - nhưng ta vẫn còn phải
 làm việc với một hiện tượng điện, theo nghĩa rộng và hiện đại của từ ấy. Trong bài
 báo đầu tiên của tôi đã nhắc đến trước đây, tôi đã chỉ ra những tính chất kỳ lạ
 của chổi lông và mô tả cách tạo ra nó tốt nhất, nhưng tôi thấy đáng để cố gắng diễn
@@ -84,7 +84,7 @@ nhỏ. Nhà thí nghiệm...
 
 ...có thể thay đổi chúng theo nhiều cách, và chỉ riêng điều ấy đã đủ làm chúng trở
 nên thú vị để nhìn. Điều làm tăng thêm sức hấp dẫn là chúng có thể được tạo ra với
-chỉ một đầu điện cực cũng như với hai đầu — thật ra, thường thì một đầu còn cho ra
+chỉ một đầu điện cực cũng như với hai đầu - thật ra, thường thì một đầu còn cho ra
 kết quả tốt hơn là hai đầu.
 
 Nhưng trong tất cả các hiện tượng phóng điện đã quan sát được, những hiện tượng
@@ -116,7 +116,7 @@ tượng phóng điện phá vỡ tối nay.
 
 ![Cuộn cảm ứng phóng điện phá vỡ](../assets/fig-p015-00.jpg)
 
-*Hình 3. — Cuộn cảm ứng phóng điện phá vỡ.*
+*Hình 3. - Cuộn cảm ứng phóng điện phá vỡ.*
 
 Nó đặt trong một hộp B (Hình 3) làm bằng những tấm ván dày gỗ cứng, phủ bên ngoài
 bằng tấm kẽm Z, mà...

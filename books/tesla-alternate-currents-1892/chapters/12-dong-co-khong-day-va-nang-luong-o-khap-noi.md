@@ -1,6 +1,6 @@
 ---
 title: "Động cơ không dây, và năng lượng ở khắp nơi"
-summary: "Một động cơ không cần dây nào, chỉ một tấm cách điện đặt trong từ trường xoay chiều. Rồi Tesla đi ngoài xa hơn: có lẽ ta sẽ không cần truyền điện nữa, vì ở khắp không gian đã có sẵn năng lượng — và chiếc radiometer của Crookes là gần với chuyện ấy nhất, dù kém hiệu suất nhất."
+summary: "Một động cơ không cần dây nào, chỉ một tấm cách điện đặt trong từ trường xoay chiều. Rồi Tesla đi ngoài xa hơn: có lẽ ta sẽ không cần truyền điện nữa, vì ở khắp không gian đã có sẵn năng lượng - và chiếc radiometer của Crookes là gần với chuyện ấy nhất, dù kém hiệu suất nhất."
 slug: "dong-co-khong-day-va-nang-luong-o-khap-noi"
 ---
 
@@ -41,7 +41,7 @@ học tuyệt vời của các ngài, và trong nhiều gợi ý cũng như phá
 thời đương.
 
 Khắp không gian có năng lượng. Năng lượng ấy là tĩnh hay động? Nếu là tĩnh thì hy vọng của
-chúng ta là vô ích; nếu là động — và điều này chúng ta biết chắc là đúng — thì chỉ còn là
+chúng ta là vô ích; nếu là động - và điều này chúng ta biết chắc là đúng - thì chỉ còn là
 vấn đề thời gian để con người thành công trong việc gắn máy móc của họ vào chính bộ máy
 đòn của thiên nhiên. Trong tất cả những người, sống hay đã mất, Crookes đến gần với việc
 ấy nhất. Radiometer của ông sẽ quay dưới ánh sáng ban ngày và trong bóng tối ban đêm; nó

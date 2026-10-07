@@ -415,7 +415,7 @@ Sau đó hủy đường thẳng $AC$, dựng lại $AC$ theo phép dựng trư�
 >
 > Ở thế kỷ XVII người ta không có máy tính, nên "giải" một bài toán hình học nghĩa là **dựng được** nó bằng thước và compa theo một trình tự xác định. Ông còn thêm một chi tiết rất thực dụng: thay vì chọn điểm giả thiết bừa, nên chọn gần đúng, rồi dùng đường tròn đi qua kết quả của ba lần dựng để chốt vị trí, và thường chỉ cần hai lần tính là đủ. Đó là hình thức thời đó của việc lặp lại cho tới khi kết quả hội tụ.
 >
-> Đây là nguồn gốc của cả ngành tính quỹ đạo. Nhờ có nó, quỹ đạo một sao chổi trở thành thứ có thể tính trước, rồi dùng để tiên đoán nó quay lại — điều mà Halley đã làm với chính sao chổi của mình, một trong những dự đoán nổi tiếng nhất trong lịch sử thiên văn. Phép dựng này ngày nay không còn dùng, nhưng nguyên lý thì nguyên vẹn: ba quan sát là mức tối thiểu lý thuyết để chốt một quỹ đạo, và mọi bản hiện đại cũng cần ít nhất ba điểm đó rồi mới thêm dữ liệu để tinh chỉnh. Chương này còn áp đúng phép tính ấy vào sao chổi năm 1680, từ các quan sát của Flamsted và các hiệu chỉnh của Halley.
+> Đây là nguồn gốc của cả ngành tính quỹ đạo. Nhờ có nó, quỹ đạo một sao chổi trở thành thứ có thể tính trước, rồi dùng để tiên đoán nó quay lại - điều mà Halley đã làm với chính sao chổi của mình, một trong những dự đoán nổi tiếng nhất trong lịch sử thiên văn. Phép dựng này ngày nay không còn dùng, nhưng nguyên lý thì nguyên vẹn: ba quan sát là mức tối thiểu lý thuyết để chốt một quỹ đạo, và mọi bản hiện đại cũng cần ít nhất ba điểm đó rồi mới thêm dữ liệu để tinh chỉnh. Chương này còn áp đúng phép tính ấy vào sao chổi năm 1680, từ các quan sát của Flamsted và các hiệu chỉnh của Halley.
 
 ### Ví dụ
 

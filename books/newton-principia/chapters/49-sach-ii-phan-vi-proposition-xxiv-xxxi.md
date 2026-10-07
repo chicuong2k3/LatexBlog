@@ -79,7 +79,7 @@ Chuyển động nhanh nhất trong một môi trường có lực cản không 
 >
 > **Lực cản không đổi: con lắc vẫn dao động trên cycloid, và chỗ nhanh nhất dịch khỏi điểm thấp nhất**
 >
-> Proposition XXV xử lý trường hợp lực cản tỷ lệ với moment của thời gian, tức một lực cản **không đổi theo vận tốc** — cái mà ngày nay gọi là ma sát Coulomb. Kết quả bất ngờ: con lắc vẫn dao động trên một cycloid, vẫn **đẳng thời gian**, và chỉ các cung của nó nhỏ đi dần. Hệ quả còn nói thêm một điều tinh tế: chỗ nhanh nhất không phải điểm thấp nhất.
+> Proposition XXV xử lý trường hợp lực cản tỷ lệ với moment của thời gian, tức một lực cản **không đổi theo vận tốc** - cái mà ngày nay gọi là ma sát Coulomb. Kết quả bất ngờ: con lắc vẫn dao động trên một cycloid, vẫn **đẳng thời gian**, và chỉ các cung của nó nhỏ đi dần. Hệ quả còn nói thêm một điều tinh tế: chỗ nhanh nhất không phải điểm thấp nhất.
 >
 > So sánh với trường hợp quen thuộc hơn. Với lực cản nhớt tuyến tính $b\dot\theta$, phương trình là
 >
@@ -91,7 +91,7 @@ Chuyển động nhanh nhất trong một môi trường có lực cản không 
 >
 > Ông biết tính đẳng thời gian của cycloid là điều quý nhất của con lắc, và ông muốn biết nó có sống sót dưới lực cản hay không. Ông chọn lực cản không đổi vì đó là loại duy nhất mà các cung mô tả vẫn giữ được đúng hình dạng cycloid, nên toàn bộ lập luận về tỷ lệ cung mà ông dùng ở Phần X vẫn dùng được. Chỗ nhanh nhất dịch khỏi điểm thấp nhất cũng là hệ quả trực tiếp: lực cản không đổi ấy có thành phần tiêu cực lớn nhất khi con lắc ở hai biên.
 >
-> Người đọc hôm nay vẫn dùng đúng phân biệt này để tách hai loại cản trong mọi hệ dao động: cản tỷ lệ vận tốc **đổi** tần số, còn cản không đổi thì **không** đổi tần số mà chỉ làm lệch quỹ đạo quanh vị trí cân bằng. Cùng trong Phần này, Proposition XXIV và Hệ quả 7 khẳng định khối lượng vật chất tỷ lệ với trọng lượng trong mọi thí nghiệm, tức là **khối lượng quán tính bằng khối lượng hấp dẫn** — đẳng thức mà người ta còn phải đo lại nhiều lần trong thế kỷ XX, với độ chính xác cao hơn nhiều lần so với thời cậu Newton.
+> Người đọc hôm nay vẫn dùng đúng phân biệt này để tách hai loại cản trong mọi hệ dao động: cản tỷ lệ vận tốc **đổi** tần số, còn cản không đổi thì **không** đổi tần số mà chỉ làm lệch quỹ đạo quanh vị trí cân bằng. Cùng trong Phần này, Proposition XXIV và Hệ quả 7 khẳng định khối lượng vật chất tỷ lệ với trọng lượng trong mọi thí nghiệm, tức là **khối lượng quán tính bằng khối lượng hấp dẫn** - đẳng thức mà người ta còn phải đo lại nhiều lần trong thế kỷ XX, với độ chính xác cao hơn nhiều lần so với thời cậu Newton.
 
 ## Proposition XXVI. Định lý XXI
 

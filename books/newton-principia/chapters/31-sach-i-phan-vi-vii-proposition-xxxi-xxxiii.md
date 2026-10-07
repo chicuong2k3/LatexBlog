@@ -200,9 +200,9 @@ Khi đã biết góc chuyển động trung bình quy thành $BHP$, các phươn
 >
 > Đây là phương trình Kepler, và trong toàn bộ *Principia* không có kết quả nào khó hơn. Newton đưa ra hai lời giải, mỗi lời một ngôn ngữ.
 >
-> Lời giải hình học dựng một bánh xe lăn không trượt trên đường thẳng — điểm trên vành bánh xe mô tả đường cycloid. Chọn bán kính bánh xe sao cho $OG:OA = OA:OS$, thì độ dài cung cycloid tính từ $O$ chính là thang đo thời gian. Câu hỏi "vật thể ở góc nào ứng với thời điểm này" trở thành "đọc bao nhiêu trên cung cycloid", tức một phép đo thước. Lời giải giải tích thì khai triển góc chuyển động trung bình thành chuỗi vô hạn, các số hạng mang $\sin(2T)$ và $\sin^3 T$.
+> Lời giải hình học dựng một bánh xe lăn không trượt trên đường thẳng - điểm trên vành bánh xe mô tả đường cycloid. Chọn bán kính bánh xe sao cho $OG:OA = OA:OS$, thì độ dài cung cycloid tính từ $O$ chính là thang đo thời gian. Câu hỏi "vật thể ở góc nào ứng với thời điểm này" trở thành "đọc bao nhiêu trên cung cycloid", tức một phép đo thước. Lời giải giải tích thì khai triển góc chuyển động trung bình thành chuỗi vô hạn, các số hạng mang $\sin(2T)$ và $\sin^3 T$.
 >
-> Cả hai lời giải đều nhắm một mục tiêu thực dụng: dựng lịch hành tinh bằng tay. Bảng số liệu của Tycho là nguồn, độ chính xác khoảng một phút vòng cung, còn lịch thì phải tính ra bằng thước kẻ và bảng logarit. Vì vậy ông chọn chuỗi hội tụ rất nhanh, tới mức ghi rõ hầu như không cần đi quá số hạng thứ hai — rồi đo sai số ngay ở trường hợp khó nhất, quỹ đạo Sao Hỏa, nơi phương trình trung tâm lớn nhất lên tới mười độ.
+> Cả hai lời giải đều nhắm một mục tiêu thực dụng: dựng lịch hành tinh bằng tay. Bảng số liệu của Tycho là nguồn, độ chính xác khoảng một phút vòng cung, còn lịch thì phải tính ra bằng thước kẻ và bảng logarit. Vì vậy ông chọn chuỗi hội tụ rất nhanh, tới mức ghi rõ hầu như không cần đi quá số hạng thứ hai - rồi đo sai số ngay ở trường hợp khó nhất, quỹ đạo Sao Hỏa, nơi phương trình trung tâm lớn nhất lên tới mười độ.
 >
 > Đối chiếu con số ấy với dữ liệu gốc mới thấy lời hứa mạnh đến đâu: một giây thời gian ứng với mười lăm giây vòng cung, tức chuỗi của Newton chính xác hơn nhiều lần so với chính những quan sát dùng để kiểm tra nó. Ngành thiên văn về sau vẫn phân hai lời giải này: chuỗi khai triển khi chấp nhận sai số vài giây trong một vòng, hàm elliptic khi cần độ chính xác cao.
 
@@ -297,7 +297,7 @@ Một vật thể quay trong đường tròn tại một khoảng cách đã cho
 >
 > **Cho conic tiến tới đường thẳng, bài toán rơi thẳng thu được về bài toán quay tròn**
 >
-> Hai hình $RPB$ và $DEB$ cùng chia một đường kính $AB$. Khi bề rộng của $RPB$ co về không, tiêu điểm $S$ trượt vào đúng đỉnh $B$, cung $PB$ nằm thẳng trên $CB$ — còn mọi phép đo diện tích giữ nguyên quan hệ "diện tích quét tỷ lệ với thời gian". Nhờ đó một lập luận chứng minh duy nhất phục vụ cho cả ba: elip, hypebol và rơi thẳng vuông góc.
+> Hai hình $RPB$ và $DEB$ cùng chia một đường kính $AB$. Khi bề rộng của $RPB$ co về không, tiêu điểm $S$ trượt vào đúng đỉnh $B$, cung $PB$ nằm thẳng trên $CB$ - còn mọi phép đo diện tích giữ nguyên quan hệ "diện tích quét tỷ lệ với thời gian". Nhờ đó một lập luận chứng minh duy nhất phục vụ cho cả ba: elip, hypebol và rơi thẳng vuông góc.
 >
 > Proposition XXXIII đi theo đúng lối ấy để liên hệ vận tốc: vận tốc của vật thể rơi tại $C$ tỷ lệ với vận tốc của vật thể quay tròn quanh $B$ tại cùng khoảng cách, theo căn bậc hai của $\dfrac{AC}{AO}$. Với quỹ đạo tròn thì $A$ nằm trên chính đường tròn, nên $AO = \frac{1}{2}AB$ và hệ số còn lại là căn bậc hai của $\dfrac{2AC}{AB}$.
 >

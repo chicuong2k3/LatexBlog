@@ -73,9 +73,9 @@ Cách sửa chỉ có thể là đặt vật chất cân bằng ở cực, ở v
 >
 > Đây là dự đoán đầu tiên của cơ học về thủy triều do một vật thể thứ ba, và nó không suy ra từ việc Mặt Trời hay Mặt Trăng quay quanh Trái Đất. Nó suy ra từ hình học của lực: phía gần bị nâng lên, phía xa bị kéo lùi, nên nước dồn về hai mặt đối diện.
 >
-> Lực $KL$ kéo nước lên ở hội hợp và đối hợp, lực $LM$ kéo nước xuống ở góc phần tư — đúng hai đỉnh và hai chân trũng. Biên độ thủy triều tỷ lệ với lực tuyệt đối của vật thể hút chia cho bình phương khoảng cách tới nó, đúng như Hệ quả 14 nói. Thế ra thủy triều của Mặt Trời chỉ bằng khoảng $0{,}46$ lần thủy triều của Mặt Trăng, dù khối lượng Mặt Trời lớn hơn $26$ triệu lần.
+> Lực $KL$ kéo nước lên ở hội hợp và đối hợp, lực $LM$ kéo nước xuống ở góc phần tư - đúng hai đỉnh và hai chân trũng. Biên độ thủy triều tỷ lệ với lực tuyệt đối của vật thể hút chia cho bình phương khoảng cách tới nó, đúng như Hệ quả 14 nói. Thế ra thủy triều của Mặt Trời chỉ bằng khoảng $0{,}46$ lần thủy triều của Mặt Trăng, dù khối lượng Mặt Trời lớn hơn $26$ triệu lần.
 >
-> Chỗ đáng nói nằm ở Hệ quả 20. Ông chỉ ra rằng nếu Trái Đất rắn lại thì thủy triều dừng, nhưng trục quay vẫn trôi khi bị xung, và cách duy nhất để ổn định trục là **đặt vật chất cân bằng ở cực, ở xích đạo, hoặc ở phía đối diện trục** — nghĩa là núi và bán đảo phải được phân bổ cân đối trước. Đó là một dự đoán về thiên nhiên, và khoa học sau này đã bác bỏ.
+> Chỗ đáng nói nằm ở Hệ quả 20. Ông chỉ ra rằng nếu Trái Đất rắn lại thì thủy triều dừng, nhưng trục quay vẫn trôi khi bị xung, và cách duy nhất để ổn định trục là **đặt vật chất cân bằng ở cực, ở xích đạo, hoặc ở phía đối diện trục** - nghĩa là núi và bán đảo phải được phân bổ cân đối trước. Đó là một dự đoán về thiên nhiên, và khoa học sau này đã bác bỏ.
 >
 > Phương thuốc của ông hỏng, nhưng câu hỏi của ông thì đúng. Thứ thật sự giữ trục Trái Đất ổn định là **mô-men xoắn do thủy triều của Mặt Trăng**: nó làm chậm quay của Trái Đất và làm trục quay dao động. Và chính vì thủy triều có, Trái Đất không cần vật liệu cân bằng kiểu Newton nói. Bài học ở đây dễ bị bỏ qua: một mô hình vật lí đúng vẫn có thể dẫn tới một kết luận sai về thiên nhiên, vì khi lập mô hình người ta chỉ xét những lực mình đã biết.
 
@@ -135,15 +135,15 @@ Các lực ấy theo những phương ngược nhau triệt tiêu lẫn nhau. C�
 
 > **[Chú giải]**
 >
-> **Mỗi khối cầu đồng nhất thay thế được bằng một điểm — bên trong thì bằng không**
+> **Mỗi khối cầu đồng nhất thay thế được bằng một điểm - bên trong thì bằng không**
 >
 > Đây là cặp định lý vỏ cầu, và nó biến toàn bộ cơ học thiên thể từ một bài toán không giải được thành một bài toán giải được. Một mặt cầu đồng nhất **không tác động gì lên** một hạt nằm bên trong nó; một khối cầu đồng nhất hút một hạt bên ngoài như thể toàn bộ khối lượng dồn tại tâm.
 >
 > Chứng minh của LXX là lập luận đối xứng: hai cung nhỏ $HI$ và $KL$ ở hai đầu một dây đi qua $P$ nhìn thấy $P$ dưới những góc bằng nhau, nên lực hút của chúng bằng nhau và chúng triệt tiêu nhau. Lặp lại trên toàn mặt cầu thì tổng là không. LXXI dùng cùng cách, chỉ khác chỗ các lớp cầu đồng tâm được cộng lại, và mỗi lớp hút theo tỷ lệ nghịch với bình phương khoảng cách tới tâm.
 >
-> Không có cặp định lý này thì hành tinh không quay quanh Mặt Trời theo elip mà theo một đường cong khó đặt tên, và khái niệm trọng lực theo nghĩa hiện đại chưa tồn tại. Hệ quả 1 ngay sau đó là bằng chứng: các quỹ đạo quanh những khối cầu đồng nhất, có bán kính tỷ lệ với khoảng cách, đều có **cùng một chu kỳ** — định luật Kepler thứ ba, được chứng minh trực tiếp từ giả thiết đồng nhất.
+> Không có cặp định lý này thì hành tinh không quay quanh Mặt Trời theo elip mà theo một đường cong khó đặt tên, và khái niệm trọng lực theo nghĩa hiện đại chưa tồn tại. Hệ quả 1 ngay sau đó là bằng chứng: các quỹ đạo quanh những khối cầu đồng nhất, có bán kính tỷ lệ với khoảng cách, đều có **cùng một chu kỳ** - định luật Kepler thứ ba, được chứng minh trực tiếp từ giả thiết đồng nhất.
 >
-> Người đọc hôm nay vẫn dùng cặp định lý này như một phép thử: nó cho biết một thiên thể có thật sự là cầu đồng nhất hay không, vì trong thực tế mọi thiên thể đều lệch khỏi cầu ngay ở bậc nhất. Nó cũng giải thích vì sao trọng lực bên trong Trái Đất giảm **tuyến tính** theo độ sâu chứ không phải theo bình phương: vỏ bên ngoài không góp gì, chỉ các vỏ bên trong mới đóng góp. Cùng cấu trúc toán ấy còn nằm sau Hệ quả 3 — hai vật thể rắn cùng hình cùng mật độ hút nhau theo tỷ lệ đường kính, nên từ lực hút đo được ta có tỷ số khối lượng mà không cần cân.
+> Người đọc hôm nay vẫn dùng cặp định lý này như một phép thử: nó cho biết một thiên thể có thật sự là cầu đồng nhất hay không, vì trong thực tế mọi thiên thể đều lệch khỏi cầu ngay ở bậc nhất. Nó cũng giải thích vì sao trọng lực bên trong Trái Đất giảm **tuyến tính** theo độ sâu chứ không phải theo bình phương: vỏ bên ngoài không góp gì, chỉ các vỏ bên trong mới đóng góp. Cùng cấu trúc toán ấy còn nằm sau Hệ quả 3 - hai vật thể rắn cùng hình cùng mật độ hút nhau theo tỷ lệ đường kính, nên từ lực hút đo được ta có tỷ số khối lượng mà không cần cân.
 
 ## Proposition LXXI. Định lý XXXI
 

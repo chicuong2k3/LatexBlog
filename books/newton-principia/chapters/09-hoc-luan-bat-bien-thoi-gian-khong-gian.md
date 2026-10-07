@@ -53,13 +53,13 @@ Bây giờ, không có nơi chốn nào khác bất động ngoài những nơi 
 >
 > **“Nơi chốn bất động” là một đặc tả, không phải một lựa chọn**
 >
-> Lập luận cốt lõi của đoạn là chuỗi: chuyển động tương đối chỉ có nghĩa khi truy ngược được qua một chuỗi vật thể tới một nơi chốn bất động. Một vật thể "đứng yên" trong nhà đứng yên so với nhà, nhà đứng yên so với Trái Đất, Trái Đất so với Mặt Trời, Mặt Trời so với sao cố định — và đó là chỗ dừng. Phép cộng chuỗi ấy là
+> Lập luận cốt lõi của đoạn là chuỗi: chuyển động tương đối chỉ có nghĩa khi truy ngược được qua một chuỗi vật thể tới một nơi chốn bất động. Một vật thể "đứng yên" trong nhà đứng yên so với nhà, nhà đứng yên so với Trái Đất, Trái Đất so với Mặt Trời, Mặt Trời so với sao cố định - và đó là chỗ dừng. Phép cộng chuỗi ấy là
 >
 > $$\vec{v}_{A/\text{tuyệt đối}} = \vec{v}_{A/B} + \vec{v}_{B/C} + \cdots$$
 >
 > Chỗ này cần nói thẳng, vì dễ đọc nhầm. Câu "chỉ những nơi chốn giữ nguyên vị trí xác định đối với nhau từ vô cùng đến vô cùng" **không hề chọn ra một hệ quy chiếu duy nhất**. Mọi hệ quy chiếu quán tính đều thỏa mãn điều kiện đó, vì mỗi hệ đều dựng được chuỗi riêng với mốc ở vô cùng. Đây là một đặc tả tính chất, không phải một lựa chọn cụ thể.
 >
-> Newton cần một chỗ dừng để phá vỡ tính đối xứng: nếu mọi chuyển động đều tương đối, vật lí không còn phân biệt được gì là nghỉ và gì là chuyển động, và Định luật I sẽ mất ý nghĩa. Ông tìm chỗ dừng đó bằng thí nghiệm chứ không bằng lập luận thuần — nên câu "có lẽ ở vùng sao cố định, hoặc có lẽ còn xa hơn nữa" mang dấu hiệu ông biết mình đang chống lưng cho một giả định chứ không phải một quan sát.
+> Newton cần một chỗ dừng để phá vỡ tính đối xứng: nếu mọi chuyển động đều tương đối, vật lí không còn phân biệt được gì là nghỉ và gì là chuyển động, và Định luật I sẽ mất ý nghĩa. Ông tìm chỗ dừng đó bằng thí nghiệm chứ không bằng lập luận thuần - nên câu "có lẽ ở vùng sao cố định, hoặc có lẽ còn xa hơn nữa" mang dấu hiệu ông biết mình đang chống lưng cho một giả định chứ không phải một quan sát.
 
 Các nguyên nhân phân biệt chuyển động thật với chuyển động tương đối là những lực được tác dụng lên các vật thể để tạo ra chuyển động.
 
@@ -77,8 +77,8 @@ Vì vậy, bất kỳ chuyển động tương đối nào cũng có thể thay 
 >
 > **Lực là tiêu chí phân biệt chuyển động thật với tương đối**
 >
-> Chuyển động thật không thể phát sinh hay thay đổi nếu không có lực nào tác vào vật thể; còn chuyển động tương đối thì có thể đổi mà không cần lực nào lên vật thể ấy — chỉ cần các vật thể dùng làm mốc chuyển động. Ví dụ người ngồi trên xe đạp vẫn đứng yên so với chiếc xe, và đó không phải vì có lực nào giữ ông ta, mà vì chiếc xe đang chạy.
+> Chuyển động thật không thể phát sinh hay thay đổi nếu không có lực nào tác vào vật thể; còn chuyển động tương đối thì có thể đổi mà không cần lực nào lên vật thể ấy - chỉ cần các vật thể dùng làm mốc chuyển động. Ví dụ người ngồi trên xe đạp vẫn đứng yên so với chiếc xe, và đó không phải vì có lực nào giữ ông ta, mà vì chiếc xe đang chạy.
 >
-> Nhưng tiêu chí này **vòng tròn**. Newton định nghĩa lực bằng cách nói nó là thứ làm thay đổi chuyển động thật, rồi lại dùng lực để nhận ra chuyển động thật. Hai định nghĩa dựa vào nhau. Ông biết, và ông tránh bằng cách chỉ dùng tiêu chí này ở vai trò phân biệt chứ không phải định nghĩa — nhưng cách viết cứng nhắc đủ để người đọc phải cẩn thận, và nhiều người đã hiểu sai ngay từ đây.
+> Nhưng tiêu chí này **vòng tròn**. Newton định nghĩa lực bằng cách nói nó là thứ làm thay đổi chuyển động thật, rồi lại dùng lực để nhận ra chuyển động thật. Hai định nghĩa dựa vào nhau. Ông biết, và ông tránh bằng cách chỉ dùng tiêu chí này ở vai trò phân biệt chứ không phải định nghĩa - nhưng cách viết cứng nhắc đủ để người đọc phải cẩn thận, và nhiều người đã hiểu sai ngay từ đây.
 >
-> Vật lí hiện đại cắt nút thắt ấy bằng cách đổi câu hỏi. Ta không hỏi "vật thể này đang chuyển động thật hay không" — câu đó không có câu trả lời ngoài khung vật lí. Ta hỏi "vật thể này có đang **gia tốc** không so với hệ quy chiếu này", và câu đó đo được: $\vec{F} = m\vec{a}$, và $\vec{a}$ không đổi khi vật thể không chịu lực. Vật thể giữ nguyên vận tốc là đang ở trạng thái nghỉ *trong hệ quy chiếu ấy* — không có thực tế nào cho phép gọi đó là nghỉ tuyệt đối. Trong thuyết tương đối hạn chế không tồn tại mệnh đề nào về chuyển động tuyệt đối, và cũng không cần có.
+> Vật lí hiện đại cắt nút thắt ấy bằng cách đổi câu hỏi. Ta không hỏi "vật thể này đang chuyển động thật hay không" - câu đó không có câu trả lời ngoài khung vật lí. Ta hỏi "vật thể này có đang **gia tốc** không so với hệ quy chiếu này", và câu đó đo được: $\vec{F} = m\vec{a}$, và $\vec{a}$ không đổi khi vật thể không chịu lực. Vật thể giữ nguyên vận tốc là đang ở trạng thái nghỉ *trong hệ quy chiếu ấy* - không có thực tế nào cho phép gọi đó là nghỉ tuyệt đối. Trong thuyết tương đối hạn chế không tồn tại mệnh đề nào về chuyển động tuyệt đối, và cũng không cần có.

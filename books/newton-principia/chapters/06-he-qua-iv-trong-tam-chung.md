@@ -51,4 +51,4 @@ Vì vậy, cùng định luật ấy cũng đúng với một hệ thống gồm
 >
 > Câu cuối cùng là phần quan trọng nhất, và là ý sẽ được dùng lại suốt Phần I. Đây là nguyên lý giảm, và nó chính là thứ cho phép giải bài toán hành tinh bằng cách coi cả hệ Mặt Trời–Trái Đất–Mặt Trăng như một vật thể đặt tại tâm khối của nó.
 >
-> Bổ sung cho đủ: chỉ **lực bên ngoài** mới làm thay đổi trạng thái của tâm khối. Mọi lực hấp dẫn đều là lực nội tại, nên tâm khối của một hệ sao bị khoá trong quả cầu bằng nhau ở đứng yên. Tính cả Mặt Trăng vào thì tâm khối Trái Đất–Mặt Trăng mới quay quanh Mặt Trời, và mỗi thành phần quay với bán kính tương ứng khối lượng của mình — chứ không quanh tâm của chính nó.
+> Bổ sung cho đủ: chỉ **lực bên ngoài** mới làm thay đổi trạng thái của tâm khối. Mọi lực hấp dẫn đều là lực nội tại, nên tâm khối của một hệ sao bị khoá trong quả cầu bằng nhau ở đứng yên. Tính cả Mặt Trăng vào thì tâm khối Trái Đất–Mặt Trăng mới quay quanh Mặt Trời, và mỗi thành phần quay với bán kính tương ứng khối lượng của mình - chứ không quanh tâm của chính nó.

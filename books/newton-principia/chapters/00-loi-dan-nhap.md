@@ -56,7 +56,7 @@ Những kết quả sâu sắc nhất và đáng hạnh phúc nhất, theo niề
 
 ## Tiểu sử của Sir Isaac Newton
 
-> *Nec fas est proprius mortalia attingere Divos.* — HALLEY
+> *Nec fas est proprius mortalia attingere Divos.* - HALLEY
 
 Từ bóng tối dày đặc của thời Trung cổ, tinh thần con người bắt đầu vươn lên như một đứa trẻ mới sinh. Nó phá vỡ sự kiểm soát của thời kỳ ấy, lớn mạnh và tự tin trong tiếng động của những cuộc xung đột và cách mạng liên tiếp, rồi tiến về phía trước và phía lên với sức mạnh không thể chống lại để tìm kiếm sự thật về thế giới vật lý và tinh thần.
 

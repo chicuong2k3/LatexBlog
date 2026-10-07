@@ -395,7 +395,7 @@ Nếu tổng hoặc hiệu của hai hình vuông đã cho, moment của các c�
 > \frac{d}{dt}\left(A^3 B^{-2}\right) = 3A^2 B^{-2}\,\dot A - 2A^3 B^{-3}\,\dot B.
 > $$
 >
-> Ông cố tình không dùng ký hiệu vi phân. Cả *Principia* được viết bằng các "tỷ lệ đầu và cuối" của những đại lượng tự tiêu biến, chứ không bằng một hệ ký hiệu như $\dot A$ hay $dA$. Cách ấy đủ cho toàn bộ cơ học, nhưng nó khiến người đọc phải tự dịch từng phát biểu sang ngôn ngữ quen thuộc — và chính vì vậy Lemma phải được chứng minh từng trường hợp một, thay vì suy ra từ một định nghĩa duy nhất.
+> Ông cố tình không dùng ký hiệu vi phân. Cả *Principia* được viết bằng các "tỷ lệ đầu và cuối" của những đại lượng tự tiêu biến, chứ không bằng một hệ ký hiệu như $\dot A$ hay $dA$. Cách ấy đủ cho toàn bộ cơ học, nhưng nó khiến người đọc phải tự dịch từng phát biểu sang ngôn ngữ quen thuộc - và chính vì vậy Lemma phải được chứng minh từng trường hợp một, thay vì suy ra từ một định nghĩa duy nhất.
 >
 > Lời cảnh báo trong chính Lemma mới là phần còn dùng được. Các hạt hữu hạn không phải là moments, chúng là những đại lượng **được sinh ra bởi** moments, và moment phải được hiểu là nguyên lý sinh khởi chứ không phải thứ gì chỉ ra được bằng phép trừ. Đó chính là lập trường bị tranh luận suốt thế kỷ XIX giữa hai phe: một bên coi vô cùng nhỏ là một thực thể, một bên coi nó là ký hiệu thuần tuý. Phe thứ hai thắng, nhưng phải chờ tới giữa thế kỷ XIX khi Dedekind và Weierstrass dựng lại nền tảng giải tích theo định nghĩa giới hạn, thay cho mọi trực giác về vô cùng nhỏ.
 >

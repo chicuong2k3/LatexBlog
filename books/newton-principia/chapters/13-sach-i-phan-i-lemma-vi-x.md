@@ -41,7 +41,7 @@ Vì vậy, trong mọi lập luận của chúng ta về các tỷ số giới h
 >
 > **Đạo hàm được định nghĩa bằng hình học, không bằng đại số**
 >
-> Lemma VI nói góc giữa dây cung và tiếp tuyến biến mất khi hai điểm trùng nhau; Lemma VII nói cung, dây cung và tiếp tuyến có tỷ số giới hạn bằng nhau. Hệ quả 3 — tùy ý thay thế bất kỳ đường nào trong số đó — chính là tuyên bố rằng đây là ba cách tính cùng một vật. Người đọc hôm nay đọc lại thấy ngay: đạo hàm là giới hạn của tỷ số sai số, đồng thời là hệ số của đoạn thẳng nằm sát đường cong.
+> Lemma VI nói góc giữa dây cung và tiếp tuyến biến mất khi hai điểm trùng nhau; Lemma VII nói cung, dây cung và tiếp tuyến có tỷ số giới hạn bằng nhau. Hệ quả 3 - tùy ý thay thế bất kỳ đường nào trong số đó - chính là tuyên bố rằng đây là ba cách tính cùng một vật. Người đọc hôm nay đọc lại thấy ngay: đạo hàm là giới hạn của tỷ số sai số, đồng thời là hệ số của đoạn thẳng nằm sát đường cong.
 >
 > Với $y = f(x)$, định nghĩa bằng dây cung cho $f'(x) = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}$; định nghĩa bằng tiếp tuyến cho cùng giá trị đó. Lemma VII còn định lượng quan hệ giữa cung và dây cung: nếu $s$ là độ dài cung và $c$ là dây cung trên cùng một đoạn thì $\lim c/s = 1$, tức hai đại lượng trùng nhau ở giới hạn và sai số là bậc cao hơn $c$. Hệ quả 2 cho phép thay mọi đoạn thẳng bằng mọi đoạn thẳng khác mà tỷ số giới hạn không đổi.
 >
@@ -49,7 +49,7 @@ Vì vậy, trong mọi lập luận của chúng ta về các tỷ số giới h
 >
 > Trong hình học cổ điển, đường thẳng và đường cong là hai loại vật thể khác hẳn nhau, không thể lẫn. Newton ở đây xếp chúng vào cùng một họ rồi nói: khi hai điểm trùng nhau, chúng không còn khác nhau. Đó là bước nhảy về phía phép tính, dù ông không hề dùng ngôn ngữ giới hạn mà ta dùng hôm nay.
 >
-> Ý này sống trong hình học vi phân: đường cong và đường thẳng giống nhau ở mức cục bộ, và bậc tiếp xúc là thứ định nghĩa độ cong. Nó cũng là điều giả định im lặng phía sau mọi phép xấp xỉ tuyến tính trong vật lí: gần một điểm, mọi trường đều thay bằng gradient của nó. Khi ta nói vật rơi gần mặt đất có gia tốc không đổi, ta đang dùng chính Lemma VI — sai số so với tiếp tuyến biến mất nhanh hơn bậc một.
+> Ý này sống trong hình học vi phân: đường cong và đường thẳng giống nhau ở mức cục bộ, và bậc tiếp xúc là thứ định nghĩa độ cong. Nó cũng là điều giả định im lặng phía sau mọi phép xấp xỉ tuyến tính trong vật lí: gần một điểm, mọi trường đều thay bằng gradient của nó. Khi ta nói vật rơi gần mặt đất có gia tốc không đổi, ta đang dùng chính Lemma VI - sai số so với tiếp tuyến biến mất nhanh hơn bậc một.
 
 ## Lemma VIII
 

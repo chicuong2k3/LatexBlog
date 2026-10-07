@@ -21,7 +21,7 @@ Nếu vật chất của hành tinh có mật độ đều, Proposition này s�
 >
 > Proposition IX hỏi lực hút ở **bên dưới** bề mặt hành tinh thay đổi thế nào khi ta đào sâu xuống, và câu trả lời là nó giảm gần đúng theo khoảng cách tới tâm. Đây không phải câu hỏi học thuật: đó là trọng lực trong hầm sâu, trong lòng hành tinh, và trong các tinh thể.
 >
-> Nếu hành tinh có mật độ đều thì điều này đúng chính xác, vì bên trong một khối cầu đồng nhất lực hút tỷ lệ thuận với khoảng cách tới tâm — đúng kết quả Proposition LXXIII của Sách I. Trong trường hợp tổng quát thì công thức đúng là
+> Nếu hành tinh có mật độ đều thì điều này đúng chính xác, vì bên trong một khối cầu đồng nhất lực hút tỷ lệ thuận với khoảng cách tới tâm - đúng kết quả Proposition LXXIII của Sách I. Trong trường hợp tổng quát thì công thức đúng là
 >
 > $$
 > g(r)=G\frac{M(r)}{r^{2}},
@@ -71,9 +71,9 @@ Các vùng trời hoàn toàn không có không khí và hơi thở. Vì vậy, 
 >
 > Newton dùng chính kết quả của mình ở Sách II: một quả cầu đông thành băng, trượt trong không khí của ta, mất $\frac{1}{4586}$ phần chuyển động trong thời gian đi được một bán kính. Nhưng Trái Đất đặc hơn nước khoảng năm đến sáu lần, còn Sao Mộc chỉ đặc hơn nước một chút, nên lực cản phải nhỏ đi tương ứng. Rồi đến mấu chốt: sức cản tỷ lệ với mật độ môi trường, mà ở độ cao $200$ dặm trên Trái Đất, không khí loãng hơn mặt đất tới mức ông ước lượng cỡ $75000000000000$ lần. Trên thiên cầu, nơi mật độ môi trường giảm đi nữa, lực cản gần như biến mất.
 >
-> Ông không chỉ lập luận bằng lý thuyết mà còn làm một thí nghiệm để kiểm tra. Ông bơm hút sạch không khí khỏi một bình chân không, rồi thả các vật nặng cùng lúc. Kết quả: **vàng và lông tơ nhẹ nhất rơi cùng nhau và chạm đáy cùng lúc**, dù quãng rơi dài bốn, sáu hay tám foot. Chỉ còn sức cản thì mọi vật thể rơi như nhau — đó là tính phổ quát của rơi tự do, và là cơ sở thực nghiệm cho việc khối lượng quán tính bằng khối lượng hấp dẫn.
+> Ông không chỉ lập luận bằng lý thuyết mà còn làm một thí nghiệm để kiểm tra. Ông bơm hút sạch không khí khỏi một bình chân không, rồi thả các vật nặng cùng lúc. Kết quả: **vàng và lông tơ nhẹ nhất rơi cùng nhau và chạm đáy cùng lúc**, dù quãng rơi dài bốn, sáu hay tám foot. Chỉ còn sức cản thì mọi vật thể rơi như nhau - đó là tính phổ quát của rơi tự do, và là cơ sở thực nghiệm cho việc khối lượng quán tính bằng khối lượng hấp dẫn.
 >
-> Câu trả lời của Newton đúng, nhưng chỉ đúng một nửa. Hành tinh quanh Mặt Trời quả thực không chịu sức cản khí đáng kể, song chúng **vẫn mất** năng lượng quỹ đạo — qua **ma sát thủy triều**, tức là do Mặt Trời và Mặt Trăng biến dạng hành tinh và bức xạ nhiệt, khiến quỹ tích xoáy chậm dần. Với Mặt Trăng, tác dụng này đủ lớn để đẩy nó ra xa Trái Đất khoảng vài centimet mỗi năm, và đó là điều ta đo được bằng laser. Với Sao Mộc, thời gian số của hệ quỹ đạo còn dài hơn tuổi của cả vũ trụ. Nghĩa là hành tinh không chậm lại không phải vì không mất gì, mà vì thứ mất đi chậm hơn nhiều so với thời gian vũ trụ đã trôi qua.
+> Câu trả lời của Newton đúng, nhưng chỉ đúng một nửa. Hành tinh quanh Mặt Trời quả thực không chịu sức cản khí đáng kể, song chúng **vẫn mất** năng lượng quỹ đạo - qua **ma sát thủy triều**, tức là do Mặt Trời và Mặt Trăng biến dạng hành tinh và bức xạ nhiệt, khiến quỹ tích xoáy chậm dần. Với Mặt Trăng, tác dụng này đủ lớn để đẩy nó ra xa Trái Đất khoảng vài centimet mỗi năm, và đó là điều ta đo được bằng laser. Với Sao Mộc, thời gian số của hệ quỹ đạo còn dài hơn tuổi của cả vũ trụ. Nghĩa là hành tinh không chậm lại không phải vì không mất gì, mà vì thứ mất đi chậm hơn nhiều so với thời gian vũ trụ đã trôi qua.
 
 ## Giả thuyết I
 

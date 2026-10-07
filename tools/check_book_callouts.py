@@ -215,6 +215,11 @@ def _check_callout(report: ChapterReport, index: int, block: list[str]) -> None:
         report.problems.append(Problem(where, "callout chứa ảnh hoặc bảng — không được phép"))
 
 
+def _normalize_dashes(text: str) -> str:
+    """Đổi dấu gạch dài về gạch ngắn, để so văn bản không phụ thuộc dấu câu."""
+    return text.replace("\u2014", "-")
+
+
 def _strip_callouts(text: str) -> str:
     """Bỏ mọi khối callout, trả về phần còn lại của văn bản.
 
@@ -280,6 +285,9 @@ def check_fidelity(
         for src, dst in authorized.get(rel_book, []):
             old = old.replace(src, dst)
         new = _strip_callouts(path.read_text(encoding="utf-8"))
+        # Quy ước của repo: dấu gạch dài U+2014 bị thay bằng '-'. Chuẩn hoá cả hai
+        # phía, nếu không thì mỗi lần đổi dấu câu lại bị báo thành sai lệch bản dịch.
+        old, new = _normalize_dashes(old), _normalize_dashes(new)
         if old == new:
             continue
         diff = [

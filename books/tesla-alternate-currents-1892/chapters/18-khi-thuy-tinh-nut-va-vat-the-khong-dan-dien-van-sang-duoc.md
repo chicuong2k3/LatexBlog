@@ -1,6 +1,6 @@
 ---
 title: "Khi thủy tinh nứt, và vật thể không dẫn điện vẫn sáng được"
-summary: "Dòng điện tần số cao có thể làm nứt thủy tinh ở chính giữa cuống, dù dây bạch kim nối điện tốt với khí loãng — hiện tượng mà dòng điện tần số thấp không bao giờ gây ra. Và lý do: năng lượng thoát ra không chỉ qua nút than mà còn xuyên qua cả lớp thủy tinh."
+summary: "Dòng điện tần số cao có thể làm nứt thủy tinh ở chính giữa cuống, dù dây bạch kim nối điện tốt với khí loãng - hiện tượng mà dòng điện tần số thấp không bao giờ gây ra. Và lý do: năng lượng thoát ra không chỉ qua nút than mà còn xuyên qua cả lớp thủy tinh."
 slug: "khi-thuy-tinh-nut-va-vat-the-khong-dan-dien-van-sang-duoc"
 ---
 
@@ -15,7 +15,7 @@ trong. Nhưng, vì chúng làm nóng thủy tinh rất nhanh, chúng đương nh
 lại khi thủy tinh ở chỗ rách trở nên nóng đỏ, hoặc nói chung đủ nóng để dẫn điện. Khi quan
 sát lần đầu, hiện tượng ấy hẳn phải trông rất kỳ lạ, và cho thấy một cách nổi bật rằng dòng
 điện xoay chiều, hay xung, tần số cao cư xử khác hẳn so với dòng điện không đổi, hay dòng
-điện tần số thấp. Với những dòng điện ấy — tức là loại sau — hiện tượng ấy đương nhiên sẽ
+điện tần số thấp. Với những dòng điện ấy - tức là loại sau - hiện tượng ấy đương nhiên sẽ
 không xảy ra. Khi dùng những tần số thu được bằng phương tiện cơ học, tôi nghĩ rằng sự rách
 thủy tinh phần nào là hệ quả của sự phóng bội, vốn làm nóng nó và làm suy giảm khả năng cách
 điện; nhưng với những tần số thu được nhờ bình tụ, tôi không hề nghi ngờ rằng thủy tinh có thể
@@ -34,7 +34,7 @@ một điện trở thấp.
 
 ![Hiệu ứng do một giọt hồng ngọc](../assets/fig-p075-00.jpg)
 
-*Hình 23. — Hiệu ứng do một giọt hồng ngọc.*
+*Hình 23. - Hiệu ứng do một giọt hồng ngọc.*
 
 <!-- PDF 94 · trang in 76 -->
 

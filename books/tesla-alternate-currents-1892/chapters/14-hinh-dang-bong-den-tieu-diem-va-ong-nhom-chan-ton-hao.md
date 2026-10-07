@@ -1,6 +1,6 @@
 ---
 title: "Hình dạng bóng đèn, tiêu điểm, và ống nhôm chắn tổn hao"
-summary: "Vì sao bóng đèn ở giữa một dãy ba bóng lại sáng kém hơn, và vì sao trong chân không rất cao dây nung nóng không đều mà nóng thành từng điểm. Câu trả lời cuối cùng là thứ khiến phần lớn năng lượng mất đi trước khi tới vật cần nung — và cách một ống nhôm sửa nó."
+summary: "Vì sao bóng đèn ở giữa một dãy ba bóng lại sáng kém hơn, và vì sao trong chân không rất cao dây nung nóng không đều mà nóng thành từng điểm. Câu trả lời cuối cùng là thứ khiến phần lớn năng lượng mất đi trước khi tới vật cần nung - và cách một ống nhôm sửa nó."
 slug: "hinh-dang-bong-den-tieu-diem-va-ong-nhom-chan-ton-hao"
 ---
 
@@ -65,8 +65,8 @@ thiết bị chiếu sáng một cách thích hợp mà xấp xỉ nó ở mức
 Vì nhiều lý do, vật liệu chịu nhiệt được đặt ở chính giữa bóng đèn, và thường được giữ bằng
 một cuống thuỷ tinh có chứa dây dẫn vào. Vì thế điện của sợi dây này được biến thiên, khí
 loãng bao quanh cuống bị tác động theo kiểu cảm ứng, và cuống thuỷ tinh bị phóng bội dữ dội
-và nóng lên. Bằng cách ấy, phần lớn xa xỉ năng lượng được cung cấp cho bóng đèn — đặc biệt khi
-dùng tần số cao khắc nghiệt — có thể bị mất đối với mục đích dự kiến. Để tránh sự mất mát
+và nóng lên. Bằng cách ấy, phần lớn xa xỉ năng lượng được cung cấp cho bóng đèn - đặc biệt khi
+dùng tần số cao khắc nghiệt - có thể bị mất đối với mục đích dự kiến. Để tránh sự mất mát
 này, hoặc ít nhất giảm nó xuống mức nhỏ nhất, tôi thường che chắn khí loãng bao quanh cuống
 khỏi tác dụng cảm ứng của dây dẫn vào bằng cách trang bị cho cuống một ống hoặc một lớp phủ
 bằng vật liệu dẫn điện. Không còn gì phải nghi ngờ rằng trong các kim loại, thứ tốt nhất để

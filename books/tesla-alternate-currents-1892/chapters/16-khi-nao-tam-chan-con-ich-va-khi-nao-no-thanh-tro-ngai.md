@@ -1,6 +1,6 @@
 ---
 title: "Khi nào tấm chắn còn ích, và khi nào nó thành trở ngại"
-summary: "Ở áp suất thường, chống tia lửa thì tần số càng cao càng tốt — nhưng ở mức hút chân không rất thấp, ống nhôm lại là trở ngại vì nó dẫn điện với dây dẫn vào. Tesla kết luận tấm chắn chỉ còn ý nghĩa ở chân không rất cao, và giải thích điều đó bằng cách các nguyên tử tích điện cho ống rồi bị ống đẩy lại."
+summary: "Ở áp suất thường, chống tia lửa thì tần số càng cao càng tốt - nhưng ở mức hút chân không rất thấp, ống nhôm lại là trở ngại vì nó dẫn điện với dây dẫn vào. Tesla kết luận tấm chắn chỉ còn ý nghĩa ở chân không rất cao, và giải thích điều đó bằng cách các nguyên tử tích điện cho ống rồi bị ống đẩy lại."
 slug: "khi-nao-tam-chan-con-ich-va-khi-nao-no-thanh-tro-ngai"
 ---
 
@@ -19,7 +19,7 @@ có một chút lợi, bởi dù nó có thể không tiết kiệm được nhi
 tựa của nút chịu nhiệt, và là một cách để tập trung nhiều năng lượng hơn vào chính nút ấy.
 
 Tới mức mà ống nhôm thực hiện chức năng của một tấm chắn, tính hữu ích của nó do đó bị giới
-hạn ở những mức hút chân không rất cao, khi nó cách điện với điện cực — tức là khi khí nói
+hạn ở những mức hút chân không rất cao, khi nó cách điện với điện cực - tức là khi khí nói
 chung không dẫn điện, và các phân tử, hay nguyên tử, đóng vai trò những vật mang điện tích
 độc lập.
 
@@ -60,11 +60,11 @@ minh hoạ những cách sắp xếp khác nhau với một loại bóng đèn �
 
 ![Hai cách sắp xếp bóng đèn: Hình 18 và Hình 19](../assets/fig-p070-00.jpg)
 
-*Hình 18. — Bóng đèn có ống mica và tấm chắn nhôm.*
+*Hình 18. - Bóng đèn có ống mica và tấm chắn nhôm.*
 
-![Hình 19. — Bóng đèn cải tiến có đầu cắm và tấm chắn](../assets/fig-p070-01.jpg)
+![Hình 19. - Bóng đèn cải tiến có đầu cắm và tấm chắn](../assets/fig-p070-01.jpg)
 
-*Hình 19. — Bóng đèn cải tiến có đầu cắm và tấm chắn.*
+*Hình 19. - Bóng đèn cải tiến có đầu cắm và tấm chắn.*
 
 Hình 18 là một mặt cắt qua một bóng đèn cầu L, với cuống thuỷ tinh s, chứa dây dẫn vào w,
 trên đó có một dây nung sợi đốt đèn nung l được gắn vào, dùng để nâng đỡ nút chịu nhiệt m ở

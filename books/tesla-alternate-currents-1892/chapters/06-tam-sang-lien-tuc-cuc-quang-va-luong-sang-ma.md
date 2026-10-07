@@ -12,7 +12,7 @@ thể thực hiện với tần số thấp, nhưng kém thỏa mãn hơn nhiề
 
 ![Đĩa sáng](../assets/fig-p028-00.jpg)
 
-*Hình 10. — Đĩa sáng.*
+*Hình 10. - Đĩa sáng.*
 
 Khi hai sợi dây, nối vào hai đầu của cuộn dây, được đặt cách nhau một khoảng thích
 hợp, các luồng sáng giữa chúng có thể mãnh liệt đến mức tạo thành một tấm sáng
@@ -38,8 +38,8 @@ nhường chỗ gần như theo cùng một cách, như khi có một hiệu th�
 luồng sáng gồm những sợi riêng biệt, thường lẫn với các tia lửa mảnh, những tia lửa
 mà có lẽ tương ứng với các lần phóng điện liên tiếp xảy ra giữa hai núm. Nhưng khi
 tần số cực kỳ cao, và cung lửa của hiện tượng phóng điện tạo ra một tiếng độ rất
-lớn nhưng trơn tru — cho thấy cả rằng dao động đang xảy ra, lẫn rằng các tia lửa
-nối tiếp nhau với tốc độ rất lớn — thì các luồng sáng hình thành hoàn toàn đều. Để
+lớn nhưng trơn tru - cho thấy cả rằng dao động đang xảy ra, lẫn rằng các tia lửa
+nối tiếp nhau với tốc độ rất lớn - thì các luồng sáng hình thành hoàn toàn đều. Để
 đạt được kết quả ấy, nên dùng những cuộn dây rất nhỏ và các bình tụ có dung tích
 nhỏ. Tôi...
 
@@ -105,12 +105,12 @@ liệt, các luồng sáng trở thành màu trắng. Ta có thể đạt đư�
 cách. Trong thí nghiệm trước với hai sợi dây căng ngang phòng, tôi đã cố gắng đạt
 kết quả ấy bằng cách đẩy cả tần số lẫn thế điện lên giá trị cao; trong thí nghiệm
 với những sợi dây mảnh dán trên tấm cao su, tôi đã tập trung tác dộng lên một bề mặt
-rất nhỏ — nói cách khác, tôi làm việc với một mật độ điện rất lớn.
+rất nhỏ - nói cách khác, tôi làm việc với một mật độ điện rất lớn.
 
 Một dạng phóng điện đáng tò mò nhất được quan sát thấy với một cuộn dây như thế khi
 tần số và thế điện được đẩy tới giới hạn cực đại. Để thực hiện thí nghiệm này, mọi
-bộ phận của cuộn dây đều phải cách điện kỹ, và chỉ có hai quả cầu nhỏ — hoặc tốt
-hơn, là hai đĩa kim loại mép sắc d d (Hình 11), đường kính không quá vài xentimét — được để
+bộ phận của cuộn dây đều phải cách điện kỹ, và chỉ có hai quả cầu nhỏ - hoặc tốt
+hơn, là hai đĩa kim loại mép sắc d d (Hình 11), đường kính không quá vài xentimét - được để
 hở ra không khí. Cuộn dây dùng ở đây nhúng trong dầu, và những đầu cuộn thứ cấp thò
 ra khỏi dầu được bọc trong một vỏ cao su cứng dày, kín không khí. Mọi khe nứt, nếu
 có, đều phải bịt kín cẩn thận, để hiện tượng phóng điện chổi lông không thể hình
@@ -129,7 +129,7 @@ sáng trắng như sương bật ra từ mép các đĩa và lan ra khắp khôn
 
 ![Luồng sáng ma](../assets/fig-p033-00.jpg)
 
-*Hình 11. — Luồng sáng ma.*
+*Hình 11. - Luồng sáng ma.*
 
 Với cuộn dây này, khi đã tạo ra tốt, chúng dài khoảng 25 đến 30 xentimét. Khi đặt
 bàn tay áp vào chúng, không có cảm giác nào được tạo ra, và một tia lửa gây điện
@@ -172,8 +172,8 @@ sợi bạc mảnh, hoặc một khối tia lửa sáng rực ầm ĩu, phủ k�
 Vì trong bài báo đọc trước Viện Kỹ sư Điện Mỹ vào đầu năm ngoái, tôi đã đề xuất ý
 tưởng về việc biến đổi bằng phương tiện phóng điện phá vỡ, nên nó đã gây được sự
 quan tâm đáng kể. Nó cho ta một phương tiện tạo ra bất kỳ thế điện nào nhờ những
-cuộn dây rẻ tiền vận hành từ những hệ thống phân phối thông thường, và — điều có
-lẽ được đánh giá cao hơn — nó cho phép ta biến đổi dòng điện của bất kỳ tần số nào
+cuộn dây rẻ tiền vận hành từ những hệ thống phân phối thông thường, và - điều có
+lẽ được đánh giá cao hơn - nó cho phép ta biến đổi dòng điện của bất kỳ tần số nào
 thành dòng điện của bất kỳ tần số nào khác, cao hơn hoặc thấp hơn. Nhưng giá trị
 chính của nó có lẽ sẽ nằm ở sự trợ giúp mà nó mang lại cho chúng ta trong các cuộc
 nghiên cứu về hiện tượng quang phát, mà một cuộn dây phóng điện phá vỡ có khả năng

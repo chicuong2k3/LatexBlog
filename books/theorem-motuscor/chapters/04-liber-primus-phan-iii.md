@@ -544,7 +544,7 @@ Bài toán này, thuộc về những điều trọng nhất trong lý thuyết 
 
 Ta giữ nguyên nghĩa của các ký hiệu \(r,r',N,N',p,e,\Pi\) như đã dùng ở trên; ta ký hiệu hiệu \(N'-N\) bằng \(\Delta\), và thời gian trong đó vật thể thiên thể chuyển từ vị trí trước sang vị trí sau bằng \(t\).
 
-Nếu đã biết giá trị xấp xỉ của một trong các đại lượng \(p,e,\Pi\), thì cả hai đại lượng còn lại cũng có thể xác định được từ đó, rồi thời gian chuyển động từ vị trí thứ nhất sang vị trí thứ hai sẽ được tính bằng các phương pháp đã trình bày ở Section I. Nếu kết quả ấy bằng đúng thời gian \(t\) đã cho, thì giá trị giả định của \(p\), \(e\) hoặc \(\Pi\) chính là giá trị thật, và quỹ đạo đã được tìm ra. Nếu nhỏ hơn, việc lặp lại phép tính với một giá trị khác chỉ hơi khác giá trị đầu tiên sẽ cho biết một biến đổi đáng kể của thời gian ứng với một biến đổi rất nhỏ của chính \(p,e,\Pi\)—
+Nếu đã biết giá trị xấp xỉ của một trong các đại lượng \(p,e,\Pi\), thì cả hai đại lượng còn lại cũng có thể xác định được từ đó, rồi thời gian chuyển động từ vị trí thứ nhất sang vị trí thứ hai sẽ được tính bằng các phương pháp đã trình bày ở Section I. Nếu kết quả ấy bằng đúng thời gian \(t\) đã cho, thì giá trị giả định của \(p\), \(e\) hoặc \(\Pi\) chính là giá trị thật, và quỹ đạo đã được tìm ra. Nếu nhỏ hơn, việc lặp lại phép tính với một giá trị khác chỉ hơi khác giá trị đầu tiên sẽ cho biết một biến đổi đáng kể của thời gian ứng với một biến đổi rất nhỏ của chính \(p,e,\Pi\)-
 
 <!-- PDF 107, trang in 90, tiếp theo §85 -->
 
@@ -1406,7 +1406,7 @@ $$
 \text{[15]}\quad h=\frac{(y-1)yy}{y+\frac27}.
 $$
 
-Nếu vậy, có thể coi \(h\) là một đại lượng đã biết, thì \(y\) sẽ được xác định từ đó bằng một phương trình bậc ba, rồi—
+Nếu vậy, có thể coi \(h\) là một đại lượng đã biết, thì \(y\) sẽ được xác định từ đó bằng một phương trình bậc ba, rồi-
 
 <!-- PDF 116, trang in 99, tiếp theo §91 -->
 

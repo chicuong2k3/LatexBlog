@@ -172,7 +172,7 @@ Trọng lực giảm khi đi từ bề mặt Trái Đất ra ngoài theo bình p
 >
 > **Cycloid: một con lắc trên đường cong này thì mọi dao động đều mất đúng một thời gian**
 >
-> Cơ chế nằm ở chỗ gia tốc luôn tỷ lệ với cung phải đi, nên tỷ số giữa hai dao động được giữ nguyên suốt chừng. Chu kỳ là $T = 2\pi\sqrt{\dfrac{a}{g}}$, với $a$ là bán kính đường tròn sinh cycloid. Nó tỷ lệ căn bậc hai với độ dài dây, đúng như con lắc đơn, nhưng **không phụ thuộc biên độ** — và toàn bộ giá trị của nó nằm ở chỗ đó.
+> Cơ chế nằm ở chỗ gia tốc luôn tỷ lệ với cung phải đi, nên tỷ số giữa hai dao động được giữ nguyên suốt chừng. Chu kỳ là $T = 2\pi\sqrt{\dfrac{a}{g}}$, với $a$ là bán kính đường tròn sinh cycloid. Nó tỷ lệ căn bậc hai với độ dài dây, đúng như con lắc đơn, nhưng **không phụ thuộc biên độ** - và toàn bộ giá trị của nó nằm ở chỗ đó.
 >
 > Bán kính quả cầu là lý do bên trong: nó khiến lực hướng tâm tỷ lệ thuận với khoảng cách, đúng lực mà Proposition XLVIII vừa chứng minh là tạo ra dao động đẳng kỳ. Ông đang ở trong Phần X, nơi lực tỷ lệ với khoảng cách vừa được dựng cho họ các elip đồng tâm, nên ông nhận ra dao động đẳng kỳ trước, rồi tìm đường cong khiến nó thành hiện thực. Hệ quả 2 ghi công đúng chỗ: việc này do Wren và Huygens phát hiện, và Huygens đã dùng nó để chế tạo đồng hồ quản lắc.
 >
@@ -324,4 +324,4 @@ Chuyển động ban đầu đã cho, nên chuyển động đều của tâm tr
 >
 > Ông cần cái này để chuyển giao thức từ "lực hướng về một tâm bất đổi" sang "lực hút giữa các vật thể", mà lực thứ hai không có tâm cố định. Ông không thể chỉ nói hai vật thể quay quanh nhau, vì mọi kết quả từ Phần I đến Phần X đều giả định một tâm bất đổi. Định lý này là cây cầu nối, và nó được xây bằng chính các định lý về tỷ số đã có sẵn từ trước.
 >
-> Hệ quả kèm theo còn đáng giữ hơn: nếu một vật thể chịu lực hút về **hai hay nhiều tâm nằm trên cùng một đường thẳng**, diện tích quét vẫn tỷ lệ với thời gian. Người đọc hôm nay biết đây chính là **bài toán ba vật thể giới hạn của Euler** — trường hợp mà mọi tâm lực đều nằm trên một đường, điều kiện đủ để bài toán vẫn còn giải được. Nó cho thấy ranh giới thật sự của lý thuyết tâm lực nằm ở chỗ các tâm lực **không** cùng nằm trên một đường, và đó cũng là lý do bài toán ba vật thể tổng quát không có lời giải giải tích.
+> Hệ quả kèm theo còn đáng giữ hơn: nếu một vật thể chịu lực hút về **hai hay nhiều tâm nằm trên cùng một đường thẳng**, diện tích quét vẫn tỷ lệ với thời gian. Người đọc hôm nay biết đây chính là **bài toán ba vật thể giới hạn của Euler** - trường hợp mà mọi tâm lực đều nằm trên một đường, điều kiện đủ để bài toán vẫn còn giải được. Nó cho thấy ranh giới thật sự của lý thuyết tâm lực nằm ở chỗ các tâm lực **không** cùng nằm trên một đường, và đó cũng là lý do bài toán ba vật thể tổng quát không có lời giải giải tích.

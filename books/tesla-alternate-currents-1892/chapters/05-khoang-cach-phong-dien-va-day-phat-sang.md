@@ -67,7 +67,7 @@ luồng sáng trên dây tăng lên khi đưa hai tấm lại gần, thì chiề
 Khi dùng một bộ tụ điện nối với những thí nghiệm dùng cuộn dây như loại này, tuyệt
 đối phải là một bộ tụ dầu, vì nếu dùng bộ tụ không khí thì có thể lãng phí một lượng
 năng lượng đáng kể. Những sợi dây dẫn tới các tấm bên trong dầu nên rất mỏng, được
-phủ kín một lớp chất cách điện, và có một lớp vỏ dẫn điện — lớp vỏ này tốt nhất là
+phủ kín một lớp chất cách điện, và có một lớp vỏ dẫn điện - lớp vỏ này tốt nhất là
 kéo xuống dưới mặt dầu. Lớp vỏ dẫn điện không nên quá gần hai đầu dây, bởi tia lửa
 có thể nhảy từ dây sang nó. Lớp vỏ dẫn điện ấy dùng để giảm tổn hao trong không
 khí, nhờ tác dụng của nó như một tấm chắn tĩnh điện. Còn kích thước bình chứa dầu
@@ -92,7 +92,7 @@ trong đó không có quá trình hóa học nào, không tiêu hao vật liệu
 
 ![Hiệu ứng do tập trung các luồng sáng](../assets/fig-p025-00.jpg)
 
-*Hình 8. — Hiệu ứng do tập trung các luồng sáng.*
+*Hình 8. - Hiệu ứng do tập trung các luồng sáng.*
 
 ...mà chỉ là một sự truyền dịch năng lượng, và rất có thể sẽ phát ra nhiều ánh sáng
 hơn và ít nhiệt hơn so với ngọn lửa thông thường.
@@ -115,14 +115,14 @@ nhỏ và tạo ra những hiệu ứng ánh sáng rất mạnh. Hai sợi dây 
 sáng rực như vậy.
 
 Để làm các luồng sáng mạnh thêm, dây phải rất mỏng và rất ngắn; nhưng trong trường
-hợp này, dung tích của chúng nói chung sẽ quá nhỏ đối với cuộn dây — ít nhất là đối
-với một cuộn dây như loại hiện tại — nên cần phải tăng dung tích lên giá trị cần
+hợp này, dung tích của chúng nói chung sẽ quá nhỏ đối với cuộn dây - ít nhất là đối
+với một cuộn dây như loại hiện tại - nên cần phải tăng dung tích lên giá trị cần
 thiết, đồng thời bề mặt của dây vẫn giữ rất nhỏ. Điều này có thể làm theo nhiều
 cách.
 
 Ở đây, chẳng hạn, tôi có hai tấm cao su cứng R R, trên đó tôi dán hai sợi dây rất
 mảnh w w, sao cho chúng tạo thành một cái tên. Sợi dây có thể để trần hoặc bọc
-cách điện tốt nhất — điều ấy không quan trọng đối với thành công của thí nghiệm.
+cách điện tốt nhất - điều ấy không quan trọng đối với thành công của thí nghiệm.
 Dây cách điện tốt, nếu có, lại càng tốt. Ở mặt sau của mỗi tấm, chỗ được tô bóng
 trong hình, là một lớp phủ thiếc t...
 
@@ -138,7 +138,7 @@ thành từ chúng hiện ra bằng những chữ cái rực rỡ.
 
 ![Dây dẫn sáng rực](../assets/fig-p027-00.jpg)
 
-*Hình 9. — Dây dẫn sáng rực.*
+*Hình 9. - Dây dẫn sáng rực.*
 
 Có lẽ thích hơn nếu thực hiện thí nghiệm này với một cuộn dây được vận hành từ một
 máy phát xoay chiều tần số cao, vì...

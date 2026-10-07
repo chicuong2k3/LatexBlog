@@ -526,13 +526,13 @@ Còn những sao cố định xuất hiện và biến mất luân phiên, tăng
 >
 > **1572 và 1604: hai ngôi sao làm sụp đổ niềm tin bầu trời bất biến**
 >
-> Chương này dành một đoạn dài cho những ngôi sao xuất hiện đột ngột rồi tắt dần, và đoạn ấy là bằng chứng sớm nhất trong lịch sử rằng bầu trời không bất biến — điều vũ trụ quan Aristotle giữ suốt hai nghìn năm.
+> Chương này dành một đoạn dài cho những ngôi sao xuất hiện đột ngột rồi tắt dần, và đoạn ấy là bằng chứng sớm nhất trong lịch sử rằng bầu trời không bất biến - điều vũ trụ quan Aristotle giữ suốt hai nghìn năm.
 >
 > Về ngôi sao năm 1572: Cornelius Gemma không nhìn thấy nó ngày 8 tháng Mười một, dù đang quan sát đúng vùng trời ấy trong đêm đó với bầu trời hoàn toàn trong; sang đêm kế tiếp nó sáng hơn bất kỳ ngôi sao cố định nào. Tycho Brahe thấy nó ngày 11 tháng cùng tháng lúc sáng rực nhất, rồi nó tắt hẳn sau mười sáu tháng, và màu đổi từ trắng ngả sang hơi vàng rồi đỏ như sao Hỏa. Ngôi sao năm 1604 thì học trò Kepler phát hiện ngày 30 tháng Chín, sáng hơn sao Mộc, và biến mất sau mười lăm hay mười sáu tháng. Newton còn nói một ngôi sao mới sáng bất thường như thế đã khiến Hipparchus lập danh mục các sao cố định, tức ông nối hiện tượng 1604 với khai sinh của thiên văn học.
 >
 > Ông cẩn thận tách hai loại sao chứ không gộp. Những ngôi tự dưng xuất hiện rồi tắt, ông thậm chí còn thử giải thích: các sao cố định dần hao mòn bởi ánh sáng và hơi nước mà chúng phát ra, và có thể được cấp lại bởi sao chổi rơi vào chúng. Còn nhóm sao lên xuống chậm, hiếm khi sáng quá cấp ba, thì ông nói thuộc loại khác: chúng quay quanh trục, một mặt sáng một mặt tối.
 >
-> Cả hai ngôi sao ấy là siêu tân tinh: 1572 là siêu tân tinh của Tycho, loại Ia, ở Thiên Xứng, cách ta chín tới mười một nghìn năm ánh sáng; 1604 là của Kepler, cũng loại Ia, ở Xà Bàng, cách ta hai mươi nghìn năm ánh sáng. Cả hai nổ trong thiên hà chúng ta, và chính chúng đã làm sụp đổ ý niệm bầu trời bất biến. Sự đổi màu cũng là dấu hiệu vật lý thật: siêu tân tinh loại Ia khởi đầu màu xanh trắng rồi đỏ dần khi nguội đi. Nhóm sao nhấp nháy mà ông nhận ra có biến thiên thì đúng là sao biến quang, chỉ có cơ chế là sai — chúng phồng xẹp co lại chứ không quay. Ý tưởng "sao được cấp thêm nhiên liệu" ấy có hậu duệ rất đẹp: siêu tân tinh chính là nguồn chủ yếu của các nguyên tố nặng.
+> Cả hai ngôi sao ấy là siêu tân tinh: 1572 là siêu tân tinh của Tycho, loại Ia, ở Thiên Xứng, cách ta chín tới mười một nghìn năm ánh sáng; 1604 là của Kepler, cũng loại Ia, ở Xà Bàng, cách ta hai mươi nghìn năm ánh sáng. Cả hai nổ trong thiên hà chúng ta, và chính chúng đã làm sụp đổ ý niệm bầu trời bất biến. Sự đổi màu cũng là dấu hiệu vật lý thật: siêu tân tinh loại Ia khởi đầu màu xanh trắng rồi đỏ dần khi nguội đi. Nhóm sao nhấp nháy mà ông nhận ra có biến thiên thì đúng là sao biến quang, chỉ có cơ chế là sai - chúng phồng xẹp co lại chứ không quay. Ý tưởng "sao được cấp thêm nhiên liệu" ấy có hậu duệ rất đẹp: siêu tân tinh chính là nguồn chủ yếu của các nguyên tố nặng.
 
 Hơi nước từ Mặt Trời, các sao cố định và đuôi các sao chổi có thể cuối cùng gặp và rơi vào khí quyển các hành tinh nhờ lực hút của chúng. Ở đó, chúng ngưng tụ và biến thành nước cùng các hơi ẩm; rồi từ đó, dưới nhiệt chậm, chúng lần lượt chuyển thành muối, lưu huỳnh, chất lỏng chiết xuất, bùn, đất sét, cát, đá, san hô và những vật chất khác trên mặt đất.
 
@@ -614,7 +614,7 @@ Nhưng những điều ấy không thể được giải thích trong ít từ, 
 >
 > **Newton nói thẳng điều ông không biết**
 >
-> Ông vừa giải thích mọi hiện tượng trên trời và dưới biển bằng lực hút, rồi nói ông chưa biết nguyên nhân của lực ấy — và không đưa giả thuyết nào, vì điều gì không suy ra được từ hiện tượng thì gọi là giả thuyết, mà giả thuyết dù siêu hình hay vật lý đều không có chỗ đứng trong triết học thực nghiệm. Rồi ngay sau đó ông lại đặt một Thần xí cực kỳ tinh tế, thấm nhập trong mọi vật thể, để giải thích sự kết dính, tĩnh điện, ánh sáng và mọi cảm giác.
+> Ông vừa giải thích mọi hiện tượng trên trời và dưới biển bằng lực hút, rồi nói ông chưa biết nguyên nhân của lực ấy - và không đưa giả thuyết nào, vì điều gì không suy ra được từ hiện tượng thì gọi là giả thuyết, mà giả thuyết dù siêu hình hay vật lý đều không có chỗ đứng trong triết học thực nghiệm. Rồi ngay sau đó ông lại đặt một Thần xí cực kỳ tinh tế, thấm nhập trong mọi vật thể, để giải thích sự kết dính, tĩnh điện, ánh sáng và mọi cảm giác.
 >
 > Trước đó ông đã dựng lại cả ba nhóm lực, đều tỷ lệ nghịch với bình phương khoảng cách, và nêu rõ chúng **không** giống các nguyên nhân cơ học thường làm, tức là không tác dụng theo lượng bề mặt mà theo lượng vật chất rắn chúng chứa. Giả thuyết xoáy của Descartes thì bị bác: sao chổi với quỹ đạo hết sức lệch tâm phải xuyên qua xoáy hành tinh và bị đẩy với tốc độ rất lớn, điều mà xoáy không tạo ra.
 >
@@ -624,6 +624,6 @@ Nhưng những điều ấy không thể được giải thích trong ít từ, 
 >
 > **Còn lại thì sao**
 >
-> Trọng lực sau này được giải thích mà không cần coi nó là một lực hút giữa các vật thể. Thần xí tinh tế kia, với các đường sức dựng được từ nó, vẫn chưa có một lời giải thích dạng phương trình nào. Lời cuối của ông — rằng ta còn thiếu thí nghiệm để xác định quy luật của Thần ấy — là một thừa nhận về điều chưa làm được, và phần lớn những gì ông gọi bằng tên ấy vẫn còn ở tình trạng đó.
+> Trọng lực sau này được giải thích mà không cần coi nó là một lực hút giữa các vật thể. Thần xí tinh tế kia, với các đường sức dựng được từ nó, vẫn chưa có một lời giải thích dạng phương trình nào. Lời cuối của ông - rằng ta còn thiếu thí nghiệm để xác định quy luật của Thần ấy - là một thừa nhận về điều chưa làm được, và phần lớn những gì ông gọi bằng tên ấy vẫn còn ở tình trạng đó.
 
 *Hết Sách III.*

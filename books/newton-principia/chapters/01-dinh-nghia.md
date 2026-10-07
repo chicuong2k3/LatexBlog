@@ -8,7 +8,7 @@ status: hoan-thanh
 
 # Định nghĩa I. Lượng vật chất
 
-Lượng vật chất là đại lượng được xác định bởi mật độ và thể tích của vật thể.
+Lượng vật chất là thước đo của chính nó, sinh ra từ mật độ và thể tích kết hợp lại.
 
 Vì vậy, không khí có mật độ gấp đôi và chiếm một thể tích gấp đôi thì lượng vật chất của nó gấp bốn; nếu chiếm một thể tích gấp ba thì lượng vật chất gấp sáu. Điều này cũng cần được hiểu tương tự đối với tuyết và các loại bột khi chúng bị nén lại hoặc hóa lỏng, và đối với mọi vật thể bị làm đặc theo những cách khác nhau vì bất kỳ nguyên nhân nào.
 
@@ -128,9 +128,9 @@ Lực này luôn tỉ lệ với lượng vật chất của vật thể mà nó
 
 Vì lý do ấy, **vis insita** có thể được gọi bằng một cái tên rất có ý nghĩa là **vis inertiae**, tức là **lực quán tính**.
 
-Nhưng vật thể chỉ phát huy lực này khi trạng thái của nó bị thay đổi bởi một lực khác tác dụng lên nó. Sự phát huy ấy, xét dưới những cách nhìn khác nhau, vừa là sức kháng cự vừa là sự tác động trở lại.
+Nhưng vật thể chỉ phát huy lực này khi có một lực khác tác dụng lên nó và cố làm thay đổi trạng thái của nó. Sự phát huy ấy, xét dưới những cách nhìn khác nhau, vừa là sức kháng cự vừa là sự tác động trở lại.
 
-Nó là sức kháng cự khi vật thể chống lại lực tác dụng để giữ trạng thái hiện tại của mình. Nó là sự tác động trở lại khi vật thể, vì không dễ dàng nhường chỗ cho vật cản, cũng cố làm thay đổi trạng thái của vật cản ấy.
+Nó là sức kháng cự khi vật thể chống lại lực tác dụng để giữ trạng thái hiện tại của mình. Nó là sự tác động trở lại khi vật thể, vì không dễ dàng nhường chỗ cho lực tác dụng của vật kia, cố làm thay đổi trạng thái của vật kia.
 
 Người ta thường quy sức kháng cự cho các vật thể đứng yên và sự tác động trở lại cho các vật thể đang chuyển động. Nhưng chuyển động và đứng yên, theo cách thường được hiểu, chỉ phân biệt với nhau một cách tương đối. Cũng không phải những vật thể mà người ta thường coi là đứng yên lúc nào cũng thực sự đứng yên.
 
@@ -186,7 +186,7 @@ Một hòn đá được quay trong dây ná cố rời khỏi bàn tay đang qu
 
 Lực chống lại sự cố gắng ấy, nhờ đó dây ná liên tục kéo hòn đá trở về phía bàn tay và giữ nó trong quỹ đạo, vì lực ấy hướng về bàn tay như tâm của quỹ đạo, là lực mà tôi gọi là **lực hướng tâm**.
 
-Điều tương tự cũng đúng với mọi vật thể chuyển động quanh một quỹ đạo. Chúng đều cố rời xa tâm của quỹ đạo; và nếu không có một lực chống lại sự cố gắng ấy, giữ chúng lại trong quỹ đạo — lực mà vì thế tôi gọi là lực hướng tâm — thì chúng sẽ đi ra theo những đường thẳng với chuyển động đều.
+Điều tương tự cũng đúng với mọi vật thể chuyển động quanh một quỹ đạo. Chúng đều cố rời xa tâm của quỹ đạo; và nếu không có một lực chống lại sự cố gắng ấy, giữ chúng lại trong quỹ đạo - lực mà vì thế tôi gọi là lực hướng tâm - thì chúng sẽ đi ra theo những đường thẳng với chuyển động đều.
 
 Một vật được bắn đi, nếu không chịu trọng lực, sẽ không bị lệch về phía Trái Đất mà sẽ tiếp tục đi theo đường thẳng vào không gian, với chuyển động đều nếu bỏ qua sức cản của không khí. Do trọng lực, nó liên tục bị kéo lệch khỏi đường thẳng và uốn về phía Trái Đất, nhiều hay ít tùy theo trọng lực của nó và vận tốc chuyển động.
 
@@ -228,7 +228,7 @@ Lượng của lực hướng tâm có thể được xét theo ba loại: lư�
 
 # Định nghĩa VI. Lượng tuyệt đối của lực hướng tâm
 
-Lượng tuyệt đối của một lực hướng tâm là thước đo của lực ấy, lớn hay nhỏ tùy theo hiệu lực của nguyên nhân truyền lực từ tâm ra các vùng xung quanh.
+Lượng tuyệt đối của một lực hướng tâm là thước đo của lực ấy, tỉ lệ với hiệu lực của nguyên nhân truyền lực từ tâm ra các vùng xung quanh.
 
 Chẳng hạn, lực từ lớn hơn ở một viên nam châm và nhỏ hơn ở một viên khác tùy theo kích thước và cường độ của chúng.
 
@@ -288,7 +288,7 @@ Nhưng nếu đi lên những vùng cao hơn, nơi lực gia tốc nhỏ hơn, t
 
 Ngoài ra, tôi cũng gọi các sự hút và đẩy là gia tốc hay động theo cùng ý nghĩa ấy. Tôi dùng các từ "hút", "đẩy", hay bất kỳ "khuynh hướng về tâm" nào một cách không phân biệt và thay thế cho nhau, bởi ở đây tôi chỉ xét những lực ấy về mặt toán học chứ không phải về mặt vật lý.
 
-Vì vậy người đọc không nên vì những từ như thế mà nghĩ rằng ở đây tôi đang xác định một kiểu tác động, một cơ chế, một nguyên nhân hay một lời giải thích vật lý nào; cũng không nên nghĩ rằng tôi thực sự gán lực theo nghĩa vật lý cho các tâm — vốn chỉ là những điểm toán học — khi tôi nói rằng tâm hút vật hoặc nói đến lực của tâm.
+Vì vậy người đọc không nên vì những từ như thế mà nghĩ rằng ở đây tôi đang xác định một kiểu tác động, một cơ chế, một nguyên nhân hay một lời giải thích vật lý nào; cũng không nên nghĩ rằng tôi thực sự gán lực theo nghĩa vật lý cho các tâm - vốn chỉ là những điểm toán học - khi tôi nói rằng tâm hút vật hoặc nói đến lực của tâm.
 
 > **[Chú giải]**
 >

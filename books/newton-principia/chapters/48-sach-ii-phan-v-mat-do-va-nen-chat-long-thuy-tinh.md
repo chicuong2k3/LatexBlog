@@ -127,7 +127,7 @@ Loại tuyệt đối giữ các phần chất lỏng và vật thể ở đúng
 >
 > Ông viết bằng hình học chứ không bằng phép thay biến, nhưng ở đây cũng không cần: ông chỉ ra một điều dễ gây hiểu nhầm. Những vật thể "nhẹ hơn không khí" vẫn rơi trong chân không, và ông viết thẳng rằng chúng chỉ là **nhẹ tương đối**, vì bỏ không khí đi thì chúng vẫn rơi. Nghĩa là "nhẹ" không phải một thuộc tính tuyệt đối của vật thể mà là một so sánh, và chỉ cái phần dư mới so sánh được mới quyết định vật thể nổi hay chìm.
 >
-> Người đọc hôm nay gọi đây là trọng lượng biểu kiến, và mọi phép đo trọng lượng đều dựa vào nó. Một quả bóng bay không "nhẹ" theo nghĩa nào; nó nổi lên vì nó đẩy ra một lượng không khí nặng hơn chính nó — cũng chính định luật Archimedes mà Hệ quả 5 vừa phát biểu. Cùng cách phân biệt ấy giải thích vì sao một viên sỏi và một chiếc lông rơi với gia tốc khác nhau trong không khí nhưng rơi như nhau trong chân không: lực cản không khí chỉ tác động lên trọng lực tương đối, mà trong chân không trọng lực tương đối bằng trọng lực tuyệt đối của cả hai.
+> Người đọc hôm nay gọi đây là trọng lượng biểu kiến, và mọi phép đo trọng lượng đều dựa vào nó. Một quả bóng bay không "nhẹ" theo nghĩa nào; nó nổi lên vì nó đẩy ra một lượng không khí nặng hơn chính nó - cũng chính định luật Archimedes mà Hệ quả 5 vừa phát biểu. Cùng cách phân biệt ấy giải thích vì sao một viên sỏi và một chiếc lông rơi với gia tốc khác nhau trong không khí nhưng rơi như nhau trong chân không: lực cản không khí chỉ tác động lên trọng lực tương đối, mà trong chân không trọng lực tương đối bằng trọng lực tuyệt đối của cả hai.
 
 ### Hệ quả 7
 

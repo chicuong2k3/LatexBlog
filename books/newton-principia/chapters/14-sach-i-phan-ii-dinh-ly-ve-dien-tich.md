@@ -31,9 +31,9 @@ Bây giờ hãy tăng số lượng những tam giác ấy, đồng thời làm 
 >
 > **Định luật Kepler thứ hai, theo một cách nói khác**
 >
-> Các diện tích bằng nhau trong các thời gian bằng nhau. Người đọc hôm nay nhận ra điều đó không phải một định luật riêng về hành tinh, mà là hệ quả trực tiếp của **bảo toàn moment động lượng**. Mọi tam giác $SAB$, $SBC$ trong lập luận của Newton đều bằng nhau chỉ vì chúng có cùng một đáy và cùng một chiều cao hạ từ $S$ — mà đáy ấy là quãng đường, và chiều cao là khoảng cách từ $S$ tới đường thẳng chứa nó.
+> Các diện tích bằng nhau trong các thời gian bằng nhau. Người đọc hôm nay nhận ra điều đó không phải một định luật riêng về hành tinh, mà là hệ quả trực tiếp của **bảo toàn moment động lượng**. Mọi tam giác $SAB$, $SBC$ trong lập luận của Newton đều bằng nhau chỉ vì chúng có cùng một đáy và cùng một chiều cao hạ từ $S$ - mà đáy ấy là quãng đường, và chiều cao là khoảng cách từ $S$ tới đường thẳng chứa nó.
 >
-> Tốc độ quét diện tích là $\dfrac{dA}{dt} = \dfrac{1}{2}|\vec{r} \times \vec{v}|$, và vì $\vec{L} = m(\vec{r} \times \vec{v})$ nên $\dfrac{dA}{dt} = \dfrac{L}{2m}$. Khi $L$ và $m$ không đổi thì $\dfrac{dA}{dt}$ không đổi — đó là nội dung của Proposition I. Ở dạng cực, $\dfrac{dA}{dt} = \dfrac{1}{2} r^2 \dot{\theta} = \dfrac{1}{2} h$, với $h = r^2 \dot{\theta}$ gọi là **moment động lượng riêng**.
+> Tốc độ quét diện tích là $\dfrac{dA}{dt} = \dfrac{1}{2}|\vec{r} \times \vec{v}|$, và vì $\vec{L} = m(\vec{r} \times \vec{v})$ nên $\dfrac{dA}{dt} = \dfrac{L}{2m}$. Khi $L$ và $m$ không đổi thì $\dfrac{dA}{dt}$ không đổi - đó là nội dung của Proposition I. Ở dạng cực, $\dfrac{dA}{dt} = \dfrac{1}{2} r^2 \dot{\theta} = \dfrac{1}{2} h$, với $h = r^2 \dot{\theta}$ gọi là **moment động lượng riêng**.
 >
 > **Ông dùng nó như định lý giả định, khi chưa cần biết lực là gì**
 >
@@ -55,7 +55,7 @@ Bởi vì các vận tốc tại những nơi $A$, $B$, $C$, $D$, $E$ tỷ lệ 
 >
 > **Khoảng cách từ tâm tới tiếp tuyến quyết định hình dạng quỹ đạo**
 >
-> Hệ quả 1 nói tốc độ tỷ lệ nghịch với khoảng cách $b$ từ tâm xuống tiếp tuyến, tức $v \propto \dfrac{1}{b}$. Nhân với khoảng cách $r$ ta được $bv = r^2 \dot{\theta} = h$ không đổi, tức $b = \dfrac{h}{v}$. Khi lực là nghịch đảo bậc hai, quỹ đạo là conic, và mỗi conic ứng với một giá trị riêng của $\dfrac{h^2}{\mu}$ — tham số quyết định quỹ đạo là tròn, elip hay hyperbol.
+> Hệ quả 1 nói tốc độ tỷ lệ nghịch với khoảng cách $b$ từ tâm xuống tiếp tuyến, tức $v \propto \dfrac{1}{b}$. Nhân với khoảng cách $r$ ta được $bv = r^2 \dot{\theta} = h$ không đổi, tức $b = \dfrac{h}{v}$. Khi lực là nghịch đảo bậc hai, quỹ đạo là conic, và mỗi conic ứng với một giá trị riêng của $\dfrac{h^2}{\mu}$ - tham số quyết định quỹ đạo là tròn, elip hay hyperbol.
 >
 > $b$ còn là **tham số va chạm** của một đường ray hấp dẫn, và là cách đo phân bố góc trong tán xạ Rutherford.
 >

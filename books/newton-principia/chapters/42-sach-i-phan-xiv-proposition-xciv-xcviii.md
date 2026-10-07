@@ -101,9 +101,9 @@ Vì có sự tương tự giữa sự truyền của tia sáng và chuyển đ�
 >
 > Ông vừa chứng minh xong rằng một vật thể đi qua lớp môi trường bị đẩy giữa hai mặt phẳng song song tuân theo định luật $\sin\theta_{\text{tới}} : \sin\theta_{\text{lỗm}} = \text{hằng}$, rồi ngay sau đó tuyên bố định luật ấy **giống hệt** các định luật khúc xạ ánh sáng mà Snell tìm ra theo tỷ lệ đoạn secant, và Descartes trình bày theo tỷ lệ sin. Cơ học của ông vừa tái tạo lại quang học.
 >
-> Giả thiết là các lớp môi trường ngày càng mỏng dần, lực trở thành liên tục, và tỷ lệ giữa sin góc tới mặt phẳng đầu với sin góc lỗm từ mặt phẳng cuối vẫn là hằng số đã cho. Từ đó suy ra tốc độ trước khi tới tỷ lệ với tốc độ sau khi lỗm theo đúng tỷ lệ sin ấy — cùng dạng với định luật Snell, trong đó tỷ lệ sin chính là tỷ lệ tốc độ.
+> Giả thiết là các lớp môi trường ngày càng mỏng dần, lực trở thành liên tục, và tỷ lệ giữa sin góc tới mặt phẳng đầu với sin góc lỗm từ mặt phẳng cuối vẫn là hằng số đã cho. Từ đó suy ra tốc độ trước khi tới tỷ lệ với tốc độ sau khi lỗm theo đúng tỷ lệ sin ấy - cùng dạng với định luật Snell, trong đó tỷ lệ sin chính là tỷ lệ tốc độ.
 >
-> Ông coi ánh sáng là vật thể. Vật thể đi qua môi trường sẽ bị cong đường đi, giống hệt một viên đá bị bẻ trong nước. Ông còn giả định quanh vật thể trong suốt có một "không khí" hút, và vì vậy tia bị uốn **dần** trước khi chạm mặt — như ông quan sát được ở lưỡi dao: tia gần cạnh bị uốn nhiều hơn, tia xa hơn bị uốn ít hơn, và ba dải màu ở phía xa nhất chính là dấu vết của hiệu ứng ấy.
+> Ông coi ánh sáng là vật thể. Vật thể đi qua môi trường sẽ bị cong đường đi, giống hệt một viên đá bị bẻ trong nước. Ông còn giả định quanh vật thể trong suốt có một "không khí" hút, và vì vậy tia bị uốn **dần** trước khi chạm mặt - như ông quan sát được ở lưỡi dao: tia gần cạnh bị uốn nhiều hơn, tia xa hơn bị uốn ít hơn, và ba dải màu ở phía xa nhất chính là dấu vết của hiệu ứng ấy.
 >
 > Cơ chế ông giả định là sai: ánh sáng không phải hạt, và nó không bị uốn bởi lực hút. Nhưng định luật ông suy ra thì đúng, và lý do sâu hơn cả: định luật khúc xạ chỉ phụ thuộc tính bất biến của tốc độ ánh sáng trong môi trường, chứ không phụ thuộc ánh sáng là gì. Nguyên lý đó, sau này Fermat phát biểu bằng một lập luận khác hẳn, vẫn cho ra cùng hệ số sin đó.
 >

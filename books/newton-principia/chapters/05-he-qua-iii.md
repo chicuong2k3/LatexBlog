@@ -43,13 +43,13 @@ Những kiểu bật lại như vậy cũng đôi khi tạo ra chuyển động 
 >
 > Tổng động lượng của một hệ không đổi, miễn là không có lực từ bên ngoài tác vào. Điểm quan trọng về mặt lập luận là đây là lần đầu tiên trong vật lí, một đại luật bảo toàn được **suy ra** như hệ quả logic của các định luật khác, chứ không phải một tiên đề đứng riêng.
 >
-> Newton làm toán bằng "phần" chứ không bằng ký hiệu: vật $A$ mang $6$ phần chuyển động, vật $B$ mang $10$ phần, tổng là $16$. Sau khi bật lại, mọi cách phân bố đều giữ nguyên tổng đó — nếu $A$ nhận thêm $9$ thì $A$ có $15$ và $B$ còn $1$; nếu $A$ nhận thêm $12$ thì $A$ có $18$ và $B$ thành $-2$, tức là đi ngược lại với $2$ phần. Ngôn ngữ hiện đại là $\vec{p}_1 + \vec{p}_2 = \text{hằng số}$, và tôi đã kiểm lại cả hai trường hợp: $15 + 1 = 16$ và $18 - 2 = 16$.
+> Newton làm toán bằng "phần" chứ không bằng ký hiệu: vật $A$ mang $6$ phần chuyển động, vật $B$ mang $10$ phần, tổng là $16$. Sau khi bật lại, mọi cách phân bố đều giữ nguyên tổng đó - nếu $A$ nhận thêm $9$ thì $A$ có $15$ và $B$ còn $1$; nếu $A$ nhận thêm $12$ thì $A$ có $18$ và $B$ thành $-2$, tức là đi ngược lại với $2$ phần. Ngôn ngữ hiện đại là $\vec{p}_1 + \vec{p}_2 = \text{hằng số}$, và tôi đã kiểm lại cả hai trường hợp: $15 + 1 = 16$ và $18 - 2 = 16$.
 >
 > **Bảo toàn là ràng buộc, chưa phải lời giải**
 >
 > Một phương trình không đủ xác định hai ẩn số. Ngày nay phương trình thứ hai là bảo toàn năng lượng cơ, hoặc dùng hệ số phục hồi $e$. Đó là lý do Newton liệt kê nhiều trường hợp khả dĩ thay vì đưa ra công thức: ông đang chứng minh tính bất biến, không phải giải bài toán.
 >
-> Kiểm chứng: với $m_A = 3$, $v_A = 2$, $m_B = 2$, $v_B = 5$ (đúng $6$ và $10$ phần), va chạm thuần một chiều đàn hồi cho $v_A' = 4{,}4$ và $v_B' = 1{,}4$; động lượng $3 \cdot 4{,}4 + 2 \cdot 1{,}4 = 16$ và năng lượng cơ $31$ trước, $31$ sau, đều khớp. Nhưng đó là $A$ **nhận thêm $7{,}2$ phần** — không nằm trong danh sách $3, 4, 5, 9, 10, 11, 12$ mà ông kể ra.
+> Kiểm chứng: với $m_A = 3$, $v_A = 2$, $m_B = 2$, $v_B = 5$ (đúng $6$ và $10$ phần), va chạm thuần một chiều đàn hồi cho $v_A' = 4{,}4$ và $v_B' = 1{,}4$; động lượng $3 \cdot 4{,}4 + 2 \cdot 1{,}4 = 16$ và năng lượng cơ $31$ trước, $31$ sau, đều khớp. Nhưng đó là $A$ **nhận thêm $7{,}2$ phần** - không nằm trong danh sách $3, 4, 5, 9, 10, 11, 12$ mà ông kể ra.
 >
 > **Cách phân tích va chạm xiên**
 >

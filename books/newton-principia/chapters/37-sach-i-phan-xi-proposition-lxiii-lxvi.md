@@ -45,7 +45,7 @@ Nếu các lực hút giữa mọi cặp vật thể tỷ lệ với khoảng c�
 >
 > Từng bước trong cách ông làm, mỗi lần thêm một vật thể, các vật thể cũ vẫn mô tả elip quanh tâm riêng của chúng với chu kỳ bị rút ngắn theo một tỷ lệ xác định, còn tâm ấy lại mô tả một elip tương tự quanh tâm lớn hơn. Ông cần bằng chứng rằng kết quả hai vật thể không phải một trường hợp riêng mà là thuộc tính chung của cả hệ, và cách lặp lại đó chính là cái mà ngày nay gọi là **phân rã thứ cấp** của bài toán nhiều vật thể: giải bài toán trên bằng cách đưa mọi vật thể về các hệ quy chiếu lồng nhau, mỗi hệ nhỏ hơn lại là một bài toán đã biết.
 >
-> Người đọc hôm nay gặp đúng cấu trúc "elip đồng dạng, cùng chu kỳ, quanh một tâm" trong lý thuyết dao động bình thường của các hệ nhiều bậc: hai con lắc gắn cứng, dãy dao động gắn, hay mạng tinh thể ở gần vị trí cân bằng nơi đạt cứng lên gần đúng tuyến tính. Cùng lý do đó, lực tuyến tính là lực duy nhất khiến mọi vật thể trong một hệ dao động cùng một tần số — đó là ý nghĩa vật lý sâu của câu "mọi chu kỳ đều bằng nhau".
+> Người đọc hôm nay gặp đúng cấu trúc "elip đồng dạng, cùng chu kỳ, quanh một tâm" trong lý thuyết dao động bình thường của các hệ nhiều bậc: hai con lắc gắn cứng, dãy dao động gắn, hay mạng tinh thể ở gần vị trí cân bằng nơi đạt cứng lên gần đúng tuyến tính. Cùng lý do đó, lực tuyến tính là lực duy nhất khiến mọi vật thể trong một hệ dao động cùng một tần số - đó là ý nghĩa vật lý sâu của câu "mọi chu kỳ đều bằng nhau".
 
 ## Proposition LXV. Định lý XXV
 
@@ -172,4 +172,4 @@ Khi vật thể đi từ góc phần tư tới syzygy, góc nghiêng giảm, r�
 >
 > Cùng cấu trúc ấy, ở dạng vi phân, chính là **phương trình phẳng thứ Lagrange**: tốc độ thay đổi dài hạn của quỹ đạo được biểu diễn theo trục elip, mỗi thành phần nhiễu sẽ đẩy một trục theo một tốc độ riêng. Đó là công thức mà ngành thiên văn vẫn dùng để theo dõi quỹ đạo vệ tinh và tiểu hành tinh.
 >
-> Hai sự kiện lịch sử của Mặt Trăng rơi thẳng ra từ đây. Nó chạy nhanh hơn ở hội hợp và đối hợp, và mặt phẳng quỹ đạo nghiêng ít nhất ở đúng những vị trí ấy — hai bất đẳng thức thiên văn đã được ghi nhận từ lâu. Nó cũng giải thích vì sao đường apsis của Mặt Trăng tiến dần do Mặt Trời gây ra, với tốc độ biến thiên theo chu kỳ 18,6 năm của mặt phẳng quỹ đạo.
+> Hai sự kiện lịch sử của Mặt Trăng rơi thẳng ra từ đây. Nó chạy nhanh hơn ở hội hợp và đối hợp, và mặt phẳng quỹ đạo nghiêng ít nhất ở đúng những vị trí ấy - hai bất đẳng thức thiên văn đã được ghi nhận từ lâu. Nó cũng giải thích vì sao đường apsis của Mặt Trăng tiến dần do Mặt Trời gây ra, với tốc độ biến thiên theo chu kỳ 18,6 năm của mặt phẳng quỹ đạo.

@@ -125,7 +125,14 @@ public sealed class BookStore
         if (!path.StartsWith(rootPrefix, StringComparison.OrdinalIgnoreCase) || !File.Exists(path))
             return null;
 
-        return File.ReadAllText(path);
+        // Hình trong chương được viết là "../assets/<tệp>", tức đường dẫn tương đối
+        // tính từ chapters/<slug>.html trong kho nguồn. Trên web tệp nằm ở
+        // /generated/books/<slug>/assets/, còn URL trang chương không có dấu / ở
+        // cuối, nên trình duyệt giải "../assets/" thành /books/assets/ và 404.
+        // Đổi sang đường dẫn tuyệt đối; chỉ chuỗi này là đường dẫn tương đối
+        // trong toàn bộ markdown của sách.
+        var html = File.ReadAllText(path);
+        return html.Replace("../assets/", $"/generated/books/{bookSlug}/assets/");
     }
 
     private static bool IsSafeRelativePath(string relativePath)

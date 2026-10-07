@@ -257,7 +257,7 @@ nên $PR = Pq$, trái với giả thiết.
 >
 > Đây là trường hợp riêng của định lý Bézout cho đường cong bậc hai.
 >
-> Lập luận của Newton là phản chứng: nếu hai conic cắt nhau ở năm điểm, lấy hai điểm làm cực rồi kẻ đường, ta sẽ có $PR = Pq$ — hai đoạn thẳng khác nhau phải bằng nhau, mâu thuẫn. Từ đây suy ra điều quan trọng hơn: **năm điểm xác định duy nhất một hình cắt conic**. Phương trình bậc hai có sáu hệ số, trừ một vì quy mô, còn năm tham số — khớp chính xác với con số năm điểm.
+> Lập luận của Newton là phản chứng: nếu hai conic cắt nhau ở năm điểm, lấy hai điểm làm cực rồi kẻ đường, ta sẽ có $PR = Pq$ - hai đoạn thẳng khác nhau phải bằng nhau, mâu thuẫn. Từ đây suy ra điều quan trọng hơn: **năm điểm xác định duy nhất một hình cắt conic**. Phương trình bậc hai có sáu hệ số, trừ một vì quy mô, còn năm tham số - khớp chính xác với con số năm điểm.
 >
 > **Một công cụ phân biệt, không phải một định lý để trích dẫn**
 >
@@ -341,7 +341,7 @@ nên $pe$ và $Pr$ luôn bằng nhau. Bằng cách này, các điểm của qu�
 >
 > Đó chính là cơ chế của phép chiếu, mặc dù thuật ngữ ấy chưa tồn tại.
 >
-> Cấu trúc của Lemma XXI là: cho một điểm $A$ cố định trên conic, quay hai cạnh $BA$, $CA$ quanh $B$, $C$ sao cho giao điểm luôn nằm trên một đường thẳng; khi đó giao điểm của các cạnh ứng với $D$ và $P$ vẽ nên conic đi qua $A$, $D$, $P$, $B$, $C$. Mấu chốt nằm ở bước cuối: nếu quỹ tích là một đường cong, nó sẽ phải là conic đi qua đúng năm điểm đó — mà Hệ quả 3 của Lemma XX vừa cấm. Suy ra quỹ tích buộc là đường thẳng.
+> Cấu trúc của Lemma XXI là: cho một điểm $A$ cố định trên conic, quay hai cạnh $BA$, $CA$ quanh $B$, $C$ sao cho giao điểm luôn nằm trên một đường thẳng; khi đó giao điểm của các cạnh ứng với $D$ và $P$ vẽ nên conic đi qua $A$, $D$, $P$, $B$, $C$. Mấu chốt nằm ở bước cuối: nếu quỹ tích là một đường cong, nó sẽ phải là conic đi qua đúng năm điểm đó - mà Hệ quả 3 của Lemma XX vừa cấm. Suy ra quỹ tích buộc là đường thẳng.
 >
 > **Ông từ chối dùng phép tính giải tích**
 >

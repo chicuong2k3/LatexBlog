@@ -73,13 +73,13 @@ Khi tiêu điểm, điểm tiếp xúc và vị trí tiếp tuyến đã cho, c�
 >
 > **Bất kỳ vận tốc nào cũng cho một conic, và ngược lại**
 >
-> Proposition XIII hoàn tất bộ ba: elip, hypebol, và giờ là parabol — cả ba đều cho cùng một quy luật lực nghịch đảo bậc hai. Hệ quả 1 nói điều mạnh hơn: **bất kỳ vận tốc nào** cũng cho một conic, và ngược lại. Đây là định lý tổng quát nhất của Phần III.
+> Proposition XIII hoàn tất bộ ba: elip, hypebol, và giờ là parabol - cả ba đều cho cùng một quy luật lực nghịch đảo bậc hai. Hệ quả 1 nói điều mạnh hơn: **bất kỳ vận tốc nào** cũng cho một conic, và ngược lại. Đây là định lý tổng quát nhất của Phần III.
 >
 > Lemma XIV cho một mốc hình học đẹp: với $SN$ là đoạn vuông góc từ tiêu điểm xuống tiếp tuyến, ta có $SN^2 = PS \cdot SA$. Từ đó Hệ quả 2 dẫn tới $SN^2 \propto PS$, và đó chính là mắt xích đưa lực về dạng $F \propto 1/(SA \cdot SP^2)$. Ở dạng hiện đại, lực $F = -\mu m/r^2$ cho quỹ đạo $r = \dfrac{p}{1 + e\cos\theta}$ với mọi vận tốc ban đầu, và loại conic chỉ phụ thuộc vào việc $v$ so với vận tốc thoát $v_{\text{e}} = \sqrt{\dfrac{2\mu}{r}}$.
 >
 > **Ông cần chứng minh lực giải thích mọi quỹ đạo, không chỉ vài quỹ đạo đặc biệt**
 >
-> Câu cuối của Hệ quả 1 còn là một quan sát tinh tế: hai quỹ đạo tiếp xúc nhau tại một điểm không thể cùng chịu một lực và cùng có một vận tốc. Đó là tính **duy nhất** của phương trình vi phân — cùng trạng thái ban đầu thì chỉ có một đường đi duy nhất.
+> Câu cuối của Hệ quả 1 còn là một quan sát tinh tế: hai quỹ đạo tiếp xúc nhau tại một điểm không thể cùng chịu một lực và cùng có một vận tốc. Đó là tính **duy nhất** của phương trình vi phân - cùng trạng thái ban đầu thì chỉ có một đường đi duy nhất.
 >
 > Tính duy nhất ấy là một trong những giả định nền của mọi mô hình vật lí tính toán, và người đọc hôm nay dùng nó rất thực dụng: nếu hai mô hình dự đoán khác nhau trên một quỹ đạo, thì chỉ một trong hai đúng, vì chúng không thể cùng thoát ra từ cùng trạng thái ban đầu mà lại phân kỳ ngay sau đó. Hành tinh trong tinh hành là ví dụ quen thuộc: số liệu quan sát sai sẽ khiến quỹ đạo bị dự đoán sai ngay từ điểm khởi đầu, và sai số ấy không tự phục hồi về sau.
 
@@ -127,4 +127,4 @@ Vì vậy, thời gian tuần hoàn trong các elip giống như trong các đư
 >
 > Ông cần chứng minh định luật Kepler thứ ba như một **hệ quả**, không phải như một giả thiết. Với lực nghịch đảo bậc hai đã xác lập ở Proposition XI và quy luật diện tích đều đã có từ Proposition I, chỉ còn một bước hình học nữa: trục nhỏ là trung bình nhân giữa trục lớn và latus rectum. Phần dư chênh lệch giữa dự đoán và quan sát là thứ duy nhất còn lại để kiểm tra.
 >
-> Đẳng thức $T^2 = \dfrac{4\pi^2}{\mu} a^3$ là công thức được dùng nhiều nhất trong thiên văn học, và nó **hoàn toàn độc lập với khối lượng của vật thể quay quanh** — đó là điểm gây ngạc nhiên lớn nhất đối với người mới học, và là lý do trọng lực không thể là lực tỷ lệ thuận với khối lượng. Cùng công thức ấy còn cho một phép đo tổng khối lượng của thứ mà ta không nhìn thấy: từ chu kỳ và trục lớn, $\mu = \dfrac{4\pi^2 a^3}{T^2}$. Người đọc hôm nay dùng đúng phép đo ấy để phát hiện hành tinh ngoài Hệ Mặt Trời và để cân những lỗ đen từ quỹ đạo của ngôi sao quanh nó.
+> Đẳng thức $T^2 = \dfrac{4\pi^2}{\mu} a^3$ là công thức được dùng nhiều nhất trong thiên văn học, và nó **hoàn toàn độc lập với khối lượng của vật thể quay quanh** - đó là điểm gây ngạc nhiên lớn nhất đối với người mới học, và là lý do trọng lực không thể là lực tỷ lệ thuận với khối lượng. Cùng công thức ấy còn cho một phép đo tổng khối lượng của thứ mà ta không nhìn thấy: từ chu kỳ và trục lớn, $\mu = \dfrac{4\pi^2 a^3}{T^2}$. Người đọc hôm nay dùng đúng phép đo ấy để phát hiện hành tinh ngoài Hệ Mặt Trời và để cân những lỗ đen từ quỹ đạo của ngôi sao quanh nó.

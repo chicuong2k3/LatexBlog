@@ -12,13 +12,13 @@ Hình 19 minh hoạ một bóng đèn như thế ở một giai đoạn hoàn th
 ống kim loại S được gắn vào cổ của ống bằng một thứ chất dán. Trong ống có một nút P bằng
 vật liệu cách điện được vặn vào, và ở chính giữa nút ấy được gắn một đầu điện cực kim
 loại t, để nối với dây dẫn vào w. Đầu điện cực này phải cách điện tốt với ống kim loại S,
-do đó, nếu chất dán dùng có dẫn điện — và thông thường nó dẫn điện khá tốt — thì khoảng
+do đó, nếu chất dán dùng có dẫn điện - và thông thường nó dẫn điện khá tốt - thì khoảng
 trống giữa nút P và cổ bóng đèn nên được lấp đầy bằng một vật liệu cách điện tốt, như bột
 mica.
 
 ![Bóng đèn thí nghiệm có ống dẫn điện bên ngoài](../assets/fig-p071-00.jpg)
 
-*Hình 20. — Bóng đèn dùng cho thí nghiệm với ống dẫn điện.*
+*Hình 20. - Bóng đèn dùng cho thí nghiệm với ống dẫn điện.*
 
 Hình 20 cho thấy một bóng đèn làm cho mục đích thí nghiệm. Trong bóng đèn này, ống nhôm được
 trang bị một mối nối bên ngoài, để nghiên cứu tác dụng của ống trong những điều kiện khác
@@ -35,7 +35,7 @@ cho sợi dây đi qua khí loãng càng ngắn càng tốt.
 bóng đèn một đoạn nào đó, và mang trên đỉnh một cuống thuỷ tinh rất ngắn s, trong đó được
 hàn kín dây dẫn vào w, và tôi bảo vệ phần trên của cuống thuỷ tinh khỏi nhiệt bằng một ống
 nhôm nhỏ a và một lớp mica bên dưới, như thường lệ. Sợi dây w, đi qua ống lớn ra bên ngoài
-bóng đèn, phải được cách điện tốt — chẳng hạn bằng một ống thuỷ tinh — và khoảng trống giữa
+bóng đèn, phải được cách điện tốt - chẳng hạn bằng một ống thuỷ tinh - và khoảng trống giữa
 nên được lấp đầy bằng một vật liệu cách điện tuyệt vời. Trong nhiều loại bột cách điện mà
 tôi đã thử, tôi thấy bột mica là tốt nhất. Nếu không đề phòng điều này, ống T thò vào trong
 bóng đèn chắc chắn sẽ bị nứt do nhiệt từ những chổi lông thường hình thành ở phần trên của
@@ -53,11 +53,11 @@ trong.
 
 ![Bóng đèn cải tiến có nút không dẫn điện](../assets/fig-p073-00.jpg)
 
-*Hình 21. — Bóng đèn cải tiến có nút không dẫn điện.*
+*Hình 21. - Bóng đèn cải tiến có nút không dẫn điện.*
 
 ![Bóng đèn cải tiến không có dây dẫn vào](../assets/fig-p073-01.jpg)
 
-*Hình 22. — Bóng đèn cải tiến không có dây dẫn vào.*
+*Hình 22. - Bóng đèn cải tiến không có dây dẫn vào.*
 
 Sự phóng bội phân tử chống lại cuống thuỷ tinh trong bóng đèn là một nguồn phiền muộn lớn.
 Để minh hoạ, tôi sẽ dẫn một hiện tượng quá thường xuyên và không hẹn hò gặp. Ta có thể lấy

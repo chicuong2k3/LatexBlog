@@ -793,16 +793,16 @@ Bảng này, sau khi hiệu chỉnh, được lập trên giả thiết chuyển
 | Khoảng cách cận điểm Mặt Trời | Thời gian đến bán kính *orbis magnus* | Thời gian đến gấp đôi | Thời gian đến gấp ba | Thời gian đến gấp bốn |
 |---:|---:|---:|---:|---:|
 | $0$ | $27$ ngày $11$ giờ $12$ phút | $77$ ngày $16$ giờ $28$ phút | $142$ ngày $17$ giờ $14$ phút | $219$ ngày $17$ giờ $30$ phút |
-| $5$ | $27$ ngày $16$ giờ $7$ phút | $77$ ngày $23$ giờ $14$ phút | — | — |
-| $10$ | $27$ ngày $21$ giờ $0$ phút | $78$ ngày $6$ giờ $24$ phút | — | — |
+| $5$ | $27$ ngày $16$ giờ $7$ phút | $77$ ngày $23$ giờ $14$ phút | - | - |
+| $10$ | $27$ ngày $21$ giờ $0$ phút | $78$ ngày $6$ giờ $24$ phút | - | - |
 | $20$ | $28$ ngày $6$ giờ $40$ phút | $78$ ngày $20$ giờ $13$ phút | $144$ ngày $3$ giờ $19$ phút | $221$ ngày $8$ giờ $54$ phút |
-| $40$ | $29$ ngày $1$ giờ $32$ phút | $79$ ngày $23$ giờ $34$ phút | — | — |
-| $80$ | $30$ ngày $13$ giờ $25$ phút | $82$ ngày $4$ giờ $56$ phút | — | — |
+| $40$ | $29$ ngày $1$ giờ $32$ phút | $79$ ngày $23$ giờ $34$ phút | - | - |
+| $80$ | $30$ ngày $13$ giờ $25$ phút | $82$ ngày $4$ giờ $56$ phút | - | - |
 | $160$ | $33$ ngày $5$ giờ $29$ phút | $86$ ngày $10$ giờ $26$ phút | $153$ ngày $16$ giờ $8$ phút | $232$ ngày $12$ giờ $20$ phút |
-| $320$ | $37$ ngày $13$ giờ $46$ phút | $93$ ngày $23$ giờ $38$ phút | — | — |
-| $640$ | $37$ ngày $9$ giờ $49$ phút | $105$ ngày $1$ giờ $28$ phút | — | — |
-| $1280$ | — | $106$ ngày $6$ giờ $35$ phút | $200$ ngày $6$ giờ $43$ phút | $297$ ngày $3$ giờ $46$ phút |
-| $2560$ | — | — | $147$ ngày $22$ giờ $31$ phút | $300$ ngày $6$ giờ $3$ phút |
+| $320$ | $37$ ngày $13$ giờ $46$ phút | $93$ ngày $23$ giờ $38$ phút | - | - |
+| $640$ | $37$ ngày $9$ giờ $49$ phút | $105$ ngày $1$ giờ $28$ phút | - | - |
+| $1280$ | - | $106$ ngày $6$ giờ $35$ phút | $200$ ngày $6$ giờ $43$ phút | $297$ ngày $3$ giờ $46$ phút |
+| $2560$ | - | - | $147$ ngày $22$ giờ $31$ phút | $300$ ngày $6$ giờ $3$ phút |
 
 Thời gian một sao chổi đi vào quả cầu *orbis magnus*, hoặc rời khỏi quả cầu ấy, có thể gần đúng được suy ra từ thị sai của nó; nhưng có thể xác định nhanh hơn bằng Bảng II sau đây:
 

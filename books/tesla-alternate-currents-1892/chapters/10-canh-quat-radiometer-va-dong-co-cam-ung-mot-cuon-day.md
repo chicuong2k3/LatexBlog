@@ -1,6 +1,6 @@
 ---
 title: "Cánh quạt, radiometer, và động cơ cảm ứng một cuộn dây"
-summary: "Một cánh quạt nhôm chỉ quay ở tần số rất cao, còn chiếc radiometer của Crookes thì không quay cả khi thế điện đủ lớn. Và một cuộn dây quấn trên lõi sắt, không cần gì thêm, vẫn tạo được trường lực chuyển động — điều Tesla phát hiện ra trước Ayrton công bố ý tưởng trễ thời gian."
+summary: "Một cánh quạt nhôm chỉ quay ở tần số rất cao, còn chiếc radiometer của Crookes thì không quay cả khi thế điện đủ lớn. Và một cuộn dây quấn trên lõi sắt, không cần gì thêm, vẫn tạo được trường lực chuyển động - điều Tesla phát hiện ra trước Ayrton công bố ý tưởng trễ thời gian."
 slug: "canh-quat-radiometer-va-dong-co-cam-ung-mot-cuon-day"
 ---
 

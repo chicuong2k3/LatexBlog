@@ -51,7 +51,7 @@ Nhìn chung, nếu thời gian tuần hoàn tỷ lệ với lũy thừa $R^n$ c�
 >
 > Proposition IV là định lý lực hướng tâm $F = \dfrac{mv^2}{R}$ viết bằng ngôn ngữ tỷ lệ. Hệ quả 7 là **định luật lũy thừa tổng quát** mà toàn bộ Phần III dựa vào: nếu chu kỳ tuần hoàn tỷ lệ với $R^n$, thì lực tỷ lệ với $R^{1-2n}$. Cắm định luật Kepler thứ ba vào đó là ra luật nghịch đảo bậc hai.
 >
-> Từ Hệ quả 1, $F \propto v^2/R$. Với $T = 2\pi R/v$ ta có $v \propto R^{1-n}$, nên $F \propto R^{2(1-n)-1} = R^{1-2n}$ — đúng như Hệ quả 7. Với định luật Kepler thứ ba $T \propto R^{3/2}$, tức $n = 3/2$, ta được ngay $F \propto R^{-2}$. Viết theo cách khác, từ $T^2 \propto R^3$ suy ra $F \propto \dfrac{v^2}{R} = \dfrac{4\pi^2 R^2}{T^2 R} \propto \dfrac{1}{R^2}$.
+> Từ Hệ quả 1, $F \propto v^2/R$. Với $T = 2\pi R/v$ ta có $v \propto R^{1-n}$, nên $F \propto R^{2(1-n)-1} = R^{1-2n}$ - đúng như Hệ quả 7. Với định luật Kepler thứ ba $T \propto R^{3/2}$, tức $n = 3/2$, ta được ngay $F \propto R^{-2}$. Viết theo cách khác, từ $T^2 \propto R^3$ suy ra $F \propto \dfrac{v^2}{R} = \dfrac{4\pi^2 R^2}{T^2 R} \propto \dfrac{1}{R^2}$.
 >
 > **Một máy suy luận thực nghiệm, không phải một giả thuyết**
 >
@@ -77,10 +77,10 @@ Trường hợp của Hệ quả 6 xuất hiện trong các thiên thể, như S
 >
 > **Chuyển động tròn là giới hạn của chuyển động ném liên tiếp**
 >
-> Hệ quả 9 là quan hệ **trung bình nhân** giữa cung tròn, đường kính và quãng đường rơi tự do. Cung đi qua trong thời gian $T$ là $s = vT$, còn quãng đường rơi tự do trong cùng thời gian dưới cùng lực là $d = \tfrac{1}{2}\dfrac{F}{m}T^2$. Với $F = \dfrac{mv^2}{R}$ ta có $d = \dfrac{v^2 T^2}{2R}$, suy ra $s^2 = 2Rd$, tức $s = \sqrt{2Rd}$ — đúng là trung bình nhân của $2R$ và $d$.
+> Hệ quả 9 là quan hệ **trung bình nhân** giữa cung tròn, đường kính và quãng đường rơi tự do. Cung đi qua trong thời gian $T$ là $s = vT$, còn quãng đường rơi tự do trong cùng thời gian dưới cùng lực là $d = \tfrac{1}{2}\dfrac{F}{m}T^2$. Với $F = \dfrac{mv^2}{R}$ ta có $d = \dfrac{v^2 T^2}{2R}$, suy ra $s^2 = 2Rd$, tức $s = \sqrt{2Rd}$ - đúng là trung bình nhân của $2R$ và $d$.
 >
 > **Biến bài toán “đang quay” thành bài toán “đang rơi”**
 >
-> Ông cần điều đó để dùng chung một bộ quy tắc. Mỗi phần nhỏ của đường tròn đều là một vật thể ném ngang, và trong khoảng thời gian rất ngắn nó rơi đúng quãng đường mà lực hướng tâm sai lệch so với tiếp tuyến. Công thức này là bản định lượng của một câu quen thuộc: ném đá càng mạnh càng xa, và nếu mạnh vô hạn thì đá đi thành đường thẳng — hãy ném đủ mạnh và giữ trọng lực, nó sẽ thành đường tròn.
+> Ông cần điều đó để dùng chung một bộ quy tắc. Mỗi phần nhỏ của đường tròn đều là một vật thể ném ngang, và trong khoảng thời gian rất ngắn nó rơi đúng quãng đường mà lực hướng tâm sai lệch so với tiếp tuyến. Công thức này là bản định lượng của một câu quen thuộc: ném đá càng mạnh càng xa, và nếu mạnh vô hạn thì đá đi thành đường thẳng - hãy ném đủ mạnh và giữ trọng lực, nó sẽ thành đường tròn.
 >
 > Học luận cuối chương ghi lại một mắt xích lịch sử: Wren, Hooke và Halley đều quan sát thấy Hệ quả 6, và chính Halley đã gợi ý với Newton rằng lực hút phải giảm theo bậc hai. Học luận này ghi nhận sự quan sát của cả ba, còn phần chứng minh thì Newton viết dưới tên mình. Người đọc hôm nay hiểu Hệ quả 9 như một phép kiểm tra nhanh rất thực dụng: nếu một vật thể quay tròn, hãy so độ cong thực tế của nó với độ cong của đường rơi tự do, và hai cái phải khớp nhau.

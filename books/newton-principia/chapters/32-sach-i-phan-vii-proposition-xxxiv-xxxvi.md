@@ -129,7 +129,7 @@ Vì thế diện tích $KSA'$ bằng diện tích $SDd$, như trên.
 >
 > Với lực $\mu/r^2$, vận tốc rơi từ vô cùng ở khoảng cách $r$ là $v^2 = \dfrac{2\mu}{r}$; vận tốc quay tròn ở bán kính $r/2$ là $v_c^2 = \dfrac{\mu}{r/2} = \dfrac{2\mu}{r}$. Hai vế bằng nhau chính xác, nhưng đó mới là phần dễ.
 >
-> Phần khó nằm ở Proposition XXXV, phát biểu bằng **tốc độ quét diện tích** thay vì bằng vận tốc: rơi thẳng và quay đều cùng quét một diện tích bằng nhau trong cùng một khoảng thời gian. Vì mọi quỹ đạo quanh một tâm đều có $\tfrac{1}{2}h$ không đổi, với $h$ là moment động lượng riêng, nên tương đương này độc lập với việc lực có nghịch đảo bậc hai hay không. Bán kính của vòng tròn tương đương là nửa latus rectum $p/2$, với $p = h^2/\mu$ — còn chuyển động thuần túy đi thẳng thì $h = 0$, nên cả $p$ lẫn bán kính đều bằng không, và phép thay thế quy về đúng trường hợp suy biên của nó.
+> Phần khó nằm ở Proposition XXXV, phát biểu bằng **tốc độ quét diện tích** thay vì bằng vận tốc: rơi thẳng và quay đều cùng quét một diện tích bằng nhau trong cùng một khoảng thời gian. Vì mọi quỹ đạo quanh một tâm đều có $\tfrac{1}{2}h$ không đổi, với $h$ là moment động lượng riêng, nên tương đương này độc lập với việc lực có nghịch đảo bậc hai hay không. Bán kính của vòng tròn tương đương là nửa latus rectum $p/2$, với $p = h^2/\mu$ - còn chuyển động thuần túy đi thẳng thì $h = 0$, nên cả $p$ lẫn bán kính đều bằng không, và phép thay thế quy về đúng trường hợp suy biên của nó.
 >
 > Ông cần cái này vì mọi thứ ông đã chứng minh từ Proposition I trở đi đều nói về quỹ đạo khép kín. Chuyển động thẳng không có tiếp tuyến, không có tiêu điểm, không có hình học. Thay nó bằng một cung tròn thì toàn bộ kho vũ khí cũ dùng lại được.
 >
@@ -149,7 +149,7 @@ Theo Proposition XXXV, vật thể khi rơi mô tả không gian $AC$ trong cùn
 >
 > **Thời gian rơi đọc ra từ một cung tròn, chứ không phải từ một tích phân**
 >
-> Cấu hình dựng: lấy $AS$ làm đường kính, dựng nửa đường tròn $ADS$, rồi dựng nửa đường tròn $OKH$ bằng nó — tức vòng tròn so sánh có bán kính $r_0/2$. Vị trí $C$ của vật thể sau một khoảng thời gian ứng với cung $OK$ trên vòng tròn ấy, nhờ Proposition XXXV. Thời gian vậy đọc ra như một cung tròn, chứ không như một tỷ lệ với một đại lượng khác.
+> Cấu hình dựng: lấy $AS$ làm đường kính, dựng nửa đường tròn $ADS$, rồi dựng nửa đường tròn $OKH$ bằng nó - tức vòng tròn so sánh có bán kính $r_0/2$. Vị trí $C$ của vật thể sau một khoảng thời gian ứng với cung $OK$ trên vòng tròn ấy, nhờ Proposition XXXV. Thời gian vậy đọc ra như một cung tròn, chứ không như một tỷ lệ với một đại lượng khác.
 >
 > Tích phân cho cùng kết quả: $t = \int_0^{r_0}\dfrac{dr}{\sqrt{2\mu\left(\frac1r - \frac1{r_0}\right)}} = \dfrac{\pi}{2}\sqrt{\dfrac{r_0^3}{2\mu}} = \dfrac{\pi r_0^{3/2}}{2\sqrt{2\mu}}$. Với bề mặt Trái Đất, $r_0 = 6{,}371 \times 10^6\ \mathrm{m}$ và $\mu = 3{,}986 \times 10^{14}\ \mathrm{m^3/s^2}$, ta được $t \approx 895\ \mathrm{s}$, tức gần 15 phút. Hệ số $\pi$ ở đây đúng là $\pi$ của hình tròn: thời gian rơi luôn gắn với một nửa vòng quay, vì đó là cách duy nhất gắn được thời gian vào diện tích đã quét. Sự xuất hiện tất yếu của một số siêu hạt như thế chính là thứ Lemma XXVIII ở chương trước đã tiên đoán.
 >

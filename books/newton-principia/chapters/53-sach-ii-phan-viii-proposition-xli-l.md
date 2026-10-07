@@ -315,7 +315,7 @@ Cũng từ các nguyên lý trên, ta thấy vì sao âm thanh được khuếch
 
 > **[Chú giải]**
 >
-> **Âm thanh là mạch áp suất, ánh sáng thì không — và vì sao kèn nói khuếch đại**
+> **Âm thanh là mạch áp suất, ánh sáng thì không - và vì sao kèn nói khuếch đại**
 >
 > Nhận xét cuối dùng chính các Proposition trên để phân biệt âm thanh với ánh sáng. Lập luận của Newton: âm thanh phải là các mạch của không khí truyền qua không khí, vì nó phát sinh từ vật thể rung và ta nghe được hiệu ứng rung của nó trên những dây đồng cùng tần số. Còn ánh sáng thì truyền theo đường thẳng, nên không thể chỉ là một mạch áp suất.
 >
@@ -325,10 +325,10 @@ Cũng từ các nguyên lý trên, ta thấy vì sao âm thanh được khuếch
 > v=\sqrt{\frac{E}{\rho}}.
 > $$
 >
-> Đây đúng là dạng của công thức ngày nay, nhưng phần hệ số thì Newton chưa có. Ông tính ra $979$ feet mỗi giây, rồi sửa ba lần: cộng thêm khoảng $109$ feet cho độ thô của các hạt không khí, được $1088$ feet; rồi tính đến hơi nước trong không khí, được $1142$ feet — khớp với thí nghiệm.
+> Đây đúng là dạng của công thức ngày nay, nhưng phần hệ số thì Newton chưa có. Ông tính ra $979$ feet mỗi giây, rồi sửa ba lần: cộng thêm khoảng $109$ feet cho độ thô của các hạt không khí, được $1088$ feet; rồi tính đến hơi nước trong không khí, được $1142$ feet - khớp với thí nghiệm.
 >
 > Ông không tin công thức của mình đã đúng, và ông **đi sửa nó bằng thí nghiệm** thay vì bảo vệ nó. Ông còn nêu một mệnh đề ngày nay vẫn đúng: vận tốc âm thanh **phụ thuộc mùa**, nhanh hơn vào mùa hè và chậm hơn vào mùa đông, vì không khí bị loãng hay bị nén theo nhiệt độ. Từ số mạch trong một không gian, ông cũng suy ra bước sóng của âm thanh, rồi kết luận nó bằng hai lần chiều dài của một ống hở.
 >
-> Người đọc hôm nay nhìn thấy ngay hệ số mà ông thiếu: với một khí lý tưởng, $v=\sqrt{\gamma p/\rho}$ với $\gamma$ là tỷ lệ nhiệt dung, và chính sự xuất hiện của $\gamma$ là lý do tốc độ âm thanh phụ thuộc nhiệt độ — đúng thứ ông đo được mà chưa giải thích được bằng cơ chế. Ông cũng là người đầu tiên giải thích vì sao **kèn nói** khuếch đại: trong một ống, sự giãn nở của âm thanh bị hạn chế nên chuyển động tắt dần chậm hơn và quay lại mạnh hơn, và mỗi lần quay lại nó cộng thêm một chuyển động mới truyền vào, nên biên độ tích luỹ dần.
+> Người đọc hôm nay nhìn thấy ngay hệ số mà ông thiếu: với một khí lý tưởng, $v=\sqrt{\gamma p/\rho}$ với $\gamma$ là tỷ lệ nhiệt dung, và chính sự xuất hiện của $\gamma$ là lý do tốc độ âm thanh phụ thuộc nhiệt độ - đúng thứ ông đo được mà chưa giải thích được bằng cơ chế. Ông cũng là người đầu tiên giải thích vì sao **kèn nói** khuếch đại: trong một ống, sự giãn nở của âm thanh bị hạn chế nên chuyển động tắt dần chậm hơn và quay lại mạnh hơn, và mỗi lần quay lại nó cộng thêm một chuyển động mới truyền vào, nên biên độ tích luỹ dần.
 
 *Các hệ số, ký hiệu và phép tính trong Phần VIII được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*

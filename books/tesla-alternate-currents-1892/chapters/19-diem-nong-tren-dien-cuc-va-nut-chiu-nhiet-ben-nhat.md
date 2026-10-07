@@ -1,6 +1,6 @@
 ---
 title: "Điểm nóng trên điện cực, và nút chịu nhiệt bền nhất"
-summary: "Điện cực trông sáng đều với con mắt, nhưng trên đó có những điểm nóng hơn mức trung bình rất nhiều, liên tục di chuyển, và chúng làm nhanh quá trình hư hỏng. Tesla chứng minh điều đó bằng cách quan sát các đốm quang phát xuất hiện rồi biến mất trên thành bóng — và kết luận rằng một giọt zirconia dạng cầu, đánh bóng kỹ, là thứ bền nhất."
+summary: "Điện cực trông sáng đều với con mắt, nhưng trên đó có những điểm nóng hơn mức trung bình rất nhiều, liên tục di chuyển, và chúng làm nhanh quá trình hư hỏng. Tesla chứng minh điều đó bằng cách quan sát các đốm quang phát xuất hiện rồi biến mất trên thành bóng - và kết luận rằng một giọt zirconia dạng cầu, đánh bóng kỹ, là thứ bền nhất."
 slug: "diem-nong-tren-dien-cuc-va-nut-chiu-nhiet-ben-nhat"
 ---
 
@@ -28,7 +28,7 @@ những cái còn lại nhờ đó được giải phóng. Tính chất này dư
 
 <!-- PDF 96 · trang in 78 -->
 
-...nóng chảy, và vào mức độ dễ dàng mà vật thể bị "bay hơi", hay nói chung là phân rã — theo
+...nóng chảy, và vào mức độ dễ dàng mà vật thể bị "bay hơi", hay nói chung là phân rã - theo
 nghĩa sau, không chỉ việc các nguyên tử bị vứt ra, mà cả những cục lớn hơn nữa. Quan sát đã
 thực hiện phù hợp với các quan niệm thông thường được chấp nhận. Trong một bóng đèn hút chân
 không rất cao, điện tử được mang đi khỏi điện cực bởi những vật mang độc lập, một phần là các
@@ -54,7 +54,7 @@ khác. Mắt thường thấy điện cực sáng đều.
 bình rất nhiều, và điều này làm nhanh đáng kể quá trình hư hỏng. Rằng có điều gì đó như vậy xảy
 ra, ít nhất khi điện cực ở nhiệt độ thấp hơn, có thể thu được đủ bằng chứng thực nghiệm theo
 cách sau. Hút một bóng đèn đến mức chân không rất cao, sao cho với một thế điện khá cao hiện
-tượng phóng điện không thể đi qua — tức là không phải một hiện tượng phát sáng, bởi một hiện
+tượng phóng điện không thể đi qua - tức là không phải một hiện tượng phát sáng, bởi một hiện
 tượng phóng điện yếu và vô hình dường như luôn xảy ra. Bây giờ hãy tăng thế điện lên một cách
 chậm rãi và cẩn thận, để dòng sơ cấp chỉ bật trong khoảng không quá một khoảnh khắc. Tại một
 điểm nào đó, hai, ba, hoặc nửa táu những đốm quang phát sẽ xuất hiện trên quả cầu. Rõ ràng
@@ -67,5 +67,5 @@ nhanh chóng.
 Từ những kinh nghiệm loại này, tôi dẫn tới suy ra rằng, để bền nhất, nút chịu nhiệt trong
 bóng đèn nên có dạng một hình cầu với bề mặt được đánh bóng kỹ. Một quả cầu nhỏ như vậy có
 thể chế tạo từ kim cương hay một loại tinh thể nào khác, nhưng có cách tốt hơn là nung chảy,
-bằng cách dùng những nhiệt độ cực cao, một oxit nào đó — chẳng hạn là zirconia — thành một
+bằng cách dùng những nhiệt độ cực cao, một oxit nào đó - chẳng hạn là zirconia - thành một
 giọt nhỏ, rồi giữ nó trong bóng đèn ở một nhiệt độ nào đó thấp hơn điểm nóng chảy của nó.

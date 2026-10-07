@@ -46,7 +46,7 @@ Vì vậy, lực tỷ lệ với khoảng cách của vật thể từ tâm củ
 >
 > Newton đã tìm ra rằng lực tuyến tính theo độ lệch thì quỹ đạo là một elip, và con đường đó là mặt cắt conic đầu tiên xuất hiện trong vật lí.
 >
-> $F \propto PC$ với $PC$ là khoảng cách tới tâm, tức $\vec{F} = -k\vec{r}$ và $k$ không đổi. Từ đó $\ddot{\vec{r}} = -\omega^2 \vec{r}$ với $\omega^2 = k/m$, và nghiệm tổng quát là $\vec{r}(t) = \vec{A}\cos(\omega t) + \vec{B}\sin(\omega t)$ với $\vec{A} \perp \vec{B}$ và $|\vec{A}| = |\vec{B}|$. Chính điều kiện hai độ dài bằng nhau ấy sinh ra elip, và chu kỳ là $T = 2\pi/\omega$ không phụ thuộc biên độ — đúng như Hệ quả 2 nói về thời gian tuần hoàn bằng nhau của mọi elip cùng tâm.
+> $F \propto PC$ với $PC$ là khoảng cách tới tâm, tức $\vec{F} = -k\vec{r}$ và $k$ không đổi. Từ đó $\ddot{\vec{r}} = -\omega^2 \vec{r}$ với $\omega^2 = k/m$, và nghiệm tổng quát là $\vec{r}(t) = \vec{A}\cos(\omega t) + \vec{B}\sin(\omega t)$ với $\vec{A} \perp \vec{B}$ và $|\vec{A}| = |\vec{B}|$. Chính điều kiện hai độ dài bằng nhau ấy sinh ra elip, và chu kỳ là $T = 2\pi/\omega$ không phụ thuộc biên độ - đúng như Hệ quả 2 nói về thời gian tuần hoàn bằng nhau của mọi elip cùng tâm.
 >
 > **Một trường hợp đối xứng để kiểm tra cả Phần II**
 >
@@ -78,7 +78,7 @@ Tương tự, trong hình tròn hoặc elip, nếu các lực hướng về tâm
 >
 > Elip thoái lui thành parabol, lực tỷ lệ với khoảng cách trở thành lực **đều**, và bài toán quỹ đạo trở thành đúng định lý ném ngang của Galileo. Newton viết ra mắt xích ấy bằng ba câu, và đó là cách ông thừa nhận mình đang đứng trên vai một người khác.
 >
-> Với elip có các bán trục $CA = a$, $CB = b$, khi tâm lùi ra vô cùng dọc theo một trục thì elip chuyển thành parabol và $F \propto PC \to F = \text{hằng số}$. Ở giới hạn đó nghiệm là ném ngang: $x = v_0 t$, $y = \tfrac{1}{2} g t^2$, nên $y = \dfrac{g}{2v_0^2} x^2$ — đúng là parabol. Còn khi đổi dấu lực ở phía trong hình, quỹ đạo elip biến thành hypebol, và vì tâm lực nằm giữa hai nhánh nên lực trở thành **lực ly tâm**.
+> Với elip có các bán trục $CA = a$, $CB = b$, khi tâm lùi ra vô cùng dọc theo một trục thì elip chuyển thành parabol và $F \propto PC \to F = \text{hằng số}$. Ở giới hạn đó nghiệm là ném ngang: $x = v_0 t$, $y = \tfrac{1}{2} g t^2$, nên $y = \dfrac{g}{2v_0^2} x^2$ - đúng là parabol. Còn khi đổi dấu lực ở phía trong hình, quỹ đạo elip biến thành hypebol, và vì tâm lực nằm giữa hai nhánh nên lực trở thành **lực ly tâm**.
 >
 > **Một nguyên tắc biến đổi, không phải một danh sách kết quả**
 >

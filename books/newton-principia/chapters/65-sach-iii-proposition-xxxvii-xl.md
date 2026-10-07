@@ -115,7 +115,7 @@ $$
 >
 > Ông dùng hai bộ số liệu độc lập. Ở Bristol, thủy triều cao khoảng $45$ feet ở hội tế xuân thu và khoảng $25$ feet ở phần vuông, nên tỷ lệ tổng và hiệu của hai lực là $45:25=9:5$. Ở Plymouth, hai con số tương ứng cho tỷ lệ $41:23$. Hai kết quả gần nhau, và ông chọn của Bristol vì biên độ lớn hơn, nói rõ là sẽ đổi nếu có số liệu chắc hơn.
 >
-> Phần đáng ghi nhất không phải con số mà là ba hiệu chỉnh ông áp trước khi lập tỷ lệ. Ông biết thủy triều lớn nhất không xảy ra đúng lúc hội tế mà trễ hơn, nên ông giảm lực Mặt Trời theo công thức $0{,}7986$. Ông biết Mặt Trăng lúc ấy đã lệch khỏi xích đạo, nên lực nó giảm còn $0{,}8570$. Ông biết khoảng cách Mặt Trăng lúc ấy chưa phải trung bình, nên dùng hai hệ số nữa. Ba hiệu chỉnh độc lập trên một tỷ lệ lấy từ hai cái phao cơ — năm 1687 — là mức chăm sóc sai số hiếm có.
+> Phần đáng ghi nhất không phải con số mà là ba hiệu chỉnh ông áp trước khi lập tỷ lệ. Ông biết thủy triều lớn nhất không xảy ra đúng lúc hội tế mà trễ hơn, nên ông giảm lực Mặt Trời theo công thức $0{,}7986$. Ông biết Mặt Trăng lúc ấy đã lệch khỏi xích đạo, nên lực nó giảm còn $0{,}8570$. Ông biết khoảng cách Mặt Trăng lúc ấy chưa phải trung bình, nên dùng hai hệ số nữa. Ba hiệu chỉnh độc lập trên một tỷ lệ lấy từ hai cái phao cơ - năm 1687 - là mức chăm sóc sai số hiếm có.
 >
 > Tỷ lệ lực triệu đúng là khoảng $2{,}2$ lần, và con số của Newton lớn hơn. Nguyên nhân là có tính đến cả cấu trúc: ông lấy chiều cao triều quan sát tại một vịnh làm đại diện cho triều cân bằng, nhưng một vịnh phễu có cộng hưởng mạnh, khuếch đại phần triều bán ngày của Mặt Trăng nhiều hơn hẳn phần triều của Mặt Trời, nên dữ liệu cảng luôn nghiêng về phía Mặt Trăng. Ngày nay người ta tách phần cộng hưởng ấy ra bằng mô hình thuỷ động, hoặc đo trực tiếp bằng vệ tinh. Bài học ở đây không phải là con số sai, mà là việc ông nghĩ tới sai số từ khi còn chưa lập tỷ lệ.
 
@@ -367,7 +367,7 @@ Từ đây ta hiểu vì sao cùng một mặt của Mặt Trăng luôn hướng
 
 > **[Chú giải]**
 >
-> **Nếu Mặt Trăng lỏng, nó phải dẹt 186 feet theo hướng Trái Đất — và ta có thể nhìn thấy kết quả ấy**
+> **Nếu Mặt Trăng lỏng, nó phải dẹt 186 feet theo hướng Trái Đất - và ta có thể nhìn thấy kết quả ấy**
 >
 > Proposition XXXVIII đặt một câu hỏi táo bạo: nếu thân Mặt Trăng cũng lỏng như biển của ta, thì lực hút của Trái Đất sẽ làm dáng nó thành hình gì? Và từ đó ông suy ra một đẳng thức về dạng thân Mặt Trăng mà không cần quan sát bề mặt Mặt Trăng lần nào.
 >
@@ -932,7 +932,7 @@ $$
 >
 > **Sao chổi cũng tuân theo cùng định luật bình phương nghịch, và 240 năm là công thức chứ không phải dự đoán**
 >
-> Đây là lần đầu tiên trong vật lí học, chuyển động của một thiên thể hoàn toàn khác loại — sao chổi — cũng được chứng minh tuân theo **cùng** định luật bình phương nghịch và quy tắc diện tích mà ông đã dùng cho các hành tinh. Không thêm lực nào, không cần giả thiết thần thú. Chỉ khác ở dạng quỹ đạo: các hành tinh chạy trong elip, còn sao chổi thường chạy trên parabol hay elip kéo dài gần như vô hạn.
+> Đây là lần đầu tiên trong vật lí học, chuyển động của một thiên thể hoàn toàn khác loại - sao chổi - cũng được chứng minh tuân theo **cùng** định luật bình phương nghịch và quy tắc diện tích mà ông đã dùng cho các hành tinh. Không thêm lực nào, không cần giả thiết thần thú. Chỉ khác ở dạng quỹ đạo: các hành tinh chạy trong elip, còn sao chổi thường chạy trên parabol hay elip kéo dài gần như vô hạn.
 >
 > Ở Hệ quả 1, nếu trục lớn của quỹ đạo sao chổi gấp bốn lần trục của quỹ đạo sao Thổ, thì thời gian tuần hoàn tỷ lệ với thời gian tuần hoàn của sao Thổ, tức với $30$ năm, theo $4^{3/2}:1=8:1$, cho nên là $240$ năm. Ở Hệ quả 2, quỹ đạo chúng gần parabol đến mức có thể dùng parabol thay cho chúng mà không gây sai số cảm nhận được.
 >

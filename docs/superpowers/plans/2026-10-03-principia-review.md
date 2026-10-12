@@ -82,12 +82,17 @@ The figure tool is `tools/principia_figfind.py`. It masks the printed lines usin
 - Consumes: the "Confirmed by hand" list above.
 - Produces: chapters at zero `--fidelity` deviations.
 
-- [ ] **Step 1:** ch 45: change `(n-1):1` to `(n+1):1` in Rule 5.
-- [ ] **Step 2:** ch 17: replace "khối lượng" for *solid* with a term that means a product of three lengths ("đại lượng khối" or "thể tích hình khối"), keep it consistent across Corollaries 1, 2, 3, 5.
-- [ ] **Step 3:** ch 56: restore the three omitted sentences, in the order and place of the source.
-- [ ] **Step 4:** regenerate or extend `AUTHORIZED_TEXT_FIXES.tsv` and run `python tools/check_book_callouts.py books/newton-principia --fidelity`. Expected: zero deviations. The new rule applies: do not write an em dash in chapter prose.
+- [x] **Step 1:** ch 45: change `(n-1):1` to `(n+1):1` in Rule 5. Done in `eebdda8`.
+- [x] **Step 2:** ch 17: "khối lượng" for *solid* became "đại lượng khối" in Corollaries 1, 2, 3, 5. The two uses inside callouts mean real mass and were left.
+- [x] **Step 3:** ch 56: restored four omitted pieces (larger planet made of smaller ones; the Earth's density "truly defined" by the Moon's parallax; the Moon denser than the Earth; why the planets sit at different distances).
+- [x] **Step 4:** nine declarations added to `AUTHORIZED_TEXT_FIXES.tsv`, each checked to occur once in HEAD and to reproduce the working file. The three chapters show no deviation in `python tools/check_book_callouts.py books/newton-principia --fidelity`.
 
 Do not touch `01-dinh-nghia.md` or `02-dinh-luat-van-dong.md`. If a finding there is real, tell the owner.
+
+**Left over from Task 1, outside the three approved errors:**
+
+- ch 17 Corollary 2 still has `QR^2` in the denominator. Corollary 1 gives the solid as `SP^2 x QT^2 / QR`, and the chapter's own identity `SY x QP = SP x QT` turns that into `SY^2 x QP^2 / QR`, so `QR^2` contradicts the text just above it. Corollary 5 (`SP^2 x QT^2`) also lacks the division by `QR`. Both are derived from the translation's own statements rather than read from the source, whose denominator the OCR lost.
+- The gate currently reports two deviations that this work did not cause. `04-he-qua-ii-hop-phan-tich-luc.md` carries an undeclared uncommitted edit (`DC` perpendicular to `OD`). `02-dinh-luat-van-dong.md` deviates on a clean checkout of HEAD: after commit `739b87e` the figure block in that sealed chapter and the entries in `EXTRACTED_FIGURES.tsv` no longer compose. Only the owner can touch chapter 02.
 
 ### Task 2: Work through the worksheet, chapter by chapter
 
@@ -116,6 +121,13 @@ Do not touch `01-dinh-nghia.md` or `02-dinh-luat-van-dong.md`. If a finding ther
 - [ ] **Step 3:** a person or an image-capable model opens every crop and confirms it is the figure the proof describes and that the point letters match the text. Record the page and the verdict in the ledger. **Do not insert any crop that has not been looked at.**
 - [ ] **Step 4:** replace the placeholder block with the crop and a caption of the form `Hình N. ... (bản in 1846, trang <printed>)`, and declare it in `EXTRACTED_FIGURES.tsv`.
 - [ ] **Step 5:** delete the placeholder SVG once no chapter references it. Start with the 25-chapter placeholder so the worst offence goes first.
+
+**Staged for the 25-chapter placeholder (chapters 43 to 67), not yet looked at by anyone.** `tools/principia_stage.py` cut the candidates and laid them on one numbered contact sheet per chapter:
+
+- Output is in `%TEMP%\principia1846\staging\`: `index.md`, `sheets/chNN.jpg` (20 sheets, 3.1 MB), `crops/pPAGE-N.png` (128 files, 20 MB), `ranges.json`. It is not committed; re-create it with `python tools/principia_stage.py <dir>` (about 12 minutes, needs the scratch venv and the two downloads).
+- 146 candidates across 20 chapters. Chapter page ranges come from decoding the proposition headings: Book III decodes 42 of 42, Book II 51 of 53, so Book II ranges are approximate and a boundary page can belong to the neighbouring chapter.
+- **Chapters 51, 56, 57, 58 and 59 yielded no candidate, and re-running those pages with the lower reporting threshold found only fragments under 210 px wide at the page foot (page numbers or footnote marks).** If a reader confirms the scan has no figure there, the right fix is to delete the placeholder from those five chapters, not to replace it.
+- The first thing for the image-capable reader to do: open `index.md`, then `sheets/ch43.jpg`, and for each numbered crop say which proposition and which point letters it carries. Chapter 55 has a single candidate and chapters 44, 61, 62 have two to three, so the placeholder there may have been covering a genuinely sparse range.
 
 ### Task 5: Tidy ledger statements that the findings contradict
 

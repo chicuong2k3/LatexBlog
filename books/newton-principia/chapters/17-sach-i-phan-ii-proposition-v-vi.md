@@ -47,19 +47,19 @@ Trừ tỷ số bậc hai của thời gian ở cả hai vế, ta thấy lực s
 
 ## Hệ quả 1
 
-Nếu vật thể $P$, đang quay quanh tâm $S$, mô tả một đường cong $APQ$, và một đường thẳng $ZPR$ tiếp xúc với đường cong ấy tại điểm $P$; từ một điểm bất kỳ khác $Q$ trên đường cong, kẻ $QR$ song song với khoảng cách $SP$ và cắt tiếp tuyến tại $R$; và kẻ $QT$ vuông góc với khoảng cách $SP$, thì lực hướng tâm sẽ tỷ lệ nghịch với khối lượng $\frac{SP^2 \times QT^2}{QR}$, nếu khối lượng ấy được lấy ở độ lớn mà nó cuối cùng nhận được khi $P$ và $Q$ trùng nhau.
+Nếu vật thể $P$, đang quay quanh tâm $S$, mô tả một đường cong $APQ$, và một đường thẳng $ZPR$ tiếp xúc với đường cong ấy tại điểm $P$; từ một điểm bất kỳ khác $Q$ trên đường cong, kẻ $QR$ song song với khoảng cách $SP$ và cắt tiếp tuyến tại $R$; và kẻ $QT$ vuông góc với khoảng cách $SP$, thì lực hướng tâm sẽ tỷ lệ nghịch với đại lượng khối $\frac{SP^2 \times QT^2}{QR}$, nếu đại lượng khối ấy được lấy ở độ lớn mà nó cuối cùng nhận được khi $P$ và $Q$ trùng nhau.
 
 Bởi vì $QR$ bằng phiên của hai lần cung $QP$, có $P$ làm trung điểm. Hai lần tam giác $SQP$, tức là $SP \times QT$, tỷ lệ với thời gian mà cung đôi ấy được mô tả; vì vậy có thể dùng làm số mũ của thời gian.
 
 ## Hệ quả 2
 
-Lập luận tương tự cho thấy lực hướng tâm tỷ lệ nghịch với khối lượng $\frac{SY^2 \times QP^2}{QR^2}$, nếu $SY$ là đoạn vuông góc từ tâm lực hạ xuống $PR$, tiếp tuyến của quỹ đạo.
+Lập luận tương tự cho thấy lực hướng tâm tỷ lệ nghịch với đại lượng khối $\frac{SY^2 \times QP^2}{QR^2}$, nếu $SY$ là đoạn vuông góc từ tâm lực hạ xuống $PR$, tiếp tuyến của quỹ đạo.
 
 Bởi vì các hình chữ nhật $SY \times QP$ và $SP \times QT$ bằng nhau.
 
 ## Hệ quả 3
 
-Nếu quỹ đạo là một đường tròn, hoặc tiếp xúc hoặc cắt một đường tròn đồng tâm, tức là tạo với đường tròn một góc tiếp xúc hoặc góc cắt nhỏ nhất, có cùng độ cong và cùng bán kính độ cong tại điểm $P$; và nếu $PV$ là một dây cung của đường tròn này, kẻ từ vật thể qua tâm lực, thì lực hướng tâm sẽ tỷ lệ nghịch với khối lượng $SY^2 \times PV$.
+Nếu quỹ đạo là một đường tròn, hoặc tiếp xúc hoặc cắt một đường tròn đồng tâm, tức là tạo với đường tròn một góc tiếp xúc hoặc góc cắt nhỏ nhất, có cùng độ cong và cùng bán kính độ cong tại điểm $P$; và nếu $PV$ là một dây cung của đường tròn này, kẻ từ vật thể qua tâm lực, thì lực hướng tâm sẽ tỷ lệ nghịch với đại lượng khối $SY^2 \times PV$.
 
 ## Hệ quả 4
 
@@ -71,7 +71,7 @@ Bởi vì vận tốc tỷ lệ nghịch với đoạn vuông góc $SY$, theo H�
 
 Vì vậy, nếu một hình cong $APQ$ bất kỳ được cho, và bên trong có một điểm $S$ cũng được cho, là nơi một lực hướng tâm luôn hướng về, thì có thể tìm ra quy luật của lực hướng tâm, nhờ đó vật thể $P$ sẽ liên tục bị kéo trở lại từ chuyển động thẳng, bị giữ trên chu vi của hình ấy, và sẽ mô tả hình ấy bằng một chuyển động quay vĩnh cửu.
 
-Nói cách khác, ta cần tìm, bằng tính toán, khối lượng $SP^2 \times QT^2$ hoặc $SY^2 \times PV$ tỷ lệ nghịch với lực này. Những Bài toán sau sẽ cung cấp ví dụ cho điều đó.
+Nói cách khác, ta cần tìm, bằng tính toán, đại lượng khối $SP^2 \times QT^2$ hoặc $SY^2 \times PV$ tỷ lệ nghịch với lực này. Những Bài toán sau sẽ cung cấp ví dụ cho điều đó.
 
 > **[Chú giải]**
 >

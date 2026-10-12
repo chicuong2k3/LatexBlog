@@ -19,7 +19,7 @@ Ngoài ra, mọi phần của một hành tinh $A$ đều hướng về một h�
 
 ### Hệ quả 1
 
-Lực trọng lực hướng về một hành tinh bất kỳ phát sinh từ và được tạo thành bởi các lực trọng lực hướng về mọi phần của nó. Lực hút từ tính và điện tĩnh cũng cho ta những ví dụ như vậy, vì mọi lực hút với toàn bộ vật thể đều phát sinh từ các lực hút với các phần của nó.
+Lực trọng lực hướng về một hành tinh bất kỳ phát sinh từ và được tạo thành bởi các lực trọng lực hướng về mọi phần của nó. Lực hút từ tính và điện tĩnh cũng cho ta những ví dụ như vậy, vì mọi lực hút với toàn bộ vật thể đều phát sinh từ các lực hút với các phần của nó. Điều ấy dễ hiểu đối với trọng lực, nếu ta coi một hành tinh lớn là do nhiều hành tinh nhỏ hơn hợp lại thành một quả cầu: khi đó hiển nhiên lực của cả khối phải phát sinh từ các lực của những phần hợp thành nó.
 
 Nếu ai đó cho rằng theo quy luật này, mọi vật thể quanh ta phải hướng lẫn nhau, trong khi ta không thấy lực hút ấy ở bất cứ đâu, tôi đáp rằng lực hút giữa những vật thể ấy nhỏ hơn lực hút giữa chúng và Trái Đất rất nhiều, nên không thể được giác quan ta nhận ra.
 
@@ -83,11 +83,11 @@ $$
 100:94\frac{1}{2}:67:400.
 $$
 
-Mật độ Trái Đất suy ra từ phép tính này không phụ thuộc vào parallax của Mặt Trời, mà được xác định bởi parallax của Mặt Trăng. Mặt Trời hơi đặc hơn Sao Mộc, Sao Mộc đặc hơn sao Thổ, và Trái Đất đặc gấp bốn Mặt Trời. Mặt Trời được giữ trong trạng thái loãng nhờ nhiệt độ rất lớn.
+Mật độ Trái Đất suy ra từ phép tính này không phụ thuộc vào parallax của Mặt Trời, mà được xác định bởi parallax của Mặt Trăng, và vì thế ở đây được xác định thật sự. Mặt Trời hơi đặc hơn Sao Mộc, Sao Mộc đặc hơn sao Thổ, và Trái Đất đặc gấp bốn Mặt Trời. Mặt Trời được giữ trong trạng thái loãng nhờ nhiệt độ rất lớn. Mặt Trăng đặc hơn Trái Đất, như sẽ thấy ở phần sau.
 
 ### Hệ quả 4
 
-Các hành tinh càng nhỏ, ceteris paribus, chúng càng đặc, vì lực trọng lực tại các bề mặt của chúng tiến càng gần đến sự bằng nhau. Chúng cũng càng đặc khi càng gần Mặt Trời. Vì vậy Sao Mộc đặc hơn sao Thổ, và Trái Đất đặc hơn Sao Mộc.
+Các hành tinh càng nhỏ, ceteris paribus, chúng càng đặc, vì lực trọng lực tại các bề mặt của chúng tiến càng gần đến sự bằng nhau. Chúng cũng càng đặc khi càng gần Mặt Trời. Vì vậy Sao Mộc đặc hơn sao Thổ, và Trái Đất đặc hơn Sao Mộc; bởi các hành tinh phải được đặt ở những khoảng cách khác nhau đến Mặt Trời, để tùy theo mức độ đặc của mình, mỗi hành tinh nhận phần nhiệt của Mặt Trời nhiều hơn hoặc ít hơn.
 
 Nếu nước của ta được đưa ra quỹ đạo sao Thổ, nó sẽ đông thành băng; nếu ở quỹ đạo Sao Thủy, nó sẽ nhanh chóng bay thành hơi. Ánh sáng Mặt Trời, mà nhiệt độ tỷ lệ với nó, đặc gấp bảy lần ở quỹ đạo Sao Thủy so với chúng ta. Nhiệt kế cho thấy nhiệt độ gấp bảy lần nhiệt độ Mặt Trời mùa hè của ta làm nước sôi.
 

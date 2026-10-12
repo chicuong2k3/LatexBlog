@@ -361,7 +361,7 @@ Từ đó suy ra các quy tắc:
 5. Nếu $AH$, $AI$ đã cho, kéo dài $HN$ đến $X$ sao cho
 
 $$
-HX:AI=(n-1):1.
+HX:AI=(n+1):1.
 $$
 
 Dựng hyperbola tâm $X$, tiệm cận $MX$, $NX$, đi qua $A$, sao cho

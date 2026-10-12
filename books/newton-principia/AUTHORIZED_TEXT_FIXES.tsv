@@ -224,3 +224,23 @@ chapters/01-dinh-nghia.md	Nhưng vật thể chỉ phát huy lực này khi tr�
 chapters/01-dinh-nghia.md	vì không dễ dàng nhường chỗ cho vật cản, cũng cố làm thay đổi trạng thái của vật cản ấy.	vì không dễ dàng nhường chỗ cho lực tác dụng của vật kia, cố làm thay đổi trạng thái của vật kia.
 chapters/01-dinh-nghia.md	là thước đo của lực ấy, lớn hay nhỏ tùy theo hiệu lực của nguyên nhân truyền lực từ tâm ra các vùng xung quanh.	là thước đo của lực ấy, tỉ lệ với hiệu lực của nguyên nhân truyền lực từ tâm ra các vùng xung quanh.
 chapters/02-dinh-luat-van-dong.md	number: 2\n---	number: 2\nstatus: hoan-thanh\n---
+
+# 2026-10-03: ba lỗi đã kiểm trực tiếp với nguồn Motte 1846 (xem docs/superpowers/plans/2026-10-03-principia-review.md)
+# Rule 5: nguồn ghi HX is to AI as n+1 to 1; bản dịch ghi n-1
+chapters/45-sach-ii-phan-ii-proposition-viii-x.md	HX:AI=(n-1):1.	HX:AI=(n+1):1.
+# Hệ quả 1: solid là đại lượng khối (tích ba độ dài), không phải khối lượng
+chapters/17-sach-i-phan-ii-proposition-v-vi.md	tỷ lệ nghịch với khối lượng $\frac{SP^2 \times QT^2}{QR}$, nếu khối lượng ấy được lấy ở độ lớn	tỷ lệ nghịch với đại lượng khối $\frac{SP^2 \times QT^2}{QR}$, nếu đại lượng khối ấy được lấy ở độ lớn
+# Hệ quả 2: solid
+chapters/17-sach-i-phan-ii-proposition-v-vi.md	tỷ lệ nghịch với khối lượng $\frac{SY^2 \times QP^2}{QR^2}$, nếu	tỷ lệ nghịch với đại lượng khối $\frac{SY^2 \times QP^2}{QR^2}$, nếu
+# Hệ quả 3: solid
+chapters/17-sach-i-phan-ii-proposition-v-vi.md	tỷ lệ nghịch với khối lượng $SY^2 \times PV$.	tỷ lệ nghịch với đại lượng khối $SY^2 \times PV$.
+# Hệ quả 5: solid
+chapters/17-sach-i-phan-ii-proposition-v-vi.md	bằng tính toán, khối lượng $SP^2 \times QT^2$ hoặc	bằng tính toán, đại lượng khối $SP^2 \times QT^2$ hoặc
+# Prop VII Hệ quả 1: khôi phục câu 'a greater planet formed of lesser planets'
+chapters/56-sach-iii-proposition-vii-viii.md	vì mọi lực hút với toàn bộ vật thể đều phát sinh từ các lực hút với các phần của nó.	vì mọi lực hút với toàn bộ vật thể đều phát sinh từ các lực hút với các phần của nó. Điều ấy dễ hiểu đối với trọng lực, nếu ta coi một hành tinh lớn là do nhiều hành tinh nhỏ hơn hợp lại thành một quả cầu: khi đó hiển nhiên lực của cả khối phải phát sinh từ các lực của những phần hợp thành nó.
+# Prop VIII Hệ quả 3: khôi phục 'and therefore is here truly defined'
+chapters/56-sach-iii-proposition-vii-viii.md	mà được xác định bởi parallax của Mặt Trăng. Mặt Trời hơi đặc hơn	mà được xác định bởi parallax của Mặt Trăng, và vì thế ở đây được xác định thật sự. Mặt Trời hơi đặc hơn
+# Prop VIII Hệ quả 3: khôi phục 'The moon is denser than the earth, as shall appear afterward'
+chapters/56-sach-iii-proposition-vii-viii.md	Mặt Trời được giữ trong trạng thái loãng nhờ nhiệt độ rất lớn.	Mặt Trời được giữ trong trạng thái loãng nhờ nhiệt độ rất lớn. Mặt Trăng đặc hơn Trái Đất, như sẽ thấy ở phần sau.
+# Prop VIII Hệ quả 4: khôi phục lý do các hành tinh đặt ở khoảng cách khác nhau
+chapters/56-sach-iii-proposition-vii-viii.md	và Trái Đất đặc hơn Sao Mộc.	và Trái Đất đặc hơn Sao Mộc; bởi các hành tinh phải được đặt ở những khoảng cách khác nhau đến Mặt Trời, để tùy theo mức độ đặc của mình, mỗi hành tinh nhận phần nhiệt của Mặt Trời nhiều hơn hoặc ít hơn.

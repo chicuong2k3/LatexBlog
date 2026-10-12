@@ -50,31 +50,15 @@ def note_around(text: str, marker: str) -> str:
 
 
 # (file, mô tả, chuỗi_cũ, chuỗi_mới)
+# Manifest chỉ cần bắc cầu từ HEAD hiện tại tới cây làm việc. Các sửa của Chương I
+# (mẫu số §1, 'ac certis' §29, tám dấu '&') đã nằm trong commit 08a4f06 nên không khai lại.
 FIXES = [
     (
-        CH1,
-        "§1: phân số có mẫu (aa+xx) như bản in, thứ tự trước đây bị đảo",
-        "\\dfrac{a+x}{xx+aa}",
-        "\\dfrac{a+x}{aa+xx}",
-    ),
-    (
-        CH1,
-        "§29: 'ac certis' là 'và một số số hạng nữa', không phải số thứ ba",
-        "số hạng thứ nhất, thứ hai và thứ ba, ta sẽ sớm nhận ra",
-        "số hạng thứ nhất, thứ hai và một số số hạng nữa, ta sẽ sớm nhận ra",
-    ),
-    (
-        CH1,
-        "Dấu '&' trần (chữ et của bản in) nối hai công thức liền nhau, 8 chỗ",
-        "$$\n\n&\n\n$$",
-        "$$\n\nvà\n\n$$",
-    ),
-    (
         CH2,
-        "§42 dạng 'aut denique': bản in in a^II, bản dịch cũ đọc nhầm a^III; tiền tố "
-        "1/4 giữ nguyên vì đúng bản in",
-        "\\frac{1}{4}(x-1)(x-2)(x-3)\\left(\\frac{a^{\\mathrm{III}}}{x-3}",
+        "§42 dạng 'aut denique': hoàn tác a^II về cách đọc ban đầu a^III, vì lần đổi "
+        "trước dựa trên một lần 'đọc scan' không có thật (xem ghi chú trong chương)",
         "\\frac{1}{4}(x-1)(x-2)(x-3)\\left(\\frac{a^{\\mathrm{II}}}{x-3}",
+        "\\frac{1}{4}(x-1)(x-2)(x-3)\\left(\\frac{a^{\\mathrm{III}}}{x-3}",
     ),
 ]
 
@@ -97,9 +81,11 @@ for rel, desc, old, new in FIXES:
 head2 = head_of(CH2)
 work2 = (BOOK / CH2).read_text(encoding="utf-8")
 for desc, marker in [
-    ("§42: viết lại ghi chú sau khi soi scan, xác nhận a^II và tiền tố 1/4",
+    ("§42: thêm lập luận đại số vào ghi chú và nêu rõ chỗ này CHƯA xác nhận trên trang "
+     "in; công thức giữ nguyên cách đọc ban đầu",
      '<!-- Ghi chú dịch giả: dạng "aut denique"'),
-    ("§57: đính chính ghi chú kiểm công thức, ghi nhận lớp OCR đã nuốt chữ e",
+    ("§57: sửa phép kiểm trong ghi chú (59 + e, không phải 59) và nêu bằng chứng OCR về "
+     "số hạng e; chưa xác nhận trên trang in",
      "<!-- Ghi chú dịch giả: ba công thức ở trang này"),
 ]:
     old, new = note_around(head2, marker), note_around(work2, marker)

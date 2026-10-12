@@ -222,7 +222,7 @@ $$
 hay cuối cùng thành dạng
 
 $$
-\frac{1}{4}(x-1)(x-2)(x-3)\left(\frac{a^{\mathrm{II}}}{x-3} - \frac{2a^{\mathrm{I}}}{x-2} + \frac{a}{x-1}\right);
+\frac{1}{4}(x-1)(x-2)(x-3)\left(\frac{a^{\mathrm{III}}}{x-3} - \frac{2a^{\mathrm{I}}}{x-2} + \frac{a}{x-1}\right);
 $$
 
 và vì thế nó được xác định bởi ba số hạng của chính chuỗi.
@@ -266,26 +266,28 @@ $$
      b = a^I - a, c = a^II - 2a^I + a thì thu được đúng dạng "qui reducitur", còn "vel
      etiam" chỉ là cách viết lại cùng một biểu thức. -->
 
-<!-- Ghi chú dịch giả: dạng "aut denique" ở trên có **một lỗi in của Euler**, đã chép
-     nguyên văn; đồng thời bản dịch cũ đã đọc nhầm một chữ trong ngoặc.
+<!-- Ghi chú dịch giả: dạng "aut denique" nằm ở giới hạn đọc được của bản scan. Hệ số
+     đứng đầu là một phân số in rất nhỏ, còn số mũ trên chữ a ở phân thức đầu trong ngoặc
+     có nét giống số mũ III ở các trang lân cận; bản dịch giữ cách đọc 1/4 và a^III, nhưng
+     cả hai chưa xác nhận được bằng mắt. Nếu đúng như vậy thì dạng này sai ở hai chỗ:
+     trong ngoặc phải là a^II (số hạng tổng quát chỉ phụ thuộc a, a^I, a^II, đúng như câu
+     ngay dưới nói), và hệ số phải là 1/2. Kiểm với chuỗi 1, 4, 9, 16, 25, &c. (a=1,
+     b=3, c=2): số hạng thứ 4 đúng là 16, dạng "vel etiam" cho 16, dạng 1/4 với a^III
+     cho 37/2; chỉ khi có cả 1/2 lẫn a^II mới ra 16.
 
-     Soi bằng mắt trên ảnh scan (PDF 71, trang in 43), render thẳng từ file PDF ở độ
-     phóng cao: bản in ghi **1/4** ở tiền tố và **a^II** trong phân thức đầu trong ngoặc.
-     Mũ là hai nét, khớp với a^I ở phân thức kế; không phải ba nét.
+     Lập luận đại số, không cần chọn bộ số kiểm: khai triển dạng "vel etiam" cho
+     a^II/2 (x-1)(x-2) - a^I (x-1)(x-3) + a/2 (x-2)(x-3); hệ số của ba số hạng là
+     1/2, -1 và 1/2 (khi coi (x-1)(x-2), (x-1)(x-3), (x-2)(x-3) là các đơn vị). Dạng
+     "aut denique" với tiền tố 1/4 và a^III cho 1/4, -1/2, 1/4. Hai số hạng sau lệch đúng
+     một nửa nên tiền tố phải là 1/2, và số hạng đầu cho thấy chữ a trong ngoặc phải
+     là a^II, nếu không dạng này phụ thuộc bốn số hạng, trái với câu ngay dưới.
 
-     Như vậy có hai việc khác nhau:
-     - Chữ a trong ngoặc: bản dịch cũ ghi a^III, đó là lỗi đọc, đã sửa thành a^II.
-     - Tiền tố 1/4: bản in đúng là 1/4, giữ nguyên. Về toán thì 1/4 là sai, phải là
-       1/2 mới khớp dạng "vel etiam" ngay dòng trên.
-
-     Lý do 1/4 không khớp, không cần thử nghiệm: khai triển dạng "vel etiam"
-     a^II/2 (x-1)(x-2) - a^I (x-1)(x-3) + a/2 (x-2)(x-3), rồi đặt (x-1)(x-2) = 1,
-     (x-1)(x-3) = 2, (x-2)(x-3) = 3 thì hệ số của ba số hạng lần lượt là 1/2, -1 và 1/2.
-     Dạng "aut denique" với tiền tố 1/4 cho 1/4, -1/2, 1/4: hai số hạng sau lệch đúng
-     một nửa, còn số hạng đầu thì khớp với a^II/2. Dạng này chỉ ra một chỗ sai duy nhất
-     là tiền tố, và câu ngay dưới ("ideoque ex tribus terminis ipsius seriei definitur",
-     tức xác định bởi ba số hạng của chính chuỗi) cũng đòi phải là a^II chứ không
-     phải a^III, vì a^III sẽ làm dạng này phụ thuộc bốn số hạng. -->
+     TRẠNG THÁI: chưa chốt. Đây là kết luận từ đại số, không phải từ việc đọc trang
+     in. Lượt rà soát ngày 2026-10-03 không xem được ảnh scan (mô hình dùng khi đó không
+     đọc được ảnh) nên không xác nhận được bản in thật sự in 1/4 và a^III, hay in 1/2
+     và a^II. Nếu bản in đúng như đã đọc thì đây là lỗi in của Euler và giữ nguyên cả
+     hai; nếu không thì đây là lỗi đọc của bản dịch. Cần một người (hoặc một mô hình đọc
+     được ảnh) xem PDF 71, trang in 43, dòng "aut denique ad hanc". -->
 
 <!-- Ghi chú dịch giả: trong câu mở đầu §43 và trong dòng DIFFER. III. của bảng, bản in
      đều viết ba chữ d trần "d, d, d, &c." (đã soi phóng to). Điều này đúng ý Euler: câu
@@ -1070,12 +1072,15 @@ hạng tổng kết từ đó, vì số hạng tổng kết ấy cũng dựng đ
      khi lấy e = 0; bốn số hạng đầu cho đúng 5 + 8 + 18 + 28 = 59. Cũng đã thử lặp lại
      với mười chỉ số khác, đều khớp.
 
-     Đính chính một chỗ đọc trước đây: câu văn xưa "si litterae b, c, d, e, valores ipsis
-     assignatos retineant" liệt kê **bốn** chữ b, c, d, e, và TERMINUS GENERALIS thật sự
-     kết bằng số hạng *e. Lớp OCR đọc trang này nuốt mất chữ e trong cả hai chỗ, nên từng
-     có thể nghi ngờ là thêm số hạng thừa. Đã soi lại bằng mắt trên ảnh scan (PDF 83,
-     trang in 55) render thẳng từ file PDF ở độ phóng cao: cả hai đều có chữ e, bản dịch
-     chép đúng, không có số hạng thừa nào. -->
+     Về số hạng e (rà soát ngày 2026-10-03): bản dịch giữ cách đọc ban đầu, tức câu dẫn
+     "si litterae b, c, d, e, ..." và TERMINUS GENERALIS có năm số hạng kết bằng e. Có
+     nghi ngờ rằng e là thừa, vì lớp OCR của dòng dẫn chỉ đọc ra "b, c, d,". Bằng chứng
+     từ lớp văn bản của chính trang này nghiêng về phía giữ e, dù chưa phải là đọc trang
+     in: dòng TERMINUS GENERALIS trong OCR còn thấy thừa số (x-4) và mẫu số 1.2.3.4, mà
+     chỉ số hạng thứ năm mới cần hai thứ ấy; dòng ET TERMINUS SUMMATORIUS thì dừng ở d.
+     Lượt rà soát đó không xem được ảnh scan, nên chữ e ở dòng dẫn vẫn chưa được xác
+     nhận bằng mắt. Không đổi gì trong bản dịch. Nếu chữ e ở dòng dẫn hoá ra là thừa thì
+     chỉ cần bỏ nó ở đó; công thức TERMINUS GENERALIS năm số hạng vẫn đúng toán. -->
 
 <!-- Ghi chú dịch giả: các mẫu số trên trang này cũng viết theo kiểu "1." trên "2", "1. 2. 3"
      như ở các trang trước; ở đây đã viết thành 1·2, 1·2·3, 1·2·3·4 cho rõ. -->

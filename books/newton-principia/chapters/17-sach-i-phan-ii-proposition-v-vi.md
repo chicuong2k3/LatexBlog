@@ -53,7 +53,7 @@ Bởi vì $QR$ bằng phiên của hai lần cung $QP$, có $P$ làm trung đi�
 
 ## Hệ quả 2
 
-Lập luận tương tự cho thấy lực hướng tâm tỷ lệ nghịch với đại lượng khối $\frac{SY^2 \times QP^2}{QR^2}$, nếu $SY$ là đoạn vuông góc từ tâm lực hạ xuống $PR$, tiếp tuyến của quỹ đạo.
+Lập luận tương tự cho thấy lực hướng tâm tỷ lệ nghịch với đại lượng khối $\frac{SY^2 \times QP^2}{QR}$, nếu $SY$ là đoạn vuông góc từ tâm lực hạ xuống $PR$, tiếp tuyến của quỹ đạo.
 
 Bởi vì các hình chữ nhật $SY \times QP$ và $SP \times QT$ bằng nhau.
 
@@ -71,7 +71,7 @@ Bởi vì vận tốc tỷ lệ nghịch với đoạn vuông góc $SY$, theo H�
 
 Vì vậy, nếu một hình cong $APQ$ bất kỳ được cho, và bên trong có một điểm $S$ cũng được cho, là nơi một lực hướng tâm luôn hướng về, thì có thể tìm ra quy luật của lực hướng tâm, nhờ đó vật thể $P$ sẽ liên tục bị kéo trở lại từ chuyển động thẳng, bị giữ trên chu vi của hình ấy, và sẽ mô tả hình ấy bằng một chuyển động quay vĩnh cửu.
 
-Nói cách khác, ta cần tìm, bằng tính toán, đại lượng khối $SP^2 \times QT^2$ hoặc $SY^2 \times PV$ tỷ lệ nghịch với lực này. Những Bài toán sau sẽ cung cấp ví dụ cho điều đó.
+Nói cách khác, ta cần tìm, bằng tính toán, đại lượng khối $\frac{SP^2 \times QT^2}{QR}$ hoặc $SY^2 \times PV$ tỷ lệ nghịch với lực này. Những Bài toán sau sẽ cung cấp ví dụ cho điều đó.
 
 > **[Chú giải]**
 >
@@ -85,4 +85,4 @@ Nói cách khác, ta cần tìm, bằng tính toán, đại lượng khối $SP^
 >
 > Ông chưa có khái niệm độ cong trừu tượng, mà cũng không cần: mỗi đường cong trong mặt phẳng đều thay được bằng cung tròn osculating tại từng điểm, và ông chỉ cần bán kính của nó. Việc ông viết Hệ quả 5 như một bài toán tổng quát - cho hình cong và điểm $S$ bất kỳ, hãy tìm quy luật lực - cho thấy ông đang xây một *thủ tục*.
 >
-> Dạng $F = mv^2\kappa$ là cách viết đúng đắn cho mọi chuyển động cong, và nó cho thấy vì sao trong hành tinh học, lực tại một điểm quỹ đạo phải liên quan tới độ cong chứ không phải tới hình dạng tổng thể. Cùng công thức này giải thích vì sao một hành tinh ở điểm có độ cong lớn thì chịu lực mạng hơn, dù khối lượng và khoảng cách không đổi.
+> Dạng $F = mv^2\kappa$ là cách viết đúng đắn cho mọi chuyển động cong, và nó cho thấy vì sao trong hành tinh học, lực tại một điểm quỹ đạo phải liên quan tới độ cong chứ không phải tới hình dạng tổng thể. Cùng công thức này giải thích vì sao một hành tinh ở điểm có độ cong lớn thì chịu lực mạnh hơn, dù khối lượng và khoảng cách không đổi.

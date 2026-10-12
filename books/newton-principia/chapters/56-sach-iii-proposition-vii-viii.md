@@ -29,11 +29,11 @@ Nếu ai đó cho rằng theo quy luật này, mọi vật thể quanh ta phải
 >
 > Proposition VII là định luật hấp dẫn phổ quát dưới dạng thuần: có một lực hướng về mọi vật thể, tỷ lệ với lượng vật chất mà chúng chứa. Cùng với Proposition VI, nó tạo thành công thức trọn vẹn $F = G\dfrac{m_1 m_2}{r^2}$.
 >
-> Chứng minh của Newton dựa trên tính cộng. Lực hút của một hành tinh, xét riêng, tỷ lệ nghịch với bình phương khoảng cách, và lực ấy do từng phần của hành tích cộng lại, mỗi phần đóng góp theo đúng lượng vật chất của nó. Theo Định luật III, phần nào của $A$ kéo $B$ bao nhiêu thì $B$ kéo lại phần ấy bấy nhiêu. Nhân từng cặp phần với khối lượng của chúng, tổng ra đúng tích $m_1 m_2$.
+> Chứng minh của Newton dựa trên tính cộng. Lực hút của một hành tinh, xét riêng, tỷ lệ nghịch với bình phương khoảng cách, và lực ấy do từng phần của hành tinh cộng lại, mỗi phần đóng góp theo đúng lượng vật chất của nó. Theo Định luật III, phần nào của $A$ kéo $B$ bao nhiêu thì $B$ kéo lại phần ấy bấy nhiêu. Nhân từng cặp phần với khối lượng của chúng, tổng ra đúng tích $m_1 m_2$.
 >
 > Ông tự trả lời trước phản biện rằng ai đó sẽ nêu ra: theo quy luật này, hai viên sỏi cạnh nhau cũng phải hút nhau, mà ta không thấy gì. Câu trả lời của ông là lực ấy nhỏ hơn lực giữ chúng với Trái Đất rất nhiều, nên nằm dưới ngưỡng giác quan. Đó là một ước lượng thẳng thắn, và nó chỉ ra chính xác vì sao cần một dụng cụ đặc biệt mới đo được hiệu ứng ấy giữa các vật thể trên bàn.
 >
-> Dụng cụ mà Newton mô tả trong câu trả lời ấy phải mất thêm hơn một thế kỷ mới có: **cân xoắn** của Cavendish năm 1798 mới đo được lực hút giữa hai khối vật chất trong phòng thí nghiệm, và những cân xoắn sau đó của Eötvös dùng chính nguyên lý ấy để đo $G$ và kiểm tra xem trọng lực có phụ thuộc vật liệu hay không. Nói cách khác, Newton đã chỉ đúng phép thử mà người ta cần, đồng thời nói thẳng rằng giác quan không đủ - và phải chờ kỹ thuật đủ tinh vi, chứ không chờ một ý tưởng mới.
+> Newton không nhắc tới dụng cụ nào, chỉ nói rằng giác quan không đủ. Phải hơn một thế kỷ sau mới có phép đo: **cân xoắn** của Cavendish năm 1798 đo được lực hút giữa hai khối vật chất trong phòng thí nghiệm, và những cân xoắn sau đó của Eötvös dùng cùng nguyên lý để kiểm tra xem trọng lực có phụ thuộc vật liệu hay không. Điều thiếu lúc ấy là kỹ thuật đủ tinh vi, không phải một ý tưởng mới.
 
 ### Hệ quả 2
 
@@ -115,6 +115,6 @@ Không nên nghi ngờ rằng vật chất của Sao Thủy thích nghi với nh
 >
 > Với các giá trị hiện đại, phần mật độ là một thành công đáng kinh ngạc. Lấy Mặt Trời bằng 100, mật độ trung bình hiện nay là 100 cho Mặt Trời, khoảng 94 cho Sao Mộc, khoảng 49 cho sao Thổ và khoảng 392 cho Trái Đất. Ở Sao Mộc, con số của Newton gần như tuyệt đối. Còn việc Mặt Trời **hơi đặc hơn** Sao Mộc thì nghe lạ mà đúng, vì Mặt Trời là khí và giữ được trạng thái loãng nhờ nhiệt độ lớn, đúng như lý do ông nêu. Các con số tuyệt đối thì kém hơn nhiều, và chính ông đã cảnh báo trước bằng phép lập phương ấy.
 >
-> Ở Hệ quả 4 còn một chỗ cần phân biệt: ánh sáng Mặt Trời ở quỹ tảo Sao Thủy mạnh gấp bảy lần là **đúng** với cường độ ánh sáng, nhưng **không** đúng với nhiệt độ, vì nhiệt độ cân bằng chỉ tỷ lệ với căn bậc hai của cường độ - nên ở Sao Thủy chỉ nóng hơn chúng ta khoảng một phần rưỡi, không phải bảy lần.
+> Ở Hệ quả 4 còn một chỗ cần phân biệt: ánh sáng Mặt Trời ở quỹ đạo Sao Thủy mạnh gấp bảy lần là **đúng** với cường độ ánh sáng, nhưng **không** đúng với nhiệt độ, vì nhiệt độ cân bằng (tính theo thang Kelvin) chỉ tỷ lệ với căn bậc bốn của cường độ - nên ở Sao Thủy chỉ nóng hơn chúng ta khoảng $7^{1/4} \approx 1{,}6$ lần, không phải bảy lần.
 
 *Số liệu Hệ quả 1–3 đã được đối chiếu với scan trang 398–399. Hình minh họa dùng lại chưa phải hình riêng của Proposition VII–VIII, nên vẫn cần rà soát.*

@@ -1,0 +1,6953 @@
+# Principia: fidelity review worksheet (2026-10-03)
+
+**Read `docs/superpowers/plans/2026-10-03-principia-review.md` first.** This file is raw reviewer output, not a list of confirmed errors.
+
+- Source compared against: the Internet Archive OCR of Motte 1846 (`newtonspmathema00newtrich`). No page image was viewed by any reviewer.
+- Each chunk of about 16 KB was reviewed once by one agent, who listed at most 12 items. 81 of 148 chunks hit that cap, so every chunk probably has more errors than are listed here.
+- A spot check of 14 items (some by hand against the source) found most real and specific, and a minority that are OCR ambiguity or inflated severity. Treat `NANG` as 'look at this first', not as 'proven wrong'.
+- `KIND`: THIEU omitted from the translation, THEM added, SAINGHIA wrong meaning, SOLIEU wrong number or formula, THUATNGU terminology, HINH figure, CHUGIAI editorial callout, KHAC other.
+
+
+## Per-chapter counts
+
+| Ch | NANG | NHE | chunks at the 12-item cap |
+|---:|---:|---:|---:|
+| 00 | 47 | 82 | 8 |
+| 01 | 0 | 18 | 0 |
+| 02 | 2 | 28 | 2 |
+| 03 | 3 | 4 | 0 |
+| 04 | 3 | 7 | 0 |
+| 05 | 3 | 6 | 0 |
+| 06 | 2 | 7 | 0 |
+| 07 | 1 | 5 | 0 |
+| 08 | 9 | 13 | 0 |
+| 09 | 2 | 3 | 0 |
+| 10 | 6 | 5 | 0 |
+| 11 | 4 | 7 | 0 |
+| 12 | 4 | 7 | 0 |
+| 13 | 3 | 7 | 0 |
+| 14 | 6 | 4 | 0 |
+| 15 | 7 | 4 | 0 |
+| 16 | 4 | 5 | 0 |
+| 17 | 8 | 4 | 1 |
+| 18 | 5 | 5 | 0 |
+| 19 | 5 | 7 | 1 |
+| 20 | 8 | 4 | 1 |
+| 21 | 10 | 2 | 1 |
+| 22 | 8 | 4 | 1 |
+| 23 | 6 | 6 | 1 |
+| 24 | 9 | 3 | 1 |
+| 25 | 6 | 6 | 1 |
+| 26 | 5 | 4 | 0 |
+| 27 | 6 | 18 | 2 |
+| 28 | 12 | 10 | 1 |
+| 29 | 4 | 8 | 1 |
+| 30 | 8 | 4 | 1 |
+| 31 | 10 | 14 | 2 |
+| 32 | 6 | 5 | 0 |
+| 33 | 7 | 4 | 0 |
+| 34 | 7 | 5 | 1 |
+| 35 | 22 | 2 | 2 |
+| 36 | 26 | 9 | 3 |
+| 37 | 18 | 6 | 2 |
+| 38 | 10 | 2 | 1 |
+| 39 | 14 | 9 | 1 |
+| 40 | 20 | 4 | 2 |
+| 41 | 21 | 3 | 2 |
+| 42 | 12 | 12 | 2 |
+| 43 | 12 | 10 | 1 |
+| 44 | 14 | 8 | 0 |
+| 45 | 18 | 6 | 2 |
+| 46 | 13 | 10 | 1 |
+| 47 | 18 | 5 | 1 |
+| 48 | 18 | 6 | 2 |
+| 49 | 24 | 22 | 2 |
+| 50 | 26 | 27 | 2 |
+| 51 | 3 | 7 | 0 |
+| 52 | 12 | 17 | 1 |
+| 53 | 21 | 14 | 2 |
+| 54 | 8 | 15 | 1 |
+| 55 | 21 | 14 | 2 |
+| 56 | 6 | 6 | 1 |
+| 57 | 3 | 8 | 0 |
+| 58 | 4 | 7 | 0 |
+| 59 | 6 | 4 | 0 |
+| 60 | 18 | 17 | 2 |
+| 61 | 7 | 15 | 1 |
+| 62 | 12 | 6 | 1 |
+| 63 | 13 | 20 | 2 |
+| 64 | 18 | 18 | 3 |
+| 65 | 15 | 32 | 1 |
+| 66 | 24 | 44 | 4 |
+| 67 | 20 | 22 | 1 |
+| 68 | 58 | 89 | 7 |
+
+
+## 00-loi-dan-nhap.md
+
+- *phần 1/11: Chương 00, phần 1/11 (dòng 1-46): Dedication (Lời tựa Chittenden) và Introduction to the American Edition (đến câu hỏi về Geometrical Synthesis). Không có Proposition/Lemma/hình/Chú giải tr*
+- *phần 2/11: Chương 00, phần 2/11 (dòng 47-92): cuối lời tựa bản Mỹ (từ "Giai tích...") và đầu Tiểu sử Newton (đến đoạn "May we not discern...", dòng 91); nguồn OCR ia.txt dòng 172-349. Không có hình, k*
+- *phần 3/11: Chương 00 (Lời dẫn nhập, tiểu sử Newton), phần 3/11, dòng 93-138 (Storey/Woolsthorpe 1656, Cambridge, Barrow, fluxions, quang học, dịch bệnh 1666, thử nghiệm Mặt Trăng). Không có hình, khôn*
+- *phần 4/11: Chương 00, phần 4/11 (dòng 139-190): đoạn cuối tiểu sử trước thư gửi Aston, kính phản xạ 1668, Hội Hoàng gia 1671, thư Newton gửi Francis Aston 18/5/1669 (không có Proposition/Lemma/Hệ quả,*
+- *phần 5/11: Chương 00, phần 5/11 (dòng 191-230): tiểu sử Newton, từ "June 1669 ... Method of Fluxions" đến "diamond ... combustibility" (nguồn ia.txt dòng 771-993); không có Proposition/Lemma, không có*
+- *phần 6/11: Chương 00, phần 6/11 (dòng 231-276 của file): tiểu sử Newton từ nghiên cứu hóa học, Behmen, thư gửi Locke 1671, Hooke 1679, Picard 1682, Halley 1684, thư 20/6, đến lời mở đầu mô tả ba quyển*
+- *phần 7/11: Chương 00, phần 7/11 (dòng 277-322): lời dẫn Quyển III và Hệ thống thế giới, định luật Kepler và trọng lực phổ quát, đoạn Scholium về Chúa (Lord God, duration, substance), sự đón nhận Princ*
+- *phần 8/11: Chương 00, phần 8/11, dòng 323-368: tiểu sử Newton (Life of Sir Isaac Newton, ia.txt dòng 1535-1800): thần học, Diamond và nhật ký Pryme, Sở Đúc tiền, bài toán Bernoulli/Leibniz, thói quen *
+- *phần 9/11: Chương 00, phần 9/11 (dòng 369-418): tiểu sử Newton từ Viện Khoa học Paris 1699 đến Báo cáo Ủy ban Hoàng gia và Commercium Epistolicum (nguồn ia.txt dòng 1800-2006) + 1 Chú giải (dòng 405-4*
+- *phần 10/11: Chương 00, phần 10/11 (dòng 419-460): Life of Sir Isaac Newton - Leibniz/Commercium, kinh độ, niên đại, đời sống ở London, bệnh tật, đối thoại Conduit, Pemberton, Atterbury/Hearne. Không c*
+- *phần 11/11: Chương 00, phần 11/11 (dòng 461-505): cuối tiểu sử Newton (Pemberton, bờ biển, bệnh cuối, qua đời, mộ, di sản, tác phẩm, Woolsthorpe/Stukeley, câu thơ) + chú giải "Quả táo rơi"; không có P*
+
+- **NANG / THIEU**, dòng 7-9 (đầu Lời tựa)
+  - source: TO THE TEACHERS OF THE NORMAL SCHOOL OF THE STATE OF NEW-YORK. GENTLEMEN!
+  - now: (không có; đoạn mở đầu vào thẳng "Gió trời tươi mới...")
+  - suggest: Thêm câu đề tặng "Gửi các giáo viên Trường Sư phạm (Normal School) bang New York" và lời xưng hô "Thưa các ngài!" như nguồn.
+- **NANG / SAINGHIA**, dòng 15
+  - source: from Baffin's Bay to that of Panama (OCR: "that of Panama" = the Bay of Panama)
+  - now: từ vịnh Baffin đến kênh đào Panama
+  - suggest: Sửa thành "vịnh Panama"; nguồn không nói kênh đào.
+- **NANG / SAINGHIA**, dòng 15
+  - source: those two master-passions of the human soul - the love of Rule, and the love of Gain
+  - now: hai tình cảm mạnh mẽ nhất ... : tình yêu tự do và tình yêu lợi ích
+  - suggest: "love of Rule" là yêu quyền lực/thống trị, không phải "tự do"; sửa "tình yêu quyền lực và tình yêu lợi lộc".
+- **NANG / SAINGHIA**, dòng 9
+  - source: The days of a drivelling instruction are departing. ... genuine manhood doing its noblest work shall have adequate reward
+  - now: Những ngày của sự giáo dục rối loạn, điều hứng hoang đường... sức lao động thật sự của con người được làm trọn vẹn
+  - suggest: "điều hứng hoang đường" không có nghĩa/không có trong nguồn; "drivelling" = ngớ ngẩn, nhảm nhí; "genuine manhood doing its noblest work" bị dịch thành "sức lao động ... làm trọn vẹn", mất "noblest".
+- **NANG / THIEU**, dòng 25
+  - source: to you, as the conspicuous leaders in the vast and honourable labour of Educational Reform, and Popular Teaching, the First American Edition ... is most respectfully dedicated
+  - now: các ngài là những người tiên phong nổi bật trong công trình trọng vĩ và danh giá của việc giáo dục và phổ biến tri thức
+  - suggest: Thiếu "Educational Reform" (cải cách giáo dục); "Popular Teaching" nên dịch "việc giảng dạy cho quảng đại quần chúng".
+- **NANG / SAINGHIA**, dòng 35
+  - source: is not always satisfied with stopping short of the fountain-head of any given truth
+  - now: nó không phải lúc nào cũng dừng lại ở một chân trời nào đó
+  - suggest: "fountain-head" = nguồn cội của một chân lí, bị dịch thành "chân trời"; sửa "không phải lúc nào cũng bằng lòng dừng lại trước nguồn cội của một chân lí nào đó".
+- **NANG / THIEU**, dòng 37
+  - source: or in the possession of some ardent disciple of the great Master ... an enormous price in both, particularly in that of the English edition
+  - now: thi thoảng có thể tìm thấy vài bản sao tiếng Latin, và đôi khi có một bản tiếng Anh; ... mức giá cực lớn trong cả hai trường hợp
+  - suggest: Thiếu mệnh đề "hoặc trong tay một môn đồ nhiệt thành nào đó của bậc Thầy vĩ đại" và "nhất là ở bản tiếng Anh".
+- **NANG / THIEU**, dòng 41
+  - source: and a monument like unto that we would here set up.
+  - now: > "Không có tác phẩm nào đẹp hơn mà người ta có thể dựng lên ... một ấn bản tốt về các tác phẩm của ông."
+  - suggest: Thiếu câu "và một tượng đài như thế là điều chúng tôi muốn dựng nên ở đây" ngay sau câu trích tiếng Pháp.
+- **NANG / THIEU**, dòng 43
+  - source: send forth afar and near, over the troublous waters of life, a pure, unwavering, quenchless light ... the breaker and the shoal
+  - now: chúng tỏa ra ánh sáng trong, trong veo và bất tắc ... qua bờ biển hiểm trở và rào đá ngầm
+  - suggest: Thiếu "ở xa và gần", "trên mặt nước sóng gió của đời", "sóng vỗ (breaker)" và "bãi cạn (shoal)"; "unwavering" không có tương ứng rõ ("trong, trong veo" lặp); "bất tắc" nên là "bất diệt/không tắt"; "tan rã và đi lại" sai, phải là "tan rã và qua đi".
+- **NANG / THIEU**, Tiểu sử, dòng 81-83 (giữa đoạn đá vào bụng và đoạn diều giấy)
+  - source: His peculiar character began now rapidly to unfold itself. Close application grew to be habitual. Observation alternated with reflection. "A sober, silent, thinking lad," yet, the wisest and the kindliest, the indisputable leader of his fellows.
+  - now: Dòng 83 mở bằng "Từ thời ấy, sự giản dị, khiêm tốn và tình yêu sự thật phân biệt cậu..."; bốn câu trên hoàn toàn không có trong bản dịch.
+  - suggest: Thêm bốn câu: tính cách đặc biệt bắt đầu bộc lộ nhanh; sự chuyên cần thành thói quen; quan sát xen kẽ suy ngẫm; "một chàng trai điềm đạm, trầm lặng, hay suy nghĩ", nhưng khôn ngoan và tử tế nhất, là người đứng đầu không ai chối cãi của bạn bè.
+- **NANG / THIEU**, Tiểu sử, dòng 67 (cha của Newton)
+  - source: His father, John Newton, died at the age of thirty-six, and only a few months after his marriage to Harriet Ayscough
+  - now: Ngài tử vong khi mới ba mươi sáu tuổi, chỉ vài tháng sau khi cưới Harriet Ayscough
+  - suggest: Mất chủ ngữ "His father, John Newton": "Ngài" ngay sau câu nói về Newton khiến người đọc hiểu là chính Newton chết ở tuổi 36. Sửa: "Cha ông, John Newton, mất khi mới ba mươi sáu tuổi, chỉ vài tháng sau khi cưới..." (đồng thời "posthumous child" dịch thành "con nối dõi" là sai, phải là con sinh sau khi cha mất).
+- **NANG / SAINGHIA**, Tiểu sử, dòng 81
+  - source: the boy immediately above our seemingly dull student gave him a severe kick in the stomach
+  - now: cậu bé ngồi ngay phía trên cậu, trông có vẻ hơi uể oải, đã đá mạnh vào bụng cậu
+  - suggest: "seemingly dull" chỉ Isaac (our student), bản dịch gán sang cậu bé kia ("trông có vẻ hơi uể oải"); "immediately above" nói thứ hạng trong lớp, không phải chỗ ngồi. Sửa: "cậu bé xếp ngay trên người học trò có vẻ ngờ nghệch của chúng ta đã đá mạnh vào bụng cậu".
+- **NANG / THIEU**, Lời tựa, dòng 51 (câu về Hình học)
+  - source: directing MOTION and shaping APPEARANCE; in a word, at the moulding of the created all, is, in comprehensive view, the outward form of that Inner Harmony of which and in which all things are.
+  - now: điều khiển chuyển động và tạo nên hình hình bên ngoài của trật tự nội tâm mà mọi sự vật đều mang theo và đều thuộc về.
+  - suggest: Mất "in a word ... the moulding of the created all" (OCR dòng 191 hỏng một chữ: "*t the moulding"); "of which and in which all things are" bị dịch sai thành "mang theo và thuộc về" (nghĩa: mọi vật từ đó mà có và trong đó mà tồn tại); "APPEARANCE" thành "hình hình". Inner Harmony dịch "trật tự nội tâm" (dòng 51) và "sự thống nhất nội tâm" (dòng 53), hai cách, cả hai đều không phải "hài hòa".
+- **NANG / SAINGHIA**, Lời tựa, dòng 55 (câu cuối)
+  - source: such men as the Theory of our Government contemplates and its practical operation absolutely demands.
+  - now: những con người mà lý thuyết về chính quyền của chúng ta hướng tới và đòi hỏi sự vận hành thực tế của nó.
+  - suggest: Đảo chủ ngữ: chính "practical operation" (sự vận hành thực tế) đòi hỏi những con người ấy, không phải lý thuyết đòi hỏi sự vận hành. Thiếu "absolutely" (tuyệt đối). Sửa: "mà lý thuyết về chính quyền của chúng ta hình dung, và sự vận hành thực tế của nó tuyệt đối đòi hỏi."
+- **NANG / SAINGHIA**, Tiểu sử, dòng 71
+  - source: Beyond the grandfather, Robert Newton, the descent of Sir Isaac cannot with certainty be traced.
+  - now: Không thể truy đến chắc chắn hơn ông thí tổ Robert Newton.
+  - suggest: "grandfather" (ông nội) thành "ông thí tổ" (chữ lạ, gần với "thủy tổ" = tổ tiên đầu tiên), và "Beyond" (xa hơn nữa) không rõ. Sửa: "Không thể truy nguồn gốc của Sir Isaac một cách chắc chắn xa hơn ông nội, Robert Newton."
+- **NANG / THUATNGU**, dòng 121, 123 (đoạn quang học)
+  - source: refracting telescope; improvement of the refracting telescope; construction of telescopes
+  - now: cải thiện kính lúp khúc xạ; kính lúp khúc xạ; chế tạo kính lúp
+  - suggest: telescope là kính thiên văn, không phải kính lúp (magnifying glass). Sửa thành kính thiên văn (khúc xạ) ở cả ba chỗ.
+- **NANG / SAINGHIA**, dòng 137 (thử nghiệm Mặt Trăng)
+  - source: He was absent from books; and, therefore, adopted, in computing the earth's diameter, the common estimate of sixty miles to a degree
+  - now: Ông không đọc sách; vì vậy, khi tính đường kính Trái Đất, ông dùng ước lượng thông thường
+  - suggest: absent from books là không có sách bên mình; dịch thành không đọc sách là sai nghĩa. Đề xuất: Ông không có sách bên mình.
+- **NANG / SAINGHIA**, dòng 109 (Barrow)
+  - source: elected Professor of Greek in the University, in 1660
+  - now: được bầu làm Giáo sư Ngữ văn tại trường đại học năm 1660
+  - suggest: Professor of Greek là Giáo sư tiếng Hy Lạp, không phải Ngữ văn.
+- **NANG / THUATNGU**, dòng 105 và 111
+  - source: his fluxionary calculus; his Method of Fluxions, in the year 1666, or before
+  - now: phép tính vi phân của cậu; Phương pháp Vi phân của mình
+  - suggest: Nguồn là fluxion (phép tính/phương pháp fluxion), không phải vi phân (differential); dòng 117 lại dùng FLUXIONS nên bản dịch tự mâu thuẫn. Sửa: phép tính fluxion; Phương pháp Fluxion.
+- **NANG / SAINGHIA**, dòng 107 (tính cách Newton)
+  - source: regardless of the merely trivial or unimportant, bore with unerring sagacity upon the prominences of the subject
+  - now: Dù điều gian dễ chịu hay không quan trọng, cậu vẫn bám lấy những điểm nổi bật
+  - suggest: regardless of ở đây là bỏ qua điều tầm thường, không quan trọng, rồi nhắm vào chỗ nổi bật. Bản dịch có cụm vô nghĩa gian dễ chịu và có thể đọc thành dù tầm thường vẫn bám lấy (ngược nghĩa). Sửa cho rõ nghĩa bỏ qua.
+- **NANG / SAINGHIA**, dòng 125 (Woolsthorpe)
+  - source: situated in a beautiful little valley, on the west side of the river Witham
+  - now: nằm trong một thung lũng nhỏ xinh đẹp, phía bên kia sông Witham
+  - suggest: west side (phía tây) bị thay bằng phía bên kia, mất chi tiết hướng và nghĩa khác đi. Sửa: ở bờ phía tây sông Witham.
+- **NANG / THIEU**, d.159 (thư Aston, cuối phần quy tắc)
+  - source: To which purpose you may consider, that, though such excuses as this - He provok't me so much I could not forbear - may pass among friends, yet amongst strangers they are insignificant
+  - now: Vì những lý lẽ ấy có thể chấp nhận được giữa bạn bè, nhưng ở giữa những người xa lạ chúng chỉ có giá trị rất nhỏ
+  - suggest: Thêm câu viện dẫn: "Về điểm này bạn có thể cân nhắc rằng những lời bào chữa như 'Hắn khiêu khích tôi đến mức tôi không nhịn được' có thể qua được giữa bạn bè, nhưng giữa người xa lạ thì chúng vô nghĩa và chỉ chứng tỏ điểm yếu của người đi xa"
+- **NANG / SAINGHIA**, d.179 (Schemnitz)
+  - source: The like is said to be done in other places, which I cannot now remember; perhaps, too, it may be done in Italy. (OCR: "lone in Italy" = done)
+  - now: có lẽ ở Ý, điều ấy cũng chỉ là một cách nói
+  - suggest: Sửa: "có lẽ ở Ý cũng làm được như vậy" (nguồn nói việc biến sắt thành đồng có thể được làm ở Ý, không phải "chỉ là một cách nói")
+- **NANG / THUATNGU**, d.141, 143 (4 lần: "kính lúp phản xạ", "chiếc kính lúp")
+  - source: his newly projected reflecting telescope; THE FIRST REFLECTING TELESCOPE EVER EXECUTED AND DIRECTED TO THE HEAVENS; the telescope itself was carefully preserved
+  - now: chế tạo kính lúp phản xạ mới; Đây là chiếc kính lúp phản xạ đầu tiên từng được chế tạo và chĩa lên bầu trời
+  - suggest: "telescope" là kính thiên văn (kính viễn vọng), không phải kính lúp (magnifying glass); đổi nhất quán trong cả chương (cũng ở d.121, 123, 199 "refracting/reflecting")
+- **NANG / SAINGHIA**, Dòng 225 (đoạn "anima mundi")
+  - source: This "spirit" was no anima mundi; nothing further from the thought of Newton; but was it not ... a partial recognition of ... an ultimate material force
+  - now: Tinh thần ấy không phải là anima mundi; nó không xa cái ý tưởng của Newton như thế.
+  - suggest: Đảo nghĩa: nguồn nói anima mundi là điều xa lạ nhất với tư tưởng Newton. Sửa: "không có gì xa lạ với tư tưởng của Newton hơn thế".
+- **NANG / SAINGHIA**, Dòng 199 (kính hiển vi phản xạ)
+  - source: REFLECTING MICROSCOPES which he considered even more capable of improvement than telescopes
+  - now: kính hiển vi phản xạ, mà ông cho rằng còn có khả năng được cải thiện nhiều hơn kính lúp
+  - suggest: telescopes là kính thiên văn, không phải kính lúp. Sửa thành "kính thiên văn".
+- **NANG / SAINGHIA**, Dòng 201 (inflection/diffraction), hai chỗ
+  - source: INFLECTION and DIFFRACTION of light ... phenomena of the inflection of light had been first discovered more than ten years before by Grimaldi
+  - now: khúc xạ và nhiễu xạ ... Hiện tượng khúc xạ ánh sáng trước đó đã được Grimaldi phát hiện hơn mười năm
+  - suggest: inflection (ánh sáng bị uốn cong sát mép vật) bị dịch thành "khúc xạ" (refraction), lẫn với refraction/refrangibility ở đoạn trên. Dùng một từ riêng như "uốn cong" cho inflection, ở cả hai chỗ.
+- **NANG / SAINGHIA**, Dòng 273 (cuối đoạn "Principia đã được đưa vào sự tồn tại")
+  - source: a work that must be esteemed of priceless worth so long as Science has a votary
+  - now: một công trình phải được coi là vô giá trị ngày nào khoa học còn người theo đuổi
+  - suggest: "priceless" bị dịch thành "vô giá trị" (nghĩa là không có giá trị, đảo ngược). Sửa thành "vô giá" hoặc "có giá trị không gì đo được".
+- **NANG / THIEU**, dòng 295 (giữa 295 và 297)
+  - source: The word God usually signifies Lord; but every Lord is not God. It is the dominion of a spiritual Being which constitutes a God; a true, supreme, or imaginary dominion makes a true, supreme, or imaginary God.
+  - now: (không có; đoạn 295 kết bằng "...không mang tham chiếu nào đối với kẻ hầu dịch." rồi 297 mở bằng "Từ đó, quyền cai trị chân thực...")
+  - suggest: Chèn dịch ba câu bị mất: "Từ God thường có nghĩa là Lord; nhưng không phải mọi Lord đều là God. Chính quyền cai trị của một Hữu thể thuộc linh tạo nên một God; quyền cai trị chân thực, tối thượng hay tưởng tượng làm nên một God chân thực, tối thượng hay tưởng tượng."
+- **NANG / SAINGHIA**, dòng 313 (Voltaire)
+  - source: at the time of his death, he had not above twenty followers out of England.
+  - now: "ông ở nước Anh chỉ có chưa đầy hai mươi người theo dõi" (câu sau còn nói ở Anh triết học được tiếp nhận nhanh chóng và thắng lợi)
+  - suggest: Sửa thành "ngoài nước Anh ông chỉ có chưa đầy hai mươi người theo"; bản dịch hiện đảo "out of England" thành "ở nước Anh" và tự mâu thuẫn với câu kế tiếp.
+- **NANG / SAINGHIA**, dòng 295
+  - source: we say, my God, your God, the God of Israel the God of Gods, and Lord of Lords; but we do not say, my Eternal, your Eternal, the Eternal of Israel, the Eternal of Gods
+  - now: "Chúa của Israel, Chúa của các vua, và Chúa tể của các chúa tể; ... vĩnh cửu của Israel, vĩnh cửu của các vua"
+  - suggest: "the God of Gods" và "the Eternal of Gods" phải là "Chúa của các thần" và "vĩnh cửu của các thần", không phải "các vua" (đổi Gods thành kings).
+- **NANG / SAINGHIA**, Dòng 369 (Cung phương Hadley)
+  - source: "a description of his reflecting instrument for observing the moon's distance from the fixed stars"
+  - now: "dụng cụ phản xạ của mình, dùng để quan sát khoảng cách của Mặt Trời so với các ngôi sao cố định"
+  - suggest: Mặt Trăng, không phải Mặt Trời: "khoảng cách của Mặt Trăng so với các ngôi sao cố định".
+- **NANG / CHUGIAI**, Chú giải dòng 411 (dy = p dx)
+  - source: IV: "Mr. Leibnitz calling those quantities differences which Mr. Newton calls moments, or fluxions; and marking them with a letter d - a mark not used by Mr. Newton."
+  - now: "Vi phân theo Newton: dy = p dx, với p là hệ số góc tiếp tuyến. Tích phân theo Leibniz: ∫ y dx."
+  - suggest: KHÔNG HỢP LÍ: gán ký hiệu d cho Newton, mâu thuẫn trực tiếp với mục IV ngay trên (Newton không dùng d; ông dùng khoảnh khắc/fluxion). Nên xóa hoặc viết lại: ký hiệu d và ∫ là của Leibniz.
+- **NANG / CHUGIAI**, Chú giải dòng 413
+  - source: Nguồn: lá thư Newton 10/12/1672 gửi Paris năm 1676 qua Collins/Oldenburg; không có nhân vật hay lá thư năm 1671 nào khác
+  - now: "Newton không coi mình là người phát minh... quy công cho sự cần cù... chuyển nó cho bạn là Joseph Raphall Hooker, trong một lá thư năm 1671, để nhờ truyền đạt cho Leibniz"
+  - suggest: KHÔNG HỢP LÍ: nhân vật "Joseph Raphall Hooker" và thư 1671 không có trong nguồn, mâu thuẫn với bản dịch (thư 1672, Collins, Oldenburg); gán cho Newton lời tự nhận/động cơ ông không viết ("tác giả cố tình làm lộ"). Xóa đoạn.
+- **NANG / CHUGIAI**, Chú giải dòng 415
+  - source: Nguồn: Leibniz ở London đầu 1673, rồi Paris đến 9/1676; bản án của Ủy ban không có nhận định về thời hạn
+  - now: "Leibniz tới Leipzig năm 1672... Bản án Ủy ban giữ được khoảng ba thế kỷ... công trình của White và Biggs"
+  - suggest: KHÔNG HỢP LÍ MỘT PHẦN: sai địa điểm (nguồn: Leibniz ở Paris/London, không phải Leipzig), tên "White và Biggs" và "ba thế kỷ" không có nguồn kiểm chứng, "báo cáo năm 1712" không nằm trong nguồn. Chỉ giữ ý ký hiệu d của Leibniz là cái dùng hôm nay.
+- **NANG / CHUGIAI**, Chú giải dòng 417 và 407-409
+  - source: Nguồn: Leibniz "had been privy counsellor to the Elector of Hanover"; Chú giải không có cơ sở cho "tước Vương xứ Đức bị giáng chức"
+  - now: "Ông từng đề nghị Ủy ban bác bỏ toàn bộ thư mục khi tước Vương xứ Đức bị giáng chức." Dòng 409 chép nguyên văn lại dòng 403
+  - suggest: KHÔNG HỢP LÍ: câu "đề nghị Ủy ban bác bỏ..." là bịa, vô nghĩa lịch sử; "Ở đoạn này tác giả viết bằng giọng của Ủy ban" sai (tác giả tiểu sử chỉ trích dẫn Báo cáo); dòng 409 là bản sao văn bản dịch, không phải chú giải; tiêu đề 407 "buộc phải chọn một tên" vô nghĩa. Viết lại hoặc xóa cả khối.
+- **NANG / SOLIEU**, dòng 419 (Life, đoạn Leibniz/Conti)
+  - source: in his correspondence, in 1715 and 1716, with the Abbe Conti, then at the court of George I., and with Caroline, Princess of Wales
+  - now: Trong trao đổi thư năm $1675$ và $1676$ với Abbé Conti, lúc ấy ở triều đình của George I, và với Caroline, Hoàng hậu tương lai
+  - suggest: Sửa thành năm $1715$ và $1716$ (1675-1676 là trước khi George I lên ngôi, vô lý với ngữ cảnh); nên dịch Princess of Wales là "Công nương xứ Wales"
+- **NANG / SAINGHIA**, dòng 453 (tên thư về Giám mục Lloyd)
+  - source: HYPOTHESIS CONCERNING THE FORM OF THE MOST ANCIENT ^EAR (OCR đọc ra ^EAR, không phải EARTH)
+  - now: giả thuyết của Giám mục Lloyd về hình dạng của Trái Đất cổ nhất
+  - suggest: OCR kết thúc bằng EAR (không có H) nên là "năm"/year: "hình thức của năm cổ nhất"; không xác định được hoàn toàn từ OCR nhưng "Trái Đất" không khớp chữ cuối
+- **NANG / SAINGHIA**, dòng 453 (tên sách của Pemberton)
+  - source: the author of "A VIEW OF SIR ISAAC NEWTON'S PHILOSOPHY." 1728
+  - now: tác giả *Hoa như tầm nhìn về triết học của ngài Isaac Newton*
+  - suggest: Tên bị dịch hỏng ("Hoa như tầm nhìn") và mất năm 1728; sửa thành "Một cái nhìn về triết học của ngài Isaac Newton" (1728)
+- **NANG / SAINGHIA**, dòng 435 (trích Conduit, sao chổi 1680)
+  - source: by the heat it contracted, in going so near the sun, it seemed to have a tail of thirty or forty degrees when it went from it
+  - now: vì nhiệt làm nó co lại khi đi rất gần Mặt Trời, khi rời đi, nó dường như có cái đuôi dài ba mươi hoặc bốn mươi độ
+  - suggest: "contracted" = thu nhận (nhiệt), không phải "co lại"; sửa: "do nhiệt nó thu nhận khi đi rất gần Mặt Trời"
+- **NANG / SAINGHIA**, Tiểu sử, dòng 475 (di sản)
+  - source: the grand-children of his mother, by the Reverend Mr. Smith
+  - now: những người cháu nội của mẹ ông, do Linh mục Smith chia phối
+  - suggest: Nguồn nói họ là cháu của mẹ ông qua cuộc hôn nhân với Linh mục Smith, không nói Smith chia tài sản. Sửa: "cháu của mẹ ông với Linh mục Smith"; bỏ "chia phối" và "cháu nội".
+- **NANG / SOLIEU**, Tiểu sử, dòng 475
+  - source: John Newton, the heir-at-law, whose great grand-father was Sir Isaac's uncle
+  - now: John Newton ... có ông nội là em trai của ngài Isaac
+  - suggest: Nguồn: great grand-father (cụ) và uncle (chú/bác/cậu). Bản dịch ghi ông nội và em trai, sai cả hai. Sửa: "có cụ ông là chú (bác) của ngài Isaac".
+- **NANG / SAINGHIA**, Tiểu sử, dòng 467 (cơn bệnh cuối)
+  - source: the portals of the tomb opening, still, amid this utter wreck and dissolution of the mortal, the immortal remained serene
+  - now: cửa ngục đang mở ra; giữa sự phá hủy và tan rã toàn diện của thân xác vô hình, cái bất tử vẫn còn bình thản
+  - suggest: "tomb" bị dịch thành "ngục"; "the mortal" (cái hữu tử) bị dịch "thân xác vô hình", thêm "vô hình" không có. Sửa: "cửa mộ"; "của cái hữu tử".
+- **NANG / CHUGIAI**, Chú giải, dòng 495
+  - source: (nguồn không có đoạn này; chỉ có thư Stukeley mô tả nhà và phòng học, không có Newton kể chuyện)
+  - now: mốc ghi chép đáng tin đầu tiên ... năm 1721 ... Ngồi với tiến sĩ Stukeley tại ngôi nhà Woolsthorpe, ông kể rằng mình đã nghĩ về chuyện một quả rơi ... ánh sáng lạ lùng
+  - suggest: KHÔNG HỢP LÍ. Mâu thuẫn với bản dịch ngay trên (dòng 481-483): chuyến thăm 1721 là Stukeley tự đến xem nhà, thư viết 1727, không có Newton kể gì; chi tiết "ánh sáng lạ lùng" không có trong nguồn. Cần nguồn hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải, dòng 493
+  - source: (không có trong nguồn)
+  - now: F = G Mm/r^2 ... 1/3600 ... Quyển I chính là để chứng minh gia tốc hướng tâm của Mặt Trăng đúng bằng con số ấy
+  - suggest: KHÔNG HỢP LÍ. Công thức rơi vào giữa đoạn, không có câu dẫn; hằng số G và dạng này không phải của Newton (gán ngầm cho ông); Quyển I không "để chứng minh" việc đó, đây là nội dung đối chiếu của Quyển III. Viết lại hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải, dòng 497
+  - source: (không có trong nguồn)
+  - now: câu Newton thường được trích: mình giỏi vì đứng trên vai người lớn tuổi hơn; chính Hooke mới là người nói với Newton rằng lực hấp dẫn có thể lan tới khoảng cách xa; cảnh báo thường gán cho Principia là một sự sắp xếp hậu nghiệm
+  - suggest: KHÔNG HỢP LÍ. Trích sai ("người khổng lồ", không phải "người lớn tuổi hơn"); câu về Hooke thiếu chính xác và không nguồn; "cảnh báo ... sắp xếp hậu nghiệm" vô nghĩa; mâu thuẫn "Câu chuyện có thật ở chỗ Newton tự kể" với đoạn trên. Viết lại có nguồn.
+- **NANG / CHUGIAI**, Chú giải, dòng 499
+  - source: the celebrated apple-tree ... was destroyed by the wind about twenty years ago (lời người viết tiểu sử, sau dấu ngoặc kép thư Stukeley)
+  - now: Newton viết năm 1727 rằng cây bị gió phá từ "khoảng hai mươi năm trước" ... mốc ... khoảng năm 1900
+  - suggest: KHÔNG HỢP LÍ. Câu "twenty years ago" là lời người viết tiểu sử, không phải Newton (ông không viết gì năm 1727 về việc này; Newton mất 20/3/1727); mốc "khoảng 1900" không nguồn. Sửa: "người viết tiểu sử ghi" hoặc bỏ mốc 1900.
+- **NHE / SAINGHIA**, dòng 19
+  - source: you appear clothed in the majesty of great power! It is yours to fashion, and to inform, to save, and to perpetuate.
+  - now: bởi quý vị xuất hiện ở đây với vẻ đẹp của quyền lực lớn lao. Việc tạo nên những tâm hồn như vậy, cũng như cung cấp cho chúng ánh sáng
+  - suggest: "majesty" = uy nghi, không phải "vẻ đẹp"; "những tâm hồn" và "ánh sáng" không có trong nguồn (inform = giáo huấn, truyền đạt hiểu biết); "quý vị" lệch với "các ngài".
+- **NHE / SAINGHIA**, dòng 21
+  - source: Betray your trust ... knowledge become lost in tradition, and Christian nobleness a fable!
+  - now: Nếu các ngài phụ bộc lòng tin ... đức tin Kitô giáo sẽ chỉ còn là một chuyện hoang đường
+  - suggest: "Christian nobleness" = phẩm cách cao quý Kitô giáo, không phải "đức tin"; "lost in tradition" = chìm mất trong truyền thống, không phải "chỉ còn là truyền thống"; "phụ bộc" là lỗi gõ (phụ bội/phụ lòng tin).
+- **NHE / KHAC**, dòng 17, 45
+  - source: They must themselves guard the Ark. ... develope them to the full
+  - now: Chính họ phải tự giữ chiếc Ark ... làm phát tri các năng lực của linh hồn và phát tri chúng
+  - suggest: Lỗi gõ "phát tri" (phát triển) hai lần ở dòng 45; "Ark" để nguyên tiếng Anh, nên dịch "Hòm (Giao Ước)" hoặc chú nhất quán; "điều hứng", "phong nhiễu" (dòng 9, 15; nguồn "corruptions of Gold" = sự thối nát do vàng) cũng cần rà.
+- **NHE / SAINGHIA**, Lời tựa, dòng 47
+  - source: But has not the Analytical encroached upon the Synthetical, and Algorithmic Formulae been employed when not requisite, either for the evolution of truth, or even its apter illustration?
+  - now: phương pháp giải tích đã xâm phạm phương pháp tổng hợp chỗ nào chăng? ... đã được dùng khi không cần thiết, cả khi không thể làm sáng tỏa sự thật, hay cả khi không thể minh họa...
+  - suggest: Mất phủ định của câu hỏi tu từ ("has not ... encroached", ngụ ý là có); "not requisite" (không cần thiết) thành "không thể"; "successful prosecution of researches" mất "thành công"; "sáng tỏa" là lỗi gõ.|Sửa: "Nhưng chẳng phải phương pháp giải tích đã xâm phạm phương pháp tổng hợp, và các công thức thuật toán đã được dùng khi không cần thiết, dù để làm lộ ra chân lý hay thậm chí để minh họa nó thích hợp hơn sao?"
+- **NHE / SAINGHIA**, Tiểu sử, dòng 61 và 63
+  - source: physical and moral truth ... the all-creating, all-sustaining, all-perfect God
+  - now: sự thật về thế giới vật lý và tinh thần ... Thiên Chúa tạo ra, tồn tại và hoàn hảo
+  - suggest: "moral" dịch thành "tinh thần" (phải là đạo đức); "all-sustaining" thành "tồn tại" (phải là duy trì muôn vật); mất "iron" (kiểm soát sắt đá) và "struggling" (đang vật lộn); "ascending height after height" bị gộp.|Sửa: "sự thật vật lý và đạo đức", "Thiên Chúa sáng tạo tất cả, duy trì tất cả, hoàn hảo tuyệt đối".
+- **NHE / SAINGHIA**, Tiểu sử, dòng 69
+  - source: on whose little lips the breath of life so doubtingly hovered, lived
+  - now: trên đôi môi còn chưa chắc hơi thở đã thoăn thoắt, vẫn sống
+  - suggest: "so doubtingly hovered" (chập chờn, ngập ngừng) bị dịch thành "thoăn thoắt" (nhanh nhẹn), nghĩa ngược; "hale old age" mất "khỏe mạnh".|Sửa: "trên đôi môi bé xíu ấy hơi thở sự sống còn chập chờn ngờ vực, vẫn sống".
+- **NHE / THUATNGU**, Lời tựa dòng 49; Tiểu sử dòng 83
+  - source: Newton, himself the inventor of Fluxions ... Generosity, modesty, and a love of truth
+  - now: người phát minh ra dòng vi phân ... sự giản dị, khiêm tốn và tình yêu sự thật
+  - suggest: "Fluxions" thành "dòng vi phân" (không phải thuật ngữ nhất quán, chương này chỉ xuất hiện một lần); "Generosity" thành "giản dị" (nghĩa là rộng lượng, hào phóng).|Sửa: "phép tính fluxion" (hoặc thuật ngữ thống nhất của sách) và "tính hào phóng".
+- **NHE / KHAC**, Lời tựa dòng 51; Tiểu sử dòng 81, 63
+  - source: Isaac, deeply affected, but with no outburst of passion, betook himself, with quiet, incessant toil, to his books
+  - now: Isaac chịu đựng điều ấy ... chăm chỉ, lặp đi lặn lại và không ngừng
+  - suggest: "deeply affected" thành "chịu đựng"; "quiet" thành "lặp đi lặn lại" (lỗi gõ "lặn"); "master-key" thành "chìa khóa chủ lực"; "stupendous" mất.|Sửa: "xúc động sâu sắc nhưng không bùng nổ giận dữ, lặng lẽ miệt mài đọc sách không ngừng"; "chìa khóa vạn năng"; "đồ sộ, kinh ngạc".
+- **NHE / KHAC**, Lỗi gõ trong phần: dòng 47, 51 (nhiều chỗ), 71
+  - source: (không áp dụng; lỗi chính tả của bản dịch)
+  - now: "phát tri" (phát triển, dòng 51), "cổ xa" (cổ xưa), "hình hình" (dòng 51), "sáng tỏa" (dòng 47), "ông thí tổ" (dòng 71), "lặp đi lặn lại" (dòng 81), "bánh xe đạp nhỏ" và "xe cơ giới ... được kéo bằng một tay cầm" (dòng 87: treadwheel = bánh xe guồng; handle worked = tay quay), "Mặt đồng hồ được chỉ bởi một thanh gỗ" (dòng 89, mất "index/kim")
+  - suggest: Sửa các lỗi trên; dòng 89: "kim trên mặt số được quay bởi một thanh gỗ chịu tác động của nước nhỏ giọt".
+- **NHE / SAINGHIA**, dòng 95 (cô Storey)
+  - source: inadequacy of fortune prevented their union
+  - now: hoàn cảnh không cho phép họ kết hôn
+  - suggest: inadequacy of fortune là tài sản không đủ; hoàn cảnh quá chung và mất chi tiết. Đề xuất: vì tài sản không đủ nên họ không thể kết hôn.
+- **NHE / SAINGHIA**, dòng 137 (nguyên nhân khác)
+  - source: some other cause, beyond the reach of observation - analogous, perhaps, to the vortices of Descartes
+  - now: một nguyên nhân khác, nằm ngoài tầm với của những quan sát tương tự ... nguyên nhân ấy có thể là những xoáy nước của Descartes
+  - suggest: analogous, perhaps, to (có lẽ tương tự) bị đổi thành có thể là chính các xoáy Descartes; observation bị thêm tương tự; vortices dịch xoáy nước thay vì xoáy (vortex) của Descartes.
+- **NHE / SAINGHIA**, dòng 109 (Barrow)
+  - source: several oversights corrected
+  - now: sửa nhiều lỗi sơ cấp
+  - suggest: oversights là sơ suất; sơ cấp (elementary) là sai nghĩa. Cũng compass of invention dịch là sức tìm tòi, nên là tầm sáng tạo/phát minh.
+- **NHE / KHAC**, dòng 93, 99, 119, 125, 127, 133 (lỗi gõ trong phần dịch)
+  - source: under a hedge; incalculable service; old manor-house; gloom; most probable
+  - now: thơ cao; bụi câu bên đường; giá trị vô tín ... phát tri ra; nhà lâu đổi; ánh tối; khả nhi nhất
+  - suggest: Có vẻ lỗi gõ hoặc từ sai: bụi câu (bụi cây/hàng rào), vô tín (vô giá/không lường được), phát tri (phát triển), lâu đổi (lâu đời), ánh tối (bóng tối), khả nhi (khả dĩ), thơ cao (thơ ca?). Cần sửa chính tả.
+- **NHE / SAINGHIA**, dòng 137 (kết quả tính)
+  - source: The result of his calculations did not, of course, answer his expectations
+  - now: Kết quả tính toán không, như mong đợi, đáp ứng được hy vọng của ông
+  - suggest: of course (đương nhiên) bị dịch như mong đợi, nghe mâu thuẫn với không đáp ứng hy vọng. Đề xuất: đương nhiên không đáp ứng được kỳ vọng của ông.
+- **NHE / THUATNGU**, dòng 115 (fluxion)
+  - source: increasing by continual fluxion in the proportion of the length of the ordinate
+  - now: tăng lên bằng dòng biến thiên liên tục theo tỷ lệ với độ dài tung độ
+  - suggest: fluxion được dịch dòng biến thiên ở đây nhưng giữ nguyên FLUXIONS ở dòng 117; thuật ngữ không nhất quán (và quan hệ với mục fluxion cần thống nhất).
+- **NHE / SAINGHIA**, d.139
+  - source: rendered freest in its movements, and clearest in its vision, through the untrammelling and enlightening power of religion
+  - now: nhờ sức mạnh không bị trói buộc và không bị làm mờ của đức tin
+  - suggest: "enlightening" là soi sáng/khai sáng, không phải "không bị làm mờ"; "religion" là tôn giáo (không phải đức tin); đề xuất "nhờ sức mạnh giải phóng và soi sáng của tôn giáo"
+- **NHE / SAINGHIA**, d.151 (thư Aston, quy tắc 3)
+  - source: nothing sooner occasions disrespect and quarrels than peremptoriness. You will find little or no advantage in seeming wiser or much more ignorant than your company
+  - now: gây ra sự bất kính và tranh cãi bằng việc cậu vào điều quá cứng nhắc. ... khi tỏ ra khôn ngoan hơn, hoặc rất thiểu hiểu hơn
+  - suggest: Câu bị hỏng: "việc cậu vào điều quá cứng nhắc" -> "sự độc đoán/quyết đoán áp đặt"; "rất thiểu hiểu hơn" -> "dốt hơn nhiều" so với những người cùng nhóm
+- **NHE / SAINGHIA**, d.155 (quy tắc 5)
+  - source: to pass it by in silence, and with a jest, though with some dishonour
+  - now: thà im lặng và bỏ qua, thậm chí giải với một câu đùa, dù điều ấy có chút nhục nhã
+  - suggest: "giải với một câu đùa" khó hiểu; đề xuất "thà lặng lẽ bỏ qua, và gạt đi bằng một câu đùa"
+- **NHE / THUATNGU**, d.143, 141, d.143 (Royal Society)
+  - source: the Royal Society of London ... the Library of the Society
+  - now: Hội đồng Hoàng gia Luân Đôn; Thư viện Hội đồng
+  - suggest: "Society" là Hội (Hội Hoàng gia), không phải "Hội đồng" (council); dùng nhất quán trong cả chương nên chỉ nêu để cân nhắc
+- **NHE / KHAC**, d.143
+  - source: Newton lived to see his invention in public use, and of eminent service in the cause of science
+  - now: được sử dụng công khai và phục vụ đắn đời cho sự nghiệp khoa học
+  - suggest: Lỗi gõ "đắn đời" (có lẽ "đắc lực"); "eminent service" là phục vụ đắc lực/xuất sắc
+- **NHE / KHAC**, d.179 và d.187
+  - source: cavities of rocks (d.179); Whether pendulum clocks do any service in finding out the longitude (d.187)
+  - now: kẽ hởng đá; Đồng hồ quả lý
+  - suggest: Lỗi gõ: "kẽ hở"; "đồng hồ quả lắc"
+- **NHE / THEM**, d.143
+  - source: a drawing and description of it was sent to Paris
+  - now: một bản vẽ và mô tả chi tiết được gửi sang Paris
+  - suggest: Từ "chi tiết" không có trong nguồn; bỏ
+- **NHE / KHAC**, d.151-155 (thư Aston)
+  - source: 1. Observe their humours. 2. Suit your own carriage thereto ... 3. Let your discourse ... 4. Seldom discommend ... 5. If you be affronted
+  - now: Hãy quan sát tính tình của họ... (không đánh số 1, 2, 3 và 5); chỉ giữ "4."
+  - suggest: Đánh số không nhất quán: nguồn có 1-5, bản dịch chỉ giữ số 4; nên đánh số đủ hoặc bỏ hẳn
+- **NHE / SAINGHIA**, Dòng 195 (Royal Society bảo vệ tác giả)
+  - source: secure the author from the "arrogations of others"
+  - now: giữ tác giả khỏi những "sự kiêu ngạo" của người khác
+  - suggest: arrogation là sự tiếm nhận/giành công (về quyền tác giả), không phải kiêu ngạo. Sửa: "những sự tiếm nhận của người khác" hoặc tương đương.
+- **NHE / THIEU**, Dòng 201 (Grimaldi)
+  - source: one of the experiments of the learned Jesuit
+  - now: một trong các thí nghiệm của vị tu sĩ dạy khoa học ấy
+  - suggest: Mất "learned" và "Jesuit"; "dạy khoa học" không có trong nguồn. Sửa: "vị tu sĩ dòng Tên uyên bác ấy".
+- **NHE / THIEU**, Dòng 197 (câu trích của Newton)
+  - source: I blamed my own imprudence for parting with so substantial a blessing as my quiet
+  - now: phải trách mình đã đánh mất sự yên tĩnh quý giá
+  - suggest: Mất "my own imprudence" (sự thiếu thận trọng của chính mình) và "persecuted". Cùng đoạn có lỗi chữ: "triệt phể", "bình yên tâm thất".
+- **NHE / THUATNGU**, Dòng 223 (trích Hypothesis, Ether)
+  - source: repelling as attracting the neighbouring corpuscles
+  - now: vừa đẩy vừa hút những tinh thể lân cận
+  - suggest: corpuscles là hạt nhỏ/tiểu thể, "tinh thể" nghĩa là crystals. Cũng bỏ "mutually" trước "propagated" (truyền qua lại).
+- **NHE / THUATNGU**, Dòng 191 và 199 (Method of Fluxions)
+  - source: made known his Method of Fluxions ... a treatise, entitled, A Method of Fluxions
+  - now: công bố Phương pháp Vi phân của mình ... một luận thuyết mang tên Phương pháp Vi phân
+  - suggest: Fluxions dịch thành "Vi phân" (differential), khác nghĩa; cần chọn một thuật ngữ nhất quán cho fluxion (ví dụ "lưu số") thay vì "vi phân".
+- **NHE / THUATNGU**, Dòng 213 (màu của tấm mỏng)
+  - source: placed a double convex lens ... the flat surface of a plano-convex object glass
+  - now: Ông đặt một vật kính lõi kép ... với mặt phẳng làm đáy hộ kính của một vật kính lõi phẳng
+  - suggest: lens và object glass cùng dịch "vật kính"; "lõi" chắc là lỗi gõ của "lồi", "đáy hộ kính" khó hiểu. Sửa: thấu kính hai mặt lồi đặt lên mặt phẳng của vật kính phẳng-lồi.
+- **NHE / THUATNGU**, Dòng 203, 205, 223 (deflection/inflection)
+  - source: deflected ... differ also in flexibility ... by these different inflections ... inflected
+  - now: bị lệch ... những độ lệch khác nhau ấy ... bị lệch
+  - suggest: deflection và inflection cùng dịch "lệch/độ lệch", mất sự phân biệt; nên có từ riêng cho inflection (uốn cong), nhất quán với dòng 201.
+- **NHE / KHAC**, Dòng 219, 223, 229 (lỗi gõ)
+  - source: act mutually upon each other ... mutually attract ... Unctuous and sulphureous bodies
+  - now: tác động lẫn lẫn với nhau ... lẫn lẫn hút nhau ... Những vật thể nhờ nhớt
+  - suggest: "lẫn lẫn" (hai chỗ) nên là "lẫn nhau"; "nhờ nhớt" nên là "nhờn" hoặc "béo nhờn" (unctuous).
+- **NHE / SAINGHIA**, Dòng 271 (đoạn "Xét theo cách chúng ta hiểu")
+  - source: his course of discovery was all along molested by ignorance or presumptuous rivalry
+  - now: con đường khám phá của ông vẫn suốt thời gian bị phiêu lưu bởi sự thiếu hiểu biết hoặc sự cạnh tranh kiêu ngạo
+  - suggest: "molested" (bị quấy nhiễu, bị cản trở) bị dịch thành "bị phiêu lưu", không có nghĩa. Sửa thành "bị quấy nhiễu bởi".
+- **NHE / SAINGHIA**, Dòng 263 (thư Newton gửi Halley, câu đầu)
+  - source: The proof you sent me I like very well.
+  - now: Bản chứng minh bạn gửi cho tôi, tôi rất thích.
+  - suggest: Theo ngữ cảnh ngay trước (Hội quyết định in, Halley lo việc in) "proof" nhiều khả năng là bản in thử, không phải chứng minh toán học. Xem lại; đề xuất "Bản in thử bạn gửi cho tôi".
+- **NHE / SAINGHIA**, Dòng 263 (thư Newton gửi Halley, câu về mệnh đề mới)
+  - source: Some new propositions I have since thought on, which I can as well let alone.
+  - now: nhưng cũng có thể cứ để chúng như cũ.
+  - suggest: "let alone" là để mặc, không đưa vào; "để chúng như cũ" sai nghĩa (các mệnh đề mới chưa có thì không có "cũ"). Đề xuất "nhưng tôi cũng có thể bỏ mặc chúng".
+- **NHE / KHAC**, Dòng 265 (câu cuối thư)
+  - source: It will help the sale of the book, which I ought not to diminish now 'tis yours.
+  - now: Việc ấy sẽ giúp cuốn sách bán được, mà tôi không nên làm giảm giá trị nó khi nó đã thuộc về các người.
+  - suggest: "các người" mang sắc thái xúc phạm trong tiếng Việt, và "diminish" đi với "sale", không phải "giá trị". Đề xuất "thuộc về các ông/quý vị"; sửa "làm giảm" cho sát nghĩa.
+- **NHE / KHAC**, Dòng 255
+  - source: the keystone had been fitted to the glorious arch
+  - now: Có thể nói rằng viên đá chủn của vòng cung rực rỡ cuối cùng đã được lắp vào vị trí
+  - suggest: "viên đá chủn" là từ không có nghĩa (lỗi gõ). Sửa thành "viên đá đỉnh vòm" (keystone).
+- **NHE / THUATNGU**, Dòng 261 so với dòng 249-259
+  - source: the council resolved, on the 19th of May, to print it at the expense of the Society
+  - now: Hội đồng quyết định in nó bằng chi phí của Hội đồng
+  - suggest: "Royal Society" và "the council" đều bị dịch là "Hội đồng", làm câu "bằng chi phí của Hội đồng" mất ý (Hội in bằng tiền của Hội). Đề xuất "Hội đồng chấp hành quyết định in bằng chi phí của Hội".
+- **NHE / THUATNGU**, Dòng 269 và 271
+  - source: resentments (hai lần: "your resentments" và "no resentments")
+  - now: cơn giận của ông ... không có "sự bực bội" nào
+  - suggest: Cùng một từ "resentments" dịch hai cách (cơn giận / sự bực bội) trong hai đoạn liền kề, trong khi nguồn dùng lại chính từ đó trong dấu ngoặc. Nên thống nhất một từ.
+- **NHE / SOLIEU**, Dòng 239
+  - source: in his reply, dated June 30th, 16(Jl
+  - now: lá thư trả lời ngày $30$ tháng Sáu năm $1671$
+  - suggest: OCR đọc năm là "16(Jl" nên không xác định được từ OCR; chữ số thứ ba và thứ tư bị hỏng. Cần đối chiếu bản scan trước khi giữ 1671.
+- **NHE / THUATNGU**, Dòng 273
+  - source: the fundamental principle of his fluxionary calculus
+  - now: nguyên lý nền tảng của phép tính vi phân của ông
+  - suggest: "fluxionary calculus" (phép tính fluxion, lưu số) bị đổi thành "phép tính vi phân", thuật ngữ khác, không giữ đúng chữ nguồn. Đề xuất "phép tính fluxion" (có thể kèm chú thích).
+- **NHE / SAINGHIA**, Dòng 247 (câu cuối thư gửi Locke)
+  - source: a disposition of the sensorium to move the imagination strongly, and to be easily moved, both by the imagination and by the light
+  - now: một khuynh hướng của cơ quan giác quan, khiến trí tưởng tượng chuyển động mạnh và dễ bị thay đổi, bởi cả trí tưởng tượng lẫn ánh sáng
+  - suggest: "to be easily moved" có chủ ngữ là sensorium (giác quan dễ bị tác động bởi cả trí tưởng tượng lẫn ánh sáng), bản dịch gán "dễ bị thay đổi" cho trí tưởng tượng. Sửa lại cấu trúc.
+- **NHE / THIEU**, Dòng 231
+  - source: a comparative scale of temperature from that of melting ice to that of a small kitchen coal-fire
+  - now: từ nhiệt độ của băng tan cho đến nhiệt độ của một đống lửa bếp nhỏ
+  - suggest: Mất chữ "coal" (lửa than); "đống lửa" cũng không có trong nguồn. Đề xuất "một lò than nhỏ trong bếp". Ngoài ra dòng 259 "dedicated to the Royal Society, and presented thereto" chỉ còn "được dâng lên".
+- **NHE / SAINGHIA**, dòng 287
+  - source: in the flying thistle-down, or fixed, ponderous rock
+  - now: "trong lông thuốc chữ bay hay tảng đá nặng nề cố định"
+  - suggest: "thistle-down" là lông (bông) của cây kế; "lông thuốc chữ" vô nghĩa. Đề xuất "trong lông cây kế bay".
+- **NHE / SAINGHIA**, dòng 289
+  - source: An impressed force, however diffused and powerful, assumed not the functions of the creating, giving Energy.
+  - now: "Một lực được in khắc, dù khuếch tán và có sức mạnh đến đâu, không được gán cho chức năng tạo ra năng lượng và trao cho sự sống."
+  - suggest: "impressed force" là thuật ngữ lực của Newton, không phải "in khắc"; thống nhất với cách dịch "impressed force" ở các Định nghĩa. Ngoài ra "giving Energy" bị dịch thành "trao cho sự sống", thêm nghĩa "sự sống".
+- **NHE / THUATNGU**, dòng 297, 299, 301 và 291/293
+  - source: his duration reaches from eternity to eternity; ... he is not duration and space; There are given successive parts in duration; Deity ... a Deity
+  - now: "thời tồn tại của Ngài" (297) nhưng "Ngài không phải thời gian hay không gian" (299) và "Thời gian có những phần liên tiếp" (301); "Thần linh" (291) nhưng "thần thánh là quyền cai trị của Chúa" (293)
+  - suggest: "duration" bị dịch hai cách (thời tồn tại / thời gian) và "Deity" hai cách (Thần linh / thần thánh); nên thống nhất một thuật ngữ cho mỗi từ.
+- **NHE / THUATNGU**, dòng 301
+  - source: He is omnipresent, not virtually only, but also substantially; for virtue cannot subsist without substance.
+  - now: "Ngài toàn hiện, không chỉ theo nghĩa hàm ý mà cả theo nghĩa thực chất; vì phẩm chất không thể tồn tại mà không có chất thể."
+  - suggest: "virtually" dịch "hàm ý" và "virtue" dịch "phẩm chất" không khớp với nhau (cùng gốc virtue: năng lực/hiệu lực); nên dịch "virtue" thống nhất, ví dụ "năng lực".
+- **NHE / SAINGHIA**, dòng 317
+  - source: He was elected, in 1688, and sat in the Convention Parliament till its dissolution.
+  - now: "ngồi trong Quốc hội Hiệp định cho đến khi nó giải tán"
+  - suggest: "Convention Parliament" bị dịch là "Quốc hội Hiệp định" (convention ở đây không phải hiệp định/điều ước); đề xuất "Quốc hội Triệu tập (Convention Parliament)" hoặc giữ nguyên tên Anh.
+- **NHE / SAINGHIA**, dòng 321
+  - source: without this liberation from the dominion of passion and sense
+  - now: "nếu không được giải thoát khỏi quyền cai trị của tình cảm và giác quan"
+  - suggest: "passion" là dục vọng/đam mê, không phải "tình cảm"; sửa thành "đam mê".
+- **NHE / THIEU**, dòng 311 và 293
+  - source: the idea - in itself so simple and so grand - that the great masses of the planets were suspended in empty space; ... called Lord God Travrowparwp (OCR; chữ Hy Lạp Pantokrator) or Universal Ruler
+  - now: "Ngoài việc các khối lượng lớn của hành tinh tựa như lơ lửng..." (thiếu cụm "tự thân thì rất giản dị và rất vĩ đại"); "Lord God hay kẻ cai trị vạn vật" (thiếu từ Hy Lạp)
+  - suggest: Thêm cụm "mà tự thân nó thật giản dị và thật vĩ đại" ở 311; giữ từ Hy Lạp (OCR đọc hỏng, dạng Παντοκράτωρ không xác định chắc từ OCR) ở 293. Ngoài ra "great masses" nên là "những khối lớn", tránh "khối lượng".
+- **NHE / KHAC**, dòng 285, 289, 295, 305, 315, 317, 321
+  - source: Thus he grandly outlined the Universal Law; the WORD; Pemberton's popular "View of Sir Isaac Newton's Philosophy"; in the prime of his years
+  - now: "đường viền tráng trạng của Quy luật Phổ quát"; "Lời Ngô"; "hình hình"; "quyềng chăm sóc"; "Hoa như tầm nhìn phổ thông về triết học..."; "đề cửp"; "buổi đội xuân"; "dành trí tư"
+  - suggest: Lỗi gõ/diễn đạt hỏng: "tráng trạng" (grandly -> vạch nên một cách hùng vĩ), "Lời Ngô" (the WORD), "hình hình", "quyềng", "đề cửp", "đội xuân" (prime of his years), "trí tư"; tên sách Pemberton cần sửa thành dạng như "Cái nhìn phổ thông về triết học của ngài Isaac Newton" (bỏ "Hoa như").
+- **NHE / THEM**, dòng 313
+  - source: the early and powerful exertions of David Gregory at Edinburgh, and of his brother James Gregory at St. Andrew's
+  - now: "David Gregory ở Edinburgh và em trai là James Gregory ở St Andrews"
+  - suggest: Nguồn chỉ nói "his brother"; "em trai" thêm quan hệ thứ tự tuổi mà nguồn không nêu. Sửa thành "anh/em" không xác định, tức "người anh em (brother)" hoặc dịch "em trai" thành "anh em là".
+- **NHE / THEM**, Dòng 327 (Observations upon the Prophecies, phần Daniel)
+  - source: of the kingdoms represented in Daniel by the ram and he-goat
+  - now: về những vương quốc được tượng trưng trong sách Daniel bằng con cừu trắng và con dê
+  - suggest: Bỏ chữ "trắng" (nguồn không có); ram = cừu đực: "con cừu đực và con dê đực".
+- **NHE / SAINGHIA**, Dòng 349 (về trạng thái sau tai nạn)
+  - source: Loss of sleep, loss of appetite, and irritated nerves will disturb somewhat the equanimity of the most serene
+  - now: làm mất phần nào sự bình tĩnh của người ngay thẳng nhất
+  - suggest: "most serene" là người điềm tĩnh nhất, không phải "ngay thẳng"; sửa thành "của người điềm tĩnh nhất".
+- **NHE / SAINGHIA**, Dòng 367 (thói quen ngồi trên giường)
+  - source: he would often sit down on his bedside, after he rose, and remain there, for hours, partially dressed
+  - now: ngồi xuống giường sau khi vừa thức dậy, rồi ở đó hàng giờ, vẫn còn mặc áo cho đến chừng nào
+  - suggest: "partially dressed" = mới mặc một phần áo quần; cụm "cho đến chừng nào" vô nghĩa. Sửa: "mới mặc quần áo một nửa".
+- **NHE / SAINGHIA**, Dòng 329 (tên luận thuyết)
+  - source: HISTORICAL ACCOUNT OF TWO NOTABLE CORRUPTIONS OF SCRIPTURES IN A LETTER TO A FRIEND
+  - now: Bản tích lịch sử về hai sự sa chép chính đáng chú ý trong Kinh Thánh
+  - suggest: "Corruptions" là chỗ văn bản bị sửa đổi/sai lệch, "sa chép" khó hiểu; "Bản tích" cho Account lạ. Đề xuất: "Tường thuật lịch sử về hai chỗ sai lệch đáng chú ý của Kinh Thánh".
+- **NHE / THIEU**, Dòng 341 (nhật ký Pryme)
+  - source: a most excellent mathematician, philosopher, divine, &c.
+  - now: nhà toán học, triết gia và thần học xuất sắc
+  - suggest: Bỏ mất "&c." (vân vân) cuối danh sách; thêm "..., v.v."
+- **NHE / SAINGHIA**, Dòng 323
+  - source: as outrayings of the same inner splendour
+  - now: là những phản chiếu của cùng một ánh sáng bên trong
+  - suggest: "outrayings" = tia phát ra, không phải phản chiếu; sửa: "những tia phát ra từ cùng một ánh huy hoàng bên trong".
+- **NHE / SAINGHIA**, Dòng 325 (trích dẫn cuối)
+  - source: in favour of that Religion, whose truth is now, indeed, girded with the iron and the rock of a ponderous and colossal demonstration
+  - now: tôn giáo mà sự thật của Ngài, giờ đây, thực sự đã được bịt lại bằng sắt và đá
+  - suggest: "girded" = được đai bao quanh, không phải "bịt lại"; "whose truth" là của tôn giáo, không phải "của Ngài". Sửa: "tôn giáo mà chân lý của nó nay quả thực được bao quanh bằng sắt và đá".
+- **NHE / THUATNGU**, Dòng 325
+  - source: from the hieroglyphs of Creation
+  - now: từ những bản tự ký của Sáng tạo
+  - suggest: "hieroglyphs" = chữ tượng hình/ký tự bí ẩn; "bản tự ký" khó hiểu. Đề xuất: "từ những chữ tượng hình của Sáng tạo".
+- **NHE / SAINGHIA**, Dòng 335
+  - source: He was most richly imbued with the very spirit of the Scriptures
+  - now: Ông được trang nghiêm ngấm nhiễm tinh thần của Kinh Thánh
+  - suggest: "richly" = dồi dào, không phải "trang nghiêm"; sửa: "Ông thấm nhuần sâu đậm tinh thần của Kinh Thánh".
+- **NHE / SAINGHIA**, Dòng 367 (bữa ăn)
+  - source: Meal-time would frequently come and pass unheeded
+  - now: Bữa ăn thường đến rồi đi qua mà không ai nhắc
+  - suggest: "unheeded" = không được ông để ý, không phải "không ai nhắc" (ý sau "unless urgently reminded" mới nói đến nhắc nhở). Sửa: "mà ông không để ý".
+- **NHE / KHAC**, Dòng 335, 345, 359 (lỗi gõ)
+  - source: immoral and impious; Christian charity; ablest; sad mischance; nomination
+  - now: kẻ bất đạo đạo đức; lòng bác ái Cơ Đức; người tài bao nào; tai nạy; đề cửị
+  - suggest: Sửa: "bất đạo đức", "Cơ Đốc", "người tài ba nhất", "tai nạn", "đề cử".
+- **NHE / SAINGHIA**, Dòng 371 (cuối đoạn Quang học)
+  - source: "not the "ornament" only; but inconceivably more, the pre-eminent benefactor of his species."
+  - now: "không chỉ là "đồ trang trí" cho tài năng ấy, mà là người bảo hiêm vĩ đại nhất, một người đã ban cho loài người những lợi ích vượt bậc"
+  - suggest: "benefactor" là ân nhân/người làm ơn, không phải "người bảo hiểm" (và gõ sai "bảo hiêm"); bỏ "inconceivably more" (không thể tưởng tượng được là nhiều hơn); "cho tài năng ấy" là thêm. Đề xuất: "không chỉ là 'đồ trang sức' của loài người mà hơn thế rất nhiều, là ân nhân kiệt xuất nhất của nhân loại".
+- **NHE / SAINGHIA**, Dòng 373
+  - source: "a more pliant man was preferred by both ministers and electors."
+  - now: "cả hai bộ phận bộ điệu và cử tri đều ưu ái một người dễ ngoan hơn"
+  - suggest: "ministers" là các bộ trưởng/chính phủ, không phải "bộ phận bộ điệu"; "pliant" là dễ uốn/dễ bảo. Sửa: "cả các bộ trưởng lẫn cử tri đều ưa một người dễ bảo hơn".
+- **NHE / SAINGHIA**, Dòng 385
+  - source: "cringing himself into the dimensions and performances of a common calumniator"; "irreconcilable with the stature and strength of the man"
+  - now: "tự thu mình xuống trong những khổ hạnh và thao túng của một kẻ vu khống tầm thường"; "phẩm chất và sức mạnh của một con người"
+  - suggest: "dimensions and performances" là tầm vóc và việc làm, không phải "khổ hạnh và thao túng"; "stature" là tầm vóc, không phải "phẩm chất".
+- **NHE / SAINGHIA**, Dòng 395 (mục II) và 399
+  - source: "Collins began to communicate that letter to his correspondents"; "the method of fluxions was sufficiently described"
+  - now: "những người ứng tác của mình" ; "phương pháp vi phân đã được mô tả đủ rõ"
+  - suggest: "correspondents" là những người trao đổi thư từ, không phải "người ứng tác". Fluxions dịch thành "Vi phân" nên mất khác biệt với differential. Sửa "những người thư tín của mình".
+- **NHE / THUATNGU**, Dòng 383, 395, 397, 399
+  - source: "Method of Fluxions"; "differential method is one and the same with the method of fluxions"
+  - now: "Phương pháp Vi phân"; "Phương pháp vi phân là cùng một phương pháp với phương pháp Vi phân"
+  - suggest: "fluxions" bị dịch ba cách (Vi phân dòng 383/397/399, "dòng biến thiên" dòng 399, "dòng vi phân" dòng 49) và chỉ phân biệt với "differential" bằng chữ hoa; mục IV thành đồng nghĩa lặp. Thống nhất một thuật ngữ riêng cho fluxion (ví dụ "phương pháp fluxion/dòng số").
+- **NHE / THUATNGU**, Dòng 369
+  - source: "Hadley's Quadrant, has been of so great use in navigation"
+  - now: "Cung phương Hadley, ... địa học hàng hải"
+  - suggest: "Quadrant" là kính/góc phần tư, "Cung phương" không xác định được từ OCR hay ngữ cảnh; "navigation" là hàng hải, không phải "địa học hàng hải".
+- **NHE / SAINGHIA**, Dòng 383 và 371
+  - source: "would have anticipated all rivalry"; "plagiarisms from the manuscripts"
+  - now: "có lẽ đã tiên đoán mọi sự cạnh tranh"; "những vụ sao chép từ các bản thảo"
+  - suggest: "anticipated" ở đây là phòng ngừa/đi trước, không phải "tiên đoán" (predict); "plagiarisms" là đạo văn/ăn cắp ý, "sao chép" làm nhẹ nghĩa.
+- **NHE / SAINGHIA**, dòng 419
+  - source: privy counsellor to the Elector of Hanover, before that prince was elevated to the British throne
+  - now: ông từng là cố vấn riêng của Công tước xứ Hanover
+  - suggest: Elector là "Tuyển hầu" (Tuyển đế hầu), không phải "Công tước"; cả "vị công tước ấy" cũng sửa theo
+- **NHE / SAINGHIA**, dòng 425 và 449 (nhan đề biên niên)
+  - source: A short Chronicle, from the First Memory of Things in Europe, to the Conquest of Persia
+  - now: Một biên niên ngắn, từ ký ức đầu tiên về những gì được xây dựng ở châu Âu (dòng 425); "những điều ở châu Âu" (dòng 449)
+  - suggest: "Things" không có nghĩa "được xây dựng"; cùng nhan đề dịch hai cách; thống nhất thành "ký ức đầu tiên về các sự việc ở châu Âu"
+- **NHE / SOLIEU**, dòng 427
+  - source: wife and widow of Colonel Barton
+  - now: vợ và người góa vợ của Đại úy Barton
+  - suggest: Colonel là "Đại tá", không phải "Đại úy"; "người góa vợ" nghĩa là widower, nên dùng "góa phụ"
+- **NHE / SAINGHIA**, dòng 423
+  - source: Princess of Wales, afterward queen-consort to George II
+  - now: Hoàng hậu tương lai, sau này là hoàng hậu thái hậu của George II
+  - suggest: queen-consort là "vương hậu/hoàng hậu (vợ vua)", không phải "thái hậu" (dowager)
+- **NHE / SAINGHIA**, dòng 429
+  - source: consisting chiefly of broth, vegetables, and fruit; wrote to the Lord Provost of Edinburgh
+  - now: chủ yếu gồm nước ngọt, rau củ và trái cây; viết cho Lãnh tịch Edinburgh
+  - suggest: "broth" là nước dùng/canh thịt, không phải "nước ngọt"; "Lord Provost" nên là "Thị trưởng (Lord Provost)", "Lãnh tịch" không có nghĩa
+- **NHE / THIEU**, dòng 441
+  - source: Kepler's guesses were so just and happy that they had been proved and demonstrated by him
+  - now: những phỏng đoán của Kepler chính xác và may mắn đến mức chúng đã được chứng minh và minh họa
+  - suggest: Mất "bởi ông" (by him = bởi Newton); "demonstrated" dịch thành "minh họa" yếu hơn; sửa: "đã được chính ngài chứng minh và luận chứng"
+- **NHE / THIEU**, dòng 445
+  - source: he said there of that comet, 'incidet in corpus solis,' and in the next paragraph adds, 'stellae fixae refici possunt'
+  - now: ông nói trong đoạn ấy rằng sao chổi ấy có thể rơi vào lòng Mặt Trời, rồi trong đoạn kế tiếp thêm rằng các ngôi sao cố định có thể được bổ sung
+  - suggest: Hai trích dẫn Latinh của Newton bị diễn nghĩa, mất nguyên văn; nên giữ "incidet in corpus solis" và "stellae fixae refici possunt" kèm nghĩa
+- **NHE / KHAC**, dòng 421, 427, 457, 459
+  - source: buckler of Truth; sage; well-knit; peruke; penetrating sagacity; fire-side
+  - now: tấm hộ của Sự thật; người hiền triệt; Ông có người tầm vừa phải; bợp tóc giả; nhọn sẻm thấu hiểu; phòng lò sưởng; (427) ". vào mọi dịp" thiếu viết hoa
+  - suggest: Lỗi gõ/dịch lủng củng: tấm khiên, hiền triết, dáng người tầm vừa, bộ tóc giả, sự sắc sảo thấu suốt, bên lò sưởi, viết hoa "Vào"; ngoài ra Punic Abbe để nguyên "Abbé Punic", antiquarian dịch "nhà cổ điển học", "needle" thành "kim chỉ", "vicious" thành "tội phạm"
+- **NHE / SAINGHIA**, Tiểu sử, dòng 475
+  - source: four nephews and four nieces of the half blood; a brother of Mrs. Conduit
+  - now: bốn cháu trai và bốn cháu gái cùng họ; em bà Conduit
+  - suggest: "of the half blood" là cùng mẹ khác cha, không phải "cùng họ"; "a brother" bị thêm nghĩa "em". Sửa: "cùng một nửa dòng máu" và "anh/em trai".
+- **NHE / SOLIEU**, Tiểu sử, dòng 469
+  - source: expired, between one and two o'clock in the morning
+  - now: qua đời lúc một giờ hai giờ sáng
+  - suggest: Nguồn là khoảng giữa một và hai giờ sáng. Sửa: "vào khoảng giữa một giờ và hai giờ sáng".
+- **NHE / KHAC**, Tiểu sử, dòng 467 và 481
+  - source: Death yielded up its sting; The manor-house, at Woolsthorpe
+  - now: nọt độc của nó; Ngôi nhà lâu đổi ở Woolsthorpe
+  - suggest: Lỗi gõ: "nọt" (nọc) và "lâu đổi" (manor-house, nên là "dinh thự/nhà trang viên"; "lâu đổi" không có nghĩa).
+- **NHE / THEM**, Dòng 504-505
+  - source: (nguồn chỉ có một lần) Nature and Nature's Laws were hid in night, God said, "Let NEWTON be," and all was light.
+  - now: Câu thơ lặp hai lần: dòng 501-502 và lại in đậm ở 504-505
+  - suggest: Nguồn chỉ có một lần; bỏ bản in đậm lặp ở 504-505 (hoặc xác nhận chủ ý biên tập).
+- **NHE / SAINGHIA**, Tiểu sử, dòng 463
+  - source: How few ever reach the shore even, much less find "a smoother pebble or a prettier shell!"
+  - now: Có bao nhiêu người thậm chí có thể đến bờ biển, huống hồ tìm được ...
+  - suggest: "How few" (ít người) thành câu hỏi "Có bao nhiêu người", dễ hiểu ngược. Sửa: "Có mấy người..." hoặc "Ít người ... biết bao".
+
+## 01-dinh-nghia.md
+
+- *phần 1/2: Chương 01, phần 1/2 (dòng 1-162): Định nghĩa I, II, III và câu mở đầu Định nghĩa IV; đối chiếu OCR ia.txt dòng 2636-2693; không có hình trong phần này*
+- *phần 2/2: Chương 01, phần 2/2 (dòng 163-323): Def IV (đoạn 2 và 3), Def V, VI, VII, VIII (kể cả hai đoạn cuối về hút/đẩy). Không có hình trong phần này. Đánh giá chú giải: L167-177 HỢP LÍ; L207-227 HỢ*
+
+- **NHE / THIEU**, Định nghĩa I, dòng 13
+  - source: snow, and fine dust or powders, that are condensed by compression or liquefaction
+  - now: tuyết và các loại bột khi chúng bị nén lại hoặc hóa lỏng
+  - suggest: Thêm "bụi mịn" (fine dust): "tuyết, bụi mịn hoặc các loại bột"
+- **NHE / THIEU**, Định nghĩa II, dòng 77
+  - source: The quantity of motion is the measure of the same, arising from the velocity and quantity of matter conjunctly
+  - now: Lượng chuyển động là đại lượng được xác định bởi vận tốc và lượng vật chất cùng nhau
+  - suggest: Bỏ mất "the measure of the same"; Định nghĩa I dịch đúng là "thước đo của chính nó, sinh ra từ...", nên dịch song song: "thước đo của chính nó, sinh ra từ vận tốc và lượng vật chất kết hợp"
+- **NHE / THUATNGU**, Định nghĩa III, dòng 127-129
+  - source: differs nothing from the inactivity of the mass ... vis inertia, or force of inactivity
+  - now: không khác gì tính quán tính của khối lượng ... vis inertiae, tức là lực quán tính
+  - suggest: "inactivity" bị dịch thành "quán tính", nên vế "or force of inactivity" biến mất (hai tên thành một); nên dịch "inactivity" bằng từ khác (ví dụ "tính ì") và giữ vế "hay lực của tính ì"
+- **NHE / THUATNGU**, Định nghĩa III, dòng 131-133
+  - source: the exercise of this force may be considered both as resistance and impulse; it is impulse, in so far as the body ... endeavours to change the state of that other
+  - now: vừa là sức kháng cự vừa là sự tác động trở lại ... Nó là sự tác động trở lại khi vật thể ... cố làm thay đổi trạng thái của vật kia
+  - suggest: "impulse" dịch thành "sự tác động trở lại" là diễn giải, không phải nghĩa trực tiếp; cân nhắc "xung lực" hoặc "sự xô đẩy" cho nhất quán
+- **NHE / THEM**, Định nghĩa III, dòng 125
+  - source: is a power of resisting, by which every body ... endeavours to persevere in its present state
+  - now: là khả năng chống lại sự thay đổi, nhờ đó mỗi vật thể ... cố duy trì trạng thái hiện tại
+  - suggest: Nguồn chỉ có "power of resisting", không có "sự thay đổi"; bỏ "sự thay đổi": "khả năng kháng cự, nhờ đó ..."
+- **NHE / CHUGIAI**, Định nghĩa I, dòng 19-73 (chú giải khối lượng/mật độ)
+  - source: (Newton không định nghĩa mật độ và không nhắc tỷ trọng; chỉ nói lượng vật chất tỉ lệ với trọng lượng qua thí nghiệm con lắc)
+  - now: Nhưng Newton không bắt đầu từ cách định nghĩa mật độ ấy. Mật độ ... có thể được so sánh bằng tỷ trọng ... Vì vậy mật độ có thể được so sánh trước
+  - suggest: HỢP LÍ MỘT PHẦN: toán và số liệu đúng (m=ρV, 10 kg = 98,1 N và 16,2 N trên Mặt Trăng), nhưng đoạn gán cho Newton cách làm "so tỷ trọng trước" là suy diễn của người biên tập, nguồn không nói; nên sửa thành "có thể hiểu là" hoặc bỏ "Newton không bắt đầu từ..."; thiếu dấu hai chấm sau "như sau" dòng 23
+- **NHE / CHUGIAI**, Định nghĩa II, dòng 81-121 (chú giải động lượng)
+  - source: (nguồn chỉ nói tổng chuyển động của các phần; không nhắc Descartes hay Leibniz)
+  - now: Vào thời Newton, người ta còn tranh luận ... Descartes dùng ... khối lượng nhân tốc độ, trong khi Leibniz dùng ... vis viva, tỉ lệ với mv^2
+  - suggest: HỢP LÍ MỘT PHẦN: các công thức p=mv, P=Σmv, K=mv^2/2 đúng; nhưng khẳng định lịch sử về Descartes/Leibniz không có trong nguồn đối chiếu, cần nguồn; "Newton đang định nghĩa đại lượng thứ nhất" ổn
+- **NHE / CHUGIAI**, Định nghĩa III, dòng 137-157 (chú giải vis insita)
+  - source: power of resisting ... the exercise of this force may be considered both as resistance and impulse
+  - now: Newton không nói rằng bên trong vật có một lực đang đẩy nó ... Newton không coi đó là hai loại lực hoàn toàn khác nhau
+  - suggest: HỢP LÍ MỘT PHẦN: ví dụ xe đẩy, người ngồi trên xe, và việc cùng một vis insita có hai mặt đều khớp nguồn; nhưng các câu phủ định về ý định của Newton ("Newton không nói...") là diễn giải, trong khi nguồn gọi thẳng nó là "innate force"; nên làm nhẹ giọng
+- **NHE / SAINGHIA**, Def V, L195
+  - source: would fly twice or ten times as far.
+  - now: với vận tốc gấp đôi nó sẽ đi xa gần gấp đôi, và với vận tốc gấp mười sẽ đi xa gần gấp mười.
+  - suggest: Bỏ chữ "gần" (nguồn không có, và làm yếu tỉ lệ Newton nêu): "sẽ đi xa gấp đôi... gấp mười".
+- **NHE / THIEU**, Def V, L197
+  - source: go forward into the celestial spaces, and proceed in its motion in infinitum.
+  - now: đi vào không gian và tiếp tục chuyển động ra xa.
+  - suggest: Thêm "đến vô tận (in infinitum)"; "celestial spaces" nên là "các không gian thiên thể".
+- **NHE / THEM**, Def V, L191
+  - source: would go off from it in a right line, and that with an uniform motion
+  - now: sẽ tiếp tục đi theo đường thẳng vào không gian, với chuyển động đều
+  - suggest: Bỏ "vào không gian" (nguồn chỉ nói đi theo đường thẳng, chuyển động đều).
+- **NHE / THUATNGU**, Def VII, L247
+  - source: the force of gravity is greater in valleys, less on tops of exceeding high mountains
+  - now: Lực hấp dẫn cũng mạnh hơn trong các thung lũng và yếu hơn trên đỉnh những ngọn núi cao
+  - suggest: "force of gravity" các nơi khác trong đoạn dịch là "trọng lực"; thống nhất thành "trọng lực" (hoặc "lực hấp dẫn" cho "gravitating force" ở Def VIII).
+- **NHE / THIEU**, Def VII, L249
+  - source: (taking away, or allowing for, the resistance of the air)
+  - now: bởi vì nếu bỏ qua sức cản của không khí
+  - suggest: Thêm vế "hoặc tính đến" (taking away, or allowing for): "khi loại bỏ hoặc hiệu chỉnh sức cản của không khí".
+- **NHE / THIEU**, Def VIII, L285
+  - source: where the accelerative gravity, or force productive of gravity, in all bodies is the same
+  - now: nơi lực gia tốc của trọng lực là như nhau đối với mọi vật
+  - suggest: Thêm "hay lực sinh ra trọng lượng (force productive of gravity)" sau "lực gia tốc của trọng lực".
+- **NHE / SAINGHIA**, Def VIII, L283 và L287
+  - source: celerity drawn into the quantity of matter ... always be as the product of the body, by the accelerative gravity
+  - now: vận tốc kết hợp với lượng vật chất ... tỉ lệ với lượng vật chất kết hợp với lực gia tốc
+  - suggest: "drawn into" và "product" nghĩa là nhân/tích; "kết hợp" làm mờ quan hệ nhân. Dịch "vận tốc nhân với lượng vật chất" và "tỉ lệ với tích của lượng vật chất và lực gia tốc".
+- **NHE / CHUGIAI**, Chú giải sau Def V, L223
+  - source: Việc chứng minh lực giữ Mặt Trăng ... nằm ở phần sau
+  - now: Việc chứng minh lực giữ Mặt Trăng trong quỹ đạo chính là cùng loại với trọng lực ở mặt đất nằm ở phần sau.
+  - suggest: Câu hỏng cú pháp ("chính là cùng loại" thiếu động từ), hiện đọc như khẳng định Newton đã chứng minh ngay ở đây; sửa: "Việc chứng minh lực giữ Mặt Trăng cùng loại với trọng lực ở mặt đất nằm ở phần sau."
+- **NHE / CHUGIAI**, Chú giải sau Def VI, L241
+  - source: (không có trong nguồn, lỗi gõ)
+  - now: đây chỉ là cách liên tưởng  khái niệm của Newton với ký hiệu ngày nay
+  - suggest: Thiếu từ và thừa dấu cách: "cách liên hệ khái niệm của Newton với ký hiệu ngày nay".
+- **NHE / CHUGIAI**, Chú giải cuối Def VIII, L323; L311-313
+  - source: my text: attraction, impulse or propensity; centres as attracting
+  - now: những từ như "hút", "đẩy" hay "lực từ tâm"; Vế đầu ... vế giữa ... vế cuối
+  - suggest: Nguồn không có "lực từ tâm" (nguồn nói "lực của tâm"/tâm hút): sửa cho khớp. Ba biểu thức GM, GM/r^2, GMm/r^2 là ba đại lượng chứ không phải các "vế": dùng "đại lượng đầu/giữa/cuối".
+
+## 02-dinh-luat-van-dong.md
+
+- *phần 1/3: Chương 02, phần 1/3 (dòng 1-108): Định luật I, II, III cùng các đoạn giải thích của Newton và 3 chú giải. Không có hình trong phần này. Hệ quả I trở đi thuộc phần 2.*
+- *phần 2/3: Chuong 02, phan 2/3 (dong 109-215): Scholium (Hoc luan sau cac dinh luat) tu "Hitherto I have laid down..." den "...tỉ số cho trước với vận tốc tương đối lúc chúng gặp nhau"; Fig. 1 (parabol*
+- *phần 3/3: Chương 02, phần 3/3 (dòng 216-322): thí nghiệm bóng len/thủy tinh, chứng minh Định luật III cho lực hút (nam châm-sắt, Trái Đất EGF/EGI/HKI), ví dụ cơ học (cân, ròng rọc, đồng hồ, vít, nêm),*
+
+- **NANG / SAINGHIA**, Học luận, dòng 210
+  - source: if the rule is to be tried in bodies not perfectly hard, we are only to diminish the reflexion in such a certain proportion as the quantity of the elastic force requires
+  - now: Với những vật thể không hoàn toàn đàn hồi, chỉ cần giảm mức bật trở lại theo lượng đàn hồi của chúng.
+  - suggest: Nguồn nói "not perfectly hard" (không hoàn toàn cứng), bản dịch đổi thành "không hoàn toàn đàn hồi"; còn thiếu mệnh đề điều kiện "nếu quy tắc được thử trên vật không hoàn toàn cứng" và "theo một tỉ lệ nhất định". Đề xuất: "Vì nếu quy tắc được thử với những vật thể không hoàn toàn cứng, ta chỉ cần giảm mức bật trở lại theo một tỉ lệ nhất định mà lượng lực đàn hồi đòi hỏi."
+- **NANG / SAINGHIA**, Định luật III, dòng 282
+  - source: if they are turned aside by oblique planes, or other obstacles... those bodies will be equipollent, which are reciprocally as the heights of their ascent and descent taken according to the perpendicular
+  - now: ta phải xét độ cao lên xuống theo phương thẳng đứng, vì trọng lực hướng xuống dưới.
+  - suggest: Mất mệnh đề chính: các vật cân bằng khi trọng lượng tỉ lệ nghịch với độ cao lên xuống theo phương vuông góc (equipollent). Dịch lại: "những vật cân bằng nhau là những vật có trọng lượng tỉ lệ nghịch với độ cao lên xuống theo phương thẳng đứng, vì trọng lực hướng xuống."
+- **NHE / CHUGIAI**, Chú giải Định luật III, dòng 107 (HỢP LÍ MỘT PHẦN)
+  - source: COROLLARY III. The quantity of motion ... suffers no change from the action of bodies among themselves. (đứng sau Cor. I và II)
+  - now: Trong nguyên bản, kết quả ấy được trình bày thành một hệ quả riêng ngay sau ba định luật.
+  - suggest: Sửa thành "thành Hệ quả III, sau Hệ quả I và II" (nguồn: Hệ quả III đứng sau Hệ quả I, II, không phải ngay sau các định luật). Cách nói "lượng chuyển động mất đi ở vật này được truyền sang vật kia" cũng là diễn giải, nên nói chính xác là tổng đại số của lượng chuyển động không đổi.
+- **NHE / CHUGIAI**, Chú giải Định luật I, dòng 29 (HỢP LÍ MỘT PHẦN)
+  - source: A top, whose parts by their cohesion are perpetually drawn aside from rectilinear motions, does not cease its rotation, otherwise than as it is retarded by the air.
+  - now: Newton đưa ví dụ này để cho thấy lực có thể liên tục đổi hướng chuyển động mà không nhất thiết làm vật lập tức ngừng chuyển động. / các phần của vật giữ chúng lại trong chuyển động quay
+  - suggest: Bỏ cụm gán ý đồ cho Newton ("Newton đưa ví dụ này để cho thấy") hoặc viết trung tính; câu "các phần của vật giữ chúng lại" mơ hồ, nên nói rõ là lực kết dính kéo các phần lệch khỏi đường thẳng như bản văn.
+- **NHE / THEM**, Tiêu đề Định luật I, II, III, dòng 9, 32, 68
+  - source: LAW I. / LAW II. / LAW III. (nguồn không có tiêu đề phụ)
+  - now: # Định luật I. Quán tính và chuyển động thẳng / # Định luật II. Thay đổi chuyển động theo lực / # Định luật III. Tác dụng và phản tác dụng
+  - suggest: Phần phụ đề sau số La Mã là lời biên tập của người dịch, không có trong Motte; nên bỏ hoặc chuyển vào chú giải.
+- **NHE / SAINGHIA**, Định luật III, dòng 81
+  - source: the changes of the velocities made towards contrary parts are reciprocally proportional to the bodies.
+  - now: những thay đổi vận tốc theo hai hướng ngược nhau sẽ tỉ lệ nghịch với lượng vật chất của các vật thể
+  - suggest: Nguồn chỉ nói "to the bodies" (tỉ lệ nghịch với các vật thể); "lượng vật chất" là thêm vào. Sửa: "tỉ lệ nghịch với các vật thể".
+- **NHE / SAINGHIA**, Định luật II, dòng 35
+  - source: whether that force be impressed altogether and at once, or gradually and successively
+  - now: cho dù lực ấy được tác dụng cùng một lúc hay lần lượt từng phần
+  - suggest: "gradually" (dần dần) bị bỏ, "successively" dịch thành "lần lượt từng phần". Đề xuất: "cùng một lúc và tức thì, hay dần dần và nối tiếp nhau".
+- **NHE / THUATNGU**, Định luật II, dòng 33, 35 so với dòng 37
+  - source: The alteration of motion ... generates a motion ... double the motion
+  - now: Sự thay đổi của chuyển động ... lượng chuyển động gấp đôi ... Lượng chuyển động mới
+  - suggest: Cùng một từ "motion" trong Định luật II vừa dịch "chuyển động" (dòng 33) vừa "lượng chuyển động" (dòng 35, 37). Nên thống nhất một cách dịch trong Định luật II.
+- **NHE / SOLIEU**, Học luận, dòng 164-166 (công thức RS:ST)
+  - source: RS may be to ST as 3 to 2
+  - now: $$ RS\:ST=3:2. $$
+  - suggest: Mất dấu tỉ số: "\:" chỉ là khoảng trắng nên hiển thị thành "RS ST = 3:2". Số 3:2 đúng (RS=TV=3/8 RV, ST=1/4 RV). Sửa thành RS:ST=3:2 (hoặc RS : ST = 3 : 2).
+- **NHE / THIEU**, Học luận, dòng 188
+  - source: we may compare the motions between themselves, and collect the effects of the reflexion
+  - now: rồi so sánh chúng.
+  - suggest: Thiếu vế "và rút ra các hiệu quả của va chạm" (collect the effects of the reflexion).
+- **NHE / THIEU**, Học luận, dòng 114 và 118
+  - source: impresses, in equal particles of time, equal forces upon that body ... in the whole time impresses a whole force; those heights are as the velocities and the times conjunctly, or in the duplicate ratio of the velocities
+  - now: trọng lực đều tác dụng như nhau trong những khoảng thời gian bằng nhau và sinh ra những phần vận tốc bằng nhau ... độ cao đạt được tăng theo bình phương của vận tốc ấy
+  - suggest: Lược bỏ "(trọng lực) ấn vào vật những lực bằng nhau", "ấn một lực toàn phần", "(trọng lực) ấn lực và lấy đi vận tốc" (dòng 118), và "độ cao tỉ lệ với vận tốc và thời gian kết hợp, tức theo tỉ số kép của vận tốc". Nên bổ sung.
+- **NHE / THIEU**, Học luận, dòng 172
+  - source: For it is a proposition well known to geometers, that the velocity of a pendulous body in the lowest point is as the chord of the arc
+  - now: vì vận tốc của một con lắc tại điểm thấp nhất tỉ lệ với dây cung của cung mà nó đã đi qua trong khi rơi.
+  - suggest: Thiếu "một mệnh đề các nhà hình học đã biết rõ" (well known to geometers). Ngoài ra "dây cung" in đậm là nhấn mạnh do biên tập, nguồn không nhấn.
+- **NHE / THIEU**, Học luận, dòng 204-206
+  - source: the error of an inch or two ... ascribed to the difficulty of executing everything with accuracy; irregularity of the texture proceeding from other causes
+  - now: Sai số một hoặc hai inch ... có thể dễ dàng xuất hiện vì rất khó thả hai con lắc ...; cấu tạo không hoàn toàn đồng nhất của chính các vật thể
+  - suggest: Thiếu "khó thực hiện mọi việc cho chính xác" (câu mở của lời giải thích sai số) và "do các nguyên nhân khác" (texture proceeding from other causes).
+- **NHE / THUATNGU**, Học luận, dòng 160, 168
+  - source: then RV will be the retardation arising from the resistance of the air ... ST will represent very nearly the retardation during the descent
+  - now: Đoạn RV biểu thị sự mất chuyển động do sức cản của không khí ... phần chuyển động bị mất
+  - suggest: "retardation" (sự làm chậm) bị dịch thành "mất chuyển động"; cũng không nhất quán với dòng 112 dịch "retarded" là "làm chậm". Đề xuất "độ chậm đi do sức cản của không khí".
+- **NHE / THUATNGU**, Học luận, dòng 184-186
+  - source: take the product ... of the body A, by the chord of the arc TA
+  - now: lấy tích ... của lượng vật chất A với dây cung TA
+  - suggest: Nguồn viết "body A" (vật thể A), bản dịch dùng "lượng vật chất A", trong cùng đoạn các chỗ khác lại gọi A, B là "vật thể"; nên thống nhất "vật thể A" (hoặc "khối của vật thể A" nếu muốn nói khối lượng, nhưng nguồn không nói vậy).
+- **NHE / THEM**, Học luận, dòng 208
+  - source: the experiments we have been describing, by no means depending upon that quality of hardness
+  - now: không phụ thuộc vào độ cứng tuyệt đối
+  - suggest: Thêm "tuyệt đối" (nguồn chỉ nói "that quality of hardness", tính chất cứng); đồng thời bỏ vế "the rule, for the proof of which this experiment was made" (quy tắc mà thí nghiệm này dùng để chứng minh).
+- **NHE / HINH**, Chú thích Hình 2, dòng 156 (ảnh principia-090b-pendulum.png, PNG nên không đọc được nhãn)
+  - source: t will be the true place to which A should have ascended; the place l to which B should have ascended in vacuo; find the place v ... A ... return to the place r
+  - now: Các mốc R, S, T, V ghi vị trí của A trong lần thả đầu; các mốc l, k, v, s ghi vị trí của B và các điểm hiệu chỉnh sau va chạm.
+  - suggest: Chú thích gán sai: theo văn bản, s và v (cũng như r, t) là điểm của A; chỉ k và l là của B. Chú thích còn bỏ sót r, t. Đề xuất sửa hoặc bỏ phần "ghi vị trí của B" cho v, s. Không xác định được từ OCR nhãn trong ảnh.
+- **NHE / THEM**, Chú thích Hình 1 và Hình 2, dòng 128 và 156
+  - source: (nguồn không có chú thích dưới hình, chỉ có chữ "90" ở đầu trang)
+  - now: Hình 1. Hình bình hành ABDC dựng trên hai chuyển động thành phần ... (trích từ bản scan 1846, trang 90) / Hình 2. ...
+  - suggest: Hai chú thích in nghiêng nằm ngoài blockquote là lời biên tập thêm (kể cả câu nhận định về các mốc và dẫn trang). Nên chuyển vào blockquote **[Chú giải]** hoặc bỏ.
+- **NHE / CHUGIAI**, Chú giải dòng 138-148 ("Tỉ số kép của thời gian" ...)
+  - source: duplicate ratio of the times; first two Laws and the first two Corollaries; (Corollary I: parallelogram)
+  - now: "Tỉ số kép của thời gian" nghĩa là bình phương của thời gian ... quy tắc ấy sẽ gặp ở Hệ quả I, chương 03
+  - suggest: HỢP LÍ: s tỉ lệ t^2, tỉ lệ gấp đôi/gấp ba đúng; parabol với trọng lực đều và bỏ sức cản đúng; nói sáu hệ quả nằm giữa Định luật III và Học luận đúng với nguồn (Hệ quả VI ngay trước SCHOLIUM). Chương 03-07 hiện có 5 file cho 6 hệ quả (file 07 gộp V và VI) nên "tách sáu hệ quả thành chương 03 đến 07" vẫn đúng.
+- **NHE / THEM**, Định luật III (Trái Đất), dòng 265
+  - source: would give way to the greater weight, and, retiring from it, would be carried off in infinitum.
+  - now: sẽ phải tự chạy khỏi phía có trọng lượng lớn hơn và tăng tốc mãi mãi.
+  - suggest: Nguồn không nói "tăng tốc"; bỏ "và tăng tốc" hoặc dịch "bị cuốn đi mãi mãi (in infinitum)".
+- **NHE / THEM**, Định luật III (nam châm và sắt), dòng 247
+  - source: placed apart in proper vessels, are made to float by one another in standing water... they will sustain each other's pressure, and rest at last in an equilibrium
+  - now: đặt riêng trong những bình nhỏ tiếp xúc với nhau... chúng chịu tác dụng lẫn nhau và cuối cùng đi tới trạng thái cân bằng.
+  - suggest: Nguồn không nói các bình tiếp xúc nhau (chỉ "thả nổi cạnh nhau"); "sustain each other's pressure" là "đỡ áp lực của nhau", không phải "chịu tác dụng lẫn nhau". Bỏ "tiếp xúc với nhau", sửa thành "chống đỡ áp lực của nhau".
+- **NHE / THEM**, Hình 3, dòng 257
+  - source: (không có trong nguồn; nguồn chỉ có hình với nhãn trong văn bản)
+  - now: *Hình 3. Trái Đất FI bị mặt phẳng EG cắt thành hai phần ... (trích từ bản scan 1846, trang 93)*
+  - suggest: Chú thích hình in nghiêng nằm ngoài blockquote là lời biên tập thêm; nên bỏ hoặc chuyển vào blockquote Chú giải.
+- **NHE / SAINGHIA**, Định luật III, dòng 220
+  - source: the third Law, so far as it regards percussions and reflexions, is proved by a theory exactly agreeing with experience.
+  - now: Định luật III, xét đối với va chạm và phản xạ, được kiểm tra bằng một lý thuyết phù hợp với thực nghiệm.
+  - suggest: "proved" bị làm nhẹ thành "kiểm tra" và mất "exactly"; đề xuất "được chứng minh bằng một lý thuyết hoàn toàn phù hợp với thực nghiệm".
+- **NHE / CHUGIAI**, Chú giải dòng 229
+  - source: (đối chiếu nguồn) 5 to 9 và 15 to 16 nằm ở đoạn ngay trước chú giải
+  - now: Tỉ số 5/9 hay 15/16 ở đoạn sau đo việc hai vật bật trở lại mạnh đến mức nào.
+  - suggest: Hai tỉ số này ở đoạn TRÊN (dòng 218), không phải "đoạn sau"; sửa thành "ở đoạn trên".
+- **NHE / CHUGIAI**, Chú giải dòng 274
+  - source: (OCR chỉ xác nhận: A third edition of the PRINCIPIA appeared in 1726)
+  - now: Đoạn về Trái Đất này không có trong bản 1687 và xuất hiện trong các ấn bản sau.
+  - suggest: Khẳng định lịch sử về bản 1687 cần nguồn và không xác định được từ OCR; chỉ phần Motte dịch từ bản 1726 là khớp OCR. Nên dẫn nguồn hoặc bỏ.
+- **NHE / SAINGHIA**, Ròng rọc, dòng 284
+  - source: the force of a hand drawing the rope directly, which is to the weight, whether ascending directly or obliquely, as the velocity of the perpendicular ascent of the weight to the velocity of the hand
+  - now: lực của bàn tay kéo dây có thể giữ một trọng lượng khi tỉ số giữa lực tay và trọng lượng tương ứng với tỉ số giữa vận tốc đi lên theo phương thẳng đứng...
+  - suggest: Bỏ "directly" (kéo dây theo phương thẳng) và vế "whether ascending directly or obliquely" (trọng lượng đi lên thẳng hay xiên). Bổ sung hai ý này.
+- **NHE / SAINGHIA**, Nêm, dòng 290
+  - source: as the progress of the wedge in the direction of the force impressed upon it by the mallet is to the velocity with which the parts of the wood yield to the wedge
+  - now: có cùng quan hệ với quãng tiến của nêm theo hướng của lực do búa ấn vào nó, và vận tốc mà hai phần gỗ nhường
+  - suggest: Mất cấu trúc tỉ lệ "A so với B" (is to), thành "cùng quan hệ với A và B" khó hiểu; đồng thời bỏ "cleaves" (gỗ bị nêm bổ ra). Viết lại: "có cùng tỉ số với quãng tiến của nêm ... so với vận tốc mà hai phần gỗ nhường".
+- **NHE / SAINGHIA**, Máy móc, dòng 300
+  - source: will produce an acceleration of motion proportional thereto, as well in the parts of the machine as in the resisting body
+  - now: sẽ tạo ra gia tốc tương ứng trong các phần của máy và trong vật chịu cản.
+  - suggest: "proportional thereto" (tỉ lệ với phần lực còn lại) bị làm nhẹ thành "tương ứng"; đề xuất "gia tốc chuyển động tỉ lệ với phần lực dư ấy".
+- **NHE / THUATNGU**, Dòng 276, 282, 308
+  - source: determination of the forces / determination of gravity downwards / ultimate determination of the action
+  - now: xét theo phương của lực (276); hướng xuống dưới (282); hướng cuối cùng của tác dụng (308)
+  - suggest: "determination" dịch hai cách ("phương" ở dòng 276, "hướng" ở dòng 282 và 308); nên thống nhất một thuật ngữ.
+- **NHE / THIEU**, Hiệu quả máy móc, dòng 294
+  - source: The power and use of machines consist only in this, that by diminishing the velocity we may augment the force, and the contrary
+  - now: Hiệu quả và công dụng của máy móc nằm ở điều này: bằng cách giảm vận tốc, ta có thể tăng lực, và ngược lại.
+  - suggest: Mất "only" (chỉ); sửa "chỉ nằm ở điều này".
+
+## 03-he-qua-dinh-luat.md
+
+- *phần 1/1: Chuong 03, phan 1/1 (dong 1-40): Corollary I (Hệ quả I) va hinh corollary-1-parallelogram.svg; doi chieu voi ia.txt dong 3191-3211. Ban dich khong thieu/sai so voi nguon.*
+
+- **NANG / HINH**, Hệ quả I, dòng 22 (corollary-1-parallelogram.svg)
+  - source: Complete the parallelogram ABCD ... force N acts in the direction of AC, parallel to BD ... carried in the diagonal from A to D
+  - now: SVG: các điểm A(120,320) B(470,320) C(610,120) D(260,120) nối theo thứ tự A-B-C-D; AD là CẠNH (nét đứt), đường chéo thực sự là AC; BD là đường chéo, không song song AC; mũi tên dài nhất tới C, nhãn 'hợp lực' đặt cạnh D
+  - suggest: Nhãn đủ (A,B,C,D,M,N) nhưng vị trí C và D bị đổi: theo lời chứng minh các cạnh là AB, AC, và D đối đỉnh A (hình bình hành ABDC). Đổi chỗ C và D trong SVG (và alt/desc), để AD là đường chéo, BD//AC, CD//AB
+- **NANG / CHUGIAI**, Chú giải, dòng 38 (đoạn 'Việc Hệ quả I làm')
+  - source: (không có trong nguồn) Corollary II chỉ nói composition and resolution of forces are abundantly confirmed from mechanics
+  - now: Trước Newton, lực trong cơ học cổ điển được hiểu là thứ chỉ tồn tại dọc theo một đường tác dụng... Newton đưa lực vào không gian ba chiều; ký hiệu ... dựng được hơn một thế kỷ sau
+  - suggest: KHÔNG HỢP LÍ: khẳng định lịch sử không có nguồn, thiên lệch; chính nguồn nói việc hợp và phân tích lực đã được cơ học xác nhận từ trước. Gán cho Newton việc 'đưa lực vào ba chiều' cũng không có cơ sở. Bỏ hoặc viết lại thành: Hệ quả I phát biểu hợp lực bằng hình học
+- **NANG / CHUGIAI**, Chú giải, dòng 40 (đoạn 'tính chất tuyến tính')
+  - source: force N acts in the direction of the line AC, parallel to BD, this force (by the second law) will not at all alter the velocity generated by the other force M
+  - now: Nếu một lực song song với kết quả của lực kia, nó chỉ làm thay đổi vận tốc theo hướng song song, tức gia tốc của nó không có thành phần vuông góc với vận tốc cũ
+  - suggest: KHÔNG HỢP LÍ: sai vật lí. N song song BD (không song song 'kết quả' của M); gia tốc do N nói chung có thành phần cả song song lẫn vuông góc với vận tốc do M. Ý đúng: N không đổi thành phần chuyển động hướng tới đường BD (tức thành phần vuông góc BD), nên thời gian tới BD không đổi. Viết lại như vậy
+- **NHE / THEM**, Dòng 24 (chú thích hình in nghiêng, ngoài blockquote)
+  - source: (không có trong nguồn; hình trong nguồn không có chú thích)
+  - now: *Hình 1. Hai lực $M$ và $N$ cùng tác dụng tại $A$; đường chéo $AD$ là hợp lực. Sơ đồ được dựng lại từ hình minh họa trong bản gốc.*
+  - suggest: Lời biên tập thêm ngoài blockquote, kèm đánh số 'Hình 1' mà nguồn không có. Chuyển vào khối **[Chú giải]** hoặc bỏ; nếu giữ thì chỉ giữ alt text
+- **NHE / THEM**, Tiêu đề dòng 8 và summary dòng 3
+  - source: COROLLARY I.
+  - now: ## Hệ quả I. Hợp lực của hai lực
+  - suggest: Phụ đề 'Hợp lực của hai lực' do biên tập thêm, không có trong nguồn (nguồn chỉ có 'COROLLARY I.'). Đề xuất bỏ phụ đề hoặc ghi rõ là tiêu đề biên tập
+- **NHE / CHUGIAI**, Chú giải, dòng 30-32 (công thức cosin)
+  - source: (không có trong nguồn)
+  - now: F = \sqrt{M^2+N^2+2MN\cos\theta}. Kiểm tra: 10 N vuông góc -> 10\sqrt2≈14,1; ngược hướng -> 0; 60° -> \sqrt{300}≈17,3
+  - suggest: HỢP LÍ MỘT PHẦN: số liệu đúng (14,14; 0; 17,32) nhưng không định nghĩa θ (là góc giữa hai lực khi cùng gốc A, nên dùng +2MN cos θ). Thêm lời xác định θ; câu 'phép cộng vector - nhưng với hai lực thay cho hai đại lượng' mơ hồ, nên bỏ
+- **NHE / CHUGIAI**, Chú giải, dòng 36 (đoạn 'Newton không tính toán gì cả')
+  - source: (không có trong nguồn)
+  - now: Newton không tính toán gì cả... người đọc hôm nay sẽ không tìm thấy một ký hiệu vector nào trong cả chương
+  - suggest: HỢP LÍ MỘT PHẦN: phần mô tả chứng minh (BD, CD, giao điểm D, Định luật I) đúng với nguồn; nhưng 'trong cả chương' và 'đó là ngôn ngữ chuẩn mực của thế kỷ XVII' là khẳng định chung chưa có nguồn, nên giới hạn thành 'trong chứng minh này'
+
+## 04-he-qua-ii-hop-phan-tich-luc.md
+
+- *phần 1/1: Chương 04, phần 1/1 (dòng 1-60): toàn bộ Hệ quả II (bánh xe/đòn cân, mặt phẳng nghiêng, nêm, ren, kết luận), đối chiếu OCR dòng 3213-3291; kèm hình corollary-2-force-resolution.svg và 5 chú *
+
+- **NANG / THIEU**, Hệ quả II, dòng 36
+  - source: from hence are easily deduced the forces of machines, which are compounded of wheels, pullies, levers, cords, and weights, ascending directly or obliquely, and other mechanical powers
+  - now: các máy cơ, được tạo thành từ bánh xe, ròng rọc, đòn cân, dây và trọng lượng, trong đó các lực truyền theo phương trực tiếp hoặc xiên
+  - suggest: Thiếu cụm "và các lực cơ học khác (other mechanical powers)" ở cuối danh sách máy. Thêm vào.
+- **NANG / SAINGHIA**, Hệ quả II, dòng 36
+  - source: weights, ascending directly or obliquely
+  - now: trọng lượng, trong đó các lực truyền theo phương trực tiếp hoặc xiên
+  - suggest: Nguồn nói về các trọng lượng đi lên (ascending) theo phương thẳng hoặc xiên, không phải "các lực truyền". Dịch lại: "trọng lượng nâng lên theo phương thẳng hoặc xiên".
+- **NANG / CHUGIAI**, Chú giải dòng 56 (KHÔNG HỢP LÍ)
+  - source: (không có: Newton không đưa công thức lợi thế máy)
+  - now: lợi thế máy, và công thức của nó là $1/\tan\alpha$ với $\alpha$ là nửa góc nhọn của nêm
+  - suggest: Sai vật lí: với nêm lí tưởng nửa góc alpha, lực pháp tuyến lên mỗi mặt là F/(2 sin alpha) và lực ngang mỗi bên là F/(2 tan alpha), nên 1/tan(alpha) không đúng cho cả hai cách tính. Nên sửa thành 1/(2 sin alpha) hoặc bỏ công thức. Ngoài ra "Ông chứng minh bằng ba thiết bị" và "mọi tính chất của nêm đều chuyển sang ren" nói quá: Newton chỉ nói lực của ren "có thể suy ra" bằng phép phân tích tương tự.
+- **NHE / THIEU**, Hệ quả II, dòng 12
+  - source: should sustain the weights A and P by the cords MA and NP; and the forces of those weights to move the wheel were required
+  - now: Các dây MA và NP giữ lại các trọng lượng A và P. Qua tâm O, kẻ đường thẳng KOL
+  - suggest: Thiếu mệnh đề nêu yêu cầu của bài: "và cần tìm lực của các trọng lượng ấy làm bánh xe chuyển động". Thêm sau câu về các dây.
+- **NHE / SAINGHIA**, Hệ quả II, dòng 22
+  - source: If either weight is greater than in this ratio, its force to move the wheel will be so much greater
+  - now: Nếu một trong hai trọng lượng lớn hơn theo đúng tỉ số ấy, lực làm bánh xe chuyển động cũng lớn hơn tương ứng
+  - suggest: "lớn hơn theo đúng tỉ số ấy" nghe như bằng tỉ số. Nguồn: lớn hơn mức tỉ số ấy đòi hỏi. Sửa: "lớn hơn so với tỉ số ấy".
+- **NHE / THUATNGU**, Hệ quả II, dòng 22, 34, 36
+  - source: a wedge impelled with the force of a lever; the screw; levers
+  - now: một nêm được thúc bằng lực của một đòn cân; chiếc ren; đòn cân
+  - suggest: "screw" dịch là "ren" (nghĩa là đường ren, không phải vật), nên là "đinh vít/vít". "lever" dịch "đòn cân" trong khi chú giải dùng "đòn bẩy"; "balance" lại là "bàn cân". Nên thống nhất lever=đòn bẩy.
+- **NHE / THEM**, Hệ quả II, dòng 40
+  - source: (không có trong nguồn)
+  - now: Hình 2. Các sơ đồ được dựng lại từ phần chữ và sơ đồ ASCII trong bản gốc; cần đối chiếu trực tiếp với scan trước khi coi là hoàn tất.
+  - suggest: Chú thích hình in nghiêng nằm ngoài blockquote là lời biên tập thêm vào phần dịch (ghi chú quy trình). Chuyển vào chú giải hoặc bỏ.
+- **NHE / HINH**, Hệ quả II, dòng 38 (corollary-2-force-resolution.svg)
+  - source: Lời chứng minh nhắc các điểm A, P, M, N, O, K, L, D, C, H, G, Q và dây NJO (OCR có thể hỏng)
+  - now: SVG có nhãn: O, M, N, A, P, K, L (bánh xe); p, pG, pQ, pN, HN (mặt phẳng nghiêng); tiêu đề và hai dòng chữ Việt
+  - suggest: Hình thiếu nhãn điểm D và C (dùng cho AC, CD, DC, OD), H (pH, NH), điểm N ở sơ đồ mặt phẳng nghiêng chỉ xuất hiện trong chuỗi "pN/HN", không có pH, PN, G, Q riêng. Phép phân tích AD thành AC và CD của bánh xe không vẽ được. Cần bổ sung nhãn.
+- **NHE / CHUGIAI**, Chú giải dòng 50-52 (HỢP LÍ MỘT PHẦN)
+  - source: (Newton chỉ nói điểm K, L, D cố định hay không vào mặt phẳng bánh xe là như nhau)
+  - now: bánh răng cưu; Từ đây suy ra nguyên lý truyền lực; vật trượt với gia tốc $a = g\sin\theta$
+  - suggest: Lỗi gõ "cưu" (phải là "cưa"). tau=0 khi lực qua trục không tự suy ra được "nguyên lý truyền lực"; ý này đến từ nhận xét K, L, D, nên ghi rõ chỗ dựa. Gia tốc g sin(theta) và N=mg cos(theta) chỉ đúng cho mặt phẳng nhẵn, vật trượt tự do, trong khi bài của Newton là vật được dây giữ; cần ghi "mặt phẳng nhẵn".
+- **NHE / CHUGIAI**, Chú giải dòng 60 (HỢP LÍ MỘT PHẦN)
+  - source: the use of this Corollary spreads far and wide, and by that diffusive extent the truth thereof is farther confirmed. For on what has been said depends the whole doctrine of mechanics
+  - now: Câu "toàn bộ học thuyết cơ học phụ thuộc vào những điều vừa nói, nên chân lý của nó được xác nhận"; đã được chứng minh nghiêm bằng đại số vector từ thế kỷ XIX
+  - suggest: Câu đặt trong ngoặc kép là diễn giải không đúng nguyên văn và đảo thứ tự lập luận (nguồn: tính rộng của ứng dụng làm chân lý được xác nhận thêm; học thuyết cơ học phụ thuộc vào đó là câu riêng). Khẳng định "chứng minh nghiêm bằng đại số vector từ thế kỷ XIX" cần nguồn, và quy tắc hợp lực vẫn là định đề vật lí, không chỉ là đại số vector.
+
+## 05-he-qua-iii.md
+
+- *phần 1/1: Chuong 05 (05-he-qua-iii.md), phan 1/1, dong 1-58: Corollary III (phat bieu, chung minh, vi du 6/10/16, van toc sau bat lai, va cham xieu qua Corol. II) + 3 khoi Chu giai; nguon ia.txt dong *
+
+- **NANG / THIEU**, Corol. III, dong 18
+  - source: a spherical body A with two parts of velocity is triple of a spherical body B
+  - now: Giả sử một vật thể hình cầu $A$, với hai phần vận tốc, đang đuổi theo một vật thể hình cầu $B$ có mười phần vận tốc
+  - suggest: Thêm "A gấp ba B" (A is triple of B): nếu thiếu thì 6 phần chuyển động của A (2 vận tốc x 3) không có cơ sở
+- **NANG / SAINGHIA**, Corol. III, dong 18
+  - source: spherical body B which follows in the same right line with ten parts of velocity
+  - now: vật thể hình cầu $A$ ... đang đuổi theo một vật thể hình cầu $B$
+  - suggest: Đảo vai: nguồn là B đi theo sau A (B follows [A]) với mười phần vận tốc, không phải A đuổi theo B; sửa thành B đi theo A
+- **NANG / CHUGIAI**, Chu giai khoi 3, dong 56
+  - source: Resolve into perpendicular and parallel parts; assign equal changes toward contrary parts so sum/difference remains
+  - now: còn hai thành phần vuông góc thì trao đổi cho nhau
+  - suggest: KHÔNG HỢP LÍ phần này: Newton chỉ gán thay đổi bằng nhau, ngược phía (giữ tổng); "trao đổi cho nhau" chỉ đúng khi hai khối lượng bằng nhau và va chạm đàn hồi. Sửa: "hai thành phần vuông góc thay đổi bằng nhau, ngược phía, nên tổng giữ nguyên"
+- **NHE / THIEU**, Corol. III, dong 26
+  - source: the sums of the Conspiring motions 15 +1, or 16+0, and the differences of the contrary motions 17-1 and 18-2, will always be equal to 16 parts
+  - now: Như vậy, tổng của các chuyển động cùng hướng và hiệu của các chuyển động ngược hướng luôn bằng mười sáu phần
+  - suggest: Bản dịch lược mất các biểu thức cụ thể 15+1, 16+0 (tổng) và 17-1, 18-2 (hiệu); OCR đọc hỏng ("15 ,1", "16-1-0", "[S - 2") nhưng ngữ cảnh xác định được; nên thêm lại
+- **NHE / THIEU**, Corol. III, dong 24
+  - source: it will go back with 1 part, having not only lost its whole motion, but (if I may so say) one part more
+  - now: đi ngược lại với một phần sau khi mất cả chuyển động và thêm một phần nữa
+  - suggest: Thiếu lời rào đón của Newton "(if I may so say)": thêm "nếu có thể nói như vậy"
+- **NHE / KHAC**, Corol. III, dong 28
+  - source: the motions being known with which the bodies proceed after reflexion
+  - now: Nếu đã biết các chuyển động mà vật thể tiến tục sau khi bật lại
+  - suggest: Lỗi gõ "tiến tục" -> "tiếp tục"
+- **NHE / CHUGIAI**, Chu giai khoi 1, dong 44
+  - source: (khong co trong nguon)
+  - now: đây là lần đầu tiên trong vật lí, một đại luật bảo toàn được **suy ra** như hệ quả logic của các định luật khác
+  - suggest: KHÔNG HỢP LÍ về khẳng định "lần đầu tiên" (cần nguồn lịch sử, nguồn 1846 không nói vậy; Newton ở Scholium nhắc quy tắc va chạm của Wren/Huygens); bỏ hoặc nêu nhẹ hơn. Phần còn lại (động lượng, ví dụ 15+1 và 18-2 đều =16) HỢP LÍ
+- **NHE / CHUGIAI**, Chu giai khoi 2, dong 48-52
+  - source: Newton enumerates cases (3,4,5,9,10,11,12 parts)
+  - now: ông đang chứng minh tính bất biến, không phải giải bài toán; ví dụ kiểm chứng 4,4 và 1,4; 7,2 phần
+  - suggest: HỢP LÍ MỘT PHẦN: phép tính kiểm lại đúng (3*4,4+2*1,4=16; năng lượng 31=31; A nhận thêm 7,2), nhưng "Newton liệt kê... thay vì đưa công thức" gán động cơ; nên nói "ông chỉ chứng minh tính bất biến của tổng" bỏ phần suy đoán ý định
+- **NHE / CHUGIAI**, Chu giai khoi 3, dong 58
+  - source: From such kind of reflexions also sometimes arise the circular motions of bodies about their own centres. But these are cases which I do not consider in what follows
+  - now: Điều ông thừa nhận không làm được ... Newton biết là còn dở và nói thẳng ra trong sách
+  - suggest: HỢP LÍ MỘT PHẦN: Newton chỉ nói "I do not consider" (không xét) và "too tedious" (quá dài dòng), không nói không làm được hay còn dở; sửa thành "ông không xét" và bỏ gán ý. Phần năng lượng sang chuyển động quay / moment động lượng là đúng vật lí nhưng "phần năng lượng còn lại" mơ hồ
+
+## 06-he-qua-iv-trong-tam-chung.md
+
+- *phần 1/1: Chuong 06, phan 1/1 (dong 1-54): Corollary IV (nguon ia.txt dong 3354-3418), phan dich + 4 khoi Chu giai. Khong co hinh.*
+
+- **NANG / SAINGHIA**, Hệ quả IV, dòng 26
+  - source: and much less the common centre of gravity of the others with which that action does not intervene
+  - now: và càng không bị thay đổi vì trọng tâm chung của những vật thể khác, những vật thể mà tác dụng ấy không can thiệp vào
+  - suggest: Sai chủ ngữ/quan hệ: nguồn nói trọng tâm chung của các vật thể khác (không dính vào tác dụng ấy) càng không bị đổi trạng thái; bản dịch lại nói trọng tâm hai vật thể bị đổi "vì" trọng tâm của các vật thể khác. Sửa: "và càng không có thay đổi nào ở trọng tâm chung của những vật thể khác mà tác dụng ấy không can dự vào".
+- **NANG / CHUGIAI**, Chú giải, dòng 54 (đoạn "Bổ sung cho đủ")
+  - source: (không có trong nguồn; Newton chỉ nói trọng tâm đứng yên hoặc chuyển động đều thẳng trừ khi có lực ngoài)
+  - now: tâm khối của một hệ sao bị khoá trong quả cầu bằng nhau ở đứng yên ... mỗi thành phần quay với bán kính tương ứng khối lượng của mình
+  - suggest: KHÔNG HỢP LÍ: câu "hệ sao bị khoá trong quả cầu bằng nhau ở đứng yên" vô nghĩa/hỏng; "đứng yên" sai vì tâm khối có thể chuyển động đều; "bán kính tương ứng khối lượng" mơ hồ (đúng là tỉ lệ nghịch với khối lượng). Viết lại hoặc bỏ.
+- **NHE / CHUGIAI**, Chú giải, dòng 52
+  - source: the same law takes place in a system consisting of many bodies as in one single body
+  - now: Đây là nguyên lý giảm, và nó chính là thứ cho phép giải bài toán hành tinh ... ý sẽ được dùng lại suốt Phần I
+  - suggest: HỢP LÍ MỘT PHẦN: "nguyên lý giảm" không rõ nghĩa (lỗi thuật ngữ/gõ?); "Phần I" không rõ là gì; gán ý định/phạm vi sử dụng cho Newton ("dùng lại suốt", "giải bài toán hành tinh") mà bản Corollary không viết, cần nguồn hoặc nới lời.
+- **NHE / CHUGIAI**, Chú giải, dòng 38-40
+  - source: (Corollary dùng "centre of gravity"; không có nội dung về Sách III)
+  - now: nhưng chính ông sẽ chứng minh ở Sách III rằng trọng lực thay đổi theo khoảng cách và theo vị trí, nên ở đó hai tâm ấy tách ra
+  - suggest: HỢP LÍ MỘT PHẦN: phần vật lí (tâm khối theo khối lượng, tâm trọng lực theo trọng lượng, trùng khi trọng trường đều) đúng; khẳng định lịch sử Newton "chứng minh ở Sách III rằng hai tâm tách ra" không có trong nguồn này và cần nguồn, nên nói nhẹ hơn.
+- **NHE / CHUGIAI**, Chú giải, dòng 46-48
+  - source: and so on in infinitum
+  - now: Nhưng thế kỷ XVII thì không, và quy nạp của Newton là một bước hợp lý chứ không phải điều hiển nhiên
+  - suggest: HỢP LÍ MỘT PHẦN: tính toán đúng (trung bình trọng số), nhưng nhận định "thế kỷ XVII thì không hiển nhiên" là khẳng định lịch sử không có nguồn; nên nới hoặc bỏ.
+- **NHE / CHUGIAI**, Chú giải, dòng 42-44
+  - source: the distances ... are reciprocally as the bodies
+  - now: d1/d2 = m2/m1 ... 2 và 6 cách nhau 8 ... 6 và 2; a_CM = 10/5 = 2; (2*5+3*(-10/3))/5 = 0
+  - suggest: HỢP LÍ: các phép kiểm số đúng (6:2=3=6/2; 10/5=2; 10-10=0). Lỗi nhỏ: dùng $\vec a_1=5$ như đại lượng vô hướng, và "khối lượng" thay cho "vật thể" của Newton nhưng đã nêu rõ là chú giải hiện đại.
+- **NHE / SAINGHIA**, Hệ quả IV, dòng 14
+  - source: Therefore if any number of bodies move uniformly in right lines, the common centre of gravity of any two of them
+  - now: nếu có bất kỳ số điểm nào chuyển động đều theo những đường thẳng, trọng tâm chung của hai điểm bất kỳ trong số đó
+  - suggest: Nguồn nói "bodies" (vật thể), bản dịch viết "điểm" ở hai chỗ, lệch với "vật thể" ở câu sau trong cùng đoạn. Sửa thành "vật thể".
+- **NHE / SAINGHIA**, Hệ quả IV, dòng 16
+  - source: the common centre of those two and that of a third body
+  - now: trọng tâm chung của hai trọng tâm ấy và của một vật thể thứ ba
+  - suggest: Nguồn: trọng tâm chung của hai vật thể ấy và của vật thể thứ ba; bản dịch "hai trọng tâm ấy" lệch đối tượng. Sửa: "hai vật thể ấy".
+- **NHE / THIEU**, Hệ quả IV, dòng 12
+  - source: demonstrated here after in Lem. XXIII and its Corol.
+  - now: Điều này sẽ được chứng minh ở Hệ quả của Lemma XXIII
+  - suggest: Bản dịch chỉ nhắc Hệ quả của Lemma XXIII, bỏ chính Lemma XXIII ("Lem. XXIII and its Corol."). Sửa: "ở Lemma XXIII và Hệ quả của nó".
+
+## 07-he-qua-v-vi-chuyen-dong-tuong-doi.md
+
+- *phần 1/1: Chuong 07, phan 1/1 (dong 1-44): Corollary V, Corollary VI (ban dich dong 8-22 khop nguon ia.txt 3420-3453, khong thieu/them/sai nghia/thuat ngu; khong co hinh; Chu giai dong 24-44 co van de*
+
+- **NANG / CHUGIAI**, Chu giai Cor. V, dong 34 (KHONG HOP LI: vi du so tu mau thuan)
+  - source: (nguon khong co vi du so; Chu giai la loi bien tap)
+  - now: tau chay V = 20 m/s, nguoi tren tau nem bong voi 20,5 m/s ... Nguoi tren bo thay bong bay 20,5 m/s; nguoi tren tau thay 0,5 m/s
+  - suggest: Sai: neu bong 20,5 m/s so voi tau thi nguoi tren bo thay 40,5 m/s; neu 20,5 m/s so voi bo thi tren tau thay 0,5 m/s. Sua mot trong hai cach hieu cho nhat quan
+- **NHE / CHUGIAI**, Chu giai Cor. V, dong 34
+  - source: (khong co trong nguon)
+  - now: Hai nguoi mo ta cung mot su kien giong het nhau
+  - suggest: Hai nguoi do duoc van toc KHAC nhau; chi cac dinh luat va chuyen dong tuong doi giong nhau. Sua cau cho dung (HOP LI MOT PHAN)
+- **NHE / CHUGIAI**, Chu giai Cor. V, dong 32
+  - source: the differences of the motions tending towards the same parts, and the sums of those that tend towards contrary parts, are ... in both cases the same
+  - now: cac hieu va cac tong cua van toc khong doi khi dich chuyen ca he quy chieu voi cung mot V
+  - suggest: Newton noi ve cac 'chuyen dong' (luong chuyen dong) huong cung/nguoc phia, khong phai 'van toc'; tong van toc cua hai vat khong bat bien khi doi he quy chieu (chi hieu/van toc tuong doi bat bien). Nen noi ro 'van toc tuong doi'
+- **NHE / CHUGIAI**, Chu giai Cor. V, dong 36
+  - source: A clear proof of which we have from the experiment of a ship
+  - now: Thi nghiem tren con tau khong phai vi du bo sung, ma la cach ong chung minh chuyen dong deu khong the nhan ra bang mat hay bang co hoc
+  - suggest: Gan y dinh cho Newton va them 'bang mat' (nguon khong viet). Nguon chi noi day la bang chung ro rang tu thi nghiem tau. Nen viet sat nguon (HOP LI MOT PHAN)
+- **NHE / CHUGIAI**, Chu giai Cor. V, dong 40
+  - source: (khong co trong nguon)
+  - now: Phep bien doi tren lay V la bat ky ... He qua V chi dung o cho no noi: voi moi van toc thuong, khong rieng anh sang
+  - suggest: Mau thuan noi tai ('V bat ky' roi 'van toc thuong') va cau cuoi kho hieu; ket luan ve anh sang/Lorentz la loi bien tap hien dai, khong phai Newton, nen ghi ro. Cau 'thoi gian tro thanh khong dong nhat' qua mo ho (HOP LI MOT PHAN)
+- **NHE / CHUGIAI**, Chu giai Cor. VI, dong 44
+  - source: If bodies ... are urged ... by equal accelerative forces, they will all continue to move among themselves after the same manner
+  - now: Nganh ky thuat goi day la khung tang toc deu, va suy ra ngay tinh quan tinh cua gia toc ... bi ap luc tang them ma ... khong phan biet duoc 'tang toc len' voi 'hap dan manh hon'
+  - suggest: Khang dinh 'nganh ky thuat goi' khong co nguon; 'suy ra tinh quan tinh cua gia toc' vo nghia; 'ap luc ma' dung la luc/trong luong bieu kien; nguyen ly tuong duong la cua Einstein, khong phai Newton, can ghi ro. Cor. VI chi noi chuyen dong tuong doi giua cac vat khong doi (KHONG HOP LI PHAN LON)
+
+## 08-hoc-luan-thoi-gian-khong-gian-noi-chon-chuyen-dong.md
+
+- *phần 1/2: Chương 08, phần 1/2 (dòng 1-59): mở đầu Scholium, mục I (thời gian), mục II (không gian) và 2 chú giải; nguồn ia.txt dòng 2848-2881. Không có hình trong phần này. Phần dịch không thiếu câu n*
+- *phần 2/2: Chương 08, phần 2/2 (dòng 60-118): Scholium mục III (Nơi chốn), mục IV (chuyển động tuyệt đối và tương đối, ví dụ con tàu/thủy thủ 10010-10-1), đoạn thời gian tuyệt đối trong thiên văn; 3 ch*
+
+- **NANG / SAINGHIA**, Mục II, dòng 42
+  - source: they do not remain always numerically the same
+  - now: nhưng chúng không luôn có cùng giá trị số
+  - suggest: "numerically the same" nghĩa là đồng nhất về số (cùng một cái), không phải cùng giá trị số; ví dụ ngay sau nói về các phần khác nhau của không gian. Sửa: "nhưng không luôn là cùng một không gian (về số)" hoặc "không luôn đồng nhất về số".
+- **NANG / CHUGIAI**, Chú giải mục I, dòng 26
+  - source: (Newton nói thời gian trôi đều; nguồn không có đoạn nào về đối xứng hay bảo toàn)
+  - now: nếu các định luật vật lí không đổi dưới phép dịch chuyển không gian thì phải tồn tại một đại lượng bất biến... "thời gian trôi đều"... là điều bắt buộc phải có
+  - suggest: KHÔNG HỢP LÍ: phát biểu định lí Noether sai (đối xứng dịch thời gian cho năng lượng bảo toàn; đối xứng dịch không gian cho động lượng; đại lượng đó là đại lượng bảo toàn, không phải đại lượng bất biến) và lạc sang "không gian" trong đoạn về thời gian; kết luận "bắt buộc phải có nếu vật lí tồn tại" là quá lời. Nên bỏ hoặc viết lại.
+- **NANG / CHUGIAI**, Chú giải mục I, dòng 28
+  - source: (Newton chỉ nêu định nghĩa; không nói lí do cần thời gian tuyệt đối)
+  - now: Ông cần thời gian tuyệt đối để lập luận có chỗ đứng... ông chưa có ý tưởng hấp dẫn truyền tín hiệu nên không có cách nào khác
+  - suggest: KHÔNG HỢP LÍ: gán động cơ và lập luận cho Newton mà Scholium không viết; vế "chưa có ý tưởng hấp dẫn truyền tín hiệu... không có cách nào khác" là suy diễn lịch sử không nguồn. Nên bỏ hoặc nêu rõ là nhận định của người biên tập.
+- **NANG / CHUGIAI**, Chú giải mục II, dòng 52
+  - source: a space of our air, which relatively... remains always the same, will at one time be one part of the absolute space into which the air passes
+  - now: vì không khí chảy qua nó... Nếu không có gió, hai cách gọi ấy sẽ trùng nhau
+  - suggest: KHÔNG HỢP LÍ: Newton lập luận bằng việc Trái Đất chuyển động ("if the earth moves"), không phải gió; không có gió thì hai cách gọi vẫn khác nhau khi Trái Đất chuyển động. Sửa: bỏ ý "không khí chảy qua nó" và câu về gió; nói thể tích không khí đứng yên đối với Trái Đất vẫn đi qua các phần khác nhau của không gian tuyệt đối vì Trái Đất chuyển động.
+- **NANG / CHUGIAI**, Chú giải mục II, dòng 56
+  - source: (nguồn mục II không có câu nào về "đường thẳng" hay lí do Newton cần không gian tuyệt đối)
+  - now: Newton cần không gian tuyệt đối vì... khi ông viết "vật thể chuyển động theo một đường thẳng"... cả cuốn sách sụp đổ
+  - suggest: KHÔNG HỢP LÍ: gán động cơ cho Newton và đặt trong ngoặc kép một câu ông không viết ở đây; "cả cuốn sách sụp đổ" là quá lời. Nên bỏ ngoặc kép, đánh dấu là suy luận của người biên tập hoặc bỏ.
+- **NANG / THIEU**, dòng 106 (cuối đoạn thời lượng, sau "bằng phương trình thiên văn")
+  - source: The necessity of which equation, for determining the times of a phaenomenon, is evinced as well from the experiments of the pendulum clock, as by eclipses of the satellites of Jupiter.
+  - now: (không có; grep "quả lắc
+  - suggest: con lắc|Mộc" không thấy trong ch.08, 09, 10 ngoài dòng không liên quan)|Thêm câu: Sự cần thiết của phương trình ấy, để xác định thời điểm của một hiện tượng, được chứng tỏ cả bằng các thí nghiệm với đồng hồ quả lắc lẫn bằng các lần nguyệt thực/che khuất của các vệ tinh Mộc tinh (OCR: eclipses of the satellites of Jupiter)
+- **NANG / CHUGIAI**, dòng 112 (chú giải 3, đoạn 1)
+  - source: (Newton chỉ nói: natural days are truly unequal; astronomers correct this inequality)
+  - now: quỹ đạo Trái Đất chậm ở điểm cận nhật và nhanh ở điểm xa nhật, nên ngày mùa hạ dài hơn ngày mùa đông
+  - suggest: KHÔNG HỢP LÍ: đảo chiều (Trái Đất nhanh nhất ở cận nhật, chậm nhất ở viễn nhật), và kết luận mùa hạ/mùa đông cũng ngược. Câu "Ngày thiên văn cổ nhất", "Babylon và Ai Cập ... đồng hồ bám sao" lủng củng và chưa có nguồn. Nên viết lại hoặc xóa; nếu giữ thì nêu cả độ nghiêng hoàng đạo
+- **NANG / CHUGIAI**, dòng 118 (chú giải 3, đoạn cuối)
+  - source: the true, or equable, progress of absolute time is liable to no change
+  - now: Cả ý "tiến trình đều không chịu thay đổi nào" thì sai. ... gia tốc bản toàn cục làm chậm đồng hồ đang rơi, đo được bằng thí nghiệm Pound-Rebka năm 1959 ở mức vài phần nghìn ... Hệ quả VI của chương trước đã gợi ý
+  - suggest: KHÔNG HỢP LÍ: "gia tốc bản toàn cục" vô nghĩa/lỗi gõ; Pound-Rebka đo dịch chuyển đỏ hấp dẫn của photon (đồng hồ ở thấp chạy chậm hơn, không phải "đồng hồ đang rơi"; "không nằm ở ánh sáng" mâu thuẫn với chính thí nghiệm); độ chính xác thí nghiệm gốc (1959-60) không phải "vài phần nghìn"; Hệ quả VI không gợi ý nguyên lý tương đương. Phán xét "sai" là đem thuyết tương đối áp ngược cho Newton mà không nêu rõ. Nên xóa hoặc viết lại có nguồn
+- **NANG / CHUGIAI**, dòng 94 (chú giải 1, đoạn 3)
+  - source: Thus in a ship under sail ... a sailor walks in the ship towards the east, with 1 part ... relatively on the earth towards the west, with a velocity of 9 of those parts.
+  - now: thí nghiệm duy nhất người đời khi đó có thể thực hiện ... Newton cần một tình huống mà kết quả hợp lý lại đến mức vô lý - thủy thủ bước đi một bước thì bị đẩy lùi 9 phần
+  - suggest: KHÔNG HỢP LÍ: gán động cơ cho Newton không có trong văn bản; khẳng định lịch sử vô căn cứ ("thí nghiệm duy nhất", tàu buồm "khá gần với đứng yên", "chưa từng bị nghi ngờ"); hiểu sai ví dụ: thủy thủ không "bị đẩy lùi 9 phần" mỗi bước, 9 là vận tốc tương đối với Trái Đất theo hướng tây. Nên xóa đoạn
+- **NHE / CHUGIAI**, Chú giải mục II, dòng 54
+  - source: (không có trong nguồn)
+  - now: không gian tuyệt đối của Newton được thay bằng phép tịnh tiến... x' = x - Vt... Khi phép tịnh tiến trộn lẫn không gian và thời gian
+  - suggest: HỢP LÍ MỘT PHẦN: x' = x - Vt là phép đổi hệ quy chiếu chuyển động đều (Galileo), không phải "tịnh tiến" thuần; phép trộn không gian-thời gian là phép biến đổi Lorentz; và Galileo không "thay" không gian tuyệt đối mà là cách nói khác của tính tương đối của chuyển động đều. Cần sửa thuật ngữ.
+- **NHE / CHUGIAI**, Chú giải mục II, dòng 58
+  - source: Absolute space... remains always similar and immovable
+  - now: Hệ quả là không tồn tại không gian ưu tiên, mọi hệ quy chiếu ngang nhau
+  - suggest: HỢP LÍ MỘT PHẦN: "Hệ quả" không rõ của điều gì, và mâu thuẫn với bản dịch ngay trên (không gian tuyệt đối bất động); "mọi hệ quy chiếu ngang nhau" chỉ đúng cho hệ quán tính. Cần nói rõ đây là quan điểm vật lí hiện đại.
+- **NHE / CHUGIAI**, Chú giải mục I, dòng 24
+  - source: (Newton không có đoạn nào về Leibniz-Clarke)
+  - now: nếu thời gian là thực thể độc lập thì khoảng thời gian không có sự vật... vũ trụ từng chứa vô hạn thời gian rỗng, mà thời gian rỗng không khác gì hư vô
+  - suggest: HỢP LÍ MỘT PHẦN: Leibniz-Clarke là có thật, nhưng lập luận gốc của Leibniz dựa vào nguyên lí lí do đầy đủ (vì sao Thượng đế tạo thế giới lúc này chứ không lúc khác), không phải "thời gian rỗng là hư vô"; cần nguồn hoặc nói nhẹ hơn.
+- **NHE / CHUGIAI**, Chú giải mục I, dòng 30-32
+  - source: (không có trong nguồn)
+  - now: Chỗ này sai rõ ràng... Δt = Δt0/√(1 - v²/c²)... không gian tuyệt đối theo nghĩa Newton cũng không còn giữ được
+  - suggest: HỢP LÍ MỘT PHẦN: công thức giãn thời gian đúng dạng nhưng không nói Δt0 là thời gian riêng; "sai rõ ràng" là giọng phán xét một văn bản thế kỉ XVII, nên nói là "không phù hợp với thuyết tương đối hẹp"; ý "không gian tuyệt đối không còn giữ được" chưa có lập luận.
+- **NHE / CHUGIAI**, Chú giải mục I, dòng 28
+  - source: (không có trong nguồn)
+  - now: và toán bộ sẽ tan
+  - suggest: Lỗi gõ: "toán bộ" -> "toàn bộ".
+- **NHE / CHUGIAI**, Chú giải mục II, dòng 50
+  - source: (không có trong nguồn)
+  - now: Đây là mệnh đề triết học nặng nhất trong Principia
+  - suggest: HỢP LÍ MỘT PHẦN: đánh giá chủ quan, nên bỏ hoặc làm nhẹ ("một trong những mệnh đề triết học quan trọng nhất").
+- **NHE / CHUGIAI**, dòng 114-116 (chú giải 3, đoạn 2-3)
+  - source: we collect it, by means of the astronomical equation
+  - now: Ông cần thời gian tuyệt đối để làm việc với Định luật II ... ông không tuyên bố có thể đo thời gian tuyệt đối, chỉ nói ... mọi phép đo là xấp xỉ có hiệu chỉnh ... giữa bốn mốc đó độ chênh lệch lên tới vài phút
+  - suggest: HỢP LÍ MỘT PHẦN: gán động cơ ("cần ... để làm việc với Định luật II") không có nguồn; "bốn mốc" không được định nghĩa ở trên; Newton nói ta THU được thời lượng từ các thước đo bằng phương trình thiên văn, nên "không tuyên bố có thể đo" nhẹ tay hơn dòng 106 một chút; độ chênh "vài phút" mơ hồ. Nên làm rõ/bỏ động cơ
+- **NHE / CHUGIAI**, dòng 98 (chú giải 1, đoạn 4)
+  - source: (không có trong Newton)
+  - now: Ở thế kỷ XVII, vector chưa tồn tại ... Đó là lý do Hệ quả I phải đi trước Hệ quả V
+  - suggest: HỢP LÍ MỘT PHẦN: ý "Newton chỉ làm với các đoạn cùng phương" là suy đoán, và "đó là lý do" gán ý đồ sắp xếp cho Newton mà không nguồn; Hệ quả I (hình bình hành) quả có cho phép tổng hợp chuyển động không cùng phương nên chính câu này tự mâu thuẫn với "chỉ làm được với đoạn thẳng cùng phương". Nên viết lại thận trọng hoặc bỏ
+- **NHE / CHUGIAI**, dòng 92 (chú giải 1, đoạn 2)
+  - source: velocity of 10010 parts / 10 / 1 part / 10001 / 9
+  - now: $\vec{v}_{thuy\,thu} = \vec{v}_{Trái\,Đất} + ...$ ; 10010 - 10 = 10000; 10 - 1 = 9; 10010 - 9 = 10001
+  - suggest: HỢP LÍ: số học đúng. Lỗi nhỏ: chỉ số dưới LaTeX "thuy\,thu" thiếu dấu (thủy thủ), và phép cộng vector chưa ghi quy ước dấu (đông dương, tây âm)
+- **NHE / SAINGHIA**, dòng 74
+  - source: that part of its cavity which the body fills, and which therefore moves together with the ship
+  - now: phần khoang tàu mà vật thể lấp đầy. Vì vậy, vật thể ấy chuyển động cùng với con tàu.
+  - suggest: Chủ ngữ của "which ... moves together with the ship" là phần khoang (nơi chốn tương đối), không phải vật thể. Đề xuất: ... mà vật thể lấp đầy, và do đó phần ấy chuyển động cùng với con tàu
+- **NHE / THUATNGU**, dòng 64
+  - source: For the places of equal solids are always equal
+  - now: Nơi chốn của những vật thể rắn bằng nhau luôn bằng nhau
+  - suggest: "solids" ở đây là các vật thể có thể tích bằng nhau (đại lượng khối), "vật thể rắn" dễ hiểu thành vật cứng. Đề xuất: những vật thể có thể tích bằng nhau (hoặc "những khối bằng nhau")
+- **NHE / THUATNGU**, dòng 64 và 66
+  - source: not the situation ... Positions properly have no quantity
+  - now: không nói vị trí hay bề mặt ... Vị trí, đúng nghĩa, không có lượng
+  - suggest: "situation" và "positions" cùng dịch thành "vị trí" trong cùng một đoạn, trong khi Newton dùng hai từ khác nhau (và chương 09 dùng "vị trí" cho "situation"). Đề xuất: dịch "situation" khác (ví dụ "vị thế" hoặc "tình trạng đặt") và thống nhất với chương 09
+- **NHE / THEM**, dòng 100
+  - source: (không có trong nguồn)
+  - now: ## Thời gian tuyệt đối trong thiên văn
+  - suggest: Tiêu đề do người biên tập thêm ngoài blockquote, nguồn không có tiêu đề này (đoạn này là phần tiếp của Scholium, cùng mạch với mục IV). Đề xuất: bỏ tiêu đề hoặc để trong chú giải
+
+## 09-hoc-luan-bat-bien-thoi-gian-khong-gian.md
+
+- *phần 1/1: Chương 09, phần 1/1 (dòng 1-84): toàn bộ Scholium từ "As the order of the parts of time is immutable" (ia.txt dòng 2940) đến "true motion does by no means consist in such relations" (dòng 30*
+
+- **NANG / CHUGIAI**, Chú giải 2, dòng 52-62 (KHÔNG HỢP LÍ)
+  - source: no other places are immovable but those that, from infinity to infinity, do all retain the same given position one to another
+  - now: chuyển động tương đối chỉ có nghĩa khi truy ngược ... Mặt Trời so với sao cố định - và đó là chỗ dừng
+  - suggest: Chú giải tự mâu thuẫn và sai lệch: (1) nói chỗ dừng là sao cố định, trong khi bản dịch dòng 34 và chính chú giải 1 nói có thể ở xa hơn sao cố định; (2) nói chuyển động "tương đối" cần truy tới nơi bất động, đúng ra đó là điều kiện để xác định chuyển động tuyệt đối; (3) "mọi hệ quy chiếu quán tính đều thỏa mãn điều kiện đó" sai vì các hệ quán tính chuyển động đều đối với nhau không giữ nguyên vị trí đối với nhau, và Newton nói đến một không gian bất động duy nhất; (4) "tìm bằng thí nghiệm" không có cơ sở trong đoạn. Đề xuất viết lại hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải 3, dòng 76-84 (KHÔNG HỢP LÍ)
+  - source: True motion is neither generated nor altered, but by some force impressed upon the body moved
+  - now: người ngồi trên xe đạp vẫn đứng yên so với chiếc xe, và đó không phải vì có lực nào giữ ông ta
+  - suggest: Ví dụ xe đạp sai/tối nghĩa (người ấy đứng yên so với xe vì cùng chuyển động, và vẫn có lực tiếp xúc tác dụng); câu "chỉ cần các vật thể dùng làm mốc chuyển động" cụt nghĩa; "Vật thể giữ nguyên vận tốc là đang ở trạng thái nghỉ trong hệ quy chiếu ấy" sai (vận tốc không đổi khác với nghỉ); "Ông biết, và ông tránh..." gán cho Newton nhận thức mà văn bản không nêu; "a không đổi khi không chịu lực" nên là a = 0. Đề xuất sửa các câu này
+- **NHE / THUATNGU**, Dòng 12
+  - source: It is from their essence or nature that they are places
+  - now: Chính bản chất hay bản chất của chúng làm cho chúng trở thành nơi chốn
+  - suggest: "essence" và "nature" bị dịch cùng một từ nên lặp "bản chất hay bản chất"; đề xuất "bản thể (hay bản chất)" hoặc "thực thể hay bản tính"
+- **NHE / SAINGHIA**, Dòng 68
+  - source: that relation may be changed, in which the relative rest or motion of this other body did consist
+  - now: thay đổi quan hệ mà sự nghỉ hoặc chuyển động tương đối của vật thể khác ấy được xác định
+  - suggest: "consist" (cấu thành bởi quan hệ ấy) bị dịch thành "được xác định"; đề xuất "quan hệ mà sự nghỉ hoặc chuyển động tương đối của vật thể kia vốn cấu thành từ đó"
+- **NHE / CHUGIAI**, Chú giải 1, dòng 24-32 (HỢP LÍ MỘT PHẦN)
+  - source: it follows that absolute rest cannot be determined from the position of bodies in our regions
+  - now: Ông buộc phải thừa nhận điều ấy, vì ở mục II và mục IV ... mục III lại dùng chính các phép đo tương đối để định nghĩa chúng
+  - suggest: Ý chính (không xác định được nghỉ tuyệt đối từ vị trí) đúng và Hệ quả V đúng với x' = x - Vt; nhưng "buộc phải thừa nhận" là suy đoán động cơ, câu về mục II/III/IV mơ hồ (đối chiếu chương 08), "không phải một khiêm tốn lịch sử", "không bỏ mạng lưới" khó hiểu. Đề xuất gọn lại và bỏ phần động cơ
+
+## 10-hoc-luan-luc-huong-tam-chuyen-dong-that.md
+
+- *phần 1/1: Chuong 10, phan 1/1 (dong 1-92): Scholium sau Dinh nghia (ia.txt dong 3026-3127), tu "effects which distinguish absolute from relative motion" den "For to this end it was that I composed it"*
+
+- **NANG / THIEU**, Dong 80 (cau cuoi doan, truoc chu giai 2)
+  - source: "For to this end it was that I composed it."
+  - now: "...sẽ được giải thích đầy đủ hơn trong phần trình bày tiếp theo." (hết câu, không có câu cuối)
+  - suggest: Thêm câu cuối: "Vì chính vì mục đích này mà tôi đã soạn nó." (bỏ nguyên một câu của Newton)
+- **NANG / SAINGHIA**, Dong 58
+  - source: they do strain the sacred writings, who there interpret those words for the measured quantities.
+  - now: những người hiểu các từ ấy trong những lời sách thiêng là những người làm căng nghĩa của chúng
+  - suggest: Thiếu "for the measured quantities": "những người trong đó hiểu các từ ấy là chính các đại lượng được đo thì làm căng nghĩa của sách thiêng". Bản dịch hiện làm mất nội dung phân biệt thước đo và đại lượng được đo
+- **NANG / CHUGIAI**, Dong 40
+  - source: (không phải của Newton)
+  - now: trong hệ quán tính không có lực ly tâm nào, nước chỉ đơn giản đi thẳng thay vì đi thẳng theo vòng tròn
+  - suggest: KHONG HOP LI: câu vô nghĩa ("đi thẳng thay vì đi thẳng") và sai vật lí: nước quay cùng bình vẫn bị gia tốc hướng tâm nhờ gradient áp suất nên mặt lõm. Viết lại: trong hệ quán tính, áp suất tạo lực hướng tâm giữ nước chuyển động tròn, mặt lõm là hệ quả
+- **NANG / CHUGIAI**, Dong 42
+  - source: (không phải của Newton)
+  - now: Cả hai đều dự đoán mặt nước lõm y hệt. ... Đây chính là phản biện của Mach, và Newton không có câu trả lời.
+  - suggest: HOP LI MOT PHAN: khẳng định thành sự thật điều mà cơ học Newton không dự đoán (vũ trụ quay quanh bình đứng yên thì mặt phẳng); tương đương này chỉ là giả thuyết kiểu Mach. Mach (1883) là phản biện về sau, Newton không thể "trả lời". Nên nêu là giả thuyết/nguồn
+- **NANG / CHUGIAI**, Dong 90
+  - source: (không phải của Newton)
+  - now: moment và động lượng là hai vector vuông góc với nhau ... Newton không có khái niệm vector nên không thấy mạch nối, nhưng ông đã có đúng hình học của nó.
+  - suggest: KHONG HOP LI: moment lực và momen động lượng không vuông góc nói chung (chỉ trong tiến động con quay lực vuông góc L); Newton chỉ viết về mặt sau/mặt trước và tăng/giảm sức căng, không nói tiến động; "ông đã có đúng hình học" là gán không nguồn. Bỏ hoặc viết lại
+- **NANG / CHUGIAI**, Dong 92 và 86-88
+  - source: (không phải của Newton)
+  - now: ý rằng chuyển động quay ... bảo toàn ... moment của động lượng ... Con quay tàu, chuyển động quản trị của Trái Đất, mạng định hướng vệ tinh và MEMS đều là hệ quả của phát hiện ở đoạn này.
+  - suggest: KHONG HOP LI: gán cho Newton phát hiện bảo toàn moment động lượng và các ứng dụng hiện đại trong đoạn này; Newton chỉ nêu thí nghiệm tưởng tượng hai quả cầu nối dây ("we might"), không "tìm ra cách thực nghiệm". τ=dL/dt là định luật moment, không phải bảo toàn. Lỗi gõ/lạ: "Con quay tàu", "chuyển động quản trị" (tiến động?), "mạng định hướng"; câu cuối "tự thừa nhận khó nhất... chưa giải quyết" bỏ qua việc Newton nói sức căng dây phân biệt được
+- **NHE / THUATNGU**, Dong 46
+  - source: corresponding to only one power of endeavouring to recede from its axis of motion
+  - now: tương ứng với chỉ một quyền lực cố gắng rời xa trục quay của nó
+  - suggest: "power of endeavouring" là năng lực/khả năng nỗ lực rời trục, không phải "quyền lực"; đề xuất "một năng lực nỗ lực rời xa trục"
+- **NHE / SAINGHIA**, Dong 58
+  - source: Nor do those less defile the purity of mathematical and philosophical truths
+  - now: cũng làm mất đi sự trong trẻo của chân lý toán học và triết học
+  - suggest: "defile" là làm ô uế, và "Nor do those less" là "cũng không kém"; đề xuất "cũng làm ô uế sự thuần khiết của chân lý toán học và triết học không kém"
+- **NHE / KHAC**, Dong 22
+  - source: the water showed no tendency to the circumference
+  - now: Nước không có xu hướng về phía chu viên
+  - suggest: "chu viên" có vẻ là lỗi gõ; đề xuất "chu vi" hoặc "vành ngoài"
+- **NHE / SAINGHIA**, Dong 48
+  - source: destitute of any real effect, any otherwise than they may perhaps partake of that one only true motion
+  - now: hoàn toàn không có tác dụng thật, trừ khi chúng có thể tham gia vào chuyển động thật duy nhất ấy
+  - suggest: Bỏ "perhaps" (có lẽ); đề xuất "trừ khi chúng có lẽ tham gia vào..."
+- **NHE / CHUGIAI**, Dong 36 và 44
+  - source: (không phải của Newton)
+  - now: Ông cần điều đó, vì toàn bộ cấu trúc hấp dẫn của ông đứng trên chỗ lực hướng tâm có một tâm cố định ; Cùng hiệu ứng ấy lại cho ta đo tốc độ quay của Trái Đất: con lắc Foucault
+  - suggest: HOP LI MOT PHAN: gán động cơ cho Newton ("ông cần điều đó") không có nguồn; con lắc Foucault là hiệu ứng Coriolis, không phải "cùng hiệu ứng" ly tâm; "Chỗ Newton chỉ ra" nên là "Điều Newton chỉ ra". Số 32 giờ khớp (24/sin 48,9° là khoảng 31,9 giờ)
+
+## 11-sach-i-phan-i-ty-so-gioi-han.md
+
+- *phần 1/1: Chương 11, phần 1/1 (dòng 1-58): tiêu đề Section I, Lemma I, Lemma II (không có Lemma III trở đi trong chương), hai khối Chú giải, hình Lemma II. Đối chiếu ia.txt dòng 3754-3811.*
+
+- **NANG / HINH**, Lemma II, dòng 56 (lemma-2-inscribed-circumscribed.svg)
+  - source: nhãn trong lời chứng minh: A, a, B, C, D, E, K, L, M, b, c, d, l, m, n, o
+  - now: SVG chỉ có nhãn: Aa, A, a, b, c, d, E, AE
+  - suggest: Hình thiếu các nhãn B, C, D, K, L, M, l, m, n, o mà chứng minh nhắc (AB, K6, ABla, aKbl, bLcm, cMdn, AalbmcndoE). Nhãn "Aa" và "AE" được đặt như nhãn điểm ở góc dưới, không nhất quán với A (góc trên) và a (nằm trên đường cong, x=210). Cần vẽ lại theo scan.
+- **NANG / CHUGIAI**, Chú giải Lemma I, dòng 20-24
+  - source: Quantities ... which converge continually to equality and approach nearer than by any given difference, become ultimately equal.
+  - now: Lemma I là định nghĩa giới hạn theo kiểu epsilon-delta; "Điều Lemma I khẳng định là ∀ε ∃N ∀n≥N
+  - suggest: a_n-b_n|<ε. Tương đương với lim a = lim b ⇒ lim(a-b)=0"|KHÔNG HỢP LÍ. Lemma I là mệnh đề (nếu sai khác nhỏ hơn mọi sai khác đã cho thì cuối cùng bằng nhau), không phải định nghĩa; công thức biên tập nêu chính là GIẢ THIẾT chứ không phải kết luận (kết luận là bằng nhau), và gọi nó "tương đương" là sai; đó là epsilon-N chứ không phải epsilon-delta; "được dùng nguyên vẹn sau ba trăm năm" là khẳng định lịch sử không nguồn. Viết lại: Lemma I tương ứng ý "nếu |a_n-b_n|<ε với mọi ε thì a_n=b_n ở giới hạn".
+- **NANG / CHUGIAI**, Chú giải Lemma I, dòng 26-30
+  - source: (không có trong nguồn: Zeno, định luật I và II, đối thủ)
+  - now: "Ông cần nền tảng để rồi mới chứng minh được định luật I và II ... Ông hiểu rõ các nghịch lý của Zeno ... đối thủ của ông sẽ tấn công ... ngôn ngữ hệ quân ... Điều ngày nay không còn chấp nhận là coi các đại lượng vô hạn nhỏ như thể chúng có thật."
+  - suggest: KHÔNG HỢP LÍ. Gán cho Newton động cơ (tránh Zeno, đối phó đối thủ) mà văn bản không viết; "định luật I và II" không xuất hiện trong Lemma I; tiêu đề nói "tỷ số giới hạn" trong khi Newton nói "tỷ số đầu và cuối"; "hệ quân" là lỗi gõ (vô nghĩa); câu cuối sai vì giải tích không chuẩn chấp nhận vô cực bé chặt chẽ. Nên bỏ hoặc viết lại không gán động cơ.
+- **NANG / CHUGIAI**, Chú giải Lemma II, dòng 48
+  - source: the rectangle under one of their bases K6 and the sum of their altitudes Aa, that is, the rectangle ABla
+  - now: "một hình chữ nhật có một cạnh bằng tổng các đáy bằng nhau AB và một cạnh bằng chiều cao tổng cộng ... nên O_n - I_n = AB·h"
+  - suggest: KHÔNG HỢP LÍ MỘT PHẦN. "tổng các đáy bằng nhau AB" mâu thuẫn bản dịch ngay trên (một đáy K6 = AB, tổng các CHIỀU CAO là Aa) và mâu thuẫn công thức AB·h; Lemma I chỉ cho "bằng nhau cuối cùng", không cho sự tồn tại giá trị chung; chưa nói bước này cần các hình bình hành sắp đều theo một chiều (đường cong đơn điệu) như hình của Newton. Sửa "một cạnh bằng một đáy AB".
+- **NHE / THIEU**, Lemma II, dòng 40
+  - source: Q.E.D.
+  - now: (không có)
+  - suggest: Thêm "Q.E.D." cuối chứng minh Lemma II (một mục nhẹ cho cả phần).
+- **NHE / THIEU**, Lemma II, dòng 36 và 40
+  - source: I say, that the ultimate ratios ... are ratios of equality; ... and much more will the intermediate curvilinear figure be ultimately equal to either
+  - now: hình cong trung gian cũng sẽ cuối cùng bằng với mỗi hình trong hai hình ấy
+  - suggest: Câu phát biểu thiếu "tôi nói rằng"; "much more" (càng hơn nữa, vì hình cong nằm giữa) bị dịch thành "cũng". Dịch: "càng hơn nữa, hình cong trung gian sẽ cuối cùng bằng ...".
+- **NHE / THUATNGU**, Lemma II, dòng 40
+  - source: becomes less than any given space
+  - now: sẽ nhỏ hơn bất kỳ một không gian đã cho nào
+  - suggest: "space" ở đây là miền/diện tích; "không gian" dễ hiểu thành không gian ba chiều. Đề xuất "bất kỳ miền (diện tích) đã cho nào".
+- **NHE / KHAC**, Lemma II, dòng 34 và 36
+  - source: Ab, Be, Cd, &c. / AB, BC, CD, &c. / Bb, Cc, Dd, &c. / aKbl, bLcm, cMdn, &c. (OCR đọc fyc., ^c., §*c.)
+  - now: Ab, Be, Cd, dc / AB, BC, CD, dc / Bb, Cc, Dd, dc / aKbl, bLcm, cMdn, dc
+  - suggest: "dc" là lỗi OCR của "&c." bị chép nguyên như một nhãn điểm. Sửa thành "v.v." (hoặc &c.). Tương tự "K7, Lw, M//, Do" ở dòng 38 là OCR hỏng, không xác định được từ OCR nhãn đúng.
+- **NHE / THEM**, Hình Lemma II, dòng 58
+  - source: (không có trong nguồn)
+  - now: *Hình 3. Sơ đồ được dựng lại từ hình minh họa trong bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập in nghiêng nằm ngoài blockquote Chú giải; nên chuyển vào Chú giải hoặc comment HTML. Nguồn không có chú thích hình.
+- **NHE / HINH**, Lemma II, dòng 56
+  - source: Figure: lines Aa, AE, curve acE (không có chữ "chữ thập" hay chú thích)
+  - now: alt/title "Hình chữ thập"; trong SVG thêm chữ "đường cong", "các hình bình hành nội tiếp", "đường thẳng ngoại tiếp"
+  - suggest: Tên "Hình chữ thập" không thuộc nội dung Lemma II; các chữ chú thích tiếng Việt trong hình do biên tập thêm, và nhãn "đường thẳng ngoại tiếp" không có trong nguồn. Đáy cuối trong SVG (x 650 đến 820) dài hơn các đáy khác (140), trái giả thiết đáy bằng nhau.
+- **NHE / CHUGIAI**, Chú giải Lemma II, dòng 50-54
+  - source: (không có trong nguồn)
+  - now: "để chứng minh phần dư nhỏ lại tuyến tính ... phần cứng nhất về mặt toán học trong toàn bộ cơ học của ông ... tổng Riemann chính là các hình chữ nhật Newton vẽ ... Nếu bỏ bước này, phép tích thế kỷ XVII chưa đủ sức chứng minh định luật Kepler."
+  - suggest: KHÔNG HỢP LÍ. Gán ý đồ ("để chứng minh ...") không có trong văn bản; "phần cứng nhất" và nhận định về định luật Kepler là khẳng định không nguồn; so với tổng Riemann và "lý thuyết độ đo" là gượng, anachronistic. Phần đầu (Lemma II = định lý kẹp, đoạn dòng 44-46) HỢP LÍ.
+
+## 12-sach-i-phan-i-lemma-iii-v.md
+
+- *phần 1/1: Chuong 12, phan 1/1 (dong 1-70): Lemma III (+Hq 1-4), Lemma IV (+Hq), Lemma V, hai khoi Chu giai. Doi chieu voi ia.txt dong 3813-3889. Chuong khong co anh.*
+
+- **NANG / SAINGHIA**, Lemma IV, Hệ quả, dòng 54
+  - source: the sum of the parts will always be as the sum of the parallelograms
+  - now: tổng của các phần sẽ luôn bằng tổng của các hình bình hành
+  - suggest: "as" là tỉ lệ với: sửa thành "luôn tỉ lệ với tổng của các hình bình hành" (các phần lấy theo tỷ lệ của hình bình hành, không bằng nhau)
+- **NANG / THUATNGU**, Lemma III Hệ quả 2, 3, 4, dòng 20, 24, 28
+  - source: the rectilinear figure comprehended under the chords ... curvilinear limits of rectilinear figures
+  - now: Hình chữ nhật được bao bởi các dây cung ... các giới hạn đường cong của những hình chữ nhật
+  - suggest: "rectilinear figure" là hình thẳng (hình đa giác), không phải hình chữ nhật; sửa "hình thẳng/hình đa giác" nhất quán ở cả ba Hệ quả (chú giải dòng 34 cũng trích lại sai)
+- **NANG / CHUGIAI**, Chú giải Lemma III, dòng 30-42
+  - source: COR. 2-4 chỉ nói tổng hình bình hành, hình nội tiếp/ngoại tiếp bằng dây cung hoặc tiếp tuyến trùng với hình cong (diện tích)
+  - now: Hệ quả 2 là "giới hạn của tương phân"; Hệ quả 3 là đạo hàm; Hệ quả 4 là "tích phân của một đạo hàm trả lại chính hàm gốc"
+  - suggest: KHÔNG HỢP LÍ: các Hệ quả nói về giới hạn diện tích đa giác -> hình cong (gần tích phân), không nói đạo hàm hay định lý cơ bản; Hệ quả 2 không nói tỷ số dây cung; đoạn "ông cần chúng cho hình học cơ học... ông hiểu chúng là một phép tính duy nhất" gán động cơ/hiểu biết cho Newton không có nguồn. Nên viết lại hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải Lemma V, dòng 60-70
+  - source: In similar figures ... the areas are in the duplicate ratio of the homologous sides (Lemma V là một Lemma)
+  - now: Việc Newton tuyên bố nó như một định nghĩa thay vì một bổ đề ... ông phải biết trước nó không cùng loại với độ dài
+  - suggest: HỢP LÍ MỘT PHẦN: phần luật lũy thừa L^2, L^3 đúng; nhưng "định nghĩa thay vì bổ đề" sai sự kiện (nguồn ghi LEMMA V), còn "người Hy Lạp... phải chờ trực giác nhân số chiều" và ý đồ của Newton về diện tích quét là khẳng định lịch sử/gán ý không nguồn. Bỏ hoặc sửa
+- **NHE / THEM**, Lemma III dòng 10 và Hệ quả 2 dòng 20
+  - source: breadth AB, BC, DC, fyc., of the parallelograms ... chords of the evanescent arcs ab, bc, cd, (fee.,
+  - now: bề rộng AB, BC, DC, dc ... các cung tiêu biến ab, be, cd, dc
+  - suggest: "fyc"/"&c." (vân vân) bị dịch thành nhãn "dc" (thêm một bề rộng/cung không có); "be" là OCR hỏng của "bc". Sửa: "AB, BC, DC, v.v." và "ab, bc, cd, v.v."
+- **NHE / SAINGHIA**, Lemma III Hệ quả 2, dòng 20
+  - source: Much more will the rectilinear figure ... ultimately coincide with the curvilinear figure
+  - now: sẽ càng rõ hơn khi trùng khớp với hình cong
+  - suggest: bỏ "ultimately" (cuối cùng/ở giới hạn) và "Much more" bị diễn đạt lệch ("càng rõ hơn"); đề xuất "Huống chi hình thẳng ... cuối cùng cũng trùng khớp với hình cong"
+- **NHE / THIEU**, Lemma IV Hệ quả, dòng 52
+  - source: any-how divided into an equal number of parts ... the first to the first, the second to the second, and so on in order
+  - now: được chia thành cùng một số phần ... các phần tương ứng có một tỷ số đã cho với nhau
+  - suggest: thiếu "anyhow" (chia bằng cách nào cũng được) và vế "phần thứ nhất với phần thứ nhất, phần thứ hai với phần thứ hai, cứ thế theo thứ tự"
+- **NHE / THIEU**, Lemma III (dòng 12) và Lemma IV (dòng 48)
+  - source: Q.E.D. (cuối chứng minh Lemma III và Lemma IV)
+  - now: không có
+  - suggest: thiếu Q.E.D. ở cuối hai chứng minh (chỉ báo một mục)
+- **NHE / THUATNGU**, Lemma III dòng 10; Lemma IV dòng 48
+  - source: ratios of equality; (by composition)
+  - now: các tỷ số bằng nhau; theo cách cộng
+  - suggest: "ratio of equality" là tỷ số đẳng (bằng 1), "by composition" là phép hợp tỷ lệ thức; đề xuất "tỷ số bằng đẳng/tỷ số bằng một" và "theo phép hợp tỉ lệ thức"
+- **NHE / HINH**, Lemma III-IV, cả chương
+  - source: no figure in this section? (Lemma III nhắc FAaf, AB, BC, DC; Lemma IV nhắc AacE, PprT)
+  - now: chương không có ảnh nào, trong khi lời văn dựa vào nhãn hình
+  - suggest: không xác định được từ OCR hình có nằm ở chương khác không; cần chèn hoặc ghi chú hình Lemma II-IV (chương không có ![...](../assets/...))
+- **NHE / CHUGIAI**, Chú giải Lemma III, dòng 42
+  - source: -
+  - now: cùng cái giới hạn ấy định nghĩa tốc độ biến đổi của trường vận tốc và của trường ứng su
+  - suggest: lỗi gõ "ứng su" -> "ứng suất"; câu "định nghĩa tích phân bằng độ đo" cũng là khẳng định chung chung ngoài nội dung Lemma
+
+## 13-sach-i-phan-i-lemma-vi-x.md
+
+
+- **NANG / SAINGHIA**, Học luận (Scholium) dòng 110
+  - source: that is to say, that A and -£• arc one to the other in a given ratio (OCR hỏng, không đọc được phân số; câu ngay trước nêu A tăng giảm cùng tỷ số với B X C X 1/D)
+  - now: Nói cách khác, A và \frac{1}{D} có tỷ số đã cho với nhau.
+  - suggest: Theo thứ nguyên và theo câu ngay trước, đại lượng so với A phải là B×C×1/D (tức BC/D), không phải riêng 1/D. Đối chiếu lại bản scan; nếu đúng thì sửa thành A và BC/D.
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 112-124 (Lemma X, Hệ quả 4-5, Học luận)
+  - source: Lemma X: spaces described by any finite force, whether determined and immutable, or continually augmented or diminished, are in the very beginning of the motion in the duplicate ratio of the times
+  - now: Lemma X cho s ∝ t^2, và Hệ quả 4 suy ra từ đó gia tốc không đổi... Ông cần chứng minh lực hút phải nghịch với bình phương khoảng cách... Đây là mạch lập luận Galileo đã dùng
+  - suggest: KHÔNG HỢP LÍ. Lemma X đúng cho lực bất kỳ (kể cả đổi theo thời gian), chỉ ở thời điểm ban đầu, nên không suy ra gia tốc không đổi; hằng số trong s=½at² là a/2 chứ không phải a. Đoạn gán chiến lược chứng minh nghịch đảo bình phương cho Lemma X là bịa và tự mâu thuẫn; các câu Galileo, đầu tiên của kinh học hiện đại, phân tích thứ nguyên là khẳng định lịch sử hoặc anachronism không có nguồn. Nên viết lại hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải thứ nhất, dòng 40-52 (Lemma VI-VII, Hệ quả 3)
+  - source: Lemma VI chỉ nói góc giữa dây cung và tiếp tuyến biến mất; Lemma VII chỉ nói tỷ số giới hạn của cung, dây cung, tiếp tuyến bằng nhau (ratio of equality)
+  - now: dù ông không hề dùng ngôn ngữ giới hạn... Lemma VII còn định lượng quan hệ giữa cung và dây cung... sai số là bậc cao hơn c... gần một điểm, mọi trường đều thay bằng gradient... ta đang dùng chính Lemma VI
+  - suggest: KHÔNG HỢP LÍ. Nguồn chính nó dùng khái niệm tỷ số giới hạn (ultimate ratio) nên câu Newton không dùng ngôn ngữ giới hạn là sai; Lemma VII không định lượng bậc sai số; tiêu đề gán cho Newton việc định nghĩa đạo hàm; câu gradient và vật rơi gần mặt đất dùng Lemma VI là sai hoặc lệch vấn đề; Hệ quả 2 chỉ cho thay các đoạn liệt kê chứ không phải mọi đoạn thẳng.
+- **NHE / THUATNGU**, Lemma VI, dòng 16
+  - source: an angle equal to a rectilinear angle
+  - now: một góc bằng một góc thẳng
+  - suggest: Trong tiếng Việt toán học, góc thẳng là góc bẹt 180 độ nên gây hiểu sai. Nên dịch là góc rectilinear (góc tạo bởi hai đường thẳng) hoặc góc giữa hai đường thẳng.
+- **NHE / THEM**, Dòng 10 (chú thích Hình 4, ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 4. Sơ đồ tổng hợp được dựng lại từ các hình trong bản gốc; cần đối chiếu từng ký hiệu với scan.*
+  - suggest: Lời biên tập nằm ngoài phần Chú giải. Đưa vào comment HTML hoặc vào blockquote Chú giải, hoặc bỏ.
+- **NHE / HINH**, Dòng 8, lemmas-vi-x-diagrams.svg, nhãn trên: A B D C; R A B D; A E B C
+  - source: Lemma VI: angle RAD; Lemma VIII: triangles RAB, RACB, RAD, rAb, rAcb, rAd; Lemma IX: D, E, F, G, d, e, b, c, f, g
+  - now: Hình VI-VII có A B D C nhưng không có R (góc RAD). Hình VIII không có C (cung ACB, tam giác RACB) và không có b d r. Hình IX-X thiếu D, F, G, d, e, b, c, f, g (hình chỉ có A E B C)
+  - suggest: Chữ R ở Lemma VI, C ở Lemma VIII, D F G và các điểm có chữ thường ở Lemma IX không có trong nhãn svg. Hình là sơ đồ tổng hợp, không khớp lời chứng minh theo nhãn. Cần vẽ lại theo từng hình nguồn.
+- **NHE / HINH**, Dòng 8, hàng dưới của svg: nhãn A, t, v₁, v₂ và các chữ đường cong đồng dạng, diện tích tam giác, cung và dây cung
+  - source: Lemma IX-X dùng A, D, E, B, C, các đường AD AE (thời gian) và DB EC (vận tốc); không có t, v₁, v₂ trong nguồn
+  - now: (nhãn t, v₁, v₂ và chú thích tiếng Việt trong hình)
+  - suggest: Hình có nhãn t, v₁, v₂ và chú thích hình không có trong nguồn (thêm). Các nhãn D, B bị thiếu ở khung IX-X khớp với Lemma X (AD, AE, DB, EC).
+- **NHE / SOLIEU**, Lemma IX, dòng 72
+  - source: Let the curve A be be similar to the curve A BC ... curvilinear areas AW, Ace will coincide with the rectilinear areas A/rf, Age (OCR hỏng)
+  - now: các đường cong Abe và ABC đồng dạng... các diện tích cong ABf, Ace sẽ trùng với các diện tích thẳng Abf, Age
+  - suggest: Chữ cái điểm không nhất quán: đường cong qua b và c phải là Abc (e là điểm trên đường thẳng); diện tích cong ABf lẫn B hoa và b thường; diện tích thẳng Abf trùng chữ với diện tích cong, trong khi OCR A/rf gần Adf và nó phải có cạnh Ad, Ae (Lemma V). Không xác định được hoàn toàn từ OCR; cần đối chiếu scan.
+- **NHE / THUATNGU**, Lemma IX dòng 68 và Lemma X dòng 78, 82
+  - source: duplicate ratio of the sides (IX); duplicate ratio of the times (X)
+  - now: tỷ lệ bậc hai của các cạnh (IX, dòng 68, 72, 74); tỷ số bậc hai của các thời gian (X, dòng 78, 82)
+  - suggest: Cùng một thuật ngữ (duplicate ratio) dịch hai cách: tỷ lệ bậc hai và tỷ số bậc hai. Cũng lẫn tỷ số với tỉ số, tỉ lệ với tỷ lệ. Nên thống nhất một cách.
+- **NHE / THIEU**, Lemma VII, VIII, IX, X (cuối mỗi chứng minh)
+  - source: Q.E.D. (cuối Lemma VII, VIII, IX, X)
+  - now: (không có Q.E.D. ở các chứng minh này)
+  - suggest: Thiếu Q.E.D. cuối bốn chứng minh (báo một mục cho cả phần).
+
+## 14-sach-i-phan-ii-dinh-ly-ve-dien-tich.md
+
+- *phần 1/1: Chương 14, phần 1/1 (dòng 1-90): Sách I Phần II, Proposition I (Theorem I) và Hệ quả 1-6, kèm Hình 5 và 2 khối chú giải; đối chiếu ia.txt dòng 4246-4358. Phần dịch Newton: không thấy thiếu c*
+
+- **NANG / CHUGIAI**, Chú giải 1 (Kepler thứ hai), dòng 34
+  - source: SBc equal to SAB (equal bases, same height); SBC equal to SBc because SB and Cc are parallel
+  - now: Mọi tam giác SAB, SBC đều bằng nhau chỉ vì chúng có cùng một đáy và cùng một chiều cao hạ từ S
+  - suggest: KHÔNG HỢP LÍ: SAB=SBc nhờ đáy AB=Bc; SBC=SBc nhờ Cc song song SB (hệ quả của xung lực hướng tâm). SAB và SBC không cùng đáy. Viết lại hai bước
+- **NANG / CHUGIAI**, Chú giải 1, dòng 42 (bóng đá)
+  - source: (nguồn không đề cập)
+  - now: nó là lý do bóng đá bay theo đường cong mà không cần lực tâm nào
+  - suggest: KHÔNG HỢP LÍ: đường cong của bóng đá do hiệu ứng Magnus (xoáy + không khí) và trọng lực, không phải hệ quả của bảo toàn moment động lượng. Bỏ ví dụ này
+- **NANG / CHUGIAI**, Chú giải 1, dòng 38-42
+  - source: Cor. 6: "the same things do all hold good... move uniformly forward"; không có "chứng minh thêm"
+  - now: tiêu đề "Ông dùng nó như định lý giả định, khi chưa cần biết lực là gì"; "Hệ quả 6 phải chứng minh thêm"; "Kepler đo diện tích từ năm 1609... không có từ nào..."
+  - suggest: KHÔNG HỢP LÍ MỘT PHẦN: tiêu đề khó hiểu; Hệ quả 6 chỉ phát biểu dựa vào Hệ quả 5 của các Định luật chứ không "chứng minh thêm"; câu về Kepler là khẳng định lịch sử không nguồn, nên bỏ hoặc dẫn nguồn
+- **NANG / CHUGIAI**, Chú giải 2 (Hệ quả 1), dòng 58
+  - source: Cor. 1: velocity reciprocally as the perpendicular on the tangent
+  - now: Nhân với khoảng cách r ta được bv = r²θ̇ = h; mỗi conic ứng với một giá trị riêng của h²/μ - tham số quyết định quỹ đạo là tròn, elip hay hyperbol
+  - suggest: KHÔNG HỢP LÍ MỘT PHẦN: bv=h đúng nhưng phải nhân v với b, không nhân với r; h²/μ là tham số nửa trực (semi-latus rectum), loại conic (tròn/elip/hyperbol) do năng lượng (độ lệch tâm) quyết định, không do h²/μ một mình
+- **NANG / CHUGIAI**, Chú giải 2, dòng 64
+  - source: Cor. 2: diagonal BV "will pass through the centre of force" (dùng để xác định hướng về tâm); Cor. 3 về tỷ số lực
+  - now: Hệ quả 2 và 3 còn cho ông công cụ dựng quỹ đạo: ... nên biết hai điểm và tâm là dựng được
+  - suggest: KHÔNG HỢP LÍ: Hệ quả 2-3 cho phương về tâm và tỷ số lực, văn bản không nói dựng quỹ đạo từ hai điểm và tâm; câu này gán công dụng không có trong Newton. Bỏ hoặc sửa
+- **NANG / CHUGIAI**, Chú giải 2, dòng 64 ("Vì sao ông cần công thức này")
+  - source: (nguồn không nêu động cơ)
+  - now: Ông cần nó để suy ra rằng cùng một lực... Việc ông cần Hệ quả 6 cũng cho thấy ông hiểu ngay từ đầu rằng quy luật này phải sống sót qua phép dịch chuyển quán tính
+  - suggest: KHÔNG HỢP LÍ: gán động cơ và ý định cho Newton không có trong văn bản hay nguồn; đổi thành mô tả điều Hệ quả nói
+- **NHE / THIEU**, Proposition I, dòng 28 (cuối chứng minh)
+  - source: "...will, in this case also, be proportional to those times. Q.E.D."
+  - now: Đoạn kết kết thúc ở "...tỷ lệ với những thời gian ấy." không có Q.E.D.
+  - suggest: Thêm "Q.E.D." cuối chứng minh Proposition I (chỉ báo một mục cho cả phần)
+- **NHE / THEM**, Dòng 46, chú thích hình in nghiêng ngoài blockquote
+  - source: (nguồn không có chú thích hình này)
+  - now: *Hình 5. Sơ đồ được dựng lại từ hình minh họa trong bản gốc; cần đối chiếu các đường bán kính và tiếp tuyến với scan.*
+  - suggest: Lời biên tập ngoài blockquote tính là thêm; chuyển vào blockquote Chú giải hoặc comment HTML (số "Hình 5" cũng không xác định được từ OCR)
+- **NHE / HINH**, Dòng 44, proposition-1-equal-areas.svg
+  - source: Lời chứng minh dùng c, Bc, Cc, SADS, SAFS (và V, Z ở Hệ quả 2-3)
+  - now: Nhãn <text> của SVG: S,A,B,C,D,E,F,SAB,SBC,SCD và chữ "các tam giác có diện tích bằng nhau"
+  - suggest: Hình thiếu điểm c (và đường Bc, Cc song song BS) mà chứng minh dựa vào; hình không có V, Z cho Hệ quả 2-3; nên bổ sung hoặc ghi rõ hình chỉ minh họa phần nào
+- **NHE / CHUGIAI**, Chú giải 2, dòng 66
+  - source: (nguồn không đề cập)
+  - now: Hệ quả 1 là hình thức đầu tiên của phép tách ấy; tán sao từ khoảng cách xa...; hai vật thể cùng tốc độ nhưng lệch tâm một chút sẽ có quỹ đạo khác hẳn nhau
+  - suggest: HỢP LÍ MỘT PHẦN: "hình thức đầu tiên" là khẳng định lịch sử không nguồn; "tán sao" có vẻ lỗi gõ (tán xạ); "khác hẳn" là nói quá; nên làm nhẹ
+
+## 15-sach-i-phan-ii-proposition-ii-iii.md
+
+- *phần 1/1: Chương 15, phần 1/1 (dòng 1-96): Prop II (Case 1-2, Cor 1-2, Scholium), Prop III (chứng minh, Cor 1-4, Scholium), 3 khối Chú giải. Không có ảnh trong phần này nên không có mục HINH.*
+
+- **NANG / SAINGHIA**, Prop II Hệ quả 1, dòng 26
+  - source: deviate therefrom in consequentia or towards the parts to which the motion is directed, if the description of the areas is accelerated; but in antecedentia, if retarded
+  - now: lệch khỏi điểm ấy về phía những phần mà chuyển động đang hướng tới, nếu ... tăng tốc; nhưng lệch về phía trước nếu ... bị chậm lại
+  - suggest: Thuật ngữ "in consequentia" bị bỏ (OCR đọc "in. consequently"), còn "in antecedentia" bị dịch thành "về phía trước", nên hai vế gần như trùng nghĩa. Giữ nguyên hai thuật ngữ La-tinh (có thể kèm giải thích) để vế tăng tốc và vế chậm lại đối lập nhau rõ.
+- **NANG / SOLIEU**, Prop II Trường hợp 1, dòng 16
+  - source: (by Prop. XL. Book 1, Elem. and Law II)
+  - now: theo Proposition X, Sách I, và Định luật II
+  - suggest: OCR đọc "Prop. XL. Book 1, Elem." (số La Mã X hay XL không chắc, chữ L hay bị OCR lẫn). Bản dịch ghi "Proposition X, Sách I", làm mất "Elem." nên người đọc sẽ hiểu là Prop. X của Sách I Principia. Sửa thành viện dẫn Proposition thứ ... Sách I của Elements (Euclid), đúng số theo nguồn, và giữ chữ "Elem.".
+- **NANG / THIEU**, Prop III chứng minh, dòng 56
+  - source: and (by Cor. 6 of the Laws) if both bodies are urged in the direction of parallel lines, by a new force equal and contrary to that by which the second body T is urged
+  - now: Nếu cả hai vật thể được thúc theo phương của những đường thẳng song song bởi một lực mới bằng và ngược với lực thúc vật thể T
+  - suggest: Mất viện dẫn "(by Cor. 6 of the Laws)" (OCR đọc "Cor. 0", con số không xác định được từ OCR). Thêm "theo Hệ quả ... của các Định luật" ở đầu câu.
+- **NANG / THIEU**, Prop III Hệ quả 1, dòng 64
+  - source: (whether that force is simple, or, according to Cor. 2 of the Laws, compounded out of several forces), we subduct (by the same Cor.) that whole accelerative force
+  - now: dù lực ấy là đơn giản hay tạo thành từ nhiều lực, ta trừ đi toàn bộ lực gia tốc thúc vật thể T
+  - suggest: Mất hai viện dẫn "according to Cor. 2 of the Laws" và "(by the same Cor.)". Thêm "theo Hệ quả 2 của các Định luật" và "(cũng theo Hệ quả ấy)".
+- **NANG / CHUGIAI**, Chú giải 1, dòng 36-38 (KHÔNG HỢP LÍ)
+  - source: Cor. 1: forces deviate from the point ... if the description of the areas is accelerated; but in antecedentia, if retarded (chỉ định tính)
+  - now: Hệ quả 1 rồi định lượng phần sai lệch; F_theta = mr theta''; theta'' = -2 theta'^2 / r; F_theta = -2m h^2 / r^3
+  - suggest: Sai. (1) Hệ quả 1 chỉ nói định tính, không định lượng. (2) Công thức đúng là F_theta = m(r theta'' + 2 r' theta'), bị bỏ số hạng 2 r' theta'. (3) Từ h = r^2 theta' không đổi suy ra theta'' = -2 r' theta'/r, không phải -2 theta'^2/r (sai thứ nguyên), và khi h không đổi thì F_theta = 0, mâu thuẫn với kết luận rằng "diện tích lệch hằng số thì xuất hiện lực 1/r^3". Nên viết lại hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải 1, dòng 44 (KHÔNG HỢP LÍ)
+  - source: (không có trong nguồn)
+  - now: Lực tỉ lệ nghịch đảo bậc ba ... xuất hiện trong trường của dòng điện thẳng, trong thế năng từ, và trong lực hút giữa hai dây dẫn thẳng ... tự khuếch đại theo 1/r^3
+  - suggest: Sai vật lí: trường và lực của dây thẳng tỉ lệ 1/r, không phải 1/r^3. Khẳng định "sai lệch nhỏ tự khuếch đại theo 1/r^3" không có cơ sở (chỉ xuất phát từ công thức sai ở trên). Bỏ hoặc sửa.
+- **NANG / CHUGIAI**, Chú giải 2, dòng 90 và 94-96 (KHÔNG HỢP LÍ)
+  - source: Cor. 4: T at rest, areas very unequal: action of centripetal force to T is none or mixed with other forces; Scholium: why may we not use equable description of areas as an indication of a centre
+  - now: (F/m_L - F/m_T); "Với T đứng yên, mọi lực đều hướng về nó"; "ông cảnh báo rằng quy luật diện tích đều không chứng minh có lực hướng tâm"
+  - suggest: (1) Theo định luật III, lực lên T là -F nên gia tốc tương đối là F(1/m_L + 1/m_T), dấu trừ sai; "bất độn" là lỗi gõ. (2) "Với T đứng yên mọi lực đều hướng về nó" đảo với Hệ quả 4 (T đứng yên, diện tích rất không đều thì không có lực hướng tâm về T hoặc bị lẫn lực khác). (3) Học luận của Newton nêu diện tích đều như dấu hiệu của tâm, không phải lời cảnh báo như chú giải viết; "cơ sở thực nghiệm sai lầm" và "Newton dùng Mặt Trời như tâm bất động gần đúng" là gán ghép không nguồn. Viết lại.
+- **NHE / SAINGHIA**, Prop III Học luận, dòng 82
+  - source: the equable description of areas indicates that a centre is respected by that force with which the body is most affected
+  - now: việc mô tả diện tích đều cho biết một tâm là nơi mà lực mạnh nhất tác dụng lên vật thể
+  - suggest: Bản dịch đổi chủ ngữ. Nguồn nói tâm là điểm được lực ấy "respected" (hướng tới), và lực ấy là lực tác động nhiều nhất lên vật thể. Dịch lại: ... một tâm được lực mà vật thể chịu tác dụng nhiều nhất ấy hướng tới.
+- **NHE / THUATNGU**, Prop II Học luận dòng 50 và Prop III dòng 58
+  - source: neither augment nor diminish the quantity of the described surface; now left to itself
+  - now: sẽ không làm tăng hay giảm lượng của mặt phẳng được mô tả; nay được để mặc định
+  - suggest: "described surface" (diện tích/mặt được quét) bị dịch là "mặt phẳng được mô tả", trùng với "plane" ở câu trên và có thể gây hiểu nhầm. "left to itself" dịch "được để mặc định" gượng, nên là "được để mặc cho chính nó".
+- **NHE / THIEU**, Cả chương (Prop II dòng 18 và Prop III dòng 60)
+  - source: Q.E.D. ở cuối Case 1 và Prop III; "CS, &c."
+  - now: không có "Q.E.D." và "v.v." sau CS
+  - suggest: Mục nhẹ gộp: thiếu Q.E.D. và "&c." sau "đường thẳng CS". Thêm lại.
+- **NHE / CHUGIAI**, Chú giải 1, dòng 42 (HỢP LÍ MỘT PHẦN)
+  - source: (không có trong nguồn)
+  - now: Ông biết trước hành tinh quay quanh Mặt Trời ... Việc ông viết Hệ quả 2 ... cho thấy ông đang dò biên của lập luận
+  - suggest: Gán động cơ cho Newton mà không có nguồn ("ông xây lý thuyết theo hướng ngược", "dò biên"). Đoạn gọi Học luận là "điều hiện đại" cũng cần đối chiếu: Học luận chỉ nói lực vuông góc mặt phẳng không đổi lượng quét. Bỏ hoặc nêu thành nhận xét của người biên tập.
+
+## 16-sach-i-phan-ii-proposition-iv.md
+
+- *phần 1/1: Chuong 16, phan 1/1 (dong 1-86): Prop. IV (chung minh, Cor. 1-9, Scholium doan 1), hinh, 2 chu giai. Nguon ia.txt dong 4492-4591.*
+
+- **NANG / THIEU**, Scholium (sau dong 74, truoc chu giai dong 76)
+  - source: Moreover, by means of the preceding Proposition and its Corollaries, we may discover the proportion of a centripetal force to any other known force, such as that of gravity... Mr. Huygens... De Horologio Oscillatorio...
+  - now: Hoc luan chi co 1 doan (Wren, Hooke, Halley); mat het doan ve so sanh luc huong tam voi trong luc va Huygens
+  - suggest: Dich them doan "Hon nua, nho menh de truoc va cac he qua cua no, ta co the tim ti le cua mot luc huong tam voi bat ky luc da biet nao khac, nhu trong luc..." den het "De Horologio Oscillatorio"
+- **NANG / THIEU**, Scholium doan cuoi (sau dong 74)
+  - source: The preceding Proposition may be likewise demonstrated after this manner. In any circle suppose a polygon to be inscribed... the centrifugal force, with which the body impels the circle... is equal.
+  - now: Khong co: toan bo chung minh thu hai bang da giac noi tiep (phan xa tai cac dinh, luc ly tam) bi bo
+  - suggest: Dich day du doan "Menh de truoc cung co the chung minh theo cach sau..." den "...bang nhau"
+- **NANG / SOLIEU**, Hệ quả 7 (dong 46)
+  - source: the velocity reciprocally as the power R^n ] of the radius (OCR doc "Rn ]", so mu mat; chu y thoi gian ty le R^n thi van toc ty le nghich R^(n-1))
+  - now: vận tốc tỷ lệ nghịch với lũy thừa $R^n$ của bán kính
+  - suggest: Nguon OCR co ky tu sau "n" (dau "]" chua so mu bi hong); R^n khong khop voi thu nguyen (v ~ R/T). Doi chieu scan: nhieu kha nang la R^{n-1}; khong xac dinh duoc tu OCR
+- **NANG / SAINGHIA**, Hệ quả 8 (dong 66)
+  - source: substituting the equable description of areas in the place of equable motion, and using the distances of the bodies from the centres instead of the radii
+  - now: thay sự mô tả diện tích đều bằng chuyển động đều
+  - suggest: Dao chieu thay the: nguon thay chuyen dong deu bang su mo ta dien tich deu; sua thanh "thay chuyển động đều bằng sự mô tả diện tích đều"
+- **NHE / THIEU**, Hệ quả 8 (dong 64-66)
+  - source: as appears by applying the demonstration of the preceding cases to those. And the application is easy, by only substituting...
+  - now: Việc áp dụng chỉ cần thay sự mô tả diện tích đều bằng chuyển động đều...
+  - suggest: Mat mệnh de "as appears by applying the demonstration of the preceding cases to those" va chu "easy"; dich them "nhu thay ro khi ap dung chung minh cac truong hop truoc vao do. Va viec ap dung de dang, chi can thay chuyen dong deu bang su mo ta dien tich deu..."
+- **NHE / THIEU**, Toan chuong (dong 18 va nhieu cho)
+  - source: Q.E.D. (cuoi chung minh Prop. IV)
+  - now: Khong co Q.E.D.
+  - suggest: Them "Đó là điều phải chứng minh" o cuoi dong 18
+- **NHE / THEM**, Dong 8-10 (hinh 6)
+  - source: (OCR khong co chu cai diem nao trong Prop. IV)
+  - now: *Hình 6. Sơ đồ được dựng lại từ các hình trong bản gốc; cần đối chiếu với scan.* / SVG gom nhan S1,S2,A,B,C,D va cac nhan tieng Viet "vận tốc và bán kính","lực hướng tâm"
+  - suggest: Loi chu thich hinh (in nghieng ngoai blockquote) la loi bien tap; hinh co nhan A,B,C,D,S1,S2 ma loi chung minh khong nhac chu cai nao; cac nhan chu Viet trong hinh khong co trong nguon. Khong xac dinh duoc tu OCR hinh goc co hay khong
+- **NHE / CHUGIAI**, Chu giai 1, dong 48-60 (sau Hệ quả 7)
+  - source: Cor. 3: periodic times equal -> forces as the radii; Cor. 5: periodic times as the radii -> forces reciprocally as the radii
+  - now: lực đàn hồi xuyên tâm khi $T \propto R$ cho $F \propto R$
+  - suggest: KHONG HOP LI: T ~ R (n=1) cho F ~ R^{-1} (Hệ quả 5 va chinh cong thuc R^{1-2n} o tren); F ~ R ung voi T khong doi (Hệ quả 3). Cung doan: "toàn bộ Phần III dựa vào" khong ro (Book III hay Section III), "quan hệ lực - quy mô" la ten khong co nguon, "Ông cần một công thức tổng quát trước khi biết lực là gì" gan dong co cho Newton, cau cuoi ve "quỹ đạo tròn ... hằng số quỹ đạo" mo ho khong suy ra tu Hệ quả 7. Nen sua/ bo
+- **NHE / CHUGIAI**, Chu giai 2, dong 76-86 (sau Học luận)
+  - source: Scholium: ...as Sir Christopher Wren, Dr. Hooke, and Dr. Halley have severally observed (khong noi Halley goi y cho Newton, khong noi gi ve viec Newton "viet chung minh duoi ten minh")
+  - now: chính Halley đã gợi ý với Newton rằng lực hút phải giảm theo bậc hai ... phần chứng minh thì Newton viết dưới tên mình
+  - suggest: HOP LI MOT PHAN: phan toan Hệ quả 9 (s^2=2Rd) dung; nhung "Ông cần điều đó để dùng chung một bộ quy tắc" gan y do cho Newton, khang dinh Halley gợi ý va hàm y ve tac quyen deu khong co trong nguon, va cau "ném mạnh vô hạn... thành đường tròn" lon xon; ket qua cung chi chinh xac cho thoi gian ngan (d la quang duong roi duoi luc khong doi). Nen bo cau lich su hoac dan nguon
+
+## 17-sach-i-phan-ii-proposition-v-vi.md
+
+- *phần 1/1: Chuong 17, phan 1/1 (dong 1-88): Prop V (Problem I), Prop VI (Theorem V), Cor 1-5 cua Prop VI, hinh 7, 2 chu giai*
+
+- **NANG / THIEU**, Prop VI, dong 44-46 (sau chung minh)
+  - source: And the same thing may also be easily demonstrated by Corol. 4, Lem. X.
+  - now: (khong co cau nay; doan chung minh ket thuc o "...nghich voi binh phuong cua thoi gian.")
+  - suggest: Them cau: "Cung dieu ay cung co the de dang chung minh bang He qua 4 cua Lemma X." (va Q.E.D. o cuoi Prop V, Prop VI)
+- **NANG / THIEU**, He qua 3 cua Prop VI, dong 62
+  - source: For PV is QP^2/QR. (OCR: "For PV is" + phan so QP2 over QR)
+  - now: (He qua 3 ket thuc o "...ty le nghich voi khoi luong SY^2 x PV." thieu cau giai thich)
+  - suggest: Them: "Boi vi PV bang QP^2/QR."
+- **NANG / SAINGHIA**, Prop V, dong 20
+  - source: draw AD, DBE, EC, at right angles, meeting in D and E
+  - now: ke AD, DBE, EC vuong goc voi nhau, cat nhau tai D va E
+  - suggest: "vuong goc voi nhau" sai hinh hoc (ba duong khong the doi mot vuong goc va cat nhau tai D, E); nguon chi noi "at right angles" (voi cac doan PA, QB, RC theo ngu canh). Sua thanh "vuong goc (voi cac doan vuong goc PA, QB, RC)"
+- **NANG / SOLIEU**, He qua 2, dong 56
+  - source: the centripetal force is reciprocally as the solid SY2 x QP2 over (mau so OCR hong) ; Cor.1 co mau QR
+  - now: khoi luong SY^2 x QP^2 / QR^2
+  - suggest: Mau so phai la QR (khong binh phuong): SY x QP = SP x QT nen SY^2 x QP^2 / QR = SP^2 x QT^2 / QR cua He qua 1. Sua QR^2 thanh QR
+- **NANG / THUATNGU**, He qua 1,2,3,5 (dong 50-74) va dong 52
+  - source: reciprocally as the solid SP2 x QT2/QR ... may be used for the exponent of the time
+  - now: ty le nghich voi khoi luong ... ; co the dung lam so mu cua thoi gian
+  - suggest: "solid" la dai luong khoi (tich ba chieu), khong phai "khoi luong"; "exponent of the time" la so do/chi so cua thoi gian, khong phai "so mu". Sua: "khoi" (dai luong khoi) va "so do cua thoi gian"
+- **NANG / HINH**, Dong 8, propositions-5-6-centripetal-law.svg
+  - source: Prop V dung cac diem P,Q,R,T,V,A,B,C,D,E,S; Prop VI/He qua dung A,P,Q,R,S,T,V,Y,Z (OCR)
+  - now: SVG chi co nhan P,Q,R,A,B,C,S (hinh trai) va A,B,S + chu "phien cua cung" (hinh phai)
+  - suggest: Thieu T, V, D, E (Prop V) va thieu Y, Z, T, V, R trong hinh Prop VI; hinh phai khong mang ky hieu cua bai (APQ, ZPR, QR, QT, SY, PV). Hinh trai ve tam S nam ben ngoai duong cong va khong co D, E. Can ve lai theo hinh nguon
+- **NANG / CHUGIAI**, Chu giai Prop V, dong 26-38: KHONG HOP LI
+  - source: (Prop V: S la giao cua TD va VE)
+  - now: "dau mut moi doan vuong goc phai nam tren duong thang qua tam S va vuong goc voi tiep tuyen ... giao diem cua cac duong thang ay cho ra tam"; "Newton can ... dung quy dao tu so lieu hanh tinh"; "cach tan sao duoc phat hien"; tieu de "cho truoc quy dao va van toc, hay tim luc"
+  - suggest: Sai toan: A,B,C khong nam tren phap tuyen qua S; tam S la giao cua TD va VE (D, E dung tu A,B,C). Bai toan tim tam, khong phai tim luc. Gan dong co/ung dung lich su cho Newton khong co nguon, "tan sao"/"he nhieu sao" vo nghia, doan "Hoc luan cuoi chuong truoc ... phai kiem tra cung gap mot diem" khong co co so (hai duong TD, VE luon cat nhau). Nen viet lai ngan, chi mo ta dung cach dung
+- **NANG / CHUGIAI**, Chu giai Prop VI, dong 76-88: KHONG HOP LI
+  - source: (He qua 3-5: lien he voi duong tron mat tiep va dai luong khoi SY^2 x PV)
+  - now: "Prop VI ... dinh ly luc huong tam tong quat nhat"; "F = m v^2 kappa ... dung cho moi chuyen dong cong"; "Ong chua co khai niem do cong"; "hanh tinh o diem do cong lon thi chiu luc manh hon ... "mang" (loi go)
+  - suggest: F = m v^2 kappa chi la thanh phan phap tuyen; luc huong tam huong ve S nen F ty le v^2/PV (He qua 4), bang 2mv^2/PV, chi bang m v^2 kappa khi S la tam duong tron. Khang dinh "chua co khai niem do cong" mau thuan He qua 3 ("same curvature and same radius of curvature"). Cau cuoi sai (luc con phu thuoc v va goc giua SP va tiep tuyen), "mang" la loi go ("manh"). Doan dau "HOP LI MOT PHAN": phien ~ kappa s^2/8 dung nhung dong nhat phien theo huong SP voi sagitta phap tuyen la sai
+- **NHE / SOLIEU**, Prop VI, dong 44
+  - source: by Cor. 2 and 3, Lem. XL (OCR doc XL; thuong la XI)
+  - now: theo He qua 2 va 3 cua Lemma X
+  - suggest: So La Ma co the sai: OCR "XL" nhieu kha nang la XI (Lemma XI ve do lon cua subtense), khong phai X. Doi chieu lai voi ban quet; neu XI thi sua. Chi tiet khong xac dinh duoc tu OCR
+- **NHE / SAINGHIA**, Prop V, dong 22
+  - source: For the perpendiculars let fall from the centre S on the tangents PT, QT are reciprocally as the velocities ... and therefore, by construction, as ... AP, BQ, directly
+  - now: De cac doan vuong goc tu tam S ha xuong cac tiep tuyen PT, QT ty le nghich voi cac van toc ... theo cach dung, chung ty le truc tiep voi ...
+  - suggest: "For" la "Boi vi" (cau chung minh), khong phai "De" (muc dich); cau hien tai thanh cau cut. Sua: "Boi vi cac doan vuong goc ha tu tam S ... ty le nghich ..., va do do ..."
+- **NHE / THIEU**, Prop V va Prop VI, dong 24 va 46
+  - source: Q.E.D. (cuoi Prop V va cuoi Prop VI)
+  - now: (khong co "Q.E.D." o ca hai)
+  - suggest: Them "Q.E.D." cuoi Prop V (sau "TD va VE") va cuoi chung minh Prop VI. Cung sua "YE" o dong 24 thanh "VE" (nguon cung ghi VE o cau dung hinh; OCR "YE" la loi OCR)
+- **NHE / THEM**, Dong 10 (chu thich hinh)
+  - source: (khong co trong nguon)
+  - now: *Hinh 7. So do duoc dung lai tu cac hinh trong ban goc; can doi chieu ky hieu voi scan.*
+  - suggest: Loi bien tap nam ngoai blockquote chu giai, tinh la "them". Chuyen vao comment HTML hoac blockquote [Chu giai]
+
+## 18-sach-i-phan-ii-proposition-vii.md
+
+- *phần 1/1: Chương 18, phần 1/1 (dòng 1-94): Proposition VII (Problem II) cùng lời chứng minh thứ nhất và thứ hai, Hệ quả 1-3, hình propositions-7-9-diagrams.svg, hai khối Chú giải*
+
+- **NANG / SOLIEU**, Prop VII, dòng 28-32 (chứng minh thứ nhất)
+  - source: RP2, that is QRL to QT2 as AV2 to PV2; therefore QRL x PV2/(AV2) is equal to QT2. Multiply those equals by [SP2/QR]; ... SP2 x PV3/AV2 = SP2 x QT2/[QR]
+  - now: Vì vậy, QRL × PV²/SP² bằng QT². Nhân hai đẳng thức ấy với SP²/PV² ... SP²×PV³/AV² = SP²×QT²
+  - suggest: Theo tỷ lệ thức RP²:QT² = AV²:PV², mẫu số phải là AV² chứ không phải SP². OCR đọc ra "-TS" ở mẫu số thứ nhất (nhiều khả năng là AV²). Vế phải cuối cùng bản dịch thiếu mẫu QR, mà Hệ quả 1 và 5 của Prop VI cần SP²×QT²/QR. Số nhân bản dịch ghi SP²/PV² trong khi nguồn là SP²/QR, nhưng chữ nhân này bị OCR hỏng nên không xác định được từ OCR. Cần đối chiếu scan rồi sửa.
+- **NANG / THIEU**, Hệ quả 2, dòng 74
+  - source: the former force is to the latter as RP2 x PT3 to SP2 x PV3; that is, as SP x RP2 to SP3 x PV3/PT3; or (because of the similar triangles PSG, TPV) to SG3.
+  - now: lực trước tỷ lệ với lực sau như RP²×PT³ tỷ lệ với SP²×PV³. Điều này cũng được giải thích bằng các tam giác đồng dạng PSG, TPV.
+  - suggest: Bản dịch bỏ bước trung gian "that is, as SP x RP2 to SP3 x PV3/PT3" và kết luận "to SG3", tức chính điều Hệ quả 2 cần chứng minh. Phải dịch đủ câu này. Dòng 70 đã phát biểu đúng kết quả SP x RP² so với SG³, nhưng phần chứng minh không dẫn tới nó.
+- **NANG / THUATNGU**, Hệ quả 3, dòng 78
+  - source: as the solid SP x RP2, contained under the distance of the body from the first centre of force S, and the square of its distance from the second centre
+  - now: như khối lượng SP × RP², chứa khoảng cách của vật thể từ tâm lực thứ nhất S và bình phương khoảng cách của nó từ tâm lực thứ hai R
+  - suggest: "solid" là đại lượng khối, tức tích ba chiều dài. Nó không phải khối lượng. Nên dịch là "thể tích (đại lượng khối) SP×RP²" hoặc "tích khối", và dùng thống nhất trong cả chương.
+- **NANG / HINH**, Hình 8, dòng 8-10 (propositions-7-9-diagrams.svg)
+  - source: (chữ trong bài) A, Z, T, R, L, Y, G; Cor 2 dùng R, G, T, S, P, V, A
+  - now: SVG chỉ có S, P, V, Q ở ô VII (C, A, P, Q ở ô VIII; S, P, Q ở ô IX)
+  - suggest: Bài nhắc A, Z, T, R, L, Y, G, mà ô VII chỉ có nhãn S, P, V, Q. Cụ thể, ô VII không có đường kính VA, tiếp tuyến PRZ, điểm L, R, Z, T, vuông góc SY, và điểm G của Hệ quả 2. Ô VIII và IX thuộc Prop VIII và IX, không phải nội dung chương này. Cần vẽ lại sơ đồ đầy đủ cho Prop VII.
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 82-94 (cuối Hệ quả 3)
+  - source: For the force in this orbit at any point P is the same as in a circle of the same curvature.
+  - now: Proposition VI cho F = mv²κ = mv²/r. Dây cung PV ... chính là đại lượng mô tả độ cong tại P: nó chỉ phụ thuộc bán kính đường tròn osculating
+  - suggest: KHÔNG HỢP LÍ. F = mv²/r chỉ đúng khi lực hướng về tâm đường tròn, còn ở đây lực hướng về điểm S bất kỳ nên Prop VI không cho công thức đó. Dây cung PV là dây đi qua S, phụ thuộc vị trí S chứ không chỉ bán kính cong. Ngoài ra còn có khẳng định lịch sử "mọi bài toán quỹ đạo về sau... xây trên nền này" và câu cuối về Lagrange, đều không có nguồn. Nên viết lại hoặc bỏ.
+- **NHE / CHUGIAI**, Chú giải thứ nhất, dòng 50-62 (đặt giữa chứng minh và Hệ quả 1)
+  - source: (không có trong Newton; Cor 1: ... reciprocally as the quadrato-cube (or fifth power) of the altitude SP)
+  - now: Ông cần một bài học về cách đặt câu hỏi ... ông buộc người đọc thấy rằng thay đổi vị trí của nguồn lực ... làm đổi cả số mũ
+  - suggest: HỢP LÍ MỘT PHẦN. Các tính toán đúng: F ∝ 1/(SP²·PV³), Hệ quả 1 cho 1/SP⁵, thế năng ∝ 1/r⁴. Nhưng câu gán động cơ sư phạm cho Newton ("Ông cần một bài học...", "buộc người đọc") là suy diễn. "Toàn bộ cấu trúc Principia dựng trên sự đối xứng ấy" là khẳng định quá mạnh. "Dốc hơn hẳn lực hút vô cùng xa và lực Coulomb" diễn đạt lủng củng. Phần này lại nằm giữa lời chứng minh và các Hệ quả, tách rời nội dung.
+- **NHE / THIEU**, Prop VII, dòng 35 và 48 (cuối hai chứng minh)
+  - source: ... reciprocally as the square of the distance or altitude SP, and the cube of the chord PV conjunctly. Q.E.I. / ... reciprocally as SP2 X PV3. Q.E.I.
+  - now: (không có Q.E.I. cuối hai chứng minh)
+  - suggest: Mất "Q.E.I." (OCR đọc ra "Q.E.L") ở cuối cả hai chứng minh.
+- **NHE / THUATNGU**, Hệ quả 1, dòng 66
+  - source: the quadrato-cube (or fifth power) of the altitude SP
+  - now: lũy thừa bậc năm của độ cao SP
+  - suggest: Bản dịch bỏ thuật ngữ "quadrato-cube" của Newton, chỉ giữ "(or fifth power)". Nên giữ cả hai, ví dụ "quadrato-cube (tức lũy thừa bậc năm)".
+- **NHE / THUATNGU**, Prop VII, dòng 35 và Hệ quả 2, dòng 70, 78 (cube / solid)
+  - source: the cube of the chord PV ... to the cube of the right line SG ... the solid SP x RP2
+  - now: lập thể của dây cung PV ... lập thể của đoạn thẳng SG ... khối lượng SP×RP²
+  - suggest: "cube" (lập phương, dòng 35 và 70) và "solid" (dòng 78) cùng bị dịch thành "lập thể" hoặc "khối lượng". Nên dịch "cube" thành "lập phương" và "solid" thành một thuật ngữ riêng, dùng nhất quán.
+- **NHE / THEM**, Dòng 10 (chú thích hình in nghiêng ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: Hình 8. Sơ đồ được dựng lại từ các hình trong bản gốc; cần đối chiếu ký hiệu với scan.
+  - suggest: Lời biên tập nằm ngoài blockquote Chú giải, nên tính là phần thêm. Nên chuyển vào comment HTML hoặc blockquote Chú giải.
+
+## 19-sach-i-phan-ii-proposition-viii-ix.md
+
+- *phần 1/1: Chương 19, phần 1/1 (dòng 1-82): Prop VIII (Bài toán III) + Học luận, Prop IX (Bài toán IV) + cách chứng minh khác; hình propositions-7-9-diagrams.svg; 5 khối Chú giải. Lemma XII (nguồn dòng*
+
+- **NANG / CHUGIAI**, Chú giải sau Học luận Prop VIII, dòng 46-48 (KHÔNG HỢP LÍ)
+  - source: SCHOLIUM: a like reasoning ... ellipsis, hyperbola, parabola, by a centripetal force reciprocally as the cube of the ordinate directed to an infinitely remote centre of force.
+  - now: Đây là lần đầu tiên trong Principia ... bảng tra đối chiếu giữa số mũ của lực và hình dạng quỹ đạo ... Với n = 2 ta ra parabol, và lực hút ... tỷ lệ nghịch với bình phương khoảng cách chính là gia tốc không đổi
+  - suggest: Xóa. Học luận chỉ nói lực tỷ lệ nghịch lập phương của ordinate cho elip, hypebol, parabol; không có bảng tra, không có n=2, không có tuyên bố lịch sử "lần đầu". Khẳng định n=2 cho parabol và "bình phương = gia tốc không đổi" sai về vật lí (lực không đổi tương ứng n=0; lực nghịch bình phương không phải gia tốc không đổi).
+- **NANG / CHUGIAI**, Chú giải, dòng 50-52 (KHÔNG HỢP LÍ)
+  - source: all the lines PS, RS drawn thereto, may be taken for parallels; force reciprocally as PM^3
+  - now: Ông đang dựng một bảng tra ... ông giảm bài toán về trường hợp lực không đổi theo một hướng ... thủ phép này sẽ xuất hiện nhiều lần nữa trong Phần III
+  - suggest: Xóa. Kết quả của Prop VIII là lực ∝ 1/PM^3, không phải lực không đổi; tâm ở vô cùng xa là giả thiết của đề, không phải thủ thuật Newton tự chọn; không có cơ sở nói nó lặp lại trong Phần III; "thủ phép" là lỗi gõ.
+- **NANG / CHUGIAI**, Chú giải, dòng 54 (KHÔNG HỢP LÍ)
+  - source: (không có trong nguồn; Newton chỉ dùng hình học và Hệ quả 1, 5 Prop VI)
+  - now: một cực tiểu cho quỹ đạo tròn, hai cực tiểu cho elip, một yên ngựa và một cực tiểu cho hyperbol. Newton làm đúng việc ấy ... chỉ khác là ông gọi nó là "ordinate"
+  - suggest: Xóa. Sai về vật lí: U_eff chỉ có một cực tiểu; elip ứng với năng lượng trên cực tiểu, hyperbol không có cực tiểu "yên ngựa". Gán cho Newton việc ông không làm; "ordinate" không phải tên khác của thế hiệu dụng.
+- **NANG / CHUGIAI**, Chú giải Prop IX, dòng 78-80 (KHÔNG HỢP LÍ)
+  - source: find the law of the centripetal force tending to the centre of that spiral (Prop IX không nói gì về quỹ đạo tối thiểu)
+  - now: Ông muốn biết quỹ đạo nào là quỹ đạo tối thiểu ... với lực nghịch đảo bậc ba có đúng một tốc độ cân bằng, và quỹ đạo ứng với nó là đường xoáy ốc.
+  - suggest: Xóa. Gán động cơ cho Newton không có trong văn bản; "quỹ đạo tối thiểu", "ngành hấp dẫn" không có ở nguồn; "đúng một tốc độ cân bằng" sai (quỹ đạo tròn trong lực 1/r^3 không ổn định, xoáy ốc là trường hợp riêng năng lượng bằng 0).
+- **NANG / CHUGIAI**, Chú giải Prop IX, dòng 82 (KHÔNG HỢP LÍ)
+  - source: centripetal force is reciprocally as the cube of the distance SP (Q.E.I.)
+  - now: quỹ đạo biên ổn định ... điều kiện cần để có những quỹ đạo khí hành tinh dài ngày. Đây là họ lực mà cả Phần III đang hướng tới, chỉ khác là Newton lúc này vẫn chưa biết lực hút rơi vào họ nào.
+  - suggest: Xóa. Câu vô nghĩa/không có căn cứ (lực nghịch bậc ba không cho quỹ đạo hành tinh ổn định; "khí hành tinh" vô nghĩa), và khẳng định lịch sử về Phần III cùng điều Newton biết/chưa biết không có nguồn.
+- **NHE / CHUGIAI**, Chú giải Prop IX, dòng 74-76 (HỢP LÍ MỘT PHẦN)
+  - source: (Prop IX chỉ suy ra lực nghịch lập phương SP từ xoáy ốc cho trước)
+  - now: Bài toán cho F ∝ 1/SP^3, tức đúng cái họ lực đã gặp ở Hệ quả 1 của Proposition II, nơi sai lệch của tốc độ quét diện tích sinh ra một lực tiếp tuyến ∝ 1/r^3 ... v ∝ 1/r
+  - suggest: Công thức độ cong và kết luận v ∝ 1/r cho xoáy ốc logarit là hợp lí, nhưng "bài toán cho F ∝ 1/SP^3" đảo giả thiết/kết luận (đó là kết quả của Prop IX), liên hệ với Hệ quả 1 Prop II không có cơ sở, tiêu đề chú giải nói "vận tốc tăng vô hạn" không có trong nguồn. Sửa hoặc bỏ.
+- **NHE / THIEU**, Prop VIII dòng 34 và Prop IX dòng 66 (cả phần)
+  - source: Q.E.I. (Prop VIII sau "reciprocally as PM3"; Prop IX sau "cube of the distance SP")
+  - now: (không có Q.E.I.)
+  - suggest: Thêm "Q.E.I." ở cuối cả hai chứng minh.
+- **NHE / THIEU**, Prop IX, cách khác, dòng 68
+  - source: The perpendicular SY let fall upon the tangent, and the chord PY of the circle concentrically cutting the spiral, are in given ratios to the height SP
+  - now: Hạ đoạn vuông góc SY xuống tiếp tuyến. Dây cung PY ... có những tỷ số đã cho với độ cao SP.
+  - suggest: Nguồn nói CẢ SY và PY có tỉ số đã cho với SP; bản dịch chỉ gán cho PY. Sửa: "SY và dây cung PY ... đều có tỷ số đã cho với SP".
+- **NHE / THEM**, Dòng 10 (chú thích hình)
+  - source: (không có trong nguồn)
+  - now: Hình 9. Sơ đồ được dựng lại từ các hình trong bản gốc; cần đối chiếu với scan.
+  - suggest: Lời biên tập in nghiêng ngoài blockquote: chuyển vào comment HTML hoặc bỏ nếu không phải của nguồn.
+- **NHE / HINH**, Dòng 8, propositions-7-9-diagrams.svg
+  - source: Prop VIII nhắc C, P, Q, R, S, M, N, Z, T, A; Prop IX nhắc S, P, Q, R, T, Y
+  - now: SVG có 3 ô: VII (S,P,V,Q), VIII (C,A,P,Q), IX (S,P,Q) cùng chú thích tiếng Việt do người dựng thêm
+  - suggest: Ô VIII thiếu R, M, N, Z, T, S; ô IX thiếu R, T, Y (cách chứng minh khác dùng SY, PY); ô VII (Prop VII) không thuộc nội dung chương này. Các dòng chữ "tâm lực ở một điểm bất kỳ", "các khoảng cách tới tâm ở xa", "cắt các bán kính theo góc" cũng không phải nhãn của nguồn. Cần vẽ lại đủ nhãn theo bài.
+- **NHE / THUATNGU**, Học luận dòng 40; Prop IX dòng 66
+  - source: the cube of the ordinate; the cube of the distance SP
+  - now: lập thể của ordinate; lập thể của khoảng cách SP
+  - suggest: "Cube" dịch "lập thể" (thường là "solid"/khối); nên dùng "lập phương" cho cube, tránh lẫn với đại lượng "solid" ở các chương khác.
+- **NHE / KHAC**, Học luận dòng 40
+  - source: the cube of the ordinate directed to an infinitely remote centre
+  - now: lập thể củaordinate hướng về một tâm lực ở vô cùng xa
+  - suggest: Lỗi gõ dính chữ "củaordinate"; sửa thành "của ordinate" (ở đây chỉ báo lỗi, không sửa vì chương có thể đã niêm phong).
+
+## 20-sach-i-phan-ii-proposition-x.md
+
+- *phần 1/1: Chuong 20 (Sach I, Phan II, Proposition X), phan 1/1: toan bo file (dong 1-87): Prop X (cach 1), Hq 1, Hq 2, Hoc luan, hinh, 2 chu giai. Doi chieu nguon ia.txt dong 4939-5064.*
+
+- **NANG / THIEU**, Prop X, sau dong 37
+  - source: The same otherwise. In the right line PG on the other side of the point T, take the point u so that Tu may be equal to TV ... directly as PC. Q.E.I.
+  - now: (khong co; Prop X chi co mot chung minh)
+  - suggest: Them ban dich cach chung minh thu hai "Cung bai toan, cach khac" (nguon dong 4992-5015: lay u, V; Qv^2 = Pv x uV; duong tron tiep xuc tai P; PV = 2DC^2/PC; luc ti le nghich voi (2DC^2/PC) x PF^2, tuc truc tiep voi PC).
+- **NANG / SOLIEU**, Prop X, dong 27-37
+  - source: QT2 x PC2 / [QR] equal to 2BC2 x CA2 / [PC]; force reciprocally as that, that is reciprocally as 1/PC [OCR hong], that is directly as the distance PC
+  - now: QT^2 x PC^2 / QR^2 = 2BC^2 x CA^2 / PC^2; luc ti le nghich voi 2BC^2 x CA^2/PC^2 ... ti le nghich voi PC^2; tuc truc tiep ti le voi PC
+  - suggest: OCR hong mau so, nhung theo thu nguyen (QT^2 x PC^2/QR, PC^1) va ket luan nguon "directly as PC" thi ve phai la 2BC^2 x CA^2 / PC va mau ben trai la QR (khong binh phuong); "nghich voi PC^2" tu mau thuan voi "truc tiep voi PC". Sua thanh PC va QR.
+- **NANG / THIEU**, Prop X, dong 23
+  - source: by composition, the ratio of PvG to QT2 is compounded of ... that is, vG to QT2/Pv as PC2 to [CD2 x PF2/PC2]
+  - now: Nhan cac ty so ay, ty so cua PvG voi QT^2 duoc tao thanh tu ty so cua PC^2 voi CD^2 va cua PC^2 voi PF^2.
+  - suggest: Thieu cau "tuc la vG voi QT^2/Pv nhu PC^2 voi CD^2 x PF^2/PC^2" (nguon dong 4969-4971, OCR hong cong thuc); can them de buoc thay QR, BC x CA, 2PC co ca so.
+- **NANG / THIEU**, Hoc luan, dong 69
+  - source: if the parabolic section of the cone (by changing the inclination of the cutting plane to the cone) degenerates into an hyperbola
+  - now: Neu mat cat parabol cua non bi thay doi thanh hypebol, vat the se chuyen dong tren chu vi cua hypebol ay
+  - suggest: Them cum trong ngoac: "(bang cach thay doi do nghieng cua mat phang cat doi voi non)".
+- **NANG / CHUGIAI**, Hq 1, dong 43-55 (khoi 1)
+  - source: Cor. 1. the force is as the distance ... the body will move in an ellipsis whose centre coincides with the centre of force
+  - now: nghiem tong quat la r(t)=A cos(wt)+B sin(wt) voi A vuong goc B va do dai A bang do dai B. Chinh dieu kien hai do dai bang nhau ay sinh ra elip
+  - suggest: KHONG HOP LI: A va B tuy y, khong song song thi cho elip; A vuong goc B voi do dai bang nhau cho DUONG TRON. Sua: chi can A, B khong song song. Cau "mat cat conic dau tien xuat hien trong vat li" la khang dinh lich su khong co nguon.
+- **NANG / CHUGIAI**, Hq 1, dong 51-55 (khoi 1, doan 2)
+  - source: (Newton khong noi toi Phan III, tam thu trong sach nay, hay elip trang thai trong nguon)
+  - now: O Phan III ong se chung minh luc hut thuc su tao ra elip, ... voi duong tron lam truong hop tham chieu. Newton da ve ra buc tranh dau tien cua elip trang thai
+  - suggest: KHONG HOP LI: bia ve Phan III (Section III la elip co tam luc o tieu diem), gan dong co "ong can no de chuan bi", va gan cho Newton khai niem khong gian trang thai (anachronism). Giu phan toan (quy dao (x, x') la elip) nhung bo gan cho Newton va bo cac cau doan y.
+- **NANG / CHUGIAI**, Hoc luan, dong 75-81 (khoi 2, doan 1)
+  - source: Which is Galileo s theorem. [chi co the]
+  - now: Newton viet ra mat xich ay bang ba cau, va do la cach ong thua nhan minh dang dung tren vai mot nguoi khac.
+  - suggest: HOP LI MOT PHAN: phan toan (parabol, ne ngang) dung, nhung "thua nhan" la gan y dinh cho Newton, nguon chi viet "Which is Galileo's theorem". Doan "tam lui ra vo cung" lan lon CA=a, CB=b khong dung toi; "F ti le PC thanh F = hang so" chi dung o gioi han co chuan hoa. Sua loi y dinh, giu phan tinh toan.
+- **NANG / CHUGIAI**, Hoc luan, dong 83-87 (khoi 2, doan 2-3)
+  - source: if the ordinates are augmented or diminished in any given ratio ... the periodic time remaining the same, the forces ... are ... augmented or diminished in the ratio of the distances from the centre
+  - now: luc cung tang hay giam theo cung ty so ay; Nguyen ly cua Hoc luan chinh la doi xung thu nhoat ... luc ly tam ... chi la cai bong toa pham cua mot luc huong tam that
+  - suggest: KHONG HOP LI: (1) nguon noi luc ti le voi khoang cach tu tam, khong phai "cung ty so" voi ordinate; (2) "co moi khoang cach" doi thoi gian tuan hoan nen khong phai nguyen ly Hoc luan (nguon yeu cau thoi gian tuan hoan giu nguyen); (3) "luc ly tam" o day la luc day (doi dau luc) chu khong phai luc quan tinh/ao; (4) loi go "thu nhoat", "toa pham" (nen la "thu nho", va cum "toa pham" vo nghia). Nen viet lai hoac bo.
+- **NHE / THIEU**, Prop X dong 37 va Hq 2 dong 63
+  - source: Q.E.I. (cuoi cach 1 va cach 2)
+  - now: (khong co Q.E.I.)
+  - suggest: Them "Q.E.I." (Quod erat inveniendum) sau loi chung minh.
+- **NHE / THIEU**, Hoc luan, dong 73
+  - source: the forces directed to any centre placed in the abscissa are in the several ordinates augmented or diminished in the ratio of the distances from the centre
+  - now: cac luc huong ve bat ky tam nao dat tren truc hoanh se tang hoac giam theo ty so cac khoang cach tu tam.
+  - suggest: Thieu "in the several ordinates" (tai tung ordinate): them "tai tung ordinate".
+- **NHE / THEM**, dong 10 (chu thich hinh)
+  - source: (khong co trong nguon)
+  - now: Hinh 10. So do duoc dung lai tu hinh minh hoa trong ban goc; can doi chieu ky hieu voi scan.
+  - suggest: Loi bien tap in nghieng nam ngoai blockquote tinh la phan "them"; dua vao khung Chu giai hoac comment HTML.
+- **NHE / HINH**, dong 8, proposition-10-ellipse.svg
+  - source: CA, CB semi-axes; GP, DK conjugate diameters; PF, QT perpendiculars; Qv ordinate; parallelogram QvPR; letters K, T, v, R, r in the proof
+  - now: SVG co nhan: C, A, B, G, D, P, Q, F (chu thich CA, CB ban truc; GP, DK; PF, QT; QvPR)
+  - suggest: Hinh khong co nhan K, T, v, R (bai nhac ro: DK, QT, Qv, QvPR). Theo toa do text, A (x=140) va B (x=745) deu nam hai dau truc ngang trong khi CA, CB la hai ban truc khac nhau; D (630,170) dat o dau duong GP (G o 260,335) trong khi D thuoc duong kinh lien hop khac DK. Can ve lai/doi chieu scan.
+
+## 21-sach-i-phan-iii-proposition-xi.md
+
+- *phần 1/1: Chương 21, phần 1/1 (toàn file, dòng 1-112): Sách I, Phần III, Proposition XI (Bài toán VI, chứng minh thứ nhất và "The same otherwise"), kèm hình SVG và 3 khối Chú giải. Nguồn: ia.txt dòng *
+
+- **NANG / THIEU**, Prop XI, chứng minh thứ nhất, dòng 64-76
+  - source: L x QR to QT2 as AC x L x PC2 x CD2, or 2CB2 x PC2 x CD2 to PC x Gv x CD2 x CB2, or as 2PC to Gv. ... Let those equals be drawn into SP2/QR, and L x SP2 will become equal to...
+  - now: Nhân tất cả các tỷ số ấy, ta có L x QR / QT^2 ~ AC x L x PC^2 x CD^2. ... Do đó, L x SP^2 = SP^2 x QT^2 / QR.
+  - suggest: Bổ sung vế sau của tỷ lệ thức: "hay 2CB^2 x PC^2 x CD^2 đến PC x Gv x CD^2 x CB^2, hay như 2PC đến Gv"; bản dịch hiện chỉ có một vế nên 2PC/Gv xuất hiện ở dòng 71 mà chưa được suy ra. Thêm câu "nhân các đại lượng bằng nhau ấy với SP^2/QR" trước "L x SP^2 = SP^2 x QT^2/QR".
+- **NANG / THIEU**, Prop XI, dòng 98 (cuối "The same otherwise")
+  - source: With the same brevity with which we reduced the fifth Problem to the parabola, and hyperbola, we might do the like here: but because of the dignity of the Problem and its use in what follows
+  - now: Vì tính quy trọng của bài toán này và việc sử dụng nó trong phần sau, tôi sẽ chứng minh các trường hợp còn lại bằng những lập luận riêng.
+  - suggest: Thiếu hẳn mệnh đề đầu: "Với cùng sự ngắn gọn mà ta đã đưa Bài toán thứ năm về parabol và hyperbol, ta cũng có thể làm tương tự ở đây; nhưng vì tầm quan trọng (dignity) của bài toán..."; sửa lỗi gõ "quy trọng".
+- **NANG / SAINGHIA**, Prop XI, "The same otherwise", dòng 96
+  - source: that is, if the point S is the focus of the ellipsis, and therefore PE be given, as SP2 reciprocally (công thức PE3 trên mẫu bị OCR hỏng)
+  - now: Nếu S là tiêu điểm của elip, PE được cho là tỷ lệ nghịch với SP^2.
+  - suggest: "PE be given" nghĩa là PE là đại lượng cho trước (không đổi); lực tỷ lệ nghịch với SP^2. Bản dịch biến thành "PE tỷ lệ nghịch với SP^2", sai nghĩa (EP = AC không đổi). Sửa: "tức là, nếu S là tiêu điểm, và do đó PE là đại lượng cho trước, thì lực tỷ lệ nghịch với SP^2".
+- **NANG / SAINGHIA**, Prop XI, dòng 53
+  - source: by (Corol. 2, Lem. VII) the points Q and P coinciding, Qv2 is to Qx2 in the ratio of equality; and Qx2 or Qv2 is to QT2 as EP2 to PF2
+  - now: Khi Q và P trùng nhau, Qv^2 tỷ lệ bằng với Qv^2 theo Hệ quả 2 của Lemma VII.
+  - suggest: Sai chữ cái điểm: tỷ số bằng nhau là Qv^2 với Qx^2 (OCR đọc "Q,r-" = Qx2), không phải Qv^2 với Qv^2. Sửa thành "Qv^2 bằng Qx^2 (tỷ số bằng nhau)".
+- **NANG / SAINGHIA**, Prop XI, dòng 20
+  - source: Draw SP cutting the diameter DK in E, and the ordinate Qv in x; and complete the parallelogram QRPx (OCR: "d.rPR", sau đó "QRP.r")
+  - now: rồi hoàn thành hình bình hành $QvPR$.
+  - suggest: Sai nhãn: hình bình hành là QRPx (đỉnh Q, R, P, x), không phải QvPR; x vừa được định nghĩa nhưng không xuất hiện. Sửa thành $QRPx$.
+- **NANG / THIEU**, Prop XI, dòng 61 và dòng 94
+  - source: or (by Lem. XII) as CD2 to CB2 ; ... is (by Corol. 1, Prop. X.) as the distance CP
+  - now: CA^2/PF^2 = CD^2/CB^2 (không viện dẫn) ; Lực hướng về tâm C ... tỷ lệ với khoảng cách CP (không viện dẫn)
+  - suggest: Thiếu hai viện dẫn: "theo Lemma XII" cho đẳng thức CA^2/PF^2 = CD^2/CB^2 (dòng 61) và "theo Hệ quả 1 của Proposition X" cho lực hướng tâm tỷ lệ với CP (dòng 94).
+- **NANG / HINH**, Hình 11, dòng 8-10
+  - source: Nguồn dùng các điểm S, E, x, Q, v, R, P, T, D, K, A, B, H, I, F, G, Z, C; QT vuông góc với SP
+  - now: SVG chỉ có nhãn C, H, S, P, T, Q (và chữ "tiêu điểm H" v.v.); chú thích in nghiêng "Sơ đồ được dựng lại... cần đối chiếu ký hiệu với scan."
+  - suggest: Hình thiếu E, x, v, R, D, K, A, B, I, F, Z, G mà lời chứng minh dùng; T trong hình nằm trên tiếp tuyến (không phải chân đường vuông góc QT với SP). Hình không khớp lời chứng minh, cần vẽ lại theo scan. Chú thích in nghiêng dòng 10 là lời biên tập ngoài blockquote (THEM).
+- **NANG / CHUGIAI**, Chú giải 1, dòng 80-92
+  - source: Prop XI chỉ cho: force reciprocally as L x SP2 (là Problem VI, không phải "theorem")
+  - now: "định lý trụ cột của toàn bộ Principia... Mọi phần còn lại của Phần III chỉ là hệ quả của nó" ; "Ông cần một kết quả đủ mạnh để giải thích cả ba định luật Kepler" ; "L là thang đo duy nhất không phụ thuộc vào điểm đang xét" ; "p quyết định hình dạng, a quyết định khoảng cách" ; "hệ không mất năng lượng sẽ bay ra xa vô hạn" ; "hệ nghiêng lệch phải có năng lượng riêng khác đi"
+  - suggest: KHÔNG HỢP LÍ (đoạn "Vì sao chọn L"): gán động cơ cho Newton không có nguồn; Prop XII, XIII (hyperbol, parabol) được chứng minh riêng nên không phải "hệ quả"; p = h^2/mu đúng, a = mu/(2 abs(E)) đúng nhưng hình dạng (độ lệch tâm) phụ thuộc cả h và E; hai câu cuối về "không mất năng lượng bay ra vô hạn" và "hệ nghiêng lệch" vô nghĩa vật lí; "phương trình... với mọi hằng số đều gắn với tâm" vô nghĩa. Đoạn đầu (F tỉ lệ 1/(L SP^2), p = L/2) HỢP LÍ MỘT PHẦN. Nên viết lại hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải 2, dòng 100-106
+  - source: PE be given (không đổi), force reciprocally as SP2; Cor 3 Prop VII
+  - now: "đẳng thức PE ∝ 1/SP^2 mà Newton nêu ở đây là mắt xích quyết định: nó biến lũy thừa bậc ba ấy thành đúng nghịch đảo bình phương" ; "tỉ số các đoạn thẳng dựng trên tiếp tuyến"
+  - suggest: KHÔNG HỢP LÍ: lặp lại lỗi của bản dịch (PE = AC là hằng số, không tỉ lệ 1/SP^2; chính PE cho trước mới dẫn tới lực tỷ lệ nghịch SP^2); mô tả PT là "đoạn dựng trên tiếp tuyến" không có trong nguồn OCR; phải sửa theo bản dịch đã sửa.
+- **NANG / CHUGIAI**, Chú giải 2 (đoạn "Ông tự đánh dấu" và đoạn cuối), dòng 108-112
+  - source: Newton: "because of the dignity of the Problem and its use in what follows, I shall confirm the other cases by particular demonstrations"
+  - now: "Ông muốn cho thấy kết quả không phụ thuộc vào cách dựng, và ông đang tiết kiệm sứ lực..." ; "nó cho thấy nghịch đảo bậc hai không phải là điều kiện duy nhất... mà là điều kiện đủ để quỹ đạo là conic"
+  - suggest: KHÔNG HỢP LÍ: gán ý định không có nguồn và trái với câu của Newton (ông chứng minh riêng vì tầm quan trọng, không phải "tiết kiệm"); "câu cuối chương" là sai (câu đó nằm trước hai khối); đảo giả thiết với kết luận: Prop XI đi từ quỹ đạo elip suy ra lực nghịch bình phương (điều kiện cần), không chứng minh nghịch đảo bình phương đủ để quỹ đạo là conic; lỗi gõ "sứ lực" (sức lực). Nên xóa hoặc viết lại.
+- **NHE / THIEU**, Prop XI, dòng 78 và 96
+  - source: centripetal force is reciprocally ... of the distance SP. Q.E.I. ; ... as SP2 reciprocally. Q.E.I.
+  - now: Lực hướng tâm tỷ lệ nghịch với bình phương khoảng cách SP. (không có Q.E.I.)
+  - suggest: Thiếu "Q.E.I." sau cả hai chứng minh (đã gộp thành một mục nhẹ).
+- **NHE / THEM**, Prop XI, dòng 29
+  - source: we shall have L x QR to L x Pv as QR to Pv, that is, as Px to Pv, that is, as PE to PC or AC to PC (đoạn dẫn của nguồn bị OCR hỏng nhưng không thấy mệnh đề về conic hay tam giác đồng dạng)
+  - now: Từ các tính chất của các hình cắt conic và các tam giác đồng dạng, ta có các tỷ số:
+  - suggest: Câu dẫn này không thấy trong nguồn OCR (OCR vùng này hỏng, không xác định được); nếu không có trên scan thì thay bằng "ta có L x QR đến L x Pv như QR đến Pv, tức như Px đến Pv, tức như PE hay AC đến PC".
+
+## 22-sach-i-phan-iii-proposition-xii.md
+
+- *phần 1/1: Chương 22, phần 1/1 (dòng 1-110): Sách I Phần III, Proposition XII (Bài toán VII) + phép chứng minh thứ hai ("The same otherwise") + câu cuối + hình + 2 khối Chú giải. Nguồn ia.txt dòng 5144*
+
+- **NANG / SAINGHIA**, Prop XII, dòng 46-51
+  - source: the rectangle GvP is to Qv2 as PC2 to CD2 (OCR: "G?'P is to Q,v2")
+  - now: Gv^2/Qv^2 = PC^2/CD^2 ("Gv bình phương" thay cho hình chữ nhật Gv x Pv)
+  - suggest: Sửa thành tỉ lệ thức với hình chữ nhật: (Gv x Pv)/Qv^2 = PC^2/CD^2; nếu không, dòng 42-45 (L x Pv)/(Gv x Pv) và bước ghép tỉ số không khớp
+- **NANG / THIEU**, Prop XII, dòng 64-69
+  - source: compounding all those ratios... L x QR to QT2 as AC x L x PC2 x CD2, or 2CB2 x PC2 x CD2 to PC x Gv x CD2 x CB2, or as 2PC to Gv
+  - now: L x QR / QT^2 ~ AC x L x PC^2 x CD^2 (cụt, dùng dấu ~, không có vế sau)
+  - suggest: Dịch đủ chuỗi: ... hay 2CB^2 x PC^2 x CD^2 so với PC x Gv x CD^2 x CB^2, hay như 2PC so với Gv (OCR công thức hơi hỏng nhưng vế "or as 2PC to Gv" đọc rõ)
+- **NANG / THIEU**, Prop XII, dòng 33-37 và 53-62
+  - source: (because of the similar triangles Pxv, PEC); Qv2 to Qx2 ... becomes a ratio of equality; Qx2 or Qv2 is to QT2 as EP2 to PF2 ... or (by Lem. XII.) as CD2 to CB2
+  - now: Không có "tam giác đồng dạng Pxv, PEC"; chỉ "Qv^2 trở thành tỷ số bằng nhau" (không có Qx^2); "CA^2/PF^2 = CD^2/CB^2" không có viện dẫn Lemma XII
+  - suggest: Thêm "(vì các tam giác đồng dạng Pxv, PEC)", "Qv^2 so với Qx^2 ... trở thành tỉ số bằng nhau", "Qx^2 hay Qv^2", và "(theo Lemma XII)"
+- **NANG / THIEU**, Prop XII, dòng 71-76
+  - source: Let those equals be drawn into SP2/QR [OCR: "SP2 sp2 x o/r2 / ^"], and we shall have L x SP2 equal to SP2 x QT2 / QR
+  - now: "Suy ra L x SP^2 = SP^2 x QT^2/QR" (không có câu nhân hai đại lượng bằng nhau với SP^2/QR)
+  - suggest: Thêm: "Nhân hai đại lượng bằng nhau ấy với SP^2/QR, ta được L x SP^2 bằng SP^2 x QT^2/QR" (dạng chính xác của thừa số nhân đọc từ OCR chưa chắc: không xác định được hoàn toàn)
+- **NANG / SAINGHIA**, Cách chứng minh thứ hai, dòng 94
+  - source: Find out the force tending from the centre C of the hyperbola. This will be proportional to the distance CP
+  - now: Lực hướng về tâm C của hypebol tỷ lệ với khoảng cách CP
+  - suggest: Nguồn viết "tending from the centre" (lực đi ra khỏi tâm), không phải "hướng về"; sửa thành "hướng ra từ tâm C" (đồng thời mâu thuẫn với dòng 96 về lực ly tâm nếu để nguyên)
+- **NANG / SAINGHIA**, Cách chứng minh thứ hai, dòng 94
+  - source: by Cor. 3, Prop. VII the force tending to the focus S will be as PE3/[mẫu OCR hỏng]; that is, because PE is given, reciprocally as SP2
+  - now: vì PE tỷ lệ nghịch với SP^2, lực ấy tỷ lệ nghịch với bình phương khoảng cách SP (mẫu số PT^3 không xác định được từ OCR)
+  - suggest: Nguồn: "PE is given" (PE là đại lượng cho trước/không đổi), lực tỉ lệ nghịch với SP^2; bản dịch biến thành "PE tỷ lệ nghịch với SP^2" là sai. Mẫu số "PT^3" không xác định được từ OCR, nên đối chiếu lại bản scan
+- **NANG / HINH**, Hình 12, dòng 8
+  - source: (văn bản) nhắc A,B,C,D,E,F,G,H,I,K,L,P,Q,R,S,T,v,x,Z
+  - now: SVG chỉ có nhãn C,H,S,P,T,Q (cùng "nhánh hypebol", "tâm và tiêu điểm", "tiếp tuyến"); thiếu A,B,D,E,F,G,I,K,R,v,x,Z; Q nằm dưới S trên đường vuông góc, không còn là điểm gần P
+  - suggest: Hình không thể hiện đường kính liên hợp PG, KD, các điểm E, v, x, R, F mà lời chứng minh dùng; cần dựng lại với đủ nhãn của bài
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 98-110
+  - source: ... will move in the conjugate hyperbola (Q.E.I. sau là câu đơn); Prop III Cor 1 nguồn nói về vật chịu lực tổng hợp với tâm di động
+  - now: hypebol liên hợp y^2/b^2-x^2/a^2=1, r=p/(e cos theta - 1) "vẫn là conic cùng họ"; "Hệ quả 1 của Proposition III ... quy luật diện tích đều không chứng minh có lực hướng tâm"; đoạn vật lí hạt
+  - suggest: KHÔNG HỢP LÍ: lực đẩy bình phương nghịch cho nhánh đối diện của CÙNG hypebol (r=p/(e cos theta-1)), không phải hypebol liên hợp đổi trục như chú giải viết, nên tự mâu thuẫn; Prop III Cor 1 ở nguồn (dòng 4458-4464) nói về trừ lực gia tốc của vật kia, không phải cảnh báo như chú giải gán; kết luận "hình học không đủ phân biệt hút với đẩy" sai vì quỹ đạo hai trường hợp khác nhau; đoạn hạt là suy diễn ngoài nguồn. Nên viết lại hoặc bỏ
+- **NHE / THEM**, Dòng 10
+  - source: (không có trong nguồn)
+  - now: *Hình 12. Sơ đồ được dựng lại từ hình minh họa trong bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập nằm ngoài blockquote; chuyển vào chú giải hoặc comment HTML
+- **NHE / THIEU**, Prop XII, dòng 78 và 94
+  - source: Q.E.I. (hai lần: sau chứng minh thứ nhất và sau "The same otherwise")
+  - now: Không có "Q.E.I." (Q.E.F.)
+  - suggest: Thêm dấu kết Q.E.I. ở hai chỗ
+- **NHE / THEM**, dòng 78
+  - source: ... reciprocally as L x SP2. That is, reciprocally in the duplicate ratio of the distance SP.
+  - now: Vì L là hằng số, lực hướng tâm tỷ lệ nghịch với bình phương khoảng cách SP
+  - suggest: Mệnh đề "Vì L là hằng số" không có trong nguồn; bỏ hoặc đưa vào chú giải
+- **NHE / CHUGIAI**, Chú giải thứ nhất, dòng 80-92
+  - source: (nguồn không có lời nào về "chứng minh các trường hợp còn lại bằng những lập luận riêng" ở cuối Prop XI)
+  - now: "ở cuối chương trước ông đã viết rằng sẽ chứng minh các trường hợp còn lại bằng những lập luận riêng"; "Chứng minh tính phổ quát"
+  - suggest: HỢP LÍ MỘT PHẦN: phần năng lượng riêng elip/parabol/hypebol và F=-mu m/r^2 đúng về vật lí; nhưng gán cho Newton câu ở cuối Prop XI không xác minh được (không thấy trong OCR), "chứng minh phổ quát" là nói quá (thêm một conic mới chưa chứng minh mọi trường hợp); nên bỏ câu gán ý
+
+## 23-sach-i-phan-iii-lemma-xiii-xv.md
+
+- *phần 1/1: Chương 23, phần 1/1 (dòng 1-130): Lemma XIII, XIV (+Hệ quả 1-3), Proposition XIII (+Hệ quả 1-2), Proposition XIV (+Hệ quả), Proposition XV (+Hệ quả), 2 chú giải, 1 hình. Nguồn ia.txt dòng 52*
+
+- **NANG / THIEU**, Prop XIII, dòng 59 (và 50-57)
+  - source: that is, as 4PS X QR to 4SA x QR, and therefore (by Prop. IX. Lib. V., Elem.) QT2 and 4SA X QR are equal.
+  - now: Do đó, $QT^2$ và $4SA \times QR$ bằng nhau.
+  - suggest: Thêm bước "tức là như 4PS x QR với 4SA x QR", viện dẫn Prop. IX Lib. V Elem., và viện dẫn "theo Hệ quả 1 của Lemma XIV" cho PS^2/SN^2 = PS/SA (dòng 50-57 hiện không có viện dẫn này).
+- **NANG / THIEU**, Prop XIII, dòng 59-62
+  - source: Multiply these equals by SP2/QR, and SP2 X QT2/QR will become equal to SP2 X 4SA
+  - now: Nhân các đẳng thức ấy với các tỷ số thích hợp, ta có $SP^2 \times 4SA$.
+  - suggest: Dịch đủ: nhân hai vế bằng nhau với SP^2/QR, thì (SP^2 x QT^2)/QR trở thành bằng SP^2 x 4SA. Không được thay bằng "các tỷ số thích hợp".
+- **NANG / SOLIEU**, Prop XIII, dòng 48
+  - source: the ratio of Qv to Q.x (by Cor. 2, Lem. VII.) becomes a ratio of equality
+  - now: tỷ số $Qv$ với $Qv$ trở thành tỷ số bằng nhau
+  - suggest: Sửa thành "tỷ số Qv với Qx" (OCR đọc "Q.r", tức Qx, điểm x đã định nghĩa ở dòng 42). Hiện câu thành vô nghĩa vì so Qv với chính nó.
+- **NANG / HINH**, Hình lemmas-13-14-parabola-focus.svg (dòng 8) so với Lemma XIV dòng 22-24 và Prop XIII dòng 42-48
+  - source: Lem. XIV: A, S, P, M, N, O, C; Prop. XIII: Q, H, T, v, x, R, G, S, P, M
+  - now: SVG chỉ có nhãn A, S, P, M (cùng chữ "parabol", "tiêu điểm S", "tiếp tuyến PM")
+  - suggest: Hình thiếu N, O, C (Lemma XIV) và Q, R, T, H, v, x, G (Prop XIII) mà lời chứng minh nhắc đến. Cần bổ sung nhãn, hoặc tách hình riêng cho Lemma XIV và Prop XIII.
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 122
+  - source: (Newton không nêu thời điểm Kepler) Prop XV: periodic times in ellipses are in the sesquiplicate ratio of their greater axes
+  - now: Chỉ mười tám năm trước Kepler đã đo được quan hệ này từ dữ liệu Tycho Brahe
+  - suggest: SAI số liệu lịch sử: Kepler công bố định luật thứ ba năm 1619, Principia in năm 1687, cách khoảng 68 năm; cần sửa hoặc bỏ. Ngoài ra "lập thể một phần rưỡi của bán trục lớn" là cách nói sai (nên là "lũy thừa 3/2"); nguồn Newton nói "trục lớn", không phải bán trục.
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 130
+  - source: Prop XV Cor.: periodic times in ellipses same as in circles whose diameters equal the greater axes
+  - now: nó hoàn toàn độc lập với khối lượng của vật thể quay quanh - ... là lý do trọng lực không thể là lực tỷ lệ thuận với khối lượng
+  - suggest: KHÔNG HỢP LÍ về vật lí: lực hấp dẫn đúng là tỷ lệ với khối lượng vật quay (F = GMm/r^2), gia tốc mới không phụ thuộc m; T^2 = 4pi^2 a^3/mu chỉ độc lập khối lượng vật quay khi m << M (mu = G(M+m)). "Công thức được dùng nhiều nhất trong thiên văn" không có nguồn. Phần còn lại (mu = 4pi^2 a^3/T^2, L ~ h^2) HỢP LÍ.
+- **NHE / THIEU**, Lemma XIV, Prop XIII, XIV, XV (cả phần)
+  - source: Q.E.D. (Lemma XIV, Prop XIV, XV); Q.E.I. (Prop XIII)
+  - now: (không có)
+  - suggest: Thêm Q.E.D./Q.E.I. cuối các chứng minh nói trên (một mục nhẹ cho cả phần).
+- **NHE / THIEU**, Prop XIII Hệ quả 2, dòng 88
+  - source: such as in the same time to move the same body through the space QR
+  - now: lực hướng tâm đủ để chuyển cùng vật thể ấy qua không gian $QR$
+  - suggest: Thêm "trong cùng thời gian ấy" (in the same time); "lineola PR" cũng đang bị dịch thành "đường PR", mất sắc thái đường nhỏ.
+- **NHE / KHAC**, Prop XIII Hệ quả 1, dòng 70
+  - source: a conic section may be described, which at that point shall have a given curvature
+  - now: có thể mô tả một hình cắt conch tại điểm ấy có một độ cong đã cho
+  - suggest: Lỗi gõ "conch" thành "conic"; thêm "một" cho đúng "một hình cắt conic".
+- **NHE / THEM**, Dòng 10 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 13. Sơ đồ được dựng lại từ các hình trong bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập nằm ngoài khối Chú giải (và số "Hình 13" không có trong nguồn). Chuyển vào comment HTML hoặc vào blockquote Chú giải.
+- **NHE / CHUGIAI**, Chú giải thứ nhất, dòng 72-84
+  - source: Cor. 1: ...the body will move in one of the conic sections...; and the contrary. (Newton: I except the case where the body descends to the centre in a right line)
+  - now: "bất kỳ vận tốc nào cũng cho một conic"; "Đây là định lý tổng quát nhất của Phần III"; "Hành tinh trong tinh hành"
+  - suggest: HỢP LÍ MỘT PHẦN. Phần toán SN^2 = PS.SA đúng; vận tốc thoát và r = p/(1+e cos) đúng nhưng "mọi vận tốc" quên ngoại lệ rơi thẳng vào tâm mà Newton nêu rõ (dòng 90). "tổng quát nhất của Phần III" là nhận định không có nguồn. Đoạn cuối (dòng 84) lập luận rối ("không thể cùng thoát ra... rồi phân kỳ"), "sai số không tự phục hồi" là khẳng định thêm; "tinh hành" là lỗi gõ (hành tinh). Nên rút gọn.
+- **NHE / CHUGIAI**, Hai tiêu đề in đậm của chú giải, dòng 80 và 126
+  - source: (Newton không nêu động cơ)
+  - now: Ông cần chứng minh lực giải thích mọi quỹ đạo...; Ông cần chứng minh định luật Kepler thứ ba như một hệ quả, không phải như một giả thiết
+  - suggest: Gán động cơ cho Newton không có nguồn trong văn bản; tiêu đề thứ hai còn nói "ba giả thuyết của Kepler" trong khi nội dung chỉ bàn định luật thứ ba và diện tích. Đổi thành nhận định trung tính về điều Proposition chứng minh.
+
+## 24-sach-i-phan-iii-proposition-xvi-xvii.md
+
+- *phần 1/1: Chương 24, phần 1/1 (dòng 1-141): Prop XVI (Thm VIII) cùng Hệ quả 1-9, Prop XVII (Prob IX) cùng Hệ quả 1-4, Học luận (Scholium); nguồn ia.txt dòng 5394-5602; đã xét hình, 3 khối Chú giải*
+
+- **NANG / SAINGHIA**, Prop XVI, chứng minh (dòng 21; đề bài dòng 16-19)
+  - source: because of the proportionals PR to QT, and SP to SY, as SP x QT / SY; or as SY reciprocally, and SP x QT directly
+  - now: Vì PR tỷ lệ với QT, và SP tỷ lệ với SY, nên vận tốc tỷ lệ nghịch với SY và trực tiếp với SP x QT
+  - suggest: Newton viết một tỉ lệ thức PR : QT = SP : SY (nên PR tỷ lệ với SP x QT / SY), không phải hai quan hệ tỷ lệ riêng; cần dịch lại "do tỉ lệ PR so với QT như SP so với SY, nên (vận tốc) như SP x QT / SY". Ngoài ra biểu thức SY^2 / (SP x QT) ở dòng 16-19 mẫu số bị OCR hỏng (không xác định được từ OCR) và không khớp với chứng minh (v tỷ lệ SP x QT / SY), cần soát bản scan
+- **NANG / THIEU**, Prop XVI, Hệ quả 4 (dòng 43)
+  - source: Let this ratio inversely be compounded with the subduplicate ratio of the latera recta directly, and we shall have the subduplicate ratio of the distance inversely.
+  - now: Bởi vì các đoạn vuông góc lúc ấy là các bán trục nhỏ, và chúng là trung bình nhân giữa các khoảng cách với các latus rectum. (hết)
+  - suggest: Thêm câu cuối: hãy ghép tỷ số này (nghịch) với căn bậc hai trực tiếp của các latus rectum, ta được căn bậc hai nghịch của khoảng cách
+- **NANG / THIEU**, Prop XVI, Hệ quả 8 (dòng 65) và Hệ quả 9 (dòng 69)
+  - source: Cor 8: "This appears from Cor. 5." Cor 9: "Wherefore since (by Cor. 6, Prop. IV), the velocity of a body revolving in this circle is to the velocity ... in any other circle reciprocally in the subduplicate ratio of the distances; therefore, ex aequo,"
+  - now: Hệ quả 8 hết mà không có câu viện dẫn; Hệ quả 9 mở bằng "Vì vậy, vận tốc ... sẽ tỷ lệ ..." không có lập luận Hệ quả 6 Prop IV và ex aequo
+  - suggest: Thêm vào Hệ quả 8 câu "Điều này rõ từ Hệ quả 5"; thêm vào Hệ quả 9 mệnh đề "vì (theo Hệ quả 6 Prop IV) vận tốc trong đường tròn này so với vận tốc trong đường tròn khác tỷ lệ nghịch với căn bậc hai của khoảng cách; nên, ex aequo, ..."
+- **NANG / THIEU**, Prop XVII, lời giải (dòng 97-105)
+  - source: we shall have SP2 - 2KPH + PH2 = SH2 = 4CH2 = 4BH2 - 4BC2 = (SP+PH)2 - L x (SP+PH) ... L x (SP+PH) = 2SPH + 2KPH, or SP+PH to PH, as 2SP+2KP to L. Whence PH is given both in length and position. Elip: ... principal axis SP+PH, is given also. Parabola ... axis SH parallel to the line PK, and is thence given. Hyperbola: tangent passing between the foci ... principal axis equal to the difference of SP and PH
+  - now: Khi ấy, ta có SP^2 = 2KPH + PH^2, và các tỷ số cần thiết xác định PH. (dòng 97-101); các trường hợp elip, parabol, hypebol (dòng 103) không nêu cách xác định hình
+  - suggest: Dịch đủ chuỗi đẳng thức SP^2 - 2KP.PH + PH^2 = SH^2 = 4CH^2 = 4BH^2 - 4BC^2 = ... và tỉ lệ thức SP+PH : PH = 2SP+2KP : L (công thức hiện có SP^2 = 2KPH + PH^2 sai dấu và thiếu SH^2; "các tỷ số cần thiết" là lời thêm). Dịch thêm: PH đã cho cả độ dài lẫn vị trí; elip xác định bởi hai tiêu điểm S, H và trục chính SP+PH; parabol có trục SH song song PK; hypebol có tiếp tuyến đi giữa hai tiêu điểm, trục chính bằng hiệu SP và PH. Cuối Prop thiếu vế "mà vật thể được thả từ P với vận tốc đã cho theo phương PR đã cho theo vị trí sẽ mô tả với lực ấy"; dòng 95 thiếu "đã cho theo vị trí"
+- **NANG / THIEU**, Prop XVII, Hệ quả 1 (dòng 109)
+  - source: For the proportion, SP + PH to PH as 2SP + 2KP to L, becomes, in the case of this Corollary, DS + DH to DH as 4DS to L, and by division DS to DH as 4DS - L to L.
+  - now: Vì vậy, trong mọi hình cắt conic ... lấy DH so với DS bằng latus rectum so với hiệu giữa latus rectum và 4DS. (hết, không có chứng minh)
+  - suggest: Dịch thêm câu chứng minh: tỉ lệ SP+PH : PH = 2SP+2KP : L trong trường hợp này thành DS+DH : DH = 4DS : L, và bằng phép chia, DS : DH = 4DS - L : L
+- **NANG / SAINGHIA**, Prop XVII, Hệ quả 2 (dòng 113)
+  - source: taking its latus rectum to twice the distance DS, in the duplicate ratio of this given velocity to the velocity of a body revolving in a circle at the distance DS (by Cor. 3, Prop. XVI)
+  - now: lấy latus rectum bằng hai lần khoảng cách DS, theo bình phương tỷ số vận tốc đã cho với vận tốc ... tại khoảng cách DS
+  - suggest: Newton lấy latus rectum SO VỚI 2DS theo bình phương tỷ số vận tốc; bản dịch viết "bằng hai lần DS" làm mất tỉ số (đúng chỉ khi vận tốc bằng vận tốc tròn). Sửa thành "latus rectum so với hai lần DS bằng bình phương tỷ số ...", và thêm viện dẫn "(theo Hệ quả 3, Prop. XVI)"
+- **NANG / CHUGIAI**, Chú giải 1, dòng 73-85 (đặt dưới tiêu đề Prop XVII nhưng bàn về Prop XVI)
+  - source: Prop XVI: v is as PR, i.e. SP x QT / SY; Prop VI Cor 4: force is as the square of the velocity directly, and that chord inversely
+  - now: v^2 tỷ lệ SP.QT/SY^2 (dòng 79); "điểm vận tốc cao nhất là nơi lực thay đổi nhiều nhất tính theo quãng đường, tức là nơi độ cong lớn nhất - đúng như Hệ quả 4 của Proposition VI" (dòng 85)
+  - suggest: KHÔNG HỢP LÍ: (i) v^2 tỷ lệ SP.QT/SY^2 mâu thuẫn bản dịch ngay trên (v tỷ lệ nghịch với SY, trực tiếp với SP x QT, tức v^2 tỷ lệ (SP.QT)^2/SY^2); (ii) vis-viva không suy ra "quy tắc lực" đó và Hệ quả 4 Prop VI chỉ nói lực tỷ lệ bình phương vận tốc thuận, dây cung nghịch; (iii) câu "Ông cần vận tốc để hoàn tất bức tranh" gán động cơ cho Newton; (iv) khối đặt sai dưới tiêu đề Prop XVII. Nên viết lại hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải 2, dòng 129-135
+  - source: Prop XVI Cor 1: principal latera recta are in a ratio compounded of the duplicate ratio of the perpendiculars and the duplicate ratio of the velocities
+  - now: "L tỷ lệ với bình phương vận tốc chia cho bình phương đoạn vuông góc từ tiêu điểm xuống tiếp tuyến" (dòng 135)
+  - suggest: KHÔNG HỢP LÍ: Hệ quả 1 (ghép tỷ số) cho L tỷ lệ với (SY^2 x v^2), tức NHÂN, không chia (bản dịch dòng 27 và 93 cũng nói tạo thành từ); câu "Đây là bài toán người ta gặp trước khi dùng bất kỳ phương trình vi phân nào" là khẳng định lịch sử không nguồn. Phân loại L so với 2SP+2KP và năng lượng riêng/vận tốc thoát là HỢP LÍ
+- **NANG / CHUGIAI**, Chú giải 3, dòng 137-141
+  - source: Prop XVII Cor 3: compounding the proper motion of the body with that motion which the impulse alone would generate; Cor 4: collecting the changes which that force introduces in some points ... from the analogy in the progress of the series
+  - now: "một nhân vật xuất phát trên quỹ đạo quanh Trái Đất ... bằng đúng cách cộng vectơ vận tốc mà Newton mô tả"; "Hệ quả 4 ... từ một chuỗi số đo rời rạc, ta dựng được quỹ đạo bằng cách nội suy ... nền tảng của mọi kỹ thuật theo dõi vệ tinh và cảnh báo va chạm"
+  - suggest: KHÔNG HỢP LÍ: "một nhân vật" lạc ngữ cảnh; Hệ quả 4 nói về vật bị lực ngoài nhiễu, ước lượng các thay đổi do lực đó gây ra, không phải dựng quỹ đạo từ số đo quan sát; "tiên đoán" và "nền tảng của mọi kỹ thuật theo dõi vệ tinh" là gán ghép và nói quá. Cộng các chuyển động ở Hệ quả 3 (HỢP LÍ MỘT PHẦN)
+- **NHE / THIEU**, Toàn phần (cuối Prop XVI, XVII; Prop XVII dòng 93)
+  - source: Q.E.D. (Prop XVI); Q.E.F. (Prop XVII); "by Cor. 1, Prop. XVI" trong chứng minh Prop XVII
+  - now: Không có Q.E.D. ở cuối chứng minh Prop XVI (dòng 23) và không có Q.E.F. ở cuối Prop XVII (dòng 105); dòng 93 bỏ viện dẫn "(theo Hệ quả 1, Prop. XVI)"
+  - suggest: Thêm Q.E.D., Q.E.F. và viện dẫn
+- **NHE / HINH**, Hình dòng 8 và chú thích dòng 10
+  - source: Nguồn: hình của Prop XVI có nhãn S, Y, P, R, Q, T; Prop XVII có S, P, R, H, K, B, C, D, p, q, r
+  - now: svg lemmas-13-14-parabola-focus.svg chỉ có nhãn A, S, P, M (cùng chữ "parabol", "tiêu điểm S", "tiếp tuyến PM"); chú thích in nghiêng "Hình 14. Sơ đồ dùng lại để đối chiếu..." là lời biên tập ngoài blockquote
+  - suggest: Hình thuộc Lemma XIII-XIV, thiếu Y, R, Q, T (Prop XVI) và toàn bộ nhãn Prop XVII; tiếp tuyến gọi PM thay vì PR. Cần hình đúng cho Prop XVI và XVII, bỏ hoặc chuyển chú thích hình vào blockquote Chú giải
+- **NHE / SOLIEU**, Học luận (dòng 127)
+  - source: the force required (by Cor. 1, and Schol. Prop. X., and Cor. 3, Prop. VII.) will be as CG3 / [mẫu số mất trong OCR]
+  - now: Lực cần dùng sẽ tỷ lệ với CG^3 / SP^2; "hình cắt conh" (lỗi gõ, phải là conic)
+  - suggest: Mẫu số không xác định được từ OCR; nhưng tâm lực trong đoạn này là R, còn S không được định nghĩa nên SP^2 đáng ngờ (có thể phải là RP^2), cần soát bản scan; sửa lỗi gõ "conh"
+
+## 25-sach-i-phan-iv-lemma-xv-proposition-xviii-xx.md
+
+- *phần 1/1: Chương 25, phần 1/1 (dòng 1-166): Lemma XV, Proposition XVIII, XIX, XX (Trường hợp 1-4), hình SVG, hai khối Chú giải*
+
+- **NANG / SOLIEU**, Prop XX, Trường hợp 1, dòng 76-80
+  - source: by division we shall have Ga-GA, or Aa to aS-AS, or SH in the same ratio; and therefore in the ratio which the principal axis ... has to the distance of its foci
+  - now: Ga:GA = Aa:HS = AS:AS ... "SH có cùng tỷ số với trục chính và khoảng cách tiêu điểm"
+  - suggest: Chuỗi tỷ lệ sai và vô nghĩa (AS:AS). Nguồn: Ga-GA = Aa và aS-AS = SH, nên Aa:SH cùng tỷ số GA:AS; tỷ số Aa:SH chính là tỷ số trục chính : khoảng cách tiêu điểm. Viết lại cho đúng.
+- **NANG / SAINGHIA**, Prop XX, Trường hợp 1, dòng 70
+  - source: let fall the perpendicular SG; which cut in A and a, so that GA may be to AS, and Ga to aS, as KB to BS
+  - now: Đường thẳng này cắt các đường tròn tại A, a, sao cho GA:AS = Ga:aS = KB:BS
+  - suggest: Nguồn nói SG bị cắt tại A và a theo tỷ số đó, không nói cắt các đường tròn. Sửa: A, a là hai điểm trên SG sao cho GA:AS = Ga:aS = KB:BS.
+- **NANG / THIEU**, Prop XX, Trường hợp 2, dòng 104
+  - source: by composition, as VK+Vk to KS+kS; and by division, as Vk-VK to kS-KS, that is, as 2VX to 2KX, and 2KX to 2SX, and therefore as VX to HX and HX to SX
+  - now: theo cách cộng và chia tỷ số, các tam giác VXH, HXS đồng dạng. Do đó VH:SH = VX:XH = VK:KS
+  - suggest: Mất chuỗi suy luận của Newton: (VK+Vk):(KS+kS); (Vk-VK):(kS-KS) tức 2VX:2KX và 2KX:2SX; nên VX:HX = HX:SX, rồi mới kết luận hai tam giác đồng dạng. Cần dịch đủ.
+- **NANG / HINH**, Hình dòng 10 (propositions-18-20-orbit-construction.svg)
+  - source: Nguồn có hình riêng cho Prop XVIII, XIX và XX Trường hợp 1-4, với các nhãn T, R, V, H, F, G, I, K, L, A, a, O, X, B, C, P, p, S...
+  - now: SVG chỉ có nhãn S, P, "tiêu điểm", "tiếp tuyến và điểm P", "tiếp tuyến tại P", "Elip / Hypebol", "Parabol"
+  - suggest: Hình tổng hợp không có T, R, V, H, F, G, I, K, L, A, a, O, X, B, C, p, k mà lời chứng minh nhắc liên tục, nên không minh hoạ được chứng minh. Thay bằng các hình bám nhãn bản gốc cho từng Proposition/Trường hợp.
+- **NANG / CHUGIAI**, Lemma XV, dòng 20-32
+  - source: Lemma XV: TR bisects SV perpendicularly at T, TS=TV, angle TRS = angle TRV (nguồn không nói gì về quang học hay dây kéo)
+  - now: "Lemma XV nói ST là trung trực của SV" ... "Cách dựng mà ông chỉ ra ... chính là cách thực hành mà người thợ dùng hàng thế kỷ: kẻ một sợi dây ... đường dây kéo"
+  - suggest: KHÔNG HỢP LÍ: (1) trung trực của SV là TR, không phải ST; đoạn này còn nhắc điểm P mà Lemma không dùng. (2) Tiêu đề "phân giác ngoài" chỉ đúng cho elip; với hypebol tiếp tuyến là phân giác trong. (3) Cách dựng bằng trung trực không phải cách dây kéo (dây kéo dùng tính chất tổng khoảng cách), nên "chính là" sai; "hàng thế kỷ" và "nhanh nhất" là khẳng định lịch sử/thực hành không có nguồn. (4) Câu về "ống khuếch đại ánh sáng" và "truyền bức xạ vô tuyến" mơ hồ, không nguồn. Còn lỗi gõ "kính viễn" (kính viễn vọng), "đọng âm thanh".
+- **NANG / CHUGIAI**, Prop XVIII-XX, dòng 154-166
+  - source: Nguồn chỉ có các cách dựng; không nói gì về động cơ, hành tinh quan sát hay số điều kiện
+  - now: "mỗi điều kiện ... chạm một đường thẳng là một ràng buộc tuyến tính" ... "lấy dư một điều kiện thì bài toán không xác định, lấy thiếu thì vô số nghiệm" ... "dạng tối ưu của nó ngày nay mang tên Lambert"
+  - suggest: KHÔNG HỢP LÍ: (1) tiếp xúc với đường thẳng không tuyến tính theo hệ số phương trình conic (đi qua điểm mới tuyến tính). (2) Đảo ngược: dư điều kiện thì vô nghiệm/quá xác định, thiếu thì vô số nghiệm; câu viết "dư thì không xác định" sai. (3) Gán cho Newton động cơ ("hành tinh quan sát ở vài vị trí", "không có máy tính nên dùng thước và com pa", "liệt kê đủ từng tổ hợp") không có trong nguồn. (4) Bài toán Lambert là về hai vị trí và thời gian bay, không phải dựng conic từ điểm và tiếp tuyến, nên "dạng tối ưu" sai. Phần đếm năm tham số (tiêu điểm 2 + trục 1 + điểm 1 + tiếp tuyến 1) là đúng.
+- **NHE / THEM**, Dòng 12, chú thích hình ngoài blockquote
+  - source: (OCR nguồn không có chú thích hay số hình này)
+  - now: *Hình 15. Sơ đồ tổng hợp được dựng lại từ các hình bản gốc; cần đối chiếu từng ký hiệu với scan.*
+  - suggest: Lời biên tập nằm ngoài blockquote Chú giải, kèm số "Hình 15" không có trong nguồn. Chuyển vào comment HTML hoặc khối Chú giải, hoặc bỏ.
+- **NHE / THIEU**, Prop XX, Trường hợp 4, dòng 144
+  - source: that is (because of the similar triangles VSP, hsq), as VS is to SP, or as ab to pq
+  - now: vh:pq = sh:sq = VS:SP = ab:pq
+  - suggest: Mất vế giải thích "vì các tam giác VSP, hsq đồng dạng" giữa sh:sq và VS:SP. Thêm vào.
+- **NHE / KHAC**, Prop XX, Trường hợp 4, dòng 138 và 150
+  - source: the angle VSH equal to the angle pyq ... the figure now described is similar to the figure aph
+  - now: ∠VSH = ∠pyq ... đồng dạng với hình aph
+  - suggest: Hai nhãn chép nguyên từ OCR hỏng. Câu sau trong nguồn viết "the angle vsh equal to the angle psq" nên pyq có lẽ là psq; hình đã nêu ở đầu Trường hợp 4 là apb nên aph có lẽ là apb. Nên xác nhận với scan.
+- **NHE / THIEU**, Lemma XV dòng 18; Prop XVIII dòng 44; Prop XIX dòng 58; Prop XX dòng 74-152
+  - source: Q.E.D. (Lemma XV); Q.E.F. (Prop XVIII, XIX và cuối các Trường hợp 2, 3, 4); "I say, the thing is done"
+  - now: (không có)
+  - suggest: Toàn phần thiếu Q.E.D./Q.E.F. và câu "I say the thing is done" ở Prop XVIII, XIX, XX các Trường hợp. Bổ sung.
+- **NHE / SAINGHIA**, Prop XX, Trường hợp 2, dòng 92
+  - source: erect the indefinite perpendicular OH, and cut the right line VS infinitely produced in K and k, so that VK be to KS...
+  - now: dựng đường vuông góc OH, cắt đường thẳng VS kéo dài vô hạn tại K, k sao cho
+  - suggest: Mất "indefinite" của OH; câu dịch dễ đọc thành OH cắt VS tại K, k, trong khi K, k là hai điểm trên VS lấy theo tỷ số. Sửa: dựng đường vuông góc vô hạn OH; và cắt đường thẳng VS kéo dài vô hạn tại K, k sao cho...
+- **NHE / KHAC**, Prop XX, Trường hợp 1, dòng 82
+  - source: as is manifest from the conic sections
+  - now: như các tính chất của hình cắt conc cho thấy
+  - suggest: Lỗi gõ "conc", sửa thành "conic".
+
+## 26-sach-i-phan-iv-lemma-xvi-proposition-xxi.md
+
+- *phần 1/1: Chuong 26, phan 1/1 (dong 1-104): Lemma XVI (Case 1-3), Proposition XXI (Bai toan XIII), Hoc luan (Scholium: hypebol lien hop, ba diem, de la Hire), 3 chu giai; doi chieu ia.txt dong 5810-59*
+
+- **NANG / SOLIEU**, Hoc luan, dong 82-83 (chuoi ti le TC:HB...)
+  - source: TC will be to HB as EC to EB; that is, as SC to SB; and by permutation, IC to SC as HB to SB, or as GA to SA.
+  - now: TC:HB = EC:EB = SC:SB = GA:SA.
+  - suggest: Nguon co hai buoc: IC:HB = EC:EB = SC:SB, roi hoan vi cho IC:SC = HB:SB = GA:SA (OCR doc 'TC'/'1C' cho IC). Ban dich gop thanh mot chuoi, bo buoc hoan vi va ngam bang SC:SB voi GA:SA (sai). Viet lai hai buoc, doi TC thanh IC.
+- **NANG / SAINGHIA**, Proposition XXI, dong 64
+  - source: the axis (which is either YH, or, if the trajectory be an ellipsis, PH + SP; or PH - SP if it be an hyperbola)
+  - now: Truc ay la YH neu quy dao la parabol, la PH+SP neu la elip, hoac PH-SP neu la hypebol.
+  - suggest: Nguon khong noi 'neu la parabol'; YH la mot cach cho truc (co tiep tuyen), PH+SP la khi elip, PH-SP khi hypebol. Bo 'neu quy dao la parabol', dich sat: 'truc la YH, hoac, neu quy dao la elip thi PH+SP, neu hypebol thi PH-SP'.
+- **NANG / CHUGIAI**, Chu giai 2, dong 94-96
+  - source: I do not comprehend its conjugate hyperbola under the name of this trajectory.
+  - now: Hai nhanh cua mot hypebol khong phai cung mot quy dao.
+  - suggest: KHONG HOP LI. Newton noi ve hypebol LIEN HOP, khong phai hai nhanh cua cung mot hypebol; tieu de va doan 'khong the nhay tu nhanh nay sang nhanh kia' sai doi tuong. Sua thanh 'hypebol lien hop' hoac bo.
+- **NANG / CHUGIAI**, Chu giai 2, dong 102
+  - source: M. De la Hire has solved this Problem much after the same way, in his Conics, Prop. XXV., Lib. VIII.
+  - now: Ong cung cho biet day la diem con tranh luan: ... M. de la Hire da giai bai toan ba diem gan nhu cung cach, theo ghi chu o cuoi chuong.
+  - suggest: KHONG HOP LI. Nguon chi noi de la Hire giai bai toan ba diem tuong tu; khong noi 'con tranh luan', khong lien quan den lap luan lien tuc cua hypebol, va khong co 'ghi chu cuoi chuong'. Bia dat; bo.
+- **NANG / CHUGIAI**, Chu giai 2, dong 104
+  - source: (Scholium chi noi vat chuyen dong lien tuc khong qua duoc hypebol lien hop)
+  - now: quy dao thap la tap bat bien, tach biet bang qua cau Hill ... bao toan mien lien thong ... du doan quy dao dai han
+  - suggest: KHONG HOP LI. Gan cho cau cua Newton ve hypebol lien hop mot y nghia ve cau Hill, 'bao toan mien lien thong', va khang dinh vat li khong co trong nguon; luan suy khong dung (cu day tu sinh khong gian thoi gian khong lien quan). Xoa doan nay.
+- **NHE / CHUGIAI**, Chu giai 1 va phan chu giai 2, dong 46, 50, 52, 98
+  - source: This problematic Lemma is likewise solved in Apollonius's Book of Tactions restored by Vieta.
+  - now: 'tieu cu A, B'; 'hai hypebol cung chia mot diem'; 'Ong can giai bai toan dung quy dao tu ba diem quan sat'; 'Hinh hoc nam the ky XVII'; 'cach Newton phan biet ba loai quy dao ma khong can ve hinh'
+  - suggest: HOP LI MOT PHAN. Toan dung (quy tich hieu la hypebol; ba khoang cach bang nhau la tam duong tron ngoai tiep). Loi go: 'tieu cu' phai la 'tieu diem', 'cung chia' vo nghia, 'nam the ky XVII' sai. Gan dong co/ y dinh cho Newton ('ong can', 'ong nhan ra', 'khong can ve hinh') khong co trong nguon; phan dinh vi TDOA la ung dung hien dai, nen ghi ro la anh xa hien dai.
+- **NHE / THEM**, Proposition XXI, dong 60
+  - source: Join SP, HP, and SP will be the difference between HP and the principal axis.
+  - now: ... ta co cach xac dinh H tu mot diem va mot tiep tuyen.
+  - suggest: Cau cuoi dong 60 khong co trong nguon (them vao phan dich, ngoai chu giai). Bo.
+- **NHE / THIEU**, Toan phan (Lemma XVI Case 1-3, Prop XXI, dong 28-64)
+  - source: Q.E.I. (Case 1, 2, 3 va cuoi Proposition XXI)
+  - now: khong co 'Q.E.I.' o cuoi cac muc
+  - suggest: Thieu 'Q.E.I.' (hoac 'dpcm/can dung') o Case 1, 2, 3 cua Lemma XVI va cuoi Proposition XXI. Bao mot muc.
+- **NHE / HINH**, Toan chuong
+  - source: Nguon co hinh cho Lemma XVI, Proposition XXI va hinh ba diem cua Scholium
+  - now: Chuong khong co hinh nao (khong co ![...](../assets/...))
+  - suggest: Khong co hinh trong chuong, trong khi loi chung minh dua vao nhan diem (A,B,C,Z,M,N,P,R,S,T,Q; S,T,Y,H,P,R; B,C,D,E,F,G,H,A,a). Nen them hinh theo quy tac sach (ghi 'can xem lai'). Khong the doi chieu nhan hinh vi khong co file.
+
+## 27-sach-i-phan-v-lemma-xvii-xxi.md
+
+- *phần 1/2: Chương 27, phần 1/2 (dòng 1-178): Sách I Phần V, Lemma XVII (3 trường hợp), Lemma XVIII + Hệ quả + Học luận, Lemma XIX + Hệ quả 1 + Hệ quả 2 (đến dòng 177, phần còn lại thuộc phần 2); đối ch*
+- *phần 2/2: Chương 27, phần 2/2 (dòng 179-350): đuôi Hệ quả 2 Lemma XIX, Lemma XX (+Hệ quả 1-3), Lemma XXI, Proposition XXII (+cách dựng khác, Hệ quả 1-2, Học luận), 3 khối Chú giải*
+
+- **NANG / THIEU**, Lemma XVII, Trường hợp 1, dòng 26-30
+  - source: the rectangles PQK and PQ x PR are equal; and therefore the rectangle PQ x PR is to the rectangle AQB, that is, to the rectangle PS x PT in a given ratio.
+  - now: Do đó, hình chữ nhật PQK và PQ x PR bằng nhau. Vì thế, PQ x PR : PS x PT đã cho. (mất bước nêu PQ x PR cũng ở tỷ số đã cho với AQB, tức với PS x PT)
+  - suggest: Thêm: "do đó hình chữ nhật PQ x PR ở trong tỷ số đã cho với hình chữ nhật AQB, tức với hình chữ nhật PS x PT".
+- **NANG / SOLIEU**, Lemma XVII, Trường hợp 2, dòng 36-39
+  - source: Et or PQ is to Tt as DN to NB.
+  - now: Et:PQ = Tt:DN.
+  - suggest: Sửa thành "Et (tức PQ) : Tt = DN : NB"; bản dịch đảo trật tự và thay NB bằng PQ, sai tỉ lệ thức so với nguồn.
+- **NANG / SAINGHIA**, Học luận, dòng 136-140
+  - source: as the rectangle under the sines of the angles S, T ... to the rectangle under the sines of the angles Q, R
+  - now: bằng tỷ số của diện tích dưới các góc của hai đường PS, PT với diện tích dưới các góc của hai đường PQ, PR
+  - suggest: Mất "sin": phải là "hình chữ nhật dưới các sin của các góc S, T ... với hình chữ nhật dưới các sin của các góc Q, R".
+- **NANG / CHUGIAI**, Chú giải cuối chương, dòng 348-350 (Lemma XXI/Prop XXII)
+  - source: (OCR không có nội dung này; ghi chú lịch sử do biên tập thêm; nguồn chỉ có câu "not an analytical calculus, but a geometrical composition, such as the ancients required")
+  - now: ông viết Principia vài thập kỷ trước khi hình học đồng phẳng trở thành một môn học riêng ... nền của hình học hình chiếu mà Desargues, Pascal và Brianchon phát triển sau đó ... thực bao hình học: giả hệ với một conic từ năm điểm
+  - suggest: KHÔNG HỢP LÍ: gán "tuyên bố có chủ ý" cho Newton không có nguồn; "hình học đồng phẳng", "trường phẳng chiếu", "thực bao hình học", "giả hệ" là cụm không rõ nghĩa/lỗi; Desargues và Pascal có trước Principia nên "phát triển sau đó" sai; "nền của hình học hình chiếu" là khẳng định lịch sử cần nguồn. Nên xóa hoặc viết lại, chỉ giữ câu có trong nguồn
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 340-344 (Lemma XXI)
+  - source: If the moveable point M ... be placed in any curve line, D will be placed in a conic section passing through the five points B, C, A, p, P (against Cor. 3, Lem. XX)
+  - now: quay hai cạnh BA, CA quanh B, C sao cho giao điểm luôn nằm trên một đường thẳng ... nếu quỹ tích là một đường cong, nó sẽ phải là conic đi qua đúng năm điểm đó
+  - suggest: KHÔNG HỢP LÍ: lẫn M với D. Trong Lemma XXI chính giao điểm các cạnh BL, CL (điểm M) nằm trên đường thẳng MN, còn giao điểm BA, CA hoặc BD, CD (điểm D) vẽ conic; và nếu M nằm trên đường cong thì D (chứ không phải quỹ tích của M) mới phải là conic qua năm điểm. Tiêu đề "giao điểm vẽ ra một đường thẳng" và "cơ chế của phép chiếu" cũng đảo giả thiết với kết luận hoặc quá lỏng. Viết lại
+- **NANG / CHUGIAI**, Chú giải thứ nhất, dòng 266 (Hệ quả 3 Lemma XX)
+  - source: Cor. 3: One conic section cannot cut another conic section in more than four points (no statement about arbitrary curves or five data points)
+  - now: thấy năm điểm nằm trên một đường cong lạ thì ngay lập tức hỏi nó có phải conic không, và nếu không thì không conic nào đi qua được cả năm điểm ấy
+  - suggest: KHÔNG HỢP LÍ (đoạn này; các đoạn còn lại của chú giải HỢP LÍ MỘT PHẦN): sai logic, năm điểm tổng quát luôn có một conic đi qua; Hệ quả 3 chỉ nói hai conic phân biệt không chung quá bốn điểm. "Duy nhất một conic" cần điều kiện không có ba điểm thẳng hàng; câu về "lý thuyết nội suy" và "sai số ở điểm thứ sáu" là suy diễn ngoài nguồn. Bỏ hoặc sửa
+- **NHE / THEM**, Lemma XVII, Trường hợp 2, dòng 41-61
+  - source: Rr is to AQ or PS as DM to AN. ... and by division, so is the rectangle PQ x PR to the rectangle PS x PT.
+  - now: Vì các tam giác AQr, PSr đồng dạng, ta có Rr:PS = DM:AN. ... Suy ra PQ x PR : PS x PT đã cho.
+  - suggest: Nguồn không viện dẫn tam giác AQr, PSr đồng dạng (chỉ nói "AQ or PS"); bỏ phần thêm này, giữ "AQ tức PS", và dịch "bằng phép chia (by division)" thay cho "Suy ra".
+- **NHE / SOLIEU**, Lemma XVII, Trường hợp 1, dòng 24
+  - source: Prop. XVII., XIX., XXI. and XXI1L, Book III., of Apollonius's Conies
+  - now: theo các Proposition XVII, XIX, XXI và XXII, Book III
+  - suggest: OCR đọc "XXI1L" (nhiều khả năng là XXIII nhưng không xác định chắc từ OCR); bản dịch ghi XXII, cần đối chiếu scan.
+- **NHE / THIEU**, Lemma XVIII, dòng 97-100
+  - source: as bk x bn to bf x bd, so (by Lem. XVII) pq x pr to ps x pt; and so (by supposition) PQ x PR to PS x PT.
+  - now: bk x bn : bf x bd = pq x pr : ps x pt.
+  - suggest: Thêm viện dẫn "(theo Lemma XVII)" cho đẳng thức này.
+- **NHE / THIEU**, Lemma XIX, Hệ quả 1, dòng 164
+  - source: the chord PD, where the points P and D meet, that is, where AH is drawn through the point D, becomes a tangent.
+  - now: Dây PD, nơi P và D gặp nhau, trở thành tiếp tuyến.
+  - suggest: Thiếu vế "tức là khi AH được kẻ qua điểm D".
+- **NHE / SAINGHIA**, Lemma XIX, Hệ quả 2, dòng 174-176
+  - source: AH will be its diameter or latus transversum, to which the latus rectum will be as BG2 to AG x GH.
+  - now: AH là đường kính hoặc latus transversum, và latus rectum tỷ lệ với BG^2/(AG x GH).
+  - suggest: Nguồn là tỷ lệ thức: latus rectum so với AH bằng BG^2 so với AG x GH; sửa thành "latus rectum : AH = BG^2 : (AG x GH)", không viết phân số "tỷ lệ với".
+- **NHE / THEM**, Hình 16, dòng 12
+  - source: (không có trong nguồn)
+  - now: *Hình 16. Sơ đồ tổng hợp được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập in nghiêng nằm ngoài blockquote; chuyển vào blockquote [Chú giải] hoặc bỏ.
+- **NHE / HINH**, dòng 10, section-v-conic-locus.svg
+  - source: Lemma XVII-XIX nhắc A,B,C,D,P,Q,R,S,T,O,K,N,M,t,r,d,e,H,I,E,F,G,b,k,n,f,p,q,s
+  - now: SVG chỉ có nhãn P, A, B, C, D (cùng hai dòng chữ tiếng Việt "bốn đường kẻ từ P tới các cạnh của hình thang", "quỹ tích là hình cắt conic")
+  - suggest: Hình thiếu các nhãn Q, R, S, T và mọi điểm phụ dùng trong lời chứng minh; chỉ một hình tổng hợp cho cả ba Lemma và nhiều hình gốc; cần bổ sung nhãn hoặc dựng đủ hình.
+- **NHE / KHAC**, dòng 16, 93, 95, 120
+  - source: conic section
+  - now: hình cắt conh (4 chỗ: dòng 16, 93, 95, 120)
+  - suggest: Lỗi gõ "conh" thành "conic".
+- **NHE / THIEU**, Toàn phần, các Q.E.D./Q.E.I.
+  - source: Q.E.D. (Lemma XVII ba trường hợp, Lemma XVIII), Q.E.I. (Lemma XIX)
+  - now: (không có)
+  - suggest: Bản dịch bỏ toàn bộ Q.E.D./Q.E.I. trong phần này; báo một mục.
+- **NHE / SAINGHIA**, Proposition XXII, dòng 301 và 308
+  - source: "parallel to those the lines TPS, PRQ" (OCR dòng 6329 đọc PRQ); "the lines Rr, Tt vanishing, the point d comes to coincide with D" (OCR đọc R/' và TV)
+  - now: qua điểm thứ tư P kẻ các đường song song $TPS$, $PRO$ ... Khi các đoạn $Rt$, $Tv$ biến mất, $d$ trùng với $D$
+  - suggest: Dòng 301: PRO -> PRQ (O là lỗi OCR, bài không có điểm O). Dòng 308: Rt, Tv -> Rr, Tt (v không có trong bài; OCR "R/' , TV" ứng với Rr, Tt)
+- **NHE / SAINGHIA**, Lemma XXI, dòng 272
+  - source: Join ON, BN, CP, BP (OCR; ngay sau đó chỉ dùng cực B, C và các tam giác NBM, NCM)
+  - now: Nối $ON$, $BN$, $CP$, $BP$
+  - suggest: Điểm O không tồn tại trong bài, bản dịch chép nguyên lỗi OCR. Từ OCR không xác định chắc chữ gốc, nhưng theo mạch (hai cực B, C và các tam giác NBM, NCM) rất có thể là CN; cần đối chiếu scan
+- **NHE / THIEU**, Lemma XXI, dòng 278
+  - source: since (by supposition) the angles MBD, NBP are equal, as also the angles MCD, NCP, take away the angles NBD and NCD that are common, and there will remain the angles NBM and PBT, NCM and PCR equal
+  - now: Vì $\angle MBD = \angle NBP$ và các góc tương ứng bằng nhau, sau khi bỏ các góc chung, ta có $\angle NBM = \angle PBT$, ...
+  - suggest: Mất "by supposition", mất đẳng thức MCD = NCP (thay bằng "các góc tương ứng"), mất tên các góc chung NBD, NCD. Bổ sung: "$\angle MCD = \angle NCP$" và "bỏ các góc chung $NBD$, $NCD$"
+- **NHE / THIEU**, Lemma XX Case 1 (dòng 202-210) và Hệ quả 1 (dòng 231)
+  - source: PQ is to DE (or IQ) as PB to HB ... PR is to DF as RC to DC, and therefore as (IG or) PS to DG; Cor.1: and in PT take Pt to Pr in the same ratio which PT has to PR
+  - now: Vì $PQ:DE = PB:HB$ ... $RC:DC = PS:DG$ ... lấy $Pt:Pr$ theo cùng tỷ số mà $PT:PR$
+  - suggest: Mất hai chú thích trong ngoặc "(or IQ)" và "(IG or)", mất "by permutation", và mất "in PT" (lấy Pt trên PT). Bổ sung: "DE (hay IQ)", "(IG hay) PS", "trên PT lấy Pt"
+- **NHE / THIEU**, Lemma XXI, dòng 270 và Prop XXII cách dựng khác, dòng 314-316
+  - source: drawn through given points B, C, as poles; the intersection, which is now supposed to be m, of the legs BL, CL; or BM, CM ... the intersection, which is now supposed to be d, ... will describe the trajectory required, PADdB (OCR: PADc/B); (by construction)
+  - now: kẻ qua các điểm cố định $B$, $C$ với điểm giao $M$ ... giao điểm của $BL$, $CL$ luôn nằm trên $MN$ ... sẽ mô tả quỹ đạo $PADCB$
+  - suggest: Mất "as poles" (làm cực) ở Lemma XXI; mất "mà nay giả sử là m / d" và "hoặc BM, CM" nên m, d xuất hiện sau mà chưa được giới thiệu; mất "(by construction)" ở dòng 318. Tên quỹ đạo PADCB: OCR đọc "PADc/B" (có thể là PADdB), không xác định được từ OCR
+- **NHE / SAINGHIA**, Proposition XXII, dòng 303
+  - source: drawing the right line tr parallel to TR, cutting off from the right lines PT, PR, any segments Pt, Pr, proportional to PT, PR
+  - now: kẻ đường thẳng $tr$ song song với $TR$, cắt các đoạn $PT$, $PR$ theo những tỷ lệ đã cho, sao cho $Pt:Pr = PT:PR$
+  - suggest: "theo những tỷ lệ đã cho" thay cho "any segments ... proportional to PT, PR" (đoạn Pt, Pr tùy ý, tỉ lệ với PT, PR). Đề xuất: "cắt từ PT, PR các đoạn Pt, Pr bất kỳ tỉ lệ với PT, PR"
+- **NHE / THIEU**, toàn phần 2 (Q.E.D./Q.E.I./Q.E.F.)
+  - source: Q.E.D. (Lemma XX Case 1), Q.E.D. (Case 2, OCR "Q.E.I)"), Q.E.D. (Lemma XXI hai chỗ), Q.E.F. (Prop XXII hai cách dựng)
+  - now: (không có)
+  - suggest: Bản dịch không giữ các dấu kết thúc chứng minh; chỉ báo một mục cho cả phần
+- **NHE / THUATNGU**, Lemma XX dòng 190, 227, 248, 252, 295
+  - source: conic section
+  - now: hình cắt conh (dòng 184, 190, 227, 291, 308...) so với hình cắt conic (dòng 248, 295) và "conic" trong Chú giải
+  - suggest: Một thuật ngữ viết hai dạng "conh" và "conic" ngay trong phần dịch. Thống nhất một dạng
+- **NHE / HINH**, toàn phần 2 (Lemma XX, XXI, Prop XXII)
+  - source: Nguồn có hình kèm Lemma XX, Lemma XXI (hai hình), Prop XXII (hai hình) và Học luận (một hình); OCR chỉ còn nhãn rời rạc
+  - now: Phần 2 không có ảnh ![...](../assets/...) nào, không có chú thích hình
+  - suggest: Thiếu hình cho Lemma XX-XXII; nhãn điểm A, B, C, P, D, T, R, S, Q, M, N, d... của bài nhắc nhiều không có hình đối chiếu. Cần thêm hình, hoặc đánh dấu thiếu hình theo quy tắc sách
+
+## 28-sach-i-phan-v-proposition-xxiii-xxvi-lemma-xxii-xxv.md
+
+- *phần 1/2: Chương 28, phần 1/2 (dòng 1-171): Proposition XXIII (Case 1, 2), XXIV, Lemma XXII và hình 17 cùng 2 chú giải; nguồn ia.txt dòng 6406-6636*
+- *phần 2/2: Chương 28, phần 2/2 (dòng 172-339): Proposition XXV, XXVI; Lemma XXIII (+Hệ quả), Lemma XXIV (+Hệ quả 1-2), Lemma XXV (+Hệ quả 1-3). Không có hình, không có Chú giải trong phần này.*
+
+- **NANG / THIEU**, Lemma XXII, dòng 136
+  - source: "I say farther, that if any right line touches the curve line... For if any two points of the curve ... come to coincide ... tangents of the curves in both figures. I might have given demonstrations ... more geometrical form; but I study to be brief."
+  - now: Chỉ có câu phát biểu "Nếu một đường thẳng chạm đường cong ở hình thứ nhất ... và ngược lại."; mất phần chứng minh và câu Newton nói mình ngại dài nên không chứng minh theo lối hình học hơn
+  - suggest: Thêm dịch: nếu hai điểm bất kỳ của đường cong ở hình thứ nhất tiến lại gần nhau đến khi trùng nhau thì hai điểm tương ứng ở hình mới cũng tiến lại gần và trùng nhau, nên các đường thẳng nối chúng cùng thành tiếp tuyến ở cả hai hình. Thêm câu "Tôi có thể đưa các chứng minh này dưới dạng hình học hơn, nhưng tôi chú trọng sự ngắn gọn."
+- **NANG / THIEU**, Lemma XXII, dòng 140
+  - source: "Thus any right lines converging to a point are transformed into parallels, by taking for the first ordinate radius any right line that passes through the point of concourse ... parallel lines are such as tend to a point infinitely remote."
+  - now: "Các đường thẳng hội tụ tại một điểm có thể biến thành các đường song song; và sau khi giải bài toán ..." (mất cách làm và lí do)
+  - suggest: Bổ sung: lấy làm bán kính ordinate đầu một đường thẳng bất kỳ qua điểm hội tụ của các đường ấy; vì khi đó điểm hội tụ bị đưa ra vô cực, mà các đường song song là các đường hướng tới một điểm xa vô cùng
+- **NANG / THIEU**, Lemma XXII, dòng 117
+  - source: "Oa (by which the parallelogram OABa is completed) the new ordinate radius."
+  - now: "và $Oa$ là bán kính ordinate mới" (mất vế ngoặc đơn; điểm a không còn được xác định ở đâu)
+  - suggest: Dịch: "và Oa, nhờ đó hoàn thành hình bình hành OABa, là bán kính ordinate mới"
+- **NANG / SAINGHIA**, Lemma XXII, dòng 156 (cuối Lemma)
+  - source: "This Lemma is also of use in the solution of solid problems. For as often as two conic sections occur, by the intersection of which a problem may be solved, ... So also a right line and a conic section, in the construction of plane problems, may be transformed into a right line and a circle"
+  - now: "Lemma cũng dùng được cho các bài toán không gian. Khi có hai hình cắt conh, một trong chúng ..." (solid problem dịch thành "bài toán không gian"; thiếu vế "giao của chúng giải bài toán" và cả câu cuối về bài toán phẳng)
+  - suggest: Dịch "solid problems" bằng thuật ngữ "bài toán đặc/bài toán khối" (không phải "không gian"), thêm "mỗi khi gặp hai hình cắt conic mà giao của chúng giải được bài toán", và thêm câu cuối: đường thẳng cùng một hình cắt conic trong dựng bài toán phẳng có thể biến thành đường thẳng cùng một đường tròn
+- **NANG / THIEU**, Proposition XXIV, dòng 105
+  - source: "But the constructions being demonstrated where that right line does cut the trajectory, the constructions where it does not are also known; and therefore, for brevity's sake, I omit any farther demonstration of them."
+  - now: Đoạn cuối chỉ có hai vế lặp lại "có cắt ... hay không"; mất câu cuối của Newton
+  - suggest: Thêm: "Nhưng khi các cách dựng đã được chứng minh trong trường hợp đường ấy cắt quỹ đạo thì các cách dựng khi nó không cắt cũng được biết; nên vì ngắn gọn tôi bỏ chứng minh thêm cho chúng."
+- **NANG / SAINGHIA**, Proposition XXIII Case 2, dòng 35-43
+  - source: "HA may be to IA as the rectangle under a mean proportional between CG and GP, and a mean proportional between BH and HD is to a rectangle under a mean proportional between GD and GB, and a mean proportional between PI and IC"
+  - now: HA:IA = [hcn dưới TBN(CG,GP)]/[hcn dưới TBN(BH,HD)] : [hcn dưới TBN(GD,GB)]/[hcn dưới TBN(PI,IC)] (dạng thương, mỗi "hình chữ nhật" chỉ còn một trung bình nhân)
+  - suggest: Nguồn là tỉ số của hai hình chữ nhật, mỗi hình chữ nhật có hai cạnh là hai trung bình nhân: HA:IA = [√(CG·GP)·√(BH·HD)] : [√(GD·GB)·√(PI·IC)]. Sửa công thức thành tích, không phải thương
+- **NANG / THIEU**, Proposition XXIII Case 1, dòng 20
+  - source: "their point of concourse d will (by Lem. XX) always fall on the trajectory to be described"
+  - now: "Điểm d sẽ luôn nằm trên quỹ đạo cần dựng." (mất viện dẫn Lemma XX)
+  - suggest: Thêm "(theo Lemma XX)" sau "Điểm d"
+- **NANG / HINH**, Hình 17, dòng 8-10
+  - source: Nguồn có nhiều hình riêng cho Case 1 (điểm H,B,C,I,P,S,Q,T,R,D,r,t), Case 2 (H,I,G,A,B,C,D,P,X,Y) và Prop XXIV (H,I,K,L,B,C,D,R,S,A,P)
+  - now: Hình SVG chỉ có nhãn A,B,C,D,P cùng chữ "các điểm đã cho", "tiếp tuyến", "đường phụ"; lời chứng minh dùng H,I,G,S,Q,T,R,K,L,X,Y,Z,M,N mà hình không có
+  - suggest: Thay bằng hình đúng nhãn của từng Proposition; bỏ chữ tiếng Việt tự thêm trong hình. Dòng 10 (chú thích in nghiêng "Sơ đồ tổng hợp được dựng lại ... cần đối chiếu với scan") là lời biên tập nằm ngoài blockquote, tức THÊM, nên chuyển vào comment HTML hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải 1, dòng 142-154
+  - source: Nguồn: Newton chứng minh bằng thay AD = OA×AB/ad, DG = OA×dg/ad, rồi nói "I might have given demonstrations ... in a more geometrical form; but I study to be brief."
+  - now: "Newton chứng minh bằng cách thay trực tiếp vào phương trình ... dù ông vẫn khẳng định mình đang dùng hình học thuần tuý"; "cả hai toạ độ ... biến đổi theo cùng một tỷ lệ"; "phép nghịch đảo"; "phép biến đổi song ánh xạ"; "chung lớp"
+  - suggest: KHÔNG HỢP LÍ (phần bậc được bảo toàn là HỢP LÍ MỘT PHẦN). Newton không khẳng định "hình học thuần tuý", ông thừa nhận chứng minh theo lối đại số cho ngắn. Hai toạ độ không đổi theo "cùng một tỉ lệ" mà cùng chia cho ad (phải nhân thông qua mẫu để ra phương trình cùng bậc). "Phép nghịch đảo" dễ nhầm với phép nghịch đảo đường tròn: nguồn là "inverse operations" (phép biến đổi ngược). "Song ánh xạ" thành "song hữu tỉ"/phép biến đổi xạ ảnh; "chung lớp" không có cơ sở; câu "chuẩn hoá ... bài toán conic ngoài mặt phẳng" vô nghĩa. Nên viết lại
+- **NANG / CHUGIAI**, Chú giải 2, dòng 158-170
+  - source: Nguồn chỉ nói Lemma dùng cho solid problems: một trong hai hình cắt conic có thể biến thành elip rồi thành đường tròn; không nhắc không gian ba chiều, quỹ đạo, Phần III-IV
+  - now: "Một hình cắt conic bất kỳ trong không gian ba chiều có thể được biến thành đường tròn"; "Mặt phẳng nào chứa trục lớn ... cắt nó theo một elip; nếu vuông góc với trục lớn ..."; "Ông đang giải bài toán quỹ đạo trong không gian ba chiều"; "chiếu quỹ đạo lên mặt phẳng vuông góc với vectơ moment động lượng: quỹ đạo trở thành đường tròn"
+  - suggest: KHÔNG HỢP LÍ. Hiểu sai "solid problems" thành không gian ba chiều. Mặt phẳng chứa trục lớn không cắt conic theo elip, mặt phẳng vuông góc trục lớn cắt ở một điểm. Gán cho Newton ý định "dùng lại Phần III-IV" và "giải quỹ đạo 3D" không có trong văn bản. Quỹ đạo Kepler vốn nằm sẵn trong mặt phẳng vuông góc với L; chiếu lên mặt phẳng đó không biến elip thành đường tròn. Nên viết lại hoặc bỏ
+- **NANG / THIEU**, Prop XXV, dòng 190-200
+  - source: they are in the subduplicate of that ratio; and by composition, in the given ratio of the sum of all the antecedents hi+kl to the sum of all the consequents sqrt(ahb)+ik : sqrt(alb)
+  - now: đều có cùng tỷ số. Vì vậy, c, d, e là các điểm tiếp xúc trong hình mới.
+  - suggest: Thêm: hc:√ahb, ic:id, ke:kd, el:√alb ở trong căn của tỷ số ấy; theo phép cộng tỷ số, chúng bằng tỷ số đã cho của tổng các số hạng đầu hi+kl so với tổng các số hạng sau (√ahb+ik+√alb); từ tỷ số đã cho ấy suy ra các điểm tiếp xúc c, d, e.
+- **NANG / SAINGHIA**, Lemma XXIII, dòng 224
+  - source: Let CF be cut in L so as CL may be to CF in the ratio of CK to CD (OCR in "Let E K CF be cut in L", "E K" là nhiễu hình)
+  - now: Cắt EK tại F sao cho CL:CF = CK:CD.
+  - suggest: Sửa thành: cắt CF tại L sao cho CL:CF = CK:CD (F đã được định nghĩa ở trên, không phải giao của EK).
+- **NHE / SOLIEU**, Prop XXIII dòng 20; Lemma XXII dòng 113; Prop XXIV dòng 87
+  - source: "segments Pr, Pt proportional to PR, PT"; "having such ratio to Qd [OCR; sau là Od:OD] as DG has to OD"; "as SI is to SL2" (OCR không có số mũ trên SI)
+  - now: "$Pr:Pr$ và $Pt:PT$"; "tỷ số với $Qd$"; "$CID:CLD = SI:SL^2$"; còn dùng "hình cắt conh" nhiều chỗ
+  - suggest: Sửa thành Pr:PR; Qd thành Od (OCR hỏng, các tỉ lệ thức dòng 125 dùng Od:OD); SI:SL^2 theo OCR không đủ thứ nguyên, kiểm tra SI^2:SL^2 theo scan vì bước kế dùng IZ:LP=SI:SL; sửa "conh" thành "conic"
+- **NHE / THIEU**, Cả phần, dòng 20-103
+  - source: "Q.E.F." sau Case 1 (Prop XXIII), Case 2 và Prop XXIV
+  - now: Không có "Q.E.F." nào trong phần dịch
+  - suggest: Thêm "Q.E.F." (c.d.f.) ở cuối mỗi Case và Proposition
+- **NHE / THIEU**, Prop XXV, dòng 200
+  - source: By the inverted operations of the last Lemma, let those points be transferred into the first figure, and the trajectory will be there described by Prob. XIV.
+  - now: Chuyển chúng trở lại hình đầu bằng các phép biến đổi nghịch; quỹ đạo cần tìm được mô tả.
+  - suggest: Thêm viện dẫn: quỹ đạo được dựng ở đó theo Bài toán XIV (Prob. XIV; theo tiêu đề chương, Prob. XIV là Proposition XXII).
+- **NHE / SOLIEU**, Prop XXVI, dòng 212
+  - source: But through those points that trajectory may be described by Prop. XVII. (OCR đọc "Prop. XVII"; không xác định được từ OCR liệu có hỏng không)
+  - now: Dựng quỹ đạo qua hai điểm ấy bằng Proposition XXII.
+  - suggest: Số La Mã viện dẫn lệch với OCR (XVII so với XXII); cần đối chiếu bản gốc.
+- **NHE / THIEU**, Lemma XXIV, dòng 263-266 và Hệ quả 1 dòng 273
+  - source: LI is to CD as CD to CH; and therefore (ex aequo perturbate) AF is to CD as CD to BG. / AF (ex aequo perturbate) will be to BQ as AP to BG
+  - now: Suy ra AF:CD = CD:BG. / AF:BQ = AP:BG.
+  - suggest: Thêm "ex aequo perturbate" (ở Lemma và Hệ quả 1), và "(hay CK)" sau LI.
+- **NHE / THIEU**, Lemma XXV, dòng 299 và 309
+  - source: ME is to EI as (AM or) BK to BQ ... KH is to HL as (BK or) AM to AF
+  - now: ME:EI = BK:BQ. ... KH:HL = AM:AF.
+  - suggest: Thêm "(hay AM)" và "(hay BK)" - lời giải thích hai cạnh đối bằng nhau.
+- **NHE / THIEU**, Prop XXVI, dòng 210
+  - source: the two pairs of tangents, each of which before concurred in the first ordinate radius, will now become parallel
+  - now: Trong hình mới, hai cặp tiếp tuyến sẽ trở thành song song.
+  - suggest: Thêm mệnh đề "mỗi cặp trước đó cắt nhau trên bán kính ordinate đầu".
+- **NHE / THUATNGU**, Lemma XXV Hệ quả 1, dòng 319
+  - source: the rectangle KQ x ME, as also the rectangle KH x ME ... those rectangles are equal
+  - now: diện tích KQ × ME, cũng như diện tích KH × ME ... hai diện tích ấy bằng nhau
+  - suggest: "rectangle" ở Prop XXV dịch "hình chữ nhật"; ở đây "diện tích" - nên thống nhất "hình chữ nhật".
+- **NHE / KHAC**, Toàn phần (vd dòng 178, 190, 200, 210, 234)
+  - source: conic section
+  - now: hình cắt conh
+  - suggest: "conh" có vẻ lỗi gõ/thay thế nhầm của "conic"; đối chiếu thuật ngữ "hình cắt conic" dùng ở các chương khác.
+- **NHE / THIEU**, Toàn phần (Lemma XXIII, XXIV, XXV; Prop XXV)
+  - source: Q.E.D. / Q.E.F.
+  - now: (không có)
+  - suggest: Thiếu Q.E.D./Q.E.F. ở cuối các chứng minh (báo một mục cho cả phần).
+
+## 29-sach-i-phan-v-proposition-xxvii-xxviii-lemma-xxvi.md
+
+- *phần 1/1: Chương 29, phần 1/1 (dòng 1-109): Prop XXVII, Scholium, Lemma XXVI và Hệ quả, Prop XXVIII, hai khối Chú giải. Không có ảnh trong phần này nên không kiểm hình.*
+
+- **NANG / SAINGHIA**, Scholium, dòng 32
+  - source: the contrary will happen if those legs meet in the remotest point L
+  - now: Điều tương tự xảy ra khi chúng gặp nhau tại điểm xa nhất L.
+  - suggest: Sửa thành điều ngược lại: khi gặp nhau tại L thì CP, BP song song với trục nhỏ và vuông góc với trục lớn.
+- **NANG / SAINGHIA**, Lemma XXVI, phát biểu, dòng 58
+  - source: in such manner that the spiral angles may touch the several lines (OCR; Lemma XXVII cùng OCR ghi "the several angles may touch the several lines")
+  - now: sao cho các góc xoắn ốc có thể chạm các đường ấy
+  - suggest: Có vẻ là lỗi OCR của "several"; "xoắn ốc" không có nghĩa hình học ở đây. Nên bỏ "xoắn ốc" (các góc ấy lần lượt chạm các đường). Tiêu đề Chú giải "Đồng dạng xoắn ốc" dựa trên chỗ này.
+- **NANG / CHUGIAI**, Chú giải sau Scholium, dòng 42-54 (KHÔNG HỢP LÍ)
+  - source: Cor. 3 Lem. XXV chỉ nói đường nối trung điểm các đường chéo đi qua tâm; không có chữ nào về thước-compa, động cơ hay lịch sử hậu thế
+  - now: tứ giác nội tiếp tiếp tuyến; quan hệ cực - đường chân tròn; Newton tự bỏ qua vì không phục vụ mục đích; đường tròn đường kính; hình học tính tục
+  - suggest: Tứ giác ngoại tiếp conic (không phải nội tiếp); "đường chân tròn" và "hình học tính tục" vô nghĩa; gán ý định cho Newton ("chỉ có thước kẻ và com pa", "tự bỏ qua") và khẳng định lịch sử không nguồn. Ý "tâm là cực của đường ở vô cùng" là đúng. Nên viết lại hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải sau Lemma XXVI, dòng 83-95 (KHÔNG HỢP LÍ)
+  - source: Lemma chỉ dựng tam giác có ba góc chạm ba đường; Cor. nói về đoạn cho trước chắn giữa ba đường
+  - now: Ga:AB = GP:PQ ... chính là phép nhân hai số phức, điểm cần tìm chính là zw; người thực địa phải giải; định lý chặn của hình học giải tích; Newton không có ký hiệu phức
+  - suggest: Đẳng thức Ga:AB=GP:PQ là một bước dựng, không phải phép nhân phức đã chứng minh; gán nhu cầu thực địa và lý do cho Newton không nguồn; "định lý chặn" không phải khái niệm có thật; nói về conic nhưng Lemma chưa đụng tới conic (là Prop XXVIII). Nên viết lại.
+- **NHE / THIEU**, Scholium dòng 24 và dòng 28-30; Prop XXVII dòng 14
+  - source: diagonals (if I may so call them) BD, GF ... its infinitely remote extremity (if we may say so) is a point of contact
+  - now: điểm tiếp xúc ở vô cùng xa của nó là một điểm tiếp xúc (không có lời rào đón); các đường chéo BD, GF (không có lời rào đón)
+  - suggest: Thêm "(nếu tôi được phép gọi như vậy)" ở dòng 14 và "(nếu có thể nói vậy)" ở dòng 24.
+- **NHE / THIEU**, Cả chương: cuối Prop XXVII, Lemma XXVI, Prop XXVIII
+  - source: Q.E.F. (ba lần)
+  - now: (không có)
+  - suggest: Thêm "Q.E.F." cuối ba mục (báo một mục cho cả phần).
+- **NHE / THIEU**, Prop XXVII, dòng 18
+  - source: where the tangents not parallel ... meet the parallel tangents GF, KL, draw GK, FL meeting in R
+  - now: Qua các giao điểm của các tiếp tuyến không song song, kẻ GK, FL cắt nhau tại R.
+  - suggest: Thêm: các giao điểm G, K và F, L là nơi các tiếp tuyến không song song gặp hai tiếp tuyến song song GF, KL (OCR ghi sai tên nên không xác định được chữ cái chính xác).
+- **NHE / SOLIEU**, Prop XXVII, dòng 12
+  - source: ABG, BCF, GCD, FDE, EA to be the tangents given by position
+  - now: AB, BC, CD, DE, EA là năm tiếp tuyến đã cho
+  - suggest: Năm đường là ABG, BCF, GCD, FDE, EA (các điểm G, F nằm trên đó; bản dịch về sau dùng BG, GF mà G, F chưa được định nghĩa).
+- **NHE / SOLIEU**, Scholium, dòng 28 và 30
+  - source: legs BP, CP, of the moveable angles PBN, PCN (OCR "PEN"); legs CN, BN
+  - now: các góc di động BPN, PCN; hai cạnh GN, BN
+  - suggest: Sửa "BPN" thành "PBN" (cặp với PCN, và về sau là PCK, PBK) và "GN" thành "CN" (dòng 30 sau đó viết CN, BN).
+- **NHE / THUATNGU**, Lemma XXVI dòng 62; Scholium dòng 38; dòng 38, 40, 52
+  - source: describe three segments of circles DRE, DGF, EMF; a trapezium given in kind; conic section
+  - now: ba hình quạt DRE, DGF, EMF; một hình thang đã biết loại; hình cắt conh (lỗi gõ)
+  - suggest: "segment of circle" là cung/viên phân, không phải hình quạt; "trapezium" ở đây là tứ giác tổng quát (bốn điểm, bốn cạnh), không phải hình thang; "conh" nên là "conic".
+- **NHE / KHAC**, Scholium, dòng 34 và 40
+  - source: through four given points (OCR "f mr"); the point of bisection will touch another conic section
+  - now: dựng một quỹ đạo đã biết loại qua các điểm đã cho; điểm chia đôi sẽ nằm trên một hình cắt conh khác
+  - suggest: Thiếu "bốn" điểm; OCR đọc "to'ich" nên là "touch", bản dịch viết "nằm trên" (đổi động từ).
+- **NHE / SAINGHIA**, Hệ quả của Lemma XXVI, dòng 101
+  - source: by the access of its point D to the side EF, and by having the sides DE, DF placed in directum
+  - now: do đỉnh D tiếp xúc với cạnh EF và do các cạnh DE, DF được đặt trực tiếp
+  - suggest: "access" là việc điểm D tiến sát cạnh EF; "in directum" là đặt thẳng hàng nối nhau. Câu hiện tại lủng củng và đổi nghĩa; nên: khi đỉnh D tiến tới cạnh EF, các cạnh DE, DF được đặt thành một đường thẳng.
+
+## 30-sach-i-phan-v-vi-lemma-xxvii-proposition-xxix-xxx.md
+
+- *phần 1/1: Chuong 30, phan 1/1 (dong 1-177): Lemma XXVII, Proposition XXIX (+Scholium), Section VI, Proposition XXX (+Cor 1-3), Lemma XXVIII; doi chieu ia.txt dong 7062-7403*
+
+- **NANG / THIEU**, Lemma XXVII, sau dong 31 (thieu ca Cor va loi giai thu hai)
+  - source: COR. Hence a right line may be drawn whose parts intercepted in a given order, between four right lines given by position, shall have a given proportion... Sir Christopher Wren and Dr. Wallis have long ago given other solutions
+  - now: Khong co. Chuong chuyen thang tu cau ket Lemma XXVII sang Proposition XXIX
+  - suggest: Dich du Cor (nang cac goc FGH, GHI de FG,GH,HI thang hang; cach dung K, L, i, M, g, f, h), phan chung minh (BR:BD = fh:fg...), doan EV/iX/iY va cau ve Wren, Wallis
+- **NANG / THIEU**, Lemma XXVIII, sau dong 167 (thieu Cor)
+  - source: COR. Hence the area of an ellipsis, described by a radius drawn from the focus to the moving body, is not to be found from the time given by a finite equation... geometrically rational / irrational... the tenth Book of Elements
+  - now: Khong co. Chuong dung o cau ve hinh bau duc khong bi hinh lien hop cham, roi sang chu giai
+  - suggest: Dich day du Cor cua Lemma XXVIII (dien tich elip theo thoi gian, dinh nghia duong cong huu ti/vo ti hinh hoc, cau mo dau cho Proposition XXXI)
+- **NANG / THIEU**, Lemma XXVII, dong 14 (phat bieu)
+  - source: ...four right lines given by position, that are neither all parallel among themselves, nor converge to one common point
+  - now: Dung mot hinh thang da biet loai, co cac goc duoc dat tuong xung voi bon duong thang da cho theo vi tri, sao cho... chat cac duong ay
+  - suggest: Them dieu kien: bon duong thang khong song song het voi nhau va khong hoi tu ve mot diem chung
+- **NANG / SOLIEU**, Proposition XXX, dong 88-119 (chung minh)
+  - source: (AO+AG)^2+(PO-GH)^2 ... 2GH x PO ... AO x PO^2/(4AS)?? ... (fraction)GH x AS (= area APO - SPO) = area APS. But GH was 3M, and therefore (fraction)GH x AS is 4AS x M
+  - now: dong 94: (AO+AG)^2+PO^2-GH^2; dong 100 thieu so hang -2GH.PO va doi dau 2GAO; dong 110 AO^2 thay bang AO.AO; dong 112-119: GH.AS = dien tich APS roi GH.AS=4AS.M voi GH=3M
+  - suggest: Sua (PO-GH)^2 va khoi phuc so hang -2GH.PO; OCR doc he so phan so truoc GH x AS (so 4/3 suy tu GH=3M, khong xac dinh duoc tu OCR) nen GH.AS=4AS.M voi GH=3M la sai; AO^2 duoc thay bang AO nhan phan so co PO^2 (OCR dong 7278), khong phai AO.AO
+- **NANG / THIEU**, Lemma XXVIII, dong 155 va 161
+  - source: ...the calculus will be the same in every case, and therefore the conclusion always the same, which must therefore comprehend all those intersections at once within itself... since this is but one simple curve and not reducible to more curves... that which was first or nearest, after one revolution, will be the second; after two, the third
+  - now: Chi co: Vi cac giao diem co cung quy luat... phep tinh cua chung la nhu nhau; dong 161 bo mat 'chi la mot duong cong don gian khong quy ve nhieu duong' va 'giao diem dau tien sau mot vong thanh thu hai, sau hai vong thanh thu ba'
+  - suggest: Bo sung cac mệnh de bi mat (ket luan chung phai chua dong thoi moi giao diem; duong xoan oc la mot duong cong don khong quy duoc; thu tu giao diem doi sau moi vong)
+- **NANG / SAINGHIA**, Lemma XXVIII, dong 153
+  - source: one of those intersections is not to be found but by an equation of two dimensions, for which the other intersection may be also found
+  - now: khong the tim mot diem bang phuong trinh bac mot; ca diem kia cung xuat hien trong cung phuong trinh
+  - suggest: Phai la: chi tim duoc bang phuong trinh hai chieu (bac hai), nen diem kia cung xuat hien; ban dich doi thanh 'khong bang bac mot' lam mat luan diem
+- **NANG / CHUGIAI**, Chu giai dong 133-141 (KHONG HOP LI)
+  - source: Prop. XXX: area APS=APO-SPO; GH=3M; circle about H through S
+  - now: Dien tich quet ASD ... 2/3 hinh chu nhat tren AP; dien tich ti le voi lap phuong tham so; can bac ba ... tra bang; Tabula Motuum 1713; phuong trinh Kepler dung ham elliptic; luc ti le nghich binh phuong khong co luc bo tro thi quy tich la parabol
+  - suggest: Sai: ASD/AP khong khop Proposition (APS, AO, PO); dien tich APS ~ t^3+3t (bac ba) chu khong ti le t^3; Kepler khong can ham elliptic; luc nghich binh phuong cho conic chu khong phai parabol (parabol la ung voi luc deu); nhieu khang dinh lich su (Tabula Motuum, 1713, nhom Newton o London) khong nguon. Nen viet lai hoac bo
+- **NANG / CHUGIAI**, Chu giai dong 169-177 (KHONG HOP LI)
+  - source: Lemma XXVIII: area cut off by right lines at pleasure; perimeter extension only in the closing paragraph
+  - now: Ong dung o do dai chu vi; pi la so sieu hat (Lindemann); khong ton tai cong thuc huu han dung duoc do dai chu vi duong tron tu duong kinh; vi sao Newton chung minh dieu hien nhien (dong co)
+  - suggest: Lemma ve dien tich bi cat boi duong thang bat ky, chu vi chi la phan mo rong (khong thu hep); 'sieu hat' phai la 'sieu viet'; chu vi tron = pi.d la cong thuc huu han, cai khong lam duoc la dung thuoc va compa; dong co cua Newton va 'phep vi phan' la suy doan khong nguon
+- **NHE / SAINGHIA**, Lemma XXVII dong 31 va 26; Hệ quả 1 dong 123
+  - source: by construction the angles fAg?, ...are equal to the angles FaG, FbH, FcI; ab is to bc as PQ to QR, that is as AB to BC; GH is to AS as the time in which ... to the time in which
+  - now: dong 31: cac goc F,G,H,I bang cac goc tuong ung; dong 26 bo buoc PQ:QR; dong 123: GH:AS bang thoi gian ... trong thoi gian ...
+  - suggest: Dong 31 sua thanh cac goc o A,B,C (OCR hong, khong xac dinh duoc nhan chinh xac) bang FaG, FbH, FcI; them ab:bc=PQ:QR=AB:BC; Hệ quả 1 phai la ti so hai thoi gian
+- **NHE / THUATNGU**, Lemma XXVII dong 18; Lemma XXVIII dong 145,153-161
+  - source: segments of circles FSG... ; equations of... dimensions; conic sections; solid problems
+  - now: 'hinh quat' cho 'segment'; 'dimensions' khi la 'bac', khi la 'so chieu'; 'hinh cat conh' (loi go) ; 'solid' thanh 'khong gian'
+  - suggest: Dung 'cung tron/hinh vien phan' thay 'hinh quat'; thong nhat 'dimensions'; sua 'conh' thanh 'conic'; 'solid problem' dich la bai toan khoi
+- **NHE / SOLIEU**, Proposition XXIX Scholium dong 58-63
+  - source: ALKA, DALND ... meeting the right line CE in L(i?) ... Make the angle iEP equal IGF, PE to Ei as FG to GI ... PEtP
+  - now: dong 58: ADLA; dong 58,60: MN cat CE tai L, goc LEP, PE:EI; dong 63: PQ'
+  - suggest: Nguon OCR doc ALKA khong phai ADLA; OCR doc iEP va Ei (chu thuong i) nhung ban dich doi thanh LEP va EI nen trung L va I; PQ' lech so voi OCR PQ/'; sua cho khop nguon
+- **NHE / HINH**, Dong 8-10 (hinh dau chuong va chu thich)
+  - source: Lemma XXVII, Prop. XXIX va Scholium co hinh rieng; hinh Prop. XXX co diem O (chan duong vuong goc PO)
+  - now: Chu thich in nghieng 'Hinh 18. So do duoc dung lai... can doi chieu ky hieu voi scan' dong 10; SVG chi co nhan A, S, G, P, H va chu 'truc chinh', 'ban kinh SP', 'diem P can tim'
+  - suggest: Hinh Prop. XXX dat truoc Lemma XXVII; thieu nhan O ma loi chung minh dong 88-100 nhac; khong co hinh cho Lemma XXVII/XXIX; chu thich ngoai blockquote va nhan chu Viet trong hinh la them cua nguoi bien tap
+
+## 31-sach-i-phan-vi-vii-proposition-xxxi-xxxiii.md
+
+- *phần 1/2: Chương 31, phần 1/2 (dòng 1-157): Prop XXXI (Problem XXIII) + Học luận (Scholium) đến câu "Tìm góc Y"; đối chiếu OCR dòng 7405-7545; không có chú giải [Chú giải] trong phần này*
+- *phần 2/2: Chuong 31, phan 2/2 (dong 158-306): cuoi Prop XXXI (tu goc Z), Section VII, Prop XXXII (Truong hop 1-3), Prop XXXIII, He qua 1-2, 2 chu giai*
+
+- **NANG / SAINGHIA**, Prop XXXI, dòng 29 (và dòng 46, 135)
+  - source: is as the difference of the rectangles 1/2OQ x AQ and 1/2OQ x SR, that is, because 1/2OQ is given, as the difference between the arc AQ and the right line SH
+  - now: hoặc với hiệu giữa các hình chữ nhật OQ·AQ và OQ·SR. Vì các tỷ số đã cho bằng nhau, diện tích này bằng hiệu giữa cung AQ và đường thẳng SH
+  - suggest: Lý do của Newton là "vì 1/2·OQ cho trước", không phải "các tỷ số đã cho bằng nhau"; các hình chữ nhật phải có hệ số 1/2 (OCR hỏng nhưng "1/2OQ x AQ" đọc được); "is as" nghĩa là "tỷ lệ với", không phải "bằng" (cũng ở dòng 46 và 135)
+- **NANG / SOLIEU**, Prop XXXI, dòng 41-46
+  - source: therefore ... by division, AQ - SH to GF - sine of the arc AQ as GK, the difference between the arc [GF] and the sine of the arc AQ
+  - now: AQ\cdot SH:(GF\cdot\sin(\text{cung }AQ)) = GK. Đây là hiệu giữa cung AQ và đường thẳng SH, nên diện tích APS bằng GK
+  - suggest: Công thức phải là hiệu, không phải tích: (AQ - SH):(GF - sin cung AQ) = (diện tích APS):GK, và nêu "theo phép chia (by division)"; câu kết là GK là hiệu giữa cung GF (OCR đọc "C 1") và sin của cung AQ; câu dòng 46 hiện có không có trong nguồn và đảo vai trò
+- **NANG / SOLIEU**, Học luận, dòng 117
+  - source: I : (N-AOQ-E-G+H) as L to L diminished by the cosine of the angle AOQ + E + G
+  - now: \cos(\angle AOQ-E+G)
+  - suggest: OCR đọc AOQ + E + G (cùng dạng với các bước trước); sửa thành \cos(\angle AOQ+E+G)
+- **NANG / THIEU**, Sau Prop XXXI, dong 195-209 (truoc "Phan VII")
+  - source: And so far concerning the motion of bodies in curve lines. But it may also come to pass that a moving body shall ascend or descend in a right line: and I shall now go on to explain what belongs to such kind of motions.
+  - now: (khong co; sau dong 195 va chu giai chuyen thang sang "## Phan VII")
+  - suggest: Them doan chuyen tiep cua Newton: "Den day la ve chuyen dong cua cac vat the tren duong cong. Nhung cung co the xay ra mot vat the chuyen dong di len hoac di xuong theo duong thang; toi se trinh bay nhung dieu thuoc ve loai chuyen dong nay." (dat truoc tieu de Phan VII)
+- **NANG / SOLIEU**, Prop XXXIII, dong 250-258
+  - source: by the properties of the conic sections ACB is to CP2 as 2AO to L ... therefore 2CP2 x AO/ACB is equal to L ... velocities in subduplicate ratio of CP2 x AO x SP/ACB to SY2
+  - now: AC:CP^2 = 2AO:L ... can bac hai cua CP^2*AO*SP/(AC*SY^2)
+  - suggest: OCR doc "ACB" = AC x CB. Sua thanh AC.CB : CP^2 = 2AO : L; ti so thanh CP^2.AO.SP/(AC.CB.SY^2); them cau L = 2CP^2.AO/(AC.CB) neu nguon co
+- **NANG / THIEU**, Prop XXXIII, dong 262-276
+  - source: Whence (by division or composition) BO - or + CO will be to BO as CT to BT, that is, AC will be to AO as CP to BQ; and therefore CP2 x AO x SP/ACB is equal to BQ2 x AC x SP/(AO x BC) [OCR: ~AO X BC]
+  - now: Do do, AC:AO = CP:BQ. Vi vay, van toc ay ti le theo can bac hai cua AC*SP/(AO*SY^2)
+  - suggest: Mat buoc trung gian (BO-/+CO):BO = CT:BT va bieu thuc BQ^2.AC.SP/(AO.BC); dong 275-276 bo mat BQ^2 va BC (de roi to ra SY^2 va BQ^2 khong dung buoc). Dich day du buoc nay
+- **NANG / THIEU**, Prop XXXIII, dong 278-283
+  - source: in the subduplicate ratio of BQ2 x AC x SP/(AO x BC) to SY2, that is (neglecting the ratios of equality of SP to BC, and BQ2 to SY2), in the subduplicate ratio of AC to AO, or 1/2 AB
+  - now: Van toc ... theo can bac hai cua AC/AO = AC/(1/2 AB) (khong co buoc BQ^2.AC.SP/(AO.BC) to SY^2 va khong co mệnh de bo qua ti so bang nhau)
+  - suggest: Them: ti so can bac hai cua BQ^2.AC.SP/(AO.BC) so voi SY^2, tuc la (bo qua cac ti so bang nhau cua SP voi BC, va cua BQ^2 voi SY^2) can bac hai cua AC:AO, hay AC:(1/2 AB)
+- **NANG / SAINGHIA**, Prop XXXIII phat bieu, dong 237-241
+  - source: the subduplicate ratio of AC, the distance of the body from the remoter vertex A of the circle or rectangular hyperbola, to 1/2 AB, the principal semi-diameter of the [figures]
+  - now: can bac hai cua AC/(1/2 AB), trong do A la dinh xa hon ..., con AB la ban duong kinh chinh
+  - suggest: 1/2 AB (khong phai AB) la ban duong kinh chinh; AB la duong kinh chung. Them "AC la khoang cach cua vat the den dinh xa hon A" (nguon noi ro AC la khoang cach tu vat the toi dinh A)
+- **NANG / CHUGIAI**, Chu giai dong 197-207 (Kepler) - KHONG HOP LI
+  - source: Newton: take GK to the perimeter GEFG of the wheel in the ratio of the time ... then LP drawn parallel to KG will meet the ellipsis in P ; "scarcely exceed one second"
+  - now: do dai cung cycloid tinh tu O chinh la thang do thoi gian; chuoi vo han; Tycho ... bang logarit; "mot giay thoi gian ung voi muoi lam giay vong cung"
+  - suggest: Sai: thoi gian la doan GK tren duong day (ti le voi chu vi banh xe), khong phai cung cycloid. Newton chi cho hai so hang (sin 2T, sin^3 T), khong noi chuoi vo han; khong noi "khong can qua so hang thu hai" (chi noi tim 2-3 chu so dau cua V, X). "Khong co ket qua nao kho hon", muc dich dung lich bang tay, du lieu Tycho, doi chieu 15 giay cung, "ham elliptic" la khang dinh lich su chua co nguon va gan y do cho Newton; sai so "mot giay" cua Newton la goc, khong phai giay thoi gian. Nen viet lai ngan, bo cac khang dinh nay
+- **NANG / CHUGIAI**, Chu giai dong 304-306 (He qua 2, van toc thoat) - KHONG HOP LI
+  - source: COR. 2. A body revolving in any circle at a given distance from the centre, by its motion converted upwards, will ascend to double its distance from the centre.
+  - now: 2R la khoang cach dung ... do la van toc thoat ... quan he r_a = 2 r_p cua quy dao parabol ... hieu ung Oberth
+  - suggest: Phan 2R la dung nhung "do la van toc thoat" sai (van toc thoat sqrt2 v_circ la he qua khac, khong phai khoang cach dung 2R); "dong nang doi het thanh the nang mu/r" sai dau (the nang la -mu/r, phai dung mu/(2R)=mu/R-mu/r) dung ket qua chi do tinh co; parabola khong co r_a nen "r_a = 2 r_p cua parabol" sai; doan Oberth la lac de. Viet lai: chi giu v^2=mu/R, nang luong, r=2R
+- **NHE / SAINGHIA**, Prop XXXI, dòng 25
+  - source: take GK to the perimeter GEFG of the wheel, in the ratio of the time ... to the time of a whole revolution
+  - now: Lấy $GK$ trên chu vi bánh xe theo tỷ lệ giữa thời gian ...
+  - suggest: Nguồn: GK so với chu vi GEFG của bánh xe theo tỉ số của hai thời gian (GK nằm trên GH); nên dịch "lấy GK sao cho GK so với chu vi GEFG ... bằng tỉ số ..." và giữ nhãn GEFG
+- **NHE / SAINGHIA**, Học luận, dòng 60
+  - source: a certain length L, which may be to the radius in the same ratio inversely
+  - now: tìm một độ dài $L$ tỷ lệ nghịch với bán kính theo cùng tỷ số ấy
+  - suggest: Nguồn: L so với bán kính theo cùng tỉ số nhưng đảo ngược (L:bán kính = AB:SH); "tỷ lệ nghịch với bán kính" dễ hiểu thành L.R = hằng số
+- **NHE / SAINGHIA**, Học luận, dòng 62-68
+  - source: suppose we know P the place of the body near its true place p ... time in which the body described the arc Ap
+  - now: giả sử ta biết $P$ là vị trí gần vị trí thật ... thời gian vật thể mô tả cung $AP$
+  - suggest: Bản dịch bỏ nhãn p (vị trí thật) nên p ở dòng 127 xuất hiện không giới thiệu; góc N tỉ lệ với thời gian mô tả cung Ap (OCR "A/?"), không phải AP; nên thêm p và sửa cung Ap
+- **NHE / THIEU**, Học luận, dòng 129
+  - source: the sign of the angles G and I, when the angles N-AOQ-E+F, and N-AOQ-E-G+H come out negative
+  - now: Cũng phải hiểu như vậy cho dấu của các góc $G$, $I$, khi các góc tương ứng âm
+  - suggest: Bỏ hai biểu thức cụ thể N-AOQ-E+F và N-AOQ-E-G+H; nên thêm
+- **NHE / THIEU**, Học luận, dòng 151-155
+  - source: as the rectangle under that difference D, and AO + OD the half sum of the axes to the square of the greater axis AB
+  - now: D(AO+OD):AB^2 (không giải thích)
+  - suggest: Thiếu cụm "AO+OD là nửa tổng hai trục" và "AB là trục lớn"; nên thêm lời giải thích hình chữ nhật dưới D và AO+OD
+- **NHE / THIEU**, Prop XXXI, cuối dòng 46
+  - source: Q.E.D.
+  - now: (không có)
+  - suggest: Thêm "Q.E.D." sau chứng minh Prop XXXI (mục nhẹ duy nhất cho cả phần)
+- **NHE / THEM**, dòng 10 (chú thích hình in nghiêng ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 19. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập ngoài blockquote; chuyển vào comment HTML hoặc blockquote [Chú giải]
+- **NHE / HINH**, dòng 8, section-vi-elliptic-motion.svg
+  - source: nhãn lời chứng minh: A,B,E,F,G,H,K,L,O,P,Q,R,S (và p,r,q ở Học luận)
+  - now: SVG chỉ có nhãn A, O, S, P, "đỉnh A", "bán kính SP", "điểm P"
+  - suggest: Hình thiếu G,H,K,L,Q,R,F,E,B và cycloid, đường tròn GEF, nửa đường tròn AQB mà chứng minh dùng; hình không đủ để theo dõi chứng minh
+- **NHE / HINH**, dòng 8, section-vi-elliptic-motion.svg
+  - source: S the focus; OA, OS on the axis
+  - now: <text>S</text> tại (450,85), cuối đoạn thẳng đứng từ O (450,270) lên (450,90); nhãn "bán kính SP" cạnh đoạn O-P (450,270)-(650,190)
+  - suggest: Theo toạ độ SVG, S nằm trên đường thẳng đứng qua O (vuông góc trục ngang) chứ không nằm trên trục lớn, và nhãn "bán kính SP" gắn với đoạn O-P; "bán kính SP" không có trong nguồn; cần dựng lại hình
+- **NHE / KHAC**, Prop XXXII Truong hop 1, dong 217, 250, 260
+  - source: whose focus is A placed in the centre of force. Suppose that conic section to be ARPB and its focus S
+  - now: hinh cat conh co tieu diem $A$ dat tai tam luc (dong 217); "hinh cat conh" (dong 250, 260)
+  - suggest: Loi go "conh" -> "conic" (3 cho). "tieu diem A" la nhieu OCR (chu A cua hinh) va mau thuan voi "tieu diem la S" ngay sau: bo "A", chi noi tieu diem dat tai tam luc roi goi la S
+- **NHE / THIEU**, Cuoi 3 truong hop Prop XXXII (dong 223, 229, 233) va Prop XXXIII (dong 283)
+  - source: Q.E.I. (cuoi Truong hop 1, 2, 3) ; Q.E.D. (cuoi Prop XXXIII)
+  - now: (khong co Q.E.I./Q.E.D.)
+  - suggest: Them Q.E.I. (c.c.n.t.) va Q.E.D. (dpcm) theo quy uoc cua chuong (chi tinh mot muc)
+- **NHE / THIEU**, Cuoi Prop XXXI, dong 193
+  - source: This practice seems to be expeditious enough, because the angles V and X, taken in second minutes, if you please, being very small
+  - now: Cach thuc hanh nay du nhanh, vi cac goc V, X, tinh bang giay phut, rat nho
+  - suggest: Bo "seems" (dường như) va "if you please" (neu thich); nen giu "co ve du nhanh" va "tinh bang giay phut, neu tuy y"
+- **NHE / HINH**, Prop XXXII-XXXIII, dong 211-283
+  - source: (nguon co hinh rieng cho Prop XXXII va XXXIII voi cac diem A,R,P,B,D,C,S,E,T,Y,Q,O,G,V)
+  - now: Chi co hinh o dong 8 (section-vi-elliptic-motion.svg, thuoc Phan VI); trong phan 2 khong co anh
+  - suggest: Cac chu cai A,R,P,B,D,C,S,E,T,Y,Q,O,G,V cua Prop XXXII-XXXIII khong co hinh di kem trong phan nay; can them hinh Phan VII (khong doi chieu duoc nhan voi hinh Phan VI)
+- **NHE / CHUGIAI**, Chu giai dong 296-302 (conic ve duong thang; Prop XXXIII) - HOP LI MOT PHAN
+  - source: Prop XXXII gives three separate cases (ellipse, hyperbola, parabola) each degenerating to the line CB
+  - now: mot lap luan chung minh duy nhat phuc vu cho ca ba: elip, hypebol va roi thang vuong goc ... Voi quy dao tron thi A nam tren chinh duong tron, nen AO = 1/2 AB
+  - suggest: Sua "ca ba" thanh elip, hypebol, parabola (moi truong hop co lap luan rieng, thoai hoa ve CB). AO = 1/2 AB do O la trung diem AB o moi truong hop, khong lien quan quy dao tron; ket qua can(2AC/AB) dung
+
+## 32-sach-i-phan-vii-proposition-xxxiv-xxxvi.md
+
+- *phần 1/1: Chuong 32, phan 1/1 (toan file, dong 1-158): Prop XXXIV, XXXV (Case 1, Case 2), XXXVI, hinh Hinh 20, 2 chu giai. Doi chieu ia.txt dong 7761-7879.*
+
+- **NANG / SAINGHIA**, Prop XXXV, doan dung hinh, dong 26
+  - source: Draw Dd meeting the axis AS in T, and thereon let fall the perpendicular SY.
+  - now: kẻ $Dd$ cắt trục $AS$ tại $T$, và hạ vuông góc $SY$ xuống $T$.
+  - suggest: SY được hạ xuống đường Dd (tiếp tuyến), không phải xuống điểm T. Sửa: hạ vuông góc SY xuống đường thẳng Dd (đã kéo dài).
+- **NANG / THEM**, Prop XXXV Case 1, dong 88-92
+  - source: SK X KA: equal to SY X Drf, and iSK X KA: equal to (1/2)SY X Dd (OCR: £SY X DC/), that is, the area KSA' equal to the area SDd.
+  - now: Vì $Dd=DC$, ta có $SK\cdot KA' = SY\cdot DC$, tức là diện tích $KSA'$ bằng diện tích $SDd$.
+  - suggest: Nguồn không có điều kiện Dd=DC (không có lý do hình học, bịa thêm) và có hệ số 1/2: (1/2)SK.KA' = (1/2)SY.Dd, đó mới là diện tích hai tam giác. Bỏ câu Dd=DC, thêm hai thừa số 1/2.
+- **NANG / SOLIEU**, Prop XXXV Case 2, dong 98-124
+  - source: TC:TS = 2:1; OCR: (1/4?)CD X Cc = (1/2)SY X Dd; velocity = circle at interval (1/2)SC (OCR 4SC); ratio SK to (1/2)SC, to (1/2)CD; (1/2)SK X KA' = (1/4)CD X Cc = (1/2)SY X Dd.
+  - now: CD.Cc = (1/2)SY.Dd; tỷ số SK:CD; (1/2)SK.KA' = CD.Cc = (1/2)SY.Dd
+  - suggest: Không nhất quán với CD.Cc:SY.Dd = 2:1 (cho CD.Cc = 2SY.Dd). OCR đọc hệ số trước CD.Cc là một phân số (ký hiệu hỏng, "4" hoặc "|") và tỷ số cuối là SK so với một nửa CD (OCR "*CD"). Bản dịch bỏ hệ số 1/4 và bỏ 1/2 ở CD. Đối chiếu scan, sửa thành (1/4)CD.Cc = (1/2)SY.Dd và SK:(1/2)CD.
+- **NANG / HINH**, Hinh 20 (section-vii-rectilinear-motion.svg), dong 8
+  - source: Nguồn nhắc điểm A, S, C, D, d, c, T, Y, K, O, H, B, E, R, P và hai nửa đường tròn ADS, OKH.
+  - now: Nhãn trong svg chỉ có: A, C, S, "đường tròn so sánh", "đường rơi", "bán kính BC", "thời gian và quãng đường".
+  - suggest: Hình thiếu hầu hết điểm bài nhắc (D, d, c, T, Y, K, O, H, B, E, P, R) và không có nửa đường tròn ADS, OKH; nhãn "bán kính BC" dùng B không có trong hình; "thời gian và quãng đường" không phải của Newton. Dựng lại hình theo scan.
+- **NANG / CHUGIAI**, Chu giai 1, dong 126-136
+  - source: Prop XXXV: area DES equal to area described by a body revolving about S at radius half the latus rectum of DES (auxiliary conic).
+  - now: độc lập với việc lực có nghịch đảo bậc hai hay không; h = 0 nên p lẫn bán kính đều bằng không; mọi thứ từ Proposition I trở đi đều nói về quỹ đạo khép kín; cú hãm tối đặt ở đó là rẻ nhất
+  - suggest: KHÔNG HỢP LÍ: (1) Prop XXXV dựa vào vận tốc rơi nghịch đảo bậc hai, không độc lập với dạng lực; (2) nói bán kính bằng 0 mâu thuẫn Prop XXXV, bán kính là nửa latus rectum của hình phụ DES, khác 0; vật rơi không quét diện tích quanh S; (3) gán động cơ cho Newton và khẳng định "chỉ quỹ đạo khép kín" sai (parabol, hypebol đã có từ Phần III); (4) đoạn hiện đại về cú hãm và "cung tròn cùng tốc độ quét" không nguồn, lỗi gõ "hãm tối". Nên viết lại hoặc bỏ.
+- **NANG / CHUGIAI**, Chu giai 2, dong 148-158
+  - source: (Prop XXXVI) times of descent, sector OSK equal to area ASD.
+  - now: Sự xuất hiện tất yếu của một số siêu hạt ... chính là thứ Lemma XXVIII ở chương trước đã tiên đoán.
+  - suggest: KHÔNG HỢP LÍ: "siêu hạt" sai (phải là siêu việt) và Lemma XXVIII về oval không tiên đoán tính siêu việt của pi (có tính từ 1882); tích phân và 895 s đúng (t = (pi/2)sqrt(r0^3/(2mu)) cho khối điểm); "cách duy nhất", "khó nhất", ý định của Newton, "mốc quen thuộc" là khẳng định không nguồn.
+- **NHE / THEM**, Chu thich hinh, dong 10
+  - source: (không có trong nguồn)
+  - now: *Hình 20. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập nằm ngoài blockquote tính là thêm; chuyển vào comment HTML hoặc bỏ.
+- **NHE / THIEU**, Prop XXXV Case 1, dong 26
+  - source: Join SD, Sd, SK, SA'.
+  - now: Nối $SD$, $SK$, $SA$,
+  - suggest: Thiếu Sd (OCR "Sf/"); cung KA' cũng viết KA ở dòng 24 và SA ở dòng 26, thiếu dấu phẩy trên.
+- **NHE / THIEU**, Prop XXXV Case 1 dong 40-43 và 54-65, Case 2 dong 110
+  - source: ex aquo TC will be to TS ...; (by Prop. XXXIII); (by Cor. 6, Prop IV); ex aquo the first velocity to the last; (by Cor. 6, Prop. IV)
+  - now: Vận tốc vật thể rơi tại $C$ tỷ lệ với vận tốc ... theo căn bậc hai của AC:AO; Suy ra vận tốc đầu tiên tỷ lệ với vận tốc cuối cùng
+  - suggest: Mất các viện dẫn (by Prop. XXXIII), (by Cor. 6, Prop. IV) hai lần, và hai chữ "ex aequo". Thêm lại các viện dẫn.
+- **NHE / THIEU**, Prop XXXIV, XXXV (hai case), XXXVI
+  - source: Q.E.D. (XXXIV; XXXV Case 1, Case 2); Q.E.F. (XXXVI)
+  - now: (không có)
+  - suggest: Thiếu Q.E.D. và Q.E.F. ở cuối các mục.
+- **NHE / THUATNGU**, Prop XXXV-XXXVI, dong 22 và 144
+  - source: ordinate; indefinite radius; latus rectum
+  - now: ordinate CD; bán kính không xác định; latus rectum
+  - suggest: Giữ nguyên tiếng Anh "ordinate" trong khi các thuật ngữ khác dịch; Prop XXXV dòng 22 dịch "diện tích" cho "area", đồng nhất nhưng "ordinate" nên dịch thống nhất (tung độ) hoặc chú thích.
+
+## 33-sach-i-phan-vii-viii-proposition-xxxvii-xxxix.md
+
+- *phần 1/1: Chương 33, phần 1/1 (dòng 1-189): Prop XXXVII, XXXVIII (Cor 1-2), XXXIX (Cor 1-3), tiêu đề Phần VIII; hình section-vii-rectilinear-motion.svg; 2 chú giải*
+
+- **NANG / SAINGHIA**, Prop XXXVIII, dòng 28
+  - source: ...proportional to the arcs, and the right and versed sines of the arcs.
+  - now: ...lần lượt tỷ lệ với các cung, cùng các hình chữ nhật của các cung.
+  - suggest: Sửa: tỷ lệ với các cung, và với sin thẳng cùng sin đảo (sin versed) của các cung. Không có "hình chữ nhật" trong nguồn.
+- **NANG / SOLIEU**, Prop XXXIX lời chứng minh, dòng 78-89
+  - source: DF is as 2VI/DE, and therefore also as half that quantity, I x V/DE ... force as I x V/DE, that is, as the length DF
+  - now: DF ~ I/(2V) (dòng 80) và I/V ~ DF (dòng 85-86)
+  - suggest: Sai tỉ lệ thức và bỏ DE: DF ~ 2VI/DE, nên cũng ~ I.V/DE; lực ~ I/(DE/V) = I.V/DE ~ DF. Thiếu cả bước DFGE/DE ~ (2VI+I^2)/DE.
+- **NANG / SOLIEU**, Prop XXXIX Hệ quả 1, dòng 110
+  - source: the area ABFD is to the area DFGE as VV to 2VI, and therefore as (1/2)V to I (OCR "4V" hỏng), that is, as half the whole velocity to the increment
+  - now: ABFD:DFGE = V^2:2VI = 2V:I, tức là bằng một nửa toàn vận tốc và độ tăng vận tốc
+  - suggest: V^2:2VI = V:2I = (1/2)V:I, không phải 2V:I; mâu thuẫn với câu "một nửa toàn vận tốc" ngay sau.
+- **NANG / THUATNGU**, Prop XXXIX phát biểu, dòng 56
+  - source: granting the quadratures of curvilinear figures
+  - now: giả sử đã biết các phần tư của các hình cong
+  - suggest: "quadratures" là cầu phương (tính diện tích hình cong), không phải "phần tư"; sửa: giả sử đã biết phép cầu phương các hình cong.
+- **NANG / SOLIEU**, Prop XXXVII, dòng 16
+  - source: take GA to (OCR: £AS). If that ratio is the same as of the number 2 to 1, the point A is infinitely remote
+  - now: Lấy GA theo bình phương tỷ lệ giữa vận tốc này và vận tốc đều ..., rồi so với AS.
+  - suggest: Nguồn có một hệ số đứng trước AS (OCR đọc "£AS", không xác định được chính xác từ OCR) mà bản dịch bỏ hẳn; cần đối chiếu bản gốc để khôi phục.
+- **NANG / CHUGIAI**, Chú giải 1 sau Prop XXXVIII, dòng 42-52
+  - source: Prop XXXVIII chỉ nêu lực tỷ lệ với khoảng cách; nguồn không nói động cơ hay "định đề phụ"
+  - now: "Ông chọn trường hợp này không phải vì nó có giá trị vật lý, mà vì ông cần một thước đo... ông ghi rõ đây là một định đề phụ... không phải một lực đang tồn tại"; "kéo dài biên độ đến đâu thì nó vẫn đúng giờ"; "nếu không đổi thì lực chắc chắn là tuyến tính"
+  - suggest: KHÔNG HỢP LÍ: gán động cơ và lời ghi chú cho Newton không có trong đoạn; con lắc chỉ gần đẳng kỳ với biên độ nhỏ (lực hồi phục không tuyến tính); câu về "hệ nhiều vật thể cùng tần số góc" mơ hồ. Nên xóa các câu này, chỉ giữ T=2pi sqrt(m/k) và ý chu kỳ không phụ thuộc biên độ.
+- **NANG / CHUGIAI**, Chú giải 2 sau Prop XXXIX Hệ quả 3, dòng 177-187
+  - source: Newton lấy diện tích dưới đường cong lực để biết vận tốc, và cầu phương được cho trước ("granting the quadratures")
+  - now: "ông cần một thuật toán dùng được cho bất kỳ quy luật lực nào"; "bài toán dựng hình thì luôn làm được bằng thước kẻ"; ví dụ pin mặt trời so sánh diện tích dưới đường cong dòng
+  - suggest: KHÔNG HỢP LÍ MỘT PHẦN: phần v^2 ~ diện tích ~ công và t ~ diện tích dưới đồ thị 1/v là HỢP LÍ; nhưng gán động cơ cho Newton, khẳng định diện tích luôn dựng được bằng thước (sai, chính Newton phải giả sử "granting the quadratures") và ví dụ pin mặt trời sai/lạc đề (công suất cực đại ứng với hình chữ nhật dưới đường I-V, không phải diện tích dưới đường). Nên bỏ đoạn cuối.
+- **NHE / SAINGHIA**, Prop XXXVII, dòng 22-24
+  - source: circle HkK (OCR "H/vK"); sectors HSK, HSk (OCR "HS&") equal to segments SEIS, SEDS; arc Kk
+  - now: dựng đường tròn $HNK$ ... các hình quạt $HSK$, $HSD$ ... cung $Kk$
+  - suggest: Hình quạt thứ hai trong nguồn là HSk (tương ứng cung Kk), bản dịch viết HSD; tên đường tròn HNK không xác định được từ OCR. Lỗi gõ "hình cắt conh" (dòng 22) nên là "hình cắt conic".
+- **NHE / KHAC**, Prop XXXIX, dòng 93
+  - source: the whole time in which the line AE is described will be as the whole area ATYME (OCR hỏng của ABTVME)
+  - now: toàn bộ thời gian mô tả AE tỷ lệ với toàn bộ diện tích $ATYME$
+  - suggest: Chép nguyên lỗi OCR; dòng 62 đã dùng ABTVME. Sửa thành ABTVME cho nhất quán.
+- **NHE / THIEU**, Prop XXXVII, XXXIX, Hệ quả 1 và 3
+  - source: Q.E.F. / Q.E.I. / Q.E.D.; "(the very small line DE being just nascent), in the ratio of PD to PD + (1/2)DE; or 2PD to 2PD + DE"; "ex aequo"
+  - now: Dòng 156-158: "Vì DE rất nhỏ, tỷ số này trở thành 2PD:(2PD+DE)"
+  - suggest: Mất các chữ Q.E.F./Q.E.I./Q.E.D. (báo một lần); bỏ bước PD:(PD+DE/2) và các chữ "ex aequo" ở Cor 1 và Cor 3.
+- **NHE / HINH**, Dòng 8-10 (hình và chú thích)
+  - source: (không có hình tương ứng trong nguồn cho Prop XXXVII-XXXIX; nguồn chỉ có các điểm G, S, I, D, H, K, A, C, E, B, F, M, L, V, T, P, Q, R)
+  - now: ![...section-vii-rectilinear-motion.svg] + chú thích in nghiêng "Hình 21. Sơ đồ dùng lại để đối chiếu các đường rơi, quỹ tích và thời gian."
+  - suggest: Nhãn <text> của SVG chỉ có A, C, S cùng "đường tròn so sánh", "đường rơi", "bán kính BC", "thời gian và quãng đường": thiếu hầu hết chữ cái bài nhắc (G, I, D, H, K, E, B, F, M, L, V, T, P, Q, R) và có "BC" mà bài không nhắc; hình không khớp nội dung. Chú thích in nghiêng là lời biên tập ngoài blockquote (THÊM); nên thay hình đúng hoặc bỏ chú thích.
+
+## 34-sach-i-phan-viii-proposition-xl-xlii.md
+
+- *phần 1/1: Chương 34, phần 1/1 (dòng 1-170): Sách I Phần VIII, Prop XL (+Hệ quả 1-2), Prop XLI (+Hệ quả 1-3), Prop XLII, hình, 2 chú giải. Nguồn ia.txt dòng 8109-8355.*
+
+- **NANG / SOLIEU**, Prop XL Hệ quả 2, dòng 45
+  - source: force always as the power A^(n-1) ... index n-1 is any number n diminished by unity. Then the velocity in every altitude A will be as sqrt(P^n - A^n)
+  - now: lực hướng tâm tỷ lệ với lũy thừa A^n ... vận tốc tỷ lệ với sqrt(P^{n+1}-A^n)
+  - suggest: Sửa: lực tỷ lệ A^(n-1) (số mũ n-1, n là số bất kỳ giảm một đơn vị), vận tốc tỷ lệ sqrt(P^n - A^n). Bản dịch tự mâu thuẫn (A^n với P^{n+1}-A^n) và bỏ câu giải thích số mũ.
+- **NANG / THIEU**, Prop XLI, dòng 73-75
+  - source: KN will be reciprocally as the altitude IC; that is (if there be given any quantity Q, and the altitude IC be called A), as Q/A. This quantity Q/A call Z
+  - now: KN tỷ lệ nghịch với ordinate IC. Gọi đại lượng này là Z
+  - suggest: Mất câu "tức là, nếu đã cho đại lượng Q và gọi độ cao IC là A, thì KN tỷ lệ với Q/A; gọi Q/A là Z". Không có nó, Z và Q không được định nghĩa.
+- **NANG / SOLIEU**, Prop XLI, dòng 93-101
+  - source: A x KN = Q x IN / sqrt(ABFD-ZZ); XY x XC = Q x IN x CX^2 / (AA sqrt(ABFD-ZZ)) (OCR: "AAv/ABFD - ZZ" ở mẫu)
+  - now: A.KN = Q.IN ; hình chữ nhật XY.XC bằng A^2(sqrt(ABFD)-Z)
+  - suggest: Bản dịch bỏ mất bước sqrt(ABFD-ZZ):Z = IN:KN (tức Q/A) và mẫu sqrt(ABFD-ZZ). Sửa: A.KN = Q.IN/sqrt(ABFD-ZZ); XY.XC = Q.IN.CX^2/(A^2 sqrt(ABFD-ZZ)); và nêu tỉ lệ YX.XC : A.KN = CX^2 : AA.
+- **NANG / THIEU**, Prop XLI, dòng 103-105
+  - source: let there be taken continually Db, Dc equal to Q/(2 sqrt(ABFD-ZZ)) and Q.CX^2/(2AA sqrt(ABFD-ZZ)); ... rectangle Db x IN equal to half A x KN, or triangle ICK; ... area VDca equal to the generated sector VCX
+  - now: lấy liên tục các đoạn Dβ, Dγ bằng các tỷ lệ đã cho ... Vì các hạt nhỏ Dβb, ICK luôn bằng nhau
+  - suggest: Mất hai biểu thức xác định Dβ, Dγ; mất các bước hình chữ nhật Dβ.IN = nửa A.KN = tam giác ICK và DγIN = nửa YX.XC = tam giác XCY; mất câu diện tích sinh ra VDγa bằng hình quạt sinh ra VCX. Cần dịch đủ.
+- **NANG / HINH**, Dòng 8-10 (ảnh section-vii-rectilinear-motion.svg)
+  - source: (Nguồn Prop XL-XLII dùng điểm A,D,E,C,V,I,K,N,T,R,X,Y,P,Q,a,b,c...)
+  - now: Hình 22 "Sơ đồ dùng lại để đối chiếu các độ cao, vận tốc và quỹ đạo" ; SVG chỉ có nhãn A, C, S, "đường rơi", "bán kính BC", "đường tròn so sánh" (desc: Prop XXXIV-XXXVI)
+  - suggest: Hình thuộc Phần VII, không chứa D,E,I,K,N,T,V,R,X,Y,P,Q mà lời chứng minh nhắc; chú thích hình in nghiêng là lời biên tập thêm. Cần thay bằng hình Prop XL, XLI (có CV, VR, ID, KE, ABFD), XLII hoặc bỏ.
+- **NANG / THUATNGU**, Prop XLI dòng 63 và 140
+  - source: granting the quadratures of curvilinear figures ... by the quadrature of a certain curve
+  - now: đã biết các phần tư của các hình cong ... nhờ phần tư của một đường cong
+  - suggest: "Quadrature" là phép cầu phương (tìm diện tích), không phải "phần tư". Sửa: "cho phép cầu phương các hình cong" và "nhờ phép cầu phương một đường cong nào đó". Đây là giả thiết chính của bài toán.
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 160-170 (KHÔNG HỢP LÍ)
+  - source: Cor 3: figure VRS is hyperbola or ellipse according as the body begins to descend obliquely to the centre or ascend obliquely from it
+  - now: vận tốc nhỏ thì quỹ đạo hypebol và vật thể rơi vào tâm; vận tốc lớn hơn thì quỹ đạo elip ... "ba khả năng" ... "đơn đẳng ra"
+  - suggest: Sai/đảo điều kiện: Newton phân biệt theo hướng ban đầu (xuống chéo hay lên chéo), không theo độ lớn vận tốc; nói "ba khả năng" nhưng chỉ nêu hai; câu "đơn đẳng ra" vô nghĩa. Còn: h=r^2 θ' không đổi suy từ lực xuyên tâm chứ không từ "chỉ phụ thuộc khoảng cách"; "ABFD là công tính tới độ sâu A" và "đại lượng trung gian duy nhất" sai (còn Z, Q; Hệ quả 3 không dùng ABFD); "ông viết ra vì lý do" là gán ý định; ý "chiếu quỹ đạo xuống mặt phẳng" và "mọi tính toán quỹ đạo thật" quá mơ hồ/khẳng định quá. Nên viết lại hoặc bỏ.
+- **NHE / CHUGIAI**, Chú giải thứ nhất, dòng 49-59 (HỢP LÍ MỘT PHẦN)
+  - source: Prop XL: any centripetal force; only Cor 2 speaks of a power law of the force
+  - now: Newton chứng minh điều đó cho lực tỷ lệ với lũy thừa của khoảng cách ... mọi quỹ đạo có cùng năng lượng ...
+  - suggest: Công thức năng lượng và ví dụ m=-2 đúng. Nhưng Prop XL được chứng minh cho lực hướng tâm bất kỳ; chỉ Hệ quả 2 mới dùng lũy thừa. Tiêu đề "chỉ phụ thuộc vị trí" thiếu điều kiện cùng vận tốc ở một độ cao; "biên độ nào cũng cùng một quan hệ" mơ hồ; câu lưu ý về số mũ lệch một đơn vị chỉ là hệ quả của lỗi dịch ở Hệ quả 2.
+- **NHE / THIEU**, Prop XL, dòng 24
+  - source: the other force IT, acting in the direction of the course of the body, will be all employed in accelerating it, and in the least given time will produce an acceleration proportional to itself
+  - now: Lực IT ... dùng hoàn toàn để gia tốc vật thể. Vì vậy, các gia tốc ... tỷ lệ với DE, IT
+  - suggest: Mất mệnh đề "trong thời gian nhỏ nhất đã cho sẽ tạo ra gia tốc tỷ lệ với chính nó" - đây là căn cứ của "Vì vậy". Thêm vào.
+- **NHE / THIEU**, Toàn chương (Prop XL dòng 31-33, Prop XLI dòng 109, Prop XLII dòng 154)
+  - source: Q.E.D. (hai lần ở Prop XL), Q.E.I. (Prop XLI, XLII)
+  - now: (không có)
+  - suggest: Thiếu Q.E.D. và Q.E.I. ở cuối các chứng minh.
+- **NHE / SAINGHIA**, Prop XLII, dòng 146, 152, 154, 158
+  - source: acquire in D ; by the construction of Prob. XXVIII ; the angle ICk ; I have hitherto considered the motions of bodies in immovable orbits
+  - now: có tại I ; cách dựng của Proposition XXVIII ; góc ICA ; Từ đây đến đây, tôi đã xét ... quỹ đạo bất biến
+  - suggest: Sửa: vận tốc thu được tại D (không phải I); "Bài toán XXVIII" (tức Prop XLI) vì Proposition XXVIII là mục khác; góc ICk; "Cho đến nay"; "immovable" nên là "bất động".
+- **NHE / THUATNGU**, Prop XLI dòng 73, 107, 124 (và Prop XL Hệ quả 1 dòng 39, Hệ quả 3 dòng 132)
+  - source: altitude IC / altitude CD or CI ; impediment of a vessel perfectly smooth ; conic section VRS
+  - now: ordinate IC / ordinate CD hoặc CI ; vật cản của một hình vật thể hoàn toàn trơn ; hình cắt conh
+  - suggest: Nguồn dùng "altitude" (độ cao) cho IC, CD, CI còn "ordinate" cho Eζ, Eξ nên dịch "ordinate" gây lẫn; "vessel" (vật chứa/máng) bị dịch thành "hình vật thể"; lỗi gõ "conh" thành "conic".
+
+## 35-sach-i-phan-ix-proposition-xliii-xlv.md
+
+- *phần 1/2: Chương 35, phần 1/2 (dòng 1-155): Prop XLIII, Prop XLIV (chứng minh, Hệ quả 1-6 của nguồn), chú giải sau Hệ quả, mở đầu Prop XLV; nguồn ia.txt dòng 8364-8690*
+- *phần 2/2: Chương 35, phần 2/2 (dòng 156-311): tiếp Proposition XLV (công thức lực trong elip quay, Ví dụ 1, 2, 3, Hệ quả 1, Hệ quả 2, đoạn chuyển sang mặt phẳng lệch tâm) và Chú giải cuối chương; nguồ*
+
+- **NANG / THIEU**, Prop XLIV Hệ quả 1 (dòng 72-74)
+  - source: that is, as mk X ms to the square of rk; that is, ... as GG - FF to FF. And, therefore, if from the centre C ... a circular sector equal to the whole area VPC ... as GG - FF to FF.
+  - now: Chỉ có một câu đến 'sin thuận của cung mới RK'; mất tỉ số mk·ms : rk², mất tỉ số GG-FF : FF và cả đoạn về hình quạt tròn.
+  - suggest: Dịch đủ phần sau 'versed sine of the nascent arc RK' (tỉ số GG-FF:FF và đoạn hình quạt tròn, kể cả câu 'sector and area pCk are as the times').
+- **NANG / SAINGHIA**, Prop XLIV, đề mục Hệ quả (dòng 122, 126; dòng 78-120)
+  - source: Nguồn có 6 Hệ quả: Cor. 3 (elip đồng tâm), Cor. 4 (tổng quát), Cor. 5 (quỹ đạo bất biến mới), Cor. 6 (đường VP vuông góc CV, lực tỉ lệ nghịch lập phương).
+  - now: Cor. 3 và Cor. 4 bị gộp vào cuối 'Hệ quả 2'; đoạn Cor. 5 mang tiêu đề 'Hệ quả 3', đoạn Cor. 6 mang tiêu đề 'Hệ quả 4'.
+  - suggest: Tách thành Hệ quả 3 và 4 riêng, đổi hai đề mục sau thành Hệ quả 5 và Hệ quả 6.
+- **NANG / SOLIEU**, Prop XLIV Hệ quả 2 (dòng 87-111)
+  - source: force FF/A. Add the excess (RGG-RFF)/A^3 ... and the sum will be the whole force FF/(A?)+(RGG-RFF)/A^3 (OCR hỏng, số mũ mẫu của số hạng đầu không đọc chắc; số hạng thêm đọc ra là /A^3; không có chuỗi nào)
+  - now: FF/A + (RGG-RFF)/A^2 ; '(RGG-FF)/A^3' (thiếu R); 'FF/A + ... - (RGG-RFF)/A^3 + ...' (chuỗi xen dấu, nguồn không có); mất câu suy ra 'hiệu tại độ cao A so với tại CY như 1/A^3 : 1/CY^3' và 'đây là hiệu lực tại Y theo Hệ quả 1'
+  - suggest: Số hạng thêm phải có A^3 ở mẫu (nguồn: excess ... /A^3), lực elip bất biến đối chiếu lại với scan; (RGG-RFF)/CY^3 thay cho (RGG-FF)/A^3; bỏ chuỗi '...'; dịch đủ lập luận 'Therefore since by this Prop...'.
+- **NANG / SOLIEU**, Prop XLIV Hệ quả 3 (dòng 113-118)
+  - source: forces ... in the immovable and movable ellipsis ... will be as FFA and FFA + (RGG-RFF)/A^3 respectively (OCR: hai tử số FFA, số hạng thêm có mẫu A^3).
+  - now: FFA/(RGG-RFF) và FFA/(RGG-RFF) + A
+  - suggest: Đổi thành tỉ lệ với FFA và FFA + (RGG-RFF)/A^3; thêm 'in equal times', 'similar, equal and concentrical'.
+- **NANG / THIEU**, Prop XLIV Hệ quả 4 (dòng 120)
+  - source: the centripetal force ... in the same trajectory upk revolving with a circular motion, will be as the sum of the forces X + (VRGG - VRFF)/A^3 (OCR: mẫu dạng 'A*')
+  - now: lực hướng tâm trên quỹ đạo quay vpK là tổng của các lực ấy. (không có công thức; không nói CP = A, G:F là tỉ số góc VCp : VCP)
+  - suggest: Thêm công thức X + (VRGG-VRFF)/A^3 (đối chiếu scan), định nghĩa A = CP và G:F = VCp:VCP.
+- **NANG / THIEU**, Hệ quả 4 của bản dịch = Cor. 6 (dòng 134)
+  - source: But this curve Vpk is the same with the curve VPQ found in Cor. 3, Prop. XLI, in which, I said, bodies attracted with such forces would ascend obliquely.
+  - now: Đây chính là đường cong VPQ đã tìm trong Hệ quả 3 của Proposition XLI.
+  - suggest: Dịch thêm mệnh đề 'trong đó, tôi đã nói, các vật thể bị hút bởi những lực như vậy sẽ đi lên theo đường xiên'; thêm '(theo điều vừa chứng minh)' trước 'sẽ lệch khỏi chuyển động thẳng'.
+- **NANG / SAINGHIA**, Prop XLIII, câu cuối (dòng 32)
+  - source: Find, then, by Cor. 5, Prop. VI., the centripetal force by which the body may be made to revolve in the curve line which the point p describes in an immovable plane, and the Problem will be solved.
+  - now: Theo Hệ quả 5, từ đó tìm được quỹ đạo và chuyển động của vật thể.
+  - suggest: Theo Hệ quả 5 Proposition VI, tìm lực hướng tâm khiến vật thể quay trên đường cong mà điểm p mô tả trong mặt phẳng bất biến; thế là bài toán được giải (Q.E.F.). Bản dịch đang đổi 'tìm lực' thành 'tìm quỹ đạo'.
+- **NANG / SAINGHIA**, Prop XLIV, dòng 61
+  - source: in case ... if the orbit npk move either in consequentia or in antecedentia with a celerity greater than the double of that with which the line CP moves in consequentia; and with a less force if the orbit moves slower in antecedentia.
+  - now: Quỹ đạo npk khi ấy chuyển động theo một tốc độ lớn hơn hai lần tốc độ của đường CP trong chuyển động tương ứng; nếu nhỏ hơn, lực nhỏ hơn.
+  - suggest: Dịch đủ: quỹ đạo chuyển động thuận chiều (in consequentia) hoặc ngược chiều (in antecedentia) với tốc độ lớn hơn gấp đôi tốc độ CP theo chiều thuận; lực nhỏ hơn nếu quỹ đạo chuyển động chậm hơn theo chiều ngược.
+- **NANG / SOLIEU**, Prop XLIV, dòng 63-65
+  - source: cutting the lines mr, mn produced in s and t, and the rectangle mn X mt will be equal to mk X ms ... mn equal to mk X ms / mt ... reciprocally as the altitude pC
+  - now: Hình chữ nhật mn·mu bằng mk·ms; ... tỷ lệ nghịch với ordinate pC
+  - suggest: Sửa mn·mu thành mn·mt, giao điểm s và t (dịch có u nhưng mọi chỗ sau dùng mt); 'ordinate' đổi thành 'độ cao' như các chỗ khác (thuật ngữ altitude).
+- **NANG / CHUGIAI**, Chú giải sau Hệ quả 4 (dòng 138-146)
+  - source: Nguồn Cor. 6: đường cong Vpk trùng với VPQ của Prop XLI Cor 3, vật thể 'ascend obliquely'; không nói parabol, không nói 'lần đầu đảo chiều bài toán'.
+  - now: KHÔNG HỢP LÍ: gán 'Giả thiết của ông' cho một kết luận; 'lần đầu ông đảo chiều bài toán' sai (Prop XLI đã tìm quỹ đạo từ lực); 'quỹ tích cũng là một parabol' trái với nguồn (đường cong VPQ) và với Hệ quả ngay trên; 'làm dây chuyền của quỹ đạo' vô nghĩa; '1687, gần ba thế kỷ' khoảng cách tới thuyết tương đối là chưa tới ba thế kỷ, cần nguồn; 'hình thức ra từ đó chứ không từ phép thử thẩm mỹ' mơ hồ.
+  - suggest: Viết lại chú giải: bỏ câu parabol và 'lần đầu', sửa câu 'dây chuyền', bỏ hoặc có nguồn cho mốc thời gian lịch sử.
+- **NANG / SOLIEU**, Prop. XLV, công thức lực, dòng 156-164
+  - source: and the force ... as (FFA + RGG - RFF)/A^3, that is, by substituting T - X for A, becomes (RGG - RFF + TFF - FFX)/A^3
+  - now: FF/(T-X)^2 + (RGG-RFF)/(T-X)^3 + (RGG-RFF+TFF-FFX)/(T-X)^3 ...
+  - suggest: Chỉ có một phân thức (RGG-RFF+TFF-FFX)/A^3 với A=T-X; bản dịch cộng ba số hạng, không có trong nguồn. Thiếu viện dẫn Hệ quả 2 và câu cần làm tử số đồng dạng.
+- **NANG / SOLIEU**, Ví dụ 1, dòng 170-179
+  - source: centripetal force to be uniform, and therefore as A^3/A^3 or (T^3 - 3TTX + 3TXX - X^3)/A^3
+  - now: tỷ lệ với 1/A^2 hoặc (T^2-2TX+X^2)/A^2 = (T^2-2TX+X^2)/A^2
+  - suggest: Lực đều là A^3/A^3 = (T^3-3TTX+3TXX-X^3)/A^3, không phải 1/A^2; dòng 176-178 còn là đẳng thức tự lặp.
+- **NANG / THIEU**, Ví dụ 1, dòng 181-202
+  - source: RGG-RFF+TFF to T^3 as -FFX to -3TTX+3TXX-X^3, or as -FF to -3TT+3TX-XX ... R and T become equal, X infinitely diminished ... orbits are made similar; not universally, only when they approach very near to a circular figure
+  - now: Khi quỹ đạo gần đường tròn, các tỷ số cuối trở thành GG:FF = T^2:3T^2 = 1:3
+  - suggest: Thiếu bước gom các số hạng đồng dạng, thiếu R=T và X giảm vô hạn, thiếu câu 'nhờ sự giống nhau của hai quỹ đạo do gom số hạng này, giống nhau không phổ quát mà chỉ khi gần tròn'. Thêm các câu đó.
+- **NANG / SOLIEU**, Ví dụ 2, dòng 206, 218, 220
+  - source: as A^(n-3), or A^n/A^3 ... directly as A, or A^4/A^3, n=4 ... directly as 1/A or A^2/A^3, n=2
+  - now: A^(n-3) hoặc 1/A^n ... trực tiếp với A, tức là 1/A^4 ... trực tiếp với 1/A^2, thì n=2
+  - suggest: Sửa: A^n/A^3 (không phải 1/A^n); lực tỷ lệ với A là A^4/A^3 (không phải 1/A^4); lực nghịch với khoảng cách là 1/A tức A^2/A^3 (không phải 1/A^2).
+- **NANG / THIEU**, Ví dụ 2, dòng 208-227
+  - source: (T-X)^n reduced ... by my method of converging series ... any indices ... integers or fractions, rational or surd, affirmative or negative ... Prop. X ... force reciprocally as the biquadrate root of the eleventh power, A^(-11/4), n=1/4, 180/sqrt n = 360 deg
+  - now: Khi đưa tử số về một chuỗi hội tụ, ta được các số hạng tương ứng.
+  - suggest: Thiếu khai triển chuỗi T^n - nXT^(n-1) + ..., thiếu 'chỉ số nguyên hay phân, hữu tỉ hay vô tỉ, dương hay âm', thiếu viện dẫn Prop. X cho trường hợp 90 độ, và thiếu hẳn trường hợp lực nghịch với căn bậc bốn của lũy thừa 11 (n=1/4, góc 360 độ, mỗi vòng đủ để tới apsis kia).
+- **NANG / SOLIEU**, Ví dụ 3, dòng 243-254
+  - source: GG to FF as b+c to mb+nc, and therefore as 1 to (mb+nc)/(b+c). Whence G to F ... as 1 to sqrt((mb+nc)/(b+c))... angle 180 sqrt((b+c)/(mb+nc)) deg
+  - now: G:F = 1:sqrt((b+c)/(mb+nc))
+  - suggest: Tỉ số đảo ngược: từ GG:FF=(b+c):(mb+nc) suy ra G:F=1:sqrt((mb+nc)/(b+c)). Thiếu kết luận góc 180 sqrt((b+c)/(mb+nc)) độ và góc 180 sqrt((b-c)/(mb-nc)) độ cho lực (bA^m - cA^n)/A^3; thiếu khai triển chuỗi.
+- **NANG / SOLIEU**, Hệ quả 1, dòng 262-276
+  - source: force will be as the power A^(nn/mm - 3), the index of which power is nn/mm - 3 ... m to n as 8, or 4, or 2, or 1 1/2 (OCR: H) to 1
+  - now: lực sẽ tỷ lệ với A^(m/n - 3) ... A^(-13/8), A^(-7/4), A^(-5/2), A^(-3)
+  - suggest: Chỉ số phải là nn/mm - 3 (bình phương tỉ số), không phải m/n - 3; các chỉ số -13/8, -7/4, -5/2, -3 không suy ra từ công thức này (1/64-3, 1/16-3, 1/4-3, ...). Chữ 'một nửa' có thể là '1 1/2' trong OCR; các mũ chính xác trong OCR bị hỏng, không xác định được từ OCR.
+- **NANG / SOLIEU**, Hệ quả 1, dòng 278-282
+  - source: A^(nn/mm) ... centripetal force will be reciprocally as A^(2 4/243) very nearly
+  - now: lực gần bằng nghịch với A^2.0004, gần bậc hai hơn bậc ba
+  - suggest: Nguồn: A^(2 4/243) (khoảng 2,0165, khớp với 3 - 14400/14641), không phải 2,0004. Thiếu câu 'giảm theo tỉ số hơi lớn hơn bình phương, nhưng gần bình phương hơn gần lập phương 59 3/4 lần'.
+- **NANG / THIEU**, Hệ quả 1, dòng 267-282
+  - source: curve line treated of in Cor. 3, Prop. XLI ... same Cor., and Cor. 6, Prop. XLIV ... the sooner the body returns ... the farther is the ratio of the forces from the triplicate ratio ... returns after 3/4, 2/3, 1/3, 1/4 of a revolution
+  - now: vật thể rời apsis sẽ đi xuống tâm hoặc lên vô hạn, tùy chiều khởi động.
+  - suggest: Thiếu viện dẫn Hệ quả 3 Prop. XLI và Hệ quả 6 Prop. XLIV (đường cong được nói tới); thiếu câu 'vật thể càng sớm trở lại apsis thì tỉ số lực càng xa tỉ số lập phương'; thiếu trường hợp m:n=1:1 (A^-2, 'như đã chứng minh trên'); thiếu trọn bốn trường hợp 3/4, 2/3, 1/3, 1/4 vòng.
+- **NANG / SOLIEU**, Hệ quả 2, dòng 288-297
+  - source: foreign force subducted as cA, remaining force (A - cA^4)/A^3; b=1, m=1, n=4; angle 180 sqrt((1-c)/(1-4c)); c = 100/35745; 180 deg 45' 44''; apsis advances 1 deg 31' 28'' per revolution; apsis of the moon about twice as swift
+  - now: lực lạ bị bớt đi là c/A^3, lực còn lại là FF/A^2 - c/A^3 ... tốc độ apsis có thể được xác định từ công thức trên
+  - suggest: Lực lạ là cA (tử số cA^4/A^3, nghĩa là n=4), không phải c/A^3. Thiếu: góc 180 sqrt((1-c)/(1-4c)), lực lạ nhỏ hơn 357,45 phần, c=100/35745, góc 180 độ 45' 44'', apsis tiến 1 độ 31' 28'' mỗi vòng, và câu cuối về apsis Mặt Trăng; câu 'tốc độ apsis có thể được xác định' là thêm.
+- **NANG / THIEU**, Cuối Prop. XLV, dòng 299
+  - source: authors who treat of the motion of heavy bodies used to consider the ascent and descent ... at all degrees of obliquity upon any given planes ... planes supposed perfectly smooth and polished ... planes parallel to them, in which the centres of the bodies move ... curve superficies
+  - now: Phần sau xét các mặt phẳng lệch tâm.
+  - suggest: Mất cả đoạn chuyển Section X: lí do xét mặt phẳng lệch tâm theo các tác giả về vật nặng, mặt phẳng nhẵn bóng hoàn toàn, dùng mặt phẳng song song chứa tâm vật, và cùng phương pháp áp cho mặt cong.
+- **NANG / CHUGIAI**, Chú giải dòng 301-311
+  - source: (không có trong nguồn: Newton không đo quỹ đạo Trái Đất; ví dụ apsis là giả định 3 độ mỗi vòng và Mặt Trăng)
+  - now: lần đầu tiên trong lịch sử vật lí ... đo một sai lệch của quỹ đạo Trái Đất ... con số trong bản gốc là vài giây cung mỗi năm ... 43 giây cung mỗi thế kỷ
+  - suggest: KHÔNG HỢP LÍ: gán cho Newton việc đo, động cơ 'không có hành tinh ngoài', và nói bản gốc là vài giây cung/năm trong khi nguồn là 3 độ mỗi vòng (ví dụ giả định); câu 'dây chuyền điểm gần nhất' vô nghĩa; Δθ giữa 'hai apsis liên tiếp' cho 207,8 độ mâu thuẫn bản dịch 103°55'23'' (đó là cùng loại apsis liên tiếp, apsis trên đến dưới là nửa). Công thức 2π/sqrt(3-m) HỢP LÍ nếu ghi rõ là khoảng giữa hai lần qua cùng apsis. Nên viết lại hoặc bỏ.
+- **NHE / HINH**, Hình 23 (dòng 8-10) và chú thích in nghiêng
+  - source: SVG section-ix-moving-orbits.svg chỉ có nhãn: C, P, p, V, K, 'quỹ đạo cố định', 'quỹ đạo quay', 'góc quét'. Lời chứng minh nhắc thêm u, k, r, m, n, s, t, R, Y.
+  - now: Chú thích '*Hình 23. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*' (lời biên tập ngoài blockquote)
+  - suggest: Hình thiếu các điểm k, r, m, n, u (Prop XLIII), s, t (XLIV), R, Y (Hệ quả); chuyển chú thích sang blockquote **[Chú giải]** hoặc bỏ, một hình chung cho ba Proposition.
+- **NHE / THIEU**, Prop XLIII-XLV: viện dẫn và mở đầu (dòng 32, 47, 152, 61/70)
+  - source: (by Cor. 2 of the Laws of Motion) ; Cor. 5, Prop. VI. ; (as in Cor. 2 and 3 of the above Prop.) ; Q.E.D. / Q.E.F. ; (mid-text) 'given by position'
+  - now: Phân rã mỗi chuyển động... (không viện dẫn Hệ quả 2 của Các định luật chuyển động); 'Theo Hệ quả 5' (thiếu Proposition VI); Prop XLV thiếu '(như trong Hệ quả 2 và 3 của Prop. trên)'; không có Q.E.D./Q.E.F. ở Prop XLIII, XLIV.
+  - suggest: Thêm các viện dẫn và Q.E.D./Q.E.F. ở cuối Prop XLIII (Q.E.F.) và XLIV (Q.E.D.).
+
+## 36-sach-i-phan-x-proposition-xlvi-lii.md
+
+- *phần 1/3: Chương 36, phần 1/3 (dòng 1-111): Prop. XLVI, XLVII (+Học luận), XLVIII, XLIX (+Hệ quả 1-2), phần đầu Prop. L (đến TP:VP = 2CE:CB). Không có blockquote Chú giải trong phần này.*
+- *phần 2/3: Chuong 36, phan 2/3 (dong 113-218): cuoi Prop L (doan chung minh) + He qua; Prop LI (+He qua); Prop LII (+He qua 1, 2, scholium); Prop LIII (+He qua 1, 2); Prop LIV; Prop LV (mo dau, dong 21*
+- *phần 3/3: Chương 36, phần 3/3 (dòng 219-327): nửa sau Prop. LV, Hệ quả LV, Prop. LVI, mở đầu Phần XI, Prop. LVII-LXIII, chú giải cuối chương; so với ia.txt dòng 9543-9895*
+
+- **NANG / THIEU**, Prop. L, chứng minh, dòng 108-110
+  - source: TP is to VP (which is double the sine of the angle VBP when ½BV is radius) as BW to BV, or AO+OR to AO, that is (since CA and CO, CO and CR; and by division AO and OR are proportional), as CA+CO to CA, or, if BV be bisected in E, as 2CE to CB.
+  - now: TP:VP = (AO+OR):AO = (CA+CO):CA = 2CE:CB. (bỏ chú thích VP bằng hai lần sin của góc VBP, bỏ BW:BV, bỏ lập luận CA:CO = CO:CR nên AO:OR tỉ lệ, bỏ việc BV chia đôi tại E)
+  - suggest: Thêm đủ: chú thích VP, BW:BV, lý do tỉ lệ (CA:CO = CO:CR, theo phép chia AO:OR), và câu BV chia đôi tại E nên CA+CO:CA = 2CE:CB.
+- **NANG / THIEU**, Prop. XLVI, dòng 22
+  - source: And so e contra. Q.E.I.
+  - now: Vì thế bài toán được giải. (không có câu "và ngược lại")
+  - suggest: Thêm câu "Và ngược lại" (e contra) vào cuối lời giải.
+- **NANG / SAINGHIA**, Prop. XLVI, phát biểu, dòng 14
+  - source: the centre of force, and any plane whatsoever in which the body revolves, being given, and the quadratures of curvilinear figures being allowed
+  - now: tâm lực S nằm trong một mặt phẳng bất kỳ nơi vật thể quay, và các phần tư của các hình cong đã biết
+  - suggest: Nguồn nêu tâm lực và một mặt phẳng cho trước (lời chứng minh có SC là khoảng cách từ tâm đến mặt phẳng, nên S không nằm trong mặt phẳng); "quadratures" là phép cầu phương, không phải "phần tư". Sửa: "tâm lực và một mặt phẳng bất kỳ nơi vật thể quay đã cho, và cho phép cầu phương các hình cong".
+- **NANG / THIEU**, Học luận sau Prop. XLVII, dòng 38
+  - source: In those cases, therefore, it will be sufficient to consider the motion in those curve lines.
+  - now: (bản dịch kết thúc ở "...trong các đường cong tạo ra mặt cong đó.")
+  - suggest: Thêm câu cuối: trong các trường hợp ấy chỉ cần xét chuyển động trong những đường cong đó.
+- **NANG / THIEU**, Prop. XLIX, dòng 76
+  - source: therefore (by Cor. Lem. IV) the lengths BV-VP and AP, generated by those increments, are in the same ratio; ... in a given ratio of CB to 2CE
+  - now: ở trong một tỷ số đã cho. Vì vậy độ dài BY-YP và AP có cùng tỷ số.
+  - suggest: Thêm tỉ số CB:2CE và viện dẫn Hệ quả Lemma IV.
+- **NANG / SOLIEU**, Prop. XLIX, dòng 52 và 78-80
+  - source: AP will be to twice the versed sine of the arc ½PB ... if BV be radius, VP is the cosine of the angle BVP or ½BEP ... in this wheel, whose radius is ½BV, BV-VP will be double the versed sine of the arc ½BP
+  - now: Độ dài AP tỷ lệ với hai lần sin thuận của cung PB; ... Vì bán kính bánh xe là BV, BY-YP gấp đôi sin thuận của cung BP; AP:(2 sin thuận của cung BP)
+  - suggest: Dòng 52, 78, 80 phải là nửa cung (½PB, ½BP); dòng 78 bán kính bánh xe là ½BV (BV là đường kính); thêm "góc BVP hay ½BEP".
+- **NANG / THIEU**, Prop. XLVI, dòng 20
+  - source: resolved into two (by Cor. 2, of the Laws of Motion) ... revolve in free space about the centre C by means of the force TV alone
+  - now: Lực SV phân rã thành ST và TV. ... chỉ còn lực TV hướng về C.
+  - suggest: Thêm viện dẫn Hệ quả 2 của các Định luật Chuyển động và ý "quay trong không gian tự do quanh C chỉ nhờ lực TV".
+- **NANG / SAINGHIA**, Scholium sau Prop LII, dong 169
+  - source: For gravity (as will be shewn in the third book) decreases in its progress from the superficies of the Earth; upwards in a duplicate ratio of the distances from the centre; downwards in a simple ratio of the same.
+  - now: Trong luc giam khi di tu be mat Trai Dat ra ngoai theo binh phuong khoang cach tu tam, nhung tang theo khoang cach khi di sau vao trong.
+  - suggest: Nguon: trong luc GIAM ca khi di len (theo binh phuong khoang cach toi tam) lan khi di xuong (theo ti so don, tuc ti le voi khoang cach toi tam). Ban dich dao chieu thanh "tang" khi di sau; sua thanh "giam", va them "(nhu se chi ra o Quyen III)".
+- **NANG / THIEU**, Prop LII, dong 152-157 (phan lap luan ve cac cycloid khac nhau)
+  - source: the lineola HY, which is as this accelerated force CO x V, will be described in a given time: ... the nascent arc HZ ... is in the subduplicate ratio of the rectangle GHY, and therefore as sqrt(GH x CO x V)
+  - now: Neu luc tuyet doi cua qua cau la V, gia toc khi con lac bat dau di thang ve tam la CO.V. Do do thoi gian cua mot dao dong day du ty le truc tiep voi can bac hai do dai soi ...
+  - suggest: Mat ca chuoi buoc cua Newton: doan nho HY, duong vuong goc YZ cat chu vi tai Z, cung HZ chi thoi gian cho truoc, HZ ty le can(GH x CO x V), roi thoi gian = GH / can(GH x CO x V) (OCR doan nay hong, khong xac dinh duoc dang cuoi tu OCR). Cung nguon noi "as CO x V" (ti le), ban dich viet "la CO.V" (bang). Them cau ket "Q.E.I." va cau "Therefore the oscillations in all globes and cycloids..."
+- **NANG / THIEU**, Prop LII, dong 145-148
+  - source: as the ordinate LI to the radius GK, or as sqrt(SR^2 - TR^2) to SR
+  - now: Van toc con lac tai T so voi van toc tai R bang van toc vat the H tai L so voi van toc tai G, tuc bang LI:GK.
+  - suggest: Nguon con co: ti so bang so gia tuc thoi cua duong HL tren so gia tuc thoi cua duong HG (cac cung HI, HK tang deu), va ti so nay cung bang can(SR^2 - TR^2) : SR. Ban dich bo ve sau va phan giai thich so gia.
+- **NANG / THIEU**, He qua 1 cua Prop LII, dong 161
+  - source: Whence there is given both the time of the descent from any place to the centre, and the time equal to it in which the body revolving uniformly about the centre ... describes an arc of a quadrant. For this time ... is to the time of half the oscillation in any cycloid QRS as 1 to sqrt(AR/AC)
+  - now: Thoi gian dao dong, roi va quay cua cac vat the co the so sanh voi nhau. Neu duong kinh banh xe bang ban kinh qua cau, cycloid tro thanh duong thang qua tam, va dao dong bien thanh roi roi len.
+  - suggest: Mat: thoi gian roi tu mot noi bat ky toi tam bang thoi gian vat quay deu quanh tam o khoang cach bat ky di het mot cung phan tu, va ti so voi nua dao dong trong cycloid QRS la 1 : can(AR/AC) (OCR dang can(AR/AC) hoi hong nhung doc duoc). Them vao.
+- **NANG / THIEU**, He qua 2 cua Prop LII, dong 165
+  - source: Wren: arc of the cycloid ... equal to four times the versed sine of half the arc of the wheel; Huygens: a pendulum between two such cycloids will oscillate in a similar and equal cycloid in equal times; descent of heavy bodies in the time of one oscillation
+  - now: Khi ban kinh qua cau tang vo han, mat cau tro thanh mat phang, va cycloid tro thanh cycloid thong thuong. Do la nhung dieu Wren va Huygens da phat hien.
+  - suggest: Mat: luc huong tam khi do tac dung deu theo phuong vuong goc voi mat phang; do dai cung cycloid bang 4 lan sin ve cua nua cung banh xe (Wren); con lac giua hai cycloid nhu vay dao dong trong mot cycloid dong dang va bang nhau trong nhung thoi gian bang nhau, va su roi cua vat nang trong thoi gian mot dao dong (Huygens). Ban dich gop thanh mot cau.
+- **NANG / THIEU**, Prop LI, dong 123-129 (chung minh)
+  - source: accelerations ... as the length TX, that is (because CV, WV, and TX, TW proportional to them are given), as TW ... parts described at the beginning ... are as the accelerations, that is, as the wholes ... the velocities generated ... vanish together ... the two parts of the cycloid RS and RQ ... similar and equal
+  - now: Vi vay gia toc ty le voi TX, roi voi TW, va theo He qua 1 ... voi cung TR. ... Cac phan con lai va cac gia toc tiep theo cung giu ty le ay ... Vi vay thoi gian len va xuong bang nhau ...
+  - suggest: Mat: ly do TX ty le TW (CV, WV, TX, TW la cac dai luong cho truoc); cau "cac phan mo ta luc dau ty le voi gia toc, tuc voi toan bo", chuoi "gia toc, van toc sinh ra, cac phan da mo ta, cac phan con lai deu ty le voi toan bo"; va ly do hai nua dao dong bang nhau vi hai phan cycloid RS, RQ dong dang va bang nhau. Cau goc "Cor. 2 of the Laws" (phan ra luc) cung khong duoc dan, va tien de luc ty le CT bi bo.
+- **NANG / THIEU**, He qua 1 cua Prop LIII, dong 195
+  - source: For because TZ, AR are parallel, the triangles ATN, ZTY are similar; and therefore TZ will be to AT as TY to TN; ... the force TZ ... will be to the force of gravity AT, as the arc TR equal to TY is to TN
+  - now: ... ty le voi trong luc deu nhu cung TR voi sin TN, thi cac dao dong co thoi gian bang nhau.
+  - suggest: Mat doan chung minh (hai tam giac ATN, ZTY dong dang, TZ:AT = TY:TN, luc gay dang thoi nhu cung TR bang TY so voi sin TN).
+- **NANG / SAINGHIA**, He qua 2 cua Prop LIII, dong 199
+  - source: the whole force tending downwards should be always as a line produced by applying the rectangle under the arc TR and the radius AR to the sine TN
+  - now: luc tong huong xuong luon ty le voi duong cong tao boi hinh chu nhat giua cung TR, ban kinh AR, va sin TN
+  - suggest: "A line" la duong (doan thang), khong phai "duong cong"; "applying ... to the sine TN" la phep chia: luc ty le TR.AR / TN. Ban dich "duong cong" va "giua ... va sin TN" sai nghia. Cung bo cum "pendulum which preserves the motion".
+- **NANG / THUATNGU**, Prop LIII dong 185 va Prop LIV dong 203
+  - source: Granting the quadratures of curvilinear figures
+  - now: Cho biet cac phan tu cua cac hinh cong
+  - suggest: "Quadratures" la phep cau phuong (tinh dien tich hinh cong), khong phai "phan tu" (mot phan tu). Nen dich "Cho biet cac phep cau phuong cua cac hinh cong" o ca hai Proposition.
+- **NANG / THIEU**, Prop. LXIII, dòng 317
+  - source: "Then (by Cor. 5 of the Laws, and the last Theorem) the subsequent motions ... is to be determined by Prob. IX and XXVI ... compound the uniform progressive motion ... absolute motion of the bodies in immovable space."
+  - now: "Sau đó, theo Hệ quả 5 của các Định luật và Định lý trước, có thể xác định các chuyển động tiếp theo."
+  - suggest: Dịch đủ: chuyển động ban đầu của các vật thể đối với không gian ấy; chuyển động của mỗi vật quanh tâm xác định bằng Bài toán IX và XXVI, suy ra vật kia; rồi hợp với chuyển động tịnh tiến đều của cả hệ để được chuyển động tuyệt đối trong không gian bất động. Đồng thời bỏ nguyên một mệnh đề "gốc" (giả thiết tâm và không gian đứng yên, các vật không hút nhau).
+- **NANG / THIEU**, Mở đầu Phần XI, dòng 245-249
+  - source: "though very probably there is no such thing existent in nature" ; "neither the attracted nor the attracting body is truly at rest" (by Cor. 4) ; "either attracted by one single one ... or which all of them attract each other mutually" ; "But these propositions are to be considered as purely mathematical ... mathematical reader."
+  - now: "Tôi đã xét lực hướng tâm hướng về một tâm bất biến." ; "Nếu có hai vật thể, cả hai đều chuyển động quanh một tâm trọng lực chung." ; câu cuối đoạn dừng ở "các xung lực".
+  - suggest: Bổ sung bốn chỗ bị mất: (1) "rất có thể trong tự nhiên không có tâm bất động như thế"; (2) không vật nào thật sự đứng yên, trích Hệ quả 4 của các Định luật; (3) hai trường hợp của nhiều vật (bị một vật duy nhất hút và hút lại, hoặc tất cả hút lẫn nhau); (4) câu cuối: các mệnh đề này thuần toán học, gác mọi xét đoán vật lí, dùng lối nói quen thuộc để người đọc toán dễ hiểu.
+- **NANG / THIEU**, Prop. LVII, dòng 255-257
+  - source: "by composition of ratios, in a given ratio to the whole distance" ; "because lying in the same right line they never change their inclination" ; "describe upon planes, which either rest with those terms, or move with any motion not angular, figures entirely similar ... Therefore the figures ... are similar."
+  - now: "Các khoảng cách ấy quay quanh tâm chung bằng chuyển động góc đều, vì chúng cùng nằm trên một đường thẳng. Những đường thẳng ... mô tả trên các mặt phẳng những hình hoàn toàn tương tự."
+  - suggest: Bổ sung: mỗi khoảng cách ở tỉ số cho trước với nhau và (hợp tỉ số) với cả khoảng cách giữa hai vật; chúng không bao giờ đổi độ nghiêng với nhau; các mặt phẳng ấy hoặc đứng yên cùng các đầu mút hoặc chuyển động với chuyển động bất kì không phải quay (điều kiện then chốt cho Prop. LVIII Trường hợp 2); câu kết "vậy các hình do các khoảng cách ấy mô tả là đồng dạng". "đều" cho "equable" dễ hiểu thành vận tốc góc đều, trong khi lập luận chỉ cần cùng chuyển động góc.
+- **NANG / SAINGHIA**, Prop. LVIII, dòng 261-263
+  - source: "there may be described round either body unmoved a figure similar and equal ..." ; "and therefore, by Theor. XX, similar to the curves ST and PQV ... and that because the proportions of the lines SC, CP, and SP or sp, to each other, are given."
+  - now: "thì có thể mô tả quanh một trong hai vật thể, bằng chính các lực ấy, một hình tương tự và bằng hình ..." ; "nên tương tự với các đường ST, PQ mà chúng mô tả quanh C."
+  - suggest: Chèn "đứng yên (unmoved)" vào phát biểu: hình được mô tả quanh một vật bất động; đó là điểm cốt lõi của định lí. Chèn viện dẫn Định lí XX và lí do "vì các tỉ số của SC, CP và SP (hay sp) với nhau đã cho"; thêm tên đường cong pqv; "nên" hiện không có căn cứ.
+- **NANG / SAINGHIA**, Prop. LVIII Trường hợp 1, dòng 267-269
+  - source: "if the force ... were to the force with which p is attracted towards s, in the same given ratio, these forces would in equal times attract the bodies from the tangents ... But because those forces are not to each other in the ratio of CP to sp, but ... mutually equal ..." ; "pqv is similar and equal to the figure which the body P describes round the movable body S."
+  - now: "Các tiếp tuyến tương ứng tạo các hình đồng dạng, nên các lực ở C, s tỷ lệ với các quãng đường tương ứng." ; "Nếu các lực không cùng tỷ số, vật thể p cần thời gian lớn hơn ..."
+  - suggest: Sai nghĩa: nguồn không khẳng định các lực tỉ lệ với quãng đường mà nói có điều kiện (nếu lực ở tỉ số CP:sp thì ...); và "các lực KHÔNG ở tỉ số CP:sp mà bằng nhau" là sự thật (do S, s và P, p giống nhau, SP = sp) chứ không phải "nếu". Thiếu: Hệ quả 4 của các Định luật, tiếp tuyến PR, pr, kéo dài CQ, sq tới R, r, hình CPRQ ~ sprq, RQ:rq = CP:sp, thời gian theo căn bậc hai tỉ số các quãng đường do Bổ đề X, và câu kết: pqv đồng dạng và bằng hình P mô tả quanh vật S chuyển động.
+- **NANG / SAINGHIA**, Hệ quả 2 của Prop. LVIII, dòng 281
+  - source: "describe (by Prop. XI, XII, XIII) ... conic sections having their focus in the centre about which the figures are described."
+  - now: "mô tả các hình cắt conic đồng tâm quanh tâm trọng lực chung và quanh nhau."
+  - suggest: Sửa "đồng tâm" thành "có tiêu điểm tại tâm mà các hình được mô tả quanh nó" (nguồn: having their focus in the centre); thêm viện dẫn Prop. XI, XII, XIII. Tương tự Hệ quả 1 thiếu "(theo Prop. X)" (dòng 277).
+- **NANG / SAINGHIA**, Prop. LX, dòng 297
+  - source: "the principal axis of the ellipsis will be diminished in a ratio sesquiplicate to the former ratio; that is, in a ratio to which the ratio of S to S+P is triplicate ... And inversely ..."
+  - now: "trục chính giảm theo tỷ số một phần rưỡi, tức lập phương so với tỷ số ban đầu. Vì vậy trục chính của elip thứ nhất tỷ lệ với trục chính của elip thứ hai như S+P với trung bình nhân thứ nhất giữa S+P và S."
+  - suggest: Đảo chiều: nguồn nói tỉ số S:(S+P) là lập phương của tỉ số trục (trục giảm theo "sesquiplicate" của tỉ số chu kỳ), bản dịch đọc thành tỉ số trục là lập phương của tỉ số ban đầu. Thiếu bước trung gian (elip đã giảm : elip kia = trung bình thứ nhất : S+P) và bước "ngược lại"; "elip thứ nhất" mơ hồ. "first of two mean proportionals" dịch "trung bình nhân thứ nhất" làm mất "hai" (hai trung bình tỉ lệ).
+- **NANG / THIEU**, Prop. LXI (và LIX), dòng 305 (LIX dòng 291)
+  - source: "the ratio of any power of one distance to the same power of the other ... any quantity derived in any manner from one of the distances compounded any how with given quantities ... directly or inversely as the distance ... or as any power ... That is, the law of attracting force will be the same ..." ; LIX: "that is, in a subduplicate ratio of the body S to the sum of the bodies S+P"
+  - now: "mọi lũy thừa và hàm của các khoảng cách ấy cũng có tỷ số tương ứng. Vì thế quy luật lực hút giống nhau ..." ; LIX: "thời gian ... tỷ lệ căn bậc hai của CP với SP."
+  - suggest: LXI: dịch đủ lập luận (lũy thừa; đại lượng suy ra từ khoảng cách kết hợp với các đại lượng cho trước; lực tỉ lệ thuận, nghịch hoặc theo lũy thừa, hoặc theo đại lượng như thế; cùng quy luật đối với cả hai khoảng cách). "hàm" không đủ vì thiếu "kết hợp với các đại lượng cho trước". LIX: thêm "tức theo căn bậc hai tỉ số của vật S với tổng S+P" (CP:SP = S:(S+P)); phát biểu LIX "tỷ lệ căn bậc hai với ... theo tỷ số khối lượng S với tổng" khó hiểu, nên viết "theo căn bậc hai của tỉ số S : (S+P)".
+- **NANG / SAINGHIA**, Prop. LV dòng 219 và Prop. LVI dòng 231, 239
+  - source: "TO a right line drawn from the body to the centre; TG a part thereof proportional to the centripetal force ... TI a part [of TM] ... force of pressure" ; "Granting the quadratures of curvilinear figures" ; "Join Op"
+  - now: "Từ tâm vật thể T kẻ TO, phân rã nó thành TG ... và TI ... Kẻ TM ..., TF, TH vuông góc với mặt phẳng" ; "Cho biết các phần tư của các hình cong" ; (thiếu "Nối Op")
+  - suggest: LV: TG là một phần của TO, TI là một phần của TM (lực ép bề mặt đẩy ngược về phía M); TO không "phân rã" thành TG và TI; TF, TH nằm trên đường PTF song song với trục và vuông góc mặt phẳng AOP, không phải được kẻ vuông góc; "OF" trong nguồn OCR nên là GF (kẻ từ G, cf. "FG"); "AGP" ở dòng 223 là OCR hỏng của AOP, bản dịch dùng cả AGP và AOP. Thiếu "Theo Hệ quả 2 của các Định luật" và rằng AP chuyển động như dưới lực hướng tâm về O bằng tổng FG+HI. LVI: "quadratures" là "cầu phương" (phép cầu phương các hình cong), không phải "phần tư"; thiếu câu "Giữ nguyên cách dựng trước" và "nối Op"; thiếu vị trí của elip đối với PO; thiếu "(đối chiếu Prop. XLI với Hệ quả 2)" và sự thật là cách xác định đường APp "hiện ra dễ dàng".
+- **NANG / CHUGIAI**, Chú giải cuối chương, dòng 319-327 (về Prop. LXI, kèm Hệ quả của LV)
+  - source: Nguồn không có khối lượng thu gọn, không có Euler ; Hệ quả của Prop. LV: "acted on by forces tending to two or more centres in any the same right line CO ... the area AOP would be always proportional to the time."
+  - now: "Đó chính là phép giảm bài toán hai vật thể về khối lượng quy hiệu dụng μ ... quanh tâm C." ; "Hệ quả kèm theo ... bài toán ba vật thể giới hạn của Euler ... không có lời giải giải tích."
+  - suggest: HỢP LÍ MỘT PHẦN cho đoạn 1-2: tỉ số CP1:CP2 = m2:m1 đúng; "mọi hàm" tỉ lệ là sai (chỉ lũy thừa, hoặc đại lượng cùng dạng kết hợp với hằng số tương ứng); khối lượng thu gọn μ mô tả toạ độ tương đối quanh vật kia (cf. Prop. LVIII), không phải "quanh tâm C", và Newton không viết điều đó; "Ông cần cái này để ..." gán động cơ cho Newton; "quy hiệu dụng" là lỗi gõ/khó hiểu. KHÔNG HỢP LÍ cho đoạn 3: Hệ quả đó thuộc Prop. LV (dòng 227), không "kèm theo" Prop. LXI; "diện tích quét" là diện tích AOP của hình chiếu bán kính song song, không phải quanh tâm lực; gọi là "bài toán ba vật thể giới hạn của Euler" là sai tên (bài toán hai tâm cố định); "đó cũng là lý do bài toán ba vật thể không có lời giải giải tích" là khẳng định toán học và lịch sử không có nguồn. Nên xóa hoặc viết lại, nếu giữ thì chuyển xuống dưới Prop. LV.
+- **NHE / THIEU**, Toàn phần 1 (Prop. XLVI, XLVII, XLIX, L)
+  - source: Q.E.I. / Q.E.D. / Q.E.D. / Q.E.F.
+  - now: không có Q.E.I., Q.E.D., Q.E.F. ở cuối các lời giải và chứng minh
+  - suggest: Thêm các ký hiệu kết thúc nếu bản dịch giữ chúng.
+- **NHE / THIEU**, Prop. XLVIII dòng 42; Hệ quả 1 dòng 87; Hệ quả 2 dòng 91; Prop. L dòng 104; dòng 60, 67
+  - source: (which curvilinear path we may call the cycloid, or epicycloid); PV (which is the double of the sine of the angle VBP, when EB is radius); and fold itself round that curve line, as if it were some solid obstacle; doubling the consequents
+  - now: Phát biểu XLVIII không có chú thích cycloid hay epicycloid; Hệ quả 1 thiếu phần ngoặc đơn và "do đó trong một tỷ số đã cho"; dòng 104 thiếu sợi quấn vào đường cong như một vật cản rắn; dòng 67 thiếu "nhân đôi các hạng sau"
+  - suggest: Bổ sung các cụm bị bỏ; Hệ quả 2 nên dịch sát: bằng một đường thẳng mà tỉ số của nó với đường kính BV là 2CE:CB.
+- **NHE / THEM**, Dòng 10 (chú thích hình ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 24. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Lời biên tập in nghiêng ngoài blockquote; chuyển vào ghi chú biên tập hoặc bỏ khỏi phần dịch.
+- **NHE / HINH**, Hình dòng 8 (section-x-cycloid.svg)
+  - source: Các chữ cái điểm trong Prop. XLIX và L: A, B, C, E, F, G, H, I, K, L, O, P, Q, R, S, T, V, W
+  - now: Nhãn trong <text> chỉ có: C, T, "cycloid", "đường viền ngoài", "đường viền trong", "con lắc"
+  - suggest: Hình chỉ có C và T trong số các chữ cái điểm bài nhắc; thiếu A, B, E, F, G, H, I, K, O, P, Q, R, S, V, W; các nhãn tiếng Việt không có trong nguồn. Hình không đủ để theo dõi lời chứng minh Prop. XLIX và L.
+- **NHE / KHAC**, Prop. XLVI dòng 20; Prop. XLIX dòng 76-78, 91
+  - source: the force SV were taken away; BV-VP; the diameter of the wheel BV
+  - now: bị bỏ đi lực $SF$; BY-VP rồi BY-YP; "BY" bán kính, đường kính bánh xe BY
+  - suggest: Nhãn lẫn lộn V/Y/F (OCR nguồn cũng đọc "S F", "BY", "YP"); trong bản dịch điểm Y không được định nghĩa, V được định nghĩa ở dòng 54. Nên thống nhất SV, BV, VP.
+- **NHE / SAINGHIA**, Prop LIII, dong 187 va 189
+  - source: Draw CT meeting that perpendicular in Z ... YZ drawing the body in the direction of the length of the thread PT, does not at all change its motion
+  - now: Ke CT cat vuong goc tai Z. ... Luc YZ khong lam thay doi chuyen dong doc theo soi
+  - suggest: "Cat vuong goc" co the doc la CT cat YZ tao goc vuong; nguon la CT cat duong vuong goc YZ tai Z. Va luc YZ keo theo huong soi nen khong doi chuyen dong cua vat (khong chi "doc theo soi"). Bo cau "do dai cung TR biet tu cac phuong phap cau phuong thong thuong".
+- **NHE / THIEU**, Toan phan 2 (Q.E.D./Q.E.I., dong 113, 150, 211, 217)
+  - source: (by Cor. 2, Prop. XLIX) to the length AR; Q.E.D.; Which was first required. Q.E.I.; A the beginning of that projection ... TC ... TG ... TM ... TI ... PTF ... OF, IH
+  - now: Theo He qua 1 cua Proposition XLIX ... toan bo soi APT luon bang nua cycloid APS, tuc bang AR. (Prop LV dong 217 dung o OP, AP.)
+  - suggest: He qua 2 Prop XLIX bi ghi nham thanh He qua 1; bo cac "Q.E.D./Q.E.I./Which was first required" (mot muc nhe). Dong 217 (Prop LV) chua nhac A, TC, TG, TM, TI, PTF, OF, IH; neu cac nhan nay cung khong co o dong 219 tro di thi la thieu (phan 3 can kiem).
+- **NHE / THIEU**, Toàn phần (Prop. LV-LXIII)
+  - source: "Q.E.D." (LV, LVII, LVIII Trường hợp 2, LIX, LX, LXI) ; "Q.E.I." (LVI, LVIII Trường hợp 1, LXII, LXIII)
+  - now: Cuối các chứng minh không có Q.E.D. hay Q.E.I.
+  - suggest: Thêm Q.E.D. (hoặc c.p.c.m.) và Q.E.I. cuối từng chứng minh; thêm các viện dẫn bị rơi: Hệ quả 4 các Định luật (LXII), "theo giả thiết" (LXII).
+- **NHE / HINH**, Prop. LV, LVI, LVIII (dòng 219-263)
+  - source: Nguồn tả hình bằng nhãn B, K, L, T, S, R, O, M, N, A, P, G, I, F, H, C, D, V, p, q, Q, s, r, R
+  - now: Trong phần 219-327 không có ảnh nào ![...](../assets/...)
+  - suggest: Không có ảnh để so nhãn. Văn bản nhắc nhiều điểm (T, S, O, M, G, I, F, H, N, V, s, p, q, r, R). Bản dịch ở phần này không có hình, nên cần chắc chắn LV (nửa đầu chương ở phần 2), LVI và LVIII đã có hình nơi khác; hiện không xác định được từ phần này.
+
+## 37-sach-i-phan-xi-proposition-lxiii-lxvi.md
+
+- *phần 1/2: Chuong 37, phan 1/2 (dong 1-87): Prop LXIII, LXIV (kem ghi chu Chu giai), LXV (Truong hop 1, 2), He qua 1-3; hinh section-xi-mutual-attraction.svg. Nguon ia.txt dong 9871-10055.*
+- *phần 2/2: Chương 37, phần 2/2 (dòng 88-175): Proposition LXVI (Định lý XXVI) - phát biểu, Trường hợp 1-2, Hệ quả 1-10 và khối [Chú giải]; đối chiếu ia.txt dòng 10057-10405. Phần này không có ảnh. Hệ q*
+
+- **NANG / THIEU**, Prop LXV, He qua 2 (dong 82)
+  - source: For if the accelerative force, acting in parallel directions and equally, causes no perturbation... it must... when it acts unequally, cause a perturbation ...
+  - now: Chi con cau dau: "Nhieu loan lon nhat khi luc gia toc ... khong ty le nghich voi binh phuong khoang cach, nhat la khi muc bat bang lon hon..." (mat ca doan ...
+  - suggest: Dich them doan: luc gia toc deu theo phuong song song khong gay nhieu loan, nen khi bat deu thi phai gay nhieu loan o dau do; phan du cua xung luc lon tac dung len vat nay ma khong len vat kia tat yeu doi vi tri tuong doi; cong voi nhieu loan do do nghieng/bat deu cua cac duong thi nhieu loan toan phan lon hon.
+- **NANG / THIEU**, Prop LXV, Truong hop 2 (dong 72)
+  - source: its centre of gravity will describe about the great body one of the conic sections (that is, a parabola or hyperbola when the attraction is but languid and ...
+  - now: Tam trong luc cua he se mo ta mot hinh cat conic quanh vat the lon, va ban kinh ke toi tam ay mo ta dien tich ty le voi thoi gian
+  - suggest: Them ngoac don (parabol hoac hyperbol khi luc hut yeu, elip khi luc hut manh hon) va ve "vi cac phan o gan nhau nen ca he bi hut nhu mot vat the". Cum "ban kinh ke toi tam ay" cung co the doc la toi tam trong luc, trong khi nguon la ban kinh ke toi vat the lon (xem dong sau).
+- **NANG / THIEU**, Prop LXV, doan mo dau (dong 54)
+  - source: However, in the following cases the orbits will not much differ from ellipses.
+  - now: Doan mo dau ket thuc o "...trừ khi giữ một tỷ lệ nhất định giữa các khoảng cách." (khong co cau cuoi)
+  - suggest: Them cau: Tuy nhien, trong cac truong hop sau day, cac quy dao khong khac nhieu so voi elip.
+- **NANG / THIEU**, Prop LXV, Truong hop 1 (dong 60-62)
+  - source: the great body will, without any sensible error, be either at rest, or move uniformly forward in a right line; ... the lesser bodies may be so far diminishe...
+  - now: Neu cac vat the nho du nho, vat the lon khong roi dang ke khoi tam ay. ... cac sai so nay nho hon bat ky dai luong da giao.
+  - suggest: Them ket luan: vat the lon (khong co sai so dang ke) dung yen hoac chuyen dong deu theo duong thang; va khi cac vat the nho giam du nho thi quy dao thanh elip, dien tich ty le thoi gian, khong co sai so nao khong nho hon moi dai luong chi dinh duoc.
+- **NANG / THIEU**, Prop LXIV, doan ket (dong 38)
+  - source: This would be the case, though the bodies T and L attract each other mutually with accelerative forces either greater or less than those with which they att...
+  - now: (khong co; doan dich sang thang "Nếu các lực hút giữa mọi cặp vật thể tỷ lệ với khoảng cách nhân với khối lượng vật thể hút...")
+  - suggest: Them: Dieu nay van dung du T va L hut nhau bang cac luc gia toc lon hon hoac nho hon luc ma chung hut cac vat the khac, theo ty le khoang cach. Cung thieu "from what has gone before it will easily be concluded".
+- **NANG / THIEU**, Prop LXIV, doan chung minh (dong 32-34)
+  - source: the forces SD x T and SD x L ... do not at all change their situations with respect to one another... IK drawn through the middle of S... S ... tends to the...
+  - now: Luc con lai SD lam chung cung tien toi duong IK vuong goc voi DS. Su tien can ay bi can bang boi chuyen dong quanh tam trong luc chung C. Vat the S mo ta mo...
+  - suggest: Bo sung cac mat xich bi mat: luc SD x T va SD x L tac dung deu theo cac duong song song TI, LK nen khong doi vi tri tuong doi cua T va L; IK ke qua giua S vuong goc DS; tong luc dong SD x T + SD x L ty le voi khoang cach tu S den C nen S mo ta elip quanh C; CS, CD ty le nen D mo ta elip tuong tu o phia doi dien; T, L theo He qua 5 va 6 cua cac Dinh luat van mo ta elip quanh tam di dong D.
+- **NANG / THIEU**, Prop LXIII (dong 16-20)
+  - source: and also the very first, or beginning motions of the bodies in respect of this space... and at the same time will be obtained the motion of the other round ...
+  - now: Khi chuyen dong ban dau da biet, ta cung biet chuyen dong deu cua tam trong luc chung va chuyen dong cua khong gian... (khong co chuyen dong ban dau cua cac...
+  - suggest: Them: cung biet chuyen dong khoi dau cua cac vat the doi voi khong gian ay; xac dinh chuyen dong cua mot vat the xuat phat tu noi da cho, theo phuong va van toc da cho, chiu luc huong tam, thi dong thoi co chuyen dong cua vat the kia quanh cung tam.
+- **NANG / CHUGIAI**, Chu giai sau Prop LXIV (dong 40-48): KHONG HOP LI
+  - source: Newton text: all bodies will describe different ellipses with equal periodical times about their common centre of gravity B
+  - now: "mọi elip đều đồng dạng quanh một tâm chung"; F_ij = -k m_i(r_i - r_j) cho ra r_i'' = -kM r_i; "lực tuyến tính là lực duy nhất khiến mọi vật thể trong một h...
+  - suggest: Sai: (1) Newton viet different ellipses, cac elip khac nhau (khac dieu kien dau thi khac do lech tam) nen khong dong dang; (2) cong thuc luc phai co m_j (gia toc cua i la tong -k m_j (r_i - r_j)), voi m_i thi khong ra kM; (3) so sanh voi dao dong rieng/mang tinh the sai: cac mode rieng thuong co tan so khac nhau, va cau "luc tuyen tinh la luc duy nhat" qua tay; (4) "Ong can bang chung..." gan dong co cho Newton; "phan ra thu cap" khong phai thuat ngu chuan; con loi go "gan cung/dat cung" (dong 48). Nen viet lai gon, dung theo bao toan: gia toc ty le -kM r_i tu tam, nen cung chu ky.
+- **NANG / THIEU**, Prop LXVI phát biểu, dòng 90
+  - source: ...than it would do if that great body were not attracted at all by the lesser, but remained at rest; or than it would if ... very much more or very much less attracted
+  - now: phần bên trong quỹ đạo của hai vật thể nhỏ sẽ mô tả gần hơn các diện tích tỷ lệ với thời gian và hình gần elip hơn, nếu vật thể lớn cũng bị các lực hút ấy làm chuyển động
+  - suggest: Thiếu hai vế so sánh (vật lớn đứng yên không bị hút; hoặc bị hút/bị làm chuyển động quá nhiều hay quá ít) và đoạn bán kính vẽ tới vật trong cùng và lớn nhất, tiêu điểm tại điểm gặp. Ngoài ra "the interior of the two revolving bodies" là vật thể TRONG CÙNG, không phải "phần bên trong quỹ đạo"; sửa lại.
+- **NANG / SAINGHIA**, Prop LXVI Trường hợp 1, dòng 98
+  - source: let the accelerative attraction of the body P towards S, at that mean distance, be expressed by that line SK. ... SL will be the accelerative attraction of P towards S at any distance SP
+  - now: lấy nó làm lực gia tốc của $P$ hút $S$ tại khoảng cách ấy
+  - suggest: Đảo chiều: nguồn là lực hút gia tốc của P hướng về S (S hút P). Sửa thành "lực hút gia tốc của P hướng về S"; bổ sung câu SL là lực hút gia tốc ấy tại khoảng cách SP bất kỳ.
+- **NANG / THIEU**, Prop LXVI Trường hợp 1, dòng 103-109
+  - source: whether the body T remained unmoved, or whether it were agitated by that attraction. This appears from Prop. XI, and Cor. 2 and 3 of Theor. XXI
+  - now: Lực hướng tới T ... một mình sẽ làm P mô tả elip quanh T và diện tích tỷ lệ với thời gian. Lực LM cộng vào lực trước, nhưng không tỷ lệ nghịch với PT^2
+  - suggest: Lược nặng: thiếu vế "dù T đứng yên hay bị hút", viện dẫn Prop. XI và Hệ quả 2, 3 Định lý XXI, Hệ quả 2 Định luật chuyển động, việc LM vẫn giữ diện tích tỷ lệ thời gian, lập luận SM làm lệch "hai lẽ", mệnh đề "cả lực thứ hai và thứ ba, nhất là thứ ba, nhỏ nhất", định nghĩa SN (lực hút của T về S), Hệ quả 6 Định luật và đoạn SN đưa SM về MN. Câu "khi lực SM nhỏ nhất, tức khi lực hút của T về S..." gộp SM với MN, không đúng thứ tự lập luận.
+- **NANG / THIEU**, Hệ quả 1, dòng 119
+  - source: ...when the great body is as well attracted and agitated by the rest (according to the ratio of the accelerative forces) as the rest are by each other mutually
+  - now: khi vật thể lớn cũng bị các vật thể còn lại hút và chuyển động theo tỷ lệ các lực gia tốc của chúng
+  - suggest: Thiếu vế điều kiện then chốt "như các vật thể kia hút nhau", nên điều kiện (vật lớn bị hút và chuyển động cùng tỷ lệ như các vật kia) bị nói mờ. Bổ sung.
+- **NANG / THIEU**, Hệ quả 4, dòng 133
+  - source: but the body P will deflect the less from a rectilinear path the less it is impelled towards the body T
+  - now: lực KL hoặc NM tại hội hợp, đối hợp chống lại lực của T, làm lực hướng tâm giảm.
+  - suggest: Thiếu câu kết của lập luận thứ hai (lực hướng về T càng nhỏ thì P càng ít lệch khỏi đường thẳng) và "caeteris paribus". Bổ sung.
+- **NANG / THIEU**, Hệ quả 6, dòng 141-143
+  - source: centripetal force (by Cor. 2, Prop. IV) is in a ratio compounded of the simple ratio of the radius TP directly, and the duplicate ratio of the periodical time inversely ... increased more or diminished less than in the sesquiplicate ratio
+  - now: Chu kỳ vì thế tăng khi bán kính TP không đổi, và thay đổi theo tỷ số phức hợp ... Khi lực của vật thể S xa thay đổi, bán kính TP và chu kỳ cũng thay đổi.
+  - suggest: Thiếu quan hệ lực hướng tâm tỷ lệ thuận bán kính, nghịch bình phương chu kỳ (Hệ quả 2 Prop. IV), thiếu "tăng nhiều hơn hoặc giảm ít hơn tỷ số 3/2 của bán kính" (Hệ quả 6 Prop. IV) và thiếu "tăng giảm luân phiên" khi tác dụng của S tăng giảm. Bổ sung.
+- **NANG / THIEU**, Hệ quả 7, dòng 147
+  - source: For the force with which the body P is urged to the body T at the quadratures ... is compounded of the force LM and the centripetal force ... by Cor. 1, Prop. XLV
+  - now: Ở góc phần tư, lực tổng giảm chậm hơn bình phương khoảng cách, nên đường apsis lùi. Ở hội hợp và đối hợp, lực giảm nhanh hơn ... nên đường apsis tiến.
+  - suggest: Toàn bộ chứng minh bị bỏ: ở góc phần tư lực là tổng của LM (tăng gần tỷ lệ với khoảng cách) và lực hút của T (giảm theo bình phương); ở syzygy là hiệu của KL và lực của T; viện dẫn Hệ quả 1 Prop. XLV; ở vị trí trung gian hai nguyên nhân cùng tác dụng; đoạn hình dung T, P bị nhiều vật S, S, S bao quanh. Chỉ còn kết luận.
+- **NANG / THIEU**, Hệ quả 8 và 9, dòng 151-157
+  - source: Because the velocity of the progress or slowness of the regress is continued for a long time; this inequality becomes exceedingly great. ... if the ratio of the increase and decrease of the centripetal force be augmented each revolution, the eccentricity will be augmented also
+  - now: Ở syzygies, lực bị bớt, apsis tiến nhanh; ở góc phần tư, lực được cộng, apsis lùi chậm. / Nếu lực giảm nhanh hơn khi quay lên, độ lệch tâm tăng.
+  - suggest: Hệ quả 8 thiếu câu cuối (sự nhanh chậm kéo dài lâu nên bất đẳng thức rất lớn). Hệ quả 9 thiếu "tăng hơn bình phương khoảng cách", việc P trở về khoảng cách cũ nếu lực giảm cùng mức, kết luận theo từng vòng quay (tỷ lệ tăng giảm lớn dần thì độ lệch tâm tăng, giảm thì giảm), và cả lập luận đoạn hai (LM cộng vào, KL trừ đi; tỷ lệ nhỏ hơn hoặc lớn hơn bình phương). Chỉ còn kết luận.
+- **NANG / THIEU**, Hệ quả 10, dòng 161-163
+  - source: But if the nodes are situate at the octants after the quadratures ... the inclination is the greatest of all when the nodes are in the syzygies ... and becomes least of all when the nodes are in the quadratures, and the body in the syzygies
+  - now: Khi vật thể đi từ góc phần tư tới syzygy, góc nghiêng giảm, rồi tăng trở lại ... Vì vậy, góc nghiêng nhỏ nhất ở syzygy.
+  - suggest: Bỏ gần hết nửa sau Hệ quả 10: hai node ở bát phân (octant) sau các góc phần tư thì góc nghiêng giảm 90 độ, tăng 45 độ, giảm 45 độ, nên giảm nhiều hơn tăng; node ở octant còn lại thì ngược lại; góc nghiêng lớn nhất khi node ở syzygy, nhỏ nhất khi node ở góc phần tư và vật ở syzygy; trở lại độ lớn cũ ở node kế tiếp. Chỉ giữ ý "nhỏ nhất ở syzygy".
+- **NANG / CHUGIAI**, Chú giải đoạn 3 và 4, dòng 173 và 175
+  - source: Phương trình phẳng thứ Lagrange ... tốc độ biến thiên theo chu kỳ 18,6 năm của mặt phẳng quỹ đạo
+  - now: "phương trình phẳng thứ Lagrange" ; "tốc độ thay đổi dài hạn của quỹ đạo được biểu diễn theo trục elip" ; "đường apsis ... tốc độ biến thiên theo chu kỳ 18,6 năm"
+  - suggest: KHÔNG HỢP LÍ. "Phẳng" dịch sai (Lagrange planetary equations là "phương trình hành tinh"); mô tả "biểu diễn theo trục elip, mỗi thành phần nhiễu đẩy một trục" là sai: chúng cho tốc độ biến thiên của các yếu tố quỹ đạo theo đạo hàm riêng của hàm nhiễu. 18,6 năm là chu kỳ lùi của node, không phải chu kỳ của tốc độ chuyển động apsis. Câu "giải thích vì sao đường apsis tiến" nói quá: văn bản chỉ cho kết luận định tính về chiều tiến. Cần viết lại hoặc bỏ.
+- **NHE / THIEU**, Prop LXIV, LXV, nhieu cho (dong 26-36, 62-74)
+  - source: (by Cor. 1, Theor. XXI) ... (by Cor. 2, of the Laws) ... (by Cor. 1, Prop. X, and Cor. 1 and 8, Prop. IV) ... Q.E.I. / Q.E.O. ... in infinitum ... till the ...
+  - now: Chi giu vien dan Bai toan V; bo cac vien dan Cor.1 Theor.XXI, Cor.2 cac Dinh luat, Cor.1 Prop X va Cor.1,8 Prop IV; "Cùng lập luận có thể tiếp tục cho những...
+  - suggest: Khoi phuc cac vien dan va "ad infinitum"; ghi Q.E.I. (Prop LXIII, LXIV) va Q.E.O. (Prop LXV) tung cho mot lan neu theo quy uoc cua sach.
+- **NHE / SAINGHIA**, Prop LXV, Truong hop 2 (dong 72)
+  - source: by radii drawn thereto, it will describe areas proportional to the times
+  - now: Tâm trọng lực của hệ sẽ mô tả một hình cắt conic quanh vật thể lớn, và bán kính kẻ tới tâm ấy mô tả diện tích tỷ lệ với thời gian
+  - suggest: Neu "tâm ấy" chi tam trong luc cua he thi sai: thereto la vat the lon (dai tu cua great body). Doi thanh "bán kính kẻ tới vật thể lớn".
+- **NHE / HINH**, Hinh section-xi-mutual-attraction.svg (dong 8)
+  - source: Source figures use points T, L, D, S, I, K (Prop LXIV) and B, V, C
+  - now: SVG chi co nhan C, S, P cung cac nhan tieng Viet (tam trong luc chung, luc hut giua hai vat the, quy dao tuong tu)
+  - suggest: Ban van nhac T, L, D, S, I, K, V, B, C; hinh khong co T, L, D, I, K, B, V, con co P ma doan nay khong nhac. Hinh khong du khop voi loi chung minh Prop LXIV.
+- **NHE / THEM**, Dong 10, chu thich hinh in nghieng
+  - source: (khong co trong nguon)
+  - now: *Hình 25. Sơ đồ được dựng lại từ các hình bản gốc; cần đối chiếu ký hiệu với scan.*
+  - suggest: Loi bien tap ngoai blockquote, la phan them; nen chuyen vao blockquote [Chu giai] hoac comment HTML.
+- **NHE / THIEU**, Trường hợp 1 và 2, dòng 109 và 115
+  - source: ...not much greater nor much less than the attraction SK. Q.E.D.
+  - now: Vì vậy, diện tích và hình dạng gần hợp lý nhất khi lực SN gần bằng lực trung bình SK. (kết thúc không có dấu hiệu chứng minh xong)
+  - suggest: Thêm "Q.E.D." (c.đ.d.) ở cuối Trường hợp 1 và Trường hợp 2.
+- **NHE / CHUGIAI**, Chú giải đoạn 1 và 2, dòng 169 và 171
+  - source: Cor. 7: the force KL in the syzygies is almost twice as great as the force LM in the quadratures (nguồn chỉ nói về hiệu ứng của KL và LM, không nói "toàn bộ")
+  - now: Nhiễu dọc theo phương bán kính có hai thành phần: KL ... Đó là toàn bộ kết quả của các Hệ quả 2 đến 10 ... Ông cần chứng minh các quy luật Kepler vẫn xấp xỉ đúng ... ông chỉ có một đường
+  - suggest: HỢP LÍ MỘT PHẦN. Chiều của hiệu ứng bán kính (KL gần gấp đôi LM, apsis tiến) khớp Hệ quả 6-8. Nhưng "toàn bộ kết quả Hệ quả 2 đến 10" sai: tốc độ diện tích (Hệ quả 2-3) do thành phần NM ngoài phương bán kính, độ lệch tâm (Hệ quả 9) và góc nghiêng (Hệ quả 10) đều do cơ chế khác; "mọi thay đổi đều đổi dấu ở hội hợp" mơ hồ. Đoạn 2 gán cho Newton động cơ (chứng minh định luật Kepler vẫn đúng với nhiều hành tinh) và "chỉ có một đường" mà văn bản không nêu; mệnh đề này là ba vật, không phải nhiều hành tinh.
+
+## 38-sach-i-phan-xi-xii-he-qua-xii-xxii-proposition-lxvii-lxxxi.md
+
+- *phần 1/1: Chương 38, phần 1/1 (dòng 1-166): Sách I Phần XI Hệ quả 11-22 của Prop LXVI (ia.txt 10407-10682), Prop LXVII-LXIX và Hệ quả, Học luận, Phần XII Prop LXX-LXXI cùng các Hệ quả gắn dưới LXXI (t*
+
+- **NANG / THIEU**, Hệ quả 19-22, dòng 56-68
+  - source: Cor.19: sphere revolves uniformly...water swifter at syzygies, slower at quadratures; Cor.20: globe adhering to annulus, greatest/least inclination in octants, water heights; Cor.21 (nodes go in consequentia if equatorial matter is deficient); Cor.22 (motion of nodes gives constitution of globe; indifference to axes; two impulses)
+  - now: Dòng 60 viết "các vị trí đã nêu trong bản gốc" thay vì dịch; Hệ quả 20 chỉ còn 1 câu; KHÔNG có Hệ quả 21; phần mở đầu và lập luận xung của Cor.22 bị nén và gắn dưới nhãn "Hệ quả 20" (dòng 66-68)
+  - suggest: Dịch đủ phần còn thiếu của Cor.19, 20, thêm Hệ quả 21, 22 đúng nhãn và các viện dẫn Cor.20/21; bỏ cụm "đã nêu trong bản gốc"
+- **NANG / THIEU**, Prop LXXII (Định lý XXXII) và Hệ quả dòng 148-166
+  - source: PROPOSITION LXXII. THEOREM XXXII: force on corpuscle is proportional to the semi-diameter of the sphere, with proof (triplicate ratio of diameters, duplicate inverse of distances); Cor.1-3 'These two Corollaries appear from Cor.3, Prop.IV'
+  - now: Không có Prop LXXII (phát biểu và chứng minh); ba Hệ quả của LXXII (dòng 156-166) nằm dưới Prop LXXI; Hệ quả 3 viết "lực hút giữa chúng" trong khi nguồn là lực lên hạt thể đặt ở vị trí tương tự đối với hai vật rắn; mất giả thiết lực bằng nhau giảm theo bình phương khoảng cách
+  - suggest: Thêm Prop LXXII đầy đủ, chuyển 3 Hệ quả về dưới nó, sửa Hệ quả 3 thành "các hạt thể đặt ở vị trí tương tự bị hút bởi hai vật rắn theo tỷ lệ đường kính"
+- **NANG / SAINGHIA**, Prop LXX, dòng 132
+  - source: any particles at HI and KL ... will be in the duplicate ratio of those distances. Therefore the forces ... are equal. For the forces are as the particles directly, and the squares of the distances inversely
+  - now: Các hạt thể tại các cung ấy có lực hút tỷ lệ với bình phương khoảng cách, nên lực của chúng lên P bằng nhau
+  - suggest: Sửa: các hạt thể (phần mặt) tỷ lệ với bình phương khoảng cách HP, LP; lực tỷ lệ thuận với hạt thể và nghịch với bình phương khoảng cách, hai tỷ số hợp thành tỷ số bằng nhau; thêm viện dẫn Cor.3 Lem.VII; Prop LXXI dòng 154 "mọi lớp cầu đồng tâm" không có trong LXXI (nguồn chia mặt cầu thành các dải tròn) và thiếu toàn bộ chứng minh
+- **NANG / SAINGHIA**, Hệ quả 15, dòng 38 (và Hệ quả 13, dòng 28)
+  - source: Cor.15: the times of similar linear errors, or equal angular errors, as the periodical times of the orbits. Cor.13: all these errors, at equal distances, will be greater in this case than in the other where S revolves about the system of P and T
+  - now: Cor.15: "sai số góc và thời gian của chúng giữ tỷ lệ cũ"; Cor.13: "các sai số của P ở cùng khoảng cách cũng lớn hơn" (không nói so với trường hợp nào)
+  - suggest: Cor.15: thời gian của các sai số tuyến tính tương tự (hoặc sai số góc bằng nhau) tỷ lệ với chu kỳ của các quỹ đạo, và lực của S, T có thể giữ nguyên hoặc đổi theo tỷ số cho trước; Cor.13: nêu rõ so với trường hợp S quay quanh hệ P, T
+- **NANG / THIEU**, Hệ quả 14, 16, 18, 11, dòng 20, 32-34, 44, 54
+  - source: Cor.14: forces NM, ML ... (by Cor.2 and 6, Prop.IV) reciprocally in a duplicate ratio of the periodical time; Cor.16: angular errors as square of period of P directly and square of period of T inversely; mean motion of apsides in a given ratio to that of nodes; eccentricity/inclination make no sensible variation; Cor.18: inclination of the annulus will vary; Cor.11: always either retrograde or stationary
+  - now: Thiếu câu về tỷ lệ nghịch bình phương chu kỳ (Cor.14); thiếu tỷ lệ với bình phương chu kỳ của P thuận, của T nghịch, tỷ số chuyển động apsis/node và nhận xét về độ lệch tâm, độ nghiêng (Cor.16); thiếu "độ nghiêng của vành cũng thay đổi" (Cor.18); Cor.11 dịch "lùi vô hạn", "luôn đi lùi" (nguồn: perpetually; retrograde or stationary)
+  - suggest: Bổ sung các câu thiếu; sửa "lùi vô hạn" thành "liên tục lùi" và "luôn lùi hoặc đứng yên"
+- **NANG / THIEU**, Prop LXVII-LXVIII và Hệ quả, dòng 86, 92-94, 98
+  - source: LXVII: "as will easily appear by a little consideration"; LXVIII: elliptical motion disturbed by distance of the two bodies' centre from the centre of attraction; motion added to common centre of the three increases perturbation yet more; greatest when T's motion diminishes; Cor.: focus of each orbit in common centre of gravity of all interior bodies (first, second, third orbit...) rather than innermost body at rest
+  - now: Thiếu câu "dễ thấy sau chút suy xét"; thiếu bước nhiễu loạn do khoảng cách các tâm, bước thêm chuyển động của tâm chung, trường hợp nhiễu lớn nhất, viện dẫn Cor.2 Prop LVIII, LXIV, LXV; Hệ quả thiếu điều kiện tiêu điểm đặt ở khối tâm của mọi vật thể bên trong và so sánh với trường hợp vật trong cùng đứng yên
+  - suggest: Dịch bổ sung các câu và điều kiện tiêu điểm còn thiếu
+- **NANG / THIEU**, Prop LXIX và Hệ quả 2, 3, dòng 104, 112, 116
+  - source: Proof: accelerative attraction of B towards A is to that of A towards B as mass of A to mass of B, because motive forces (by 2d, 7th, 8th Definition) ... are equal by the third Law; Cor.2: any power of the distances, or defined according to any common law; Cor.3: common focus in the centre of the great body ... And so on the contrary. This appears from Cor. of Prop. XLVIII, compared with the first Corollary
+  - now: Chứng minh nén mất bước B hút A so với A hút B và viện dẫn Định nghĩa 2, 7, 8; Hệ quả 2 mất "lũy thừa bất kỳ của khoảng cách" và "định luật chung"; Hệ quả 3 mất "tiêu điểm chung ở tâm vật lớn", câu "và ngược lại" và viện dẫn Cor. Prop XLVIII
+  - suggest: Dịch đủ các bước, điều kiện, câu "và ngược lại" và các viện dẫn
+- **NANG / SAINGHIA**, Học luận, dòng 120-122
+  - source: whether that endeavour arise from the action of the bodies themselves, as tending mutually to or agitating each other by spirits emitted; or ... aether or of the air, or of any medium whatsoever, whether corporeal or incorporeal
+  - now: dù cố gắng ấy đến từ tinh thể, ether, không khí hay môi trường
+  - suggest: "spirits emitted" không phải "tinh thể"; sửa thành "các tinh khí/linh khí phát ra"; mất cả câu về lực hướng tới vật thể phụ thuộc bản chất và lượng của chúng (thí nghiệm từ), cách cộng lực từng hạt, câu về chữ impulse, câu "this preparation being made, we argue more safely" và câu "Let us see, then, with what forces spherical bodies..."
+- **NANG / CHUGIAI**, Chú giải thủy triều, dòng 70-80
+  - source: Cor.14: NM, ML ... as the absolute force of S and the triplicate inverse ratio of the distance ST. Cor.20-22 speak of a hypothetical globe with annulus, not of the Earth, mountains or peninsulas
+  - now: Biên độ tỷ lệ với "bình phương khoảng cách, đúng như Hệ quả 14 nói"; "nếu Trái Đất rắn lại thì thủy triều dừng"; "núi và bán đảo phải được phân bổ cân đối"; "Phương thuốc của ông hỏng"; "mô-men xoắn do thủy triều làm trục dao động và giữ ổn định"
+  - suggest: KHÔNG HỢP LÍ: Hệ quả 14 nói nghịch lập phương; gán cho Newton một dự đoán về núi, bán đảo và Trái Đất rắn mà văn bản không viết; mô-men triều làm chậm quay chứ không "giữ trục"; tiêu đề nói phía xa "kéo xuống" lệch với thân bài; số 0,46 và 26 triệu là số hiện đại không có trong nguồn. Nên viết lại hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải vỏ cầu, dòng 136-146
+  - source: Prop LXX: two lines HK, IL through P cut arcs HI, KL; Prop LXXI: two equal spherical surfaces compared by circular strips; Cor.1 of LXXII: equal periods when distances proportional to diameters
+  - now: "hai cung ... ở hai đầu một dây"; "LXXI dùng cùng cách, chỉ khác chỗ các lớp cầu đồng tâm được cộng lại"; Hệ quả 1 "định luật Kepler thứ ba"; "khái niệm trọng lực chưa tồn tại"; "tỷ số khối lượng mà không cần cân"
+  - suggest: KHÔNG HỢP LÍ: HI và KL nằm trên hai đường thẳng khác nhau chứ không phải một dây; lớp cầu đồng tâm thuộc LXXIV chứ không phải LXXI; Hệ quả về chu kỳ bằng nhau của LXXII không phải định luật Kepler thứ ba; vài khẳng định về lịch sử và ứng dụng hiện nay không có trong nguồn
+- **NHE / HINH**, Hình 26 và chú thích, dòng 8-10 (phần THEM của chú thích ngoài blockquote)
+  - source: Figures in source: Prop LXX uses H, I, K, L, P; Prop LXXI uses A, H, K, B, a, h, k, b, S, s, P, p, D, E, F, Q, R; Cor.11-22 use T, P, S, N, M, L, K, C, D, A, B, E
+  - now: SVG section-xii-spherical-attraction.svg chỉ có nhãn S, P, p và "lớp cầu đồng tâm", "lực hướng tâm", "điểm bên trong"; chú thích in nghiêng "Sơ đồ được dựng lại ... cần đối chiếu ký hiệu với scan" là lời biên tập thêm ngoài blockquote
+  - suggest: Hình thiếu H, I, K, L, A, B, a, b, h, k, s, D, E, F, Q, R mà lời chứng minh Prop LXX-LXXI nhắc; hình còn đặt ở đầu chương, trước các Hệ quả của Phần XI không dùng hình này; thay bằng hình đúng nhãn và bỏ hoặc chuyển chú thích vào blockquote Chú giải
+- **NHE / KHAC**, Toàn phần: Q.E.D.
+  - source: Q.E.D. ở cuối Prop LXIX, LXX, LXXI
+  - now: không có Q.E.D. ở bất kỳ Proposition nào trong phần
+  - suggest: Thêm Q.E.D. ở cuối các chứng minh
+
+## 39-sach-i-phan-xii-proposition-lxxii-lxxviii-lemma-xxix.md
+
+- *phần 1/2: Chương 39, phần 1/2 (dòng 1-105): Prop. LXXII (+Cor 1-3), LXXIII + Scholium, LXXIV (+Cor 1-3), LXXV (+Cor 1-4), phát biểu Prop. LXXVI; nguồn ia.txt dòng 10927-11076*
+- *phần 2/2: Chương 39, phần 2/2 (dòng 106-210): Prop. LXXVI (từ chứng minh) + Hệ quả 1-9, Prop. LXXVII (Trường hợp 1-6), Prop. LXXVIII + Hệ quả, Học luận, 1 Chú giải, Lemma XXIX. Không có hình trong phầ*
+
+- **NANG / THIEU**, Prop. LXXII, Hệ quả 2, dòng 28
+  - source: COR. 2. And, vice versa, if the periodic times are equal, the distances will be proportional to the diameters. These two Corollaries appear from Cor. 3, Prop. IV.
+  - now: Nếu các chu kỳ bằng nhau, các khoảng cách tỷ lệ với các đường kính.
+  - suggest: Thêm câu cuối: hai hệ quả này suy ra từ Hệ quả 3, Proposition IV.
+- **NANG / SAINGHIA**, Prop. LXXII, Hệ quả 3, dòng 32
+  - source: any two solids whatever, of like figure and equal density, there tend equal centripetal forces decreasing in a duplicate ratio... the forces, with which corpuscles placed in a like situation to those two solids will be attracted by them, will be to each other as the diameters
+  - now: Nếu hai vật thể rắn cùng hình và cùng mật độ, lực hút giữa chúng tỷ lệ với đường kính của chúng.
+  - suggest: Sửa: lực là lực hút các hạt thể đặt ở vị trí tương tự đối với hai vật rắn, không phải lực giữa hai vật; thêm giả thiết lực hướng tâm bằng nhau giảm theo bình phương khoảng cách từ các điểm.
+- **NANG / THIEU**, Prop. LXXIV, Hệ quả 1, dòng 68
+  - source: Hence the attractions of homogeneous spheres at equal distances from the centres will be as the spheres themselves. For (by Prop. LXXII) if the distances be proportional to the diameters... the triplicate of that ratio
+  - now: Lực hút giữa các quả cầu đồng nhất ở những khoảng cách bằng nhau tỷ lệ với chính các quả cầu. Nếu khoảng cách tỷ lệ với đường kính, lực tỷ lệ với đường kính; ...
+  - suggest: Mất chứng minh: giảm khoảng cách lớn theo tỷ số ấy thì lực tăng theo bình phương tỷ số, nên so với lực kia là lập phương tỷ số, tức tỷ số các quả cầu. Câu đầu nên là lực hút của các quả cầu đồng nhất (lên hạt thể), không phải giữa các quả cầu.
+- **NANG / THIEU**, Prop. LXXV, phát biểu, dòng 80
+  - source: If to the several points of a given sphere there tend equal centripetal forces decreasing in a duplicate ratio of the distances from the points; I say, that another similar sphere will be attracted by it with a force reciprocally proportional to the square of the distance of the centres.
+  - now: Một quả cầu tương tự sẽ bị một quả cầu khác hút bằng lực nghịch với bình phương khoảng cách giữa các tâm.
+  - suggest: Thêm giả thiết: nếu các điểm của một quả cầu cho trước chịu các lực hướng tâm bằng nhau giảm theo bình phương khoảng cách từ các điểm ấy, thì...
+- **NANG / THEM**, Prop. LXXV, lời chứng minh, dòng 82-84
+  - source: But this attraction is as great as... if that were itself attracted by the several particles of the attracted sphere... (by Prop. LXXIV) reciprocally proportional to the square of its distance
+  - now: Theo Định luật III, lực hút của hạt thể trung tâm đối với quả cầu bị hút bằng lực nghịch với bình phương khoảng cách. Vì hai lực bằng nhau...
+  - suggest: Nguồn không viện dẫn Định luật III ở đây (chỉ ở Hệ quả 2); lập luận nguồn là: lực này bằng lực mà hạt thể đặt ở tâm sẽ chịu nếu bị các hạt của quả cầu bị hút hút với cùng lực, và lực đó theo Prop. LXXIV nghịch bình phương khoảng cách. Bỏ Định luật III, dịch lại theo nguồn, thêm hai viện dẫn Prop. LXXIV.
+- **NANG / THIEU**, Prop. LXXV, Hệ quả 2, dòng 92
+  - source: For the several points of the one attract the several points of the other with the same force... since in all attractions (by Law III) the attracted and attracting point are both equally acted on, the force will be doubled
+  - now: Điều ấy vẫn đúng khi quả cầu bị hút cũng hút ngược lại. Các lực chỉ bị nhân đôi, còn tỷ lệ không đổi.
+  - suggest: Mất phần giải thích: các điểm của quả cầu này hút các điểm của quả cầu kia với cùng lực mà chúng bị hút lại; theo Định luật III điểm hút và điểm bị hút đều chịu tác dụng như nhau nên lực nhân đôi.
+- **NANG / SAINGHIA**, Prop. LXXVI, phát biểu, dòng 104
+  - source: spheres be however dissimilar (as to density of matter and attractive force) in the same ratio onward from the centre to the circumference; but every where similar, at every given distance from the centre, on all sides round about
+  - now: Nếu các quả cầu khác nhau về mật độ vật chất và lực hút, nhưng cùng một cách ở mọi khoảng cách đã cho từ tâm
+  - suggest: Thiếu cụm in the same ratio onward from the centre to the circumference (cùng một tỷ lệ từ tâm ra đến mặt ngoài) và on all sides round about (mọi phía xung quanh); thêm vào.
+- **NANG / CHUGIAI**, Chú giải dòng 34-44
+  - source: (Chú giải không phải của Newton) KHÔNG HỢP LÍ
+  - now: Trọng lực bên trong Trái Đất ... nó tăng tuyến tính theo độ sâu; ... vì sao trọng lực ở sâu bên trong hành tinh lớn hơn ở bề mặt; Ngành địa chấn ... dùng chính quan hệ tuyến tính này
+  - suggest: Sai chiều: với g(r)=g0 r/R, lực GIẢM tuyến tính khi xuống sâu, bằng 0 ở tâm; câu nói lớn hơn ở bề mặt mâu thuẫn chính công thức ngay trên. Cũng lẫn mặt cầu với quả cầu trong (nguồn là quả cầu PEQF), gán động cơ cho Newton (Ông viết vậy vì cần lực ở cả hai phía) mà không có nguồn, nói địa chấn dùng quan hệ này để suy mật độ (không nguồn, sai). Có lỗi gõ lý thúy. Chú giải đặt dưới Prop. LXXII nhưng bàn về LXXIII (dùng P, SP, Học luận). Phần chu kỳ T=2π√(3/(4πGρ)) đúng.
+- **NANG / THIEU**, Lemma XXIX, chứng minh, dòng 210
+  - source: then, because of the like triangles DTE, dte, DES, it will be as Dd to Ee so DT to TE, or DE to ES: ... Ee to eq or Ff so ES to SG; ex aequo, as Dd to Ff so DE to SG; ... so is PE to PS.
+  - now: Các tam giác DTE, DE, DES cho ta các tỷ số cần thiết, rồi dùng các tam giác đồng dạng để suy ra kết quả.
+  - suggest: Mất toàn bộ chuỗi tỉ lệ Dd:Ee=DT:TE=DE:ES; Ee:eq (hay Ff)=ES:SG; ex aequo Dd:Ff=DE:SG=PE:PS (tam giác PDE, PGS), cùng viện dẫn Lemma VIII và Hệ quả 3 Lemma VII; "DE" không phải tam giác (OCR: dte); thiếu Q.E.D.
+- **NANG / THIEU**, Prop. LXXVI, chứng minh, dòng 106-108
+  - source: Imagine several concentric similar spheres AB, CD, EF, &c. ... by Prop. LXXV these spheres will attract other similar concentric spheres GH, IK, LM, &c. ... by composition or division ... by the former reasoning
+  - now: Hình dung nhiều quả cầu đồng tâm tương tự. Chúng hút nhau theo tỷ lệ nghịch với bình phương khoảng cách tâm. Tổng hoặc hiệu của các lực ấy giữ nguyên tỷ lệ ấy.
+  - suggest: Mất viện dẫn Prop. LXXV (nền tảng của chứng minh), các quả cầu AB, CD, EF và GH, IK, LM, khoảng cách SP, việc quả trong cộng/trừ vào quả ngoài để vật chất đặc/thưa hơn về phía tâm, và "theo lập luận trước"; bản dịch tóm lược thành vài câu.
+- **NANG / SAINGHIA**, Học luận, dòng 190
+  - source: causing the bodies in both cases to revolve in conic sections, and composing spherical bodies whose centripetal forces observe the same law ... which is very remarkable
+  - now: Trường hợp đầu làm vật thể chuyển động trên hình cắt conic; trường hợp sau tạo các quả cầu mà lực hướng tâm tuân theo cùng quy luật tăng hoặc giảm.
+  - suggest: Nguồn: CẢ HAI trường hợp đều làm vật chuyển động trên hình cắt conic, và cả hai đều tạo các quả cầu cùng quy luật; bản dịch tách đôi thành sai ý. Mất "which is very remarkable" (rất đáng chú ý); "simple ratio of the distances" dịch lỏng thành "tăng theo khoảng cách"; câu "tedious ... less elegant and important" bị đổi thành khẳng định chung chung ở dòng 192.
+- **NANG / THIEU**, Prop. LXXVIII, Hệ quả, dòng 186
+  - source: Those things ... demonstrated in Prop. X and LXIV, of the motion of bodies round the centres of conic sections, take place when all the attractions are made by the force of spherical bodies ... and the attracted bodies are spheres of the same kind.
+  - now: Các kết quả trước về chuyển động quanh tâm các hình cắt conic vẫn đúng khi lực hút đến từ các quả cầu loại trên.
+  - suggest: Mất hai viện dẫn Prop. X và Prop. LXIV (OCR đọc "LXJV") và vế "các vật bị hút cũng là quả cầu cùng loại".
+- **NANG / THIEU**, Prop. LXXVII, Trường hợp 5, dòng 172
+  - source: the force compounded of both will be as the difference of the solids, that is, as the sum of the equal planes drawn into half the difference of the distances; that is, as that sum drawn into pS
+  - now: các lớp đối xứng triệt tiêu nhau, chỉ còn phần chênh lệch giữa chúng. Lực tỷ lệ với khoảng cách từ $P$ tới tâm.
+  - suggest: Mất bước then chốt: hiệu hai tích = tổng hai mặt phẳng bằng nhau nhân nửa hiệu hai khoảng cách = nhân pS; "triệt tiêu" mô tả không đúng (hai lực ngược chiều trừ nhau, không triệt tiêu hoàn toàn). Nguồn dùng p thường cho hạt thể trong quả cầu, bản dịch dùng $P$ (trùng với hạt thể ngoài).
+- **NANG / CHUGIAI**, Chú giải, dòng 198-204
+  - source: Source: Scholium nằm GIỮA Phần XII (Prop. LXXIX vẫn thuộc Sec. XII); Prop. LXXVIII cho lực tỷ lệ với khoảng cách; cả hai quy luật đều cho quỹ đạo conic
+  - now: Học luận này ... đứng đúng chỗ cần đọc sau khi đã đi hết Phần XII ... Proposition LXXVI và LXXVIII: lực ... vẫn tỷ lệ nghịch với bình phương ... lần đầu tiên ... mở đường cho toàn bộ Phần X về cycloid
+  - suggest: KHÔNG HỢP LÍ: (1) Học luận không ở cuối Phần XII; (2) Prop. LXXVIII cho lực tỷ lệ với khoảng cách, không phải 1/r^2; (3) "quy luật thứ nhất cho conic, thứ hai cho quả cầu" sai (cả hai đều cho conic, cả hai đều cho quả cầu); (4) Phần X đứng TRƯỚC Phần XII nên không thể "được mở đường"; "lần đầu tiên" không có cơ sở (Prop. X, LXIV đã xử lý lực tuyến tính); (5) "Toàn bộ Principia dựa trên hai quy luật" là khẳng định thái quá. Nên viết lại hoặc xóa.
+- **NHE / HINH**, Hình dòng 8-10, section-xii-spherical-attraction.svg
+  - source: Prop. LXXIII: sphere ABCD about centre S, corpuscle P, interior sphere PEQF, AEBF
+  - now: Nhãn trong svg chỉ có S, P, p và chữ Việt (lớp cầu đồng tâm, lực hướng tâm, điểm bên trong); lời chứng minh nhắc A,B,C,D,E,Q,F
+  - suggest: Hình thiếu các chữ cái A,B,C,D,E,F,Q mà Prop. LXXIII dùng; nhãn p bài không nhắc. Hình đặt trước LXXII nhưng thuộc LXXIII. Chú thích in nghiêng dòng 10 (cần đối chiếu ký hiệu với scan) là lời biên tập ngoài blockquote.
+- **NHE / THIEU**, Cả phần 1/2 (Prop. LXXII, LXXIII, LXXIV, LXXV; dòng 20-84)
+  - source: Q.E.D. (nhiều lần); (by Prop. LXX); (by Prop. LXXII); (by Prop. LXXI); (by Prop. LXXIV)
+  - now: Không có Q.E.D. và thiếu các viện dẫn Prop. trong lời chứng minh LXXIII (LXX, LXXII) và LXXIV (LXXI đã có)
+  - suggest: Thêm Q.E.D. và các viện dẫn; (một mục NHẸ chung cho Q.E.D.).
+- **NHE / SAINGHIA**, Học luận (Scholium) sau Prop. LXXIII, dòng 56
+  - source: By the superficies of which I here imagine the solids composed, I do not mean superficies purely mathematical, but orbs so extremely thin... the evanescent orbs of which the sphere will at last consist
+  - now: Ở đây, các mặt cầu không phải là mặt toán học thuần túy, mà là những lớp cầu mỏng đến mức độ dày không đáng kể. ... quả cầu được tạo thành từ các lớp ấy.
+  - suggest: Mất mệnh đề các mặt mà tôi hình dung các vật rắn được cấu thành từ đó (nguồn nói solids, không chỉ mặt cầu) và từ evanescent (các lớp cầu tiêu biến).
+- **NHE / THUATNGU**, Prop. LXXII, dòng 16-20 và Prop. LXXV dòng 82
+  - source: corpuscle / particles
+  - now: Hạt thể dùng cho cả corpuscle và particles (hạt thể giống nhau, các hạt thể tỷ lệ với các quả cầu)
+  - suggest: Phân biệt corpuscle (hạt thể) và particle (hạt); Hệ quả 1 dòng 24 dịch matter equally attracting thành vật liệu đồng nhất, nên là vật chất hút như nhau; dòng 96 lỗi gõ conoc.
+- **NHE / CHUGIAI**, Chú giải, dòng 202-204
+  - source: (Newton không nêu động cơ hay "sự tự do tuyệt đối")
+  - now: mọi hành tinh và mọi ngôi sao đều bất đối xứng đến độ chính xác rất cao, nên quy luật F = G m1 m2 / r^2 chính xác đến bậc một trong khoảng cách ... Ông viết vậy để trả lời một câu hỏi dễ bị bỏ qua
+  - suggest: HỢP LÍ MỘT PHẦN: "bất đối xứng" phải là "đối xứng cầu" (tự mâu thuẫn); "chính xác đến bậc một trong khoảng cách" vô nghĩa; gán động cơ cho Newton ("viết vậy để trả lời câu hỏi...", "sự tự do tuyệt đối") không có trong nguồn; "sai lệch phẳng" nên là "độ dẹt"; không nhắc G trong nguồn.
+- **NHE / SAINGHIA**, Hệ quả 8, dòng 140
+  - source: an attracting sphere, of any form and condition like that above described, is placed in the focus
+  - now: Các kết quả về chuyển động quanh tiêu điểm hình cắt conic vẫn đúng khi một quả cầu hút bất kỳ loại nào được đặt vào tiêu điểm.
+  - suggest: "bất kỳ loại nào" bỏ mất giới hạn "like that above described" (quả cầu thuộc loại đã mô tả); nghĩa bị nới rộng. Hệ quả 9 dùng "cùng loại" nên cũng nên đồng bộ.
+- **NHE / SAINGHIA**, Lemma XXIX, phát biểu, dòng 208
+  - source: if the distance of the arcs EF, ef be supposed to be infinitely diminished
+  - now: Khi các cung EF, ef nhỏ vô hạn
+  - suggest: Nguồn: KHOẢNG CÁCH giữa hai cung EF, ef giảm vô hạn, không phải bản thân các cung nhỏ vô hạn. Đề xuất: "khi khoảng cách giữa hai cung EF, ef được coi là giảm vô hạn".
+- **NHE / THIEU**, Prop. LXXVII, Trường hợp 1, dòng 152-156
+  - source: G and g the intersections of the planes and the axis; and H any point in the plane EF ... the force of the plane ef ... is as that plane drawn into its distance Pg, or as the equal plane EF drawn into that distance Pg
+  - now: Gọi $AEBF$ là quả cầu tâm $S$ ... Hai mặt phẳng đối xứng tạo lực tỷ lệ với tổng $PG+Pg=2PS$.
+  - suggest: Không định nghĩa G, g (giao điểm mặt phẳng với trục) nhưng dùng PG, Pg; mất bước lực mặt phẳng ef tỉ lệ ef.Pg = EF.Pg và kết "tổng hai mặt phẳng bằng nhau nhân PS"; Trường hợp 3 mất "and as the same sphere conjunctly".
+- **NHE / THIEU**, Prop. LXXVI, LXXVII, Lemma XXIX (toàn phần)
+  - source: Q.E.D. / Q.E.I.
+  - now: (không có)
+  - suggest: Thiếu Q.E.D./Q.E.I. cuối chứng minh Prop. LXXVI, các Trường hợp 1, 2, 3, 4, 5, 6 của Prop. LXXVII và Lemma XXIX; chỉ báo một mục.
+
+## 40-sach-i-phan-xii-xiii-proposition-lxxix-lxxxvi.md
+
+- *phần 1/2: Chuong 40, phan 1/2 (dong 1-247): Prop LXXIX, LXXX (+Hq 1-4), LXXXI (+Vi du 1-3), LXXXII; tieu de Prop LXXXIII. Khong co khoi Chu giai trong phan nay. Lemma XXIX o ngoai pham vi (nam truoc d*
+- *phần 2/2: Chương 40, phần 2/2 (dòng 248-492): Prop. LXXXIII (nửa sau), LXXXIV, Học luận, LXXXV, LXXXVI, LXXXVII (+Hệ quả 1-2), LXXXVIII (+Hệ quả), LXXXIX (+Hệ quả), XC (+Hệ quả 1-3), XCI (+Hệ quả 1-3)*
+
+- **NANG / SOLIEU**, Prop LXXIX, dong 14-20 (phat bieu)
+  - source: in a ratio compounded of the ratio of the solid DE2 X Ff and the ratio of the force with which the given particle in the place Ff would attract
+  - now: tỷ lệ với tích của tỷ lệ \frac{DE^2}{Ff} (công thức chia cho Ff; mất từ "solid")
+  - suggest: Sửa thành tích DE^2 x Ff (cũng là công thức ở dòng 39 và chứng minh); dịch "solid DE2 X Ff" là đại lượng khối (hình khối) DE^2 x Ff.
+- **NANG / SOLIEU**, Prop LXXX, dong 46-52 và Hệ quả 1-4 (dong 72-108)
+  - source: DN be taken as DE2 X PS / [mẫu OCR hỏng] and as the force ... at the distance PE ... conjunctly; Cor.4: force reciprocally as V, DN as DE2 X PS/(PE X V)
+  - now: DN tỷ lệ \frac{DE^2 PS}{PF^2 V}, V là lực của hạt thể; Hq1 PF^2, Hq2 PF^3, Hq3 PF^4, Hq4 PF^2 V
+  - suggest: Phát biểu: DN tỷ lệ DE^2.PS/PE VÀ (hợp) với lực của hạt thể tại khoảng cách PE (V không nằm ở mẫu khi V là lực). Hq4 trong nguồn là PE x V (đối chiếu Ví dụ 1: V=PE cho DN=SL-LD/2-ALB/2LD). Mẫu Hq1-3 theo thứ nguyên phải là PE, PE^2, PE^4 (mẫu nguồn không đọc được từ OCR); bản dịch có PF^2, PF^3, PF^4 và mâu thuẫn nội bộ giữa phát biểu (V là lực, ở mẫu) và Hq4 (lực tỷ lệ nghịch V).
+- **NANG / SOLIEU**, Prop LXXX, chứng minh, dong 56-68
+  - source: Dd is to Ff as PE to PS, and therefore Ff is equal to Dd X PS/PE; force of lamina is as Dd X DE2 X PS/PE and force of a particle at PF conjunctly; that is as DN X Dd
+  - now: Dd:Ff=PE:PS, nên Ff=PE·Dd/PS; rồi "DE^2·(DE^2 PS/(PF^2 V)) tỷ lệ với DN·Dd"
+  - suggest: Từ Dd:Ff=PE:PS suy ra Ff=Dd·PS/PE (bản dịch đảo). Viết lại bước: lực lớp tỉ lệ Dd·DE^2·PS/PE hợp với lực hạt thể ở PF, tức theo giả thiết là DN·Dd (diện tích vô cùng nhỏ DNnd).
+- **NANG / THIEU**, Prop LXXXI, dong 114-143
+  - source: PE2 is equal to PS2 + SE2 + 2PSD ... equal to rectangle under PS and PS+SI+2SD ... DE2 = SE2 - SD2 = SE2 - LS2 + 2SLD - LD2, that is 2SLD - LD2 - ALB (LS2 - SA2 = rectangle ALB, Prop VI Book II Elem.)
+  - now: "Theo Proposition XII, Sách II, Euclid, ta có dạng thức dùng để tính các đoạn thẳng liên quan"; DE^2=2SLD-LD^2+ALB; ba phần "ALB.PS/PE^n = 2SLD.PS/PE^n - LD^2.PS/PE^n"
+  - suggest: Khôi phục PE^2=PS^2+SE^2+2PSD, bước PS(PS+SI+2SD), phép trừ LS^2-SE^2=ALB (Prop VI Sách II); sửa dấu thành -ALB; viết ba phần của DN = 2SLD.PS/(PE.V) - LD^2.PS/(PE.V) - ALB.PS/(PE.V) (trích dẫn Hệ quả 4 của Định lý trước); bỏ câu mơ hồ không có trong nguồn.
+- **NANG / SAINGHIA**, Prop LXXXI Ví dụ 1, dong 145-173
+  - source: DN will become as SL - 1/2 LD - ALB/2LD. Suppose DN equal to its double 2SL - LD - ALB/LD; 2SL x AB rectangle; LD part gives (LB2-LA2)/2 = SL x AB; taken from 2SL x AB leaves SL x AB; third part (hyperbola) subducted from SL x AB leaves ANB
+  - now: DN=SL-LD-(1/(2SL))LD^2; phần SL vẽ SL·AB; (LB^2-LA^2)/(2SL)=SL·AB; phần còn lại -LD^2/(2SL) là hyperbola
+  - suggest: Viết lại theo nguồn: DN=SL-LD/2-ALB/(2LD); lấy gấp đôi 2SL-LD-ALB/LD; 2SL x AB trừ (LB^2-LA^2)/2=SL x AB còn SL x AB; phần ALB/LD cho diện tích hyperbola, trừ khỏi SL x AB ra ANB. Bản dịch sai DN, sai công thức diện tích, sai hạng hyperbola và bỏ bước "gấp đôi".
+- **NANG / SAINGHIA**, Prop LXXXI Ví dụ 2, dong 175-200
+  - source: write PE3/2AS2 for V, and 2PS x LD for PE2; DN as SL x AS2/(PS x LD) - AS2/2PS - ALB x AS2/(2PS x LD2), that is as LSI/LD - 1/2 SI - ALB x SI/2LD2; ... or as that cube applied to any given plane
+  - now: lấy PE^3=2PS·LD; DN=SL-ALB/(2AS^2)-ALB/(2PS·LD); mất "(which is the same thing) as that cube applied to any given plane"
+  - suggest: Thêm vế "hay như lập phương ấy áp vào một mặt phẳng cho trước"; thay V bằng PE^3/(2AS^2) và PE^2=2PS·LD; DN = LSI/LD - SI/2 - ALB.SI/(2LD^2) (PS, AS, SI tỷ lệ liên tiếp); khôi phục ba diện tích: hyperbola, (1/2)AB.SI, ALB.SI/2LA - ALB.SI/2LB = (1/2)AB.SI.
+- **NANG / THIEU**, Prop LXXXI Ví dụ 3, dong 202-210 và câu cuối Prop (trước LXXXII)
+  - source: Therefore the entire force ... is as 4SI3/[OCR hỏng]..., that is, reciprocally as PS3 X PI. Q.E.I. / By the same method one may determine the attraction of a corpuscle situate within the sphere, but more expeditiously by the following Theorem.
+  - now: lấy PE^4=2PS·LD ... "Sau khi rút gọn, tổng của các diện tích cho lực hút toàn bộ quả cầu."
+  - suggest: Bản dịch bỏ kết luận lực tỷ lệ nghịch với PS^3 x PI (Prop LXXXII dựa vào kết quả này), bỏ ba diện tích, bỏ Q.E.I., bỏ câu "Cùng phương pháp ấy có thể xác định lực hút hạt thể bên trong quả cầu, nhưng nhanh hơn bằng Định lý sau". Nguồn viết "V2PS x LD cho PE" (PE^2=2PS x LD, không phải PE^4); phần công thức V và ba diện tích không đọc rõ từ OCR.
+- **NANG / THIEU**, Prop LXXXII, dong 242-243
+  - source: The demonstration of this Theorem is as follows: ... DN as DE2 x PS/(PE x V) ... IE drawn ... forces at IE and PE as PEn to IEn ... SPE, SEI alike ... ordinates compounded of those subduplicate ratios. Q.E.D.
+  - now: "Cùng lập luận cho các trường hợp tiếp theo." (không có chứng minh)
+  - suggest: Thiếu toàn bộ đoạn chứng minh của nguồn (ordinate cho điểm I, giả thiết lực tỉ lệ PE^n:IE^n, tam giác SPE ~ SEI nên IE:PE=IS:SA, tỉ số tung độ PS x IE^n : SA x PE^n, hai tỉ số căn bậc hai). Cần dịch trọn. Cũng thiếu "tức là tỷ lệ nghịch với PI vì SA^3 cho trước" và "tiến trình như vậy đến vô cùng".
+- **NANG / THUATNGU**, Prop LXXXII, dong 214-216, 224-228
+  - source: attraction within ... is to attraction without ... in a ratio compounded of the subduplicate ratio of IS, PS ... and the subduplicate ratio of the centripetal forces; ... as SP2 to SA3 (OCR)
+  - now: "tỷ lệ với tích của tỷ lệ bậc hai của IS và PS với tỷ lệ bậc hai của các lực"; "tỷ lệ bậc hai" cho cả duplicate lẫn subduplicate; trường hợp lập phương F_I/F_P=SP^2/SA^3
+  - suggest: Dịch subduplicate là "tỷ lệ căn bậc hai" (không "bậc hai"), và bỏ "tỷ lệ với tích" (nguồn: lực hút tại I so với lực tại P theo tỉ số hợp). Ghi chú: OCR đọc ca lập phương là SP2 : SA3 (bản dịch theo OCR) nhưng tỉ số không thứ nguyên; không xác định được từ OCR đó là in sai hay do OCR.
+- **NANG / THIEU**, Prop. XC, dòng 364-366 (sau phần dựng hình)
+  - source: For let there be taken in AE a very small line Ee. Join Pe... the sum of the forces with which all the annuli... is as the whole area AHIKL drawn into AP. Q.E.D.
+  - now: Bản dịch chỉ có phần dựng hình rồi kết luận "tỷ lệ với diện tích AHIL nhân với chiều cao AP"; không có lời chứng minh nào (khoảng 25 dòng nguồn: vành khuyên, Ee, PC, Pf, tích PE×Ff).
+  - suggest: Dịch đủ lời chứng minh bằng vành khuyên (lực của vành tỷ lệ với F f x FK x AP) rồi cộng lại thành diện tích AHIKL x AP. Nguồn ghi AHIKL ở cuối, bản dịch ghi AHIL.
+- **NANG / THIEU**, Prop. XCI Hệ quả 3, dòng 422-424; Hệ quả 2 dòng 420
+  - source: COR. 3 ... This may be easily collected from the following reasoning... (by Cor. 3, Prop. 1 , XXII) its attraction is as the distance PS to AS. Q.E.D.
+  - now: Hệ quả 3 chỉ còn câu kết luận "lực hút tỷ lệ với khoảng cách từ tâm"; mất toàn bộ chứng minh (các spheroid đồng dạng đồng tâm, hình nón đối đỉnh DPF và EPG, triệt tiêu, viện dẫn Hệ quả 3 của Prop. trước). Hệ quả 2 cũng mất câu cuối "by a calculation founded on the same principles may be found the forces of the segments of the spheroid".
+  - suggest: Dịch đủ chứng minh Hệ quả 3 và câu về lực của các đoạn spheroid ở cuối Hệ quả 2. Số của Prop. viện dẫn trong OCR đọc là "XXII" (có thể hỏng), cần kiểm với bản gốc.
+- **NANG / SOLIEU**, Prop. XC Hệ quả 1-2 (dòng 370-384) và XCI Hệ quả 1-2 (dòng 404-420)
+  - source: XC Cor.1: area AHIKL as 1/PA - 1/(PH?); attraction as 1 - PA/(..). Cor.2: attraction as 1/PA^(n-2) - PA/PH^(n-1). XCI Cor.1: as AB - PE + PD. Cor.2: ratio AS x CS^2 - PS x KMRK over (PS^2+CS^2-AS^2) is to AS^3/PS^2
+  - now: XC Cor.1: "1/PA - 1/AH" (làm lực hút). XC Cor.2: "(PA^n-2)/PA^n - (PH^n-2)/PA^n". XCI Cor.1: "AB(1 - 1/PE + 1/PD)". XCI Cor.2: "(AS.CS^2 - PS.KMRK)/AS^3" so với quả cầu.
+  - suggest: Sửa: XC Cor.1 diện tích là 1/PA - 1/PH, lực là 1 - PA/PH (OCR chỉ đọc ra "PA AH", không chắc mẫu số). XC Cor.2 lực tỷ lệ 1/PA^(n-2) - PA/PH^(n-1). XCI Cor.1 lực tỷ lệ AB - PE + PD, không có nhân tử như bản dịch. XCI Cor.2 tỉ số là [(AS.CS^2 - PS.KMRK)/mẫu số hỏng, đọc ra "PS^2+CS^2-AS^2"] so với AS^3/PS^2; bản dịch bỏ vế sau.
+- **NANG / SOLIEU**, Prop. LXXXVII Hệ quả 1, dòng 304
+  - source: ...bodies are as A^3 and B^3... accelerative attractions will be as A^3/A^2 and B^3/B^2, that is, as A and B... triplicate: A^3/A^3, equal... quadruplicate: A^3/A^4 and B^3/B^4, that is reciprocally as the cubic sides A and B. And so in other cases.
+  - now: "gia tốc hút hai vật thể có cạnh A và B tỷ lệ với A^3 và B^3 ... lực giảm theo lũy thừa bốn, gia tốc tỷ lệ nghịch với A^3 và B^3." Mất "And so in other cases".
+  - suggest: Sửa: bình phương thì gia tốc tỷ lệ với A và B (các cạnh khối, vì vật thể là A^3, B^3 còn khoảng cách là A, B); lũy thừa bốn thì tỷ lệ nghịch với A và B. Thêm câu "Và cứ thế với các trường hợp khác".
+- **NANG / THIEU**, Học luận sau Prop. XCIII, dòng 488-492
+  - source: I suppose the base increased by O, and resolve (A+O)^(m/n) into the series A^(m/n) + (m/n)OA^((m-n)/n) + (mm-mn)/(2nn) OOA^((m-2n)/n)... the force as (mm-mn)/nn A^((m-2n)/n)... m being 0 - 1, and n = 1... But leaving this kind of propositions, I shall go on to some others relating to motion.
+  - now: Dịch tóm tắt: "tung độ B ứng với một lũy thừa m của cơ số A", "số hạng chứa OA^2", "đọc trực tiếp ... từ các hệ số"; hyperbola ghi "m=0 và n=1"; bỏ "2B^0", bỏ câu cuối chuyển sang các mệnh đề về chuyển động; bỏ viện dẫn Hệ quả 2 của các Định luật.
+  - suggest: Dịch đủ: tung độ B tỷ lệ A^(m/n); chuỗi khai triển; lực tỷ lệ số hạng chứa O^2 (OO), tức (mm-mn)/nn x A^((m-2n)/n); parabol m=2, n=1 cho lực 2B^0; hyperbola m = 0 - 1 = -1 (không phải m=0), n=1; thêm câu cuối của Newton.
+- **NANG / SAINGHIA**, Prop. XCIII phát biểu (dòng 434) và Hệ quả 3 (dòng 468)
+  - source: a corpuscle placed towards either part of the plane... COR.3 ...homogeneous particles, whose attractive forces decrease in the ratio of any power of the distances greater than the quadruplicate
+  - now: Phát biểu: "một hạt thể ở phía đối diện được toàn vật thể hút". Hệ quả 3 không có điều kiện "đồng nhất" và "lũy thừa lớn hơn bậc bốn", chỉ nói "giảm theo lũy thừa ... số mũ nhỏ hơn ba đơn vị".
+  - suggest: "either part of the plane" nghĩa là hạt thể ở phía nào của mặt phẳng cũng được (cả ngoài lẫn trong vật thể, ứng với Trường hợp 1 và 2); "phía đối diện" thu hẹp sai. Hệ quả 3 cần thêm: các hạt thể đồng nhất và lực giảm theo lũy thừa lớn hơn bậc bốn.
+- **NANG / THIEU**, Prop. LXXXVIII (dòng 336) và LXXXIX Hệ quả (dòng 346)
+  - source: composing there a little globe... added a third particle C... the force of that globe in G and of the particle C... composing a greater globe there; and so we may go on in infinitum. // LXXXIX Cor.: ...the attracted body will move in an ellipsis having its centre in the common centre of gravity
+  - now: LXXXVIII chứng minh bị rút gọn: bỏ "quả cầu nhỏ ở G", phép ghép quả cầu G với hạt C thành "quả cầu lớn hơn", "in infinitum", "without removing its centre of gravity", viện dẫn Hệ quả 2 của các Định luật. LXXXIX: Hệ quả không có tiêu đề riêng và mất mệnh đề "chuyển động trên elip có tâm tại trọng tâm chung".
+  - suggest: Dịch đủ bước quy nạp với quả cầu trung gian, và thêm mệnh đề elip vào Hệ quả của LXXXIX (Chú giải ngay dưới còn viện dẫn chính mệnh đề ấy, nên bản dịch tự mâu thuẫn với Chú giải).
+- **NANG / SOLIEU**, Prop. LXXXIII, dòng 256-262
+  - source: force ... as DE^2 x O / PF^n, that is, as 2DF x O / PF^(n-1) - DF^2 x O / PF^n; the perpendicular FN drawn into O be proportional to this quantity
+  - now: "Đặt FN ∝ DE^2 o / DF^2 o, hoặc biểu thức tương ứng với lực lùy thừa n đã dùng." (Mất dạng thứ hai, mẫu số DF^2 sai, lỗi gõ "lùy").
+  - suggest: Sửa: lực tỷ lệ DE^2 x O / PF^n, tức 2DF x O / PF^(n-1) - DF^2 x O / PF^n (OCR hỏng nhưng mẫu số đọc ra "PF^n"); FN nhân với O tỷ lệ với đại lượng ấy. Sửa "lùy" thành "lũy".
+- **NANG / THIEU**, Học luận sau Prop. LXXXIV, dòng 272
+  - source: but to treat of them particularly is not necessary to my design. It will be sufficient to subjoin some general propositions
+  - now: "Chỉ cần nêu thêm các mệnh đề tổng quát về lực của chúng..." (không có vế "xét riêng từng loại thì không cần cho mục đích của tôi").
+  - suggest: Thêm vế "nhưng bàn riêng từng loại thì không cần cho mục đích của tôi" vào trước "Chỉ cần nêu thêm".
+- **NANG / CHUGIAI**, Chú giải sau Prop. LXXXIX, dòng 348-358: KHÔNG HỢP LÍ
+  - source: Prop. LXXXVIII-LXXXIX: lực tỷ lệ với khoảng cách (Hooke) thì vật thể hút như quả cầu cùng trọng tâm; Newton chỉ nói về lực tuyến tính
+  - now: "câu hỏi ông đặt ra ở đầu Phần XIII ... Có, trong đúng hai trường hợp ... lực nghịch đảo bậc hai, và lực tuyến tính. Cả hai đều quy về một điểm"; "thế năng tuyến tính ... hàm bậc nhất của khoảng cách"
+  - suggest: (1) Gán cho Newton một câu hỏi mở đầu mà nguồn không có; đầu Phần XIII là Prop. LXXXV về lực tiếp xúc. (2) Sai: lực nghịch bình phương với vật không cầu KHÔNG quy về điểm, và ngay sau đó Prop. XC-XCIII giải các vật không cầu khác. (3) Lực tỷ lệ khoảng cách ứng với thế năng bậc hai, không phải "bậc nhất". (4) Câu cuối về cụm thiên thể thay bằng khối lượng tại trọng tâm chỉ đúng với lực tuyến tính. (5) Tiêu đề "vô tầm quan" là lỗi gõ. Nên viết lại hoặc xóa.
+- **NANG / CHUGIAI**, Chú giải sau Prop. XCIII, dòng 470-480: KHÔNG HỢP LÍ
+  - source: Prop. XCIII: vật THỂ (nửa không gian) gồm các mặt phẳng song song; Hệ quả 3 nói lực hạt thể lũy thừa bậc ba thì phần xa lớn vô hạn so với phần gần
+  - now: "lực của toàn bộ mặt phẳng ở khoảng cách d tỷ lệ nghịch với d^(n-3) ... chia mặt phẳng thành các dải ... Tổng là tích phân từ 0 đến vô cùng ... chỉ hội tụ khi n > 3 ... Ông viết vậy vì ... giữ một tiêu chuẩn"
+  - suggest: Lẫn mặt phẳng với nửa không gian: một mặt phẳng cho d^(n-2) (Prop. XC Hệ quả 3), còn d^(n-3) là của vật thể gồm vô số mặt phẳng; tích phân viết sai cận (từ 0, phải từ d) và bỏ nhân tử cos góc. Ngưỡng "n > 3" không phải điều Newton viết (Hệ quả 3 nói lớn hơn bậc bốn, và loại trường hợp bậc ba). Gán động cơ và "tiêu chuẩn" cho Newton, khẳng định "vũ trụ phẳng vô hạn bị xem là bệnh lý" không nguồn, "mô hình đơn giản nhất cho thiên hà vô hạn" không có căn cứ. Nên viết lại.
+- **NHE / SAINGHIA**, Prop LXXIX, dong 22-42
+  - source: force ... as PD X Dd; ... as 1/2 PF2 - 1/2 PD2, and therefore as DE2; ... as DE2 X Ff; that is, if the force be given ...; not given ... conjunctly; the line Pe cut FE in r
+  - now: "nên bằng PD·Dd"; "tỷ lệ với DE^2·Ff, đồng thời với lực mà ... Ff"; "Một đường thẳng bất kỳ cắt cung ở r" (không nêu Pe)
+  - suggest: Sửa "bằng" thành "tỷ lệ với"; "tức là (nếu lực của hạt thể cho trước)"; câu "chưa biết" cần "hợp (conjunctly)" với lực ấy; nêu rõ đường Pe; khôi phục 1/2 PF^2 - 1/2 PD^2 hoặc ghi rõ chỉ tỷ lệ.
+- **NHE / THIEU**, Mọi Proposition/Ví dụ trong phần (dong 12-242)
+  - source: Q.E.D. (Prop LXXIX, LXXX, LXXXI, LXXXII), Q.E.I. (Prop LXXXI)
+  - now: không có Q.E.D./Q.E.I.
+  - suggest: Thêm Q.E.D./Q.E.I. cuối các chứng minh (một mục nhẹ cho cả phần).
+- **NHE / HINH**, Hình 28, dong 8-10
+  - source: (OCR: hình bản gốc của Sect. XII; nhãn trong lời chứng minh: P S A B D E F f e d r N H I L n a b s l)
+  - now: ![...](../assets/section-xii-spherical-attraction.svg); chú thích nghiêng "Hình 28. Sơ đồ được dựng lại ...; cần đối chiếu ký hiệu với scan." Nhãn SVG chỉ có S, P, p và 3 nhãn tiếng Việt
+  - suggest: Hình chỉ là sơ đồ minh họa chung, thiếu hầu hết nhãn bài nhắc (A B D E F f e d r N H I L n a b s l); có nhãn p không có trong bài. Nên thay bằng hình tách theo từng Proposition (LXXIX, LXXX, LXXXI Ví dụ 1-2, LXXXII) và bỏ/đánh dấu lại chú thích biên tập ngoài blockquote ("Hình 28" không có trong nguồn).
+- **NHE / KHAC**, Toàn phần (LXXXIII-XCIII)
+  - source: Q.E.I. / Q.E.D. ở LXXXIII, LXXXIV, LXXXV, LXXXVI, LXXXVII, LXXXVIII, XC, XCI, XCII, XCIII; viện dẫn (by Prop. LXX) ở LXXXV, (by Cor. 3, Prop. XC) và "by the known methods of quadratures" ở XCIII Trường hợp 1, (by Cor. 2 of the Laws) ở Học luận
+  - now: Các dấu kết thúc và các viện dẫn Prop. LXX, Hệ quả 3 Prop. XC, phương pháp cầu phương, Hệ quả 2 các Định luật đều không có. "Hạt thể" dùng cho cả corpuscle lẫn particle (LXXXVII, dòng 298).
+  - suggest: Thêm "Q.E.I./Q.E.D." và các viện dẫn; phân biệt "hạt thể bị hút" (corpuscle) với "phần tử/hạt" của vật hút (particle).
+
+## 41-sach-i-phan-xiii-proposition-lxxxvii-xciii.md
+
+- *phần 1/2: Chuong 41, phan 1/2 (dong 1-115): Prop LXXXVII (+Cor 1,2), LXXXVIII (+Cor), LXXXIX (+Cor), XC (+Cor 1,2 va phan dau Cor 3), hinh 29, chu giai sau Prop LXXXVII*
+- *phần 2/2: Chương 41, phần 2/2 (dòng 116-230): đuôi Prop. XC Hệ quả 3, Prop. XCI (đề, Hệ quả 1-3, Chú giải), Prop. XCII, Prop. XCIII (Trường hợp 1-2, Hệ quả 1-3), Học luận. Không có hình ![...] nào tro*
+
+- **NANG / SOLIEU**, Prop LXXXVII Cor 1, dong 22
+  - source: bodies are as A3 and B3, ... cubic sides A and B, distances as A and B; attractions as A3/A2 and B3/B2, that is, as A and B (cubic sides). Quadruplicate: reciprocally as the cubic sides A and B
+  - now: gia toc hut hai vat the co canh A va B ty le voi A^3 va B^3 ... luy thua bon, gia toc ty le nghich voi A^3 va B^3
+  - suggest: Sua: duoi luat binh phuong gia toc ty le voi A va B (canh); duoi luat luy thua bon ty le nghich voi A va B (khong phai A^3, B^3). Them gia thiet vat the ty le A^3, B^3 va khoang cach ty le A, B
+- **NANG / CHUGIAI**, Chu giai dong 28-38
+  - source: (khong co trong nguon; Newton chi neu Cor 1, 2)
+  - now: Lap lai loi A^3, B^3 (dong 32). Noi Cavendish 1798 'do hang so hap dan', Eotvos 'kiem tra dung nghich dao binh phuong', 'giao thoa nguyen tu'; Cor 2 la 'phep do truc tiep so mu n' 'giu nguyen khoang cach, doi kich thuoc'
+  - suggest: KHONG HOP LI: Eotvos thu su bang nhau cua khoi luong quan tinh va hap dan, khong phai nghich dao binh phuong; Cavendish do khoi luong rieng cua Trai Dat (G suy ra sau) va khong dung ty le Prop nay; Prop doi hoi vi tri TUONG UNG (khoang cach ty le theo kich thuoc) nen 'giu nguyen khoang cach' mau thuan; nen bo hoac viet lai, can nguon lich su
+- **NANG / SOLIEU**, Prop XC, dong 80-84
+  - source: the force ... with which that point attracts the body P towards A is as AP x FK / (denominator OCR hong, ket thuc bang chu giong P; hinh hoc cho thanh phan = luc x AP/PE)
+  - now: Luc cua mot diem E hut P theo phuong ve A ty le voi AP.FK/AF (dong 82-84; lap lai dong 89)
+  - suggest: Mau so AF khong khop OCR (cuoi la 'p', khong xac dinh duoc tu OCR chu cai chinh xac) va khong khop suy dien PF=PE; doi doi chieu voi anh ban in, kha nang la PE
+- **NANG / SAINGHIA**, Prop XC, dong 80
+  - source: let there be taken in AE a very small line Ee (Ee nam tren ban kinh AE, tao vanh co be rong Ee)
+  - now: Voi mot doan rat nho Ee tren cung, noi Pe va lay Pf=Pe
+  - suggest: Ee la doan nho tren ban kinh AE (be rong cua vanh), khong phai tren cung. Dong thoi thieu 'in PE, PA take PC, Pf equal to Pe' (diem C tren PE)
+- **NANG / THIEU**, Prop XC, dong 86-92
+  - source: the annulus ... is as the rectangle under the radius AE and the breadth Ee, and this rectangle (because PE and AE, Ee and CE are proportional) is equal to PE x CE or PE x Ff
+  - now: Vi dien tich vanh ty le voi PE.Ff, luc ay ty le voi dien tich FKkf nhan AP
+  - suggest: Mat buoc suy luan vanh ~ AE x Ee, ti le PE:AE = Ee:CE, nen AE.Ee = PE.CE = PE.Ff; mat cung cau 'Let that curve meet the plane of the circle in L' (dong 78) va 'ca vanh ty le vanh va AP.FK/PE conjunctly'
+- **NANG / SOLIEU**, Prop XC Cor 1, dong 96-100
+  - source: FK be as 1/PF^2 (diem 'duplicate ratio'), area AHIKL as 1/PA - 1/PH; the attraction of P towards the circle will be as 1 - (PA/ ... OCR hong) ; that is, as (formula khong doc duoc)
+  - now: Neu luc cac diem giam theo binh phuong khoang cach, luc hut P ve duong tron co dang 1/PA - 1/AH
+  - suggest: Hien co la bieu thuc cua DIEN TICH (1/PA - 1/PH), thieu nhan AP; mau thu hai OCR doc thanh 'AH'/'PH' khong xac dinh duoc, nhung can ca PH; dong ban dich cung bo gia thiet FK ty le 1/PF^2
+- **NANG / SOLIEU**, Prop XC Cor 2, dong 104-109
+  - source: reciprocally as any power D^n; FK as 1/PF^n; area as 1/((n-1)PA^(n-1)) - 1/((n-1)PH^(n-1)); attraction as PA^(n-2) (OCR) ... PH^(n-1) (OCR doc 'PH n - l')
+  - now: ty le voi (PA^n-2)/(PA^n) - (PH^n-2)/(PA^n)
+  - suggest: Cong thuc sai/vo nghia: OCR cho mu o PH la n-1 (khong phai n-2) va khong co mau PA^n chung; phan dien tich bi bo. Doi chieu ban in de viet lai
+- **NANG / THIEU**, Prop LXXXIX Cor, dong 70
+  - source: the attracted body will move in an ellipsis having its centre in the common centre of gravity of the attracting bodies (Cor rieng)
+  - now: Chuyen dong cua hat the bi hut cung giong nhu khi cac vat the hut hop nhat thanh mot qua cau, voi dieu kien trong tam chung dung yen hoac chuyen dong thang deu
+  - suggest: Mat ket luan 'di tren elip co tam tai trong tam chung cua cac vat the hut' va mat tieu de Cor; ban dich bien thanh dieu kien ma khong neu elip
+- **NANG / THIEU**, Prop LXXXVIII, dong 52
+  - source: The force A x AZ will (by Cor. 2, of the Laws) be resolved into the forces A x GZ and A x AG
+  - now: Luc A.AZ phan ra thanh A.GZ va A.AG
+  - suggest: Bo vien dan 'Cor. 2 of the Laws' (Hê qua 2 cua cac Dinh luat); them '(theo He qua 2 cua cac Dinh luat)'
+- **NANG / HINH**, Hinh 29, dong 8-10
+  - source: Prop LXXXVIII dung A, B, G, Z, R, S, T, V; Prop XC dung A, D, P, E, F, K, H, I, L, e, f, k, C
+  - now: ![...](section-xii-spherical-attraction.svg) co nhan: S, P, p va chu 'lop cau dong tam', 'luc huong tam', 'diem ben trong'; chu thich in nghieng 'Hinh 29. So do duoc dung lai tu Phan XII...' (loi bien tap ngoai blockquote)
+  - suggest: Hinh cua Phan XII (qua cau), khong thuoc Phan XIII; thieu A,B,G,Z,D,E,F,K,H,I,L,e,f,C. Nen thay bang hinh dung (TikZ) cho Prop LXXXVIII va XC, hoac bo hinh; chu thich in nghieng cung la phan THEM cua bien tap vien
+- **NANG / SAINGHIA**, Prop LXXXVII chung minh, dong 16
+  - source: divided into particles proportional to the wholes, and alike situated in them
+  - now: Chia moi vat the thanh cac hat the tuong ung, cung can nang va dat o nhung vi tri tuong ung
+  - suggest: 'cung can nang' sai: cac hat the ty le voi toan the (khong bang nhau), khong phai cung can nang; sua 'ty le voi toan the'
+- **NANG / SOLIEU**, Prop. XCI Hệ quả 1, dòng 130-134
+  - source: the attraction of the corpuscle P towards this cylinder will be as AB - PE + PD
+  - now: lực hút tỷ lệ với AB(1 - 1/PE + 1/PD)
+  - suggest: Sửa thành AB - PE + PD (hiệu và tổng các đoạn, không phải tích của AB với các nghịch đảo).
+- **NANG / THIEU**, Prop. XCI Hệ quả 1, dòng 130-134
+  - source: For the ordinate FK (by Cor. 1, Prop. XC) will be as 1 - ...; the part 1 drawn into AB describes the area 1 x AB ... there will remain the area LABI equal to 1 into AB - PE + PD
+  - now: (không có phần chứng minh của Hệ quả 1)
+  - suggest: Bổ sung cả đoạn chứng minh: tung độ FK theo Hệ quả 1 Prop. XC, hai phần của nó nhân với AB, PB, PA, rồi lấy hiệu các diện tích.
+- **NANG / SOLIEU**, Prop. XCI Hệ quả 2, dòng 140-146
+  - source: force ... as ASxCS^2-PSxKMRK over (OCR hỏng, đọc ra dạng PS^2+CS^2-AS^2) is to AS^3 over (OCR hỏng, đọc ra có PS^2 ở mẫu); không xác định được từ OCR phần mẫu thứ hai
+  - now: lực tỷ lệ với (AS.CS^2 - PS.KMRK)/AS^3 so với lực của quả cầu
+  - suggest: Nguồn là tỉ lệ thức hai vế: (AS.CS^2 - PS.KMRK)/(mẫu có PS^2+CS^2-AS^2 theo OCR) : (AS^3 trên mẫu có PS^2); bản dịch dồn thành một phân thức với mẫu AS^3. Cần đối chiếu lại bản scan.
+- **NANG / THIEU**, Prop. XCI Hệ quả 2, dòng 138-146
+  - source: And by a calculation founded on the same principles may be found the forces of the segments of the spheroid. Cũng: KR 'always equal to the line PD continually drawn to the point D where the ordinate cuts the spheroid'; AK, BM 'meeting the conic section in K and M'
+  - now: Đặt các đường vuông góc KR bằng PD. Dựng AK=AP và BM=BP tại hai đầu trục.
+  - suggest: Thêm câu cuối về lực của các đoạn (segment) spheroid; bổ sung điều kiện D là giao của tung độ với spheroid và K, M nằm trên conic.
+- **NANG / SAINGHIA**, Prop. XCI Hệ quả 3, dòng 156
+  - source: the particles of the cones DHKF, GLIE, cut off by the spheroidical superficies, by reason of the equality of the lines DH and EI, will be to one another as the squares of the distances from the body P
+  - now: Các hạt thể của các nón đối diện DPF và EPG ... có khoảng cách từ P tỷ lệ với bình phương khoảng cách
+  - suggest: Sai: không phải khoảng cách mà chính các phần vật chất (các hạt thể của DHKF và GLIE) tỷ lệ với bình phương khoảng cách từ P, nhờ DH = EI và các nón có góc đỉnh vô cùng nhỏ nên hút P bằng nhau. Cũng thiếu các cặp đoạn bằng nhau DP-BE, FP-CG, DH-IE, FK-LG và lý do DE, PB, HI (và FG, PC, KL) bị chia đôi cùng một điểm. Ngoài ra 'conic segment EGCB' bị dịch là 'lớp EGCB', trùng từ với 'lớp spheroid'; nên dịch 'phần nón EGCB'.
+- **NANG / SAINGHIA**, Prop. XCIII phát biểu, dòng 184
+  - source: a corpuscle placed towards either part of the plane is attracted by the force of the whole solid
+  - now: Nếu một hạt thể ở phía đối diện được toàn vật thể hút
+  - suggest: 'either part of the plane' là ở một trong hai phía mặt phẳng (ngoài vật thể ở Trường hợp 1, trong vật thể ở Trường hợp 2); 'phía đối diện' mâu thuẫn với Trường hợp 2. Sửa: hạt thể ở phía nào của mặt phẳng cũng được.
+- **NANG / THIEU**, Prop. XCIII Hệ quả 3, dòng 218
+  - source: the attracting body consist of homogeneous particles, whose attractive forces decrease in the ratio of any power of the distances greater than the quadruplicate; the attractive force of the whole body will decrease very nearly...
+  - now: thì lực toàn vật thể gần đúng giảm theo lũy thừa có số mũ nhỏ hơn số mũ lực hạt thể ba đơn vị.
+  - suggest: Thiếu điều kiện 'gồm các hạt thể đồng chất' và 'lực hạt thể giảm theo lũy thừa lớn hơn bậc bốn (quadruplicate)'; bổ sung cả hai. Không có điều kiện bậc bốn thì ngoại lệ bậc ba bên dưới mất ngữ cảnh.
+- **NANG / THIEU**, Học luận, dòng 226-230 (đoạn chuỗi lũy thừa)
+  - source: I suppose the base to be increased by a very small part O, and I resolve the ordinate (A+O)^(m/n) into an infinite series A^(m/n) + (m/n)OA^((m-n)/n) + ((mm-mn)/2nn)OOA^((m-2n)/n) &c. ... the force sought is as ((mm-mn)/nn) A^((m-2n)/n), or ... B^((m-2n)/m) (OCR hỏng chỗ mũ cuối)
+  - now: Nếu tung độ B được ứng với một lũy thừa m của cơ số A, và lực tương ứng với số hạng chứa OA^2, ta có thể đọc trực tiếp quy luật lực từ các hệ số
+  - suggest: Mất toàn bộ phép khai triển và công thức lực. Cũng sai: lũy thừa là m/n chứ không phải m; số hạng là O hai chiều (OO, tức O^2) chứ không phải 'OA^2'; thiếu việc tăng cơ số thêm phần rất nhỏ O. Cần dịch đủ chuỗi và kết quả.
+- **NANG / SOLIEU**, Học luận, dòng 230 (hyperbola)
+  - source: If the ordinate describe an hyperbola, m being = 0 - 1, and n = 1, the force will be as 2A^-3 or 2B^-3 (OCR đọc 'm being =0 - 1', tức m = -1)
+  - now: Nếu tung độ tạo thành hyperbola, với m=0 và n=1
+  - suggest: Sai số liệu: nguồn là m = 0 - 1 (tức -1), không phải 0 (m=0 làm lực bằng 0). Thiếu cả biểu thức 2A^-3 hay 2B^-3 (parabola cũng thiếu '2B^0'). Cũng thiếu câu kết 'leaving this kind of propositions, I shall go on to some others relating to motion which I have not yet touched upon'.
+- **NANG / CHUGIAI**, Chú giải sau Prop. XCI Hệ quả 3, dòng 164-174
+  - source: (Newton không nói động cơ nào; nguồn chỉ có chứng minh Hệ quả 3)
+  - now: Ông viết vậy vì đang truy tìm hình dạng nào vẫn cho lực hút đơn giản ... Ông không né tránh hình dẹt - ông đang lập công thức cho nó, vì chính Trái Đất của ông là một hình cầu dẹt.
+  - suggest: KHÔNG HỢP LÍ: gán động cơ cho Newton mà nguồn không viết. Chú giải cũng chép lại ý sai của bản dịch (lực 'tỷ lệ bình phương khoảng cách' cho nón); 'đặc trưng định danh' khẳng định quá mức (cũng đúng cho hình cầu); đoạn cuối nói người đọc hôm nay 'dùng đúng tính chất này' nhưng thực tế lập luận lại dùng trường bên ngoài chứ không phải lực tuyến tính bên trong, và 'sự bất đối xứng ấy là lý do kỹ thuật phải đổi hướng' mơ hồ; tiêu đề có 'tùy tuyến tính' (gõ sai, ý là 'tỷ lệ tuyến tính'). Nên bỏ câu động cơ, giữ phần nói lực bên trong tỷ lệ với khoảng cách và sửa đoạn hiện đại cho đúng.
+- **NHE / THIEU**, Toan phan (dong 16, 60, 70, 92)
+  - source: Q.E.D. / Q.E.I. cuoi cac chung minh
+  - now: (khong co)
+  - suggest: Thieu Q.E.D. (Prop LXXXVII, LXXXVIII, LXXXIX, XC) va Q.E.I. (Prop XC)
+- **NHE / THIEU**, Prop. XCI, XCI Hệ quả 3 và XCIII Trường hợp 1-2 (cả phần)
+  - source: Q.E.I. (Prop. XCI), Q.E.D. (Hệ quả 3), Q.E.I. (XCII), Q.E.D. (hai Trường hợp XCIII)
+  - now: (không có)
+  - suggest: Thiếu các kết câu Q.E.I./Q.E.D.; chỉ báo một mục cho cả phần.
+- **NHE / THIEU**, Prop. XCI dòng 126; XCIII dòng 190, 198; Học luận dòng 222
+  - source: 'meeting the planes of the outermost circles AL and BI in L and I'; '(by Cor. 3, Prop. XC)'; '(by the known methods of quadratures)'; '(by Cor. 2 of the Laws)'; Trường hợp 1: 'the force of the whole solid as the area'
+  - now: Cho LKI là quỹ tích của K ... ; Tổng lực của vật thể bằng diện tích GLOK ...; rồi cộng chuyển động thẳng đều
+  - suggest: Thiếu các viện dẫn Hệ quả 3 Prop. XC, phép cầu phương, Hệ quả 2 của các Định luật, và L, I là giao với hai đường tròn ngoài cùng; Trường hợp 1 'là' diện tích nên đổi thành 'tỷ lệ với diện tích'.
+
+## 42-sach-i-phan-xiv-proposition-xciv-xcviii.md
+
+- *phần 1/2: Chương 42, phần 1/2 (dòng 1-111): Phần XIV mở đầu, Prop XCIV (Trường hợp 1-2), Prop XCV, Prop XCVI, Học luận (Scholium), hình dòng 8, chú giải dòng 98-110. Nguồn ia.txt dòng 12452-12702.*
+- *phần 2/2: Chương 42, phần 2/2 (dòng 112-216): Prop. XCVII (+Hệ quả 1, 2), Prop. XCVIII, Học luận cuối Sách I Sec. XIV, và Chú giải cuối chương. Không có hình trong phần này (e: không có ảnh).*
+
+- **NANG / SAINGHIA**, Prop XCIV, Trường hợp 1, dòng 26-30
+  - source: to MI there be let fall the perpendicular LO, MO, OR will be equal; and adding the equal lines ON, OI, the wholes MN, IR will be equal also
+  - now: Kẻ các đường vuông góc LO, MO xuống MI. Ta có OR=LO=MO. Vì ON=OI, suy ra MN=IR.
+  - suggest: Nguồn chỉ hạ một đường vuông góc LO xuống MI rồi nói MO và OR bằng nhau (không có LO=MO). Sửa: "Hạ LO vuông góc với MI thì MO, OR bằng nhau; cộng các đoạn bằng nhau ON, OI thì cả MN, IR bằng nhau."
+- **NANG / THIEU**, Prop XCV, dòng 70
+  - source: GH to IK or TH, that is, as AH or Id to vH, that is (supposing TH or IK radius), as the sine of emergence to the sine of incidence
+  - now: Do đó tốc độ ... tỷ lệ với ... như GH tỷ lệ với IK hoặc TH. Vì TH hoặc IK là bán kính, ta có tỷ lệ này bằng tỷ lệ của sin góc lỗm với sin góc tới.
+  - suggest: Mất bước "tức là như AH hoặc Id với vH (V ở OCR đọc là v)" nối tỉ số đoạn với tỉ số sin. Thêm bước này, rồi mới "giả sử TH hoặc IK là bán kính".
+- **NANG / THIEU**, Học luận, dòng 92
+  - source: as lately was discovered by Grimaldus, by the admission of light into a dark room through a small hole, which I have also tried ... (such as the circular and rectangular edges of gold, silver and brass coins, or of knives, or broken pieces of stone or glass)
+  - now: Những tia sáng trong không khí của ta, gần các góc của vật thể trong suốt hoặc mờ đục, bị uốn cong quanh vật thể như thể chúng bị hút.
+  - suggest: Mất nguyên cả cụm: phát hiện của Grimaldi, thí nghiệm cho ánh sáng vào phòng tối qua lỗ nhỏ (Newton nói chính ông cũng đã thử), và các ví dụ cạnh đồng xu vàng/bạc/đồng, lưỡi dao, mảnh đá, mảnh kính. Cần dịch đủ.
+- **NANG / THIEU**, Học luận, dòng 94
+  - source: rays ckzc, bujb, ahxa, falling upon r, q, p, and inflected between k and z, i and y, h and x ... partly (if I mistake not) within the glass
+  - now: Tình huống cũng vậy với kính: một phần sự uốn xảy ra trong không khí trước khi tia vào kính, và một phần xảy ra bên trong kính sau khi tia đã đi vào.
+  - suggest: Mất câu viện dẫn hình với các tia ckzc, bujb, ahxa tới r, q, p và uốn giữa k-z, i-y, h-x. Mất cả lời dè dặt "nếu tôi không nhầm" nên khẳng định mạnh hơn Newton. Thêm cả hai.
+- **NANG / HINH**, Hình dòng 8 (section-xii-spherical-attraction.svg)
+  - source: Prop XCIV-XCVI dùng các điểm Aa, Bb, Cc, Dd, G, H, I, K, L, M, N, O, P, Q, R (và p, q, h)
+  - now: ![Sơ đồ chuyển động qua các mặt phẳng](../assets/section-xii-spherical-attraction.svg)
+  - suggest: Nhãn <text> trong SVG chỉ có S, P, p cùng ba chữ chú thích (lớp cầu đồng tâm, lực hướng tâm, điểm bên trong): hình của Phần XII, không có chữ cái điểm nào của Prop XCIV-XCVI (chỉ P, p trùng tên nhưng khác nghĩa). Cần thay bằng hình đúng của Phần XIV.
+- **NANG / CHUGIAI**, Chú giải dòng 98-110
+  - source: Newton: "not at all considering the nature of the rays of light, or inquiring whether they are bodies or not"
+  - now: Ông coi ánh sáng là vật thể ... giống hệt một viên đá bị bẻ trong nước ... Nhưng định luật ông suy ra thì đúng ... Fermat ... vẫn cho ra cùng hệ số sin đó ... nhật thực vệ tinh Sao Mộc ... lần đầu tiên
+  - suggest: KHÔNG HỢP LÍ. (1) Gán cho Newton điều ông phủ nhận (ông nói rõ không xét ánh sáng có phải vật thể không). (2) "Giống hệt" thay cho "bear a great resemblance". (3) Bịa "không khí hút quanh vật thể" và ví dụ "viên đá bị bẻ trong nước" (không có trong nguồn, cũng sai vật lí). (4) Mô hình hạt cho vận tốc lớn hơn ở môi trường đặc, ngược thực tế; Fermat cho tỉ số sin nghịch đảo, nên "đúng/cùng hệ số sin" là sai. (5) "nhật thực" sai: là sự che khuất vệ tinh; "lần đầu tiên" và "cho biết khoảng cách Mặt Trời-Trái Đất" là khẳng định lịch sử/vật lí không nguồn, Newton không viết. Đề xuất viết lại hoặc bỏ.
+- **NANG / THIEU**, Prop. XCVII, Hệ quả 1, dòng 124
+  - source: The invention of which Cartesius having thought fit to conceal, is here laid open in this Proposition.
+  - now: Bằng cách cho A hoặc B đi vô hạn ... ta thu được những hình dạng mà Descartes đã trình bày trong Quang học và Hình học liên quan đến khúc xạ. (hết câu, thiếu câu sau)
+  - suggest: Thêm câu: Phép tìm ra những hình ấy Descartes đã thấy nên giấu kín, nay được phơi bày ngay trong Proposition này.
+- **NANG / SAINGHIA**, Prop. XCVIII, dòng 142-148
+  - source: the sine of emergence from the second superficies to the sine of incidence on the same, to be as any given quantity M to another given quantity N
+  - now: sin góc lỗm từ mặt thứ hai / sin góc tới mặt thứ hai = N/M
+  - suggest: Sửa thành M/N (nguồn: cả hai tỉ số đều là M:N; chứng minh cũng dùng FR:FS=M:N cho mặt thứ hai)
+- **NANG / SOLIEU**, Prop. XCVIII, dòng 150-154
+  - source: produce AB to G, so that BG may be to CE as M - N to N (OCR: M - N)
+  - now: BG:CE=M:N
+  - suggest: Sửa thành BG:CE=(M-N):N; khi đó mới ra CE+BG:CE=M:N như dòng 185
+- **NANG / SOLIEU**, Prop. XCVIII, chứng minh, dòng 178-180
+  - source: by composition as PH - FB to FQ, that is (because PH and CG, QS and CE are equal) as CE + BG - FR to CE - FS
+  - now: PH\cdot FB:FQ=CE+BG:CE-FS (dấu chấm nhân thay cho dấu trừ, mất -FR, mất chú thích vì PH=CG, QS=CE)
+  - suggest: Sửa thành (PH-FB):FQ=(CE+BG-FR):(CE-FS) và dịch cả vế "vì PH bằng CG, QS bằng CE; hợp tỉ lệ thức"
+- **NANG / SAINGHIA**, Prop. XCVIII, chứng minh, dòng 170-174
+  - source: PD to QD as M to N, and therefore as DL to DK, or FB to FK; and by division as DL - FB or PH - PD - FB to FD or FQ - QD
+  - now: Suy ra DL-FB=PH-PD-FB:FD=FQ-QD (câu bước chia tỉ lệ bị gộp thành một đẳng thức sai cấu trúc, mất vế PD:QD=...)
+  - suggest: Viết lại: PD:QD=(DL-FB):FD=(PH-PD-FB):(FQ-QD) và ghi rõ "chia tỉ lệ thức"
+- **NANG / CHUGIAI**, Chú giải, dòng 206-216 (đánh giá: KHÔNG HỢP LÍ)
+  - source: Scholium nói chỉ: sai số ở rìa mặt kính có thể được nước sửa; khúc xạ khác nhau của các tia là trở ngại thực; không phân loại sai số theo chương, không nhắc kính phản xạ
+  - now: "cả chương ông vừa phân loại sai số theo loại" (212); vật kính nước gợi ý là "nguyên lý dùng hôm nay" của kính tiêu sắc (214); "Ông ... nhìn thấy lối thoát thứ hai, và ông không chọn" nhưng liền sau "tự chế tạo năm 1668" rồi "ở Principia ông còn giữ kính, rồi bỏ hẳn kính" (216)
+  - suggest: Bỏ hoặc sửa: (1) Sec. XIV không phân loại sai số; (2) nước của Newton dùng để sửa sai số ở rìa, không phải tán sắc, nên không đồng nhất với kính tiêu sắc crown-flint; (3) 1668 là trước 1687 nên "rồi bỏ hẳn" mâu thuẫn năm tháng và với câu "ông không chọn"; "Ông ... nhìn rõ", "ít ai muốn nói", "ý định" là gán động cơ
+- **NHE / THIEU**, Prop XCIV (dòng 48, 60), XCV (dòng 70), XCVI (dòng 84)
+  - source: Q.E.D.
+  - now: (không có)
+  - suggest: Mất "Q.E.D." ở cuối Trường hợp 1, Trường hợp 2, Prop XCV, Prop XCVI. Thêm "Điều phải chứng minh".
+- **NHE / THIEU**, Prop XCIV dòng 24; Prop XCVI dòng 80
+  - source: by what Galileo has demonstrated ... whose principal vertex (by what Galileo has demonstrated) is in R
+  - now: Nếu lực hút hoặc xung đẩy đều, đường cong HI là parabol. / mô tả cung parabol QRr có đỉnh chính tại R.
+  - suggest: Hai lần mất viện dẫn Galileo (như Galileo đã chứng minh). Thêm vào cả hai chỗ.
+- **NHE / SOLIEU**, Prop XCVI, dòng 80
+  - source: describing an arc of a parabola QRq (OCR "Q,R</,") whose principal vertex is in R, cutting the plane Cc ... at q
+  - now: mô tả cung parabol $QRr$ có đỉnh chính tại $R$. Cung này cắt mặt phẳng $Cc$ tại $q$
+  - suggest: OCR đọc cung là QRq (chữ cuối giống q); câu sau lại nói cắt Cc tại q, nên "QRr" lệch nhãn. Đề xuất "QRq" (OCR hỏng nên cần đối chiếu bản gốc).
+- **NHE / SOLIEU**, Học luận, dòng 94
+  - source: gowog, fmnif, emtme, dlsld, are rays inflected towards the knife in the arcs owo, nvn, mtm, lsl
+  - now: Các tia $qow$, $nun$, $vtm$, $lsl$ bị uốn về phía con dao
+  - suggest: OCR nguồn: các tia gowog, fmnif, emtme, dlsld và cung owo, nvn, mtm, lsl; bản dịch chỉ nêu 4 bộ nhãn kiểu qow, nun, vtm, lsl, không khớp tên tia lẫn tên cung. OCR hỏng nên không xác định được; cần đối chiếu bản gốc, và cần nêu đủ cả tia lẫn cung.
+- **NHE / SAINGHIA**, Học luận, dòng 90, 94
+  - source: it is now certain from the phenomena of Jupiter's satellites ... The refraction, therefore, is made not in the point of incidence, but gradually
+  - now: cho thấy ánh sáng truyền đi liên tiếp ... tia khúc xạ không xảy ra tại điểm tới mà được tạo dần
+  - suggest: Hai chỗ lệch nhẹ: "it is now certain" (nay đã chắc chắn) thành "cho thấy"; "The refraction" (sự khúc xạ) thành "tia khúc xạ" làm đổi danh từ. Sửa: "sự khúc xạ".
+- **NHE / THEM**, Dòng 10 (chú thích hình in nghiêng)
+  - source: (không có trong nguồn)
+  - now: *Hình 30. Sơ đồ được dùng lại từ Phần XII; cần đối chiếu với các hình bản gốc của Phần XIV.*
+  - suggest: Lời biên tập nằm ngoài blockquote [Chú giải], tính là phần thêm. Chuyển vào chú giải/comment HTML, hoặc bỏ khi đã thay hình đúng.
+- **NHE / THIEU**, Prop. XCVIII, dòng 132 và 186-191
+  - source: The same things supposed; ... (because BG is to CE as M - N to N) it comes to pass also that CE+BG is to CE as M to N; and therefore, by division, FR is to FS as M to N
+  - now: Mở đầu thiếu "Với cùng các giả thiết"; phần kết chỉ còn "Vì CE+BG:CE=M:N, suy ra FR:FS=M:N", thiếu lí do BG:CE=(M-N):N và "chia tỉ lệ thức"
+  - suggest: Bổ sung mệnh đề mở đầu và hai lí do bị lược
+- **NHE / SAINGHIA**, Prop. XCVIII, dòng 156
+  - source: and DF to K, so that DK may be to DH as N to M (produce DF to K)
+  - now: Trên DF lấy K sao cho DK:DH=N:M
+  - suggest: Dịch "kéo dài DF đến K" như với AB đến G và AD đến H
+- **NHE / THIEU**, Prop. XCVII, XCVIII, dòng 120-194
+  - source: Q.E.I. (cuối XCVII); Q.E.F. (cuối XCVIII); Q.E.D. (cuối chứng minh XCVIII)
+  - now: Không có Q.E.I., Q.E.F., Q.E.D.
+  - suggest: Thêm ba dấu kết thúc (một mục nhẹ cho cả phần)
+- **NHE / SAINGHIA**, Học luận, dòng 200
+  - source: it is not unlikely that the errors of the refractions made in the extreme parts ... may be accurately enough corrected by the refractions of the water
+  - now: có thể lực khúc xạ của nước sửa đủ các sai số do khúc xạ ở các phần biên của mặt kính
+  - suggest: Dịch giữ mức dè dặt: "không phải là không có khả năng ... có thể được sửa khá chính xác nhờ khúc xạ của nước"; câu hiện tại cũng thiếu "có thể" ngữ pháp
+- **NHE / THUATNGU**, Cả phần (dòng 114-164), "góc lỗm"
+  - source: sine of emergence / emergence (OCR)
+  - now: sin góc lỗm; "lỗm theo đường DK"
+  - suggest: "lỗm" không phải từ tiếng Việt chuẩn (thường là "ló", tia ló); dùng nhất quán trong chương nên chỉ báo để chủ sách quyết định
+- **NHE / CHUGIAI**, Chú giải, dòng 210 và 214 (lỗi gõ/nội dung)
+  - source: (không có trong nguồn: chú giải của biên tập)
+  - now: "vừa dựng xong phép dựng"; "mặt khúc xạ chính xác nhất của mình"; "mắt kép khử tán sắc năm 1729"; "triệt tiêu tầm bậc đầu tiên"; "bài toán mài giũa mở đuôi"
+  - suggest: Sửa lặp từ "dựng"; bỏ "chính xác nhất" (không có trong nguồn); "mắt kép" nên là "thấu kính kép/achromat"; "tầm" thừa; năm 1729 của Hall và thập niên 1760 của Dollond cần nguồn
+
+## 43-sach-ii-phan-i-chuyen-dong-luc-can-tuy-le-van-toc.md
+
+- *phần 1/2: Chương 43, phần 1/2 (dòng 1-192): Sách II Phần I - Prop I (+Hệ quả), Lemma I, Prop II (Case 1, 2, Hệ quả), Prop III (+Hệ quả 1-4), Prop IV đến câu "sao cho" (dòng 191); hình book-ii-section-*
+- *phần 2/2: Chương 43, phần 2/2 (dòng 193-384): nửa sau Proposition IV (Problem II) gồm lời dựng, chứng minh, Hệ quả 1-7, và Học luận (Scholium) cuối Section I; không có hình trong phần này*
+
+- **NANG / SOLIEU**, Prop III, dòng 108-109
+  - source: Make AC to AK, or ABHC to ABkK, as the force of gravity to the resistance in the beginning of the second time
+  - now: Làm cho AC:AK=AB:HC tùy theo tỷ lệ giữa lực trọng lực và lực cản ở đầu khoảng thời gian thứ hai
+  - suggest: AB và HC là hai cạnh đối của hình chữ nhật nên AB:HC=1, vô nghĩa. Sửa: AC:AK = ABHC:ABkK = lực trọng lực : lực cản ở đầu khoảng thời gian thứ hai (nguồn có cả hình chữ nhật ABkK)
+- **NANG / SOLIEU**, Prop III, dòng 127-131
+  - source: area ABqK (by Corol. 3, Lem. VII and VIII) is to the area Bkq as Kq to 1/2 kq, or AC to 1/2 AK (OCR: K^ to \kq, AC to
+  - now: AK)
+  - suggest: diện tích ABK tỷ lệ với Bkq như K^2:kq=AC:AK|Thiếu hệ số một nửa ở cả hai tỉ số: Kq:½kq = AC:½AK. "K^2" là đọc nhầm "Kq" (OCR "K^"). Diện tích ABK phải là ABqK
+- **NANG / SAINGHIA**, Prop III, dòng 133
+  - source: that is, as the force of gravity to the resistance in the middle of the first time
+  - now: Tức là diện tích này tỷ lệ với lực trọng lực và lực cản ở giữa khoảng thời gian đầu
+  - suggest: Nguồn là tỉ số "như lực trọng lực với lực cản" (gravity : resistance), bản dịch nói "tỷ lệ với A và B" làm mất tỉ số. Sửa: tỉ số này bằng tỉ số giữa lực trọng lực và lực cản ở giữa khoảng thời gian đầu
+- **NANG / SOLIEU**, Prop III, dòng 122-153
+  - source: areas ABqK, KqrL, LrsM, MstN equal; qKLr, rLMs, sMNt are to qklr, rlms, smnt; the areas Bkq, qklr, rlms, smnt; ABqK, ABrL, ABsM, ABtN
+  - now: ABK, KkrL, LrsM, MstN; qkr, rms, smt; Bkq, krl, rms, smt; ABK, ABrL, ABsM, ABtN
+  - suggest: Chữ cái điểm lệch nguồn: ABK thiếu q (ABqK); KkrL phải là KqrL; qkr, rms, smt phải là qklr, rlms, smnt; krl phải là qklr. (OCR dòng 12907-12921 còn lẫn ký tự hỏng, đối chiếu cuối cùng cần ảnh scan)
+- **NANG / CHUGIAI**, Chú giải sau Prop I (dòng 26-36)
+  - source: Hệ quả: space to the space now described as the whole motion at the beginning to the part lost; Prop II dùng hyperbola
+  - now: quy luật lũy thừa; x(t) là tổng của một đường thẳng và một hàm mũ; Euler 1740, gần một thế kỷ; đệm mềm, thời hằng chính là quãng đường dừng
+  - suggest: KHÔNG HỢP LÍ: v0 e^{-t/tau} là hàm mũ chứ không phải "lũy thừa"; x(t)=v0*tau*(1-e^{-t/tau}) là hằng số trừ hàm mũ, không phải "đường thẳng + hàm mũ"; "biên độ x(t)" sai (là vị trí/quãng đường); 1687 đến những năm 1740 chưa tới một thế kỷ, và mốc Euler cần nguồn; "Ông" không rõ chủ ngữ; quãng đường dừng là v0*tau chứ không bằng tau; ví dụ tấm đệm, "dịch dây của dân số" thiếu cơ sở/không rõ; câu hệ quả "chỉ tỷ lệ với tỷ lệ giữa..." sai (phải nhân với quãng đường đã đi)
+- **NANG / HINH**, Hình dòng 8-10
+  - source: Fig. gốc (Prop II Cor): hyperbola BG, tiệm cận AC, CH, các điểm A,B,C,D,G,H; Prop III: B,A,C,H,D,E,G,g,K,k,q,r...
+  - now: SVG book-ii-section-i-motion.svg có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình không khớp nội dung: chỉ có A, O, B, trong khi bài dùng C, D, G, H, E, K, q, r, ... (thiếu C, D, G, H và mọi điểm của Prop II-III); trục "thời gian/vận tốc" không phải cách Newton dùng diện tích hyperbola làm thời gian. Hình đặt trước đề mục Sách II, không phải hình của Prop II hay III. Cần thay bằng hình dựng đúng nhãn
+- **NANG / SOLIEU**, Prop IV, dòng 205, 210, 224, 231, 251, 257, 263 (mẫu số)
+  - source: Rr = (DR x AB - RDGT) / [mẫu số OCR không đọc được]; Cor.3: "Vr is tGT / N or DR x Tt / N", N đặt bởi N:QB = DC:CP
+  - now: Vr = DR·QB/(DR+GT); Rr = (DR·AP-RDGT)/(DR·AP+RDGT); RX = AB/(AB+RDGT); Xr = RDGT/(DR·AB+RDGT)
+  - suggest: Mẫu số "DR+GT", "DR·AP+RDGT", "DR·AB+RDGT" không có căn cứ trong OCR và mâu thuẫn với Cor.3 (mẫu số là N, N = QB·DC/CP). Đối chiếu bản giấy; ghi "không xác định được từ OCR" nếu không đọc được
+- **NANG / THIEU**, Prop IV, lời chứng minh, dòng 244
+  - source: "in the very beginning of the motion the area RDGT is equal to the rectangle DR x AQ ... Rr is to DR as ... CP to DC; and therefore as the motion upwards to the motion lengthwise at the beginning"
+  - now: "Vì vậy Rr luôn tỷ lệ với chiều cao, còn DR luôn tỷ lệ với chiều dài. Do đó vật thể chuyển động trên đường DraF."
+  - suggest: Thiếu bước then chốt: lúc đầu RDGT = DR·AQ nên Rr:DR = QB:N = CP:DC, tức bằng tỷ số chuyển động lên với chuyển động ngang lúc đầu; rồi mới kết luận Rr luôn : DR = chiều cao : chiều dài
+- **NANG / SOLIEU**, Prop IV Cor.3, dòng 279-288, 293
+  - source: "latus rectum ... at the very beginning is DV^2/Vr"; "T* is CK x DR / [DC]"; "N is QB x DC / CP"; "Vr is equal to DR^2 x CK x CP / 2DC^2 x QB"
+  - now: "4DV^2/TG"; "T* = CK·DR/(QB·DC), N = QB/DC"; "Vr = 2DC^2·QB/DV^2"
+  - suggest: Tham số chuẩn đầu là DV^2/Vr (không phải 4DV^2/TG); N = QB·DC/CP (N=QB/DC mâu thuẫn N:QB=DC:CP); Vr = DR^2·CK·CP/(2DC^2·QB), không phải 2DC^2·QB/DV^2
+- **NANG / SAINGHIA**, Prop IV Cor.3, dòng 290 và 308
+  - source: "(because DV and DP are proportionals)"; "and therefore is to 2DP as DP x DA to CP x AC; that is, as the resistance to the gravity"
+  - now: "Do D, A, C và D, P, V tạo thành các đại lượng tỷ lệ"; "Do đó nó tỷ lệ nghịch với lực cản và trọng lực."
+  - suggest: Dòng 290 vô nghĩa (đúng: DV và DP tỷ lệ, tức DR:DC = DV:DP). Dòng 308 bịa "tỷ lệ nghịch": nguồn nói tham số chuẩn : 2DP = DP·DA : CP·AC, tức bằng tỷ số lực cản : trọng lực
+- **NANG / SOLIEU**, Prop IV Cor.4, dòng 325
+  - source: "cutting DC in A, so that GP [OCR; = CP] x AC may be to DP x DA in the same ratio of the gravity to the resistance"
+  - now: "DP·AC : DP·DA = trọng lực : lực cản"
+  - suggest: Sửa thành CP·AC : DP·DA (khớp Cor.5 dòng 339 và dựng đầu bài: DA·DP : AC·CP = lực cản : trọng lực)
+- **NANG / THIEU**, Học luận, cuối dòng 372
+  - source: "Let us, therefore, see what motions arise from this law of resistance."
+  - now: (không có; đoạn dừng ở "lực cản tỷ lệ với chuyển động đã truyền")
+  - suggest: Thêm câu cuối: "Vậy ta hãy xét những chuyển động nảy sinh từ quy luật lực cản này."
+- **NHE / SOLIEU**, Prop III, dòng 86-87 và 100
+  - source: in the time ABK1 ... descent BFK (OCR; có thể là ABKI); then will 0, AA', AL Am, An, &c. be as the whole velocities
+  - now: trong thời gian ABKk, đi quãng xuống BFK; O, AA', AL+Am, An
+  - suggest: Bản dịch viết ABKk còn nguồn OCR "ABK1" (không xác định được từ OCR, có vẻ là ABKI, cùng chữ I với IKki ngay sau). "AL+Am" tự thêm dấu cộng, nguồn chỉ liệt kê các số hạng "AL Am, An" ngăn cách bằng dấu phẩy
+- **NHE / THEM**, dòng 10
+  - source: (không có trong nguồn)
+  - now: Hình 31. Sơ đồ được dựng lại để minh họa quỹ tích vận tốc theo thời gian; cần đối chiếu với các hình bản gốc.
+  - suggest: Chú thích biên tập in nghiêng nằm ngoài blockquote, tính là thêm; nội dung "quỹ tích vận tốc theo thời gian" cũng không có trong nguồn. Chuyển vào blockquote **[Chú giải]** hoặc bỏ
+- **NHE / THIEU**, Toàn phần (Prop I, Lemma I, Prop II Case 1, 2, Prop III)
+  - source: Q.E.D.
+  - now: (không có)
+  - suggest: Thêm Q.E.D. ở các chỗ nguồn có (Prop I, Lemma I, Prop II hai Case, Prop III)
+- **NHE / THIEU**, Prop II Hệ quả dòng 74; Prop III Hệ quả 3 dòng 181
+  - source: if that area, by the motion of the point D, be uniformly increased ...; differences of the spaces, which are described in equal differences of the times
+  - now: Nếu diện tích ấy tăng đều theo thời gian...; Các hiệu của các quãng đường đi trong những khoảng thời gian bằng nhau
+  - suggest: Prop II Hệ quả thiếu "bởi chuyển động của điểm D". Prop III Hệ quả 3 mất "equal differences of the times" (hiệu của các quãng đi trong những hiệu thời gian bằng nhau), bản dịch nói khác nghĩa
+- **NHE / SAINGHIA**, Prop IV dòng 191
+  - source: From the point P let fall the perpendicular PC on the horizontal line DC, and cut DC in A
+  - now: Từ P hạ vuông góc PC xuống đường ngang DC, cắt DC tại A
+  - suggest: Dịch như chính PC cắt DC tại A (PC gặp DC ở C); nguồn là "lấy điểm A trên DC". Sửa: ... và chia DC tại A sao cho
+- **NHE / KHAC**, Hệ quả Prop I dòng 24; Prop II dòng 64
+  - source: at the beginning (OCR); particles of time diminished
+  - now: ở đầu sơ la; các phần thời gian bằng nhân nhỏ dần
+  - suggest: Lỗi gõ: "sơ la" (đúng: ở đầu chuyển động hay tương tự, không xác định được từ OCR; nguồn là "at the beginning"), "bằng nhân" (đúng: bằng nhau)
+- **NHE / THIEU**, Prop IV Cor.4 và Cor.7, dòng 314, 362, 364, 370-372
+  - source: Cor.4 "as is well known"; Cor.7 "from the ratio Ff/DF found by calculation ... a second and a third time"; Scholium "a greater motion in proportion to a greater velocity"
+  - now: Cor.4 không có "như đã biết"; Cor.7 chỉ "Từ tỷ lệ tính được" (không nêu Ff/DF), "Lặp lại phép tính"; Học luận bỏ "tỷ lệ với vận tốc lớn hơn"
+  - suggest: Bổ sung các cụm bị rơi; nêu rõ tỷ số Ff:DF (OCR chỉ đọc được "F/ -p^")
+- **NHE / THIEU**, Toàn phần (Prop IV, các Hệ quả)
+  - source: "Q.E.I." (cuối phát biểu), "Q.E.D." (cuối chứng minh và Cor.3)
+  - now: không có
+  - suggest: Chỉ ghi một mục: thiếu Q.E.I. và Q.E.D.
+- **NHE / THUATNGU**, Học luận, dòng 370
+  - source: "In mediums void of all tenacity"
+  - now: "Trong những môi trường không có độ dẻo"
+  - suggest: "tenacity" ở đây là độ dính/độ quánh của môi trường; "độ dẻo" dễ hiểu sai (ductility). Cân nhắc "độ quánh" hoặc "độ dính"
+- **NHE / CHUGIAI**, Chú giải, dòng 384 (KHÔNG HỢP LÍ phần vật lí)
+  - source: Nguồn không nói gì về số Reynolds, Stokes hay hạt băng
+  - now: "tỷ lệ với căn bậc nhất đường kính"; "lý do hạt băng lớn rơi chậm bất ngờ so với một giọt mưa nhỏ"; "khi dòng chảy rối"
+  - suggest: Stokes: v ~ d^2 đúng. Nhị thừa: v ~ căn bậc hai của d (không phải "căn bậc nhất"). Vế "hạt băng lớn rơi chậm hơn giọt mưa nhỏ" sai và không có nguồn (vật lớn hơn rơi nhanh hơn). Lực cản bình phương gắn với Re lớn nói chung, không nhất thiết "chảy rối". Nên sửa hoặc bỏ
+
+## 44-sach-ii-phan-ii-proposition-v-vii-lemma-ii.md
+
+- *phần 1/2: Chuong 44, phan 1/2 (dong 1-205): Prop V (Hq 1-5), Prop VI, Prop VII (Hq 1-5), Lemma II (phat bieu va 3 doan mo dau, het dong 204); doi chieu OCR dong 13231-13433*
+- *phần 2/2: Chương 44, phần 2/2 (dòng 206-410): Lemma II (phần cuối phát biểu, Trường hợp 1-6, Hệ quả 1-3, Chú giải, Học luận) đối chiếu ia.txt dòng 13435-13557. Không có hình ảnh trong phần này.*
+
+- **NANG / SOLIEU**, Prop V, dong 37-58 (chuoi ti le thuc)
+  - source: AB - Kk to AK as Kk to CA; and therefore as AB x Kk to AB x CA ... AB - Kk will be as AB x Kk; and, lastly, when AB and Kk coincide, as AB^2.
+  - now: AB-K:AK=Kk:CA ... AB-K:AB=AK:AB·CA ... AB-K:AB=AB:AB=1 ... AB-K=AB·K, AB-K=AB^2 (Kk bi viet thanh K, chuoi suy dien sai; co the them "=1" khong co trong nguon)
+  - suggest: Viet lai: AB-Kk:AK=Kk:CA, tuc la =AB·Kk:AB·CA; vi AK va AB·CA da cho nen AB-Kk ti le voi AB·Kk, va khi AB, Kk trung nhau thi ti le voi AB^2. Bo dong "=1".
+- **NANG / SOLIEU**, Prop VI, dong 126-144
+  - source: cutting the perpendiculars AB, ab, DE, de ... times Aa, Dd ... as Aa to Dd so DE to AB, and so CA to CD; and by composition so is Ca to Cd; areas ABba, DEed
+  - now: cat cac duong vuong goc AB, Kk, DE, de ... thoi gian Aa, Dff ... Aa:Df=DE:AB ... Ca:Cd=DE:AB ... Crt:Cdt=DE:AB ... DEerf
+  - suggest: Sua Kk thanh ab, Dff thanh Dd, DEerf thanh DEed; them buoc DE:AB=CA:CD (tinh chat hyperbola), roi "theo phep hop" Ca:Cd; thay chuoi Ca:Cd / Crt:Cdt bang chuoi dung nay. Them "theo phep chia" truoc khi ket luan ti le voi phan mat di.
+- **NANG / SAINGHIA**, Prop VII Hq 3, dong 178
+  - source: the spaces ... will be as the cubes of the diameters applied to that power (sau do D^(3-n))
+  - now: quang duong ti le voi lap phuong duong kinh nhan voi luy thua ay (mau thuan voi D^(3-n) ngay duoi)
+  - suggest: Dich "applied to" la "chia cho": ti le voi lap phuong duong kinh chia cho luy thua ay (D^3/D^n=D^(3-n)).
+- **NANG / SAINGHIA**, Prop VII Hq 4, dong 190
+  - source: the motion, with an equal velocity, is greater in the ratio of the density, and the time (by this Prop.) is augmented in the ratio of motion directly, and the space ... in the ratio of the time.
+  - now: chuyen dong tang theo ty le mat do, va thoi gian tang theo tich cua chuyen dong voi thoi gian, nen quang duong tang theo thoi gian.
+  - suggest: Sua: thoi gian (theo menh de nay) tang theo ty le chuyen dong (thuan), va quang duong tang theo ty le thoi gian. Cau hien co tu quy chieu va bo "theo menh de nay".
+- **NANG / HINH**, Hinh o dong 8 (book-ii-section-i-motion.svg) cho Prop V-VI
+  - source: (loi chung minh nhac) A,B,C,D,H,K,L,M,G,T,k,l,m,E,a,b,d,e (hyperbola, tiem can CD, CH)
+  - now: SVG chi co nhan A, O, B, "thoi gian", "van toc", "duong quy tich"; thieu moi chu cai khac cua bai (C,K,L,M,D,H,G,T,k,l,m,E,a,b,d,e)
+  - suggest: Hinh Phan I khong thuoc Phan II; can ve hinh hyperbola BklmG voi tiem can CD, CH va cac duong AB,Kk,Ll,Mm; Prop VI can hinh BbEe rieng.
+- **NANG / SAINGHIA**, Lemma II, Trường hợp 1, dòng 274-290
+  - source: "there wanted of the sides A and B half their moments ½a and ½b, was A-½a into B-½b, or AB-½aB-½bA+¼ab ... A+½a into B+½b ... remain the excess aB+bA"
+  - now: "(A-a)(B-b)=AB-aB-bA+ab" ... "(A+a)(B+b)" ... "phần tăng ... khi các cạnh tăng a, b là aB+bA"
+  - suggest: Dùng nửa moment: (A-a/2)(B-b/2)=AB-aB/2-bA/2+ab/4 và (A+a/2)(B+b/2)=AB+aB/2+bA/2+ab/4; hiệu là aB+bA. Bản dịch tự mâu thuẫn (nói nửa moment nhưng viết a, b; hiệu thực ra thành 2aB+2bA).
+- **NANG / THIEU**, Lemma II, Trường hợp 2, dòng 292-296
+  - source: "moment of ABC or GC (by Case 1) will be gC+cG, that is (putting AB and aB+bA for G and g), aBC+bAC+cAB"
+  - now: "moment của ABC=GC là aBC+bAC+cAB"
+  - suggest: Thêm bước: theo Trường hợp 1 moment của GC là gC+cG, rồi thay G bằng AB và g bằng aB+bA. Hiện bản dịch bỏ lập luận và chỉ nêu kết quả.
+- **NANG / SAINGHIA**, Lemma II, Trường hợp 4, dòng 318-340
+  - source: "since 1/A into A is 1, the moment of 1/A drawn into A, together with 1/A drawn into a, will be the moment of 1, that is, nothing ... generally since 1/A^n into A^n is 1 ..."
+  - now: "moment của 1/A · A cùng với moment của A nhân với -1/A^2 bằng không"
+  - suggest: Sửa: moment của 1/A nhân A, cộng với (1/A) nhân a, bằng moment của 1, tức bằng không; suy ra moment của A^-1 là -a/A^2. Thêm lập luận tổng quát cho 1/A^n (moment của 1/A^n nhân A^n cộng 1/A^n nhân naA^(n-1) bằng không); hiện chỉ nêu kết quả.
+- **NANG / SAINGHIA**, Lemma II, Trường hợp 5, dòng 342-352
+  - source: "since A^1/2 into A^1/2 is A, the moment of A^1/2 drawn into 2A^1/2 will be a; ... putting A^(m/n) equal to B, then A^m = B^n, and maA^(m-1) = nbB^(n-1) ... b = moment of A^(m/n)"
+  - now: "Nếu A^2·A^2=A^4, moment của A^4 ... hệ số 2A^3" ... "nbB^(n-1)=naA^(m-1)"
+  - suggest: Sửa thành A^(1/2)·A^(1/2)=A, nên moment của A^(1/2) là a/(2A^(1/2)) = (1/2)aA^(-1/2). Nêu B=A^(m/n), A^m=B^n, rồi suy ra b = (m/n)aA^((m-n)/n), là moment của A^(m/n). Dòng "=naA^(m-1)" sai (phải là maA^(m-1)); kết luận về A^(m/n) không có.
+- **NANG / THIEU**, Lemma II, phát biểu, dòng 218-228
+  - source: "powers A2, A3, A4, A^1/2, A^1/3, A^2/3, A^3/2, A^-1, A^-2, A^-1/2 will be 2aA, 3aA2, 4aA3, ½aA^-1/2, ⅓aA^-2/3, ⅔aA^-1/3, 3/2 aA^1/2, -aA^-2, -2aA^-3, ... (OCR hỏng số hạng cuối)"
+  - now: "A^2, A^3, A^4, A^{1/2}, A^{1/3},\ldots" lần lượt "2aA, 3aA^2, 4aA^3, ½aA^{-1/2}, ⅓aA^{-2/3},\ldots"
+  - suggest: Bản dịch cắt danh sách bằng "\ldots". Bổ sung A^{2/3}, A^{3/2}, A^{-1}, A^{-2}, A^{-1/2} (hoặc số mũ nguồn đọc ra) cùng moment tương ứng ⅔aA^{-1/3}, (3/2)aA^{1/2}, -aA^{-2}, -2aA^{-3}, ...; số hạng cuối OCR đọc ra "-£aA-2", không xác định được từ OCR.
+- **NANG / SOLIEU**, Hệ quả 1, dòng 364-374
+  - source: "A, B, C, D; E, F, be continually proportional; ... C given, the moments ... as -2A, -B?, D, 2E, 3F"
+  - now: "A:B:C:D=E:F ... tỷ lệ như 2A, B, D, 2E, 3F"
+  - suggest: Mất dấu trừ của hai số hạng đứng trước C (OCR "- 2A, - B? D"). "A:B:C:D=E:F" sai: nguồn chỉ nói A, B, C, D, E, F tỷ lệ liên tiếp (chuỗi). Sửa thành -2A, -B, D, 2E, 3F.
+- **NANG / THIEU**, Học luận, dòng 406-410
+  - source: "So far that letter. And these last words relate to a treatise I composed on that subject in the year 1671. The foundation of that general method is contained in the preceding Lemma."
+  - now: "Tôi đã kết hợp phương pháp ấy với cách làm việc trong phương trình ... Nền tảng của phương pháp tổng quát nằm trong Lemma trên."
+  - suggest: Thiếu hai câu: "Đến đây hết thư. Những lời cuối này nói về một luận văn tôi soạn năm 1671." Đồng thời lời Newton trích dẫn trong thư (I subjoined these words) bị đổi thành lời tường thuật "Tôi viết rằng".
+- **NANG / THIEU**, Học luận, dòng 408
+  - source: "without any troublesome calculation ... any how respecting right lines or other curves ... centres of gravity of curves, &c.; nor is it (as Hudde's method de Maximis & Minimis) limited to equations which are free from surd quantities"
+  - now: "Phương pháp ấy áp dụng không chỉ cho việc vẽ tiếp tuyến ... Nó không bị giới hạn trong các phương trình không chứa lượng căn."
+  - suggest: Thiếu "không cần tính toán rắc rối", "hay liên hệ thế nào với đường thẳng hoặc các đường cong khác", "&c.", và nhất là chỉ dẫn "(như phương pháp de Maximis & Minimis của Hudde)". "surd quantities" = lượng vô tỷ/căn, chấp nhận được.
+- **NANG / CHUGIAI**, Chú giải, dòng 386-396
+  - source: "(đoạn chú giải) Lemma II chính là quy tắc tích phân vi phân ... (A+a)(B+b)-(A-a)(B-b)=2aB+2bA"
+  - now: "quy tắc tích phân vi phân" ; "(A+a)(B+b)-(A-a)(B-b) = 2aB+2bA"
+  - suggest: KHÔNG HỢP LÍ: "tích phân vi phân" là sai thuật ngữ, phải là quy tắc đạo hàm/vi phân của tích và lũy thừa. Đẳng thức đứng sau Lemma với nửa moment là (A+a/2)(B+b/2)-(A-a/2)(B-b/2)=aB+bA; với a, b đầy đủ thì ra 2aB+2bA, mâu thuẫn với "moment của AB là aB+bA" ngay đó (lỗi này sinh từ bản dịch Trường hợp 1).
+- **NHE / THEM**, Dong 10 (chu thich hinh in nghieng ngoai blockquote)
+  - source: (khong co trong nguon)
+  - now: *Hinh 32. So do duoc dung lai tu Phan I; can doi chieu voi cac hinh ban goc.*
+  - suggest: Bo dong loi bien tap nay (hoac chuyen vao khoi [Chu giai]) sau khi thay hinh.
+- **NHE / SOLIEU**, Prop V, dong 70 va 74 (nhan diem)
+  - source: the length described in the first time by the area AKkB ... the spaces described Ak, Kl, Lm (OCR: AKA*B, Ak, K/, Lw = cac dien tich)
+  - now: dien tich AKAB ... cac quang duong AK, Kk, Ll, Mm, v.v. bang nhau (day la cac duong, khong phai quang duong; mat AMmB o dong 72)
+  - suggest: Sua AKAB thanh AKkB; quang duong la cac dien tich AKkB, KklL, LlmM, ...; ghi AMmB o dong 72. Nhan chinh xac cua cac dien tich: khong xac dinh duoc hoan toan tu OCR.
+- **NHE / SAINGHIA**, Prop VII, dong 164
+  - source: And because of the given ratio of the velocities, they will always describe spaces which are as the first velocities and the times conjunctly.
+  - now: Do cach lay cac khoang thoi gian, cac quang duong luon ti le voi tich cua thoi gian va van toc dau tien.
+  - suggest: Nguon lay ly do la ty so cac van toc da cho (van toc con lai luon ti le voi van toc dau): "Vi ty so cac van toc la khong doi, ..."
+- **NHE / THUATNGU**, Lemma II phat bieu, dong 198
+  - source: equal to the moments of each of the generating sides drawn into the indices of the powers of those sides, and into their co-efficients continually
+  - now: bang tong cac moment cua cac phan sinh ra no, moi phan duoc nhan voi so mu cua luy thua va voi he so tuong ung
+  - suggest: "sides" dich la "phan" (trong khi dong 202 dich "square and cubic sides" la "canh"); them "tong"; mat "continually". Sua: "...moment cua tung canh sinh ra, nhan voi so mu cua luy thua cua canh ay va voi he so cua no, lien tiep". Dong 202 cung mat "motion" trong "perpetual motion or flux".
+- **NHE / THIEU**, Prop V, VI, VII (dong 74, 156, 164)
+  - source: Q.E.D. (cuoi Prop V, VI, VII)
+  - now: (khong co o cuoi ba menh de)
+  - suggest: Them "Q.E.D." sau ba chung minh.
+- **NHE / CHUGIAI**, Chu giai dong 84-106: KHONG HOP LI
+  - source: (khong phai cua Newton) ket qua Prop V Hq 1-2: quang duong ti le dien tich hyperbola ABGD
+  - now: Cong thuc x(t)=(m v0/γ) ln(...) sai thu nguyen, dung la (m/γ) ln(1+γ v0 t/m); x(2t)-x(t)→τ ln2 chu khong phai τ v0 ln2. Ket luan "luc can nhi thua gioi han tam xa, luc can tuyen tinh thi di duoc vo han" bi dao nguoc: x→∞ (theo logarit) voi luc can bac hai, con luc can tuyen tinh thi tong quang duong huu han (m v0/b). "luy thua giam" (dong 88) nen la "ham mu giam"; loi go: "tinn", "vo hung"; "Ong" o dong 106 khong ro chi ai; "cach dinh nghia ty le logarithm" la khang dinh lich su can nguon.
+  - suggest: Sua cong thuc va lap luan: logarit tang cham nhung khong bi chan; so sanh dung: luc can tuyen tinh dung o khoang cach huu han, luc can bac hai khong co gioi han huu han. Sua loi go, sua "luy thua giam" thanh "giam theo ham mu", ghi ro chu ngu "Newton", bo hoac nhe khang dinh lich su.
+- **NHE / THIEU**, Lemma II, Trường hợp 1-6 và phát biểu, dòng 298-360
+  - source: "and so on. The Lemma is thus demonstrated." và "Q.E.D." ở cuối mỗi Trường hợp
+  - now: (không có)
+  - suggest: Thêm "và cứ thế", "Lemma được chứng minh như vậy" ở cuối phần phát biểu (hiện chưa thấy trong phần này) và "Q.E.D." ở cuối các Trường hợp.
+- **NHE / CHUGIAI**, Chú giải, dòng 398-402
+  - source: "(đoạn chú giải) Ông cố tình không dùng ký hiệu vi phân ... Cách ấy đủ cho toàn bộ cơ học ... tranh luận suốt thế kỷ XIX ... Dedekind và Weierstrass ... Newton tiết lộ ông đã ghép phương pháp này với chuỗi vô hạn"
+  - now: "cố tình không dùng ký hiệu vi phân" ; "bị tranh luận suốt thế kỷ XIX giữa hai phe ... giữa thế kỷ XIX khi Dedekind và Weierstrass"
+  - suggest: HỢP LÍ MỘT PHẦN: "cố tình" gán ý định cho Newton mà văn bản không nói (Newton dùng "fluxion", "moment"); "đủ cho toàn bộ cơ học" là khẳng định mạnh không nguồn; lịch sử tranh luận vô cùng nhỏ kéo dài từ thế kỷ XVII-XVIII chứ không chỉ "suốt thế kỷ XIX", và "giữa thế kỷ XIX" lẫn "suốt thế kỷ XIX" tự mâu thuẫn; câu cuối "hai công cụ ... thế kỷ sau còn tranh luận" mơ hồ. Cần nguồn hoặc rút gọn. Phần giải thích "hạt hữu hạn không phải moment" bám đúng nguồn.
+
+## 45-sach-ii-phan-ii-proposition-viii-x.md
+
+- *phần 1/2: Chương 45, phần 1/2 (dòng 1-191): Prop VIII (Hệ quả 1-3), Prop IX (Trường hợp 1-2, Hệ quả 1-7, Chú giải), Prop X (đến công thức DI=P+Qo+...); nguồn ia.txt dòng 13559-13949*
+- *phần 2/2: Chuong 45, phan 2/2 (dong 192-376): cuoi Bai toan III (Prop. X, he so chuoi, He qua 1-2), Vi du 1-4, Scholium va Quy tac 1-8 (+ doan parabol) cua Section II, Sach II. Khong co hinh anh trong*
+
+- **NANG / THIEU**, Prop VIII, dòng 36
+  - source: Let the ratio of KL be compounded with the ratio KN, and the rectangle KL X KN will become as AP X KC X KN; that is (because KC X KN is given), as AP. But the ultimate ratio of the area KNOL to KL X KN ... equality.
+  - now: Các hạt diện tích KNOL luôn tỷ lệ với vận tốc AP. (không có lập luận nào)
+  - suggest: Thêm bước hợp tỉ số KL với KN, hình chữ nhật KL×KN tỉ lệ AP×KC×KN, tức tỉ lệ AP vì KC×KN cho trước, và tỉ số tới hạn của diện tích KNOL với KL×KN là tỉ số bằng nhau khi K trùng L.
+- **NANG / SOLIEU**, Prop IX Trường hợp 1, dòng 68-74
+  - source: particle tDv will be as pDq/pD2 ... pD2 is AD2+Ap2, that is AD2+AD X Ak, or AD X Ck; and pDq is 1/2 AD X pq. Therefore tDv is as pq/Ck.
+  - now: hạt của cung tỷ lệ với pq/(AD·DP). Trong đó AD·DP tỷ lệ với AD·AK, và AD² tỷ lệ với AD·AK.
+  - suggest: Sai chuỗi suy luận: Dp²=AD²+Ap²=AD·Ck (không phải AD·AK), pDq=½AD·pq, nên hạt tDv tỷ lệ pq/Ck (OCR đọc Gk/Ck). Cũng nên ghi hạt tam giác là pDq chứ không phải pq.
+- **NANG / SOLIEU**, Prop IX Trường hợp 2, dòng 80-108
+  - source: the particles are to each other as AD2 to AD2 - AD X AK; that is, as AD to AD - AK or AC to CK ... TDV is as PQ/CK
+  - now: Suy ra các hạt cung tỷ lệ với AD/AC = 1/CK. (cũng bỏ ngoặc TX song song AP và bước by division DX2-TX2 : DA2-AP2)
+  - suggest: Nguồn: tỉ số hai hạt TDV : PDQ = AD2 : (AD2-AD·AK) = AC : CK, nên hạt TDV tỉ lệ PQ/CK. Bản dịch viết AD/AC = 1/CK là sai (AD=AC) và hiểu nhầm tỉ số của hai hạt thành đại lượng tỉ lệ; bổ sung bước chia và điều kiện TX song song AP.
+- **NANG / THIEU**, Prop IX Hệ quả 1, dòng 114
+  - source: For since AC is to AP as AP to AK, then (by Cor. 1, Lem. II) LK is to PQ as 2AK to AP ... ex aequo, LKNO is to DTV as AP to AC ... all the parts ... will be as the spaces described.
+  - now: Chỉ có phát biểu của hệ quả; toàn bộ phần chứng minh (khoảng 10 dòng nguồn) vắng mặt.
+  - suggest: Dịch đủ phần chứng minh của Hệ quả 1 (AC:AP=AP:AK, LK:PQ=2AK:AP, LK:½PQ=AP:½AC hay AB, ex aequo LKNO:DTV=AP:AC).
+- **NANG / THIEU**, Prop IX Hệ quả 3 và 6, dòng 122 và 134
+  - source: COR.3: For the velocity in a non-resisting medium would be as the time ATD, and in a resisting medium is as AP, that is, as the triangle APD. And those velocities, at the beginning ... equal. COR.6: (by Corol. 2 and 3, Theor. VI) ... and the area ABNK or ABtk, which is to the sector ADT or ADt as the space sought to the space ... uniformly described with that greatest velocity
+  - now: Hệ quả 3 chỉ có phát biểu. Hệ quả 6 bỏ viện dẫn Hệ quả 2 và 3 của Định lý VI và mệnh đề cuối về diện tích ABNK hay ABtk so với hình quạt như quãng đường cần tìm so với quãng đường chuyển động đều với vận tốc lớn nhất.
+  - suggest: Thêm câu giải thích Hệ quả 3 (vận tốc không cản tỉ lệ thời gian ATD, có cản tỉ lệ AP tức tam giác APD, ban đầu hai vận tốc và hai diện tích bằng nhau); bổ sung viện dẫn và mệnh đề cuối của Hệ quả 6.
+- **NANG / THIEU**, Prop X, dòng 172-178
+  - source: which the bodies would describe in those times, by falling from the tangents ... decrement of the velocity ... GH/T - HI/t ... Galileo ... 2NI/t ... HI - HN or MI X NI/HI ... resistance to gravity as t X GH/T - HI + 2MI X NI/HI to 2NI
+  - now: Thời gian tỷ lệ căn bậc hai LH, NI (bỏ mệnh đề rơi từ các tiếp tuyến). Phần giảm vận tốc sinh ra bởi lực cản và trọng lực có thể tính từ chênh lệch giữa cung thực và quãng đường vật thể sẽ đi trong không gian không cản. Tách phần đóng góp ... ta tìm được tỷ lệ lực cản với trọng lực.
+  - suggest: Câu bản dịch là tóm tắt tự thêm, không có trong nguồn, và thay thế cả đoạn lập luận: bỏ GH/T-HI/t, bỏ Galileo (vận tốc 2NI/t), bỏ HI-HN=MI·NI/HI, bỏ tỉ số lực cản:trọng lực. Dịch sát từng câu nguồn.
+- **NANG / SOLIEU**, Prop X, dòng 180-189
+  - source: For the abscissas CB, CD, CE put -o, o, 2o ... the ordinates DI, EK, BG will be P - Qo - Ro2 - So3 - ..., P - 2Qo - 4Ro2 - 8So3, and P + Qo - Ro2 + So3
+  - now: lấy các hoành độ CB, CD, CE bằng o, 2o, 3o ... DI=P+Qo+Ro^2+So^3+...
+  - suggest: Nguồn: CB=-o, CD=o, CE=2o (OCR đọc -o, o, 2o) và DI=P-Qo-Ro2-So3-... (dấu trừ). Bản dịch đổi hoành độ và đổi dấu DI; nguồn còn nói các số hạng sau số hạng đầu Ro2+So3+... là NI (đã bỏ).
+- **NANG / CHUGIAI**, Chú giải dưới Prop IX, dòng 140-162
+  - source: (nguồn: lực cản tỉ lệ bình phương vận tốc; tiếp tuyến các góc tỉ lệ vận tốc)
+  - now: dv/dt = -sqrt(g+gamma v^2) ... arsinh là góc ở tâm một cung tròn ... dt = dv/sqrt(gamma v^2 - g) ... arcosh ... luôn dẫn tới một hàm lập ngược
+  - suggest: KHÔNG HỢP LÍ: với lực cản tỉ lệ v² thì dv/dt=-(g+gamma v²), t=(1/sqrt(g gamma))·arctan(v sqrt(gamma/g)) (cung tròn, đúng với tiếp tuyến tỉ lệ vận tốc), còn rơi dv/dt=g-gamma v² cho artanh, không phải arsinh/arcosh với căn bậc hai; arsinh là hàm hyperbolic, không phải cung tròn; "gần vận tốc giới hạn" sai; "đầu tiên", "cách Newton đọc nó", "luôn dẫn tới" là khẳng định không có nguồn. Cần viết lại.
+- **NANG / THIEU**, Prop. X Bai toan III, dong 192-201 (He qua 1, He qua 2 hoan toan vang)
+  - source: Cor.1: "HT/(AC)... = sqrt(1+QQ)... resistance to gravity as 3S x HT to 4RR x AC"; Cor.2: "the Problem will be expeditiously solved by the first terms of the series". Ordinates: "P-2Qo-4Ro2-8So3"
+  - now: Dong 198-200 nen cuc ngan, khong co ti so luc can:trong luc 3S sqrt(1+QQ):4RR, khong co tham so NT, khong co He qua 1-2. Dong 195 ghi EK=P+2Qo+4Ro^2+8So^3
+  - suggest: Bo sung day du ket luan cua bai toan va hai He qua. Sua EK=P-2Qo-4Ro^2-8So^3 (nguon DI=P-Qo-Ro2-So3). Dong 200 "mat do ty le nghich voi mat do" vo nghia: mat do ty le thuan voi luc can, nghich voi binh phuong van toc
+- **NANG / SAINGHIA**, Vi du 1, dong 227 (so hang thu hai) + thieu doan cuoi
+  - source: "The second term ... will denote the difference between CH and DN; that is, the lineola MN ... and therefore always determines the position of the tangent HN ... taking MN to HM as a to e"
+  - now: "Số hạng thứ hai biểu diễn phần nhỏ giữa tiếp tuyến và đường cong, và xác định vị trí của tiếp tuyến" (đó là nghĩa của số hạng thứ ba)
+  - suggest: Sua: so hang thu hai la hieu giua CH va DN, tuc doan nho MN cua hinh binh hanh HCDM, MN:HM=a:e. Them cac cau bi mat: IN huu han thi bieu dien bang so hang 3 va cac so hang sau, neu IN giam vo han thi cac so hang sau bo qua duoc; "no contemptible use of these series in ... tangents, and the curvature of curves"
+- **NANG / SOLIEU**, Vi du 1, dong 219-225 (va dong 244 trong chu giai)
+  - source: "root being extracted by our method ... DI = e - ao/e - oo/2e - aaoo/2e3 ...; put nn for ee+aa, DI = e - ao/e - nnoo/2e3 - anno3/2e5"
+  - now: "Khai triển bằng phương pháp lượng giác ... DI = e - ao/e - ao^2/(2e^3) - ..." ; "Chuỗi này được gọi là chuỗi lũy thừa"
+  - suggest: Sua he so so hang 3 thanh n^2 o^2/(2e^3), so hang 4 la a n^2 o^3/(2e^5), them buoc dat nn=ee+aa. "bang phuong phap luong giac" bia: nguon "by our method" (phuong phap cua ta/cua Newton). Cau "chuoi nay duoc goi la chuoi luy thua" khong co trong nguon
+- **NANG / SAINGHIA**, Vi du 1, dong 253
+  - source: "density ... as the length of the tangent HT ... resistance will be to the gravity as 3a to 2n, that is, as 3AC to the diameter PQ"
+  - now: "mật độ tại H tỷ lệ nghịch với tiếp tuyến HT, lực cản tại H tỷ lệ với trọng lực như AC với PQ"; "lực cản tỷ lệ với tiếp tuyến HT"
+  - suggest: Sua: mat do ty le THUAN voi HT; luc can:trong luc = 3AC:PQ (thieu he so 3); bo cau "luc can ty le voi tiep tuyen HT" (nguon khong noi). Them cac buoc P,Q,R,S = e, a/e, nn/2e3, ann/2e5
+- **NANG / SOLIEU**, Vi du 2, dong 270 va 276-280
+  - source: "rectangle a+o into c-a-o or ac-aa-2ao+co-oo, is equal to the rectangle b into DI ... DI = (ac-aa)/b + (c-2a)/b o - oo/b"
+  - now: "DI=(ac-a^2-2ao-o^2)/(c-2a)" va "DI = (ac-a^2)/(c-2a) - a/(c-2a) o - 1/(c-2a) o^2"
+  - suggest: Mau phai la b (doan da cho, ban dich neu b nhung bo mat trong cong thuc); thieu so hang co. Sua DI=(ac-a^2)/b+((c-2a)/b)o-(1/b)o^2; thieu cau "second term for Qo, third for Roo", S=0 nen mat do ty le S/R...=0
+- **NANG / SOLIEU**, Vi du 3, dong 293-306
+  - source: "BN = a, BD = o, NX = c, VZ to ZX as m to n. DN = a-o, VG = bb/(a-o), VZ = (m/n)(a-o), GD = c - (m/n)a + (m/n)o - bb/(a-o)"
+  - now: "DN=a o, VG=bb/(a o), VX=(m/n) a o"; "Số hạng đầu cho mật độ, các số hạng sau biểu diễn lực cản, vận tốc và mật độ"
+  - suggest: Sua cac bieu thuc theo nguon (DN=a-o, VG=bb/(a-o), VZ=(m/n)(a-o)); them BN=a, BD=o, rectangle DN.VG=bb. Cau mo ta so hang chuoi la bia. Thieu ket qua: lay VY=(m/n)VG thi mat do ty le nghich voi XY, luc can:trong luc=3XY:2YG, tham so XY^2/VG, "will describe that hyperbola AGK"
+- **NANG / SOLIEU**, Vi du 4, dong 328-345
+  - source: "DN will be equal to A-O, VG = bb/(A-O)^n, VZ=(d/e)(A-O), GD or NX - VZ - VG"; resistance ratio khong doc duoc ro tu OCR
+  - now: "DN=(bb/e)O, VX=(bb/e)O, GD=C-(bb/e)O"; "Lực cản tỷ lệ với trọng lực theo tỷ lệ XY:YG"
+  - suggest: Cac bieu thuc DN, VG, VZ, GD sai; sua theo nguon; thieu khai trien chuoi (he so Q,R,S). Ti so luc can:trong luc cua Vi du 4 khong xac dinh duoc tu OCR (OCR chi ro 3XY:2YG o Vi du 3) nen "XY:YG" can doi chieu voi ban in; latus rectum 2XY^2/VG chi doc duoc mot phan
+- **NANG / THIEU**, Scholium, dong 349-353
+  - source: "the line which a projectile describes in an uniformly resisting medium ... about the vertex it is more distant from the asymptotes, and in the parts remote from the vertex draws nearer to them"; "But let us return to more simple curves"
+  - now: "nhưng khác hyperbola ở gần đỉnh và ở các phần xa đỉnh"; "vận tốc tỷ lệ với GT^2, và lực cản tỷ lệ với GT"
+  - suggest: Mat chieu so sanh: gan dinh thi XA tiem can hon, xa dinh thi GAN tiem can hon. Thieu: cau "But let us return to more simple curves", "perhaps more useful than a more accurate and more compounded hyperbola", ket qua van toc GT^2/(...) va luc can:trong luc=GT:(...)VG, toan bo doan ve vat nem tu A theo AH (mat do tai A ty le nghich AH, v.v.)
+- **NANG / SOLIEU**, Quy tac 5, dong 361-371
+  - source: "produce HN to X, so that HX may be to AI as n+1 to 1"
+  - now: "HX:AI=(n-1):1" ; "AI:VG=XV^n:XR"
+  - suggest: Sua thanh (n+1):1. Ti so cuoi trong nguon bi hong OCR ("XV" to xr"), ban dich dung "XR" chua xac dinh duoc; can doi chieu ban in
+- **NANG / THIEU**, Quy tac 1,3,4,6,7,8 va doan parabola, dong 357-376
+  - source: Rule 1 "the hyperbola may afterwards be easily determined"; Rule 3 "the proportion of the resistance to the weight is augmented, when either the specific gravity is made less..."; Rule 6 "take NK equal to AM"; Rule 7, Rule 8 proof; parabola XAGK paragraph
+  - now: Quy tac 7 tom tat 1 cau (khong con thu tuc AH, AI, SM, MN, NNN, ket qua AH:AI); Quy tac 8 bo AC=AI hay 1/2 HX ve phia duoi, "whose conjugate shall pass through C" (ban dich: hyperbola di qua C), toan bo chung minh Q.E.I./Q.E.D.; "9." do bien tap them, nguon khong co Quy tac 9 (doan parabola chi la doan van) va "van the" la loi go
+  - suggest: Khoi phuc cac cau/doan bi mat; sua "tiem can AK,KF di qua C" thanh hyperbola lien hop di qua C; bo danh so 9; khoi phuc doan parabola (cac ordinate ty le XI^n, XV^n; GT, AH, XT; van toc, luc can, XT//VG); sua "van the"
+- **NHE / HINH**, Hình dòng 8-10
+  - source: (Prop VIII-X nhắc C, K, L, N, P, Q, T, V, D, E, G, H, I, M, F ...)
+  - now: Ảnh book-ii-section-i-motion.svg có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích. Chú thích nghiêng: Hình 33. Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.
+  - suggest: Hình không thuộc nội dung chương (không có C, K, L, N, P, D, T, V...); chú thích nghiêng là lời biên tập ngoài blockquote (tính là THÊM). Cần hình riêng cho Prop VIII, IX và Prop X (nguồn đánh số 33 gắn với Prop X).
+- **NHE / THUATNGU**, Prop IX, dòng 62-130
+  - source: sector of a circle / hyperbolic sector ... arc At
+  - now: cung tròn, cung hyperbola, diện tích cung ADt, và cả cung At (arc)
+  - suggest: Cùng chữ "cung" dịch hai khái niệm: sector (hình quạt) và arc (cung). Nên dịch sector là hình quạt, giữ cung cho arc.
+- **NHE / SAINGHIA**, Prop IX dòng 62-64 và các chỗ nhỏ khác
+  - source: the radius being of a fit magnitude; semi-diameter AD; rectangular hyperbola AVZ; AK is as AP2; subduplicate ratio of the resistance; going on in this curve from F to Q; conjunctly
+  - now: với bán kính đủ lớn; bán kính bán nguyệt AD; hyperbola AVZ; AK=AP^2 (dòng 24); bỏ subduplicate (dòng 16), bỏ from F to Q (dòng 168), bỏ conjunctly (dòng 166)
+  - suggest: "fit magnitude" là độ lớn thích hợp, không phải đủ lớn; semi-diameter là bán kính; thiếu "vuông" (rectangular); AK tỉ lệ AP² (không phải bằng); và các cụm bị bỏ nêu trên.
+- **NHE / THIEU**, Cả phần, Prop VIII, IX
+  - source: Q.E.D.
+  - now: (không có Q.E.D. ở các mệnh đề và hệ quả đã có chứng minh)
+  - suggest: Thêm Q.E.D. ở cuối các chứng minh của Prop VIII, Trường hợp 1, 2 của Prop IX và Hệ quả 1 của Prop IX.
+- **NHE / CHUGIAI**, Chu giai dong 229-251
+  - source: "the root being extracted by our method ... DI = e - ao/e - nnoo/2e3"
+  - now: Chu giai chep lai "DI = e - ao/e - ao^2/(2e^3)"; "mỗi số hạng là một đạo hàm của hàm cần tìm"; "Taylor ... năm 1715"
+  - suggest: HOP LI MOT PHAN: y tuong (bac cua so hang cho vi tri tiep tuyen, do cong, doi cua do cong) dung va nhat quan voi nguon, Prop. IX-X va Vi du 2 dung; nhung chep he so sai (n^2 o^2/(2e^3)), noi "moi so hang la dao ham" qua long (he so = dao ham/giai thua), mau thuan voi dong 227 ngay tren, va moc Taylor 1715 la khang dinh lich su can nguon
+- **NHE / THIEU**, Cac Vi du 1-4 va Quy tac 8, dong 253,282,306,341,375
+  - source: Q.E.I. / Q.E.D. cuoi cac Vi du va Quy tac 8
+  - now: Khong co "Q.E.I."/"Q.E.D." o cuoi Vi du 1-4 va Quy tac 8
+  - suggest: Them Q.E.I. (hoac "dieu phai tim") cuoi Vi du 1-4 va Q.E.I./Q.E.D. trong Quy tac 8
+
+## 46-sach-ii-phan-iii-proposition-xi-xiv.md
+
+- *phần 1/2: Chương 46, phần 1/2 (dòng 1-182): Sách II Phần III - Prop XI (+Hệ quả 1-2), Prop XII (+Hệ quả 1-3), chú giải dòng 84-94, Prop XIII Trường hợp 1-3 (đến dòng 182, chưa hết Trường hợp 3). Nguồn*
+- *phần 2/2: Chương 46, phần 2/2 (dòng 183-363): Prop XIII (Case 3, Hệ quả), thiếu Scholium XIII, Prop XIV (3 trường hợp, Hệ quả), Scholium cuối Phần III (Học luận) và Chú giải; không có hình trong phần *
+
+- **NANG / SAINGHIA**, Prop XI, dòng 20-30
+  - source: the decrement of 1/GD (by Lem. II, Book II) is Dd/GD^2, will be also as CD/GD^2 or (CG+GD)/GD^2 = CG/GD^2 + 1/GD (OCR phân số hỏng nhưng cấu trúc rõ)
+  - now: Moment của DF tỷ lệ với 1/CD và cũng tỷ lệ với 1/(CG+GD).
+  - suggest: Nguồn nói về phần giảm của 1/GD (chính là vận tốc), bằng Dd/GD^2 tỷ lệ CD/GD^2 = (CG+GD)/GD^2 = CG/GD^2 + 1/GD, có viện dẫn Lemma II Sách II. Bản dịch viết 1/CD, trái với chính câu trước (Dd tỷ lệ CD) và bỏ viện dẫn Lemma II.
+- **NANG / THIEU**, Prop XI, dòng 32
+  - source: the time uniformly increasing by addition of given particles EDde, 1/GD decreases in the same ratio with the velocity ... decrement of 1/GD is as the sum of CG/GD^2 and 1/GD, the first as square of velocity, the last as velocity; therefore the decrements of both being analogous
+  - now: Phần giảm của nghịch đảo vận tốc cũng có hai thành phần tương ứng. Vì vậy, khi GD được cộng với lượng cố định CG, tổng CD tăng theo cấp số nhân
+  - suggest: Dịch đủ: thời gian tăng đều nhờ các phần tử EDde nên 1/GD giảm cùng tỷ lệ với vận tốc; phần giảm của 1/GD tỷ lệ với tổng CG/GD^2 (bình phương vận tốc) và 1/GD (vận tốc); hai phần giảm tương ứng nên 1/GD tỷ lệ vận tốc. Bản dịch tóm tắt và nhầm 'nghịch đảo vận tốc' với chính vận tốc.
+- **NANG / SAINGHIA**, Prop XII Hệ quả 2, dòng 70-78
+  - source: if the point R [OCR đọc ký tự này là dấu lạ] be assumed any how, the point G will be found, by taking GR to GD as the velocity at the beginning to the velocity after any space RSED
+  - now: Nếu một điểm bất kỳ đã chọn làm G, lấy GR:GD = v_đầu:v_cuối sẽ xác định điểm G.
+  - suggest: Điểm được chọn tùy ý là điểm trên tiệm cận (ký tự không đọc được từ OCR nhưng hiển nhiên không phải G vì G là điểm được tìm; công thức dùng GR nên là R). Sửa: 'Nếu điểm R được chọn tùy ý thì tìm được điểm G bằng cách lấy GR:GD ...'.
+- **NANG / SOLIEU**, Prop XIII Trường hợp 2, dòng 157-163
+  - source: as GT^2 or GD^2 - DF^2 to BD^2, and as GD^2 to BP^2, and, by division, as DF^2 to BP^2 - BD^2
+  - now: GT^2:BP^2 = GD^2:BP^2 = DF^2:BP^2-BD^2
+  - suggest: Số hạng đầu phải là GT^2 (hay GD^2-DF^2) : BD^2, không phải : BP^2. Như đã viết thì GT^2:BP^2 = GD^2:BP^2 kéo theo GT = GD, mâu thuẫn với GT^2 = GD^2-DF^2 ngay phía trên.
+- **NANG / CHUGIAI**, Chú giải dòng 90
+  - source: Ngoài nguồn. Với m dv/dt = -(g1 v + g2 v^2), u = 1/v
+  - now: thì du/dt = g1/m + g2 u, nên u + g2/g1 tăng theo lũy thừa
+  - suggest: KHÔNG HỢP LÍ: đúng là du/dt = (g1 u + g2)/m (hệ số bị hoán đổi), nên u + g2/g1 mới tăng theo lũy thừa với tốc độ g1/m. Công thức viết ra (g1/m + g2 u) cho hằng số g1/g2, mâu thuẫn với kết luận ngay sau. Ngoài ra v + g1/g2 giảm (không 'tăng') theo lũy thừa theo quãng đường, như Prop XII nói 'decreasing in geometrical progression'.
+- **NANG / THIEU**, Giữa Prop XIII Hệ quả (dòng 197) và Prop XIV (dòng 199)
+  - source: SCHOLIUM. One may demonstrate also that case in the ascent of the body, where the force of gravity is less than can be expressed by DA2 or AB2+BD2, and greater than AB2-DB2, and must be expressed by AB2. But I hasten to other things.
+  - now: Không có đoạn tương ứng; sau Hệ quả của XIII liền sang Proposition XIV (không có Học luận của XIII)
+  - suggest: Thêm Học luận của Prop XIII: trường hợp đi lên mà trọng lực nhỏ hơn DA^2 (tức AB^2+BD^2) và lớn hơn AB^2-DB^2 thì trọng lực phải biểu diễn bằng AB^2 cũng chứng minh được; Newton nói ông vội sang việc khác.
+- **NANG / THIEU**, Prop XIII Hệ quả, dòng 197
+  - source: For the velocity in a non-resisting medium is proportional to the time, and therefore to this sector: in resisting medium, it is as the triangle; and in both mediums, where it is least, it approaches to the ratio of equality, as the sector and triangle do.
+  - now: Hệ quả kết ở câu: Vì vậy vận tốc có thể xác định từ thời gian đã cho.
+  - suggest: Thêm câu cuối của nguồn: trong môi trường không cản vận tốc tỷ lệ với thời gian nên tỷ lệ với hình quạt này; trong môi trường có cản thì tỷ lệ với tam giác; ở cả hai môi trường, khi chúng nhỏ nhất, tỷ lệ tiến đến tỷ số bằng nhau như hình quạt và tam giác.
+- **NANG / SOLIEU**, Prop XIV, dòng 213-231 (mở đầu chứng minh)
+  - source: put AK equal to (AP2+2BAP)/Z; then (by Lem. II) the moment KL of AK = (2APQ+2BA x PQ)/Z or 2BPQ/Z, and moment KLON of area AbNK = 2BPQ x LO/Z or BPQ x BD3/(2Z x OK x AB) (OCR mờ ở mẫu số)
+  - now: chọn một đại lượng Z đã cho ... moment của diện tích AKLN là 2BPQ.LO/Z = 2BPQ.OK.AB^2/BD^3
+  - suggest: Thiếu AK = (AP^2+2BAP)/Z (Z không được xác định); vế phải cuối bị đảo ngược và mất Z: nguồn OCR đọc ra tử BPQ x BD^3 trên mẫu 2Z x OK x AB (số mũ của AB không đọc chắc từ OCR). Sửa theo nguồn; kiểm bằng thứ nguyên: LO = BD^3/(4AB.OK) nên kết quả là BPQ.BD^3/(2Z.OK.AB). Cũng nên dùng AbNK thay cho AKLN ở dòng 227.
+- **NANG / SOLIEU**, Prop XIV, dòng 285-289
+  - source: the area DPQ, that is 1/2 BD x PQ, will be to BD x m as CK x Z to BD2
+  - now: BD.PQ : BD.m = CK.Z : BD^2
+  - suggest: Mất hệ số 1/2: phải là (1/2)BD.PQ : BD.m = CK.Z : BD^2. Thiếu 1/2 thì dòng sau PQ.BD^3 = 2BD.m.CK.Z không suy ra được (nguồn có đúng 2).
+- **NANG / SOLIEU**, Prop XIV, dòng 299-309
+  - source: the moment KLON ... becomes BP x BD x m / (mẫu hỏng trong OCR); ... there will remain AP x BD x m / (mẫu hỏng); ... (because of the given quantity ... ) as the velocity AP
+  - now: moment ... trở thành BP.BD.m/Z ... ta còn AP.BD.m/Z
+  - suggest: Mẫu số Z sai: thay PQ.BD^3 = 2BD.m.CK.Z và OK=CK thì Z triệt tiêu; mẫu số phải là đại lượng đã cho AB (suy theo thứ nguyên, nguồn OCR không đọc được mẫu số). Sửa BP.BD.m/AB và AP.BD.m/AB.
+- **NANG / THIEU**, Prop XIV, dòng 305-311 (kết chứng minh)
+  - source: Therefore the difference of the moments, that is, the moment of the difference of the areas, is equal to ...; and therefore (because of the given quantity) as the velocity AP; that is, as the moment of the space ... beginning together or vanishing together, are proportional. Q.E.D.
+  - now: Đây là moment của quãng đường vật thể đi trong lúc lên hoặc rơi. Vì vậy hiệu của các diện tích và quãng đường tăng hoặc giảm theo những moment tỷ lệ, nên chúng tỷ lệ với nhau.
+  - suggest: Thiếu bước moment của hiệu hai diện tích = AP.BD.m/AB, tỷ lệ với vận tốc AP (vì AB.BD.m đã cho) rồi mới đồng nhất với moment của quãng đường; thiếu ý hai đại lượng bắt đầu cùng nhau hoặc triệt tiêu cùng nhau; thiếu Q.E.D. (tính một mục NHẸ gộp ở dưới).
+- **NANG / THIEU**, Prop XIV Hệ quả, dòng 329-341
+  - source: moment of this area is DA2 x BD x 2M x m / (DE2 x AD); this moment is to the moment of the difference of the areas ... as ... to 1/2 BD x AP, or as DA2 into DET to DAP; therefore when DET and DAP are least, in ratio of equality ... have equal moments; and therefore are equal. Therefore ... the velocities, and therefore also the spaces in both mediums, in the beginning of the descent or the end of the ascent, approach to equality
+  - now: Diện tích ấy tương đương với một tỷ lệ cố định của diện tích DET, và moment của nó tỷ lệ với moment của hiệu các diện tích. Khi các diện tích nhỏ, chúng tiến gần tỷ lệ bằng nhau.
+  - suggest: Toàn bộ nửa sau của Hệ quả bị viết lại thành tóm tắt: mất biểu thức diện tích DA^2.BD.M^2/(DE^2.AD), moment của nó, tỷ số với moment của hiệu, kết luận hai moment bằng nhau nên hai diện tích bằng nhau khi nhỏ, và lập luận vận tốc/quãng đường hai môi trường tiến đến bằng nhau lúc bắt đầu rơi hoặc cuối lúc lên. Cần dịch đủ từng bước.
+- **NANG / THIEU**, Prop XIV, dòng 241-283 (ba trường hợp)
+  - source: the line AC, which is proportional to the gravity, will be (AB2+BD2)/Z ... BET being a circle ... AC will be (AB2-BD2)/Z ... AC becomes equal to (BD2-AB2)/Z
+  - now: đường AC tỷ lệ với trọng lực, còn DP^2 = ... (dòng 241); Trường hợp 2 và 3 không có biểu thức AC
+  - suggest: Thêm AC = (AB^2+BD^2)/Z, (AB^2-BD^2)/Z, (BD^2-AB^2)/Z theo thứ tự ba trường hợp, và câu BET là đường tròn (Trường hợp 1; nguồn nói BET being a circle).
+- **NHE / THUATNGU**, Prop XIII, dòng 116, 118, 134, 169
+  - source: the sector EDT of the circle; the sector DET; the hyperbolic sector TDE; the sector DET of this hyperbola
+  - now: diện tích cung EDT; diện tích cung DET; diện tích hyperbola TDE; diện tích cung hyperbola DET
+  - suggest: 'sector' bị dịch ít nhất ba cách và 'cung' nghĩa là arc. Thống nhất thành 'hình quạt (tròn/hyperbolic)'. Phát biểu dòng 98 'the sectors of the areas cut off' cũng thành 'diện tích quét', mất 'sector'.
+- **NHE / HINH**, dòng 8-10 (ảnh ../assets/book-ii-section-i-motion.svg)
+  - source: Prop XI-XIII dùng các điểm A,B,C,D,E,F,G,H,R,S,P,T,V,Q,d,e và tiệm cận CD, CH
+  - now: Nhãn <text> của SVG chỉ có: thời gian, vận tốc, A, O, B, đường quỹ tích. Chú thích in nghiêng: 'Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.'
+  - suggest: Hình rõ ràng không thuộc nội dung (thiếu C,D,E,F,G,H,R,S,P,T,V,Q,d,e; có nhãn O không được nhắc trong bài) và không có hình hyperbola/đường tròn cho Prop XI, XII, XIII. Chú thích hình là lời biên tập nằm ngoài blockquote (THEM). Cần hình đúng hoặc bỏ.
+- **NHE / THIEU**, Prop XII, dòng 58-60
+  - source: the lineola Dd, which is the decrement of GD ... directly as the sum of two quantities, one of which is given, the other is as the velocity
+  - now: đoạn vô cùng nhỏ làm giảm GD tỷ lệ nghịch với ED ... tổng thu được tỷ lệ trực tiếp với một đại lượng đã cho và vận tốc
+  - suggest: Mất nhãn Dd (phần giảm của GD) và kết luận bị mờ: phải là 'tỷ lệ với tổng của hai đại lượng, một cái đã cho, một cái tỷ lệ với vận tốc', không phải 'một đại lượng đã cho và vận tốc'. Cũng mất 'tỷ lệ nghịch với vận tốc'.
+- **NHE / THIEU**, Prop XIII, dòng 118 và 122 và 165
+  - source: (by Prop. XII Book II, Elem.), as DP^2; answering to a given moment of time; by subduction of given particles DTV; and therefore is proportional to the time
+  - now: Phần giảm PQ tỷ lệ với tổng ... tức là với DP^2.; Diện tích EDT giảm đều theo tốc độ của thời gian; Vì vậy diện tích EDT giảm đều theo thời gian.
+  - suggest: Mất viện dẫn Prop. XII Sách II (Elements, OCR 'XII BookII,Elem.'), cụm 'ứng với một moment thời gian cho trước', 'bằng cách trừ đi các phần tử DTV đã cho', và kết luận 'do đó tỷ lệ với thời gian' ở Trường hợp 2.
+- **NHE / THIEU**, Prop XI, XII, XIII (dòng 32, 62, 122, 165)
+  - source: Q.E.D. ở cuối mỗi chứng minh
+  - now: không có
+  - suggest: Mất các Q.E.D. (báo một mục chung).
+- **NHE / CHUGIAI**, Chú giải dòng 88-94
+  - source: Ngoài nguồn. Newton viết hình học, không nêu phép thay biến.
+  - now: 'cặp song ánh'; 'Ông không hỏi ... mà hỏi ...'; 'phương trình Riccati'; 'lực cản bậc cao hơn chỉ nổi lên khi ta viết theo quãng đường'; 'Ý tưởng cốt lõi vẫn là ý của Newton: hãy tìm đại lượng mà lực cản trở nên tầm thường'
+  - suggest: HỢP LÍ MỘT PHẦN: Gán cho Newton câu hỏi và ý định ông không viết; 'song ánh' dùng sai nghĩa (hai mệnh đề đối ngẫu, không phải ánh xạ); phép thay u = 1/v là phương trình Bernoulli, gọi 'thủ thuật chuẩn của Riccati' là không chính xác; ví dụ 'truyền nhiệt' và câu 'bậc cao hơn chỉ nổi lên...' không có cơ sở. Nên bỏ hoặc sửa lại.
+- **NHE / THIEU**, Prop XIII Case 3 dòng 193; Prop XIV, dòng 311, 341; Học luận
+  - source: Case 3: area DPQ is as BD2-BP2, the area DTV will be as the given quantity BD2 ... EDT increases uniformly ... by the addition of as many given particles DTV. Q.E.D. (Prop XIII, XIV).  Scholium: as I said; and their Corollaries.
+  - now: Do đó DTV tỷ lệ với lượng đã cho BD^2. Diện tích EDT tăng đều theo thời gian ... (không có Q.E.D.; Học luận không có "như tôi đã nói", "và các Hệ quả của chúng")
+  - suggest: Bổ sung vế vì DPQ tỷ lệ với BD^2-BP^2 và vế tăng đều do cộng thêm từng phần tử DTV bằng nhau; thiếu Q.E.D. ở cuối XIII và XIV; Học luận thiếu "as I said" và "và các Hệ quả của chúng" (Prop VIII, IX).
+- **NHE / KHAC**, Prop XIV, dòng 211 và 341, 285
+  - source: the area AbNK ... DET and AbNK ... the area DTV
+  - now: Diện tích A/AK (dòng 211); AKNK (dòng 341); DTY (dòng 285)
+  - suggest: Lỗi chép OCR: sửa A/AK và AKNK thành AbNK, DTY thành DTV. Cũng thiếu "hyperbola bN" ở dòng 211 và "(in these three figures)" ở dòng 203.
+- **NHE / THUATNGU**, Dòng 197 và dòng 345-351
+  - source: sector DAl; tenacity; attrition; vis insita; But I hasten to other things.
+  - now: diện tích cung DAl; độ dẻo; hao mòn; lực tiềm ẩn; Tôi hãy chuyển sang những vấn đề khác.
+  - suggest: sector nên dịch là hình quạt (không phải diện tích cung; ở nơi khác trong XIV dùng diện tích EDT); tenacity (độ quánh/độ dai của chất lỏng) bị dịch độ dẻo dễ lẫn với plasticity; attrition (cọ xát) dịch hao mòn là wear; vis insita nên thống nhất với thuật ngữ cả bộ; câu cuối nên là: Nhưng tôi vội sang những việc khác.
+- **NHE / CHUGIAI**, Chú giải dòng 353-363
+  - source: (Học luận Prop XIV) the resistance ... arises partly from tenacity, partly from attrition, partly from density; uniform resistance from tenacity may be substituted for gravity (Props. VIII, IX, XIII, XIV)
+  - now: Chú giải: Phép thay thế ấy trở nên đúng đắn nhờ một thủ thuật kính ... bình phương hoàn hảo ... Ông viết vậy vì cần giữ cùng một ngôn ngữ hình học ...
+  - suggest: HỢP LÍ MỘT PHẦN. Đoạn Stokes (lực cản nhớt ở tốc độ thấp tỷ lệ với vận tốc) đúng. Nhưng: (1) "kính" là lỗi gõ; (2) phép thay lực cản đều bằng trọng lực hợp lệ vì cả hai đều là lực không đổi (Newton nói thế trong nguồn), không phải nhờ hoàn thành bình phương AP^2+2BAP+AB^2 - đó là kỹ thuật của Prop XIII-XIV, chú giải trộn hai việc; (3) "ông viết vậy vì cần giữ cùng ngôn ngữ... không phải làm lại" gán động cơ cho Newton, nguồn không nói; (4) "bình phương hoàn hảo chính là dạng khiến diện tích cung tròn hay cung hyperbola xuất hiện" không chính xác (là BP^2 cộng hoặc trừ BD^2); (5) "lạ lùng", "sớm ... vẫn là trục của cơ học chất lỏng hiện đại" là khẳng định lịch sử không nguồn; (6) "Học luận cuối cùng" mơ hồ.
+
+## 47-sach-ii-phan-iv-lemma-iii-proposition-xv-xviii.md
+
+- *phần 1/2: Chương 47, phần 1/2 (dòng 1-141): Lemma III, Proposition XV (Định lý XII) và Hệ quả 1, đầu Hệ quả 2; hình dòng 8; chú giải dòng 54-70*
+- *phần 2/2: Chương 47, phần 2/2 (dòng 142-282): Prop. XV Cor.2-9 (phần cuối), Prop. XVI + Cor.1-3 + Scholium, Prop. XVII, Prop. XVIII; không có ảnh trong phần này; chú giải dòng 154-164*
+
+- **NANG / SAINGHIA**, Prop XV, dòng 88-98
+  - source: the time is as PQ X sqrt(SP); and the velocity ... as PQ/(PQ sqrt(SP)) or 1/sqrt(SP), that is, in the subduplicate ratio of SP reciprocally
+  - now: thời gian tỷ lệ với PQ/√SP, và vận tốc tỷ lệ với √PQ/√SP
+  - suggest: Sửa: thời gian tỷ lệ với PQ·√SP; vận tốc tỷ lệ với 1/√SP (căn bậc hai của SP, nghịch). Bản dịch đảo √SP xuống mẫu và đưa √PQ vào vận tốc.
+- **NANG / SOLIEU**, Prop XV, dòng 106
+  - source: the arc PQ will be to the arc Rr as SQ to SP - sqrt(SP X SQ), or 1/2 VQ; ... ultimate ratio of SP - sqrt(SP X SQ) to 1/2 VQ is the ratio of equality
+  - now: cung PQ tỷ lệ với Rr như SQ:VPQ. ... tỷ lệ cuối cùng của SP·SQ với VQ bằng một
+  - suggest: Sửa: PQ:Rr = SQ : (SP - √(SP·SQ)), tức SQ : ½VQ; khi P, Q trùng nhau, tỷ lệ cuối cùng của SP - √(SP·SQ) với ½VQ là tỷ lệ bằng nhau. Bản dịch có "VPQ" vô nghĩa và tỷ số cuối sai.
+- **NANG / SOLIEU**, Prop XV, dòng 108-126
+  - source: resistance ... OS/(OP X SP^2) [OCR hỏng nhưng ra OS ở tử]; density ... as OS/(OP X SP)
+  - now: lực cản tỷ lệ với SP²/OP; Do đó 1/OS tỷ lệ với lực cản
+  - suggest: Theo nguồn, lực cản tỷ lệ với OS/(OP·SP²) (OS ở tử, SP² ở mẫu); bản dịch viết SP²/OP và 1/OS, sai thứ nguyên và sai vị trí OS. Cần sửa lại cả hai biểu thức.
+- **NANG / SOLIEU**, Prop XV, dòng 85
+  - source: (by the last Lemma), [1/2]PQ^2 X SP, will be in a duplicate ratio of the time (OCR đọc "fPQ2 X SP")
+  - now: Theo Lemma trước, TQ·SP² = PQ²·SP
+  - suggest: Từ Lemma (TQ·2PS = PQ²) suy ra TQ·SP² = ½PQ²·SP; bản dịch bỏ hệ số ½ và ghi dấu bằng sai. Nguồn OCR đọc ra "fPQ2", nhiều khả năng là ½PQ².
+- **NANG / SAINGHIA**, Prop XV, dòng 76
+  - source: describe the least arc PQ, and in double the time the least arc PR
+  - now: cho vật thể ... mô tả cung nhỏ nhất PO
+  - suggest: Sửa PO thành PQ (O là điểm khác, giao của hai đường vuông góc).
+- **NANG / THIEU**, Prop XV, dòng 106-128
+  - source: SP - sqrt(SP X SQ), or 1/2 VQ ... SP and SQ coincide also, and the angle PVQ becomes a right one ... Let the spiral be given ... density ... as 1/SP
+  - now: Khi P và Q trùng nhau, ... Trừ tỷ lệ bình phương vận tốc, ta thu được mật độ ... tỷ lệ nghịch với SP
+  - suggest: Thiếu: SP - √(SP·SQ) = ½VQ; SP, SQ cũng trùng nhau và góc PVQ thành góc vuông (để tam giác PVQ, PSO đồng dạng); mật độ tại P tỷ lệ OS/(OP·SP) và với spiral đã cho (OS:OP không đổi) tỷ lệ 1/SP; "Q.E.D." cuối Prop. Cần dịch đủ các bước này.
+- **NANG / HINH**, Hình dòng 8 (book-ii-section-i-motion.svg)
+  - source: Lemma III và Prop XV nhắc P,Q,R,S,T,O,V,D,E (nguồn có hình spiral)
+  - now: SVG chỉ có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình là biểu đồ vận tốc-thời gian/hyperbola của Phần I, không thuộc Phần IV; thiếu P,Q,R,S,T,V,D,E. Cần thay bằng hình spiral đúng (Lemma III/Prop XV).
+- **NANG / CHUGIAI**, Chú giải Lemma III, dòng 54-70
+  - source: (Newton chỉ chứng minh quan hệ PO^2 = TO X 2PS; không nói động cơ hay ứng dụng)
+  - now: Ông viết vậy vì góc ... không đo trực tiếp được, còn độ dài thì đo được; Mọi Proposition sau ... đều dùng lại; ống tai trong ... phân biệt tần số
+  - suggest: KHÔNG HỢP LÍ: gán động cơ cho Newton; "mọi Proposition sau đều dùng" chưa kiểm chứng; "tự trùng lặp dưới phép co giãn" thực ra là phép đồng dạng xoắn (co giãn kèm quay) và "duy nhất" quá mạnh; "ống tai trong" nên là ốc tai, claim sinh học không nguồn. Phần toán dòng 60-66 HỢP LÍ. Đề xuất bỏ đoạn dòng 68 (một phần) và 70.
+- **NANG / SOLIEU**, Prop. XVI, dòng 232-244
+  - source: the time in which the body describes any arc PQ will be as PQ x PS^(n/2) (OCR hỏng nhưng có dấu x); the velocity is reciprocally as SP^(n/2)
+  - now: thời gian mô tả cung PQ tỷ lệ với PQ/SP^{n/2}; vận tốc tỷ lệ nghịch với SP^{1/2}
+  - suggest: Thời gian là PQ nhân SP^{n/2} (vận tốc nghịch với SP^{n/2} nên thời gian thuận). Sửa thành PQ·SP^{n/2} và vận tốc nghịch với SP^{n/2}, không phải SP^{1/2}.
+- **NANG / SOLIEU**, Prop. XVI, dòng 238-244
+  - source: the resistance ... as (1 - n/2) x OS / (OP x SP^(n+1)); that is (because (1 - n/2) x OS/OP is a given quantity) reciprocally as SP^(n+1)
+  - now: lực cản tỷ lệ với (1/SP^n) PQ^2 SP^2 SQ^2. Khi các điểm trùng nhau, tỷ lệ này trở thành nghịch với SP^{n+1}
+  - suggest: Công thức bị thay bằng biểu thức không có trong nguồn, và mất mệnh đề 'vì (1-n/2)·OS/OP là đại lượng đã cho'. Dịch lại theo nguồn (OCR hỏng chỗ công thức, nhưng câu 'because ... is a given quantity' đọc được).
+- **NANG / SOLIEU**, Prop. XVI Hệ quả 1-2, dòng 248-258
+  - source: COR.1 The resistance is to the centripetal force as 1 - n/2 x OS to OP. COR.2 ... 1 - n/2 will be = 0
+  - now: Lực cản tỷ lệ với lực hướng tâm như OS/OP nhân với hệ số phụ thuộc n. (Hệ quả 2 không nêu 1-n/2 = 0)
+  - suggest: Viết rõ tỉ số (1 - n/2)·OS : OP ở Hệ quả 1 (OCR đọc '1 - ^//. X OS to OP'); Hệ quả 2 thêm 'khi đó 1 - n/2 = 0'.
+- **NANG / SAINGHIA**, Prop. XV Hệ quả 7, dòng 200-204
+  - source: the times ... as the perimeters directly, and the velocities at the beginnings A, B, C inversely; that is as AS^(3/2), BS^(3/2), CS^(3/2)
+  - now: Vì vậy thời gian tỷ lệ nghịch với AS^3, BS^3, CS^3,...
+  - suggest: Sai: OCR đọc số mũ 3/2 và 'as', không có 'nghịch'. Sửa: thời gian tỷ lệ với AS^{3/2}, BS^{3/2}, CS^{3/2}.
+- **NANG / THIEU**, Prop. XV Hệ quả 7, dòng 206-212
+  - source: whole time ... will be to the time of the first revolution as the sum of all the continued proportionals AS^(3/2), BS^(3/2)... to the first term AS^(3/2); that is, as the first term to the difference of the two first AS^(3/2)-BS^(3/2), or as 'f' AS to AB very nearly. Whence the whole time may be easily found
+  - now: Toàn bộ thời gian để vật thể đến tâm tỷ lệ với tổng các lũy thừa liên tiếp, xấp xỉ bằng AS/AB gần đúng.
+  - suggest: Mất tỉ số với thời gian vòng đầu, mất 'số hạng đầu so với hiệu hai số hạng đầu', mất hệ số (OCR đọc 'f AS to AB', có vẻ là 2/3, không chắc) và câu 'Whence the whole time may be easily found'. Dịch đủ.
+- **NANG / SAINGHIA**, Prop. XV Hệ quả 7, dòng 188
+  - source: velocity ... reciprocally in a subduplicate ratio of the distances from the centre (that is, as AS to a mean proportional between AS and BS)
+  - now: vận tốc ở B tỷ lệ nghịch với vận tốc ở A theo căn bậc hai của khoảng cách từ tâm
+  - suggest: Câu lủng củng và thiếu ngoặc đơn giải thích 'tức là như AS so với trung bình nhân của AS và BS'. Dịch: vận tốc ở B so với vận tốc ban đầu ở A theo tỉ số nghịch căn của khoảng cách, tức như AS : trung bình nhân của AS, BS.
+- **NANG / SOLIEU**, Prop. XV Hệ quả 3, dòng 146
+  - source: The force of the resistance in any place P is to the centripetal force as 1/2 OS to OP. For those forces are to each other as 1/2 Rr and TQ ... that is, as 1/2 VQ and PQ, or 1/2 OS and OP
+  - now: Lực cản tại P tỷ lệ với lực hướng tâm tại P như OS:OP. Khi biết spiral, ta biết tỷ lệ ...
+  - suggest: Mất hệ số 1/2 (OCR '|OS', cũng phù hợp Hệ quả 4: bằng một nửa khi OS=OP) và mất cả câu chứng 'For those forces are to each other as 1/2 Rr and TQ ...'. Sửa thành 1/2·OS : OP và dịch câu chứng.
+- **NANG / SAINGHIA**, Prop. XV Hệ quả 6 và 8, dòng 172-184, 216
+  - source: the number of revolutions ... will be as PS/OS, or as the tangent of the angle ... (Cor.8) as the tangents of those angles
+  - now: số vòng quay ... tỷ lệ với PS/OS hoặc với cotang của góc spiral; ... tỷ lệ với cotang của góc
+  - suggest: Nguồn OCR viết 'tangent' (tiếp tuyến), bản dịch đổi thành 'cotang' ở cả hai nơi (và chú giải dòng 160 dựa theo). Sửa thành 'tang'. Nếu muốn giữ cotang phải có căn cứ trong nguồn, nguồn không có.
+- **NANG / THIEU**, Prop. XV Hệ quả 8, dòng 216
+  - source: If this be done everywhere between every two circles, the motion will be continued through all the circles. And by this means one may without difficulty conceive at what rate and in what time bodies ought to revolve in any regular medium.
+  - now: (dòng 216 kết thúc ở 'còn số vòng quay gần đúng tỷ lệ với cotang của góc')
+  - suggest: Mất hai câu cuối của Hệ quả 8. Ngoài ra câu về thời gian ('tỷ lệ với mật độ trung bình của môi trường đề xuất và mật độ môi trường đã xét') thiếu chiều tỉ số: nguồn là thời gian ở môi trường đã xét so với môi trường đề xuất như mật độ trung bình môi trường đề xuất so với môi trường đã xét. Thêm câu và sửa tỉ số.
+- **NANG / SOLIEU**, Prop. XV Hệ quả 2, dòng 136-142
+  - source: density ... is as OS/OP, but if that distance is not given, as OS/(OP x SP) (OCR hỏng 'OS OS / TTp ... ^ ^5')
+  - now: tỷ lệ với OS/OP hoặc với 1/OP khi khoảng cách chưa xác định
+  - suggest: Vế thứ hai OCR đọc hai chữ OS, mật độ nghịch với SP (Prop. XV) nên vế đúng là OS/(OP·SP) theo thứ nguyên; '1/OP' mất OS và SP. Sửa: OS/(OP·SP).
+- **NHE / THIEU**, Prop XV, dòng 82
+  - source: (by Lem. X, Book I) the lineola TQ ... is in a ratio compounded of the ratio of this force and the duplicate ratio of the time in which the arc PQ is described
+  - now: TQ tỷ lệ với lực hướng tâm và bình phương thời gian.
+  - suggest: Thiếu viện dẫn Lemma X, Sách I và "tỷ số ghép" và thời gian mô tả cung PQ; cũng thiếu "SQ to sqrt(SP X SQ)" (dòng 100). Bổ sung.
+- **NHE / THIEU**, Lemma III, dòng 28-51
+  - source: angle OSP, being in a semi-circle, becomes a right one. Q.E.D. ... TS or PS to PE ... ex aequo perturbato ... Q.E.D.
+  - now: Do đó OP là đường kính ... TO:PD=TS:PE=2PO:2PS ... Suy ra TO:PO=PO:2PS
+  - suggest: Thiếu "Q.E.D." (hai chỗ trong Lemma và cuối Prop XV, báo một mục chung), "or PS" sau TS, "ex aequo perturbato", "góc nội tiếp nửa đường tròn". Bổ sung.
+- **NHE / THEM**, Dòng 10 (chú thích hình)
+  - source: (nguồn không có)
+  - now: *Hình 35. Sơ đồ được dùng lại từ Phần I; cần đối chiếu với các hình bản gốc.*
+  - suggest: Lời biên tập nằm ngoài blockquote, đánh số "Hình 35" không có trong nguồn. Chuyển vào blockquote Chú giải hoặc bỏ.
+- **NHE / THIEU**, Prop. XV Hệ quả 4, dòng 150
+  - source: with a velocity that is to the velocity, with which ... the descent would be made in a non-resisting medium, in the subduplicate ratio of unity to the number two
+  - now: vận tốc tỷ lệ với vận tốc rơi trong trường hợp parabol ... theo căn bậc hai nghịch của tỷ lệ một với hai
+  - suggest: Mất 'trong môi trường không cản'; 'căn bậc hai nghịch' là thêm 'nghịch' so với 'subduplicate ratio of unity to two' (tỉ số căn của 1 so với 2). Sửa: 'theo tỉ số căn bậc hai của một so với hai'.
+- **NHE / CHUGIAI**, Chú giải dòng 154-164
+  - source: Cor.4: cannot revolve in this spiral, except where the force of resistance is less than half the centripetal force
+  - now: Ông muốn biết chính xác chỗ nào mô hình của ông ngừng có ý nghĩa ... đó là lý do Newton viết kết quả bằng điều kiện
+  - suggest: HỢP LÍ MỘT PHẦN. Ngưỡng một nửa đúng theo Hệ quả 4. Nhưng gán ý định cho Newton (muốn biết chỗ mô hình ngừng có nghĩa; lý do viết bằng điều kiện) là không có căn cứ; 'góc ... chính là cotang của góc ấy' tự mâu thuẫn và theo nguồn là tang; 'số mũ bằng ba ... Hệ quả 3 Prop. XVI' lẫn Hệ quả 2 (bằng 3 thì lực cản 0) và Hệ quả 3 (lớn hơn 3). Bỏ câu gán ý định và sửa các chỗ trên.
+
+## 48-sach-ii-phan-v-mat-do-va-nen-chat-long-thuy-tinh.md
+
+- *phần 1/2: Chương 48, phần 1/2 (dòng 1-131): định nghĩa chất lỏng, Prop XIX (Trường hợp 1-7, Hệ quả), Prop XX (Hệ quả 1-6) và hai Chú giải; đối chiếu OCR dòng 15513-15725*
+- *phần 2/2: Chuong 48, phan 2/2 (dong 132-228): Hê quả 7-9 của Prop XX, Prop XXI (+Hê quả), Prop XXII (+Hê quả, Học luận), Prop XXIII (+Học luận); không có hình, không có chú giải*
+
+- **NANG / THIEU**, Prop XX, Hệ quả 6, dòng 112
+  - source: Thus, in water, bodies which, by their greater or less gravity, descend or ascend, are comparatively and apparently heavy or light ... For these cases are alike demonstrated.
+  - now: (không có)
+  - suggest: Mất hai câu cuối Hệ quả 6: vật chìm/nổi trong nước là nặng/nhẹ tương đối, hiệu số trọng lượng thật; vật không chìm không nổi thì tương đối không nặng trong nước. Cũng mất "by yielding to the preponderating air, mount upwards" và "not truly so". Cần dịch bổ sung.
+- **NANG / SAINGHIA**, Prop XX, Hệ quả 6, dòng 110-112
+  - source: By the first kind of gravity the parts of all fluids and bodies gravitate in their proper places; ... the whole is heavy, as may be experienced in vessels full of liquor ... By the other kind ... do not gravitate in their places
+  - now: Loại tuyệt đối giữ các phần chất lỏng và vật thể ở đúng vị trí của chúng. Loại tương đối ngăn ... chúng chặn nhau trong sự cố xuống
+  - suggest: Sai nghĩa và thiếu câu: loại thứ nhất là các phần nặng ngay tại chỗ nên trọng lượng của chúng hợp thành trọng lượng của cả khối (có câu về bình đầy chất lỏng); loại thứ hai là chúng không nặng tại chỗ, cản nhau cố xuống, như thể không nặng. "sự cố xuống" nên là "cố gắng đi xuống". Thiếu "apparent" (biểu kiến) ở dòng 110.
+- **NANG / SOLIEU**, Prop XX, lời chứng minh, dòng 80
+  - source: The second superficies BFK is pressed likewise by the force of its own gravity ... makes the pressure double. The third superficies CGL ... triple ... fourth ... quadruple, the fifth ... quintuple
+  - now: Mặt thứ hai BFK chịu lực ấy theo Proposition XIX, nên mặt thứ ba CGL chịu áp lực gấp đôi, mặt thứ tư chịu áp lực gấp ba
+  - suggest: Lệch bậc: nguồn là mặt thứ hai gấp đôi, thứ ba gấp ba, thứ tư gấp bốn, thứ năm gấp năm (và BFK cũng chịu trọng lực riêng cộng vào). Bản dịch dịch thành mặt thứ ba gấp đôi, thứ tư gấp ba, bỏ "tứ, ngũ". Sửa lại và thêm cả "mọi phần của lớp trên".
+- **NANG / THIEU**, Prop XX, dòng 78
+  - source: distinguished into concentric orbs of equal thickness, by the innumerable spherical superficies BPK, CGL
+  - now: Chia chất lỏng thành các quả cầu đồng tâm bằng những mặt cầu vô số BPK, CGL
+  - suggest: Thiếu "of equal thickness" (bề dày bằng nhau), điều kiện then chốt để áp lực tỉ lệ với số lớp. "orb" là lớp cầu/vỏ cầu, không phải "quả cầu"; thêm "bề dày bằng nhau".
+- **NANG / THUATNGU**, Prop XX, dòng 82
+  - source: not as the solid quantity of the incumbent fluid, but as the number of the orbs ... equal to the gravity of a solid whose ultimate ratio to the cylinder ... (... so that the action of gravity ... may become continued)
+  - now: không tỷ lệ với khối lượng toàn bộ chất lỏng ... tỷ lệ giữa lực ấy và hình trụ xác định trở thành tỷ lệ bằng nhau
+  - suggest: "solid quantity" (đại lượng khối, thể tích) bị dịch thành "khối lượng" và "incumbent" (chất lỏng phía trên) thành "toàn bộ". Thiếu "tức là bằng trọng lượng của một vật rắn mà tỉ số tới hạn của nó với hình trụ ..." và ngoặc "để tác dụng của trọng lực từ mặt đáy đến mặt trên trở nên liên tục". Cũng "rare" dịch "nhạt hơn" (dòng 84) nên là "loãng hơn".
+- **NANG / THIEU**, Prop XIX, Trường hợp 7, dòng 56
+  - source: And because the fluid, as soon as it endeavours to recede from the part that is most pressed, is withstood by the resistance of the vessel on the opposite side, the pressure will on every side be reduced to equality
+  - now: Khi chất lỏng nhường, nó ép phía đối diện, nên áp lực có xu hướng trở về bằng nhau ở mọi phía. Vì vậy áp lực trở lại bằng nhau trong một khoảnh khắc
+  - suggest: Mất mệnh đề: ngay khi chất lỏng cố lùi khỏi phía bị ép nhất thì bị sức cản của thành bình phía đối diện chặn lại, nên áp lực quy về bằng nhau mọi phía trong một khoảnh khắc. "Vì vậy" bị thêm.
+- **NANG / THIEU**, Prop XIX, Trường hợp 3, dòng 40
+  - source: any two spherical parts not contiguous [OCR: "lot"], since an intermediate spherical part can touch both, will be pressed with the same force
+  - now: Vì vậy hai phần cầu bất kỳ, có thể tiếp giáp qua một phần cầu trung gian, chịu cùng áp lực
+  - suggest: Mất "không tiếp giáp" (OCR đọc "lot", nhiều khả năng là "not"; không xác định chắc từ OCR). Đề xuất: hai phần cầu bất kỳ không tiếp giáp nhau, vì một phần cầu trung gian có thể chạm cả hai, cũng chịu cùng lực. Ngoài ra "press each other mutually and equally" mất "bằng nhau" ở dòng đầu.
+- **NANG / THIEU**, Hệ quả 2, 3, 4, 5 của Prop XX, dòng 92-106
+  - source: Cor 2: ... rises perpendicularly in a rectilinear direction, or creeps obliquely ... That the pressure is not altered by any of these circumstances, may be collected by applying the demonstration ... Cor 4: For any internal part of a fluid is in the same state with the submersed body ... because its gravity and the other causes of its motion remain. Cor 5: ... a body, otherwise in equilibrio with the parts of the fluid, is acted on
+  - now: (Hệ quả 2) dù chất lỏng đi lên theo đường thẳng hay trườn trong các khoang cong ... (Hệ quả 4) Vì vậy ngay cả khi còn nguyên
+  - suggest: Hệ quả 2 thiếu câu cuối (áp lực không đổi, suy ra bằng cách áp dụng chứng minh cho từng trường hợp) và "thẳng đứng/xiên". Hệ quả 3 thiếu "từ cùng chứng minh" và viện dẫn Prop. XIX. Hệ quả 4 thiếu câu "mọi phần bên trong chất lỏng cùng trạng thái với vật nhúng; vật cùng cỡ, hình, trọng lượng riêng thì như nhau" và mệnh đề "vì trọng lực và các nguyên nhân chuyển động khác còn nguyên"; viện dẫn "Trường hợp 5" bị bỏ. Hệ quả 5 thiếu "vật vốn cân bằng với các phần chất lỏng".
+- **NANG / CHUGIAI**, Chú giải Hệ quả 6, dòng 114-130
+  - source: (Cor 5 chỉ nói vật nặng hơn thì chìm, nhẹ hơn thì nổi; không nêu lực nâng bằng trọng lượng chất lỏng bị chiếm chỗ)
+  - now: chịu lực nâng ρ_f V g theo Hệ quả 5 ... cũng chính định luật Archimedes mà Hệ quả 5 vừa phát biểu ... lực cản không khí chỉ tác động lên trọng lực tương đối
+  - suggest: KHÔNG HỢP LÍ (phần lớn): gán cho Hệ quả 5 công thức/định luật Archimedes mà nó không phát biểu; câu cuối sai vật lí (lực cản không khí phụ thuộc vận tốc, không "tác động lên trọng lực tương đối"; sỏi và lông rơi khác nhau do lực đẩy Archimedes cộng lực cản). Công thức N=(ρ-ρ_f)Vg đúng. Câu "Ông viết bằng hình học ... ở đây cũng không cần" và "chỉ cái phần dư mới so sánh được mới quyết định" khó hiểu. Bản chú giải lặp lại cách hiểu sai "loại tuyệt đối giữ các phần ở đúng vị trí". Nên viết lại.
+- **NANG / THIEU**, Prop XXI, dòng 172-174
+  - source: Proceed intermissively, and, ex aequo, at the distances SA, SC, SE, continually proportional, the densities AH, CK, EM will be continually proportional... SA, SD, SG... AH, DL, GO
+  - now: Chỉ có: "Cho các điểm A, B, C trùng dần, ta thu được kết luận ở mọi cấp số liên tiếp." (mất đoạn bỏ cách một / ex aequo cho SA,SC,SE và SA,SD,SG; cũng mất dạng AH/AB, BI/BC, CK/CD ở dòng 148)
+  - suggest: Dịch đủ đoạn "Tiến hành cách quãng và theo ex aequo..." với các bộ SA,SC,SE và SA,SD,SG rồi mới cho các điểm trùng nhau; thêm "hay như nhau AH/AB, BI/BC, CK/CD" ở dòng 148
+- **NANG / THIEU**, Hệ quả của Prop XXI, dòng 178
+  - source: describe an hyperbola cutting the perpendiculars AH, EM, QT in a, e, q... Make the area YmhZ to the given area YmaX as EeqQ to EeaA; and the line Zt produced will cut off QT
+  - now: Dựng hyperbola với các tiệm cận SQ, SX... Dùng tỷ lệ các diện tích hyperbola đã cho để cắt đoạn QT tỷ lệ với mật độ.
+  - suggest: Dịch đủ cách dựng (tiệm cận vuông góc, các đường HX, MY, TZ hạ xuống SX, tỉ lệ diện tích) và phần chứng minh rằng SA,SE,SQ liên tiếp tỷ lệ thì các diện tích bằng nhau; nếu thứ tự khác thì AH,EM,QT có cùng thứ tự trong dãy khác
+- **NANG / SAINGHIA**, Prop XXI dòng 154 và Prop XXII dòng 190
+  - source: Suppose, first, these gravities to be uniformly continued from A to B, from B to C... the decrements in the points B, C, D being taken by steps
+  - now: Giả sử khối lượng riêng thay đổi đều từ A đến B, từ B đến C, v.v.
+  - suggest: "uniformly continued" là giữ đều (không đổi) trên mỗi đoạn, giảm theo bậc nhảy tại B, C, D; sửa thành "giữ không đổi trên mỗi đoạn AB, BC, CD... và chỉ giảm theo bậc ở B, C, D"
+- **NANG / SAINGHIA**, Prop XXII dòng 192
+  - source: With the centre S, and the asymptotes SA, Sv, describe any hyperbola, cutting the perpendiculars AH, BI, CK in a, b, c
+  - now: Dựng hyperbola với các tiệm cận SA, SB.
+  - suggest: Tiệm cận phải là SA và một đường thứ hai (OCR đọc "Sv", sau đó "asymptote Sv"); SB nằm trên chính SA nên không thể là tiệm cận thứ hai; sửa và nói rõ hyperbola cắt AH,BI,CK ở a,b,c
+- **NANG / THIEU**, Prop XXII dòng 190-194
+  - source: the exponents of the pressures. Therefore since the densities are as the sums of those pressures... by the nature of the hyperbola, SA is to AH or St as th to Ar... Take any distances SA, SD, SF in harmonic progression, and the differences Aa-Dd, Dd-Ff will be equal
+  - now: Mất AH/SA, BI/SB, CK/SC làm "số mũ áp lực" (exponents); mất tính chất hyperbola (SA:AH = th:Ar); mất bước tổng hiệu Aa-Ff; mất bước cấp số điều hòa cho hiệu Aa-Dd = Dd-Ff
+  - suggest: Dịch đủ chuỗi lập luận từ hiệu mật độ -> hình chữ nhật tp,uq -> Aa,Bb -> diện tích hyperbola zthn -> cấp số điều hòa cho các hiệu bằng nhau; Hệ quả (dòng 198) cũng mất tỉ lệ diện tích thnz : thiu = Aa-Ff : Aa-Bb
+- **NANG / THIEU**, Học luận Prop XXII, dòng 202-206
+  - source: if the gravity be diminished in a quadruplicate ratio of the distances, and the reciprocals of the cubes... If the gravity be as the distance, and the squares of the distances be in arithmetical progression...
+  - now: "Điều tương tự xảy ra với các lũy thừa khác." (mất trường hợp tỷ số bốn lần/nghịch đảo lập phương, trường hợp trọng lực tỷ lệ khoảng cách + bình phương khoảng cách, đoạn "density as the force of compression; or space reciprocally as this force"; hai quy luật nén: lực nén^3 ~ mật độ^5 cho mật độ tỷ lệ nghịch tỷ số sesquiplicate; lực nén ~ mật độ^2 cho mật độ tỷ lệ nghịch khoảng cách; "tedious")
+  - suggest: Dịch đủ các trường hợp đã mất; "Khi đó, thí nghiệm..." (dòng 206) đang nối sai với đoạn trước, nguồn viết "But as to our own air, this is certain from experiment... accurately, or very nearly at least"
+- **NANG / THIEU**, Prop XXIII, chiều ngược, dòng 218
+  - source: the pressures of the sides DB, db as the sums of the forces; and the pressure of the square DP to the pressure of the side DB as ab2 to AB2. And, ex aequo, the pressure of DP to the pressure of db as ab3 to AB3
+  - now: Ngược lại... tổng các lực sẽ giữ cùng tỷ lệ ấy. Vì thế chất lỏng có tính chất đàn hồi như đã nêu.
+  - suggest: Mất toàn bộ chuỗi tỉ lệ dẫn tới lực nén tỷ lệ với mật độ (ab^3:AB^3); dịch đủ các bước
+- **NANG / THIEU**, Prop XXIII, chiều thuận, dòng 216
+  - source: therefore the centrifugal forces by which these pressures are sustained are in the same ratio. The number of the particles being equal... the forces which all the particles exert upon all, are as the forces which each exerts on each
+  - now: Hai phần ép nhau bằng các lực tỷ lệ với ab:AB. Vì số hạt thể bằng nhau... lực mà mỗi hạt thể tác dụng lên các hạt khác tỷ lệ nghịch với khoảng cách
+  - suggest: Mất mệnh đề lực ly tâm chịu các áp lực ấy cùng tỉ lệ, và bước tổng lực của tất cả hạt tỷ lệ với lực của mỗi hạt lên mỗi hạt; dịch đủ
+- **NANG / THIEU**, Học luận Prop XXIII, dòng 228
+  - source: If the virtue of any particle diffuse itself every way in infinitum, there will be required a greater force to produce an equal condensation of a greater quantity of the fluid.
+  - now: (không có)
+  - suggest: Thêm câu: nếu tác dụng của hạt lan ra mọi phía đến vô hạn thì cần lực lớn hơn để nén một lượng chất lỏng lớn hơn đến cùng độ đặc; ngoài ra mất "and the contrary" ở công thức E^(n+2) (dòng 224) và loại lũy thừa 5, 6 (quadrato-cube, cubo-cube) bị nói chung chung ở dòng 222
+- **NHE / HINH**, dòng 8-10
+  - source: (Hình thủy tĩnh Prop XIX/XX: ABC, D, EF, GHI, OHM, AEI, BPK/BFK, CGL)
+  - now: ![...](../assets/book-ii-section-i-motion.svg) kèm chú thích in nghiêng "Hình 36. Sơ đồ được dùng lại từ Phần I; ..."
+  - suggest: SVG chỉ có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích. Không có nhãn nào trong lời chứng minh (ABC, D, EF, GHI, OHM, AEI, BPK, BFK, CGL). Hình rõ ràng không thuộc nội dung đoạn này. Chú thích in nghiêng là lời biên tập ngoài blockquote (THEM). Cần hình thủy tĩnh đúng. Ngoài ra bản dịch dùng BPK (dòng 78) rồi BFK (dòng 80) mà OCR nguồn cũng vậy; một nhãn sai theo nguồn, không xác định được từ OCR.
+- **NHE / CHUGIAI**, Chú giải Định nghĩa chất lỏng/Trường hợp 7, dòng 58-68
+  - source: Case 7: in a rigid vessel a fluid will not sustain a stronger pressure on one side than on the other, but will give way to it ... in a moment of time
+  - now: Ông định nghĩa chất lỏng bằng hành vi nhường ... nên ông phải chứng minh ... Bằng cách đó ông tách bạch trạng thái tĩnh khỏi quá trình chảy
+  - suggest: HỢP LÍ MỘT PHẦN: ứng suất đẳng hướng σij=-pδij cho chất lỏng đứng yên là đúng, nhưng "mô đun cắt bằng không là định nghĩa trạng thái lỏng" quá mạnh (chất lỏng nhớt vẫn chịu ứng suất cắt khi chảy). Gán ý đồ cho Newton ("nên ông phải chứng minh", "ông tách bạch") không có căn cứ. "hệ quả đắn đỏ" là lỗi gõ; bỏ vai trò thành bình cứng trong lập luận; "Lập luận là phản chứng" không đúng với Trường hợp 7.
+- **NHE / KHAC**, toàn phần, dòng 16-112
+  - source: Q.E.D. (cuối các Trường hợp 1-5, 7, Prop XX); [Case 1] the same part cannot be moved contrary ways
+  - now: (không có Q.E.D.); "đều đặc" (dòng 92), "hành xộng" (dòng 102), "sự đọng lại" cho condensation
+  - suggest: Thiếu "Q.E.D." (báo một mục). Lỗi gõ: "đều đặc" -> "đều đặn", "hành xộng" -> "hành động". "condensation" dịch "sự đọng lại" (dòng 28, 96) gây hiểu nhầm, nên là "sự nén đặc/đặc lại". Dòng 76: "mặt bằng của đáy vật thể" cho "superficies of the bottom" nên là "diện tích mặt đáy".
+- **NHE / THIEU**, Hệ quả 8-9 của Prop XX, dòng 138-142
+  - source: (by Cor. Prop. XIX) they will not change the situation of their internal parts... All the parts of the system will be agitated with the same motions as if placed in a vacuum, and would only retain their comparative gravity
+  - now: Mất viện dẫn (by Cor. Prop. XIX), mất "and would only retain their comparative gravity"; Hệ quả 8 mất "which, in the foregoing Propositions, I have considered"
+  - suggest: Thêm viện dẫn Hệ quả Prop XIX và "chỉ giữ lại trọng lượng tương đối của chúng"
+- **NHE / THUATNGU**, Prop XXI-XXII, dòng 148, 184; Prop XXIII dòng 216
+  - source: specific gravities in those places will be as AH/SA... ; particles
+  - now: "Khối lượng riêng" dịch "specific gravities" (đồng thời "density" là "mật độ"); "hạt thể" xen với "hạt" cho cùng một "particles"
+  - suggest: Dùng "trọng lượng riêng" cho specific gravity và thống nhất "hạt"
+- **NHE / KHAC**, Cả phần, ba Proposition XXI, XXII, XXIII
+  - source: Q.E.D. (cuối XXI, XXII và hai lần trong XXIII)
+  - now: Không có "Q.E.D." ở các chứng minh
+  - suggest: Thêm "Q.E.D." theo nguồn
+
+## 49-sach-ii-phan-vi-proposition-xxiv-xxxi.md
+
+- *phần 1/4: Chương 49, phần 1/4 (dòng 1-149): Sách II Phần VI, Proposition XXIV, XXV (và Hệ quả), XXVI, XXVII (Hệ quả 1-2), XXVIII, XXIX (đến công thức kết luận); đối chiếu ia.txt dòng 16113-16391; Chú *
+- *phần 2/4: Chương 49, phần 2/4 (dòng 150-299): Proposition XXIX (đoạn chứng minh, Hệ quả 1-3), Proposition XXX (phát biểu và phần đầu chứng minh đến MN/Dd = DK/CM). Không có hình và không có chú giải t*
+- *phần 3/4: Chương 49, phần 3/4 (dòng 300-444): cuối chứng minh Prop. XXX, Hệ quả Prop. XXX, Prop. XXXI + Hệ quả 1-5, Nhận xét chung (đến phương trình 1/121=A+B+C). Không có ảnh và không có Chú giải tro*
+- *phần 4/4: Chương 49, phần 4/4 (dòng 445-593): cuối Nhận xét chung (General Scholium) Sách II Phần VI - tính A,B,C từ thí nghiệm con lắc trong không khí, thí nghiệm trong nước, thủy ngân, hộp gỗ nhồi c*
+
+- **NANG / SAINGHIA**, Prop XXVII, dòng 112
+  - source: the resistance AA in the arc A, or AB in the arc B, causes the excess of the time in the arc A above the time in a non-resisting medium; and the resistance BB causes the excess of the time in the arc B above...
+  - now: lực cản AA trên cung A, hoặc BB trên cung B, gây ra phần thời gian mà thời gian trên cung vượt quá thời gian trong môi trường không có lực cản.
+  - suggest: OCR đọc "AB in the arc B" (không phải BB). Sửa thành "hoặc AB trên cung B" và dịch thêm mệnh đề bị mất: "và lực cản BB gây ra phần thời gian mà thời gian trên cung B vượt quá thời gian trong môi trường không có lực cản".
+- **NANG / SOLIEU**, Prop XXIX, dòng 145-148
+  - source: the resistance in any place D will be to the force of gravity as the area (OR/OQ) IEF - IGH to the area PINM (OCR: OR trên OQ nhân IEF, trừ IGH)
+  - now: \frac{IEF-IGH}{OR} tỷ lệ với diện tích PINM
+  - suggest: Công thức sai: OCR có OR/OQ nhân IEF rồi trừ IGH (khớp với Hệ quả 1 của nguồn: OP/OQ nhân IEF). Đề xuất \frac{OR}{OQ}IEF-IGH.
+- **NANG / CHUGIAI**, Chú giải dòng 78-94 (sau Prop XXV)
+  - source: Không có trong nguồn (đoạn 3 của Chú giải gán động cơ cho Newton)
+  - now: Ông chọn lực cản không đổi vì đó là loại duy nhất mà các cung vẫn giữ đúng hình dạng cycloid ... lập luận ở Phần X ... có thành phần tiêu cực lớn nhất khi con lắc ở hai biên
+  - suggest: KHÔNG HỢP LÍ: gán động cơ/ý định cho Newton không có nguồn; "Phần X" không tồn tại trong Sách II bản này; lời giải thích vì sao chỗ nhanh nhất dịch khỏi điểm thấp nhất sai (nguồn: nhanh nhất tại O, trung điểm cung Ba, nơi lực cản cân bằng thành phần trọng lực). Nên bỏ đoạn đó hoặc viết lại không gán ý định.
+- **NANG / SOLIEU**, Prop XXIX dòng 154,169,180,213,221
+  - source: Y = (OR/OQ)·IEF − IGH (OCR: phân số có OQ ở mẫu, OR ở tử); increment of area (OR/OQ)IEF − IGH; HG − IEF/OR to RG
+  - now: Y=(IEF−IGH)/OR; 'diện tích IEF−IGH'; 'HG−IEF tỷ lệ với RG'; (PIGR+IGH−IEF)/OR
+  - suggest: Sửa Y = (OR/OQ)·IEF − IGH ở mọi chỗ (dòng 154, 169, 180, 213, 221); phần tăng là Rr×(HG − IEF/OR) theo OCR; đối chiếu thứ nguyên với phần dịch Prop XXIX ở phần 1.
+- **NANG / SOLIEU**, Prop XXIX Hệ quả 1, dòng 228-234
+  - source: resistance in the lowest place C is to gravity as the area (OP/OQ)·IEF to the area PINM (OCR: OP trên, ~ , IEF)
+  - now: diện tích (IEF−IGH)/OP tỷ lệ với diện tích PINM
+  - suggest: Sửa thành (OP/OQ)·IEF; tại C diện tích IGH không còn, nguồn không có IGH và không chia cho OP.
+- **NANG / SAINGHIA**, Prop XXIX dòng 182
+  - source: the velocity itself is as the contemporaneous increment of the space described directly and the same particle of time inversely
+  - now: vận tốc tỷ lệ nghịch với phần tăng của không gian mô tả trong cùng phần thời gian
+  - suggest: Vận tốc tỷ lệ THUẬN với phần tăng của không gian và tỷ lệ NGHỊCH với phần thời gian nhỏ ấy.
+- **NANG / THEM**, Prop XXIX dòng 184-202
+  - source: if the moment of the space be given, as V − R; that is, if for the force V we put its exponent PIGR, and R be expressed by any other area Z, as PIGR − Z
+  - now: dV/dt=(V−R)/Z ... trở thành dV/(V−R)=dt/Z (hai phương trình vi phân)
+  - suggest: Bỏ hai công thức vi phân do biên tập thêm (nguồn không có, và Z là diện tích biểu diễn lực cản chứ không phải mẫu số); dịch câu: phần tăng của lực cản tỷ lệ với V−R, tức là với PIGR−Z.
+- **NANG / SAINGHIA**, Prop XXX phát biểu dòng 254
+  - source: the difference between the arc described in the whole descent and the arc ... in the whole subsequent ascent drawn into half the sum of the same arcs will be equal to the area BKa
+  - now: hiệu giữa cung ... chia cho nửa tổng của hai cung ấy, sẽ bằng diện tích BKa
+  - suggest: 'drawn into' là NHÂN với; sửa thành 'nhân với nửa tổng'. Chứng minh cuối nguồn dùng hình chữ nhật Aa × ½aB nên cũng là phép nhân.
+- **NANG / SOLIEU**, Prop XXX dòng 264
+  - source: and CN be taken equal to Cg; then will N be the place to which the body ... would ascend
+  - now: lấy CN bằng Cf
+  - suggest: Cf bằng CF bằng CM (f nằm trên đường tròn FM) nên N trùng M, vô lí; nguồn đọc ra Cg. Ngoài ra OCR 'FO-' nên là Fg (dòng 264 dịch 'FO'; dòng 266 lại dùng Fg).
+- **NANG / SOLIEU**, Prop. XXX, Hệ quả, dòng 342
+  - source: Aa is to OV as ... 11 to 7 nearly; and, therefore, "T7T Aa" is to the length of the pendulum as the resistance ... to its gravity
+  - now: Vì vậy $\frac{77}{7}Aa$ tỷ lệ với chiều dài con lắc
+  - suggest: Từ Aa:OV = 11:7 suy ra OV = (7/11)Aa; OCR đọc phân số là "T7T" (hỏng). Sửa 77/7 thành 7/11 (77/7 = 11 là sai).
+- **NANG / SOLIEU**, Prop. XXX, Hệ quả (parabol), dòng 344-350
+  - source: nearly equal to the rectangle under "f" Ba and OV ... rectangle under 1/2 Ba and Aa is equal to f Ba x OV ... OV is equal to "f" Aa
+  - now: hình chữ nhật đặt trên $\frac12 Ba$ và $OV$ ... $OV=\frac14 Aa$ ... $\frac14 Aa$ tỷ lệ với chiều dài con lắc
+  - suggest: Diện tích parabol = (2/3) đáy x cao nên phải là hình chữ nhật trên (2/3)Ba và OV (OCR "f"); từ (1/2)Ba x Aa = (2/3)Ba x OV được OV = (3/4)Aa, không phải 1/4. Sửa ở dòng 344, 348, 350.
+- **NANG / SOLIEU**, Nhận xét chung, dòng 428
+  - source: let us suppose the difference of the arcs to be AV + BV2 + CV2 (OCR có dòng lẻ "3^" ngay trên, là số mũ 3/2 của BV)
+  - now: AV+BV^2+CV^3
+  - suggest: Các phương trình về sau của nguồn dùng V=1,4,16 với hệ số B lần lượt 1, 8, 64 (và C: 1, 16, 256), nên là AV + B V^{3/2} + C V^2. Sửa thành $AV+BV^{3/2}+CV^2$.
+- **NANG / SOLIEU**, Nhận xét chung, dòng 442
+  - source: 2nd case: ... = A + B + C (OCR: tử "i 2", mẫu 121)
+  - now: \frac{1}{121}=A+B+C
+  - suggest: Nguồn cho hiệu ở trường hợp 2 là 1/(2.121) (OCR tử "i 2"); khớp với dòng 414 của chính bản dịch và A+B+C=0,0000916+0,0010847+0,0029558=1/242. Sửa thành 1/(2.121).
+- **NANG / SOLIEU**, Nhận xét chung, dòng 388-390, 401
+  - source: the globe would lose "-{-" part of its motion ... an arc of "If" inches ... arc of "3^" inches ... differences ... "}, 1. 1, 2, 4, 8" inches
+  - now: mất $\frac14$ chuyển động ... 1\frac34 inch ... 3 inch ... $\frac12,1,1,2,4,8$
+  - suggest: Bản dịch tự mâu thuẫn: 2-1¾=¼ (không phải ½); dãy ½,1,1,2,4,8 không gấp đôi dù các cung 2,4,8,...,64 gấp đôi. OCR phân số mất ("-{-") và "3^" không đọc chắc, nhưng A+B+C=1/242 buộc trường hợp 2 có hiệu ½ (4 thành 3½). Đối chiếu bản scan: nhiều khả năng mất ⅛, cung cuối 3½ và dãy ¼,½,1,2,4,8; "¼" chỉ đúng cho thí nghiệm bảng sau.
+- **NANG / SOLIEU**, Nhận xét chung, dòng 404-419
+  - source: in one mean oscillation, wherein an arc of "3£, 7-
+  - now: , 15, 30 60, 120" inches was described ... will be (OCR hỏng sáu phân số)
+  - suggest: các cung dài 30, 60, 120 v.v. inch ... $\frac{1}{2\cdot164},\frac{1}{2\cdot121},\frac{1}{2\cdot69},\frac{1}{2\cdot35\frac12},...$|Nguồn liệt kê đủ sáu cung (OCR 3¾?, 7½, 15, 30, 60, 120); bản dịch mất ba giá trị đầu, thay bằng "v.v.". Sáu phân số dịch đều dạng 1/(2N) nhưng hiệu/N phải là ¼/164, ½/121, 1/69, 2/35½, 4/18½, 8/9½ (khớp phương trình 4A+8B+16C của nguồn); chỉ trường hợp 2 là 1/(2.121). Phân số OCR không đọc được; cần kiểm bản scan.
+- **NANG / THIEU**, Nhận xét chung, dòng 431
+  - source: for in the cycloid those differences must be on the one hand augmented, with the resistance, in about the duplicate ratio of the arc to the chord ... on the other hand diminished, with the square of the time, in the same duplicate ratio
+  - now: Vì vậy các hiệu của các cung, vốn tỷ lệ với lực cản và bình phương thời gian, gần như bằng nhau trong cả hai đường cong. (hết đoạn)
+  - suggest: Bản dịch bỏ cả câu giải thích "for ..." (tăng theo lực cản xấp xỉ bình phương tỉ số cung/dây, giảm theo bình phương thời gian cùng tỉ số). Thêm lại câu này.
+- **NANG / THIEU**, Nhận xét chung, giữa dòng 487 và 489 (nhảy từ 0,255557 sang thí nghiệm hai quả cầu)
+  - source: OCR 16788-17020: "The arc... in the 6th case was 120-... 119 inches... 124 inches... 15,278 inches... 0,61705 to 121... globe of water 55 to 97... 1 to 376... table 374, 272, 162, 83, 41, 22... leaden globe 2 inches 26 ounces... A=0,001414 B=0,000297 C=0,000879... 7 to 1... globe 18 inches... 318,136 and 49,396... 5 to 1... diameters 4,8,16,32... wooden vessel 4 feet long, 1 foot broad... leaden globe 166 ounces, 3 inches, table 64,32,16..."
+  - now: Dòng 487 nối thẳng sang 489-491 ("Trong một thí nghiệm khác, tôi dùng hai quả cầu...") mà không có khoảng 230 dòng OCR này (cung quả cầu thứ 6, so với quả cầu nước 1:376, các bảng quả cầu gỗ và quả cầu chì, quả cầu 18 inch, kết luận lực cản tỷ lệ bình phương đường kính, lời xin thử lại, bình gỗ 4 feet, bảng nước 64,32,...)
+  - suggest: Bổ sung dịch đầy đủ đoạn từ "The arc, which the point marked in the thread described in the 6th case" đến hết bảng nước của quả cầu chì 166 ounces, rồi mới đến "Arc descr. in first descent 16.8.4..." và "cột thứ tư".
+- **NANG / SOLIEU**, Nhận xét chung, dòng 487
+  - source: "in the 6th, as 0,61705 to 121" (và lặp lại 0,61705 ở 16809)
+  - now: "trong trường hợp thứ sáu, $0,255557$ với $121$"
+  - suggest: Sửa thành 0,61705 với 121 (cộng 0,0009328+0,0485952+0,5675264=0,6170544 xác nhận).
+- **NANG / SOLIEU**, Nhận xét chung, dòng 466, 472, 478 (số mũ của V)
+  - source: OCR 16738-16743: "difference of the arcs to be AV + BV2 + CV2" với "3/2" in nhỏ phía trên; 16883-16887: "0,000208V* + 0,000659V2"; và 4A+8B+16C, 16A+64B+256C (V=4,16)
+  - now: "0,0000916V+0,0010847V^2+0,0029558V^3" và "\frac12 BV^2+\frac14 CV^3" (ngay hệ ở 446, 452 lại dùng 4A+8B+16C, 16A+64B+256C, tức là V^{3/2} và V^2, mâu thuẫn với V^2, V^3)
+  - suggest: Số mũ phải là AV + BV^{3/2} + CV^2 (V^1, V^{3/2}, V^2) cả ba chỗ; lưu ý dòng 435-440 ngoài phần này cũng có AV+BV^2+CV^3. OCR chỉ in "V*" nên số mũ chính xác suy từ 4A+8B+16C.
+- **NANG / SOLIEU**, Nhận xét chung, dòng 472 (hệ số trong lực cản)
+  - source: OCR 16775: "T7T AV + T\ BV^ + f CV2" (đọc hỏng); kiểm số: 0,0000583/0,0000916=7/11, 0,0007593/0,0010847=7/10, 0,0022169/0,0029558=3/4
+  - now: "\frac{77}{7}AV+\frac12 BV^2+\frac14 CV^3"
+  - suggest: Đổi thành 7/11 AV + 7/10 BV^{3/2} + 3/4 CV^2 (khớp các hệ số 0,0000583; 0,0007593; 0,0022169 ngay dưới).
+- **NANG / SOLIEU**, Nhận xét chung, dòng 524, 530, 536
+  - source: OCR 17053-17062: "7C = 449 1/2 and C = 64... and A = 21...; resistance as 7/11 AV + 3/4 CV2 will become as 13 6/11 V + 48 1/6 V2... 13 6/11 + 48 1/6 or 61... to 48 1/6" (từ 8A+64C=4280 suy ra A+8C=535, 7C=449,5)
+  - now: "C=64\frac34, A=20\frac34" (thực tế 20¾+64¾=85½ nhưng 8A+64C ≠ 4280) và "13\frac56 AV+48\frac34 CV^2", "13\frac56+48\frac34 với 48\frac34"
+  - suggest: Từ A+C=85½ và 8A+64C=4280: 7C=449½, C≈64 3/14, A≈21 5/14; lực cản như 13 6/11 V + 48 1/6 V^2. Sửa lại và thêm bước "A+8C=535", "7C=449½". Tỉ số 571 cần xem lại sau khi sửa.
+- **NANG / SOLIEU**, Nhận xét chung, dòng 567 (trọng lượng hộp)
+  - source: OCR 17161: "this whole weight was about -fj of the weight of the box when filled with the metals" (phân số in hỏng); 17171-17172: vis insita of full box "78 times greater" than empty
+  - now: "xấp xỉ $\frac7{12}$ trọng lượng của hộp khi chứa kim loại"
+  - suggest: 7/12 mâu thuẫn với quán tính lớn hơn 78 lần; phân số OCR không đọc được chính xác, nhưng phải xấp xỉ 1/78 (hoặc gần 1/78). Cần đối chiếu scan.
+- **NANG / THEM**, Nhận xét chung, dòng 491-497 (bảng thứ nhất của hai quả cầu)
+  - source: OCR 16988-17019: bảng của quả cầu chì 166 ounces trong bình nước: cung rơi đầu 64,32,16,8,4,2,1,1/2,1/4; cung đi lên 48,24,12,6,3,1 1/2,3/4,3/8,3/16; cuối cùng 17089-17095 mới là bảng 16,8,4... của con lắc hai quả cầu
+  - now: Bảng ở 493-497 (16,8,4,2,1,1/2,1/4 với dao động 35, 6 1/2, 12 1/2, 21, 34, 53, 62) giống hệt bảng ở 547-551 (chỉ khác ô đầu 35 và 3), được đặt sau câu "Trong một thí nghiệm khác, tôi dùng hai quả cầu" lặp lại ở 545
+  - suggest: Bảng 493-497 và câu dẫn 491 là trùng lặp bịa; thay bằng bảng nước thật (64,32,...) từ OCR 16988ff (số dao động OCR đọc hỏng, ghi cần scan), giữ đúng một bảng hai quả cầu ở 547-551.
+- **NANG / CHUGIAI**, Chú giải dòng 577-589: KHÔNG HỢP LÍ (dòng 581 HỢP LÍ MỘT PHẦN)
+  - source: OCR 17135-17141, 17166-17169: Newton đo số dao động giữa các vạch đánh dấu (77) để so sánh lực cản trong hộp rỗng và đầy; không có "mất một phần tư"
+  - now: 581: "so sánh số dao động để quả cầu mất một phần tư chuyển động"; 587: "tiền thân trực tiếp của thí nghiệm Michelson-Morley năm 1881", "phép thử trôi ether", "so sánh dao động của cùng một cơ chế"
+  - suggest: Sai: Newton đếm dao động giữa các vạch, không mất 1/4; thí nghiệm này thử lực cản của ether lên phần trong vật, không phải thử trôi ether; Michelson-Morley là 1887 (1881 là Michelson một mình) và là giao thoa kế, không so dao động; "tiền thân trực tiếp", "mọi phép thử sau" là khẳng định lịch sử không nguồn; 589 "đúng bằng" nên là "gần bằng" như Newton. Viết lại hoặc bỏ đoạn 587.
+- **NHE / CHUGIAI**, Chú giải dòng 90 và 94
+  - source: Cor. 7: "I have always found the quantity of matter in bodies to be proportional to their weight."
+  - now: Biên độ tắt theo lũy thừa ... tần số lại đúng bằng ... thời cậu Newton ... trong mọi thí nghiệm
+  - suggest: HỢP LÍ MỘT PHẦN: mô hình nhớt đúng nhưng "tắt theo lũy thừa" nên là "tắt theo hàm mũ (e^{-βt})"; "thời cậu Newton" là lỗi gõ; "mọi thí nghiệm" quá mức (Newton nói các thí nghiệm của ông); "ở giới hạn biên độ nhỏ" thừa (ma sát không đổi trên cycloid đẳng thời với mọi biên độ); đẳng thức khối lượng quán tính = hấp dẫn là cách diễn giải hiện đại, nên nói rõ.
+- **NHE / THIEU**, Prop XXV tiêu đề, dòng 56
+  - source: Funependulous bodies that are, in any medium, resisted in the ratio of the moments of time, and ... in a non-resisting medium of the same specific gravity
+  - now: Các vật thể treo chịu lực cản tỷ lệ với các moment của thời gian, cùng với các vật thể treo có trọng lực riêng bằng nhau chuyển động trong một môi trường không có lực cản
+  - suggest: Thiếu "in any medium" (trong một môi trường bất kỳ); và "of the same specific gravity" thuộc về môi trường nhưng bản dịch gắn vào vật thể. Đề xuất: "...trong một môi trường bất kỳ ... và ... trong một môi trường không có lực cản có cùng trọng lực riêng".
+- **NHE / KHAC**, Prop XXV, dòng 60
+  - source: the accelerative force ... will be as the length of the arc CD, [OCR mất chữ] pressed by that same arc
+  - now: tỷ lệ với độ dài của cung CD hay CO bị lực cản nén
+  - suggest: Nguồn OCR đứt đoạn (chỗ mất chữ do hình), chỉ còn "pressed by that same arc" (bị chính cung ấy ép/nén). Bản dịch có "CO" và "lực cản" là phần không xác định được từ OCR; cần đối chiếu bản quét.
+- **NHE / SAINGHIA**, Prop XXIV, dòng 20
+  - source: the motive forces in places equally distant from the perpendicular are as the weights
+  - now: ở những nơi cách nhau một khoảng cách bằng nhau tính từ đường thẳng thẳng đứng
+  - suggest: Nguồn: các nơi cách đường thẳng đứng một khoảng bằng nhau (không phải "cách nhau"). Đề xuất: "ở những nơi cách đường thẳng đứng một khoảng bằng nhau".
+- **NHE / THUATNGU**, Prop XXIV-XXVII (dòng 16, 72, 98, 120)
+  - source: isochronal; described together; quantities of matter
+  - now: "đồng thời" vừa dịch isochronal vừa dịch together; tiêu đề XXIV "Khối lượng" nhưng thân bài "khối lượng vật chất"
+  - suggest: "Isochronal" nên dịch "đẳng thời" (Chú giải cũng dùng "đẳng thời gian"), tách khỏi "mô tả cùng nhau/đồng thời"; thống nhất "quantity of matter" thành "khối lượng vật chất" cả ở tiêu đề.
+- **NHE / HINH**, Dòng 8 (ảnh book-ii-section-i-motion.svg)
+  - source: Nguồn Phần VI có hình cung cycloid (A,B,C,D,d,E,e,O,a), hình A,B trong Prop XXVII và hình hyperbola (O,S,P,Q,R,K,T,I,G,E,F,L,M,N,H,Z)
+  - now: ![...](../assets/book-ii-section-i-motion.svg)
+  - suggest: Hình là đồ thị thời gian/vận tốc của Phần I, chỉ có nhãn A, O, B, "thời gian", "vận tốc", "đường quỹ tích"; không thuộc Phần VI. Thiếu hầu hết nhãn bài nhắc: C, D, d, E, e, a, Z, P, Q, S, T, I, K, L, F, M, N, R, G, H. Cần thay bằng các hình đúng của Prop XXV, XXVII, XXVIII, XXIX.
+- **NHE / THEM**, Dòng 10
+  - source: Không có trong nguồn
+  - now: *Hình 37. Sơ đồ được dùng lại từ Phần I; các hình con lắc và hyperbola của bản gốc cần được đối chiếu riêng.*
+  - suggest: Chú thích hình in nghiêng là lời biên tập nằm ngoài blockquote, không phải của Newton. Chuyển vào blockquote Chú giải hoặc comment HTML, hoặc bỏ.
+- **NHE / THIEU**, Prop XXIV, XXV, XXVI, XXVII, XXVIII (cả phần)
+  - source: Q.E.D.
+  - now: Không có Q.E.D. ở cuối các chứng minh
+  - suggest: Thiếu "Q.E.D." ở các Prop XXIV-XXVIII; (XXIX có "Q.E.D." trong nguồn nằm ngoài phạm vi phần này).
+- **NHE / SAINGHIA**, Prop XXIX dòng 166
+  - source: equal quantities OR×HG, OR×HR − OR×GR, ORHK − OPIK, PIHR and PIGR + IGH
+  - now: các lượng OR×HG, OR×HR, OR×GR, OR×HK, OPIK, PIHR bằng nhau
+  - suggest: Nguồn có các hiệu OR×HR − OR×GR và OR×HK − OPIK; bản dịch liệt kê thành một dãy 'bằng nhau', mất phép trừ.
+- **NHE / THUATNGU**, Prop XXIX 150,192; Prop XXX 258
+  - source: let those areas be the exponents both of the arcs and of the forces; DK will be the exponent of the resistance
+  - now: dùng các diện tích ấy làm số mũ; DK là số mũ của lực cản
+  - suggest: 'exponent' ở đây là đại lượng biểu diễn (số đo), không phải số mũ lũy thừa; nên đổi thuật ngữ cho đồng nhất toàn chương.
+- **NHE / THIEU**, Prop XXX dòng 266-298
+  - source: fm is to Fm or Dd as CD to DF; and, ex aequo, Fg to Dd as DK to DF; ... ex aequo perturbate, Fh or MN to Dd as DK to CF or CM
+  - now: fm/Fm = CD/DF, vì vậy Fg/Dd = DK/DF; Fh/Fg = DF/CF, nên MN/Dd = DK/CF = DK/CM
+  - suggest: Thiếu 'Fm hay Dd' (Fm = Dd) và hai viện dẫn 'ex aequo', 'ex aequo perturbate'; thêm lại để các bước suy ra khớp nguồn.
+- **NHE / SOLIEU**, Prop XXX dòng 266
+  - source: Draw Fh perpendicular to de (OCR: 'F/n perpendicular to dft')
+  - now: Kẻ Fn vuông góc với de
+  - suggest: Nhãn 'Fn' không xác định được từ OCR; các tam giác về sau dùng Fh (Fhm, Fhg), nên có thể là Fh; cần kiểm lại.
+- **NHE / THIEU**, Prop XXIX cuối chứng minh dòng 224
+  - source: as the resistance to the gravity. Q.E.D.
+  - now: đúng như lực cản tỷ lệ với trọng lực.
+  - suggest: Thiếu 'Q.E.D.' ở cuối chứng minh Prop XXIX.
+- **NHE / SOLIEU**, Nhận xét chung, dòng 386
+  - source: its diameter "CJ" London inches; later: The diameters of the two globes were 6f and 2 inches, and the squares ... 47 and 4
+  - now: đường kính $6\frac12$ inch (cũng 57½ ounce troy)
+  - suggest: Đoạn sau của nguồn dùng đường kính 6f (6⅞?) và bình phương ≈ 47¼; 6½ cho bình phương 42¼ nên lệch. Lần nêu đầu OCR hỏng ("CJ"); khối lượng nguồn OCR "oT^" không xác định được. Kiểm bản scan.
+- **NHE / THUATNGU**, Prop. XXX Hệ quả, dòng 318 và 324
+  - source: DK is the exponent of the resistance, and the length of the pendulum the exponent of the gravity ... OV be the exponent of the resistance in the middle point O
+  - now: DK là số mũ của lực cản ... gọi OV là số mũ của lực cản
+  - suggest: "exponent" ở đây là đoạn thẳng biểu diễn một đại lượng, không phải số mũ (lũy thừa). Dùng "đại lượng biểu diễn" hoặc "đoạn biểu diễn" nhất quán cả hai chỗ.
+- **NHE / THIEU**, Phần 3 nói chung (cuối Prop. XXX dòng 306, Prop. XXXI dòng 360)
+  - source: Q.E.D. (cuối chứng minh Prop. XXX và Prop. XXXI)
+  - now: (không có)
+  - suggest: Bản dịch không có Q.E.D. sau hai chứng minh này.
+- **NHE / SOLIEU**, Prop. XXXI, dòng 360
+  - source: the rectangle under the right line "^aB" and the difference Aa of the arcs CB, Ca, was equal to the area BKTa
+  - now: hình chữ nhật đặt trên đoạn thẳng $aB$ và hiệu $Aa$ ... bằng diện tích $BKTa$
+  - suggest: Nguồn là (1/2)aB (OCR "^aB"); bản dịch mất 1/2 ở lần nêu này, trong khi câu sau lại viết $\frac12 aB$.
+- **NHE / SOLIEU**, Prop. XXX Hệ quả, dòng 322
+  - source: since Ea in the resisting medium, and BA in the non-resisting one, are described nearly in the same times
+  - now: Vì $Ea$ trong môi trường có lực cản và $BA$ trong môi trường không có lực cản
+  - suggest: Nguồn OCR đọc "Ea", bản dịch sao y; "E" chỉ là điểm trên đường tròn, câu sau dùng $Ba$. Không xác định được từ OCR; kiểm lại với bản scan xem là Ba.
+- **NHE / THEM**, Nhận xét chung, dòng 489
+  - source: (không có câu tương ứng; ở 16733-16736 chỉ nói về con lắc 12,5 feet trong không khí)
+  - now: "Các phép thí nghiệm này cho thấy lực cản của các vật thể chuyển động nhanh gần như tỷ lệ với bình phương vận tốc."
+  - suggest: Bỏ câu này (thêm vào, không có trong Newton ở vị trí đó); kết luận tương ứng của Newton là ở Cor. 2 Prop. XXXI (OCR 16733).
+- **NHE / SAINGHIA**, Nhận xét chung, dòng 499
+  - source: "because the resistance is increased, and the square of the time diminished in the same duplicate ratio"
+  - now: "Lý do là lực cản tăng theo bình phương thời gian, trong khi bình phương thời gian giảm theo cùng tỷ lệ bậc hai."
+  - suggest: Sửa: lực cản tăng theo tỉ số bình phương (của vận tốc) còn bình phương thời gian giảm theo cùng tỉ số, nên hiệu cung không đổi; "tăng theo bình phương thời gian" sai.
+- **NHE / THUATNGU**, Nhận xét chung, dòng 557 và 559
+  - source: "water more than spirit of wine... in spirit of wine, of turpentine, and salts, in oil... in oil of vitriol"
+  - now: 557: "nước chống lại mạnh hơn rượu"; 559: "rượu vang, dầu thông, muối"
+  - suggest: "spirit of wine" dịch hai cách (rượu / rượu vang) và "rượu vang" sai nghĩa (là cồn/tinh rượu); "spirit of turpentine/salts" mất "spirit". Thống nhất "tinh rượu (cồn)", "tinh dầu thông", "tinh muối"; "tenacious" nên là "nhớt" thay vì "đặc".
+- **NHE / THEM**, Dòng 593 (ghi chú biên tập in nghiêng ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: "*Phần này kết thúc ở cuối Phần VI. Các hệ số, bảng số và ký hiệu hyperbola trong Nhận xét chung được giữ theo OCR; cần đối chiếu lại với scan...*" (phần chương này không có hyperbola)
+  - suggest: Xóa lời biên tập ngoài blockquote, hoặc đưa vào khối **[Chú giải]**/comment HTML.
+
+## 50-sach-ii-phan-vii-chuyen-dong-cua-chat-long-va-luc-can.md
+
+- *phần 1/5: Chương 50, phần 1/5 (dòng 1-107): Section VII đầu đề, Prop XXXII (Định lý XXVI) + Cor 1-2, Prop XXXIII (Định lý XXVII) + Cor 1-6, Prop XXXIV (Định lý XXVIII) đến hết đoạn "BE : BC" (dòng 106*
+- *phần 2/5: Chuong 50, phan 2/5 (dong 108-215): Prop XXXIV (doan cuoi chung minh + Scholium), Prop XXXV Truong hop 1-3, He qua 1-7 (den het cong thuc Mt/(T+t)). Khong co hinh trong phan nay.*
+- *phần 3/5: Chương 50, phần 3/5 (dòng 216-333): Hệ quả 7 của Prop. XXXV (đoạn cuối), Nhận xét sau XXXV, Prop. XXXVI (Bài toán VIII) Trường hợp 1-5 và Chú giải ở dòng 316-332. Nguồn ia.txt dòng 17613-178*
+- *phần 4/5: Chuong 50, phan 4/5 (dong 334-429): Prop XXXVI (Book II) Case 6, Cor 1-10; Lemma IV. Khong co hinh anh, khong co chu giai trong phan nay. Nguon OCR ia.txt dong 17875-18087.*
+- *phần 5/5: Chương 50, phần 5/5 (dòng 430-536): Proposition XXXVII (Theorem XXIX) với chứng minh, Hệ quả 1-3, Scholium; đối chiếu với Lemma V, VI, VII và Scholium của chúng trong nguồn (OCR dòng 18089-1*
+
+- **NANG / HINH**, Hình dòng 8-10 (đầu chương)
+  - source: (Prop XXXIV dùng hình quả cầu ABKI, tâm C, hình trụ ONGQ, các điểm F,B,L,D,E,b,H...)
+  - now: ![...](../assets/book-ii-section-i-motion.svg); SVG chỉ có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích (hình của Section I)
+  - suggest: Hình không thuộc nội dung Section VII: thiếu hẳn C,K,I,F,L,D,E,G,N,Q,H... mà lời chứng minh Prop XXXIV nhắc; cần thay bằng hình quả cầu/hình trụ đúng
+- **NANG / THIEU**, Prop XXXII, dòng 26
+  - source: the whole forces ... which are compounded of each of the agitating forces (by Corol. 2 of the Laws), will have like directions
+  - now: toàn bộ các lực làm các hạt tương ứng cử động sẽ có cùng phương
+  - suggest: Thiếu mệnh đề "được hợp thành từ mỗi lực kích động (theo Hệ quả 2 của các Định luật)" cùng viện dẫn Corol. 2
+- **NANG / THIEU**, Prop XXXV, Hệ quả 6 (dòng 204-206)
+  - source: All these things appear by Cor. 1 and 3, Prop. V., Book II.
+  - now: (không có câu này; đoạn Hệ quả 6 kết thúc ở "...mất phần lực cản CH.")
+  - suggest: Thêm câu cuối Hệ quả 6: "Tất cả những điều này hiển nhiên theo Hệ quả 1 và 3, Proposition V, Sách II."
+- **NANG / SAINGHIA**, Prop XXXIV Scholium, dòng 136
+  - source: Which Proposition I conceive may be of use in the building of ships.
+  - now: Tôi nghĩ Proposition I có thể có ích trong việc xây tàu.
+  - suggest: "I" là đại từ "tôi", không phải số La Mã. Sửa: "Tôi nghĩ Proposition này có thể có ích trong việc xây tàu."
+- **NANG / SAINGHIA**, Prop XXXV Hệ quả 6, dòng 204
+  - source: Erect the perpendicular EF meeting the hyperbola in F.
+  - now: Dựng EF vuông góc với hyperbola tại F.
+  - suggest: EF vuông góc với AB (là tung độ) và cắt hyperbola tại F. Sửa: "Dựng đường vuông góc EF cắt hyperbola tại F."
+- **NANG / SOLIEU**, Prop XXXIV, dòng 108-122
+  - source: efficacy ... as BE2 to BC3 (OCR); take bH equal to BE2/(?) (OCR hỏng mẫu số)
+  - now: "như BE^2/BC^3 tỷ lệ với BE^2/BC^3"; bH = BE^2/bC
+  - suggest: Câu dòng 108-114 vô nghĩa (hai vế giống hệt nhau, công thức đặt sai chỗ). Dạng đúng: hiệu quả ấy tỷ lệ như BE^2 với BC^2 (OCR đọc BC3, nhiều khả năng là BC2; mẫu số bH không xác định được từ OCR nhưng theo thứ nguyên là BC, không phải bC). Cần đối chiếu bản gốc.
+- **NANG / CHUGIAI**, Chú giải sau Scholium Prop XXXIV, dòng 140-158
+  - source: The solid ... will be less resisted than any other circular solid (không nhắc parabol; không nói điều kiện biến phân hay tham số tự do)
+  - now: "vật thể tròn xoay sinh bởi các cung parabol"; "Ông đang săn vật thể mà mọi biến dạng nhỏ đều làm lực cản tăng"; "Haack ... năm 1957"; "dạng giọt nước"; "ông đã biết điều đó"
+  - suggest: KHÔNG HỢP LÍ: gán cho Newton "parabol" và động cơ/ý thức về họ nghiệm mà văn bản không viết; "MN ∝ GR, GR^3 ∝ 4BR×GB^2" viết sai tỉ lệ (đúng: MN : GR = GR^3 : 4BR×GB^2); đòi "đúng dạng" thân mũi kéo dài giọt nước là khẳng định lịch sử/khoa học cần nguồn, dạng Newton thường bị coi là cùn mũi; năm Haack cần kiểm. Nên rút gọn hoặc viết lại.
+- **NANG / THIEU**, Nhận xét sau Prop. XXXV, dòng 230-244
+  - source: SCHOLIUM (nguồn 17642-17663): "I have exhibited in this Proposition the resistance and retardation of spherical projectiles... eight third parts of its diameter, as the density of the medium to the density of the globe."
+  - now: Không có trong chương: mục "Nhận xét" ở dòng 230 mang nội dung khác (của Prop. XXXVII); grep không thấy "dầu", "thủy ngân" hay "tám phần ba" trong chương
+  - suggest: Dịch đầy đủ Scholium của Prop. XXXV (lực cản/lực tạo ra toàn bộ chuyển động trong thời gian mô tả 2/3 đường kính; giảm một nửa khi cứng tuyệt đối; trong chất lỏng liên tục như nước, dầu nóng, thủy ngân giảm thêm một nửa, ứng với 8/3... đường kính)
+- **NANG / KHAC**, Dòng 230-244 (Nhận xét)
+  - source: Nguồn 18254-18310: SCHOLIUM của Prop. XXXVII: "In this proposition we have investigated that resistance alone which arises from the magnitude of the transverse section of the cylinder..."
+  - now: Nội dung dịch (hình trụ, tiết diện ngang, hình quét ADFGHIE, "Proposition này") đặt ngay sau Hệ quả 7 của Prop. XXXV, trước Prop. XXXVI
+  - suggest: Đây là Scholium của Prop. XXXVII bị đặt nhầm chỗ; chuyển về sau Prop. XXXVII (dòng 524 là nhận xét khác) và đặt vào đây Scholium thật của XXXV
+- **NANG / SOLIEU**, Nhận xét, dòng 234
+  - source: This increases the resistance, "in the same ratio almost in which it diminished the efflux... that is, in the duplicate ratio of 25 to 21, nearly."
+  - now: "gần như theo tỷ lệ $25$ với $21$"
+  - suggest: Sửa: "theo bình phương tỷ lệ 25 với 21 (duplicate ratio)"; hiện thiếu "bình phương"
+- **NANG / SAINGHIA**, Nhận xét, dòng 240
+  - source: AE, BE parabolic arcs "with a latus rectum that is to the space HG... as HG to 1/2 AB"; CF, DF with "a latus rectum quadruple of the former"
+  - now: "tham số bằng không gian $HG$ ... và tham số bằng $\frac12 AB$" ; "gấp bối tham số trước"
+  - suggest: Tham số (latus rectum) là đại lượng sao cho tham số : HG = HG : ½AB (không phải hai giá trị đều bằng); "gấp bối" sai, phải là "gấp bốn"
+- **NANG / SOLIEU**, Hệ quả 7 Prop. XXXV, dòng 222-228
+  - source: "as the logarithm of the number (T+t)/T multiplied by the number 2,302585092994 is to the number [t/T]" (OCR cuối câu đọc ra "^", không đọc rõ)
+  - now: "như logarithn của số $1+\frac{t}{T}$ nhân với số $2,302585092994$, tỷ lệ với số $2$"
+  - suggest: "tỷ lệ với số 2" không có trong nguồn (OCR cuối câu hỏng, không xác định được từ OCR; theo thứ nguyên và lời bàn về diện tích hyperbol/hình chữ nhật thì số hạng sau là t/T); kiểm lại scan; sửa "logarithn" thành "logarithm"
+- **NANG / SOLIEU**, Prop. XXXVI Trường hợp 1, dòng 270
+  - source: "its diameter being to the diameter of the hole as 5 to 6, or as 5[1/2?] to 6[3/4?], very nearly" (OCR "5^ to 6
+  - now: ")
+  - suggest: "như $5$ với $6$, hoặc gần như $25$ với $36$"|"25 với 36" không có trong nguồn và không bằng 5:6; OCR đọc "5^ to 6|" nên cần kiểm scan (không xác định được từ OCR)
+- **NANG / SOLIEU**, Prop. XXXVI Trường hợp 1, dòng 272-274
+  - source: "the diameter of the circular hole being f parts of an inch... was f J- of an inch. Therefore ... very nearly as 25 to 21" (OCR "f J-" hỏng)
+  - now: "đường kính lỗ $\frac58$ inch ... là $\frac{21}{50}$ inch" (lặp ở chú giải dòng 322)
+  - suggest: 5/8 : 21/50 không bằng 25 : 21 (cho 25:21 thì dòng nước là 21/40 inch nếu lỗ 5/8); OCR không đọc rõ, kiểm lại scan rồi sửa số cho khớp tỉ số 25:21
+- **NANG / THIEU**, Prop. XXXVI Trường hợp 3, dòng 302
+  - source: "from the latus rectum of this parabola may be collected, that the velocity of the effluent water is that which a body may acquire by falling the height IG or HG of the stagnant water in the vessel."
+  - now: "từ tham số của parabol này có thể xác định vận tốc của nước chảy ra."
+  - suggest: Mất vế kết luận: vận tốc nước chảy ra bằng vận tốc vật rơi từ chiều cao IG hoặc HG của nước đứng yên; thêm câu này
+- **NANG / CHUGIAI**, Chú giải dòng 316-332, đoạn 320-322
+  - source: Newton: tại chính lỗ vận tốc ứng với rơi từ NỬA chiều cao (IZ), dòng co hẹp thì ứng với toàn bộ chiều cao IG, lớn hơn khoảng căn 2 lần; vận tốc không phụ thuộc hình lỗ mà do độ sâu dưới KL
+  - now: "Vận tốc ở lỗ là $v=\sqrt{2gh}$... nước ngoài lỗ phải nhanh hơn trong lỗ khoảng ... căn bậc hai của 2"; "chỉ phụ thuộc diện tích lỗ và độ sâu"
+  - suggest: KHÔNG HỢP LÍ: tự mâu thuẫn (nếu v ở lỗ đã là sqrt(2gh) thì ngoài lỗ không thể nhanh hơn căn 2 lần mà vẫn theo Newton), trái với dịch dòng 286; "phụ thuộc diện tích lỗ" sai vì Newton nói vận tốc chỉ do độ sâu; sửa theo dịch hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải dòng 330-332
+  - source: (Không có trong nguồn) Newton chỉ nói gắn tấm vào mặt bên để dòng không tăng tốc khi rơi
+  - now: "Ông biết... ông muốn đo"; "gần hai trăm năm trước khi người ta dùng phương pháp theo dõi dòng chảy hiện đại"; "Chính Torricelli dùng thí nghiệm này để chứng minh không khí có thể bị hút hết khỏi một bình"
+  - suggest: KHÔNG HỢP LÍ: gán động cơ cho Newton, khẳng định lịch sử không nguồn, và lẫn thí nghiệm khí áp của Torricelli với bài toán chảy qua lỗ (và ý "thế giới không thể đầy kín không khí" lệch); xóa các câu này; "vena contracta" và lưu lượng hiệu dụng chỉ HỢP LÍ MỘT PHẦN
+- **NANG / THIEU**, Cor 6, dong 384-386
+  - source: that part of the weight which presses upon the bottom is to the whole weight of the water perpendicularly incumbent thereon as the circle AB to the sum of the circles AB and EF, or as the circle AB to the excess of twice the circle AB above the area of the bottom. ... Therefore, ex aequo perturbate,
+  - now: (chi co) ... nhu dien tich AB ty le voi tong cac dien tich AB va EF. ... Do do, phan trong luong ep len day ty le voi ...
+  - suggest: Them ve "hoac nhu hinh tron AB ty le voi phan du cua hai lan hinh tron AB tren dien tich day" o cau phat bieu; them "ex aequo perturbate" (theo ty le hoan vi) vao cau "Do do".
+- **NANG / THIEU**, Cor 7, dong 394
+  - source: And suppose this cataract to fall with its whole weight downwards, and not in the least to lie against or to press PHQ, but to glide freely by it without any friction, unless, perhaps, just at the very vertex of the ice, where the cataract at the beginning of its fall may tend to a concave figure.
+  - now: Gia su dong thac roi xuong voi toan bo trong luong cua no va khong ap vao PHQ, ma truot tu do ben canh no.
+  - suggest: Dich them "khong co ma sat nao, tru co le chinh tai dinh cua khoi bang, noi dong thac luc moi bat dau roi co the huong toi dang long chao (lom)".
+- **NANG / SOLIEU**, Cor 10, dong 418-422
+  - source: as EF^2 to EF^2 - 1/2 PQ^2 (OCR "EF2 -
+  - now: PQ2"), or as the circle EF to the excess of this circle above half the little circle PQ, very nearly.
+  - suggest: \frac{EF^2}{EF^2-PQ^2}, hoac gan nhu bang ty le dien tich lo EF voi phan du cua no sau khi tru nua dien tich duong tron nho PQ|Sua mau thanh EF^2 - (1/2)PQ^2 (cho khop voi "nua dien tich" ngay duoi va voi nguon); dat "very nearly" (gan dung) cho ca hai ty le chu khong chi ve thu hai.
+- **NANG / THIEU**, Scholium của Prop. XXXVII, dòng 526-534
+  - source: "For as, in Case 1, of Prop. XXXVI, the obliquity of the motions ... in the duplicate ratio of 25 to 21, nearly ... frozen ... Let ABCD be a rectangle, and let AE and BE be two parabolic arcs ... the resistance must be to this force in the ratio of 2 to 3, at the least."
+  - now: Bản dịch chỉ có câu đầu ("Trong Proposition này, ta đã khảo sát lực cản ... tính chéo của các chuyển động"), rồi nhảy sang đoạn "chuyển động chéo và vô ích ... đứng yên".
+  - suggest: Dịch đủ phần còn lại của Scholium: tính chéo của chuyển động làm tăng lực cản theo tỷ lệ bình phương 25 : 21 gần như, giả thiết nước đóng băng, dựng vật tròn xoay từ hình chữ nhật ABCD và các cung parabol AE, BE, CF, DF (latus rectum HG : ½AB và gấp bốn), kết luận lực cản : lực tạo/phá chuyển động = 2 : 3 ít nhất (theo Hệ quả 7 của Prop. XXXVI).
+- **NANG / THIEU**, Lemma V, VI, VII (sau Scholium Prop. XXXVII), sau dòng 524
+  - source: "LEMMA V. If a cylinder, a sphere, and a spheroid, of equal breadths be placed successively in the middle of a cylindric canal ... will equally hinder the passage of the water" cùng Lemma VI và Lemma VII
+  - now: Không có trong chương 50 (chương 51 dòng 64 lại viện dẫn "Lemma V" như đã dịch).
+  - suggest: Dịch đủ Lemma V, VI, VII và phần chứng minh. Đặt sau Scholium của Prop. XXXVII, trước Prop. XXXVIII.
+- **NANG / THEM**, Nhận xét, dòng 528
+  - source: "...at rest among themselves; being fixed like water by frost, and adhering to the fore and hinder parts of the bodies in the manner explained in the Scholium of the last Proposition" (đây là Scholium của Lemma VII)
+  - now: Những phần chất lỏng có chuyển động chéo và vô ích phải được xem là đứng yên ở cả hai đầu vật thể, giống như cách giải thích trong Nhận xét của Proposition XXXVII.
+  - suggest: Đoạn này ghép Scholium của Prop. XXXVII với Scholium của Lemma VII thành một "Nhận xét" và bỏ phần giữa; viện dẫn "Nhận xét của Proposition XXXVII" thành tự viện dẫn. Tách đúng hai Scholium, dịch đủ mỗi cái, và sửa viện dẫn thành "Nhận xét của Proposition vừa rồi".
+- **NANG / SOLIEU**, Prop. XXXVII, dòng 444-447
+  - source: force ... to the weight of a cylinder whose base is that little circle, and the altitude ½IG, as EF2 to EF2 - ½PQ2, very nearly (OCR: "iIG", "EF2 -
+  - now: PQ2")
+  - suggest: chiều cao HG như EF²/(EF²-PQ²)|Sửa thành "chiều cao ½IG" và tỷ lệ EF² : (EF² - ½PQ²). Cần đối chiếu scan, vì OCR đọc ½ thành "i" hoặc "|".
+- **NANG / SOLIEU**, Prop. XXXVII, dòng 460-474
+  - source: resistance ... to the weight of a cylinder of water whose base is that little circle, and its altitude ½IG, as EF2 to EF2 - ½PQ2 ... the ratios between EF2 - PQ2 and EF2, and between EF2 and EF2 - ½PQ2 (OCR "iIG", "iPQ2")
+  - now: chiều cao IG ... EF²/(EF²-PQ²) ... giữa EF² và EF²-PQ²
+  - suggest: Ba chỗ cùng thiếu ½: chiều cao phải là ½IG (nguồn nói tiếp "altitude half the altitude IG"), và mẫu phải là EF² - ½PQ². Dòng 474 cũng sửa tương tự.
+- **NANG / SOLIEU**, Hệ quả 3, dòng 510-522
+  - source: a length L is to the quadruple of the length of the cylinder in a ratio compounded of the ratio EF2 - ½PQ2 to EF2 once, and the ratio of EF2 - PQ2 to EF2 twice
+  - now: tỷ lệ (EF²-PQ²)/EF² một lần, và tỷ lệ EF²/(EF²-PQ²) hai lần
+  - suggest: Một lần là (EF² - ½PQ²) : EF²; hai lần là (EF² - PQ²) : EF² (bản dịch đảo ngược tỷ lệ thứ hai và thiếu ½).
+- **NHE / THEM**, Dòng 10 (chú thích hình in nghiêng)
+  - source: (không có trong nguồn)
+  - now: *Hình 38. Sơ đồ được dùng lại từ Phần I; các hình hệ thống hạt, hình cầu, hình trụ và dòng chảy qua lỗ của bản gốc cần được đối chiếu riêng.*
+  - suggest: Lời biên tập nằm ngoài blockquote [Chú giải]; chuyển vào blockquote hoặc bỏ khi thay hình
+- **NHE / SAINGHIA**, Prop XXXII, dòng 26
+  - source: if they do agitate one another with some certain forces
+  - now: nếu chúng làm cản trở lẫn nhau bằng những lực nào đó
+  - suggest: "agitate" là làm xáo động/tác động lên nhau, không phải "cản trở"; đề xuất "tác động lẫn nhau" hoặc "kích động lẫn nhau"; cùng câu "cử động" nên đổi cho nhất quán với "kích hoạt" (excite)
+- **NHE / THUATNGU**, Prop XXXII, dòng 26
+  - source: the same effect as if they respected centres placed alike among the particles
+  - now: như khi chúng tôn trọng những tâm đặt giống nhau giữa các hạt
+  - suggest: "respect" (hướng về) dịch "tôn trọng" là sai nghĩa; đề xuất "hướng về" (như lực hướng tới những tâm đặt giống nhau)
+- **NHE / THIEU**, Prop XXXIII, dòng 52 và 58
+  - source: ...the densities of the parts of the systems. Q.E.D. ... the densities of the parts conjunctly. Q.E.D.
+  - now: không có "Q.E.D." ở cuối dòng 52 và dòng 58
+  - suggest: Mất hai chữ Q.E.D. của Prop XXXIII (gộp thành một mục nhẹ)
+- **NHE / SAINGHIA**, Prop XXXIII Cor 1, dòng 62
+  - source: be any how projected in the direction of lines similarly posited
+  - now: được phóng theo những đường có cùng phương
+  - suggest: Bỏ "any how" (bằng cách nào đó tùy ý); đề xuất "được phóng thế nào cũng được, theo các đường đặt giống nhau"
+- **NHE / THIEU**, Prop XXXIII Cor 2, dòng 74
+  - source: will approach to the form and condition of the medium C at pleasure
+  - now: môi trường B sẽ tiến gần dần về hình dạng và trạng thái của môi trường C
+  - suggest: Thiếu "at pleasure" (gần tùy ý); đề xuất "tiến gần tùy ý đến hình dạng và trạng thái của môi trường C"
+- **NHE / THUATNGU**, Prop XXXIII Cor 2, dòng 72
+  - source: in the subduplicate ratio of the force T to the force V
+  - now: theo tỷ lệ căn bậc hai của lực T với lực V
+  - suggest: Nên thống nhất thuật ngữ tỷ lệ: "tỷ lệ căn bậc hai" cho subduplicate, "tỷ lệ bình phương" cho duplicate (hiện có "bình phương tỷ lệ" lẫn "tỷ lệ bình phương" trong cùng đoạn)
+- **NHE / THUATNGU**, Prop XXXIV Scholium, dòng 132
+  - source: a frustum CBGF of a cone ... any other frustum
+  - now: khối chóp cụt CBGF ... khối chóp cụt khác
+  - suggest: "frustum of a cone" là hình nón cụt, không phải chóp cụt. Sửa thành "hình nón cụt".
+- **NHE / SAINGHIA**, Prop XXXIV Scholium, dòng 132
+  - source: S will be the vertex of the cone whose frustum is sought.
+  - now: S là đỉnh của hình nón mà khối chóp cụt cần tìm có đáy là khối ấy.
+  - suggest: Cụm "có đáy là khối ấy" là thêm/lủng củng, nguồn không có. Sửa: "S là đỉnh của hình nón mà hình nón cụt cần tìm là một phần."
+- **NHE / THUATNGU**, Prop XXXIV Scholium, dòng 138
+  - source: less resisted than any other circular solid whatsoever, of the same length and breadth
+  - now: mọi vật thể trụ khác có cùng chiều dài và độ rộng
+  - suggest: "circular solid" là vật thể tròn xoay; "trụ" dễ nhầm với hình trụ. Sửa: "mọi vật thể tròn xoay khác".
+- **NHE / THUATNGU**, Prop XXXV Hệ quả 6, dòng 206
+  - source: EF, the ordinate of the hyperbola
+  - now: EF, quãng vuông góc của hyperbola
+  - suggest: "ordinate" là tung độ. Sửa: "tung độ của hyperbola".
+- **NHE / THIEU**, Prop XXXV Trường hợp 1, dòng 172
+  - source: the force by which its whole motion may be either taken away or generated
+  - now: lực có thể tạo ra toàn bộ chuyển động của nó
+  - suggest: Thiếu "hoặc triệt tiêu" (either taken away or). Sửa: "lực có thể triệt tiêu hoặc tạo ra toàn bộ chuyển động của nó".
+- **NHE / THIEU**, Phần 2 chung (Prop XXXIV dòng 126; Prop XXXV Trường hợp 3, dòng 180); Scholium dòng 134
+  - source: Q.E.D. ... Q.E.I.; "Whence, by the bye, since the angle CSB..."
+  - now: (không có Q.E.D., Q.E.I.; "Do góc CSB luôn nhọn" bỏ "nhân tiện")
+  - suggest: Thêm Q.E.D. cuối Prop XXXIV, Q.E.I. cuối Prop XXXV và "nhân tiện" nếu muốn bám nguyên văn. Ngoài ra lỗi gõ: "ADFGHI E" (dòng 134) nên là ADFGHIE.
+- **NHE / HINH**, Nhận xét, dòng 242
+  - source: "by the convolution of the figure about the axis EF let there be generated a solid" (OCR không có nhãn G, H, I trong hình này)
+  - now: "Khi quét hình $ADF GHI E$ quanh trục $EF$"
+  - suggest: Nhãn "GHI" không có trong nguồn (G, H chỉ thuộc hình Prop. XXXVI); sửa thành "quay hình quanh trục EF" hoặc ghi đúng nhãn ABE, CDF
+- **NHE / THUATNGU**, Prop. XXXVI dòng 254, 256, 258, 270, 272 và chú giải 330
+  - source: "a very thin flat plate" (nguồn 17751); "plane"/"horizon" (nguồn); không có từ nào là "ice" ở chỗ này
+  - now: "tấm bằng mỏng và phẳng"; "nằm ngango"; "ở lố"; "qua lố"
+  - suggest: "tấm bằng" dễ đọc thành "băng" (ice) trong khi nguồn là tấm phẳng mỏng; sửa "tấm phẳng mỏng"; sửa lỗi gõ "ngango" thành "ngang", "lố" thành "lỗ"
+- **NHE / SAINGHIA**, Cor 7, dong 392
+  - source: let all the water, whose fluidity is not requisite for the ready and quick descent of the water, be supposed to be congealed
+  - now: Gia su tat ca nuoc khong can thiet cho viec nuoc roi nhanh va tu do dung yen, ke ca nuoc quanh dong thac ... deu dong lai.
+  - suggest: "Dung yen" la them; nguon noi "tinh long (fluidity) cua nuoc ay khong can thiet cho su roi de dang va nhanh". Sua: "tat ca nuoc ma tinh long khong can thiet cho su roi de dang va nhanh cua nuoc, ... deu dong lai".
+- **NHE / THUATNGU**, Cor 7, dong 396
+  - source: as the congealed water ... is convex in its internal superficies AME, BNF, towards the falling cataract, so this column PHQ will be convex towards the cataract also, and will therefore be greater than a cone
+  - now: bat mat trong AME, BNF cong ve phia dong thac. Vi vay cot PHQ cung cong ve phia dong thac, va do do lon hon mot hinh non
+  - suggest: "convex" dich la "cong"; lap luan "lon hon hinh non" can "loi". Sua thanh "loi ve phia dong thac".
+- **NHE / SAINGHIA**, Cor 8, dong 404
+  - source: the external superficies of that column must yet meet the base PQ in an angle somewhat acute ... In the upper parts also it will be acute or pointed
+  - now: phai gap day PQ duoi mot goc nhon ... O nhung phan tren, no cung nhon hoac nhon hon
+  - suggest: Mat "somewhat" (hoi nhon); "acute or pointed" bi dich "nhon hoac nhon hon" (them y "hon" khong co trong nguon). Sua: "mot goc hoi nhon ... cung nhon, hoac co dinh nhon".
+- **NHE / KHAC**, Cor 8, dong 406
+  - source: the circle being diminished in infinitum, the angle PHQ will be diminished in infinitum
+  - now: Khi duong trinh PQ giam vo han
+  - suggest: Loi go: "duong trinh" thanh "duong tron".
+- **NHE / THIEU**, Cor 3, dong 354
+  - source: in the time that a drop falling from I through H to G describes HG, the difference of the altitudes, the effluent water ... will be equal to the difference of the cylinders
+  - now: Trong thoi gian mot giot roi tu I qua H den G, nuoc chay ra, tuc nuoc chua trong vat the ABNFEM, bang hieu cua cac hinh tru
+  - suggest: Thieu "mo ta HG, hieu cua cac chieu cao": them "mo ta HG, hieu cua cac chieu cao".
+- **NHE / THIEU**, Cor 7-8, dong 392 va 404
+  - source: Cor 7: let ABNFEM be the cataract ... whose axis is GH, as above. Cor 8: things standing as above supposed, imagine the half of a spheroid
+  - now: Cho ABNFEM la dong thac hoac cot nuoc roi co truc GH. / Hinh dung mot nua spheroid ...
+  - suggest: Mat cum "nhu o tren" (Cor 7) va "cac dieu kien vẫn như đã giả thiết ở trên" (Cor 8); can them de giu cau noi hai he qua voi Case/Cor truoc.
+- **NHE / SOLIEU**, Hệ quả 2, dòng 494-506
+  - source: a ratio compounded of the ratio of EF2 to EF2 - ½[PQ2] once, and the ratio of EF2 to EF2 - PQ2 twice (OCR cụt "EF2 - i")
+  - now: EF²/(EF²-PQ) một lần
+  - suggest: Công thức dòng 497 thiếu số mũ 2 ở PQ và thiếu ½: phải là EF² : (EF² - ½PQ²). Hai lần: EF² : (EF² - PQ²) khớp nguồn.
+- **NHE / THIEU**, Prop. XXXVII, cuối chứng minh, dòng 480
+  - source: "nearly. Q.E.D."
+  - now: gần như như mật độ môi trường với mật độ hình trụ.
+  - suggest: Thiếu "Q.E.D." (báo một mục cho cả phần).
+- **NHE / THUATNGU**, Nhận xét, dòng 530 và 532
+  - source: especially if they are of an obtuse figure ... if they are obtuse behind and before
+  - now: nhất là khi chúng có hình dạng tùy nhọn ... nếu cả phía trước và phía sau đều tùy nhọn
+  - suggest: "obtuse" nghĩa là tù (không nhọn); "tùy nhọn" vô nghĩa và đảo nghĩa với "acute" (nhọn) ở câu sau. Sửa thành "tù".
+- **NHE / THIEU**, Prop. XXXVII, dòng 434 và 454
+  - source: let the water run out of this vessel into the stagnant water through the cylindric canal ... as the difference of the circles EF and PQ to the circle EF, or as EF2 - PQ2 to EF2
+  - now: Bản dịch bỏ "vào nước đứng yên" (dòng 434) và bỏ vế "hiệu của EF và PQ với đường tròn EF, hay" (dòng 454).
+  - suggest: Bổ sung hai cụm này; thêm "ở bất kỳ chỗ nào" cho vị trí của đường tròn nhỏ PQ ("any where in the middle of the canal").
+- **NHE / THEM**, dòng 536
+  - source: (không có trong nguồn)
+  - now: *Phần này kết thúc sau Proposition XXXVII. Các hệ số và ký hiệu trong các công thức được giữ theo OCR; cần đối chiếu lại với scan ...*
+  - suggest: Lời biên tập nằm ngoài blockquote và khẳng định sai là phần chương kết thúc sau Prop. XXXVII (còn thiếu Scholium và Lemma V-VII). Xóa hoặc chuyển vào Chú giải/comment HTML.
+- **NHE / HINH**, Prop. XXXVII, dưới dòng 430-440 và Scholium
+  - source: Nguồn có hình bình ABDC, kênh EFTS, đường tròn PQ, các điểm K, G, H, I và hình ABCD với cung parabol AE, BE, CF, DF
+  - now: Phần này không có ảnh nào.
+  - suggest: Thêm hình (nhãn A, B, C, D, E, F, G, H, I, K, P, Q, S, T) cho Prop. XXXVII và hình parabol của Scholium; bản dịch đang dùng các nhãn này mà không có hình.
+
+## 51-sach-ii-phan-vii-proposition-xxxviii-xxxix.md
+
+- *phần 1/1: Chương 51, phần 1/1 (toàn file, dòng 1-80): Prop XXXVIII (Cor 1-4), Prop XXXIX, Scholium, 2 chú giải, 1 hình. Nguồn ia.txt dòng 18376-18455. Phần dịch Newton nhìn chung trung thực; các phát *
+
+- **NANG / CHUGIAI**, Chú giải 1, dòng 58 - KHÔNG HỢP LÍ
+  - source: Scholium: all the water which precedes the globe, and whose fluidity increases the resistance, is congealed (không nói gì về nước bị dồn lên trong kênh)
+  - now: Ông hiểu rằng chất lỏng phía trước vật thể không thể tự do trôi đi vô hạn ... Nhận xét ngay sau đây nói rõ cơ chế tương tự: ông đóng băng chính phần nước ấy
+  - suggest: Gán cho Newton sự "hiểu" và cơ chế dồn ứ không có trong văn bản; Scholium nói về nước phía trước bị coi là đông lại (áp dụng cho cả hai Prop), không phải "chỗ dồn" do thành kênh; không đồng nhất được hai thứ. Bỏ hoặc viết là cách giải thích hiện đại của người biên tập.
+- **NANG / CHUGIAI**, Chú giải 2, dòng 70-72 - KHÔNG HỢP LÍ
+  - source: its resistance is to the force ... as the density of the fluid to the density of the globe, very nearly. Cor. 4: ... will lose half its motion before it can describe the length of two of its diameters
+  - now: Quả cầu mất hết chuyển động sau khi đi tám phần ba đường kính ... lực cản ... bằng lực phá hủy toàn bộ chuyển động của nó trong thời gian nó đi được tám phần ba đường kính
+  - suggest: Tiêu đề và câu mở sai: Prop nói lực cản TỶ LỆ với lực ấy theo tỷ số mật độ chất lỏng : mật độ quả cầu (bằng nhau chỉ khi hai mật độ bằng nhau, và chỉ gần đúng), không phải bằng; quả cầu không "mất hết chuyển động" sau 8/3 đường kính (Cor 4: mất nửa sau hai đường kính khi cùng mật độ). Sửa tiêu đề và thêm tỷ số mật độ.
+- **NANG / CHUGIAI**, Chú giải 2, dòng 76 - KHÔNG HỢP LÍ
+  - source: Scholium: we suppose (as was done before in Lem. V) that all the water which precedes the globe ... is congealed ... the increase is so small that it may be neglected
+  - now: Ông cần một bài toán có lời giải bằng hình học thuần, nên ông đóng băng phần chất lỏng bị đẩy phía trước để nó thành một vật thể rắn đã biết.
+  - suggest: Gán động cơ cho Newton ("cần một bài toán có lời giải bằng hình học thuần") mà văn bản không nói; nguồn chỉ nêu giả thiết đông lại (theo Lemma V) và cho rằng sai số nhỏ. Bỏ phần động cơ, giữ phần giả thiết và đánh giá sai số.
+- **NHE / THIEU**, Prop XXXVIII, dòng 18 (cuối lời chứng minh)
+  - source: (by Lem. V, VI, and VII). Q.E.D.
+  - now: Vì vậy lực cản của quả cầu tỷ lệ gần như với lực phá hủy ... như mật độ chất lỏng với mật độ quả cầu. (không có Q.E.D.)
+  - suggest: Thêm "Q.E.D." sau lời chứng minh Prop XXXVIII (mục nhẹ duy nhất về Q.E.D./Q.E.F. cho cả phần).
+- **NHE / THEM**, Dòng 10 và dòng 80 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 39. Sơ đồ được dùng lại từ Phần I; hình quả cầu, hình trụ và kênh ... cần được đối chiếu riêng.* và *Các hệ số và ký hiệu ... được giữ theo OCR; cần đối chiếu lại với scan ...*
+  - suggest: Hai dòng in nghiêng là lời biên tập ngoài blockquote, tính là thêm; nên chuyển vào comment HTML hoặc blockquote [Chú giải]; số "Hình 39" không có trong nguồn.
+- **NHE / HINH**, Dòng 8, ảnh book-ii-section-i-motion.svg
+  - source: Nguồn Prop XXXVIII-XXXIX không có hình nào và không có nhãn điểm nào trong lời chứng minh
+  - now: SVG có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích (trục thời gian-vận tốc, đường cong, đường thẳng)
+  - suggest: Hình thuộc nội dung Phần I (chuyển động theo thời gian), không thuộc quả cầu/hình trụ/kênh của đoạn này; các chữ A, O, B không được bài nhắc tới. Nên bỏ hoặc thay bằng hình đúng.
+- **NHE / CHUGIAI**, Chú giải 1, dòng 60 - HỢP LÍ MỘT PHẦN
+  - source: Prop XXXIX: ... ratio of the orifice of the canal to the excess of that orifice above ... the greatest circle of the globe ... nearly (không có điều kiện "kênh không quá rộng")
+  - now: khi tỷ lệ ấy vượt quá khoảng năm phần trăm thì phép đo coi như không còn đáng tin. Newton đã chỉ ra dạng của hiệu ứng này từ năm 1687, chỉ với giả thiết miệng kênh không quá rộng.
+  - suggest: Con số "năm phần trăm" là khẳng định thực nghiệm cần nguồn; "chỉ với giả thiết miệng kênh không quá rộng" không có trong nguồn (công thức nguồn chỉ có "nearly" và quay về Prop XXXVIII khi miệng vô cùng rộng, như chú giải tự nói ở dòng 56); "từ năm 1687" cần nguồn. Bỏ hoặc dẫn nguồn.
+- **NHE / CHUGIAI**, Chú giải 1, dòng 56 - mơ hồ
+  - source: Prop XXXIX: resistance is to the force ... in a ratio compounded of (1) orifice : excess over half circle, (2) duplicate ratio orifice : excess over greatest circle, (3) density of fluid : density of globe
+  - now: Lực cản tỷ lệ với lực ở trường hợp không bị kênh chặn, nhân với tỷ lệ ... nhân với bình phương tỷ lệ ... rồi nhân với tỷ lệ mật độ
+  - suggest: "lực ở trường hợp không bị kênh chặn" gây hiểu là lực của Prop XXXVIII (đã chứa tỷ lệ mật độ) rồi nhân thêm mật độ lần nữa; nên nói rõ: lực cản bằng lực phá hủy chuyển động trong 8/3 đường kính nhân ba tỷ lệ nói trên.
+- **NHE / CHUGIAI**, Chú giải 2, dòng 74
+  - source: The globe is to its circumscribed cylinder as two to three; the force which can destroy all the motion of the cylinder, while the cylinder describes four diameters, will destroy all the motion of the globe ... eight third parts
+  - now: hình trụ mất hết chuyển động sau khi đi bốn đường kính, nên quả cầu chỉ cần 2/3 x 4 = 8/3 đường kính
+  - suggest: Nguồn nói về LỰC có thể phá hủy toàn bộ chuyển động của hình trụ trong 4 đường kính (đại lượng chuẩn), không phải bản thân hình trụ chịu lực cản mất hết chuyển động sau 4 đường kính; cũng nói 2:3 là tỷ lệ quả cầu : hình trụ (nguồn không ghi rõ "thể tích"). Chú giải cũng bỏ qua tỷ số mật độ. Cần viết lại cho đúng.
+- **NHE / CHUGIAI**, Chú giải 2, dòng 78 - HỢP LÍ MỘT PHẦN
+  - source: (không có trong nguồn; kết luận của người biên tập)
+  - now: Cách làm này cho ta đúng các quy luật tỷ lệ - F tỷ lệ rho v^2 d^2 - ... phụ thuộc đúng những thuộc tính chất lỏng mà Newton đã đóng băng.
+  - suggest: Quy luật v^2 d^2 rho chỉ gần đúng ở số Reynolds lớn, không "đúng" nói chung; "phụ thuộc đúng những thuộc tính chất lỏng mà Newton đã đóng băng" là so sánh lỏng lẻo (số Reynolds chứa độ nhớt, còn Newton chỉ đóng băng tính chảy). Nên giảm mức khẳng định.
+
+## 52-sach-ii-phan-vii-proposition-xl.md
+
+- *phần 1/3: Chương 52, phần 1/3 (dòng 1-149): Prop. XL Bài toán IX (cách tìm N, L, vận tốc, không gian, Hệ quả 1-2 Prop. XXXVIII, bảng 5 cột), Scholium (dụng cụ, đơn vị), Thí nghiệm 1, đầu Thí nghiệm 2;*
+- *phần 2/3: Chuong 52, phan 2/3 (dong 150-297): Prop. XL - cuoi Thi nghiem 2, Thi nghiem 3-12, doan ket luan ve vat roi trong nuoc, Thi nghiem 13 (den dong "502 1/3 grain"). Khong co hinh, khong co chu *
+- *phần 3/3: Chương 52, phần 3/3 (dòng 298-445): cuối Thí nghiệm 13 (bảng quả cầu chứa không khí), Thí nghiệm 14 (bong bóng Desaguliers), kết luận về lực cản tỷ lệ mật độ, công thức mất chuyển động t/(T+*
+
+- **NANG / SAINGHIA**, Prop. XL dòng 28-50 (N, vận tốc, không gian)
+  - source: Find the absolute number N agreeing to the logarithm 0,4342944819 x 2P/G ... velocity acquired will be (N-1)/(N+1) H, height 2PF/G - 1,38629430F + 4,60517018LF
+  - now: N\frac{2P}{G} với logarithm 0,4342944819; H=\frac{2PF}{G}; không gian 1,38629430\frac{PF}{G}+4,605170186LF
+  - suggest: N là số có logarithm bằng 0,4342944819 x 2P/G. Vận tốc đạt được là (N-1)/(N+1) H (không phải H = 2PF/G, vì H đã định nghĩa ở trên là vận tốc rơi tự do). Không gian là 2PF/G - 1,38629430F + 4,60517018LF (OCR đọc 4,6051701S6LF/4,6051 70186LF)
+- **NANG / SOLIEU**, Prop. XL dòng 58-61
+  - source: If the fluid be of a sufficient depth ... 2PF/G - 1,3362943611F will be the altitude described, nearly
+  - now: khi đó không gian mô tả gần như bằng 1,3362943611F P/G
+  - suggest: Sửa thành 2PF/G - 1,3362943611F (số hạng trừ, không phải nhân P/G). Lưu ý OCR đọc 1,3362943611 còn Thí nghiệm dùng 1,3862944F; không xác định được từ OCR chữ số đúng
+- **NANG / SAINGHIA**, Scholium dòng 116
+  - source: and any other globe will be as the excess of its weight in vacuo above its weight in water
+  - now: Mọi quả cầu khác có trọng lượng trong chân không lớn hơn trọng lượng của nó trong nước đúng bằng lượng ấy.
+  - suggest: Câu gốc nói trọng lượng quả cầu nước bất kỳ tỷ lệ với (trọng lượng trong chân không trừ trọng lượng trong nước) của nó, không phải "đúng bằng lượng ấy". Dịch lại: mọi quả cầu nước khác có trọng lượng tỷ lệ với phần dư của trọng lượng trong chân không trên trọng lượng trong nước
+- **NANG / SOLIEU**, Scholium dòng 116
+  - source: a solid inch contains [OCR: "if"] ounces troy weight, or 253 [1/3] grains
+  - now: Một inch khối chứa 4 2/3 ounce troy, tức 253 1/3 grain.
+  - suggest: 4 2/3 ounce troy = 2240 grain, mâu thuẫn với 253 1/3 grain (76 pound troy / 1728 inch khối = 19/36 ounce). OCR chỉ đọc "if" nên phân số gốc không xác định được từ OCR, nhưng 4 2/3 chắc chắn sai
+- **NANG / SOLIEU**, Thí nghiệm 2 dòng 146 và 148
+  - source: weights severally 76[..] grains in air, and 5T[..] grains in water (sau: "a globe of 5[..] grains in weight")
+  - now: nặng 76 1/2 grain trong không khí và 57 1/2 grain trong nước
+  - suggest: OCR đọc phần nguyên là 5, không phải 57; hiệu 71 grain (OCR "71 grains") chỉ khớp với 5 và một phân số, và bản dịch tự mâu thuẫn (76 1/2 - 57 1/2 = 19, không phải 71 1/2). Phân số không xác định được từ OCR
+- **NANG / SOLIEU**, Thí nghiệm 1 dòng 124; Thí nghiệm 2 dòng 148
+  - source: f parts of the diameter of the globe (viz. 2,24597 inches) to the space 2F; (Exp.2) f parts of this diameter 2,1678 inches
+  - now: 4/3 đường kính, tức 2,24597 inch; 4/3 đường kính là 2,1678 inch
+  - suggest: 4/3 x 0,84224 = 1,123, không phải 2,24597; 2,24597/0,84224 = 8/3 (cũng 2,1678/0,81296 = 8/3). OCR chỉ đọc "f" nên phân số không xác định được từ OCR, nhưng phải khớp con số: sửa thành 8/3 đường kính. Dòng 16 (F so với 4/3 D) nhất quán với 2F:8/3 D nên giữ
+- **NANG / SOLIEU**, Thi nghiem 13, bang, dong 272-277 (cot "Thoi gian roi" cua qua cau chua khong khi)
+  - source: Cot thoi gian cua qua cau chua khong khi trong OCR bi hong ("oo oo oo oo oo oo"), khong doc duoc; ngay sau do nguon noi cac thoi gian da sua cua sau qua cau lon la 8''12''', 7''42''', 7''42''', 7''57''', 8''12''', 7''42''' (chi tru khoang 18''')
+  - now: Ca sau hang cua cot cuoi dien "4''" cho qua cau chua khong khi, giong het cot thuy ngan
+  - suggest: Gia tri "4''" khong co can cu trong OCR va mau thuan voi cac thoi gian da sua (~8'') o dong 283-288. Doi chieu voi ban scan de dien dung cac thoi gian cua cot khong khi (OCR khong xac dinh duoc)
+- **NANG / SOLIEU**, Cuối Phần VII, dòng 375-381 (lặp ở Chú giải dòng 389-391)
+  - source: con lắc: quả cầu mật độ nước mô tả nửa đường kính trong không khí mất "the -3^-0 part of its motion"; lý thuyết mất "a part equal to j-Vir?" (OCR chỉ thấy phân số có mẫu dạng 3..0 và ..r?)
+  - now: "sẽ mất $\frac13$ chuyển động" (thí nghiệm con lắc) và lý thuyết "$\frac{\sqrt{3}-1}{2\sqrt{3}}$" (khoảng 0,21)
+  - suggest: Cả 1/3 lẫn biểu thức căn bậc hai đều không có trong OCR (nguồn đều là phân số "1 trên một số lớn", không có căn); mất 1/3 hoặc 21% khi đi nửa đường kính là phi lí. Chữ số chính xác không xác định được từ OCR; cần đối chiếu scan, xóa biểu thức căn và sửa cả Chú giải
+- **NANG / SOLIEU**, Bảng Thí nghiệm 14, dòng 364-366
+  - source: hàng 2: "272 feet 0½ in, +0 ft 0¼"; hàng 3 (137½ grain): "272 feet 7 in, +0 ft 7 in"; hàng 4 (97½): "277 feet 4 in, +5 ft 4 in"; hàng 1 chênh lệch có dấu trừ, các hàng còn lại dấu cộng
+  - now: "272 feet / 0" (hàng 2), "272 feet / 0" (hàng 3), "277 feet / 5 feet" (hàng 4); bỏ mất dấu +/- và số inch
+  - suggest: Hàng 3 sai số (0 thay vì 7 inch cả hai cột); hàng 4 thiếu 4 inch; hàng 2 thiếu 0½ và 0¼ inch; thêm dấu - ở hàng 1 và dấu + ở các hàng còn lại theo OCR
+- **NANG / SOLIEU**, Bảng Thí nghiệm 13, hàng cuối, dòng 329
+  - source: quả cầu 641 grain: "7 42, 230 7, 10 7" (không gian lý thuyết 230 feet 7 inch, chênh 10 feet 7 inch)
+  - now: "$230$ feet $10$ inch" (chênh "10 feet 7 inch")
+  - suggest: Không gian lý thuyết phải là 230 feet 7 inch (khớp 220 + 10 ft 7 in); sửa 10 inch thành 7 inch
+- **NANG / SOLIEU**, Dòng 304 (và cần soát dòng 401)
+  - source: "so is 2P to [a fraction] of the diameter of the globe, that is, to 13i inches" (OCR phân số là "ì", đọc không chắc); đường kính 5 inch
+  - now: "$2P$ tỷ lệ với $\frac43$ đường kính quả cầu, tức $13\frac12$ inch"
+  - suggest: 4/3 của 5 inch là 6⅔ inch, không phải 13 inch; 13⅓ inch = 8/3 x 5 inch, và 2F=28 ft 11 in chia 25,98 cũng ra 13,4 inch. Phân số trong OCR không đọc chắc nhưng số 13 inch mâu thuẫn với 4/3; cần đối chiếu scan (có thể là 8/3, đồng thời 13½ nên là 13⅓). Dòng 401 "|D" trong OCR cũng không xác định được
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 433-443
+  - source: Nguồn nói hai điều chỉnh ở chuyển động chậm/nhanh là "little niceties" mà Newton "take no notice of"; hình cầu thích hợp với chuyển động hơn hình trụ; "elasticity and compression of the fluid do not increase in the duplicate ratio of the velocity"
+  - now: "Newton tự nói rõ hai chỗ hỏng"; "phần sau quả cầu bị ép ít hơn và cuối cùng hình thành một khoảng trống"; "lực cản chỉ phụ thuộc lượng vật chất... không phụ thuộc độ dẻo hay độ bền"; "Ông cần một đại lượng bất biến để rút ra kết luận"; "phá hủy chuyển động quay"
+  - suggest: KHÔNG HỢP LÍ: cơ chế "khoảng trống" bị gán cho Newton (ông chỉ nói tính đàn hồi và sự nén không tăng theo bình phương vận tốc); Newton gọi đó là chi tiết nhỏ chứ không phải "chỗ hỏng"; ông nói độ bền và ma sát giữa các phần có thể giảm nên lực cản không hoàn toàn độc lập với độ dẻo; gán động cơ; "không cần giả thiết ether" sai vì ông nói rõ về ether tinh vi nhất
+- **NHE / SAINGHIA**, Thí nghiệm 1 dòng 132
+  - source: G, which is to one second of time in the subduplicate ratio of the space P, or of 2,2128 inches to 95,219 inches
+  - now: Thời gian G tỷ lệ nghịch với một giây theo căn bậc hai của tỷ lệ giữa không gian P, tức 2,2128 inch, và 95,219 inch.
+  - suggest: Bỏ "tỷ lệ nghịch": G so với một giây như căn bậc hai của tỷ số 2,2128 : 95,219 (tỷ lệ thuận; G = 0,15244 s khớp)
+- **NHE / THEM**, Prop. XL dòng 72-79 (cột 4 và cột 3)
+  - source: The numbers in the fourth column are 2P/G [OCR: "-pn"] and by subducting the number 1,3962944 - 4,60517021L [OCR "1,3962944 - 4,60517021,,"] are found the numbers in the third column
+  - now: Các số ở cột thứ tư là 2P/G(1-1/N); khi trừ số 1,3862944 F 4,60517021, ta được các số ở cột thứ ba
+  - suggest: Biểu thức (1-1/N) không có trong nguồn OCR (chỉ đọc ra một phân số theo P/G); dấu trừ trước 4,60517021 và chữ L bị mất, "F" bị chèn vào giữa. OCR đọc 1,3962944 còn bản dịch đổi thành 1,3862944 (khớp Thí nghiệm 1 nhưng là sửa ngầm)
+- **NHE / SOLIEU**, Bảng dòng 89, 93, 100, 92
+  - source: 0,02F (cột 4, hàng 0,01G); 0,16F (OCR "OJ1 6F", cột 5, hàng 0,4G); "*^6500055F" (hàng 2G cột 3); "o!o<<86815F" (hàng 0,3G cột 3)
+  - now: 0,002F; 0,116F; 1,6500055F; 0,1086815F
+  - suggest: Sửa: hàng 0,01G cột 4 thành 0,02F (OCR 0,02F; 2P/G = 0,02); hàng 0,4G cột 5 thành 0,16F; hàng 0,3G cột 3 là 0,0886815F (OCR o!o<<86815; kiểm bằng 2 ln cosh 0,3); hàng 2G cột 3 chữ số đầu OCR không đọc được, theo dãy 0,8676 / ? / 4,6187 và 2 ln cosh 2 phải là 2,6500055F. Hàng 0,001G cột 2: OCR "99999|ii" không xác định được phân số, bản dịch ghi 1/4
+- **NHE / HINH**, Dòng 8 (ảnh book-ii-section-i-motion.svg) và dòng 10 (chú thích)
+  - source: Nguồn không có hình nào cho Proposition XL (OCR không có nhãn hình trong đoạn này)
+  - now: ![...](../assets/book-ii-section-i-motion.svg) và dòng chữ nghiêng "Hình 40. Sơ đồ được dùng lại từ Phần I; các hình bình chứa, quả cầu và bảng số liệu của bản gốc cần được đối chiếu riêng."
+  - suggest: SVG chỉ có nhãn A, O, B, "thời gian", "vận tốc", "đường quỹ tích" (trục thời gian, hyperbola); bài toán dùng A, B làm trọng lượng, D, F, G, H, P, N, L; hình không thuộc nội dung đoạn này. Nên bỏ ảnh; chú thích in nghiêng là lời biên tập ngoài blockquote (tính là thêm)
+- **NHE / SOLIEU**, Thi nghiem 13, bang, dong 272-277 (cot thoi gian cua qua cau thuy ngan)
+  - source: Cot thuy ngan trong OCR: 4'', 4 -, 4, 4 +, 4, 4 + (co dau tru/cong sau so 4)
+  - now: Moi hang chi ghi $4''$, bo het cac dau - va +
+  - suggest: Kiem tra scan; neu dung la dau - / + thi them vao ($4''-$, $4''+$) de khong mat so lieu
+- **NHE / SOLIEU**, Thi nghiem 13, dong 292
+  - source: the weight of an equal bulk of air is [phan so OCR hong] grains, or 19 [phan so hong] grains; ... weight in vacuo is 502 [phan so hong] grains
+  - now: Trong luong cua mot the tich khong khi bang no la $19\frac13$ grain, tuc $19\frac13$ grain (hai ve giong nhau, thanh doan thua)
+  - suggest: Gia tri thu nhat o nguon la mot bieu thuc khac gia tri thu hai ("tuc" hai cach viet) va OCR doc 19 va phan so "r3o" (co the 3/10); khong xac dinh duoc tu OCR. Kiem tra scan cho 19.. va 502.. ; hien tai cau tu lap lai
+- **NHE / SOLIEU**, Thi nghiem 11, dong 242-244
+  - source: fell ... describing a height of 182* inches, nearly ... ought by the theory to have fallen in the time of 46 oscillations and f, nearly
+  - now: mo ta chieu cao gan nhu $182$ inch ... phai roi trong khoang $46$ dao dong, gan nhu
+  - suggest: Mat phan "and f" (them mot phan so) sau 46 dao dong; chieu cao 182* co the co phan so 1/2 (OCR "182*" khong ro). Kiem tra scan, them phan so neu co
+- **NHE / THIEU**, Thi nghiem 7 (doan nhan xet), dong 220
+  - source: the oscillations became much less than before, and the times in which the globes fell were not so unequal: as in the following experiments
+  - now: Dao dong giam rat nhieu, va cac thoi gian roi khong con chenh lech nhau nhieu nhu truoc.
+  - suggest: Mat vé "as in the following experiments" (cac thi nghiem 8-12 ben duoi chinh la vi du). Them "nhu trong cac thi nghiem sau day"
+- **NHE / SAINGHIA**, Doan ket luan truoc Thi nghiem 13, dong 258
+  - source: the globes that move swiftly are not so much pressed at their hinder parts as the others
+  - now: cac phan phia sau cua qua cau chuyen dong nhanh bi ep it hon cac qua cau khac
+  - suggest: So sanh sai doi tuong: nguon so sanh ap luc o phan sau cua cac qua cau nhanh voi cua cac qua cau khac, ban dich doc nhu "phan sau cua qua cau nhanh bi ep it hon (chinh) cac qua cau khac". Sua: "phan sau cua cac qua cau chuyen dong nhanh bi ep it hon phan sau cua cac qua cau kia"
+- **NHE / SAINGHIA**, Doan ket luan truoc Thi nghiem 13, dong 256
+  - source: unless the compression of the fluid be increased at the same time
+  - now: tru khi su nen cua chat long cung tang theo cung ty le
+  - suggest: "at the same time" (cung luc) bi dich thanh "theo cung ty le"; la them y khac nguon. Sua: "tru khi su nen cua chat long cung tang cung luc"
+- **NHE / SOLIEU**, Dòng 310
+  - source: "in the time of 57'" 58"""
+  - now: "$57''58'''$"
+  - suggest: Ký hiệu thời gian lệch một bậc dấu phẩy: OCR là 57 và 58 với ba và bốn dấu phẩy (cùng quy ước với 8"12'" ở dòng 318, nghĩa 1/60 s); sửa thành $57'''58''''$ nếu chấp nhận OCR
+- **NHE / SOLIEU**, Dòng 292-301, 304 (số trọng lượng)
+  - source: "weight of an equal bulk of air is [19 3/10] grains ... weight in vacuo is 502 3/10 grains ... 502 3/10 to 19 3/10" (OCR "19r3o", "502T3?r": phần phân số giống 3/10; 16600/860 = 19,3)
+  - now: "$19\frac13$", "$502\frac13$" grain (dòng 292 còn lặp "19⅓ grain, tức 19⅓ grain")
+  - suggest: Phân số 1/3 khác 3/10 trong OCR (19,3 theo phép chia 16600/860 chứ không phải 19,33). Đối chiếu scan; dòng 292 nằm ngoài phần này nhưng lặp thừa
+- **NHE / SOLIEU**, Dòng 318
+  - source: "Subduct 1,3863F, or 20 feet and [fraction] an inch" (OCR "
+  - now: ")
+  - suggest: "tức $20$ feet và một phần inch"|Mất phân số: OCR là một phân số của inch (1,3863 x 173,5 inch cho 20 ft 0,5 inch); viết rõ "½ inch" hoặc ghi không xác định được từ OCR
+- **NHE / SOLIEU**, Thí nghiệm 14, dòng 341-355 (lần thứ hai)
+  - source: hiệu thời gian lần hai OCR "14i", "14}", "14", 19", 16J"; tổng thời gian "18f, 18i, 18j, 23{, 21"; ở đỉnh nhà thờ "19, 18f, 18f, 24, 21" (OCR chữ số 18 đọc là "IS")
+  - now: hiệu "14½, 14¾, 14¾, 19, 16½"; tổng "19, 19, 19, 23½, 21"; đỉnh "19, 19, 19, 24, 21"
+  - suggest: Lần hai: OCR cho tổng và đỉnh bắt đầu bằng 18 ở ba vị trí, bản dịch ghi 19 ba lần; hiệu thứ hai và thứ ba cũng lệch (14¼ và 14 so với 14¾). Phân số OCR hỏng nên không xác định chắc; cần đối chiếu scan
+- **NHE / THUATNGU**, Dòng 335
+  - source: "from the lantern on the top of the cupola of the same church"
+  - now: "từ đèn lớn trên đỉnh mái của cùng nhà thờ"
+  - suggest: "lantern" ở đây là tháp nhỏ trên đỉnh vòm (cupola), không phải cái đèn; sửa thành "tháp lồng/lantern trên đỉnh mái vòm"; cupola dịch là "mái vòm"
+- **NHE / THEM**, Dòng 445
+  - source: (không có trong nguồn)
+  - now: "*Phần này kết thúc ở cuối Phần VII. Các số liệu thí nghiệm và công thức được giữ theo OCR; cần đối chiếu lại với scan...*" (in nghiêng, ngoài blockquote)
+  - suggest: Lời biên tập ngoài Chú giải, nằm trong phần dịch; xóa hoặc chuyển vào blockquote Chú giải/comment HTML
+- **NHE / CHUGIAI**, Chú giải thứ nhất, dòng 385-395
+  - source: Newton chỉ nêu hai nguyên nhân (chuyển động đối nghịch trong chất lỏng và lực cản của sợi dây) và kết luận lực cản của con lắc lớn hơn khoảng 4 với 3
+  - now: lặp lại "mất ⅓" và biểu thức căn (dòng 391); "Cả hai đều nhân thêm một hệ số"; so sánh hiện đại với "vận tốc giới hạn" và "mô-men xoắn"; "sợi dâi" (lỗi gõ); "Ông biết sự lệch ấy đến từ lực cản cộng thêm, chứ không phải vì mô hình sai"
+  - suggest: HỢP LÍ MỘT PHẦN: ý chính (lực cản phụ làm lớn hơn nhưng tỷ lệ giữa các môi trường vẫn giữ) đúng; nhưng số liệu dòng 391 sai theo OCR, "hệ số nhân" là suy diễn thêm, "ông biết" gán nhận thức, ví dụ hiện đại không có nguồn, lỗi gõ "dâi" thành "dây"
+
+## 53-sach-ii-phan-viii-proposition-xli-l.md
+
+- *phần 1/3: Chuong 53, phan 1/3 (dong 1-111): Prop. XLI (+Hq), XLII (Truong hop 1-3), XLIII (Truong hop 1-2, Hq), XLIV (+Hq 1); nguon ia.txt dong 19440-19703; chu giai: khong co trong phan nay*
+- *phần 2/3: Chương 53, phần 2/3 (dòng 112-223): Prop. XLIV Hệ quả 2-3, Prop. XLV, XLVI (+Hệ quả 1-2, chú giải), Prop. XLVII (+Hệ quả), Prop. XLVIII đến hết dòng 223 (Trường hợp 1). Không có hình trong p*
+- *phần 3/3: Chương 53, phần 3/3 (dòng 224-334): Prop XLVIII (cuối Trường hợp 1, TH2, TH3), Prop XLIX + Hệ quả 1-2, Prop L, Nhận xét (Scholium) và chú giải. Không có ảnh trong phần này.*
+
+- **NANG / THIEU**, Prop. XLIII, Truong hop 1, dong 72-74
+  - source: And in the same manner as the first parts of the medium were condensed in going, and relaxed in returning, so will the other parts be condensed every time they go, and expand themselves every time they return.
+  - now: Sau "...cứ tiếp tục vô hạn." chuyển thẳng sang "Các phần chất lỏng đi và quay lại không thể cùng lúc tất cả." (câu trên hoàn toàn không có)
+  - suggest: Bổ sung câu: giống như các phần đầu của môi trường bị nén khi đi và giãn ra khi quay lại, các phần khác cũng bị nén mỗi lần đi và giãn ra mỗi lần quay lại.
+- **NANG / THIEU**, Prop. XLIII, Truong hop 2, dong 86
+  - source: The case is the same with that of a body projected in any medium whatever. A medium yielding to projectiles does not recede in infinitum, but with a circular motion comes round...
+  - now: Đoạn mở đầu bằng "Một môi trường nhường cho vật thể bị phóng không lùi vô hạn, mà quay tròn..." (thiếu câu trước)
+  - suggest: Thêm câu: "Trường hợp này giống với trường hợp một vật thể bị phóng trong bất kỳ môi trường nào." trước câu "Một môi trường nhường...".
+- **NANG / HINH**, Hinh dong 8 (book-ii-section-i-motion.svg)
+  - source: Prop. XLI-XLIV dùng điểm A,B,C,K,L,N,O,P,Q, a-m, d,e,f,g,h,i,k,l,m,n,V,R,S,E,F,G,H
+  - now: SVG chỉ có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích (đồ thị vận tốc theo thời gian của Phần I)
+  - suggest: Hình không thuộc nội dung Phần VIII: thiếu B,C,K,L,N,O,P,Q,a-m,d-n,V,R,S,E,F,G,H mà lời chứng minh nhắc. Cần vẽ lại hình (khe BC, hình nón APQ, khối chóp cụt, sóng, kênh chữ U, xicloit) hoặc bỏ hình này.
+- **NANG / THIEU**, Prop. XLII, Truong hop 1, dong 44
+  - source: it follows that the dilatation of the waves on each side towards KL and NO will be propagated with the same velocity as the waves themselves go forward with directly from A to PQ.
+  - now: sự giãn ra của sóng về KL và NO cũng được truyền với cùng vận tốc.
+  - suggest: Bổ sung vế so sánh: sự giãn ra của sóng về hai bên KL, NO được truyền với cùng vận tốc mà chính các sóng tiến thẳng từ A đến PQ (nay chỉ còn "cùng vận tốc" không nói với cái gì).
+- **NANG / SOLIEU**, Prop. XLVI Hệ quả 1, dòng 140
+  - source: waves, whose breadth is equal to 37\ French feet, will advance... in one minute ... 1S3J feet; and in an hour ... 11000 feet, nearly
+  - now: Những sóng có bề rộng $3\frac12$ feet Pháp ... một phút ... $210$ feet ... một giờ gần như $12600$ feet
+  - suggest: OCR đọc 183J feet mỗi phút và 11000 feet mỗi giờ (không phải 210 và 12600); bề rộng OCR hỏng "37\" nhưng 183 1/3 chia 60 cho 3 1/18 feet, không phải 3 1/2; sửa lại các số theo nguồn
+- **NANG / SOLIEU**, Prop. XLIV Hệ quả 2, dòng 114
+  - source: If the length of the whole water in the canal be of 6J feet of French measure ... a pendulum of Sy'-j such feet in length will oscillate in one second
+  - now: Nếu toàn bộ chiều dài nước trong kênh là $6\frac12$ feet ... Một con lắc dài $5\frac12$ feet ấy sẽ dao động trong một giây
+  - suggest: OCR đọc 6J và Sy'-j, không ra 6 1/2 và 5 1/2; bản dịch còn tự mâu thuẫn với Prop. XLIV (con lắc bằng một nửa chiều dài nước, mà 5 1/2 không bằng nửa 6 1/2); theo nhất quán với Hệ quả 1 Prop. XLVI nhiều khả năng là 6 1/9 và 3 1/18, cần kiểm lại bản scan
+- **NANG / SAINGHIA**, Prop. XLVII, dòng 204
+  - source: the elastic force of the point F in the place eγ to its mean elastic force in EG is as 1/(V-IM) to 1/V in going, and as 1/(V+im) to 1/V in its return
+  - now: Lực đàn hồi của điểm $F$ ở vị trí $eg$ tỷ lệ với lực đàn hồi trung bình ở $EG$ theo cùng tỷ lệ ấy
+  - suggest: Nguồn: lực đàn hồi tỷ lệ NGHỊCH với độ giãn, tức như 1/(V-IM) so với 1/V khi đi và 1/(V+IM) so với 1/V khi về; bản dịch nói "cùng tỷ lệ" là sai chiều; phải ghi rõ hai phân thức này
+- **NANG / SAINGHIA**, Prop. XLVII, dòng 206
+  - source: the difference of the forces to the mean elastic force ... as HL - KN to V ... the difference of the forces is as HL - KN
+  - now: chênh lệch giữa các lực tỷ lệ với $HL\cdot KN$, và do đó với khoảng cách của các điểm so với vị trí trung tâm
+  - suggest: Nguồn: chênh lệch tỷ lệ với HL - KN (hiệu), rồi với HK, rồi với OM (khoảng cách tới tâm dao động); bản dịch viết tích HL·KN là sai; sửa thành HL - KN
+- **NANG / SAINGHIA**, Prop. XLVII, dòng 172
+  - source: there be taken E-ε equal to PL or PI, the physical point E may be found in ε
+  - now: hạ các đường vuông góc $HL$ hoặc $hi$ xuống $PS$ và lấy các đoạn $EL$ hoặc $EI$ tương ứng
+  - suggest: Nguồn: lấy Eε bằng PL hoặc PI (điểm vật lý E khi đó ở ε); bản dịch thành "đoạn EL hoặc EI" và mất ý "điểm E ở ε"; sửa lại theo nguồn
+- **NANG / THIEU**, Prop. XLVII, dòng 170-176
+  - source: e, φ, γ, any intermediate places of the same points; EF, FG physical lineolae ... transferred into the places eφ, φγ
+  - now: Các đoạn $Ee$, $Ff$, $Gg$ là những khoảng cực ngắn mà các điểm ấy đi qua khi dao động.
+  - suggest: Thiếu câu định nghĩa các vị trí trung gian e, φ, γ và các đoạn vật lý EF, FG chuyển đến eφ, φγ; thiếu "Let us suppose, then, that a medium hath such a motion excited in it from any cause whatsoever, and consider what will follow"; thiếu cụm "perform their entire vibrations ... while the pulse is transferred from B to C"; thiếu vế "going from E through ε to e, and returning"
+- **NANG / THIEU**, Prop. XLVII, dòng 178-206
+  - source: eγ or EG + Gγ - Eε ... LN is to KH as IM to the radius OP, and KH to EG as the circumference PHSAP to BC ... ex aequo, LN to EG as IM to V
+  - now: Bề rộng hay độ giãn của phần $EG$ ở vị trí $eg$, khi các điểm đi, bằng $EG-LN$ ... Nếu $V$ là bán kính ... tỷ lệ với độ giãn trung bình như (V-IM)/V
+  - suggest: Thiếu bước eγ = EG + Gγ - Eε; thiếu chuỗi tỉ lệ LN:KH = IM:OP, KH:EG = chu vi:BC, ex aequo LN:EG = IM:V; thiếu lực của E và G là 1/(V-HL), 1/(V-KN) và phép rút gọn; thiếu bước HL - KN tỷ lệ HK, OM tỷ lệ OI (OP), từ đó tỷ lệ với đoạn tới trung điểm và "cùng lý do" cho lúc quay lại
+- **NANG / CHUGIAI**, Chú giải dòng 154-160
+  - source: Newton's result v from pendulum of length equal to breadth, wave advances breadth in one oscillation
+  - now: Với chu kỳ T=2π√(λ/g) ta có v=λ/T=√(gλ/(2π)) ... Đó chính là quan hệ tán sóng nước sâu ... công thức thì đúng
+  - suggest: KHÔNG HỢP LÍ: λ/(2π√(λ/g)) bằng √(gλ)/(2π), không phải √(gλ/(2π)), nên phép tính nội bộ sai; hơn nữa Newton dùng "một dao động" (một lượt đi hoặc về) chứ chưa chắc là chu kỳ đầy đủ, và chính ông nói kết quả chỉ gần đúng; nên bỏ khẳng định "đúng công thức" và công thức, chỉ giữ nhận xét v tỷ lệ √bề rộng
+- **NANG / CHUGIAI**, Chú giải dòng 162-164
+  - source: Prop. XLIV is in Sec. VIII; the note only says the ascent and descent is rather performed in a circle
+  - now: Ông đã dựng được ở Phần X ... ở nước nông ... một sóng không còn truyền được khi độ sâu nhỏ hơn nhiều so với bước sóng
+  - suggest: KHÔNG HỢP LÍ: Prop. XLIV nằm ở Phần VIII, không phải Phần X; khẳng định sóng nước nông không truyền được là sai về vật lí (sóng nước nông vẫn truyền, tốc độ phụ thuộc độ sâu); việc gán toàn bộ phân loại nước sâu/nông vào một câu của Newton là suy diễn của người biên tập; "bước sóng" và "bề rộng" lẫn lộn trong tiêu đề
+- **NANG / THIEU**, Prop XLVIII, sau Trường hợp 3, dòng 238-240
+  - source: This Proposition will be made more clear from the construction of the following Problem.
+  - now: (không có câu nào; dòng 238 chuyển thẳng sang tiêu đề Proposition XLIX)
+  - suggest: Thêm câu: "Proposition này sẽ rõ hơn từ cách dựng của Bài toán sau đây."
+- **NANG / THIEU**, Prop XLIX, chứng minh, dòng 248-264
+  - source: For, letting those things stand which were constructed in Prop. XLVII ... was to its whole elastic force as HL - KN to V, that is (since K falls upon P) as HK to V ... ex aequo ... HK x A to V x EG; or PO x A to VV; because HK was to EG as PO to V ... subduplicate ratio of VV to PO x A, and PO to A conjunctly
+  - now: Chứng minh mở bằng "Nếu một đường vật lý EF mô tả..."; bỏ câu giữ nguyên cách dựng của Prop XLVII, bỏ HL-KN, bỏ "ex aequo", bỏ HK x A : V x EG, bỏ "HK : EG = PO : V", bỏ các bước tỉ số căn bậc hai gộp; chỉ còn "HK/V" và "PO.A/V^2"
+  - suggest: Dịch đủ: giữ các dựng của Prop XLVII; lực = HL-KN so với V, tức HK so với V (K rơi vào P); ex aequo lực lên EG so với trọng lượng nó là HK x A so với V x EG, hay PO x A so với V^2 vì HK:EG = PO:V; rồi tỉ số căn bậc hai V^2 so với PO x A và PO so với A gộp lại cho V so với A. Cũng thêm "trong cùng hoặc bằng thời gian" (same or equal times) ở dòng 248.
+- **NANG / SOLIEU**, Prop XLIX, dòng 250
+  - source: the time of one vibration would be to the time of the oscillation of a pendulum whose length is A in the subduplicate ratio of the length 1/2 PS or PO to the length A
+  - now: ... tỷ lệ với thời gian dao động của con lắc dài A theo căn bậc hai của tỷ lệ PS/A
+  - suggest: Sửa thành căn bậc hai của tỷ lệ (1/2)PS hay PO so với A, tức PO/A (chiều dài con lắc bằng nửa cung cycloid nên là PO chứ không phải PS); sau đó công thức PO.A ở dòng 261 mới khớp.
+- **NANG / THIEU**, Hệ quả 1 của Prop XLIX, dòng 270
+  - source: For the pulse will, in the time of this fall, supposing it to move with the velocity acquired by that fall, run over a space equal to the whole altitude A ... for the time of the fall is to the time of oscillation as the radius of a circle to its circumference.
+  - now: Chỉ có câu phát biểu hệ quả; toàn bộ phần chứng minh (mạch đi trọn A trong thời gian rơi, nên trong một dao động đi chu vi bán kính A, vì thời gian rơi : thời gian dao động = bán kính : chu vi) bị bỏ
+  - suggest: Thêm lại câu "Vì trong thời gian rơi ấy, giả sử mạch chuyển động với vận tốc thu được khi rơi, nó đi một không gian bằng cả chiều cao A..., do đó trong một dao động đi và về nó đi một không gian bằng chu vi đường tròn bán kính A; vì thời gian rơi so với thời gian dao động như bán kính so với chu vi."
+- **NANG / SAINGHIA**, Nhận xét, dòng 300
+  - source: no allowance for the crassitude of the solid particles of the air, by which the sound is propagated instantaneously
+  - now: chưa tính độ thô của các hạt rắn của không khí, vì âm thanh được truyền tức thời
+  - suggest: Nguồn nói độ thô của các hạt rắn là thứ mà qua đó âm thanh truyền tức thời, không phải lí do để bỏ qua nó. Sửa: "chưa kể độ thô của các hạt rắn của không khí, mà qua đó âm thanh được truyền tức thời."
+- **NANG / SOLIEU**, Nhận xét, dòng 310
+  - source: there are near 10J pulses in a space of 1070 Paris feet ... one pulse fills up a space of about 1 0T7-0 Paris feet, that is, about twice the length of the pipe
+  - now: có gần 10^7 mạch. Do đó một mạch lấp đầy khoảng 1/107 foot Paris, tức khoảng hai lần chiều dài ống
+  - suggest: OCR đọc "10J pulses" (số mạch không xác định được từ OCR) và "1 0T7-0" (đọc là 10 7/10 feet). "1/107 foot" mâu thuẫn với "hai lần chiều dài ống" (ống 5 feet) và 10^7 không khớp 1070 feet/100 dao động. Cần đối chiếu scan; bản dịch hiện tại sai thứ nguyên.
+- **NANG / THIEU**, Nhận xét, dòng 286, 304, 314
+  - source: if they be loud and deep ... the motion of sounds above discovered must be increased in that ratio ... And these are the principal phaenomena of sounds.
+  - now: Bỏ "nếu to và trầm" khi nói rung động của vật gần; bỏ câu "vận tốc đã tìm phải tăng theo tỉ số ấy" trước khi nêu 1142 feet; bỏ câu kết "Đó là những hiện tượng chính của âm thanh."
+  - suggest: Thêm ba mảnh trên vào đúng chỗ (đặc biệt câu kết cuối Nhận xét sau dòng 314). Ngoài ra dòng 312 "Có thể suy ra" nên là "Từ đó có thể xem là có lẽ (probable)", nguồn chỉ nói "probable".
+- **NANG / CHUGIAI**, dòng 332 (chú giải: HỢP LÍ MỘT PHẦN, đoạn này KHÔNG HỢP LÍ)
+  - source: (không có trong nguồn)
+  - now: chính sự xuất hiện của $\gamma$ là lý do tốc độ âm thanh phụ thuộc nhiệt độ - đúng thứ ông đo được mà chưa giải thích được bằng cơ chế
+  - suggest: Sai vật lí: với khí lí tưởng p/rho = RT/M nên v phụ thuộc nhiệt độ cả khi không có gamma (kể cả công thức sqrt(p/rho) của Newton); gamma chỉ là hệ số sqrt(gamma) còn thiếu. Newton cũng không "đo" sự phụ thuộc mùa mà chỉ lập luận. Sửa lại câu này.
+- **NHE / THEM**, Dong 10 (chu thich hinh in nghieng)
+  - source: (khong co trong nguon)
+  - now: *Hình 41. Sơ đồ được dùng lại từ Phần I; các hình kênh, sóng, mạch và bề mặt chất lỏng của bản gốc cần được đối chiếu riêng.*
+  - suggest: Lời biên tập ngoài blockquote tính là thêm; chuyển vào ghi chú biên tập/HTML comment hoặc đặt trong blockquote **[Chú giải]**, hoặc bỏ cùng hình.
+- **NHE / THIEU**, Prop. XLII, Truong hop 2, dong 56
+  - source: and not as reflected from the opposite walls, but directly propagated from the window, as far as our sense can judge.
+  - now: trực tiếp từ cửa sổ chứ không phải sau khi phản xạ từ những bức tường đối diện.
+  - suggest: Thêm cuối câu "theo như giác quan của ta có thể phán đoán".
+- **NHE / THIEU**, Prop. XLII, Truong hop 3, dong 62
+  - source: begin to dilate itself, and from thence, as from its principle and centre, will be propagated directly every way.
+  - now: bắt đầu giãn ra và từ đó được truyền trực tiếp về mọi phía.
+  - suggest: Thêm "như từ nguyên lý và tâm của nó": ...và từ đó, như từ nguyên lý và tâm của nó, được truyền trực tiếp về mọi phía.
+- **NHE / SAINGHIA**, Prop. XLIII, He qua, dong 92
+  - source: It is a mistake, therefore, to think, as some have done, that the agitation of the parts of flame conduces to the propagation of a pressure in rectilinear directions
+  - now: Vì vậy, có lẽ sai khi nghĩ rằng chuyển động của các phần ngọn lửa làm áp suất truyền theo những phương thẳng
+  - suggest: Bỏ "có lẽ" (nguồn khẳng định "is a mistake"), thêm "như một số người đã nghĩ"; "conduces to" là "góp phần vào sự truyền" chứ không phải "làm".
+- **NHE / SAINGHIA**, Prop. XLIII, Truong hop 1, dong 76
+  - source: The parts so going, and in their going condensed, are pulses, by reason of the progressive motion with which they strike obstacles in their way
+  - now: chính là các mạch, vì chúng đi xuyên phá các vật cản trên đường
+  - suggest: "strike" là va/đập vào vật cản, không phải "xuyên phá"; đề xuất: "vì chuyển động tiến mà chúng va vào các vật cản trên đường".
+- **NHE / SAINGHIA**, Prop. XLIV, dong 102 va 104
+  - source: the force with which the motion of the water is accelerated and retarded alternately ... the force with which the body P is accelerated or retarded in any place
+  - now: Lực làm nước chuyển động luân phiên ... Lực làm vật thể P chuyển động hoặc dừng lại tại một điểm Q
+  - suggest: Dịch "accelerated and retarded" thành "chuyển động luân phiên" và "chuyển động hoặc dừng lại" sai nghĩa; sửa: lực làm nước nhanh dần và chậm dần luân phiên; lực làm P nhanh dần hoặc chậm dần.
+- **NHE / THUATNGU**, Prop. XLIV, dong 106
+  - source: the motive forces of the water and pendulum
+  - now: các lực động viên của nước và con lắc
+  - suggest: "lực động viên" sai nghĩa/không chuẩn (động viên = khích lệ); dùng "lực chuyển động" (motive force) cho thống nhất với thuật ngữ cùng bộ sách.
+- **NHE / THIEU**, Prop. XLI, XLII (3 truong hop), XLIII, XLIV
+  - source: Q.E.D. (ket thuc Prop. XLI, moi Truong hop cua XLII, XLIII Tr.2, XLIV)
+  - now: Không có "Q.E.D." ở bất kỳ mục nào trong phần này
+  - suggest: Thêm "Q.E.D." ở cuối các chứng minh này.
+- **NHE / SAINGHIA**, Prop. XLVII dòng 170, 176 và Prop. XLVI dòng 132
+  - source: Ee, Fφ, Gγ (OCR: Ee, F0, Gy); PI, Pm, Pn when returning; surface of stagnant water
+  - now: Ee, Ff, Gg ... bằng PI, PM, PN khi quay lại; mặt nước đứng lên và xuống
+  - suggest: Chữ điểm không khớp nguồn và chính bản dịch (sau đó dùng ey, ef, fg cho các điểm khác); khi về là Pl, Pm, Pn (chữ thường m, n); "stagnant water" là nước đứng yên, "đứng lên" dễ hiểu sai thành chuyển động lên
+- **NHE / THIEU**, Prop. XLVI, XLVII, XLVIII (dòng 136, 210, 222)
+  - source: Q.E.I. (XLVI), Q.E.D. (XLVII), Q.E.D. (XLVIII)
+  - now: không có
+  - suggest: Thiếu các dấu kết thúc chứng minh Q.E.I./Q.E.D. ở phần này (chỉ báo một mục)
+- **NHE / THIEU**, Prop XLVIII TH3 (dòng 238), Prop XLIX (266), Prop L (280)
+  - source: Q.E.D. ... Q.E.D. ... Q.E.I.
+  - now: Không có Q.E.D. (cuối Prop XLVIII và XLIX) và Q.E.I. (cuối Prop L)
+  - suggest: Thêm "Q.E.D." hai nơi và "Q.E.I." một nơi nếu chương giữ chúng ở các Prop khác.
+- **NHE / HINH**, Prop XLIX, dòng 244-266
+  - source: (OCR có hình giữa chứng minh, nhắc B, C, V, A, P, S, O, E, F, G, H, K)
+  - now: Phần 3 không có ảnh ![...]; lời chứng minh nhắc E, F, G, H, K, O, P, S, V, B, C, A mà không có hình đi kèm trong phần này
+  - suggest: Kiểm tra xem hình của Prop XLVII/XLIX có đặt ở phần trước chương (chỉ có một ảnh duy nhất ở dòng 8 là book-ii-section-i-motion.svg, có vẻ không thuộc Phần VIII); nếu thiếu, thêm hình cho Prop XLIX.
+- **NHE / THEM**, dòng 334 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Các hệ số, ký hiệu và phép tính trong Phần VIII được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*
+  - suggest: Lời biên tập nằm ngoài blockquote; chuyển vào blockquote Chú giải hoặc comment HTML, hoặc xóa.
+- **NHE / CHUGIAI**, dòng 328-332 (chú giải: phần còn lại HỢP LÍ MỘT PHẦN)
+  - source: (không có trong nguồn)
+  - now: rồi sửa ba lần ... Ông không tin công thức của mình đã đúng ... Ông cũng là người đầu tiên giải thích vì sao kèn nói khuếch đại ... rồi kết luận nó bằng hai lần chiều dài
+  - suggest: (1) Nói "ba lần" nhưng chỉ liệt kê hai hiệu chỉnh (109 feet và hơi nước). (2) Gán trạng thái tâm lí "không tin công thức" cho Newton, nguồn không nói. (3) "Người đầu tiên" là khẳng định lịch sử cần nguồn. (4) Nguồn chỉ nói "probable" về bề rộng bằng hai lần ống, không "kết luận". Nên viết trung tính hơn.
+
+## 54-sach-ii-phan-ix-proposition-li-liii.md
+
+- *phần 1/2: Chương 54, phần 1/2 (dòng 1-105): Giả thuyết, Prop. LI (Định lý XXXIX) và Hệ quả 1-6, Prop. LII (Định lý XL) Trường hợp 1-3, Hệ quả 1-2, hình đầu chương, một chú giải; đối chiếu ia.txt dòng *
+- *phần 2/2: Chuong 54, phan 2/2 (dong 106-210): Prop. LII Hq 3-11 va Scholium, Prop. LIII Theorem XLI (chung minh, Hq 1-2, Scholium), chu giai cuoi. Doi chieu ia.txt dong 20385-20657.*
+
+- **NANG / HINH**, Hình dòng 8 (book-ii-section-i-motion.svg)
+  - source: Prop. LI-LII dùng các điểm A,F,L,S,B,G,M,C,H,N,D,I,O,E,K,P,Q và a,b,c,d,e (đường vuông góc, hyperbola AaQ, BbQ...)
+  - now: SVG chỉ có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích. Nó là hình vận tốc-thời gian của Phần I (môi trường có lực cản)
+  - suggest: Hình không thuộc nội dung Phần IX. Thay bằng hình trụ/quả cầu có các điểm S,A..E,Q và a..e; hoặc bỏ hình này
+- **NANG / SAINGHIA**, Prop. LI, dòng 22
+  - source: divide the fluid into innumerable concentric cylindric solid orbs of the same thickness
+  - now: chia chất lỏng thành vô số lớp cầu đồng tâm có cùng độ dày
+  - suggest: Nguồn là lớp trụ rắn đồng tâm (cylindric solid orbs), không phải lớp cầu. Sửa thành lớp trụ đồng tâm (rắn)
+- **NANG / SAINGHIA**, Prop. LI dòng 26 và Prop. LII Trường hợp 1 dòng 66
+  - source: the differences of the angular motions about the axis are as those translations applied to the distances, or as the translations directly and the distances inversely
+  - now: Hiệu của các chuyển động quay ... tỷ lệ với sự tịnh tiến nhân với khoảng cách, tức là tỷ lệ thuận với sự tịnh tiến và nghịch với khoảng cách
+  - suggest: "applied to the distances" nghĩa là chia cho khoảng cách; "nhân với" mâu thuẫn với vế "nghịch với khoảng cách" ngay sau. Sửa thành "chia cho khoảng cách" ở cả hai nơi
+- **NANG / SOLIEU**, Prop. LII Hệ quả 1, dòng 88
+  - source: the absolute velocities are reciprocally as the same squares applied to the distances from the axis
+  - now: vận tốc tuyệt đối tỷ lệ nghịch với bình phương ấy nhân với khoảng cách từ trục
+  - suggest: Nguồn: tỷ lệ nghịch với bình phương khoảng cách từ tâm chia cho khoảng cách từ trục (tức v tỷ lệ d_trục/r^2). Bản dịch cho 1/(r^2 d_trục), sai. Sửa "nhân với" thành "chia cho"
+- **NANG / CHUGIAI**, Chú giải dòng 94-100
+  - source: (chú giải do người biên tập)
+  - now: Quy luật thứ hai chính là công thức của một vortex tự do ... một chất lỏng thật bị khuấy bởi một hình trụ quay sẽ cố tiến tới trạng thái quay cứng ... chỉ ở ngoài cùng mới chuyển sang vortex tự do
+  - suggest: KHÔNG HỢP LÍ ở đoạn cuối: v tỷ lệ 1/r chỉ đúng trên mặt phẳng xích đạo (Hệ quả 1 cho v tỷ lệ d_trục/r^2); gán "vortex tự do" cho cả quả cầu quá đơn giản. Khẳng định về dòng chảy thật (quay cứng, vortex tự do ở ngoài) là khẳng định vật lí hiện đại không có nguồn và có thể sai cho hình trụ vô hạn trong chất lỏng vô hạn. Nên bỏ hoặc nêu nguồn
+- **NANG / THIEU**, Prop. LIII, Scholium (Nhận xét), dòng 194-196
+  - source: So at the beginning of the sign of Virgo, where the aphelion of Mars is at present, the distance between the orbits of Mars and Venus is to the distance ... as about 3 to 2 ... sun's apparent diurnal motion ... above 70 minutes ... less than 48 minutes
+  - now: Không có. Bản dịch nhảy từ "Hai kết luận này không tương thích" sang "Do đó các hành tinh không thể được giải thích bằng vortex."
+  - suggest: Dịch đủ đoạn từ "So at the beginning of the sign of Virgo" đến "rather serves to perplex than explain the heavenly motions" (khoảng cách quỹ đạo Hỏa-Kim tỉ lệ 3:2, vận tốc Trái Đất tỉ lệ sesquialteral, chuyển động biểu kiến ngày của Mặt Trời trên 70 phút và dưới 48 phút, giả thuyết vortex không thể dung hòa với thiên văn).
+- **NANG / THIEU**, Prop. LIII, phần chứng minh, dòng 178
+  - source: But we have shewn in that case that it would revolve according to the same law with those parts of the fluid that are at the same or equal distances from the centre of the vortex.
+  - now: Câu cuối của chứng minh kết thúc ở "...trừ khi có cùng mật độ với chất lỏng." Không có câu nhắc lại rằng khi đó nó quay theo cùng quy luật với các phần chất lỏng ở cùng khoảng cách.
+  - suggest: Thêm câu: Nhưng ta đã chứng minh trong trường hợp ấy nó sẽ quay theo cùng quy luật với những phần chất lỏng ở cùng hoặc bằng khoảng cách từ tâm vortex.
+- **NANG / CHUGIAI**, Chú giải cuối, dòng 198-208
+  - source: (Newton) Mô hình vortex ... Mô hình ấy là vortex ... giải thích được quy luật của Kepler ... chỗ duy nhất có thể cứu mô hình: vortex phải loãng dần ra ngoài
+  - now: Tiêu đề "Mô hình vortex của chính Newton" và câu "ông dựng một mô hình vật lí cho cả hệ Mặt Trời" gán cho Newton một mô hình mà nguồn không nói ông dựng thành lý thuyết của mình. Nguồn chỉ nói ông khảo sát tính chất vortex để xem hiện tượng thiên thể có giải thích được không. Câu "giải thích được quy luật Kepler" mâu thuẫn với chính Nhận xét (vortex cho T tỉ lệ r^2, không ra sesquiplicate). Đánh giá: HỢP LÍ MỘT PHẦN.
+  - suggest: Sửa tiêu đề thành "Newton khảo sát giả thuyết vortex và chỉ ra nó không phù hợp". Bỏ "dựng một mô hình vật lí cho cả hệ Mặt Trời" và "giải thích được quy luật của Kepler". Bỏ "Ông biết chỗ nào dễ sai nhất, nên ông chọn..." vì gán động cơ.
+- **NHE / THEM**, Dòng 10 (chú thích hình in nghiêng ngoài blockquote)
+  - source: (nguồn không có chú thích này)
+  - now: Hình 42. Sơ đồ được dùng lại từ Phần I; các hình hình trụ, quả cầu, vortex và các đường cong của bản gốc cần được đối chiếu riêng.
+  - suggest: Lời biên tập nằm ngoài blockquote; chuyển vào ghi chú biên tập hoặc xoá khi có hình đúng
+- **NHE / THIEU**, Prop. LI dòng 30 và Prop. LII Trường hợp 1 dòng 68
+  - source: that is (as appears from the known methods of quadratures of curves), directly as the distance SD / (by the known methods of quadratures), directly as the square of the distance SD
+  - now: tức là tỷ lệ thuận với khoảng cách SD / nên tỷ lệ thuận với bình phương khoảng cách SD
+  - suggest: Mất lời viện dẫn các phương pháp cầu phương (quadratures) đã biết. Thêm "(như thấy từ các phương pháp cầu phương đường cong đã biết)"
+- **NHE / THIEU**, Toàn phần: cuối Prop. LI, Trường hợp 1, 2, 3 của Prop. LII
+  - source: Q.E.D. / Which was first to be demonstrated / Which was to be demonstrated in the second place / Q.E.D.
+  - now: (không có câu kết nào ở các chỗ này)
+  - suggest: Thiếu các câu kết chứng minh (Q.E.D. và hai câu kết của Trường hợp 1, 2); thêm lại
+- **NHE / THIEU**, Prop. LII Trường hợp 2, dòng 74
+  - source: unless the motion be communicated according to the law which we demonstrated in Case 1. This appears from that demonstration.
+  - now: nếu chuyển động được truyền theo quy luật của Trường hợp 1. Vì vậy mọi dãy vành...
+  - suggest: Mất câu "This appears from that demonstration" (điều này hiện ra từ chứng minh ấy). Thêm lại
+- **NHE / SOLIEU**, Prop. LII Hệ quả 2, dòng 104
+  - source: till the periodical times of the several parts become as the squares of the distances from the centre of the globe
+  - now: cho đến khi thời gian tuần hoàn của các phần bằng bình phương khoảng cách từ tâm quả cầu
+  - suggest: "become as" nghĩa là tỷ lệ với, không phải "bằng". Sửa thành "tỷ lệ với bình phương"
+- **NHE / KHAC**, Prop. LI và LII phát biểu, dòng 20 và 60
+  - source: and the fluid be forced round by only this impulse of the cylinder (sphere)
+  - now: chất lỏng bị buộc phải quanh vì chỉ xung của hình trụ
+  - suggest: "bị buộc phải quanh" thiếu động từ (quay quanh / bị đẩy quay), đọc không thành câu; dòng 22 cũng bỏ "(by the Hypothesis)" và "solid". Sửa lại cho đủ
+- **NHE / CHUGIAI**, Chú giải dòng 100 (đoạn cuối)
+  - source: (chú giải do người biên tập)
+  - now: với hình trụ, tốc độ dọc theo vòng tròn bằng nhau chứ không phải bằng nhau
+  - suggest: Câu tự mâu thuẫn do lỗi gõ ("bằng nhau chứ không phải bằng nhau"). Đánh giá chung chú giải: HỢP LÍ MỘT PHẦN. Sửa câu cho rõ, ví dụ "không phải bằng tốc độ góc"
+- **NHE / SAINGHIA**, Prop. LII Hệ quả 7, dòng 130
+  - source: till their periodical times are as the squares of their distances from the centre of the vortex
+  - now: ...cho đến khi thời gian tuần hoàn của chúng bằng bình phương khoảng cách từ tâm vortex.
+  - suggest: Sửa "bằng bình phương" thành "tỉ lệ với bình phương khoảng cách từ tâm vortex".
+- **NHE / SAINGHIA**, Prop. LII Hệ quả 5, dòng 118
+  - source: by some force revolve constantly about an axis of a given inclination
+  - now: ...quay đều quanh một trục nghiêng theo một lực bên ngoài...
+  - suggest: Dịch: nhờ một lực nào đó mà quay đều quanh một trục có độ nghiêng cho trước. "theo một lực bên ngoài" làm sai cấu trúc câu.
+- **NHE / THIEU**, Prop. LII Hệ quả 5 và 6, dòng 120 và 126
+  - source: (for the reason assigned in Cor. 3 and 4) ... as was shewn in the last Corollary
+  - now: Hq 5: "chuyển động sẽ dần tắt" không có viện dẫn Hệ quả 3 và 4. Hq 6: không có "như đã chứng minh trong Hệ quả trước" và "(vì lý do đã nêu trong Hệ quả 3 và 4)".
+  - suggest: Thêm các viện dẫn Hệ quả 3 và 4 ở Hq 5 và Hq 6, và "như đã chỉ ra trong Hệ quả trước" ở Hq 6.
+- **NHE / THIEU**, Prop. LII Scholium, dòng 164-166
+  - source: at the beginning of this Section, an Hypothesis ... If, as some think, the vortices move more swiftly near the centre
+  - now: "tôi đã đặt ra Giả thuyết rằng lực cản tỷ lệ với vận tốc" thiếu "ở đầu Phần này"; "Nếu vortex ở gần tâm chạy nhanh hơn..." thiếu "như một số người nghĩ".
+  - suggest: Thêm "ở đầu Phần này" và "như một số người nghĩ".
+- **NHE / THIEU**, Prop. LIII, chứng minh, dòng 178
+  - source: by which, being, as it were, kept in equilibrio, it was retained in its orbit
+  - now: ...vượt qua lực của vortex đã giữ nó trong quỹ đạo...
+  - suggest: Thêm "như thể giữ nó ở trạng thái cân bằng (in equilibrio)".
+- **NHE / HINH**, Prop. LIII Scholium, dòng 192-196
+  - source: Hình AD, BE, CF quanh Mặt Trời S (nguồn có hình với các nhãn A, B, C, D, E, F, S)
+  - now: Không có ảnh nào trong phần 2 (không có dòng ![...]); lời văn nhắc A, B, C, D, E, F, S nhưng không có hình đi kèm.
+  - suggest: Chèn hình ba quỹ đạo AD, BE, CF quanh S với các nhãn A, B, C, D, E, F, S đúng như bài nhắc.
+- **NHE / THEM**, Dòng 210, ngoài blockquote
+  - source: (không có trong nguồn)
+  - now: *Các công thức và thuật ngữ trong Phần IX được giữ theo OCR; cần đối chiếu lại với scan trước khi đánh dấu là đã kiểm tra công thức.*
+  - suggest: Chuyển vào comment HTML hoặc blockquote Chú giải, hoặc bỏ khỏi phần dịch.
+- **NHE / CHUGIAI**, Chú giải cuối, dòng 208
+  - source: the matter of the vortex be more fluid the farther it is from the centre, or the resistance ... be augmented ... in a greater ratio than that in which the velocity increases
+  - now: "chỗ duy nhất có thể cứu mô hình: vortex phải loãng dần ra ngoài, và ông thấy điều đó không hợp lý". Nguồn nêu hai điều kiện (chảy hơn khi xa tâm, hoặc lực cản tăng nhanh hơn vận tốc), và "loãng" khác "chảy hơn". Cũng gán cho Newton việc "tự thử giải thích rồi kêu gọi" mà nguồn không nói.
+  - suggest: Viết: Newton nêu hai điều kiện có thể làm vortex cho sesquiplicate (vật chất càng xa tâm càng chảy hơn, hoặc lực cản tăng nhanh hơn vận tốc) và nhận xét cả hai đều không hợp lý.
+
+## 55-sach-iii-mo-dau-quy-tac-hien-tuong-proposition-i-vi.md
+
+- *phần 1/3: Chương 55, phần 1/3 (dòng 1-97): lời mở Sách III, Quy tắc I-IV, Hiện tượng I và đầu Hiện tượng II (đến dòng 96, bảng của Hiện tượng II nằm ngoài phần này); nguồn ia.txt dòng 20660-20921*
+- *phần 2/3: Chương 55, phần 2/3 (dòng 98-193): bảng Hiện tượng II, Hiện tượng III-VI, Proposition I-IV (đến câu con lắc Huygens), Hệ quả Prop. III*
+- *phần 3/3: Chương 55, phần 3/3 (dòng 194-288): nửa sau Proposition IV (phép tính + Scholium), Proposition V (Hệ quả 1-3, Scholium), Proposition VI (chứng minh, Hệ quả 1-5); đối chiếu nguồn ia.txt dòng *
+
+- **NANG / THIEU**, Hiện tượng I, dòng 88-91
+  - source: and so it manifestly appears from the following table. The periodic times of the satellites of Jupiter... (bảng chu kì và khoảng cách; Mr. Pound ... micrometers ... 8' 16'', 4' 42'', 2' 56'' 47''', 1' 51'' 6'''; đường kính Sao Mộc 40'', 38'', 39''; 37 1/4''; 5,965 / 9,494 / 15,141 / 26,63 bán kính)
+  - now: Hiện tượng I chỉ còn câu phát biểu và đoạn "Ta biết điều này từ các quan sát"; không có "như bảng sau cho thấy rõ", không có bảng, không có hai đoạn của Pound
+  - suggest: Bổ sung cụm "và điều đó hiện rõ từ bảng sau", bảng chu kì/khoảng cách (Borelli, Townly, Cassini), hai đoạn của Pound và các số liệu trên
+- **NANG / SAINGHIA**, Quy tắc IV, dòng 80
+  - source: propositions collected by general induction from phenomena as accurately or very nearly true
+  - now: những mệnh đề thu được bằng cảm giác chung từ các hiện tượng
+  - suggest: Dịch "general induction" là "phép quy nạp tổng quát" (hoặc "quy nạp từ các hiện tượng"); "cảm giác chung" là sai nghĩa
+- **NANG / SAINGHIA**, Tiêu đề dòng 84
+  - source: PHENOMENA, OR APPEARANCES
+  - now: Các hiện tượng, hay các hình học
+  - suggest: "Appearances" là "các hiện tượng quan sát được / biểu kiến"; "các hình học" sai nghĩa
+- **NANG / SAINGHIA**, Lời mở Sách III, dòng 16
+  - source: giving an account of such things as are of more general nature, and which philosophy seems chiefly to be founded on
+  - now: giải thích những thứ có tính chất tổng quát hơn và tôn trọng như triết học dựa vào
+  - suggest: Cụm "tôn trọng như triết học dựa vào" không có trong nguồn; sửa thành "những điều mà triết học dường như chủ yếu được xây dựng trên đó"
+- **NANG / SAINGHIA**, Lời mở Sách III, dòng 20
+  - source: which should be read by those only who had first made themselves masters of the principles established in the preceding Books
+  - now: Những người đọc nên làm quen với các nguyên lý đã xác lập trong những Sách trước
+  - suggest: Mất "only" và "made themselves masters" (nguồn: chỉ những ai đã nắm vững nguyên lý mới nên đọc); dịch "chỉ nên được đọc bởi những người trước đó đã nắm vững các nguyên lý..."
+- **NANG / CHUGIAI**, Chú giải Quy tắc III, dòng 74
+  - source: by their vis insita I mean nothing but their vis inertiae
+  - now: ông phân biệt rõ vis insita với vis inertia - chỉ khi nào thật cần, ông mới gán cho vật thể một lực cố hữu
+  - suggest: KHÔNG HỢP LÍ: Newton viết vis insita chính là vis inertiae (đồng nhất, không phân biệt), và nguồn không có điều kiện "chỉ khi thật cần"; chú giải mâu thuẫn với bản dịch dòng 64 và gán cho Newton điều ông không viết. Nên sửa: ông nói rõ "lực cố hữu" ở đây chỉ là lực quán tính chứ không phải trọng lực
+- **NANG / THIEU**, Hiện tượng II, sau bảng (dòng 105-106)
+  - source: The greatest elongation of the fourth satellite ... eight semi-diameters and 7/10 ... telescope of 123 feet ... diameter of Saturn ... 18". ... will not amount to more than 16".
+  - now: Không có: sau bảng chuyển thẳng sang "Hiện tượng III".
+  - suggest: Dịch nguyên đoạn nguồn (độ giãn cực đại của vệ tinh 4, kính 123 feet, tỉ số 3:7, đường kính vành 43", 42", 18", loại ánh sáng giả còn 16").
+- **NANG / THIEU**, Hiện tượng II, bảng (dòng 98-104)
+  - source: The distances ... in semi-diameters of the ring. From observations [OCR hỏng: "li-» 2f 3
+  - now: . 8. 24"] ; From the periodic times 1,93. 2,47. 3,45. 8. 23.35.
+  - suggest: Bảng chỉ có hàng 1,93 / 2,47 / 3,45 / 8 / 23,35 (từ thời gian tuần hoàn); thiếu hàng "From observations".|Thêm hàng "Từ quan sát" (OCR hỏng, giá trị phân số không xác định được từ OCR, hàng 4 và 5 đọc ra 8 và 24).
+- **NANG / SOLIEU**, Hiện tượng II, bảng chu kì (dòng 100, 102, 104)
+  - source: ld. 2lh. IS' 27". / 4d. 12". 25' 12". / 79'1. 71'. 48' 00".
+  - now: 1d 2h 18' 27'' / 4d 12' 25'' 12'' / 79d 1h 48' 00''
+  - suggest: Hàng 1: OCR "2lh" (21h?) nhưng dịch "2h"; hàng 3: OCR "12". 25' 12"" nên dạng ngày-giờ-phút-giây, dịch thành 12' 25'' 12'' (sai đơn vị); hàng 5: OCR "71'" nhưng dịch "1h" (không xác định chắc từ OCR). Kiểm lại ảnh quét.
+- **NANG / THIEU**, Hiện tượng IV (dòng 118-124)
+  - source: The periodic times ... in days and decimal parts of a day ... 10759,275. 4332,514. 686,9785. 365,2565. 224,6176. 87,9692. The mean distances ... According to Kepler / Bullialdus / the periodic times ... 100000. 72400. 38806 ...
+  - now: Không có hai bảng số, cũng không có câu "all astronomers are agreed about [the periodic times]", "Kepler and Bullialdus, above all others ... greatest accuracy", "for the most part fall in between them; as we may see from the following table".
+  - suggest: Thêm hai bảng (chu kì tính theo ngày; khoảng cách trung bình theo Kepler, Bullialdus, theo chu kì) và các mệnh đề còn thiếu.
+- **NANG / THIEU**, Hiện tượng V (dòng 130)
+  - source: This a noted proposition among astronomers, and particularly demonstrable in Jupiter, from the eclipses of his satellites; by the help of which eclipses ... heliocentric longitudes ... are determined.
+  - now: Câu cuối của đoạn kết thúc ở "...sự bằng nhau của các diện tích được mô tả."
+  - suggest: Thêm câu: đây là mệnh đề nổi tiếng trong giới thiên văn, nhất là chứng minh được ở Sao Mộc nhờ các nhật thực vệ tinh, qua đó xác định kinh độ nhật tâm và khoảng cách đến Mặt Trời.
+- **NANG / THIEU**, Proposition II dòng 152; Proposition III dòng 158, 160, 162
+  - source: (by Cor. 1, Prop. XLV, Book I) ; in consequentia ; (as we shall afterwards shew) ; (by what we have shewed in Cor. 2, Prop. XLV, Book I)
+  - now: Các viện dẫn Hệ quả 1 và 2 của Prop. XLV Sách I, "in consequentia" và "như ta sẽ chỉ ra sau" đều không có.
+  - suggest: Thêm các viện dẫn và cụm từ này vào đúng chỗ.
+- **NANG / SOLIEU**, Proposition III (dòng 158)
+  - source: which in every single revolution amounting but to 3° 3' in consequentia
+  - now: chỉ khoảng $3''\,3'$
+  - suggest: Sửa thành 3° 3' (độ, phút), không phải giây-phút.
+- **NANG / SOLIEU**, Proposition III (dòng 160)
+  - source: reciprocally as D2^f 3 ... power of D whose exponent is 2^^ ... something greater than reciprocally duplicate, but which comes 59f times nearer to the duplicate than to the triplicate
+  - now: lũy thừa $D^{2\frac23}$ ... lớn hơn 2 một chút, nhưng gần bậc hai hơn bậc ba.
+  - suggest: OCR chỉ đọc "2" cộng phân số hỏng, không xác định được từ OCR; nhưng 2⅔ mâu thuẫn với "lớn hơn 2 một chút / gần bậc hai hơn bậc ba". Ngoài ra bỏ mất số "59f lần" (OCR "59f time?"). Kiểm lại ảnh quét.
+- **NANG / THIEU**, Proposition IV (dòng 174-180)
+  - source: making the refractions of the sun and moon (altogether against the nature of light) to exceed ... ; with the impulse of all that force by which (by Cor. Prop. III) it is retained in its orb
+  - now: Không có "(altogether against the nature of light)" và "(by Cor. Prop. III)".
+  - suggest: Thêm hai cụm trong ngoặc: "(hoàn toàn trái với bản chất của ánh sáng)" và "(theo Hệ quả Prop. III)".
+- **NANG / SAINGHIA**, Proposition IV (dòng 182)
+  - source: For the versed sine of that arc, which the moon, in the space of one minute of time, would by its mean motion describe ... is nearly 15 ... Paris feet
+  - now: Bán kính chuyển động của cung mà Mặt Trăng mô tả trong một phút ... gần như là $15\frac12$ feet Paris
+  - suggest: "Versed sine" (sin verse, độ cao dây cung của cung) bị dịch thành "bán kính chuyển động"; mất "For" và "mean motion". Sửa: "Vì sin verse của cung mà Mặt Trăng, với chuyển động trung bình, mô tả trong một phút ở khoảng cách 60 bán kính Trái Đất là gần $15\ldots$ feet Paris".
+- **NANG / SOLIEU**, Proposition IV (dòng 180, 182, 187, 190)
+  - source: 15T^ Paris feet ; 15T]¥ ; 15 ,\ ; or more accurately 15 feet, 1 inch, and 1 line
+  - now: $15\frac12$ feet Paris (4 lần) cạnh "15 feet, 1 inch và 1 line"
+  - suggest: OCR đọc "15T^" / "15T]¥" (phân số hỏng, không xác định được từ OCR) nhưng 15 feet 1 inch 1 line ≈ 15,09 nên 15½ mâu thuẫn với chính câu "chính xác hơn". Kiểm lại ảnh quét.
+- **NANG / THIEU**, Prop VI, dòng 252
+  - source: the quantity of matter in the gold (by Cor. 1 and 6, Prop. XXIV, Book II) was to the quantity of matter in the wood as the action of the motive force (or vis motrix) upon all the gold...
+  - now: Vì vậy, lượng vật chất trong vàng tỷ lệ với lượng vật chất trong gỗ như tác dụng của lực động viên lên toàn bộ vàng...
+  - suggest: Thêm viện dẫn "(theo Hệ quả 1 và 6, Proposition XXIV, Sách II)" và "(hay vis motrix)".
+- **NANG / THIEU**, Prop VI, cuối dòng 260 (sau "tỷ lệ với lượng vật chất của chúng")
+  - source: But further, that the weights of Jupiter and of his satellites towards the sun are proportional to the several quantities of their matter, appears from the exceedingly regular motions of the satellites (by Cor. 3, Prop. LXV, Book I)... (đến) But some they are, by Cor. 1 and 3, Prop. V.
+  - now: Chương nhảy từ "Vì vậy trọng lượng của các hành tinh đối với Mặt Trời tỷ lệ với lượng vật chất của chúng" sang Hệ quả 1; mất cả đoạn dài (nguồn dòng 21328-21359)
+  - suggest: Dịch đủ đoạn: trọng lượng Sao Mộc và các vệ tinh đối với Mặt Trời tỷ lệ với lượng vật chất (viện dẫn Hệ quả 3 và 4 Prop. LXV Sách I), lập luận tỉ lệ d:e, căn bậc hai tỉ lệ, 1/1000 và độ lệch tâm quỹ đạo vệ tinh, Sao Thổ, Mặt Trăng và Trái Đất, viện dẫn Hệ quả 1 và 3 Prop. V.
+- **NANG / THIEU**, Prop VI, cuối phần chứng minh (trước Hệ quả 1)
+  - source: But further; the weights of all the parts of every planet towards any other planet are one to another as the matter in the several parts... against what we have shewed above.
+  - now: (không có trong bản dịch)
+  - suggest: Dịch đoạn nguồn 21361-21378: trọng lượng mọi phần của mỗi hành tinh đối với hành tinh khác tỷ lệ với vật chất ở từng phần, không phân biệt phần ngoài hay phần trong (ví dụ vật thể nâng lên quỹ đạo Mặt Trăng).
+- **NANG / SOLIEU**, Prop IV, dòng 196
+  - source: would fall with a double velocity, and in the space of one second of time would describe 30^ Paris feet (nguồn đã cho 15 feet, 1 inch, 1 line; gấp đôi là khoảng 30 feet 2 inch 2 line; phân số OCR không đọc rõ)
+  - now: sẽ rơi với vận tốc gấp đôi, và trong một giây sẽ mô tả $30\frac12$ feet Paris
+  - suggest: Phân số 1/2 mâu thuẫn với 15 feet 1 inch 1 line ở dòng 194 (gấp đôi chỉ là 30 feet và một phần nhỏ). Đối chiếu scan; phân số không xác định được từ OCR.
+- **NHE / THUATNGU**, Quy tắc III, dòng 52 và 64
+  - source: by their vis insita I mean nothing but their vis inertiae. This is immutable
+  - now: Khi tôi nói vis insita (lực quán tính), tôi chỉ muốn nói vis inertia (lực quán tính)
+  - suggest: Vis insita và vis inertiae cùng được dịch "lực quán tính" nên câu mất đối chiếu (nguồn cũng có lỗi OCR "vis iiicrticz"); dịch vis insita là "lực bẩm sinh/cố hữu", vis inertiae là "lực quán tính"
+- **NHE / KHAC**, Quy tắc III, dòng 56
+  - source: the divided but contiguous particles of bodies may be separated
+  - now: Việc các hạn đã chia nhưng vẫn liên tiếp
+  - suggest: Lỗi gõ "hạn" thành "hạt"
+- **NHE / HINH**, Dòng 8 (ảnh book-ii-section-i-motion.svg)
+  - source: (Sách III mở đầu không có hình trong nguồn)
+  - now: ![Minh họa chuyển động và lực hút](../assets/book-ii-section-i-motion.svg); nhãn trong svg chỉ có: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình là đồ thị vận tốc-thời gian của Sách II Phần I, không thuộc đoạn mở đầu Sách III và không có chữ cái nào được nhắc trong lời văn; nên bỏ hoặc thay bằng hình đúng
+- **NHE / THEM**, Dòng 10
+  - source: (không có trong nguồn)
+  - now: *Hình 43. Sơ đồ được dùng lại từ Phần I; các bảng thiên văn và sơ đồ quỹ đạo của bản gốc cần được đối chiếu riêng.*
+  - suggest: Chú thích in nghiêng là lời biên tập nằm ngoài blockquote, không phải bản dịch; chuyển vào khối **[Chú giải]** hoặc bỏ
+- **NHE / CHUGIAI**, Chú giải Quy tắc III, dòng 76
+  - source: our sea gravitates towards the moon
+  - now: trước thời Newton nó được coi là một ảnh hưởng thiên thể tách rời, không gắn với lực hút ... quỹ tích
+  - suggest: HỢP LÍ MỘT PHẦN: ý Newton xếp thủy triều cùng hàng với các hiện tượng hấp dẫn là đúng; khẳng định lịch sử "trước thời Newton" là quá chung, cần nguồn hoặc bỏ; "quỹ tích" là lỗi, phải là "quỹ đạo"; "Ông biết mắt xích nào yếu hơn" gán ý nghĩ, nên viết "ông tự nêu"
+- **NHE / SOLIEU**, Prop. III dòng 162, 168; Prop. IV dòng 174, 178, 184, 192; Hiện tượng IV dòng 124
+  - source: 1 to 178£ f- ; 177%$ to 178ff ; Copernicus 60 1 ; Street 60
+  - now: ; Tycho 56
+  - suggest: ; about 60^ semi-diameters ; 60 X 60 times greater ; 8 lines 1 ; geocentric longitudes|178⅔ và 177⅔ ; Copernicus 60½, Street 60½, Tycho 56½ ; "khoảng 60 bán kính" ; "60 lần theo mỗi chiều" ; "8 line" ; "địa độ"|Phân số OCR hỏng nên không xác định được từ OCR: nhưng 357,45/2 = 178,725 không khớp 178⅔; Copernicus (OCR "60 1") và Street ("60|") OCR khác nhau mà dịch cùng 60½; "60^" bị bỏ phân số; "lines ½" mất phân số; "theo mỗi chiều" là thêm (nguồn: 60×60 lần); "geocentric longitude" nên là kinh độ địa tâm, không phải "địa độ". Kiểm ảnh quét.
+- **NHE / THUATNGU**, Prop VI, dòng 252
+  - source: the action of the motive force (or vis motrix) upon all the gold
+  - now: như tác dụng của lực động viên lên toàn bộ vàng
+  - suggest: "Lực động viên" sai nghĩa (motive force là lực chuyển động/động lực); dùng "lực chuyển động (vis motrix)" và nhất quán với các chương khác.
+- **NHE / THUATNGU**, Prop VI, dòng 256
+  - source: are to the moon, in quantity of matter, as their weights to its weight
+  - now: khối lượng của chúng sẽ tỷ lệ với khối lượng Mặt Trăng như trọng lượng của chúng với trọng lượng của Mặt Trăng
+  - suggest: Nguồn là "quantity of matter", cả đoạn còn lại dùng "lượng vật chất"; "khối lượng" là thuật ngữ thứ hai cho cùng một khái niệm.
+- **NHE / THIEU**, Prop VI Hệ quả 2, dòng 270
+  - source: because (according to Aristotle, Descartes, and others) there is no difference betwixt that and other bodies but in mere form of matter
+  - now: vì không có sự khác biệt nào giữa chúng và các vật thể khác ngoài hình dạng vật chất
+  - suggest: Thêm mệnh đề dẫn nguồn "(theo Aristotle, Descartes và những người khác)".
+- **NHE / THIEU**, Prop VI Hệ quả 5, dòng 286
+  - source: decreases not in the duplicate but almost in the triplicate proportion of the distance
+  - now: khi rời xa nam châm, nó giảm gần như theo bậc ba khoảng cách
+  - suggest: Thiếu vế "không theo tỷ lệ bình phương (duplicate) mà"; "bậc ba" nên là "tỷ lệ lập phương (triplicate) của khoảng cách".
+- **NHE / KHAC**, Rải rác: dòng 218, 236, 248, 256, 258
+  - source: (218) as being impelled by both these forces conspiring together; (236) as we shall hereafter explain; (248) as exactly as I could; (256) from what we have demonstrated before; (258) that is, equal, at equal distances
+  - now: Các cụm này đều không có trong bản dịch
+  - suggest: Bổ sung từng cụm: "vì bị cả hai lực cùng thúc", "như ta sẽ giải thích sau", "(chính xác hết mức có thể)", "theo những gì đã chứng minh trước", "tức là bằng nhau ở những khoảng cách bằng nhau".
+- **NHE / CHUGIAI**, Chú giải Prop IV, dòng 206 (và 208)
+  - source: nguồn: 15T^ Paris feet trong một phút (chữ T^ là phân số nhỏ, tức khoảng 15 1/12); chính xác hơn 15 feet 1 inch 1 line
+  - now: lực ấy sẽ làm nó rơi khoảng $15\frac12$ feet Paris trong một phút ... một vật thể ở bề mặt phải rơi $15\frac12$ feet Paris trong một phút, tức 15 feet, 1 inch, 1 line trong một giây
+  - suggest: KHÔNG HỢP LÍ: số 15½ sai; ở bề mặt vật rơi 3600 lần quãng đường Mặt Trăng trong một phút (khoảng 3600 x 15 1/12 feet), và 15 feet 1 inch 1 line chỉ đúng cho một giây. Sửa số và đơn vị thời gian; bỏ "Mặt Trăng rơi nhanh bằng một con lắc" trong tiêu đề nếu không rõ nghĩa.
+- **NHE / CHUGIAI**, Chú giải Prop IV, dòng 204 và 210
+  - source: (không có trong nguồn)
+  - now: "chuyển động quỹ tích của Mặt Trăng"; "Nó cho ta một ước lượng độc lập về khoảng cách Mặt Trăng, và từ đó là khối lượng Trái Đất"; "Cùng cách lập luận ... đo ... hằng số hấp dẫn"
+  - suggest: KHÔNG HỢP LÍ một phần: "quỹ tích" (locus) lẫn với quỹ đạo; Newton giả định sẵn khoảng cách 60 bán kính nên 3600 không phải ước lượng độc lập khoảng cách Mặt Trăng; đo G cần thêm khối lượng Trái Đất độc lập, chú giải chưa nói; câu "chưa có lý do chung nào được chỉ ra" là khẳng định lịch sử cần nguồn.
+- **NHE / THEM**, dòng 288
+  - source: (không có trong nguồn)
+  - now: *Các bảng số thiên văn và công thức trong Phần mở đầu Sách III được giữ theo OCR; cần đối chiếu lại với scan...*
+  - suggest: Lời biên tập in nghiêng nằm ngoài blockquote [Chú giải]; chuyển vào blockquote hoặc comment HTML, hoặc bỏ.
+
+## 56-sach-iii-proposition-vii-viii.md
+
+- *phần 1/1: Chương 56, phần 1/1 (cả file, dòng 1-120): Prop. VII (+Cor 1-2) và Prop. VIII (+Cor 1-4), hai chú giải, hình minh họa. Nguồn ia.txt dòng 21429-21557.*
+
+- **NANG / THIEU**, Prop. VII, Hệ quả 1 (dòng 22)
+  - source: The thing may be easily understood in gravity, if we consider a greater planet, as formed of a number of lesser planets, meeting together in one globe; for hence it would appear that the force of the whole must arise from the forces of the component parts.
+  - now: (không có; sau câu về lực hút từ tính và điện tĩnh, bản dịch chuyển thẳng sang "Nếu ai đó cho rằng...")
+  - suggest: Chèn sau dòng 22 câu dịch: điều này dễ hiểu với trọng lực nếu xem một hành tinh lớn như được ghép từ nhiều hành tinh nhỏ họp lại thành một khối cầu; khi ấy hiển nhiên lực của toàn thể phải sinh ra từ các lực của những phần cấu thành.
+- **NANG / THIEU**, Prop. VIII, Hệ quả 4 (dòng 90)
+  - source: for the planets were to be placed at different distances from the sun, that, according to their degrees of density, they might enjoy a greater or less proportion to the sun's heat.
+  - now: (không có; đoạn dừng ở "...và Trái Đất đặc hơn Sao Mộc." rồi sang câu về nước)
+  - suggest: Thêm: vì các hành tinh cần được đặt ở những khoảng cách khác nhau với Mặt Trời để, tùy mức độ đặc của mình, chúng hưởng nhiệt của Mặt Trời nhiều hơn hoặc ít hơn.
+- **NANG / THIEU**, Prop. VIII, Hệ quả 3 (dòng 86)
+  - source: The moon is denser than the earth, as shall appear afterward. (và: ...and therefore is here truly defined.)
+  - now: ...được xác định bởi parallax của Mặt Trăng. Mặt Trời hơi đặc hơn Sao Mộc... Mặt Trời được giữ trong trạng thái loãng nhờ nhiệt độ rất lớn.
+  - suggest: Thêm "và vì vậy ở đây được xác định thật sự" sau "parallax của Mặt Trăng", và thêm câu cuối: "Mặt Trăng đặc hơn Trái Đất, như sẽ thấy sau."
+- **NANG / SAINGHIA**, Prop. VIII, Hệ quả 1 (dòng 52)
+  - source: the greatest heliocentric elongations of the outmost circumjovial satellite from Jupiter's centre, 8' 16"; of the Huygenian satellite from the centre of Saturn, 3' 4"
+  - now: các độ giãn nhận trung nhất so với Mặt Trời của vệ tinh ngoài cùng quanh Sao Mộc, 8'16'', của vệ tinh Huygens so với tâm sao Thổ, 3'4''
+  - suggest: "greatest" bị dịch thành "nhận trung nhất" (vô nghĩa/sai); vệ tinh Sao Mộc đo từ tâm Sao Mộc chứ không "so với Mặt Trời". Sửa: "các độ giãn cực đại nhìn từ Mặt Trời của vệ tinh ngoài cùng của Sao Mộc so với tâm Sao Mộc, 8'16''; ..."
+- **NANG / CHUGIAI**, Chú giải thứ nhất, dòng 26-36 (KHÔNG HỢP LÍ)
+  - source: (Nguồn Prop. VII chỉ nói lực giữa các vật quanh ta nhỏ hơn lực với cả Trái Đất, nên giác quan không nhận ra; không mô tả dụng cụ hay ước lượng nào.)
+  - now: "Dụng cụ mà Newton mô tả trong câu trả lời ấy phải mất thêm hơn một thế kỷ"; "Newton đã chỉ đúng phép thử"; "Đó là một ước lượng thẳng thắn"; "Nhân từng cặp phần với khối lượng... tổng ra đúng tích m1 m2"; lỗi gõ "hành tích" (dòng 32)
+  - suggest: Gán cho Newton điều ông không viết (mô tả dụng cụ, phép thử, ước lượng, phép nhân từng cặp) - bỏ/viết lại các câu ấy; sửa "hành tích" thành "hành tinh". Câu "tạo thành công thức F=G m1m2/r^2" cần ghi rõ là cách viết hiện đại (Newton không dùng G). Cavendish 1798 đúng; Eötvös chủ yếu kiểm tra sự bằng nhau của khối lượng quán tính và hấp dẫn, nên cần chỉnh "đo G".
+- **NANG / CHUGIAI**, Chú giải thứ hai, dòng 96-118 (KHÔNG HỢP LÍ MỘT PHẦN)
+  - source: Cor. 4: the light of the sun, to which its heat is proportional, is seven times denser in the orb of Mercury than with us
+  - now: "nhiệt độ cân bằng chỉ tỷ lệ với căn bậc hai của cường độ - nên ở Sao Thủy chỉ nóng hơn chúng ta khoảng một phần rưỡi"; "quỹ tảo" (dòng 118)
+  - suggest: Sai vật lí: nhiệt độ cân bằng tỷ lệ với căn bậc BỐN của cường độ (7^(1/4) ≈ 1,6; căn bậc hai sẽ cho ≈ 2,6, mâu thuẫn với "một phần rưỡi" ngay sau đó). Sửa "căn bậc hai" thành "căn bậc bốn", "quỹ tảo" thành "quỹ đạo". Chữ "heat" của Newton là nhiệt (lượng), bản dịch dòng 92 dịch thành "nhiệt độ" nên chú giải chê Newton oan; câu "ông biết rõ bộ số nào đáng tin" là suy đoán ý định. Các số mật độ hiện đại (94, 49, 392) đối chiếu hợp lí; tiêu đề nhấn "400 hơi sai" trong khi lệch lớn nhất là sao Thổ (67 so với 49).
+- **NHE / THIEU**, Prop. VII (thiếu "Q.E.D." sau dòng 18) và các viện dẫn trong ngoặc ở Prop. VIII (dòng 50, 58, 78)
+  - source: Q.E.D. ; (by Cor. 2, Prop. IV, Book I) ; (by this Prop.) ; (by Prop. LXXII, Book I) ; by the thermometer I have found
+  - now: (không có "Q.E.D."; không có "theo Hệ quả 2, Prop. IV, Sách I", "theo Proposition này", "theo Prop. LXXII, Sách I"; "Nhiệt kế cho thấy..." mất "tôi đã tìm thấy")
+  - suggest: Thêm "Q.E.D." cuối Prop. VII; thêm ba viện dẫn trên vào đúng câu; dịch "Bằng nhiệt kế tôi đã tìm thấy rằng..."
+- **NHE / SOLIEU**, Prop. VIII, Hệ quả 2 (dòng 74)
+  - source: If the parallax of the sun be taken greater or less than 10" 30'"
+  - now: Nếu lấy parallax của Mặt Trời lớn hơn hoặc nhỏ hơn $10''30''$
+  - suggest: OCR đọc 10" 30'" (10 giây và 30 "third"); bản dịch viết hai dấu nháy kép cho cả hai, làm mất nghĩa. Sửa thành 10'' 30''' (hoặc 10″30‴).
+- **NHE / SOLIEU**, Prop. VIII, Hệ quả 1-2 (dòng 55, 71)
+  - source: ...Jupiter, Saturn, and the earth ... were as 1, 1/1067, 1/3021 and ___ respectively (phân số của Trái Đất không đọc được từ OCR)
+  - now: 1:1/1067:1/3021:1/1691282 (bảy chữ số)
+  - suggest: Không xác định được từ OCR mẫu số của Trái Đất. Kiểm tra thứ nguyên: với 1/1691282 thì trọng lượng bề mặt Trái Đất ra khoảng 50, không phải 435 (Sao Mộc 943 và sao Thổ 529 thì khớp); nên đối chiếu lại số chữ số với bản scan trang 398-399.
+- **NHE / THUATNGU**, Prop. VIII, Hệ quả 3-4 (dòng 86, 92)
+  - source: heat ; by its great heat ; a sevenfold heat of our summer sun
+  - now: nhiệt độ rất lớn ; nhiệt độ tỷ lệ với nó ; nhiệt độ gấp bảy lần nhiệt độ Mặt Trời mùa hè
+  - suggest: "heat" dịch thành "nhiệt độ" làm đổi nghĩa vật lí (Newton nói nhiệt/sức nóng tỷ lệ với ánh sáng, không phải nhiệt độ). Đề xuất thống nhất "nhiệt" hoặc "sức nóng".
+- **NHE / SAINGHIA**, Prop. VII, Hệ quả 2 (dòng 40)
+  - source: the several equal particles of any body
+  - now: các hạt bằng nhau ở mọi phía của một vật thể
+  - suggest: "ở mọi phía" là thêm vào, nguồn không có. Sửa: "hướng về từng hạt bằng nhau của một vật thể bất kỳ".
+- **NHE / HINH**, Dòng 8-10 và dòng 120 (hình và lời biên tập ngoài blockquote)
+  - source: (Nguồn Prop. VII-VIII không có hình trong phần OCR đã đọc.)
+  - now: ![...](../assets/book-ii-section-i-motion.svg) chú thích "Hình 44. Sơ đồ được dùng lại từ Phần I..."; dòng 120 "Số liệu... đã được đối chiếu với scan..."
+  - suggest: Nhãn trong SVG: thời gian, vận tốc, A, O, B, đường quỹ tích - rõ ràng là hình chuyển động của Sách II, không thuộc Prop. VII-VIII, và bài không nhắc điểm A,B,O nào của hình. Bỏ hình; hai dòng in nghiêng (10 và 120) là lời biên tập thêm ngoài blockquote, nên bỏ hoặc chuyển vào ghi chú.
+
+## 57-sach-iii-proposition-ix-x.md
+
+- *phần 1/1: Chương 57, phần 1/1 (dòng 1-84): Prop. IX, Prop. X, Giả thuyết I; hình, 2 chú giải; nguồn ia.txt dòng 21559-21641*
+
+- **NANG / HINH**, Hình dòng 8 (Prop. IX-X)
+  - source: (nguồn không có hình nào ở Prop. IX, X; không nhãn điểm nào được nhắc trong lời chứng minh)
+  - now: ![Minh họa chuyển động hành tinh](book-ii-section-i-motion.svg); svg gồm nhãn "thời gian", "vận tốc", A, O, B, "đường quỹ tích" (hình của Sách II, Section I)
+  - suggest: Bỏ hình này: hình thuộc Sách II về chuyển động trong môi trường cản, không thuộc Prop. IX-X
+- **NANG / CHUGIAI**, Chú giải Prop. X, dòng 74
+  - source: as appears from experiments (không nói Newton tự làm)
+  - now: Ông không chỉ lập luận bằng lý thuyết mà còn làm một thí nghiệm ... Ông bơm hút sạch không khí khỏi một bình chân không
+  - suggest: KHÔNG HỢP LÍ: gán cho Newton việc tự làm thí nghiệm, trong khi nguồn chỉ nói "as appears from experiments". Thêm: "Chỉ còn sức cản thì mọi vật thể rơi như nhau" lộn nghĩa (phải là khi không còn sức cản). Câu kết về khối lượng quán tính = khối lượng hấp dẫn là suy diễn thêm của biên tập
+- **NANG / CHUGIAI**, Chú giải Prop. X, dòng 76
+  - source: (nguồn không nói về ma sát thủy triều)
+  - now: hành tinh vẫn mất năng lượng quỹ đạo - qua ma sát thủy triều ... đẩy nó [Mặt Trăng] ra xa Trái Đất khoảng vài centimet mỗi năm ... thời gian số của hệ quỹ đạo ... không chậm lại không phải vì không mất gì
+  - suggest: KHÔNG HỢP LÍ: Mặt Trăng lùi ra xa là nhận mômen động lượng và năng lượng quỹ đạo, mâu thuẫn với "mất năng lượng quỹ đạo". "Mặt Trời và Mặt Trăng biến dạng hành tinh và bức xạ nhiệt", "quỹ tích xoáy", "thời gian số" là câu hỏng hoặc sai; câu cuối có phủ định kép. Cần viết lại hoặc bỏ
+- **NHE / THEM**, Dòng 10 và dòng 84 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: "Hình 45. Sơ đồ được dùng lại từ Phần I..." và "Các số liệu của Proposition X đã được đối chiếu với scan trang 400-401..."
+  - suggest: Lời biên tập nằm ngoài blockquote; chuyển vào blockquote Chú giải hoặc bỏ cùng với hình
+- **NHE / SAINGHIA**, Prop. IX, dòng 14
+  - source: force of gravity, considered downward from the surface of the planets decreases nearly in the proportion of the distances from their centres
+  - now: lực trọng lực theo phương thẳng đứng từ bề mặt các hành tinh xuống, lực ấy giảm gần đúng...
+  - suggest: Bỏ "theo phương thẳng đứng" (nguồn chỉ có "downward" = hướng xuống dưới bề mặt); nghĩa là "xét từ bề mặt xuống phía dưới"
+- **NHE / THUATNGU**, Prop. X, dòng 46
+  - source: the spots of the sun, which float upon the lucid matter thereof
+  - now: các vết trên Mặt Trời, vốn nổi trên chất lưu trong suốt ấy
+  - suggest: "lucid" ở đây là chất sáng, chói (không phải "trong suốt"); sửa thành "chất sáng của nó"
+- **NHE / THUATNGU**, Prop. X, dòng 62 và 64
+  - source: resistance is produced only by the air, exhalations, and vapours ... void of air and exhalations
+  - now: sức cản chỉ do không khí, hơi thở và hơi nước tạo nên ... không có không khí và hơi thở
+  - suggest: "exhalations" = hơi bốc, khí bốc (không phải "hơi thở"); sửa cả hai chỗ
+- **NHE / SAINGHIA**, Prop. X, dòng 42
+  - source: But that our globe of earth is of greater density than it would be if the whole consisted of water only, I thus make out.
+  - now: Nhưng ta thấy rằng quả cầu Trái Đất của chúng ta có mật độ lớn hơn so với trường hợp toàn bộ chỉ gồm nước.
+  - suggest: Bản dịch biến "tôi chứng minh điều đó như sau" thành "ta thấy rằng"; sửa thành "Nhưng quả cầu Trái Đất ... có mật độ lớn hơn ..., tôi chứng minh như sau."
+- **NHE / KHAC**, Prop. X, dòng 40
+  - source: would lose by the resistance of the air [OCR hỏng] part of its motion
+  - now: mất 1/4586 phần chuyển động
+  - suggest: Không xác định được từ OCR (đọc ra "¥3\6"); số 4586 chỉ dựa vào ghi chú scan của bản dịch. Các số khác khớp OCR: 459, 13 2/3 (OCR "13|"), 860, 30 : 0,0000000000003999 (12 chữ số 0), 75000000000000 : 1, 1000000
+- **NHE / CHUGIAI**, Chú giải Prop. IX, dòng 22 và 34
+  - source: (nguồn không nói về hầm, tinh thể, núi)
+  - now: "đó là trọng lực trong hầm sâu, trong lòng hành tinh, và trong các tinh thể" và "trọng lực ở đỉnh núi ... nhỏ hơn ... mà trong lớp vỏ mỏng ấy M(r) tăng chậm hơn r^3"
+  - suggest: HỢP LÍ MỘT PHẦN: công thức g=GM(r)/r^2 và định lý vỏ cầu đúng. "Tinh thể" vô nghĩa; đoạn đỉnh núi lẫn lộn, vì ở trên mặt đất M không đổi, g giảm theo 1/r^2; "M(r) tăng chậm hơn r^3" chỉ nói về bên dưới bề mặt. Nên bỏ hoặc viết lại
+- **NHE / CHUGIAI**, Chú giải Prop. IX, dòng 32 và 34
+  - source: (nguồn chỉ nói "error ... no greater than what may arise from the inequality of the density")
+  - now: Ông không tuyên bố điều đó tuyệt đối ... Đó là cách ông xử lý ...; Người ta đo trọng lực ở nhiều độ sâu ... suy ra M(r) ... lõi đặc hơn vỏ bao
+  - suggest: HỢP LÍ MỘT PHẦN: diễn giải ý định của Newton (chặn sai số) vượt quá văn bản; khẳng định lịch sử/địa vật lí về cách biết lõi Trái Đất cần nguồn (thường dựa vào địa chấn học)
+
+## 58-sach-iii-proposition-xi-xiii.md
+
+- *phần 1/1: Chuong 58, phan 1/1 (toan file, dong 1-90): Prop XI, XII (+ Hq), XIII (so voi ia.txt dong 21643-21751); khong thay thieu cau nao cua Newton trong phan dich*
+
+- **NANG / SAINGHIA**, Prop XIII, dong 76
+  - source: But the earth in the mean time by a menstrual motion is revolved about this common centre.
+  - now: Trái Đất cũng quay quanh tâm trọng lực chung ấy theo chuyển động kinh nguyệt.
+  - suggest: "menstrual" = theo tháng (chu kì một tháng); "kinh nguyệt" là nghĩa sinh lí, sai hẳn. Đổi thành "chuyển động hằng tháng" hoặc "theo tháng".
+- **NANG / HINH**, dòng 8 (book-ii-section-i-motion.svg)
+  - source: (Prop XI-XIII không có hình trong OCR; nhãn bài nhắc: Sun, Jupiter, Saturn, không có chữ cái điểm)
+  - now: SVG có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích; tiêu đề SVG: chuyển động trong môi trường có lực cản
+  - suggest: Hình thuộc Book II Section I (trục thời gian, hyperbola, vận tốc), không liên quan tới tâm trọng lực/quỹ đạo elip. Nên bỏ hoặc thay hình đúng.
+- **NANG / CHUGIAI**, Chú giải 2, dòng 86 và 88
+  - source: (nguồn chỉ nêu sai số khó vượt quá hai phút; không có thông tin về thế kỉ hay giây cung)
+  - now: "mười bảy thế kỷ sau ai cũng làm theo cách đó"; "nhiễu dài hạn của Sao Mộc chỉ vài giây cung, nhỏ hơn nhiều so với hai phút"
+  - suggest: KHÔNG HỢP LÍ: 1687 đến nay chỉ khoảng ba thế kỉ, không phải mười bảy; khẳng định "vài giây cung" cho Sao Mộc là số liệu hiện đại không nguồn, và so sánh không đúng đối tượng (hai phút của Newton là sai số của sao Thổ). Sửa hoặc bỏ.
+- **NANG / CHUGIAI**, Chú giải 2, dòng 88
+  - source: Newton chỉ nói Trái Đất quay quanh tâm chung theo chuyển động hằng tháng; không có 4700 km
+  - now: ông kết luận ... tâm ấy nằm cách tâm Trái Đất khoảng 4700 km, tức bên trong lớp vỏ Trái Đất
+  - suggest: KHÔNG HỢP LÍ: gán cho Newton con số hiện đại; hơn nữa điểm cách tâm 4700 km (bán kính Trái Đất khoảng 6371 km) nằm trong lớp manti, không phải "lớp vỏ". Tách phần hiện đại khỏi Newton và sửa "lớp vỏ".
+- **NHE / CHUGIAI**, Chú giải 1, dòng 42 và 44
+  - source: Hypothesis I: the centre of the system of the world is immovable; Prop XII: the distance would scarcely amount to one diameter of the sun
+  - now: "Ông từ chối cách lưới cập tắt dễ thấy"; "tối đa khoảng hai bán kính ... nằm gọn trong giới hạn một đường kính"
+  - suggest: HỢP LÍ MỘT PHẦN: lỗi gõ "lưới cập tắt" (có lẽ "lối tắt"); hai bán kính bằng đúng một đường kính nên "nằm gọn trong" không chính xác (sửa thành "xấp xỉ"); "tức ông đã chọn phương án có độ lệch nhỏ nhất" là suy diễn của người biên tập.
+- **NHE / CHUGIAI**, Chú giải 1, dòng 44
+  - source: (nguồn không nói gì về hành tinh ngoài hệ hay Mach)
+  - now: "manh mối đầu tiên dẫn tới việc phát hiện hành tinh ngoài hệ Mặt Trời"; "hướng mà Mach sau này phát triển thành nguyên lý máy"
+  - suggest: Khẳng định lịch sử/khoa học cần nguồn và hơi quá đà; "cái bất động" ở đây suy ra từ Giả thuyết I cộng Hệ quả 4 của các Định luật, không phải phát hiện độc lập. Nên giảm nhẹ hoặc dẫn nguồn.
+- **NHE / CHUGIAI**, Chú giải 2, dòng 84
+  - source: greatest error in mean motion scarcely exceeds two minutes yearly (đặt tiêu điểm tại tâm chung tránh gần hết sai số, TRỪ chuyển động trung bình)
+  - now: "sai số ... trong chuyển động trung bình ... hai phút mỗi năm"; "nó bị hấp thụ gần hết, chỉ còn lại mới là nhiễu thật sự"
+  - suggest: HỢP LÍ MỘT PHẦN: câu dễ khiến người đọc nghĩ mẹo tiêu điểm xử lí cả sai số chuyển động trung bình, trong khi Newton loại trừ đúng phần này; "chỉ còn lại mới là" lỗi gõ; "ngay cả ở lần hội tụ mạnh nhất" là thêm. Ngoài ra "chỗ nảy sinh của lý thuyết nhiễu", "mở ra cả một ngành", "Laplace dùng nó" là gán lịch sử cần nguồn.
+- **NHE / THUATNGU**, Prop XIII, dòng 56, 66 (cũng dòng 64)
+  - source: in the conjunction of Jupiter and Saturn
+  - now: khi Sao Mộc và sao Thổ hội tụ; mỗi lần sao Thổ hội tụ với Sao Mộc
+  - suggest: "conjunction" thuật ngữ thiên văn là "giao hội" (hoặc "xung hợp"); "hội tụ" nghĩa là hội về một điểm. Cũng "puzzled" dịch "ngạc nhiên" (nên "bối rối").
+- **NHE / THUATNGU**, Prop XIII, dòng 50
+  - source: from those principles we deduce the motions of the heavens a priori
+  - now: ta có thể suy ra chuyển động của thiên cầu một cách tiên tiên
+  - suggest: "a priori" nên dịch "tiên nghiệm" hoặc giữ nguyên a priori; "tiên tiên" không phải thuật ngữ.
+- **NHE / THEM**, dòng 10 và dòng 90 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 46. Sơ đồ được dùng lại từ Phần I...*; *Các công thức và tỷ lệ ... đã được đối chiếu với scan trang 402-403...*
+  - suggest: Chú thích hình và ghi chú đối chiếu là lời biên tập nằm ngoài blockquote [Chú giải]; nên chuyển vào comment HTML hoặc bỏ.
+- **NHE / SAINGHIA**, Hệ quả Prop XII, dòng 30
+  - source: the earth, the sun, and all the planets, mutually gravitate one towards another
+  - now: Trái Đất, Mặt Trời và tất cả các hành tinh hướng lẫn nhau
+  - suggest: "gravitate towards" bị mất nghĩa trọng lực; nên "hướng trọng lực về nhau" (nhất quán với "trọng lực hướng về" ở Prop XIII).
+
+## 59-sach-iii-proposition-xiv.md
+
+- *phần 1/1: Chương 59, phần 1/1 (dòng 1-78): Prop XIV (Cor 1, Cor 2, Scholium), Prop XV, Prop XVI; đối chiếu ia.txt dòng 21753-21804; hình book-ii-section-i-motion.svg*
+
+- **NANG / SOLIEU**, Prop XV, dòng 70
+  - source: They are to be taken in the sub-sesquiplicate proportion of the periodic times, by Prop. XV, Book I
+  - now: Các đường kính ấy phải được lấy theo tỷ lệ lũy thừa 3/2 của các thời gian tuần hoàn
+  - suggest: Sai số mũ: sub-sesquiplicate là lũy thừa 2/3 (nghịch với sesquiplicate 3/2). Sửa thành "theo tỷ lệ lũy thừa 2/3 của các thời gian tuần hoàn" (sesqui-plicate ở Scholium dòng 44 mới là 3/2).
+- **NANG / HINH**, dòng 8 (ảnh) và dòng 10 (chú thích)
+  - source: (Prop. XIV nguồn không có hình; văn bản không nhắc chữ cái điểm nào)
+  - now: ![Minh họa aphel, node...](../assets/book-ii-section-i-motion.svg); SVG: title "chuyển động trong môi trường có lực cản", nhãn thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình thuộc Sách II Section I (hyperbola, lực cản), không liên quan Prop XIV; nhãn A, O, B không được lời chứng minh nhắc. Bỏ hình, hoặc thay bằng hình đúng.
+- **NANG / CHUGIAI**, Chú giải Scholium, dòng 56 (tiêu đề) và 58-60
+  - source: Aphelion of Mars carried 33' 20" in a hundred years (phút cung + giây cung)
+  - now: Aphel của Sao Hỏa trôi 33 giây cung mỗi trăm năm
+  - suggest: KHÔNG HỢP LÍ: 33'20" là 33 phút 20 giây cung (khoảng 2000 giây cung), không phải 33 giây cung. Sửa tiêu đề thành "33 phút 20 giây cung".
+- **NANG / CHUGIAI**, Chú giải Scholium, dòng 60
+  - source: aphelions of the Earth, Venus, Mercury 17' 40", 10' 53", 4' 16" (nhỏ hơn của Sao Hỏa)
+  - now: (1,52)^(3/2)≈1,88 ... nhân lần lượt vào 33'20'' cho ra đúng ba kết quả kia
+  - suggest: KHÔNG HỢP LÍ: các kết quả của Trái Đất, Sao Kim, Sao Thủy nhỏ hơn 33'20'' nên phải CHIA cho 1,88; 3,06; 7,8 (2000''/1,88≈1064''=17'44'', v.v.), không phải nhân. Sửa "nhân" thành "chia".
+- **NANG / CHUGIAI**, Chú giải Scholium, dòng 64
+  - source: (nguồn Scholium không có gì về giá trị hiện đại, Laplace, hay Newton sửa lại ở ấn bản sau)
+  - now: giá trị hiện nay ... khoảng 49'' mỗi năm theo chiều lùi, lớn hơn con số của Newton khoảng hai lần rưỡi ... Newton đã phải sửa lại kết luận ấy ở các ấn bản sau ... Laplace giải thích khoảng một trăm hai mươi năm sau
+  - suggest: KHÔNG HỢP LÍ: con số 49''/năm không gắn với nhiễu hành tinh lên cận điểm của hành tinh nào (gần với tốc độ tiến động xuân phân), lại so khập khiễng với 33'20''/trăm năm; các khẳng định lịch sử (Newton sửa ở ấn bản sau, Laplace sau ~120 năm, ngược chiều) không có nguồn. Nên bỏ hoặc nêu nguồn và hành tinh cụ thể.
+- **NANG / CHUGIAI**, Chú giải Cor 1-2, dòng 38
+  - source: (nguồn không đề cập Halley, Hipparchus, Hercules)
+  - now: Năm 1718, chính Halley phát hiện các ngôi sao không đứng yên: ... thấy cả đám đã dịch chuyển. ... Mặt Trời bay ~20 km/s về phía chòm sao Hercules, và phần lớn chuyển động mà Halley đo thấy bắt nguồn từ đó
+  - suggest: HỢP LÍ MỘT PHẦN: phần "cả đám" quá rộng so với một vài sao Halley nêu; khẳng định phần lớn chuyển động Halley đo bắt nguồn từ chuyển động của Mặt Trời là sai/không có nguồn; câu "giải quyết mọi nghịch lý chuyển động của Sao Mộc, hay của Trái Đất phẳng" vô nghĩa với văn bản. Cần sửa hoặc dẫn nguồn.
+- **NHE / CHUGIAI**, Chú giải dòng 36 và 62 (và 58)
+  - source: (Newton không nêu động cơ hay dụng cụ; nguồn chỉ nói "may be here passed by" và "neglected them in this Proposition")
+  - now: Ông muốn một cách kiểm chứng ... không cần dụng cụ nào; Ông biết chỗ yếu của lập luận; Ông hiểu rằng...; lần đầu tiên trong lịch sử vật lý
+  - suggest: HỢP LÍ MỘT PHẦN: gán động cơ, ý định tâm lí và nhận định "lần đầu tiên" cho Newton mà văn bản không viết; nên bỏ hoặc diễn đạt như nhận xét của người biên tập.
+- **NHE / SOLIEU**, Scholium, dòng 49
+  - source: 10' 53', and 4' 16" (OCR đọc "10'  53'" thiếu dấu giây thứ hai)
+  - now: 17'40'',\qquad 10'53',\qquad 4'16''.
+  - suggest: Công thức ghi 10'53' (một dấu phẩy trên), không nhất quán với chú giải dòng 60 (10'53''); nhân tỉ lệ 2000/3,06≈653''=10'53'' nên sửa thành 10'53''. Dòng nguồn OCR hỏng nên không xác định được từ OCR, chỉ từ kiểm tra tỉ lệ.
+- **NHE / THUATNGU**, Prop XIV, dòng 18
+  - source: some inequalities may arise from the mutual actions of the planets and comets in their revolutions
+  - now: lực tác dụng lẫn nhau có thể tạo ra một số bất đẳng thức
+  - suggest: "Inequalities" ở đây là các bất đều (nhiễu) trong chuyển động, không phải bất đẳng thức toán học; cân nhắc "bất đều"/"nhiễu" kèm chú thích; "revolutions" là chuyển động theo quỹ đạo, không phải "chuyển động quay".
+- **NHE / THEM**, dòng 10 và dòng 78 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 47. Sơ đồ được dùng lại từ Phần I...*; *Các số liệu ... đã được đối chiếu với scan trang 403-404. Hình minh họa dùng lại chưa phải hình riêng...*
+  - suggest: Hai dòng in nghiêng là lời biên tập nằm ngoài blockquote, không phải bản dịch; nên chuyển vào comment HTML hoặc khối Chú giải.
+
+## 60-sach-iii-proposition-xvii-xx.md
+
+- *phần 1/3: Chuong 60, phan 1/3 (dong 1-73): Prop XVII, XVIII, XIX (den het cau 'luc trong luc tai Q huong ve Trai Dat so voi luc tai A la'); doi chieu ia.txt dong 21806-21952*
+- *phần 2/3: Chương 60, phần 2/3 (dòng 74-144): nửa sau Prop. XIX (tính độ dẹt Trái Đất, Sao Mộc, bảng Pound, chú giải) và Prop. XX (đến câu "các lực trọng lực toàn phần ... tỷ lệ với nhau là"); đối chiế*
+
+- **NANG / HINH**, Hinh dong 8 (Prop XVII, nhung dung nhan cho Prop XIX dong 56-70)
+  - source: Prop XIX text: 'ACQqca ... APBQ ... PQ ... AB ... Cc ... Qq ... Art'
+  - now: ![...](../assets/book-ii-section-i-motion.svg): nhan SVG chi co A, O, B, 'thoi gian', 'van toc', 'duong quy tich' (do thi van toc-thoi gian cua Sach II)
+  - suggest: Hinh khong thuoc noi dung: thieu P, Q, C, c, a, q va khong co elip APBQ / kenh nuoc; thay bang hinh APBQ (OCR cho thay hinh nay nam o Prop XIX)
+- **NANG / SAINGHIA**, Prop XIX dong 42 (Picard va Cassini)
+  - source: 'an arc of one degree, and 22' 55" of the meridian between Amiens and Malvoisine' ... 'measured the distance upon the meridian from Collioure'
+  - now: 'cua duong chan troi giua Amiens va Malvoisine' ... 'khoang cach tren duong chan troi tu thi tran Collioure'
+  - suggest: 'meridian' = kinh tuyen, khong phai duong chan troi (horizon); sua ca hai cho thanh 'kinh tuyen'
+- **NANG / SOLIEU**, Prop XIX dong 40 (Norwood)
+  - source: OCR: 'distance of 005751 feet ... one degree to be 3671 96 feet of London measure, that is 57300 Paris toises'
+  - now: 'khoang cach $005751$ feet ... mot do co do dai $3671\,96$ feet'
+  - suggest: Ban dich chep nguyen loi OCR; khong xac dinh duoc tu OCR, nhung kiem tra noi tai (2 do 28' x ~367196 ft/do ~ 905751; 57300 toise ~ 367000 ft) cho thay can doi chieu ban quet: nhieu kha nang 905751 va 367196 (OCR mat/ nham chu so)
+- **NANG / SOLIEU**, Prop XIX dong 42 (Cassini, Collioure-Dunkirk)
+  - source: 'The whole distance was 486156^ toises, and the difference of the latitudes of Collioure and Dunkirk was 8 degrees, and 31 llf". ... to the Citadel of Dunkirk'
+  - now: 'Toan bo khoang cach la $486156$ toise ... $8^\circ31'$ ... den thanh pho Dunkirk'
+  - suggest: Mat so giay cua hieu vi do (OCR doc '31 llf"', co the 31' 11 1/2'' - khong xac dinh duoc), mat phan le sau 486156 (OCR '^'); va 'Citadel' (thanh luy/phao dai) bi dich thanh 'thanh pho'
+- **NANG / THIEU**, Prop. XIX, dòng 80
+  - source: divided by transverse, parallel, and equidistant surfaces, into parts proportional to the wholes
+  - now: chia mỗi nhánh thành các phần bằng nhau bằng những mặt ngang song song và cách đều
+  - suggest: Bản dịch bỏ "proportional to the wholes" và đổi thành "bằng nhau"; hai nhánh không bằng nhau nên các phần phải tỷ lệ với cả nhánh. Sửa: "chia thành các phần tỷ lệ với toàn bộ nhánh".
+- **NANG / SOLIEU**, Prop. XIX, dòng 100
+  - source: diameter ... from east to west is to its diameter from pole to pole nearly as 10½ to 9½ ... 40'' and 36'' 25''' ... as 11½ to 10½, very nearly
+  - now: gần như gấp $10\frac12$ lần đường kính từ cực này sang cực kia ... tỷ lệ gần như $11\frac12:10$
+  - suggest: Sai: tỷ số là 10½:9½ (không phải "gấp 10½ lần"), và tỷ số biểu kiến là 11½:10½ (OCR "11 -j to 10^"), không phải 11½:10. Kiểm tra: 40/36,417 gần 1,095 = 11½/10½.
+- **NANG / SOLIEU**, Prop. XIX, dòng 97
+  - source: difference of the diameters of Jupiter ... as 29/5 x 400/94½ x (phân số OCR hỏng) to 1; or as 1 to 9(phân số) nearly
+  - now: \frac{29}{5}\cdot\frac{400}{94\frac12}\cdot\frac{1}{9} gần như $1:9\frac12$
+  - suggest: Thừa số cuối "1/9" không có cơ sở và làm kết quả sai (29/5 x 400/94,5 x 1/9 xấp xỉ 2,7, không phải 1/9½). Theo mạch văn (lực ly tâm/trọng lực của Trái Đất tương ứng hiệu đường kính 1:229) thừa số phải là 1/229 cho ra khoảng 1/9⅓; OCR không đọc được phân số, nên cần đối chiếu bản gốc.
+- **NANG / SAINGHIA**, Prop. XX, dòng 139
+  - source: the arcs of the degrees of latitude in the meridian increase nearly in the same proportion
+  - now: Các cung của mỗi độ vĩ độ trên đường chân trời cũng tăng gần như theo cùng tỷ lệ
+  - suggest: "meridian" là kinh tuyến, không phải "đường chân trời". Sửa: "các cung của mỗi độ vĩ độ trên kinh tuyến".
+- **NANG / THUATNGU**, Prop. XX, dòng 139 và 141
+  - source: as the versed sine of double the latitude ... the versed sines of double those arcs
+  - now: theo giác vuông của hai lần vĩ độ ... các giác vuông của hai lần các cung ấy
+  - suggest: "versed sine" (sin ngược, bằng 1 trừ cos) bị dịch thành "giác vuông", không phải thuật ngữ đúng và cũng không đối ứng với "right sine" (sin thường). Dùng "sin tên (sin ngược)" hoặc "versed sine (sin ngược)" nhất quán.
+- **NANG / SOLIEU**, Prop. XX, dòng 141
+  - source: the versed sines of double those arcs are 11334, 00000 and 20000, the radius being 10000
+  - now: là [OCR không rõ] và $20000$
+  - suggest: OCR đọc rõ "11334,00000 and 20000" (khớp với 5667:2290000 ở dòng sau vì 11334/20000 x 1/229). Bản dịch bỏ hai số 11334 và 0 và ghi "không rõ". Sửa: "11334, 0 và 20000".
+- **NANG / THUATNGU**, Prop. XIX, dòng 80
+  - source: the weights ... as their magnitudes and the accelerative forces of their gravity conjunctly
+  - now: trọng lượng ... là tích của khối lượng và gia tốc trọng lực
+  - suggest: "magnitudes" (độ lớn/kích thước của các phần, 101:100) bị dịch thành "khối lượng" (mass), sai nghĩa. Sửa: "tích của độ lớn các phần và lực trọng lực gia tốc".
+- **NANG / CHUGIAI**, Chú giải Prop. XIX, dòng 117-127
+  - source: (không phải văn Newton)
+  - now: "Proposition XIX là lần đầu tiên ... người ta đo độ dẹt"; "Schiehallion năm 1818"; "Trái Đất thật không ở cân bằng thuỷ tĩnh"; "dẫu dệt", "chu kinh", "người cha ông"
+  - suggest: KHÔNG HỢP LÍ. Newton tính độ dẹt từ lý thuyết cân bằng chất lỏng chứ không đo. Thí nghiệm Schiehallion (Maskelyne) làm năm 1774 và đo khối lượng riêng của Trái Đất, không phải độ dẹt, nên "1818" và vai trò đo độ dẹt đều sai. Nguyên nhân lệch chính là mật độ không đều (nhân đặc hơn), không phải Trái Đất lệch cân bằng thuỷ tĩnh. "Dự đoán gần đúng" cho Sao Mộc cũng quá lời. Phép tính ở Prop. XIX dùng lực ly tâm 1:289 tại xích đạo, không phải "ở vĩ độ Paris". Lỗi gõ: "dẫu dệt" (dẹt), "chu kinh", "không tưởng", "người cha ông" khó hiểu. Khẳng định về ý thức/động cơ của Newton ("ông biết phần nào mình chắc") là suy diễn.
+- **NANG / THIEU**, Prop XX, bang dong 153-171
+  - source: Bang nguon co du hang 40..50 theo tung do: 41 deg 8.294 / 5695?; 42 8,327 / 5697?; 43 8,361 / 56984; 44 8,394 / 56997; 45 8.428 / 57010; 46 8,461 / 57022; 47 8,494 / 57035; 48 8,528 / 57048; 49 8,561 / 57061
+  - now: Bang chi co cac hang cach 5 do (40, 45, 50...), mat 8 hang 41-44 va 46-49 (45 deg co)
+  - suggest: Them du cac hang 41,42,43,44,46,47,48,49 deg voi chieu dai con lac va do kinh tuyen; chu so toise cua 41 va 42 bi hong trong OCR (5695? va 5697?), khong xac dinh duoc
+- **NANG / SAINGHIA**, Prop XX, dong 151 (tieu de cot bang)
+  - source: Measure of one degree in the meridian. Toises.
+  - now: Do dai cua mot do tren duong chan troi: toise
+  - suggest: Doi thanh "Do dai cua mot do tren kinh tuyen (toise)"; "duong chan troi" (horizon) la sai nghia
+- **NANG / SOLIEU**, Prop XX, dong 175, 197 (Richer)
+  - source: found it shorter by 1 j line ... difference was 1
+  - now: line ... difference of one line and a quarter observed by M. Richer
+  - suggest: thay no ngan hon 1 1/2 line ... Theo quan sat cua Richer ... khac biet la 1 1/2 line (nhung dong 201 lai ghi mot line va mot phan tu)|OCR phan so o dong 175/197 mo (1 j, 1|) nhung nguon noi ro o doan sau "one line and a quarter"; ban dich tu mau thuan (1 1/2 o dong 175, 197 va 1 1/4 o dong 201); can thong nhat theo scan
+- **NANG / SOLIEU**, Prop XX, dong 177 (Halley)
+  - source: he shortened the rod of his clock by more than the \ of an inch, or l£ line
+  - now: ong rut ngan thanh dong ho hon 3/4 inch, hay 1 1/2 line
+  - suggest: 3/4 inch bang 9 line, khong the bang 1 1/2 line (1 inch = 12 line theo dang thuc cua ban dich la 1/8 inch); OCR chi doc ra "\ of an inch", phan so khong xac dinh duoc tu OCR; kiem lai scan
+- **NANG / CHUGIAI**, Chu giai dong 213
+  - source: (Newton dan Picard va de la Hire ve do gian no cua thanh sat; Feuille bi bac; Couplet bi che la tho)
+  - now: Ong do xem mot thanh sat ... gian them bao nhieu; ... lam bang dung cu va phep do; "ngoai dai ly"; ong chap nhan khoang khac biet nho nhat roi tru phan nhiet
+  - suggest: KHONG HOP LI: phep do gian no la cua Picard va de la Hire, Newton chi dan lai; "ghi rang quan sat cua nguoi khac qua tho" chi noi ve Couplet; Newton lay so 1 1/4 line cua Richer roi tru 1/6 line chu khong noi "khoang nho nhat"; "dung cu va phep do" gan cho Newton; loi go "dai ly". Viet lai theo dung nguon
+- **NANG / CHUGIAI**, Chu giai dong 215
+  - source: (Newton noi des Hayes 1699-1700 chi ra khac biet 1 1/2 den 1 3/4 line, gan Richer; Richer 1672 sau 28 nam)
+  - now: Richer ... do do lon thi lon hon thuc te khoang ba lan ... bi nghi ngo suot tam muoi nam. Chi khi des Hayes quay lai ... nam 1699-1700 thi con so moi nho hon nhieu
+  - suggest: KHONG HOP LI: khong co trong nguon; Newton dung chinh so lieu des Hayes de hieu chinh Richer chu khong phu nhan; 1672 den 1699 khong phai tam muoi nam; hieu chenh Paris-xich dao chi khoang 0,3 phan tram, Richer 1 1/4 line tren gan 440 line khong lon hon thuc te ba lan; gia tri "nua phan tram" la giua cuc va xich dao, khong phai Paris. Bo hoac viet lai, ghi nguon neu giu; cau cuoi ve trac dac khong co nguon
+- **NHE / SOLIEU**, Prop XIX dong 44
+  - source: OCR: 'Let us suppose the weight lost thereby to be TT^o-o- Par^ of the whole weight'
+  - now: 'bang phan [OCR khong ro] cua toan bo trong luong'
+  - suggest: Con so phan so bi bo trong bang ghi chu '[OCR khong ro]' ngay trong loi dich; khong xac dinh duoc tu OCR - can doi chieu ban quet roi dien phan so
+- **NHE / THEM**, Dong 10 (chu thich hinh in nghieng)
+  - source: (khong co trong nguon)
+  - now: *Hinh 48. So do duoc dung lai tu Phan I; cac so do quy dao, truc hanh tinh, kenh nuoc va bang so lieu cua ban goc can duoc doi chieu rieng.*
+  - suggest: Loi bien tap nam ngoai blockquote Chu giai, tinh la 'them'; nen dua vao Chu giai hoac comment HTML
+- **NHE / THUATNGU**, Prop XVII dong 20
+  - source: 'the lunar day ... is menstrual, that is, equal to the time of its periodic revolution in its orb'
+  - now: 'co tinh chat kinh nguyet'
+  - suggest: 'menstrual' o day la 'hang thang' (bang chu ky quay quanh quy dao); 'kinh nguyet' sai nghia/gay hieu lam; nen dung 'hang thang (menstrual)'
+- **NHE / THUATNGU**, Prop XIX dong 46
+  - source: 'the versed sine of which is 0,05236561 feet, or 7,54064 lines'
+  - now: 'Giac vuong cua cung ay dai $0{,}05236561$ feet'
+  - suggest: 'versed sine' khong phai 'giac vuong'; dung thuat ngu 'sin-verse (versed sine)' / 'do vong cua cung'
+- **NHE / HINH**, Prop XIX dong 56
+  - source: 'APBQ ... ACQqca ... from the pole Qq to the centre Cc, and thence rising to the equator Art'
+  - now: 'tai $Art$'
+  - suggest: Nhan 'Art' la loi doc OCR (kha nang chi mot cap diem o xich dao) va duoc chep nguyen; khong xac dinh duoc tu OCR, can doi chieu hinh
+- **NHE / THIEU**, Prop XIX dong 56 va 70 (cac lien tu nhan qua)
+  - source: 'as 289 to 288, because the centrifugal force ... ; ... is a mean proportional ... because the sphere, by having its diameter PQ diminished in the proportion of 101 to 100, is transformed into the figure of the earth'
+  - now: 'Luc ly tam phat sinh tu chuyen dong tron giu lai va lay di ...' ; 'Qua cau, khi duong kinh PQ cua no giam ...'
+  - suggest: Hai chu 'because' bi bo nen mat quan he nhan qua (lap luan thanh hai cau roi); them 'vi/boi vi' (dong 26 cung bo 'because')
+- **NHE / THEM**, Prop XIX dong 54
+  - source: 'or as 289 to 1'
+  - now: 'hay xap xi $289:1$'
+  - suggest: Nguon khong co 'xap xi'; bo hoac giu nguyen 'hay 289:1'
+- **NHE / SOLIEU**, Prop. XIX, dòng 82 và 78
+  - source: the centrifugal force, which should be 4/505 parts of the weight, is only 1/289 part thereof ... from the weight of every part, conceived to be divided into 505 parts, the centrifugal force might take off four of those parts; also "or as 501 to 500"
+  - now: lẽ ra phải chiếm 4 phần trong 505 phần ... thực ra chỉ chiếm 1 phần ... hay xấp xỉ [OCR không rõ] :500
+  - suggest: "chỉ chiếm 1 phần" mất mẫu 289 (nguồn: 1/289 của trọng lượng); câu "chia trọng lượng mỗi phần thành 505 phần, lực ly tâm lấy đi bốn phần" bị lược; dòng 78 nguồn đọc ra 501 to 500, bản dịch ghi "xấp xỉ" (nguồn không có) và bỏ 501.
+- **NHE / THIEU**, Prop. XIX, dòng 115
+  - source: will appear by the experiments of pendulums ... (supposing that its matter is uniformly dense)
+  - now: sẽ được chứng minh bằng các thí nghiệm con lắc nêu dưới Proposition tiếp theo
+  - suggest: Bỏ ngoặc đơn giả thiết "supposing that its matter is uniformly dense" (giả thiết vật chất có mật độ đều). Thêm lại.
+- **NHE / SOLIEU**, Prop. XIX, dòng 88 và bảng dòng 111
+  - source: higher at the equator ... by 85472 feet, or 17(phân số OCR hỏng) miles; Pound 9 April: 14(phân số) to 13(phân số)
+  - now: hay khoảng $17$ dặm ... $14:13$
+  - suggest: Cả hai chỗ nguồn có phân số đi kèm (OCR "17^-", "14£ to 13d"), bản dịch bỏ phân số và thêm "khoảng". Với 12,32/11,48 thì 14½:13½ khớp hơn 14:13. Không xác định được phân số từ OCR, nên ghi chú hoặc kiểm bản gốc.
+- **NHE / THUATNGU**, Prop. XIX-XX, dòng 82, 100, 104, 137
+  - source: lực ly tâm; 25'''; 123 feet telescope; spheroid; parts proportional to the whole legs
+  - now: lực ly têm; 25 giây lẻ; kính lật dài 123 feet; ellipsoid; các phần tương ứng với toàn bộ các nhánh
+  - suggest: Lỗi gõ "ly têm". "25'''" là ba dấu phẩy trên, "giây lẻ" mơ hồ. "telescope" thành "kính lật" không có cơ sở (nên "kính thiên văn"). "spheroid" thành "ellipsoid" không nhất quán với thuật ngữ khác. "proportional to" thành "tương ứng với" làm mất ý tỷ lệ (dòng 133). Cột "Parts" của bảng Pound bị bỏ.
+- **NHE / SOLIEU**, Prop XX, dong 181 (Couplet)
+  - source: He had done better to have reckoned those differences \\ and 2f
+  - now: Lẽ ra ong phai tinh nhung khac biet ay la 3/4 va 2 2/3 line
+  - suggest: OCR "\\" khong doc duoc nen khong xac dinh duoc phan so dau; 3/4 de nghi doi chieu scan (ti le thoi gian 2'13" : 4'12" cho ti le chieu dai gan 1:1,9 voi 2 2/3 la so thu hai, nen so thu nhat khong the 3/4)
+- **NHE / THEM**, Prop XX, dong 201
+  - source: there will remain one line TV, which agrees very well with lT-o£o line collected by the theory
+  - now: con lai mot line [OCR khong ro], khop rat tot voi [OCR khong ro] line
+  - suggest: Chuoi "[OCR khong ro]" nam trong phan dich; thay bang phan so doc tu scan va dua ghi chu OCR sang khoi chu giai hoac comment HTML
+- **NHE / SAINGHIA**, Prop XX, dong 201
+  - source: I take an iron rod of 3 feet long to be shorter by a sixth part of one line in winter ... than in the summer
+  - now: Toi lay mot thanh sat dai 3 feet vao mua dong o nuoc Anh se ngan hon mot phan sau line so voi mua he
+  - suggest: Doi thanh "Toi cho rang mot thanh sat dai 3 feet ... o nuoc Anh vao mua dong ngan hon mua he mot phan sau line" ("I take ... to be" khong phai "toi lay")
+- **NHE / THUATNGU**, Prop XX, dong 177
+  - source: he interposed a wooden ring betwixt the nut and the ball
+  - now: ong dat mot vong go giua ren va qua cau
+  - suggest: "nut" la dai oc, khong phai "ren"; doi thanh "giua dai oc va qua cau"
+- **NHE / KHAC**, Prop XX, dong 203
+  - source: This diligence and care seems to have been wanting to the other observers
+  - now: Su can cau va can trong nay
+  - suggest: Loi go: "can cau" doi thanh "can cu"
+- **NHE / THEM**, Dong 217 (chu thich in nghieng ngoai blockquote)
+  - source: (khong co trong nguon)
+  - now: Cac so lieu, bang va cong thuc cua Proposition XIX-XX co nhieu cho OCR sai; ... Hinh kenh nuoc va cac bang so lieu cua ban goc cung chua duoc dung lai.
+  - suggest: Loi bien tap nam ngoai blockquote tinh la "them"; chuyen vao comment HTML hoac khoi **[Chu giai]**
+
+## 61-sach-iii-proposition-xxi-xxiv.md
+
+- *phần 2/2: Chương 61, phần 2/2 (dòng 66-128): Proposition XXIV (Sách III) từ đầu lời phát biểu đến hết, kèm Chú giải dòng 86-96 và chú thích in nghiêng dòng 128. Nguồn ia.txt dòng 22590-22813.*
+
+- **NANG / SOLIEU**, Prop XXIII, dòng 62
+  - source: the variation does not exceed 5"  12'" (OCR đọc 5 giây, 12 phần ba: 5″ 12‴)
+  - now: biến thiên của vệ tinh ngoài cùng không vượt quá [OCR không rõ] $5^\circ12'$
+  - suggest: Sửa thành 5″ 12‴ (5 giây 12 phần ba) theo OCR; bỏ "độ" và "phút" vì không có trong nguồn; bỏ chèn "[OCR không rõ]" vì nguồn đọc được.
+- **NANG / CHUGIAI**, Prop XXI, dòng 24-28 (chú giải)
+  - source: (Newton chỉ viết: nutation phải rất nhỏ, gần như không thể nhận thấy)
+  - now: Ông nói trước độ lớn... nếu chuyển động ấy lớn, thì các quan sát thiên văn thông thường sẽ sai. Là dấu hiệu của bản chất của lý thuyết
+  - suggest: KHÔNG HỢP LÍ: gán cho Newton một lập luận ông không viết (nguồn không nói gì về sai số của quan sát nếu nutation lớn). Bỏ hoặc viết lại đúng điều nguồn nói.
+- **NANG / CHUGIAI**, Prop XXI, dòng 28 (chú giải)
+  - source: không có trong nguồn (khẳng định lịch sử ngoài văn bản)
+  - now: Bradley phát hiện năm 1748... Ông đặt tên cho nó là chuyển động của các điểm xuân phân, rồi năm 1754 dùng lý thuyết Newton để chỉ ra nguyên nhân
+  - suggest: KHÔNG HỢP LÍ: câu "đặt tên cho nó là chuyển động của các điểm xuân phân" vô nghĩa (đó là tên của tuế sai, không phải nutation); mốc 1754 và việc Bradley giải thích nguyên nhân là khẳng định lịch sử chưa có nguồn. Cần bỏ hoặc có nguồn.
+- **NANG / SAINGHIA**, Prop XXIV, dòng 68, 70, 72, 102, 104, 116, 120
+  - source: appulse of the luminaries to the meridian of the place, as well under as above the horizon; appulse of the moon to the meridian above the horizon
+  - now: đi qua đường chân trời của nơi ấy, cả khi ở dưới lẫn trên đường chân trời; đi qua đường chân trời trên đường chân trời
+  - suggest: "meridian" (kinh tuyến) bị dịch hệ thống thành "đường chân trời" (horizon). Sửa thành "đi qua kinh tuyến của nơi ấy, cả khi ở dưới lẫn trên đường chân trời"; "giờ thứ ba sau khi Mặt Trăng qua kinh tuyến trên đường chân trời" (dòng 102, 116, 120 tương tự). Chỉ "lặn/mọc" mới là horizon.
+- **NANG / SOLIEU**, Prop XXIV, dòng 70
+  - source: by the hours of the lunar day I understand the 24th parts of that time which the moon ... employs to come about again to the meridian
+  - now: các phần mười hai phần trăm của thời gian mà Mặt Trăng ... dùng để trở lại đường chân trời
+  - suggest: Nguồn OCR đọc "24th parts" (một phần hai mươi bốn). Bản dịch "mười hai phần trăm" sai số liệu. Sửa thành "các phần hai mươi tư của thời gian ... để trở lại kinh tuyến của nơi mà nó đã rời vào ngày trước".
+- **NANG / CHUGIAI**, Chú giải dòng 92 và 94
+  - source: the greatest height of the waters ... ought to follow the appulse ... by a less interval than 6 hours; In the quadratures the sun will raise the waters which the moon depresses
+  - now: đỉnh đến chậm hơn sáu giờ sau khi thiên thể qua đường chân trời; độ lệch so với xích đạo quyết định hội tế hay phần vuông ... độ trễ giữa triệu và triều ngắn lại
+  - suggest: KHÔNG HỢP LÍ. (1) "chậm hơn sáu giờ" ngược với bản dịch ngay trên (ngắn hơn sáu giờ). (2) Độ lệch không quyết định hội tế hay phần vuông, nó chỉ làm đổi độ lớn của thủy triều; nguồn nói khác. (3) Newton chỉ nói quán tính làm giảm hiệu giữa các thủy triều xen kẽ, không nói "độ trễ ngắn lại". (4) "triệt tiêu phần lớn" chỉ gần đúng, Newton nói theo hiệu hai lực. Nên viết lại sát bản dịch.
+- **NANG / CHUGIAI**, Chú giải dòng 96
+  - source: (không có trong nguồn; nguồn chỉ có: latitude of 20 degrees 50 minutes north; greatest tides ... are not the first but the third after the syzygies)
+  - now: tuổi thủy triều ... chỉ khoảng một giờ; Batsham thường được nhận là Đồng Hới; nối biển bằng cửa hẹp; gấp khoảng hai lẻ rưỡi lần
+  - suggest: KHÔNG HỢP LÍ. "Tuổi thủy triều" là độ trễ của triều cường sau hội tế/phần vuông, tính bằng ngày chứ không phải một giờ, và Newton nói đợt thứ ba chứ không phải "ba giờ". Đồng Hới nằm khoảng 17,5 độ B, không khớp 20 độ 50 phút B của bản dịch; đồng nhất địa danh cần nguồn. "Cửa hẹp" không có trong nguồn. Con số "hai lẻ rưỡi" cần nguồn hoặc bỏ.
+- **NHE / CHUGIAI**, Prop XXI, dòng 22-24 (chú giải)
+  - source: trục dao động hai lần mỗi vòng năm; không nói gì về chu kỳ khác
+  - now: Mặt Trăng hút vào phần thắt lưng... độ cong ấy lên xuống theo chu kỳ đó chứ không phải theo một năm; chu kỳ mười tám phẩy sáu năm
+  - suggest: HỢP LÍ MỘT PHẦN: cơ chế vật lí đại thể đúng nhưng bỏ vai trò của Mặt Trời, và câu "không phải theo một năm" mâu thuẫn với bản dịch ngay trên ("hai lần trong mỗi vòng quay hằng năm"). Cần nói rõ đây là kết quả hiện đại, không phải lời Newton.
+- **NHE / CHUGIAI**, Prop XXI, dòng 22, 24, 28 (chú giải)
+  - source: không có
+  - now: vòng quay hành năm; bẻo cong trục quay; Ông nói thẳng (chưa nêu chủ ngữ); đây là bài học về công cụ đo hơn là về lý thuyết
+  - suggest: Lỗi gõ: "hành năm" -> "hằng năm", "bẻo" -> "bẻ"; "Ông" không có chủ ngữ rõ; câu "bài học về công cụ đo" là bình luận, nên bỏ. Cũng nên bỏ "bằng chứng nổi tiếng nhất cho một dự đoán thành công" vì Newton chỉ nói hiệu ứng gần như không nhận thấy.
+- **NHE / HINH**, Dòng 8-10 (hình 49)
+  - source: Prop XXI-XXIII không có hình trong nguồn (dòng 22491-22588)
+  - now: ![Minh họa chuyển động Mặt Trăng và thủy triều](../assets/book-ii-section-i-motion.svg); nhãn <text> trong SVG: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình thuộc Sách II Section I (đồ thị thời gian - vận tốc), không thuộc nội dung Mặt Trăng/thủy triều; không có chữ cái điểm nào được nhắc trong lời bản dịch. Nên bỏ hoặc thay bằng hình đúng (nếu có ở phần 2 cho Prop XXIV).
+- **NHE / THEM**, Dòng 10 (chú thích hình, ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Hình 49. Sơ đồ được dùng lại từ Phần I; các sơ đồ Mặt Trăng, mặt đất, ellipsoid và kênh nước của bản gốc cần được đối chiếu riêng.*
+  - suggest: Lời biên tập in nghiêng nằm ngoài blockquote tính là thêm; nếu giữ thì chuyển vào blockquote [Chú giải] hoặc comment HTML.
+- **NHE / THEM**, Prop XXIII, dòng 56 và 62
+  - source: apsis of every satellite in consequential is...; (after parting from) are revolved
+  - now: (`in consequential`) và [OCR không rõ] trong bản dịch
+  - suggest: Dòng 56: "in consequential" là OCR hỏng của "in consequentia", nên sửa cho khớp dòng 38 (`in consequentia`). Dòng 62: bỏ chữ [OCR không rõ] là ghi chú làm việc lọt vào bản dịch.
+- **NHE / SAINGHIA**, Prop XXII, dòng 36
+  - source: Thus our moon moves faster, and describes an area greater, and has its orbit less curved, and therefore approaches nearer to the earth in the syzygies than in the quadratures
+  - now: Mặt Trăng của chúng ta... chuyển động nhanh hơn; bán kính... diện tích lớn hơn. Quỹ đạo của nó ít cong hơn, và vì thế trong các hội tế nó ở gần Trái Đất hơn trong các phần vuông
+  - suggest: Cụm "trong các hội tế so với các phần vuông" của nguồn áp cho cả chuỗi (nhanh hơn, diện tích lớn hơn, quỹ đạo ít cong hơn) nhưng bản dịch chỉ gắn cho vế cuối; hai vế đầu mất điều kiện so sánh. Nên chuyển cụm này lên đầu câu.
+- **NHE / KHAC**, Prop XXII, dòng 38
+  - source: this is done not with a regular but an unequal motion
+  - now: chuyển động này không đều mà bất đẳng thức
+  - suggest: Diễn đạt vụng, "bất đẳng thức" dùng như tính từ; nên viết "chuyển động này không đều mà không đồng đều/ có bất đẳng thức" cho thuận Việt. Nghĩa không sai.
+- **NHE / CHUGIAI**, Chú giải dòng 90 và 94
+  - source: (không có trong nguồn)
+  - now: không ít người coi thủy triều là sức bẩm linh; lần đầu; Ông còn làm một việc chưa ai làm trước đó
+  - suggest: HỢP LÍ MỘT PHẦN. Các khẳng định lịch sử "lần đầu", "chưa ai làm trước", "sức bẩm linh" cần nguồn hoặc nên bỏ; "sức bẩm linh" còn khó hiểu. Phần còn lại tóm tắt đúng nội dung.
+- **NHE / THUATNGU**, Prop XXIV, dòng 84
+  - source: solstitial quadratures ... quadratures about the equinoxes; about the time of both equinoxes; before than after the vernal equinox ... after than before the autumnal
+  - now: các phần vuông quanh điểm xuân phân; cả hai điểm xuân phân; sau điểm xuân phân mùa thu
+  - suggest: "equinoxes" bị dịch thành "điểm xuân phân" (chỉ một điểm), "both equinoxes" thành "cả hai điểm xuân phân" và autumnal equinox thành "điểm xuân phân mùa thu" (tự mâu thuẫn). Sửa: "các phần vuông quanh hai phân điểm", "cả hai phân điểm", "điểm thu phân".
+- **NHE / SOLIEU**, Prop XXIV, dòng 98-104 (nhãn điểm)
+  - source: APEp (OCR AjoEP); Ff and Dd the parallels (OCR F/); axes Hh, Kk; hemisphere Khk; the flood in f (OCR in/)
+  - now: $APBP$; $F'DD'$; trục $HH',KK'$; bán cầu $Khh$; tại $l$ và $F'$
+  - suggest: Nhãn điểm lệch nhau và lệch OCR: "APBP" (OCR đọc A,p,E,P), "F'DD'" (nguồn là Dd), "HH',KK'" (nguồn Hh,Kk), "Khh" (OCR "Khk"); chữ f thường lúc là $F'$ lúc là $l$ trong cùng đoạn. Nên thống nhất f (hoặc F') và đối chiếu scan.
+- **NHE / SAINGHIA**, Prop XXIV, dòng 106
+  - source: especially if the ascending node of the moon is about the first of Aries
+  - now: nhất là khi node tăng của Mặt Trăng ở gần cung Aries
+  - suggest: Mất "first" (điểm đầu của Aries). Sửa: "ở gần điểm đầu cung Aries".
+- **NHE / KHAC**, Prop XXIV, dòng 124
+  - source: But whether there be really two tides ... one from the Indian sea in the space of 12 hours, and one from the sea of China in the space of 6 hours, which therefore happening at the 3d and 9th lunar hours ... produce those motions: or whether there be any other circumstances
+  - now: Nhưng liệu ... hay không; vì vậy hai thủy triều ấy, xảy ra vào giờ thứ ba và giờ thứ chín ... hay liệu còn những điều kiện khác
+  - suggest: Cấu trúc "whether ... or whether" bị dịch thành "hay không; vì vậy ... hay liệu", khó hiểu. Nên viết: "liệu có thật hai thủy triều ... (xảy ra vào giờ thứ ba và thứ chín, cộng lại tạo nên các chuyển động ấy), hay còn điều kiện nào khác ... tôi để ... xác định".
+- **NHE / KHAC**, Prop XXIV, dòng 68
+  - source: in the Smith Sea (OCR); in all which shores the flood falls out about the second, third, or fourth hour
+  - now: trong Biển Smith
+  - suggest: OCR đọc "Smith Sea", rất có thể là lỗi OCR. Không xác định được từ OCR; cần đối chiếu scan trước khi giữ "Biển Smith".
+- **NHE / HINH**, Prop XXIV, dòng 98-104
+  - source: Hình với các điểm A,P,E,p,C,F,f,D,d,H,h,K,k,L,N,M,R,S,T,Q nằm ngay trước đoạn "Moreover, the effects of the luminaries depend upon the latitudes of places" (ia.txt 22685-22697)
+  - now: Không có ảnh ![...] nào trong phần 2; bản dịch chỉ nêu nhãn bằng chữ
+  - suggest: Phần 2 thiếu hình của Prop XXIV mà lời chứng minh cần (nhãn A,P,E,p,C,F,f,H,h,K,k,L,Q,N,M,R,S,T,D,d). Phần 1 chỉ có một ảnh (dòng 8) nên không thể là hình này; cần thêm hình hoặc ghi chú.
+- **NHE / THEM**, dòng 128 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Các công thức, bảng và sơ đồ của Proposition XXI-XXIV có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan ...*
+  - suggest: Lời biên tập in nghiêng nằm trong phần dịch. Nên chuyển vào blockquote **[Chú giải]** hoặc comment HTML. Ngoài ra "triệu/triều" cho flood/ebb và "đối xứng" cho opposition cần kiểm tra nhất quán với phần 1.
+
+## 62-sach-iii-proposition-xxv-xxviii.md
+
+- *phần 1/2: Chương 62, phần 1/2 (dòng 1-149): Proposition XXV (Bài toán VI) và Proposition XXVI (Bài toán VII) + ảnh + 2 chú giải; đối chiếu ia.txt dòng 22815-22982. Prop XXVII-XXVIII nằm ở phần 2.*
+- *phần 2/2: Chuong 62, phan 2/2 (dong 150-284): Proposition XXVII (+Hệ quả 1-2) va Proposition XXVIII Sach III; doi chieu voi ia.txt dong ~22960-23131. Khong co hinh anh va khong co Chu giai trong phan *
+
+- **NANG / SOLIEU**, Prop XXV, dòng 36-57
+  - source: the mean distance ... nearly 60½ mean semi-diameters; force at 60½ semi-diameters is to force at 60 semi-diameters as 60½ to 60; mean force ML : gravity as 1 x 60½ to 60 x 60 x 60 x 178(frac), or 1 to 638092,6
+  - now: gần bằng 60 bán kính; tỷ lệ 60:60; 1:60·60·60·178½ hay 1:638092,6 (cả dòng 34: 1:178½)
+  - suggest: OCR đọc "60^" và "60|" (=60½): dịch làm rơi ½ nên "60:60" thành 1:1 và thiếu thừa số 60½ ở tử số (60·60·60·178,725/60,5 mới ra 638092,6). Cũng 1000:178725 cho 178,725 chứ không phải 178½ (OCR chỉ đọc "178f J", phân số không xác định được). Sửa: 60½; 60½:60; 1×60½ : 60·60·60·178,725; 1:178,725.
+- **NANG / SOLIEU**, Prop XXVI, dòng 94
+  - source: then will FK be equal to TK
+  - now: Khi ấy $FK=FK$
+  - suggest: Đẳng thức vô nghĩa; nguồn là FK bằng TK. Sửa thành $FK=TK$.
+- **NANG / SOLIEU**, Prop XXVI, dòng 136
+  - source: the area ... is nearly as the sum of the number 219,46, and the versed sine of the double distance of the moon from the nearest quadrature
+  - now: gần bằng tổng của số [OCR không rõ] và giác vuông của khoảng cách kép
+  - suggest: OCR đọc rõ con số 219,46 nhưng bản dịch để trống "[OCR không rõ]". Sửa: "số 219,46".
+- **NANG / THUATNGU**, Prop XXVI, dòng 136
+  - source: the versed sine of the double distance
+  - now: giác vuông của khoảng cách kép từ Mặt Trăng đến phần vuông gần nhất
+  - suggest: "versed sine" là sin tiến (versin = 1 - cos), không phải "giác vuông" (nghe như góc vuông). Sửa: "sin tiến (versed sine)".
+- **NANG / SAINGHIA**, Prop XXVI, dòng 114
+  - source: add a moment which shall be to 100, the difference of the two former moments, as the trapezium FKCG to the triangle TCG
+  - now: một moment tỷ lệ với $100$ lần hiệu số của hai moment trước, tức bằng tỷ lệ giữa hình thang $FKCG$ và tam giác $TCG$
+  - suggest: 100 chính là hiệu số (11965-11865), không phải "100 lần hiệu số". Sửa: moment ấy so với 100, hiệu của hai moment trước, như hình thang FKCG so với tam giác TCG. Cũng nguồn viết "Pd to TP" (OCR mất số mũ), bản dịch "Pℓ:TP".
+- **NANG / SOLIEU**, Prop XXVI, dòng 101
+  - source: as 100 to (frac) x 178(frac), or 11915
+  - now: $100:\frac{3}{2}\cdot178\frac12:11915$
+  - suggest: OCR chỉ đọc "|" cho phân số. Kiểm số: EL = 3/2 ML nên tỷ số là 100 : (2/3)·178,725·100 = 11915; viết 3/2·178½ cho 267,75, không ra 11915, và thành tỷ lệ ba số. Sửa phân số thành 2/3 với 178,725 (hoặc ghi "không xác định được từ OCR").
+- **NANG / HINH**, Hình dòng 8
+  - source: Hình trong nguồn của Prop XXV-XXVI: điểm S,T,P,K,L,M,C,A,D,B (XXV) và E,G,F,f,k,p (XXVI)
+  - now: ![...](../assets/book-ii-section-i-motion.svg), nhãn <text>: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình là của Sách II Phần I (chuyển động, vận tốc-thời gian); không có S,T,P,K,L,M,C,D,E,F,G; chỉ trùng A,B. Không thuộc nội dung đoạn. Cần hình đúng hoặc để trống chờ vẽ.
+- **NANG / CHUGIAI**, Chú giải Prop XXV, dòng 62-72
+  - source: The force LM, and that part of SM which is represented by TM, disturb the motion of the moon
+  - now: Đoạn ML mới là phần thật sự gây nhiễu; còn TM chỉ kéo cả cặp ... cùng đi ... Vì thế ông mới xét tổng lực ... lực tạo thủy triều ở Proposition XXIV là lực chênh lệch
+  - suggest: KHÔNG HỢP LÍ: mâu thuẫn với bản dịch ngay trên (cả LM và TM đều làm nhiễu, dòng 18); gán lí do cho Newton ("vì thế") và gán liên hệ với thủy triều không có trong văn bản; "ở phần vuông lực hướng tâm của Trái Đất mạnh nhất, ở hội tế Mặt Trời kéo giãn nhiều nhất" sai (lực Trái Đất không đổi, chỉ lực tổng hợp đổi); "quỹ tích", "quỹ tinh" là lỗi gõ; "dùng cho điều hướng" là khẳng định lịch sử không nguồn. Nên viết lại.
+- **NANG / CHUGIAI**, Chú giải Prop XXVI, dòng 138-148
+  - source: the versed sine of the double distance of the moon from the nearest quadrature
+  - now: bằng một hằng số cộng với bình phương khoảng cách ... Ông cũng nêu một lo lắng thực tiễn: ... phương trình tâm ... biên độ ấy tỷ lệ thẳng với độ lệch tâm của quỹ đạo Trái Đất
+  - suggest: KHÔNG HỢP LÍ: nguồn là sin tiến của khoảng cách kép chứ không phải bình phương khoảng cách; lo lắng về phương trình tâm không có trong Prop XXVI (gán cho Newton); biến thiên (variation) không tỷ lệ với độ lệch tâm quỹ đạo Trái Đất (đó là đặc tính của phương trình năm), khẳng định sai; "người xưa chỉ mô tả" không nguồn. Sửa hoặc bỏ.
+- **NANG / SOLIEU**, Prop XXVIII, dong 237-241
+  - source: curvature of Cpa at a to that at C as AT^3 - (n)CT^2AT to CT^3 - (n)AT^2xCT; OCR: "_i_6_8_2_4_AT2 X CT", mot so duy nhat "represents the difference of the squares of the angles"
+  - now: (AT^3-1776 CT^2AT)/(CT^3-1682 AT^2CT), "so 1776 dai dien cho hieu so..."
+  - suggest: Hai he so khac nhau (1776 va 1682) mau thuan voi cau "the number" (mot so) cua nguon; OCR mau duoi doc ra chu so 1 6 8 2 4 (16824, co mau so lon), khong phai 1682, va khong thay 1776. Can doi chieu scan, dung cung mot so cho ca hai vi tri, giu mau so.
+- **NANG / SOLIEU**, Prop XXVIII, dong 172-188
+  - source: putting N for (AT+CT)/2 [OCR: "AT + CT ... - ^ -"]; attractions nearly as 178725N x CT^2 - 2000AT^2 x CT and 178725N x AT^2 + 1000CT^2 x AT
+  - now: N=(AT+CT)/178725; luc ti le nhu (1/178725)CT-2000AT va (1/178725)AT+1000CT
+  - suggest: Dinh nghia N chia cho 178725 mau thuan voi dong 254 (N = mot nua tong AT va CT) va voi cac bieu thuc sau co 178725N. Dang nguon OCR doc: 178725N x CT^2 - 2000AT^2 x CT va 178725N x AT^2 + 1000CT^2 x AT (can xac nhan scan). Sua theo scan.
+- **NANG / SOLIEU**, Prop XXVIII, dong 198-203
+  - source: curvature in syzygies : quadratures as 120406729x178725AT^2xCT^2xN - 120406729x2000AT^4xCT to 122611329x178725AT^2xCT^2xN + 122611329x1000CT^4xAT
+  - now: (120406729.178725 AT^2CT^2N - 24081AT^3)/(122611329.178725 AT^2CT^2N + 12261CT^3)
+  - suggest: Dang chua rut gon bi tron voi dang rut gon: thieu hang -120406729x2000AT^4xCT o tu so va thay hang 122611329x1000CT^4xAT bang 12261CT^3 o mau so. Sua cho du hai hang (dang chua rut gon) roi moi den dang rut gon dong 207-209 (dong nay khop nguon).
+- **NHE / THEM**, Dòng 10
+  - source: (không có trong nguồn)
+  - now: *Hình 50. Sơ đồ được dùng lại từ Phần I; các sơ đồ dựng lực, quỹ đạo Mặt Trăng, hình chiếu và đường cong của bản gốc cần được đối chiếu riêng.*
+  - suggest: Chú thích hình in nghiêng do biên tập viên thêm, nằm ngoài blockquote (và tự thừa nhận hình chưa đúng). Nên chuyển vào blockquote **[Chú giải]** hoặc comment HTML.
+- **NHE / SAINGHIA**, Prop XXVI, dòng 92-94, 106, 114, 134
+  - source: Pp (phần cung nhỏ), "Let fall pK(OCR: pic) perpendicular on CT", Kk to PK as Pp to Tp; Pd
+  - now: Hạ $P\ell$ vuông góc xuống $CT$; $P\ell$ và $T\ell$; $\frac12 TP\cdot P\ell$; $Kd$ cùng với $P\ell:TP$ và $10973+P\ell$
+  - suggest: Chữ điểm không nhất quán: OCR đọc "Pp", "Tp", "pk", "Pd", "Kd" mà bản dịch gộp thành Pℓ/Tℓ (lẫn ℓ với p, d); "Hạ Pℓ vuông góc" khác nguồn (hạ pk). Cần thống nhất nhãn; nhiều chỗ còn "[OCR không rõ]" và "\frac{?}{?}" (dòng 87, 94, 96, 104, 106, 122) cần xử lí.
+- **NHE / THIEU**, Prop XXV, dòng 60
+  - source: whence ... the force TM is also given; and these are the forces with which the sun disturbs the motions of the moon. Q.E.I.
+  - now: ...Đó là các lực Mặt Trời dùng để làm nhiễu chuyển động của Mặt Trăng.
+  - suggest: Thiếu "Q.E.I." cuối Proposition XXV (mục nhẹ cho cả phần).
+- **NHE / THIEU**, Prop XXVII, dong 154
+  - source: distance of the moon from the earth is in a proportion compounded of ... inversely. Q.E.I. [OCR: Q.E.T.]
+  - now: (ket thuc o "...theo chieu nghich.")
+  - suggest: Thieu "Q.E.I." cuoi Proposition XXVII (OCR doc "Q.E.T."); Prop XXVIII cung khong thay Q.E.I. nhung nguon OCR cung khong ro, nen chi bao mot muc cho ca phan.
+- **NHE / THEM**, Cuoi chuong, dong 284
+  - source: (khong co trong nguon)
+  - now: *Các công thức của Proposition XXV-XXVIII có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan ...*
+  - suggest: Ghi chu bien tap in nghieng nam ngoai blockquote Chu giai, khong thuoc ban dich. Nen bo hoac chuyen vao blockquote **[Chu giai]**/comment HTML.
+- **NHE / THUATNGU**, Prop XXVIII, dong 243
+  - source: multiply the extremes and the means
+  - now: nhân các số cùng và trung
+  - suggest: "cùng" khong phai thuat ngu chuan; dich la "ngoai ti" va "trung ti" (nhan cac ngoai ti va trung ti).
+
+## 63-sach-iii-proposition-xxix-xxxii.md
+
+- *phần 1/3: Chương 63, phần 1/3 (dòng 1-121): ảnh đầu chương, Proposition XXIX (Bài toán X, biến thiên của Mặt Trăng) và Proposition XXX (Bài toán XI) từ đầu đến hết công thức vận tốc node IT·PH·AZ (ngu*
+- *phần 2/3: Chương 63, phần 2/3 (dòng 122-239): nửa sau Prop XXX (Bài toán XI, từ "solid content" của ba sin đến hết Hệ quả 1-2, kể cả chú giải), toàn bộ Prop XXXI (Bài toán XII) và Hệ quả của nó. Không*
+- *phần 3/3: Chương 63, phần 3/3 (dòng 240-359): Proposition XXXII (Book III, Problem XIII) đối chiếu với ia.txt dòng 23541-23647; không có hình trong phần này*
+
+- **NANG / SOLIEU**, Prop. XXX, dòng 104-114
+  - source: the angle mTl will be as ml/Tm; and therefore as IT x mP/Tm; that is (because Tm and mP, TP and PH are proportional) as IT x PH/TP; and therefore, because TP is given, as IT x PH
+  - now: góc mTl sẽ tỷ lệ với IT·PH/(Tm·mP), tức là, vì Tm và mP, TP và PH tỷ lệ, theo IT·PH
+  - suggest: Phân số sai (ml tỷ lệ IT·mP nên phải là IT·mP/Tm, không phải IT·PH/(Tm·mP)). Thiếu các bước ml/Tm, IT·mP/Tm, IT·PH/TP và câu "vì TP là cho trước". Viết lại đủ chuỗi như nguồn.
+- **NANG / HINH**, Hình dòng 8 (đầu chương), phục vụ Prop. XXIX-XXX
+  - source: (không áp dụng; nguồn có sơ đồ Mặt Trời S, Trái Đất T, Mặt Trăng P, node N,n, các điểm A,B,Q,q,Z,I,K,H,M,L,m,l,p)
+  - now: ![...](../assets/book-ii-section-i-motion.svg), nhãn SVG chỉ có: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình là của Sách II Phần I, không thuộc Prop. XXIX-XXX. Lời chứng minh Prop. XXX nhắc T,P,S,N,n,Q,q,Z,I,K,H,M,L,m,l,p, đều không có trong hình. Cần thay bằng hình đúng hoặc bỏ.
+- **NANG / THIEU**, Prop XXXI, dòng 190-192
+  - source: Therefore the motion of the nodes in the ellipsis is to that in the circle as fg or ce.fp/cp to fg or ce.fY/cY, that is, as fp x cY to fY x cp ... as Fh to FY and FY to FP; that is, as Fh to FP or Dp to DP
+  - now: "Điều này đúng nếu fg:ce có tỷ lệ với fh:cY ... fg:ce=fb:cp. Vì vậy, góc mà fg tạo ra thật sự tỷ lệ ..." rồi "Fh:FP bằng [OCR không rõ]"
+  - suggest: Mất chuỗi tính tỉ số fg = ce.fY/cY (giả định), fg = ce.fp/cp (thực tế), tỉ số = fp.cY : fY.cp = fp:fY và cY:cp = Fh:FY và FY:FP = Fh:FP = Dp:DP; dịch thiếu rồi điền placeholder. Ngoài ra "fh" và "fb" không có trong OCR (OCR đọc "fY" ở "fg:ce = fY:cY" và "fp" ở "fg:ce = fp:cp"); các tam giác "fhf" cũng vô nghĩa (nguồn: fpY? và cep, không xác định chắc từ OCR). Bổ sung đủ chuỗi và sửa nhãn.
+- **NANG / THIEU**, Prop XXXI, dòng 208
+  - source: the remaining decrement will be equal to the decrement in the syzygy, as will easily appear by computation; and therefore the mean decrement ... is the fourth part
+  - now: "phần giảm còn lại sẽ bằng phần giảm ở hội tế. Vì vậy, phần giảm trung bình ... bằng một phần tư" (không có "as will easily appear by computation"). Cũng dịch "distant by the same interval, one from the syzygy, the other from the quadrature" thành "cách nhau cùng một khoảng"
+  - suggest: Thêm câu "như sẽ dễ thấy bằng phép tính". Sửa: hai vị trí khác cùng cách (một vị trí hội tế, một vị trí phần vuông) một khoảng như nhau, không phải "cách nhau".
+- **NANG / SOLIEU**, Prop XXXI, dòng 213 và 219
+  - source: the decrement is 17'" 43iv. 11v. The fourth part of which 4'" 25iv. 48v. (OCR dấu phẩy trên: 17'" và 4'")
+  - now: "17'43^{iv},11^v" và "4'25^{iv},48^v" (dùng một dấu phẩy ')
+  - suggest: Đơn vị sai: phải là giây bậc ba (‴, ba dấu phẩy): $17'''43^{iv},11^v$ và $4'''25^{iv},48^v$ (kiểm tra: 32''42''' x 100/11073 xấp xỉ 17''' 43^iv). Hiện viết thành phút.
+- **NANG / SOLIEU**, Hệ quả 1 Prop XXX, dòng 154
+  - source: PK x PH x AZ as Kk' x PD x AZ2; that is, as the area PDdM and AZ3 conjunctly (OCR có "KA'" và "AZ3")
+  - now: "PK·PH·AZ tỷ lệ với tích Kk^2·PD·AZ^2, tức là với tích của diện tích PDdM và AZ^3"
+  - suggest: Kết luận mâu thuẫn với phát biểu của chính Hệ quả (diện tích MPDd và bình phương AZ) và với Hệ quả 2 / Prop XXXI ("area and AZ2 conjunctly"). OCR đọc "KA'" và "AZ3", hỏng; không xác định được từ OCR dạng đúng. Kiểm tra lại với bản scan; chỉ giữ Kk^2 và AZ^3 nếu thật sự có trong bản in.
+- **NANG / SAINGHIA**, Hệ quả 2 Prop XXX, dòng 160
+  - source: by the time that the moon has arrived at the point n [OCR: //], that sum will make up the whole area EQ,Aw [= EQAn] ... the semi-circle QAq [OCR: QA</,]
+  - now: "Khi Mặt Trăng đến điểm M ... toàn bộ diện tích EQMμ ... nửa đường tròn QAμ"
+  - suggest: Sai nhãn điểm: điểm kết là n (nhất quán với "from n to q" và "NQAn" liền sau), diện tích là EQAn, không phải M và EQMμ; nửa đường tròn là QAq (OCR đọc "q", không có μ). Sửa thành n, EQAn, QAq.
+- **NANG / SOLIEU**, Prop XXXI, dòng 176 và 186
+  - source: as PK to pK, or as AT to aT [OCR: «T] ... similar figures PYKp [OCR: PYK/?] and FYRc ... the ellipsis Qpmaq
+  - now: "PK:pK, tức AT:pT" ; "các hình PYKf và FYRc" ; "elip Qμmaν", "trục lớn Qμ"
+  - suggest: Tỉ số đúng là PK:pK = AT:aT (aT là nửa trục nhỏ, aT/AT = pK/PK), không phải pT; hình đồng dạng là PYKp, không phải PYKf; OCR đọc "Qq" và "Qpmaq" (đầu mút trục kia là q) nhưng bản dịch dùng μ và ν, không có căn cứ trong OCR. Sửa nhãn.
+- **NANG / SAINGHIA**, Prop XXXI, dòng 202
+  - source: the excess of the moments of the area, in the several places above the least moment in the quadratures, is nearly as the square of the sine of the moon's distance from the quadratures
+  - now: "phần vượt của các moment diện tích so với moment nhỏ nhất tại phần vuông gần như bằng bình phương của sin khoảng cách Mặt Trăng đến phần vuông"
+  - suggest: "is as" nghĩa là tỷ lệ với, không phải "bằng" (hai đại lượng khác thứ nguyên/đơn vị). Sửa: "gần như tỷ lệ với bình phương của sin ...".
+- **NANG / SOLIEU**, Prop XXXII, dòng 299
+  - source: dZ may be to
+  - now: AZ as AT2 to 9,0827646AT2 + AZ2 (OCR đọc "
+  - suggest: AZ", thường là ½AZ)|tức là $dZ:AZ=AT^2:(9{,}0827646AT^2+AZ^2)$|Thiếu hệ số ½: kiểm bằng thứ nguyên (ATa = ½·AT·Aa) cho dZ:½AZ = AT²:(9,0827646AT²+AZ²). Nên đối chiếu scan.
+- **NANG / SOLIEU**, Prop XXXII, dòng 301
+  - source: the curve NdGn is the locus of d, the curvilinear area NdZ (OCR "Ne/Z", "NrfZ") ... excess of sector NAT above area NdZ
+  - now: diện tích cong $NeZ$ ... phần dư của sector $NAT$ so với diện tích $NeZ$
+  - suggest: Quỹ tích của d nên là diện tích NdZ. NeZ là diện tích của đường cong khác (quỹ tích của e, dòng 307). Đổi hai chỗ ở dòng 301 thành $NdZ$.
+- **NANG / THIEU**, Prop XXXII, dòng 250
+  - source: will be to the like sum of all the greatest rectangles as the area of the whole circle to the rectangle of the whole circumference into the radius, that is, as 1 to 2
+  - now: tổng tất cả những hình chữ nhật ấy ... sẽ tỷ lệ với tổng tất cả những hình chữ nhật lớn nhất là $1:2$
+  - suggest: Mất mệnh đề "như diện tích cả hình tròn so với hình chữ nhật của cả chu vi với bán kính". Thêm lại, và dịch "so với" thay vì "tỷ lệ với".
+- **NANG / CHUGIAI**, Chú giải dòng 347-357
+  - source: (nguồn) the motion of the node in the sidereal year is 19° 18' 1" 23"'; 18° 19' 5" 53"' lies between two conjunctions with the sun
+  - now: Chú giải: ... chuyển động của node trong thời gian Mặt Trời đi từ node này tới node kia là 19°18'1''23'''
+  - suggest: KHÔNG HỢP LÍ. Gán sai: 19°18'1"23‴ là chuyển động trung bình trong một năm sao; giữa hai lần gặp node là 18°19'5"53‴. Mâu thuẫn với câu đầu chú giải ("một năm sao"). Còn có lỗi gõ "nhiều lẽ" (có lẽ).
+- **NHE / THEM**, Dòng 10
+  - source: (không có trong nguồn)
+  - now: *Hình 51. Sơ đồ được dùng lại từ Phần I; các sơ đồ node, hình chiếu quỹ đạo, tiếp tuyến và tiêu điểm của bản gốc cần được đối chiếu riêng.*
+  - suggest: Chú thích in nghiêng nằm ngoài blockquote là lời biên tập thêm, không phải của Newton. Chuyển vào blockquote [Chú giải] hoặc bỏ.
+- **NHE / SAINGHIA**, Prop. XXX, dòng 116-120
+  - source: the velocity of the nodes is as IT x PH x AZ, or as the solid content of the sines of the three angles TPI, PTN, and STN
+  - now: Vì vậy, vận tốc của node là IT·PH·AZ
+  - suggest: "is as" nghĩa là tỷ lệ với, không phải bằng. Đề xuất: "vận tốc của node tỷ lệ với IT·PH·AZ". (Vế "or as the solid content of the sines..." nằm sau dòng 121, thuộc phần sau, cần phần 2 kiểm.)
+- **NHE / SAINGHIA**, Prop. XXIX, dòng 30
+  - source: that the excess of the moment in any intermediate place P above the moment in the quadrature may be as the square of the sine of the angle CTP
+  - now: Phần vượt của moment tại một vị trí trung gian P so với moment tại phần vuông phải bằng bình phương của sin góc CTP
+  - suggest: "as" nghĩa là tỷ lệ với. Đề xuất: "phải tỷ lệ với bình phương của sin góc CTP".
+- **NHE / SAINGHIA**, Prop. XXX, dòng 102
+  - source: seeing MPm lies in the plane of the orbit ... from the plane MPmT into the plane LPlT
+  - now: Vì $MPra$ nằm trong mặt phẳng quỹ đạo ... sang mặt phẳng $LP/T$
+  - suggest: Hai chỗ chép nguyên lỗi OCR: "MPra" phải là MPm (nguồn OCR "MPra", ngay sau đó "plane MPwT" cho thấy là m); "LP/T" phải là LPlT, vì "/" là l bị OCR hỏng. Sửa thành $MPm$ và $LPlT$.
+- **NHE / SAINGHIA**, Prop. XXX, dòng 104
+  - source: But ml is to mP as ML to MP
+  - now: Nhưng $nl$ so với $mP$ như $ML$ so với $MP$
+  - suggest: Sai chữ cái điểm: $nl$ phải là $ml$ (OCR "n.l" là ml; dòng sau của chính bản dịch dùng ml). Sửa thành $ml$.
+- **NHE / HINH**, Prop. XXX, dòng 80
+  - source: the orthographic projection of the orbit upon the plane of the ecliptic: N, n the nodes (OCR: "Njo/?")
+  - now: $Nn\theta$ là hình chiếu vuông phương của quỹ đạo
+  - suggest: Nhãn "$Nn\theta$" không thấy trong OCR (OCR chỉ là "Njo/?", không xác định được từ OCR). Chữ θ có vẻ do người dịch tự đặt; cần đối chiếu hình gốc.
+- **NHE / THUATNGU**, Prop. XXIX, dòng 16
+  - source: This inequality is owing partly to the elliptic figure ... partly to the inequality of the moments of the area
+  - now: Bất đẳng thức này một phần do dạng elip ... một phần do sự bất bằng của các moment của diện tích
+  - suggest: Cùng một từ "inequality" dịch hai cách trong một câu, và "bất đẳng thức" dễ bị hiểu là bất đẳng thức toán học. Thống nhất, ví dụ "sai số/bất đều" hoặc một thuật ngữ thiên văn duy nhất ("bất đồng đều").
+- **NHE / THEM**, Prop XXXI, dòng 192 và 204
+  - source: the decrement ... in the duplicate proportion of the number 11073 [OCR: H07.'J] to the number 11023 (OCR đọc được 11073)
+  - now: "giảm theo tỷ lệ bậc hai của số [OCR không rõ] với số 11023"
+  - suggest: Bản dịch chèn nhãn biên tập "[OCR không rõ]" vào phần dịch, trong khi OCR đọc được gần chắc là 11073. Thay bằng "11073"; bỏ placeholder ở dòng 192 (xem mục đầu).
+- **NHE / THIEU**, Prop XXXI, dòng 200
+  - source: as 11023, the half sum of those numbers, to their half difference 50 ; ... excess of the time in the quadratures, and the defect of the time in the syzygies arising from this cause
+  - now: "như 11023:50 ..." (không có "half sum ... half difference", không có "arising from this cause")
+  - suggest: Thêm giải thích: 11023 là nửa tổng, 50 là nửa hiệu của hai số 10973 và 11073; và cụm "do nguyên nhân này".
+- **NHE / THUATNGU**, Prop XXX dòng 122, 134, Hệ quả 1 dòng 154
+  - source: solid content of the sines ... solid content of PK x PH x AZ ... solid content Kk x PD x AZ
+  - now: Dòng 122 "thể tích các sin"; dòng 134 và 154 chỉ viết "tích" (bỏ "solid content")
+  - suggest: Cùng thuật ngữ "solid content" khi dịch hai cách (thể tích / tích). Nên thống nhất một cách, vd "tích ba (đại lượng khối)" hoặc "tích ba sin", và nhất quán ở cả ba chỗ.
+- **NHE / THIEU**, Hệ quả 1, Hệ quả 2 Prop XXX và Prop XXXI (dòng 154, 170, 192)
+  - source: Q.E.D. (cuối Hệ quả 1, Hệ quả 2 và Prop XXXI)
+  - now: Không có Q.E.D. ở ba chỗ này
+  - suggest: Thêm "Q.E.D." (nhẹ, báo một mục cho cả phần).
+- **NHE / CHUGIAI**, Chú giải sau Prop XXX, dòng 138-148
+  - source: The nodes are progressive as often as the moon is between either quadrature and the node nearest to that quadrature ... excess of the regress above the progress
+  - now: HỢP LÍ MỘT PHẦN. Tiêu đề "Mặt phẳng quỹ đạo Mặt Trăng nghiêng dần"; "ba giao số"; "phần lùi lớn hơn hẳn phần tiến"; "tháng rằm, dài khoảng 27,21 ngày"; "mỗi mùa có từ hai đến năm lần"
+  - suggest: Prop XXX tính vận tốc quay (lùi) của đường node, không phải sự thay đổi độ nghiêng; Newton chỉ nói phần lùi vượt phần tiến, không nói "hẳn". Sai thuật ngữ: 27,21 ngày là tháng nút (tháng giao điểm), "tháng rằm" chỉ chu kì pha. Sai số liệu: mỗi mùa nhật nguyệt thực thường có 2-3 lần, cả năm tối đa 7, không phải 5 lần mỗi mùa. Sửa các chỗ này; phần còn lại (bỏ thành phần LM nằm trong mặt phẳng quỹ đạo, giữ TM; chu kì lùi khoảng 18,6 năm; 27,32 ngày; khoảng 173 ngày) khớp với văn bản.
+- **NHE / SOLIEU**, Prop XXXII, dòng 259,265,268,275,319,324,330
+  - source: 39° 38' 7" 50"', 19° 49' 3" 55"', 29' 58" 2"', 18° 19' 5" 53"', 341° 40' 54" 7"' (đều có ba dấu)
+  - now: $39^\circ38'7''50''$, $19^\circ49'3''55''$, $18^\circ19'5''53''$, $341^\circ40'54''7''$ (chỉ hai dấu)
+  - suggest: Số thứ tư cuối phải là $'''$ (ví dụ $39^\circ38'7''50'''$). Dòng 336 và 342 đã đúng.
+- **NHE / KHAC**, Prop XXXII, dòng 312,318,345
+  - source: area of the semi-circle ... as 793 to o-\ ; double the figure is t° 29' 58" 2'" ; less than 3-j^- part (OCR hỏng)
+  - now: 793: [OCR không rõ]; [OCR không rõ] 29'58''2''; nhỏ hơn một phần [OCR không rõ]
+  - suggest: Ba chỗ còn để dấu OCR trong bản dịch (số hạng thứ hai của tỉ số 793:?, số độ của 2·NeFn, mẫu của phần). Không xác định được từ OCR; cần đọc scan rồi điền.
+- **NHE / SAINGHIA**, Prop XXXII, dòng 333
+  - source: as this motion is to the annual motion 360°, so is the motion of the node ... 18° 19' 5" 53"' to its annual motion
+  - now: Vì chuyển động này tỷ lệ với chuyển động hằng năm $360^\circ$, chuyển động của node ... cũng tỷ lệ với chuyển động hằng năm của nó
+  - suggest: Diễn đạt tỉ lệ thức lỏng. Nên viết: chuyển động Mặt Trời này so với 360° như chuyển động node vừa tìm so với chuyển động hằng năm của node.
+- **NHE / SAINGHIA**, Prop XXXII, dòng 345
+  - source: by the inclination of the orbit, the motion of the nodes is something retarded
+  - now: độ nghiêng làm cho chuyển động node bị giảm
+  - suggest: Mất "something" (hơi bị làm chậm). Đề xuất "bị làm chậm đôi chút".
+- **NHE / HINH**, Prop XXXII, dòng 246-307
+  - source: (văn bản nhắc N, S, T, A, a, Z, Y, d, e, G, F, n, μ, ν; sector NTA, ATa)
+  - now: (không có ảnh nào trong dòng 240-359)
+  - suggest: Lời chứng minh dùng nhiều nhãn điểm nhưng phần này không có hình; ảnh duy nhất của chương (dòng 8, book-ii-section-i-motion.svg) nằm ngoài phần này và tên file thuộc Book II. Cần có hình cho Prop XXXII.
+- **NHE / CHUGIAI**, Chú giải dòng 351
+  - source: (nguồn không nói)
+  - now: Đây là lần đầu trong sách ông tự đối chiếu con số của mình với bảng số do người khác lập.
+  - suggest: Khẳng định lịch sử không có nguồn (nguồn chỉ nói "By astronomical tables"). Nên bỏ "lần đầu" hoặc dẫn nguồn; câu "tiêu chuẩn mà ngày nay mọi nghiên cứu..." là bình luận ngoài nội dung.
+- **NHE / CHUGIAI**, Chú giải dòng 355-357
+  - source: The difference is less than ... part of the whole motion, and seems to arise from the eccentricity ... and inclination
+  - now: con số của Newton lệch chưa tới hai phần trăm ... bỏ qua độ lệch tâm cùng độ nghiêng; cùng một cơ chế làm node lùi cũng làm trục Trái Đất đảo
+  - suggest: HỢP LÍ MỘT PHẦN. 19°18'1" so với 19°20'30" lệch khoảng 0,2%, "chưa tới hai phần trăm" đúng nhưng nói quá nhẹ. Newton nói sai lệch "có vẻ" do hai yếu tố ấy, chưa khẳng định. Câu nutation "cùng một cơ chế" quá gọn và tham chiếu "chương trước" chưa kiểm được. 19°20'30" mỗi năm, 18,6 năm là đúng.
+- **NHE / THEM**, Prop XXXII, dòng 359
+  - source: (nguồn không có)
+  - now: *Các công thức và sơ đồ của Proposition XXIX-XXXII có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan ...*
+  - suggest: Dòng in nghiêng ngoài blockquote là lời biên tập thêm vào phần dịch. Chuyển vào blockquote [Chú giải] hoặc comment HTML.
+
+## 64-sach-iii-proposition-xxxiii-xxxvi.md
+
+- *phần 1/3: Chương 64, phần 1/3 (dòng 1-195): Prop XXXIII + Hệ quả + Chú giải + Học luận Machin (Prop I, Prop II, Hệ quả, Học luận đến "1861214:1"); đối chiếu ia.txt dòng 23649-23842. Phần cuối Học luận*
+- *phần 2/3: Chương 64, phần 2/3 (dòng 196-389): cuối Prop XXXIII (dòng 196-206), Prop XXXIV (Hệ quả 1-4), Prop XXXV đến câu đặt AB:AD (dòng 382-389). Không có hình và không có Chú giải trong phạm vi này*
+- *phần 3/3: Chuong 64, phan 3/3 (dong 390-584): doan cuoi Prop. XXXV (bat dang thuc do nghieng), Hoc luan (Scholium) Prop. XXXV, Prop. XXXVI va He qua; doi chieu ia.txt dong 24043-24319*
+
+- **NANG / SAINGHIA**, Học luận Machin, Prop I, dòng 96
+  - source: is increased in the recess from the syzygies in a duplicate ratio of the sine of its distance from the sun
+  - now: tăng gấp đôi theo sin khoảng cách node với Mặt Trời khi node lùi khỏi các hội tế
+  - suggest: "duplicate ratio" là tỉ lệ bình phương: tăng theo bình phương sin, không phải "gấp đôi"; sửa là "tăng theo tỷ lệ bình phương của sin khoảng cách ..." (dòng 112 dịch đúng là "bình phương của sin")
+- **NANG / THIEU**, Học luận Machin, Prop I, dòng 104
+  - source: (that rectangle being equal to the difference of the squares of TA and TB, because the right line Aβ is equally cut in T, and unequally in B)
+  - now: Vì diện tích ABba so với sector TBb tỷ lệ với hình chữ nhật AB² và BT², nên khi ...
+  - suggest: Mất nguyên cả lời giải thích trong ngoặc (hình chữ nhật bằng hiệu bình phương TA và TB, vì đường Aβ bị chia đều tại T và không đều tại B); cần dịch bổ sung
+- **NANG / SOLIEU**, Học luận Machin, Prop I, dòng 104, 106, 112
+  - source: the rectangle ABβ to BT2 (OCR "AB£"); "FBf to BG2" (OCR "FB/"); "rectangle ABβ equal to rectangle FBf" (OCR "AB/3", "FB/")
+  - now: hình chữ nhật AB² và BT²; KHM:HT²=FB²:BG²; hình chữ nhật AB² bằng hình chữ nhật FB²; AB²:BG²; AB²:BT²
+  - suggest: Nguồn nói về HÌNH CHỮ NHẬT ABβ (=AB·Bβ) và FBf (=FB·Bf), không phải bình phương AB², FB²; sửa lại thành tích AB·Bβ, FB·Bf ở các chỗ này
+- **NANG / SOLIEU**, Học luận Machin, Prop II Học luận, dòng 163 và 193
+  - source: TH is to HK as 18,6524761 to 1 ... as 18,61214 to 1 (dấu phẩy là dấu thập phân)
+  - now: TH:HK là 186524761:1 ... 1861214:1
+  - suggest: Sai bậc 10^7 và 10^5: nguồn là 18,6524761:1 và 18,61214:1 (ngay trên, TH:TK=18,6524761:19,6524761 nên tỉ số với HK phải xấp xỉ 18,65:1); dòng 157 viết 186524761:196524761 là chia tỉ lệ chung nên tạm chấp nhận nhưng không nhất quán với dòng 163
+- **NANG / CHUGIAI**, Chú giải dòng 76 (đoạn cuối); đánh giá: KHÔNG HỢP LÍ
+  - source: Machin ... Scholium chỉ nói ông Machin, Gresh. và Pemberton tìm ra chuyển động node bằng phương pháp khác nhau; không nhắc công thức pi
+  - now: Machin ... chính là người nổi tiếng với công thức arctangent ... nên đây rất có thể chính là con đường đưa công thức ấy tới Newton
+  - suggest: Suy đoán lịch sử không có nguồn: Scholium nói về chuyển động node, không về công thức pi; nên bỏ câu này. Cũng bỏ vế "ngày nay vẫn là chuyện thường trong lý thuyết Mặt Trăng ... bỏ đi khi tổng nhỏ hơn sai số" (khẳng định hiện đại không nguồn) và "chèn vào sách mình đúng thứ tự ấy" (nguồn chỉ nói bài Machin đến trước nên chèn bài này)
+- **NANG / SOLIEU**, Prop XXXIV, dòng 216-226 (và Hệ quả 4, dòng 279-282)
+  - source: angle GPg ... will be to the angle 33" 10"' 33iv. as IT X AZ X TG X [Pp/PG] to AT3 (OCR mất phân số; Cor 4 viết lại là IT X AZ X TG X Pp/PG to AT3)
+  - now: góc GPg ... tỷ lệ với 33'' theo IT·AZ·TG:AT^3 ; Hệ quả 4: IT·AZ·TG·Pp:AT^3
+  - suggest: Từ GPg:GTg = (TG/PG)(Pp/PG) và GTg:33'' = IT·PG·AZ:AT^3 suy ra thừa số Pp/PG; thêm Pp/PG vào công thức dòng 225 và sửa dòng 279 thành IT·AZ·TG·Pp/PG:AT^3; dòng 282 'một tỷ lệ khác' nên ghi rõ là Pp/PG
+- **NANG / SOLIEU**, Prop XXXIV Hệ quả 1, dòng 232-242
+  - source: IT X TG equal to Kk X Hh X TZ / [..] (OCR hỏng), the area HpMh multiplied into the ratio ... AZ X TZ/Mp X Pp/PG to AT3
+  - now: Kh·Hh·T?/T? (còn dấu ? chưa giải) ; công thức cuối: diện tích·AZ·TZ·PG / (PG·AT^3) (mất Mp và Pp)
+  - suggest: Bỏ dấu '?' và sửa Kh thành Kk (OCR đọc 'KA*'); công thức cuối cần có TZ/Mp và Pp/PG (khớp Hệ quả 2 ở dòng 249), không phải PG đơn thuần; kiểm tra lại trên bản scan
+- **NANG / THIEU**, Prop XXXIV Hệ quả 4, dòng 282-290
+  - source: the sum of all the sines of double the distance ... as the diameter multiplied into Pp/PG to the circumference; that is, if the inclination be 5 deg 1', as 7 X [..] to 22, or as 27 to 1000
+  - now: Nếu độ nghiêng là 5°1', tỷ lệ này là 27:1000. (bỏ bước 'tức là đường kính nhân Pp/PG so với chu vi' và bước '7 × ... so với 22')
+  - suggest: Thêm hai bước trung gian (đường kính × Pp/PG so với chu vi; rồi 7 × (sin 5°1') so với 22) trước kết quả 27:1000; số ở bước 7×... không xác định được từ OCR
+- **NANG / SOLIEU**, Prop XXXIV Hệ quả 4, dòng 290-300
+  - source: the whole variation ... is 103", or 2' 43"
+  - now: toàn bộ biến thiên ... là 103'', tức 2'43''
+  - suggest: Hai số tự mâu thuẫn: 2'43'' bằng 163'' chứ không phải 103''; 27/1000 × 5878'' cũng cho khoảng 160''. OCR nguồn đọc '103"' (rất có thể là lỗi OCR của 163"); cần xem scan trước khi sửa. Dòng 354 cũng dùng 2'43''
+- **NANG / SOLIEU**, Prop XXXV, dòng 322
+  - source: seeing the mean inclination is about 5 deg S£', as its sine 896 to 40000, the quadruple of the radius, or as 224 to 10000 (OCR '5° S£' có phân số mất; bước 'that is, as AH, the sine of the mean inclination, to four times the radius' cũng bị bỏ)
+  - now: Độ nghiêng trung bình vào khoảng 5°5', nên sin của nó là 896:40000
+  - suggest: OCR đọc '5° S£' (chữ S có thể là 8 kèm phân số), không phải '5°5''; trung bình của 5°17'20'' và 4°59'35'' là khoảng 5°8,5'. Kiểm tra scan rồi sửa; thêm mệnh đề 'tức là AH, sin của độ nghiêng trung bình, so với bốn lần bán kính' ở dòng 320
+- **NANG / THIEU**, Prop XXXV, lời chứng minh dòng 310-314
+  - source: GE2 = GH2+HE2 = BHD+HE2 = HBD+HE2-BH2 = HBD+BE2-2BH X BE = BE2+2EC X BH = 2EC X AB + 2EC X BH = 2EC X AH
+  - now: GE^2=GH^2+HE^2, và với các đại lượng ở sơ đồ, ta có GE^2=2EC·AH.
+  - suggest: Dịch đủ chuỗi biến đổi của Newton; cụm 'với các đại lượng ở sơ đồ' là phần thêm không có trong nguồn, nên bỏ
+- **NANG / THIEU**, Prop XXXV, dòng 316
+  - source: arc Gg, on account of the given angle GEg, will be as GE. But HA is to Gg as GH to GC ... as the rectangle GH X Gg, or GH X GE, that is, as GH/GE X GE2, or GH/GE X AH: that is, as AH and the sine of the angle AEG conjunctly
+  - now: cung Gg sẽ tỷ lệ với GE. Nhưng HA:OG=GH:GC, nên HA tỷ lệ với hình chữ nhật GH·Gg, tức GH·GE. Vì vậy, nó tỷ lệ với AH và sin của góc AEG
+  - suggest: Thêm 'do góc GEg đã cho'; thêm bước 'tức là (GH/GE)·GE^2, hay (GH/GE)·AH' (đây chính là chỗ xuất hiện sin AEG); nhãn 'OG' là lỗi OCR, bài dùng Gg ngay trước và sau, nên sửa thành HA:Gg
+- **NANG / THIEU**, Prop XXXV, dòng 328
+  - source: the whole variation corresponding to BD ... is to this horary variation as the diameter BD to the arc Gg, that is, conjunctly as the diameter BD to the semi-circumference BGD ... and as the time of 2079[1/10] hours ... to one hour, that is as 7 to 11, and 2079[1/10] to 1
+  - now: ... tỷ lệ với đường kính BD và thời gian node đi từ các phần vuông đến hội tế, tức khoảng 2079 giờ, theo tỷ lệ [OCR không rõ].
+  - suggest: Có ghi chú '[OCR không rõ]' nằm trong phần dịch (lời biên tập thêm); mất 'so với cung Gg', 'nửa chu vi BGD', 'tức 7 so với 11', '2079 một phần mười so với 1'. Nguồn đọc rõ '7 to 11' nên dịch đủ; 'khoảng 2079 giờ' nên là 2079 1/10 giờ
+- **NANG / THIEU**, Hoc luan Prop. XXXV, dong 516
+  - source: The mean motion of the sun [sign] 20° 43' 40", and of its apogee [sign] 7° 44' 30"; moon [sign] 15° 21' 00"; its apogee 8° 20' 00"; ascending node [sign] 27° 24' 20" (OCR 24269-24271; ky hieu cung hoang dao bi doc hong)
+  - now: Chuyển động trung bình của Mặt Trời là [OCR không rõ], và của apogee nó là [OCR không rõ]; ... của node tăng là [OCR không rõ].
+  - suggest: Thay 5 cho trong bang cac so do va phut giay: 20°43'40", 7°44'30", 15°21'00", 8°20'00", 27°24'20" (cung hoang dao cua moi so: khong xac dinh duoc tu OCR, can scan); bo cac the [OCR không rõ].
+- **NANG / SOLIEU**, Hoc luan Prop. XXXV, dong 416 va 430
+  - source: Suppose the eccentricity 16}^ [phan so doc hong, lon hon 16}], and the greatest equation will be 11' 51". (cung vay 24107: 16}£ cho eccentricity cua Mat Troi)
+  - now: Nếu độ lệch tâm là $16\frac12$, phương trình lớn nhất sẽ là 11'51''. (dong 430 cung 16½)
+  - suggest: Dong 416 tu mau thuan: ngay truoc noi do lech tam "dường như lớn hơn" nhung lai dung lai 16½ nhu dong 410 (cho 11'49''). Nguon doc 16 kem phan so khac 16½; gia tri chinh xac: khong xac dinh duoc tu OCR. Dong 430 cung can doi chieu scan.
+- **NANG / SOLIEU**, Prop. XXXVI, dong 540-546
+  - source: diminished in proportion of the distances from the centre of the earth, that is, in the proportion of 60
+  - now: to 1 (OCR 24289; 60½ to 1)
+  - suggest: giảm theo tỷ lệ khoảng cách từ tâm Trái Đất, tức theo tỷ lệ $60:1.$|Sua thanh 60½ : 1. Ket qua 1:38604600 trong cung doan chi khop 638092,6 x 60½; 60:1 khong cho ra so ay.
+- **NANG / SOLIEU**, He qua Prop. XXXVI, dong 579
+  - source: only by one Paris foot and 113¥V inches (OCR 24318; phan so hong)
+  - now: $1\text{ foot Paris }113\frac{1}{2}\text{ inch}$
+  - suggest: 113½ inch la sai ve do lon (85472 feet x 1/44527 xap xi 1,92 feet, tuc 1 foot cong khoang 11 inch). Nguon doc "11" kem phan so hong; phan so dung: khong xac dinh duoc tu OCR. Sua theo scan.
+- **NANG / SAINGHIA**, Hoc luan Prop. XXXV, dong 512
+  - source: I add 1 or 1½ minute in lunar eclipses
+  - now: tôi cộng thêm $1$ hoặc $1\frac12$ phút trong các nhật thực Mặt Trăng
+  - suggest: "lunar eclipses" la nguyet thuc (bong cua Trai Dat chi co trong nguyet thuc), "nhật thực" la eclipse cua Mat Troi. Sua thanh "nguyệt thực"; chu giai dong 528 cung dung "nhật thực" sai theo.
+- **NHE / SOLIEU**, Học luận Prop I dòng 106 và Học luận Prop II dòng 151
+  - source: "remaining sector TB6" (=TBb); "39° 38' 7" 50'""
+  - now: diện tích nhỏ ABba ... tỷ lệ với sector còn lại TBθ; 39°38'7''50''
+  - suggest: Sector còn lại là TBb (như dòng 104), không phải TBθ; và số cuối là 50''' (ba dấu) như nguồn, không phải 50''
+- **NHE / KHAC**, Prop XXXIII dòng 39, 42, 44
+  - source: OCR "0G Jl' 2" 32'"" ; "that is, as 1 to 38T\)" ; "to 9° IV 3""
+  - now: [OCR không rõ] : 19°49'3''55'' ; hay xấp xỉ 1:38 ; tức khoảng [OCR không rõ]
+  - suggest: Chỗ trống trong bản dịch: OCR đọc gần "0°31'2"32'''" (khớp phép trừ 19°49'3"55''' - 19°18'1"23''') và "9° 11' 3"" (OCR "IV" không chắc chắn); tỉ số nguồn là 1 so với 38 kèm một phân số bị đọc hỏng, bản dịch bỏ phần lẻ; nên điền sau khi kiểm bản scan
+- **NHE / SAINGHIA**, Prop XXXIII dòng 48
+  - source: so moderate and correct each other, that in computing the latitude of the moon both may be neglected
+  - now: trừ triệt lẫn nhau đến mức vừa phải và chính xác
+  - suggest: "moderate and correct each other" là làm dịu và hiệu chỉnh lẫn nhau, không phải "trừ triệt" (cancel); nên dịch là "điều hòa và hiệu chỉnh lẫn nhau đến mức ..." (chú giải cũng lặp ý triệt tiêu)
+- **NHE / SAINGHIA**, Học luận Machin, Prop I, dòng 114
+  - source: the mean motion of the node from the sun will be to the ... sun itself as ... TK to TH ...; or, which comes to the same, as the mean proportional TH to the right line TS
+  - now: Vì vậy, chuyển động trung bình của node từ Mặt Trời tỷ lệ với số trung bình nhân TH với TS
+  - suggest: Câu cuối bị méo: nguồn nói "hay cũng thế, như TH so với TS" (tỉ số tương đương TK:TH), bản dịch thêm "Vì vậy" và nói "tỷ lệ với số trung bình nhân TH" không rõ tỉ số
+- **NHE / THUATNGU**, Học luận dòng 80
+  - source: Mr. Machin, Astron., Prof. Gresh.. and Dr. Henry Pemberton
+  - now: Ông Machin, nhà thiên văn, Giáo sư Greesh và tiến sĩ Henry Pemberton
+  - suggest: "Greesh" là lỗi gõ so với nguồn "Gresh." (viết tắt, không xác định được từ OCR có phải Gresham); cách ngắt "nhà thiên văn" cũng không xác định được từ OCR là chỉ riêng Machin hay Prof. Gresh.
+- **NHE / CHUGIAI**, Chú giải dòng 70-74; đánh giá: HỢP LÍ MỘT PHẦN
+  - source: Cor.: hourly motion of 16" 19''' 26iv ; "in computing the latitude ... both may be neglected" ; "all which exactly agree with the phaenomena"
+  - now: khoảng $16''19''$ ; ông hiểu rõ cái giá của từng phép tính ; mỗi lần tính ... lại phải giải thêm hai bài toán nữa ; cách ông tự kiểm tra mà không cần ai xác nhận
+  - suggest: Số liệu gõ thiếu: phải là 16''19'''26^iv (hoặc 16''19'''); gán tâm lí/động cơ cho Newton ("làm việc như người làm lịch", "hiểu rõ cái giá", "tự kiểm tra") không có trong nguồn, Newton chỉ nói hai thứ điều hòa nhau nên có thể bỏ và kết quả khớp hiện tượng; nên viết trung tính; nói "Proposition trước" chưa chắc đúng vì phép tính khó là cách theo diện tích trong hình trước
+- **NHE / HINH**, Dòng 8-10 (hình đầu chương, book-ii-section-i-motion.svg)
+  - source: Hình trong nguồn có nhãn N, T, K, M, n, A, a, B, b, H, L, F, f, G, C, D, E (Prop XXXIII và Prop I Machin)
+  - now: ![...](../assets/book-ii-section-i-motion.svg) và chú thích in nghiêng "Hình 52. Sơ đồ được dùng lại từ Phần I; các sơ đồ dựng node ... cần được đối chiếu riêng."
+  - suggest: SVG chỉ có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích (hình Sách II Section I), không có các điểm C, D, E, F, G, N, T, K, H... mà lời chứng minh nhắc; hình không thuộc nội dung đoạn; dòng chú thích nghiêng là lời biên tập ngoài blockquote (THEM); cần hình đúng của Prop XXXIII và Prop I
+- **NHE / THUATNGU**, Prop XXXIV Hệ quả 3 dòng 266 (cũng ở dòng 46, 48, 392)
+  - source: menstrual variation / menstrual equation / menstrual inequality
+  - now: biến thiên kinh nguyệt ; phương trình nửa kinh nguyệt
+  - suggest: 'menstrual' ở đây là 'theo tháng' (chu kì tháng Mặt Trăng), không phải nghĩa y học; nên dùng 'biến thiên theo tháng' / 'nửa tháng'
+- **NHE / THUATNGU**, Prop XXXV dòng 320 (và 48, 392)
+  - source: I cannot descend to every minute circumstance of inequality
+  - now: tôi không thể đi vào từng chi tiết nhỏ của sự bất đẳng thức
+  - suggest: 'inequality' của Newton là sự bất đều (độ lệch so với chuyển động đều), không phải 'bất đẳng thức' toán học; nên dịch 'sự bất đều'
+- **NHE / SOLIEU**, Prop XXXIV dòng 282, Prop XXXV dòng 328-366
+  - source: 177[?] hours (5878" = 177 angles); 2079[1/10] hours; 16' 23[1/2]"; diminished by 1' 21[1/2]" (OCR có ký hiệu phân số bị mất)
+  - now: khoảng 177 giờ ; 2079 giờ ; 16'23'' ; giảm đi 1'21''
+  - suggest: Phân số bị rơi: 177 giờ x 33,176'' chỉ cho khoảng 5872'' nên cần phần lẻ để ra 5878''; 29645:1000 chỉ đúng với 2079,1 giờ; 16'23,5'' và 1'21,5'' khớp 15'2'' và 17'45''. Kiểm tra scan rồi bổ sung phần lẻ
+- **NHE / THIEU**, Prop XXXIV dòng 226 và Prop XXXV dòng 318
+  - source: to AT3. Q.E.I. ; ... remains always equal thereto. Q.E.D.
+  - now: (không có Q.E.I. sau công thức dòng 225; không có Q.E.D. sau 'vẫn luôn bằng nhau')
+  - suggest: Thêm 'Q.E.I.' và 'Q.E.D.' ở hai chỗ này
+- **NHE / SOLIEU**, Hoc luan Prop. XXXV, dong 488-502
+  - source: as 33
+  - now: to 1000 ... CB or CD will be found 1172
+  - suggest: , and DF 35| (OCR 24218, 24234; phan so doc thanh ky tu f hoac |)|$33:1000$ ... $CB$ hoặc $CD$ sẽ là $1172$ phần, còn $DF$ là $35$ phần|Ban dich bo mat phan so di kem 33, 1172 va 35 (OCR co phan so, gia tri khong xac dinh duoc tu OCR). Can doi chieu scan va bo sung.
+- **NHE / SAINGHIA**, Hoc luan Prop. XXXV, dong 504
+  - source: this equation, in the mean distance of the moon from the earth, is nearly as the sine of the angle which that line DF contains with the line drawn from F to the moon
+  - now: Tại khoảng cách trung bình, nó gần như bằng sin của góc giữa $DF$ và đường kẻ từ $F$ tới Mặt Trăng
+  - suggest: Nguon: "nearly as" (gan nhu ty le voi sin), khong phai "bang sin". Sua: "gần như tỷ lệ với sin của góc ...".
+- **NHE / THUATNGU**, Hoc luan Prop. XXXV, dong 400, 468, 486
+  - source: the perigeon sun / the sun's perigee ... apogee (OCR 24083, 24161, 24213); true anomaly (24215)
+  - now: Mặt Trời ở perihelion ... tại perihelion Mặt Trời ... aphelion; "dị thể Mặt Trời" (khong co "that")
+  - suggest: Nguon dung perigee/apogee cua Mat Troi, ban dich dung perihelion/aphelion cho Mat Troi, trong khi cung doan lai dung apogee va perigee cua Mat Troi (dong 400) nen khong nhat quan. Nen thong nhat va them "thật" cho true anomaly.
+- **NHE / THUATNGU**, Prop. XXXVI, dong 560
+  - source: its force to raise the sea is as the versed sine of double its altitude above the horizon
+  - now: lực nâng biển tỷ lệ với giác vuông của hai lần độ cao của nó
+  - suggest: "versed sine" duoc dich la "giác vuông", khong phai thuat ngu quen dung; de xuat "sin verse (sin tiến)" hoac "versed sine" kem chu giai.
+- **NHE / THEM**, Cuoi chuong, dong 584
+  - source: (khong co trong nguon)
+  - now: *Các công thức, số liệu và sơ đồ của Proposition XXXIII-XXXVI có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan từng trang ...*
+  - suggest: Loi bien tap in nghieng nam ngoai khoi chu giai (va cac the [OCR không rõ] o dong 516) tinh la them vao phan dich; nen chuyen vao blockquote [Chú giải] hoac comment HTML.
+- **NHE / HINH**, Hoc luan Prop. XXXV, dong 480-500
+  - source: Nguon co hinh epicycle BDA voi cac diem T, C, B, D, A, O (OCR 24186-24190); bai con nhac E, F, P
+  - now: Phan 3 khong co anh nao (anh duy nhat cua chuong o dong 8, khong thuoc phan nay). Van ban nhac T, C, B, O, A, D, E, F, P
+  - suggest: Khong co hinh de doi nhan; neu hinh epicycle thieu thi nen bo sung (khong xac dinh duoc tu OCR hinh co chu P hay khong).
+- **NHE / CHUGIAI**, Chu giai dong 518-528: HOP LI MOT PHAN
+  - source: (Newton khong viet dong co hay dung cu: He "Ông cần một thứ dùng được hơn là một phương trình")
+  - now: "Đỉnh cao của toàn bộ Sách III"; "phương trình năm phút một"; "đường tròn ấy còn bị lệch ... theo tỷ lệ nghịch với lập phương khoảng cách"; "nhật thực" (phải là nguyệt thực); gán động cơ "lịch thiên văn làm được"; "tiền thân của lý thuyết Euler, d'Alembert" can nguon
+  - suggest: Bo hoac sua cac cau gan dong co, "năm phút một" la loi go (phuong trinh hang nam), "nhật thực" sai, cau ve do lech theo lap phuong khoang cach dien dat sai (nguon: van toc cua tam quy dao gan ty le nghich lap phuong), "dinh cao Sach III" va dong doi Euler/d'Alembert la khang dinh khong co trong nguon.
+
+## 65-sach-iii-proposition-xxxvii-xl.md
+
+- *phần 1/5: Chuong 65, phan 1/5 (dong 1-203): Proposition XXXVII (Problem XVIII) toan bo loi dan, Hệ quả 1-6 va dau Hệ quả 7 (den hết dòng 203, trước đoạn Cor. 7 tiếp theo). Nguon: ia.txt dong 24321-245*
+- *phần 2/5: Chương 65, phần 2/5 (dòng 204-405): cuối Hệ quả 7-10 của Prop XXXVII, Prop XXXVIII (+Hệ quả, +Chú giải), Lemma I (Sách III, phần đầu đến dòng 405). Không có ảnh trong phần này.*
+- *phần 3/5: Chuong 65, phan 3/5 (dong 406-608): cuoi Lemma I (Q.E.D. + doan cuoi), Lemma II, Lemma III, Gia thuyet II, mo dau Proposition XXXIX (den "20°11'46''"). Khong co anh va khong co Chu giai tron*
+- *phần 4/5: Chương 65, phần 4/5 (dòng 609-808): nửa sau Proposition XXXIX (tiến động các điểm xuân phân) và Lemma IV (sao chổi) đến câu "Flamsted ... 16 feet"; không có hình, không có Chú giải trong phầ*
+- *phần 5/5: Chuong 65, phan 5/5 (dong 809-1011): ket Prop. XXXIX (so sanh anh sang dau sao choi, Hevelius/Flamsted/Cysatus, Hq 1-3) va Prop. XL (Dinh ly XX, Hq 1-4). Khong co hinh trong phan nay.*
+
+- **NANG / SAINGHIA**, Prop. XXXVII, dòng 34 và 36
+  - source: the third appulse of the moon to the meridian of the place ... appulse of the moon to the meridian
+  - now: lần Mặt Trăng đi qua đường chân trời địa phương lần thứ ba ... sau khi Mặt Trăng đi qua đường chân trời địa phương
+  - suggest: "meridian" (kinh tuyến) bị dịch thành "đường chân trời"; sửa thành "kinh tuyến địa phương" ở cả 4 chỗ (dòng 34 hai lần, dòng 36 một lần, dòng 34 "tại cảng này")
+- **NANG / SAINGHIA**, Prop. XXXVII Hệ quả 1, dòng 146
+  - source: the Mugellrniic straits, and those channels which environ England
+  - now: như eo Messina, cùng những kênh bao quanh nước Anh
+  - suggest: OCR "Mugellrniic straits" khớp với dạng "Magellanic" chứ không khớp "Messina"; sửa thành "eo biển Magellan" (hoặc đối chiếu scan)
+- **NANG / SOLIEU**, Prop. XXXVII, dòng 101
+  - source: and S to L as 1 to 4,4815
+  - now: S:L=1:44815.
+  - suggest: OCR đọc "1 to 4,4815" (có dấu phẩy thập phân); bản dịch mất dấu phẩy thành 44815; sửa thành S:L=1:4{,}4815 (khớp Hệ quả 3 và 1:12868200 / 1:2871400)
+- **NANG / SOLIEU**, Prop. XXXVII Hệ quả 1, dòng 124
+  - source: the sun's force rise to the height of a foot and ll^V inches ... the moon's 8 feet and 7/¥ inches
+  - now: một foot và $11\frac12$ inch
+  - suggest: OCR đọc "ll" kèm một phân số bị hỏng, không đọc được là ½; kiểm tra số học: 4,4815 nhân 11 1/12 inch cho khoảng 8 ft 7,5 in và tổng khoảng 10,5 ft, còn 11½ inch thì cho khoảng 8 ft 9 in; nên đối chiếu scan, nhiều khả năng là 11 1/12
+- **NANG / CHUGIAI**, Chú giải sau Prop. XXXVII, dòng 110-120
+  - source: (không có trong nguồn)
+  - now: hai cái phao cơ - năm 1687; Nguyên nhân là có tính đến cả cấu trúc: ... vịnh phễu có cộng hưởng mạnh, khuếch đại phần triều bán ngày của Mặt Trăng nhiều hơn hẳn
+  - suggest: HỢP LÍ MỘT PHẦN: số liệu 45:25, 41:23, ba hiệu chỉnh và "tỷ lệ đúng khoảng 2,2" là đúng; nhưng "lần đầu tiên trong lịch sử" cần nguồn; "hai cái phao cơ" gán dụng cụ Newton không dùng (ông dùng quan sát của Sturmy, Colepress); câu "Nguyên nhân là có tính đến cả cấu trúc" khó hiểu và nguyên nhân cộng hưởng được nêu như chắc chắn; "thuỷ" lệch chính tả "thủy"; nên viết lại hoặc ghi rõ là giải thích hiện đại có thể
+- **NANG / SOLIEU**, Prop XXXVII Hệ quả 7, dòng 228-238
+  - source: the versed sine of that angle which the moon in a minute of time describes is 12752341 to the radius 1000,000000,000000
+  - now: versed sine ... là 0,12752341:1 đối với bán kính 1000000000000
+  - suggest: OCR: 12752341 so với bán kính 1000,000000,000000 (tức 10^15). Bản dịch đổi thành 0,12752341:1 và bán kính 10^12, sai cả hai số. Sửa: 12752341 : 1000000000000000.
+- **NANG / SOLIEU**, Prop XXXVII Hệ quả 7, dòng 252-258
+  - source: if we augment this force in the proportion of 17Sf £ to l?7£-§, we shall have the total force of gravity at the orbit of the moon
+  - now: Nếu tăng lực này theo tỷ lệ 178½:2871400
+  - suggest: OCR hỏng (178 và một phân số : 177 và một phân số), không có 2871400 (số này chỉ xuất hiện ở phần đầu Prop XXXVII, OCR dòng 24408, trong tỉ số 1 so với 2871400 với trọng lực). Tỉ lệ 178½:2871400 mâu thuẫn với 14,77 thành 14,85 (cần tỉ số gần 1,0056). Phân số cụ thể: không xác định được từ OCR; bỏ 2871400.
+- **NANG / CHUGIAI**, Prop XXXVIII, dòng 370-376
+  - source: (nguồn: Mặt Trăng lỏng thì hình elipxoit, trục lớn kéo dài qua tâm Trái Đất)
+  - now: Nếu Mặt Trăng lỏng, nó phải dẹt 186 feet theo hướng Trái Đất ... suy ra một đẳng thức về dạng thân Mặt Trăng
+  - suggest: KHÔNG HỢP LÍ: tiêu đề nói dẹt, trong khi Newton nói trục lớn bị kéo dài về phía Trái Đất (dài hơn 186 feet), tức ngược nghĩa với dẹt. Cũng sai chữ: kết quả là dạng thân, không phải đẳng thức. Câu 'không cần quan sát bề mặt Mặt Trăng' và 'ta có thể nhìn thấy kết quả ấy' không có trong bản dịch ngay trên. Đoạn đầu và đoạn tóm tắt số liệu (93 feet, 186 feet) HỢP LÍ.
+- **NANG / SAINGHIA**, Lemma II, dong 444-453, 468-472
+  - source: LN X Mm - NM X MC + mC, the difference of the two ... The affirmative part LN X Mm, or 2LN X NX ... negative part NM X (MC+mC), or 2XY X CY
+  - now: LN\cdot(Mm-NM)-NM\cdot MC+[OCR không rõ] ; LN\cdot[OCR không rõ]=2LN\cdot NX ; NM\cdot MC=2XY\cdot CY
+  - suggest: Công thức hỏng. Dòng 447 tự thêm ngoặc "(Mm-NM)" mà nguồn không có: nguồn là LN×Mm − NM×MC + mC (MC+mC là một thừa số trong ngoặc, ngoặc bị OCR mất). Hai chỗ "[OCR không rõ]" (dòng 447, 453) là chỗ giữ chỗ lọt vào bản dịch, nguồn đọc rõ là Mm (dòng 453: LN·Mm = 2LN·NX). Dòng 471 thiếu "+mc": NM·(MC+mc). Sửa: LN·Mm − NM·(MC+mc); LN·Mm = 2LN·NX; NM·(MC+mc) = 2XY·CY.
+- **NANG / SAINGHIA**, Prop XXXIX, dòng 609
+  - source: the motion of the nodes of every one (by Cor. 16, Prop. LXVI, Book I) would be as its periodic time
+  - now: chuyển động của node của mỗi Mặt Trăng ... sẽ tỷ lệ nghịch với thời gian tuần hoàn của nó
+  - suggest: Sửa thành "tỷ lệ (thuận) với thời gian tuần hoàn"; nguồn nói "as its periodic time", và tỉ số 1436:39343 ngay sau cũng là tỉ lệ thuận
+- **NANG / SAINGHIA**, Prop XXXIX, dòng 609 (đầu đoạn)
+  - source: the nodes ... would be yearly transferred 20° 11' 46" in antecedentia
+  - now: (dòng 603) "node ... sẽ lùi mỗi năm" rồi (dòng 609) "về phía trước."
+  - suggest: "về phía trước" mâu thuẫn với "lùi" ở dòng 603 và với "recede" về sau; "in antecedentia" là ngược chiều thứ tự các cung, phải dịch là "lùi" (kiểm lại chỗ ngắt dòng 603-609)
+- **NANG / SAINGHIA**, Lemma IV, dòng 799 (cuối bước dựng hình)
+  - source: make the angle Tg'V equal to the angle TQG (OCR: "T^V"; sau đó "the angle TVg' will be the parallax")
+  - now: đặt góc $Tg'T$ bằng góc $TQG$
+  - suggest: Sửa $Tg'T$ thành $Tg'V$ (đỉnh V là điểm sao chổi ở mặt phẳng hoàng đạo; OCR đọc "T^V")
+- **NANG / SAINGHIA**, Prop. XL Hệ quả 1, dòng 917
+  - source: periodic times of the comets be to the periodic times of the planets in the sesquiplicate proportion of their principal axes (sau do: 4 sqrt4 (or 8) to 1)
+  - now: thời gian tuần hoàn của chúng sẽ tỷ lệ với thời gian tuần hoàn của các hành tinh theo lũy thừa một phần nửa của các trục chính
+  - suggest: sesquiplicate = lũy thừa 3/2 (mâu thuẫn với ví dụ 4^{3/2}:1=8:1 ngay bên dưới); sửa thành "theo lũy thừa 3/2 (sesquiplicate) của các trục chính"
+- **NANG / SAINGHIA**, Prop. XL Hệ quả 3, dòng 949
+  - source: the velocity of every comet will always be to the velocity of any planet, supposed to be revolved at the same distance in a circle, nearly in the subduplicate proportion of double the distance of the planet ... to the distance of the comet
+  - now: vận tốc của mỗi sao chổi sẽ luôn gần như tỷ lệ nghịch với căn bậc hai của hai lần khoảng cách của hành tinh ... so với khoảng cách của sao chổi
+  - suggest: nguồn là tỉ số vận tốc sao chổi so với vận tốc hành tinh (quay tròn cùng khoảng cách) bằng căn của (2 lần khoảng cách hành tinh) so với (khoảng cách sao chổi); bản dịch thêm "tỷ lệ nghịch" không có trong nguồn và bỏ mất vế "so với vận tốc của hành tinh nào đó"; dịch lại đúng cấu trúc tỉ lệ
+- **NANG / CHUGIAI**, Chú giải sau Prop. XL Hệ quả 1, dòng 931-941
+  - source: KHONG HOP LI. Sai: "thời gian tuần hoàn tỷ lệ với lũy thừa một phần hai của trục lớn" (đúng là 3/2, tự mâu thuẫn với T~a^{3/2} và (76/30)^{2/3} ở cùng đoạn); gán cho Newton ý định "Ông phân biệt rõ loại nào ... có thể kiểm tra, loại nào giúp làm việc được", "đưa sẵn quy tắc ... để người đọc dùng ngay"; "chỉ cần ba tham số" không có nguồn; "lần đầu tiên trong vật lí học" là khẳng định lịch sử không nguồn; "240 năm là công thức chứ không phải dự đoán" lệch (240 chỉ là ví dụ số của Newton); chú giải cũng bàn Hệ quả 2-4 chưa xuất hiện
+  - now: nguồn (Newton) chỉ nói comets in orbits returning into themselves are ellipses; parabolas may be used for them without sensible error; không nêu động cơ
+  - suggest: sửa "lũy thừa 3/2", bỏ các câu gán ý định/động cơ và "lần đầu tiên", rút gọn chú giải xuống phần đúng (Halley ~76 năm cho a ~ 1,9 lần trục sao Thổ)
+- **NHE / SOLIEU**, Prop. XXXVII, dòng 34
+  - source: moon is distant from the sun ... by about IS or 19 degrees in consequentia
+  - now: khoảng $18\frac12$ độ
+  - suggest: OCR đọc "about 18 or 19 degrees in consequentia" (khoảng 18 hay 19 độ, về phía sau); bản dịch ghi 18½ và bỏ "in consequentia"; sửa thành "khoảng 18 hoặc 19 độ, theo chiều thuận (in consequentia)"
+- **NHE / THUATNGU**, Prop. XXXVII, dòng 36
+  - source: come not to their height in the solstices themselves, but when the sun is advanced beyond the solstices
+  - now: không đạt độ cao lớn nhất tại chính các điểm giữa mùa ... đi quá các điểm giữa mùa
+  - suggest: "solstices" là các điểm chí (hạ chí, đông chí), không phải "điểm giữa mùa"; sửa thành "điểm chí"
+- **NHE / SOLIEU**, Prop. XXXVII Hệ quả 1, dòng 138
+  - source: and when the moon is in its perigee to the height of 12 i feet, and more
+  - now: Khi Mặt Trăng ở cận điểm, nước có thể lên tới 12 feet
+  - suggest: OCR có phân số sau 12 ("12 i"), bản dịch bỏ; giá trị phân số không xác định được từ OCR, cần đối chiếu scan
+- **NHE / SOLIEU**, Prop. XXXVII Hệ quả 3, dòng 156
+  - source: mean apparent diameters of the moon and sun are 31' 161", and 32' 12"
+  - now: $31'16''$ và $32'12''$
+  - suggest: OCR "161"" gợi ý 16½ giây; kiểm tra: với 31'16,5" thì (32'12"/31'16,5")^3 x 4,4815 = khoảng 4891 đúng như bài; với 16" cho khoảng 4895; đề xuất 31'16½"
+- **NHE / KHAC**, Prop. XXXVII, dòng 34, 144, 146
+  - source: are the third in order after the syzygies; small flood and ebb; the flood and ebb must be greater
+  - now: xảy ra sau các hội tế ở lượng thứ ba; thủy triều triều vào và triều rút; thủy triều triều và triều rút
+  - suggest: lỗi gõ/diễn đạt: "ở lượng thứ ba" (có lẽ "ở lượt thứ ba"), "thủy triều triều vào", "thủy triều triều và triều rút"; nên thống nhất "triều lên (flood) và triều xuống (ebb)"
+- **NHE / HINH**, Đầu chương, dòng 8 và 10 và 12
+  - source: (Prop. XXXVII không có hình trong nguồn; nhãn Prop. chỉ nhắc S và L)
+  - now: ![...](../assets/book-ii-section-i-motion.svg) và chú thích in nghiêng "Hình 53. Sơ đồ được dùng lại từ Phần I ..." cùng dòng "Nguồn scan tương ứng ..."
+  - suggest: SVG chỉ có nhãn A, O, B, "thời gian", "vận tốc", "đường quỹ tích": đồ thị của Sách II Section I, không thuộc nội dung thủy triều; chú thích dòng 10 và 12 là lời biên tập ngoài blockquote (tính là THÊM); nên bỏ hình hoặc dời vào chú giải
+- **NHE / SOLIEU**, Prop XXXVII Hệ quả 7, dòng 243-249
+  - source: as the radius is to this versed sine, so are 1158268534 feet to 147706353 feet. The moon ... would in one minute describe 147706353 feet
+  - now: 1158268534 feet:147706353 feet ... đi được 147706353 feet
+  - suggest: Bản dịch chép đúng OCR nhưng với tỉ số 1:12752341/10^15 thì giá trị phải cỡ 14,77 feet (dấu phẩy bị OCR mất), khớp với 14,8538067 sau đó. Nên kiểm lại với bản quét; nếu bản in là 14,7706353 thì sửa.
+- **NHE / SOLIEU**, Prop XXXVII Hệ quả 7, dòng 288-291
+  - source: a little greater by an excess of about
+  - now: parts of a line ... Paris falling in vacuo will describe 15 Paris feet, 1 inch, 4
+  - suggest: f lines|lớn hơn một chút, khoảng ½ line ... 15 Paris feet, 1 inch, 4½ lines|OCR: phân số của lượng vượt không đọc được; vĩ độ Paris ghi 4|f lines, khác 4^ lines ở 45 độ. Bản dịch cho Paris đúng 4½ line như ở 45 độ nhưng lại nói lớn hơn ½ line: tự mâu thuẫn. Không xác định được từ OCR; cần kiểm bản quét.
+- **NHE / SOLIEU**, Prop XXXVII Hệ quả 7, dòng 296-299
+  - source: heavy bodies falling there will describe in one second of time 15 feet, 1 inch, and l£ line
+  - now: 15 feet, 1 inch, 1 line
+  - suggest: OCR có phân số sau 1 (1£ line, trùng 1 J line ở các chỗ khác), bản dịch bỏ phân số. Không xác định được từ OCR phân số nào; cần kiểm bản quét.
+- **NHE / THEM**, Prop XXXVII Hệ quả 7, dòng 225
+  - source: 27d. 7h. 43f ' (OCR)
+  - now: 27 ngày 7 giờ 43 phút [OCR không rõ]
+  - suggest: Chú thích biên tập nằm ngay trong công thức bản dịch (thêm vào văn bản Newton). Nên bỏ marker và xác nhận số phút/giây từ bản quét (OCR đọc 43f').
+- **NHE / THUATNGU**, Prop XXXVII Hệ quả 10, dòng 326
+  - source: the lengths of isochronous pendulums in different parallels
+  - now: các độ dài của các con lắc đồng pha
+  - suggest: isochronous = đẳng thời (cùng chu kỳ), không phải đồng pha (cùng pha). Sửa: con lắc đẳng thời.
+- **NHE / SAINGHIA**, Prop XXXVIII, dòng 356
+  - source: the figure of the moon would be a spheroid, whose greatest diameter produced would pass through the centre of the earth
+  - now: dạng thân Mặt Trăng phải là một hình ellip
+  - suggest: spheroid là hình cầu dẹt/elipxoit tròn xoay (vật thể 3 chiều); hình ellip là đường 2 chiều. Sửa: hình elipxoit (spheroid), nhất quán với dòng 374.
+- **NHE / KHAC**, Prop XXXVIII, dòng 362 (cả Hệ quả 7)
+  - source: Q.E.I.
+  - now: ... từ đầu. $\square$
+  - suggest: Nguồn kết thúc bài toán bằng Q.E.I. (Quod erat inveniendum), bản dịch thay bằng ký hiệu □. Mục nhẹ cho cả phần (kết thúc Prop XXXVIII).
+- **NHE / SAINGHIA**, Lemma I (Sách III), dòng 394
+  - source: from every such part P a perpendicular FG to be let fall upon the plane QR
+  - now: từ mỗi phần P, hạ đường vuông góc FG xuống mặt phẳng QK
+  - suggest: Bản dịch chép lỗi OCR: theo ngữ cảnh (đường FG, hạt F, mặt phẳng QR đã dựng ở đầu bài) phải là phần F và mặt phẳng QR. OCR nguồn cũng đọc P và QK nên chữ đúng suy từ văn cảnh, không từ OCR.
+- **NHE / CHUGIAI**, Prop XXXVIII, dòng 378
+  - source: (nguồn: Hệ quả nói về các dao động libratory rất chậm)
+  - now: Những dao động ông nói ấy ngày nay gọi là thư viện của Mặt Trăng ... 6°28' ... 4°39' ... khoảng 20 mét, tức chừng 64 feet ... lấy từ thủy triều tại một vịnh
+  - suggest: HỢP LÍ MỘT PHẦN: ý khóa triều đồng bộ là hợp lí, nhưng 'thư viện' là lỗi dịch libration (library), phải là 'dao động biểu kiến/libration'. Các dao động Newton nói là dao động vật lí của thân Mặt Trăng, còn các số 6°28' và 4°39' là libration quang học (do quỹ đạo), bị gộp lẫn và không có nguồn. Các con số 20 mét, 6°28', 4°39' và khẳng định đầu vào của Newton lấy từ thủy triều tại một vịnh là suy đoán cần nguồn; bản dịch nguồn không nói điều đó.
+- **NHE / SAINGHIA**, Lemma II, dong 426
+  - source: through the point X draw Nw parallel to the plane QR, and meeting the perpendiculars LM, lm in N and n; right line LZ drawn parallel to the plane Papc
+  - now: kẻ đường Xw song song với mặt phẳng QR, cắt các đường vuông góc LM,lm tại N,n ; Hãy kẻ đường thẳng LZ
+  - suggest: Nguồn viết "Nw" (đi qua X, cắt LM,lm tại N và n nên chữ cái đúng nhiều khả năng là Nn) nhưng bản dịch viết "Xw" với chữ w không phải nhãn điểm nào; "LZ" cũng có thể là OCR hỏng của "Ll" (nguồn đọc "LZ"). Không xác định được từ OCR; cần đối chiếu hình/scan rồi thống nhất nhãn đường (Nn, Ll?).
+- **NHE / THIEU**, Lemma II, dong 432-442
+  - source: that is, as LN X MC + NM X MC, and ln X mC - nm X mC; or LN X MC + NM X MC, and LN X mC - NM X mC
+  - now: Nói cách khác, chúng tỷ lệ với LN·MC+NM·MC và LN·mc−NM·mc.
+  - suggest: Bản dịch bỏ bước trung gian "ln×mC − nm×mC" (nguồn có hai lần diễn đạt, nối bằng "or"). Thêm bước ln·mc − nm·mc trước "hay".
+- **NHE / THIEU**, Lemma II, dong 548-553
+  - source: therefore, by the method of fluxions, as AC4 X CX - 4/3 AC2 X CX3 + 3/5 CX5 to AC4 X CX - 1/3 ...; that is, as the whole fluent quantity, whose fluxion is AC4 - 4AC2 X CX2 + 3CX4, to the whole fluent quantity, whose fluxion is AC4 - AC2 X CX2
+  - now: Vì vậy, theo phương pháp vi phân, tỷ lệ ấy bằng (AC^4CX-4/3AC^2CX^3+3/5CX^5):(...)
+  - suggest: Bỏ mệnh đề "that is, as the whole fluent quantity, whose fluxion is ... to the whole fluent quantity, whose fluxion is ..." (hai biểu thức dưới dấu tổng). Ngoài ra "method of fluxions" dịch "phương pháp vi phân" là thuật ngữ hiện đại, không có "fluxion/fluent" nào khác trong chương để đối chiếu; đề xuất "phương pháp fluxion" và thêm mệnh đề bị bỏ.
+- **NHE / SAINGHIA**, Lemma III, dong 569
+  - source: the motion of a cylinder ... is to the motion of the inscribed sphere ... as any four equal squares to three circles; ... is to the uniform motion of the same about its own diameter ... as the circumference of a circle to double its diameter
+  - now: Chuyển động của một hình trụ ..., tương đương với chuyển động của quả cầu nội tiếp ..., theo tỷ lệ của bốn hình vuông ...; ... tương đương với chuyển động đều của chính vành ấy quanh đường kính ..., như chu vi ...
+  - suggest: "tương đương với" (hai lần) đọc thành "bằng nhau/tương đương", trong khi nguồn là "is to ... as" (tỉ số giữa hai chuyển động). Sửa thành "so với" như câu giữa của cùng đoạn.
+- **NHE / SAINGHIA**, cuoi Lemma I, dong 414
+  - source: they will wheel about the circumference of the circle of the equator, together with the adherent body of the earth, round an axis
+  - now: chúng sẽ làm cho phần bám quanh xích đạo, cùng với thân Trái Đất, quay quanh một trục
+  - suggest: Nguồn: "adherent" bổ nghĩa cho "body of the earth" (thân Trái Đất gắn liền), còn chu vi xích đạo là thứ bị quay; bản dịch chuyển "bám" sang "phần quanh xích đạo" và bỏ "chu vi của đường tròn xích đạo". Đề xuất: "quay quanh chu vi của đường tròn xích đạo, cùng với thân Trái Đất gắn liền với nó, quanh một trục".
+- **NHE / SOLIEU**, Proposition XXXIX, dong 594
+  - source: 8" 17'" 38 v. 18V. (OCR) ; half of 16" 35'" 16iv. 36V.
+  - now: 8''17'''38^{v}18^v
+  - suggest: Nửa của 16'' 35''' 16^iv 36^v tính ra 8'' 17''' 38^iv 18^v; bản dịch chép "38^v" theo OCR (v thay vì iv, rất có thể OCR rớt chữ i). Không xác định được từ OCR; đề xuất kiểm scan, nhiều khả năng đúng là 38^{iv}.
+- **NHE / THIEU**, Lemma II, dong 486-562 (cuối Lemma I, dong 412)
+  - source: Q.E.D. (cuối Lemma I và Lemma II)
+  - now: (Lemma I có \square ở dòng 412; Lemma II dòng 561 và Lemma III không có dấu kết)
+  - suggest: Lemma II kết thúc bằng "Q.E.D." trong nguồn nhưng bản dịch không có dấu kết (Lemma I có \square); thêm cho nhất quán.
+- **NHE / SOLIEU**, Prop XXXIX, dòng 612
+  - source: annual motion of the nodes of this moon would be to 20° 31' 46" as 23h. 56' to 27d. 7h. 43'
+  - now: tỷ lệ với $20^\circ31'46''$
+  - suggest: OCR nguồn đọc "20° 31' 46"" nhưng cùng đoạn (và dòng 686, 716) là 20°11'46"; 31 rất có thể là OCR hỏng của 11, nên đổi 20°11'46" cho nhất quán (không xác định được từ OCR)
+- **NHE / SOLIEU**, Prop XXXIX, dòng 638
+  - source: this sphere is to that exterior earth as aC^2 to AC^2 - aC^2 (OCR: "«C- to AC2 - aC2")
+  - now: $[OCR\ không\ rõ]:AC^2-aC^2$
+  - suggest: Thay chỗ để trống bằng $aC^2$ (OCR đọc "«C-" tức aC²); tỉ số 52441:459 tiếp theo khớp với 229² : (230²-229²)
+- **NHE / THUATNGU**, Lemma IV, dòng 775
+  - source: if the earth is approaching to a heliocentric opposition with them
+  - now: nếu Trái Đất tiến đến vị trí đối xứng nhật tâm với chúng
+  - suggest: "opposition" nên dịch là "đối lập" (đối lập nhật tâm), không phải "đối xứng"
+- **NHE / SAINGHIA**, Lemma IV, dòng 773
+  - source: As the comets were placed by astronomers above the moon ... so their annual parallax is a convincing proof ...; for all the comets which move ...
+  - now: Do đó, thị sai hằng năm của chúng là một bằng chứng thuyết phục ...
+  - suggest: Nguồn là cấu trúc "As ... so ..." (đối ứng), không phải quan hệ nhân quả; "Do đó" thêm một liên hệ suy luận không có; nên dịch "như ... thì ..."
+- **NHE / SAINGHIA**, Prop. XXXIX dòng 849
+  - source: huge and splendid tails, like beams of fire, as sometimes they do
+  - now: những đuôi khổng lồ và rực rỡ như tia lửa, đôi khi xảy ra như vậy
+  - suggest: beams = chùm/dải sáng lửa chứ không phải tia lửa (sparks); đề xuất "như những chùm lửa"; câu sau nên "nhiều sao Kim như vậy gộp lại" thay cho "nhiều ngôi sao như vậy"
+- **NHE / SAINGHIA**, Prop. XXXIX Hệ quả 3, dòng 907
+  - source: the belts of Jupiter ... change their position one to another
+  - now: chúng thay đổi vị trí từ vị trí này sang vị trí khác
+  - suggest: "one to another" = thay đổi vị trí tương đối giữa các dải với nhau; đề xuất "chúng thay đổi vị trí đối với nhau"
+- **NHE / THUATNGU**, Prop. XXXIX Hệ quả 3, dòng 905
+  - source: some writers contend, that they are no other than meteors
+  - now: chúng chẳng qua chỉ là các sao băng
+  - suggest: meteors thời Newton là hiện tượng trong khí quyển, "sao băng" dễ hiểu sai nghĩa hiện đại; đề xuất "khí tượng thiên thể (meteors)" hoặc giữ meteor kèm chú thích
+- **NHE / THUATNGU**, Prop. XL Hệ quả 1, dòng 917
+  - source: will require a longer time to finish their revolutions
+  - now: cần thời gian lâu hơn để hoàn thành các chuy kỳ của chúng
+  - suggest: lỗi gõ "chuy kỳ"; nguồn là revolutions nên dịch "các vòng quay"
+- **NHE / THEM**, dòng 1011 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: *Các công thức, số liệu, tên địa danh và sơ đồ của Proposition XXXVII-XL có nhiều chỗ OCR sai; cần đối chiếu trực tiếp với scan...*
+  - suggest: lời biên tập in nghiêng nằm ngoài blockquote [Chú giải], tính là phần thêm; chuyển vào chú thích HTML hoặc xóa
+- **NHE / KHAC**, Prop. XL Hệ quả 3, dòng 983-985
+  - source: and 101.3641 parts by its horary motion (OCR)
+  - now: 1013641
+  - suggest: OCR đọc "101.3641" (có dấu chấm, hỏng); 1013641 phù hợp 716751 nhân căn 2 (khoảng 1013639) nên chấp nhận được, nhưng chữ số cuối không xác định được từ OCR
+
+## 66-sach-iii-lemma-v-xi-proposition-xli.md
+
+- *phần 1/7: Chương 66, phần 1/7 (dòng 1-247): Lemma V (Trường hợp 1, 2, Hệ quả), Lemma VI, Lemma VII, Lemma VIII (Hệ quả, Học luận), Lemma IX; Lemma X chỉ có tiêu đề trong phần này. Nguồn ia.txt dòng 25*
+- *phần 2/7: Chương 66, phần 2/7 (dòng 248-502): Lemma X (phần chứng minh và Hệ quả), Lemma XI, Proposition XLI (phép dựng, chứng minh, Ví dụ sao chổi 1680, quan sát của Newton, bảng sao của Pound). Nguồ*
+- *phần 3/7: Chuong 66, phan 3/7 (dong 503-739): Prop. XLI, vi tri sao choi 25/2-9/3, dung quy dao tu quan sat Flamsted, 2 bang so sanh, quy dao Halley, quan sat thang Muoi mot (Kirch/Halley). Khong co h*
+- *phần 4/7: Chuong 66, phan 4/7 (dong 740-986): Prop. XLI, doan sao choi 1680/81: cac quan sat 10-11/1680 (Halley), quy dao elip 575 nam, bang so sanh quan sat - tinh toan, cac quan sat 17-18/11 (Pontha*
+- *phần 5/7: Chương 66, phần 5/7 (dòng 987-1232): Proposition XLI, phần liệt kê quan sát sao chổi 1680 từ ngày 18 đến 22 tháng Mười một (Halley/Boston, Cambridge, Storer, Montenari, Ponthceus, Ballasore,*
+- *phần 6/7: Chương 66, phần 6/7 (dòng 1233-1477): Prop. XLI, phần cuối quan sát sao chổi 1680 (22-25/11, quỹ đạo, các điểm I-V), bảng độ dài đuôi 4/11-25/2, đoạn về thân sao chổi và nhiệt (đến "tiêu tán*
+- *phần 7/7: Chương 66, phần 7/7 (dòng 1478-1724): nửa sau Proposition XLI (nhiệt/đuôi sao chổi, ba ý kiến về đuôi, hơi nước và thời gian bay lên, nguyên nhân bay lên, các sao chổi 1668/1106/Aristotle/16*
+
+- **NANG / SAINGHIA**, Lemma V, Trường hợp 1, dòng 84
+  - source: -HS = p, "\p into -IS = q, ±q into +SK = r, \r into +SL = s, \s into +SM = t" (OCR: có hệ số phân số trước p,q,r,s); "ME, the last perpendicular but one"
+  - now: "Khoảng cách từ S về phía A là p, S đến I là q, S đến K là r, S đến L là s... ME, tức đường vuông góc cuối cùng trước đường vuông góc cuối cùng"
+  - suggest: Nguồn định nghĩa p,q,r,s,t là TÍCH liên tiếp (số hạng trước nhân với IS, SK, SL, SM), không phải các khoảng cách; bản dịch bỏ phép nhân và hệ số phân số (không xác định được từ OCR), bỏ dấu trừ của HS. "last but one" = đường vuông góc áp chót. Sửa theo Trường hợp 2; sửa luôn lỗi gõ "số hạm" thành "số hạng"
+- **NANG / THIEU**, Lemma V, Trường hợp 1, dòng 72
+  - source: "then b - 2b == c, &c., and so on to the last difference" (OCR: "6 - 2b == c")
+  - now: "và những sai số tiếp theo là c, 2c, ..., cho đến sai số cuối cùng"
+  - suggest: Mất mệnh đề định nghĩa c bằng hiệu của hai sai số thứ nhất liền nhau; thêm câu có dạng "b - 2b = c, v.v." (chiều dấu không xác định được từ OCR)
+- **NANG / THUATNGU**, Lemma V dòng 20-116 và Lemma VI dòng 176
+  - source: "first differences, second differences ... third differences"; Lemma VI: "the differences of the observed longitudes"
+  - now: Lemma V: "sai số thứ nhất, thứ hai, thứ ba..."; Lemma VI: "các hiệu số giữa những kinh độ"
+  - suggest: "difference" dịch hai cách; "sai số" nghĩa là sai lệch/lỗi, sai nghĩa toán học. Thống nhất thành "hiệu số thứ nhất, thứ hai..." (dòng 20-24, 38-50, 98-116)
+- **NANG / SAINGHIA**, Lemma IX, dòng 240-242
+  - source: "The right lines Ip and pM, and the length AI^2/(...) are equal among themselves. For 4Sp is the latus rectum of the parabola belonging to the vertex p" (OCR "Ip and /zM", "4.S/Z")
+  - now: "Các đường thẳng AI^2 và IM, cùng độ dài SM, bằng nhau. Vì 4SM là latus rectum"
+  - suggest: Bản dịch coi AI^2 là đường thẳng, đổi Ip và pM thành IM, đổi 4Sp thành 4SM; phân số AI^2 trên mẫu số không đọc được từ OCR. Sửa: "Ip, pM và độ dài AI^2/[mẫu OCR không rõ] bằng nhau" và "4Sp là latus rectum thuộc đỉnh p"
+- **NANG / SOLIEU**, Lemma VIII, Học luận, dòng 236
+  - source: "in proportion to (xi)B as 27MI to 16Md" (OCR "27MI to 16Mf/")
+  - now: "tỷ lệ với pB như 27M:16M"
+  - suggest: Mất chữ cái I và d trong tỉ số (nguồn đọc ra 27MI : 16Md); bản dịch còn 27M:16M, vô nghĩa vì hai vế cùng đại lượng M. Sửa thành 27MI:16Md; đối chiếu hình cho điểm đầu của tỉ lệ (pB hay (xi)B, không xác định được từ OCR)
+- **NANG / CHUGIAI**, Lemma VI, dòng 178-188
+  - source: Lemma V cho tung độ RS bằng nội suy; Lemma VI: "RS will be the longitude required"; "three or four observations will be sufficient ... five observations ought to be used"
+  - now: "lấy vuông diện tích dưới nó bằng Lemma trước"; "Ông biết độ chính xác giảm rất nhanh..."; "Thời đó chưa ai làm được"; "Halley ... biết mình đang đánh cược"
+  - suggest: KHÔNG HỢP LÍ. Sai: Newton lấy tung độ RS, không lấy diện tích. Gán ý nghĩ, động cơ ("viết cho người thực hành") cho Newton; khẳng định lịch sử không nguồn ("chưa ai làm được", chuyện Halley). Tiêu đề "Ba điểm đủ dựng quỹ đạo" không có trong nguồn (nguồn nói 3-4 hay 5 quan sát để nội suy một kinh độ/vĩ độ). Nên viết lại hoặc bỏ
+- **NANG / THIEU**, Prop. XLI, dòng 372
+  - source: Then, cancelling the letters A, E, C, I, from the point B towards the point (xi) draw the new obscure line BE, which may be to the former BE in the duplicate proportion...
+  - now: Từ điểm B về phía điểm [OCR không rõ], kẻ đường thẳng BE mới, tỷ lệ với đường BE cũ theo tỷ lệ bậc hai...
+  - suggest: Thêm mệnh đề bị mất: "xóa các chữ A, E, C, I, rồi từ điểm B về phía điểm ... kẻ đường BE mới"
+- **NANG / SAINGHIA**, Prop. XLI, Ví dụ, bảng dòng 424-439
+  - source: Rows Dec 21: 6.32 1/2, 6.36.59, 11.06.44, ...; Dec 24: 6.12, 6.17.52, 14.09.26, 18.49.23; ... Feb 5: 6.50, 7.04.41, 27.49.51, 16.59.06, 15.27.3
+  - now: Từ hàng ngày 21 trở đi các cột lệch (ví dụ ngày 21 có Vĩ độ 11.06.44 trùng Kinh độ biểu kiến; ngày 24 có kinh độ Mặt Trời 5.08.12), có hàng "ngày 25" lạ; không có hàng Feb 5
+  - suggest: Dựng lại bảng theo từng hàng của nguồn (cột Giờ, Kinh độ Mặt Trời, Kinh độ biểu kiến, Kinh độ thật, Vĩ độ Bắc); bổ sung hàng Feb 5 và hàng Jan 9 của nguồn; nguồn OCR cũng lẫn nên cần đối chiếu scan
+- **NANG / SAINGHIA**, Prop. XLI, lời chứng minh, dòng 402
+  - source: and BE, by Lem. XL, is a portion of the right line BS or B(xi) in the plane of the ecliptic, intercepted between the arc ABC and the chord AEC
+  - now: và BE, theo Lemma X, là một phần của đường thẳng BS ...
+  - suggest: Sửa "Lemma X" thành "Lemma XI" (OCR "Lem. XL" là XI; Lemma XI nói về độ dài rơi tới BE; Lemma X được dẫn riêng ở câu sau là "Cor. Lem. X")
+- **NANG / SOLIEU**, Bang so sanh dau (dong 637-641)
+  - source: Dec. 12 / 29 / Feb. 5 / Mar. 5 voi khoang cach 2792 / 8403 / 16669 / 21737; vi do quan sat 8.26 / 28.00 / 15.27 / 12.3; sai so 4 cot (+1,+2,+0,-1 va -7,-10,+2,...)
+  - now: Chi 3 hang: 12/12 = 2792; 5/2 = 8403; 5/3 = 16669; mat hang Dec. 29 va so 21737; khoang cach lech hang; vi do 5/3 = 15.27 (cua hang 5/2); mat 12.3
+  - suggest: Them hang ngay 29 thang 12 (8403, vi do quan sat 28.00), sua hang 5/2 = 16669 (15.27), hang 5/3 = 21737 (12.3); chia lai cac cot sai so cho 4 hang, doi chieu scan
+- **NANG / SOLIEU**, Bang Halley, hang 12/12 (dong 685)
+  - source: Dec. 12. 4.46. dist 28028, longitude computed OCR doc "V? 62925"; latitude 8.26
+  - now: Kinh do tinh duoc "29°6'32''"
+  - suggest: Cac chu so khong khop OCR ("62925" co the la 6°29'25'' tren cung); "29°6'32''" co ve xao tron voi "63.32'" cua bang dau; kiem scan
+- **NANG / SAINGHIA**, Prop. XLI, dong 820
+  - source: in An. Chr. 531, in the consulate of Lainpadins [Lampadius] and Orestes
+  - now: năm 531 thời Công nghiệp Laimprotinus và Orestes
+  - suggest: "consulate" là nhiệm kỳ quan chấp chính (consul), không phải "Công nghiệp" (industry); tên OCR đọc "Lainpadins" (có vẻ là Lampadius), "Laimprotinus" không có trong nguồn. Sửa: "năm 531, thời các quan chấp chính Lampadius và Orestes".
+- **NANG / SOLIEU**, Prop. XLI, bảng, dòng 881-883
+  - source: OCR bảng: hàng "16.17.00": 8.16.45 / 0.53.7 S; hàng "18.21.34": 18.52.15 / 1.26.54; hàng "20.17.00": 28.10.36 / 1.53.35; hàng "23.17.5": 13.22.42 / 2.29.0
+  - now: ngày 16, 17h00' ... 8°21'34''
+  - suggest: 0°52'15'' Nam; ngày 18, 20h17' ... 28°10'36''; ngày 20, 23h17'5'' ... 13°22'42''|Ba hàng bị trộn cột: nguồn có BỐN hàng (ngày 16 17h00; ngày 18 21h34'; ngày 20 17h00; ngày 23 17h5') mà bản dịch chỉ có ba, ngày/giờ lệch (ví dụ "18, 20h17'" ghép giờ của hàng ngày 20 với số của hàng ngày 20), "8°21'34''" và "0°52'15''" là mảnh vỡ của giờ "21.34" và kinh độ "18.52.15". Dựng lại đủ bốn hàng theo OCR.
+- **NANG / THEM**, Prop. XLI, bảng, dòng 882-883
+  - source: OCR chỉ có một bộ giá trị cho mỗi hàng (28.10.36 / 1.53.35 và 13.22.42 / 2.29.0); không đọc được cột quan sát và cột sai số
+  - now: cột quan sát = cột tính được ($28^\circ10'36''$ = $28^\circ10'36''$; $13^\circ22'42''$ = $13^\circ22'42''$)
+  - suggest: Chép cùng một số vào cả hai cột là bịa dữ liệu quan sát (và làm cho "sai số" thành 0); nên ghi "không xác định được từ OCR" cho các cột quan sát và hàng 18/11 (18°52'15'', 1°26'54'') hiện đang thiếu hẳn.
+- **NANG / THIEU**, Prop. XLI, dòng 988-1232 (khoảng 25 chỗ "[OCR\ không\ rõ]")
+  - source: Nguồn có các kinh độ cụ thể, vd "in ===  18° 50'", "===  23°", "^ 23° 24'", "27° 50'", "28°", "27° 45'", "27° 51'", "26° 58'", "28° 12'", "28° 10' 36"", "^ 2° 33'", "3° 5'", "3° 30'"
+  - now: Các công thức kinh độ đều bị thay bằng "$$ [OCR\ không\ rõ] $$"; chỉ còn vĩ độ và giờ
+  - suggest: Điền lại các kinh độ (độ, phút, giây) và cung hoàng đạo thay cho placeholder; OCR cho đọc được phần lớn số, riêng ký hiệu cung (Thiên Bình/Thiên Yết) cần đối chiếu bản scan
+- **NANG / SAINGHIA**, Prop. XLI, dòng 1448 (hàng 5 tháng Một)
+  - source: the tail ... was curved, and the convex side thereof lay to the south
+  - now: nhưng cong, với phần lõm hướng nam
+  - suggest: Đảo chiều. Sửa: "phần lồi hướng nam" (OCR: convex side)
+- **NANG / THIEU**, Prop. XLI, dòng 1445 (hàng 12/12 Rome)
+  - source: But these things are to be understood of the length of the brighter part of the tail; for with a more faint light ... at Rome ... by the observation of Ponthceus
+  - now: Với ánh sáng mờ hơn, có thể quan sát được trong trời trong, đuôi vươn lên 10° phía trên phần hông của Thiên Nga
+  - suggest: Mất câu "những điều trên chỉ nói về độ dài phần sáng hơn của đuôi" và mất "theo quan sát của Ponthceus"; cần thêm cả hai
+- **NANG / THIEU**, Prop. XLI, dòng 1353
+  - source: these observations agree with the theory, so far as they agree with one another; and by this agreement it is made clear that it was one and the same comet
+  - now: Các quan sát ấy cùng khớp với lý thuyết, và sự khớp ấy cho thấy đây là cùng một sao chổi
+  - suggest: Mất mệnh đề "chừng nào chúng còn phù hợp với nhau" (và "From all this it is plain"); thêm vào
+- **NANG / SAINGHIA**, Prop. XLI, dòng 1291 (24/11)
+  - source: continually increasing, by the concurring observations of Montenari, Ango (OCR: A/io-0), and Hook
+  - now: theo các quan sát đồng thời của Montenari, Hook và quan sát viên ở New England
+  - suggest: Nguồn nêu Ango, không phải quan sát viên ở New England (dòng 1257 dịch đúng là Ango); sửa thành Montenari, Ango và Hook
+- **NANG / SOLIEU**, Prop. XLI, dòng 1442, 1444, 1446 (bảng đuôi 10/12, 12/12, 21/12)
+  - source: latitude about 34^° north; latitude 42^° north nearly; with latitude 47^°
+  - now: vĩ độ Bắc khoảng 34°; gần 42°; vĩ độ 47°
+  - suggest: OCR có ký tự "^" sau số (cùng kiểu OCR của "H°" = 1 và 1/2 độ), có vẻ là phân số 1/2; bản dịch bỏ hết. Cần kiểm lại ảnh: 34 1/2, 42 1/2, 47 1/2
+- **NANG / SOLIEU**, Prop. XLI, dòng 1265 và 1407-1417
+  - source: at 4^h. at London; in the space of 15^ days, it described only 40°'
+  - now: 4 giờ tại London; trong 15 ngày chỉ mô tả 40'
+  - suggest: "^" cũng bị bỏ (4 1/2 giờ, 15 1/2 ngày). "40°'" trong OCR mơ hồ giữa 40° và 40'; không xác định được từ OCR, kiểm ảnh
+- **NANG / THIEU**, Prop. XLI, dòng 1654 (sau đoạn đuôi 45 ngày)
+  - source: Whence also it is that the tails of other comets which are short do not rise from their heads with a swift and continued motion, and soon after disappear, but are permanent and lasting columns of vapours...
+  - now: Điều ấy còn cho thấy các không gian thiên thể không có sức cản... (cả câu về các đuôi ngắn là cột hơi nước bền vững, bay lên chậm nhiều ngày, mang theo chuyển động của đầu, không có trong bản dịch)
+  - suggest: Thêm câu: vì thế các đuôi của những sao chổi khác, vốn ngắn, không bay lên khỏi đầu nhanh và liên tục rồi sớm biến mất, mà là những cột hơi nước bền vững, bay lên chậm trong nhiều ngày, giữ chuyển động của đầu ngay từ đầu và đi cùng đầu qua bầu trời. Sau đó mới tới câu Điều ấy còn cho thấy... (nguồn: From whence again we have another argument).
+- **NANG / SAINGHIA**, Prop. XLI, dòng 1590
+  - source: because the convex side of the tail regards the parts from which the deviation is made... more resplendent and more exactly defined on the convex than on the concave side
+  - now: vì phần lõm của đuôi hướng về các phía tạo ra sự lệch... rực rỡ và có ranh giới rõ hơn ở phần lõm hơn là ở phần lưng
+  - suggest: Đảo lõm/lồi ở cả hai chỗ: sửa thành phía lồi (convex) của đuôi hướng về các phía tạo ra sự lệch; đuôi rực rỡ, ranh giới rõ hơn ở phía lồi hơn là ở phía lõm (phù hợp dòng 1596 về phía trước dày hơn).
+- **NANG / SOLIEU**, Prop. XLI, dòng 1539, 1551, 1557, 1569
+  - source: comet of 1680, December 28d. 8h P.M. at London, was seen in [sign] 8° 41', with latitude north 28° 6'; sun in [sign] 18° 26'. Comet of 1577 Dec 29d in [sign] 8° 41', lat 28° 40'
+  - now: Bốn chỗ để nguyên $[OCR\ không\ rõ]$ thay cho vị trí sao chổi và Mặt Trời
+  - suggest: OCR đọc được số độ: sao chổi 1680 và 1577 đều ở 8°41', Mặt Trời 18°26' (ký hiệu cung hoàng đạo hỏng, không xác định được từ OCR). Điền 8°41' và 18°26' (kèm cung nếu đối chiếu được bản quét), bỏ ghi chú OCR trong bản dịch.
+- **NHE / THEM**, Dòng 10, 12, 20
+  - source: (không có trong nguồn)
+  - now: "Hình 54. Sơ đồ được dùng lại từ Phần I..."; "Nguồn scan tương ứng: khoảng trang 466-495..."; "Các sai số của những đường vuông góc này được sắp xếp thành bảng"
+  - suggest: Lời biên tập nằm ngoài blockquote [Chú giải]: chú thích hình in nghiêng, ghi chú nguồn scan và câu dẫn bảng không có trong nguồn (dòng 20: nguồn chỉ đặt bảng ngay sau lời dẫn đường vuông góc). Chuyển vào blockquote hoặc comment HTML
+- **NHE / HINH**, Dòng 8 (book-ii-section-i-motion.svg)
+  - source: Lemma V-VI dùng điểm A,B,C,D,E,F,H,I,K,L,M,N,R,S (đường vuông góc AH,BI,CK,DL,EM,FN, tung độ RS)
+  - now: Hình có nhãn <text>: thời gian, vận tốc, A, O, B, đường quỹ tích
+  - suggest: Hình rõ ràng thuộc Sách II Section I (thời gian, vận tốc, đường hyperbola), không thuộc Lemma V-XI. Bài nhắc C,D,E,F,H,I,K,L,M,N,R,S,p,G,X,Y,P... đều không có trong hình (chỉ A, B trùng chữ); cần hình riêng
+- **NHE / KHAC**, Lemma V, Trường hợp 2, dòng 144-156
+  - source: "-HS = p, p into -IS = q, q into +SK = r, r into +SL = s, s into +SM = t; proceeding, to wit, to ME, the last perpendicular but one"
+  - now: "HS=p", "q nhân với [OCR không rõ]+SK=r, và cứ tiếp tục đến ME"
+  - suggest: Bỏ dấu trừ của HS; rút gọn chuỗi r nhân SL = s, s nhân SM = t thành "cứ tiếp tục"; bỏ "áp chót"; "q nhân với [..]+SK" làm mơ hồ phép nhân. Viết đủ các bước như nguồn
+- **NHE / KHAC**, Lemma VI, dòng 172
+  - source: "if a regular curve ABODE is supposed to be drawn through the points A, B, C, D, E" (OCR)
+  - now: "đường cong đều $ABODE$"
+  - suggest: Chép nguyên lỗi OCR: các điểm là A,B,C,D,E nên đường cong là ABCDE. Sửa thành ABCDE
+- **NHE / THIEU**, Lemma VII (dòng 206) và Lemma VIII (dòng 228)
+  - source: "Q.E.F." (Lemma VII); "Q.E.D." (Lemma VIII)
+  - now: "$\square$" ở cả hai nơi
+  - suggest: Q.E.F. (bài toán dựng) và Q.E.D. (chứng minh) bị thay bằng cùng một ký hiệu, mất phân biệt. Giữ "Q.E.F." cho Lemma VII nếu theo quy ước của sách
+- **NHE / KHAC**, Lemma VIII, dòng 212-236
+  - source: OCR dùng một chữ Hy Lạp (OCR "£") cho điểm trên đường OS kéo dài, và "mu" (OCR "//") cho đỉnh; Học luận: "join (mu)(xi) cutting AC in d"
+  - now: Dùng G cho điểm đó và p cho đỉnh: "SG=2SO", "pG", "Gn"
+  - suggest: Đổi nhãn điểm so với nguồn (OCR đọc ra chữ Hy Lạp, không phải G); các nhãn "XC" ở "EG:XC" và "Gn ... pB" không xác định được từ OCR. Đối chiếu bản scan, và thống nhất p/mu
+- **NHE / SAINGHIA**, Lemma XI, chứng minh, dòng 312
+  - source: it would describe an arc of that circle, the length of which would be to the chord of the parabolic arc AC in the subduplicate proportion of 1 to 2
+  - now: nó sẽ mô tả một cung dài bằng dây cung của cung parabol AC theo tỷ lệ căn bậc hai của 1:2
+  - suggest: Sửa: độ dài cung tròn ấy so với dây cung của cung parabol AC theo tỷ lệ căn bậc hai của 1 so với 2 (không phải "bằng")
+- **NHE / SOLIEU**, Prop. XLI, dòng 350-355
+  - source: as the sum of the times to about 600 days
+  - now: tổng của các thời gian / [OCR không rõ] ngày
+  - suggest: Điền con số: "khoảng 600 ngày" (nguồn OCR đọc rõ 600 days)
+- **NHE / SAINGHIA**, Prop. XLI, dòng 360
+  - source: and tV a perpendicular upon the chord TT
+  - now: Hãy kẻ tV vuông góc với dây cung Tt
+  - suggest: OCR đọc "TT" (chữ r thứ hai bị đọc thành T), tức dây cung nối hai vị trí ngoài T và r; đề nghị "Tr" (tV kẻ từ t nên Tt vô nghĩa)
+- **NHE / THIEU**, Prop. XLI, dòng 366, 372, 404
+  - source: draw the obscure line Bi ... the obscure line Si ... the obscure line BE ... drawing the obscure line AC, which may be to (?) TT in the subduplicate proportion of SQ to St
+  - now: Qua B, kẻ đường Bi ... Nối đường Si ... tỷ lệ với TT theo tỷ lệ căn bậc hai của SQ và S[OCR không rõ]
+  - suggest: Bản dịch bỏ từ "obscure" (đường mờ/nét mờ) ở mọi chỗ; ở dòng 404 nguồn có phân số đứng trước TT (OCR "-f", không xác định được) mà bản dịch bỏ hẳn
+- **NHE / SOLIEU**, Prop. XLI, dòng 480, 484, 500
+  - source: DH, 50 J; NL, 31f; Iota: 1. 3.20 11.30.42
+  - now: DH=50; NL=31; sao ι kinh độ 3.20
+  - suggest: Nguồn có phân số sau 50 và sau 31 (OCR "J" và "f", không đọc được giá trị) nên không nên bỏ; kinh độ sao ι nguồn OCR là "1. 3.20" (có "1." đứng trước), bản dịch chỉ còn "3.20"
+- **NHE / SOLIEU**, Lemma XI, dòng 336
+  - source: that is, a space equal to the length I(mu) or ...
+  - now: Đó là một không gian bằng độ dài IM hoặc
+  - suggest: OCR đọc "I//" tức I và mu (cùng ký hiệu mu như ở Lemma IX: Imu và muM bằng nhau); bản dịch ghi IM là đoạn khác; đề nghị Imu (cùng cách ghi mu như phần còn lại)
+- **NHE / THEM**, dòng 441, 443, 487
+  - source: (không có trong nguồn)
+  - now: *[Bảng OCR bị hỏng ở nhiều tiêu đề và số; cần đối chiếu...*; "### Những quan sát bổ sung"; "Các số ở trên vẫn cần đối chiếu với scan."
+  - suggest: Lời biên tập nằm ngoài blockquote và một tiêu đề thêm: chuyển vào blockquote Chú giải hoặc comment HTML; nguồn chỉ có "To these you may add some observations of mine."
+- **NHE / THIEU**, Lemma X (dòng 286), Hệ quả (296), Lemma XI (342), Prop. XLI (400)
+  - source: Q.E.D. / Q.E.D. / Q.E.D. / Q.E.I.
+  - now: dấu $\square$
+  - suggest: Q.E.D. và Q.E.I. được thay bằng ký hiệu hộp vuông (một mục nhẹ cho cả phần)
+- **NHE / CHUGIAI**, Chú giải dòng 408-418
+  - source: (không có trong nguồn)
+  - now: Đây là nguồn gốc của cả ngành tính quỹ đạo...; "giải" ... nghĩa là dựng được bằng thước và compa...; dùng đường tròn đi qua kết quả ba lần dựng để chốt vị trí
+  - suggest: HỢP LÍ MỘT PHẦN: phần tóm tắt phép dựng đúng; nhưng "nguồn gốc của cả ngành tính quỹ đạo" và "thước và compa" là khẳng định lịch sử không nguồn (Newton còn tính bằng số: BE, X, MP...), và đường tròn qua G,g,gamma là bước chính của phép dựng chứ không phải mẹo thực dụng; nên bỏ hoặc hạ giọng
+- **NHE / SOLIEU**, Quan sat ngay 1 thang 3, dong 511
+  - source: a little less than JCK + jCR, and therefore = iCK + A CR, or if CK
+  - now: nho hon CK + 1/2 CR, nen bang 1/2CK + 1/2CR hoac [OCR khong ro]
+  - suggest: OCR co phan so truoc CK ("JCK") nhung ban dich bo; "CK + 1/2CR" vo nghia (CR da nho hon CK); khong xac dinh duoc phan so tu OCR, kiem scan
+- **NHE / SOLIEU**, Quan sat dem 9 thang 3 luc 12 gio, dong 527
+  - source: equal to ^ of yd, or a little less, as perhaps T5g of yd
+  - now: yY bang 3/4 yd, hoac hon nho hon, chang han 4/5 yd
+  - suggest: 4/5 lon hon 3/4 nen khong the la "hoi nho hon"; khong xac dinh duoc phan so tu OCR; kiem scan hai phan so
+- **NHE / SAINGHIA**, Quan sat 25/2, dong 505
+  - source: the distance of the comet from that perpendicular was j/»E (duong pE)
+  - now: khoang cach cua sao choi voi duong vuong goc ay la 1/2PE
+  - suggest: Duong dang xet la pE (sao choi o p); ban dich viet PE (P hoa, la vi tri khac o doan sau); nen sua thanh pE neu scan xac nhan
+- **NHE / SOLIEU**, Dong 546-552, tinh quy dao
+  - source: BE for the first time 412 ... BE for the second time 421
+  - now: BE=412 roi BE=421 (mat "lan thu nhat / lan thu hai")
+  - suggest: Bo cum phan biet hai lan tinh khien BE co hai gia tri khong giai thich; them "lan thu nhat/lan thu hai"
+- **NHE / SOLIEU**, Do nghieng, dong 579-582 va 651-654
+  - source: inclination ... 61° 20^ (Newton) va 61° 20
+  - now: ' (Halley)
+  - suggest: 61°20' o ca hai cho|OCR doc them ky tu sau 20 (co the la phan so); khong xac dinh duoc tu OCR, kiem scan xem co 20 1/2' khong
+- **NHE / KHAC**, Bang Halley, cot sai so (dong 685-700)
+  - source: OCR doc duoc nhieu sai so: -2.0, -1.42, -1.3, -0.25, -1.28, +0.33, -1.20, +1.25, -2.10, -2.42, -0.41, -2.49
+  - now: Nhieu o ghi [OCR khong ro] (cot sai so kinh do hau het, vai o vi do)
+  - suggest: Co the dien lai cac gia tri OCR doc ra sau khi doi chieu scan thay vi de trong
+- **NHE / THEM**, Dong 643 va cac ghi chu [OCR khong ro]
+  - source: (khong co trong nguon)
+  - now: *Do OCR hong, cac so trong bang chi giu nhung gi doc duoc; phai doi chieu scan.* (ngoai blockquote)
+  - suggest: Loi bien tap nam trong phan dich; chuyen vao Chu giai hoac comment HTML
+- **NHE / THUATNGU**, Dong 529 va dong 734
+  - source: my micrometer ... ; two stars in "£1" (OCR) which are sigma and tau
+  - now: "micrometer" giu nguyen tieng Anh trong khi "telescope" dich "kinh vien"; "chom sao Ω"
+  - suggest: Thong nhat thuat ngu (dich micrometer); ky hieu chom sao khong xac dinh duoc tu OCR ("£1"), kiem scan
+- **NHE / SOLIEU**, Prop. XLI, bảng hàng 3/11, dòng 878
+  - source: Errors in Long.: "_j_ 0.22" (ký hiệu + bị OCR hỏng), Lat.: "- 0.13"
+  - now: $-0.22$
+  - suggest: Dấu của cột kinh độ: "_j_" là dấu + bị hỏng (kinh độ tính 29°51'12'' lớn hơn quan sát 29°51'0''), nên nên là $+0.22$; chưa chắc về chữ số vì OCR hỏng.
+- **NHE / SOLIEU**, Prop. XLI, dòng 985
+  - source: one of which is the middle of the three ... southern hand of Virgo, Bayers i/> ; ... the outmost of the wing, Bayer s 0
+  - now: theo tên Bayer $\mu$
+  - suggest: OCR đọc "i/>" (giống ký hiệu ψ), không phải μ; ngôi kia "s 0" là θ. Chữ Hy Lạp gốc không xác định chắc từ OCR, nhưng μ không có cơ sở trong nguồn; nên kiểm lại với ảnh quét.
+- **NHE / THUATNGU**, Prop. XLI, dòng 919 và 985
+  - source: in a treatise which Ponthceus published ... seen by P. Ango
+  - now: một luận điểm mà Ponthceus đã xuất bản; ông Ango
+  - suggest: "treatise" là chuyên luận/luận văn, không phải "luận điểm"; "P. Ango" (Père) bị bỏ chữ P. (cha/linh mục) - cân nhắc "Cha Ango" hoặc giữ "P. Ango".
+- **NHE / THIEU**, Prop. XLI, dòng 1027-1031 (Boston, ngày 19/11)
+  - source: the comet was distant from Spica 1°, with the difference of 40' in latitude
+  - now: sao chổi cách Spica [OCR không rõ] với hiệu số vĩ độ 40'
+  - suggest: Số "1°" (khoảng cách tới Spica) không xuất hiện bằng chữ; ở Jamaica thì có "1°". Ghi rõ "cách Spica 1°" trước khi nêu hiệu số vĩ độ 40'
+- **NHE / THUATNGU**, Prop. XLI, dòng 1153 (Ballasore, ngày 21/11)
+  - source: It was in a right line between the spike and the balance
+  - now: Nó nằm trên một đường thẳng giữa Spica và ngôi sao cân bằng
+  - suggest: "ngôi sao cân bằng" nghe như tên một ngôi sao; nguồn chỉ ghi "the balance" (Cân/Thiên Bình). Dòng 1341 cùng chương lại dịch "cái cân phía nam của Thiên Bình"; nên thống nhất, vd "giữa Spica và Cái Cân (Thiên Bình)", ghi chú nếu cần
+- **NHE / SOLIEU**, Prop. XLI, dòng 1219 (Hook, ngày 22/11)
+  - source: at 6^h. in the morning at London, Dr. Hook observed it (OCR "6^h")
+  - now: lúc 6 giờ sáng tại London, bác sĩ Hook quan sát
+  - suggest: OCR đọc "6^h", dấu ^ ở nguồn nhiều lần là ký hiệu 1/2 (vd "7|h", "4|h"); có thể là 6h30. Không xác định được từ OCR; cần đối chiếu bản scan trước khi giữ "6 giờ"
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1448 (5/1)
+  - source: touched the star pi (OCR: -rr) in the breast of Andromeda on its right side, and the star mu (OCR: \i) of the girdle on its left
+  - now: ngôi sao ở ngực Andromeda bên phải và ngôi sao δ thuộc thắt lưng bên trái
+  - suggest: Chữ cái sao: OCR đọc "\i" (có thể μ), không giống δ; bỏ mất chữ π ở ngực. Kiểm ảnh rồi ghi đúng chữ Hy Lạp
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1373
+  - source: declining one from the other by an apparent angle of above 30 degrees, as observed by Montenari
+  - now: lệch nhau về một phía với góc biểu kiến trên 30°
+  - suggest: "về một phía" không có trong nguồn (one from the other = lệch khỏi nhau); bỏ cụm này
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1427
+  - source: cannot be otherwise than true
+  - now: Không thể nghi ngờ tính đúng của nó
+  - suggest: Nguồn nói "không thể không đúng"; đổi thành "không thể không đúng" thay vì "không thể nghi ngờ"
+- **NHE / THIEU**, Prop. XLI, dòng 1443 và 1446
+  - source: ascended to the head of Sagitta (Bayer's a, 0); equally distant from beta and Schedir, so as its distance from either of the two was equal to the distance of the one from the other
+  - now: Đuôi vươn tới đầu chòm sao Mũi Sử; cách đều β và Schedir
+  - suggest: Mất ngoặc "(a, b của Bayer; OCR: a, 0)" ở 11/12 và mất vế "khoảng cách tới mỗi sao bằng khoảng cách giữa hai sao ấy" ở 21/12
+- **NHE / THEM**, Prop. XLI, dòng 1454
+  - source: (không có tiêu đề trong nguồn)
+  - now: ### Thân sao chổi và nhiệt
+  - suggest: Tiêu đề do biên tập thêm, nằm ngoài blockquote chú giải; bỏ hoặc chuyển vào chú giải
+- **NHE / THUATNGU**, Prop. XLI, dòng 1429, 1456, 1476
+  - source: protracted in the plane of the trajectory; vapours or exhalations
+  - now: được kéo dài trong mặt phẳng của quỹ đạo; hơi nước hoặc khí thải
+  - suggest: "protracted" ở đây là vẽ/dựng trên mặt phẳng, không phải kéo dài; "exhalations" (khí bốc/hơi bốc) không phải "khí thải" kiểu hiện đại; "a true representation" dịch thành "hình học đúng" cũng lạ
+- **NHE / THIEU**, Prop. XLI, dòng 1598
+  - source: from parts of the Via Lactea, which might have been confounded with and mistaken for parts of the tails
+  - now: những phần của [tên đường trời không rõ]
+  - suggest: OCR đọc rõ Via Lactea; thay chỗ trống bằng Dải Ngân Hà (Via Lactea).
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1588
+  - source: the deviation, caeteris paribus, appears less when the tail is more oblique to the orbit...
+  - now: Xét các trường hợp khác nhau, sự lệch trông nhỏ hơn khi đuôi chếch với quỹ đạo sao chổi nhiều hơn
+  - suggest: caeteris paribus nghĩa là các điều kiện khác không đổi (dòng 1588 sau cũng dịch đúng như vậy); sửa Xét các trường hợp khác nhau thành khi các điều kiện khác không thay đổi.
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1506
+  - source: fixed stars have been sometimes seen by the Egyptians environed with a Coma or Capillitium
+  - now: được bao quanh bởi một quầng sáng hay một ánh sáng giống như mái nhà
+  - suggest: OCR cuốn này hỏng (Capit/itinm), nhưng cùng câu ở Hệ thống thế giới đọc rõ coma or capillitium; mái nhà là bịa, nên sửa thành quầng sáng hay (capillitium) quầng giống tóc, hoặc ghi nguyên coma / capillitium.
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1684 và 1692
+  - source: Montenari, November 20, et. vet. observed it larger than the stars of the first magnitude... March 5, 1668, 7h. P. M.; St. N. P. Valentin Estatius
+  - now: ngày 20 tháng Mười một và những ngày sau đó... ngày 5 tháng Ba năm 1668, lúc 7 giờ tối, Valentin Estatius
+  - suggest: et. vet. (OCR hỏng, chỉ định cách tính lịch cũ) không có nghĩa và những ngày sau đó, đây là chỗ bịa; còn St. N. P. bị bỏ hoàn toàn. Sửa: ngày 20 tháng Mười một (lịch cũ) và giữ ký hiệu St. N. ở chỗ Estatius.
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1708
+  - source: we read, in the Saxon Chronicle, of a like comet appearing in the year 1106
+  - now: Trong Biên niên sử Saxony, ta đọc về một sao chổi tương tự
+  - suggest: Saxon Chronicle không phải Saxony; sửa thành Biên niên sử Saxon.
+- **NHE / SAINGHIA**, Prop. XLI, dòng 1724
+  - source: as to the transverse diameters of their orbits, and the periodic times of their revolutions
+  - now: các đường kính vuông góc của quỹ đạo chúng và thời gian tuần hoàn
+  - suggest: transverse diameter là đường kính ngang (trục lớn của elip), không phải đường kính vuông góc; sửa thành đường kính ngang (trục lớn) của quỹ đạo.
+- **NHE / THUATNGU**, Prop. XLI, dòng 1676, 1690, 1692, 1700, 1706, 1678
+  - source: the tail of the greatest bulk and splendor; the bulk of the solid earth; it is chiefly from the comets that spirit comes
+  - now: khối lượng và sự rực rỡ lớn nhất; khối lượng đất rắn không ngừng tăng; phần lớn linh hồn đến từ sao chổi
+  - suggest: bulk (độ lớn/thể tích) dịch thành khối lượng (mass) ở 5 chỗ, dễ hiểu sai thành khối lượng vật lí; nên dùng bề thế/độ đồ sộ hoặc kích thước. spirit dịch thành linh hồn (soul) sai ngữ cảnh khi mô tả phần tinh tế của không khí; nên dùng tinh khí/khí tinh.
+- **NHE / CHUGIAI**, Chú giải dòng 1600-1610
+  - source: Newton's argument on tails (no mention of Burnett in the source; heat 28000 times summer sun; 2000 times red-hot iron)
+  - now: Đối thủ ông cãi ở đây thường được nhận là Robert Burnett, tác giả một lý thuyết trời mới ra năm 1681; hơi nước và bụi bị Mặt Trời thăng cấp
+  - suggest: HỢP LÍ MỘT PHẦN: vật lí và lập luận khúc xạ/phản chiếu đúng; nhưng khẳng định lịch sử về Robert Burnett và lý thuyết trời 1681 không có nguồn, nên bỏ hoặc dẫn nguồn; thăng cấp là lỗi dùng từ, phải là thăng hoa; hơn hai nghìn lần là gần đúng (nguồn: about 2000 times).
+- **NHE / KHAC**, Prop. XLI, dòng 1658
+  - source: so fine a matter as that of the aether may yield to the action of the rays of the sun's light
+  - now: vật chất mịn như aether có thể nhuừng với tác dụng của các tia sáng Mặt Trời
+  - suggest: Lỗi gõ nhuừng; sửa thành nhường.
+
+## 67-sach-iii-proposition-xlii.md
+
+- *phần 1/4: Chương 67, phần 1/4 (dòng 1-157): Proposition XLII (Problem XXII) Operation 1-3, đoạn so sánh các sao chổi, đầu đoạn sao chổi 1664-1665 (Hevelius/Halley), Chú giải dòng 116-126, hình 55. Ngu*
+- *phần 2/4: Chương 67, phần 2/4 (dòng 158-315): ví dụ sao chổi 1664-1665, quỹ đạo Halley, bảng so sánh, quan sát tháng Hai-Ba 1665 (đến câu "Vì vậy, khoảng cách từ sao chổi tới ngôi sao thứ hai của Bạch*
+- *phần 3/4: Chuong 67, phan 3/4 (dong 316-471): Prop. XLII - cuoi quan sat sao choi 1664-65 (1 va 7-9 thang Ba 1665, tom tat), so sanh voi ly thuyet, he qua parallax, doan dau sao choi 1683 (toi dong 'b*
+- *phần 4/4: Chương 67, phần 4/4 (dòng 472-629): cuối Prop. XLII (sao chổi 1683, 1723, các Học luận cuối), Những điều còn lại của Sách III, sao 1572/1604, General Scholium, Kết thúc Sách III, 2 Chú giải*
+
+- **NANG / THIEU**, Prop XLII, Operation 3, dòng 66-112
+  - source: 2G - 2C = mG - mg + nG - ny ; 2T - 2S = mT - mt + nT - nr ; true parameter R + mr - mR + np - nR ; transverse diameter = phân thức (OCR hỏng)
+  - now: Cả bốn công thức (y:1=, 2G-2C=, 2T-2S=, tham số/đường kinh ngang thật) đều chỉ còn [OCR không rõ]
+  - suggest: OCR nguồn đọc được phần lớn dạng m, n, G, g, T, t (xem ia.txt 27535-27556); điền lại các vế phải dựa trên đó rồi đối chiếu scan; riêng ký hiệu Hy Lạp (δ, ε, γ, τ, ρ, π, đường kinh ngang) không xác định được từ OCR
+- **NANG / SAINGHIA**, Prop XLII, dòng 84-94 và Chú giải dòng 122
+  - source: I + 7/Q will be the true inclination ... K + mP the true longitude of the node (OCR đọc 7/Q, không phải mQ)
+  - now: I+mQ sẽ là độ nghiêng thật ... K+mP là kinh độ thật của node
+  - suggest: OCR không đọc ra chữ m ở I+?Q. Theo thứ nguyên: m đi với G-g tức phép thử P (node), n đi với G-ý tức phép thử Q (độ nghiêng), nên nhiều khả năng là nQ. Kiểm scan; sửa cả bản dịch lẫn Chú giải nếu đúng
+- **NANG / HINH**, Hình 55, dòng 8
+  - source: (Prop XLII nhắc A,B,D,E,T,P,Q,C,G,S; không có điểm nào trong hình)
+  - now: book-ii-section-i-motion.svg có nhãn: thời gian, vận tốc, A, O, B, đường quỹ tích. Mô tả của tệp: chuyển động trong môi trường có lực cản (Sách II)
+  - suggest: Hình không thuộc nội dung Proposition XLII (không có hình nào trong nguồn đoạn này). A và B chỉ trùng chữ, ở bài là hai khoảng thời gian. Gỡ hình hoặc thay bằng hình đúng
+- **NANG / CHUGIAI**, Chú giải dòng 116-126 (đánh giá chung: KHÔNG HỢP LÍ), câu về 12''
+  - source: we are to subduct about 2' when the comet was swiftest, which we may effect by taking off 12'' from the angle between the ascending node and the perihelion ... annual parallax of both these comets was very conspicuous
+  - now: trừ đi chừng 12'' ở chỗ sao chổi chạy nhanh nhất, và nhận ra đó là parallax thường niên
+  - suggest: Sai: Newton trừ khoảng 2' ở chỗ sao chổi chạy nhanh nhất, thực hiện bằng bớt 12'' ở góc node-cận điểm; parallax thường niên là nhận xét riêng, không phải hiệu chỉnh 12''. Phần này lại nằm ngoài phạm vi Proposition (sau bảng), nên nên sửa hoặc bỏ
+- **NANG / CHUGIAI**, Chú giải dòng 126
+  - source: (nguồn không có đám mây Oort, hướng đến, nguồn gốc sao chổi hay thủy triều thiên hà)
+  - now: sau này thành một ý tưởng nền của ... đám mây Oort ... Nhờ vậy chúng tới từ mọi hướng và mọi độ nghiêng, đúng như ông quan sát
+  - suggest: Gán cho Newton quan sát/ý tưởng không có trong đoạn này (đoạn chỉ nói so sánh sao chổi để tìm chu kỳ); khẳng định lịch sử 'ý tưởng nền' cần nguồn; 'không đến từ dải phẳng' không đúng với sao chổi chu kỳ ngắn. Bỏ hoặc viết lại thành một nhận xét hiện đại tách biệt, có nguồn
+- **NANG / THIEU**, Dòng 206-208 (đầu mục quan sát tháng Hai 1665)
+  - source: In February, the beginning of the year 1665, the first star of Aries, which I shall hereafter call y, was in [Aries] 28°30'15", with 7°8'58" north lat.; the second star
+  - now: Bản dịch đi thẳng vào "Ngôi sao thứ hai trong Bạch Dương ở..."; câu về ngôi sao thứ nhất của Bạch Dương (đặt tên γ, kinh độ 28°30'15", vĩ độ Bắc 7°8'58") không có
+  - suggest: Thêm câu này; nếu không thì sao γ ở dòng 232 và sau đó không được định nghĩa
+- **NANG / THIEU**, Bảng dòng 184-202 (sau dòng Feb 22)
+  - source: Bảng nguồn còn hai hàng: "March 1, 8h16': Long. 29°18'15", Lat. N. 8°36'26"; tính được 29°18'20", 8°36'12"" và "March 7, 8h37': Long. Taurus 0°2'48", Lat. N. 8°56'30"; tính được 0°2'42", 8°56'56""
+  - now: Bảng dịch kết thúc ở hàng ngày 22 tháng Hai; thiếu hai hàng ngày 1 và 7 tháng Ba
+  - suggest: Bổ sung hai hàng (ngày 1 tháng Ba, 8h16'; ngày 7 tháng Ba, 8h37') với số đo như nguồn
+- **NANG / SOLIEU**, Dòng 285
+  - source: a fifth part of the distance between the star A and the first star of Aries, or 15' 57"
+  - now: 15^\circ57'' (15 độ 57 giây)
+  - suggest: Sửa thành 15'57'' (15 phút 57 giây), nguồn là phút, không phải độ
+- **NANG / SOLIEU**, Dòng 168
+  - source: the comet was in its perihelion November 21d. 11h. 52' P.M. equal time at London, or 13h. 8' at Dantzick, O.S. (nguồn OCR không ghi năm ở câu này; bảng ngay sau bắt đầu từ December rồi mới có "Jan, 1665")
+  - now: Sao chổi ở cận điểm Mặt Trời vào ngày 21 tháng Mười một năm 1665
+  - suggest: Bỏ "năm 1665" (nguồn không có, và mâu thuẫn với bảng: tháng Mười hai đứng trước "Jan 1665" nên phải là năm trước); hoặc để "năm 1664" nếu đối chiếu được scan
+- **NANG / SOLIEU**, Prop. XLII, dong 316-330 (1 thang Ba)
+  - source: distance of the comet from the second star in Aries was 8' 16" according to Dr. Hooke, or 8' 5" according to M. Gottignies; mean 8' 10"
+  - now: 8^\circ16'' theo Hooke, 8^\circ05'' theo Gottignies, trung bình 8^\circ10''
+  - suggest: OCR đọc dấu phút ('), không phải độ; khớp với 4/45 của 1°33' = 8'16". Sửa thành 8'16", 8'05", 8'10".
+- **NANG / SOLIEU**, Prop. XLII, dong 332-353
+  - source: about 1' 35" ... perhaps only 1'. ... add 1' to the longitude ... and 8' 10" to its latitude
+  - now: khoảng 1^\circ35'' ... chỉ khoảng 1^\circ ... cộng 1^\circ vào kinh độ ... và 8^\circ10'' vào vĩ độ
+  - suggest: OCR đọc 1' 35", 1', 1' và 8' 10" (dấu phút). Bản dịch ghi độ. Sửa đơn vị theo OCR (1'35", 1', 1', 8'10").
+- **NANG / SOLIEU**, Prop. XLII, dong 356-365
+  - source: longitude of the comet 29° 18', with 8° 36' 26" north lat.
+  - now: kinh độ [OCR không rõ] 29°18', vĩ độ Bắc [OCR không rõ] 36°26''
+  - suggest: Mất "8°" của vĩ độ: OCR đọc 8° 36' 26" (ký hiệu cung ở kinh độ bị OCR hỏng, bản dịch để marker). Sửa thành 8°36'26".
+- **NANG / SOLIEU**, Prop. XLII, dong 386-389 (7 thang Ba)
+  - source: the comet was in [sign] 0° 2' 48"
+  - now: sao chổi ở [OCR không rõ] 2^\circ48''
+  - suggest: OCR đọc 0° 2' 48"; bản dịch bỏ "0°" và "2'" đổi thành 2°48''. Sửa thành 0°2'48" (cung không xác định được từ OCR).
+- **NANG / SOLIEU**, Prop. XLII, dong 392-413 (vĩ độ Hevelius)
+  - source: latitude 8° 54'; ... 8° 55' 30"; ... 8° 56', or 8° 57'
+  - now: 8^\circ05'54''; 8^\circ05'30''; 8^\circ06'; 8^\circ07'
+  - suggest: Cả bốn giá trị đều lệch: OCR đọc 8°54' (chữ D hỏng), 8°55'30", 8°56', 8°57'. Bản dịch có "05" thay vì "5x". Sửa theo OCR.
+- **NANG / SOLIEU**, Prop. XLII, dong 416-425 (9 thang Ba)
+  - source: its place must have been in [sign] 0° 18'. with 9° 3f north lat. nearly
+  - now: vị trí [OCR không rõ] 8^\circ18', vĩ độ Bắc gần 9^\circ34'
+  - suggest: Kinh độ OCR đọc 0°18' (chữ "8" đứng trước là ký hiệu cung bị đọc hỏng), bản dịch ghi 8°18'. Vĩ độ OCR "9° 3f": chữ số cuối không xác định được từ OCR (34' chưa kiểm chứng).
+- **NANG / THIEU**, Prop. XLII, dòng 482-489 (sau sao chổi 1683)
+  - source: This theory is also confirmed by the retrograde motion of the comet that appeared in the year 1723. The ascending node ... (Mr. Bradley) was in Aries 14° 16'. Inclination 49° 59'. Perihelion ... 12° 15' 20". Perihelion distance 998651 ... time Sept. 16d 16h 10'.
+  - now: Không có câu mở đầu về sao chổi 1723 và các yếu tố quỹ đạo (node, độ nghiêng, cận điểm, khoảng cách 998651, thời điểm); chỉ còn một ô bảng ở dòng 489 nói về ông Bradley.
+  - suggest: Thêm đoạn dịch đầy đủ về sao chổi 1723 (chuyển động nghịch, node, độ nghiêng 49°59', cận điểm, khoảng cách cận điểm 998651, thời điểm 16 tháng Chín) trước bảng 1723. Ghi chú: OCR nguồn không đọc rõ ký hiệu cung và giờ.
+- **NANG / THIEU**, Prop. XLII, giữa dòng 489 và 491
+  - source: From these examples it is abundantly evident that the motions of comets are no less accurately represented by our theory than the motions of the planets ... aphelion distances. That retrograde comet of 1607 ... 58680 ... 75 years ... 1778 to 100 ... about 35 to 1
+  - now: Cả hai đoạn bị bỏ hoàn toàn: đoạn kết luận 'từ các ví dụ này' và đoạn sao chổi 1607 (node 20°2', độ nghiêng 17°2', cận điểm 58680, giả thiết cùng sao chổi 1682, chu kì 75 năm, trục lớn 1778:100, cận điểm xa nhất 35:1, 'theo điều kiện sao chổi quay lại cùng quỹ đạo', các sao chổi khác lên cao hơn).
+  - suggest: Dịch đầy đủ hai đoạn này; các con số lấy từ OCR (node và cận điểm có ký hiệu cung bị hỏng, ghi 'không xác định được từ OCR').
+- **NANG / THIEU**, Những điều còn lại, dòng 493
+  - source: because of the great number of comets, of the great distance of their aphelions from the sun, and of the slowness of their motions in the aphelions, they will ... disturb each other
+  - now: Do các sao chổi ở các cận điểm xa nhất của quỹ đạo chịu ảnh hưởng của những vị trí xa nhất từ Mặt Trời, ... chúng sẽ làm nhiễu lẫn nhau
+  - suggest: Mất lý do 'vì số lượng sao chổi rất nhiều'; hai lý do còn lại bị dịch rối. Dịch lại: 'Vì số sao chổi rất nhiều, các cận điểm xa nhất của chúng cách Mặt Trời rất xa và chuyển động ở đó vô cùng chậm, chúng sẽ nhiễu nhau bằng lực hút...'
+- **NANG / SAINGHIA**, General Scholium, dòng 561
+  - source: the God of Israel, the God of Gods, and Lord of Lords; ... my Eternal, your Eternal, the Eternal of Israel, the Eternal of Gods; ... my Infinite, or my Perfect: these are titles which have no respect to servants.
+  - now: Chúa của Israel, Chúa của các vua và Chúa của các chúa; ... Vĩnh cửu của Israel hay Vĩnh cửu của các vua. Cũng không ai nói: Vô hạn của tôi, Vô hạn của ngài hay Vô hạn của các vua.
+  - suggest: 'Gods' bị dịch thành 'các vua' (hai chỗ, và 'Vô hạn của các vua' không có trong nguồn); thiếu 'my Perfect' (Hoàn hảo của tôi) và cả câu 'đây là những danh hiệu không liên quan đến kẻ tôi tớ'. Sửa thành 'Chúa của các thần', 'Vĩnh cửu của các thần', thêm 'Hoàn hảo của tôi' và câu cuối.
+- **NANG / SAINGHIA**, General Scholium, dòng 603
+  - source: hypotheses, whether metaphysical or physical, whether of occult qualities or mechanical, have no place in experimental philosophy
+  - now: dù nói về phẩm chất ẩn dụ hay về cơ chế
+  - suggest: 'occult qualities' (phẩm chất ẩn, huyền bí) bị dịch thành 'phẩm chất ẩn dụ' (metaphor): đổi nghĩa ở câu then chốt. Sửa: 'dù là về những phẩm chất ẩn (huyền bí) hay về cơ chế'.
+- **NHE / THIEU**, Prop XLII, dòng 114
+  - source: Q.E.I.
+  - now: Câu kết thúc bằng ký hiệu $\square$
+  - suggest: Đổi thành Q.E.I. hoặc ghi chú rõ (mục chung cho cả phần)
+- **NHE / THEM**, Dòng 10 và 12 (ngoài blockquote)
+  - source: (không có trong nguồn)
+  - now: Chú thích hình in nghiêng: 'Sơ đồ minh họa được dùng lại từ Phần I...' và ghi chú nguồn scan khoảng trang 495-507, OCR đọc 'XLIL', hàng bảng bị hỏng
+  - suggest: Là lời biên tập không thuộc Newton nằm ngoài blockquote; chuyển vào blockquote [Chú giải] hoặc comment HTML
+- **NHE / THEM**, So sánh các sao chổi, dòng 130
+  - source: the periodic times ... cannot be accurately enough determined but by comparing comets together which appear at different times
+  - now: Nhưng không thể xác định chính xác đủ ... nếu chỉ dựa vào một sao chổi
+  - suggest: Cụm 'nếu chỉ dựa vào một sao chổi' là diễn giải thêm; nguồn nói 'ngoại trừ bằng cách so sánh các sao chổi'. Có thể bỏ hoặc đổi cho sát
+- **NHE / THUATNGU**, Dòng 20 và 156
+  - source: in its perigeon, or at least not far from it ... its perihelion in P
+  - now: ở cận điểm ... Cận điểm Mặt Trời ở
+  - suggest: 'perigeon' của sao chổi (gần Mặt Trời) và 'perihelion' cùng dịch là cận điểm; nên thống nhất, ví dụ 'cận nhật' cho perihelion hoặc ghi rõ cận điểm của quỹ đạo
+- **NHE / CHUGIAI**, Chú giải dòng 120-124
+  - source: Newton: periodic times ... cannot be accurately enough determined but by comparing comets
+  - now: Ông biết một con sao chổi không đủ ... độ lệch tâm và thời gian tuần hoàn bị ràng buộc vào nhau; 'Ba điểm chưa đủ ... Proposition này nói rõ'; 'thử ba cách'
+  - suggest: Câu 'độ lệch tâm và thời gian tuần hoàn bị ràng buộc' Newton không nói; 'nói rõ ba điểm chưa đủ' là suy diễn; Operation 1 là phép tính nền chứ không phải một cách thử. 'Triệt tiêu' nên đổi thành 'hai phương trình mG-mg+nG-nγ khớp với 2G-2C'. Nên bỏ phần gán hoặc nêu đây là diễn giải
+- **NHE / CHUGIAI**, Chú giải dòng 124 và 126
+  - source: (lỗi gõ)
+  - now: 'giả sách quỹ đạo là parabol'; 'kho vựn cầu khổng lồ'
+  - suggest: Sửa: 'giả sử'; 'kho hình cầu'. Cũng nên hạ dấu ngoặc kép quanh 'không thể dùng một con sao chổi để biết chu kỳ' vì không phải trích nguyên văn Newton
+- **NHE / SOLIEU**, Bảng dòng 199 (hàng 13 tháng Một, vĩ độ tính được)
+  - source: OCR đọc: "T 27.6.39 / 3.7.4U" (vĩ độ tính được Bắc 3°7'4_)
+  - now: vĩ độ Bắc $3^\circ06'00''$
+  - suggest: Không xác định được từ OCR chữ số cuối; nhưng 3°06'00'' không khớp với OCR (3°7'4_), cần kiểm scan
+- **NHE / THIEU**, Dòng 162-165 và 168
+  - source: with heliocentric latitude south 16° 1?' 45"; ... 11h. 52' P.M. equal time at London
+  - now: "vĩ độ nhật tâm [OCR không rõ] 16°[OCR không rõ]" (không có "Nam"); "chiều theo giờ London" (mất "equal time")
+  - suggest: Thêm "Nam" sau "vĩ độ nhật tâm"; thêm "thời gian đều" (equal time) trước "tại London"
+- **NHE / KHAC**, Bảng dòng 202 (hàng 22 tháng Hai)
+  - source: Feb 22, 8h46': observed Long. 28°29'46", Lat. N. 8°12'36"; computed 28°29'58", 8°10'25" (cũng lặp ở nguồn: 28°29'46" và 8°12'36")
+  - now: Kinh độ/vĩ độ đều để "[OCR không rõ]"
+  - suggest: Điền 28°29'46'' và 8°12'36'' (quan sát), 28°29'58'' và 8°10'25'' (tính được); các hàng khác (ngày 3, 4, 7, 19-22, 26-28, 31/12) cũng có kinh độ đọc được trong OCR
+- **NHE / THEM**, Dòng 182, 204, 206
+  - source: (nguồn không có tiêu đề hay ghi chú nào ở đây)
+  - now: ### Bảng so sánh vị trí sao chổi; *[Bảng OCR bị hỏng ... phải đối chiếu toàn bộ bảng với scan.]*; ## Những quan sát đối với sao chổi năm 1664 và 1665
+  - suggest: Các tiêu đề và ghi chú in nghiêng nằm ngoài blockquote là lời biên tập; bỏ hoặc chuyển vào khối **[Chú giải]**
+- **NHE / SOLIEU**, Dòng 171
+  - source: the latus rectum of the parabola was 4102S6 such parts as the sun's mean distance from the earth is supposed to contain 100UOO
+  - now: Latus rectum của parabol là [OCR không rõ] phần
+  - suggest: OCR đọc được 410286 (với 100000); nên điền 410286 sau khi kiểm scan
+- **NHE / SOLIEU**, Prop. XLII, dong 374-378
+  - source: difference of the longitude ... was 45' or 46', or, taking a mean quantity, 45' 30"
+  - now: 45' hoặc 46'' (46 giây)
+  - suggest: Gõ sai dấu: phải là 46' (phút), không phải 46''. Sửa "46'".
+- **NHE / SOLIEU**, Prop. XLII, dong 436
+  - source: we are to subduct about 2' when the comet was swiftest
+  - now: ta phải trừ đi khoảng 2 khi sao chổi chạy nhanh nhất
+  - suggest: Thiếu đơn vị phút: OCR đọc "about 2'". Sửa thành "khoảng 2'".
+- **NHE / THEM**, Prop. XLII, dong 359,365,371,389,419,449,461
+  - source: (không có; chỉ là ký hiệu cung hoàng đạo bị OCR đọc hỏng)
+  - now: [OCR\ không\ rõ] chen vào công thức nhiều chỗ
+  - suggest: Marker "[OCR không rõ]" nằm ngoài blockquote trong phần dịch; nên thay bằng ký hiệu cung (nếu đối chiếu ảnh được) hoặc chú thích rõ, không để marker trong công thức.
+- **NHE / THEM**, Prop. XLII, dong 442 và 444
+  - source: The annual parallax of both these comets (this and the preceding) was very conspicuous
+  - now: parallax thường niên của cả hai sao chổi này, tức sao chổi năm 1665 và sao chổi trước đó; ### Sao chổi năm 1683
+  - suggest: Nguồn không nêu năm 1665; chỉ "this and the preceding". Tiêu đề "### Sao chổi năm 1683" là lời biên tập thêm (nguồn là đoạn liền mạch). Dòng 442 còn bắt đầu bằng một dấu cách thừa.
+- **NHE / SAINGHIA**, General Scholium, dòng 559
+  - source: Lord God, -rra'TOKpaTup, or Universal Rider (OCR; 'Ruler' bị đọc hỏng)
+  - now: Chúa Trời, $\pi\alpha\tau\eta\rho$ hay Đấng Cầm Quyền vạn quyền
+  - suggest: Chữ Hy Lạp trong nguồn OCR đọc ra '-rra'TOKpaTup' (có 'TOKpaT-'), không giống 'πατηρ'; từ cuối OCR là 'Rider'. Chữ Hy Lạp đúng không xác định được từ OCR; bản dịch đã thay bằng một chữ khác. Đề xuất đối chiếu scan, không giữ πατηρ nếu không đọc được.
+- **NHE / SAINGHIA**, General Scholium, dòng 581
+  - source: Whence also he is all similar, all eye, all ear, ... in a manner not at all human, in a manner not at all corporeal, in a manner utterly unknown to us.
+  - now: Ngài là mọi hình dạng, là mọi mắt ... không hoàn toàn có thân xác, mà hoàn toàn chúng ta chưa biết.
+  - suggest: 'all similar' (OCR) bị dịch 'mọi hình dạng' (không có cơ sở trong OCR); 'not at all corporeal' (hoàn toàn không có thân xác) bị dịch 'không hoàn toàn có thân xác' (đảo nghĩa); câu cuối 'hoàn toàn chúng ta chưa biết' sai ngữ pháp. Sửa: 'hoàn toàn không phải theo cách của con người, hoàn toàn không phải theo cách của thân xác, theo cách hoàn toàn chúng ta không biết'.
+- **NHE / THUATNGU**, dòng 551, 569, 593
+  - source: the parity of reason must take place ... every indivisible moment of duration ... from the appearances of things, does certainly belong to Natural Philosophy
+  - now: Sự cân bằng của lý trí ... khoảnh thời tử vi nhất ... dựa trên những hình ảnh của sự vật
+  - suggest: 'parity of reason' dịch sai (nên 'lý lẽ tương tự/cùng một lý lẽ'); 'indivisible' thành 'tử vi nhất' (vô nghĩa); 'appearances' thành 'hình ảnh' trong khi 'phenomena' dịch 'hiện tượng'; 'duration' dịch 'thời lâu' (565) và 'thời gian' (567); 'dominion' dịch 'quyền lực' ở dòng 555 nhưng 'quyền cai trị' sau đó; 'zodiac' (dòng 497) dịch mơ hồ 'dải sao'. Thống nhất.
+- **NHE / THIEU**, General Scholium, dòng 559-579 (chú thích của nguồn)
+  - source: * Dr. Pocock derives the Latin word Deus from the Arabic du ... t This was the opinion of the Ancients. So Pythagoras, in Cicer. de Nat. Deor. lib. i ... Thales, Anaxagoras, Virgil ...
+  - now: Hai chú thích cuối trang của nguồn (về chữ Deus và về quan niệm của người xưa) không có; dòng 563 lại tự thay 'God' bằng *Deus* trong câu 'The word God usually signifies Lord'.
+  - suggest: Thêm hai chú thích nguồn (đánh dấu là chú thích của Motte/nguồn) và sửa dòng 563 thành 'Chữ Chúa (God) thường có nghĩa là Chúa tể'. Chú thích có thể thuộc người biên tập 1846 chứ không phải Newton; cần chủ nhân quyết định.
+- **NHE / THEM**, dòng 484, 507, 517, 491, 595
+  - source: (không có trong nguồn: tiêu đề mục và ghi chú biên tập)
+  - now: *[Bảng gồm hai phần ... cần được đối chiếu trực tiếp với scan trang 500-501.]* ; '### Ngôi sao xuất hiện năm 1572'; '### Ngôi sao xuất hiện năm 1604'; '## Những điều còn lại của Sách III'; '## Kết thúc Sách III'
+  - suggest: Ghi chú in nghiêng ở dòng 484 và các tiêu đề mục tự đặt nằm ngoài blockquote là lời biên tập; tiêu đề năm 1604 còn chứa cả câu về Hipparchus, sao biến quang và hơi nước, không thuộc 1604. Thêm lời biên tập vào chú giải hoặc comment HTML; bỏ hoặc chuyển các tiêu đề.
+- **NHE / CHUGIAI**, dòng 525-535 (Chú giải sao 1572 và 1604)
+  - source: Such a new star appearing with an unusual splendor is said to have moved Hipparchus to observe, and make a catalogue of, the fixed stars.
+  - now: Newton còn nói một ngôi sao mới ... đã khiến Hipparchus lập danh mục ... tức ông nối hiện tượng 1604 với khai sinh của thiên văn học. ... ở Thiên Xứng ... ở Xà Bàng ... 9-11 nghìn năm ánh sáng
+  - suggest: HỢP LÍ MỘT PHẦN. Phần tóm tắt nguồn đúng, nhưng: Newton chỉ viết 'is said to' (người ta nói) và không nối với 1604 hay 'khai sinh thiên văn học'; 'bằng chứng sớm nhất trong lịch sử' là khẳng định cần nguồn; 'Thiên Xứng' là Libra (Cassiopeia là chòm khác), 'Xà Bàng' không phải tên quen của Ophiuchus (thường 'Xà Phu'); khoảng cách 9-11 nghìn năm ánh sáng cần nguồn; ghép 'sao biến quang' và 'siêu tân tinh tạo nguyên tố nặng' như hậu duệ của ý tưởng nhiên liệu là liên hệ lỏng; 'phồng xẹp co lại' lủng củng.
+- **NHE / CHUGIAI**, dòng 613-627 (Chú giải Newton nói thẳng điều ông không biết)
+  - source: we might add something concerning a certain most subtle Spirit ... nor are we furnished with that sufficiency of experiments ... to an accurate determination ... of the laws by which this electric and elastic Spirit operates
+  - now: Trước đó ông đã dựng lại cả ba nhóm lực ... Thần xí tinh tế kia, với các đường sức ... vẫn chưa có một lời giải thích dạng phương trình nào ... phần lớn những gì ông gọi bằng tên ấy vẫn còn ở tình trạng đó.
+  - suggest: KHÔNG HỢP LÍ. 'Ba nhóm lực' không có trong đoạn này của Newton (bịa); Newton viết 'we might add' (có thể thêm) chứ không 'đặt' Thần khí để giải thích; 'bị đẩy' sao chổi trong bác xoáy không có trong nguồn; 'lý do ông dừng ở trọng lực' là gán động cơ; khẳng định chưa có phương trình cho điện, ánh sáng, cảm giác ('đường sức') sai/mơ hồ về vật lí (có điện từ học); lỗi gõ 'ôn bám', 'đặt một thần lý trí', 'Thần xí', 'nhận nhường'.
+
+## 68-he-thong-thoi-gioi.md
+
+- *phần 1/14: Chương 68, phần 1/14 (dòng 1-73): mở đầu Hệ thống thế giới, lịch sử cổ đại, lực hướng tâm, thí nghiệm ném đá/núi, các lực hướng về Mặt Trời-Trái Đất-hành tinh, tới câu về Mặt Trăng (OCR dòn*
+- *phần 2/14: Chương 68, phần 2/14 (dòng 74-146): phần Hệ thống thế giới về các hiện tượng, từ vệ tinh sao Mộc/Thổ, sao Kim/Thủy, sao Hỏa, sao Mộc, đến bảng khoảng cách hành tinh và khoảng cách Mặt Trăng*
+- *phần 3/14: Chương 68, phần 3/14 (dòng 147-218): khúc xạ Tycho và khoảng cách Mặt Trăng (60 bán kính), lực cầu Trái Đất giảm theo tỷ lệ lặp, so sánh lực Mặt Trời/sao Mộc/sao Thổ/Trái Đất, khác sai Mặt *
+- *phần 4/14: Chương 68, phần 4/14 (dòng 219-290): System of the World - cuối đoạn đo đường kính hành tinh, tương ứng lực-vật thể, thí nghiệm con lắc vàng-gỗ, tác dụng tương hỗ (Mặt Trời-sao Mộc, sắt-đá *
+- *phần 5/14: Chương 68 (Hệ thống thế giới), phần 5/14, dòng 291-362: từ "Mặt Trời là tâm chuyển động tuyệt đối, đứng yên" đến thủy triều "giờ thứ ba"; không có hình, không có Chú giải trong phạm vi này*
+- *phần 6/14: Chuong 68, phan 6/14 (dong 363-436): Hệ thống thế giới, đoạn thủy triều (từ "Tôi tính các giờ ấy" đến "độ lớn của thủy triều phụ thuộc vào độ lớn của biển"); đối chiếu ia.txt dòng 30318-306*
+- *phần 7/14: Chương 68 (Hệ thống thế giới), phần 7/14, dòng 437-508: đoạn thủy triều (hình bầu dục biển EADB, bờ biển/đảo, tính lực TM và ML, kênh ACEmIk, spheroid Aa-Ff-fh, công thức VG^3/2RE^3 L ± TF^*
+- *phần 8/14: Chương 68 (Hệ thống thế giới), phần 8/14, dòng 509-580: cuối đoạn tính L/S từ thủy triều Bristol, lực lên các vật trên Trái Đất, tỉ số mật độ/khối của Mặt Trăng-Trái Đất-Mặt Trời, khoảng cá*
+- *phần 9/14: Chương 68, phần 9/14 (dòng 581-652): Hệ thống thế giới, đoạn sao chổi - thị sai, độ sáng đầu/nhân, đuôi (1668, 1682, 1665, 1679), Aristotle, Justin, sao chổi 1101/1106, 1264. Không có hình,*
+- *phần 10/14: Chương 68 (Hệ thống thế giới), phần 10/14, dòng 653-736: các ví dụ sao chổi 1401/1402-1668 và sao chổi 1680, phần Hệ quả về sao chổi, ba ý kiến về đuôi sao chổi, bác bỏ khúc xạ (1680 và 15*
+- *phần 11/14: Chương 68, phần 11/14 (dòng 737-806): đuôi sao chổi (Kepler, độ lệch, cực hạn khoảng cách, ví dụ sao chổi 1680), ba giả thuyết về sao chổi, Hệ quả VII Prop. XVI, Bảng I; chú giải dòng 771-*
+- *phần 12/14: Chương 68, phần 12/14 (dòng 807-870): Bảng II, ví dụ sao chổi 1680/1681, 1618, 1607, 1665, 1682, 1472, vận tốc sao chổi, Bài toán I (đầu). Không có hình, không có Chú giải trong phần này.*
+- *phần 13/14: Chương 68, phần 13/14 (dòng 871-942): đoạn dẫn về phương pháp tính sao chổi, Lemma I (dựng tuyến tính, lượng giác, số học), tiêu đề Lemma II. Nguồn ia.txt dòng 32134-32246. Không có chú gi*
+- *phần 14/14: Chương 68 (Hệ thống thế giới), phần 14/14, dòng 943-1015: nửa cuối Lemma II, Lemma III, IV, V, Bài toán I, Bài toán II (đối chiếu với ia.txt dòng 32242-32411); không có blockquote Chú giải*
+
+- **NANG / SAINGHIA**, Dòng 46 (đoạn ném vận tốc lớn dần)
+  - source: till at last, exceeding the limits of the earth, it should pass quite by without touching it.
+  - now: cho đến khi cuối cùng vượt ra ngoài giới hạn Trái Đất và trở lại ngọn núi nơi nó được ném.
+  - suggest: Nguồn nói vật "đi lướt qua hẳn mà không chạm tới" Trái Đất; "trở lại ngọn núi" là ý của đoạn sau (dòng 52), không có ở đây. Sửa: "...vượt ra ngoài giới hạn Trái Đất, đi lướt qua hẳn mà không chạm tới nó."
+- **NANG / SAINGHIA**, Dòng 10 (câu mở đầu)
+  - source: the planets were carried about the sun; the earth ... described an annual course about the sun, while by a diurnal motion it was ... revolved about its own axis
+  - now: các hành tinh ở dưới chúng được Mặt Trời mang đi; Trái Đất ... mỗi năm lại quanh Mặt Trời, đồng thời quay quanh trục
+  - suggest: "carried about the sun" là bị mang đi QUANH Mặt Trời, bản dịch thành "Mặt Trời mang đi" (đổi chủ thể, mất "quanh"); "annual course" bị mất, câu "mỗi năm lại quanh Mặt Trời" thiếu động từ. Sửa: "được mang quanh Mặt Trời ... mô tả một hành trình hằng năm quanh Mặt Trời".
+- **NANG / THIEU**, Dòng 54 (diện tích tỷ lệ thời gian)
+  - source: the areas which ... it describes by a radius drawn to the centre of the earth are (by Prop. 1, Book 1, Princip. Math.) proportional to the times
+  - now: Vì những diện tích mà vật thể ấy mô tả bằng các bán kính kẻ tới tâm Trái Đất tỷ lệ thuận với thời gian mô tả
+  - suggest: Mất viện dẫn "(theo Proposition I, Sách I, Các nguyên lý toán học)" mà lập luận dựa vào. Thêm vào sau "tỷ lệ thuận với thời gian mô tả".
+- **NANG / CHUGIAI**, Chú giải dòng 32-42
+  - source: Nguồn: solid orbs introduced "of a later date ... when the ancient philosophy began to decline"; "we would not be understood to determine [the nature of the force] by any hypothesis"
+  - now: "Từ các ý tưởng cổ ấy mà sinh ra mô hình quả cầu rắc"; "thứ mà ta biết là không có cơ chế, như năng lượng tối"
+  - suggest: KHÔNG HỢP LÍ: (1) trái nguồn: quả cầu rắn được đưa vào muộn hơn, khi triết học cổ suy tàn, không "sinh ra từ" các ý tưởng Nhật tâm cổ; (2) "biết là không có cơ chế" sai, năng lượng tối là chưa biết cơ chế, không phải biết là không có; (3) câu "không phải vì lý thuyết sai về rõ ràng" lủng củng. Phần tóm mục đích (lực hướng tâm, "bằng toán học") thì HỢP LÍ. Nên sửa hoặc bỏ hai câu đầu và câu năng lượng tối.
+- **NANG / THIEU**, dòng 80
+  - source: These are astronomical experiments; from which it follows, by Prop. I, II, III, in the first Book of our Principles, and their Corollaries, that there are centripetal forces actually directed (either accurately or without considerable error) to the centres of the earth, of Jupiter, of Saturn, and of the sun. In Mercury, Venus, Mars, and the lesser planets, where experiments are wanting, the arguments from analogy must be allowed in their place.
+  - now: theo Proposition I, các lực hướng tâm thực sự hướng về tâm Trái Đất, sao Mộc, sao Thổ và Mặt Trời.
+  - suggest: Thêm: viện dẫn Prop. I, II, III cùng các Hệ quả; cụm "(either accurately or without considerable error)" (chính xác hoặc không có sai số đáng kể); và cả câu "Ở sao Thủy, sao Kim, sao Hỏa và các hành tinh nhỏ hơn, nơi thiếu thí nghiệm, phải chấp nhận các lập luận loại suy thay vào chỗ đó."
+- **NANG / THIEU**, dòng 93 (sau bảng)
+  - source: Whence the sesquiplicate proportion may be easily seen. For example; the 16d. 18h. 05' 13" is to the time 1d. 18h. 28' 36" as 493½" x sqrt 493½" to 108 x sqrt 108", neglecting those small fractions which, in observing, cannot be certainly determined.
+  - now: (không có)
+  - suggest: Thêm câu: "Từ đó dễ thấy tỷ lệ 3/2. Chẳng hạn, 16 ngày 18 giờ 05' 13" so với 1 ngày 18 giờ 28' 36" như 493½" x căn 493½" so với 108 x căn 108", bỏ qua những phân số nhỏ không thể xác định chắc chắn khi quan sát."
+- **NANG / THIEU**, dòng 84-93
+  - source: Before the invention of the micrometer, the same distances were determined in semi-diameters of Jupiter thus: By Galileo 6, 10, 16, 28; Simon Marius 6, 10, 16, 26; Cassini 5, 8, 13, 23; Borelli 5⅔, ?, 14, 24½ ... After the micrometer: Townley 5,51 8,78 13,47 24,72; Flamsted 5,31 8,85 13,98 24,23; more accurately by the eclipses 5,578 8,876(OCR 18.876) 14,159(OCR) 24,903
+  - now: (không có)
+  - suggest: Thiếu cả hai bảng khoảng cách (trước và sau khi có micrometer, tính bằng bán kính sao Mộc) và câu dẫn; riêng dòng 24,903/14,159 của hàng "theo nhật thực" và ô Borelli thứ hai không xác định được từ OCR, cần đối chiếu bản scan khi bổ sung. Cũng thiếu câu "And the distances thence computed are ... accurately agreeing with the distances by observation" ở dạng đầy đủ (bản dịch chỉ nhét cột khoảng cách tính vào bảng).
+- **NANG / SOLIEU**, dòng 88-91 (cột độ giãn dài)
+  - source: greatest elongation: 1st 1' 48" or 108"; 2d 3' 01" or 181"; 3d 4' 46" or 286"; 4th 8' 13½' or 493½" (đơn vị phút ' và giây ")
+  - now: $1^\circ48' = 108''$; $3^\circ01' = 181''$; $4^\circ46' = 286''$; $8^\circ13\frac12' = 493\frac12''$
+  - suggest: Sai đơn vị: 108" = 1'48" chứ không phải 1°48'. Sửa thành $1'48'' = 108''$, $3'01'' = 181''$, $4'46'' = 286''$, $8'13\frac12'' = 493\frac12''$.
+- **NANG / SOLIEU**, dòng 91 (vệ tinh thứ tư)
+  - source: periodic time 4th: 16d 18h 5' 13" (OCR "16 18 5 13"; nguồn dòng sau cũng ghi 16d. 18h. 5' 13")
+  - now: 16 ngày 15 giờ 5 phút 13 giây
+  - suggest: Sửa 15 giờ thành 18 giờ (dòng 103 của chính bản dịch đã ghi 18 giờ, mâu thuẫn nội bộ).
+- **NANG / SAINGHIA**, dòng 95
+  - source: from its appearing full near conjunction with the sun, and gibbous in its quadratures, it is certain that it surrounds the sun.
+  - now: Khi ở gần hợp hội với Mặt Trời, nó có vẻ như bị che khuất; khi ở phản vị, ta thấy nó gần tròn đầy.
+  - suggest: Sai: nguồn nói gần hợp hội thì sao Hỏa hiện đầy (tròn), còn ở các cầu phương (quadratures) thì lồi/khuyết (gibbous). Sửa: "vì nó hiện tròn đầy khi gần hợp hội với Mặt Trời và hiện lồi (gần tròn) ở các cầu phương, nên chắc chắn nó bao quanh Mặt Trời."
+- **NANG / SAINGHIA**, dòng 97
+  - source: in both cases its distance from the sun will be nearly about the same with the distance which is inferred from its gibbous appearance in the quadratures.
+  - now: gần với khoảng cách suy ra từ dạng gần tròn đầy của nó trong các phản vị.
+  - suggest: Sai: "quadratures" bị dịch thành "phản vị" (opposition). Sửa thành "trong các cầu phương" (và sửa nhất quán với dòng 95).
+- **NANG / SAINGHIA**, dòng 103
+  - source: taking as the periodic time 16d. 18h. 5' 13" to 2' in time, so is the whole circle or 360° to the arc 1' 48", the error of Mr. Flamsted's computation ... will be less than 1' 48"
+  - now: lấy thời gian quay là 16 ngày 18 giờ 5 phút 13 giây, thì toàn bộ vòng tròn 360° sẽ tương ứng với cung 1'48". Sai số ... nhỏ họn 1'48"
+  - suggest: Mất tỉ lệ thức: "chu kỳ 16d 18h 5' 13" so với 2 phút thời gian cũng như cả vòng tròn 360° so với cung 1'48"". Bản dịch bỏ vế "2 phút thời gian" (và nói sai là "sai số 2'" trong chuyển động) nên lập luận mất nghĩa. Sửa cả lỗi gõ "họn" thành "hơn".
+- **NANG / SAINGHIA**, dòng 147 (đoạn Tycho)
+  - source: But [OCR: Cut] Tycho, and all that follow his tables of refraction, making the refractions of the sun and moon ... to exceed those of the fixed stars ... did thereby augment the horizontal parallax of the moon
+  - now: Bỏ Tycho và mọi bảng khúc xạ kế thừa từ ông, khiến việc khúc xạ ... lớn hơn ... người ta đã làm tăng khác sai số ngang của Mặt Trăng
+  - suggest: Chủ ngữ là Tycho và những người theo bảng của ông; họ đã làm tăng khác sai. Dịch "Bỏ" thành mệnh lệnh làm câu sai nghĩa và lủng củng. Đề nghị: "Nhưng Tycho, và tất cả những ai theo các bảng khúc xạ của ông, vì cho khúc xạ của Mặt Trời và Mặt Trăng ... lớn hơn ... nên đã làm tăng khác sai ngang của Mặt Trăng ..."
+- **NANG / SAINGHIA**, dòng 157 (Prop. LX, bán kính quỹ đạo Mặt Trăng)
+  - source: describe an orbit whose semi-diameter is to the semi-diameter of the former orbit, that is, to 60 semi-diameters of the earth, as the sum of both the bodies ... to the first of two mean proportionals between this sum and the body of the earth
+  - now: mô tả một quỹ đạo có bán kính lớn bằng 60 bán kính Trái Đất như quỹ đạo trước đó, cộng với tỷ lệ giữa tổng lượng vật chất ... với hai trung bình nhân lần đầu giữa tổng ấy và ...
+  - suggest: Bản dịch biến tỉ lệ thức thành phép cộng (60 bán kính "cộng với" một tỉ số). Phải là: bán kính quỹ đạo này so với bán kính quỹ đạo trước (60 bán kính Trái Đất) bằng tổng hai vật thể so với số trung bình nhân thứ nhất trong hai số trung bình nhân giữa tổng ấy và vật thể Trái Đất.
+- **NANG / SAINGHIA**, dòng 159 (khối lượng Mặt Trăng)
+  - source: if we suppose the moon (on account of its mean apparent diameter 31 1/2') to be about [phân số OCR mất] of the earth, as 43 to [42], or as about 128 to 127
+  - now: Nếu giả sử Mặt Trăng ... có lượng vật chất bằng khoảng 43/42 lần Trái Đất, tức khoảng 128 trên 127
+  - suggest: Nguồn nói Mặt Trăng bằng một phân số của Trái Đất (OCR mất phân số) và 43 trên 42 là tỉ số của tổng (Trái Đất+Mặt Trăng) so với Trái Đất; bản dịch gán 43/42 lần Trái Đất cho riêng Mặt Trăng, mâu thuẫn với tỉ số 128 trên 127. Cũng rơi ½ ở "31½'" (OCR 31^'). Cần sửa theo bản scan.
+- **NANG / SOLIEU**, dòng 191 (đường kính Mặt Trời)
+  - source: and the diameter of the sun about 32' 13"
+  - now: và đường kính Mặt Trời khoảng $32\frac13''$
+  - suggest: OCR đọc 32 phút 13 giây (32'13"). Bản dịch ghi 32⅓ giây (đơn vị sai, lệch hai bậc). Sửa thành khoảng $32'13''$.
+- **NANG / SAINGHIA**, dòng 193 và 217 (tên người)
+  - source: according to Gullet-ins [OCR; về sau cùng tên đọc "Galletius"], as 4 to 10 ... To Hevelius, Galletius, and Dr. Halley, Mercury did not seem to exceed 12" or 15"
+  - now: theo Cassini; theo Hevelius, Galileus và tiến sĩ Halley
+  - suggest: Tên "Cassini" (dòng 193) không có trong OCR; OCR đọc "Gullet-ins", giống "Galletius" ở dòng 217. Dòng 217 lại dịch "Galileus", khác với "Galletius" của OCR. Đề nghị đối chiếu scan; theo OCR thì dùng "Galletius" ở cả hai chỗ, không dùng Cassini.
+- **NANG / SOLIEU**, dòng 219 (đường kính Mặt Trời)
+  - source: the diameter of the sun, because of its stronger light, is to be diminished something more, and to be reckoned about 32', or 32' 6" (OCR: "32',  or  32'  61'")
+  - now: ước tính vào khoảng $32''$, hoặc $32'6''$
+  - suggest: Đường kính Mặt Trời là 32 phút cung chứ không phải 32 giây cung: sửa "$32''$" thành "$32'$" (vế sau $32'6''$ đã đúng).
+- **NANG / SOLIEU**, dòng 309 (sai số của sao Thổ)
+  - source: In Saturn itself the error thence arising does not exceed 1' 45''.
+  - now: Ở chính sao Thổ, sai số phát sinh từ đó không vượt quá $\frac{1}{45}$.
+  - suggest: OCR đọc 1' 45'' (một phút cung 45 giây cung), không phải phân số 1/45. Sửa thành $1'\,45''$.
+- **NANG / SAINGHIA**, dòng 311 (Prop. XV)
+  - source: the longer axes of their elliptic orbits would (by Prop. XV) be as the cubic roots of the squares of their periodic times
+  - now: Trục lớn của các quỹ đạo ellipse của chúng sẽ là lập thể bậc ba của bình phương các thời gian quay
+  - suggest: "cubic roots" là căn bậc ba; "lập thể" ở dòng 121 chỉ lập phương nên đảo căn thành lũy thừa. Sửa: tỷ lệ với căn bậc ba của bình phương các thời gian quay.
+- **NANG / SAINGHIA**, dòng 333 (Tycho, octant)
+  - source: Tycho, and others after him, referred this inequality to the octants of the moon, and made it menstrual
+  - now: Tycho và những người sau ông ... coi nó là bất biến theo chu kỳ mặt trăng
+  - suggest: "menstrual" nghĩa là có chu kỳ theo tháng, đối lập với "annual" ở câu sau; "bất biến" là sai nghĩa. Sửa: coi nó có chu kỳ tháng.
+- **NANG / SAINGHIA**, dòng 339 (Prop. LXVI, diện tích Mặt Trăng)
+  - source: the area ... is nearly as the sum of the number 237 ... and versed sine of the double distance ... the square of the moon's distance ... is as that sum divided by the horary motion
+  - now: gần bằng tổng của số 237 2/3 và bản đảo của hai lần khoảng cách ... bình phương khoảng cách ... bằng tổng ấy chia cho chuyển động theo giờ
+  - suggest: "is as" là tỷ lệ, bị dịch thành "bằng"; "versed sine" (sin ngược/độ rủ, 1-cos) bị dịch thành "bản đảo" (ở cả hai chỗ). Sửa: gần tỷ lệ với tổng ...; "sin ngược (versed sine)".
+- **NANG / SAINGHIA**, dòng 363 (lặp ở 391, 395, 415, 421)
+  - source: The hours I reckon from the appulse of each luminary to the meridian of the place, as well under as above the horizon
+  - now: từ lúc mỗi thiên thể sáng đi qua đường chân trời của địa điểm, cả khi ở dưới cũng như ở trên đường chân trời
+  - suggest: "meridian" bị dịch thành "đường chân trời" (cả "to the meridian of the place" lẫn "appulse of the moon to the meridian above/under the horizon"); sửa thành "kinh tuyến" ở 363, 391, 395, 415, 421 và các chỗ tương ứng
+- **NANG / SAINGHIA**, dòng 365
+  - source: In the conjunction or opposition of the luminaries their forces will be conjoined, and bring on the greatest flood and ebb
+  - now: Khi hai thiên thể ở hợp hội hoặc phách hành, lực của chúng cộng hưởng và tạo ra thủy triều lớn nhất
+  - suggest: "conjunction or opposition" (=syzygies) dịch thành "hợp hội hoặc phách hành", mà "phách hành" ngay câu sau và ở 367 lại là quadratures; mâu thuẫn nội tại, nên sửa thành "hợp hội hoặc đối xung" (hoặc "hợp hội" như các chỗ khác)
+- **NANG / SAINGHIA**, dòng 373 (nối từ 369)
+  - source: before or after, when it is in its apogee
+  - now: Ở khoảng cách mười lăm ngày trước hoặc sau, tức khi Mặt Trăng ở điểm trực
+  - suggest: "apogee" bị dịch thành "điểm trực"; phải là "viễn điểm" (đối với "cận điểm" = perigee ở 369)
+- **NANG / THUATNGU**, dòng 387
+  - source: by the revolution of that ellipsis about its longer axis a spheroid HPKhpk is formed
+  - now: cho ellipse ấy quay quanh trục dài hơn của nó là Hh để tạo thành một hình thoi HPKhpk
+  - suggest: "spheroid" (ellipsoid tròn xoay) dịch thành "hình thoi" (rhombus), sai về hình học; sửa thành "hình cầu thuôn (spheroid)" / "ellipsoid tròn xoay"
+- **NANG / SAINGHIA**, Spheroid, dòng 481
+  - source: the figure of the water will be a spheroid made by the revolution of an ellipsis about its longer axis ab
+  - now: hình dạng của mặt nước $Df aeb$ sẽ là một hình thoi tạo thành bởi sự quay của một ellipse quanh trục dài hơn
+  - suggest: "hình thoi" (rhombus) sai nghĩa; spheroid là khối tròn xoay do ellipse quay quanh trục, nên dịch "hình cầu thuôn / ellipsoid tròn xoay (spheroid)".
+- **NANG / SAINGHIA**, Avon, dòng 501
+  - source: the whole ascent of the water in the conjunction or opposition of the luminaries ... about 45 feet, but in the quadratures only 25
+  - now: trong hợp hội hoặc phách hành của các thiên thể sáng ... xấp xỉ 45 foot, còn trong phách hành chỉ khoảng 25 foot
+  - suggest: "phách hành" được dùng cho cả "opposition" lẫn "quadratures" nên tự mâu thuẫn; chương dùng "phách hành" cho quadrature (xem dòng 325, 365); đổi vế đầu thành "hợp hội hoặc xung (opposition)".
+- **NANG / THUATNGU**, equinoxes, dòng 501
+  - source: the declinations of the sun in the equinoxes and of the moon in the syzygies are of no quantity
+  - now: vĩ độ của Mặt Trời vào các điểm cố định và vĩ độ của Mặt Trăng trong các hợp hội đều bằng không
+  - suggest: "equinoxes" bị dịch thành "điểm cố định" (cùng lỗi ở dòng 377 ngoài phần này); đổi thành "các điểm phân (equinox)".
+- **NANG / THUATNGU**, declination, dòng 485, 487, 501
+  - source: latitude of places ... the sun's declination ... versed sines of double the complements of the sun and moon's declinations
+  - now: do vĩ độ địa điểm hay do vĩ độ của Mặt Trời ... số bù của vĩ độ Mặt Trời và Mặt Trăng
+  - suggest: "declination" (xích vĩ) bị dịch thành "vĩ độ", trùng với "latitude of places" nên hai đại lượng bị lẫn; dịch "độ lệch / xích vĩ (declination)" và giữ "vĩ độ" cho "latitude".
+- **NANG / SOLIEU**, dòng 533, 535 (tỉ số mật độ Trái Đất/Mặt Trời)
+  - source: "the body of the earth will be less in the triplicate of that ratio, that is, in the ratio of 3
+  - now: 
+  - suggest: [OCR] to 1 ... moon's density ... as 5T\ to 3f f, or as 23 to 16"|"theo tỷ lệ $3\frac23$ trên $1$ ... $5\frac{7}{10}$ trên $3\frac23$, hay $23$ trên $16$"|OCR đọc phân số là "3||"/"3f f" (hai chữ số trên mẫu), không phải 2/3. 3⅔ cũng không cho 23:16 (5,7/3,667=1,55), còn (30/18,954)^3≈3,965 thì cho 1,4375=23/16. Xem lại ảnh scan; số đúng gần 3 và gần 1 (khoảng 3,97)
+- **NANG / SOLIEU**, dòng 531 (hiệu ứng Mặt Trăng/Mặt Trời)
+  - source: "the effect of the moon is to the effect of the sun as about 5
+  - now: to 1 ... compounded of 5-^- to 1, and the triplicate of 45 to 46 inversely, that is ... about 5^ to 1" (OCR "5
+  - suggest: " giống "5|S" ở 30840, bản dịch là 5⅓)|"Mặt Trăng so với hiệu ứng của Mặt Trời xấp xỉ $5\frac12$ trên $1$ ... tạo thành từ $5\frac12$ trên $1$ và nghịch đảo lũy thừa ba của $45$ trên $46$, tức xấp xỉ $5\frac{7}{10}$"|Hai chỗ "5½" nhiều khả năng phải là 5⅓ (khớp L=5⅓S ở dòng 525): 5⅓×(46/45)^3≈5,70 đúng kết quả 5 7/10, còn 5½ cho 5,87. Kiểm lại scan rồi sửa
+- **NANG / SOLIEU**, dòng 533 (đường kính biểu kiến Mặt Trời)
+  - source: "supposing the mean apparent diameter of the sun to be 32}' " (dấu ' = phút cung)
+  - now: "nếu lấy đường kính biểu kiến trung bình của Mặt Trời là $32\frac12$ inch"
+  - suggest: Đơn vị sai: đường kính biểu kiến là góc, 32½ phút cung (32½'), không phải inch
+- **NANG / SOLIEU**, dòng 557 (đường kính biểu kiến và thị sai của sao cỡ một; lặp lại trong chú giải dòng 571)
+  - source: "its apparent diameter will be 7V. 16vi. and its parallax arising from the annual motion of the earth 13"""
+  - now: "đường kính biểu kiến của nó sẽ là $7'16''$, và thị sai ... là $13'''$"
+  - suggest: OCR đọc "7V. 16vi" (ký hiệu bậc nhỏ hơn giây cung nhiều, không phải phút/giây), không phải 7'16''. Kiểm thứ nguyên: đĩa Mặt Trời ở xa 100000 lần sao Thổ chỉ vài phần nghìn giây cung, 7'16'' thì vô lí. Cần đối chiếu scan; chính xác dấu bậc từ OCR: không xác định được hoàn toàn
+- **NANG / THUATNGU**, dòng 531, 533, 535 ("magnitude")
+  - source: "their absolute forces would be as their magnitudes ... the magnitude of the earth to the magnitude of the sun ... moon's magnitude is to the earth's magnitude as about 1 to 41 1/2"
+  - now: "tỷ lệ với các khối lượng ... khối lượng của Trái Đất với khối lượng của Mặt Trời ... khối lượng của Mặt Trăng so với Trái Đất xấp xỉ $1$ trên $41\frac12$ ... xét về khối lượng thân thể"
+  - suggest: "magnitude" (độ lớn/kích thước, thể tích thân thể) bị dịch thành "khối lượng" (mass); bản dịch đồng thời dùng "lượng vật chất" cho quantity of matter nên lẫn khái niệm, kết luận 1:41½ vs 1:29 thành khó hiểu. Đổi thành "độ lớn"/"thể tích" nhất quán
+- **NANG / SAINGHIA**, dòng 577 (sao chổi và Trái Đất)
+  - source: "if the earth is approaching to a heliocentric opposition with them"
+  - now: "nếu Trái Đất đang tiến đến vị trí phách hành heliocentric với chúng"
+  - suggest: "opposition" (xung đối) bị dịch thành "phách hành" trong khi cả chương dùng "phách hành" cho quadratures (dòng 325-367, 515). Sai nghĩa; nên là "xung/đối vị" nhật tâm
+- **NANG / SAINGHIA**, dòng 615 (sao chổi, đuôi do khói)
+  - source: the smoke arising from their heads is propagated through such a vast extent of space, and with such a velocity of expansion, as will seem altogether incredible
+  - now: lan truyền qua một phạm vi không gian rộng lớn như vậy, với tốc độ giãn ra lớn như vậy, điều hoàn toàn đáng tin
+  - suggest: Đảo nghĩa: nguồn là "altogether incredible". Sửa thành "điều hoàn toàn không thể tin được".
+- **NANG / SAINGHIA**, dòng 609 (cuối đoạn)
+  - source: they would receive no more light there from the sun than we do from the greatest of the fixed stars
+  - now: chúng sẽ không nhận được nhiều ánh sáng hơn từ Mặt Trời so với lượng ánh sáng mà chúng nhận được từ ngôi sao cố định sáng nhất
+  - suggest: Sai chủ ngữ vế sau: "we do" = chúng ta nhận. Sửa: "...so với lượng ánh sáng mà chúng ta nhận được từ ngôi sao cố định sáng nhất".
+- **NANG / THIEU**, Đoạn "Lastly" giữa dòng 667 và 671
+  - source: Lastly, the same thing is inferred (p. 466; 407) from the light of the heads increasing in the recess of the comets from the earth towards the sun... Jan. 13 it disappeared, by reason of the
+  - now: (nhảy từ dòng 667 sang dòng 671 "độ sáng của Mặt Trăng, lúc ấy đang tăng.")
+  - suggest: Thiếu khoảng 30 dòng nguồn: sao chổi 1665 và 1683 của Hevelius, sao chổi 1618 và 1680 (Cysatus, Kepler, Flamsted, Os Pegasi, các ngày 1/12, 16/12, 7/1, 12/12, 15 và 17/12, 26/12, 3/1, 9/1). Dòng 671 chỉ còn nửa câu chót "độ sáng của Mặt Trăng..." mồ côi. Cần dịch bổ sung.
+- **NANG / THIEU**, Dòng 655-657 (sao chổi 1401/1402)
+  - source: When the sun was sunk below the horizon, by the lustre of its own rays it enlightened all the borders of the earth, not permitting the other stars to shew their light... Hist. Byzant. Duc. Mich. Nepot.
+  - now: Dòng 657 vẫn là tiếng Anh nguyên văn trong blockquote; dòng 655 chỉ dịch câu đầu
+  - suggest: Dịch câu "Khi Mặt Trời lặn xuống dưới đường chân trời, bằng độ rực rỡ của chính các tia nó, nó chiếu sáng mọi miền của Trái Đất, không cho các ngôi sao khác tỏ ánh sáng..., &c." và nguồn Hist. Byzant. Duc. Mich. Nepot.; hiện chưa được dịch.
+- **NANG / SOLIEU**, Dòng 661 (sao chổi 1527)
+  - source: which continued flaming an hour and a quarter every day
+  - now: tiếp tục cháy sáng một giờ rưỡi mỗi ngày
+  - suggest: Sửa thành "một giờ mười lăm phút" ("một giờ một phần tư"); "một giờ rưỡi" là 1,5 giờ.
+- **NANG / SOLIEU**, Dòng 689 và 693 (sao chổi 1680)
+  - source: so it happened in the comet of the year 1680, when in the month of December it was scarcely equal in light to the stars of the second magnitude
+  - now: điều ấy xảy ra với sao chổi năm 1680, vào tháng Mười Một (lặp lại ở dòng 693 "vào tháng Mười Một, chỉ sáng bằng các ngôi sao cỡ hai")
+  - suggest: Nguồn OCR đọc "month of De-cember" nên sửa thành tháng Mười Hai ở dòng 693. Dòng 689 kết thúc giữa câu bằng "vào tháng Mười Một" rồi dòng 693 lặp lại cả mệnh đề (trùng do ngắt trang): bỏ phần trùng.
+- **NANG / SOLIEU**, Bảng khí quyển, dòng 715-719
+  - source: OCR: 4000: "O'.cv. 4465" và "73907 cii"; 4000000: "0,ccxii 9878" và "33414 ccix"; Infinite: "O.coxii 6041" và "54622 ccix"
+  - now: 4000: "0,xv. 4465", "73907 clii"; 4000000: "0,ccxxii 9878", "33414 ccx"; Vô hạn: "0,cccxiii 6041", "54622 ccxix"
+  - suggest: Sửa các ô bảng theo nguồn: hàng 4000 là cv và cii; hàng 4000000 là ccxii và ccix; hàng Vô hạn là ccxii và ccix. Phép kiểm 33/nén = giãn nở xác nhận các chỉ số này (ví dụ 33/6,041e-213 = 5,462e213 = 54622 x 10^209). Dòng 705 viết "26936 xv" thay cho "26956000..." (hai số đầu khác nhau; nguồn OCR cũng ghi 26950 xv / 26956...) nên cần soát lại theo scan.
+- **NANG / THIEU**, Dòng 737 (câu bị cắt giữa chừng "làm cho") nối sang dòng 741
+  - source: "may yield to the action of the rays of the sun's light, though those rays are not able sensibly to move the gross substances... Another author thinks... levity... The ascent of smoke in a chimney... promoting the ascent."
+  - now: Dòng 737 dừng ở "...tia ánh sáng Mặt Trời làm cho" rồi dòng 741 nhảy sang "Đuôi sao chổi dài hơn"; mất phần cuối câu Kepler, đoạn "Another author", đoạn ống khói/giãn nở, đoạn "xung của ánh sáng"
+  - suggest: Dịch bổ sung nguyên văn nguồn dòng 31548-31576 (hết câu Kepler, tác giả khác nêu nguyên lý nhẹ, ống khói, giãn nở của vật chất aether, "promoting the ascent")
+- **NANG / THIEU**, Dòng 737-741, giữa hai đoạn
+  - source: "But that the tails of comets do arise from their heads (p. 488)... they constantly deviate from the opposition of the sun... curvature... And the tails that are"
+  - now: Không có; dòng 741 bắt đầu thẳng ở "Đuôi sao chổi dài hơn và rộng hơn" (thiếu cả "And the tails that are")
+  - suggest: Dịch đủ cả đoạn về các quy luật của đuôi (nằm trong mặt phẳng quỹ đạo, độ lệch, độ cong, góc lệch nhỏ gần đầu, mặt lồi/lõm) nguồn dòng 31578-31602
+- **NANG / SAINGHIA**, Dòng 751 (cuối lập luận TA, SA, ST)
+  - source: Wherefore the distance of the comet from the earth cannot exceed the interval TA, nor its distance from the sun the interval SA beyond, or ST on this side the sun.
+  - now: khoảng cách của sao chổi từ Trái Đất không thể vượt quá đoạn TA; cũng không thể vượt quá khoảng cách SA ở phía bên kia Mặt Trời, hoặc ST ở phía cùng phía với Trái Đất
+  - suggest: Thêm chủ ngữ đúng: "cũng như khoảng cách của nó từ Mặt Trời không thể vượt quá đoạn SA ở phía bên kia, hoặc ST ở phía bên này Mặt Trời"; hiện câu ngầm bảo khoảng cách TỪ TRÁI ĐẤT không vượt SA
+- **NANG / SAINGHIA**, Dòng 753 (Dec. 12, 1680)
+  - source: SA will be to ST, that is, the limit of the greatest possible distance of the comet from the sun to the semi-diameter of the orbis magnus, as the sine of the angle T to the sine of the angle A
+  - now: SA sẽ tỷ lệ với ST, tức giới hạn của khoảng cách lớn nhất có thể có của sao chổi từ Mặt Trời, theo đường sin của góc T trên đường sin của góc A
+  - suggest: Sửa: SA (giới hạn khoảng cách lớn nhất của sao chổi từ Mặt Trời) so với ST (bán kính orbis magnus); hiện dịch gộp ST thành "giới hạn" và bỏ cụm "to the semi-diameter of the orbis magnus"
+- **NANG / THIEU**, Dòng 761
+  - source: will (by Cor. 1, Prop. XII, Book I, for the same reason as the planets) be made to move in conic sections
+  - now: chúng sẽ chuyển động trong các thiết diện conic có một tiêu điểm ở tâm Mặt Trời
+  - suggest: Thêm viện dẫn "(theo Hệ quả 1 của Proposition XII, Sách I, vì cùng lý do như các hành tinh)" sau "bị khuấy động bởi xung của lực ấy"
+- **NANG / HINH**, Dòng 747-751 (không có ảnh nào trong phần 737-806)
+  - source: Nguồn có hình tam giác với các điểm S, T, A, B, C, D (OCR văn bản chạy quanh hình ở dòng 31634-31648)
+  - now: Bài nhắc S, T, A, B, C, D, SA, TB, nhưng không có ảnh nào trong phần này
+  - suggest: Thêm hình (nhãn S, T, A, B, C, D; STA, ATB) ngay sau dòng 747
+- **NANG / SOLIEU**, Sao chổi 1618, dòng 847
+  - source: The second, which made its first appearance October 31, in the neighbourhood of the rising sun
+  - now: sao chổi thứ hai, lần đầu xuất hiện ngày $31$ tháng Mười Một ở gần nơi Mặt Trời mọc
+  - suggest: Sửa thành "ngày $31$ tháng Mười" (tháng Mười Một không có ngày 31, và còn trước ngày 9 tháng Mười Một nêu sau đó).
+- **NANG / SOLIEU**, Sao chổi 1607, dòng 849
+  - source: entered the sphere of the orbis magnus Sept. 14, O.S. and arrived at its perihelion distance from the sun about October 19, 35 days intervening
+  - now: đến khoảng cách cận điểm Mặt Trời vào khoảng ngày $19$ tháng Mười Một, với $35$ ngày xen giữa
+  - suggest: Sửa thành "ngày $19$ tháng Mười" (14 tháng Chín cộng 35 ngày là 19 tháng Mười).
+- **NANG / SOLIEU**, Sao chổi 1680/81, dòng 843
+  - source: The middle time between its ingress and egress was December Sd. 21'. of the morning (OCR hỏng chữ số)
+  - now: Thời điểm giữa ... là sáng ngày $3$ tháng Mười Hai
+  - suggest: OCR đọc "Sd. 21'." nên không xác định chắc được. Nhưng 6h ngày 10/11 cộng nửa của 55d16h (27d20h) cho ngày 8 tháng Mười Hai, khoảng 2 giờ sáng. Đề nghị kiểm lại với bản scan: ngày 3 có vẻ sai và mất giờ.
+- **NANG / SOLIEU**, Lemma I, phần số học, dòng 912 (mẫu của √(SP²+2BPe+ee))
+  - source: OR² [-] 2OR×TR/TP e + TR²/TP² ee (OCR: "20RX ... TP"; khớp với hệ số 2TR/TP·M²N/OR³ của chuỗi ngay dưới)
+  - now: OR^2+\frac{M^2N}{2OR\times TR}e-\frac{TR^2}{TP}e+\frac{TR^2}{TP^2}ee
+  - suggest: Sửa mẫu thành OR^2-\frac{2OR\times TR}{TP}e+\frac{TR^2}{TP^2}ee; bản dịch có thêm số hạng M²N/(2OR×TR) không có trong nguồn
+- **NANG / SOLIEU**, Lemma I, dòng 918 (vế trái chuỗi)
+  - source: SP + BP/SP e + SB²/2SP³ ee (OCR: tử "BP", "SB2", mẫu "SP", "2SP³")
+  - now: SP+\frac{BP}{SP^2}e+\frac{SB^2}{2SP^3}ee
+  - suggest: Sửa BP/SP^2 thành BP/SP (đúng thứ nguyên: BP/SP·e có chiều dài như SP)
+- **NANG / SOLIEU**, Lemma I, dòng 927-933 (ba hệ số đã cho)
+  - source: coefficients M²N/OR² - SP, 2TR/TP × M²N/OR³ - BP/SP, 3TR²/TP² × M²N/OR⁴ - SB²/2SP³
+  - now: 2TR/TP×M²N/OR³ - SP; và BP·TR²/(SP·TP²)×M²N/OR⁴ - SB²/(2SP³)
+  - suggest: Hệ số thứ hai phải trừ BP/SP (không phải SP); hệ số thứ ba là 3TR²/TP²×M²N/OR⁴ - SB²/2SP³ (BP/SP bị chuyển nhầm sang hệ số thứ ba và mất số 3)
+- **NANG / SAINGHIA**, Lemma I, dòng 935 (câu cuối)
+  - source: If the error ee/H is not despicable, take -G - G²/H = e
+  - now: Nếu sai số e²/H² không đáng kể, lấy G - G²/H = e
+  - suggest: "not despicable" = không thể xem thường (đáng kể), bản dịch viết "không đáng kể" là đảo nghĩa; công thức phải là -G - G²/H = e
+- **NANG / SOLIEU**, Lemma I, dòng 935 (e = -G)
+  - source: neglecting the very small term ee/H, e comes out equal to -G (OCR: "e2" trên "H", "equal to - G")
+  - now: bỏ qua cực kỳ nhỏ số hạng e²/H² e, ta có e=G
+  - suggest: Sửa thành e=-G (mất dấu trừ) và số hạng bỏ qua là e²/H (OCR chỉ có một H, không có H² và không có thừa số e)
+- **NANG / SAINGHIA**, Bài toán I, dòng 983 và 991
+  - source: The figure £TrO [tTτO] is likewise given both in magnitude and position, together with the distance ST, and the angles STR, PTR, STP.
+  - now: Hình $tTO$... [ngắt bởi hình] Khoảng cách ấy cũng được cho cả về độ lớn và vị trí, cùng với khoảng cách $ST$ và các góc...
+  - suggest: Chủ ngữ của câu là "hình tTτO" (một hình), không phải "khoảng cách ấy". Sửa thành "Hình $tT\tau O$ cũng được cho cả về độ lớn và vị trí, cùng với khoảng cách $ST$ và các góc $STR,PTR,STP$." Dòng 983 hiện cắt giữa câu và bỏ chữ τ; nên nối câu lại quanh hình (OCR đọc "£TrO", chữ τ không chắc chắn nhưng t, T, τ là ba vị trí Trái Đất).
+- **NHE / CHUGIAI**, Chú giải dòng 34-42
+  - source: (lỗi gõ)
+  - now: "quả cầu rắc" (x5), "vòng số cổ", "buộc phải kiểm", "lý thuyết sai về rõ ràng", "Chalđêa", "Pythagore"
+  - suggest: Sửa: "quả cầu rắn", "vòng sơ khởi cổ" (hoặc bỏ cụm), "buộc phải kiểm tra", "sai rõ ràng"; thống nhất "Chaldea"/"Pythagoreans" với bản dịch (dòng 12, 22). Dòng 20 (comment HTML) cũng gõ "quả cầu rắc".
+- **NHE / THIEU**, Dòng 30 và 44, 52, 72 (viện dẫn trang, "endless")
+  - source: from the phenomena (p. 218); (p. 75, 76, 77); (p. 400); (p. 390); it would be endless and impossible to bring every particular to direct and immediate observation
+  - now: Nếu không, sẽ không thể đem mọi điều riêng lẻ đến trực tiếp và tức thời với sự quan sát.
+  - suggest: Mất bốn viện dẫn trang của ấn bản 1846 và mất "endless" (vô tận). Sửa: "vì sẽ là vô tận và bất khả nếu đem mọi điều riêng lẻ ..."; các số trang tùy quy ước dự án.
+- **NHE / SAINGHIA**, Dòng 12 và 22
+  - source: that wise king of the Romans, Numa Pompilius; The Chaldeans, the most learned astronomers of their time
+  - now: vị vua điềm tĩnh của người La Mã; những nhà Thiên văn học uy tín nhất thời ấy
+  - suggest: "wise" là khôn ngoan/hiền minh, không phải "điềm tĩnh"; "most learned" là học rộng nhất, không phải "uy tín nhất". Sửa: "vị vua hiền minh", "uyên bác nhất".
+- **NHE / THUATNGU**, Dòng 10, 64, 70
+  - source: diurnal motion / supposed diurnal motion of the planets / one diurnal round the axis of the earth
+  - now: chuyển động quận chiều; chuyển động quận chiều được giả thiết của các hành tinh
+  - suggest: "diurnal" (thuộc ngày, nhật động) bị dịch bằng cụm "quận chiều" vô nghĩa, lặp 3 lần. Sửa: "chuyển động hằng ngày" (hoặc "nhật động") và thống nhất.
+- **NHE / SAINGHIA**, Dòng 68
+  - source: as the star recedes from the neighbouring pole, both areas and orb increase
+  - now: Khi ngôi sao lùi xa cực Bắc, cả diện tích lẫn quỹ đạo đều tăng
+  - suggest: Nguồn nói "cực lân cận" (cực gần ngôi sao đó), bản dịch ép thành "cực Bắc". Sửa: "lùi xa cực gần nó".
+- **NHE / THEM**, Dòng 50 (chú thích hình in nghiêng)
+  - source: (không có trong nguồn)
+  - now: *Hình 1. Mặt cầu Trái Đất $AFB$ ... khi rơi về tâm. (trích từ bản scan, PDF 519)*
+  - suggest: Dòng nghiêng ngoài blockquote là lời biên tập (đánh số "Hình 1", "khi rơi về tâm", "trích từ bản scan, PDF 519"), nguồn không có chú thích này. Nên chuyển vào blockquote Chú giải hoặc bỏ.
+- **NHE / HINH**, Dòng 48 (system-of-the-world-earth-curves.png)
+  - source: Nguồn nhắc nhãn A, F, B, C, V, D, E, F, G (VD, VE, VF; "F and G")
+  - now: Hình PNG; lời bài dịch nhắc AFB, C, VD, VE, VF, F và G
+  - suggest: File là PNG nên không đọc được nhãn bằng văn bản, không xác định được hình có chữ G hay không (lời nguồn nhắc "F and G" nhưng chú thích hình chỉ liệt kê VD, VE, VF). Cần người xem ảnh kiểm.
+- **NHE / SAINGHIA**, dòng 113 và 117
+  - source: [113] nearly in Mars and Saturn, but accurately enough in Jupiter. [117] we have already proved that these distances are true in Jupiter.
+  - now: [113] gần như chính xác ... sao Hỏa và sao Thổ, và chính xác trong trường hợp sao Mộc. [117] Ta đã chứng minh những khoảng cách ấy là đúng.
+  - suggest: [113] nguồn: "nearly" (xấp xỉ) cho sao Hỏa và sao Thổ, "accurately enough" (đủ chính xác) cho sao Mộc; bản dịch nâng mức chính xác. [117] bỏ "in Jupiter" nên khẳng định thành đã chứng minh cho mọi hành tinh; sửa: "Ta đã chứng minh những khoảng cách ấy là đúng ở sao Mộc."
+- **NHE / SAINGHIA**, dòng 115 và 119
+  - source: [115] but our business is with the causes of sensible effects. [119] Kepler and Bullialdus have, with great care, determined the distances of the planets from the sun; and hence it is that their tables agree best with the heavens.
+  - now: [115] Công việc của chúng ta là giải thích những hiệu ứng có thể quan sát được. [119] Bảng khoảng cách của họ khớp với bầu trời tốt nhất.
+  - suggest: [115] mất "causes": phải là "công việc của ta là với các nguyên nhân của những hiệu ứng quan sát được". [119] mất liên từ nhân quả "hence it is that" và "tables" là bảng (thiên văn) của họ chứ không phải "bảng khoảng cách": "nhờ vậy bảng của họ khớp với bầu trời nhất."
+- **NHE / THUATNGU**, dòng 121
+  - source: the cubes of their distances are as the squares of their periodic times
+  - now: lập thể của khoảng cách tỷ lệ với bình phương của thời gian quay
+  - suggest: "Lập thể" không phải "cubes"; dùng "lập phương của khoảng cách" (để nhất quán với "bình phương"). Ngoài ra bản dịch đang viết 5.578 / 14.168 với dấu chấm trong khi nguồn dùng dấu phẩy thập phân (5,578), dễ đọc nhầm là hàng nghìn trong tiếng Việt.
+- **NHE / KHAC**, dòng 74-145 (toàn phần)
+  - source: viện dẫn trang của ấn bản: (p. 386), (p. 387), (p. 388), (p. 389), (p. 390), (p. 391, 392, 393), (p. 212, 213, 214) và "(vide p. 406)" gần cuối
+  - now: (không có)
+  - suggest: Toàn bộ các ghi chú trang trong ngoặc của nguồn bị bỏ khỏi phần dịch; nếu quy ước dự án là giữ viện dẫn thì cần thêm, nếu cố ý bỏ thì ghi chú chung ở đầu chương.
+- **NHE / SAINGHIA**, dòng 163 (Prop. XLV, cận điểm)
+  - source: could the circum-solar planets once in every revolution descend to their least and once ascend to their greatest distance from the sun
+  - now: vừa đi xa khỏi Mặt Trời đến khoảng cách nhỏ nhất vừa trở lại khoảng cách lớn nhất
+  - suggest: "descend to least distance" là tiến lại gần Mặt Trời; bản dịch ghi "đi xa khỏi Mặt Trời đến khoảng cách nhỏ nhất", đảo chiều. Đề nghị: "một lần đi xuống (lại gần) đến khoảng cách nhỏ nhất và một lần đi lên (ra xa) đến khoảng cách lớn nhất".
+- **NHE / SAINGHIA**, dòng 151 (Hệ quả VI Prop. IV)
+  - source: a centripetal force which should be to the same force at the distance of the moon in the reciprocal duplicate proportion of the distances from the centre of the earth, that is, as 3600 to 1
+  - now: một lực hướng tâm tỷ lệ nghịch với lực tại khoảng cách của Mặt Trăng theo tỷ lệ lặp của các khoảng cách từ tâm Trái Đất, tức là 3600 trên 1
+  - suggest: Câu dịch sai cấu trúc: lực ở gần mặt đất so với lực ở khoảng cách Mặt Trăng theo tỉ số lặp nghịch của các khoảng cách, tức 3600 trên 1. Không phải "tỷ lệ nghịch với lực". Con số 3600 trên 1 đúng.
+- **NHE / SOLIEU**, dòng 153, 155, 159, 161, 173, 209
+  - source: OCR: "15-^" và "15T^" Paris feet; "60^" và "60
+  - now: -" semi-diameters; "16£d." and "224fd"; fire "3" 14'"" breadth
+  - suggest: 15½ feet Paris (153, 155); 60 bán kính (159) và 60½ (161); "16 ngày và 224¾ ngày" (173); "3¼''" (209)|Nhiều phân số không xác định được từ OCR: dòng 153 và 155 dịch 15½ nhưng OCR hiện "15-^"/"15T^" (hai ký tự, không giống ½), cần đối chiếu scan. Dòng 159 bỏ phân số ở "60^"; dòng 173 bỏ phân số sau 16 ("16£d"); dòng 209 đổi 3 giây 14 phần sáu mươi giây thành 3¼ giây.
+- **NHE / THIEU**, dòng 175 và 179
+  - source: dividing the distances by the squares of the times ... as [phân số OCR hỏng] to 143, or as 1 to 1100; ... it is evident (by Cor. IV, Prop. III) that the circum-terrestrial force, compared with the circum-solar, is very small
+  - now: là 1 trên 1100 (thiếu bước "... trên 143, hay"); rõ ràng lực quanh Trái Đất ... rất nhỏ (thiếu viện dẫn)
+  - suggest: Dòng 175 bỏ tỉ số trung gian "[?] trên 143" (OCR hỏng, không xác định được từ OCR). Dòng 179 bỏ viện dẫn "theo Hệ quả IV của Proposition III". Cần thêm viện dẫn này.
+- **NHE / THUATNGU**, dòng 163, 165, 169, 171 (apsis) và 183 (perigeon)
+  - source: the motion of the apses ... the moon's apsis ... the apsis or apogeon of the moon ... in the perigeon position of Mars
+  - now: cận điểm (cho apse/apsis, dòng 163-171); "cận điểm hay apogee" (171); "cận điểm gần nhất" (183, perigeon)
+  - suggest: "Cận điểm" được dùng cho apsis (điểm cận-viễn nói chung, dòng 163-171) và cho perigeon (dòng 183): một từ hai nghĩa; ở dòng 171 "apogeon" để nguyên tiếng Anh. Đề nghị thống nhất: apsis = "điểm apsit/điểm cùng"; perigeon = "cận địa"; apogeon = "viễn địa".
+- **NHE / THUATNGU**, dòng 211 và 217 (scattered light)
+  - source: this scattered light ... the scattered light, which could not be seen before
+  - now: ánh sáng tán tại ấy (211); Ánh sáng tán tinh (217)
+  - suggest: Một thuật ngữ dịch hai cách và đều có vẻ gõ hỏng ("tán tại", "tán tinh"). Đề nghị thống nhất "ánh sáng tán xạ" (hoặc "ánh sáng tản").
+- **NHE / THEM**, dòng 201-203 (hình)
+  - source: Let ABD represent the circle of the whole light; PQ the small circle ... (không có chú thích hình trong nguồn)
+  - now: Chú thích in nghiêng: "Hình 2. ... đường cong mật độ ánh sáng cắt trục tại F và G, và trục chân trời tại H. (trích từ bản scan, PDF 529)"
+  - suggest: Lời biên tập nằm ngoài blockquote: số hiệu "Hình 2", cụm "đường cong mật độ ánh sáng", "trục chân trời tại H" và "PDF 529" không có trong nguồn. Nguồn chỉ nói EGH là hyperbola tâm C với tiệm cận CA, CB. Hình là .png nên không đối chiếu nhãn được. Đề nghị bỏ hoặc chuyển vào Chú giải.
+- **NHE / SAINGHIA**, dòng 257 (núi bán cầu)
+  - source: will not, by its attraction, draw the pendulum two minutes out of the true perpendicular
+  - now: làm cho con lắc lệch khỏi đường thẳng thực tế quá hai phút
+  - suggest: "true perpendicular" là phương thẳng đứng thực: sửa thành "lệch khỏi phương thẳng đứng thực".
+- **NHE / THUATNGU**, dòng 253 (tác dụng giữa hai hành tinh)
+  - source: one single action ... betwixt two planets, arising from the conspiring natures of both
+  - now: phát sinh từ bản chất cộng hưởng của cả hai
+  - suggest: "conspiring" là cùng hướng/hợp lại; "cộng hưởng" là thuật ngữ vật lí khác nghĩa: dùng "bản chất hiệp lực/cùng tác động của cả hai".
+- **NHE / THUATNGU**, dòng 227 (đo đường kính bằng ngọn đèn)
+  - source: the spectrum may appear through the telescope just like the planet
+  - now: dải quang phổ có thể xuất hiện qua kính viễn thị giống hệt như hành tinh
+  - suggest: "spectrum" ở đây là hình ảnh/bóng sáng của lỗ, không phải quang phổ; nên dịch "hình ảnh" (hoặc "ảnh sáng") và "telescope" là kính viễn vọng.
+- **NHE / THUATNGU**, dòng 229, 235, 263 (bodies / weight)
+  - source: the total actions ... would be as the bodies of the planets; equal weight of gold; velocities reciprocally as the bodies
+  - now: tỷ lệ với khối lượng của các hành tinh; một khối lượng vàng bằng nhau; tỷ lệ nghịch với khối lượng của các vật thể
+  - suggest: "bodies" dịch là "khối lượng" (dòng 229, 263) nhưng ở dòng 233 lại là "vật thể"; "equal weight" thành "khối lượng vàng": thống nhất "vật thể" và "trọng lượng", dành "khối lượng/lượng vật chất" cho "quantity of matter".
+- **NHE / THEM**, dòng 261 (chú thích hình in nghiêng ngoài blockquote)
+  - source: Let ABCD (p. 93) represent the globe of the earth cut by any plane AC into two parts ACB, and ACD.
+  - now: *Hình 3. Quả cầu Trái Đất $ABCD$ bị mặt phẳng bất kỳ $AC$ cắt thành hai phần... (trích từ bản scan, PDF 533)*
+  - suggest: Chú thích hình là lời biên tập thêm (kể cả "trích từ bản scan, PDF 533"); ảnh là .png nên không đối chiếu được nhãn A,B,C,D với bài chứng minh, chỉ ghi nhận việc có lời thêm.
+- **NHE / KHAC**, dòng 285 (rơi vào Mặt Trời)
+  - source: supposing any of those bodies to be deprived of its circular motion about the sun, by having its distance from the sun, we may find ... Venus ... 40 days ... the earth and moon together in 66 days and 19 hours
+  - now: bằng cách làm khoảng cách của nó với Mặt Trời tăng lên; khoảng bốn mươi ngày; Trái Đất và Mặt Trăng sẽ đến trong khoảng $66$ ngày $19$ giờ
+  - suggest: OCR câu "by having its distance from the sun" thiếu động từ nên không xác định được từ OCR; bản dịch thêm "tăng lên" và "khoảng", và bỏ "together" (Trái Đất và Mặt Trăng cùng nhau).
+- **NHE / KHAC**, dòng 219 (ánh sáng tán)
+  - source: rejecting the scattered light, the diameter found by the micrometer 40" or 41" will be reduced to 39½"
+  - now: nếu loại bỏ ánh sáng tán tinh
+  - suggest: "tán tinh" có vẻ là lỗi gõ/từ lạ cho "scattered light": sửa thành "ánh sáng tán xạ" hoặc "ánh sáng bị tán".
+- **NHE / SAINGHIA**, dòng 333 (giả thuyết Horrox)
+  - source: that most ingenious, and if I mistake not, of all, the most accurate, hypothesis of Mr. Horrox
+  - now: chính xác nhất trong tất cả những giả thuyết của ông Horrox
+  - suggest: "of all" là hơn mọi giả thuyết khác, không phải trong số các giả thuyết của Horrox. Sửa: chính xác nhất trong mọi giả thuyết, giả thuyết của ông Horrox.
+- **NHE / THEM**, dòng 311 và 357 (điểm xuân phân)
+  - source: the equinoctial points, which are moveable ... their equinoctial points thence become regressive
+  - now: không được đo từ những điểm cố định của xuân phân, vì chúng di động ... các điểm cố định của xuân phân của chúng trở nên lùi
+  - suggest: Bản dịch chèn "cố định", vốn không có trong nguồn và mâu thuẫn với "di động/trở nên lùi". Sửa: các điểm xuân phân.
+- **NHE / THUATNGU**, dòng 319, 327, 329, 345 (apogeon)
+  - source: the apogeon has a progressive ... the apogeon moon slower and farther
+  - now: trục điểm xa của Mặt Trăng ... Mặt Trăng ở điểm trực ... Điểm trực chuyển động tiến
+  - suggest: Cùng một "apogeon" của Mặt Trăng khi thì "trục điểm xa", khi thì "điểm trực"; "apsis" thì thành "trục điểm sát nhất". Cần thống nhất một thuật ngữ cho apogee/apsis.
+- **NHE / THUATNGU**, dòng 333, 339, 347 (equation)
+  - source: the nodes admit the greatest equation or prosthaphaeresis ... equation of the moon's orbit
+  - now: vì các nút chịu phương sai hay độ chênh lớn nhất ... bằng phương sai của quỹ đạo Mặt Trăng
+  - suggest: "equation" (số hiệu chỉnh thiên văn) bị dịch "phương sai", trùng nghĩa "variance" trong thống kê, dễ gây hiểu sai. Nên đổi sang thuật ngữ thiên văn, kèm gloss (equation).
+- **NHE / THIEU**, dòng 303, 323, 357, 349/351 (tham chiếu trang)
+  - source: elliptic orbits (p 403) ... revolved about the sun (p. 413, 414, 415) ... rising higher towards the equator than about the poles (p. 405) ... (P. 404). While the planets
+  - now: quỹ đạo ellipse (không có p. 403) ... quay quanh Mặt Trời như vậy (không có p. 413-415) ... (không có p. 405) ... "(p. 404)" đặt cuối đoạn vệ tinh, dòng 349
+  - suggest: Bổ sung ba tham chiếu trang bị bỏ; chuyển "(p. 404)" xuống đầu đoạn "Trong khi các hành tinh quay ..." ở dòng 351.
+- **NHE / THIEU**, dòng 337 (biến thiên)
+  - source: the variation is mutable nearly in the duplicate ratio of the time between the quadratures
+  - now: biến thiên thay đổi theo tỷ lệ lặp của khoảng thời gian giữa hai phách hành
+  - suggest: Mất "nearly" (gần như). Sửa: thay đổi gần như theo tỷ lệ lặp (bình phương) của khoảng thời gian giữa hai phách hành.
+- **NHE / SOLIEU**, dòng 339 và 351 (số liệu OCR hỏng)
+  - source: 237 T\, ... Mars in 24f,h.
+  - now: số 237 2/3 ... sao Hỏa trong 24 2/3 giờ
+  - suggest: Phân số của 237 và 24 trong OCR bị hỏng ("T\," và "f,"), không xác định được từ OCR; chưa có cơ sở xác nhận 2/3. Cần đối chiếu bản scan.
+- **NHE / KHAC**, dòng 301 và 309 (lỗi gõ)
+  - source: always wandering to and fro with a slow motion of libration ... astronomers are not far from the truth
+  - now: luôn dao động chậm qua lưu lý ... không xa lỗi sự thật
+  - suggest: "qua lưu lý" vô nghĩa (nguồn: wandering to and fro, đi lại qua lại); "xa lỗi" có lẽ là "xa rời". Sửa hai chỗ này.
+- **NHE / THUATNGU**, dòng 375, 377, 379
+  - source: lesser tides in the solstitial than in the equinoctial syzygies; quadratures about the equinoxes; before than after the vernal equinox
+  - now: "hợp hội solstitial so với hợp hội equinoctial"; "quanh các điểm cố định"; "trước điểm cố định mùa xuân"
+  - suggest: "equinoxes/equinox" bị dịch thành "điểm cố định" (nên là "điểm phân"), còn solstitial/equinoctial/octant để nguyên tiếng Anh trong khi 379 lại có tiếng Việt; thống nhất thuật ngữ (chí/phân/bát phân)
+- **NHE / THEM**, dòng 395
+  - source: if the ascending node of the moon is about the first of Aries
+  - now: đặc biệt khi nút tăng của Mặt Trăng ở gần ngôi sao đầu tiên của chi Aries
+  - suggest: Nguồn chỉ có "the first of Aries" (OCR không cho "star"); "ngôi sao" và "chi" là thêm; sửa "ở gần điểm đầu của Aries" hoặc giữ sát nguồn "đầu Aries"
+- **NHE / THEM**, dòng 431
+  - source: as at Carcs/iam or the Bath
+  - now: chẳng hạn ở Cardiff hoặc Bath
+  - suggest: OCR đọc "Carcs/iam", không phải Cardiff; địa danh không xác định được từ OCR, "Cardiff" là suy đoán của người dịch; nên để "Carcsham (không xác định được từ OCR)" hoặc đánh dấu cần kiểm scan
+- **NHE / KHAC**, dòng 403
+  - source: Palrnonth. Plymouth, Portland, the isle of Wight
+  - now: rồi đến Pálmouth, Plymouth, Portland, đảo Wight
+  - suggest: "Pálmouth" có dấu sắc lạ, không phải dạng chữ nào trong nguồn (OCR "Palrnonth" = Palmouth); sửa "Palmouth" theo nguồn
+- **NHE / THEM**, dòng 385 (và alt text 383)
+  - source: (không có trong nguồn; nguồn chỉ có hình, không có chú thích hình)
+  - now: *Hình 4. Trái Đất ADEP ngập trong nước ... cho thấy thủy triều lớn hay nhỏ tùy vĩ độ. (trích từ bản scan, PDF 543)*
+  - suggest: Chú thích hình in nghiêng ngoài blockquote là lời biên tập thêm; "cho thấy thủy triều lớn hay nhỏ tùy vĩ độ" cũng là diễn giải không có trong nguồn
+- **NHE / THUATNGU**, dòng 395, 425
+  - source: the moon declines towards the vertex; increaseth with the declination of the moon till the seventh or eighth day
+  - now: khi Mặt Trăng lùi về phía đỉnh; tăng lên cùng với vĩ độ của Mặt Trăng; khi Mặt Trăng thay đổi vĩ độ
+  - suggest: "declination" dịch là "vĩ độ" trong khi "latitudes of places" (381) cũng là "vĩ độ", và 375 lại dịch "declination" là "vĩ độ xích đạo/khoảng cách đến xích đạo"; nên thống nhất "xích vĩ" cho declination, "vĩ độ" cho latitude của địa điểm
+- **NHE / SAINGHIA**, dòng 387
+  - source: L the place which the moon possessed three hours before it came to H
+  - now: L là đường mà Mặt Trăng chiếm ba giờ trước khi đến H
+  - suggest: "place" (vị trí) dịch thành "đường"; nguồn nói L là vị trí của Mặt Trăng, không phải một đường
+- **NHE / THUATNGU**, dòng 363, 391
+  - source: by its apparent diurnal motion; in the diurnal revolution of any place F
+  - now: bằng chuyển động quận chiều biểu kiến; Trong chuyển động quận chiều của một địa điểm F
+  - suggest: "diurnal" dịch là "quận chiều" (từ lạ, có vẻ lỗi gõ/đọc nhầm); nên là "chuyển động ngày/nhật động" cho nhất quán và dễ hiểu
+- **NHE / SOLIEU**, dòng 461 và 463
+  - source: as 1000 to 178725, or 1 to 178f f (OCR); ... as 1 X 60½ to 60 X 60 X 178f£
+  - now: tức là 1000 với 178725, hay 1 với 178 4/5 (lặp lại ở dòng 463)
+  - suggest: phân số của OCR "178f f" không đọc rõ, "không xác định được từ OCR"; 178725/1000 = 178,725 không bằng 178 4/5 (= 178,8); cần kiểm lại với scan.
+- **NHE / SAINGHIA**, dòng 451
+  - source: will have a greater flood and ebb, or will more intend and remit their course
+  - now: sẽ có thủy triều lớn hơn và con nước triều lớn hơn
+  - suggest: "flood and ebb" (nước lên và nước xuống) bị dịch thành hai từ cùng chỉ thủy triều, mất cặp lên/xuống; đề xuất "nước lên và nước xuống sẽ lớn hơn".
+- **NHE / SAINGHIA**, dòng 443
+  - source: at the mount of St. Michael and town of Avranches in Normandy
+  - now: cửa vịnh St. Michael và thành Avranches ở Normandy
+  - suggest: OCR đọc "mount", không phải "mouth/bay"; "cửa vịnh" không có trong nguồn; đề xuất "núi (Mont) St. Michael".
+- **NHE / THIEU**, dòng 455
+  - source: In SP take SK equal to ST and SL to SK in the duplicate ratio of SK to SP
+  - now: lấy SK bằng ST và SL theo tỷ lệ lặp của SK với SP
+  - suggest: mất vế "SL to SK" (SL so với SK theo tỷ lệ lặp của SK với SP); đề xuất "lấy SL so với SK theo tỷ lệ lặp của SK với SP".
+- **NHE / THUATNGU**, dòng 501
+  - source: or of 0 [9] and 5 paces (OCR: "0 and 5 paces")
+  - now: hay $9$ và $5$ sải
+  - suggest: "paces" dịch thành "sải" (thường là fathom); 45 và 25 foot ứng với 9 và 5 đơn vị 5 foot, nên đề xuất "bước (pace)"; chữ số đầu OCR đọc "0", bản dịch 9 hợp với 45 foot.
+- **NHE / THEM**, dòng 463
+  - source: the mean force ML is to the force of gravity at the surface of the earth as 1 X 60½ to 60 X 60 X 178..., or 1 to 638092,6
+  - now: hay $1$ trên [tiếp ở trang kế]
+  - suggest: chèn lời biên tập "[tiếp ở trang kế]" không có trong nguồn (nguồn chỉ có "or 1 to 638092,6" liền mạch); nên bỏ ngoặc vuông hoặc nối câu.
+- **NHE / HINH**, Hình 6 (caption), dòng 449
+  - source: S the sun, T the earth, P the moon, PAGB the moon's orbit; in SP take SK ... LM parallel to PT
+  - now: lực $ML$ hướng về tâm Trái Đất $C$, lực $SK$ hướng về Mặt Trời $T$, cùng các thành phần $TM$ và $SL$
+  - suggest: chú thích in nghiêng mâu thuẫn với lời bài: S là Mặt Trời, T là Trái Đất, P là Mặt Trăng, bài không có tâm C trong hình này, và ML, SL không được bài mô tả như vậy; đề xuất chú thích theo nhãn bài: S, T, P, quỹ đạo PAGB, K, L, M.
+- **NHE / HINH**, Hình 7 (caption) và hình thứ hai, dòng 475 và 481
+  - source: the surface of the water aDbE ... Let Aa, in the following figure, represent that excess of height of 9 inches
+  - now: đường $EC$ vuông góc với mặt nước (caption); "trong hình tiếp theo" (dòng 481) nhưng không có ảnh nào sau dòng 475 trong phần
+  - suggest: caption Hình 7 thêm khẳng định "EC vuông góc với mặt nước" không có trong nguồn; và hình thứ hai (Aa, Ff, fh, FG, Df aeb) mà bài gọi là "hình tiếp theo" không thấy chèn trong phần 437-508 (tệp ảnh tương ứng chưa xác định).
+- **NHE / THUATNGU**, dòng 531, 533 ("triplicate ratio")
+  - source: "in the triplicate ratio of the diameter inversely ... less in the triplicate of that ratio"
+  - now: "tỷ lệ nghịch đảo của lũy thừa ba của đường kính ... giảm theo lũy thừa ba của tỷ lệ ấy"
+  - suggest: Chương dùng "tỷ lệ lặp" cho duplicate ratio (dòng 557 và nhiều nơi); triplicate lại dịch "lũy thừa ba". Nên thống nhất ("tỷ lệ lặp ba"/"tam lặp")
+- **NHE / THUATNGU**, dòng 515, 577 (từ để nguyên tiếng Anh)
+  - source: "In the solstices themselves ... heliocentric opposition"
+  - now: "Tại chính các solstitial ... phách hành heliocentric"
+  - suggest: "solstices" để nguyên thành "solstitial" (chí điểm); "heliocentric" (nhật tâm) và "barometer" (dòng 529) cũng không dịch; chương dịch cả "solstitial" thành tính từ dù nguồn là danh từ số nhiều. Đề xuất việt hóa nhất quán
+- **NHE / SAINGHIA**, dòng 529 (trọng lượng một grain)
+  - source: "the weight of one grain in 4000 is not sensible in the nicest balance"
+  - now: "trọng lượng của một phần hạt nhỏ trong số $4000$ không nhận thấy được trên một chiếc cân tinh tế nhất"
+  - suggest: "grain" là đơn vị khối lượng nhỏ (1 grain trên 4000 grain), bản dịch "phần hạt nhỏ" làm mờ nghĩa. Dịch "1 grain trong 4000 grain" hoặc "một phần 4000"
+- **NHE / KHAC**, dòng 533 (dấu chấm trong số 18.951/18.954)
+  - source: "at the distance of 18.95 1 diameters ... greater in the ratio of 30 to 18,954"
+  - now: "khoảng cách $18.951$ lần đường kính Mặt Trời ... tỷ lệ $30$ trên $18.954$"
+  - suggest: Trong tiếng Việt "18.951" dễ bị đọc là mười tám nghìn. Nguồn viết 18,951 (thập phân) rồi 18,954 (OCR cũng không nhất quán: 951 và 954), nên dùng dấu thập phân thống nhất và đối chiếu scan xem 951 hay 954
+- **NHE / SAINGHIA**, dòng 627
+  - source: This near approach of the comets to the sun is confirmed from the situation they are seen in when their tails appear most resplendent
+  - now: Sự gần chúng ta ấy của sao chổi với Mặt Trời còn được xác nhận từ vị trí mà chúng xuất hiện khi đuôi sáng rực nhất
+  - suggest: "gần chúng ta ấy" thừa/sai (nguồn: sự đến gần Mặt Trời của sao chổi). Sửa: "Sự đến gần Mặt Trời ấy của sao chổi còn được xác nhận..."
+- **NHE / SOLIEU**, dòng 599
+  - source: the nucleus ... was therefore only 11''' or 12'' broad (OCR "11'''" or 12")
+  - now: vì vậy chỉ rộng $11'$ hoặc $12''$
+  - suggest: Dấu phút/giây lệch: 2'/10 = 12'' nên "11'" (phút) sai; nguồn OCR dấu nháy hỏng nhưng cùng bậc với 12''. Sửa thành $11''$ hoặc $12''$.
+- **NHE / SOLIEU**, dòng 597
+  - source: The coma or hair surrounding the head was about ten times as broad; namely, 4£ min.
+  - now: rộng gấp mười lần, tức khoảng $4$ phút
+  - suggest: OCR đọc "4£ min" (có ký tự sau 4, có thể là phân số, không xác định được từ OCR); bản dịch bỏ phần đó. Cần đối chiếu scan.
+- **NHE / SOLIEU**, dòng 605
+  - source: its breadth, which seldom exceeds 8' or 12; (OCR)
+  - now: hiếm khi vượt quá $8'$ hoặc $12'$
+  - suggest: Dấu sau 12 bị hỏng ("12;"), không xác định được từ OCR là phút hay giây; nhân sao chổi ở trên là 11''-12'' nên dấu giây hợp lí hơn. Cần đối chiếu scan.
+- **NHE / THEM**, dòng 591
+  - source: and its head, or the star in the middle of the coma, appeared...
+  - now: và đầu của nó, hay ngôi sao ở [phần câu còn lại ở trang kế].
+  - suggest: Lời biên tập ngoài blockquote ("phần câu còn lại ở trang kế") không có trong nguồn. Nên bỏ ngoặc vuông, hoặc chuyển thành comment HTML.
+- **NHE / THUATNGU**, dòng 647
+  - source: in July, or about the solstice
+  - now: vào tháng Bảy, hoặc quanh solstitial
+  - suggest: Để nguyên chữ Anh "solstitial" giữa câu tiếng Việt. Sửa: "quanh ngày hạ chí" (nguồn là "the solstice").
+- **NHE / KHAC**, dòng 635-639, 641, 643, 645, 649
+  - source: Các đoạn trích Aristotle, Justin, Simeon, Matthew Paris bằng tiếng Anh của Motte
+  - now: Giữ nguyên tiếng Anh trong blockquote và trong câu tiếng Việt
+  - suggest: Các trích dẫn của Motte để nguyên tiếng Anh, chưa dịch. Nếu đây không phải chủ trương giữ nguyên văn thì cần dịch; nếu có chủ trương thì giữ.
+- **NHE / THIEU**, dòng 581-652
+  - source: Q.E.D./Q.E.F. và các câu nhỏ như "It is a false notion, therefore"
+  - now: Dòng 587 mở bằng "Đó là một quan niệm sai" không có "Vì vậy"
+  - suggest: Mục nhẹ gộp: bỏ liên từ "therefore/Vì vậy" ở dòng 587, và "đã khá rõ ràng" (nguồn "is well known") ở dòng 583 dịch lỏng; không có câu nào của Newton bị mất.
+- **NHE / SOLIEU**, Dòng 695 (sao chổi 1680, 28/12)
+  - source: December 28d. S?h.?' P. M. at London (OCR hỏng chữ số giờ)
+  - now: lúc 1 giờ sau nửa đêm theo lịch cũ ở London
+  - suggest: OCR ghi "P. M." (sau trưa/chiều) còn bản dịch ghi "sau nửa đêm"; con số giờ không xác định được từ OCR. Đối chiếu lại scan. Ngoài ra OCR nguồn không có "theo lịch cũ"; kiểm tra có trong scan hay không.
+- **NHE / THUATNGU**, Dòng 665
+  - source: P. Volent. Estaucius, being in Brazil
+  - now: P. Valent. Eastaucius
+  - suggest: Tên theo OCR là "Estaucius" (chữ đầu "Volent." hỏng, không xác định được từ OCR); "Eastaucius" có chữ "a" thừa. Đối chiếu scan.
+- **NHE / THIEU**, Dòng 675
+  - source: If they were to be seen in the regions a great way beyond Saturn
+  - now: Nếu chúng được nhìn thấy ở những vùng cách Mặt Trời rất xa
+  - suggest: Mất "beyond Saturn": thêm "xa hơn sao Thổ rất nhiều". Cũng ở dòng 681: nguồn "(p. 487 to 488)" nhưng bản dịch "(p. 467-468)"; số trang không đọc chắc được từ OCR, cần soát scan.
+- **NHE / SAINGHIA**, Dòng 721
+  - source: for that they are indeed of a very notable rarity appears from the shining of the stars through them
+  - now: Bởi các ngôi sao thực sự tỏa sáng xuyên qua chúng với độ loãng đáng kể.
+  - suggest: Chủ ngữ bị đảo: nguồn nói đuôi sao chổi thực sự rất loãng, điều này thấy rõ từ việc các ngôi sao tỏa sáng xuyên qua chúng. Sửa: "Vì chúng quả thực rất loãng, điều đó thấy từ việc các ngôi sao tỏa sáng xuyên qua chúng."
+- **NHE / KHAC**, Dòng 747
+  - source: the sun, the head of the comet, and the extremity of the tail, lie in a right line, the comet's head will be found in C
+  - now: nên đầu sao chổi và đầu mút của đuôi nằm trên một đường thẳng; do đó, đầu sao chổi sẽ nằm ở C
+  - suggest: Thêm "Mặt Trời" vào danh sách thẳng hàng: "Mặt Trời, đầu sao chổi và đầu mút của đuôi nằm trên một đường thẳng" (cần cho việc DS đi qua C)
+- **NHE / SOLIEU**, Dòng 755 (Dec. 21, 1680)
+  - source: elongation of the comet from the sun was 32f °... as the sine of 3^
+  - now: ° to the sine of 70°, that is, as 4 to 7
+  - suggest: khoảng cách góc của sao chổi so với Mặt Trời là 32°|OCR đọc "32f°" (có ký hiệu phân số không rõ), bản dịch bỏ phần lẻ; không xác định được từ OCR giá trị phân số; cần đối chiếu bản gốc
+- **NHE / THUATNGU**, Dòng 791 (và toàn chương: dòng 10, 353, 563, 811, 827...)
+  - source: the earth's diurnal motion is just 59'... apparent diurnal motion in its own orbit
+  - now: giả thiết chuyển động quận chiều của Trái Đất đúng là 59'
+  - suggest: "diurnal" dịch "quận chiều", một từ lạ, dùng cho cả vòng quay quanh trục (dòng 10) lẫn chuyển động hằng ngày trên quỹ đạo (dòng 791); nên thống nhất bằng "hằng ngày/nhật động" nếu chủ ý của người dịch cho phép
+- **NHE / CHUGIAI**, Dòng 771-781 (HỢP LÍ MỘT PHẦN)
+  - source: Newton: velocity of comets "much about the same" as parabolic; errors not greater than from errors in distances
+  - now: Chú giải: "Kết luận ấy vẫn đúng... vào hệ Mặt Trời với tốc độ thoát cũng gần đúng từ phía Mặt Trời... Newton lẽ ra chỉ có thể nêu ba giả thuyết, còn ngày nay ta biết chúng đến từ đám mây Oort"
+  - suggest: Phần vật lí (v=sqrt2 v_tròn, ε≈0) đúng. Nhưng câu "tốc độ thoát... từ phía Mặt Trời" tối nghĩa, "Newton lẽ ra chỉ có thể nêu ba giả thuyết" tự mâu thuẫn (ông liệt kê ba giả thuyết của các bên rồi chọn thứ ba), "ta biết... đám mây Oort" khẳng định quá mức (giả thuyết, chưa quan sát trực tiếp), "tiêu chuẩn thử nghiệm mà người sau vẫn dùng" là khẳng định lịch sử không nguồn. Nên viết lại hoặc bỏ các câu đó
+- **NHE / SAINGHIA**, Sao chổi 1680/81, dòng 831
+  - source: this distance is greater by such an excess of space as the earth might describe by its annual motion in one day's time
+  - now: khoảng cách này lớn hơn khoảng cách mà Trái Đất có thể mô tả trong thời gian một ngày chuyển động thường niên
+  - suggest: Dịch "lớn hơn một đoạn bằng quãng mà Trái Đất có thể mô tả ..." (hiệu số bằng quãng đi trong một ngày), không phải lớn hơn cả khoảng cách ấy.
+- **NHE / SAINGHIA**, Sao chổi 1680, dòng 829
+  - source: the corresponding elongation 79f happened Nov. 10, a little before midnight
+  - now: xảy ra lúc nửa đêm ngày $10$ tháng Mười Một, khoảng không lâu trước nửa đêm
+  - suggest: Nguồn: "xảy ra ngày 10 tháng Mười Một, ít lâu trước nửa đêm". Bản dịch tự mâu thuẫn ("lúc nửa đêm" rồi "không lâu trước nửa đêm"); bỏ "lúc nửa đêm" và "khoảng".
+- **NHE / SOLIEU**, Sao chổi 1680/81, dòng 841 và 843
+  - source: double of that time, viz., 55d. 8
+  - now: h. ... The small difference of 7£h.
+  - suggest: gấp đôi thời gian ấy, tức $55$ ngày $8$ giờ ... Sai số nhỏ $7$ giờ|OCR có phân số hỏng ("8|h", "7£h"), không xác định được từ OCR. Bản dịch bỏ phân số ở cả hai chỗ; cần kiểm lại bản scan (27d16h7' nhân đôi là 55d8h14', gần 8 và 1/4 giờ).
+- **NHE / SOLIEU**, Sao chổi 1682, dòng 853
+  - source: to which, in Tab. I, belong 33^ days
+  - now: theo Bảng I, số phần ấy tương ứng với $33$ ngày
+  - suggest: OCR "33^" có phân số hỏng, không xác định được từ OCR; bản dịch bỏ phân số. Cần kiểm lại bản scan.
+- **NHE / THUATNGU**, Dòng 867
+  - source: the assumption may be corrected by the Rule of False
+  - now: ta có thể hiệu chỉnh giả thiết bằng Quy tắc của Sai
+  - suggest: "Quy tắc của Sai" khó hiểu; nên dịch thành quy tắc sai vị (quy tắc giả định sai, false position) hoặc ghi rõ thuật ngữ gốc.
+- **NHE / THUATNGU**, Dòng 811, 827, 829, 835
+  - source: apparent diurnal motion in its own orbit
+  - now: chuyển động quận chiều biểu kiến trong quỹ đạo
+  - suggest: "quận chiều" dùng nhất quán cho "diurnal motion" trong cả chương nhưng không phải từ tiếng Việt thông dụng nào (diurnal là hằng ngày/mỗi ngày); nên cân nhắc đổi thành "chuyển động mỗi ngày" (cả chương).
+- **NHE / THIEU**, Dòng 845 và 859
+  - source: [see more of this famous comet, p. 475 to 486] ... the velocity of comets (p. 471)
+  - now: (không có trong bản dịch)
+  - suggest: Hai viện dẫn trang trong ngoặc của bản 1846 không có trong bản dịch ở dòng 845 và 859 (trong khi các chỗ khác của chương giữ "(p. ...)"); nếu muốn giữ nguyên thì thêm.
+- **NHE / SOLIEU**, Lemma I, lượng giác, dòng 899
+  - source: or as the error 2p2q + D to the error 2pP (OCR "H- D" = "+ D")
+  - now: hoặc sai số 2p2q±D tỷ lệ với sai số 2pP
+  - suggest: Sửa ±D thành +D theo nguồn
+- **NHE / THUATNGU**, Lemma I, dòng 887
+  - source: a regular line q2q3q, drawn through all the points 2q, 3q, &c. (OCR: "y2q3q")
+  - now: một đường thẳng đều q2q3q, đi qua tất cả các điểm q2q3q
+  - suggest: Nguồn dùng "regular line" (đường đều, tức đường trơn nối các điểm), khác "right line" = đường thẳng; "đường thẳng đều" gợi một đường thẳng, nên dịch "đường đều" hoặc "đường cong đều"
+- **NHE / KHAC**, Lemma I, dòng 887 (Q.E.F.)
+  - source: pendicular PR is to be let fall. Q.E.F.
+  - now: Điều đã định nghĩa.
+  - suggest: Q.E.F. là "điều phải làm" (quod erat faciendum), không phải "điều đã định nghĩa"
+- **NHE / THEM**, Lemma I, dòng 889-891 (chú thích hình)
+  - source: (nguồn không có chú thích hình; q2q3q đi qua các điểm 2q, 3q)
+  - now: Hình 8. Dựng tuyến tính theo Lemma I: kẻ TP sao cho TRP là góc vuông, cùng đường thẳng đều q2q3q đi qua các điểm S2q, S3q. (trích từ bản scan, PDF 573)
+  - suggest: Chú thích là lời biên tập thêm ngoài blockquote; còn nói đường đi qua "các điểm S2q, S3q" trong khi nguồn chỉ nói đi qua các điểm 2q, 3q
+- **NHE / THUATNGU**, Lemma I, dòng 937
+  - source: without those perplexed computations and resolutions of affected equations which hitherto have been in use
+  - now: mà không cần đến những phép tính và cách giải phương trình rối rắm từ trước đến nay
+  - suggest: "affected equations" (phương trình hỗn hợp/đầy đủ) bị bỏ, "rối rắm" chuyển sang gán cho cả phương trình; nên dịch "những phép tính rối rắm và việc giải các phương trình hỗn hợp (affected) từ trước đến nay"
+- **NHE / SAINGHIA**, Lemma II (tiêu đề), dòng 941
+  - source: that shall pass through a point assigned in any of the three, and so as its intercepted parts shall be in a given ratio one to the other
+  - now: đi qua một điểm được chỉ định trong ba đường ấy, sao cho các phần nó cắt ở giữa các đường thẳng theo một tỷ lệ đã cho
+  - suggest: "in any of the three" = trên một đường bất kỳ trong ba đường (bản dịch mơ hồ, như thể điểm nằm trong cả ba); thiếu "one to the other" (các phần chắn giữa theo tỉ lệ đã cho với nhau)
+- **NHE / KHAC**, Lemma I, dòng 881 (dựng tuyến tính)
+  - source: through the point Sp draw the line Sq equal to M²×N / (mẫu bị đọc hỏng trong OCR)
+  - now: Rồi qua điểm S, kẻ Sq bằng M²×N/OR²
+  - suggest: Nguồn đọc "the point Sp" (có p), bản dịch bỏ p; mẫu số không xác định được từ OCR (dựng tại điểm r thì có thể là Or², bản dịch ghi OR²), cần đối chiếu scan
+- **NHE / THIEU**, Lemma II (dòng 943), Bài toán I (dòng 1003), Bài toán II (dòng 1013)
+  - source: ...and FD will be to DE as FG to BG. Q.E.F. / ...from the place P ... as pω to V X tτ. Q.E.F. / ...exactly enough determined. Q.E.F.
+  - now: (không có "Q.E.F." ở ba chỗ này)
+  - suggest: Thêm "Q.E.F." cuối ba đoạn (nếu quy ước của chương là giữ nguyên).
+- **NHE / SAINGHIA**, Bài toán II, dòng 1011
+  - source: ...how far those other quantities ought to be varied or corrected, so as the error may become as small as possible.
+  - now: ...cần thay đổi hoặc hiệu chỉnh những đại lượng khó ấy bao xa...
+  - suggest: "other quantities" là "những đại lượng khác"; "khó" có vẻ là lỗi gõ của "khác". Sửa thành "những đại lượng khác ấy".
+- **NHE / THUATNGU**, Bài toán I, dòng 993
+  - source: as mathematicians, in the resolution of affected equations, are wont, for the first essay, to assume the root by conjecture
+  - now: khi giải các phương trình bậc cao
+  - suggest: "affected equations" (phương trình hỗn hợp, đủ các số hạng) không có nghĩa "bậc cao" trong nguồn. Nên dịch sát hơn, ví dụ "phương trình hỗn hợp (affected equations)", hoặc ghi chú.
+- **NHE / KHAC**, Lemma V, dòng 977
+  - source: The perpendiculars rp, pw, meeting PH, will be the tangents of the sought latitudes
+  - now: Các đường vuông góc $rp,pw$ cắt $PH$
+  - suggest: Chữ cái không nhất quán: Lemma V viết "pw" còn Bài toán I viết "$p\omega$" (OCR đọc "pw" ở cả hai chỗ). Nên thống nhất thành $p\omega$.
+- **NHE / THEM**, Dòng 945-947, 957-959, 985-987 (chú thích hình)
+  - source: (nguồn OCR không có chú thích hình)
+  - now: *Hình 9. Dựng tuyến tính theo Lemma II: kẻ đường thẳng thứ tư qua điểm $D$ đã cho, cắt ba đường thẳng... (trích từ bản scan, PDF 574)*
+  - suggest: Chú thích hình in nghiêng và alt text là lời biên tập ngoài blockquote, mô tả nội dung hình (Hình 9, 10, 11); nếu cần giữ thì đưa vào blockquote Chú giải hoặc comment HTML.
+- **NHE / HINH**, Dòng 945, 957, 985
+  - source: Lemma II: AB, AC, BC, D, G, F, E; Lemma III: T, A, R, B, a, b, D, E, F, G, r, p; Bài toán I: S, t, T, τ, p, P, ω, r, R, O
+  - now: 3 ảnh PNG (system-of-the-world-lemma-2/lemma-3/problem-1.png), không phải SVG
+  - suggest: Không đọc được nhãn trong ảnh PNG nên không xác định được từ OCR/văn bản việc nhãn có khớp với lời chứng minh hay không; cần người kiểm tra bằng mắt.
